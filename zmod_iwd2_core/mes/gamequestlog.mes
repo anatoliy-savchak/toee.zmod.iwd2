@@ -1,0 +1,11 @@
+// gamequestlog.mes - text for the logbook
+// MAX_QUESTS = 200
+// there are two text entries that the logbook will need for quests: title and description
+// for quest i; title will be at line i, and description will be at i + MAX_QUESTS
+
+
+// Quest Titles 000 - 199
+{0} {Defend the Keep}
+
+// Quest Descriptions 200 - 399
+{200} {Defend the Keep and save as much guardians as you can.}

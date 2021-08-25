@@ -1,0 +1,252 @@
+// These are for internal use only, and will not be seen by the player
+// The player will see the descriptions in data\mes\description.mes
+
+// Keep these ranges sync'd with O_Name_Index in OName.h
+
+
+//Miscellaneous ranges from 0 - 799
+{0}{Miscellaneous}
+{1}{This internal name is used on all of Lareth's items that, if sold, trigger the assassin (except Lareth's gold chain, internal number 3006, which needed its own).}
+
+
+// Portal ranges from 800 - 1199
+{800}{Portal}
+{801}{Inn}
+{802}{Old Trading Post}
+{803}{Village Elder}
+
+
+// Container ranges from 1200 - 1599
+{1200}{Container}
+{1201}{Throne of gems}
+{1202}{Otis' anvil}
+{1203}{Earth altar}
+{1204}{Trader's substitute inventory}
+{1205}{Otis's substitute inventory}
+
+
+
+// Scenery ranges from 1600 - 1799
+{1600}{Scenery}
+{1601}{Secretdoor Effect Test}
+{1602}{Moathouse brigand exit}
+{1603}{Moathouse brigand stairs}
+{1604}{Moathouse tunnel}
+{1605}{Temple tower ladder}
+{1606}{Temple interior well}
+{1607}{Temple airshaft level 1}
+{1608}{Temple tunnel level 3}
+{1609}{Zuggtmoy Lair Portal}
+{1610}{Zuggtmoy Throne Portal}
+{1611}{Air Node Exit Portal}
+{1612}{Earth Node Exit Portal}
+{1613}{Fire Node Exit Portal}
+{1614}{Water Node Exit Portal}
+{1615}{Minotaur statue}
+{1616}{Temple interior drop-away floor}
+{1617}{Temple interior throne}
+{1618}{Juggernaut statue}
+{1619}{Platinum pillar}
+{1620}{Inn}
+{1621}{Old Trading Post}
+{1622}{Village Elder}
+
+// Tagged scenery ranges from 1800 - 1979
+{1800}{Generic tagged scenery}
+{1801}{Bronze doors}
+{1802}{Minotaur room}
+{1803}{Hall of Statues}
+{1804}{Hall of Verdigris}
+{1805}{Long stairs behind Lubash}
+{1806}{Thrommel}
+{1807}{Earth Temple}
+{1808}{Fire Temple}
+{1809}{Water Temple}
+{1810}{Air Temple}
+{1811}{Throne}
+{1812}{Greater Temple (inner sanctum)}
+{1813}{Zuggtmoy’s prison}
+
+
+// Projectile ranges from 1980 - 1999
+{1980}{Projectile}
+
+// Weapon ranges from 2000 - 2399
+{2000}{Weapon}
+{2200}{Trader's shortsword +1}
+{2201}{Fragarach}
+{2202}{Otis' magic longsword}
+{2203}{Orb of Golden Death}
+{2204}{Wonnilon's dagger +2}
+{2205}{Wonnilon's repeating crossbow +1}
+{2206}{Antonio's mace}
+{2207}{Jaer's Ball of Fire}
+{2208}{Masterwork maul}
+
+// Ammo ranges from 2400 - 2799
+{2400}{Ammo}
+{2600}{Black Jay's magic arrows}
+{2601}{Hruda's silver-tipped arrows}
+
+// Armor ranges from 2800 - 3199
+{2800}{Armor}
+{3000}{Black Jay's ring}
+{3001}{Black Jay's magic cloak}
+{3002}{Black Jay's magic boots}
+{3003}{Canoness Y'Dey's brooch}
+{3004}{Copper starburst pendant}
+{3005}{Yellow eye of fire cape}
+{3006}{Lareth's golden chain}
+{3007}{Nybble's iron ring}
+{3008}{Otis' magic chainmail}
+{3009}{Skole's +2 shield}
+{3010}{Earth Temple brown robe}
+{3011}{Oohlgrist's ruby necklace}
+{3012}{Wonnilon's leather armor}
+{3013}{Tubal's Ring of Protection +1}
+{3014}{Thrommel's gold chain medallion}
+{3015}{eight-pointed amulet}
+{3016}{Water Temple moss-green robe}
+{3017}{Fire Temple crimson robe}
+{3018}{Valden's spiked wooden shield}
+{3019}{Barkinar's boots of speed}
+{3020}{Air Temple ivory robe}
+{3021}{Greater Temple black robe}
+{3022}{Thrommel's gold ring}
+
+
+// Gold ranges from 3200 - 3599
+{3200}{Gold}
+
+// Food ranges from 3600 - 3999
+{3600}{Food}
+{3601}{Kelno's Vial of unholy water}
+{3602}{Belsornig's poison vial}
+{3603}{Holy water}
+
+// Scrolls range from 4000 - 4399
+{4000}{Scroll}
+{4001}{Furnok's scroll of magic protection}
+{4002}{NOT USED}
+{4003}{Scroll of fireball}
+{4004}{Scroll of gust of wind}
+{4005}{Wonnilon's scroll of control plants}
+
+// Key ranges from 4400 - 5199
+{4400}{Key}
+{4401}{Keys from trolls in rooms 302-305}
+
+// Written ranges from 5200 - 5599
+{5200}{Written}
+
+// Generic ranges from 5600 - 5999
+{5600}{Generic}
+{5800}{Hemlock}
+{5801}{Hay}
+{5802}{Fungus Figurine}
+{5803}{Grud's Gar}
+{5804}{Skole's Violet Garnet}
+{5805}{Skole's Black Pearl}
+{5806}{Oohlgrist's emerald belt}
+{5807}{Romag's sealed letter to Dick Rentsch}
+{5808}{Air Elemental Power Gem for the Orb of Golden Death}
+{5809}{Earth Elemental Power Gem for the Orb of Golden Death}
+{5810}{Fire Elemental Power Gem for the Orb of Golden Death}
+{5811}{Water Elemental Power Gem for the Orb of Golden Death}
+{5812}{Thieves' tools}
+{5813}{Masterwork thieves' tools}
+{5814}{Thrommel's gold belt}
+{5815}{Orb of Sah}
+{5816}{Hoard of gems from Zuggtmoy's throne}
+
+// PC ranges from 6000 - 6399
+{6000}{PC}
+
+// NPC ranges from 6400 - 9999
+{6400}{NPC}
+{8000}{Elmo}
+{8001}{Paida}
+{8002}{Lareth}
+{8003}{Furnok}
+{8004}{Turuko}
+{8005}{Kobort}
+{8006}{Sunom}
+{8007}{Moneir}
+{8008}{Ostler}
+{8009}{Tuperello}
+{8010}{Zert}
+{8011}{Valden}
+{8012}{Rik}
+{8013}{Marek}
+{8014}{Otis}
+{8015}{Meleny}
+{8016}{Ophelia}
+{8017}{Dala}
+{8018}{Dick Rentsch}
+{8019}{Preston Wetz}
+{8020}{Bertram}
+{8021}{Y'Dey}
+{8022}{Murfles}
+{8023}{Oohlgrist}
+{8024}{Tillahi}
+{8025}{Pintark}
+{8026}{Tuelk}
+{8027}{Merrolan}
+{8028}{Nalorrem}
+{8029}{Ed #1}
+{8030}{Ed #2}
+{8031}{Prince Thrommel}
+{8032}{Hedrack}
+{8033}{Aern}
+{8034}{Scorpp}
+{8035}{Barkinar}
+{8036}{Deggum}
+{8037}{Mandy}
+{8038}{Whitman}
+{8039}{Taki}
+{8040}{Ashrem}
+{8041}{Brunk}
+{8042}{Iuz}
+{8043}{St. Cuthbert}
+{8045}{Romag}
+{8046}{Hedrack}
+{8047}{Alrrem}
+{8048}{Rannos Davl}
+{8049}{Gremag}
+{8050}{Raimol}
+{8051}{Chanda}
+{8052}{Gleem}
+{8053}{Treasure map for CN vignette}
+{8054}{Burne}
+{8055}{Mona}
+{8056}{Serena}
+{8057}{Frederic}
+{8058}{Riana}
+{8059}{Murraya}
+{8060}{Morgan}
+{8061}{Ted}
+{8062}{Zaxis}
+{8063}{Bassanio}
+{8064}{Zuggtmoy (either form, crone or demon)}
+{8065}{Temple Level 2 prison guards}
+{8066}{Ariel}
+
+
+
+// Trap ranges from 10001 - 10400
+{10000}{Trap}
+{10001}{bp_trap_magical}
+{10002}{bp_trap_mechanical}
+{10003}{bp_trap_arrow}
+{10004}{bp_trap_bullet}
+{10005}{bp_trap_fire}
+{10006}{bp_trap_electrical}
+{10007}{bp_trap_poison}
+{10008}{bp_trap_source}
+
+// Bag ranges from 10401 - 10800
+{10401}{Bag}
+{10402}{Wonnilon's backpack}
+
+
+

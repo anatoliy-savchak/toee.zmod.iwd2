@@ -1,0 +1,149 @@
+skeleton "unarmed_unarmed_combatidle.mae"
+
+{
+	quality 0.1
+}
+
+
+animation "unarmed_unarmed_rturn" "unarmed_unarmed_rturn.mae"
+{
+	loopable
+	event 10 "script" "anim_obj.footstep()"
+	event 20 "script" "anim_obj.footstep()"
+	angle 180
+}
+
+animation "unarmed_unarmed_lturn" "unarmed_unarmed_lturn.mae"
+{
+	loopable
+	event 10 "script" "anim_obj.footstep()"
+	event 20 "script" "anim_obj.footstep()"
+	angle -180
+}
+
+animation "unarmed_unarmed_rattack" "unarmed_unarmed_rattack.mae"
+{
+	event 15 "action" "origin"
+	event 1 "script" "game.sound_local_obj ( 800, anim_obj )"
+}
+
+animation "unarmed_unarmed_lattack" "unarmed_unarmed_lattack.mae"
+{
+	event 18 "action" "origin"
+	event 1 "script" "game.sound_local_obj ( 800, anim_obj )"
+}
+
+animation "unarmed_unarmed_walk" "unarmed_unarmed_walk.mae"
+{
+	loopable
+	distance "origin"
+}
+
+animation "unarmed_unarmed_run" "unarmed_unarmed_walk.mae"
+{
+	loopable
+	distance "origin"
+}
+
+animation "unarmed_unarmed_idle" "unarmed_unarmed_idle.mae"
+{
+	loopable
+}
+
+animation "unarmed_unarmed_fhit" "unarmed_unarmed_fhit.mae"
+
+animation "unarmed_unarmed_lhit" "unarmed_unarmed_lhit.mae"
+
+animation "unarmed_unarmed_rhit" "unarmed_unarmed_rhit.mae"
+
+animation "unarmed_unarmed_bhit" "unarmed_unarmed_bhit.mae"
+
+animation "unarmed_unarmed_rcriticalswing" "unarmed_unarmed_criticalSwing.mae"
+{
+	event 48 "action" "origin"
+	event 1 "script" "game.sound_local_obj ( 800, anim_obj )"
+}
+
+animation "unarmed_unarmed_lcriticalswing" "unarmed_unarmed_criticalSwing.mae"
+{
+	event 48 "action" "origin"
+	event 1 "script" "game.sound_local_obj ( 800, anim_obj )"
+}
+
+animation "unarmed_unarmed_fidget" "unarmed_unarmed_fidget.mae"
+
+
+animation "unarmed_unarmed_panic" "unarmed_unarmed_panic.mae"
+{
+	loopable
+}
+
+animation "unarmed_unarmed_combatidle" "unarmed_unarmed_combatidle.mae"
+{
+	loopable
+}
+
+animation "unarmed_unarmed_combatfidget" "unarmed_unarmed_combatfidget.mae"
+{
+	event 1 "script" "game.sound_local_obj ( 802, anim_obj )"
+}
+
+
+animation "unarmed_unarmed_fdodge" "unarmed_unarmed_fdodge.mae"
+
+animation "unarmed_unarmed_rdodge" "unarmed_unarmed_rdodge.mae"
+
+animation "unarmed_unarmed_ldodge" "unarmed_unarmed_ldodge.mae"
+
+animation "unarmed_unarmed_bdodge" "unarmed_unarmed_bdodge.mae"
+
+
+
+animation "abjuration_conjuring" "unarmed_unarmed_gazeConj.mae"
+{
+	event 10 "action" "origin"
+}
+
+animation "abjuration_casting" "unarmed_unarmed_gaze.mae"
+{
+	event 15 "action" "origin"
+}
+
+
+
+animation "falldown" "falldown.mae"
+
+animation "prone_idle" "prone_idle.mae"
+{
+	loopable
+}
+
+animation "prone_fidget" "prone_fidget.mae"
+
+
+
+
+animation "getup" "getup.mae"
+
+
+animation "death" "death.mae"
+{
+	event 1 "script" "game.sound_local_obj ( 801, anim_obj )"
+}
+
+
+animation "dead_idle" "dead_idle.mae"
+{
+	loopable
+}
+
+animation "dead_fidget" "dead_idle.mae"
+
+animation "death_prone_idle" "dead_idle.mae"
+{
+	loopable
+}
+
+animation "death_prone_fidget" "dead_idle.mae"
+
+

@@ -1,0 +1,31 @@
+//
+// Map List Info
+//
+
+// Types:
+//	START_MAP -- This is the starting map (there should only be one of these!)
+//	SHOPPING_MAP -- This is the shopping map used in character creation.  If not
+//		present, then this process is skipped during character creation.
+
+	// Starting Location (Convert for World by:)
+	// (54624 - 32) / 64 = 853
+	// (45408 - 32) / 64 = 709
+
+// Area: <#> -- This is the Index # in area.mes that the map maps to
+
+
+// List of valid maps for game & Starting X/Y position
+{5000}{ShopMaps, 514, 445, Type: SHOPPING_MAP, Flag: UNFOGGED}
+{5001}{HOMMLET_01_Exterior, 711, 521, Flag: DAYNIGHT_XFER, Flag: OUTDOOR, Flag: UNFOGGED}
+{5002}{MOATHOUSE_01_Exterior, 481, 552, Flag: DAYNIGHT_XFER, Flag: OUTDOOR}
+{5003}{MOATHOUSE_02_Tower, 467, 490, Flag: DAYNIGHT_XFER}
+{5004}{MOATHOUSE_03_Interior, 484, 485, Flag: DAYNIGHT_XFER}
+{5005}{MOATHOUSE_04_Dungeon, 428, 406, Flag: DAYNIGHT_XFER}
+{5007}{HOMMLET_03_Inn_Main, 487, 488, Flag: DAYNIGHT_XFER, Flag: UNFOGGED}
+{5110}{TEMPLE_03_House, 467, 526, Flag: DAYNIGHT_XFER, Flag: OUTDOOR}
+{5045}{HOMMLET_42_Village_Elder_Main, 486, 477, Flag: DAYNIGHT_XFER, Flag: UNFOGGED}
+{5062}{TEMPLE_01_Exterior, 487, 548, Movie: 300, Flag: DAYNIGHT_XFER, Flag: OUTDOOR, Flag: UNFOGGED}
+{5064}{TEMPLE_02_Interior, 480, 480, Flag: DAYNIGHT_XFER}
+{5065}{TEMPLE_06_Tower_Interior, 485, 494, Flag: DAYNIGHT_XFER}
+{5107}{CO8_SHOPMAP, 493, 477, Flag: DAYNIGHT_XFER, Flag: UNFOGGED, Flag: BEDREST}
+{5111}{TEMPLE_05_Tower_Exterior, 493, 546, Flag: DAYNIGHT_XFER, Flag: OUTDOOR}

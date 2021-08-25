@@ -1,0 +1,170 @@
+{100}{Prowling} // Conceal, Silent Move
+{101}{Pick Pocket}
+{102}{Disarm Trap}
+{103}{Repair}
+
+
+{105}{CoupDeGrace}
+{106}{prone}
+{107}{helpless}
+{108}{dying}
+{109}{dead}
+{110}{silenced}
+
+{200}{Ranged - Sniper (10)}
+{201}{Ranged - Sniper (11)}
+{202}{Ranged - Sniper (12)}
+{203}{Melee - target testing (16)}
+{204}{Melee - target testing (17)}
+{205}{Coup De Grace - w/ power attack (17)}
+
+
+{500}{You succeed.}
+{501}{You fail.}
+{505}{That is not in need of repair.}
+{510}{You unlock the lock.}
+{511}{You fail to pick the lock.}
+{512}{That has no lock.}
+
+{525}{You cannot pickpocket this creature.}
+
+{550}{Lock successfully picked.}
+{551}{Lock picking failed.}
+
+{560}{Trap successfully disarmed.}
+{561}{Trap disarm failed.}
+
+{580}{best target is 0}
+{581}{best target is 1}
+{582}{best target is 2}
+{583}{best target is 3}
+{584}{best target is 4}
+{585}{best target is 5}
+{586}{best target is 6}
+{587}{best target is 7}
+{588}{best target is 8}
+{589}{best target is 9}
+{590}{best target is 10}
+
+{599}{Revert Strategy}
+{600}{Default}
+{601}{Only Use Potion (1)}
+{602}{Only Use Potion w/ 5 Foot Step (2)}
+{603}{}
+{604}{}
+{605}{}
+{606}{Only Ready vs. Approach (6)}
+{607}{Only Coup De Grace - (7)}
+{608}{Ranged - Sniper (8)}
+{609}{Ranged - Ready vs. Spell (9)}
+{610}{Ranged - Sniper 1 (10)}
+{611}{Ranged - Sniper 2 (11)}
+{612}{Ranged - Sniper 3 (12)}
+{613}{Pet Command: Hold Ground (13)}
+{614}{Melee - Flanker - close (14)}
+{615}{Melee - Flanker - medium (15)}
+{616}{Melee - Flanker - close w/move (16)}
+{617}{Coup De Grace - w/ power attack (17)}
+{618}{Melee - Reach Weapon Default (18)}
+{619}{Melee - Reach Weapon Close (19)}
+{620}{Melee - power attack (20)}
+{621}{Melee - attack helpless (21)}
+{622}{Melee - charge attack (22)}
+{623}{Melee - attack prone (23)}
+{624}{Melee - attack helpless w/ power attack (24)}
+{625}{}
+{626}{Melee - attack prone w/ power attack (26)}
+{627}{Tripper - close (27)}
+{628}{Tripper - medium (28)}
+{629}{Tripper - medium (29)}
+{630}{Tripper - medium (30)}
+{631}{}
+{632}{}
+{633}{}
+{634}{Evasive maneuver (34)}
+{635}{Combat Expertise (35)}
+{636}{Melee - ready vs. spell (36)}
+{637}{Evasive maneuver 2 (37)}
+{638}{Combat Expertise 2 (38)}
+{639}{Only Fireball - auto target (39)}
+{640}{Only Silence - script targeted (40)}
+{641}{Rage - flanker - close (41)}
+{642}{Rage - flanker - close w/move (42)}
+{643}{Rage - reach weapon close (43)}
+{644}{Rage - tripper close (44)}
+{645}{Rage - charge w/power attack (45)}
+{646}{Rage - charge attack (46)}
+{647}{Rage - power attack (47)}
+{648}{}
+{649}{Low IQ pet 1}
+{650}{Low IQ pet 2}
+{651}{Pet Command: Charge vs Spellcaster (51)}
+{652}{Pet Command: Charge vs Spellcaster (52)}
+{653}{Your pet is unsettled by such unnatural foes!}
+
+
+// Detect Messages
+{900}{Evil}
+{901}{Good}
+{903}{Law}
+{904}{Chaos}
+
+{910}{Your prayer is answered.}
+{911}{Boccob hears your prayers.}
+{912}{Corellon Larethian hears your prayers.}
+{913}{Ehlonna hears your prayers.}
+{914}{Erythnul hears your prayers.}
+{915}{Fharlanghn hears your prayers.}
+{916}{Garl Glittergold hears your prayers.}
+{917}{Gruumsh hears your prayers.}
+{918}{Heironeous hears your prayers.}
+{919}{Hextor hears your prayers.}
+{920}{Kord hears your prayers.}
+{921}{Moradin hears your prayers.}
+{922}{Nerull hears your prayers.}
+{923}{Obad-Hai hears your prayers.}
+{924}{Olidammara hears your prayers.}
+{925}{Pelor hears your prayers.}
+{926}{St. Cuthbert hears your prayers.}
+{927}{Vecna hears your prayers.}
+{928}{Wee Jas hears your prayers.}
+{929}{Yondalla hears your prayers.}
+
+// Secret door messages
+{1000}{Hidden object detected!} # until T+ alters that...
+{1001}{Hidden person detected!}
+{1002}{Hidden chest detected!} # obj_t_container
+{1003}{Hidden object detected!} # obj_t_scenery
+{1004}{Hidden object detected!} # obj_t_projectile
+{1005}{Hidden weapon detected!} # obj_t_weapon
+{1006}{Hidden ammo detected!} # obj_t_ammo
+{1007}{Hidden armor detected!} # obj_t_armor
+{1008}{Hidden money detected!} # obj_t_money
+{1009}{Hidden object detected!} # obj_t_food
+{1010}{Hidden scroll detected!} # obj_t_scroll
+{1011}{Hidden key detected!} # obj_t_key
+{1012}{Hidden object detected!} # obj_t_written
+{1013}{Hidden object detected!} # obj_t_generic
+{1014}{Hidden object detected!} # obj_t_pc
+{1015}{Hidden object detected!} # obj_t_npc
+{1016}{Hidden trap detected!} # obj_t_trap
+{1017}{Hidden bag detected!} # obj_t_bag
+
+
+// Pick Pocket Messages
+{1100}{Pick Pocket Succeeded!}
+{1101}{Pick Pocket Failed!}
+{1102}{You have been noticed!}
+{1103}{You have spotted a thief!}
+
+// Spellcraft Messages
+{1200}{Casting spell...}
+{1210}{No plants to manipulate!}
+
+
+// Search Messages
+{1300}{Nothing found...}
+{1301}{Found something...}
+
+// Specials
+{2000}{Fire quenched!}

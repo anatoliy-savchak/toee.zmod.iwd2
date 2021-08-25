@@ -1,0 +1,44 @@
+//
+// ground.mes
+//
+// base names for ground art
+//
+//DAY MAPS are in 0000-0999 bank.  NIGHT MAPS should be found in 1000-1999 bank.  
+//
+//The NIGHT MAPS number should coincide with the end numbers found in the day bank.
+//
+
+//
+// DAY MAPS 0000-0999
+//
+
+{0000}{--TEMP--}
+{0001}{HOMMLET_01_Exterior-day}
+{0003}{HOMMLET_03_Inn_Main}
+{0022}{MOATHOUSE_04_Dungeon}
+{0023}{MOATHOUSE_01_Exterior-day}
+{0024}{MOATHOUSE_03_Interior-day}
+{0025}{MOATHOUSE_02_Tower-day}
+{0076}{HOMMLET_42_Village_Elder_Main-day}
+{0083}{TEMPLE_06_Tower_Interior-Day}
+{0085}{TEMPLE_02_Interior-day}
+{0132}{TEMPLE_01_Exterior}
+{0133}{TEMPLE_03_House}
+{0134}{TEMPLE_05_Tower_Exterior}
+{0138}{MOATHOUSE_05_Exit-day}
+{0149}{CO8_SHOPMAP-day}
+
+{1001}{HOMMLET_01_Exterior-night}
+{1003}{HOMMLET_03_Inn_Main}
+{1022}{MOATHOUSE_04_Dungeon}
+{1023}{MOATHOUSE_01_Exterior-night}
+{1024}{MOATHOUSE_03_Interior-night}
+{1025}{MOATHOUSE_02_Tower-night}
+{1076}{HOMMLET_42_Village_Elder_Main-night}
+{1083}{TEMPLE_06_Tower_Interior-Night}
+{1085}{TEMPLE_02_Interior-night}
+{1132}{TEMPLE_01_Exterior}
+{1134}{TEMPLE_05_Tower_Exterior}
+{1138}{MOATHOUSE_05_Exit-night}
+{1149}{CO8_SHOPMAP-night}
+

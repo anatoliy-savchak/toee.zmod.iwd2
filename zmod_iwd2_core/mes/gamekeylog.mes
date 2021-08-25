@@ -1,0 +1,13 @@
+// Text descriptions of the keys used in the game.
+// For a key with a KeyID of i, the tile will be i, and the description will be i + MAX_KEYS
+// MAX_KEYS = 100
+
+// Titles
+{1}{reserved}
+{2}{Crypt maze key}
+{3}{Crypt burned key}
+
+// Descriptions
+{101}{reserved description}
+{102}{You found this key in Crypt's maze area}
+{103}{You found this key in Crypt's fire pit}

@@ -1,0 +1,12 @@
+General
+
+Color 255 255 255 255
+
+Texture 0 "art/meshes/monsters/umberhulk_revised/UmberHulk_fbe.tga"
+UVType 0 Mesh
+BlendType 0 modulate
+
+Texture 1 "art/meshes/Monsters/umberhulk_revised/UmberHulk_rev_reflect.tga"
+UVType 1 Environment
+BlendType 1 currentalpha
+

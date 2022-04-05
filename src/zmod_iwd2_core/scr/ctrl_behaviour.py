@@ -1,5 +1,5 @@
 import toee, debug, utils_storage, utils_npc_spells, const_toee, utils_tactics, const_proto_weapon, utils_item, const_proto_armor, const_proto_scrolls
-import utils_target_list, utils_npc, tpdp, tpactions, const_proto_potions, const_proto_scrolls, const_proto_list_potions, const_proto_list_scrolls, copy
+import utils_target_list, utils_npc, tpdp, tpactions, copy
 
 def get_ctrl(id):
 	assert isinstance(id, str)
@@ -415,11 +415,12 @@ class CtrlBehaviourAI(CtrlBehaviour):
 				item = npc.item_find_by_proto(proto)
 				if (item): return item
 
-		item = _get_item(npc, best, const_proto_list_potions.PROTOS_POTIONS_HEALING)
-		if (item): return item
+		item = None
+		#item = _get_item(npc, best, const_proto_list_potions.PROTOS_POTIONS_HEALING)
+		#if (item): return item
 
-		if (self.tactics_can_cast_divine_scrolls(npc)):
-			item = _get_item(npc, best, const_proto_list_scrolls.PROTOS_SCROLLS_HEALING)
+		#if (self.tactics_can_cast_divine_scrolls(npc)):
+		#	item = _get_item(npc, best, const_proto_list_scrolls.PROTOS_SCROLLS_HEALING)
 		return item
 
 	def tactics_can_cast_divine_scrolls(self, npc):

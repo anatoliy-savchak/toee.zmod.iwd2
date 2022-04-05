@@ -1,63 +1,47 @@
-from toee import *
-from utilities import *
-from Co8 import *
-from combat_standard_routines import *
-import startup_zmod, utils_storage, debug
+import toee, utils_storage, startup_zmod, utils_obj, const_proto_containers
 
-def san_dialog( attachee, triggerer ):
-	get_Co8_options_from_ini()
-	if (game.global_flags[601] == 1):
-		triggerer.begin_dialog( attachee, 20 )
-	else:
-		triggerer.begin_dialog( attachee, 1 )
-	return SKIP_DEFAULT
+def san_dialog(attachee, triggerer):
+	triggerer.begin_dialog( attachee, 1 )
+	return toee.SKIP_DEFAULT
 
-
-def san_start_combat( attachee, triggerer ):
-	leader = game.party[0]
-	StopCombat(attachee, 0)
-	leader.begin_dialog( attachee, 4000 )
-	return RUN_DEFAULT
-
-
-def intro_movie_setup( attachee, triggerer ):
-	set_intro_slides()
-	return
-
-
-def set_intro_slides():
-	game.moviequeue_add(428)
-	game.moviequeue_add(420)
-	game.moviequeue_add(421)
-	game.moviequeue_add(422)
-	game.moviequeue_add(423)
-	game.moviequeue_add(424)
-	game.moviequeue_add(425)
-	game.moviequeue_add(426)
-	game.moviequeue_add(427)
-	game.moviequeue_add(429)
-	if (game.party_alignment == LAWFUL_GOOD):
-		game.moviequeue_add(1000)
-	if (game.party_alignment == NEUTRAL_GOOD):
-		game.moviequeue_add(1005)
-	if (game.party_alignment == CHAOTIC_GOOD):
-		game.moviequeue_add(1001)
-	if (game.party_alignment == LAWFUL_NEUTRAL):
-		game.moviequeue_add(1007)
-	if (game.party_alignment == TRUE_NEUTRAL):
-		game.moviequeue_add(1004)
-	if (game.party_alignment == CHAOTIC_NEUTRAL):
-		game.moviequeue_add(1008)
-	if (game.party_alignment == LAWFUL_EVIL):
-		game.moviequeue_add(1002)
-	if (game.party_alignment == NEUTRAL_EVIL):
-		game.moviequeue_add(1006)
-	if (game.party_alignment == CHAOTIC_EVIL):
-		game.moviequeue_add(1003)
-	game.moviequeue_play()
-	return RUN_DEFAULT
+def san_first_heartbeat(attachee, triggerer):
+	zmod_startup()
+	place_chests()
+	return toee.RUN_DEFAULT
 
 def zmod_startup():
 	utils_storage.Storage.reset()
 	startup_zmod.zmod_conditions_apply_pc()
+	return
+
+def place_chests():
+	def place_chest(proto, locx, locy, offset_x, offset_y, rot):
+		loc = utils_obj.sec2loc(locx, locy)
+		obj = toee.game.obj_create(proto, loc, offset_x, offset_y)
+		if (obj):
+			obj.rotation = rot
+			obj.move(loc, offset_x, offset_y)
+			box = toee.game.obj_create(const_proto_containers.PROTO_CONTAINER_CHEST_GENERIC, obj.location)
+			box.object_flag_set(toee.OF_DONTDRAW)
+			box.obj_set_int(toee.obj_f_container_inventory_source, 0)
+			obj.substitute_inventory = box
+		return
+
+	# Standard Equipment Chest
+	place_chest(14575, 492, 474, 2.82842779, 2.82842779, 2.3561945)
+
+	# Weapons Chest
+	place_chest(14755, 481, 474, -9.899495, 12.7279215, 2.3561945)
+
+	# Clothing Chest
+	place_chest(14757, 465, 475, -9.899495, -12.7279215, 2.3561945)
+
+	# Scrolls Chest
+	place_chest(14754, 485, 475, 5.65685368, -14.1421356, 3.92699075)
+
+	# Armor Chest
+	place_chest(14756, 471, 488, 7.071068, 4.242642, 5.497787)
+
+	# Supplies Chest
+	place_chest(14753, 485, 483, 12.7279215, 9.899496, 3.926991)
 	return

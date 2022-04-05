@@ -338,8 +338,16 @@ def barter_list(npc, protos):
 		j += 1
 		item = toee.game.obj_create(i, subs.location)
 		item.item_flag_set(toee.OIF_IDENTIFIED)
+
+		item_type = item.type
+		kind = item_type
+		if (item_type == toee.obj_t_armor):
+			kind = get_armor_type(item)
+		elif (item_type == toee.obj_t_ammo):
+			item.obj_set_int(toee.obj_f_ammo_quantity, 10*item.obj_get_int(toee.obj_f_ammo_quantity))
+			#item.obj_set_int(toee.obj_f_item_worth, 10*item.obj_get_int(toee.obj_f_item_worth))
 		#items["{}_{}_{}".format(item.description, i, j)] = i
-		items["{}_{}_{}".format(item.description, i, j)] = item
+		items["{}_{}_{}_{}".format(kind, item.description, i, j)] = item
 		#item.destroy()
 
 	for key in sorted(items):
@@ -417,3 +425,10 @@ def npc_build_items(npc, lines, prefix = ""):
 			lines.append("{}if (item): item.obj_set_int(toee.obj_f_item_quantity, {})".format(prefix, item_quantity))
 
 	return
+
+def get_armor_type(obj):
+	assert isinstance(obj, toee.PyObjHandle)
+	armor_flags = obj.obj_get_int(toee.obj_f_armor_flags)
+	if (armor_flags & toee.ARMOR_TYPE_NONE):
+		return toee.ARMOR_TYPE_NONE
+	return (armor_flags & (toee.ARMOR_TYPE_LIGHT | toee.ARMOR_TYPE_MEDIUM | toee.ARMOR_TYPE_HEAVY))

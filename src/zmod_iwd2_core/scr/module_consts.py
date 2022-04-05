@@ -1,0 +1,1 @@
+MAP_ID_ZMOD_GMD0_DROSKAR_CRUCIBLE = 5011 # {5011}{zmod_gmd0_droskar_crucible, 493, 477}

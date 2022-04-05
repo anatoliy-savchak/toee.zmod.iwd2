@@ -184,12 +184,4 @@ def pc_start(pc):
 		if (additional_proto):
 			utils_item.item_create_in_inventory(proto, pc)
 
-	#RtToEE
-	party_len = len(toee.game.party)
-	adj = 100*(5400)*party_len - pc.money_get()
-	if (adj > 0):
-		print ("OC_START RT")
-		pc.money_adj(adj)
-	total_xp = 4*6000 # 4 pc level 4 (6k)
-	pc.award_experience(total_xp // party_len)
 	return

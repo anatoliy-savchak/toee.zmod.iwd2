@@ -1,7 +1,3 @@
-PROTOS_POTIONS_HEALING = [PROTO_POTION_OF_CURE_LIGHT_WOUNDS \
-	, PROTO_POTION_OF_CURE_MODERATE_WOUNDS \
-	, PROTO_POTION_OF_CURE_SERIOUS_WOUNDS]
-
 # Level 1 Arcane Transmutation
 PROTO_POTION_OF_ENLARGE_PERSON = 8009 # Potion of Enlarge Person. Price: 250, Spell Level: 1, Spell: 'Enlarge' domain_special 1
 PROTO_POTION_OF_REDUCE_PERSON = 8025 # Potion of Reduce Person. Price: 250, Spell Level: 1, Spell: 'Reduce Person' domain_special 1
@@ -64,6 +60,7 @@ PROTO_POTION_OF_GREATER_MAGIC_FANG = 8117 # Potion of Greater Magic Fang. Price:
 PROTO_POTION_OF_HEAL = 8037
 PROTO_POTION_OF_REMOVE_CURSE = 8108
 PROTO_POTION_OF_RESTORATION = 8109
+
 
 # todo
 # remove fear

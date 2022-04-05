@@ -193,6 +193,40 @@
   "SkillPointsRemain": 0,
   "Class2": 5,
   "ClassMsk": 16,
+  "Items": [
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 4,
+      "Item": {
+        "flags": 0,
+        "Filename": "001D12C",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_QUICK1",
+      "SlotIndex": 22,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "MISC07",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 19,
+        "Charges2": 41,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gold"
+    }
+  ],
   "LongName": {
     "Text": "Ogre",
     "Flags": "Standard",

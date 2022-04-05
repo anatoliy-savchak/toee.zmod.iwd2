@@ -274,6 +274,104 @@
   "SkillPointsRemain": 0,
   "Class2": 5,
   "ClassMsk": 1024,
+  "Items": [
+    {
+      "SlotCode": "SLOT_ARMOR",
+      "SlotIndex": 1,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "00ROBE07",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Robe of the Evil Archmagi"
+    },
+    {
+      "SlotCode": "SLOT_BELT",
+      "SlotIndex": 7,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "00BELT02",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Golden Girdle"
+    },
+    {
+      "SlotCode": "SLOT_BOOTS",
+      "SlotIndex": 8,
+      "SlotItemIndex": 1,
+      "Item": {
+        "flags": 0,
+        "Filename": "00BOOT05",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Boots of Grounding"
+    },
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 4,
+      "Item": {
+        "flags": 0,
+        "Filename": "00STAF96",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Quarterstaff +5"
+    },
+    {
+      "SlotCode": "SLOT_CLOAK",
+      "SlotIndex": 21,
+      "SlotItemIndex": 3,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CLCK03",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Cloak of Displacement"
+    },
+    {
+      "SlotCode": "SLOT_QUICK1",
+      "SlotIndex": 22,
+      "SlotItemIndex": 5,
+      "Item": {
+        "flags": 0,
+        "Filename": "RT15_R",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    }
+  ],
   "LongName": {
     "Text": "Vese Nejj",
     "Flags": "Standard",

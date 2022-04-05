@@ -191,6 +191,88 @@
   "SkillPointsRemain": 0,
   "Class2": 5,
   "ClassMsk": 16,
+  "Items": [
+    {
+      "SlotCode": "SLOT_HELMET",
+      "SlotIndex": 0,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "00HELM01",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Helmet"
+    },
+    {
+      "SlotCode": "SLOT_ARMOR",
+      "SlotIndex": 1,
+      "SlotItemIndex": 1,
+      "Item": {
+        "flags": 0,
+        "Filename": "00LEAT01",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Leather Armor"
+    },
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "00BOWL01",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Longbow"
+    },
+    {
+      "SlotCode": "SLOT_WEAPON2",
+      "SlotIndex": 11,
+      "SlotItemIndex": 4,
+      "Item": {
+        "flags": 0,
+        "Filename": "00DAGG01",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Dagger"
+    },
+    {
+      "SlotCode": "SLOT_AMMO1",
+      "SlotIndex": 17,
+      "SlotItemIndex": 3,
+      "Item": {
+        "flags": 0,
+        "Filename": "00AROW01",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 20,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Arrows"
+    }
+  ],
   "LongName": {
     "Text": "Isherwood",
     "Flags": "Standard",

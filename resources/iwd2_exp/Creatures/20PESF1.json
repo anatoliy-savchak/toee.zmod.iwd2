@@ -191,6 +191,38 @@
   "SkillPointsRemain": 0,
   "Class2": 5,
   "ClassMsk": 16,
+  "Items": [
+    {
+      "SlotCode": "SLOT_QUICK2",
+      "SlotIndex": 23,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "MISC07",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 5,
+        "Charges2": 10,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gold"
+    },
+    {
+      "SlotCode": "SLOT_SELECTED_WEAPON",
+      "SlotIndex": 50,
+      "SlotItemIndex": -1,
+      "Item": null,
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_SELECTED_WEAPON_ABILITY",
+      "SlotIndex": 51,
+      "SlotItemIndex": 0,
+      "Item": null,
+      "ItemNameEval": null
+    }
+  ],
   "LongName": {
     "Text": "Peasant",
     "Flags": "Standard",

@@ -316,6 +316,40 @@
   "SkillPointsRemain": 0,
   "Class2": 5,
   "ClassMsk": 1024,
+  "Items": [
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "00STAF98",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Quarterstaff +3"
+    },
+    {
+      "SlotCode": "SLOT_QUICK1",
+      "SlotIndex": 22,
+      "SlotItemIndex": 1,
+      "Item": {
+        "flags": 0,
+        "Filename": "RT15_M",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    }
+  ],
   "LongName": {
     "Text": "Tasha",
     "Flags": "Standard",

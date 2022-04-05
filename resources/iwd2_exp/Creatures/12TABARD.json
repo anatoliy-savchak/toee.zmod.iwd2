@@ -191,6 +191,88 @@
   "SkillPointsRemain": 0,
   "Class2": 5,
   "ClassMsk": 16,
+  "Items": [
+    {
+      "SlotCode": "SLOT_HELMET",
+      "SlotIndex": 0,
+      "SlotItemIndex": 1,
+      "Item": {
+        "flags": 0,
+        "Filename": "00HELM01",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Helmet"
+    },
+    {
+      "SlotCode": "SLOT_ARMOR",
+      "SlotIndex": 1,
+      "SlotItemIndex": 3,
+      "Item": {
+        "flags": 0,
+        "Filename": "00LEAT04",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Studded Leather Armor"
+    },
+    {
+      "SlotCode": "SLOT_WEAPON2",
+      "SlotIndex": 11,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "00SPER01",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Spear"
+    },
+    {
+      "SlotCode": "SLOT_QUICK1",
+      "SlotIndex": 22,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "00DAGG01",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Dagger"
+    },
+    {
+      "SlotCode": "SLOT_QUICK2",
+      "SlotIndex": 23,
+      "SlotItemIndex": 4,
+      "Item": {
+        "flags": 0,
+        "Filename": "MISC07",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 2,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gold"
+    }
+  ],
   "LongName": {
     "Text": "Tabard Mooncalf",
     "Flags": "Standard",

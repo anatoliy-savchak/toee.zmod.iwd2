@@ -209,6 +209,120 @@
   "SkillPointsRemain": 0,
   "Class2": 5,
   "ClassMsk": 16,
+  "Items": [
+    {
+      "SlotCode": "SLOT_HELMET",
+      "SlotIndex": 0,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CIHELA",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Helmet"
+    },
+    {
+      "SlotCode": "SLOT_ARMOR",
+      "SlotIndex": 1,
+      "SlotItemIndex": 8,
+      "Item": {
+        "flags": 0,
+        "Filename": "00RTHF04",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_GAUNTLETS",
+      "SlotIndex": 3,
+      "SlotItemIndex": 4,
+      "Item": {
+        "flags": 0,
+        "Filename": "00BRAC10",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gauntlets of Weapon Expertise"
+    },
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 6,
+      "Item": {
+        "flags": 0,
+        "Filename": "00SWDC87",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Scimitar of Acid +2"
+    },
+    {
+      "SlotCode": "SLOT_SHIELD1",
+      "SlotIndex": 10,
+      "SlotItemIndex": 7,
+      "Item": {
+        "flags": 0,
+        "Filename": "00SWDC97",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Scimitar +3"
+    },
+    {
+      "SlotCode": "SLOT_QUICK1",
+      "SlotIndex": 22,
+      "SlotItemIndex": 5,
+      "Item": {
+        "flags": 0,
+        "Filename": "MISC07",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 15,
+        "Charges2": 100,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gold"
+    },
+    {
+      "SlotCode": "SLOT_INV4",
+      "SlotIndex": 28,
+      "SlotItemIndex": 3,
+      "Item": {
+        "flags": 0,
+        "Filename": "00RG17",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    }
+  ],
   "LongName": {
     "Text": "T'rsosl Malign",
     "Flags": "Standard",

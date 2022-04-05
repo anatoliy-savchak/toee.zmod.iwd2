@@ -321,6 +321,136 @@
   "SkillPointsRemain": 0,
   "Class2": 11,
   "ClassMsk": 1153,
+  "Items": [
+    {
+      "SlotCode": "SLOT_GAUNTLETS",
+      "SlotIndex": 3,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "00BRAC02",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Bracers of Defense +2"
+    },
+    {
+      "SlotCode": "SLOT_RING_LEFT",
+      "SlotIndex": 4,
+      "SlotItemIndex": 1,
+      "Item": {
+        "flags": 0,
+        "Filename": "00RING73",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Shield Ring"
+    },
+    {
+      "SlotCode": "SLOT_AMULET",
+      "SlotIndex": 6,
+      "SlotItemIndex": 6,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CIHARG",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 7,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CWSWDL",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Greatsword +1"
+    },
+    {
+      "SlotCode": "SLOT_QUICK1",
+      "SlotIndex": 22,
+      "SlotItemIndex": 3,
+      "Item": {
+        "flags": 0,
+        "Filename": "00POTN04",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 3,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Potion of Healing"
+    },
+    {
+      "SlotCode": "SLOT_QUICK2",
+      "SlotIndex": 23,
+      "SlotItemIndex": 4,
+      "Item": {
+        "flags": 0,
+        "Filename": "00POTN05",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 2,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Potion of Extra Healing"
+    },
+    {
+      "SlotCode": "SLOT_INV4",
+      "SlotIndex": 28,
+      "SlotItemIndex": 5,
+      "Item": {
+        "flags": 0,
+        "Filename": "51KEYRG",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Raven Gate Key"
+    },
+    {
+      "SlotCode": "SLOT_INV6",
+      "SlotIndex": 30,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "MISC07",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 50,
+        "Charges2": 100,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gold"
+    }
+  ],
   "LongName": {
     "Text": "The Beastlord Harshom",
     "Flags": "Standard",

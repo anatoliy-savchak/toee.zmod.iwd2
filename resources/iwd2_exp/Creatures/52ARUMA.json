@@ -193,6 +193,40 @@
   "SkillPointsRemain": 0,
   "Class2": 6,
   "ClassMsk": 32,
+  "Items": [
+    {
+      "SlotCode": "SLOT_INV4",
+      "SlotIndex": 28,
+      "SlotItemIndex": 1,
+      "Item": {
+        "flags": 0,
+        "Filename": "52KEYRT",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Raven Tomb Key"
+    },
+    {
+      "SlotCode": "SLOT_INV7",
+      "SlotIndex": 31,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "RT11_V",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 1,
+        "Charges3": 1,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    }
+  ],
   "LongName": {
     "Text": "Aruma Blane",
     "Flags": "Standard",

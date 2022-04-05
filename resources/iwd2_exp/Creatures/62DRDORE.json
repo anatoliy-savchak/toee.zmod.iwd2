@@ -193,6 +193,72 @@
   "SkillPointsRemain": 0,
   "Class2": 5,
   "ClassMsk": 16,
+  "Items": [
+    {
+      "SlotCode": "SLOT_RING_LEFT",
+      "SlotIndex": 4,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CIDEAD",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Ring"
+    },
+    {
+      "SlotCode": "SLOT_AMULET",
+      "SlotIndex": 6,
+      "SlotItemIndex": 6,
+      "Item": {
+        "flags": 0,
+        "Filename": "62CIFEY1",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 5,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CWAXEC",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Battleaxe +1"
+    },
+    {
+      "SlotCode": "SLOT_INV4",
+      "SlotIndex": 28,
+      "SlotItemIndex": 7,
+      "Item": {
+        "flags": 0,
+        "Filename": "00RG17",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    }
+  ],
   "LongName": {
     "Text": "Orc Dread Warrior",
     "Flags": "Standard",

@@ -190,6 +190,88 @@
   "SkillPointsRemain": 0,
   "Class2": 6,
   "ClassMsk": 32,
+  "Items": [
+    {
+      "SlotCode": "SLOT_GAUNTLETS",
+      "SlotIndex": 3,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "00BRAC04",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Bracers of Defense +4"
+    },
+    {
+      "SlotCode": "SLOT_RING_LEFT",
+      "SlotIndex": 4,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "00RING98",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Chameleon Ring"
+    },
+    {
+      "SlotCode": "SLOT_RING_RIGHT",
+      "SlotIndex": 5,
+      "SlotItemIndex": 1,
+      "Item": {
+        "flags": 0,
+        "Filename": "00RING99",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Ring of the Warrior"
+    },
+    {
+      "SlotCode": "SLOT_BOOTS",
+      "SlotIndex": 8,
+      "SlotItemIndex": 3,
+      "Item": {
+        "flags": 0,
+        "Filename": "00BOOT01",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Boots of Speed"
+    },
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 4,
+      "Item": {
+        "flags": 0,
+        "Filename": "001D20C",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    }
+  ],
   "LongName": {
     "Text": "Phaen Xyltin",
     "Flags": "Standard",

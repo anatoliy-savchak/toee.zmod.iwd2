@@ -224,6 +224,136 @@
   "SkillPointsRemain": 0,
   "Class2": 5,
   "ClassMsk": 1042,
+  "Items": [
+    {
+      "SlotCode": "SLOT_RING_RIGHT",
+      "SlotIndex": 5,
+      "SlotItemIndex": 19,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CIDRG1",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 15,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CWSHE0",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Shortbow"
+    },
+    {
+      "SlotCode": "SLOT_WEAPON2",
+      "SlotIndex": 11,
+      "SlotItemIndex": 10,
+      "Item": {
+        "flags": 0,
+        "Filename": "002D8S",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_AMMO1",
+      "SlotIndex": 17,
+      "SlotItemIndex": 16,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CWSHE2",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 100,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_INV4",
+      "SlotIndex": 28,
+      "SlotItemIndex": 14,
+      "Item": {
+        "flags": 0,
+        "Filename": "RT15_R",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_INV5",
+      "SlotIndex": 29,
+      "SlotItemIndex": 12,
+      "Item": {
+        "flags": 0,
+        "Filename": "00RG13",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_INV6",
+      "SlotIndex": 30,
+      "SlotItemIndex": 13,
+      "Item": {
+        "flags": 0,
+        "Filename": "MISC07",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 5,
+        "Charges2": 150,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gold"
+    },
+    {
+      "SlotCode": "SLOT_INV7",
+      "SlotIndex": 31,
+      "SlotItemIndex": 18,
+      "Item": {
+        "flags": 0,
+        "Filename": "RT15_V",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    }
+  ],
   "LongName": {
     "Text": "Nalakora",
     "Flags": "Standard",

@@ -309,6 +309,152 @@
   "SkillPointsRemain": 0,
   "Class2": 3,
   "ClassMsk": 4,
+  "Items": [
+    {
+      "SlotCode": "SLOT_ARMOR",
+      "SlotIndex": 1,
+      "SlotItemIndex": 6,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CIARMC",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Chainmail Armor"
+    },
+    {
+      "SlotCode": "SLOT_GAUNTLETS",
+      "SlotIndex": 3,
+      "SlotItemIndex": 1,
+      "Item": {
+        "flags": 0,
+        "Filename": "00BRAC10",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gauntlets of Weapon Expertise"
+    },
+    {
+      "SlotCode": "SLOT_RING_LEFT",
+      "SlotIndex": 4,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "00RING94",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Ring of Frost Resistance"
+    },
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "00FLAL93",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Flail +3"
+    },
+    {
+      "SlotCode": "SLOT_SHIELD1",
+      "SlotIndex": 10,
+      "SlotItemIndex": 7,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CISHLD",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Tower Shield"
+    },
+    {
+      "SlotCode": "SLOT_QUICK1",
+      "SlotIndex": 22,
+      "SlotItemIndex": 3,
+      "Item": {
+        "flags": 0,
+        "Filename": "00GEM23",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 2,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Black Opal"
+    },
+    {
+      "SlotCode": "SLOT_QUICK2",
+      "SlotIndex": 23,
+      "SlotItemIndex": 4,
+      "Item": {
+        "flags": 0,
+        "Filename": "00POTN23",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Potion of Frost Giant Strength"
+    },
+    {
+      "SlotCode": "SLOT_QUICK3",
+      "SlotIndex": 24,
+      "SlotItemIndex": 5,
+      "Item": {
+        "flags": 0,
+        "Filename": "SPPR714Z",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Symbol of Pain"
+    },
+    {
+      "SlotCode": "SLOT_INV1",
+      "SlotIndex": 25,
+      "SlotItemIndex": 8,
+      "Item": {
+        "flags": 0,
+        "Filename": "MISC07",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 40,
+        "Charges2": 80,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gold"
+    }
+  ],
   "LongName": {
     "Text": "Viizra Arabani",
     "Flags": "Standard",

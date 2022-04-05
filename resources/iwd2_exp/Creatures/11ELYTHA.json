@@ -246,6 +246,72 @@
   "SkillPointsRemain": 0,
   "Class2": 11,
   "ClassMsk": 1024,
+  "Items": [
+    {
+      "SlotCode": "SLOT_RING_LEFT",
+      "SlotIndex": 4,
+      "SlotItemIndex": 3,
+      "Item": {
+        "flags": 0,
+        "Filename": "00RING04",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gold Ring"
+    },
+    {
+      "SlotCode": "SLOT_QUICK1",
+      "SlotIndex": 22,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "00GEM04",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Sunstone Gem"
+    },
+    {
+      "SlotCode": "SLOT_QUICK2",
+      "SlotIndex": 23,
+      "SlotItemIndex": 1,
+      "Item": {
+        "flags": 0,
+        "Filename": "00DAGG02",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Masterwork Dagger"
+    },
+    {
+      "SlotCode": "SLOT_QUICK3",
+      "SlotIndex": 24,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "SPWI102Z",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 1,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Mage Armor"
+    }
+  ],
   "LongName": {
     "Text": "Elytharra",
     "Flags": "Standard",

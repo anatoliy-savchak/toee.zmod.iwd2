@@ -252,6 +252,168 @@
   "SkillPointsRemain": 0,
   "Class2": 3,
   "ClassMsk": 4,
+  "Items": [
+    {
+      "SlotCode": "SLOT_ARMOR",
+      "SlotIndex": 1,
+      "SlotItemIndex": 7,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CIARMC",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Chainmail Armor"
+    },
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 8,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CWSLG1",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Sling "
+    },
+    {
+      "SlotCode": "SLOT_SHIELD1",
+      "SlotIndex": 10,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CISHLA",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Buckler"
+    },
+    {
+      "SlotCode": "SLOT_WEAPON2",
+      "SlotIndex": 11,
+      "SlotItemIndex": 3,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CWBLUF",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Mace +1"
+    },
+    {
+      "SlotCode": "SLOT_SHIELD2",
+      "SlotIndex": 12,
+      "SlotItemIndex": 9,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CISHLA",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Buckler"
+    },
+    {
+      "SlotCode": "SLOT_AMMO1",
+      "SlotIndex": 17,
+      "SlotItemIndex": 5,
+      "Item": {
+        "flags": 0,
+        "Filename": "00BULL02",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 5,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Bullet +1"
+    },
+    {
+      "SlotCode": "SLOT_AMMO2",
+      "SlotIndex": 18,
+      "SlotItemIndex": 6,
+      "Item": {
+        "flags": 0,
+        "Filename": "RAMO_01",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 5,
+        "Charges2": 5,
+        "Charges3": 5,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_QUICK1",
+      "SlotIndex": 22,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "MISC07",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 44,
+        "Charges2": 85,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gold"
+    },
+    {
+      "SlotCode": "SLOT_QUICK2",
+      "SlotIndex": 23,
+      "SlotItemIndex": 1,
+      "Item": {
+        "flags": 0,
+        "Filename": "RT07_L",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 1,
+        "Charges3": 1,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_QUICK3",
+      "SlotIndex": 24,
+      "SlotItemIndex": 4,
+      "Item": {
+        "flags": 0,
+        "Filename": "00POTN03",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 2,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Elixir of Health"
+    }
+  ],
   "LongName": {
     "Text": "Aurilite Stormsister",
     "Flags": "Standard",

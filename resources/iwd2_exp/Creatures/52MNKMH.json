@@ -187,6 +187,24 @@
   "SkillPointsRemain": 0,
   "Class2": 6,
   "ClassMsk": 32,
+  "Items": [
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "RAMO_MK",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 20,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    }
+  ],
   "LongName": {
     "Text": "Monk",
     "Flags": "Standard",

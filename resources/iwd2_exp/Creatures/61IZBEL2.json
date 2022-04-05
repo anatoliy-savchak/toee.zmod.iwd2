@@ -1101,6 +1101,168 @@
   "SkillPointsRemain": 0,
   "Class2": 10,
   "ClassMsk": 512,
+  "Items": [
+    {
+      "SlotCode": "SLOT_RING_LEFT",
+      "SlotIndex": 4,
+      "SlotItemIndex": 7,
+      "Item": {
+        "flags": 0,
+        "Filename": "41ORIA",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_RING_RIGHT",
+      "SlotIndex": 5,
+      "SlotItemIndex": 8,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CIRNG1",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_AMULET",
+      "SlotIndex": 6,
+      "SlotItemIndex": 6,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CISEE2",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_BOOTS",
+      "SlotIndex": 8,
+      "SlotItemIndex": 9,
+      "Item": {
+        "flags": 0,
+        "Filename": "00BOOT03",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Boots of the North"
+    },
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "00SWDC96",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Scimitar +4"
+    },
+    {
+      "SlotCode": "SLOT_INV3",
+      "SlotIndex": 27,
+      "SlotItemIndex": 5,
+      "Item": {
+        "flags": 0,
+        "Filename": "MISC07",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 83,
+        "Charges2": 165,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gold"
+    },
+    {
+      "SlotCode": "SLOT_INV4",
+      "SlotIndex": 28,
+      "SlotItemIndex": 4,
+      "Item": {
+        "flags": 0,
+        "Filename": "RT13_R",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 1,
+        "Charges3": 1,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_INV5",
+      "SlotIndex": 29,
+      "SlotItemIndex": 3,
+      "Item": {
+        "flags": 0,
+        "Filename": "SPWI711Z",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Suffocate"
+    },
+    {
+      "SlotCode": "SLOT_INV6",
+      "SlotIndex": 30,
+      "SlotItemIndex": 1,
+      "Item": {
+        "flags": 0,
+        "Filename": "00WAND36",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 50,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Hold Person Wand"
+    },
+    {
+      "SlotCode": "SLOT_INV7",
+      "SlotIndex": 31,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "00GEM01",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Fire Agate Gem"
+    }
+  ],
   "LongName": {
     "Text": "High Sorceress Izbelah",
     "Flags": "Standard",

@@ -178,6 +178,24 @@
   "SkillPointsRemain": 0,
   "Class2": 11,
   "ClassMsk": 1040,
+  "Items": [
+    {
+      "SlotCode": "SLOT_INV4",
+      "SlotIndex": 28,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "11GENGLE",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Garradun's Letter"
+    }
+  ],
   "LongName": {
     "Text": "Garradun Tanner",
     "Flags": "Standard",

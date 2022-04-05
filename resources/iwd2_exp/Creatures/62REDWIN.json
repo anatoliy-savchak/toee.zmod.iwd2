@@ -334,6 +334,56 @@
   "SkillPointsRemain": 0,
   "Class2": 11,
   "ClassMsk": 1024,
+  "Items": [
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 20,
+      "Item": {
+        "flags": 0,
+        "Filename": "00CWSTAB",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Quarterstaff +1"
+    },
+    {
+      "SlotCode": "SLOT_INV4",
+      "SlotIndex": 28,
+      "SlotItemIndex": 17,
+      "Item": {
+        "flags": 0,
+        "Filename": "MISC07",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 5,
+        "Charges2": 200,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Gold"
+    },
+    {
+      "SlotCode": "SLOT_INV5",
+      "SlotIndex": 29,
+      "SlotItemIndex": 18,
+      "Item": {
+        "flags": 0,
+        "Filename": "00RG10",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    }
+  ],
   "LongName": {
     "Text": "Red Wizard ",
     "Flags": "Standard",

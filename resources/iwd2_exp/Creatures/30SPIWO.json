@@ -192,6 +192,56 @@
   "SkillPointsRemain": 0,
   "Class2": 5,
   "ClassMsk": 16,
+  "Items": [
+    {
+      "SlotCode": "SLOT_BOOTS",
+      "SlotIndex": 8,
+      "SlotItemIndex": 2,
+      "Item": {
+        "flags": 0,
+        "Filename": "10CICAT1",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Boots of Speed"
+    },
+    {
+      "SlotCode": "SLOT_WEAPON1",
+      "SlotIndex": 9,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "001D10P",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_INV7",
+      "SlotIndex": 31,
+      "SlotItemIndex": 1,
+      "Item": {
+        "flags": 0,
+        "Filename": "30WSPIDR",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 0,
+        "Charges2": 0,
+        "Charges3": 0,
+        "Flags": 0
+      },
+      "ItemNameEval": "Wooly Spider Body"
+    }
+  ],
   "LongName": {
     "Text": "Wooly Spider",
     "Flags": "Standard",

@@ -191,6 +191,22 @@
   "SkillPointsRemain": 0,
   "Class2": 5,
   "ClassMsk": 16,
+  "Items": [
+    {
+      "SlotCode": "SLOT_SELECTED_WEAPON",
+      "SlotIndex": 50,
+      "SlotItemIndex": -1,
+      "Item": null,
+      "ItemNameEval": null
+    },
+    {
+      "SlotCode": "SLOT_SELECTED_WEAPON_ABILITY",
+      "SlotIndex": 51,
+      "SlotItemIndex": 0,
+      "Item": null,
+      "ItemNameEval": null
+    }
+  ],
   "LongName": {
     "Text": "Daku",
     "Flags": "Standard",

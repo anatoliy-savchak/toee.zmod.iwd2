@@ -188,6 +188,24 @@
   "SkillPointsRemain": 0,
   "Class2": 9,
   "ClassMsk": 256,
+  "Items": [
+    {
+      "SlotCode": "SLOT_INV7",
+      "SlotIndex": 31,
+      "SlotItemIndex": 0,
+      "Item": {
+        "flags": 0,
+        "Filename": "RT10_M",
+        "ExpiryHour": 0,
+        "ExpiryValue": 0,
+        "Charges1": 1,
+        "Charges2": 1,
+        "Charges3": 1,
+        "Flags": 0
+      },
+      "ItemNameEval": null
+    }
+  ],
   "LongName": {
     "Text": "Ven",
     "Flags": "Standard",

@@ -222,17 +222,17 @@
   "Class2": 5,
   "ClassMsk": 1042,
   "LongName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Glabrezu Guard",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 19472
   },
   "ShortName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Glabrezu Guard",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 19473
@@ -252,6 +252,6 @@
   "DeathVariable3": "SH_Slain_GlabS1",
   "Checksum": null,
   "Filename": "63GLABS1.Cre",
-  "FileType": 1009,
+  "FileType": "Cre",
   "OriginalFile": null
 }

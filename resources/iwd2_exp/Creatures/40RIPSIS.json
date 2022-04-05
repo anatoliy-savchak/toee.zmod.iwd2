@@ -193,16 +193,16 @@
   "ClassMsk": 16,
   "LongName": {
     "Text": null,
-    "Flags": 0,
+    "Flags": "NoMessageData",
     "Sound": null,
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": -1
   },
   "ShortName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Girl",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 9407
@@ -222,6 +222,6 @@
   "DeathVariable3": "",
   "Checksum": null,
   "Filename": "40RIPSIS.Cre",
-  "FileType": 1009,
+  "FileType": "Cre",
   "OriginalFile": null
 }

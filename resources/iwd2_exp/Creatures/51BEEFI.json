@@ -177,17 +177,17 @@
   "Class2": 5,
   "ClassMsk": 16,
   "LongName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Fire Beetle",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 773
   },
   "ShortName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Fire Beetle",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 13
@@ -207,6 +207,6 @@
   "DeathVariable3": "5101_05_BEETLE_DEAD",
   "Checksum": null,
   "Filename": "51BEEFI.Cre",
-  "FileType": 1009,
+  "FileType": "Cre",
   "OriginalFile": null
 }

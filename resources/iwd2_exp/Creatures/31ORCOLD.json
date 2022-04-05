@@ -203,17 +203,17 @@
   "Class2": 5,
   "ClassMsk": 48,
   "LongName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Old Orc",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 1688
   },
   "ShortName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Old Orc",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 1689
@@ -233,6 +233,6 @@
   "DeathVariable3": "",
   "Checksum": null,
   "Filename": "31ORCOLD.Cre",
-  "FileType": 1009,
+  "FileType": "Cre",
   "OriginalFile": null
 }

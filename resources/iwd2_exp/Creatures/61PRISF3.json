@@ -192,17 +192,17 @@
   "Class2": 5,
   "ClassMsk": 16,
   "LongName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Prisoner",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 10710
   },
   "ShortName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Prisoner",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 10711
@@ -222,6 +222,6 @@
   "DeathVariable3": "",
   "Checksum": null,
   "Filename": "61PRISF3.Cre",
-  "FileType": 1009,
+  "FileType": "Cre",
   "OriginalFile": null
 }

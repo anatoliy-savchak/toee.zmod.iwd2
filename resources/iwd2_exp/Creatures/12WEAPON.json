@@ -192,17 +192,17 @@
   "Class2": 5,
   "ClassMsk": 16,
   "LongName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Weapon Instructor",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 15056
   },
   "ShortName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Weapon Instructor",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 15057
@@ -222,6 +222,6 @@
   "DeathVariable3": "12TarSol",
   "Checksum": null,
   "Filename": "12WEAPON.Cre",
-  "FileType": 1009,
+  "FileType": "Cre",
   "OriginalFile": null
 }

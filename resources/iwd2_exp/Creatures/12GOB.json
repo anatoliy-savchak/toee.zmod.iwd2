@@ -192,17 +192,17 @@
   "Class2": 5,
   "ClassMsk": 16,
   "LongName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Goblin",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 30783
   },
   "ShortName": {
-    "Text": null,
-    "Flags": 0,
-    "Sound": null,
+    "Text": "Goblin",
+    "Flags": "Standard",
+    "Sound": "",
     "VolumeVariance": 0,
     "PitchVariance": 0,
     "Strref": 15
@@ -222,6 +222,6 @@
   "DeathVariable3": "1200_GOB_REQUEST:1200_GOB_DEAD",
   "Checksum": null,
   "Filename": "12GOB.Cre",
-  "FileType": 1009,
+  "FileType": "Cre",
   "OriginalFile": null
 }

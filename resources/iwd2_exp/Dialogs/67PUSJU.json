@@ -1,0 +1,147 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Wut yu want?!  No bothuh Pustule!  Go bothuh Pustule's kin!  Him like talk!  Him talk all da time!  Him weird!  Yu go NOW!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23105
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Yu bak?!  Wut, yu no undastand Pustule?  Yu need Pustule slap yur big hed?!  Go 'way!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27321
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "WUT YU WANT FROM PUSTULE?!  Yu know, yu dum as lemuh dropping.  Pustule pretend yu lemuh dropping now. Pustule step ovuh lemuh dropping, not get fut durty.  ::sniff::  Yu stink like lemuh dropping, tu.  Yu gone bad.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28497
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Yu bak?!  Wut, yu no undastand Pustule?  Yu need Pustule slap yur big hed?!  Go 'way!  Yu go tahk weerd Harcourt!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28498
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": 3,
+      "Index": 3
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"SH_Pustule_Pissed\",\"GLOBAL\", 1)  ",
+    "NumTimesTalkedTo(0)",
+    "Global(\"SH_Pustule_irked\",\"GLOBAL\", 1)",
+    "Global(\"SH_Pustule_Ignore\",\"GLOBAL\", 1)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "SetGlobal(\"SH_Pustule_irked\",\"GLOBAL\", 1)",
+    "SetGlobal(\"SH_Pustule_Pissed\",\"GLOBAL\", 1)",
+    "SetGlobal(\"SH_Pustule_Ignore\",\"GLOBAL\", 1)"
+  ],
+  "Checksum": null,
+  "Filename": "67PUSJU.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 23105
+}

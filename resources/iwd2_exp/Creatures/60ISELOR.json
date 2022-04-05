@@ -1,0 +1,341 @@
+{
+  "Feats": [
+    "Armor proficiency",
+    "Combat casting",
+    "Martial large sword",
+    "Martial polearm",
+    "Shield proficiency",
+    "Simple mace",
+    "Simple missile",
+    "Simple quarterstaff",
+    "Simple small blade"
+  ],
+  "Spells": {
+    "DRD": {
+      "1": [
+        {
+          "SpellName": "Sunscorch",
+          "Memorized": 2,
+          "Remaining": 2
+        },
+        {
+          "SpellName": "Entangle",
+          "Memorized": 2,
+          "Remaining": 2
+        },
+        {
+          "SpellName": "Cure Light Wounds",
+          "Memorized": 3,
+          "Remaining": 3
+        }
+      ],
+      "2": [
+        {
+          "SpellName": "Cure Moderate Wounds",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Barkskin",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Beast Claw",
+          "Memorized": 2,
+          "Remaining": 2
+        }
+      ],
+      "3": [
+        {
+          "SpellName": "Storm Shell",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Mold Touch",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Moonblade",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Call Lightning",
+          "Memorized": 1,
+          "Remaining": 1
+        }
+      ],
+      "4": [
+        {
+          "SpellName": "Giant Vermin",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Protection from Lightning",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Thorn Spray",
+          "Memorized": 3,
+          "Remaining": 3
+        }
+      ],
+      "5": [
+        {
+          "SpellName": "Animal Rage",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Insect Plague",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Flame Strike",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Static Charge",
+          "Memorized": 3,
+          "Remaining": 3
+        }
+      ],
+      "6": [
+        {
+          "SpellName": "Sol's Searing Orb",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Summon Nature's Ally VI",
+          "Memorized": 1,
+          "Remaining": 1
+        }
+      ],
+      "7": [
+        {
+          "SpellName": "Tremor",
+          "Memorized": 1,
+          "Remaining": 1
+        }
+      ]
+    }
+  },
+  "flags": 8192,
+  "XPReward": 5000,
+  "PowerLevel": 15,
+  "Gold": 40,
+  "StatusFlags": 0,
+  "CurrentHP": 85,
+  "MaximumHP": 85,
+  "Animation": 24576,
+  "Unknown": 0,
+  "MetalColourIndex": 30,
+  "MinorColourIndex": 38,
+  "MajorColourIndex": 41,
+  "SkinColourIndex": 12,
+  "LeatherColourIndex": 22,
+  "ArmorColourIndex": 32,
+  "HairColourIndex": 3,
+  "EffVersion": 0,
+  "Reputation": 0,
+  "HideInShadows": 0,
+  "ArmorClassNatural": 10,
+  "ArmorClassEffective": 0,
+  "CrushingModifuer": 0,
+  "MissileModifier": 0,
+  "PiercingModifier": 0,
+  "SlashingModifier": 0,
+  "Thac0": 0,
+  "NumberOfAttacks": 0,
+  "SaveVsDeath": 9,
+  "SaveVsWands": 5,
+  "SaveVsPolymorph": 9,
+  "SaveVsBreath": 0,
+  "SaveVsSpells": 0,
+  "FireResistance": 0,
+  "ColdResistance": 0,
+  "ElectricityResistance": 0,
+  "AcidResistance": 0,
+  "MagicResistance": 0,
+  "MagicFireResistance": 0,
+  "MagicColdResistance": 0,
+  "SlashingResistance": 0,
+  "CrushingResistance": 0,
+  "PiercingResistance": 0,
+  "MissileResistance": 0,
+  "Lore": 0,
+  "LockPicking": 0,
+  "Stealth": 0,
+  "FindTraps": 0,
+  "PickPockets": 0,
+  "Fatigue": 0,
+  "Intoxication": 0,
+  "Luck": 0,
+  "TurnUndeadLevel": 0,
+  "Tracking": 0,
+  "Sex": 0,
+  "Strength": 15,
+  "StrengthBonus": 0,
+  "Intelligence": 13,
+  "Wisdom": 18,
+  "Dexterity": 12,
+  "Constitution": 15,
+  "Charisma": 17,
+  "Morale": 20,
+  "MoraleBreak": 0,
+  "MoraleRecoveryTime": 1,
+  "Kit": 0,
+  "EnemyAlly": 128,
+  "General": 0,
+  "Race": 3,
+  "Class": 4,
+  "Specific": 0,
+  "Gender": 1,
+  "ObjectIdRef1": 0,
+  "ObjectIdRef2": 0,
+  "ObjectIdRef3": 0,
+  "ObjectIdRef4": 0,
+  "ObjectIdRef5": 0,
+  "Alignment": 34,
+  "GlobalActorEnumeration": -1,
+  "LocalActorEnumeration": -1,
+  "KnownSpellsoffset": 0,
+  "KnownSpellsCount": 0,
+  "SpellMemorizationOffset": 0,
+  "SpellMemorizationCount": 0,
+  "MemorizedSpellsOffset": 0,
+  "MemorizedSpellsCount": 0,
+  "ItemSlotOffset": 0,
+  "ItemOffset": 0,
+  "ItemCount": 0,
+  "EffectOffset": 0,
+  "EffectCount": 0,
+  "ResistMagicDamage": 0,
+  "LevelTotal": 15,
+  "LevelBarbarian": 0,
+  "LevelBard": 0,
+  "LevelCleric": 0,
+  "LevelDruid": 15,
+  "LevelFighter": 0,
+  "LevelMonk": 0,
+  "LevelPaladin": 0,
+  "LevelRanger": 0,
+  "LevelRogue": 0,
+  "LevelSorcerer": 0,
+  "LevelWizard": 0,
+  "EnchantmentLevel": 0,
+  "FeatWeaponProBow": 0,
+  "FeatWeaponProCrossbow": 0,
+  "FeatWeaponProMissle": 1,
+  "FeatWeaponProAxe": 0,
+  "FeatWeaponProMace": 1,
+  "FeatWeaponProFlail": 0,
+  "FeatWeaponProPolearm": 1,
+  "FeatWeaponProHammer": 0,
+  "FeatWeaponProQuarterstaff": 1,
+  "FeatWeaponProGreatsword": 0,
+  "FeatWeaponProLargeSword": 1,
+  "FeatWeaponProSmallBlade": 1,
+  "FeatToughness": 0,
+  "FeatArmoredArcana": 0,
+  "FeatCleave": 0,
+  "FeatArmorPreficiency": 2,
+  "FeatSpellFocusEnchantment": 0,
+  "FeatSpellFocusEvocation": 0,
+  "FeatSpellFocusNecromancy": 0,
+  "FeatSpellFocusTransmutation": 0,
+  "FeatSpellPenetration": 0,
+  "FeatExtraRage": 0,
+  "FeatExtraWildShape": 0,
+  "FeatExtraExtraSmiting": 0,
+  "FeatExtraExtraTurning": 0,
+  "FeatWeaponProExoticBastardSword": 0,
+  "SkillAlchemy": 0,
+  "SkillAnimalEmpathy": 10,
+  "SkillBluff": 0,
+  "SkillConcentration": 15,
+  "SkillDiplomacy": 0,
+  "SkillDisableDevice": 0,
+  "SkillHide": 5,
+  "SkillIntimidate": 0,
+  "SkillKnowledgeArcana": 5,
+  "SkillMoveSilently": 5,
+  "SkillOpenLock": 0,
+  "SkillPickPocket": 0,
+  "SkillSearch": 0,
+  "SkillSpellcraft": 0,
+  "SkillUseMagicDevice": 0,
+  "SkillWildernessLaw": 15,
+  "ChallangeRating": 9,
+  "FavouredEnemy1": 0,
+  "FavouredEnemy2": 0,
+  "FavouredEnemy3": 0,
+  "FavouredEnemy4": 0,
+  "FavouredEnemy5": 0,
+  "FavouredEnemy6": 0,
+  "FavouredEnemy7": 0,
+  "FavouredEnemy8": 0,
+  "Subrace": 0,
+  "Hidden": 0,
+  "OnDeathSetExtraVariable": 0,
+  "IncrementKillCount": 0,
+  "VariableInternal1": 0,
+  "VariableInternal2": 0,
+  "VariableInternal3": 0,
+  "VariableInternal4": 0,
+  "VariableInternal5": 0,
+  "IsLocationSaved": 0,
+  "SavedLocationX": 0,
+  "SavedLocationY": 0,
+  "SavedOrientation": 0,
+  "FadeAmount": 0,
+  "FadeSpeed": 0,
+  "Attributes": 0,
+  "Visibility": 0,
+  "SkillPointsRemain": 0,
+  "Class2": 4,
+  "ClassMsk": 8,
+  "LongName": {
+    "Text": null,
+    "Flags": 0,
+    "Sound": null,
+    "VolumeVariance": 0,
+    "PitchVariance": 0,
+    "Strref": 17831
+  },
+  "ShortName": {
+    "Text": null,
+    "Flags": 0,
+    "Sound": null,
+    "VolumeVariance": 0,
+    "PitchVariance": 0,
+    "Strref": 17784
+  },
+  "Flags": [
+    "Quest critical"
+  ],
+  "SmallPortrait": "None",
+  "LargePortrait": "None",
+  "DeathVariable": "60Iselor",
+  "DialogFile": "None",
+  "ScriptTeam": "None",
+  "ScriptSpecial": "None",
+  "ScriptSpecial2": "None",
+  "ScriptCombat": "None",
+  "ScriptSpecial3": "None",
+  "ScriptMovement": "None",
+  "DeathVariable2": "",
+  "DeathVariable3": "",
+  "Checksum": null,
+  "Filename": "60ISELOR.Cre",
+  "FileType": 1009,
+  "OriginalFile": null
+}

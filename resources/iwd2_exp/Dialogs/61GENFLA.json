@@ -1,0 +1,494 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "In warmth you are well met.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36830
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Depending on the climate, it has a number of uses... plays... presentations... trials... and so forth.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36833
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Yes, like the one that occurred yesterday - I hope you haven't missed it... A sorceress from above named Izbelah was accused of violating Nature's Order, but Inquisitor Venomin offered her a good defense.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36838
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "The issue of her guilt was discussed and the evidence presented, but we adjourned because Venomin needed to ask a few questions of Ambassador Jasper, who was away on business.  From what I hear, Venomin has just proven her innocence.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36844
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "YES, INDEED!  In fact, there's a little piece of fiction we've been working on that we'd LOVE to share with you - we call it, *Eternal Flame.*  Interested?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36845
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Most excellent!  Let's see - oh yes, our tale begins five hundred years ago in a land far, far, away with a little shepherd boy named Hamenrousee...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38217
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Yes, like the one that occurred two days ago - I hope you haven't missed it... A sorceress from above named Izbelah was accused of violating Nature's Order, but Inquisitor Venomin offered her a good defense.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38219
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "The issue of her guilt was discussed and the evidence presented, but we adjourned because Venomin needed to ask a few questions of Ambassador Jasper, who was away on business.  Even though Venomin proved her innocence yesterday, she still tried to escape last night.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38220
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "We're at war with the yuan-ti!  Defend us!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38221
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 8
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "What's the amphitheatre used for?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36831
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61GenFla",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Well met.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36832
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Trials?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36834
+      },
+      "JournalIndex": 36828,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61GenFla",
+      "NextPhraseIndex": 6,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Trials?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36834
+      },
+      "JournalIndex": 36311,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61GenFla",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Plays?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36835
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61GenFla",
+      "NextPhraseIndex": 4,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36837
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "No, we've not seen it yet - I mean, yes, we missed it.  What happened?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36842
+      },
+      "JournalIndex": 36312,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61GenFla",
+      "NextPhraseIndex": 3,
+      "Index": 6,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What was that about plays?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36843
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61GenFla",
+      "NextPhraseIndex": 4,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36837
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What was that about plays?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36843
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61GenFla",
+      "NextPhraseIndex": 4,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36837
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Why not?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36846
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61GenFla",
+      "NextPhraseIndex": 5,
+      "Index": 11,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Actually, you mentioned trials?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38215
+      },
+      "JournalIndex": 36828,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61GenFla",
+      "NextPhraseIndex": 6,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Actually, you mentioned trials?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38215
+      },
+      "JournalIndex": 36311,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61GenFla",
+      "NextPhraseIndex": 2,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We'll pass.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38216
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "No, we've not seen it yet - I mean, yes, we missed it.  What happened?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36842
+      },
+      "JournalIndex": 36829,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61GenFla",
+      "NextPhraseIndex": 7,
+      "Index": 16,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36837
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 17,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36837
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"61CurrentDay\",\"GLOBAL\",3)\r\n!CreatureHidden(\"05_AbominationPriest_01\")",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Global(\"PlayerSawAmphitheatre\",\"MYAREA\",1)",
+    "Global(\"61CurrentDay\",\"GLOBAL\",3)",
+    "Global(\"61CurrentDay\",\"GLOBAL\",2)",
+    "Global(\"PerformedPlay\",\"MYAREA\",0)\r\nGlobal(\"61CurrentDay\",\"GLOBAL\",2)\r\nGlobal(\"PyrosCalmLothar\",\"MYAREA\",2)",
+    "Global(\"PerformedPlay\",\"MYAREA\",0)\r\nGlobal(\"61CurrentDay\",\"GLOBAL\",2)\r\nGlobal(\"PyrosCalmLothar\",\"MYAREA\",2)",
+    "Global(\"PerformedPlay\",\"MYAREA\",0)\r\nGlobal(\"61CurrentDay\",\"GLOBAL\",2)\r\nGlobal(\"PyrosCalmLothar\",\"MYAREA\",2)",
+    "Global(\"61CurrentDay\",\"GLOBAL\",3)",
+    "Global(\"61CurrentDay\",\"GLOBAL\",2)"
+  ],
+  "Actions": [
+    "SetGlobal(\"SetNightSequence\",\"MYAREA\",1)\r\nSetGlobal(\"PerformedPlay\",\"MYAREA\",1)\r\nStartCutsceneMode()\r\nClearAllActions()\r\nMultiPlayerSync()\r\nStartCutScene(\"61cIzDea\")"
+  ],
+  "Checksum": null,
+  "Filename": "61GENFLA.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 36830
+}

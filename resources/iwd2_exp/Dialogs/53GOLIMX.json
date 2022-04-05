@@ -1,0 +1,165 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Flesh golems are mindless constructs built from numerous corpses and animated with powerful magic.  This one appears different from most, however: its skin - along with the web of veins beneath it - is of unusual color.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37636
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 3,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "The golem seems to be inanimate.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37637
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 2,
+      "TriggerIndex": 2,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "The golem is now ready to be awakened via a blast of electricity.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27323
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Flesh golems are mindless constructs built from numerous corpses and animated with powerful magic.  This one appears different from most, however: its skin - along with the web of veins beneath it - is of unusual color.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27324
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 3
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 27325,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "53GolImX",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Inject it with the Sanguis Anima.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 458
+      },
+      "JournalIndex": 27327,
+      "TriggerIndex": 0,
+      "ActionIndex": 1,
+      "NextScriptDialog": "53GolImX",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Leave.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27326
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "!Global(\"53PCGolem_Protect\",\"GLOBAL\",0)",
+    "Global(\"53GolIm\", \"GLOBAL\", 10)",
+    "Global(\"53GolIm\", \"GLOBAL\", 1)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "PartyHasItem(\"53MiscIG\")"
+  ],
+  "Actions": [
+    "SetGlobal(\"53GolIm\", \"GLOBAL\", 1)",
+    "TakePartyItem(\"53MiscIG\")\r\nDestroyItem(\"53MiscIG\")\r\nSetGlobal(\"53GolIm\", \"GLOBAL\", 10)"
+  ],
+  "Checksum": null,
+  "Filename": "53GOLIMX.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 37636
+}

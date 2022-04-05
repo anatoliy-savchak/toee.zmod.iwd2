@@ -1,0 +1,2069 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Damnable goblins... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye stand with Targos?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15380
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 9,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Looks like ye got here just in time, then - Targos is short of good blades.  Careful now, there's more of these rock-crawlers about, so be on yer guard.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15384
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Aye, I still have some rock and fire in me yet.  When I caught them trying to set fire to me *ship,* me eyes filled with blood - I've spent too long carving her hull to let it be touched by goblin filth.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15386
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "The name's Jorun Tamewater, and we can swap lifestories another time.  For now, there's goblin graves needin' to be filled.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15390
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "No telling - but I didn't hear a warning horn from the Palisade.  What worries me is they *didn't* jump the town wall.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15397
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "These goblins were carrying pick axes - tells me they were sappers.  The ankle-biters may have broken through into some of the old caves beneath Targos and used them to get to the docks.  Not good.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15400
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "These cliffs are thick with tunnels, but last word was the Targos Guard had collapsed most o' em.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15406
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "The tunnels were used by smugglers along the Dualdon years ago... the goblins may've broke into one o' 'em and crawled beneath the Palisade.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15439
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Not sure... my guess?  Somewhere to the northeast, since that's where the fighting was thickest.  If ye head up there, make sure ye've got some trusty iron in your hand.  Could be a whole mess o' em crawling below.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15458
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Shouldn't surprise me - these cliffs are thick with tunnels, but last word was the Targos Guard had collapsed most o' em.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15462
+      },
+      "ResponsesIndexFirst": 20,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Most of those tunnels were used by smugglers along the Dualdon years ago... looks like the goblins found one of them that led to the docks from outside the Palisade.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15463
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "If you haven't already, you should tell Ulbrec what you've found - he's the spokesman of Targos, and he should know these goblins aren't just raiders.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15464
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "These goblins were carrying pick axes and hammers - which means they were sappers, and sapping means time and planning.  Someone thought this through... some time ago.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15466
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "Have ye spilled any more goblin blood?  Ye better not be greedy - make ye sure ye save a handful for me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15470
+      },
+      "ResponsesIndexFirst": 26,
+      "ResponsesCount": 3,
+      "TriggerIndex": 8,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "Well, now, something I can help ye with?  I'm not doing business with the attacks an' all, and there's not much call for building ships as much as taking them down.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15473
+      },
+      "ResponsesIndexFirst": 29,
+      "ResponsesCount": 1,
+      "TriggerIndex": 10,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "Jorun Tamewater, shipbuilder, occasional fisherman.  Ye look like one of those sell-swords to me - no secret why ye're in Targos.  Lookin' to spill some goblin blood, are ye?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15475
+      },
+      "ResponsesIndexFirst": 30,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "Well, that should clear itself up soon enough - gold seems to rain from the skies in some corners of Faerun, and I doubt Targos will prove any different.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15479
+      },
+      "ResponsesIndexFirst": 33,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "Aye.  Why, that surprise ye?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15481
+      },
+      "ResponsesIndexFirst": 35,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "Wood's as challenging to shape as iron or stone - or even ice, if those legends about that fool Tiernon are true.  Hmph.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15485
+      },
+      "ResponsesIndexFirst": 38,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "Well, no matter - look, if ye not be needin' anything, I'd best go back to seein' what weapons I can turn my skills to for the defenders at the Palisade.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15486
+      },
+      "ResponsesIndexFirst": 39,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "More than once ye've crossed my path; if ye plan on makin' a habit of it, the least ye could do is bring a winecask with ye... or two. Somethin' I can do for ye?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15504
+      },
+      "ResponsesIndexFirst": 41,
+      "ResponsesCount": 3,
+      "TriggerIndex": 11,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "Oh, now, did that fat fool Lumbar sit on it?  Damn that idiot!  I told him how much weight the thing could stand, but there's nothing to get past his fool ears when he's wailing like a babe!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15508
+      },
+      "ResponsesIndexFirst": 44,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "Aye, if someone had bothered to tell me the problem sooner, I could have had it fixed right quick.  In fact - ye could even do it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15510
+      },
+      "ResponsesIndexFirst": 45,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "I keep spares, especially when the shipping season is in full swing.  Take this crane wheel, and just set it into the crane, should be ready to go without a hitch.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15512
+      },
+      "ResponsesIndexFirst": 46,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 23
+    },
+    {
+      "Text": {
+        "Text": "I will - ye watch yerself as well.  If ye find any goblins and they're too many for ye, just lead them back this way and I can lend me iron to yours.  Between us, we'll drive them back into their holes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15514
+      },
+      "ResponsesIndexFirst": 47,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 24
+    },
+    {
+      "Text": {
+        "Text": "If ye need a place to hole up that's free o' the goblins, me house is to the south and west of here - ye can catch yer breath and bind your wounds there.  It should be safe - if any of those damned goblins tried to break in, they'll wish they hadn't.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15516
+      },
+      "ResponsesIndexFirst": 48,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 25
+    },
+    {
+      "Text": {
+        "Text": "Rigged a mean little trap on one of me chests that'll gas any fool goblin that tries to break it open.  Turn their stomachs inside out, it will - that'd be something to see.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15521
+      },
+      "ResponsesIndexFirst": 49,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 26
+    },
+    {
+      "Text": {
+        "Text": "Ye did?  Oh, aye, I see ye have me helm - nay, take the weapons and put 'em to use killin' goblins, and that's good enough fer me.  That's what they were made for.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15525
+      },
+      "ResponsesIndexFirst": 52,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 27
+    },
+    {
+      "Text": {
+        "Text": "Some old equipment from me younger days - didn't have time to disarm the trap and arm myself properly when the goblins attacked.  Had to make haste - the filthy rock-crawlers'll breed faster than ye can kill 'em.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15528
+      },
+      "ResponsesIndexFirst": 54,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 28
+    },
+    {
+      "Text": {
+        "Text": "Nay, take the weapons and put 'em to use killin' goblins, and that's good enough fer me.  That's what they were made for.  Just be careful with the trap on the chest - it won't kill ye, just make ye wish it had.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15540
+      },
+      "ResponsesIndexFirst": 57,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 29
+    },
+    {
+      "Text": {
+        "Text": "Shouldn't, as long as ye try disarm the trap before picking the lock.  One of those famous Luskan thieves should be able to do it.  And, eh, make sure everyone else stays far away in case they botch the job, aye?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15543
+      },
+      "ResponsesIndexFirst": 61,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 30
+    },
+    {
+      "Text": {
+        "Text": "Eh?!  A duergar in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15582
+      },
+      "ResponsesIndexFirst": 64,
+      "ResponsesCount": 2,
+      "TriggerIndex": 0,
+      "Index": 31
+    },
+    {
+      "Text": {
+        "Text": "Eh?!  A drow in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27202
+      },
+      "ResponsesIndexFirst": 66,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 32
+    },
+    {
+      "Text": {
+        "Text": "Do ye take me for a fool?!  What proof do I have that ye've come to help us?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27205
+      },
+      "ResponsesIndexFirst": 68,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 33
+    },
+    {
+      "Text": {
+        "Text": "Hrmm.  I don't know why, but I believe ye - but that don't mean ye have me *trust,* it doesn't.  Still, Targos needs good blades with these filthy rock-crawlers about.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27877
+      },
+      "ResponsesIndexFirst": 70,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 34
+    },
+    {
+      "Text": {
+        "Text": "Damn me eyes... are ye a deep gnome?  What in the hells are ye doing in Targos?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28410
+      },
+      "ResponsesIndexFirst": 71,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 35
+    },
+    {
+      "Text": {
+        "Text": "Aye, if the fool picking the lock doesn't try to disarm the trap first.  Don't need to worry about many thieves out here having the skill to do that, though.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28411
+      },
+      "ResponsesIndexFirst": 72,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 36
+    },
+    {
+      "Text": {
+        "Text": "I heard talk of a duergar around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35298
+      },
+      "ResponsesIndexFirst": 75,
+      "ResponsesCount": 2,
+      "TriggerIndex": 4,
+      "Index": 37
+    },
+    {
+      "Text": {
+        "Text": "I heard talk of a drow around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35299
+      },
+      "ResponsesIndexFirst": 77,
+      "ResponsesCount": 2,
+      "TriggerIndex": 5,
+      "Index": 38
+    },
+    {
+      "Text": {
+        "Text": "Damn me eyes... ye're the deep gnome everyone's going on about.  I was hoping ye might be crossing me path - something this ol' shipbuilder can help ye with? ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35300
+      },
+      "ResponsesIndexFirst": 79,
+      "ResponsesCount": 1,
+      "TriggerIndex": 6,
+      "Index": 39
+    },
+    {
+      "Text": {
+        "Text": "It's good to see another dwarf on the shore of Maer Dualdon especially with these damnable goblins about... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye come to add yer axe and hammer to Targos? ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35301
+      },
+      "ResponsesIndexFirst": 80,
+      "ResponsesCount": 1,
+      "TriggerIndex": 3,
+      "Index": 40
+    },
+    {
+      "Text": {
+        "Text": "Well, now, a dwarf is a sight for sore eyes in these windswept lands... especially one who can cleave goblins as well as ye can.  Something this ol' shipbuilder can help ye with?  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35302
+      },
+      "ResponsesIndexFirst": 81,
+      "ResponsesCount": 1,
+      "TriggerIndex": 7,
+      "Index": 41
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "We're adventurers from Luskan.  We just came in on the Wicked Wench and found Targos being attacked.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15381
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Did you kill all these goblins yourself?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15385
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15387
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 3,
+      "Index": 2,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "So you're a shipbuilder?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15388
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 3,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any idea how they got into town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15389
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 4,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Do you know of any place we can rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15394
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 25,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Any idea how they got into town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15389
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 4,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Agreed.  Watch yourself, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15395
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 24,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Agreed.  Farewell, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15396
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "It looks like they tunneled into some old caves in the Targos cliffs and used them to get to the docks.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15398
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 9,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What do you mean?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15399
+      },
+      "JournalIndex": 15154,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 5,
+      "Index": 10,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Do you know of any place we can rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15394
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 25,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What old caves?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15401
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 6,
+      "Index": 12,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Any idea where their tunnel is?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15402
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 8,
+      "Index": 13,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 7,
+      "Index": 14,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Any idea which one the goblins came out of?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15457
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 8,
+      "Index": 15,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Do you know of any place we can rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15394
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 25,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Where did these caves come from?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15459
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": 3,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 6,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We'll be on our guard.  Watch yourself, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15460
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": 4,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 24,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "All right - we'll be on our guard.  Farewell, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15461
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 10,
+      "Index": 20,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 11,
+      "Index": 21,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "What do you mean?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15399
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 12,
+      "Index": 22,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Do you know of any place we can rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15394
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 25,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Hmm.  Good point.  We'll see what we can find out - watch yourself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15468
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": 6,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 24,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Hmm.  Good point.  Farewell, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15469
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you know of any place we can rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15394
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 25,
+      "Index": 26,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Any idea how these goblins got into town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15471
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 4,
+      "Index": 27,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I will.  Be careful, Jorun.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15472
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 28,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "My name is <CHARNAME>.  Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15474
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 15,
+      "Index": 29,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Jorun Tamewater?  I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15476
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 21,
+      "Index": 30,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Yes, and earn a few coins for our trouble.  We've spilled enough goblin blood so far, though the coin wasn't exactly what we were expecting.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15477
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 16,
+      "Index": 31,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15478
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 32,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You said you were a shipbuilder?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15480
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 17,
+      "Index": 33,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15478
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 34,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Well... yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15482
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 18,
+      "Index": 35,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Not really.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15483
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 18,
+      "Index": 36,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Oh, rest assured, nothing surprises me anymore.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15484
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 18,
+      "Index": 37,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 19,
+      "Index": 38,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15487
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 21,
+      "Index": 39,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I will take my leave then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15503
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 40,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15487
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 21,
+      "Index": 41,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You said you were a shipbuilder?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15480
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 17,
+      "Index": 42,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Just stopping by to check on you, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15507
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 43,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you fix it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15509
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 22,
+      "Index": 44,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "How?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15511
+      },
+      "JournalIndex": 15159,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 23,
+      "Index": 45,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "All right.  We'll see about fixing the crane.  Thanks, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15513
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 46,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Sounds good to me.  Farewell, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15515
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 9,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 47,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Why is that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15519
+      },
+      "JournalIndex": 15164,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 26,
+      "Index": 48,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We already opened your chest - do you mind if we put your equipment to use?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15522
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 27,
+      "Index": 49,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Uh, the goblins may have looted it already.  That would be terrible. What's in this chest of yours?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15523
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 28,
+      "Index": 50,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's in the chest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15524
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 28,
+      "Index": 51,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "All right, then.  Watch yourself, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15526
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": 11,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 24,
+      "Index": 52,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "All right, then.  Watch yourself, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15526
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 20,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 53,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "If we could get your chest open, would you mind if we used your equipment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15532
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 29,
+      "Index": 54,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Uh, if we could, say, get your chest open, would you mind if we used your equipment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15538
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 22,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 29,
+      "Index": 55,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "If someone were to, say, pick the lock, would the trap go off?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15539
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 36,
+      "Index": 56,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Will the trap go off if someone picks the lock?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15541
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 24,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 30,
+      "Index": 57,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any idea how the goblins got into town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15542
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 4,
+      "Index": 58,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "All right, then.  Watch yourself, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15526
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 25,
+      "ActionIndex": 12,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 24,
+      "Index": 59,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "All right, then.  Watch yourself, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15526
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 60,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any idea how the goblins got into town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15542
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 4,
+      "Index": 61,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "All right, then.  Watch yourself, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15526
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 27,
+      "ActionIndex": 13,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 24,
+      "Index": 62,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "All right, then.  Watch yourself, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15526
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 63,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We are not in league with these goblins, cousin, we are here to help.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15583
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 33,
+      "Index": 64,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We've come to aid Targos, dog - put down your weapon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15584
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 33,
+      "Index": 65,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We are not in league with these goblins, we are here to help.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27203
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 33,
+      "Index": 66,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We've come to aid Targos, dog - put down your weapon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15584
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 33,
+      "Index": 67,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What gain would there be in me even talking to you?  If I were with the goblins, I would be attacking you right now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27206
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 14,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 34,
+      "Index": 68,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We sailed in on the Wicked Wench, you idiot!  We're from Luskan - either you trust us or you don't.  I have no more time to waste talking to you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27875
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 15,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 34,
+      "Index": 69,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Did you kill all these goblins yourself?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15385
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 2,
+      "Index": 70,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We're adventurers from Luskan.  We just came in on the Wicked Wench and found Targos being attacked.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15381
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 16,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 1,
+      "Index": 71,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any idea how the goblins got into town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15542
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 4,
+      "Index": 72,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "All right, then.  Watch yourself, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15526
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 29,
+      "ActionIndex": 17,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 24,
+      "Index": 73,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "All right, then.  Watch yourself, Jorun.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15526
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 30,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 74,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Are you Jorun Tamewater?  I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35308
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 31,
+      "ActionIndex": 18,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 21,
+      "Index": 75,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We're looking to spill some goblin blood... and earn a few coins for our trouble, but the coinage so far has been somewhat light. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35309
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 19,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 16,
+      "Index": 76,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Are you Jorun Tamewater?  I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35306
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 32,
+      "ActionIndex": 20,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 21,
+      "Index": 77,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We're looking to spill some goblin blood... and earn a few coins for our trouble, but the coinage so far has been somewhat light. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35307
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 21,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 16,
+      "Index": 78,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "My name is <CHARNAME>.  Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35305
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 22,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 15,
+      "Index": 79,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We're adventurers from Luskan.  We just came in on the Wicked Wench and found Targos being attacked. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35304
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 23,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 1,
+      "Index": 80,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "My name is <CHARNAME>.  Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35303
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 24,
+      "NextScriptDialog": "10Jorun",
+      "NextPhraseIndex": 15,
+      "Index": 81,
+      "Flags": "HasText, HasAction"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)\r\nSubrace(Protagonist, Dwarf_Gray)\r\nGlobal(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "NumTimesTalkedTo(0)\r\nSubrace(Protagonist, Elf_Drow)\r\nGlobal(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "NumTimesTalkedTo(0)\r\nSubrace(Protagonist, Gnome_Deep)\r\nGlobal(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "NumTimesTalkedTo(0)Race(Protagonist, Dwarf)Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "NumTimesTalkedTo(0)Subrace(Protagonist, Dwarf_Gray)Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "NumTimesTalkedTo(0)Subrace(Protagonist, Elf_Drow)Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "NumTimesTalkedTo(0)Subrace(Protagonist, Gnome_Deep)Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "NumTimesTalkedTo(0)Race(Protagonist, Dwarf)Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Know_Jorun\", \"GLOBAL\", 1)\nGlobal(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Know_Jorun\", \"GLOBAL\", 0)\nGlobal(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Know_Jorun\", \"GLOBAL\", 0)\nGlobal(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Know_Jorun\", \"GLOBAL\", 1)\nGlobal(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)"
+  ],
+  "TriggersResponse": [
+    "Global(\"Jorun_Rest\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "Global(\"Brogan_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Jorun_Rest\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Rest\", \"GLOBAL\", 0)",
+    "Global(\"Ask_Caves\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "Global(\"Jorun_Rest\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "Global(\"Jorun_Rest\", \"GLOBAL\", 0)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 3)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 3)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 3)",
+    "PartyHasItem(\"00helm05\")",
+    "PartyHasItem(\"00helm05\")\n!ClassEx(Protagonist, Paladin)",
+    "!PartyHasItem(\"00helm05\")",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "!PartyHasItem(\"00helm05\")",
+    "PartyHasItem(\"00helm05\")\n!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 3)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 3)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Know_Jorun\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Ask_Caves\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Ask_Caves\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Ask_Caves\", \"GLOBAL\", 0)\nSetGlobal(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Ask_Caves\", \"GLOBAL\", 0)",
+    "SetGlobal(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Jorun\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Lumber_Quest\", \"GLOBAL\", 4)\nGiveItemCreate(\"10GenCrW \", Protagonist, 0, 0, 0)",
+    "SetGlobal(\"Jorun_Help\", \"GLOBAL\", 1)\nSetGlobal(\"Ask_Caves\", \"GLOBAL\", 0)",
+    "SetGlobal(\"Jorun_Rest\", \"GLOBAL\", 1)\nSetGlobal(\"Ask_Caves\", \"GLOBAL\", 0)",
+    "SetGlobal(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Jorun_Dwarf\", \"GLOBAL\", 1)\nSetGlobal(\"Know_Jorun\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Jorun_Dwarf\", \"GLOBAL\", 1)\nSetGlobal(\"Know_Jorun\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Jorun\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Jorun_Help\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Jorun\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Jorun\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Jorun\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Jorun\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Jorun\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Jorun\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Jorun\", \"GLOBAL\", 1)"
+  ],
+  "Checksum": null,
+  "Filename": "10JORUN.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 15380
+}

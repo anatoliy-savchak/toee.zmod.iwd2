@@ -1,0 +1,170 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "The gate's been opened, brothers - the time is upon us!  Move in and *ATTACK!*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10131
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 4,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Hrm... the monks have hired mercenaries.  Kill them all, lads - sell-sword scum's not even fit for slaves!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10140
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Hrm... the monks have hired mercenaries.  Kill them all, lads - sell-sword scum's not even fit for slaves!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10140
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Wait - we're not here to fight you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10132
+      },
+      "JournalIndex": 10130,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "52DLead",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "If it's a fight you want, you've got it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10139
+      },
+      "JournalIndex": 10130,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "52DLead",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Wait - we're not here to fight you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10132
+      },
+      "JournalIndex": 10130,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52DLead",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "If it's a fight you want, you've got it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10139
+      },
+      "JournalIndex": 10130,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52DLead",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Global(\"51Barud_Dead\", \"GLOBAL\", 0)",
+    "Global(\"51Barud_Dead\", \"GLOBAL\", 0)",
+    "!Global(\"51Barud_Dead\", \"GLOBAL\", 0)",
+    "!Global(\"51Barud_Dead\", \"GLOBAL\", 0)"
+  ],
+  "Actions": [
+    "SetGlobal(\"52Barud_Backstab\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Barud_Backstab\", \"GLOBAL\", 1)",
+    "Enemy()\r\nStartCutSceneMode()\r\nStartCutScene(\"52cBaru0\")",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "52DLEAD.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 10131
+}

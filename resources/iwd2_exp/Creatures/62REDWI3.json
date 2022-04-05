@@ -1,0 +1,367 @@
+{
+  "Feats": [
+    "Combat casting",
+    "Dodge",
+    "Improved initiative",
+    "Lightning reflexes",
+    "Martial polearm",
+    "Simple small blade",
+    "Spell focus transmutation",
+    "Strong back"
+  ],
+  "Spells": {
+    "WIZ": {
+      "1": [
+        {
+          "SpellName": "Mage Armor",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Magic Missile",
+          "Memorized": 2,
+          "Remaining": 2
+        },
+        {
+          "SpellName": "Burning Hands",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Shocking Grasp",
+          "Memorized": 3,
+          "Remaining": 3
+        }
+      ],
+      "2": [
+        {
+          "SpellName": "Horror",
+          "Memorized": 2,
+          "Remaining": 2
+        }
+      ],
+      "3": [
+        {
+          "SpellName": "Dispel Magic",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Icelance",
+          "Memorized": 2,
+          "Remaining": 2
+        },
+        {
+          "SpellName": "Haste",
+          "Memorized": 2,
+          "Remaining": 2
+        },
+        {
+          "SpellName": "Slow",
+          "Memorized": 2,
+          "Remaining": 2
+        }
+      ],
+      "4": [
+        {
+          "SpellName": "Stoneskin",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Fire Shield (Blue)",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Spider Spawn",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Mordenkainen's Force Missiles",
+          "Memorized": 4,
+          "Remaining": 4
+        }
+      ],
+      "5": [
+        {
+          "SpellName": "Animate Dead",
+          "Memorized": 2,
+          "Remaining": 2
+        }
+      ],
+      "6": [
+        {
+          "SpellName": "210",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Globe of Invulnerability",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Chain Lightning",
+          "Memorized": 2,
+          "Remaining": 2
+        },
+        {
+          "SpellName": "Disintegrate",
+          "Memorized": 1,
+          "Remaining": 1
+        }
+      ],
+      "7": [
+        {
+          "SpellName": "Finger of Death",
+          "Memorized": 2,
+          "Remaining": 2
+        },
+        {
+          "SpellName": "Seven Eyes",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Power Word, Stun",
+          "Memorized": 2,
+          "Remaining": 2
+        }
+      ],
+      "8": [
+        {
+          "SpellName": "Horrid Wilting",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Summon Monster VIII",
+          "Memorized": 1,
+          "Remaining": 1
+        }
+      ],
+      "9": [
+        {
+          "SpellName": "Summon Monster IX",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Meteor Swarm",
+          "Memorized": 1,
+          "Remaining": 1
+        }
+      ]
+    }
+  },
+  "flags": 0,
+  "XPReward": 6000,
+  "PowerLevel": 16,
+  "Gold": 0,
+  "StatusFlags": 0,
+  "CurrentHP": 64,
+  "MaximumHP": 64,
+  "Animation": 25088,
+  "Unknown": 0,
+  "MetalColourIndex": 33,
+  "MinorColourIndex": 62,
+  "MajorColourIndex": 46,
+  "SkinColourIndex": 8,
+  "LeatherColourIndex": 104,
+  "ArmorColourIndex": 28,
+  "HairColourIndex": 0,
+  "EffVersion": 0,
+  "Reputation": 0,
+  "HideInShadows": 0,
+  "ArmorClassNatural": 15,
+  "ArmorClassEffective": 0,
+  "CrushingModifuer": 0,
+  "MissileModifier": 0,
+  "PiercingModifier": 0,
+  "SlashingModifier": 0,
+  "Thac0": 8,
+  "NumberOfAttacks": 1,
+  "SaveVsDeath": 5,
+  "SaveVsWands": 5,
+  "SaveVsPolymorph": 10,
+  "SaveVsBreath": 0,
+  "SaveVsSpells": 0,
+  "FireResistance": 5,
+  "ColdResistance": 0,
+  "ElectricityResistance": 5,
+  "AcidResistance": 0,
+  "MagicResistance": 1,
+  "MagicFireResistance": 0,
+  "MagicColdResistance": 10,
+  "SlashingResistance": 0,
+  "CrushingResistance": 0,
+  "PiercingResistance": 0,
+  "MissileResistance": 5,
+  "Lore": 0,
+  "LockPicking": 0,
+  "Stealth": 0,
+  "FindTraps": 0,
+  "PickPockets": 0,
+  "Fatigue": 0,
+  "Intoxication": 0,
+  "Luck": 0,
+  "TurnUndeadLevel": 0,
+  "Tracking": 0,
+  "Sex": 0,
+  "Strength": 9,
+  "StrengthBonus": 0,
+  "Intelligence": 18,
+  "Wisdom": 15,
+  "Dexterity": 16,
+  "Constitution": 10,
+  "Charisma": 9,
+  "Morale": 10,
+  "MoraleBreak": 6,
+  "MoraleRecoveryTime": 60,
+  "Kit": 16384,
+  "EnemyAlly": 255,
+  "General": 1,
+  "Race": 1,
+  "Class": 11,
+  "Specific": 0,
+  "Gender": 1,
+  "ObjectIdRef1": 0,
+  "ObjectIdRef2": 0,
+  "ObjectIdRef3": 0,
+  "ObjectIdRef4": 0,
+  "ObjectIdRef5": 0,
+  "Alignment": 35,
+  "GlobalActorEnumeration": -1,
+  "LocalActorEnumeration": -1,
+  "KnownSpellsoffset": 0,
+  "KnownSpellsCount": 0,
+  "SpellMemorizationOffset": 0,
+  "SpellMemorizationCount": 0,
+  "MemorizedSpellsOffset": 0,
+  "MemorizedSpellsCount": 0,
+  "ItemSlotOffset": 0,
+  "ItemOffset": 0,
+  "ItemCount": 0,
+  "EffectOffset": 0,
+  "EffectCount": 0,
+  "ResistMagicDamage": 0,
+  "LevelTotal": 16,
+  "LevelBarbarian": 0,
+  "LevelBard": 0,
+  "LevelCleric": 0,
+  "LevelDruid": 0,
+  "LevelFighter": 0,
+  "LevelMonk": 0,
+  "LevelPaladin": 0,
+  "LevelRanger": 0,
+  "LevelRogue": 0,
+  "LevelSorcerer": 0,
+  "LevelWizard": 16,
+  "EnchantmentLevel": 0,
+  "FeatWeaponProBow": 0,
+  "FeatWeaponProCrossbow": 0,
+  "FeatWeaponProMissle": 0,
+  "FeatWeaponProAxe": 0,
+  "FeatWeaponProMace": 0,
+  "FeatWeaponProFlail": 0,
+  "FeatWeaponProPolearm": 1,
+  "FeatWeaponProHammer": 0,
+  "FeatWeaponProQuarterstaff": 0,
+  "FeatWeaponProGreatsword": 0,
+  "FeatWeaponProLargeSword": 0,
+  "FeatWeaponProSmallBlade": 1,
+  "FeatToughness": 0,
+  "FeatArmoredArcana": 0,
+  "FeatCleave": 0,
+  "FeatArmorPreficiency": 0,
+  "FeatSpellFocusEnchantment": 0,
+  "FeatSpellFocusEvocation": 0,
+  "FeatSpellFocusNecromancy": 0,
+  "FeatSpellFocusTransmutation": 1,
+  "FeatSpellPenetration": 0,
+  "FeatExtraRage": 0,
+  "FeatExtraWildShape": 0,
+  "FeatExtraExtraSmiting": 0,
+  "FeatExtraExtraTurning": 0,
+  "FeatWeaponProExoticBastardSword": 0,
+  "SkillAlchemy": 0,
+  "SkillAnimalEmpathy": 0,
+  "SkillBluff": 0,
+  "SkillConcentration": 16,
+  "SkillDiplomacy": 0,
+  "SkillDisableDevice": 0,
+  "SkillHide": 0,
+  "SkillIntimidate": 0,
+  "SkillKnowledgeArcana": 0,
+  "SkillMoveSilently": 0,
+  "SkillOpenLock": 0,
+  "SkillPickPocket": 0,
+  "SkillSearch": 0,
+  "SkillSpellcraft": 0,
+  "SkillUseMagicDevice": 0,
+  "SkillWildernessLaw": 0,
+  "ChallangeRating": 9,
+  "FavouredEnemy1": 0,
+  "FavouredEnemy2": 0,
+  "FavouredEnemy3": 0,
+  "FavouredEnemy4": 0,
+  "FavouredEnemy5": 0,
+  "FavouredEnemy6": 0,
+  "FavouredEnemy7": 0,
+  "FavouredEnemy8": 0,
+  "Subrace": 0,
+  "Hidden": 0,
+  "OnDeathSetExtraVariable": 0,
+  "IncrementKillCount": 0,
+  "VariableInternal1": 0,
+  "VariableInternal2": 0,
+  "VariableInternal3": 0,
+  "VariableInternal4": 0,
+  "VariableInternal5": 0,
+  "IsLocationSaved": 0,
+  "SavedLocationX": 0,
+  "SavedLocationY": 0,
+  "SavedOrientation": 0,
+  "FadeAmount": 0,
+  "FadeSpeed": 0,
+  "Attributes": 0,
+  "Visibility": 0,
+  "SkillPointsRemain": 0,
+  "Class2": 11,
+  "ClassMsk": 1024,
+  "LongName": {
+    "Text": null,
+    "Flags": 0,
+    "Sound": null,
+    "VolumeVariance": 0,
+    "PitchVariance": 0,
+    "Strref": 12342
+  },
+  "ShortName": {
+    "Text": null,
+    "Flags": 0,
+    "Sound": null,
+    "VolumeVariance": 0,
+    "PitchVariance": 0,
+    "Strref": 863
+  },
+  "Flags": [],
+  "SmallPortrait": "None",
+  "LargePortrait": "None",
+  "DeathVariable": "62redWi3",
+  "DialogFile": "None",
+  "ScriptTeam": "None",
+  "ScriptSpecial": "None",
+  "ScriptSpecial2": "None",
+  "ScriptCombat": "NONE",
+  "ScriptSpecial3": "None",
+  "ScriptMovement": "None",
+  "DeathVariable2": "",
+  "DeathVariable3": "",
+  "Checksum": null,
+  "Filename": "62REDWI3.Cre",
+  "FileType": 1009,
+  "OriginalFile": null
+}

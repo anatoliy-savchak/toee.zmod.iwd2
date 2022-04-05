@@ -1,0 +1,310 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "What's this?  Someone *dares* to enter the hunting grounds of the Black Raven Tribe?  Most know to bring an *army* when traveling past here, southerners...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7748
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 3,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Silence!  The stench of elk's dung from your lips *sickens* me, city-dweller!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7753
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "I am Hadbruki of the Black Raven tribe, leader of these men - and you're no match for their arms *or* my fearsome magic.  Whine and beg at our feet, southerners, and we *might* only take all of your belongings.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7755
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Ah, the giant ravens... er... food has been scarce, lately.  But *enough!*  Cast down your belongings and grovel at our feet, blood-like-water, before we grow angry and feed you to the snow trolls!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7759
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Eh?  Ha... ha-ha... BWAAAH-HAH-HAH-HAH!  Did you hear that, brothers?  We'll kill these cowards, and place their heads upon spears before our cunning Gate-of-Stone to terrify others.  Don't let any escape - slay them all!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7760
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Bwaaah-hah-hah-hah!  It seems you've mistaken *stupidity* for courage, southerners.   Brothers - kill them, then place their severed heads upon spears before our cunning Gate-of-Stone.  Don't let any escape - slay them all!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7761
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7749
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Hadbru",
+      "NextPhraseIndex": 2,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We *are* the army.  Out of our way, barbarian.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7751
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Hadbru",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We don't have time for this.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7752
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Hadbru",
+      "NextPhraseIndex": 1,
+      "Index": 2,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Hadbru",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "The Black Raven Tribe?  Aren't you supposed to ride around on giant ravens or some such?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7756
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Hadbru",
+      "NextPhraseIndex": 3,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "The Black Raven Tribe?  Aren't you supposed to ride around on giant ravens or some such?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7756
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Hadbru",
+      "NextPhraseIndex": 3,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Fine, here - take everything we have.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7757
+      },
+      "JournalIndex": 7747,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Hadbru",
+      "NextPhraseIndex": 4,
+      "Index": 6,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "No, you'll have to fight us for them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7758
+      },
+      "JournalIndex": 7747,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Hadbru",
+      "NextPhraseIndex": 5,
+      "Index": 7,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Fine, here - take everything we have.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7757
+      },
+      "JournalIndex": 7747,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Hadbru",
+      "NextPhraseIndex": 4,
+      "Index": 8,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "No, you'll have to fight us for them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7758
+      },
+      "JournalIndex": 7747,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Hadbru",
+      "NextPhraseIndex": 5,
+      "Index": 9,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Class(Protagonist, Bard)",
+    "CheckStatGT(Protagonist, 14, INT)\r\nCheckStatGT(Protagonist, 14, WIS)\r\n!Class(Protagonist, Bard)"
+  ],
+  "Actions": [
+    "Enemy()",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "50HADBRU.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 7748
+}

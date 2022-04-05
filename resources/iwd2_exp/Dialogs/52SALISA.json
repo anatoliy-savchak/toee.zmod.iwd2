@@ -1,0 +1,2059 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Well met, wanderers - I am Salisam.  Your journey must have been long and difficult - the way to Black Raven Monastery is not an easy one.  Why have you come?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10510
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 10,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "You must go and speak to Aruma Blane - she controls the monastery, and only she may grant permission...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10516
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Between just you and I, there is little hope of her allowing you access.  Please - regardless of her answer to your request, come and speak with me afterwards.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10518
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "The monastery was built here for a specific reason - the passage it stands over is the very one our founder used to escape slavery beneath his cruel Underdark masters.  It is now part of his tomb - only monks may enter.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10525
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "I am not surprised - but I have much to discuss with my companions, here.  Feel free to explore this level of the monastery; many will be willing to speak with you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10527
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Have you spoken to Aruma, yet?  What was her answer?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10529
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 3,
+      "TriggerIndex": 11,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "I thought she might.  Listen closely, then, for I have an offer to make - one which will benefit the both of us.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10533
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Dolon Daemba is a Legion of the Chimera envoy.  He came some time ago to speak with the archimandrite, Ormis Dohor, and requested that he visit Dolon's masters at their capital, the Severed Hand...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10535
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "The highest position with the Black Raven Monastery - its commander.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10538
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "...Ormis commanded that Dolon remain behind as a hostage, leaving Aruma in charge of the monastery.  In a matter of days, Aruma grew angry and bitter at having been left behind, claiming that she'd been slighted by the archimandrite...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10540
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "...Aruma has taken Ormis' position and exiled all those who spoke against her openly.  Now, Dolon spends much time in Aruma's company - we fear that the envoy has somehow swayed her against the archimandrite, somehow *corrupted* her...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10541
+      },
+      "ResponsesIndexFirst": 20,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "...if you can convince Aruma to relinquish her power, the position of standing archimandrite falls to a council of three monks that includes myself.  I will see to it that you are allowed to face the Eight Chambers...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10542
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "The Eight Chambers make up a series of challenges designed to thwart those without the skill or willpower to be worthy of our order.  To master all eight is dangerous, but not impossible - I myself have completed them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10544
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "...should you master the chambers, you will be considered an associate of the monastery and allowed access to Valas' tomb and the Underdark passage within.    That is my offer - speak of it to *no one* else, or it is rescinded.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10545
+      },
+      "ResponsesIndexFirst": 25,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "We are all bound by oath to protect her... you cannot provoke her, or all will be for nothing.  If Aruma is attacked, we must defend her with our lives.  You must find *another* way...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10771
+      },
+      "ResponsesIndexFirst": 28,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "We've found no way to discredit him, and as he is a residing guest we are sworn to protect him.  If you attack him, we will be forced to come to his aid.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10772
+      },
+      "ResponsesIndexFirst": 30,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "Yes... by Ormis' command, Dolon is a hostage of sorts, obligated to remain here until the archimandrite returns.  He has his own chamber near Aruma's, though the door is always locked.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10774
+      },
+      "ResponsesIndexFirst": 33,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "Have you met with success?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10775
+      },
+      "ResponsesIndexFirst": 35,
+      "ResponsesCount": 3,
+      "TriggerIndex": 6,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "My thanks and praises, traveler.  You are free to approach Morohem on the second level of the monastery - he will show you the Eight Chambers.  Should you master them all, you will have access to the Underdark passage.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11074
+      },
+      "ResponsesIndexFirst": 38,
+      "ResponsesCount": 5,
+      "TriggerIndex": 5,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "Congratulations, associate of the Black Raven Monastery - you now bear a distinction few indeed may boast of.  On the monastery's third level, you will find the gate to Valas' tomb - and the Underdark passage - open to you, now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11088
+      },
+      "ResponsesIndexFirst": 43,
+      "ResponsesCount": 5,
+      "TriggerIndex": 3,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "Oh, my.  You should present these to Aruma *immediately.*  They may well do the trick...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29091
+      },
+      "ResponsesIndexFirst": 48,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "You are an agent of those vile slavers?  I pity you for falling in with such foul employers... at least your death will be quick and merciful.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29092
+      },
+      "ResponsesIndexFirst": 49,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "Is there?  My thanks... I will see to it that the matter is resolved.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29093
+      },
+      "ResponsesIndexFirst": 50,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "My thanks and praises, traveler - you have aided us greatly, and shall be treated as such.  If you will give me a moment to explain...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29096
+      },
+      "ResponsesIndexFirst": 52,
+      "ResponsesCount": 1,
+      "TriggerIndex": 4,
+      "Index": 23
+    },
+    {
+      "Text": {
+        "Text": "Dolon Daemba was a Legion of the Chimera envoy.  He came some time ago to speak with the archimandrite, Ormis Dohor, and requested that he visit Dolon's masters at their capital, the Severed Hand...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29097
+      },
+      "ResponsesIndexFirst": 53,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 24
+    },
+    {
+      "Text": {
+        "Text": "...Aruma took Ormis' position and exiled all those who spoke against her openly.  Dolon began to spend much time in Aruma's company - we feared that the envoy had somehow swayed her against the archimandrite, somehow *corrupted* her...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29098
+      },
+      "ResponsesIndexFirst": 55,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 25
+    },
+    {
+      "Text": {
+        "Text": "...because you convinced Aruma to relinquish her power, the position of standing archimandrite falls to a council of three monks that includes myself.   We will allow you to face the Eight Chambers...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30877
+      },
+      "ResponsesIndexFirst": 56,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 26
+    },
+    {
+      "Text": {
+        "Text": "...should you master the chambers, you will be considered an associate of the monastery and allowed access to Valas' tomb and the Underdark passage within.   Speak with Morohem, the Master of the Chambers, on the second level of the monastery.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30879
+      },
+      "ResponsesIndexFirst": 58,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 27
+    },
+    {
+      "Text": {
+        "Text": "You... do you realize what you've *done?*  Why would you have spoken to Aruma of my offer?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30880
+      },
+      "ResponsesIndexFirst": 60,
+      "ResponsesCount": 5,
+      "TriggerIndex": 1,
+      "Index": 28
+    },
+    {
+      "Text": {
+        "Text": "I would have let you use the gate, wanderer.  You had only to aid us, those still loyal to the true archimandrite.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30886
+      },
+      "ResponsesIndexFirst": 65,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 29
+    },
+    {
+      "Text": {
+        "Text": "Perhaps that is so, but the consequences...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30890
+      },
+      "ResponsesIndexFirst": 68,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 30
+    },
+    {
+      "Text": {
+        "Text": "I understand - and while I won't claim to be pleased by your decision, it's difficult to find fault with.  Farewell then, wanderer, and good luck in your mission.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30893
+      },
+      "ResponsesIndexFirst": 70,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 31
+    },
+    {
+      "Text": {
+        "Text": "What?!  Why that's... you... you must be another agent of the Severed Hand.  That would explain everything...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30894
+      },
+      "ResponsesIndexFirst": 71,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 32
+    },
+    {
+      "Text": {
+        "Text": "Stop - as much as it saddens me, it's a monk's sworn duty to eliminate enemies of the monastery.  I hope you're at peace with whatever deity you call your own, wanderer, for your life ends here on this mountain.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30897
+      },
+      "ResponsesIndexFirst": 73,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 33
+    },
+    {
+      "Text": {
+        "Text": "Farewell then, wanderer, and good luck in your mission.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30898
+      },
+      "ResponsesIndexFirst": 74,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 34
+    },
+    {
+      "Text": {
+        "Text": "Ah!  A monk of the Old Order; well met.  I am Salisam.  Your journey must have been long and difficult - the way to Black Raven Monastery is not an easy one.  Why have you come?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38520
+      },
+      "ResponsesIndexFirst": 75,
+      "ResponsesCount": 2,
+      "TriggerIndex": 7,
+      "Index": 35
+    },
+    {
+      "Text": {
+        "Text": "Ah!  A monk of the Broken Ones; the Black Raven respects your order and its creed.  I am Salisam.  Your journey must have been long and difficult - the way to Black Raven Monastery is not an easy one.  Why have you come?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38521
+      },
+      "ResponsesIndexFirst": 77,
+      "ResponsesCount": 2,
+      "TriggerIndex": 8,
+      "Index": 36
+    },
+    {
+      "Text": {
+        "Text": "A monk of the Dark Moon?  Be at ease; the Black Raven bears your order no ill will.  I am Salisam.  Your journey must have been long and difficult - the way to Black Raven Monastery is not an easy one.  Why have you come?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38522
+      },
+      "ResponsesIndexFirst": 79,
+      "ResponsesCount": 2,
+      "TriggerIndex": 9,
+      "Index": 37
+    },
+    {
+      "Text": {
+        "Text": "Heh-heh-heh, yes... but only monks of the Order of the Black Raven are allowed to see Valas' Tomb.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38526
+      },
+      "ResponsesIndexFirst": 81,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 38
+    },
+    {
+      "Text": {
+        "Text": "Salisam storms off without a word.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39562
+      },
+      "ResponsesIndexFirst": 83,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 39
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Barud Barzam sent me to kill all of you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10511
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 21,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'm here in the hopes of using the Underdark passage beneath the monastery.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10515
+      },
+      "JournalIndex": 10462,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Wait - why is that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10522
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 3,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "One moment... I have questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10523
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 4,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10524
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I had other questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10526
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 4,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10524
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "There's a thief here, disguised as a monk.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10528
+      },
+      "JournalIndex": 10498,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 22,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10524
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Yes... she said no.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10530
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 2,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 6,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "No, but I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10531
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 4,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I haven't talked to her yet.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10532
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Go on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10534
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 7,
+      "Index": 13,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Wait - archimandrite?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10537
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 8,
+      "Index": 14,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Go on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10534
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 9,
+      "Index": 15,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Go on, then...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10539
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 9,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Go on, then...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10539
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 25,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Go on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10534
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 10,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Go on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10534
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 25,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Go on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10534
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 11,
+      "Index": 20,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Wait - the \"Eight Chambers?\"",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10543
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 12,
+      "Index": 21,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Go on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10534
+      },
+      "JournalIndex": 10463,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 13,
+      "Index": 22,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Go on, then...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10539
+      },
+      "JournalIndex": 10463,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 13,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Go on, then...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10539
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 27,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Why don't you fight Aruma?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10546
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 14,
+      "Index": 25,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Why hasn't Dolon been challenged?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10769
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 15,
+      "Index": 26,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I understand.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10770
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 27,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Why hasn't Dolon been challenged?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10769
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 15,
+      "Index": 28,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I understand.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10770
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 29,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "A residing guest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10773
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 16,
+      "Index": 30,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Why don't you fight Aruma?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10546
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 14,
+      "Index": 31,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I understand.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10770
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 32,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Why don't you fight Aruma?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10546
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 14,
+      "Index": 33,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I understand.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10770
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 34,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps... I found these letters to Dolon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10776
+      },
+      "JournalIndex": 10464,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 20,
+      "Index": 35,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Not yet, but I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10777
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 4,
+      "Index": 36,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "No, I haven't.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10778
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 37,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I understand.  I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11080
+      },
+      "JournalIndex": 10465,
+      "TriggerIndex": 12,
+      "ActionIndex": 3,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 4,
+      "Index": 38,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'll go see him, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11087
+      },
+      "JournalIndex": 10465,
+      "TriggerIndex": 13,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 39,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "There's a thief here, disguised as a monk.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10528
+      },
+      "JournalIndex": 10498,
+      "TriggerIndex": 14,
+      "ActionIndex": 5,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 22,
+      "Index": 40,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I understand.  I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11080
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 4,
+      "Index": 41,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'll go see him, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11087
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 42,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Thanks.  I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29089
+      },
+      "JournalIndex": 10466,
+      "TriggerIndex": 17,
+      "ActionIndex": 6,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 4,
+      "Index": 43,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "My thanks, Salisam.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29090
+      },
+      "JournalIndex": 10466,
+      "TriggerIndex": 18,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 44,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "There's a thief here, disguised as a monk.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10528
+      },
+      "JournalIndex": 10498,
+      "TriggerIndex": 19,
+      "ActionIndex": 8,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 22,
+      "Index": 45,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Thanks.  I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 20,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 4,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "My thanks, Salisam.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29090
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 47,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I understand.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10770
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 48,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 9,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 49,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29094
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 4,
+      "Index": 50,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Salisam.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29095
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 51,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Go on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10534
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 7,
+      "Index": 52,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Wait - archimandrite?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10537
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 8,
+      "Index": 53,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Go on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10534
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 9,
+      "Index": 54,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Go on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10534
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 26,
+      "Index": 55,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Wait - the \"Eight Chambers?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30878
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 12,
+      "Index": 56,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Go on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10534
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 27,
+      "Index": 57,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I understand.  I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11080
+      },
+      "JournalIndex": 10465,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 4,
+      "Index": 58,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'll go see him, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11087
+      },
+      "JournalIndex": 10465,
+      "TriggerIndex": -1,
+      "ActionIndex": 11,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 59,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I needed to win her trust in order to use the Underdark gate.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30881
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 29,
+      "Index": 60,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I didn't trust you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30882
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 32,
+      "Index": 61,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I don't know... I just did.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30883
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 32,
+      "Index": 62,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I'm not good with secrets.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30884
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 32,
+      "Index": 63,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I don't wish to speak of it now.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30885
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 33,
+      "Index": 64,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I apologize, but we had to move with haste.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30887
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 30,
+      "Index": 65,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We didn't have the time to play your errand-boys.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30888
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 30,
+      "Index": 66,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "There wasn't any guarantee of that.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30889
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 32,
+      "Index": 67,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "My mission could well save the towns of Targos and Kuldahar... and perhaps all settlements in the dale.  Consequences?  What if I should fail in *my* endeavor?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30891
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 31,
+      "Index": 68,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Enough talk of this.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30892
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 32,
+      "Index": 69,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Salisam.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29095
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 12,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 70,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "No.  I won Aruma's trust in order to use the Underdark gate.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30895
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 29,
+      "Index": 71,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I'm not, but it's of no consequence.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30896
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 33,
+      "Index": 72,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 13,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 73,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 74,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Barud Barzam sent me to kill all of you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10511
+      },
+      "JournalIndex": 10462,
+      "TriggerIndex": 22,
+      "ActionIndex": 14,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 21,
+      "Index": 75,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm here in the hopes of using the Underdark passage beneath the monastery.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10515
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 1,
+      "Index": 76,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Barud Barzam sent me to kill all of you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10511
+      },
+      "JournalIndex": 10462,
+      "TriggerIndex": 23,
+      "ActionIndex": 15,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 21,
+      "Index": 77,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm here in the hopes of using the Underdark passage beneath the monastery.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10515
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 1,
+      "Index": 78,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Barud Barzam sent me to kill all of you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10511
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 24,
+      "ActionIndex": 16,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 21,
+      "Index": 79,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'm here in the hopes of using the Underdark passage beneath the monastery.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10515
+      },
+      "JournalIndex": 10462,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 1,
+      "Index": 80,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I had other questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10526
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Salisa",
+      "NextPhraseIndex": 4,
+      "Index": 81,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10524
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 82,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 83,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "GlobalGT(\"52Monks_Leave\", \"GLOBAL\", 0)",
+    "GlobalGT(\"52Exile\", \"GLOBAL\", 0)\r\nCurrentAreaIs(Myself, 5200)",
+    "GlobalGT(\"52Exile\", \"GLOBAL\", 0)\r\n!CurrentAreaIs(Myself, 5200)",
+    "Global(\"52Morohem_Master\", \"GLOBAL\", 9)",
+    "GlobalGT(\"52Aruma_Gone\", \"GLOBAL\", 0)\nGlobal(\"52Salisam_Offer\", \"GLOBAL\", 0)",
+    "GlobalGT(\"52Aruma_Gone\", \"GLOBAL\", 0)",
+    "Global(\"52Salisam_Offer\", \"GLOBAL\", 1)",
+    "NumTimesTalkedTo(0)\r\nKit(Protagonist, MONK_OLD_ORDER)",
+    "NumTimesTalkedTo(0)\r\nKit(Protagonist, MONK_BROKEN_ONES)",
+    "NumTimesTalkedTo(0)\r\nKit(Protagonist, MONK_DARK_MOON)",
+    "NumTimesTalkedTo(0)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Global(\"51Barud_Monks\", \"GLOBAL\", 1)\r\n!ClassEx(Protagonist, Paladin)",
+    "GlobalGT(\"52Ven_Loot\", \"GLOBAL\", 0)\r\nGlobalGT(\"52Aruma_Gone\", \"GLOBAL\", 0)\r\nGlobalLT(\"52Ven_Loot\", \"GLOBAL\", 4)",
+    "Global(\"52Aruma_Request\", \"GLOBAL\", 1)",
+    "!Global(\"52Aruma_Request\", \"GLOBAL\", 1)",
+    "!Global(\"52Aruma_Request\", \"GLOBAL\", 1)",
+    "!Global(\"52Salisam_Offer\", \"GLOBAL\", 0)",
+    "Global(\"52Salisam_Offer\", \"GLOBAL\", 0)",
+    "!Global(\"52Salisam_Offer\", \"GLOBAL\", 0)",
+    "Global(\"52Salisam_Offer\", \"GLOBAL\", 0)",
+    "!Global(\"52Salisam_Offer\", \"GLOBAL\", 0)",
+    "Global(\"52Salisam_Offer\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"52GenDol\")",
+    "!Global(\"52Salisam_Offer\", \"GLOBAL\", 2)",
+    "!Global(\"52Salisam_Offer\", \"GLOBAL\", 2)",
+    "GlobalGT(\"52Ven_Loot\", \"GLOBAL\", 0)\r\nGlobal(\"52Salisam_Offer\", \"GLOBAL\", 2)\r\nGlobalLT(\"52Ven_Loot\", \"GLOBAL\", 4)",
+    "Global(\"52Salisam_Offer\", \"GLOBAL\", 2)",
+    "Global(\"52Salisam_Offer\", \"GLOBAL\", 2)",
+    "!Global(\"52Salisam_Offer\", \"GLOBAL\", 3)",
+    "!Global(\"52Salisam_Offer\", \"GLOBAL\", 3)",
+    "GlobalGT(\"52Ven_Loot\", \"GLOBAL\", 0)\r\nGlobal(\"52Salisam_Offer\", \"GLOBAL\", 3)\r\nGlobalLT(\"52Ven_Loot\", \"GLOBAL\", 4)",
+    "Global(\"52Salisam_Offer\", \"GLOBAL\", 3)",
+    "Global(\"52Salisam_Offer\", \"GLOBAL\", 3)",
+    "Global(\"51Barud_Monks\", \"GLOBAL\", 1)\r\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"51Barud_Monks\", \"GLOBAL\", 1)\r\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"51Barud_Monks\", \"GLOBAL\", 1)\r\n!ClassEx(Protagonist, Paladin)"
+  ],
+  "Actions": [
+    "Enemy()",
+    "SetGlobal(\"52Ven_Loot\", \"GLOBAL\", 4)",
+    "SetGlobal(\"52Salisam_Offer\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_11_Easy\",10507)\nSetGlobal(\"52Salisam_Offer\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_11_Easy\",10507)\nSetGlobal(\"52Salisam_Offer\", \"GLOBAL\", 2)",
+    "SetGlobal(\"52Ven_Loot\", \"GLOBAL\", 4)",
+    "AddXpVar(\"Level_11_Average\",10508)\r\nSetGlobal(\"52Salisam_Offer\", \"GLOBAL\", 3)",
+    "AddXpVar(\"Level_11_Average\",10508)\r\nSetGlobal(\"52Salisam_Offer\", \"GLOBAL\", 3)",
+    "SetGlobal(\"52Ven_Loot\", \"GLOBAL\", 4)",
+    "Enemy()",
+    "AddXpVar(\"Level_11_Easy\",10507)\nSetGlobal(\"52Salisam_Offer\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_11_Easy\",10507)\nSetGlobal(\"52Salisam_Offer\", \"GLOBAL\", 2)",
+    "SetGlobal(\"52Monks_Leave\", \"GLOBAL\", 1)",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "52SALISA.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 10510
+}

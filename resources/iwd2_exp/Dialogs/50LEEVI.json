@@ -1,0 +1,785 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "I haven't seen you before - did you arrive with the dark-skinned elf merchant?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6424
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "I see... I see.  I'm Leevi, a hunter here.  Greetings.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6427
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "You should speak to Tahvo the Huntmaster about that... Tahvo.  He knows more of this area than any other hunter here, including me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6431
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Kyosti was my best friend... we often went hunting together, always fighting to outdo each other, always competing.  It's hard to believe he's gone - I wouldn't believe he was dead but for the appearance of his ghost... Kyosti's ghost.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6434
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Carita?  Leave the widow be!  Her grief is weight enough without meddling strangers sniffing and poking about like hungry bears.  Why are you even asking me this?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6438
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Solve... the mystery?  HA!  Spirits should be left alone.  And don't think us northerners superstitious fools... enter the Fell Wood if you doubt the power of ghosts.  Leave it *be,* stranger... leave it be.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6443
+      },
+      "ResponsesIndexFirst": 20,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "What all ghosts want: to return to the world of the living.  It could be that the ghost won't speak because... because Kyosti's too proud to ask for help?  I don't know... I don't know.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6445
+      },
+      "ResponsesIndexFirst": 25,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Listen well, stranger - I'm no elder, but I'm wise enough to know something of ghosts and other restless spirits.  Leave the matter *alone* - ill fortune befalls those that meddle with the living dead.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6447
+      },
+      "ResponsesIndexFirst": 29,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Our paths cross again...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6450
+      },
+      "ResponsesIndexFirst": 30,
+      "ResponsesCount": 4,
+      "TriggerIndex": 2,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "You've led monsters to the village - please, kill them before they hurt someone! ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37856
+      },
+      "ResponsesIndexFirst": 34,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 9
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "No, Nym came before us.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6425
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Yes... yes we did.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6426
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about Carita and Kyosti?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6428
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 3,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6429
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Greetings, Leevi, and farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6430
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I see.  What can you tell me about Carita and Kyosti?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6432
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 3,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Thanks, Leevi.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 0,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 7,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Thanks, Leevi.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "And Carita...?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6435
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 4,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Kurttu said that the ghost is silent - any idea what he wants?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6436
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 6,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Kurttu said that the ghost is silent - any idea what he wants?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6436
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 6,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Can you tell me about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6437
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 2,
+      "Index": 11,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Thanks, Leevi.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": 2,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 7,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Thanks, Leevi.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'm helping Kurttu solve the mystery of Kyosti's ghost.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6439
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 5,
+      "Index": 14,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Never mind.  The ghost is silent - any idea what he wants?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6440
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": 3,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 6,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Never mind.  The ghost is silent - any idea what he wants?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6440
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 6,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Forget it.  Can you tell me about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6441
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 2,
+      "Index": 17,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Never mind, Leevi.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6442
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": 4,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 7,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Never mind, Leevi.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6442
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Kurttu said that the ghost is silent - any idea what he wants?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6436
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": 5,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 6,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Kurttu said that the ghost is silent - any idea what he wants?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6436
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 6,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6429
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 2,
+      "Index": 22,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Leevi.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6444
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": 6,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 7,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Leevi.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6444
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What about Carita?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6446
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 4,
+      "Index": 25,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Can you tell me about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6437
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 2,
+      "Index": 26,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Thanks, Leevi.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": 7,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 7,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Thanks, Leevi.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 28,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 29,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about Carita and Kyosti?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6428
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 3,
+      "Index": 30,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6429
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 2,
+      "Index": 31,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I was only passing by.  Farewell, Leevi.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24534
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": 8,
+      "NextScriptDialog": "50Leevi",
+      "NextPhraseIndex": 7,
+      "Index": 32,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I was only passing by.  Farewell, Leevi.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24534
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 20,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 33,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 34,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "See([ENEMY], FALSE)",
+    "NumTimesTalkedTo(0)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "GlobalGT(\"50Leevi\", \"Global\", 0)",
+    "GlobalGT(\"50Leevi\", \"Global\", 0)",
+    "Global(\"50Leevi\", \"Global\", 2)",
+    "!Global(\"50Leevi\", \"Global\", 2)",
+    "GlobalLT(\"50Leevi\", \"Global\", 2)",
+    "GlobalGT(\"50Leevi\", \"Global\", 1)",
+    "Global(\"50Leevi\", \"Global\", 2)",
+    "!Global(\"50Leevi\", \"Global\", 2)",
+    "GlobalLT(\"50Leevi\", \"Global\", 2)",
+    "GlobalGT(\"50Leevi\", \"Global\", 1)",
+    "Global(\"50Leevi\", \"Global\", 2)",
+    "!Global(\"50Leevi\", \"Global\", 2)",
+    "GlobalLT(\"50Leevi\", \"Global\", 2)",
+    "GlobalGT(\"50Leevi\", \"Global\", 1)",
+    "Global(\"50Leevi\", \"Global\", 2)",
+    "!Global(\"50Leevi\", \"Global\", 2)",
+    "Global(\"50Leevi\", \"Global\", 2)",
+    "!Global(\"50Leevi\", \"Global\", 2)",
+    "GlobalGT(\"50Leevi\", \"Global\", 0)",
+    "Global(\"50Leevi\", \"Global\", 2)",
+    "!Global(\"50Leevi\", \"Global\", 2)"
+  ],
+  "Actions": [
+    "SetGlobal(\"50Leevi\", \"Global\", 3)",
+    "SetGlobal(\"50Leevi\", \"Global\", 2)",
+    "SetGlobal(\"50Leevi\", \"Global\", 3)",
+    "SetGlobal(\"50Leevi\", \"Global\", 2)",
+    "SetGlobal(\"50Leevi\", \"Global\", 3)",
+    "SetGlobal(\"50Leevi\", \"Global\", 2)",
+    "SetGlobal(\"50Leevi\", \"Global\", 3)",
+    "SetGlobal(\"50Leevi\", \"Global\", 3)",
+    "SetGlobal(\"50Leevi\", \"Global\", 3)"
+  ],
+  "Checksum": null,
+  "Filename": "50LEEVI.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 6424
+}

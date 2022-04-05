@@ -1,0 +1,842 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "*Ha-HNH!*  *Ha-HNH!* *Ha-HNH!*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9959
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 4,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "*Ha-* Hmm?  Well met!  I ask your pardon, and meant no disrespect... I simply have much to learn, and practice whenever I can.  I'm Sersa, the monastery's quartermaster.  Are you here looking to sleep?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9963
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Oh... might I... might I ask that you speak to someone else, then?  I'm working hard to improve my skills, and have little time for talk.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9967
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Oh... well... I've struck a mental wall - I can't improve my fist technique and Svaltid, our trainer, refuses to spend any more time with me.  He says that he's teaching self-reliance, and that I must overcome the wall myself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9971
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 7,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Still, it's kind of you to say as much.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9977
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Oh?  It's so kind of you to offer!  Svaltid is normally in the training hall.  He's a good man, but stubborn as a bulette - you probably won't have much luck.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9979
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Oh, I see - so simple!  Svaltid never explained it that way.  I'm sure I'll improve, now.  Thank you, traveler - you've been a great help.  Come, lean close - don't speak of this to anyone, but I'll let you rest here for free, now.  Shhh!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9980
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Certainly... for how long?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9982
+      },
+      "ResponsesIndexFirst": 25,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "*Ha-* Hmm?  Well met again... are you here looking to sleep?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9985
+      },
+      "ResponsesIndexFirst": 28,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "You did?  And he... agreed to help me?  Then I'm sure I'll improve, now.  Thank you, traveler - you've been a great help.  Come, lean close - don't speak of this to anyone, but I'll let you rest here for free, now.  Shhh!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9989
+      },
+      "ResponsesIndexFirst": 33,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "*Ha-* Hmm?  Oh!  Well met, and my thanks again for your help.  Here to sleep, are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9991
+      },
+      "ResponsesIndexFirst": 35,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 10
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Greetings.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9960
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Greetings, Sersa.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9961
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 8,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Greetings, Sersa.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9961
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 10,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'll leave you to your practice.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9962
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "May I rest here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9964
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "No, but I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9965
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 2,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Never mind.  Farewell, Sersa.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9966
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "In that case, I'd like to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9968
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "In that case, I'd like to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9968
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 7,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Isn't there a training room for you to do this in?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9969
+      },
+      "JournalIndex": 9955,
+      "TriggerIndex": 5,
+      "ActionIndex": 2,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 3,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9970
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'd offer to help, but am not good enough a teacher.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9972
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 4,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'd offer to help, but am not yet skilled enough myself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9973
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 4,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'd offer to help, but am not good enough a teacher.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9972
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 4,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I know something of this - here, perhaps I can help...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9974
+      },
+      "JournalIndex": 9956,
+      "TriggerIndex": 9,
+      "ActionIndex": 3,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 6,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps I can speak to Svaltid for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9975
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 5,
+      "Index": 15,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I see.  I'd like to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9976
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9970
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 17,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps I can speak to Svaltid for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9975
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 5,
+      "Index": 18,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "May I rest here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9964
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Sersa.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9978
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "May I rest here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9964
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 21,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Sersa.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9978
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'd like to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9981
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 7,
+      "Index": 23,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Sersa.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9978
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We'll rest for eight hours.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9983
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We'll rest until we're fully healed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9984
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 26,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Never mind.  Farewell, Sersa.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9966
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 27,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "No, but I thought that I could help you train...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9986
+      },
+      "JournalIndex": 9956,
+      "TriggerIndex": 10,
+      "ActionIndex": 9,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 6,
+      "Index": 28,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "No, but I spoke to Svaltid for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9988
+      },
+      "JournalIndex": 9957,
+      "TriggerIndex": 11,
+      "ActionIndex": 10,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 9,
+      "Index": 29,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "May I rest here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9964
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 11,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 30,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "No, but I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9965
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 2,
+      "Index": 31,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Never mind.  Farewell, Sersa.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9966
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 32,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'd like to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9981
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 7,
+      "Index": 33,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Sersa.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9978
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 34,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'd like to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9981
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 7,
+      "Index": 35,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "No, but I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9965
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Sersa",
+      "NextPhraseIndex": 2,
+      "Index": 36,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Never mind.  Farewell, Sersa.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 9966
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 37,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "True()"
+  ],
+  "TriggersResponse": [
+    "NumTimesTalkedTo(0)\r\n!Global(\"52Sersa_Train\", \"GLOBAL\", 2)",
+    "NumTimesTalkedToGT(0)\r\n!Global(\"52Sersa_Train\", \"GLOBAL\", 2)",
+    "Global(\"52Sersa_Train\", \"GLOBAL\", 2)",
+    "GlobalLT(\"52Sersa_Train\", \"GLOBAL\", 2)",
+    "Global(\"52Sersa_Train\", \"GLOBAL\", 2)",
+    "Global(\"52Sersa_Train\", \"GLOBAL\", 0)",
+    "CheckStatGT(Protagonist, 9, CLASSLEVELMONK)\r\nCheckStatLT(Protagonist, 15, WIS)",
+    "CheckStatGT(Protagonist, 0, CLASSLEVELMONK)\r\nCheckStatLT(Protagonist, 10, CLASSLEVELMONK)\r\nCheckStatGT(Protagonist, 14, WIS)",
+    "CheckStatGT(Protagonist, 0, CLASSLEVELMONK)\r\nCheckStatLT(Protagonist, 10, CLASSLEVELMONK)\r\nCheckStatLT(Protagonist, 15, WIS)",
+    "CheckStatGT(Protagonist, 9, CLASSLEVELMONK)\r\nCheckStatGT(Protagonist, 14, WIS)",
+    "Global(\"52Sersa_Train\", \"GLOBAL\", 1)\r\nCheckStatGT(Protagonist, 9, CLASSLEVELMONK)\r\nCheckStatGT(Protagonist, 14, WIS)",
+    "Global(\"52Sersa_Train\", \"GLOBAL\", 1)\nGlobal(\"52Svaltid_Sersa\", \"GLOBAL\", 1)"
+  ],
+  "Actions": [
+    "StartStore(\"52Sersa\", Protagonist)",
+    "StartStore(\"52Sersa\", Protagonist)",
+    "SetGlobal(\"52Sersa_Train\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_11_Easy\",9958)\r\nSetGlobal(\"52Sersa_Train\", \"GLOBAL\", 2)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)",
+    "StartStore(\"52Sersa\", Protagonist)",
+    "StartStore(\"52Sersa\", Protagonist)",
+    "StartStore(\"52Sersa\", Protagonist)",
+    "FadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)\r\nRestParty()",
+    "FadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)\r\nRestUntilHealed()",
+    "AddXpVar(\"Level_11_Easy\",9958)\r\nSetGlobal(\"52Sersa_Train\", \"GLOBAL\", 2)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)",
+    "AddXpVar(\"Level_11_Easy\",9958)\nSetGlobal(\"52Sersa_Train\", \"GLOBAL\", 2)",
+    "StartStore(\"52Sersa\", Protagonist)"
+  ],
+  "Checksum": null,
+  "Filename": "52SERSA.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 9959
+}

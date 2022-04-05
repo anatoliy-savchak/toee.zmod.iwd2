@@ -1,0 +1,700 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Don't be frightened by my ghostly countenance, wanderer... my unbound spirit remains here only to warn, not to slay.  Leave these woods, or join in death those who gave my warning no heed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8426
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 4,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "There lurks a terrible secret within the Fell Wood, one that dooms those who enter to wander its darkened trails for eternity.  Until its secret is laid bare, no living man may pass.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8428
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "I know only that the answer is *not* within these woods - you must search elsewhere.  But if you're determined to explore these dark and bloody grounds, I beseech you to remember these words:",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8430
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Within the Fell Wood, westwards most always leads to safety.  You will find the path to freedom ever-illuminated...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8431
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "The longer you wander the Fell Wood, the more lost you will become - leave and return, and your path shall be clear again for a time...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8432
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "And lastly, do *not* allow yourself to die here, or you shall forever join the Restless Dead of Fell Wood.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8433
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Lured to their deaths by the ghost-lights of Fell Wood, their envy of the living has grown to hatred.  They will never rest until the ghost-lights are extinguished...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8436
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Call them what you will, wanderer, but know that they exist solely to lure travelers to their doom.  They feed upon the fear and agony of the dying, and can be found deep within these woods.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8439
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Flicking orbs of ghostly light - they exist solely to lure travelers to their doom.  They feed upon the fear and agony of the dying, and can be found deep within these woods.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8447
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "You ask something of me, and so I ask something in return.   Find and extinguish the ghost-lights and put the Restless Dead of Fell Wood at ease, and I will answer your question.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8448
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "You return, wanderer?  Please, do not forget my warnings - take great care while within the Fell Wood.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8451
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 2,
+      "TriggerIndex": 5,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Have you met with success, wanderer, and extinguished all the ghost-lights?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8452
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 1,
+      "TriggerIndex": 3,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "You've done a great thing, wanderer.  The ghost-lights have been extinguished, and the Restless Dead of Fell Wood will finally know peace.  At your feet are the mortal remains that once haunted this place...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8454
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "You return?  What draws you here again, wanderer?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8457
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "I've encountered no one by that name.  West of here, though, I've seen a silent spirit hovering over its corpse's shallow grave - perhaps this is the Kyosti you seek?  Go there, and perhaps he will appear to you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24533
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "Farewell, wanderer - I wish you well.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25674
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "...these many spirits, released from their torment by your hand, offer their heartfelt thanks.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31885
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 16
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 8419,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What is this secret?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8429
+      },
+      "JournalIndex": 8420,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 3,
+      "Index": 2,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 4,
+      "Index": 3,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 5,
+      "Index": 4,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "The \"restless dead?\"",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 6,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Ghost-lights?  Do you mean will o'wisps?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8437
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 7,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Ghost-lights?  Do you mean will o'wisps?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8437
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 7,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What are these \"ghost-lights?\"",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8438
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 8,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Do you know if a man named Kyosti died in these woods?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8440
+      },
+      "JournalIndex": 8421,
+      "TriggerIndex": 2,
+      "ActionIndex": 0,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 9,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell, spirit.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8446
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you know if a man named Kyosti died in these woods?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8440
+      },
+      "JournalIndex": 8421,
+      "TriggerIndex": 3,
+      "ActionIndex": 1,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 9,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell, spirit.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8446
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What are the ghost-lights again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8449
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 8,
+      "Index": 13,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, spirit.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8450
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you know if a man named Kyosti died in these woods?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8440
+      },
+      "JournalIndex": 8421,
+      "TriggerIndex": 4,
+      "ActionIndex": 2,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 9,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell, spirit.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8446
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Not yet, no.  Farewell, spirit.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8453
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 17,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 31887,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 16,
+      "Index": 18,
+      "Flags": "HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Do you know if a man named Kyosti died in these woods?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8440
+      },
+      "JournalIndex": 8422,
+      "TriggerIndex": 5,
+      "ActionIndex": 4,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 14,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I was only passing by.  Farewell, spirit.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24532
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell, spirit.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8446
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 21,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, spirit.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8450
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Of course.  Is there a man named Kyosti among them?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8455
+      },
+      "JournalIndex": 8422,
+      "TriggerIndex": 6,
+      "ActionIndex": 5,
+      "NextScriptDialog": "50HGhost",
+      "NextPhraseIndex": 14,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Of course.  Farewell, spirit.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8456
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"50Kyosti\", \"GLOBAL\", 1)",
+    "Global(\"50HGhost\", \"GLOBAL\", 2)",
+    "GlobalGT(\"50WIL_Dead\", \"GLOBAL\", 2)",
+    "Global(\"50HGhost\", \"GLOBAL\", 1)",
+    "NumTimesTalkedTo(0)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Class(Protagonist, Bard)",
+    "CheckStatGT(Protagonist, 14, INT)\r\nCheckStatGT(Protagonist, 14, WIS)\r\n!Class(Protagonist, Bard)",
+    "Global(\"50Kurttu_Ghost\", \"Global\", 1)\nGlobal(\"50HGhost\", \"Global\", 0)",
+    "Global(\"50Kurttu_Ghost\", \"Global\", 1)\nGlobal(\"50HGhost\", \"Global\", 0)",
+    "Global(\"50Kurttu_Ghost\", \"Global\", 1)\nGlobal(\"50HGhost\", \"Global\", 0)",
+    "Global(\"50Kurttu_Ghost\", \"Global\", 1)\nGlobal(\"50Kyosti\", \"Global\", 0)",
+    "Global(\"50Kurttu_Ghost\", \"Global\", 1)\r\nGlobal(\"50Kyosti\", \"Global\", 0)"
+  ],
+  "Actions": [
+    "SetGlobal(\"50HGhost\", \"Global\", 1)",
+    "SetGlobal(\"50HGhost\", \"Global\", 1)",
+    "SetGlobal(\"50HGhost\", \"Global\", 1)",
+    "GiveItemCreate(\"50GENFWR\", Protagonist, 0, 0, 0)",
+    "SetGlobal(\"50Kyosti\", \"Global\", 1)",
+    "AddXpVar(\"Level_9_Easy\",8424)\r\nSetGlobal(\"50HGhost\", \"Global\", 2)\r\nSetGlobal(\"50Kyosti\", \"Global\", 1)",
+    "AddXpVar(\"Level_9_Easy\",8424)\r\nSetGlobal(\"50HGhost\", \"Global\", 2)"
+  ],
+  "Checksum": null,
+  "Filename": "50HGHOST.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 8426
+}

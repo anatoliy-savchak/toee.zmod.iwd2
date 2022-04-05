@@ -1,0 +1,435 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "*Gah!*  That is... what're yeh doin' here?  These doors should be locked at all times...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10029
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Neh-heh-heh... thanks fer openin' that gate - and now ta divide the loot!  Me own share's the whole lot... and yours is a face-full o' golem-boot!  I'm not one for long goodbyes, so I'll just leave yeh to yer new friends - neh-heh-heh-heh!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10047
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Yeh have permission, do yeh?  Well, then, I suppose it's all right.  I've business ta be about, so fare yeh well...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10055
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Neh-heh-heh, so am I!  Wink-wink, eh?  M'name's Ven.  I'm not one o' these mudlump monks - I'm a thief, lookin' ta loot the Black Raven's tomb.  Care fer a share?  Turns out I'll need some help...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10060
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Neh-heh-heh!  Here's the mess, then: I know how ta open the blighter's tomb without waking the golems, but I can't open the first gate on the third level.  Yeh do that, and I'll be followin' in the shadows behind yeh.  See yeh there...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10066
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Here ta do it yerself then, are yeh?  Dung n' spittle, I never imagined.  Well... I won't tangle with the likes of yeh... so off I go, damn it all.  Fare yeh poorly, yeh bastard!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10074
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Come now, let's have none o' this.  Here - take this smashin' ring I noinked off a monk-ey as a parting gift, and leave me be.  Fare yeh well and all that rot, peaceable-like, right?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10085
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "What yeh think don't mean rot - I'm gone as gone gets.  Fleein' certain death's me *specialty,* so don't bother givin' chase - neh-heh-heh-heh!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10089
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Neh-heh-heh, yeh caught me!  M'name's Ven.  I'm not one o' these mudlump monks - I'm a thief, lookin' ta loot the Black Raven's tomb.  Care fer a share?  Turns out I'll need some help...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10094
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 8
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I have permission - and the key - from Nonin, the steward.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10040
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "52Ven",
+      "NextPhraseIndex": 2,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'm - exploring the monastery.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10041
+      },
+      "JournalIndex": 10025,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "52Ven",
+      "NextPhraseIndex": 3,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "You won't escape that easily, Ven.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10054
+      },
+      "JournalIndex": 10028,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "One moment - I don't think you're supposed to be here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10056
+      },
+      "JournalIndex": 10025,
+      "TriggerIndex": 2,
+      "ActionIndex": 3,
+      "NextScriptDialog": "52Ven",
+      "NextPhraseIndex": 8,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "One moment - I don't think you're supposed to be here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10056
+      },
+      "JournalIndex": 10025,
+      "TriggerIndex": 3,
+      "ActionIndex": 4,
+      "NextScriptDialog": "52Ven",
+      "NextPhraseIndex": 8,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10059
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Yes, count me in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10062
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Ven",
+      "NextPhraseIndex": 4,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "No thanks.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10065
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Ven",
+      "NextPhraseIndex": 5,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Wait...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10073
+      },
+      "JournalIndex": 10026,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10059
+      },
+      "JournalIndex": 10026,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Hold it - I'm not finished with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10079
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Ven",
+      "NextPhraseIndex": 6,
+      "Index": 10,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I don't think so, Ven.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10087
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "52Ven",
+      "NextPhraseIndex": 7,
+      "Index": 11,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Give me the ring and go, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10088
+      },
+      "JournalIndex": 10027,
+      "TriggerIndex": 6,
+      "ActionIndex": 9,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Yes, count me in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10062
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Ven",
+      "NextPhraseIndex": 4,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "No thanks.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10065
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Ven",
+      "NextPhraseIndex": 5,
+      "Index": 15,
+      "Flags": "HasText"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"52Ven_Know\", \"GLOBAL\", 0)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Global(\"52Nonin_Permission\", \"GLOBAL\", 1)",
+    "!Global(\"52Nonin_Permission\", \"GLOBAL\", 1)",
+    "CheckStatGT(Protagonist, 14, WIS)",
+    "CheckStatLT(Protagonist, 15, WIS)\r\nClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)"
+  ],
+  "Actions": [
+    "SetGlobal(\"52Ven_Know\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Ven_Know\", \"GLOBAL\", 1)\r\nSetGlobal(\"52Ven_Loot\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Ven_Loot\", \"GLOBAL\", 3)",
+    "SetGlobal(\"52Ven_Loot\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Ven_Loot\", \"GLOBAL\", 1)",
+    "EscapeArea()",
+    "EscapeArea()\nSetGlobal(\"52Ven_Loot\", \"GLOBAL\", 2)",
+    "EscapeArea()\nSetGlobal(\"52Ven_Loot\", \"GLOBAL\", 2)",
+    "GiveItemCreate(\"52RingNo\", Protagonist, 0, 0, 0)\r\nEscapeArea()",
+    "GiveItemCreate(\"52RingNo\", Protagonist, 0, 0, 0)\r\nEscapeArea()"
+  ],
+  "Checksum": null,
+  "Filename": "52VEN.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 10029
+}

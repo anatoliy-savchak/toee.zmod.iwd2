@@ -1,0 +1,1463 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Halt!  Identify yourself!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27698
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 6,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Stay back - there's a band of goblin raiders cornered inside this warehouse... I was awaiting the sell-swords in the Salty Dog before rushing in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27704
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Time's short, though - if those raiders start a fire within the warehouse, they could set the dock and the ships ablaze.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27706
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Yes, last word was the Iron Collar adventuring company was drinking at the Salty Dog tavern - Ulbrec is paying them good coin, and we need their swords here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27712
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "They *must* have heard the alarms... but I fear those drunkards may be sleeping at the bottom of a wine cask right now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27713
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "The Salty Dog lies along the south side of the docks, near the shoreline - make haste!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27719
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "You're back!  Did you bring the Iron Collar Band with you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27721
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 6,
+      "TriggerIndex": 1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "You?  Have you ever *seen* battle?  We need seasoned warriors here, not pups playing at being soldiers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27726
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "All right then, maybe Tymora will grace your blades - and time is against us.  But the goblins have locked the door from the inside... you'll need to break it down.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27731
+      },
+      "ResponsesIndexFirst": 27,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "No, you'll need to bash down the door with your weapons...  unless you have Luskan thief blood running through your veins, in which case you might be able to jig the lock.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27734
+      },
+      "ResponsesIndexFirst": 29,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Did you take out those goblins yet?  Time's running short.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27737
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 3,
+      "TriggerIndex": 5,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Then there could be more - I need you to go down into that passage and flush them out... they may have gone for reinforcements.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27869
+      },
+      "ResponsesIndexFirst": 34,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "I'm sure Lord Ulbrec will reward you for your efforts - now, please, you must wipe out the rest of those goblins.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27884
+      },
+      "ResponsesIndexFirst": 36,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "Where in Tempus' name have you *been?*  I heard the fighting, and then everything went silent.  Thought you were dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27885
+      },
+      "ResponsesIndexFirst": 37,
+      "ResponsesCount": 3,
+      "TriggerIndex": 4,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "Caves in the cliff...?  Hmmm.  Could be old pirate caves - there were quite a number of buccaneers preying along Maer Dualdon in the days before Targos became... civilized.  Where do they lead?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28018
+      },
+      "ResponsesIndexFirst": 40,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28021
+      },
+      "ResponsesIndexFirst": 42,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "In any event, I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28022
+      },
+      "ResponsesIndexFirst": 43,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "You can find him in the town above.  Simply take the western path up the cliff face, and you can find Ulbrec at the Targos Town Hall.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28025
+      },
+      "ResponsesIndexFirst": 45,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28217
+      },
+      "ResponsesIndexFirst": 46,
+      "ResponsesCount": 4,
+      "TriggerIndex": 3,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28222
+      },
+      "ResponsesIndexFirst": 50,
+      "ResponsesCount": 2,
+      "TriggerIndex": 0,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28217
+      },
+      "ResponsesIndexFirst": 52,
+      "ResponsesCount": 4,
+      "TriggerIndex": 2,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "No telling for sure - but judging from the arrows that whizzed past my ear when I chased them here, there's at least one archer in their number.  I'd try to take out any archers first, if you can - preferably with missile weapons of your own.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28226
+      },
+      "ResponsesIndexFirst": 56,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "You might want to keep wounded members of your party - or, uh, wizards - outside the warehouse while the rest of your band storms the place.  One arrow can drop a man before he even knows the archer is there.  Sometimes it's to your benefit to divide your forces.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28417
+      },
+      "ResponsesIndexFirst": 57,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.  Still, you might want to take that scroll to Ulbrec's wife, she knows something of magic and might be able to identify it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28421
+      },
+      "ResponsesIndexFirst": 60,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 23
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "We're adventurers from Luskan.  What's going on here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27702
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Calm yourself - what's the problem?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27703
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 27682,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Uh, the sell-swords from the Salty Dog?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27707
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 3,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "The sell-swords from the Salty Dog?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27708
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 3,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Uh, the sell-swords from the Salty Dog?  You mean the Iron Collar mercenaries?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27709
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 3,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "The sell-swords from the Salty Dog?  You mean the Iron Collar mercenaries?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27710
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 3,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "If you're waiting for the Iron Collar mercenaries, I wouldn't bet on them showing up any time soon... at least until the kegs in the Salty Dog are empty.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27711
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 4,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 4,
+      "Index": 8,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "There was an altercation at the Salty Dog, and the Iron Collar Mercenaries refused to back down - they won't be coming.  We can take out those goblins for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27714
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 8,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Actually, uh, I think the goblins may have already killed them.  It might be best if you let us go in and take out those goblins ourselves.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27715
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 8,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Look, there's no reason to wait for those mercenaries.  Let me go in and take those goblins out for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27716
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 7,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Where's the Salty Dog Tavern?  I could go find those sell-swords you're waiting for and bring them here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27717
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": 2,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 5,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'll go grab the Iron Collar company from the Salty Dog, and perhaps between the three groups of us we can dispatch these goblins.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27718
+      },
+      "JournalIndex": 27686,
+      "TriggerIndex": 9,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  Watch yourself... I will return shortly.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27720
+      },
+      "JournalIndex": 27686,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "There was an altercation at the Salty Dog, and the Iron Collar Mercenaries refused to back down - they won't be coming.  We can take out those goblins for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27714
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 8,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Actually, uh, I think the goblins may have already killed them.  It might be best if you let us go in and take out those goblins ourselves.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27715
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 8,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "They're not coming.  They've too many kegs to slaughter in the Salty Dog to come to Targos' aid.  Let us handle the goblins.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27722
+      },
+      "JournalIndex": 27683,
+      "TriggerIndex": 12,
+      "ActionIndex": 4,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 8,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "The Iron Collar mercenaries will not be coming.  It's just us.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27723
+      },
+      "JournalIndex": 27683,
+      "TriggerIndex": 13,
+      "ActionIndex": 5,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 8,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Forget the Iron Collar - let me go in and take out those goblins for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27724
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 7,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "No, I haven't found them yet.  I'll return when I do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27725
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Let me in that warehouse, and you'll see how good we play at being soldiers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27727
+      },
+      "JournalIndex": 27684,
+      "TriggerIndex": 16,
+      "ActionIndex": 6,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 8,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Where's the Salty Dog Tavern?  I could go find those sell-swords you're waiting for and bring them here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27717
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": 7,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 5,
+      "Index": 22,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Where's the Salty Dog Tavern again?  I could go find those sell-swords you're waiting for and bring them here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27728
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": 8,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 5,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'll go grab the Iron Collar company from the Salty Dog, and perhaps between the three groups of us we can dispatch these goblins.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27718
+      },
+      "JournalIndex": 27686,
+      "TriggerIndex": -1,
+      "ActionIndex": 9,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "But the Iron Collar mercenaries might not be able to get here in time.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27729
+      },
+      "JournalIndex": 27684,
+      "TriggerIndex": 19,
+      "ActionIndex": 10,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 8,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "If you want soldiers, then you shouldn't be waiting for those Iron Collar drunks - if you want those goblins dead, then talk to *me.*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27730
+      },
+      "JournalIndex": 27684,
+      "TriggerIndex": 20,
+      "ActionIndex": 11,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 8,
+      "Index": 26,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Hmmm. I might be able to pick the lock as well. Stand back.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27732
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": 12,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Don't you have a key?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27733
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 9,
+      "Index": 28,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "How many do you figure are in the warehouse?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27735
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 13,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 21,
+      "Index": 29,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "All right, then.  Stand back.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27736
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 14,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 30,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Not yet - we're about ready to storm the warehouse, though.  Stand back.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27738
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 22,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 31,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Not yet - there's still some left in the warehouse.  We're going back in shortly to take care of the rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27739
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 32,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We wiped out the ones inside, but there seems to be a passage leading below the warehouse - it looks like that's how they got into town in the first place.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27740
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 24,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 11,
+      "Index": 33,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "There's no way in the nine hells I'm serving as a tunnel worm for you or for Targos... without some coin to show for my trouble.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27870
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 25,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 12,
+      "Index": 34,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Give me a moment to rest up, then we'll head down there and take them out.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27871
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 35,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Give me a moment to rest up, then we'll head down there and take them out.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27871
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 36,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We found a passage running beneath the warehouse - it led into some caves in the cliff.  It looks like goblin sappers tunneled through there to get into Targos.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28015
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 14,
+      "Index": 37,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We found a passage running beneath the warehouse - found more goblins down there, but I haven't taken them all out yet.  When they're taken care of, I'll be back.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28016
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 27,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 38,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Well, it's good you came to check on us, then.  As it stands, there are still some more goblins down below; we'll return when they're dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28017
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 39,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Well, there were some collapsed passages - could be the goblins accidentally sealed themselves in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28019
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 29,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 15,
+      "Index": 40,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Well, there were some collapsed passages - could be the goblins accidentally sealed themselves in.  Found this scroll on one of the goblins, however, and it looks magical... or was, at least.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28020
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 30,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 23,
+      "Index": 41,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 27685,
+      "TriggerIndex": -1,
+      "ActionIndex": 15,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 16,
+      "Index": 42,
+      "Flags": "HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I hope so.  Where can I find him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 16,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 17,
+      "Index": 43,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "No reward is necessary... as long as Targos is safe, that is enough.  I would speak to Lord Ulbrec about employment, however.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 17,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 17,
+      "Index": 44,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I will seek him out, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 18,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 45,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Swift action was called for.  There are still some goblins in the warehouse.  We're going back in shortly to take care of them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28218
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 31,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Swift action was called for.  We wiped out the ones in the warehouse, but there seems to be a passage leading below the warehouse - it looks like that's how they got into town in the first place.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28219
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 32,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 11,
+      "Index": 47,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Swift action was called for.  We found a passage running beneath the warehouse - there were more goblins down there, but we haven't taken them all out yet.  When we've driven them out, we'll be back.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28220
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 33,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 48,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Swift action was called for.  We found a passage running beneath the warehouse - it led into some caves in the cliff.  It looks like goblin sappers tunneled through there to get into Targos.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28221
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 34,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 14,
+      "Index": 49,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I hope so.  Where can I find him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 17,
+      "Index": 50,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "No reward is necessary... as long as Targos is safe, that is enough.  I would speak to Lord Ulbrec about employment, however.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 51,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We couldn't wait for the Iron Collar mercenaries - plus, there's still some goblins left in the warehouse.  We're going back in shortly to take care of them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28223
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 35,
+      "ActionIndex": 19,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 52,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We couldn't wait for the Iron Collar mercenaries  and swift action was called for.  We wiped out the goblins in the warehouse, but there seems to be a passage leading below the warehouse - it looks like that's how they got into town in the first place.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28224
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 36,
+      "ActionIndex": 20,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 11,
+      "Index": 53,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Swift action was called for.  We found a passage running beneath the warehouse - there were more goblins down there, but we haven't taken them all out yet.  When they're taken care of, we'll be back.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28225
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 37,
+      "ActionIndex": 21,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 54,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Swift action was called for.  We found a passage running beneath the warehouse - it led into some caves in the cliff.  It looks like goblin sappers tunneled through there to get into Targos.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28221
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 38,
+      "ActionIndex": 22,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 14,
+      "Index": 55,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 22,
+      "Index": 56,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Hmm.  Sound advice.  Still, we wizards are a lot stronger than we appear.  We'll see about getting this door open.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28418
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 39,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 57,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Watch it.  We sorcerers are a lot stronger than we appear - but perhaps we'll heed your advice this time.  We'll see about getting this door open, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28419
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 40,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 58,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right, then - we'll see about getting this door open.  Stand back.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28420
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 41,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 59,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 27685,
+      "TriggerIndex": -1,
+      "ActionIndex": 23,
+      "NextScriptDialog": "10Brogan",
+      "NextPhraseIndex": 16,
+      "Index": 60,
+      "Flags": "HasAction, HasJournal"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"Brogan_Leave\", \"GLOBAL\", 1)",
+    "GlobalGT(\"Iron_Collar_Quest\", \"GLOBAL\", 0)\nGlobalLT(\"Iron_Collar_Quest\", \"GLOBAL\", 3)\nGlobal(\"Brogan_Quest\", \"GLOBAL\", 0)\nGlobal(\"AR1002_Visited\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Iron_Collar_Quest\", \"GLOBAL\", 0)\nGlobalLT(\"Iron_Collar_Quest\", \"GLOBAL\", 3)\nGlobal(\"Brogan_Quest\", \"GLOBAL\", 0)\nGlobal(\"AR1002_Visited\", \"GLOBAL\", 1)",
+    "Global(\"AR1002_Visited\", \"GLOBAL\", 1)\nGlobal(\"Know_Brogan\", \"GLOBAL\", 0)",
+    "Global(\"Brogan_Quest\", \"GLOBAL\", 1)\nGlobal(\"AR1002_Visited\", \"GLOBAL\", 1)\nGlobal(\"AR1007_Visited\", \"GLOBAL\", 1)",
+    "Global(\"Brogan_Quest\", \"GLOBAL\", 1)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 0)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 0)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 1)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 1)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 1)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Iron_Collar_Quest\", \"GLOBAL\", 2)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Iron_Collar_Quest\", \"GLOBAL\", 2)\r\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "GlobalLT(\"Iron_Collar_Quest\", \"GLOBAL\", 2)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "GlobalLT(\"Iron_Collar_Quest\", \"GLOBAL\", 2)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "CheckSkillGT(Protagonist, 0, Intimidate)",
+    "Global(\"Iron_Collar_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Iron_Collar_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 1)",
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 1)",
+    "ClassEx(Protagonist, Thief)",
+    "Global(\"AR1002_Visited\", \"GLOBAL\", 0)",
+    "Global(\"AR1002_Visited\", \"GLOBAL\", 1)\nGlobal(\"AR1002_GOBLINS_CLEAR\", \"GLOBAL\", 0)",
+    "Global(\"AR1002_GOBLINS_CLEAR\", \"GLOBAL\", 1)",
+    "!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"AR1007_GOBLINS_CLEAR\", \"GLOBAL\", 1)",
+    "Global(\"AR1007_GOBLINS_CLEAR\", \"GLOBAL\", 0)",
+    "Global(\"AR1007_GOBLINS_CLEAR\", \"GLOBAL\", 0)",
+    "!PartyHasItem(\"10Vellum\")",
+    "PartyHasItem(\"10Vellum\")",
+    "Global(\"AR1002_GOBLINS_CLEAR\", \"GLOBAL\", 0)",
+    "Global(\"AR1002_GOBLINS_CLEAR\", \"GLOBAL\", 1)\nGlobal(\"AR1007_Visited\", \"GLOBAL\", 0)",
+    "Global(\"AR1007_Visited\", \"GLOBAL\", 1)\nGlobal(\"AR1007_GOBLINS_CLEAR\", \"GLOBAL\", 0)",
+    "Global(\"AR1007_GOBLINS_CLEAR\", \"GLOBAL\", 1)",
+    "Global(\"AR1002_GOBLINS_CLEAR\", \"GLOBAL\", 0)",
+    "Global(\"AR1002_GOBLINS_CLEAR\", \"GLOBAL\", 1)\nGlobal(\"AR1007_Visited\", \"GLOBAL\", 0)",
+    "Global(\"AR1007_Visited\", \"GLOBAL\", 1)\nGlobal(\"AR1007_GOBLINS_CLEAR\", \"GLOBAL\", 0)",
+    "Global(\"AR1007_GOBLINS_CLEAR\", \"GLOBAL\", 1)",
+    "ClassEx(Protagonist, Mage)!Class(Protagonist, SORCERER)",
+    "Class(Protagonist, SORCERER)",
+    "!ClassEx(Protagonist, Mage)\n!ClassEx(Protagonist, Sorcerer)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Know_Brogan\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Brogan\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Iron_Collar_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Iron_Collar_Quest\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_1_Easy\",27693)\nSetGlobal(\"Iron_Collar_Quest\", \"GLOBAL\", 3)",
+    "AddXpVar(\"Level_1_Easy\",27693)\nSetGlobal(\"Iron_Collar_Quest\", \"GLOBAL\", 3)",
+    "AddXpVar(\"Level_1_Easy\",27695)\n",
+    "SetGlobal(\"Iron_Collar_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Iron_Collar_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Iron_Collar_Quest\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_1_Easy\",27695)\n",
+    "AddXpVar(\"Level_1_Easy\",27695)\n",
+    "SetGlobal(\"Brogan_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Brogan_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Brogan_Quest\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_1_Average\",27697)\n",
+    "SetGlobal(\"Brogan_Quest\", \"GLOBAL\", 2)",
+    "SetGlobal(\"Brogan_Quest\", \"GLOBAL\", 2)",
+    "SetGlobal(\"Brogan_Leave\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Brogan_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Brogan_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Brogan_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Brogan_Quest\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_1_Average\",27697)\n"
+  ],
+  "Checksum": null,
+  "Filename": "10BROGAN.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 27698
+}

@@ -1,0 +1,1281 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "By Dualdon's wake, you scared the last life out of me - you one of the mercenary bands under Ulbrec's coin?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27592
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 2,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Name's Magdar Shenlen - I'm the harbor master.  When I saw the goblins prowling through town, I fell back to the warehouse here and barred the door - any word from the Targos Guard?  Are they sending reinforcements?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28029
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "No idea - I heard no warning horn from the Palisade.  One moment, the docks were silent, and then suddenly, there were goblins.  I don't know if they've defeated the Targos Guard or not.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28037
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Reig must think me a wealthy man - unless he thinks to put all of Targos' shipments and supplies at your disposal, in which case I have *much* to spare.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28039
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "I think there were some healing draughts in one of the recent shipments from Bryn Shander - it's locked up in one of the crates in this warehouse, but without my logbooks, I can't tell you which of the crates is the right one.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28041
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "It might be, but I doubt it.  Most of the barrels in here hold weapon shipments from Luskan, though, so it can't hurt to bash them open and arm yourself properly.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28043
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Best I can tell you is to start searching the crates and barrels one by one... and don't hesitate to take anything you need to help you split a goblin skull or three and drive them out of Targos.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28044
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Then you'd best get to it.  Sounds like you might need those potions, and the sooner you can find that shipment, the better.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28423
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Then you'd best get to it.  Sounds like Reig is in a bad way, and the sooner you can find that shipment, the better.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28425
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Aye, you'll need to hack the crate open, unless you can pick the lock.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28720
+      },
+      "ResponsesIndexFirst": 28,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Aye, don't worry, you won't hurt their feelings.  Just pretend you're chopping a goblin in two, and you'll make short work of them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28722
+      },
+      "ResponsesIndexFirst": 29,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Well, the shipments are under the protection of the Gallaway Coster - but don't fear them, we have an emergency on our hands.  Take what you need, and we'll worry about sorting things out later.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28723
+      },
+      "ResponsesIndexFirst": 35,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "If we survive this, you can be sure that flame-haired whelp Deirdre Gallaway will raise the dead, but Targos is in danger, and Lord Ulbrec will stand with us.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28732
+      },
+      "ResponsesIndexFirst": 37,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "May Tymora bless your efforts - and I hope you can get to Reig in time to help him.  I'll head out and see if I can warn the rest of the town.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28733
+      },
+      "ResponsesIndexFirst": 43,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "May Tymora bless your efforts - and I hope you can find those healing draughts.  I'll head out and see if I can warn the rest of the town.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28735
+      },
+      "ResponsesIndexFirst": 44,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "May Tymora bless your efforts.  I'll head out and see if I can warn the rest of the town.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28736
+      },
+      "ResponsesIndexFirst": 45,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "By the Gods, *that's* welcome news.  I thought Targos was doomed.  Looks like fortune's smiling on us this day.  I'll head out to the town and see if I can help any of the wounded.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28738
+      },
+      "ResponsesIndexFirst": 46,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "I hope Tymora continues to smile upon us.  I'll head out to the town and see if I can help any of the wounded.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28740
+      },
+      "ResponsesIndexFirst": 47,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "It might be, but I doubt it.  Most of the barrels in here hold weapon shipments from Luskan, though, so it can't hurt to bash them open and arm yourself properly.  You said the docks are clear, but goblins have a habit of popping up when least expected, and we can't take any chances.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28741
+      },
+      "ResponsesIndexFirst": 48,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "Best I can tell you is to start searching the crates and barrels one by one... and don't hesitate to take anything you need to help you split a goblin skull or three in case there are any more of the little bastards about.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28742
+      },
+      "ResponsesIndexFirst": 49,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 19
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Yes, we just sailed into port on the Wicked Wench.  What happened?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27864
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27865
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "The docks are clear - we managed to stop the goblin sappers before they were able to do much damage.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28030
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 16,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "The docks are clear, but one of the Targos Guard, Reig, has been wounded.  He asked me to find you and see if you had any healing potions to spare.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28033
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 3,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We ran into three of the Guard by the docks - one had been killed, and another, Reig, had taken a goblin axe in the arm.  He asked me to find you and see if you had any healing potions to spare.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28034
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 3,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We ran into three of the Guard by the docks - one had been killed, and another, Reig, had taken a goblin axe in the arm.  We were able to help him, but he said you might have some healing potions to spare.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28035
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 3,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I doubt reinforcements are on the way - the goblins appear to have struck by surprise.  Any idea how many of them they are?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28036
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 2,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We ran into three of the Guard by the docks - one had been killed, and another, Reig, had taken a goblin axe in the arm.  He asked me to search you out and see if you had any healing potions to spare.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28038
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 3,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We ran into three of the Guard by the docks - one had been killed, and another, Reig, had taken a goblin axe in the arm.  We were able to help him, but he said you might have some healing potions to spare.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28035
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 3,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 4,
+      "Index": 9,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Could the healing draughts be in one of these barrels?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28042
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 5,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Could the healing draughts be in one of these barrels?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28042
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 18,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 27591,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 6,
+      "Index": 12,
+      "Flags": "HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "This warehouse is huge - searching it will take too long.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28045
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": 0,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 8,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "This warehouse is huge - searching it will take too long.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28045
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": 1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 7,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "So it's all right if we just split these barrels open?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28046
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 10,
+      "Index": 15,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "But the crate with the potions is locked?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28047
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 9,
+      "Index": 16,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Who do these shipments belong to?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28422
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 11,
+      "Index": 17,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "So it's all right if we just split these barrels open?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28046
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": 5,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 10,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "But the crate with the potions is locked?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28047
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": 6,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 9,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Who do these shipments belong to?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28422
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": 7,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 11,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We'll start searching the warehouse, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28424
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 13,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We'll start searching the warehouse, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28424
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 14,
+      "Index": 22,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "So it's all right if we just split these barrels open?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28046
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": 8,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 10,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "But the crate with the potions is locked?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28047
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": 9,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 9,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Who do these shipments belong to?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28422
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": 10,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 11,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We'll start searching the warehouse, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28424
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 13,
+      "Index": 26,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We'll start searching the warehouse, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28424
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 20,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 14,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Who has the key?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28721
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 11,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 11,
+      "Index": 28,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "This warehouse is huge - searching it will take too long.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28045
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": 12,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 8,
+      "Index": 29,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "This warehouse is huge - searching it will take too long.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28045
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 22,
+      "ActionIndex": 13,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 7,
+      "Index": 30,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "But the crate with the potions is locked?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28047
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": 14,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 9,
+      "Index": 31,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Who do these shipments belong to?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28422
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 24,
+      "ActionIndex": 15,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 11,
+      "Index": 32,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We'll start searching the warehouse, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28424
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 25,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 13,
+      "Index": 33,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We'll start searching the warehouse, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28424
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 14,
+      "Index": 34,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We'll see about paying them back after the goblins have been driven out of town.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28724
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 12,
+      "Index": 35,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Oh, we'll be sure to help ourselves to whatever we need.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28731
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 12,
+      "Index": 36,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "This warehouse is huge - searching it will take too long.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28045
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 27,
+      "ActionIndex": 16,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 8,
+      "Index": 37,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "This warehouse is huge - searching it will take too long.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28045
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": 17,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 7,
+      "Index": 38,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "So it's all right if we just split these barrels open?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28046
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 29,
+      "ActionIndex": 18,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 10,
+      "Index": 39,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "But the crate with the potions is locked?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28047
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 30,
+      "ActionIndex": 19,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 9,
+      "Index": 40,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We'll start searching the warehouse, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28424
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 31,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 13,
+      "Index": 41,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We'll start searching the warehouse, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28424
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 32,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 14,
+      "Index": 42,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28734
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 20,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 43,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28734
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 21,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 44,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28737
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 45,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Very well, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28739
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 22,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 46,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28737
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 47,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 27591,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 19,
+      "Index": 48,
+      "Flags": "HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "This warehouse is huge - searching it will take too long.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28045
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 33,
+      "ActionIndex": 23,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 8,
+      "Index": 49,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "This warehouse is huge - searching it will take too long.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28045
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 34,
+      "ActionIndex": 24,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 7,
+      "Index": 50,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "So it's all right if we just split these barrels open?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28046
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 25,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 10,
+      "Index": 51,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "But the crate with the potions is locked?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28047
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 26,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 9,
+      "Index": 52,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Who do these shipments belong to?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28422
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 27,
+      "NextScriptDialog": "10Magdr",
+      "NextPhraseIndex": 11,
+      "Index": 53,
+      "Flags": "HasText, HasAction"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"Magdar_Leave\", \"GLOBAL\", 1)\nGlobal(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Leave\", \"GLOBAL\", 1)\nGlobal(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "GlobalLT(\"Reig_Quest\", \"GLOBAL\", 2)\nGlobal(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "GlobalLT(\"Reig_Quest\", \"GLOBAL\", 2)\nGlobal(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Reig_Quest\", \"GLOBAL\", 1)\nGlobal(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "GlobalLT(\"Reig_Quest\", \"GLOBAL\", 2)",
+    "GlobalGT(\"Reig_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "GlobalLT(\"Reig_Quest\", \"GLOBAL\", 2)",
+    "GlobalGT(\"Reig_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Magdar_Barrel_Q\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Crate_Q\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Shipment_Q\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)\nGlobalLT(\"Reig_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)\nGlobalGT(\"Reig_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Magdar_Barrel_Q\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Crate_Q\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Shipment_Q\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)\nGlobalLT(\"Reig_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)\nGlobalGT(\"Reig_Quest\", \"GLOBAL\", 1)",
+    "GlobalLT(\"Reig_Quest\", \"GLOBAL\", 2)\nGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Reig_Quest\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Crate_Q\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Shipment_Q\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)\nGlobalLT(\"Reig_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)\nGlobalGT(\"Reig_Quest\", \"GLOBAL\", 1)",
+    "GlobalLT(\"Reig_Quest\", \"GLOBAL\", 2)\nGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Reig_Quest\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Barrel_Q\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Crate_Q\", \"GLOBAL\", 0)",
+    "Global(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)\nGlobalLT(\"Reig_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)\nGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)\nGlobalGT(\"Reig_Quest\", \"GLOBAL\", 1)",
+    "GlobalLT(\"Reig_Quest\", \"GLOBAL\", 2)",
+    "GlobalGT(\"Reig_Quest\", \"GLOBAL\", 1)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Magdar\", \"GLOBAL\", 1)\nSetGlobal(\"Magdar_Leave\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Magdar\", \"GLOBAL\", 1)\nSetGlobal(\"Magdar_Leave\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Magdar\", \"GLOBAL\", 1)\nSetGlobal(\"Magdar_Leave\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Warehouse_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Barrel_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Crate_Q\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Magdar_Shipment_Q\", \"GLOBAL\", 1)"
+  ],
+  "Checksum": null,
+  "Filename": "10MAGDR.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 27592
+}

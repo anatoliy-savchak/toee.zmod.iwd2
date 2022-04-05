@@ -1,0 +1,68 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "This malodorous mass of grayish-white flesh pulses and throbs; with each convulsion there is a great exhalation of foul-smelling air from its toothy maw.  It seems a living machine more than a true creature.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2498
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 0,
+      "Index": 0
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Hurl the conversion poison into its maw.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 521
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Leave.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35739
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "True()"
+  ],
+  "TriggersResponse": [
+    "PartyHasItem(\"53MiscIV\")"
+  ],
+  "Actions": [
+    "TakePartyItem(\"53MiscIV\")\r\nDestroyItem(\"53MiscIV\")\r\nAddExperiencePartyCR(7)\r\nKill(Myself)"
+  ],
+  "Checksum": null,
+  "Filename": "53VICISC.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 2498
+}

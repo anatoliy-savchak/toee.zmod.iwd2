@@ -1,0 +1,315 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Guards!  I am being threatened - assist me!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32013
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 3,
+      "TriggerIndex": 3,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "ZZZZzzzzZZZZzzzz...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32162
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Dead?!  I am... I am D'hey-jazerrion, the alchemist.  Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32164
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Why would you want such a thing?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39387
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Y- yes!  I understand!  Just take the mandrake root off of the work desk and replace it with your own.  Please don't hurt me...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40397
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "What?  Oh... it's not done yet.  These things take time.  Please understand!  Just make *sure* you place your mandrake root on the desk and remove my mandrake root.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41099
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "What more do you need?  The brew has already been created, just as you asked...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41101
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 6
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Wait --",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32159
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "No one is coming.  Most of them are *dead.*  The rest will soon follow.  Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32160
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 1,
+      "NextScriptDialog": "61Alchem",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We've been though all of this before, D'hey-jazerrion.  But now, I have a task for you.  You will take this mandrake root and manufacture a sample of histachii brew for me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32161
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "61Alchem",
+      "NextPhraseIndex": 3,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "That is not your concern.  I have a task for you.  You will take this mandrake root and manufacture a sample of histachii brew for me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32183
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 3,
+      "NextScriptDialog": "61Alchem",
+      "NextPhraseIndex": 3,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Get out of my sight.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32184
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32185
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "That is *also* none of your concern!  Do it for me immediately or suffer the consequences!  *Any* deception on your part will be detected and dealt with accordingly.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40396
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61Alchem",
+      "NextPhraseIndex": 4,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Get to work.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41075
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Oh, don't worry about me.  Just keep busy.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41100
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Very good.  Now, just stay out of my way.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41102
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"61Alchemist_Intimidated\",\"GLOBAL\",1)\nGlobalLT(\"61NheeroMissionQuest\", \"GLOBAL\", 7)",
+    "Global(\"61Alchemist_Intimidated\",\"GLOBAL\",1)\nGlobalGT(\"61NheeroMissionQuest\", \"GLOBAL\", 6)",
+    "Or(2)\nSequence(Myself,SLEEP)\nSequence(Myself,TWITCH)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "!Global(\"61Know_Alchemist\",\"GLOBAL\",1)",
+    "Global(\"61Know_Alchemist\",\"GLOBAL\",1) GlobalGT(\"61NheeroMissionQuest\", \"GLOBAL\", 3)\nGlobalLT(\"61NheeroMissionQuest\", \"GLOBAL\", 7)\nCheckSkillGT(Protagonist,9,Intimidate)",
+    "Or(2)\r\nPartyHasItem(\"61GenMM\")\r\nPartyHasItem(\"61HFGnMM\")\r\nGlobalGT(\"61NheeroMissionQuest\", \"GLOBAL\", 3)\r\nGlobalLT(\"61NheeroMissionQuest\", \"GLOBAL\", 7)\r\nCheckSkillGT(Protagonist,9,Intimidate)"
+  ],
+  "Actions": [
+    "SetGlobal(\"AlchemistCallForHelp\",\"MYAREA\",1)",
+    "SetGlobal(\"61Know_Alchemist\",\"GLOBAL\",1)",
+    "SetGlobal(\"61Alchemist_Intimidated\",\"GLOBAL\",1)",
+    "SetGlobal(\"61Alchemist_Intimidated\",\"GLOBAL\",1)",
+    "SetGlobal(\"AlchemistCallForHelp\",\"MYAREA\",1)",
+    "SetGlobal(\"AlchemistCallForHelp\",\"MYAREA\",1)"
+  ],
+  "Checksum": null,
+  "Filename": "61ALCHEM.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 32013
+}

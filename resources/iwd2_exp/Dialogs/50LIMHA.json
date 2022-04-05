@@ -1,0 +1,1636 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Welcome, welcome... I am Limha, and this is my home.  Do come in, precious... put yourself at ease.  It is safe, here - very safe.",
+        "Flags": "Standard",
+        "Sound": "LIMH001",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8136
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 6,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Please, precious, ask anything you'd like.",
+        "Flags": "Standard",
+        "Sound": "LIMH002",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8147
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Of course... ask me whatever you'd like, precious.",
+        "Flags": "Standard",
+        "Sound": "LIMH003",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8153
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Are you?  I wish you luck, then.  The only child I know is my precious Agog, and he is *very* easy to find.",
+        "Flags": "Standard",
+        "Sound": "LIMH004",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8155
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "A dryad?  A *DRYAD?!*  Why would *I* care what wicked lies a fey creature of the wood told *you,* worm?  Oh!  Ah... pardon my temper, please.  I can assure you, I know nothing of these \"missing children.\"",
+        "Flags": "Standard",
+        "Sound": "LIMH005",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8160
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "*Those* woods?  Oh - I do not know, precious.  But they are *very* dangerous... I would stay well away from that forest.",
+        "Flags": "Standard",
+        "Sound": "LIMH006",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8162
+      },
+      "ResponsesIndexFirst": 24,
+      "ResponsesCount": 7,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "It's my little home in the wild!  I enjoy the solitude here, where I experiment with and create all manner of potions.  I can brew something to sell you, if you'd like, or teach you a spell.  I also sell trinkets that I've picked up from foolish barbarians.",
+        "Flags": "Standard",
+        "Sound": "LIMH007",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8163
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "There's a tribe of barbarians to the east, the Black Ravens - savage, foolhardy pigs.  They've attacked me on occasion.  Sometimes one has something I *fancy,* and I take it while he moans and bleeds in the snow.  *Hm-hm-hm!*",
+        "Flags": "Standard",
+        "Sound": "LIMH008",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8166
+      },
+      "ResponsesIndexFirst": 37,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Of course, of course.  Please... relax, enjoy my home.  When should I rouse you, precious?",
+        "Flags": "Standard",
+        "Sound": "LIMH009",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8168
+      },
+      "ResponsesIndexFirst": 42,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Agog is my only child, my precious son - harmless and gentle.  Aren't you, my boy?",
+        "Flags": "Standard",
+        "Sound": "LIMH010",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8172
+      },
+      "ResponsesIndexFirst": 45,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Yes, mother loves you...",
+        "Flags": "Standard",
+        "Sound": "LIMH011",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8173
+      },
+      "ResponsesIndexFirst": 46,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "I welcome you again, precious thing.  I do hope you'll stay a while this time...",
+        "Flags": "Standard",
+        "Sound": "LIMH012",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8174
+      },
+      "ResponsesIndexFirst": 51,
+      "ResponsesCount": 9,
+      "TriggerIndex": 1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "Filthy lies from a filthy creature!  Why, I've no *idea* of who this dirty child is, or how it came to be here...",
+        "Flags": "Standard",
+        "Sound": "LIMH013",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8176
+      },
+      "ResponsesIndexFirst": 60,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "How... how *dare* you take that tone with me, you *worm!*  Do you think you can just wander by and change the way that things have worked for *centuries?*",
+        "Flags": "Standard",
+        "Sound": "LIMH014",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8177
+      },
+      "ResponsesIndexFirst": 61,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "A *curious* little insect, aren't you?  So be it - I'll tell you my tale.  Every sixty-six years I take six children, using their spirits to bolster my waning power and beauty.  In return, I protect that pathetic little village from all harm...",
+        "Flags": "Standard",
+        "Sound": "LIMH015",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8180
+      },
+      "ResponsesIndexFirst": 62,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "How do *you* think that village of simpletons has survived for so long next to the most ferocious tribe of barbarians in the north, worm?  *ME!*",
+        "Flags": "Standard",
+        "Sound": "LIMH016",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8187
+      },
+      "ResponsesIndexFirst": 64,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "It is *MY* terrible creatures that haunt the Fell Wood, *MY* foul monsters that infest the Cold Marshes, and the countless Black Raven barbarians that *MY* magic has slain which keeps those ignorant, detestable fools safe.  I *ALONE* ALLOW THAT VILLAGE TO EXIST!",
+        "Flags": "Standard",
+        "Sound": "LIMH017",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8188
+      },
+      "ResponsesIndexFirst": 65,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "Nonsense.  They are not slain, merely sapped of some of their life's energy.  The little maggots aren't left with enough of a soul to maintain a human existence, and so I change them into precious, tiny minks...",
+        "Flags": "Standard",
+        "Sound": "LIMH018",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8191
+      },
+      "ResponsesIndexFirst": 67,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "It's not *my* fault if their own parents later trap and skin them to trade their pelts away - though I do find it *deliciously* ironic.  *Hm-hm-hm!*",
+        "Flags": "Standard",
+        "Sound": "LIMH019",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8193
+      },
+      "ResponsesIndexFirst": 68,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "Oh... you're so *noble,* asking about the children... but I'm afraid *not,* worm.  The only way to save those little minks would be to slay *me,* and that's simply not possible - I'm *far* too powerful to be bested by the likes of *you.*",
+        "Flags": "Standard",
+        "Sound": "LIMH020",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8195
+      },
+      "ResponsesIndexFirst": 69,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "*Pish!*  So eager to throw away your lives.  *Why?*",
+        "Flags": "Standard",
+        "Sound": "LIMH021",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8199
+      },
+      "ResponsesIndexFirst": 71,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "*Hm-hm-hm!*  So be it.  Agog - help me kill them.  We'll add their trinkets to my precious collection...",
+        "Flags": "Standard",
+        "Sound": "LIMH022",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8202
+      },
+      "ResponsesIndexFirst": 73,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 21
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I think not, Limha - I can sense the reek of utter evil beneath your mask of flesh.  Just what manner of fiend or hag are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35545
+      },
+      "JournalIndex": 34747,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8140
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 3,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "A dryad told me that you've been kidnapping children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8143
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 4,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How do I pass through the woods to the east?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8144
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 5,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I had questions about this place.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8145
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 1,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Never mind.  Farewell, Limha.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8146
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What is this place, exactly?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8148
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": 2,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 6,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'd like to purchase something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8149
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "May I rest here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8150
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 8,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is that large man?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8151
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 9,
+      "Index": 9,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Actually, I wanted to ask about something else.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8152
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 2,
+      "Index": 10,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Never mind.  Farewell, Limha.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8146
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8140
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": 4,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 3,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "A dryad told me that you've been kidnapping children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8143
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 4,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How do I pass through the woods to the east?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8144
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 5,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Actually, I had questions about this place.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8154
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 1,
+      "Index": 15,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Never mind.  Farewell, Limha.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8146
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Agog?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8156
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 9,
+      "Index": 17,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "How do I pass through the woods to the east?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8144
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 5,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What is this place?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8158
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": 5,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 6,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'd like to purchase something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8149
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "May I rest here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8150
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 8,
+      "Index": 21,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell, Limha.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8159
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 8128,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 23,
+      "Flags": "HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8140
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": 8,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 3,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "A dryad told me that you've been kidnapping children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8143
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 4,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What is this place?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8158
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": 9,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 6,
+      "Index": 26,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'd like to purchase something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8149
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": 10,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "May I rest here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8150
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 8,
+      "Index": 28,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is that large man?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8151
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 9,
+      "Index": 29,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell, Limha.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8159
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 30,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Foolish barbarians...?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8164
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 7,
+      "Index": 31,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I'd like to purchase something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8149
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 11,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 32,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "May I rest here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8150
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 8,
+      "Index": 33,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is that large man?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8151
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 9,
+      "Index": 34,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I wanted to ask about something else.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8165
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 2,
+      "Index": 35,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell, Limha.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8159
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 36,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'd like to purchase something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8149
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 12,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 37,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "May I rest here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8150
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 8,
+      "Index": 38,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is that large man?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8151
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 9,
+      "Index": 39,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I wanted to ask about something else.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8165
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 2,
+      "Index": 40,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell, Limha.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8159
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 41,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We'll rest for eight hours.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8170
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 13,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 42,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We'll rest until we're fully healed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8171
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 14,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 43,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Never mind.  Farewell, Limha.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8146
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 44,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Agog",
+      "NextPhraseIndex": 4,
+      "Index": 45,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "What is this place, exactly?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8148
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": 15,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 6,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'd like to purchase something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8149
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": 16,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 47,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "May I rest here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8150
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 8,
+      "Index": 48,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I wanted to ask about something else.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8165
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 2,
+      "Index": 49,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell, Limha.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8159
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 50,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I think not, Limha - I can sense the reek of utter evil beneath your mask of flesh.  Just what manner of fiend or hag are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35545
+      },
+      "JournalIndex": 34747,
+      "TriggerIndex": 20,
+      "ActionIndex": 17,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 51,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8140
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": 18,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 3,
+      "Index": 52,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "A dryad told me that you've been kidnapping children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8143
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 22,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 4,
+      "Index": 53,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How do I pass through the woods to the east?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8144
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 5,
+      "Index": 54,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What is this place, exactly?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8148
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 24,
+      "ActionIndex": 19,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 6,
+      "Index": 55,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'd like to purchase something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8149
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 25,
+      "ActionIndex": 20,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 56,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "May I rest here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8150
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 8,
+      "Index": 57,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Who is that large man?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8151
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 27,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 9,
+      "Index": 58,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I was only passing by.  Farewell, Limha.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8175
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 59,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Agog",
+      "NextPhraseIndex": 5,
+      "Index": 60,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "What are you talking about?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8178
+      },
+      "JournalIndex": 8126,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 14,
+      "Index": 61,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "From all harm?  What do you call stealing their children?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8185
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 15,
+      "Index": 62,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What sort of bargain is that?  The villagers don't even know what you're doing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8186
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 15,
+      "Index": 63,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 16,
+      "Index": 64,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Except for the children you destroy.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8189
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 17,
+      "Index": 65,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps the village might want to defend itself rather than have you kill its children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8190
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 17,
+      "Index": 66,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 18,
+      "Index": 67,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "It is permanent?  Can it be undone?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8194
+      },
+      "JournalIndex": 8127,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 19,
+      "Index": 68,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We'll see.  If saving those children means your death, so be it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8197
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 20,
+      "Index": 69,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Don't make the fatal mistake of underestimating us, as all our dead enemies have.  Tell us the way through the Fell Wood, and we'll let you live.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8198
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 20,
+      "Index": 70,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What you're doing is wrong.  You must be stopped.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8200
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 21,
+      "Index": 71,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We've a job to do, and you're in our way.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8201
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 21,
+      "Index": 72,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I thought I told you to go home, child - now hurry.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8203
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 21,
+      "NextScriptDialog": "50Hannu",
+      "NextPhraseIndex": 4,
+      "Index": 73,
+      "Flags": "HasText, HasAction"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "ClassEx(Protagonist, Paladin)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\r\n!Global(\"50Carynara\", \"Global\", 1)\r\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"50Carynara\", \"Global\", 1)\r\n!ClassEx(Protagonist, Paladin)",
+    "GlobalGT(\"AR5003_Visited\", \"Global\", 0)\r\n!Global(\"50Suoma_Help\", \"Global\", 5)\r\n!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)",
+    "Global(\"50Limha\", \"Global\", 0)",
+    "Global(\"50Limha\", \"Global\", 1)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)",
+    "Global(\"50Carynara\", \"Global\", 1)",
+    "GlobalGT(\"AR5003_Visited\", \"Global\", 0)\n!Global(\"50Suoma_Help\", \"Global\", 5)",
+    "GlobalGT(\"AR5003_Visited\", \"Global\", 0)\n!Global(\"50Suoma_Help\", \"Global\", 5)",
+    "Global(\"50Limha\", \"Global\", 0)",
+    "Global(\"50Limha\", \"Global\", 1)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)",
+    "Global(\"50Carynara\", \"Global\", 1)",
+    "Global(\"50Limha\", \"Global\", 0)",
+    "Global(\"50Limha\", \"Global\", 1)",
+    "Global(\"50Limha\", \"Global\", 0)",
+    "Global(\"50Limha\", \"Global\", 1)",
+    "ClassEx(Protagonist, Paladin)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\r\n!Global(\"50Carynara\", \"Global\", 1)\r\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"50Carynara\", \"Global\", 1)\r\n!ClassEx(Protagonist, Paladin)",
+    "GlobalGT(\"AR5003_Visited\", \"Global\", 0)\r\n!Global(\"50Suoma_Help\", \"Global\", 5)\r\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"50Limha\", \"Global\", 0)\r\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"50Limha\", \"Global\", 1)\r\n!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)"
+  ],
+  "Actions": [
+    "StartCutSceneMode()StartCutScene(\"50cHann0\")",
+    "SetGlobal(\"50LimhaQ\", \"Global\", 1)",
+    "SetGlobal(\"50Limha\", \"Global\", 1)",
+    "StartStore(\"50Limha\", Protagonist)",
+    "SetGlobal(\"50LimhaQ\", \"Global\", 1)",
+    "SetGlobal(\"50Limha\", \"Global\", 1)",
+    "StartStore(\"50Limha\", Protagonist)",
+    "StartCutSceneMode()\r\nStartCutScene(\"50cHann0\")",
+    "SetGlobal(\"50LimhaQ\", \"Global\", 1)",
+    "SetGlobal(\"50Limha\", \"Global\", 1)",
+    "StartStore(\"50Limha\", Protagonist)",
+    "StartStore(\"50Limha\", Protagonist)",
+    "StartStore(\"50Limha\", Protagonist)",
+    "FadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)\r\nRestParty()",
+    "FadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)\r\nRestUntilHealed()",
+    "SetGlobal(\"50Limha\", \"Global\", 1)",
+    "StartStore(\"50Limha\", Protagonist)",
+    "StartCutSceneMode()\r\nStartCutScene(\"50cHann0\")",
+    "SetGlobal(\"50LimhaQ\", \"Global\", 1)",
+    "SetGlobal(\"50Limha\", \"Global\", 1)",
+    "StartStore(\"50Limha\", Protagonist)",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "50LIMHA.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 8136
+}

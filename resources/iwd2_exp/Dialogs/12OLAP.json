@@ -1,0 +1,1387 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Seems every time I turn around, the ground is sprouting another crop of sell-swords.  Have ye a post to report to?  If not, go to Shawford at the meeting house - to the south.  *He* can help ye.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 18630
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 6,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Ye again... ye pop up like goblins.  Look, go seek Shawford, I don't have time to speak to ye.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23450
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 2,
+      "TriggerIndex": 7,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Ah, he did?  Excellent!  I have me own command now, do I?  Well, ye can put yer swords and weapons away, because that's the last thing I need.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24090
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Ye see this section of the wall here?  Well, I can't patch it with air.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24529
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Ye got a clever tongue on ye, sell-sword - but if ye want to earn another coin in Targos' service, ye'll need to do a lot more listening and nodding, ye hear me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25167
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Oh, I already have the wood I need to fix it in town, but what I *need* is a way to get it here to the Palisade, and that mule-headed merchant Lumbar Grundwall is being difficult.  He's the one we've contracted to deliver the lumber.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25175
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Hmmph.  Ye do that - make sure ye tell Lumbar we need that wood here *now.*  Now go!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25202
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Ye can probably find him on the main road that runs north - south through Targos.  Tell Lumbar we need that wood here now.  Now go!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25214
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Ye find Lumbar yet?  I don't see any wood here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25218
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 3,
+      "TriggerIndex": 8,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Damnable humans - by Clangeddin's fist, some of them have heads as thick as dwarves.   Broken crane, eh?  The damn flywheel's probably snapped off again.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25264
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Well, an engineer I may be, but a carpenter I am not, at least not the skill of my father.  Go seek out me Da, Jorun, at the docks, and see if he can help that wailing babe Grundwall repair the crane.  And assure that kettle-mouthed greed merchant he'll still get his commission, never fear.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25270
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Me Da?  *Dead?*  But... damn it all, those filthy bastards'll pay, they will!  But... the wall... we'll need to send men from the Palisade to haul the lumber then - aye, t-t-tell Shawford I've no more need o' ye.  Now git!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25274
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "Oh, *aye,* and I'll make sure he brings you a flask of Cormyran Brandy and a frosted glass.  Perhaps ye'd like slippers and a robe as well?  I'll have the wizards magic ye up some of those, too.  Now get goin'!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25276
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "Hmmm... ye have a point.  All right, I'll tell Swift Thomas to take ye the fastest route through Targos.  Just send him back right quick, all right?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25279
+      },
+      "ResponsesIndexFirst": 25,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "The boy's usually right outside the meeting hall where Shawford's set up his post, waiting to deliver a message to him or Ulbrec.  Now be quick about yer business.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25282
+      },
+      "ResponsesIndexFirst": 28,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "That crane fixed yet?  I don't see any lumber here yet.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25284
+      },
+      "ResponsesIndexFirst": 29,
+      "ResponsesCount": 3,
+      "TriggerIndex": 9,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "Well, HURRY up, or I'll have ye thrown off the docks with a bag of stones for company.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25299
+      },
+      "ResponsesIndexFirst": 32,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "By the Gods... look, take the wheel to the crane at the top of the cliff, and just *put* it on the crane.  It should be as easy as just clicking it into place.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25303
+      },
+      "ResponsesIndexFirst": 35,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "Look at her, all patched up, waiting for a taste of goblin blood - let's see the goblins try to break through that!  Ha!  Ye did good, you did - now, if I were ye, I'd get back to Shawford and see what other errands he needs ye for.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25624
+      },
+      "ResponsesIndexFirst": 36,
+      "ResponsesCount": 1,
+      "TriggerIndex": 10,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "Leave me be, I got work to do.  Me poor Da... those goblins'll pay, aye, they *will.*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25626
+      },
+      "ResponsesIndexFirst": 37,
+      "ResponsesCount": 1,
+      "TriggerIndex": 11,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "Ha!  Didja see those goblin rock-crawlers run?!  Let them scuttle back to their caves - they won't be attacking Targos again anytime soon!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25627
+      },
+      "ResponsesIndexFirst": 38,
+      "ResponsesCount": 1,
+      "TriggerIndex": 5,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "Damn me eyes!  Looks like the rumors around town were true.  Never thought to see one of yer kind crawling up from the Underdark... it's an ill omen for Targos when we have to get help from one of *ye,* it is.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25629
+      },
+      "ResponsesIndexFirst": 39,
+      "ResponsesCount": 2,
+      "TriggerIndex": 2,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "Damn me eyes!  Looks like the rumors around town were true.  Never thought to see a drow walking in the sunlight... it's an ill omen for Targos when we have to get help from one of *ye,* it is.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25632
+      },
+      "ResponsesIndexFirst": 41,
+      "ResponsesCount": 2,
+      "TriggerIndex": 3,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "Hmmph - looks like we're stuck with ye, we are.  Have ye a post to report to?  If not, go to Shawford at the meeting house - to the south.  *He* can help ye.  Now get gone.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25636
+      },
+      "ResponsesIndexFirst": 43,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 23
+    },
+    {
+      "Text": {
+        "Text": "Damn me eyes!  Looks like the rumors around town were true.  Never thought to see one of yer kind tunneling up from the Underdark... are ye truly a deep gnome?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25637
+      },
+      "ResponsesIndexFirst": 45,
+      "ResponsesCount": 3,
+      "TriggerIndex": 4,
+      "Index": 24
+    },
+    {
+      "Text": {
+        "Text": "Hmmph - have ye a post to report to?  If not, go to Shawford at the meeting house - to the south.  *He* can help ye.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25643
+      },
+      "ResponsesIndexFirst": 48,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 25
+    },
+    {
+      "Text": {
+        "Text": "With a tongue like that, ye'll fit right in with these dim-witted humans - have ye a post to report to?  If not, go to Shawford at the meeting house - to the south.  He can help ye.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25644
+      },
+      "ResponsesIndexFirst": 50,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 26
+    },
+    {
+      "Text": {
+        "Text": "Are ye daft?!  Stop wagging yer tongue and let's get killing goblins!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31742
+      },
+      "ResponsesIndexFirst": 52,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 27
+    },
+    {
+      "Text": {
+        "Text": "I almost wish those damned goblins would TRY to storm Targos' walls again - the hells need filling, and a few hundred goblin bodies would do nicely, they would.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31744
+      },
+      "ResponsesIndexFirst": 53,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 28
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Actually, he told us to report to you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 18631
+      },
+      "JournalIndex": 15593,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 2,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  We will seek him out, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23449
+      },
+      "JournalIndex": 15592,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "He told us to report to you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  We will seek him out, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23449
+      },
+      "JournalIndex": 15592,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What's the problem?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24091
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 3,
+      "Index": 4,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Really?  I'm beginning to see why they made you the engineer.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24530
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 4,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What do you need to fix it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25150
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 5,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You know, if you could patch it with air, I would be quite impressed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25163
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 4,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "All right... engineer.  What do you need to fix it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25172
+      },
+      "JournalIndex": 15595,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 5,
+      "Index": 8,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I already spoke to him.  He says the crane is broken, and he fears anyone else moving the lumber out of fear that his commission will be in jeopardy.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25177
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 9,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I ran across him earlier.  I will go speak to him and see if I can find out what the problem is.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25178
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 6,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I will go speak to Lumbar, then.  Where might I find him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25183
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 7,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "All right, I'm off.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25210
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right, I'm off.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25210
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I spoke to him.  He says the crane is broken, and he fears anyone else moving the lumber out of fear that his commission will be in jeopardy.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25226
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 9,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Where could we find him again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25228
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 7,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Not yet, we're working on it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25263
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Uh-oh... I'm beginning to see where *this* is going.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25265
+      },
+      "JournalIndex": 15693,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 10,
+      "Index": 17,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can't you fix it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25269
+      },
+      "JournalIndex": 15693,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 10,
+      "Index": 18,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "But... I heard Jorun perished in the goblin attack.  Didn't anyone tell you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25271
+      },
+      "JournalIndex": 17060,
+      "TriggerIndex": 10,
+      "ActionIndex": 5,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 11,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Uh, we'd rather not run all over this city playing fetch for everyone and his mother.  Can you have one of the runners go fetch him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25272
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 12,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you get us a guide to take us there or bring him here, perhaps?  I'd rather not abandon the Palisade while Targos is in danger.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25273
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 13,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Farewell then, Olap.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Look, runt, you NEED soldiers, and if you want us to throw our lot elsewhere, then fine, you can explain our quitting to Shawford himself.  I'm sure he'll be pleased you threw away a sword in Targos' service.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25277
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 13,
+      "Index": 23,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Looks like we're walking, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25278
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I've spoken to Swift Thomas - where can I find him again? ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34606
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": 6,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 14,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Swift Thomas?  Where can we find him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25280
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": 7,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 14,
+      "Index": 26,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "All right.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25281
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 27,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25283
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 28,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Not yet, we're working on it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25263
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 16,
+      "Index": 29,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Where can we find Swift Thomas again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25285
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 14,
+      "Index": 30,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We've got the crane wheel, but we're not sure what to do with it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25286
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 17,
+      "Index": 31,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Watch your mouth, dwarf, or you'll be missing your bag of stones.  We'll find Lumbar and get this straightened out.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25300
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 32,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Watch your mouth, dwarf, or you'll be missing your bag of stones.  We'll fix your damn crane.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25301
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 33,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We're off, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25302
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 34,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right, we'll get on it, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25622
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 35,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We'll do that.  Take care, Olap.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25625
+      },
+      "JournalIndex": 15694,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 36,
+      "Flags": "HasText, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Farewell then, Olap.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 37,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I hope not.  Farewell, Olap.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25628
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 38,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "It seems to me Targos needs all the help it can get, *cousin.*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25630
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 23,
+      "Index": 39,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Beware making enemies, you surface-dwelling dog.  The Targos Docks would be in flames if it wasn't for us.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25631
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 23,
+      "Index": 40,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "It seems to me Targos needs all the help it can get, dwarf.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25634
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 23,
+      "Index": 41,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Beware where you cast your insults, dog.  The Targos Docks would be in flames if it wasn't for us.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25635
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 23,
+      "Index": 42,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Actually, he told us to report to you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 18631
+      },
+      "JournalIndex": 15593,
+      "TriggerIndex": 19,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 2,
+      "Index": 43,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  We will seek him out, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23449
+      },
+      "JournalIndex": 15592,
+      "TriggerIndex": 20,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 44,
+      "Flags": "HasText, HasTrigger, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Last time I checked.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25640
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 25,
+      "Index": 45,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Yes... I am svirfneblin.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25641
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 25,
+      "Index": 46,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "No, I just had a fight with a goblin painter.  He painted my entire skin gray before I was able to stop him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25642
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 26,
+      "Index": 47,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Actually, he told us to report to you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 18631
+      },
+      "JournalIndex": 15593,
+      "TriggerIndex": 21,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 2,
+      "Index": 48,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  We will seek him out, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23449
+      },
+      "JournalIndex": 15592,
+      "TriggerIndex": 22,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 49,
+      "Flags": "HasText, HasTrigger, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Actually, he told us to report to you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 18631
+      },
+      "JournalIndex": 15593,
+      "TriggerIndex": 23,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Olap",
+      "NextPhraseIndex": 2,
+      "Index": 50,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  We will seek him out, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23449
+      },
+      "JournalIndex": 15592,
+      "TriggerIndex": 24,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 51,
+      "Flags": "HasText, HasTrigger, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  Watch yourself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31743
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 52,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 53,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"Goblin_Palisade_Quest\", \"GLOBAL\", 0)\nGlobal(\"Goblins_Attack_Palisade\", \"GLOBAL\", 1)",
+    "GlobalGT(\"Goblin_Palisade_Quest\", \"GLOBAL\", 0)",
+    "NumTimesTalkedTo(0)\nSubrace(Protagonist, Dwarf_Gray)",
+    "NumTimesTalkedTo(0)\nSubrace(Protagonist, Elf_Drow)",
+    "NumTimesTalkedTo(0)\nSubrace(Protagonist, Gnome_Deep)",
+    "GlobalGT(\"Goblin_Palisade_Quest\", \"GLOBAL\", 0)",
+    "NumTimesTalkedTo(0)",
+    "GlobalLT(\"Lumber_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 2)",
+    "GlobalGT(\"Lumber_Quest\", \"GLOBAL\", 1)\nGlobal(\"Crane_Wheel\", \"GLOBAL\", 0)\nGlobal(\"Lumber_Quest_Aborted\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Crane_Wheel\", \"GLOBAL\", 0)\nGlobal(\"Lumber_Quest_Aborted\", \"GLOBAL\", 0)",
+    "Global(\"Lumber_Quest_Aborted\", \"GLOBAL\", 1)"
+  ],
+  "TriggersResponse": [
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Know_Crane_Broke\", \"GLOBAL\", 1)",
+    "Global(\"Know_Lumbar\", \"GLOBAL\", 1)\nGlobal(\"Know_Crane_Broke\", \"GLOBAL\", 0)",
+    "Global(\"Know_Lumbar\", \"GLOBAL\", 0)",
+    "Global(\"Know_Crane_Broke\", \"GLOBAL\", 1)",
+    "Global(\"Know_Crane_Broke\", \"GLOBAL\", 0)",
+    "Global(\"Know_Crane_Broke\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Jorun_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Jorun_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Know_Swift_Thomas\", \"GLOBAL\", 1)",
+    "Global(\"Know_Swift_Thomas\", \"GLOBAL\", 0)",
+    "Global(\"Thomas_Permission\", \"GLOBAL\", 1)",
+    "PartyHasItem(\"10GenCrW \")",
+    "GlobalLT(\"Lumber_Quest\", \"GLOBAL\", 3)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 3)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Lumber_Quest\", \"GLOBAL\", 0)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Know_Olap\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Olap\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Lumber_Quest\", \"GLOBAL\", 2)",
+    "SetGlobal(\"Lumber_Quest\", \"GLOBAL\", 3)",
+    "SetGlobal(\"Lumber_Quest\", \"GLOBAL\", 3)",
+    "SetGlobal(\"Lumber_Quest_Aborted\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Thomas_Permission\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Thomas_Permission\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Thomas_Permission\", \"GLOBAL\", 1)"
+  ],
+  "Checksum": null,
+  "Filename": "12OLAP.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 18630
+}

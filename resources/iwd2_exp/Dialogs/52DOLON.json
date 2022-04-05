@@ -1,0 +1,815 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "I'm Dolon... Dolon Daemba.  You're <CHARNAME>, yes?  I've heard of you - there's bad blood between you and my masters.  But no worries, cutter - I'm a messenger, not a warrior.  You've nothing to fear from me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10521
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 6,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "We met again, cutter.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10713
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 5,
+      "TriggerIndex": 2,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "My lord and lady Isair and Madae, commanders of the Legion of the Chimera.  And please, allow me to say once more - I bear you no ill will.  Let's remain at peace with one another within these halls.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10714
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "I'm an envoy from the Severed Hand.  I brought an invitation from my masters to Ormis Dohor, the Black Raven Monastery's archimandrite...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10715
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "...the monastery has asked that I not leave until the archimandrite returns - it's an old tradition, I believe one began by the drow.  But it's no matter - my stay has been pleasant.  The monks are kind, and the library extensive.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10717
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "I assume you refer to my appearance?  A far-away place, called Sigil by those who know of it.  My origins... while I'm clearly of mixed heritage - \"plane-touched,\" some might say - that little is all I know.  I never knew my parents.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10718
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "My chambers?  What were you - the letters!  Return those to me at once!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10719
+      },
+      "ResponsesIndexFirst": 26,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Because, lovely Aruma, the Legion of the Chimera sees the many monks here as a significant threat.  When Ormis refused to side with them, I was commanded to seduce and corrupt you.  I don't know the archimandrite's fate, myself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10723
+      },
+      "ResponsesIndexFirst": 27,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "In case I needed to use them against my masters - paranoia and treachery run thick in my cursed blood.  I normally hide them on my person, but was so happy here, with you... I suppose I grew careless, and forgot them in my chambers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10725
+      },
+      "ResponsesIndexFirst": 28,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Aruma - you've hurt no one.  The monks you've sent away, they can always return...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10728
+      },
+      "ResponsesIndexFirst": 29,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "I'm asking you to forgive me, Aruma - and yourself.  My words against Ormis were lies, but my love for you was always true.  Please, leave this monastery - leave Faerun - and return with me to Sigil where we can start again...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10735
+      },
+      "ResponsesIndexFirst": 30,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Well, cutter - I've worked too long with the barmy nutters you're tangling with, and won't be gloomy to leave their employ. Please keep anything else you found in my chamber, and best of luck - you've a hard road ahead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10740
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "Please keep anything else you found in my chamber, and best of luck - you've a hard road ahead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10741
+      },
+      "ResponsesIndexFirst": 32,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "My chambers?  What were you - the letters!  Return those to me at once!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10719
+      },
+      "ResponsesIndexFirst": 33,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 13
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I found these letters in your chambers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10674
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 6,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I found these letters in your chambers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10674
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 13,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Who are your masters?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10682
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What are you doing here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10683
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 3,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Where are you from?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10704
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 5,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Dolon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10707
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I found these letters in your chambers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10674
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 2,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 6,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I found these letters in your chambers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10674
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 3,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 13,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What are you doing here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10683
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 3,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Where are you from?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10704
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 5,
+      "Index": 9,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Dolon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10707
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I found these letters in your chambers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10674
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 4,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 6,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I found these letters in your chambers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10674
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": 5,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 13,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What are you doing here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10683
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 3,
+      "Index": 13,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Where are you from?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10704
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 5,
+      "Index": 14,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Dolon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10707
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Go on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10716
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 4,
+      "Index": 16,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I found these letters in your chambers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10674
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": 6,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 6,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I found these letters in your chambers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10674
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": 7,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 13,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Who are your masters?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10682
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 2,
+      "Index": 19,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Where are you from?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10704
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 5,
+      "Index": 20,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Dolon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10707
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 21,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I found these letters in your chambers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10674
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": 8,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 6,
+      "Index": 22,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I found these letters in your chambers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10674
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": 9,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 13,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What are you doing here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10683
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 3,
+      "Index": 24,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Dolon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10707
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Aruma",
+      "NextPhraseIndex": 2,
+      "Index": 26,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Aruma",
+      "NextPhraseIndex": 4,
+      "Index": 27,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "What now, then?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10727
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Dolon",
+      "NextPhraseIndex": 9,
+      "Index": 28,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Aruma",
+      "NextPhraseIndex": 5,
+      "Index": 29,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Aruma",
+      "NextPhraseIndex": 6,
+      "Index": 30,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Dolon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10707
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 31,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Dolon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10707
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 32,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52Aruma",
+      "NextPhraseIndex": 21,
+      "Index": 33,
+      "Flags": "None"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"52Aruma_Gone\", \"GLOBAL\", 1)",
+    "NumTimesTalkedTo(0)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "PartyHasItem(\"52GenDol\")\nGlobal(\"52Letters\", \"GLOBAL\", 0)\nGlobal(\"52Exile\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"52GenDol\")\r\nGlobal(\"52Letters\", \"GLOBAL\", 0)\r\nGlobalGT(\"52Exile\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"52GenDol\")\nGlobal(\"52Letters\", \"GLOBAL\", 0)\nGlobal(\"52Exile\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"52GenDol\")\r\nGlobal(\"52Letters\", \"GLOBAL\", 0)\r\nGlobalGT(\"52Exile\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"52GenDol\")\nGlobal(\"52Letters\", \"GLOBAL\", 0)\nGlobal(\"52Exile\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"52GenDol\")\r\nGlobal(\"52Letters\", \"GLOBAL\", 0)\r\nGlobalGT(\"52Exile\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"52GenDol\")\nGlobal(\"52Letters\", \"GLOBAL\", 0)\nGlobal(\"52Exile\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"52GenDol\")\r\nGlobal(\"52Letters\", \"GLOBAL\", 0)\r\nGlobalGT(\"52Exile\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"52GenDol\")\nGlobal(\"52Letters\", \"GLOBAL\", 0)\nGlobal(\"52Exile\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"52GenDol\")\r\nGlobal(\"52Letters\", \"GLOBAL\", 0)\r\nGlobalGT(\"52Exile\", \"GLOBAL\", 0)"
+  ],
+  "Actions": [
+    "SetGlobal(\"52Letters\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Letters\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Letters\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Letters\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Letters\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Letters\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Letters\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Letters\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Letters\", \"GLOBAL\", 1)",
+    "SetGlobal(\"52Letters\", \"GLOBAL\", 1)",
+    "TakePartyItem(\"52GenDol\")\nDestroyItem(\"52GenDol\")"
+  ],
+  "Checksum": null,
+  "Filename": "52DOLON.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 10521
+}

@@ -1,0 +1,2520 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "More strangers?  Hmmm... I am Suoma, the village elder and teacher of magic - I welcome you.  You must forgive our grim faces - these are dark times for us.",
+        "Flags": "Standard",
+        "Sound": "SOUM001",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2715
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 9,
+      "TriggerIndex": 2,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Yes?",
+        "Flags": "Standard",
+        "Sound": "SOUM002",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2724
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 8,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "There is a drow here, a merchant, who came not long ago.  He is seeking someone - you may wish to speak with him.",
+        "Flags": "Standard",
+        "Sound": "SOUM003",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2727
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 7,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "I know nothing of him... only that he came to find someone that he was certain would pass by our village.",
+        "Flags": "Standard",
+        "Sound": "SOUM004",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2729
+      },
+      "ResponsesIndexFirst": 24,
+      "ResponsesCount": 7,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "You speak of the Fell Wood, yes?  It is a dark and terrible place.  The trail to the Cold Marshes beyond the forest is difficult to find... in this village, I alone know the way.",
+        "Flags": "Standard",
+        "Sound": "SOUM005",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2731
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "The Cold Marshes are fraught with peril... barbarians, snow trolls, and worse lurk there.  No villager need know the way.",
+        "Flags": "Standard",
+        "Sound": "SOUM006",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2736
+      },
+      "ResponsesIndexFirst": 35,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "I... cannot.  Not now, at least.",
+        "Flags": "Standard",
+        "Sound": "SOUM007",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2737
+      },
+      "ResponsesIndexFirst": 38,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Soon after these dark times fell upon us, I dreamt of strangers - girded for battle they were, with eyes like fire and their hands heavy with the tools of war.  Yet, somehow, I knew they had come to aid the village, and not destroy it...",
+        "Flags": "Standard",
+        "Sound": "SOUM008",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2739
+      },
+      "ResponsesIndexFirst": 41,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Yes.  Forgive me, but I cannot give you your answers just yet.  I must ask that you speak with Venla the Healer, first - she will tell you what must be done.  Please help us, and we shall help you in turn.",
+        "Flags": "Standard",
+        "Sound": "SOUM009",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2742
+      },
+      "ResponsesIndexFirst": 43,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "I am grateful, and certain all the children and their parents are as well.  Still, I must ask another boon of you... please speak with Tahvo the Huntmaster, now.",
+        "Flags": "Standard",
+        "Sound": "SOUM010",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2746
+      },
+      "ResponsesIndexFirst": 46,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Good, good... I thank you.  Still, I regret that I must ask one last favor... please, go speak with Kurttu, the stepmother of the widow Carita.",
+        "Flags": "Standard",
+        "Sound": "SOUM011",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2748
+      },
+      "ResponsesIndexFirst": 49,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "I cannot express my gratitude... but I can beg your forgiveness.  I hope that you do not hate the people of this village for what we've put you through...",
+        "Flags": "Standard",
+        "Sound": "SOUM012",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2750
+      },
+      "ResponsesIndexFirst": 52,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "There is a certain sort of monster in the Fell Wood, horrific abominations known as dark treants.  It is their warping influence that hides the true path from you.",
+        "Flags": "Standard",
+        "Sound": "SOUM013",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2755
+      },
+      "ResponsesIndexFirst": 56,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "You will find them in the darkest depths of the woods.  They will sense that you know them, now, and will come to you.  They are terrible, hateful opponents... take great care.",
+        "Flags": "Standard",
+        "Sound": "SOUM014",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2758
+      },
+      "ResponsesIndexFirst": 57,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "My thanks... that was most kind of you.  I will see that they are properly interred.  You are a caring soul, indeed.",
+        "Flags": "Standard",
+        "Sound": "SOUM015",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2762
+      },
+      "ResponsesIndexFirst": 60,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "We call this \"Wandering Village,\" as we move several days' travel each year.  We hunt, fish, and gather, trading pelts and medicinal summer marsh-herbs with distant southern villages for those goods we lack...",
+        "Flags": "Standard",
+        "Sound": "SOUM016",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2765
+      },
+      "ResponsesIndexFirst": 63,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "...you would do well to speak with Tahvo the Huntmaster and Venla the Healer - both have goods that may interest you.  Other villagers can tell you more about the surrounding area.",
+        "Flags": "Standard",
+        "Sound": "SOUM017",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2768
+      },
+      "ResponsesIndexFirst": 66,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "Many things, traveler.  The worst of it concerns our children - many have gone missing of late.",
+        "Flags": "Standard",
+        "Sound": "SOUM018",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2771
+      },
+      "ResponsesIndexFirst": 68,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "Yes... and I can help you in return.  If you intend to continue traveling eastwards, you must pass through the haunted Fell Wood.  The trail to the Cold Marshes beyond the forest is difficult to find... in this village, I alone know the way.",
+        "Flags": "Standard",
+        "Sound": "SOUM019",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2776
+      },
+      "ResponsesIndexFirst": 72,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "Well met.  Have you finished helping Venla, traveler?",
+        "Flags": "Standard",
+        "Sound": "SOUM020",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2777
+      },
+      "ResponsesIndexFirst": 76,
+      "ResponsesCount": 3,
+      "TriggerIndex": 4,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "Greetings, again.  Have you, by chance, helped Tahvo?",
+        "Flags": "Standard",
+        "Sound": "SOUM021",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2781
+      },
+      "ResponsesIndexFirst": 79,
+      "ResponsesCount": 3,
+      "TriggerIndex": 5,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "Ah, greetings.  Have you managed to aid Kurttu and Carita?",
+        "Flags": "Standard",
+        "Sound": "SOUM022",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2783
+      },
+      "ResponsesIndexFirst": 82,
+      "ResponsesCount": 3,
+      "TriggerIndex": 6,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "Greetings again, traveler.  Is there something that you seek?",
+        "Flags": "Standard",
+        "Sound": "SOUM023",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2784
+      },
+      "ResponsesIndexFirst": 85,
+      "ResponsesCount": 9,
+      "TriggerIndex": 3,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "It is good to see you - I owe you a great debt, as does all the Wandering Village.  How might I help you, traveler?",
+        "Flags": "Standard",
+        "Sound": "SOUM024",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8458
+      },
+      "ResponsesIndexFirst": 94,
+      "ResponsesCount": 6,
+      "TriggerIndex": 7,
+      "Index": 23
+    },
+    {
+      "Text": {
+        "Text": "Terrible creatures, those demon-kin!  I am greatly saddened that innocent villagers were drawn into your battle with them... though I suppose the responsibility is mine, as I alone kept you here so long.",
+        "Flags": "Standard",
+        "Sound": "SOUM025",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8460
+      },
+      "ResponsesIndexFirst": 100,
+      "ResponsesCount": 7,
+      "TriggerIndex": 1,
+      "Index": 24
+    },
+    {
+      "Text": {
+        "Text": "Yes... yes, I suppose so.  In any case, there is nothing to be done about it now.  However cruel, this is the cycle of life.  We shall go on as we always have...",
+        "Flags": "Standard",
+        "Sound": "SOUM026",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 16635
+      },
+      "ResponsesIndexFirst": 107,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 25
+    },
+    {
+      "Text": {
+        "Text": "Wait - something... someone has come.  A terrible, dark power has set upon this village, and it seeks... it seeks *you.*  There - at the village gate...",
+        "Flags": "Standard",
+        "Sound": "SOUM027",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 18309
+      },
+      "ResponsesIndexFirst": 112,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 26
+    },
+    {
+      "Text": {
+        "Text": "Many things, traveler.",
+        "Flags": "Standard",
+        "Sound": "SOUM018A",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35536
+      },
+      "ResponsesIndexFirst": 113,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 27
+    },
+    {
+      "Text": {
+        "Text": "...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38162
+      },
+      "ResponsesIndexFirst": 117,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 28
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "\"More strangers?\"  Who else is here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2716
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 2,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What troubles this village, Suoma?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2717
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 17,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What troubles this village, Suoma?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2717
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 2,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 27,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2718
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 15,
+      "Index": 3,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me of Nym?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2719
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 4,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 3,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "How do I pass through the woods to the east?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2720
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 5,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 4,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I've brought the remains of the Fell Wood dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2721
+      },
+      "JournalIndex": 2710,
+      "TriggerIndex": 5,
+      "ActionIndex": 6,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 14,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can you teach me spells?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2722
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Greetings, and farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2723
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You had said that something troubles this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2725
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 17,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You had said that something troubles this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2725
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 27,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2718
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 15,
+      "Index": 11,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me of Nym?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2719
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 3,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How do I pass through the woods to the east?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2720
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 4,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I've brought the remains of the Fell Wood dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2721
+      },
+      "JournalIndex": 2710,
+      "TriggerIndex": 10,
+      "ActionIndex": 9,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 14,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can you teach me spells?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2722
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Never mind.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2726
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You had said that something troubles this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2725
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 17,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You had said that something troubles this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2725
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 27,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2718
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 15,
+      "Index": 19,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "How do I pass through the woods to the east?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2720
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 4,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I've brought the remains of the Fell Wood dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2721
+      },
+      "JournalIndex": 2710,
+      "TriggerIndex": 14,
+      "ActionIndex": 11,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 14,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can you teach me spells?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2722
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 12,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2728
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 23,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You had said that something troubles this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2725
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 17,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You had said that something troubles this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2725
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 27,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2718
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 15,
+      "Index": 26,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "How do I pass through the woods to the east?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2720
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 4,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I've brought the remains of the Fell Wood dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2721
+      },
+      "JournalIndex": 2710,
+      "TriggerIndex": 18,
+      "ActionIndex": 13,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 14,
+      "Index": 28,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can you teach me spells?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2722
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 14,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 29,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2728
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 30,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Why only you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2732
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 5,
+      "Index": 31,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Would you tell me the way, then?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2733
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 6,
+      "Index": 32,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Wait - I had other questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2734
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 33,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We'll speak later, Suoma.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2735
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 34,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Would you tell me the way, then?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2733
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 6,
+      "Index": 35,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Wait - I had other questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2734
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 36,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We'll speak later, Suoma.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2735
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 37,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Why not?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2738
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 7,
+      "Index": 38,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Wait - I had other questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2734
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 39,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We'll speak later, Suoma.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2735
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 40,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "And you think we're those strangers...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2740
+      },
+      "JournalIndex": 2703,
+      "TriggerIndex": -1,
+      "ActionIndex": 15,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 8,
+      "Index": 41,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I don't have time for this.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2741
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 42,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I've already helped Venla - the children are safe.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2743
+      },
+      "JournalIndex": 2704,
+      "TriggerIndex": 19,
+      "ActionIndex": 16,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 9,
+      "Index": 43,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I had other questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2744
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 44,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2745
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 45,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I've already helped Tahvo, too.  The barrow wight is at peace.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2747
+      },
+      "JournalIndex": 2705,
+      "TriggerIndex": 20,
+      "ActionIndex": 17,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 10,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I had other questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2744
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 47,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2745
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 48,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I did.  Carita murdered Kyosti; her lover hid the corpse.  Both have fled.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2749
+      },
+      "JournalIndex": 2706,
+      "TriggerIndex": 21,
+      "ActionIndex": 18,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 11,
+      "Index": 49,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I had other questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2744
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 50,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2745
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 51,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I was happy to help.  Now, about that forest to the east...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2751
+      },
+      "JournalIndex": 2707,
+      "TriggerIndex": -1,
+      "ActionIndex": 19,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 12,
+      "Index": 52,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "How do I get through the Fell Wood?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2752
+      },
+      "JournalIndex": 2707,
+      "TriggerIndex": -1,
+      "ActionIndex": 20,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 12,
+      "Index": 53,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm thinking of razing the place.  Give me my information.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2753
+      },
+      "JournalIndex": 2707,
+      "TriggerIndex": 22,
+      "ActionIndex": 21,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 12,
+      "Index": 54,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'll return later, Suoma.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2754
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 55,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How do I find them?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2756
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 22,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 13,
+      "Index": 56,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  I had other questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2759
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 26,
+      "Index": 57,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I've brought the remains of the Fell Wood dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2721
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 26,
+      "Index": 58,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I will.  Thanks, Suoma, and farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2761
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 26,
+      "Index": 59,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2763
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 60,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Actually, I was simply bored.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2764
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 61,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2745
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 62,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Go on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2766
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 16,
+      "Index": 63,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Wait - I had other questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2734
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 64,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I'll hear the rest later.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2767
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 65,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I see.  I had other questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2769
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 66,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Thanks.  Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2770
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 67,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Is there something I can do to help?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2772
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 18,
+      "Index": 68,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You mentioned other strangers - who else is here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2773
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 24,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 2,
+      "Index": 69,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I see.  I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2774
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 70,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "That's too bad.  Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2775
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 71,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Why only you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2732
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 5,
+      "Index": 72,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Would you tell me the way, then?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2733
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 6,
+      "Index": 73,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Wait - I had other questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2734
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 74,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We'll speak later, Suoma.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2735
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 75,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Yes, I have - the children are safe.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2778
+      },
+      "JournalIndex": 2704,
+      "TriggerIndex": 25,
+      "ActionIndex": 23,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 9,
+      "Index": 76,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "No, but I had questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2779
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 77,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Not yet.  Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2780
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 78,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Yes - the barrow wight is at peace.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2782
+      },
+      "JournalIndex": 2705,
+      "TriggerIndex": 26,
+      "ActionIndex": 24,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 10,
+      "Index": 79,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "No, but I had questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2779
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 80,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Not yet.  Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2780
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 81,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I did.  Carita murdered Kyosti; her lover hid the corpse.  Both have fled.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2749
+      },
+      "JournalIndex": 2706,
+      "TriggerIndex": 27,
+      "ActionIndex": 25,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 11,
+      "Index": 82,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "No, but I had questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2779
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 83,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Not yet.  Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2780
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 84,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You mentioned other strangers, before.  Who else is here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2785
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 2,
+      "Index": 85,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Tell me, Suoma - what troubles this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2786
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 29,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 17,
+      "Index": 86,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Tell me, Suoma - what troubles this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2786
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 30,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 27,
+      "Index": 87,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2718
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 15,
+      "Index": 88,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me of Nym?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2719
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 31,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 3,
+      "Index": 89,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How do I pass through the woods to the east?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2720
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 32,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 4,
+      "Index": 90,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I've brought the remains of the Fell Wood dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2721
+      },
+      "JournalIndex": 2710,
+      "TriggerIndex": 33,
+      "ActionIndex": 26,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 14,
+      "Index": 91,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can you teach me spells?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2722
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 27,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 92,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I was only passing by.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2730
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 93,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How do I get through the Fell Wood?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2752
+      },
+      "JournalIndex": 2707,
+      "TriggerIndex": 34,
+      "ActionIndex": 28,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 12,
+      "Index": 94,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2718
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 15,
+      "Index": 95,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me of Nym?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2719
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 35,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 3,
+      "Index": 96,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I've brought the remains of the Fell Wood dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2721
+      },
+      "JournalIndex": 2710,
+      "TriggerIndex": 36,
+      "ActionIndex": 29,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 14,
+      "Index": 97,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can you teach me spells?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2722
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 30,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 98,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I was only passing by.  Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8459
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 99,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "These things happen, Suoma.  You can't blame yourself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 16626
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 31,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 25,
+      "Index": 100,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "It serves you right.  The world outside your tiny village is important, too, but you ignored that.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 16634
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 32,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 25,
+      "Index": 101,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2718
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 33,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 15,
+      "Index": 102,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me of Nym?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2719
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 37,
+      "ActionIndex": 34,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 3,
+      "Index": 103,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I've brought the remains of the Fell Wood dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2721
+      },
+      "JournalIndex": 2710,
+      "TriggerIndex": 38,
+      "ActionIndex": 35,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 14,
+      "Index": 104,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can you teach me spells?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2722
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 36,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 105,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2745
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 37,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 106,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this village?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2718
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 15,
+      "Index": 107,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me of Nym?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2719
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 39,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 3,
+      "Index": 108,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I've brought the remains of the Fell Wood dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2721
+      },
+      "JournalIndex": 2710,
+      "TriggerIndex": 40,
+      "ActionIndex": 38,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 14,
+      "Index": 109,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can you teach me spells?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2722
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 39,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 110,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2745
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 111,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 40,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 112,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Is there something I can do to help?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2772
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 18,
+      "Index": 113,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You mentioned other strangers - who else is here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2773
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 41,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 2,
+      "Index": 114,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I see.  I had some questions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2774
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Suoma",
+      "NextPhraseIndex": 1,
+      "Index": 115,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "That's too bad.  Farewell, Suoma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2775
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 116,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We'll talk after I take care of the monsters I led here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 399
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 117,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "See([ENEMY], FALSE)",
+    "Global(\"50Twins_Attack\", \"Global\", 2)",
+    "NumTimesTalkedTo(0)",
+    "Global(\"50Suoma_Help\", \"GLOBAL\", 0)",
+    "Global(\"50Suoma_Help\", \"GLOBAL\", 1)",
+    "Global(\"50Suoma_Help\",  \"GLOBAL\", 2)",
+    "Global(\"50Suoma_Help\", \"GLOBAL\", 3)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Global(\"50Nym\", \"Global\", 0)",
+    "Global(\"50Suoma_Help\", \"Global\", 0)\r\nGlobal(\"Limha_Dead\", \"Global\", 0)",
+    "Global(\"50Suoma_Help\", \"Global\", 0)\r\nGlobal(\"Limha_Dead\", \"Global\", 1)",
+    "GlobalGT(\"50Nym\", \"Global\", 0)",
+    "GlobalGT(\"AR5010_Visited\", \"Global\", 0)\r\nGlobal(\"50Suoma_Help\", \"Global\", 0)",
+    "PartyHasItem(\"50GenFWR\")",
+    "Global(\"50Suoma_Help\", \"Global\", 0)\r\nGlobal(\"Limha_Dead\", \"Global\", 0)",
+    "Global(\"50Suoma_Help\", \"Global\", 0)\r\n!Global(\"Limha_Dead\", \"Global\", 0)",
+    "GlobalGT(\"50Nym\", \"Global\", 0)",
+    "GlobalGT(\"AR5010_Visited\", \"Global\", 0)\r\nGlobal(\"50Suoma_Help\", \"Global\", 0)",
+    "PartyHasItem(\"50GenFWR\")",
+    "Global(\"50Suoma_Help\", \"Global\", 0)\r\nGlobal(\"Limha_Dead\", \"Global\", 0)",
+    "Global(\"50Suoma_Help\", \"Global\", 0)\r\n!Global(\"Limha_Dead\", \"Global\", 0)",
+    "GlobalGT(\"AR5010_Visited\", \"Global\", 0)\r\nGlobal(\"50Suoma_Help\", \"Global\", 0)",
+    "PartyHasItem(\"50GenFWR\")",
+    "Global(\"50Suoma_Help\", \"Global\", 0)\r\nGlobal(\"Limha_Dead\", \"Global\", 0)",
+    "Global(\"50Suoma_Help\", \"Global\", 0)\r\n!Global(\"Limha_Dead\", \"Global\", 0)",
+    "GlobalGT(\"AR5010_Visited\", \"Global\", 0)\r\nGlobal(\"50Suoma_Help\", \"Global\", 0)",
+    "PartyHasItem(\"50GenFWR\")",
+    "GlobalGT(\"50Venla_Children\", \"Global\", 1)",
+    "GlobalGT(\"50Tahvo_Wight\", \"Global\", 1)",
+    "GlobalGT(\"50Kurttu_Ghost\", \"Global\", 1)",
+    "!ClassEx(Protagonist, Paladin)\r\n!Class(Protagonist, Monk)\r\n!Alignment(Protagonist, LAWFUL_GOOD)",
+    "PartyHasItem(\"50GenFWR\")",
+    "Global(\"50Nym\", \"Global\", 0)",
+    "GlobalGT(\"50Venla_Children\", \"Global\", 1)",
+    "GlobalGT(\"50Tahvo_Wight\", \"Global\", 1)",
+    "GlobalGT(\"50Kurttu_Ghost\", \"Global\", 1)",
+    "Global(\"50Nym\", \"Global\", 0)",
+    "Global(\"50Suoma_Help\", \"Global\", 0)\r\nGlobal(\"Limha_Dead\", \"Global\", 0)",
+    "Global(\"50Suoma_Help\", \"Global\", 0)\r\n!Global(\"Limha_Dead\", \"Global\", 0)",
+    "GlobalGT(\"50Nym\", \"Global\", 0)",
+    "GlobalGT(\"AR5010_Visited\", \"Global\", 0)\r\nGlobal(\"50Suoma_Help\", \"Global\", 0)",
+    "PartyHasItem(\"50GenFWR\")",
+    "GlobalLT(\"50Suoma_Help\", \"Global\", 5)",
+    "GlobalGT(\"50Nym\", \"Global\", 0)",
+    "PartyHasItem(\"50GenFWR\")",
+    "GlobalGT(\"50Nym\", \"Global\", 0)",
+    "PartyHasItem(\"50GenFWR\")",
+    "GlobalGT(\"50Nym\", \"Global\", 0)",
+    "PartyHasItem(\"50GenFWR\")",
+    "Global(\"50Nym\", \"Global\", 0)"
+  ],
+  "Actions": [
+    "SetGlobal(\"50Suoma\", \"GLOBAL\", 1)",
+    "SetGlobal(\"50Suoma\", \"GLOBAL\", 1)",
+    "SetGlobal(\"50Suoma\", \"GLOBAL\", 1)",
+    "SetGlobal(\"50Suoma\", \"GLOBAL\", 1)",
+    "SetGlobal(\"50Suoma\", \"GLOBAL\", 1)",
+    "SetGlobal(\"50Suoma\", \"GLOBAL\", 1)",
+    "SetGlobal(\"50Suoma\", \"GLOBAL\", 1)\r\nAddXpVar(\"Level_9_Easy\",2714)\r\nTakePartyItemAll(\"50GenFWR\")\r\nDestroyItem(\"50GenFWR\")",
+    "SetGlobal(\"50Suoma\", \"GLOBAL\", 1)\r\nStartStore(\"50Suoma\", Protagonist)",
+    "SetGlobal(\"50Suoma\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_9_Easy\",2714)\r\nTakePartyItemAll(\"50GenFWR\")\r\nDestroyItem(\"50GenFWR\")",
+    "StartStore(\"50Suoma\", Protagonist)",
+    "AddXpVar(\"Level_9_Easy\",2714)\r\nTakePartyItemAll(\"50GenFWR\")\r\nDestroyItem(\"50GenFWR\")",
+    "StartStore(\"50Suoma\", Protagonist)",
+    "AddXpVar(\"Level_9_Easy\",2714)\r\nTakePartyItemAll(\"50GenFWR\")\r\nDestroyItem(\"50GenFWR\")",
+    "StartStore(\"50Suoma\", Protagonist)",
+    "SetGlobal(\"50Suoma_Help\", \"Global\", 1)",
+    "SetGlobal(\"50Suoma_Help\", \"Global\", 2)",
+    "SetGlobal(\"50Suoma_Help\", \"Global\", 3)",
+    "AddXpVar(\"Level_9_Hard\",2713)\nSetGlobal(\"50Suoma_Help\", \"Global\", 4)",
+    "SetGlobal(\"50Suoma_Help\", \"Global\", 5)\nSetGlobal(\"50Twins_Attack\", \"Global\", 1)",
+    "SetGlobal(\"50Suoma_Help\", \"Global\", 5)\nSetGlobal(\"50Twins_Attack\", \"Global\", 1)",
+    "SetGlobal(\"50Suoma_Help\", \"Global\", 5)\nSetGlobal(\"50Twins_Attack\", \"Global\", 1)",
+    "SetCriticalPathObject(Myself, FALSE)",
+    "SetGlobal(\"50Suoma_Help\", \"Global\", 2)",
+    "SetGlobal(\"50Suoma_Help\", \"Global\", 3)",
+    "AddXpVar(\"Level_9_Hard\",2713)\nSetGlobal(\"50Suoma_Help\", \"Global\", 4)",
+    "AddXpVar(\"Level_9_Easy\",2714)\r\nTakePartyItemAll(\"50GenFWR\")\r\nDestroyItem(\"50GenFWR\")",
+    "StartStore(\"50Suoma\", Protagonist)",
+    "SetGlobal(\"50Suoma_Help\", \"Global\", 5)\nSetGlobal(\"50Twins_Attack\", \"Global\", 1)",
+    "AddXpVar(\"Level_9_Easy\",2714)\r\nTakePartyItemAll(\"50GenFWR\")\r\nDestroyItem(\"50GenFWR\")",
+    "StartStore(\"50Suoma\", Protagonist)",
+    "SetGlobal(\"50Twins_Attack\", \"Global\", 3)",
+    "SetGlobal(\"50Twins_Attack\", \"Global\", 3)",
+    "SetGlobal(\"50Twins_Attack\", \"Global\", 3)",
+    "SetGlobal(\"50Twins_Attack\", \"Global\", 3)",
+    "AddXpVar(\"Level_9_Easy\",2714)\r\nTakePartyItemAll(\"50GenFWR\")\r\nDestroyItem(\"50GenFWR\")",
+    "StartStore(\"50Suoma\", Protagonist)",
+    "SetGlobal(\"50Twins_Attack\", \"Global\", 3)",
+    "AddXpVar(\"Level_9_Easy\",2714)\r\nTakePartyItemAll(\"50GenFWR\")\r\nDestroyItem(\"50GenFWR\")",
+    "StartStore(\"50Suoma\", Protagonist)",
+    "StartCutSceneMode()\r\nStartCutScene(\"50cTwin0\")"
+  ],
+  "Checksum": null,
+  "Filename": "50SUOMA.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 2715
+}

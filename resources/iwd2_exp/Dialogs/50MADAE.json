@@ -1,0 +1,204 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "What is that?  Revulsion?  Terror?  Surprise?",
+        "Flags": "Standard",
+        "Sound": "MADE2001",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11483
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "But don't make the mistake of thinking that, with Lysara gone, I'll renege on my part of the bargain - Kuldahar's still doomed.",
+        "Flags": "Standard",
+        "Sound": "MADE2002",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11485
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "T'was \"Nym,\" brother.  A drow.",
+        "Flags": "Standard",
+        "Sound": "MADE2003",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11486
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Do I slay them here, brother, or return them to the Hand to serve as breeders?",
+        "Flags": "Standard",
+        "Sound": "MADE2004",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11492
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Be thankful that my brother's spared you, for now.  Should we meet again, it'll be the death of you - I promise that.",
+        "Flags": "Standard",
+        "Sound": "MADE2005",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11493
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "[No one should ever see this.  It's a bug.]",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11494
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 5
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Isair",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Isair",
+      "NextPhraseIndex": 4,
+      "Index": 1,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Isair",
+      "NextPhraseIndex": 7,
+      "Index": 2,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Isair",
+      "NextPhraseIndex": 12,
+      "Index": 3,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "So be it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6587
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "True()"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "StartCutSceneMode()\r\nStartCutScene(\"50cTwin1\")"
+  ],
+  "Checksum": null,
+  "Filename": "50MADAE.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 11483
+}

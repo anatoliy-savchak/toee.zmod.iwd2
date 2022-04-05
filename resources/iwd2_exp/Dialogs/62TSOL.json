@@ -1,0 +1,459 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Angharradh be praised!  Thank you for freeing us!  I am Tsol, commander of this doomed expedition.  I say, did you also happen to find our young cleric companion, Saralon?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33458
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 4,
+      "TriggerIndex": 2,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Hmmm, that is unfortunate.  I'm afraid I can only assume the worst, then.  Saralon was a young and inexperienced cleric, but that did not stop him from trying to make a name for himself.  We must get back to our city and inform our queen about our failure in protecting young Saralon - she will not be pleased.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33463
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Well...  I...  I do not have anything to give you right now.  However, after I return to my homeland, I will gather a reward for your good deed and give it to you.  Where might I find you in about a fortnight?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33466
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "That is most generous of you, fine adventurer.  I've nothing to offer you right now, but if ever our paths cross again, I shall find some way to repay you for your kind deeds.   Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33470
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "What's that?!  How dare you doubt the honor of an elf!  I suggest you hold your tongue, friend, or I may be forced to remove it!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33472
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "That is tragic!  We must get back to our city and inform our queen about our failure in protecting young Saralon - she will not be pleased.  Good journey to you, then, adventurer, and thanks again.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35470
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Please, whoever you are, set us free before those unholy beasts kill us all!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37110
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Thank you for opening the cell door, but we cannot escape while those foul dread orcs are about!  Please return to let us know that it's safe to leave once you've destroyed the unholy beasts!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37773
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 1,
+      "TriggerIndex": 3,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Thank you for freeing us... but you... you are *nevae kesir* - a dark elf.  Please forgive my apprehension, but I'm sure you can appreciate my surprise.  I am Tsol, commander of this doomed expedition.  I say, did you also happen to find our young cleric companion, Saralon?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37774
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 4,
+      "TriggerIndex": 1,
+      "Index": 8
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Well met, Tsol, and you're welcome.  But I'm afraid I've not seen any cleric around these parts.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33459
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "62Tsol",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Well met, Tsol, and you're welcome.  I can say I've heard mention of this cleric you speak of, but I've not seen him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33460
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "62Tsol",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Well met, Tsol, and you're welcome.  Unfortunately, I have unpleasant news - your cleric friend, Saralon, has been killed by a lich.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33461
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 2,
+      "NextScriptDialog": "62Tsol",
+      "NextPhraseIndex": 5,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Yeah, yeah, whatever!  And you can forget the cleric!  If he's dumb enough to wander around out here by himself, he deserves what he gets.  Now, I expect to be rewarded for helping you escape!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33462
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 3,
+      "NextScriptDialog": "62Tsol",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We'll keep an eye out for Saralon, just in case.  He might be still alive out there.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33464
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "62Tsol",
+      "NextPhraseIndex": 3,
+      "Index": 4,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "If all of us gave up on our companions as easily as you, the Ten-Towns would have fallen long ago.  Go on - leave, then, we'll find your missing cleric.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33465
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 5,
+      "NextScriptDialog": "62Tsol",
+      "NextPhraseIndex": 4,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Bah!  Never mind.  On your way, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33469
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Think nothing of it.  Good journey to you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33471
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Fine, sorry!  Just give me my reward and be done with it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33473
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "62Tsol",
+      "NextPhraseIndex": 2,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Seems you have some fire after all - shall we test your steel as well?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33474
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Think nothing of it.  Good journey to you, Tsol.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36912
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 9,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Well met, Tsol, and you're welcome.  But I'm afraid I've not seen any cleric around these parts.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37775
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": 10,
+      "NextScriptDialog": "62Tsol",
+      "NextPhraseIndex": 1,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Well met, Tsol, and you're welcome.  I can say I've heard mention of this cleric you speak of, but I've not seen him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37776
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": 11,
+      "NextScriptDialog": "62Tsol",
+      "NextPhraseIndex": 1,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Well met, Tsol, and you're welcome.  Unfortunately, I have unpleasant news - your cleric friend, Saralon, has been killed by a lich.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37777
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": 12,
+      "NextScriptDialog": "62Tsol",
+      "NextPhraseIndex": 5,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Silence, surface dweller - and enough about your missing cleric.  I have freed you, and I expect to be rewarded.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37778
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": 13,
+      "NextScriptDialog": "62Tsol",
+      "NextPhraseIndex": 2,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger, HasAction"
+    }
+  ],
+  "TriggersPhrase": [
+    "OpenState(\"AR6200_Tusk_Gate\", FALSE)",
+    "OpenState(\"AR6200_Tusk_Gate\", TRUE) GlobalGT(\"Kratuuk_Team_Dead\",\"GLOBAL\",9) \r\nSubRace(Protagonist,ELF_DROW)",
+    "OpenState(\"AR6200_Tusk_Gate\", TRUE) GlobalGT(\"Kratuuk_Team_Dead\",\"GLOBAL\",9) ",
+    "GlobalLT(\"Kratuuk_Team_Dead\",\"GLOBAL\",10) \r\nOpenState(\"AR6200_Tusk_Gate\", TRUE)"
+  ],
+  "TriggersResponse": [
+    "!Global(\"Find_Elven_Cleric\",\"GLOBAL\",1) !Global(\"Find_Elven_Cleric\",\"GLOBAL\", 2)",
+    "Global(\"Find_Elven_Cleric\",\"GLOBAL\",1)",
+    "Global(\"Find_Elven_Cleric\",\"GLOBAL\", 2)",
+    "!ClassEx(Protagonist,Paladin)\r\n!ClassEx(Protagonist,Monk)",
+    "!ClassEx(Protagonist,Paladin)\r\n!ClassEx(Protagonist,Monk)",
+    "!Global(\"Find_Elven_Cleric\",\"GLOBAL\",1) !Global(\"Find_Elven_Cleric\",\"GLOBAL\", 2)",
+    "Global(\"Find_Elven_Cleric\",\"GLOBAL\",1)",
+    "Global(\"Find_Elven_Cleric\",\"GLOBAL\", 2)",
+    "!ClassEx(Protagonist,Paladin)\r\n!ClassEx(Protagonist,Monk)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Freed_Elves\",\"GLOBAL\",2)",
+    "SetGlobal(\"Freed_Elves\",\"GLOBAL\",2)",
+    "SetGlobal(\"Freed_Elves\",\"GLOBAL\",2)",
+    "SetGlobal(\"Freed_Elves\",\"GLOBAL\",2)",
+    "SetGlobal(\"Find_Elven_Cleric\",\"GLOBAL\",1)",
+    "SetGlobal(\"Find_Elven_Cleric\",\"GLOBAL\",1)",
+    "AddXpVar(\"Level_13_Easy\",33457)\nStartCutSceneMode() StartCutScene(\"62cTsol\")",
+    "AddXpVar(\"Level_13_Average\",23074)\nStartCutSceneMode() StartCutScene(\"62cTsol\")",
+    "Enemy()",
+    "AddXpVar(\"Level_13_Average\",23074)\r\nStartCutSceneMode() StartCutScene(\"62cTsol\")",
+    "SetGlobal(\"Freed_Elves\",\"GLOBAL\",2)",
+    "SetGlobal(\"Freed_Elves\",\"GLOBAL\",2)",
+    "SetGlobal(\"Freed_Elves\",\"GLOBAL\",2)",
+    "SetGlobal(\"Freed_Elves\",\"GLOBAL\",2)"
+  ],
+  "Checksum": null,
+  "Filename": "62TSOL.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 33458
+}

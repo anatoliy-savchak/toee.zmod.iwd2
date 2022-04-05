@@ -1,0 +1,462 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "A hundred, hundred thanks for saving us from Limha...  you're the *best!*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6610
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 3,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Moons n' stars, you're the ones that saved us from Limha!  One day, I'll grow up and pay you back...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6613
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 3,
+      "TriggerIndex": 2,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Uh, I'm not supposed to talk to... oh!  You're the ones who beat Limha, huh?  Thanks!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6614
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 3,
+      "TriggerIndex": 3,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Thanks again for beating Limha... you're the prettiest hero *ever!*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6615
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 3,
+      "TriggerIndex": 4,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Thanks again for beating Limha... you're my hero!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6616
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 3,
+      "TriggerIndex": 5,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Oh no, monsters followed you here - please kill 'em!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37870
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Ah... ah... all right... p-p-lease don't hurt me! *sniffle*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37881
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "HELP!  HELP!  THIEF!  THIEF!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37882
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Silence, child.  Give me any coins or food you have hidden away - and don't tell anyone about this, or you're dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 319
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "50Child",
+      "NextPhraseIndex": 6,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Silence, child.  Give me any coins or food you have hidden away - and don't tell anyone about this, or you're dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 319
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "50Child",
+      "NextPhraseIndex": 7,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37876
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Silence, child.  Give me any coins or food you have hidden away - and don't tell anyone about this, or you're dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 319
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 2,
+      "NextScriptDialog": "50Child",
+      "NextPhraseIndex": 6,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Silence, child.  Give me any coins or food you have hidden away - and don't tell anyone about this, or you're dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 319
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 3,
+      "NextScriptDialog": "50Child",
+      "NextPhraseIndex": 7,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37876
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Silence, child.  Give me any coins or food you have hidden away - and don't tell anyone about this, or you're dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 319
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 4,
+      "NextScriptDialog": "50Child",
+      "NextPhraseIndex": 6,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Silence, child.  Give me any coins or food you have hidden away - and don't tell anyone about this, or you're dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 319
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": 5,
+      "NextScriptDialog": "50Child",
+      "NextPhraseIndex": 7,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37876
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Silence, child.  Give me any coins or food you have hidden away - and don't tell anyone about this, or you're dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 319
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": 6,
+      "NextScriptDialog": "50Child",
+      "NextPhraseIndex": 6,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Silence, child.  Give me any coins or food you have hidden away - and don't tell anyone about this, or you're dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 319
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": 7,
+      "NextScriptDialog": "50Child",
+      "NextPhraseIndex": 7,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37876
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Silence, child.  Give me any coins or food you have hidden away - and don't tell anyone about this, or you're dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 319
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": 8,
+      "NextScriptDialog": "50Child",
+      "NextPhraseIndex": 6,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Silence, child.  Give me any coins or food you have hidden away - and don't tell anyone about this, or you're dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 319
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": 9,
+      "NextScriptDialog": "50Child",
+      "NextPhraseIndex": 7,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37876
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 17,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "See([ENEMY], FALSE)",
+    "RandomNum(3,1)\nNumTimesTalkedTo(0)",
+    "RandomNum(3,2)\nNumTimesTalkedTo(0)",
+    "RandomNumLT(3,4)\nNumTimesTalkedTo(0)",
+    "NumTimesTalkedToGT(0)\nGender(Protagonist, Female)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Alignment(Protagonist, Mask_Evil)\r\n!ClassEx(Protagonist, Monk)\r\nCheckSkillGT(Protagonist, 2, Intimidate)",
+    "Alignment(Protagonist, Mask_Evil)\r\n!ClassEx(Protagonist, Monk)\r\nCheckSkillLT(Protagonist, 3, Intimidate)",
+    "Alignment(Protagonist, Mask_Evil)\r\n!ClassEx(Protagonist, Monk)\r\nCheckSkillGT(Protagonist, 2, Intimidate)",
+    "Alignment(Protagonist, Mask_Evil)\r\n!ClassEx(Protagonist, Monk)\r\nCheckSkillLT(Protagonist, 3, Intimidate)",
+    "Alignment(Protagonist, Mask_Evil)\r\n!ClassEx(Protagonist, Monk)\r\nCheckSkillGT(Protagonist, 2, Intimidate)",
+    "Alignment(Protagonist, Mask_Evil)\r\n!ClassEx(Protagonist, Monk)\r\nCheckSkillLT(Protagonist, 3, Intimidate)",
+    "Alignment(Protagonist, Mask_Evil)\r\n!ClassEx(Protagonist, Monk)\r\nCheckSkillGT(Protagonist, 2, Intimidate)",
+    "Alignment(Protagonist, Mask_Evil)\r\n!ClassEx(Protagonist, Monk)\r\nCheckSkillLT(Protagonist, 3, Intimidate)",
+    "Alignment(Protagonist, Mask_Evil)\r\n!ClassEx(Protagonist, Monk)\r\nCheckSkillGT(Protagonist, 2, Intimidate)",
+    "Alignment(Protagonist, Mask_Evil)\r\n!ClassEx(Protagonist, Monk)\r\nCheckSkillLT(Protagonist, 3, Intimidate)"
+  ],
+  "Actions": [
+    "GiveItemCreate(\"misc07\", Protagonist, 5, 5, 0)\r\nGiveItemCreate(\"00genir\", Protagonist, 1, 0, 0)",
+    "Enemy()",
+    "GiveItemCreate(\"misc07\", Protagonist, 5, 5, 0)\r\nGiveItemCreate(\"00genir\", Protagonist, 1, 0, 0)",
+    "Enemy()",
+    "GiveItemCreate(\"misc07\", Protagonist, 5, 5, 0)\r\nGiveItemCreate(\"00genir\", Protagonist, 1, 0, 0)",
+    "Enemy()",
+    "GiveItemCreate(\"misc07\", Protagonist, 5, 5, 0)\r\nGiveItemCreate(\"00genir\", Protagonist, 1, 0, 0)",
+    "Enemy()",
+    "GiveItemCreate(\"misc07\", Protagonist, 5, 5, 0)\r\nGiveItemCreate(\"00genir\", Protagonist, 1, 0, 0)",
+    "Enemy()",
+    "EscapeArea()"
+  ],
+  "Checksum": null,
+  "Filename": "50CHILD.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 6610
+}

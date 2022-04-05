@@ -1,0 +1,270 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Oh!  Oh!  I'm Hannu!  My thanks for savin' me from that evil ol' *witch!*",
+        "Flags": "Standard",
+        "Sound": "ANN001D",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8083
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Help me, help!  She's a mean an' evil witch an' she's stealin' all the children and makin' 'em into *minks!*",
+        "Flags": "Standard",
+        "Sound": "ANN002B",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8085
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "See?  Even the Big Man knows she's lyin'!",
+        "Flags": "Standard",
+        "Sound": "ANN003B",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8087
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "She promised ta give me sweets but she put me in the hole wif Laila an' said if we tried ta get away the Big Man would eat us up, an' the other day she took little Laila out an' turned her into a mink!  I *saw* it!  I did!",
+        "Flags": "Standard",
+        "Sound": "ANN004C",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8090
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "But... but... but I'll help you fight 'em!  I'm a *good* fighter!",
+        "Flags": "Standard",
+        "Sound": "ANN005A",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8094
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Uh... I... I'll go home now!",
+        "Flags": "Standard",
+        "Sound": "ANN006D",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8097
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "My thanks again for savin' me from that evil ol' *witch!*",
+        "Flags": "Standard",
+        "Sound": "ANN007A",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8098
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": 3,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Uh... I... I'll go home now!",
+        "Flags": "Standard",
+        "Sound": "ANN006D",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8097
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 7
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Farewell, Hannu.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8084
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Is this true, Limha?  You're turning the village's children into tiny animals?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8086
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 12,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Hannu",
+      "NextPhraseIndex": 3,
+      "Index": 2,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Go home, child.  What's going on, Limha?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8093
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Limha",
+      "NextPhraseIndex": 13,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Agog",
+      "NextPhraseIndex": 6,
+      "Index": 4,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Hannu.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8084
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)\r\nCurrentAreaIs(Myself, 5002)",
+    "!CurrentAreaIs(Myself, 5000)",
+    "CurrentAreaIs(Myself, 5000)\r\nGlobal(\"50Hannu\", \"GLOBAL\", 0)",
+    "True()"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "SetGlobal(\"50Hannu\", \"GLOBAL\", 1)",
+    "StartCutsceneMode()\r\nStartCutScene(\"50cHann1\")"
+  ],
+  "Checksum": null,
+  "Filename": "50HANNU.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 8083
+}

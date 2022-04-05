@@ -1,0 +1,1197 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Hmmm?  Oooh, these woods are *dangerous.*  I'm surprised you're here... you should leave, quickly.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8464
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 7,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Hmmm?  You're still in these woods?  You must be lost.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8469
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 7,
+      "TriggerIndex": 2,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Children?  Human children?  A woman lives west of here, just outside the woods - sometimes I see her take children into her home.  What does she do with them?  Eat them, perhaps?  But human children are none of my concern...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8472
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Carynara - I am a sprite, a dryad.  This clearing is a part of my home in these woods.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8478
+      },
+      "ResponsesIndexFirst": 20,
+      "ResponsesCount": 7,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Hmmm?  Pass... through?  I don't know - I never leave my home.  Why would I?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8483
+      },
+      "ResponsesIndexFirst": 27,
+      "ResponsesCount": 8,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Not for me - I avoid enemies easily.  It's so quiet here, now - no hunters to kill the animals, no loggers to fell the trees.  I don't know why the woods have become so dangerous for travelers lately, but I don't mind it...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8484
+      },
+      "ResponsesIndexFirst": 35,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Why are you here, hmmm?  Are you lost?  If you travel west, you'll find your way out...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8486
+      },
+      "ResponsesIndexFirst": 36,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "The woods don't seem so dark, and there are so few monsters left.  I hope that settlers won't begin to travel here, now... I don't wish to lose my home.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27149
+      },
+      "ResponsesIndexFirst": 42,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Yes... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27150
+      },
+      "ResponsesIndexFirst": 44,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Truly?  I've never spoken to her, and do not know her name.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27151
+      },
+      "ResponsesIndexFirst": 45,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Oh... very well.  I will tell you of but a single secret path, though - if you cannot make it even there yourselves, you do not belong here...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37861
+      },
+      "ResponsesIndexFirst": 49,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Deep in the woods you will find a pond... from there, go southeast, northeast, and then northwest.  This will lead you to a small creek... travel northwest, northeast, and then southeast.  This will lead you into the heart of the forest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37862
+      },
+      "ResponsesIndexFirst": 50,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 11
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8461,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8462,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8463,
+      "TriggerIndex": 2,
+      "ActionIndex": 2,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8466
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 3,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "How do I pass through these woods?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8467
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 4,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I need healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 3212
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8468
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 8,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8461,
+      "TriggerIndex": 4,
+      "ActionIndex": 4,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8462,
+      "TriggerIndex": 5,
+      "ActionIndex": 5,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8463,
+      "TriggerIndex": 6,
+      "ActionIndex": 6,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8466
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 3,
+      "Index": 10,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Yes... how do I pass through these woods?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8470
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 4,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I need healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 3212
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8471
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 8,
+      "Index": 13,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You must mean Limha... but she's already dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8473
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 9,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You must mean Limha.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8474
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 9,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8475
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 3,
+      "Index": 16,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I understand.  How do I pass through these woods?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8476
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 4,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I need healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 3212
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8477
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 8,
+      "Index": 19,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "But you said the woods were dangerous.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8479
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 5,
+      "Index": 20,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8461,
+      "TriggerIndex": 11,
+      "ActionIndex": 9,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8462,
+      "TriggerIndex": 12,
+      "ActionIndex": 10,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 22,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8463,
+      "TriggerIndex": 13,
+      "ActionIndex": 11,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Do you know how I can pass through these woods, then?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8480
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 4,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I need healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 3212
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 12,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Carynara.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8481
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 8,
+      "Index": 26,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Are you certain you can't help?  Evil has taken root in these woods, and I cannot help unless I can navigate them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37863
+      },
+      "JournalIndex": 37865,
+      "TriggerIndex": 15,
+      "ActionIndex": 13,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 10,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "But surely a woodland spirit of such power and beauty would be wise to the ways of the wood's paths and clearings...?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37864
+      },
+      "JournalIndex": 37865,
+      "TriggerIndex": 16,
+      "ActionIndex": 14,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 10,
+      "Index": 28,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8461,
+      "TriggerIndex": 17,
+      "ActionIndex": 15,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 29,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8462,
+      "TriggerIndex": 18,
+      "ActionIndex": 16,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 30,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8463,
+      "TriggerIndex": 19,
+      "ActionIndex": 17,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 31,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8466
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 3,
+      "Index": 32,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I need healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 3212
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 18,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 33,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8468
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 8,
+      "Index": 34,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 6,
+      "Index": 35,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8461,
+      "TriggerIndex": 20,
+      "ActionIndex": 19,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 36,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8462,
+      "TriggerIndex": 21,
+      "ActionIndex": 20,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 37,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8463,
+      "TriggerIndex": 22,
+      "ActionIndex": 21,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 38,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "But how do I pass through these woods to the east?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8487
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 4,
+      "Index": 39,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I need healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 3212
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 22,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 40,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8471
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 8,
+      "Index": 41,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I need healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 3212
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 23,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 42,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8471
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 8,
+      "Index": 43,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 44,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8466
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 3,
+      "Index": 45,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "How do I pass through these woods?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8467
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 24,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 4,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I need healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 3212
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 24,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 47,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8477
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 8,
+      "Index": 48,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 11,
+      "Index": 49,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 37865,
+      "TriggerIndex": 25,
+      "ActionIndex": 25,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 50,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8462,
+      "TriggerIndex": 26,
+      "ActionIndex": 26,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 51,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm looking for some missing children.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8465
+      },
+      "JournalIndex": 8463,
+      "TriggerIndex": 27,
+      "ActionIndex": 27,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 2,
+      "Index": 52,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8466
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50Caryna",
+      "NextPhraseIndex": 3,
+      "Index": 53,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I need healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 3212
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 28,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 54,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "My thanks.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8477
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 55,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "!Global(\"AR5003_DARK_TREE_CLEAR\",\"GLOBAL\",0)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\nGlobal(\"AR5002_Visited\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\nGlobalGT(\"AR5002_Visited\", \"Global\", 0)\nGlobal(\"Limha_Dead\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\n!Global(\"Limha_Dead\", \"Global\", 0)",
+    "!Global(\"50Suoma_Help\", \"Global\", 5)\r\nGlobal(\"50Carynara_Help\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\nGlobal(\"AR5002_Visited\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\nGlobalGT(\"AR5002_Visited\", \"Global\", 0)\nGlobal(\"Limha_Dead\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\n!Global(\"Limha_Dead\", \"Global\", 0)",
+    "!Global(\"50Suoma_Help\", \"Global\", 5)\r\nGlobal(\"50Carynara_Help\", \"Global\", 0)",
+    "GlobalGT(\"AR5002_Visited\", \"Global\", 0)\n!Global(\"Limha_Dead\", \"Global\", 0)",
+    "GlobalGT(\"AR5002_Visited\", \"Global\", 0)\nGlobal(\"Limha_Dead\", \"Global\", 0)",
+    "!Global(\"50Suoma_Help\", \"Global\", 5)\r\nGlobal(\"50Carynara_Help\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\nGlobal(\"AR5002_Visited\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\nGlobalGT(\"AR5002_Visited\", \"Global\", 0)\nGlobal(\"Limha_Dead\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\n!Global(\"Limha_Dead\", \"Global\", 0)",
+    "!Global(\"50Suoma_Help\", \"Global\", 5)\r\nGlobal(\"50Carynara_Help\", \"Global\", 0)",
+    "!Alignment(Protagonist, Mask_Evil)\r\nOr(2)\r\nClassEX(Protagonist, Druid)\r\nClassEX(Protagonist, Ranger)",
+    "CheckSkillGT(Protagonist, 10, Diplomacy)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\nGlobal(\"AR5002_Visited\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\nGlobalGT(\"AR5002_Visited\", \"Global\", 0)\nGlobal(\"Limha_Dead\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\n!Global(\"Limha_Dead\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\nGlobal(\"AR5002_Visited\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\nGlobalGT(\"AR5002_Visited\", \"Global\", 0)\nGlobal(\"Limha_Dead\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\n!Global(\"50Carynara\", \"Global\", 1)\n!Global(\"Limha_Dead\", \"Global\", 0)",
+    "!Global(\"50Suoma_Help\", \"Global\", 5)\r\nGlobal(\"50Carynara_Help\", \"Global\", 0)",
+    "!Global(\"50Suoma_Help\", \"Global\", 5)\r\nGlobal(\"50Carynara_Help\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\r\n!Global(\"50Carynara\", \"Global\", 1)\r\nGlobal(\"AR5002_Visited\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\r\n!Global(\"50Carynara\", \"Global\", 1)\r\nGlobalGT(\"AR5002_Visited\", \"Global\", 0)\r\nGlobal(\"Limha_Dead\", \"Global\", 0)",
+    "Global(\"50Venla_Children\", \"Global\", 1)\r\n!Global(\"50Carynara\", \"Global\", 1)\r\n!Global(\"Limha_Dead\", \"Global\", 0)"
+  ],
+  "Actions": [
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "StartStore(\"50Caryna\", Protagonist)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "StartStore(\"50Caryna\", Protagonist)",
+    "StartStore(\"50Caryna\", Protagonist)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "StartStore(\"50Caryna\", Protagonist)",
+    "SetGlobal(\"50Carynara_Help\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara_Help\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "StartStore(\"50Caryna\", Protagonist)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "StartStore(\"50Caryna\", Protagonist)",
+    "StartStore(\"50Caryna\", Protagonist)",
+    "StartStore(\"50Caryna\", Protagonist)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "SetGlobal(\"50Carynara\", \"Global\", 1)",
+    "StartStore(\"50Caryna\", Protagonist)"
+  ],
+  "Checksum": null,
+  "Filename": "50CARYNA.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 8464
+}

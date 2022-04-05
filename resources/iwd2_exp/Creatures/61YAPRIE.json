@@ -1,0 +1,675 @@
+{
+  "Feats": [
+    "Blind fight",
+    "Combat casting",
+    "Dodge",
+    "Expertise",
+    "Improved critical",
+    "Improved initiative",
+    "Resist poison",
+    "Simple crossbow",
+    "Simple mace",
+    "Simple missile",
+    "Simple quarterstaff",
+    "Simple small blade",
+    "Snake blood",
+    "Stunning fist"
+  ],
+  "Spells": {
+    "CLR": {
+      "1": [
+        {
+          "SpellName": "Armor of Faith",
+          "Memorized": 6,
+          "Remaining": 6
+        },
+        {
+          "SpellName": "Bless",
+          "Memorized": 6,
+          "Remaining": 6
+        },
+        {
+          "SpellName": "Command",
+          "Memorized": 6,
+          "Remaining": 6
+        },
+        {
+          "SpellName": "Cure Light Wounds",
+          "Memorized": 6,
+          "Remaining": 6
+        },
+        {
+          "SpellName": "Bane",
+          "Memorized": 6,
+          "Remaining": 6
+        },
+        {
+          "SpellName": "Doom",
+          "Memorized": 6,
+          "Remaining": 6
+        },
+        {
+          "SpellName": "Frost Fingers",
+          "Memorized": 6,
+          "Remaining": 6
+        },
+        {
+          "SpellName": "Inflict Light Wounds",
+          "Memorized": 6,
+          "Remaining": 6
+        },
+        {
+          "SpellName": "Magic Stone",
+          "Memorized": 6,
+          "Remaining": 6
+        },
+        {
+          "SpellName": "Protection From Evil",
+          "Memorized": 6,
+          "Remaining": 6
+        },
+        {
+          "SpellName": "Remove Fear",
+          "Memorized": 6,
+          "Remaining": 6
+        },
+        {
+          "SpellName": "Sanctuary",
+          "Memorized": 6,
+          "Remaining": 6
+        },
+        {
+          "SpellName": "Summon Monster I",
+          "Memorized": 6,
+          "Remaining": 6
+        }
+      ],
+      "2": [
+        {
+          "SpellName": "Aid",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Alicorn Lance",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Bull's Strength",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Chant",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Rainstorm",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Cure Moderate Wounds",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Delay Poison",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Draw Upon Holy Might",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Find Traps",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Hold Person",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Inflict Moderate Wounds",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Restoration",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Remove Paralysis",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Minor Elemental Barrier",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Silence",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Spell Shield",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Spiritual Weapon",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Summon Monster II",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Remove Fatigue",
+          "Memorized": 5,
+          "Remaining": 5
+        }
+      ],
+      "3": [
+        {
+          "SpellName": "Blindness",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Circle of Bones",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Contagion",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Cure Serious Wounds",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Dispel Magic",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Exaltation",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Glyph of Warding",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Halt Undead",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Ice Blade",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Inflict Serious Wounds",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Invisibility Purge",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Magic Circle Against Evil",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Miscast Magic",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Mold Touch",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Moonblade",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Negative Energy Protection",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Prayer",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Protection From Fire",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Remove Curse",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Rigid Thinking",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Strength of One",
+          "Memorized": 5,
+          "Remaining": 5
+        },
+        {
+          "SpellName": "Summon Monster III",
+          "Memorized": 5,
+          "Remaining": 5
+        }
+      ],
+      "4": [
+        {
+          "SpellName": "Cloak of Fear",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Cloud of Pestilence",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Cure Critical Wounds",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Death Ward",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Defensive Harmony",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Dismissal",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Freedom of Movement",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Giant Vermin",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Holy Power",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Inflict Critical Wounds",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Neutralize Poison",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Poison",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Protection from Lightning",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Recitation",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Star Metal Cudgel",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Summon Monster IV",
+          "Memorized": 3,
+          "Remaining": 3
+        },
+        {
+          "SpellName": "Unholy Blight",
+          "Memorized": 3,
+          "Remaining": 3
+        }
+      ],
+      "5": [
+        {
+          "SpellName": "Animal Rage",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Champion's Strength",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Chaotic Commands",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Flame Strike",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Greater Command",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Insect Plague",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Iron Skins",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Spell Resistance",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Healing Circle",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Raise Dead",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Shield of Lathander",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Slay Living",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Smashing Wave",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Snakebite",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Summon Monster V",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Undead Ward",
+          "Memorized": 1,
+          "Remaining": 1
+        }
+      ]
+    }
+  },
+  "flags": 0,
+  "XPReward": 975,
+  "PowerLevel": 0,
+  "Gold": 0,
+  "StatusFlags": 0,
+  "CurrentHP": 72,
+  "MaximumHP": 72,
+  "Animation": 59553,
+  "Unknown": 0,
+  "MetalColourIndex": 0,
+  "MinorColourIndex": 0,
+  "MajorColourIndex": 82,
+  "SkinColourIndex": 0,
+  "LeatherColourIndex": 0,
+  "ArmorColourIndex": 0,
+  "HairColourIndex": 0,
+  "EffVersion": 0,
+  "Reputation": 0,
+  "HideInShadows": 0,
+  "ArmorClassNatural": 21,
+  "ArmorClassEffective": 0,
+  "CrushingModifuer": 0,
+  "MissileModifier": 0,
+  "PiercingModifier": 0,
+  "SlashingModifier": 0,
+  "Thac0": 13,
+  "NumberOfAttacks": 2,
+  "SaveVsDeath": 6,
+  "SaveVsWands": 7,
+  "SaveVsPolymorph": 10,
+  "SaveVsBreath": 0,
+  "SaveVsSpells": 0,
+  "FireResistance": 0,
+  "ColdResistance": 0,
+  "ElectricityResistance": 0,
+  "AcidResistance": 0,
+  "MagicResistance": 16,
+  "MagicFireResistance": 0,
+  "MagicColdResistance": 0,
+  "SlashingResistance": 0,
+  "CrushingResistance": 0,
+  "PiercingResistance": 0,
+  "MissileResistance": 0,
+  "Lore": 0,
+  "LockPicking": 0,
+  "Stealth": 0,
+  "FindTraps": 0,
+  "PickPockets": 0,
+  "Fatigue": 0,
+  "Intoxication": 0,
+  "Luck": 0,
+  "TurnUndeadLevel": 0,
+  "Tracking": 0,
+  "Sex": 0,
+  "Strength": 19,
+  "StrengthBonus": 0,
+  "Intelligence": 18,
+  "Wisdom": 18,
+  "Dexterity": 13,
+  "Constitution": 17,
+  "Charisma": 16,
+  "Morale": 20,
+  "MoraleBreak": 0,
+  "MoraleRecoveryTime": 0,
+  "Kit": 2097152,
+  "EnemyAlly": 255,
+  "General": 255,
+  "Race": 168,
+  "Class": 3,
+  "Specific": 0,
+  "Gender": 1,
+  "ObjectIdRef1": 0,
+  "ObjectIdRef2": 0,
+  "ObjectIdRef3": 0,
+  "ObjectIdRef4": 0,
+  "ObjectIdRef5": 0,
+  "Alignment": 51,
+  "GlobalActorEnumeration": -1,
+  "LocalActorEnumeration": -1,
+  "KnownSpellsoffset": 0,
+  "KnownSpellsCount": 0,
+  "SpellMemorizationOffset": 0,
+  "SpellMemorizationCount": 0,
+  "MemorizedSpellsOffset": 0,
+  "MemorizedSpellsCount": 0,
+  "ItemSlotOffset": 0,
+  "ItemOffset": 0,
+  "ItemCount": 0,
+  "EffectOffset": 0,
+  "EffectCount": 0,
+  "ResistMagicDamage": 0,
+  "LevelTotal": 9,
+  "LevelBarbarian": 0,
+  "LevelBard": 0,
+  "LevelCleric": 9,
+  "LevelDruid": 0,
+  "LevelFighter": 0,
+  "LevelMonk": 0,
+  "LevelPaladin": 0,
+  "LevelRanger": 0,
+  "LevelRogue": 0,
+  "LevelSorcerer": 0,
+  "LevelWizard": 0,
+  "EnchantmentLevel": 0,
+  "FeatWeaponProBow": 0,
+  "FeatWeaponProCrossbow": 1,
+  "FeatWeaponProMissle": 1,
+  "FeatWeaponProAxe": 0,
+  "FeatWeaponProMace": 1,
+  "FeatWeaponProFlail": 0,
+  "FeatWeaponProPolearm": 0,
+  "FeatWeaponProHammer": 0,
+  "FeatWeaponProQuarterstaff": 1,
+  "FeatWeaponProGreatsword": 0,
+  "FeatWeaponProLargeSword": 0,
+  "FeatWeaponProSmallBlade": 1,
+  "FeatToughness": 0,
+  "FeatArmoredArcana": 0,
+  "FeatCleave": 0,
+  "FeatArmorPreficiency": 0,
+  "FeatSpellFocusEnchantment": 0,
+  "FeatSpellFocusEvocation": 0,
+  "FeatSpellFocusNecromancy": 0,
+  "FeatSpellFocusTransmutation": 0,
+  "FeatSpellPenetration": 0,
+  "FeatExtraRage": 0,
+  "FeatExtraWildShape": 0,
+  "FeatExtraExtraSmiting": 0,
+  "FeatExtraExtraTurning": 0,
+  "FeatWeaponProExoticBastardSword": 0,
+  "SkillAlchemy": 0,
+  "SkillAnimalEmpathy": 0,
+  "SkillBluff": 0,
+  "SkillConcentration": 12,
+  "SkillDiplomacy": 0,
+  "SkillDisableDevice": 0,
+  "SkillHide": 0,
+  "SkillIntimidate": 0,
+  "SkillKnowledgeArcana": 0,
+  "SkillMoveSilently": 0,
+  "SkillOpenLock": 0,
+  "SkillPickPocket": 0,
+  "SkillSearch": 0,
+  "SkillSpellcraft": 0,
+  "SkillUseMagicDevice": 0,
+  "SkillWildernessLaw": 0,
+  "ChallangeRating": 10,
+  "FavouredEnemy1": 0,
+  "FavouredEnemy2": 0,
+  "FavouredEnemy3": 0,
+  "FavouredEnemy4": 0,
+  "FavouredEnemy5": 0,
+  "FavouredEnemy6": 0,
+  "FavouredEnemy7": 0,
+  "FavouredEnemy8": 0,
+  "Subrace": 0,
+  "Hidden": 0,
+  "OnDeathSetExtraVariable": 0,
+  "IncrementKillCount": 0,
+  "VariableInternal1": 0,
+  "VariableInternal2": 0,
+  "VariableInternal3": 0,
+  "VariableInternal4": 0,
+  "VariableInternal5": 0,
+  "IsLocationSaved": 0,
+  "SavedLocationX": 0,
+  "SavedLocationY": 0,
+  "SavedOrientation": 0,
+  "FadeAmount": 0,
+  "FadeSpeed": 0,
+  "Attributes": 0,
+  "Visibility": 0,
+  "SkillPointsRemain": 0,
+  "Class2": 3,
+  "ClassMsk": 4,
+  "LongName": {
+    "Text": null,
+    "Flags": 0,
+    "Sound": null,
+    "VolumeVariance": 0,
+    "PitchVariance": 0,
+    "Strref": 889
+  },
+  "ShortName": {
+    "Text": null,
+    "Flags": 0,
+    "Sound": null,
+    "VolumeVariance": 0,
+    "PitchVariance": 0,
+    "Strref": 881
+  },
+  "Flags": [],
+  "SmallPortrait": "",
+  "LargePortrait": "",
+  "DeathVariable": "61YHPrie",
+  "DialogFile": "",
+  "ScriptTeam": "",
+  "ScriptSpecial": "",
+  "ScriptSpecial2": "61YAPRIE",
+  "ScriptCombat": "61YHPRIE",
+  "ScriptSpecial3": "61AATGN",
+  "ScriptMovement": "00AMVW",
+  "DeathVariable2": "",
+  "DeathVariable3": "61AbominationDied",
+  "Checksum": null,
+  "Filename": "61YAPRIE.Cre",
+  "FileType": 1009,
+  "OriginalFile": null
+}

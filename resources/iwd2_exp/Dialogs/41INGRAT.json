@@ -1,0 +1,1372 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Ho-ho, we managed to break through!  Excellent work, adventurers... I'm Ingrath Mariner, captain of what's left of the Neverwinter forces.  This is Sergeant Rahm Dammel...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 970
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Not so fast, Rahm - what about that devilish dragon-woman and the wyverns?  We've already lost Captain Yurst and many soldiers to them - we can't march the troops through that maze of melting ice while they're still about.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 972
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Hrm... yes... I see.  Well, then, I must say - excellent work, again!  It seems the enemy never expected adventurers of *your* caliber...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 974
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "What is it, Dammel?  Grave news?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 979
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "My men are too battered to do much good in Targos - we'd best head back to Neverwinter for reinforcements.  Since you're heading east, adventurer, why don't we rendezvous with you at the Ice Lakes?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 980
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "I see - why, thank you!  Thank you, indeed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 983
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "We'll meet again around the Ice Lakes, adventurer.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 986
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 1,
+      "TriggerIndex": 7,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Ho-ho, you've made it - excellent!  Good work, adventurers.  Off to the Eastern Pass, then?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 991
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "*What?*  Damn!  First the glacier, and now this - hells, it's as if the gods themselves conspired to keep us from Icewind Dale.  How did you come across this information?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 994
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "The Underdark, you say? *Madness!* Does this mean we'll have to enter that enormous cave, then?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 997
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Ho-ho, we're in for some trouble, then!  Can't you smell that, boy?  That's a *dragon's* lair!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 999
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Ho-ho, we're in for some trouble, then!  Can't you smell that, girl?  That's a *dragon's* lair!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7504
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "No sense in nambying about... let's get to it!  We'll approach the cave slowly, and take the beast as it emerges.  Don't worry - my men will back you up.  Icewind Dale awaits!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7505
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "Nonsense!  We've got one: you move forward, and we'll back you up.  The scaly buffoon won't know what's hit him.  Go on, get to it - no more discussion!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7593
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "Go on, get to it - no more discussion!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7659
+      },
+      "ResponsesIndexFirst": 25,
+      "ResponsesCount": 2,
+      "TriggerIndex": 2,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "What're you *doing,* boy?  Get back there and slay that dragon!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7662
+      },
+      "ResponsesIndexFirst": 27,
+      "ResponsesCount": 3,
+      "TriggerIndex": 3,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "What're you *doing,* girl?  Get back there and slay that dragon!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7668
+      },
+      "ResponsesIndexFirst": 30,
+      "ResponsesCount": 3,
+      "TriggerIndex": 4,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "We *are!*  I've a duty to keep my men safe, you know - I send them in too soon and they'll all be killed... they're not seasoned adventurers like you.  Now get back there and *slay that dragon!*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7669
+      },
+      "ResponsesIndexFirst": 33,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "Ho-ho, that was *excellent* work you did there, adventurer - congratulations!  Well... into the cave, then!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7683
+      },
+      "ResponsesIndexFirst": 36,
+      "ResponsesCount": 2,
+      "TriggerIndex": 5,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "Wha-?  *Ridiculous!*  We most certainly did!  Look, child: I bear a certain responsibility to my men, and that's to *keep them alive.*  You clearly had no need of them in that fight, and so I did not order them in.  Now, let's go...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7687
+      },
+      "ResponsesIndexFirst": 38,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "Eh?  Ho-ho, you must have misheard!  Why, he said \"I've never seen such skill, men.\"  Ah - isn't that right, soldier?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7689
+      },
+      "ResponsesIndexFirst": 40,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "There, you see?  A simple misunderstanding.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7690
+      },
+      "ResponsesIndexFirst": 41,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "*Balderdash!*  Why, if we were out to harm you, we'd have killed you when we got rid of the men from Luskan!  Whoops...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7694
+      },
+      "ResponsesIndexFirst": 44,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "Alas, it had to happen eventually... we'll simply have to soil our own hands, now.  Our thanks for unwittingly conveying troop movements via our spy Garradun's letter, human, but your incessant meddling will end *here.*  Die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7697
+      },
+      "ResponsesIndexFirst": 48,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 23
+    },
+    {
+      "Text": {
+        "Text": "Alas, I suppose it had to happen eventually... we'll simply have to soil our own hands, now.  Your incessant meddling ends here, human... you'll trouble the glorious Legion of the Chimera no more.  Die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7699
+      },
+      "ResponsesIndexFirst": 49,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 24
+    },
+    {
+      "Text": {
+        "Text": "The time has come, men - we're going to get rid of these meddlers once and for all.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7700
+      },
+      "ResponsesIndexFirst": 50,
+      "ResponsesCount": 2,
+      "TriggerIndex": 6,
+      "Index": 25
+    },
+    {
+      "Text": {
+        "Text": "My thanks for conveying troop movements via our spy Garradun's letter, but you've become quite the thorn in the Legion's side.  We've slain the Luskan troops, and now *your* incessant meddling comes to a grisly end.  Die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7703
+      },
+      "ResponsesIndexFirst": 52,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 26
+    },
+    {
+      "Text": {
+        "Text": "With the Luskan troops dead by our hands, *you're* the remaining thorn in the Legion's side.  But your incessant meddling ends here, human... you'll trouble the glorious Legion of the Chimera no more.  Die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7705
+      },
+      "ResponsesIndexFirst": 53,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 27
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Rahm",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Sherincal's been defeated - it's safe to move your men through.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 973
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Rahm",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Ingrath - I brought this letter from Garradun, for his fiance.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 975
+      },
+      "JournalIndex": 961,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 5,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Ingrath - I brought this letter from Garradun, for his fiance.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 975
+      },
+      "JournalIndex": 961,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 5,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Ingrath, Rahm - I've brought you both letters from Targos.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 977
+      },
+      "JournalIndex": 966,
+      "TriggerIndex": 2,
+      "ActionIndex": 2,
+      "NextScriptDialog": "41Rahm",
+      "NextPhraseIndex": 3,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We're heading to Kuldahar via the Eastern Pass - what will you two do now?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 978
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Rahm",
+      "NextPhraseIndex": 5,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Rahm",
+      "NextPhraseIndex": 4,
+      "Index": 6,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Very well... we'll see you there.  Farewell, Ingrath.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 981
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Rahm",
+      "NextPhraseIndex": 6,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We're heading to Kuldahar via the Eastern Pass - what will you two do now?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 978
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Rahm",
+      "NextPhraseIndex": 5,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Ingrath.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 988
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We can't use the Eastern Pass - it's held by the Legion of the Chimera.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 993
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 8,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Hold, Ingrath... I had my suspicions in the Western Pass, but now your taint of evil is unmistakable.  Explain yourself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37454
+      },
+      "JournalIndex": 967,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 25,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "A drow merchant named Nym.  He also told us of another way past the mountains... through the Underdark.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 995
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 9,
+      "Index": 12,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Yes.  It should lead to a monastery, beneath which is an entrance to the Underdark.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 998
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 10,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Yes.  It should lead to a monastery, beneath which is an entrance to the Underdark.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 998
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 11,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I thought so.  That's good... I *loathe* dragons.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37441
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 12,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "A dragon?  Perhaps we should think this out more.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 1000
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 12,
+      "Index": 16,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Not a problem.  We'll just slay it and move on.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 1001
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 12,
+      "Index": 17,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I thought so.  That's good... I *loathe* dragons.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37441
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 12,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "A dragon?  Perhaps we should think this out more.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 1000
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 12,
+      "Index": 19,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Not a problem.  We'll just slay it and move on.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 1001
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 12,
+      "Index": 20,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Wait - we should come up with a plan or something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7506
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 13,
+      "Index": 21,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "All right, then... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7515
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'm not one of your men, Ingrath - command me again and you'll get a sword through your gullet.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right, then... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7515
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'm not one of your men, Ingrath - command me again and you'll get a sword through your gullet.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right, then... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7515
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 26,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I thought that you were supposed to back me up.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7667
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 17,
+      "Index": 27,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I'm not one of your men, Ingrath - command me again and you'll get a sword through your gullet.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 28,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right, then... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7515
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 29,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I thought that you were supposed to back me up.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7667
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 17,
+      "Index": 30,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I'm not one of your men, Ingrath - command me again and you'll get a sword through your gullet.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 31,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right, then... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7515
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 32,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Smells like cowardice to me.  Farewell, Ingrath.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7681
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 33,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'm not one of your men, Ingrath - command me again and you'll get a sword through your gullet.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 34,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right, then... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7515
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 35,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Wait - why didn't you back me up?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7684
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 19,
+      "Index": 36,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Thanks.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7686
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 37,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "And why did your man say, \"now we'll have to kill them?\"",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7688
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 20,
+      "Index": 38,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "All right, then... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7515
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 39,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "50NWSold",
+      "NextPhraseIndex": 0,
+      "Index": 40,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "No... something's wrong here.  You're out to harm us.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7691
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 22,
+      "Index": 41,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I've got my eye on you, Ingrath... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7693
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 42,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right, then... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7515
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 43,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "\"Whoops\" indeed, Ingrath.  Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7695
+      },
+      "JournalIndex": 967,
+      "TriggerIndex": 15,
+      "ActionIndex": 8,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 23,
+      "Index": 44,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "That little slip-up will cost you your life.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7696
+      },
+      "JournalIndex": 967,
+      "TriggerIndex": 16,
+      "ActionIndex": 9,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 23,
+      "Index": 45,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "\"Whoops\" indeed, Ingrath.  Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7695
+      },
+      "JournalIndex": 967,
+      "TriggerIndex": 17,
+      "ActionIndex": 10,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 24,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "That little slip-up will cost you your life.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7696
+      },
+      "JournalIndex": 967,
+      "TriggerIndex": 18,
+      "ActionIndex": 11,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 24,
+      "Index": 47,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 48,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 49,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What are you talking about, Ingrath?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7701
+      },
+      "JournalIndex": 967,
+      "TriggerIndex": 19,
+      "ActionIndex": 12,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 26,
+      "Index": 50,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What are you talking about, Ingrath?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7701
+      },
+      "JournalIndex": 967,
+      "TriggerIndex": 20,
+      "ActionIndex": 13,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 27,
+      "Index": 51,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 14,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 52,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 15,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 53,
+      "Flags": "HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "CurrentAreaIs(Myself, 4100)\r\nNumTimesTalkedTo(0)",
+    "CurrentAreaIs(Myself, 5005)\r\nNumTimesTalkedTo(0)\r\nGlobal(\"50Dragon\", \"GLOBAL\", 1)",
+    "CurrentAreaIs(Myself, 5005)\r\nGlobal(\"50Dragon\", \"GLOBAL\", 2)",
+    "Global(\"50Dragon\", \"GLOBAL\", 3)\r\nGender(Protagonist, Male)",
+    "Global(\"50Dragon\", \"GLOBAL\", 3)\r\nGender(Protagonist, Female)",
+    "GlobalGT(\"50Dragon\", \"GLOBAL\", 3)\r\nCurrentAreaIs(Myself, 5005)",
+    "GlobalGT(\"50Dragon\", \"GLOBAL\", 3)\r\nCurrentAreaIs(Myself, 5100)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "PartyHasItem(\"11GenGLe\")",
+    "PartyHasItem(\"11GenGoL\")",
+    "PartyHasItem(\"11GenDen\")",
+    "!PartyHasItem(\"11GenGLe\")\n!PartyHasItem(\"11GenGoL\")\n!PartyHasItem(\"11GenDen\")",
+    "!ClassEx(Protagonist, Paladin)",
+    "ClassEx(Protagonist, Paladin)",
+    "Gender(Protagonist, MALE)",
+    "!Gender(Protagonist, MALE)",
+    "CheckStat(Protagonist, 188, HatedRace)",
+    "CheckStat(Protagonist, 188, HatedRace)",
+    "Alignment(Protagonist, Mask_Evil)",
+    "Alignment(Protagonist, Mask_Evil)",
+    "Alignment(Protagonist, Mask_Evil)",
+    "Alignment(Protagonist, Mask_Evil)",
+    "Alignment(Protagonist, Mask_Evil)",
+    "Global(\"41Ingrath_Deliver\", \"GLOBAL\", 1)",
+    "Global(\"41Ingrath_Deliver\", \"GLOBAL\", 1)",
+    "Global(\"41Ingrath_Deliver\", \"GLOBAL\", 0)",
+    "Global(\"41Ingrath_Deliver\", \"GLOBAL\", 0)",
+    "Global(\"41Ingrath_Deliver\", \"GLOBAL\", 1)",
+    "Global(\"41Ingrath_Deliver\", \"GLOBAL\", 0)"
+  ],
+  "Actions": [
+    "AddXpVar(\"Level_4_Easy\",968)\r\nSetGlobal(\"41Ingrath_Deliver\", \"GLOBAL\", 1)\r\nTakePartyItem(\"11GenGLe\")\r\nDestroyItem(\"11GenGLe\")",
+    "AddXpVar(\"Level_4_Easy\",968)\r\nSetGlobal(\"41Ingrath_Deliver\", \"GLOBAL\", 1)\r\nTakePartyItem(\"11GenGoL\")\r\nDestroyItem(\"11GenGoL\")",
+    "AddXpVar(\"Level_4_Easy\",969)\r\nSetGlobal(\"41Ingrath_Deliver\", \"GLOBAL\", 2)\r\nTakePartyItem(\"11GenDen\")\r\nDestroyItem(\"11GenDen\")",
+    "SetGlobal(\"50Dragon\", \"GLOBAL\", 2)",
+    "SetGlobal(\"50Dragon\", \"GLOBAL\", 2)",
+    "SetGlobal(\"50Dragon\", \"GLOBAL\", 2)",
+    "SetGlobal(\"50Dragon\", \"GLOBAL\", 5)",
+    "SetGlobal(\"50Dragon\", \"GLOBAL\", 5)",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "SetGlobal(\"50Dragon\", \"GLOBAL\", 5)",
+    "SetGlobal(\"50Dragon\", \"GLOBAL\", 5)",
+    "Enemy()",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "41INGRAT.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 970
+}

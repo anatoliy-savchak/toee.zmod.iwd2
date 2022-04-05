@@ -1,0 +1,237 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "The anvil cannot be used at this time.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27344
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "This anvil was charged with magic under the supervision of a duergar warrior-artisan; traces of arcane energy still crackle along its surface.  A finely-made battleaxe lies upon it next to a set of forging tools.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27346
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 6,
+      "TriggerIndex": 0,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Finished at last, you cease your hammering to examine the fruit of your labor...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27350
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "The power of the anvil has been spent.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28890
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 3
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Work the axe with the forging tools.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27347
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "53Forge",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Work the axe with the forging tools.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27347
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "53Forge",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Work the axe with the forging tools.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27347
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 2,
+      "NextScriptDialog": "53Forge",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Work the axe with the forging tools.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27347
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 3,
+      "NextScriptDialog": "53Forge",
+      "NextPhraseIndex": 2,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Take the axe and leave.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27348
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Leave.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27349
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"53Forge\", \"GLOBAL\", 0)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "LevelInClassGT(Protagonist, 12, Fighter)\nSubrace(Protagonist, Dwarf_Gray)",
+    "LevelInClassGT(Protagonist, 5, Fighter)\nLevelInClassLT(Protagonist, 13, Fighter)\nSubrace(Protagonist, Dwarf_Gray)",
+    "LevelInClassGT(Protagonist, 5, Fighter)\n!Subrace(Protagonist, Dwarf_Gray)",
+    "LevelInClassLT(Protagonist, 6, Fighter)"
+  ],
+  "Actions": [
+    "SetGlobal(\"53Forge\", \"GLOBAL\", 1)\nGiveItemCreate(\"51HFaxDF\", Protagonist, 0, 0, 0)\nFadeToColor([0.0],0)\nFadeFromColor([0.0],0)",
+    "SetGlobal(\"53Forge\", \"GLOBAL\", 1)\nGiveItemCreate(\"51ax1hDF\", Protagonist, 0, 0, 0)\nFadeToColor([0.0],0)\nFadeFromColor([0.0],0)",
+    "SetGlobal(\"53Forge\", \"GLOBAL\", 1)\nGiveItemCreate(\"00ax1h03\", Protagonist, 0, 0, 0)\nFadeToColor([0.0],0)\nFadeFromColor([0.0],0)",
+    "SetGlobal(\"53Forge\", \"GLOBAL\", 1)\nGiveItemCreate(\"00ax1h02\", Protagonist, 0, 0, 0)\nFadeToColor([0.0],0)\nFadeFromColor([0.0],0)",
+    "SetGlobal(\"53Forge\", \"GLOBAL\", 1)\r\nGiveItemCreate(\"00ax1h01\", Protagonist, 0, 0, 0)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)"
+  ],
+  "Checksum": null,
+  "Filename": "53FORGE.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 27344
+}

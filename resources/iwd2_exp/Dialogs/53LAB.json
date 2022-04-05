@@ -1,0 +1,610 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "This appears to be a small but well-stocked alchemical laboratory.  Dozens of oddly colored liquids and powders are scattered about in various beakers, flasks, and bowls.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25778
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 3,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "This is Imphraili's small but well-stocked transmuter's alchemical laboratory.  Dozens of oddly colored liquids and powders are scattered about in various beakers, flasks, and bowls.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26840
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "It appears that someone with the proper skills and instructions could use the reagents present in a number of manners... for example, transmuting healing potions into something more potent.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35741
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 8,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "It appears that you've used the last of the proper reagents; no more potions may be enhanced.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35746
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "You use some of the reagents to transmute a Potion of Healing into a Potion of Extra Heal.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35747
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "The process of creating, modifying, and transfusing the Sanguis Anima into your bloodstream is arduous and mind-numbingly painful... but you survive it.  As the burning in your veins subsides, you feel strangely invigorated.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35753
+      },
+      "ResponsesIndexFirst": 20,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Carefully following Imphraili's notes, you combine the materials you gathered with some of the reagents create the Sanguis Anima.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35754
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Carefully following Imphraili's notes, you combine the materials you gathered with some of the reagents create a conversion poison that will turn the Viciscamera's defenses against itself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35755
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "You combine the white wyrm's egg with some of the reagents create a powerful potion of strength.  There's enough for two doses.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27288
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "You combine the white wyrm's egg with some of the reagents, boil and strain the mixture, and then transfuse the resulting liquid into your bloodstream.  Shivers wrack your body as your blood cools, but your system eventually normalizes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27289
+      },
+      "ResponsesIndexFirst": 24,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Examine the laboratory.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35738
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 24,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Examine the laboratory.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35738
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Leave.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35739
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Examine the laboratory.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35738
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Leave.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35739
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Increase the potency of a healing potion.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35742
+      },
+      "JournalIndex": 35518,
+      "TriggerIndex": 2,
+      "ActionIndex": 0,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 4,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Increase the potency of a healing potion.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35742
+      },
+      "JournalIndex": 35730,
+      "TriggerIndex": 3,
+      "ActionIndex": 1,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 3,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Concoct the Sanguis Anima for the inanimate golem.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35744
+      },
+      "JournalIndex": 35735,
+      "TriggerIndex": 4,
+      "ActionIndex": 2,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 6,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Concoct a variant of the Sanguis Anima to transfuse into your own blood.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35743
+      },
+      "JournalIndex": 35731,
+      "TriggerIndex": 5,
+      "ActionIndex": 3,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 5,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Concoct a conversion poison to destroy the Viciscamera.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35745
+      },
+      "JournalIndex": 35736,
+      "TriggerIndex": 6,
+      "ActionIndex": 4,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 7,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Use the white wyrm's egg to create a potion of strength.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27290
+      },
+      "JournalIndex": 27313,
+      "TriggerIndex": 7,
+      "ActionIndex": 5,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 8,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Use the white wyrm's egg to create a blood-cooling transfusion.  It will increase your resistance to cold but leave you more vulnerable to heat.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27296
+      },
+      "JournalIndex": 27322,
+      "TriggerIndex": 8,
+      "ActionIndex": 6,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 9,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Leave.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35739
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Concoct the Sanguis Anima for the inanimate golem.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35744
+      },
+      "JournalIndex": 35735,
+      "TriggerIndex": 9,
+      "ActionIndex": 7,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 6,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Concoct a variant of the Sanguis Anima to transfuse into your own blood.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35743
+      },
+      "JournalIndex": 35731,
+      "TriggerIndex": 10,
+      "ActionIndex": 8,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 5,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Concoct a conversion poison to destroy the Viciscamera.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35745
+      },
+      "JournalIndex": 35736,
+      "TriggerIndex": 11,
+      "ActionIndex": 9,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 7,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Use the white wyrm's egg to create a potion of strength.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27290
+      },
+      "JournalIndex": 27313,
+      "TriggerIndex": 12,
+      "ActionIndex": 10,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 8,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Use the white wyrm's egg to create a blood-cooling transfusion.  It will increase your resistance to cold but leave you more vulnerable to heat.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27296
+      },
+      "JournalIndex": 27322,
+      "TriggerIndex": 13,
+      "ActionIndex": 11,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 9,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Leave.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35739
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 21,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 23,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"Imp_Lab\", \"GLOBAL\", 0)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Global(\"Imphraili_Dead\",\"GLOBAL\",0)",
+    "!Global(\"Imphraili_Dead\",\"GLOBAL\",0)",
+    "CheckSkillGT(Protagonist, 7, Alchemy)\r\nPartyHasItem(\"00Potn04\")\r\nGlobalLT(\"53Lab_Chem\", \"GLOBAL\", 10)",
+    "CheckSkillGT(Protagonist, 7, Alchemy)\r\nPartyHasItem(\"00Potn04\")\r\nGlobalGT(\"53Lab_Chem\", \"GLOBAL\", 9)\r\nGlobalLT(\"53Lab_Chem\", \"GLOBAL\", 99)",
+    "CheckSkillGT(Protagonist, 9, Alchemy)\r\n!Global(\"53GolIm\", \"GLOBAL\", 0)\r\nPartyHasItem(\"53BookIG\")\r\nPartyHasItem(\"53MiscIS\")",
+    "Kit(Protagonist, Mage_Transmuter)\r\nCheckSkillGT(Protagonist, 9, Alchemy)\r\nPartyHasItem(\"53BookIS\")\r\nPartyHasItem(\"53MiscIS\")\r\nGlobal(\"53Lab_SA\", \"GLOBAL\", 0)",
+    "CheckSkillGT(Protagonist, 3, Alchemy)\r\nPartyHasItem(\"53BookIV\")\r\nPartyHasItem(\"53MiscIM\")\r\nPartyHasItem(\"53MiscIS\")",
+    "CheckSkillGT(Protagonist, 7, Alchemy)\r\nPartyHasItem(\"00Misc40\")",
+    "CheckSkillGT(Protagonist, 9, Alchemy)\r\nKit(Protagonist, Mage_Transmuter)\r\nPartyHasItem(\"00Misc40\")",
+    "CheckSkillGT(Protagonist, 9, Alchemy)\r\n!Global(\"53GolIm\", \"GLOBAL\", 0)\r\nPartyHasItem(\"53BookIG\")\r\nPartyHasItem(\"53MiscIS\")",
+    "Kit(Protagonist, Mage_Transmuter)\r\nCheckSkillGT(Protagonist, 9, Alchemy)\r\nPartyHasItem(\"53BookIS\")\r\nPartyHasItem(\"53MiscIS\")\r\nGlobal(\"53Lab_SA\", \"GLOBAL\", 0)",
+    "CheckSkillGT(Protagonist, 3, Alchemy)\r\nPartyHasItem(\"53BookIV\")\r\nPartyHasItem(\"53MiscIM\")\r\nPartyHasItem(\"53MiscIS\")",
+    "CheckSkillGT(Protagonist, 7, Alchemy)\r\nPartyHasItem(\"00Misc40\")",
+    "CheckSkillGT(Protagonist, 9, Alchemy)\r\nKit(Protagonist, Mage_Transmuter)\r\nPartyHasItem(\"00Misc40\")"
+  ],
+  "Actions": [
+    "TakePartyItemNum(\"00Potn04\", 1)\r\nDestroyItem(\"00Potn04\")\r\nGiveitemCreate(\"00Potn05\", Protagonist, 1, 0, 0)\r\nIncrementGlobal(\"53Lab_Chem\", \"GLOBAL\", 1)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)",
+    "SetGlobal(\"53Lab_Chem\", \"GLOBAL\", 100)",
+    "TakePartyItem(\"53BookIG\")\r\nTakePartyItem(\"53MiscIS\")\r\nDestroyItem(\"53BookIG\")\r\nDestroyItem(\"53MiscIS\")\r\nGiveitemCreate(\"53MiscIG\", Protagonist, 0, 0, 0)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)",
+    "TakePartyItem(\"53BookIS\")\r\nTakePartyItem(\"53MiscIS\")\r\nDestroyItem(\"53BookIS\")\r\nDestroyItem(\"53MiscIS\")\r\nChangeStat(Protagonist, MAXHITPOINTS, 5, ADD)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)",
+    "TakePartyItem(\"53BookIV\")\r\nTakePartyItem(\"53MiscIM\")\r\nTakePartyItem(\"53MiscIS\")\r\nDestroyItem(\"53BookIV\")\r\nDestroyItem(\"53MiscIM\")\r\nDestroyItem(\"53MiscIS\")\r\nGiveitemCreate(\"53MiscIV\", Protagonist, 0, 0, 0)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)",
+    "TakePartyItem(\"00Misc40\")\r\nDestroyItem(\"00Misc40\")\r\nGiveitemCreate(\"00Potn23\", Protagonist, 2, 0, 0)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)",
+    "TakePartyItem(\"00Misc40\")\r\nDestroyItem(\"00Misc40\")\r\nChangeStat(Protagonist, RESISTCOLD, 5, ADD)\r\nChangeStat(Protagonist, RESISTFIRE, -5, ADD)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)",
+    "TakePartyItem(\"53BookIG\")\r\nTakePartyItem(\"53MiscIS\")\r\nDestroyItem(\"53BookIG\")\r\nDestroyItem(\"53MiscIS\")\r\nGiveitemCreate(\"53MiscIG\", Protagonist, 0, 0, 0)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)",
+    "TakePartyItem(\"53BookIS\")\r\nTakePartyItem(\"53MiscIS\")\r\nDestroyItem(\"53BookIS\")\r\nDestroyItem(\"53MiscIS\")\r\nChangeStat(Protagonist, MAXHITPOINTS, 5, ADD)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)",
+    "TakePartyItem(\"53BookIV\")\r\nTakePartyItem(\"53MiscIM\")\r\nTakePartyItem(\"53MiscIS\")\r\nDestroyItem(\"53BookIV\")\r\nDestroyItem(\"53MiscIM\")\r\nDestroyItem(\"53MiscIS\")\r\nGiveitemCreate(\"53MiscIV\", Protagonist, 0, 0, 0)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)",
+    "TakePartyItem(\"00Misc40\")\r\nDestroyItem(\"00Misc40\")\r\nGiveitemCreate(\"00Potn23\", Protagonist, 2, 0, 0)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)",
+    "TakePartyItem(\"00Misc40\")\r\nDestroyItem(\"00Misc40\")\r\nChangeStat(Protagonist, RESISTCOLD, 5, ADD)\r\nChangeStat(Protagonist, RESISTFIRE, -5, ADD)\r\nFadeToColor([0.0],0)\r\nFadeFromColor([0.0],0)"
+  ],
+  "Checksum": null,
+  "Filename": "53LAB.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 25778
+}

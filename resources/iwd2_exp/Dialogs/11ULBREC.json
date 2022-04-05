@@ -1,0 +1,4133 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "[Urgent, pissed off]Who are you?  [Makes an assumption]If you're one of the mercenary companies, then your place is at the docks, not here.  I've received word we're under attack, and every sword is needed at the cliffs.",
+        "Flags": "Standard",
+        "Sound": "ULBR001",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6193
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "[Urgent, pissed off]Whoever you are, if you want to serve [Tar-goes]Targos, then you'd best have brought me word of what's happening at the docks.  Rumors are flying through the streets, and the people are in a panic.  I need information, and I need it now.",
+        "Flags": "Standard",
+        "Sound": "ULBR002",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6197
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "[Angry, Cold]I am Lord [Uhl-breck Dinns-more]Ulbrec Dinnsmore, ruler of [Tar-goes]Targos, and I don't have time to trade words with sell-swords that think too highly of themselves.",
+        "Flags": "Standard",
+        "Sound": "ULBR003",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6203
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "[Angry, Cold]This isn't [Lusk-an]Luskan.  [Contemptuous]You may think you can take your services elsewhere, mercenary, but I guarantee [Tar-goes]Targos' fate is chained to yours.",
+        "Flags": "Standard",
+        "Sound": "ULBR004",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6205
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "[Angry, Cold]Now, tell me what's happening at the docks.  I want a full report.",
+        "Flags": "Standard",
+        "Sound": "ULBR005",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6206
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "[To himself]Then we'll see that they don't.  [Urgent, taking command]Report to the docks, and put any goblin you find to the sword.",
+        "Flags": "Standard",
+        "Sound": "ULBR006",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6209
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "[Angry about slander to his guards]Then you're our next line of defense.  [Urgent, taking command]Report to the docks, and put any goblin you find to the sword.",
+        "Flags": "Standard",
+        "Sound": "ULBR007",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6210
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "[First angry, then explains why]I don't know how those goblinoid dogs got into [Tar-goes]Targos, but if they should set fire to the docks or our lumber stores, it will be a killing blow to [Tar-goes]Targos.",
+        "Flags": "Standard",
+        "Sound": "ULBR008",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6211
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "[Ordering]Go from building to building, warehouse to warehouse, and make sure that you wipe out every goblin you find.  We can't have even one goblinoid left alive within the walls, or our town will be in danger.",
+        "Flags": "Standard",
+        "Sound": "ULBR009",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6212
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "[Formal pronouncement: \"you're hired,\" angry]As of this day, you are in [Tar-goes]Targos' service - make sure this day is not the last.",
+        "Flags": "Standard",
+        "Sound": "ULBR010",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6213
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "[Angry, tense]You've returned.  What is the situation at the docks?",
+        "Flags": "Standard",
+        "Sound": "ULBR011",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6216
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "[A little relieved, but still tense]That's the first piece of good news I've heard since these raids began.  [Congratulating players - formal, don't put any warmth in this.]You've done well and are to be commended for your efforts in [Tar-goes]Targos' defense.",
+        "Flags": "Standard",
+        "Sound": "ULBR012",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6218
+      },
+      "ResponsesIndexFirst": 20,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "[Slightly apologetic, but not too much]I would ask you to excuse my rudeness when you first arrived.  These goblin raids have been chipping away at my patience, and they could not have come at a worse time.",
+        "Flags": "Standard",
+        "Sound": "ULBR013",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6220
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "I need to know how these goblins were able to reach the docks without being detected.  There was no warning from the Palisades, and they were not sighted passing through the main town.",
+        "Flags": "Standard",
+        "Sound": "ULBR014",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6221
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "[Pissed that he had overlooked this]Dammit... I ordered those caves sealed not long after we drove the smugglers from [Mare Dwahl-don]Maer Dualdon, but it seems those goblins sniffed them out anyway.",
+        "Flags": "Standard",
+        "Sound": "ULBR015",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6224
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "[Thinking]What concerns me is that sapping takes time, even if they were able to break into the old smuggler tunnels.",
+        "Flags": "Standard",
+        "Sound": "ULBR016",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6228
+      },
+      "ResponsesIndexFirst": 24,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "[Thinking]That kind of effort takes planning, and it means the goblins had to be kept focused for weeks, perhaps months.  These raiders are more organized than I suspected.",
+        "Flags": "Standard",
+        "Sound": "ULBR017",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6229
+      },
+      "ResponsesIndexFirst": 25,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "[All business, military briefing]As you no doubt already know, a force of goblins has gathered in the region, and they have been testing our defenses.  They are well-armed and well-organized - their attack on the docks is proof of this.",
+        "Flags": "Standard",
+        "Sound": "ULBR018",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6233
+      },
+      "ResponsesIndexFirst": 26,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "At first, it was just a few raiders, a stray arrow over our walls in the night, then a merchant caravan from [Bremmin]Bremen was attacked on its way to [Tar-goes]Targos.",
+        "Flags": "Standard",
+        "Sound": "ULBR019",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6236
+      },
+      "ResponsesIndexFirst": 28,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "I sent two of my best scouts out to track down the attackers, but they could not find the goblin encampment.",
+        "Flags": "Standard",
+        "Sound": "ULBR020",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6237
+      },
+      "ResponsesIndexFirst": 29,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "[Incredulous, trying to emphasize the seriousness of the threat]Then a band of goblin raiders attacked the walls of [Tar-goes]Targos itself - an act almost unheard of.  [Serious, thinking about casualties]We drove them off, but there were casualties, and the attack has forced me to take measures to strengthen [Tar-goes]Targos' defenses.",
+        "Flags": "Standard",
+        "Sound": "ULBR032",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6238
+      },
+      "ResponsesIndexFirst": 30,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "[All business]I've sent out calls for mercenaries from [Lusk-an]Luskan and [Never-winter]Neverwinter, and arranged for lumber to be shipped from Lonelywood.  You may have seen them by the docks and in the town itself.",
+        "Flags": "Standard",
+        "Sound": "ULBR022",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6243
+      },
+      "ResponsesIndexFirst": 34,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "[Rueful]All [Lusk-an]Luskan did was post notices for adventurers, for they saw little gain in coming to aid us.  [A little more hopeful, \"Never-winter\"]Neverwinter has pledged to send forces... [downnote]but it will be some time before they arrive.",
+        "Flags": "Standard",
+        "Sound": "ULBR023",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6246
+      },
+      "ResponsesIndexFirst": 38,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "[All business]I ordered the construction of a palisade and several small catapults outside the town, supervised by the commander of the [Tar-goes]Targos Guard, [Shaw-ford Crail, like \"Grail\"]Shawford Crale.",
+        "Flags": "Standard",
+        "Sound": "ULBR024",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6260
+      },
+      "ResponsesIndexFirst": 41,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 23
+    },
+    {
+      "Text": {
+        "Text": "[Rueful]All [Lusk-an]Luskan did was post notices for adventurers, for they saw little gain in coming to aid us.  [A little more hopeful]Neverwinter has pledged to send forces... [downnote]but it will be some time before they arrive.",
+        "Flags": "Standard",
+        "Sound": "ULBR025",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6264
+      },
+      "ResponsesIndexFirst": 45,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 24
+    },
+    {
+      "Text": {
+        "Text": "[All business]Yes, you'll report to him for your orders and your wages; time is short, and there is much to be done.  Your station will be at the Palisades, beyond the north gate.  I will send the gate guard instructions to let you pass.",
+        "Flags": "Standard",
+        "Sound": "ULBR026",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6266
+      },
+      "ResponsesIndexFirst": 48,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 25
+    },
+    {
+      "Text": {
+        "Text": "Your station will be on the Palisades outside of town - take the northern gate and speak to [Shaw-ford Crail, like \"Grail\"]Shawford Crale, commander of the [Tar-goes]Targos Guard.  He will give you duties and assignments.",
+        "Flags": "Standard",
+        "Sound": "ULBR027",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6269
+      },
+      "ResponsesIndexFirst": 50,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 26
+    },
+    {
+      "Text": {
+        "Text": "[Impatient to get back to his plans, but still stays diplomatic]Very well, but time is short.",
+        "Flags": "Standard",
+        "Sound": "ULBR028",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6270
+      },
+      "ResponsesIndexFirst": 52,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 27
+    },
+    {
+      "Text": {
+        "Text": "[Slightly impatient]Report to the Palisades beyond the north gate for your orders and your wages; speak to [Shaw-ford]Shawford [Crail, like \"Grail\"]Crale, commander of the [Tar-goes]Targos Guard.  He will give you duties and assignments.",
+        "Flags": "Standard",
+        "Sound": "ULBR029",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6278
+      },
+      "ResponsesIndexFirst": 58,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 28
+    },
+    {
+      "Text": {
+        "Text": "As you know, a force of goblins has gathered in the region, and they have been testing our defenses.  They are well-armed and well-organized - their attack on the docks is proof of this.",
+        "Flags": "Standard",
+        "Sound": "ULBR030",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11595
+      },
+      "ResponsesIndexFirst": 63,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 29
+    },
+    {
+      "Text": {
+        "Text": "At first, it was just a few raiders, a stray arrow over our walls in the night, then a merchant caravan from [Bremmin]Bremen was attacked on its way to [Tar-goes]Targos.",
+        "Flags": "Standard",
+        "Sound": "ULBR019",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6236
+      },
+      "ResponsesIndexFirst": 69,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 30
+    },
+    {
+      "Text": {
+        "Text": "[Incredulous, trying to emphasize the seriousness of the threat]Then a band of goblin raiders attacked the walls of [Tar-goes]Targos itself - an act almost unheard of.  [Serious, thinking about casualties]We drove them off, but there were casualties, and the attack has forced me to take measures to strengthen [Tar-goes]Targos' defenses.",
+        "Flags": "Standard",
+        "Sound": "ULBR032",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6238
+      },
+      "ResponsesIndexFirst": 70,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 31
+    },
+    {
+      "Text": {
+        "Text": "[A little worried about the two scouts, Inn-eel-ya]Ennelia and [Bras-ton]Braston - two of my best scouts.  They've been gone for almost a tenday without a word, and I'm worried they may have run across the goblins.  [Grimly optimisitic]Still, they've survived worse, so I hold out hope for their success.",
+        "Flags": "Standard",
+        "Sound": "ULBR033",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11600
+      },
+      "ResponsesIndexFirst": 75,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 32
+    },
+    {
+      "Text": {
+        "Text": "[Relaxes a little, recognizes the good fortune in the airship's presence]Ah, a curious tale that - two months ago, we sighted that airship over [Mare Dwahl-don]Maer Dualdon, and it made a... [\"crashed\"]forced landing here in [Tar-goes]Targos.",
+        "Flags": "Standard",
+        "Sound": "ULBR051",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11601
+      },
+      "ResponsesIndexFirst": 80,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 33
+    },
+    {
+      "Text": {
+        "Text": "We helped the shipbuilder, Oswald Fiddlebender, make the necessary repairs, and just in time.  [Rolls eyes]I'll be the first to admit I don't know what the little fellow's rattling on about half the time, but he's been invaluable as an aerial scout.",
+        "Flags": "Standard",
+        "Sound": "ULBR052",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11607
+      },
+      "ResponsesIndexFirst": 81,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 34
+    },
+    {
+      "Text": {
+        "Text": "[A little depressed, worried the troops won't arrive in time]No word yet on when they will arrive - but a force is on their way.  Until then, we'll have to deal with the goblins as best we can.",
+        "Flags": "Standard",
+        "Sound": "ULBR036",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11609
+      },
+      "ResponsesIndexFirst": 86,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 35
+    },
+    {
+      "Text": {
+        "Text": "[All business]Yes?  What do you want?",
+        "Flags": "Standard",
+        "Sound": "ULBR037",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11610
+      },
+      "ResponsesIndexFirst": 91,
+      "ResponsesCount": 2,
+      "TriggerIndex": 2,
+      "Index": 36
+    },
+    {
+      "Text": {
+        "Text": "[Pleased to see player, heard of his brave deeds]I have heard of your brave deeds in [Tar-goes]Targos' defense.  You have served [Tar-goes]Targos with distinction and valor, and you have my gratitude.",
+        "Flags": "Standard",
+        "Sound": "ULBR038",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11613
+      },
+      "ResponsesIndexFirst": 93,
+      "ResponsesCount": 1,
+      "TriggerIndex": 3,
+      "Index": 37
+    },
+    {
+      "Text": {
+        "Text": "[Somber, Sighs]I fear we have been granted only a temporary reprieve, however; we still don't know what is driving this horde to attack [Tar-goes]Targos' walls.",
+        "Flags": "Standard",
+        "Sound": "ULBR039",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11614
+      },
+      "ResponsesIndexFirst": 94,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 38
+    },
+    {
+      "Text": {
+        "Text": "[All business, Oz-wald Fiddle-bender]Oswald Fiddlebender, our aerial scout, has been scouting the region in his airship, and he has discovered some unsettling news about the horde.",
+        "Flags": "Standard",
+        "Sound": "ULBR040",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11615
+      },
+      "ResponsesIndexFirst": 95,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 39
+    },
+    {
+      "Text": {
+        "Text": "It seems the goblins that attacked [Tar-goes]Targos were only the advance raiding party of a much larger force.  Their main force has taken [Shane-garn]Shaengarne Bridge, which is ill-news.",
+        "Flags": "Standard",
+        "Sound": "ULBR041",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11616
+      },
+      "ResponsesIndexFirst": 96,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 40
+    },
+    {
+      "Text": {
+        "Text": "[Explains]Let me see your map; I will mark its location for you - [pointing it out on player's map]here is [Tar-goes]Targos, and [Shane-garn]Shaengarne Bridge is just to the south.",
+        "Flags": "Standard",
+        "Sound": "ULBR042",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11619
+      },
+      "ResponsesIndexFirst": 97,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 41
+    },
+    {
+      "Text": {
+        "Text": "[Explains, slight urgency at the end]The Neverwinter troops planned to use this bridge to cross the river, but as long as the goblins hold it, the reinforcements from Neverwinter *cannot* cross the river to aid us.",
+        "Flags": "Standard",
+        "Sound": "ULBR043",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11622
+      },
+      "ResponsesIndexFirst": 98,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 42
+    },
+    {
+      "Text": {
+        "Text": "[Urgent, knows it's a shitty job]I need you to find some way to retake the bridge from the goblinoids.  Without the reinforcements from Neverwinter, [Tar-goes]Targos will be overrun.",
+        "Flags": "Standard",
+        "Sound": "ULBR044",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11623
+      },
+      "ResponsesIndexFirst": 99,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 43
+    },
+    {
+      "Text": {
+        "Text": "[Oz-wald]Oswald has reported that the trail to [Shane-garn]Shaengarne is choked with goblin troops - his suggestion, and I agree, is that a small party might be able to make its way up the frozen river to the bridge and take the enemy forces by surprise.",
+        "Flags": "Standard",
+        "Sound": "ULBR045",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11629
+      },
+      "ResponsesIndexFirst": 100,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 44
+    },
+    {
+      "Text": {
+        "Text": "[Grim]Don't think that hadn't crossed my mind.  [Sighs]But we need the bridge intact, and Oswald's airship is the only reliable reconnaissance we've gotten in the past month - we need it, and the bridge, intact.",
+        "Flags": "Standard",
+        "Sound": "ULBR046",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11647
+      },
+      "ResponsesIndexFirst": 106,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 45
+    },
+    {
+      "Text": {
+        "Text": "Of course - what is on your mind?",
+        "Flags": "Standard",
+        "Sound": "ULBR047",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11661
+      },
+      "ResponsesIndexFirst": 109,
+      "ResponsesCount": 7,
+      "TriggerIndex": -1,
+      "Index": 46
+    },
+    {
+      "Text": {
+        "Text": "Head north past the Palisade gate; [Ironic, since the gate has been smashed open]I think you will find it open after the goblin attack.  Once there, you can travel straight to the [Shane-garn]Shaengarne.  I have marked the location on your map.",
+        "Flags": "Standard",
+        "Sound": "ULBR048",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11686
+      },
+      "ResponsesIndexFirst": 116,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 47
+    },
+    {
+      "Text": {
+        "Text": "[Thinking]From what Oswald has told me, I don't believe so.  I suspect the horde has their main fortification somewhere else in the region, but my scouts have been unable to determine where.",
+        "Flags": "Standard",
+        "Sound": "ULBR049",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11690
+      },
+      "ResponsesIndexFirst": 122,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 48
+    },
+    {
+      "Text": {
+        "Text": "[A little worried about the two scouts]Not yet.  I had hoped after the attack on the Palisade, [Inn-eel-ya]Ennelia and [Bras-ton]Braston would have sent word.  [Grimly optimisitic]Still, they've survived worse, so I hold out hope for their success.",
+        "Flags": "Standard",
+        "Sound": "ULBR050",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11701
+      },
+      "ResponsesIndexFirst": 128,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 49
+    },
+    {
+      "Text": {
+        "Text": "[Relaxes a little, recognizes the good fortune in the airship's presence]Ah, a curious tale that - two months ago, we sighted that airship over [Mare Dwahl-don]Maer Dualdon, and it made a... [\"crashed\"]forced landing here in [Tar-goes]Targos.",
+        "Flags": "Standard",
+        "Sound": "ULBR051",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11601
+      },
+      "ResponsesIndexFirst": 134,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 50
+    },
+    {
+      "Text": {
+        "Text": "We helped the shipbuilder, Oswald Fiddlebender, make the necessary repairs, and just in time.  [Rolls eyes]I'll be the first to admit I don't know what the little fellow's rattling on about half the time, but he's been invaluable as an aerial scout.",
+        "Flags": "Standard",
+        "Sound": "ULBR052",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11607
+      },
+      "ResponsesIndexFirst": 135,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 51
+    },
+    {
+      "Text": {
+        "Text": "[A little depressed, worried the troops won't arrive in time]Until the [Shane-garn]Shaengarne is retaken, we can expect little news from them.  We'll have to deal with the goblins at the bridge as best we can.",
+        "Flags": "Standard",
+        "Sound": "ULBR053",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11705
+      },
+      "ResponsesIndexFirst": 141,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 52
+    },
+    {
+      "Text": {
+        "Text": "[Repeats]I need you to travel to the [Shane-garn]Shaengarne Bridge and find some way to retake it from the goblins camped there.  As long as they hold the bridge, we can expect no reinforcements from Neverwinter.",
+        "Flags": "Standard",
+        "Sound": "ULBR054",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11706
+      },
+      "ResponsesIndexFirst": 147,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 53
+    },
+    {
+      "Text": {
+        "Text": "What news do you bring of [Shane-garn]Shaengarne?  Do the goblins still hold the bridge?",
+        "Flags": "Standard",
+        "Sound": "ULBR055",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11722
+      },
+      "ResponsesIndexFirst": 153,
+      "ResponsesCount": 2,
+      "TriggerIndex": 4,
+      "Index": 54
+    },
+    {
+      "Text": {
+        "Text": "[Pleased at player's success]I heard about what happened at the bridge... your coming to [Tar-goes]Targos has proved to be a blessing for us all.",
+        "Flags": "Standard",
+        "Sound": "ULBR056",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11730
+      },
+      "ResponsesIndexFirst": 155,
+      "ResponsesCount": 1,
+      "TriggerIndex": 6,
+      "Index": 55
+    },
+    {
+      "Text": {
+        "Text": "Your success at the bridge may prove to be the turning point in the conflict - we must strike them now, while they are off balance, or else they will crush us before the reinforcements arrive.",
+        "Flags": "Standard",
+        "Sound": "ULBR057",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11733
+      },
+      "ResponsesIndexFirst": 156,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 56
+    },
+    {
+      "Text": {
+        "Text": "[Grim at news of player's failure]I heard about what happened at the bridge... it looks like the Neverwinter Forces will need to go around the Western Pass in order to reach [Tar-goes]Targos, and that means we will need to go on the offensive.",
+        "Flags": "Standard",
+        "Sound": "ULBR058",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11736
+      },
+      "ResponsesIndexFirst": 157,
+      "ResponsesCount": 1,
+      "TriggerIndex": 5,
+      "Index": 57
+    },
+    {
+      "Text": {
+        "Text": "We cannot wait for the goblins to marshal their forces and attack us - we must strike them now, while they are off balance, or else they will crush us before the reinforcements arrive.",
+        "Flags": "Standard",
+        "Sound": "ULBR059",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11752
+      },
+      "ResponsesIndexFirst": 158,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 58
+    },
+    {
+      "Text": {
+        "Text": "In that matter, we are in luck.  The two scouts I dispatched, [Inn-eel-ya]Ennelia and [Bras-ton]Braston, have sent word... they have discovered the location of the goblin fortress.",
+        "Flags": "Standard",
+        "Sound": "ULBR060",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11753
+      },
+      "ResponsesIndexFirst": 159,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 59
+    },
+    {
+      "Text": {
+        "Text": "I need you to rendezvous with them and assist them in any way you can.  Hopefully, they have found a weakness in the goblins' defenses that we may use.",
+        "Flags": "Standard",
+        "Sound": "ULBR061",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11754
+      },
+      "ResponsesIndexFirst": 160,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 60
+    },
+    {
+      "Text": {
+        "Text": "If we could find a way to carry the battle to the goblins' leader and defeat him, then the ranks would surely collapse.  If the opportunity presents itself, I want you to take it - otherwise, [Tar-goes]Targos may be destroyed.",
+        "Flags": "Standard",
+        "Sound": "ULBR062",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11755
+      },
+      "ResponsesIndexFirst": 161,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 61
+    },
+    {
+      "Text": {
+        "Text": "I will mark the location on your map - [Inn-eel-ya]Ennelia and [Bras-ton]Braston will meet you there; give them whatever help you can - [Tar-goes]Targos' fate hinges on your success.",
+        "Flags": "Standard",
+        "Sound": "ULBR063",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11771
+      },
+      "ResponsesIndexFirst": 162,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 62
+    },
+    {
+      "Text": {
+        "Text": "[Urgent]You have returned.  Do you bring news of the goblin fortress?",
+        "Flags": "Standard",
+        "Sound": "ULBR064",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11773
+      },
+      "ResponsesIndexFirst": 164,
+      "ResponsesCount": 2,
+      "TriggerIndex": 7,
+      "Index": 63
+    },
+    {
+      "Text": {
+        "Text": "[Down]That is ill news, indeed.  Was there word of [Bras-ton]Braston?",
+        "Flags": "Standard",
+        "Sound": "ULBR065",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11776
+      },
+      "ResponsesIndexFirst": 166,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 64
+    },
+    {
+      "Text": {
+        "Text": "[Angered, to himself]This damned war costs us more by the day.  Those goblins will pay in blood for their attack.",
+        "Flags": "Standard",
+        "Sound": "ULBR066",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11785
+      },
+      "ResponsesIndexFirst": 168,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 65
+    },
+    {
+      "Text": {
+        "Text": "[Grim, To the players]I need you to return to the fortress and do what you can to break the goblins' strength.  As long as that fortress remains, [Tar-goes]Targos is in danger.",
+        "Flags": "Standard",
+        "Sound": "ULBR067",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11786
+      },
+      "ResponsesIndexFirst": 169,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 66
+    },
+    {
+      "Text": {
+        "Text": "[Proud of the player's accomplishments, sees them as heroes]You have done far more than I could have hoped - you have already reversed our fortunes, not once, but twice now.  You have my gratitude.",
+        "Flags": "Standard",
+        "Sound": "ULBR068",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11801
+      },
+      "ResponsesIndexFirst": 170,
+      "ResponsesCount": 1,
+      "TriggerIndex": 8,
+      "Index": 67
+    },
+    {
+      "Text": {
+        "Text": "I think our position here is secure for at least a tenday, and I need you to go on a task of some urgency.",
+        "Flags": "Standard",
+        "Sound": "ULBR069",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11802
+      },
+      "ResponsesIndexFirst": 171,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 68
+    },
+    {
+      "Text": {
+        "Text": "I need you to rendezvous with the Neverwinter forces; they still have not arrived, and they may need assistance.  Tell them of our situation here and all we have discovered about the actions of the horde in this region.",
+        "Flags": "Standard",
+        "Sound": "ULBR070",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11805
+      },
+      "ResponsesIndexFirst": 173,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 69
+    },
+    {
+      "Text": {
+        "Text": "Once you meet up with the Neverwinter forces, join with them and see what can be done to put an end to this threat to the Ten-Towns.  We cannot leave any loose ends - whatever creature or creatures are behind this, they must be stopped.  I will see to it that you are well-compensated for your efforts.",
+        "Flags": "Standard",
+        "Sound": "ULBR070A",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11806
+      },
+      "ResponsesIndexFirst": 174,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 70
+    },
+    {
+      "Text": {
+        "Text": "Oswald believes he can find them in his airship - it is moored just north of here, and I have told him to expect you.  Farewell, and may good fortunes guide your efforts.",
+        "Flags": "Standard",
+        "Sound": "ULBR071",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24230
+      },
+      "ResponsesIndexFirst": 175,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 71
+    },
+    {
+      "Text": {
+        "Text": "Thanks again for all you have done.  I have sent word to Oswald to expect you, and he has prepared the airship for takeoff.  Make haste - we must get word to the Neverwinter forces.",
+        "Flags": "Standard",
+        "Sound": "ULBR072",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24233
+      },
+      "ResponsesIndexFirst": 178,
+      "ResponsesCount": 1,
+      "TriggerIndex": 9,
+      "Index": 72
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "We just sailed in on the Wicked Wench.  We've come to offer our services.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6195
+      },
+      "JournalIndex": 797,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We're *adventurers* from Luskan, and we've come to join Targos' defenders.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6196
+      },
+      "JournalIndex": 797,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Goblins are attacking the docks, and they've wounded a number of soldiers.  They don't appear to have reached the main town yet.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6198
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 5,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'm not surprised you have no information on what's occurring at the docks - a horde of goblins are attacking the port, and they've dispatched many of your \"guard.\"",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6200
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 6,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I suggest you adopt a more civil tone if you expect Targos to last another day.  You need us, but we won't stand for your tone much longer.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6201
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 2,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Goblins were attacking the docks, but we drove them off before they reached the town.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6202
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 11,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 3,
+      "Index": 6,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 4,
+      "Index": 7,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Goblins are attacking the docks, and they've wounded a number of soldiers.  They don't appear to have reached the main town yet.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6198
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 5,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  A horde of goblins are attacking the port, and they've dispatched many of your \"guard.\"",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6207
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 5,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You want a report?  Then here it is: goblins are at the docks, butchering your soldiers and townsfolk, and they're close to cutting Targos off from Maer Dualdon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6208
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 6,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Goblins were attacking the docks, but we drove them off before they reached the town.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6202
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 11,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 7,
+      "Index": 12,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 7,
+      "Index": 13,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 8,
+      "Index": 14,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 9,
+      "Index": 15,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "We will go to the docks and repel the goblins.  We'll return when we are victorious.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6214
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We're off goblin hunting, then.  We'll be back when the docks have been cleaned of goblin filth.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6215
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 17,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Goblins were attacking the docks, but we drove them off before they reached the town.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6202
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 11,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "There are still goblin sightings at the docks, and a number of soldiers have been wounded.  We'll return when we've cleared the docks of goblins.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6217
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 12,
+      "Index": 20,
+      "Flags": "HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 13,
+      "Index": 21,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "We found a nest of them in a warren of caves in the Targos cliffs.  It looks like goblin sappers were able to tunnel up into one of the warehouses and stage a surprise attack.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6222
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 14,
+      "Index": 22,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "They won't try that tactic again; it looks like the passage they'd dug had collapsed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6226
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 15,
+      "Index": 23,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 16,
+      "Index": 24,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell us of the goblin threat?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6230
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 17,
+      "Index": 25,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "When did they first appear?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6234
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 18,
+      "Index": 26,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We don't need the specifics - just tell us where to sign on so we can start earning a wage.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6235
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 26,
+      "Index": 27,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 19,
+      "Index": 28,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 20,
+      "Index": 29,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "We've seen the shipments of wood and the dismantled houses.  What are you using the wood for?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6239
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 23,
+      "Index": 30,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What sort of measures?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6240
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 21,
+      "Index": 31,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Our swords are yours.  Where do we sign on?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6241
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 26,
+      "Index": 32,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We've heard enough - just tell us where to sign on so we can start earning a wage.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6242
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 26,
+      "Index": 33,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What was the response from Luskan and Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6244
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 22,
+      "Index": 34,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What do you need the wood for?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6245
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 23,
+      "Index": 35,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Our swords are yours.  Where do we sign on?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6241
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 26,
+      "Index": 36,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We've heard enough - just tell us where to sign on so we can start earning a wage.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6242
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 26,
+      "Index": 37,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What will you do in the meantime?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6247
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 23,
+      "Index": 38,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Our swords are yours.  Where do we sign on?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6241
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 26,
+      "Index": 39,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We've heard enough - just tell us where to sign on so we can start earning a wage.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6242
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 26,
+      "Index": 40,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Shawford Crale?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6262
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 25,
+      "Index": 41,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What was the response from Luskan and Neverwinter to your request for help?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6263
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 24,
+      "Index": 42,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Our swords are yours.  Where do we sign on?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6241
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 26,
+      "Index": 43,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We've heard enough - just tell us where to sign on so we can start earning a wage.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6242
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 26,
+      "Index": 44,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "So in the meantime your watch commander is building up a perimeter wall against the goblins?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6265
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 25,
+      "Index": 45,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Our swords are yours.  Where do we sign on?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6241
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 26,
+      "Index": 46,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We don't need the specifics - just tell us where to sign on so we can start earning a wage.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6235
+      },
+      "JournalIndex": 6178,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 26,
+      "Index": 47,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I had some other questions before I go.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6267
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 27,
+      "Index": 48,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I will go speak to the watch commander, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6268
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 49,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I had some other questions before I go.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6267
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 27,
+      "Index": 50,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I will go speak to the watch commander, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6268
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 51,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything else about the goblin raiders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6271
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 29,
+      "Index": 52,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What happened to the scouts you sent to find the goblin encampment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6272
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 32,
+      "Index": 53,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything about that airship on the northern side of town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6273
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 33,
+      "Index": 54,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Any more word on the reinforcements from Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6274
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 35,
+      "Index": 55,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What were your orders again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 28,
+      "Index": 56,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6276
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 57,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything else about the goblin raiders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6271
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 29,
+      "Index": 58,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What happened to the scouts you sent to find the goblin encampment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6272
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 32,
+      "Index": 59,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything about that airship on the northern side of town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6273
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 33,
+      "Index": 60,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Any more word on the reinforcements from Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6274
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 35,
+      "Index": 61,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6276
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 62,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "When did these goblin attacks first occur?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11597
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 30,
+      "Index": 63,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What happened to the scouts you sent to find the goblin encampment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6272
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 32,
+      "Index": 64,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything about that airship on the northern side of town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6273
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 33,
+      "Index": 65,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Any more word on the reinforcements from Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6274
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 35,
+      "Index": 66,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What were your orders again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 28,
+      "Index": 67,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6276
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 68,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 31,
+      "Index": 69,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "What happened to the scouts you sent to find the goblin encampment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6272
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 32,
+      "Index": 70,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Where did that airship on the northern side of town come from?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11599
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 33,
+      "Index": 71,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Any more word on the reinforcements from Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6274
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 35,
+      "Index": 72,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What were your orders again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 28,
+      "Index": 73,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6276
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 74,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything else about the goblin raiders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6271
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 29,
+      "Index": 75,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Where did that airship on the northern side of town come from?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11599
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 33,
+      "Index": 76,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Any more word on the reinforcements from Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6274
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 35,
+      "Index": 77,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What were your orders again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 28,
+      "Index": 78,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6276
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 79,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 34,
+      "Index": 80,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything else about the goblin raiders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6271
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 29,
+      "Index": 81,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What happened to the scouts you sent to find the goblin encampment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6272
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 32,
+      "Index": 82,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any more word on the reinforcements from Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6274
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 35,
+      "Index": 83,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What were your orders again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 28,
+      "Index": 84,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6276
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 85,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything else about the goblin raiders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6271
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 29,
+      "Index": 86,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What happened to the scouts you sent to find the goblin encampment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6272
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 32,
+      "Index": 87,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything about that airship on the northern side of town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6273
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 33,
+      "Index": 88,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What were your orders again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 28,
+      "Index": 89,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6276
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 90,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I had some questions I wished to ask.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11611
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 27,
+      "Index": 91,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Never mind.  I must take my leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11612
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 92,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 6179,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 38,
+      "Index": 93,
+      "Flags": "HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 39,
+      "Index": 94,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 40,
+      "Index": 95,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Shaengarne Bridge?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11617
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 41,
+      "Index": 96,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 42,
+      "Index": 97,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 43,
+      "Index": 98,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 44,
+      "Index": 99,
+      "Flags": "HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Sounds reasonable enough.  Before I go, I had some questions I wished to ask you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11630
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 47,
+      "Index": 100,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I have a better suggestion.  Why don't we load Oswald's airship with potions of explosions and \"land\" it on the bridge?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11631
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 45,
+      "Index": 101,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'll have to \"thank\" Oswald for his suggestion when I see him again.  In fact, I think I'll go looking for him right now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11632
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 102,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'll have to \"thank\" this Oswald for his suggestion when I see him.  In fact, I think I'll go looking for him right now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11633
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 103,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We shall head for the bridge then - *after* we visit Shawford and get some recompensation for our efforts. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36670
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 104,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  We shall head out to the Shaengarne Bridge, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11645
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 105,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Before I go, I had some questions I wished to ask you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11648
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 46,
+      "Index": 106,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We shall head for the bridge then - *after* we visit Shawford and get some recompensation for our efforts. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36671
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 20,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 107,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Very well, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11660
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 108,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How do we get to the Shaengarne?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11664
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 47,
+      "Index": 109,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Are the goblin troops on Shaengarne Bridge the heart of the goblin army?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11665
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 48,
+      "Index": 110,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any more word from the scouts you sent to find the goblin encampment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11666
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 49,
+      "Index": 111,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything of this airship that Oswald has?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11667
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 50,
+      "Index": 112,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any news of the reinforcements from Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11668
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 52,
+      "Index": 113,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What were your orders again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 53,
+      "Index": 114,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Nothing at the moment.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11681
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 115,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Are the goblin troops on Shaengarne Bridge the heart of the goblin army?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11665
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 48,
+      "Index": 116,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any more word from the scouts you sent to find the goblin encampment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11666
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 49,
+      "Index": 117,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything of this airship that Oswald has?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11667
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 50,
+      "Index": 118,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any news of the reinforcements from Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11668
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 52,
+      "Index": 119,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What were your orders again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 53,
+      "Index": 120,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  We shall head for the Shaengarne, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11689
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 121,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How do we get to the Shaengarne?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11664
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 47,
+      "Index": 122,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any more word from the scouts you sent to find the goblin encampment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11666
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 49,
+      "Index": 123,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything of this airship that Oswald has?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11667
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 50,
+      "Index": 124,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any news of the reinforcements from Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11668
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 52,
+      "Index": 125,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What were your orders again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 53,
+      "Index": 126,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "That is all we wished to know.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39908
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 127,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How do we get to the Shaengarne?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11664
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 47,
+      "Index": 128,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Are the goblin troops on Shaengarne Bridge the heart of the goblin army?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11665
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 48,
+      "Index": 129,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything of this airship that Oswald has?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11667
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 50,
+      "Index": 130,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any news of the reinforcements from Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11668
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 52,
+      "Index": 131,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What were your orders again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 53,
+      "Index": 132,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "That is all we wished to know.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39907
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 133,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 51,
+      "Index": 134,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "How do we get to the Shaengarne?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11664
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 47,
+      "Index": 135,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Are the goblin troops on Shaengarne Bridge the heart of the goblin army?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11665
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 48,
+      "Index": 136,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any more word from the scouts you sent to find the goblin encampment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11666
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 49,
+      "Index": 137,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any news of the reinforcements from Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11668
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 52,
+      "Index": 138,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What were your orders again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 53,
+      "Index": 139,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "That is all we wished to know.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39906
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 140,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How do we get to the Shaengarne?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11664
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 47,
+      "Index": 141,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Are the goblin troops on Shaengarne Bridge the heart of the goblin army?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11665
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 48,
+      "Index": 142,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any more word from the scouts you sent to find the goblin encampment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11666
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 49,
+      "Index": 143,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything of this airship that Oswald has?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11667
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 50,
+      "Index": 144,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What were your orders again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 6275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 53,
+      "Index": 145,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "That is all we wished to know.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39905
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 146,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How do we get to the Shaengarne?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11664
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 47,
+      "Index": 147,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Are the goblin troops on Shaengarne Bridge the heart of the goblin army?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11665
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 48,
+      "Index": 148,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any more word from the scouts you sent to find the goblin encampment?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11666
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 49,
+      "Index": 149,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything of this airship that Oswald has?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11667
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 50,
+      "Index": 150,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any news of the reinforcements from Neverwinter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11668
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 52,
+      "Index": 151,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "That is all we wished to know.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39904
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 152,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Yes, but I had some questions I need to ask you first.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11727
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 46,
+      "Index": 153,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "They hold the bridge, but we are working on retaking it.  We will return when all the goblins have been slain. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11729
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 154,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 6186,
+      "TriggerIndex": -1,
+      "ActionIndex": 9,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 56,
+      "Index": 155,
+      "Flags": "HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "To do that, we'd need to know where the main force of goblins is headquartered.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11735
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 59,
+      "Index": 156,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 6181,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 58,
+      "Index": 157,
+      "Flags": "HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "To do that, we'd need to know where the main force of goblins is headquartered.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11735
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 59,
+      "Index": 158,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 11,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 60,
+      "Index": 159,
+      "Flags": "HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 61,
+      "Index": 160,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "We'll see what we can do, then.  Where is this fortress?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11763
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 62,
+      "Index": 161,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I think Targos' success hinges on how much Shawford can pay us from the Targos treasury.  I think we'll go see him before heading out to this fortress. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36668
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 162,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We'll see what we can do, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11772
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 163,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We met with one of your scouts, Ennelia - she was wounded, but she was able to tell us of the goblin fortress.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11774
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 22,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 64,
+      "Index": 164,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "No news as of yet.  We will return when we have succeeded.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11775
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 165,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Ennelia fears he may have been lost to the goblins, but we're not certain.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11777
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 24,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 65,
+      "Index": 166,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "No word of him yet.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11781
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 25,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 66,
+      "Index": 167,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 66,
+      "Index": 168,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "We will return when we have succeeded.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11791
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 169,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 6187,
+      "TriggerIndex": -1,
+      "ActionIndex": 12,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 68,
+      "Index": 170,
+      "Flags": "HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Of course.  What do you need of us?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11803
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 69,
+      "Index": 171,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I *really* think we could use a rest.  What is this task?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11804
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 69,
+      "Index": 172,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 70,
+      "Index": 173,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "How are we to find them?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24229
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 13,
+      "NextScriptDialog": "11Ulbrec",
+      "NextPhraseIndex": 71,
+      "Index": 174,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "As long as Oswald doesn't crash his damn ship again, we'll be fine.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24231
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 175,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I imagine the fortune I'm going to claim from Shawford should help guide our efforts.  We'll go collect... now. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36669
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 176,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I will go find Oswald and make preparations to depart.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24232
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 177,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I will make preparations to depart, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24234
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 178,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "Global(\"Know_Ulbrec\", \"GLOBAL\", 1)\nGlobal(\"Told_Ulbrec_Goblins\", \"GLOBAL\", 0)",
+    "Global(\"Know_Ulbrec\", \"GLOBAL\", 1)\nGlobal(\"Told_Ulbrec_Goblins\", \"GLOBAL\", 1)\nGlobal(\"Goblins_Attack_Palisade\", \"GLOBAL\", 0)",
+    "Global(\"Goblins_Attack_Palisade\", \"GLOBAL\", 1)\nGlobal(\"Shaengarne_Quest\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Shaengarne_Quest\", \"GLOBAL\", 0)Global(\"Shaengarne_Bridge_Cleared\", \"GLOBAL\", 0)",
+    "Global(\"Shaengarne_Quest\", \"GLOBAL\", 2)Global(\"Shaengarne_Bridge_Cleared\", \"GLOBAL\", 1)Global(\"Shaengarne_Bridge_Destroyed\",\"GLOBAL\", 2)",
+    "Global(\"Shaengarne_Quest\", \"GLOBAL\", 2)Global(\"Shaengarne_Bridge_Cleared\", \"GLOBAL\", 1)GlobalLT(\"Shaengarne_Bridge_Destroyed\",\"GLOBAL\", 2)",
+    "Global(\"31bugGut_Dead\", \"GLOBAL\", 0)\nGlobal(\"Fortress_Quest\", \"GLOBAL\", 1)",
+    "Global(\"31bugGut_Dead\", \"GLOBAL\", 1)\nGlobal(\"Fortress_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Fortress_Quest\", \"GLOBAL\", 2)"
+  ],
+  "TriggersResponse": [
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Airship_Landed\", \"GLOBAL'\", 1)",
+    "Global(\"Airship_Landed\", \"GLOBAL'\", 1)",
+    "Global(\"Airship_Landed\", \"GLOBAL'\", 1)",
+    "Global(\"Airship_Landed\", \"GLOBAL'\", 1)",
+    "Global(\"Airship_Landed\", \"GLOBAL'\", 1)",
+    "Global(\"Airship_Landed\", \"GLOBAL'\", 1)",
+    "GlobalGT(\"Know_Oswald\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Know_Oswald\", \"GLOBAL\", 0)",
+    "Global(\"Know_Oswald\", \"GLOBAL\", 0)",
+    "Global(\"S_R_1\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_2\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "GlobalGT(\"Know_Ennelia\", \"GLOBAL\", 0)",
+    "GlobalLT(\"Know_Ennelia\", \"GLOBAL\", 1)",
+    "Global(\"Know_Ennelia\", \"GLOBAL\", 2)",
+    "GlobalLT(\"Know_Ennelia\", \"GLOBAL\", 2)",
+    "Global(\"S_R_3\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Know_Ulbrec\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Ulbrec\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Told_Ulbrec_Goblins\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Ulbrec_Gate\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Ulbrec_Gate\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Ulbrec_Gate\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Ulbrec_Gate\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_3_Average\",6192)\n",
+    "SetGlobal(\"Shaengarne_Quest\", \"GLOBAL\", 1)\nSetGlobal(\"AR2000_Revealed\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_4_Very_Hard\",6190)\n",
+    "AddXpVar(\"Level_4_Hard\",6188)\n",
+    "SetGlobal(\"Shaengarne_Quest\", \"GLOBAL\", 3)\r\nSetGlobal(\"Fortress_Quest\", \"GLOBAL\", 1)\r\nSetGlobal(\"AR3000_Revealed\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_6_Hard\",6191)\n",
+    "SetGlobal(\"Fortress_Quest\", \"GLOBAL\", 2)"
+  ],
+  "Checksum": null,
+  "Filename": "11ULBREC.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 6193
+}

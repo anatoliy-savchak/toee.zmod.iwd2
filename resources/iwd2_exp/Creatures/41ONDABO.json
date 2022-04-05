@@ -1,0 +1,352 @@
+{
+  "Feats": [
+    "Aqua mortis",
+    "Combat casting",
+    "Dash",
+    "Dodge",
+    "Improved initiative",
+    "Power attack"
+  ],
+  "Spells": {
+    "WIZ": {
+      "1": [
+        {
+          "SpellName": "Ice Dagger",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Color Spray",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Magic Missile",
+          "Memorized": 2,
+          "Remaining": 2
+        },
+        {
+          "SpellName": "Chromatic Orb",
+          "Memorized": 2,
+          "Remaining": 2
+        }
+      ],
+      "2": [
+        {
+          "SpellName": "Melf's Acid Arrow",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Snilloc's Snowball Swarm",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Invisibility",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Blindness",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Blur",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Cat's Grace",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Horror",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "See Invisibility",
+          "Memorized": 3,
+          "Remaining": 3
+        }
+      ],
+      "3": [
+        {
+          "SpellName": "Icelance",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Dire Charm",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Dispel Magic",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Ghost Armor",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Haste",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Hold Person",
+          "Memorized": 1,
+          "Remaining": 1
+        }
+      ],
+      "4": [
+        {
+          "SpellName": "Fire Shield (Blue)",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Fire Shield (Red)",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Ice Storm",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Malison",
+          "Memorized": 1,
+          "Remaining": 1
+        },
+        {
+          "SpellName": "Confusion",
+          "Memorized": 1,
+          "Remaining": 1
+        }
+      ],
+      "5": [
+        {
+          "SpellName": "Cone of Cold",
+          "Memorized": 1,
+          "Remaining": 1
+        }
+      ]
+    }
+  },
+  "flags": 0,
+  "XPReward": 16000,
+  "PowerLevel": 0,
+  "Gold": 0,
+  "StatusFlags": 0,
+  "CurrentHP": 104,
+  "MaximumHP": 104,
+  "Animation": 32517,
+  "Unknown": 0,
+  "MetalColourIndex": 30,
+  "MinorColourIndex": 37,
+  "MajorColourIndex": 57,
+  "SkinColourIndex": 12,
+  "LeatherColourIndex": 23,
+  "ArmorColourIndex": 28,
+  "HairColourIndex": 0,
+  "EffVersion": 0,
+  "Reputation": 0,
+  "HideInShadows": 0,
+  "ArmorClassNatural": 19,
+  "ArmorClassEffective": 0,
+  "CrushingModifuer": 0,
+  "MissileModifier": 0,
+  "PiercingModifier": 0,
+  "SlashingModifier": 0,
+  "Thac0": 11,
+  "NumberOfAttacks": 3,
+  "SaveVsDeath": 8,
+  "SaveVsWands": 8,
+  "SaveVsPolymorph": 8,
+  "SaveVsBreath": 0,
+  "SaveVsSpells": 0,
+  "FireResistance": 249,
+  "ColdResistance": 100,
+  "ElectricityResistance": 0,
+  "AcidResistance": 0,
+  "MagicResistance": 5,
+  "MagicFireResistance": 0,
+  "MagicColdResistance": 0,
+  "SlashingResistance": 0,
+  "CrushingResistance": 0,
+  "PiercingResistance": 0,
+  "MissileResistance": 0,
+  "Lore": 0,
+  "LockPicking": 0,
+  "Stealth": 0,
+  "FindTraps": 0,
+  "PickPockets": 0,
+  "Fatigue": 0,
+  "Intoxication": 0,
+  "Luck": 0,
+  "TurnUndeadLevel": 0,
+  "Tracking": 0,
+  "Sex": 0,
+  "Strength": 25,
+  "StrengthBonus": 0,
+  "Intelligence": 18,
+  "Wisdom": 15,
+  "Dexterity": 13,
+  "Constitution": 14,
+  "Charisma": 15,
+  "Morale": 20,
+  "MoraleBreak": 0,
+  "MoraleRecoveryTime": 0,
+  "Kit": 16384,
+  "EnemyAlly": 128,
+  "General": 255,
+  "Race": 175,
+  "Class": 5,
+  "Specific": 0,
+  "Gender": 1,
+  "ObjectIdRef1": 0,
+  "ObjectIdRef2": 0,
+  "ObjectIdRef3": 0,
+  "ObjectIdRef4": 0,
+  "ObjectIdRef5": 0,
+  "Alignment": 50,
+  "GlobalActorEnumeration": -1,
+  "LocalActorEnumeration": -1,
+  "KnownSpellsoffset": 0,
+  "KnownSpellsCount": 0,
+  "SpellMemorizationOffset": 0,
+  "SpellMemorizationCount": 0,
+  "MemorizedSpellsOffset": 0,
+  "MemorizedSpellsCount": 0,
+  "ItemSlotOffset": 0,
+  "ItemOffset": 0,
+  "ItemCount": 0,
+  "EffectOffset": 0,
+  "EffectCount": 0,
+  "ResistMagicDamage": 0,
+  "LevelTotal": 26,
+  "LevelBarbarian": 0,
+  "LevelBard": 0,
+  "LevelCleric": 0,
+  "LevelDruid": 0,
+  "LevelFighter": 0,
+  "LevelMonk": 0,
+  "LevelPaladin": 0,
+  "LevelRanger": 0,
+  "LevelRogue": 0,
+  "LevelSorcerer": 0,
+  "LevelWizard": 26,
+  "EnchantmentLevel": 0,
+  "FeatWeaponProBow": 0,
+  "FeatWeaponProCrossbow": 0,
+  "FeatWeaponProMissle": 0,
+  "FeatWeaponProAxe": 0,
+  "FeatWeaponProMace": 0,
+  "FeatWeaponProFlail": 0,
+  "FeatWeaponProPolearm": 0,
+  "FeatWeaponProHammer": 0,
+  "FeatWeaponProQuarterstaff": 0,
+  "FeatWeaponProGreatsword": 0,
+  "FeatWeaponProLargeSword": 0,
+  "FeatWeaponProSmallBlade": 0,
+  "FeatToughness": 0,
+  "FeatArmoredArcana": 0,
+  "FeatCleave": 0,
+  "FeatArmorPreficiency": 0,
+  "FeatSpellFocusEnchantment": 0,
+  "FeatSpellFocusEvocation": 0,
+  "FeatSpellFocusNecromancy": 0,
+  "FeatSpellFocusTransmutation": 0,
+  "FeatSpellPenetration": 0,
+  "FeatExtraRage": 0,
+  "FeatExtraWildShape": 0,
+  "FeatExtraExtraSmiting": 0,
+  "FeatExtraExtraTurning": 0,
+  "FeatWeaponProExoticBastardSword": 0,
+  "SkillAlchemy": 17,
+  "SkillAnimalEmpathy": 0,
+  "SkillBluff": 12,
+  "SkillConcentration": 15,
+  "SkillDiplomacy": 0,
+  "SkillDisableDevice": 0,
+  "SkillHide": 17,
+  "SkillIntimidate": 15,
+  "SkillKnowledgeArcana": 14,
+  "SkillMoveSilently": 14,
+  "SkillOpenLock": 0,
+  "SkillPickPocket": 0,
+  "SkillSearch": 0,
+  "SkillSpellcraft": 16,
+  "SkillUseMagicDevice": 0,
+  "SkillWildernessLaw": 0,
+  "ChallangeRating": 12,
+  "FavouredEnemy1": 0,
+  "FavouredEnemy2": 0,
+  "FavouredEnemy3": 0,
+  "FavouredEnemy4": 0,
+  "FavouredEnemy5": 0,
+  "FavouredEnemy6": 0,
+  "FavouredEnemy7": 0,
+  "FavouredEnemy8": 0,
+  "Subrace": 0,
+  "Hidden": 0,
+  "OnDeathSetExtraVariable": 1,
+  "IncrementKillCount": 0,
+  "VariableInternal1": 0,
+  "VariableInternal2": 0,
+  "VariableInternal3": 0,
+  "VariableInternal4": 0,
+  "VariableInternal5": 0,
+  "IsLocationSaved": 0,
+  "SavedLocationX": 0,
+  "SavedLocationY": 0,
+  "SavedOrientation": 0,
+  "FadeAmount": 0,
+  "FadeSpeed": 0,
+  "Attributes": 0,
+  "Visibility": 0,
+  "SkillPointsRemain": 0,
+  "Class2": 5,
+  "ClassMsk": 1024,
+  "LongName": {
+    "Text": null,
+    "Flags": 0,
+    "Sound": null,
+    "VolumeVariance": 0,
+    "PitchVariance": 0,
+    "Strref": 16602
+  },
+  "ShortName": {
+    "Text": null,
+    "Flags": 0,
+    "Sound": null,
+    "VolumeVariance": 0,
+    "PitchVariance": 0,
+    "Strref": 16603
+  },
+  "Flags": [],
+  "SmallPortrait": "None",
+  "LargePortrait": "None",
+  "DeathVariable": "41Ondabo",
+  "DialogFile": "None",
+  "ScriptTeam": "None",
+  "ScriptSpecial": "None",
+  "ScriptSpecial2": "None",
+  "ScriptCombat": "None",
+  "ScriptSpecial3": "None",
+  "ScriptMovement": "None",
+  "DeathVariable2": "",
+  "DeathVariable3": "",
+  "Checksum": null,
+  "Filename": "41ONDABO.Cre",
+  "FileType": 1009,
+  "OriginalFile": null
+}

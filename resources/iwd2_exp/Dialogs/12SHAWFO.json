@@ -1,0 +1,2565 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Ah, you must be the company from Luskan Ulbrec spoke of - I heard of your actions on the Docks, quite impressive.  Never again will I say nothing good ever comes from Luskan.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10797
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Of course, you have come to serve in the Targos Guard - let me inform you of your duties... and your keep.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10801
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Pay is one gold coin a tenday, payable in a month advance, and for your actions upon the docks, Ulbrec has authorized me to reward you with an additional sum.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10804
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "You surprise me - well done... well done, indeed.  Now that they're accounted for, we'll need to adjust th-",
+        "Flags": "Standard",
+        "Sound": "AM1201B",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10812
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "If you do not have equipment, then you will need to visit the Gallaway Trading Depot in town and purchase what you need.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10814
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "If you do not have lodgings, then we will make arrangements for you to be lodged here on the grounds, or have one of the abandoned buildings in town.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10815
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Each company serves a rotation on the Palisade - of late, most of our efforts have been focused on constructing the Palisade rather than manning it... and that will be your first assignment.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10817
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "There is a breach in one of the outer Palisade walls from the last attack.  Our engineer, Olap Tamewater, has told me he is in need of wood to repair it, but there seems to be some trouble in getting it from the docks.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10819
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "I do not have time to attend to the matter myself -  seek Olap out and find out what he needs.  You should be able to find him at the northeast Palisade.  Now make haste - the goblins could attack us at any time.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10820
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Have you spoken to Olap yet?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10822
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 4,
+      "TriggerIndex": 1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "You can find him at the northeast section of the Palisade.  Now make haste - the goblins could choose to attack us at any time.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11306
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Unfortunate...  but we cannot afford to dwell on it.  I will speak to Olap about what can be done, but in the meantime, another matter has cropped up that I need your assistance with.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11307
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "Excellent - and just in time.  Another matter has cropped up that I need your assistance with.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11310
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "One of the archery captains stationed at the western wall, Isherwood, has requested more arrows for his men - unfortunately, arrows are in short supply.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11318
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "Find him, see how many arrows he needs, then proceed to the Gallaway Trade Depot.  Return here when you've gotten Isherwood what he needs.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11389
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "You should find him and his men along the western wall.  Now make haste - the more arrows we can place into goblin skulls before they hit the walls, the better.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11395
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "Were you able to get Isherwood the arrows he needed?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11398
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 4,
+      "TriggerIndex": 2,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "Excellent!  I am in dire need of level-headed soldiers with initiative and solutions, and you are proving to be just that.  I see Ulbrec's trust is not unfounded.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11413
+      },
+      "ResponsesIndexFirst": 26,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "The next task might be somewhat distasteful.  We have a... priest of Myrkul within the walls, and Ulbrec has charged him with speaking to one of the goblins that fell during the last attack.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11414
+      },
+      "ResponsesIndexFirst": 27,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "Yes, it was hoped he could question the creature's spirit and find out what it knows of the goblin troops in the region.  If we could learn how many remain in the wilderness, or better yet, where their fortress can be found, it would prove invaluable.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11423
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "In any event, I need you to speak to Koluhm and see what he has gleaned from the goblin - the other men will not approach him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11424
+      },
+      "ResponsesIndexFirst": 32,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "He has set up a... morgue... in one of the abandoned buildings in the main town, just north of the Weeping Widow Inn.  You can find him there.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11427
+      },
+      "ResponsesIndexFirst": 34,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "Did you speak to Koluhm?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11429
+      },
+      "ResponsesIndexFirst": 35,
+      "ResponsesCount": 7,
+      "TriggerIndex": 3,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "That is grim news - I'll warn the troops to be ready.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11437
+      },
+      "ResponsesIndexFirst": 42,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 23
+    },
+    {
+      "Text": {
+        "Text": "That sounds as if we should be expecting an attack soon, then.  We'll need every man on the walls - even the mercenaries that traveled here with Koluhm.  Are you familiar with Koluhm's band?  The Iron Collar mercenaries?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11440
+      },
+      "ResponsesIndexFirst": 43,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 24
+    },
+    {
+      "Text": {
+        "Text": "Excellent; we'll wait for it then and see if one of the dwarves can make any sense of it.  Now, your next assignment may prove more difficult.  Do you know Koluhm's band?  The Iron Collar mercenaries?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11445
+      },
+      "ResponsesIndexFirst": 47,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 25
+    },
+    {
+      "Text": {
+        "Text": "He's dead?  But - hmmm.  The attack on the Targos Docks must have struck further into the town than I thought.  Still, Koluhm was loyal to gold, not to Targos, so perhaps it is not a loss.  Very well... are you familiar with Koluhm's band?  The Iron Collar mercenaries?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11446
+      },
+      "ResponsesIndexFirst": 51,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 26
+    },
+    {
+      "Text": {
+        "Text": "Well, consider yourself blessed.  In a fight, they're capable enough, I suppose... if they were backed into a corner or if someone was trying to take their keg away, but they mostly waste Targos' coin.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11447
+      },
+      "ResponsesIndexFirst": 55,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 27
+    },
+    {
+      "Text": {
+        "Text": "I want you to bring the Iron Collar Mercenary Band here to the Palisade.  I've been told they've failed to show up for their rotation on the wall, and action needs to be taken.  If nothing else, an example needs to be made to keep discipline.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11448
+      },
+      "ResponsesIndexFirst": 56,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 28
+    },
+    {
+      "Text": {
+        "Text": "I would prefer they serve on the walls with the other companies, but if they prove troublesome, you may deal with them as you see fit.  In truth, they are leeches on Targos, and we may be better off without them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11451
+      },
+      "ResponsesIndexFirst": 58,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 29
+    },
+    {
+      "Text": {
+        "Text": "Last word was that they were draining the last of Gohar's kegs in the Salty Dog Tavern by the docks.  You can most likely find them there.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11454
+      },
+      "ResponsesIndexFirst": 60,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 30
+    },
+    {
+      "Text": {
+        "Text": "Seems death has made a home in Targos of late.  Very well, then we'll need to adjust th-",
+        "Flags": "Standard",
+        "Sound": "AM1201B",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11455
+      },
+      "ResponsesIndexFirst": 61,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 31
+    },
+    {
+      "Text": {
+        "Text": "Any luck on bringing the Iron Collar to the Palisade?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11456
+      },
+      "ResponsesIndexFirst": 63,
+      "ResponsesCount": 5,
+      "TriggerIndex": 4,
+      "Index": 32
+    },
+    {
+      "Text": {
+        "Text": "The goblins have been driven back - for the time being.  You've done well, and I have sent one of our runners to tell Lord Ulbrec of our victory... and your part in it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29512
+      },
+      "ResponsesIndexFirst": 68,
+      "ResponsesCount": 1,
+      "TriggerIndex": 5,
+      "Index": 33
+    },
+    {
+      "Text": {
+        "Text": "If you haven't already, you should report to Lord Ulbrec at your earliest convenience - I am sure he will want to congratulate you personally.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29513
+      },
+      "ResponsesIndexFirst": 69,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 34
+    },
+    {
+      "Text": {
+        "Text": "Welcome back - no sign of any more goblins yet, but we're keeping a close eye out for them.  If you haven't already, you should check with Lord Ulbrec to see if he has any assignments for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29516
+      },
+      "ResponsesIndexFirst": 72,
+      "ResponsesCount": 3,
+      "TriggerIndex": 6,
+      "Index": 35
+    },
+    {
+      "Text": {
+        "Text": "I heard about your march upon the Shaengarne.  I wish you luck, and I pray the gods watch over you. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36678
+      },
+      "ResponsesIndexFirst": 75,
+      "ResponsesCount": 3,
+      "TriggerIndex": 7,
+      "Index": 36
+    },
+    {
+      "Text": {
+        "Text": "Indeed.  Very well, I am authorized to pay you a bonus sum for your efforts.  There are times I forget that you are mercenaries.  Here you are.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36679
+      },
+      "ResponsesIndexFirst": 78,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 37
+    },
+    {
+      "Text": {
+        "Text": "Before you go, however, I feel I must say something - the mercenary's life is not one unknown to me.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36680
+      },
+      "ResponsesIndexFirst": 82,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 38
+    },
+    {
+      "Text": {
+        "Text": "I have served in many companies, and in many conflicts throughout Neverwinter and the Realms, and all the coin I earned was a shallow reward until the day I made my home in Targos - and its people were placed under my protection.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36682
+      },
+      "ResponsesIndexFirst": 83,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 39
+    },
+    {
+      "Text": {
+        "Text": "There are greater goals to strive for in this world than wealth, and simply finding one's purpose in the world is worth more than any amount of gold one can earn from swordplay alone. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36683
+      },
+      "ResponsesIndexFirst": 84,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 40
+    },
+    {
+      "Text": {
+        "Text": "I heard of your fight at the Palisade, and my men say you fought like devils - and took down all *three* of the goblin leaders.  I can't believe you risked so much just for gold.   ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36684
+      },
+      "ResponsesIndexFirst": 85,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 41
+    },
+    {
+      "Text": {
+        "Text": "Very well - that will have to do.  I wish you luck in your future here in the North.  I believe that with you by our side, the horde will be turned back, and Targos saved. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36685
+      },
+      "ResponsesIndexFirst": 89,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 42
+    },
+    {
+      "Text": {
+        "Text": "I heard about your battle at the Shaengarne - it seems that Ulbrec and Oswald's plans proved true; a small force was more effective than all the Targos Guard.  A heroic feat, indeed.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36687
+      },
+      "ResponsesIndexFirst": 90,
+      "ResponsesCount": 5,
+      "TriggerIndex": 8,
+      "Index": 43
+    },
+    {
+      "Text": {
+        "Text": "I heard about your battle at the fortress - your coming to Targos has truly been our salvation.  To think, you have carried the battle from Targos' walls to the walls of the horde itself, then slayed their leader within his own fortress.  Now *that* is a tale that won't be long forgotten.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36688
+      },
+      "ResponsesIndexFirst": 95,
+      "ResponsesCount": 7,
+      "TriggerIndex": 9,
+      "Index": 44
+    },
+    {
+      "Text": {
+        "Text": "Please make haste - there have been sightings of goblins near the Palisade, and I fear they will attack before you return.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40139
+      },
+      "ResponsesIndexFirst": 102,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 45
+    },
+    {
+      "Text": {
+        "Text": "If you are wounded while serving in the Guard, report here, and Nolan, in the corner there, will tend to your wounds. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40140
+      },
+      "ResponsesIndexFirst": 103,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 46
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Lord Ulbrec told us to report to you for our assignment.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10799
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We were told that you were the watch commander... and the paymaster.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10800
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 4,
+      "Index": 3,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Did you hear that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10813
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Did you hear that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10813
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 46,
+      "Index": 6,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "We can make our own arrangements.  Where is our post?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10816
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 6,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 7,
+      "Index": 8,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 800,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 8,
+      "Index": 9,
+      "Flags": "HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  We will go find Olap, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10821
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Yes.  We settled the matter of the wood shortage.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11302
+      },
+      "JournalIndex": 802,
+      "TriggerIndex": 2,
+      "ActionIndex": 5,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 12,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "The problem cannot be solved.  The only one who could fix the crane to get the lumber to the Palisade is dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11303
+      },
+      "JournalIndex": 10779,
+      "TriggerIndex": 3,
+      "ActionIndex": 6,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 11,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Where can he be found again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11304
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 10,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We're still working on the matter.  We shall return.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11305
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  We will go find Olap, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10821
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 13,
+      "Index": 16,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 13,
+      "Index": 17,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 14,
+      "Index": 18,
+      "Flags": "HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Where can I find Isherwood again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11390
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 15,
+      "Index": 19,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We will go find him and see what can be done.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11394
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We will go find Isherwood and see what can be done, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11397
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 21,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Not yet.  Where can I find Isherwood again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11401
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 15,
+      "Index": 22,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Yes, we came to an... arrangement with Deirdre Gallaway.  Isherwood has the arrows he needs.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11405
+      },
+      "JournalIndex": 10780,
+      "TriggerIndex": 7,
+      "ActionIndex": 8,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 17,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We got Isherwood the arrows he needed - and made some room in our backpack in the process.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11408
+      },
+      "JournalIndex": 10780,
+      "TriggerIndex": 8,
+      "ActionIndex": 9,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 17,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We're still working on it - we'll return when it's done.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11412
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 18,
+      "Index": 26,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "He speaks to the dead?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11415
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": 10,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 19,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Koluhm?  I know of him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11420
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": 11,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 19,
+      "Index": 28,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Oh, Koluhm?  Yeah, that priest accidentally fell on my... er, someone's weapon and died.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11421
+      },
+      "JournalIndex": 10781,
+      "TriggerIndex": 12,
+      "ActionIndex": 12,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 26,
+      "Index": 29,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Uh, I think Koluhm had an accident, at least that's what the rumors say.  Probably caught some fast-catching graverot or something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11422
+      },
+      "JournalIndex": 10781,
+      "TriggerIndex": 13,
+      "ActionIndex": 13,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 26,
+      "Index": 30,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 10780,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 20,
+      "Index": 31,
+      "Flags": "HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  Where can I find him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11425
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 21,
+      "Index": 32,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'll go hunt down Koluhm, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11426
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 33,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  I will go speak to him, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11428
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 34,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Oh, Koluhm?  He accidentally fell on my... er, someone's weapon and died.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11430
+      },
+      "JournalIndex": 10781,
+      "TriggerIndex": 16,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 26,
+      "Index": 35,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Uh, I think Koluhm had an accident, at least that's what the rumors say.  Probably caught some fast-catching graverot or something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11422
+      },
+      "JournalIndex": 10781,
+      "TriggerIndex": 17,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 26,
+      "Index": 36,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Yes, he can't speak goblin, so he's sending a scroll with the goblin's \"answers\" up to the Palisade.  You should expect it soon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11431
+      },
+      "JournalIndex": 10782,
+      "TriggerIndex": 18,
+      "ActionIndex": 14,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 25,
+      "Index": 37,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Yes, we spoke to him and were able to translate some of the goblin's speech.  Apparently the tribe that attacked Targos is only *one* of the tribes in the region.  They're led by someone named \"Caballus,\" which sounds like some goblin sorcerer.  I'd tell your archers to aim for any goblin sorcerer they can see.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11432
+      },
+      "JournalIndex": 10782,
+      "TriggerIndex": 19,
+      "ActionIndex": 15,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 24,
+      "Index": 38,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Yes, we spoke to him and were able to translate some of the goblin's speech.  Apparently the tribe that attacked Targos is only *one* of the tribes in the region.  They seem to be led by three different leaders, one of them named \"Caballus,\" which sounds like a goblin sorcerer.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11434
+      },
+      "JournalIndex": 10782,
+      "TriggerIndex": 20,
+      "ActionIndex": 16,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 24,
+      "Index": 39,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm glad the Palisade is still standing - we spoke to Koluhm and were able to translate the goblin's speech.  It sounds like they intended to do a simultaneous attack on the Palisade and the Docks, which means that we could be attacked at any time.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11435
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 23,
+      "Index": 40,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Not yet.  We'll go speak to him soon.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11436
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 22,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 41,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "That's not all.  They should expect a three-pronged assault, one from a sorcerer named \"Caballus,\" and two others - uh, \"Ghotrag\" and \"Vgh...\" er, \"Houndstooth,\" or something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11439
+      },
+      "JournalIndex": 10782,
+      "TriggerIndex": -1,
+      "ActionIndex": 17,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 24,
+      "Index": 42,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "No, I haven't heard of them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11441
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 27,
+      "Index": 43,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I've... met them, yes.  They were deep into their cups in the Salty Dog.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11442
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 24,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 28,
+      "Index": 44,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Actually, I think Black Geoffrey died in the goblin attacks on the docks... the same attack that claimed poor Koluhm's life.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11443
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 25,
+      "ActionIndex": 18,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 31,
+      "Index": 45,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Actually, I heard Black Geoffrey died in the goblin attacks on the docks... but I'm just guessing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11444
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": 19,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 31,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "No, I haven't heard of them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11441
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 27,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 27,
+      "Index": 47,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I've... met them, yes.  They were deep into their cups in the Salty Dog.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11442
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 28,
+      "Index": 48,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Actually, I think Black Geoffrey died in the goblin attacks on the docks... the same attack that claimed poor Koluhm's life.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11443
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 29,
+      "ActionIndex": 20,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 31,
+      "Index": 49,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Actually, I heard Black Geoffrey died in the goblin attacks on the docks... but I'm just guessing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11444
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 30,
+      "ActionIndex": 21,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 31,
+      "Index": 50,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "No, I haven't heard of them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11441
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 31,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 27,
+      "Index": 51,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I've... met them, yes.  They were deep into their cups in the Salty Dog.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11442
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 32,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 28,
+      "Index": 52,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Actually, I think Black Geoffrey died in the goblin attacks on the docks... the same attack that claimed poor Koluhm's life.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11443
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 33,
+      "ActionIndex": 22,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 31,
+      "Index": 53,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Actually, I heard Black Geoffrey died in the goblin attacks on the docks... but I'm just guessing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11444
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 34,
+      "ActionIndex": 23,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 31,
+      "Index": 54,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 28,
+      "Index": 55,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "It will be my pleasure; I've been looking to crack a few skulls since I arrived.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11449
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 29,
+      "Index": 56,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What if things turn violent?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11450
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 29,
+      "Index": 57,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Where can I find them?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11452
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 24,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 30,
+      "Index": 58,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'm on it.  I'll return with them... or without them... shortly.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11453
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 25,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 45,
+      "Index": 59,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'm on it.  I'll return with them... or without them... shortly.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11453
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 45,
+      "Index": 60,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Did you hear that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10813
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 35,
+      "ActionIndex": 26,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 61,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Did you hear that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10813
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 36,
+      "ActionIndex": 27,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 62,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "No, they were too deep in their cups to listen to reason, so I was forced to deal with them.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11556
+      },
+      "JournalIndex": 10783,
+      "TriggerIndex": 37,
+      "ActionIndex": 28,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 31,
+      "Index": 63,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Well, at first it seemed as if they would be coming along peacefully, but then I heard one of them say something... I can't quite remember what... and so we were forced to kill them all.  I'm sure it was all just a misunderstanding.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11557
+      },
+      "JournalIndex": 10783,
+      "TriggerIndex": 38,
+      "ActionIndex": 29,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 31,
+      "Index": 64,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Yes - though they proved to be a stubborn bunch.  I don't know how well they'll serve, but they may stop a few goblin axes. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11559
+      },
+      "JournalIndex": 10784,
+      "TriggerIndex": 39,
+      "ActionIndex": 30,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 3,
+      "Index": 65,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Where can they be found again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11560
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 40,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 30,
+      "Index": 66,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Not yet.  We're still working on it.  We'll return when we've dealt with them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11561
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 41,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 45,
+      "Index": 67,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 34,
+      "Index": 68,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Actually, we came for our payment.  We're not here for our health, Shawford, we're here to earn some coin. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36676
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 42,
+      "ActionIndex": 31,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 69,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36677
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 43,
+      "ActionIndex": 32,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 70,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I will seek him out, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29514
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 33,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 71,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Actually, we came for our payment.  We're not here for our health, Shawford, we're here to earn some coin. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36676
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 44,
+      "ActionIndex": 34,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 72,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36677
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 45,
+      "ActionIndex": 35,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 73,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I will seek him out, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29514
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 74,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Actually, we came more for payment than prayer.  We're not here for our health, Shawford, we're here to earn some coin. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36691
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 46,
+      "ActionIndex": 36,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 75,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36692
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 47,
+      "ActionIndex": 37,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 76,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Thanks, Shawford.  Farewell. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36693
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 77,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Good.  And watch that tone of yours - we didn't travel here from Luskan and past Bremen in flames just to defend your town - we're risking our *lives* here, and the payment should reflect it. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36694
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 48,
+      "ActionIndex": 38,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 38,
+      "Index": 78,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Good.  And watch that tone of yours - we didn't travel here from Luskan and past Bremen in flames just to defend your town - we're risking our *lives* here, and the payment should reflect it. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36695
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 49,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 79,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "This'll do, then.  Farewell. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36696
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 50,
+      "ActionIndex": 39,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 38,
+      "Index": 80,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "This'll do, then.  Farewell. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36696
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 51,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 81,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 39,
+      "Index": 82,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 40,
+      "Index": 83,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 41,
+      "Index": 84,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "You're wrong, Shawford.  Nice speech, but I've got the future to think about, and I'm not going to leave Targos penniless. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36698
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 42,
+      "Index": 85,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "If those goblins had taken Targos and the docks, we'd be trapped here under the shadow of the horde.  We were fighting for Targos, but also for our lives. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36699
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 42,
+      "Index": 86,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps not... when those goblins stormed the wall, we simply acted.  When it was over, and we were still alive, I don't remember why we did it, we just - did.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36700
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 42,
+      "Index": 87,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "No town deserves the evil the horde will bring if it takes Targos.  Let's just say it's the principle of the thing. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36701
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 42,
+      "Index": 88,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps so.  Farewell, Shawford. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36702
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 89,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "It was a suicide mission, and we expect to be rewarded accordingly.  We're here for gold, Shawford, not compliments. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36703
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 52,
+      "ActionIndex": 40,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 90,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "It was a suicide mission, and we expect to be rewarded accordingly, both for Shaengarne and the Palisade battle.  We're here for gold, Shawford, not compliments. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36706
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 53,
+      "ActionIndex": 41,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 91,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We came for payment for our battle at the Shaengarne, Shawford.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36705
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 54,
+      "ActionIndex": 42,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 92,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We came for payment for our battle at the Shaengarne, Shawford... and for our battle at the Palisade.   ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36707
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 55,
+      "ActionIndex": 43,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 93,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Thanks, Shawford.  Farewell. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36708
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 94,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36709
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 56,
+      "ActionIndex": 44,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 95,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36709
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 57,
+      "ActionIndex": 45,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 96,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36709
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 58,
+      "ActionIndex": 46,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 97,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36712
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 59,
+      "ActionIndex": 47,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 98,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36712
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 60,
+      "ActionIndex": 48,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 99,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36712
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 61,
+      "ActionIndex": 49,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 37,
+      "Index": 100,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Thanks, Shawford.  Farewell. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36715
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 101,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 102,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Shawfo",
+      "NextPhraseIndex": 5,
+      "Index": 103,
+      "Flags": "None"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "GlobalGT(\"Lumber_Quest\", \"GLOBAL\", 0)\nGlobal(\"Arrow_Quest\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Arrow_Quest\", \"GLOBAL\", 0)\nGlobal(\"Dead_Goblin_Quest\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Dead_Goblin_Quest\", \"GLOBAL\", 0)\nGlobal(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 0)\nGlobalLT(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 3)",
+    "GlobalGT(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 2)\r\nGlobal(\"Shawford_Has_No_Pants\", \"GLOBAL\", 0)\r\nGlobal(\"Shaengarne_Quest\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 2)\r\nGlobal(\"Shawford_Has_No_Pants\", \"GLOBAL\", 1)\r\nGlobal(\"Shaengarne_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Shaengarne_Quest\", \"GLOBAL\", 1)",
+    "GlobalGT(\"Shaengarne_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"Shaengarne_Bridge_Cleared\", \"GLOBAL\", 1)Global(\"31bugGut_Dead\", \"GLOBAL\", 0)",
+    "Global(\"31bugGut_Dead\", \"GLOBAL\", 1)"
+  ],
+  "TriggersResponse": [
+    "Global(\"10Swift_Dead\", \"GLOBAL\", 0)",
+    "Global(\"10Swift_Dead\", \"GLOBAL\", 1)",
+    "GlobalGT(\"Crane_Wheel\", \"GLOBAL\", 0)\nGlobal(\"Lumber_Quest_Aborted\", \"GLOBAL\", 0)",
+    "Global(\"Lumber_Quest_Aborted\", \"GLOBAL\", 1)",
+    "Global(\"Know_Olap\", \"GLOBAL\", 0)",
+    "Global(\"Crane_Wheel\", \"GLOBAL\", 0)\nGlobal(\"Lumber_Quest_Aborted\", \"GLOBAL\", 0)",
+    "Global(\"Arrow_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Arrow_Quest\", \"GLOBAL\", 3)",
+    "Global(\"Arrow_Quest\", \"GLOBAL\", 4)",
+    "GlobalLT(\"Arrow_Quest\", \"GLOBAL\", 3)",
+    "!Global(\"Koluhm_Dead\", \"GLOBAL\", 1)\r\nGlobal(\"Know_Koluhm\", \"GLOBAL\", 0)",
+    "!Global(\"Koluhm_Dead\", \"GLOBAL\", 1)\r\nGlobalGT(\"Know_Koluhm\", \"GLOBAL\", 0)",
+    "Global(\"Koluhm_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Koluhm_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Know_Koluhm\", \"GLOBAL\", 0)",
+    "Global(\"Know_Koluhm\", \"GLOBAL\", 1)",
+    "Global(\"Koluhm_Dead\", \"GLOBAL\", 1)\nGlobalLT(\"Dead_Goblin_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Koluhm_Dead\", \"GLOBAL\", 1)\nGlobalLT(\"Dead_Goblin_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Dead_Goblin_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Dead_Goblin_Quest\", \"GLOBAL\", 5)",
+    "Global(\"Dead_Goblin_Quest\", \"GLOBAL\", 4)",
+    "Global(\"Dead_Goblin_Quest\", \"GLOBAL\", 3)",
+    "Global(\"Dead_Goblin_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 0)\r\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 1)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)\nGlobal(\"Koluhm_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)\nGlobal(\"Koluhm_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 0)\r\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 1)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)\nGlobal(\"Koluhm_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)\nGlobal(\"Koluhm_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 0)\r\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Know_Iron_Collar\", \"GLOBAL\", 1)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)\nGlobal(\"Koluhm_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)\nGlobal(\"Koluhm_Dead\", \"GLOBAL\", 0)",
+    "Global(\"10Swift_Dead\", \"GLOBAL\", 0)",
+    "Global(\"10Swift_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 2)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 2)\nGlobal(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)\nGlobalLT(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Black_Geoffrey_Dead\", \"GLOBAL\", 0)\nGlobalLT(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 2)",
+    "Global(\"S_R_1\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"SC_Speech\", \"GLOBAL\", 0)",
+    "Global(\"SC_Speech\", \"GLOBAL\", 1)",
+    "Global(\"SC_Speech\", \"GLOBAL\", 0)",
+    "Global(\"SC_Speech\", \"GLOBAL\", 1)",
+    "Global(\"S_R_1\", \"GLOBAL\", 1)Global(\"S_R_2\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 0)Global(\"S_R_2\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 1)Global(\"S_R_2\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 0)Global(\"S_R_2\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 0)Global(\"S_R_2\", \"GLOBAL\", 0)Global(\"S_R_3\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 1)Global(\"S_R_2\", \"GLOBAL\", 0)Global(\"S_R_3\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 1)Global(\"S_R_2\", \"GLOBAL\", 1)Global(\"S_R_3\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 0)Global(\"S_R_2\", \"GLOBAL\", 0)Global(\"S_R_3\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 1)Global(\"S_R_2\", \"GLOBAL\", 0)Global(\"S_R_3\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"S_R_1\", \"GLOBAL\", 1)Global(\"S_R_2\", \"GLOBAL\", 1)Global(\"S_R_3\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)"
+  ],
+  "Actions": [
+    "GiveItemCreate(\"Misc07\", Protagonist, 250, 0, 0)",
+    "GiveItemCreate(\"Misc07\", Protagonist, 250, 0, 0)",
+    "SetGlobal(\"Goblins_Attack_Palisade\", \"GLOBAL\", 1)\nStartCutSceneMode()\nStartCutScene(\"12cWar2\")",
+    "SetGlobal(\"Goblins_Attack_Palisade\", \"GLOBAL\", 1)\nStartCutSceneMode()\nStartCutScene(\"12cWar0\")",
+    "SetGlobal(\"Lumber_Quest\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_2_Average\",10785)\r\n",
+    "AddXpVar(\"Level_2_Easy\",10794)\r\n",
+    "SetGlobal(\"Arrow_Quest\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_2_Average\",10785)\r\n",
+    "AddXpVar(\"Level_2_Average\",10785)\r\n",
+    "SetGlobal(\"Dead_Goblin_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Dead_Goblin_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Dead_Goblin_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Dead_Goblin_Quest\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_2_Easy\",10785)\r\nSetGlobal(\"Dead_Goblin_Quest\", \"GLOBAL\", 6)",
+    "AddXpVar(\"Level_2_Easy\",10785)\r\nSetGlobal(\"Dead_Goblin_Quest\", \"GLOBAL\", 6)",
+    "AddXpVar(\"Level_2_Average\",10785)\r\nSetGlobal(\"Dead_Goblin_Quest\", \"GLOBAL\", 6)",
+    "AddXpVar(\"Level_2_Hard\",10795)\r\nSetGlobal(\"Dead_Goblin_Quest\", \"GLOBAL\", 6)",
+    "SetGlobal(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 3)",
+    "SetGlobal(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 3)",
+    "SetGlobal(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 3)",
+    "SetGlobal(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 3)",
+    "SetGlobal(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 3)",
+    "SetGlobal(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 3)",
+    "SetGlobal(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Goblins_Attack_Palisade\", \"GLOBAL\", 1)\nStartCutSceneMode()\nStartCutScene(\"12cWar2\")",
+    "SetGlobal(\"Goblins_Attack_Palisade\", \"GLOBAL\", 1)\nStartCutSceneMode()\nStartCutScene(\"12cWar0\")",
+    "AddXpVar(\"Level_2_Average\",10785)\r\nSetGlobal(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 4)",
+    "AddXpVar(\"Level_2_Average\",10785)\r\nSetGlobal(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 3)",
+    "AddXpVar(\"Level_2_Hard\",10796)\r\nSetGlobal(\"Palisade_Iron_Collar_Quest\", \"GLOBAL\", 3)\r\nSetGlobal(\"IC_Good\", \"GLOBAL\", 1)",
+    "SetGlobal(\"S_R_1\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 1000, 0, 0)",
+    "SetGlobal(\"S_R_1\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 1000, 0, 0)",
+    "SetGlobal(\"Shawford_Has_No_Pants\", \"GLOBAL\", 1)",
+    "SetGlobal(\"S_R_1\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 1000, 0, 0)",
+    "SetGlobal(\"S_R_1\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 1000, 0, 0)",
+    "SetGlobal(\"S_R_1\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 1000, 0, 0)",
+    "SetGlobal(\"S_R_1\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 1000, 0, 0)",
+    "SetGlobal(\"SC_Speech\", \"GLOBAL\", 1)",
+    "SetGlobal(\"SC_Speech\", \"GLOBAL\", 1)",
+    "SetGlobal(\"S_R_2\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 3000, 0, 0)",
+    "SetGlobal(\"S_R_1\", \"GLOBAL\", 1)SetGlobal(\"S_R_2\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 4000, 0, 0)",
+    "SetGlobal(\"S_R_2\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 3000, 0, 0)",
+    "SetGlobal(\"S_R_1\", \"GLOBAL\", 1)SetGlobal(\"S_R_2\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 4000, 0, 0)",
+    "SetGlobal(\"S_R_1\", \"GLOBAL\", 1) SetGlobal(\"S_R_2\", \"GLOBAL\", 1)SetGlobal(\"S_R_3\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 10000, 0, 0)",
+    "SetGlobal(\"S_R_2\", \"GLOBAL\", 1)SetGlobal(\"S_R_3\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 9000, 0, 0)",
+    "SetGlobal(\"S_R_3\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 6000, 0, 0)",
+    "SetGlobal(\"S_R_1\", \"GLOBAL\", 1) SetGlobal(\"S_R_2\", \"GLOBAL\", 1)SetGlobal(\"S_R_3\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 10000, 0, 0)",
+    "SetGlobal(\"S_R_2\", \"GLOBAL\", 1)SetGlobal(\"S_R_3\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 9000, 0, 0)",
+    "SetGlobal(\"S_R_3\", \"GLOBAL\", 1)GiveItemCreate(\"Misc07\", Protagonist, 6000, 0, 0)"
+  ],
+  "Checksum": null,
+  "Filename": "12SHAWFO.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 10797
+}

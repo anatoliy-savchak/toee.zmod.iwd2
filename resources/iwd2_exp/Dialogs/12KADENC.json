@@ -1,0 +1,500 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "I'm going to wipe that grin off your face, you jackal!  That gold's as good as mine.  One more arrow, and I'll send it tumbling off that wall.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15290
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Aye, *your* wages, Gable.  *Your* wages.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15292
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "I almost had it, I did.  I was robbed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15295
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Damn it all!  The wind is twisting my arrows!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15296
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "The next arrow's going to go through your skull, Gable, you keep talking like that.   I'll get it, you'll see.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15297
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "By the Gods... I almost had that barrel knocked off, and then you come along!  What are you doing, interfering like that?!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15298
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": 3,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "You gonna stand around gap-mouthed like a knucklehead trout, or are you going to shoot that barrel down?  If you've given up, then tell Gable.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15299
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": 4,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "You knocked the barrel off, well done!  Go on and collect your winnings from Gable - that ought to knock him down a few pegs!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15301
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": 5,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Never have I seen anything as satisfying as someone wiping that jackal's smile from Gable's face.  It was a welcome sight to see, it was.  He can be a right ass sometimes. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15308
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 4,
+      "TriggerIndex": 6,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Well, teaching Gable a lesson was worth it... here, this is the gold I was going to have to pay Gable for not being able to topple that barrel.  And here's a little extra something to keep the chill off.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15314
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Stay watchful... one of those goblins was able to take Gable by surprise, the poor fool.  Don't know how many have made it inside the wall. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31416
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Thanks for your help... I doubt we could have driven them back without you, and with my archery skills what they are, I can barely topple a keg, much less a goblin. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31417
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 11
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "12Gable",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Gable",
+      "NextPhraseIndex": 4,
+      "Index": 1,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Gable",
+      "NextPhraseIndex": 10,
+      "Index": 2,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "12Gable",
+      "NextPhraseIndex": 23,
+      "Index": 3,
+      "Flags": "HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Gable",
+      "NextPhraseIndex": 4,
+      "Index": 4,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "12Gable",
+      "NextPhraseIndex": 9,
+      "Index": 5,
+      "Flags": "HasAction"
+    },
+    {
+      "Text": {
+        "Text": "No, we'll do it.  Just stand back.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15300
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We'll do that.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15302
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Well, sometimes the lesson is worth more than the winnings.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15311
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 5,
+      "NextScriptDialog": "12Kadenc",
+      "NextPhraseIndex": 9,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Well, sometimes the lesson is worth more than the winnings.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36148
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "12Kadenc",
+      "NextPhraseIndex": 9,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Well, sometimes the lesson is worth more than the winnings.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36149
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 7,
+      "NextScriptDialog": "12Kadenc",
+      "NextPhraseIndex": 9,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Take care of yourself, Kadence - and don't take bets you can't win.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15312
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 8,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Thanks, Kadence - and next time, don't take bets you can't win.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15315
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 9,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I can't accept this, Kadence; I did this not for the sake of profit.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36150
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": 10,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I cannot accept this, Kadence.  I did this not for the sake of profit, but to instruct.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36151
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": 11,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"Goblin_Palisade_Quest\", \"GLOBAL\", 0)Global(\"Goblins_Attack_Palisade\", \"GLOBAL\", 1)",
+    "GlobalGT(\"Goblin_Palisade_Quest\", \"GLOBAL\", 0)",
+    "!Dead(\"12KegArc\")\r\nGlobal(\"Gable_Quest\", \"GLOBAL\", 0)",
+    "Dead(\"12KegArc\")\r\nGlobal(\"Gable_Quest\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Gable_Quest\", \"GLOBAL\", 0)\r\nGlobalLT(\"Gable_Quest\", \"GLOBAL\", 6)\r\n!Dead(\"12KegArc\")",
+    "GlobalGT(\"Gable_Quest\", \"GLOBAL\", 0)\r\nGlobalLT(\"Gable_Quest\", \"GLOBAL\", 6)\r\nDead(\"12KegArc\")",
+    "Global(\"Gable_Quest\", \"GLOBAL\", 6)"
+  ],
+  "TriggersResponse": [
+    "Global(\"Kadence_Reward\", \"GLOBAL\", 0)\r\n!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "Global(\"Kadence_Reward\", \"GLOBAL\", 0)ClassEx(Protagonist, Paladin)",
+    "Global(\"Kadence_Reward\", \"GLOBAL\", 0)!ClassEx(Protagonist, Paladin)ClassEx(Protagonist, Monk)",
+    "Global(\"Kadence_Reward\", \"GLOBAL\", 1)",
+    "!ClassEx(Protagonist, Paladin)!ClassEx(Protagonist, Monk)",
+    "ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)ClassEx(Protagonist, Monk)"
+  ],
+  "Actions": [
+    "FaceSavedLocation(Myself)",
+    "FaceSavedLocation(Myself)",
+    "FaceSavedLocation(Myself)",
+    "FaceSavedLocation(Myself)",
+    "FaceSavedLocation(Myself)",
+    "SetGlobal(\"Kadence_Reward\", \"GLOBAL\", 1)\r\nGiveItemCreate(\"Misc07\", Protagonist, 4, 0, 0)\r\nGiveItemCreate(\"00Misc17\", Protagonist, 1, 0, 0)",
+    "SetGlobal(\"Kadence_Reward\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Kadence_Reward\", \"GLOBAL\", 1)",
+    "FaceSavedLocation(Myself)",
+    "FaceSavedLocation(Myself)",
+    "FaceSavedLocation(Myself)",
+    "FaceSavedLocation(Myself)"
+  ],
+  "Checksum": null,
+  "Filename": "12KADENC.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 15290
+}

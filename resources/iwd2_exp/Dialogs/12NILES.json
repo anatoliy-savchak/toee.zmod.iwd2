@@ -1,0 +1,1765 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Heh, you're one of those sell-swords from Luskan, aren't you?  As it happens, so am I... say, look, friend, you got anything to keep the chill outta my bones?  I'm in need of a spot, and some ale would do nicely.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10656
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 8,
+      "TriggerIndex": 4,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Piss off, then.  Some brother in arms *you* are.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10664
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Piss off, then.  Some sister in arms *you* are.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10669
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Eh... no harm meant.  Slipped off my tongue is all - a hundred apologies, alright?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10670
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Aye, aye - I'm off.  We'll just keep it between you n' me, then, alright - 'bout the drink?  Aye?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11861
+      },
+      "ResponsesIndexFirst": 20,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Ye're not going to report me, are ye?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11864
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 1,
+      "TriggerIndex": 5,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Kind of you, friend - I'd be appreciative of that, I would.  We sell-swords have to stick together, y'know?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11865
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Pah, that stuff gives me the runs.   I was hopin' you might have some wine or brandy on you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11872
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Pah, I said something to warm the bones, not kill me!  I was, eh, hopin' you might have some wine or brandy on you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11882
+      },
+      "ResponsesIndexFirst": 29,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Give you three gold for it.  More than it's worth!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11883
+      },
+      "ResponsesIndexFirst": 35,
+      "ResponsesCount": 7,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Wh- that's robbery, so it is!  I could get a better deal from the goblins!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11890
+      },
+      "ResponsesIndexFirst": 42,
+      "ResponsesCount": 12,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "All right, then.  Thank you - this'll warm the gut, it will.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12679
+      },
+      "ResponsesIndexFirst": 54,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "All right, all right!  Here you are.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12740
+      },
+      "ResponsesIndexFirst": 55,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "You chance upon a bottle yet, friend?  A slow kind of chill is creeping into my bones, and eh, some wine would turn things right around, it would.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 14404
+      },
+      "ResponsesIndexFirst": 56,
+      "ResponsesCount": 7,
+      "TriggerIndex": 6,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "What do *you* want?  Change yer mind about that bottle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 14408
+      },
+      "ResponsesIndexFirst": 63,
+      "ResponsesCount": 8,
+      "TriggerIndex": 8,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "Many th-th-thanks for the bottle, friend, heh... it, eh, heh-heh, warmed the insides g-g-good, it did.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25701
+      },
+      "ResponsesIndexFirst": 71,
+      "ResponsesCount": 2,
+      "TriggerIndex": 7,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "Heh - yez.  Yez I did... to arms!  To arms!  HA!  Let the goblinz come - I'm ready for 'em.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27750
+      },
+      "ResponsesIndexFirst": 73,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "When those goblins attacked, I thought we were done for - thanks for keeping me away from the bottle.  Right now, though, I need a drink.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28485
+      },
+      "ResponsesIndexFirst": 74,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "I... I was half out of my skull when those goblins attacked... I was worse than useless.  A lot of my friends in my mercenary company were killed by goblins, and I... I was too drunk to do anything but watch.  What a fool I am!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28567
+      },
+      "ResponsesIndexFirst": 75,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "What?!  There's goblins about, so whatever you need, it can wait!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28569
+      },
+      "ResponsesIndexFirst": 76,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "Heh - to arms!  To arms!  Heh-heh - whozat?  Whattya want, eh?  Gotsch any more wine for ol' Niles, doya?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28571
+      },
+      "ResponsesIndexFirst": 77,
+      "ResponsesCount": 1,
+      "TriggerIndex": 3,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "HA!  Let the goblinz come - I'm ready for 'em ALL!  HA-HA!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28573
+      },
+      "ResponsesIndexFirst": 78,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 21
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Look, the goblins could attack any second, and the last thing we need are drunk soldiers on the field.  Get back to your post.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10657
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Look, the goblins could attack any second, and the last thing we need are drunk soldiers.  Get back to your post.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10658
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Sure, I've got a bottle.  What's it worth to you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10659
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 9,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Sure, I've got a bottle.  What's it worth to you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10659
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 9,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I happen to have some Berduskan Black Brew, but it'll cost you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10660
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 7,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "How about some braehg?  That'll keep you warm, fermented boar's milk and all.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10661
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 8,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Don't have anything on me, but I could scrounge you up something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10662
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 6,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can't help you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10663
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps you don't think I was serious about you reporting to your post.  That somehow Targos' safety isn't something that I take seriously.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10665
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": 0,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 3,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "*What* did you just say?  I've about had it with people with sharp tongues around here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10666
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 3,
+      "Index": 9,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I suggest you change your tone and start stammering out an apology or you'll be lying in a pool of your own blood.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10667
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": 2,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 3,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Yeah, and I'd want you watching my back in a fight, too.  Farewell and good riddance.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10668
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps you don't think I was serious about you reporting to your post.  That somehow Targos' safety isn't something that I take seriously.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10665
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": 4,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 3,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "*What* did you just say?  I've about had it with people with sharp tongues around here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10666
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 3,
+      "Index": 13,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I suggest you change your tone and start stammering out an apology or you'll be lying in a pool of your own blood.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10667
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": 6,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 3,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Yeah, and I'd want you watching my back in a fight, too.  Farewell and good riddance.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10668
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I was willing to excuse your behavior as simple fatigue, but if you choose to drink yourself into a stupor while goblins threaten Targos, I'll see to it your contract is revoked and you are relieved of duty.  Now *report to your post.*  We've got a battle to win.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10671
+      },
+      "JournalIndex": 10634,
+      "TriggerIndex": 11,
+      "ActionIndex": 8,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 4,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I was willing to let your behavior go and let you rot here, but now... if I even hear of you touching a drop of alcohol while goblins threaten Targos, I'll see to it you're punished.  Now *report to your post.*  We've got a battle to win.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11846
+      },
+      "JournalIndex": 10634,
+      "TriggerIndex": 12,
+      "ActionIndex": 9,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 4,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I was willing to let your behavior go and let you rot here, but now... if I even hear of you touching a drop of alcohol while on my watch, I'll gut you myself.  Now *report to your post.*  We've got a battle to win.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11854
+      },
+      "JournalIndex": 10634,
+      "TriggerIndex": 13,
+      "ActionIndex": 10,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 4,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Apology accepted.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11855
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Just be watchful for goblins... and stay off the bottle.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11862
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 11,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Just be watchful for goblins... and stay off the bottle.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11862
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 12,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 21,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You're right about that.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11871
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Look, you're probably better off without any wine swimming through your head when the goblins attack.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11873
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 1,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Look, you're probably better off without any wine swimming through your head when the goblins attack.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11873
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 2,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I do - how much is it worth to you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11874
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 16,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 9,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I do - how much is it worth to you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11874
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 17,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 9,
+      "Index": 26,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'll see if I can go round some up.  Someone's got to have a bottle around here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11880
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": 13,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 6,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Can't help you, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11881
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 28,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Look, you're probably better off without any wine swimming through your head when the goblins attack.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11873
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 1,
+      "Index": 29,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Look, you're probably better off without any wine swimming through your head when the goblins attack.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11873
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 20,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 2,
+      "Index": 30,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I do - how much is it worth to you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11874
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 21,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 9,
+      "Index": 31,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I do - how much is it worth to you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11874
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 22,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 9,
+      "Index": 32,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'll see if I can go round some up.  Someone's got to have a bottle around here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11880
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": 14,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 6,
+      "Index": 33,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Can't help you, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11881
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 34,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11884
+      },
+      "JournalIndex": 10636,
+      "TriggerIndex": 24,
+      "ActionIndex": 15,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 11,
+      "Index": 35,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "All right.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11884
+      },
+      "JournalIndex": 10636,
+      "TriggerIndex": 25,
+      "ActionIndex": 16,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 11,
+      "Index": 36,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "*Three gold?*  No... five is more to my liking.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11885
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 17,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 10,
+      "Index": 37,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "How about ten?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11886
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": 18,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 10,
+      "Index": 38,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I was thinking fifteen.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11888
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 27,
+      "ActionIndex": 19,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 10,
+      "Index": 39,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Maybe we'll do business some other time when you have more gold.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11889
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 1,
+      "Index": 40,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Maybe we'll do business some other time when you have more gold.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11889
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 29,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 2,
+      "Index": 41,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "All right, three gold, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11891
+      },
+      "JournalIndex": 10636,
+      "TriggerIndex": 30,
+      "ActionIndex": 20,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 11,
+      "Index": 42,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "All right, three gold, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11891
+      },
+      "JournalIndex": 10636,
+      "TriggerIndex": 31,
+      "ActionIndex": 21,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 11,
+      "Index": 43,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I *said* five, and I *meant* five.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11892
+      },
+      "JournalIndex": 10636,
+      "TriggerIndex": 32,
+      "ActionIndex": 22,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 12,
+      "Index": 44,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I *said* five, and I *meant* five.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11892
+      },
+      "JournalIndex": 10636,
+      "TriggerIndex": 33,
+      "ActionIndex": 23,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 12,
+      "Index": 45,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I said ten, and I meant ten.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11893
+      },
+      "JournalIndex": 10636,
+      "TriggerIndex": 34,
+      "ActionIndex": 24,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 12,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I said ten, and I meant ten.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11893
+      },
+      "JournalIndex": 10636,
+      "TriggerIndex": 35,
+      "ActionIndex": 25,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 12,
+      "Index": 47,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I said fifteen, and I meant fifteen.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11894
+      },
+      "JournalIndex": 10636,
+      "TriggerIndex": 36,
+      "ActionIndex": 26,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 12,
+      "Index": 48,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I said fifteen, and I meant fifteen.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11894
+      },
+      "JournalIndex": 10636,
+      "TriggerIndex": 37,
+      "ActionIndex": 27,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 12,
+      "Index": 49,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Oh, did I say fifteen?  Now it's *twenty.*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11895
+      },
+      "JournalIndex": 10636,
+      "TriggerIndex": 38,
+      "ActionIndex": 28,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 12,
+      "Index": 50,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Oh, did I say fifteen?  Now it's *twenty.*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 11895
+      },
+      "JournalIndex": 10636,
+      "TriggerIndex": 39,
+      "ActionIndex": 29,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 12,
+      "Index": 51,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "You're welcome to ask the goblins, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12677
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 40,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 1,
+      "Index": 52,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You're welcome to ask the goblins, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12677
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 41,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 2,
+      "Index": 53,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Don't drink it all at once - don't know when Targos will get a new shipment.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12739
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 30,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 54,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Don't drink it all at once - don't know when Targos will get a new shipment.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12739
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 31,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 55,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Look, the goblins could attack any second, and the last thing we need are drunk soldiers on the field.  Get back to your post.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10657
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 42,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 1,
+      "Index": 56,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Look, the goblins could attack any second, and the last thing we need are drunk soldiers.  Get back to your post.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10658
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 43,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 2,
+      "Index": 57,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Sure, I've got a bottle.  What's it worth to you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10659
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 44,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 9,
+      "Index": 58,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Sure, I've got a bottle.  What's it worth to you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10659
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 45,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 9,
+      "Index": 59,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I happen to have some Berduskan Black Brew, but it'll cost you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10660
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 46,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 7,
+      "Index": 60,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How about some braehg?  That'll keep you warm, fermented boar's milk and all.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10661
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 47,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 8,
+      "Index": 61,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Still looking.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 14405
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 62,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Look, the goblins could attack any second, and the last thing we need are drunk soldiers on the field.  Get back to your post.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10657
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 48,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 1,
+      "Index": 63,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Look, the goblins could attack any second, and the last thing we need are drunk soldiers.  Get back to your post.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10658
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 49,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 2,
+      "Index": 64,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Sure, I've got a bottle.  What's it worth to you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10659
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 50,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 9,
+      "Index": 65,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Sure, I've got a bottle.  What's it worth to you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10659
+      },
+      "JournalIndex": 10633,
+      "TriggerIndex": 51,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 9,
+      "Index": 66,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I happen to have some Berduskan Black Brew, but it'll cost you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10660
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 52,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 7,
+      "Index": 67,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How about some braehg?  That'll keep you warm, fermented boar's milk and all.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10661
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 53,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 8,
+      "Index": 68,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Don't have anything on me, but I could scrounge you up something.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10662
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 54,
+      "ActionIndex": 32,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 6,
+      "Index": 69,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Can't help you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 10663
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 70,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Did you polish off that *whole* bottle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25702
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 16,
+      "Index": 71,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "My pleasure.  Watch yourself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25703
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 72,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Uh... just stay away from the battle lines, friend.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27751
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 73,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'd hold off on the ale until we're sure the region is secure, Niles.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28486
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 74,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Nothing can be done for your friends now, Niles.  Take this incident as a lesson, and keep off the drink in the future.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28568
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 75,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right, then.  Watch yourself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28570
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 76,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Get a hold of yourself, Niles!  There's goblins about!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28572
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Niles",
+      "NextPhraseIndex": 21,
+      "Index": 77,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I don't have time for this - farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28574
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 78,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "GlobalGT(\"Goblin_Palisade_Quest\", \"GLOBAL\", 0)\n!Global(\"Niles_Quest\", \"GLOBAL\", 2)",
+    "GlobalGT(\"Goblin_Palisade_Quest\", \"GLOBAL\", 0)\nGlobal(\"Niles_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Goblin_Palisade_Quest\", \"GLOBAL\", 0)\r\nGlobal(\"Goblins_Attack_Palisade\", \"GLOBAL\", 1)\r\n!Global(\"Niles_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Goblin_Palisade_Quest\", \"GLOBAL\", 0)\r\nGlobal(\"Goblins_Attack_Palisade\", \"GLOBAL\", 1)\r\nGlobal(\"Niles_Quest\", \"GLOBAL\", 2)",
+    "NumTimesTalkedTo(0)",
+    "Global(\"Niles_Leave\", \"GLOBAL\", 1)",
+    "Global(\"Niles_Quest\", \"GLOBAL\", 1)",
+    "Global(\"Niles_Quest\", \"GLOBAL\", 2)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Gender(Protagonist, Male)",
+    "Gender(Protagonist, Female)",
+    "PartyHasItem(\"00Misc08\")\n!ClassEx(Protagonist, Paladin)",
+    "!PartyHasItem(\"00Misc08\")\nPartyHasItem(\"00Misc17\")\n!ClassEx(Protagonist, Paladin)",
+    "PartyHasItem(\"00Potn31\")\n!ClassEx(Protagonist, Paladin)",
+    "PartyHasItem(\"00Potn55\")",
+    "!PartyHasItem(\"00Misc08\")\n!PartyHasItem(\"00Potn55\")\n!PartyHasItem(\"00Potn31\")\n!ClassEx(Protagonist, Paladin)",
+    "ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)",
+    "ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)",
+    "ClassEx(Protagonist, Paladin)",
+    "!Alignment(Protagonist, 3)\n!ClassEx(Protagonist, Paladin)",
+    "Alignment(Protagonist, 3)",
+    "Gender(Protagonist, Male)",
+    "Gender(Protagonist, Female)",
+    "PartyHasItem(\"00Misc08\")\n!ClassEx(Protagonist, Paladin)",
+    "!PartyHasItem(\"00Misc08\")\nPartyHasItem(\"00Misc17\")\n!ClassEx(Protagonist, Paladin)",
+    "!PartyHasItem(\"00Misc08\")\n!ClassEx(Protagonist, Paladin)",
+    "Gender(Protagonist, Male)",
+    "Gender(Protagonist, Female)",
+    "PartyHasItem(\"00Misc08\")\n!ClassEx(Protagonist, Paladin)",
+    "!PartyHasItem(\"00Misc08\")\nPartyHasItem(\"00Misc17\")\n!ClassEx(Protagonist, Paladin)",
+    "!PartyHasItem(\"00Misc08\")\n!ClassEx(Protagonist, Paladin)",
+    "PartyHasItem(\"00Misc08\")",
+    "!PartyHasItem(\"00Misc08\")\nPartyHasItem(\"00Misc17\")",
+    "CheckSkillGT(Protagonist, 0, Diplomacy)",
+    "CheckSkillGT(Protagonist, 3, Diplomacy)",
+    "Gender(Protagonist, Male)",
+    "Gender(Protagonist, Female)",
+    "PartyHasItem(\"00Misc08\")",
+    "!PartyHasItem(\"00Misc08\")\nPartyHasItem(\"00Misc17\")",
+    "Global(\"Niles_Haggle\", \"GLOBAL\", 1)\nPartyHasItem(\"00Misc08\")",
+    "Global(\"Niles_Haggle\", \"GLOBAL\", 1)\n!PartyHasItem(\"00Misc08\")\nPartyHasItem(\"00Misc17\")",
+    "Global(\"Niles_Haggle\", \"GLOBAL\", 2)\nPartyHasItem(\"00Misc08\")",
+    "Global(\"Niles_Haggle\", \"GLOBAL\", 2)\n!PartyHasItem(\"00Misc08\")\nPartyHasItem(\"00Misc17\")",
+    "Global(\"Niles_Haggle\", \"GLOBAL\", 3)\nPartyHasItem(\"00Misc08\")",
+    "Global(\"Niles_Haggle\", \"GLOBAL\", 3)\n!PartyHasItem(\"00Misc08\")\nPartyHasItem(\"00Misc17\")",
+    "Global(\"Niles_Haggle\", \"GLOBAL\", 3)\nPartyHasItem(\"00Misc08\")",
+    "Global(\"Niles_Haggle\", \"GLOBAL\", 3)\n!PartyHasItem(\"00Misc08\")\nPartyHasItem(\"00Misc17\")",
+    "Gender(Protagonist, Male)",
+    "Gender(Protagonist, Female)",
+    "Gender(Protagonist, Male)",
+    "Gender(Protagonist, Female)",
+    "PartyHasItem(\"00Misc08\")\n!ClassEx(Protagonist, Paladin)",
+    "!PartyHasItem(\"00Misc08\")\nPartyHasItem(\"00Misc17\")\n!ClassEx(Protagonist, Paladin)",
+    "PartyHasItem(\"00Potn31\")\n!ClassEx(Protagonist, Paladin)",
+    "PartyHasItem(\"00Potn55\")",
+    "Gender(Protagonist, Male)",
+    "Gender(Protagonist, Female)",
+    "PartyHasItem(\"00Misc08\")\n!ClassEx(Protagonist, Paladin)",
+    "!PartyHasItem(\"00Misc08\")\nPartyHasItem(\"00Misc17\")\n!ClassEx(Protagonist, Paladin)",
+    "PartyHasItem(\"00Potn31\")\n!ClassEx(Protagonist, Paladin)",
+    "PartyHasItem(\"00Potn55\")",
+    "!PartyHasItem(\"00Misc08\")\n!PartyHasItem(\"00Potn55\")\n!PartyHasItem(\"00Potn31\")\n!ClassEx(Protagonist, Paladin)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Niles_Pissed\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Niles_Pissed\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Niles_Pissed\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Niles_Pissed\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Niles_Pissed\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Niles_Pissed\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Niles_Pissed\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Niles_Pissed\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_2_Average\",10654)\r\n",
+    "AddXpVar(\"Level_2_Average\",10654)\r\n",
+    "AddXpVar(\"Level_2_Average\",10654)\r\n",
+    "SetGlobal(\"Niles_Leave\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Niles_Leave\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Niles_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Niles_Quest\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_2_Easy\",10655)\r\nGiveItemCreate(\"Misc07\", Protagonist, 3, 0, 0)\r\nTakePartyItem(\"00Misc08\")",
+    "AddXpVar(\"Level_2_Easy\",10655)\r\nGiveItemCreate(\"Misc07\", Protagonist, 3, 0, 0)\r\nTakePartyItem(\"00Misc17\")",
+    "SetGlobal(\"Niles_Haggle\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Niles_Haggle\", \"GLOBAL\", 2)",
+    "SetGlobal(\"Niles_Haggle\", \"GLOBAL\", 3)",
+    "AddXpVar(\"Level_2_Easy\",10655)\r\nGiveItemCreate(\"Misc07\", Protagonist, 3, 0, 0)\r\nTakePartyItem(\"00Misc08\")",
+    "AddXpVar(\"Level_2_Easy\",10655)\r\nGiveItemCreate(\"Misc07\", Protagonist, 3, 0, 0)\r\nTakePartyItem(\"00Misc17\")",
+    "AddXpVar(\"Level_2_Easy\",10655)\r\nGiveItemCreate(\"Misc07\", Protagonist, 5, 0, 0)\r\nTakePartyItem(\"00Misc08\")",
+    "AddXpVar(\"Level_2_Easy\",10655)\r\nGiveItemCreate(\"Misc07\", Protagonist, 5, 0, 0)\r\nTakePartyItem(\"00Misc17\")",
+    "AddXpVar(\"Level_2_Easy\",10655)\r\nGiveItemCreate(\"Misc07\", Protagonist, 10, 0, 0)\r\nTakePartyItem(\"00Misc08\")",
+    "AddXpVar(\"Level_2_Easy\",10655)\r\nGiveItemCreate(\"Misc07\", Protagonist, 10, 0, 0)\r\nTakePartyItem(\"00Misc17\")",
+    "AddXpVar(\"Level_2_Easy\",10655)\r\nGiveItemCreate(\"Misc07\", Protagonist, 15, 0, 0)\r\nTakePartyItem(\"00Misc08\")",
+    "AddXpVar(\"Level_2_Easy\",10655)\r\nGiveItemCreate(\"Misc07\", Protagonist, 15, 0, 0)\r\nTakePartyItem(\"00Misc17\")",
+    "AddXpVar(\"Level_2_Easy\",10655)\r\nGiveItemCreate(\"Misc07\", Protagonist, 20, 0, 0)\r\nTakePartyItem(\"00Misc08\")",
+    "AddXpVar(\"Level_2_Easy\",10655)\r\nGiveItemCreate(\"Misc07\", Protagonist, 20, 0, 0)\r\nTakePartyItem(\"00Misc17\")",
+    "SetGlobal(\"Niles_Quest\", \"GLOBAL\", 2)",
+    "SetGlobal(\"Niles_Quest\", \"GLOBAL\", 2)",
+    "SetGlobal(\"Niles_Quest\", \"GLOBAL\", 1)"
+  ],
+  "Checksum": null,
+  "Filename": "12NILES.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 10656
+}

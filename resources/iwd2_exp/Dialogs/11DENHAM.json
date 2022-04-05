@@ -1,0 +1,2693 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Yes?  Ah, you must be the reinforcements.  I'm afraid your boat from Luskan may be the last until we break the horde.  I'm Denham Fisher, priest of the Red Knight.  Do you need healing?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25123
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 9,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "It goes poorly.  We were unable to make a decisive strike against the goblins when they attacked the Palisade wall.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25130
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "'Tis not the point, Swordmaster Ragni.  Their intent was to test our defenses, not to penetrate them.  When they return, organized and bolstered by bugbears, it will not be so easy to turn them away.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25132
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "I apologize for deigning to debate with my esteemed colleague.  Is there anything else I can help you with?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25133
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Very well.  We now have a valu-",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25745
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "The fate of Bremen was sealed the moment the goblinoid army started marching.  I am thankful a number of the defenders fell back instead of throwing their lives away needlessly.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25746
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Swordmaster Ragni... the escape of soldiers allowed us to learn that the three-headed chimera banner was being flown at the rear of the army.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25747
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "I don't need to cast divinations to know that no goblin army has ever borne such a banner.  Goblins and orcs carry tribal banners at the front of their ranks to show their familial pride.  Whatever is motivating them is not a goblinoid.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25748
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "I apologize for getting carried away.  Is there anything else I can help you with?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25749
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "For now, I must agree with Swordmaster Ragni.  Things look grim.  We need all able-bodied soldiers at the front lines as soon as possible.  If any of the worg-riding goblins break through, their mobility will overcome anyone caught on the streets...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25752
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "The main goblin attack force has been beaten back, but only the Red Knight herself knows how many are scattered across the plains.  We need to find their leaders while we still have the advantage.  Is there anything else I can help you with?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25753
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "The Red Knight is a young goddess sponsored by the church of Tempus.  Once a mortal, the Red Knight is the patron of strategy and tactics.  Some might say that she is the result of the natural evolution of warfare...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25754
+      },
+      "ResponsesIndexFirst": 25,
+      "ResponsesCount": 7,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "...others might disagree.  If you have any questions about how to be more effective in battle, please ask me.  Is there anything else I can help you with?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25756
+      },
+      "ResponsesIndexFirst": 32,
+      "ResponsesCount": 12,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "In melee combat, goblins are not mighty warriors, but their archers are a thorn in any man's side.  'Tis their way to distract your warriors while arrows fly towards vulnerable spellcasters.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25761
+      },
+      "ResponsesIndexFirst": 44,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "Attack their archers first and use spells like Sleep and Color Spray to lay their axemen low.  Also, be wary of goblin sorcerers.  If ignored, they can quickly destroy an inexperienced band of soldiers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26629
+      },
+      "ResponsesIndexFirst": 45,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "Is there anything else I can help you with?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26630
+      },
+      "ResponsesIndexFirst": 46,
+      "ResponsesCount": 12,
+      "TriggerIndex": -1,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "Orcs are dangerous opponents in hand-to-hand combat as well as at range.  They are not as agile or cunning as goblins, but they make up for their deficiencies with brute force.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26633
+      },
+      "ResponsesIndexFirst": 58,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "Orcish shamans often rail against arcane magic because 'tis so often practiced by their hated enemies, the elves.  Fear the orcish shamans of Gruumsh, for they are mighty in spiritual magic.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26635
+      },
+      "ResponsesIndexFirst": 59,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "Bugbears are fearsome adversaries.  Not only do they hunt in disciplined, intelligent packs, but they are also quick and strong.  Their favored weapon, the morningstar, has little difficulty against the chain mail that many soldiers wear.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26636
+      },
+      "ResponsesIndexFirst": 60,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "If you expect to fight bugbears, get a good suit of splint mail.  You need not worry about bugbear shamans or sorcerers.  War parties like this are dominated by bugbears seeking glory at the end of a morningstar.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26637
+      },
+      "ResponsesIndexFirst": 61,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "Try to concentrate your attention to one or two opponents at a time.  The approach of death can make a wounded man fight as effectively as a fresh one.  'Tis is usually in your best interest to fell a small number of enemies quickly rather than wound many.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26638
+      },
+      "ResponsesIndexFirst": 62,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "Also, spellcasters need constant attention.  Your allied wizards and priests must always be active and out of harm's way.  Enemy wizards and priests must be inactive and in harm's way as soon and often as possible.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26639
+      },
+      "ResponsesIndexFirst": 63,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "If you are wounded, seek healing quickly.  In a group of equally wounded allies, 'tis wise to cure the ones who are most likely to take damage and fall in upcoming conflicts.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26641
+      },
+      "ResponsesIndexFirst": 64,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "Our swords come together again.  How can the church of Tempus be of assistance?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26642
+      },
+      "ResponsesIndexFirst": 65,
+      "ResponsesCount": 13,
+      "TriggerIndex": 2,
+      "Index": 23
+    },
+    {
+      "Text": {
+        "Text": "Not that Swordmaster Ragni paid any heed to what they were doing or where they were running...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26719
+      },
+      "ResponsesIndexFirst": 78,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 24
+    },
+    {
+      "Text": {
+        "Text": "Swordmaster Ragni, calm yourself!  These people are here to help.  'Tis no time to bicker.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26721
+      },
+      "ResponsesIndexFirst": 79,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 25
+    },
+    {
+      "Text": {
+        "Text": "The people of the Ten-Towns don't need to be brave right now, they need to be intelligent.  Their support is helpful, but they need to stay away from the front lines.  Bravado can't stop goblin arrows.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26725
+      },
+      "ResponsesIndexFirst": 80,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 26
+    },
+    {
+      "Text": {
+        "Text": "They were testing the defenses before their bugbear reinforcements arrive.  When they have strong leaders and numbers on their side-",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26797
+      },
+      "ResponsesIndexFirst": 81,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 27
+    },
+    {
+      "Text": {
+        "Text": "Would it be accurate to say that your battle plan can be summarized as \"get 'em?\"",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26813
+      },
+      "ResponsesIndexFirst": 82,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 28
+    },
+    {
+      "Text": {
+        "Text": "I told you this would happen.  I told you that if bugbears lead a numerically superior force of gob-",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26814
+      },
+      "ResponsesIndexFirst": 83,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 29
+    },
+    {
+      "Text": {
+        "Text": "Well, well... isn't this interesting?  He's obviously trying to send some sort of covert message about how our troops are allocated throughout the dale.  Very clever.  Then again, doppleganger shapeshifters are known for their wits.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26815
+      },
+      "ResponsesIndexFirst": 84,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 30
+    },
+    {
+      "Text": {
+        "Text": "Of course.  Keep your allies close, <CHARNAME>, but keep your enemy within striking distance... preferably in your temple.  I suspect he killed the real courier and ingested his memories.  Divination magic revealed his true nature.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26821
+      },
+      "ResponsesIndexFirst": 86,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 31
+    },
+    {
+      "Text": {
+        "Text": "I will prepare a set of replacement letters.  One will be addressed to the leader of the reinforcements from Luskan, the other for Garradun's Captain Mariner.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26825
+      },
+      "ResponsesIndexFirst": 87,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 32
+    },
+    {
+      "Text": {
+        "Text": "If Captain Mariner is the real captain, he will not open his \"letter,\" honoring Garradun's wishes.  If he is not the real captain... he will be in for a fiery surprise.  Wait here for a moment, and I will fetch the necessary supplies...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26833
+      },
+      "ResponsesIndexFirst": 88,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 33
+    },
+    {
+      "Text": {
+        "Text": "...here you are.  This should do the trick.  Thank you for bringing this to our attention.  You probably just saved many lives.  Do you need anything else?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26838
+      },
+      "ResponsesIndexFirst": 89,
+      "ResponsesCount": 11,
+      "TriggerIndex": -1,
+      "Index": 34
+    },
+    {
+      "Text": {
+        "Text": "Oh, did he now?  May I see that letter?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26844
+      },
+      "ResponsesIndexFirst": 100,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 35
+    },
+    {
+      "Text": {
+        "Text": "And if I were to tell you that that letter may pose a very real threat to Targos and its citizens... and perhaps Neverwinter as well?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26883
+      },
+      "ResponsesIndexFirst": 103,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 36
+    },
+    {
+      "Text": {
+        "Text": "I cannot speak to you now - Swordmaster Ragni and I are preparing to take the battle to the goblins at the Docks.  We will meet you there.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26885
+      },
+      "ResponsesIndexFirst": 104,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 37
+    },
+    {
+      "Text": {
+        "Text": "Well, well... isn't this interesting?  He was obviously trying to send some sort of covert message about how our troops are allocated throughout the dale.  Very clever.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26887
+      },
+      "ResponsesIndexFirst": 105,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 38
+    },
+    {
+      "Text": {
+        "Text": "There's not much that we can do without knowing who the letter was intended for.  Still, simply preventing them from reaching their destination can only be good fortune for Targos - you probably just saved many lives.  Do you need anything else?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26888
+      },
+      "ResponsesIndexFirst": 106,
+      "ResponsesCount": 11,
+      "TriggerIndex": -1,
+      "Index": 39
+    },
+    {
+      "Text": {
+        "Text": "What do you have there? ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36173
+      },
+      "ResponsesIndexFirst": 117,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 40
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Yes, actually, I am in need of healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25124
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 4,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 3,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 9,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 4,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 10,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Who is the Red Knight?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25126
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 5,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 11,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Do you know where I can meet up with the captain of the Neverwinter Forces?  Garradun Tanner wanted me to deliver this letter to him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25127
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": 6,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 35,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I got this love letter from that shapeshifting beast.  It's odd that he kept it after killing his victim.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25128
+      },
+      "JournalIndex": 25120,
+      "TriggerIndex": 6,
+      "ActionIndex": 7,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 38,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "No, Denham.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25129
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 24,
+      "Index": 9,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 3,
+      "Index": 10,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "I seek healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25134
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 9,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Who is the Red Knight?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25126
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 11,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "No, Denham.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25129
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 25,
+      "Index": 14,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 26,
+      "Index": 15,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 7,
+      "Index": 16,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 8,
+      "Index": 17,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "I seek healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25134
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Who is the Red Knight?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25126
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 11,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "No, Denham.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25129
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 8,
+      "Index": 21,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "I seek healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25134
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 11,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Who is the Red Knight?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25126
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 11,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "No, Denham.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25129
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Ilmater teaches that there is no evolution in warfare, only the furtherment of suffering.  I had hoped that an evolution of Tempus' beliefs would turn away from war, not to the refinement of them. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38771
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": 12,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 27,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Ah, Lathander be blessed, I think Tempus could use the light of tactics and strategy in his workings... it would help him face the battles of a new day. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38772
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": 13,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 27,
+      "Index": 26,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I think Tempus should be blessed to have such counsel founded on strategy and tactics... knowledge is a weapon mightier than the sword, Oghma teaches us. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38773
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": 14,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 27,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I tire of new gods, mewling in the service of Tempus - you'd best watch yourself, and your faith, priest of the Red Knight, for you cannot begin to guess at Bane's power.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38774
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": 15,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 27,
+      "Index": 28,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Ah, a new one for the pantheon?  Tempus should be blessed to have such counsel.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38775
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": 16,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 27,
+      "Index": 29,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We tire of new gods, mewling in the service of Tempus - you'd best watch yourself, and your faith, priest of the Red Knight, for you cannot begin to guess at Talos' power.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38776
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": 17,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 27,
+      "Index": 30,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "The natural evolution of warfare?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39875
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": 18,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 27,
+      "Index": 31,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Do you know where I can meet up with the captain of the Neverwinter Forces?  Garradun Tanner wanted me to deliver this letter to him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25127
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": 19,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 35,
+      "Index": 32,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I got this love letter from that shapeshifting beast.  It's odd that he kept it after killing his victim.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25128
+      },
+      "JournalIndex": 25120,
+      "TriggerIndex": 18,
+      "ActionIndex": 20,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 38,
+      "Index": 33,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I seek healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25134
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 21,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 34,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 1,
+      "Index": 35,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 20,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 4,
+      "Index": 36,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 9,
+      "Index": 37,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 22,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 10,
+      "Index": 38,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any advice on how to fight goblins?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25757
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 13,
+      "Index": 39,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any advice on how to fight orcs?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25758
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 16,
+      "Index": 40,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What's the best way to deal with bugbears?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25759
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 18,
+      "Index": 41,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any general combat advice?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25760
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 20,
+      "Index": 42,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "No, Denham.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25129
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 43,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 14,
+      "Index": 44,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 15,
+      "Index": 45,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Do you know where I can meet up with the captain of the Neverwinter Forces?  Garradun Tanner wanted me to deliver this letter to him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25127
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": 22,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 35,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I got this love letter from that shapeshifting beast.  It's odd that he kept it after killing his victim.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25128
+      },
+      "JournalIndex": 25120,
+      "TriggerIndex": 24,
+      "ActionIndex": 23,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 38,
+      "Index": 47,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I seek healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25134
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 24,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 48,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 25,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 1,
+      "Index": 49,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 4,
+      "Index": 50,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 27,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 9,
+      "Index": 51,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 10,
+      "Index": 52,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any advice on how to fight goblins?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25757
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 13,
+      "Index": 53,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Any advice on how to fight orcs?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25758
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 16,
+      "Index": 54,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What's the best way to deal with bugbears?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25759
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 18,
+      "Index": 55,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any general combat advice?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25760
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 20,
+      "Index": 56,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "No, Denham.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25129
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 57,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 17,
+      "Index": 58,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 15,
+      "Index": 59,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 19,
+      "Index": 60,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 15,
+      "Index": 61,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 21,
+      "Index": 62,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 22,
+      "Index": 63,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 15,
+      "Index": 64,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Do you know where I can meet up with the captain of the Neverwinter Forces?  Garradun Tanner wanted me to deliver this letter to him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25127
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 29,
+      "ActionIndex": 25,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 35,
+      "Index": 65,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I got this love letter from that shapeshifting beast.  It's odd that he kept it after killing his victim.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25128
+      },
+      "JournalIndex": 25120,
+      "TriggerIndex": 30,
+      "ActionIndex": 26,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 38,
+      "Index": 66,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I seek healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25134
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 27,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 67,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 31,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 1,
+      "Index": 68,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 32,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 4,
+      "Index": 69,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 33,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 9,
+      "Index": 70,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 34,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 10,
+      "Index": 71,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Who is the Red Knight?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25126
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 35,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 11,
+      "Index": 72,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any advice on how to fight goblins?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25757
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 36,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 13,
+      "Index": 73,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Any advice on how to fight orcs?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25758
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 37,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 16,
+      "Index": 74,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's the best way to deal with bugbears?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25759
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 38,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 18,
+      "Index": 75,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any general combat advice?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 8025
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 39,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 20,
+      "Index": 76,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26644
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 77,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 7,
+      "Index": 78,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 8,
+      "Index": 79,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 7,
+      "Index": 80,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 10,
+      "Index": 81,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 12,
+      "Index": 82,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11RagniB",
+      "NextPhraseIndex": 14,
+      "Index": 83,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "What?  He's a doppleganger?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26816
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 31,
+      "Index": 84,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What do you think we should do?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26817
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 32,
+      "Index": 85,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What do you think we should do?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26817
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 32,
+      "Index": 86,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 33,
+      "Index": 87,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 25119,
+      "TriggerIndex": -1,
+      "ActionIndex": 28,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 34,
+      "Index": 88,
+      "Flags": "HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I seek healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25134
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 29,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 89,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 40,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 1,
+      "Index": 90,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 41,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 4,
+      "Index": 91,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 42,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 9,
+      "Index": 92,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 43,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 10,
+      "Index": 93,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Who is the Red Knight?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25126
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 44,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 11,
+      "Index": 94,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any advice on how to fight goblins?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25757
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 45,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 13,
+      "Index": 95,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Any advice on how to fight orcs?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25758
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 46,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 16,
+      "Index": 96,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's the best way to deal with bugbears?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25759
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 47,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 18,
+      "Index": 97,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any general combat advice?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39900
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 48,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 20,
+      "Index": 98,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26644
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 99,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "No offense intended, but I'm sure the letter was intended for his love.  I cannot relinquish it and violate the trust he's placed in me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26878
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 36,
+      "Index": 100,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Come on, Denham, it's a love letter.  You don't just go around and read these things - it spits in the face of etiquette.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26881
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 36,
+      "Index": 101,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Here you go.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26882
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 49,
+      "ActionIndex": 30,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 30,
+      "Index": 102,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  If you feel there is a threat to Targos within this letter, then take it.  I think Garradun and I deserve an explanation, however.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26884
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 31,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 30,
+      "Index": 103,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  We shall meet you there, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26886
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 104,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What do you think we should do?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26817
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 32,
+      "Index": 105,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I seek healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25134
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 32,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 106,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 50,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 1,
+      "Index": 107,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 51,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 4,
+      "Index": 108,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 52,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 9,
+      "Index": 109,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "How goes the battle?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 53,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 10,
+      "Index": 110,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Who is the Red Knight?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25126
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 54,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 11,
+      "Index": 111,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any advice on how to fight goblins?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25757
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 55,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 13,
+      "Index": 112,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Any advice on how to fight orcs?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25758
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 56,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 16,
+      "Index": 113,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's the best way to deal with bugbears?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25759
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 57,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 18,
+      "Index": 114,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Do you have any general combat advice?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39901
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 58,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 20,
+      "Index": 115,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26644
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 116,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I got this love letter from that shapeshifting beast.  It's odd that he kept it after killing his victim.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36174
+      },
+      "JournalIndex": 25120,
+      "TriggerIndex": -1,
+      "ActionIndex": 33,
+      "NextScriptDialog": "11Denham",
+      "NextPhraseIndex": 38,
+      "Index": 117,
+      "Flags": "HasText, HasAction, HasJournal"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\",0)",
+    "Global(\"Know_Denham\", \"GLOBAL\", 0)",
+    "Global(\"Know_Denham\", \"GLOBAL\", 1)"
+  ],
+  "TriggersResponse": [
+    "Global(\"Goblins_Attack_Palisade\",\"GLOBAL\",0)",
+    "Global(\"Targos_Phase\",\"GLOBAL\",1)",
+    "Global(\"Targos_Phase\",\"GLOBAL\",2)",
+    "Global(\"Goblins_Attack_Palisade\",\"GLOBAL\",1)",
+    "!Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "PartyHasItem(\"11GenGLe \")\nGlobal(\"Garradun_Quest\", \"GLOBAL\", 1)\nGlobal(\"Garradun_Dead\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"11GenGLe \")\r\nGlobalLT(\"Garradun_Quest\", \"GLOBAL\", 2)\r\nGlobal(\"Garradun_Dead\", \"GLOBAL\", 1)",
+    "!Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "!Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "!Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Kit(Protagonist, CLERIC_ILMATER)",
+    "Kit(Protagonist, CLERIC_LATHANDER)",
+    "Kit(Protagonist, CLERIC_OGHMA)",
+    "Kit(Protagonist, CLERIC_BANE)",
+    "Kit(Protagonist, CLERIC_MASK)",
+    "Kit(Protagonist, CLERIC_TALOS)",
+    "!Kit(Protagonist, CLERIC_ILMATER)!Kit(Protagonist, CLERIC_LATHANDER)!Kit(Protagonist, CLERIC_OGHMA)!Kit(Protagonist, CLERIC_OGHMA)!Kit(Protagonist, CLERIC_MASK)!Kit(Protagonist, CLERIC_TALOS)",
+    "PartyHasItem(\"11GenGLe \")\nGlobal(\"Garradun_Quest\", \"GLOBAL\", 1)\nGlobal(\"Garradun_Dead\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"11GenGLe \")\r\nGlobalLT(\"Garradun_Quest\", \"GLOBAL\", 2)\r\nGlobal(\"Garradun_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Goblins_Attack_Palisade\",\"GLOBAL\",0)",
+    "Global(\"Targos_Phase\",\"GLOBAL\",1)",
+    "Global(\"Targos_Phase\",\"GLOBAL\",2)",
+    "Global(\"Goblins_Attack_Palisade\",\"GLOBAL\",1)",
+    "PartyHasItem(\"11GenGLe \")\nGlobal(\"Garradun_Quest\", \"GLOBAL\", 1)\nGlobal(\"Garradun_Dead\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"11GenGLe \")\r\nGlobalLT(\"Garradun_Quest\", \"GLOBAL\", 2)\r\nGlobal(\"Garradun_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Goblins_Attack_Palisade\",\"GLOBAL\",0)",
+    "Global(\"Targos_Phase\",\"GLOBAL\",1)",
+    "Global(\"Targos_Phase\",\"GLOBAL\",2)",
+    "Global(\"Goblins_Attack_Palisade\",\"GLOBAL\",1)",
+    "PartyHasItem(\"11GenGLe \")\nGlobal(\"Garradun_Quest\", \"GLOBAL\", 1)\nGlobal(\"Garradun_Dead\", \"GLOBAL\", 0)",
+    "PartyHasItem(\"11GenGLe \")\r\nGlobalLT(\"Garradun_Quest\", \"GLOBAL\", 2)\r\nGlobal(\"Garradun_Dead\", \"GLOBAL\", 1)",
+    "Global(\"Goblins_Attack_Palisade\",\"GLOBAL\",0)",
+    "Global(\"Targos_Phase\",\"GLOBAL\",1)",
+    "Global(\"Targos_Phase\",\"GLOBAL\",2)",
+    "Global(\"Goblins_Attack_Palisade\",\"GLOBAL\",1)",
+    "!Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Goblins_Attack_Palisade\",\"GLOBAL\",0)",
+    "Global(\"Targos_Phase\",\"GLOBAL\",1)",
+    "Global(\"Targos_Phase\",\"GLOBAL\",2)",
+    "Global(\"Goblins_Attack_Palisade\",\"GLOBAL\",1)",
+    "!Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "!ClassEx(Protagonist, Paladin)",
+    "Global(\"Goblins_Attack_Palisade\",\"GLOBAL\",0)",
+    "Global(\"Targos_Phase\",\"GLOBAL\",1)",
+    "Global(\"Targos_Phase\",\"GLOBAL\",2)",
+    "Global(\"Goblins_Attack_Palisade\",\"GLOBAL\",1)",
+    "!Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "Global(\"Know_Red_Knight\",\"GLOBAL\",1)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Know_Denham\", \"GLOBAL\", 1)\nStartStore(\"11RagniB\", Protagonist)",
+    "SetGlobal(\"Know_Denham\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Denham\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Denham\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Denham\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Denham\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Denham\", \"GLOBAL\", 1)\nSetGlobal(\"Garradun_Quest\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_1_Easy\",25122)\nSetGlobal(\"Know_Denham\", \"GLOBAL\", 1)\nSetGlobal(\"Garradun_Quest\", \"GLOBAL\", 2)",
+    "SetGlobal(\"Know_Denham\", \"GLOBAL\", 1)",
+    "StartStore(\"11RagniB\", Protagonist)",
+    "StartStore(\"11RagniB\", Protagonist)",
+    "StartStore(\"11RagniB\", Protagonist)",
+    "SetGlobal(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Red_Knight\",\"GLOBAL\",1)",
+    "SetGlobal(\"Garradun_Quest\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_1_Easy\",25122)\nSetGlobal(\"Know_Denham\", \"GLOBAL\", 1)\nSetGlobal(\"Garradun_Quest\", \"GLOBAL\", 2)",
+    "StartStore(\"11RagniB\", Protagonist)",
+    "SetGlobal(\"Garradun_Quest\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_1_Easy\",25122)\nSetGlobal(\"Know_Denham\", \"GLOBAL\", 1)\nSetGlobal(\"Garradun_Quest\", \"GLOBAL\", 2)",
+    "StartStore(\"11RagniB\", Protagonist)",
+    "SetGlobal(\"Garradun_Quest\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_1_Easy\",25122)\nSetGlobal(\"Know_Denham\", \"GLOBAL\", 1)\nSetGlobal(\"Garradun_Quest\", \"GLOBAL\", 2)",
+    "StartStore(\"11RagniB\", Protagonist)",
+    "AddXpVar(\"Level_1_Easy\",25121)\nDestroyItem(\"11GenGLe \")\nGiveItemCreate(\"11GenDen\",Protagonist,1,1,1)\nFadeToColor([0.0],0)\nWait(3)\nFadeFromColor([0.0],0)",
+    "StartStore(\"11RagniB\", Protagonist)",
+    "TakePartyItem(\"11GenGLe \")",
+    "TakePartyItem(\"11GenGLe \")",
+    "StartStore(\"11RagniB\", Protagonist)",
+    "AddXpVar(\"Level_1_Easy\",25122)\r\nSetGlobal(\"Know_Denham\", \"GLOBAL\", 1)SetGlobal(\"Garradun_Quest\", \"GLOBAL\", 2)"
+  ],
+  "Checksum": null,
+  "Filename": "11DENHAM.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 25123
+}

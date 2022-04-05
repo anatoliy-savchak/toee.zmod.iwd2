@@ -1,0 +1,299 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Good day, there.  Are you with the reinforcements from Luskan?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27039
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Thank goodness.  I am Deagle Elmwood.  I came when I heard Bremen was under attack.  I had friends there but... I am sad to say that... please excuse me if I have trouble talking about it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27043
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Your words cut like the winter wind... but I know you speak the truth.  May you fare better than the unlucky souls in Bremen.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27046
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "I suppose mercenaries are a fairer sight than goblins.  I am Deagle Elmwood.  I came when I heard that Bremen was under attack.  I had friends in that town but... I am sad to say that... please excuse me if I have trouble talking about it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27048
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Good day again to you, friend.  Please excuse me, I'm feeling quite exhausted.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27049
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "To think... Garradun, a doppleganger?  I had *heard* of such creatures, but to think he was resting here, right under our noses... I wonder if there are others in town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27050
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 3,
+      "TriggerIndex": 0,
+      "Index": 5
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Yes, we're here to help.  Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27040
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "11Deagle",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We're here to spill goblin blood in exchange for some of Targos' coin, that's all.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27041
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "11Deagle",
+      "NextPhraseIndex": 3,
+      "Index": 1,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I understand, Deagle.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27044
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "That is the way of war.  You had better get used to it.  There's worse yet to come.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27045
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Deagle",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27047
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I understand, Deagle.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27044
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "That is the way of war.  You had better get used to it.  There's worse yet to come.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27045
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "11Deagle",
+      "NextPhraseIndex": 2,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27047
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I doubt it, but we'll have to be vigilant.  Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27051
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 2,
+      "NextScriptDialog": "11Deagle",
+      "NextPhraseIndex": 1,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "If so, then we'll butcher them just like we did Garradun... especially if Ulbrec is offering bounties.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27052
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "11Deagle",
+      "NextPhraseIndex": 3,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We'll see.  Be vigilant, Deagle.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27053
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"Garradun_Dead\", \"GLOBAL\", 1)\nGlobal(\"Deagle_Dop\", \"GLOBAL\", 0)",
+    "Global(\"Know_Deagle\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Know_Deagle\", \"GLOBAL\", 0)"
+  ],
+  "TriggersResponse": [
+    "Global(\"Know_Deagle\", \"GLOBAL\", 0)",
+    "Global(\"Know_Deagle\", \"GLOBAL\", 0)",
+    "Global(\"Know_Deagle\", \"GLOBAL\", 1)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Know_Deagle\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Deagle\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Deagle\", \"GLOBAL\", 1)\nSetGlobal(\"Deagle_Dop\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Deagle\", \"GLOBAL\", 1)\nSetGlobal(\"Deagle_Dop\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Deagle_Dop\", \"GLOBAL\", 1)"
+  ],
+  "Checksum": null,
+  "Filename": "11DEAGLE.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 27039
+}

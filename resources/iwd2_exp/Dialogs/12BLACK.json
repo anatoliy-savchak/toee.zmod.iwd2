@@ -1,0 +1,334 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Hope ye're pleased with yourself!  We're knee-high in goblins, and based on the speed these little bastards are appearing behind the wall, Targos doesn't have much chance of holding the day.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31622
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 3,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Little bastards are being summoned in, by a sorcerer, most-like.  And those worg riders jumped the southwest section, let a bloodtrail of goblins and hounds through.  Must have killed a score or more of Targos soldiers before we stopped them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31626
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Kickshaw was never much good on the field of battle - except for fertilizing it, with his stool or his blood.  This time, a squad of goblin archers sighted the fool and put him down.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31628
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Didn't think much of our chances... as soon as the plains are clear, I'm striking out for Luskan, over land if need be.  I've seen enough goblins to last me a lifetime.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31629
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "We'll see.  Something tells me the ones who *stay* in Targos are the ones who are taking their chances.  Goblins breed like flies, and there's bound to be a nest of them somewhere.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31632
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "We've said all that needs to be said.  Farewell... and watch your back for goblins.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31635
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 2,
+      "TriggerIndex": 2,
+      "Index": 5
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "How did they break the wall?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31623
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "12Black",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Where's Kickshaw?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31624
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "12Black",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Hold the wall and hold your position, and we might get through this.  Now fight, dammit!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31625
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Where's Kickshaw?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31624
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "12Black",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Hold the line, and we'll get through this.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31627
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How did they break the wall?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31623
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 2,
+      "NextScriptDialog": "12Black",
+      "NextPhraseIndex": 1,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Hold the line, and we'll get through this.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31627
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'm glad you stood the wall with us... still, I think trying to brave it to Luskan may not be wise.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31630
+      },
+      "JournalIndex": 29429,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "12Black",
+      "NextPhraseIndex": 4,
+      "Index": 7,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Good riddance, then.  If you stay with Targos, at least you'll have a chance of living.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31631
+      },
+      "JournalIndex": 29429,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "12Black",
+      "NextPhraseIndex": 4,
+      "Index": 8,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps so.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31633
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Just get out of my sight before I regret not striking you down in the Salty Dog. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31634
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You as well.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31636
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Just get out of my sight.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31637
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"Goblin_Palisade_Quest\", \"GLOBAL\", 0)\nGlobal(\"Goblins_Attack_Palisade\", \"GLOBAL\", 1)",
+    "GlobalGT(\"Goblin_Palisade_Quest\", \"GLOBAL\", 0)\nGlobal(\"BG_No_Talk\", \"GLOBAL\", 0)",
+    "GlobalGT(\"Goblin_Palisade_Quest\", \"GLOBAL\", 0)\nGlobal(\"BG_No_Talk\", \"GLOBAL\", 1)"
+  ],
+  "TriggersResponse": [
+    "Global(\"Wall_No_Ask\", \"GLOBAL\", 0)",
+    "Global(\"Kickshaw_No_Ask\", \"GLOBAL\", 0)",
+    "Global(\"Kickshaw_No_Ask\", \"GLOBAL\", 0)",
+    "Global(\"Wall_No_Ask\", \"GLOBAL\", 0)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Wall_No_Ask\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Kickshaw_No_Ask\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Wall_No_Ask\", \"GLOBAL\", 1)",
+    "SetGlobal(\"BG_No_Talk\", \"GLOBAL\", 1)",
+    "SetGlobal(\"BG_No_Talk\", \"GLOBAL\", 1)"
+  ],
+  "Checksum": null,
+  "Filename": "12BLACK.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 31622
+}

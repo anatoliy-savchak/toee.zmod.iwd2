@@ -1,0 +1,566 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Have you come to beg forgiveness for slaughtering my beloved sister Lysara?!  *That* will prove difficult - once I've removed your offensive tongue!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31897
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 3,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Cathin died at *your* hands with honor, and dignity, and pride!  *You'll* die at my hands with pain, suffering, and terror!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31899
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": 4,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "You DARE enter my bedroom unannounced!  A lesson in manners IS in order!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31900
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 2,
+      "TriggerIndex": 5,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Ha!  The disguise is a good one, but your tongue is your undoing!  Let me insure it'll NEVER cast you into danger again!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31904
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Auril, I need you...!  Enough of this - suspend your fight and surrender, or I swear I'll break my staff and we'll all take death's voyage together!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31905
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 5,
+      "TriggerIndex": 2,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Life's a spectator's distraction - merely preparing me for the GREATER glory of sitting beside Auril on her throne of wintry cold.  To depart now, or later, is of little consequence.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31912
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "*This* is a mighty Staff of Power!  If I break it, the resulting blast WILL KILL US ALL!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31915
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "A wise, wise person you are.  FROSTTOUCHES, take these infidels away!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31916
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Ha, ha, ha, ha, ha!  I'm invincible in this ethereal form - UNTOUCHABLE!  Nickademus' Inner Sanctum is complete - and now my enemies will feel the kind of pain that exists ONLY in the nightmares of the GODS THEMSELVES!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31917
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "In Auril's name, from winter's veil, my claw tears through the frozen air...  Neither your might, nor earthly means, will save you from your death's despair.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31918
+      },
+      "ResponsesIndexFirst": 20,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Sweet Nickademus, you've served us well, but you've betrayed me for the LAST time!  I'll make stew from your limbs once I've disposed of these cretins!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34853
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 9,
+      "Index": 0,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 9,
+      "Index": 2,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Our apologies for to disturbing you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31902
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 9,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We agree, but we'll be the teacher!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31903
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 9,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 9,
+      "Index": 5,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Don't do it Oria.  You'll kill us all with your Staff of Power's retributive strike.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31906
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 0,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 5,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "This is a trick.  You want to live as much as we do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31908
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 5,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What's so special about your staff?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31909
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 6,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Break it.  What do we care?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31910
+      },
+      "JournalIndex": 31895,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 9,
+      "Index": 9,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Enough talk!  Prepare to die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31911
+      },
+      "JournalIndex": 31895,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 9,
+      "Index": 10,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "You wouldn't...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31913
+      },
+      "JournalIndex": 31895,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 9,
+      "Index": 11,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What's so special about your staff?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31909
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 6,
+      "Index": 12,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Break it.  What do we care?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31910
+      },
+      "JournalIndex": 31895,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 9,
+      "Index": 13,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Enough talk!  Prepare to die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31911
+      },
+      "JournalIndex": 31895,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 9,
+      "Index": 14,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "This is a trick.  You want to live as much as we do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31908
+      },
+      "JournalIndex": 31895,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 5,
+      "Index": 15,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Break it.  What do we care?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31910
+      },
+      "JournalIndex": 31895,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 9,
+      "Index": 16,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Enough talk!  Prepare to die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31911
+      },
+      "JournalIndex": 31895,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "41Oria",
+      "NextPhraseIndex": 9,
+      "Index": 17,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 9,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 31896,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 11,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 21,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "False()",
+    "Global( \"Oria_dead\", \"GLOBAL\", 1 )",
+    "Global(\"41RetributiveStrike\", \"LOCALS\", 2)",
+    "Global(\"Lysara_dead\", \"GLOBAL\", 1)",
+    "Global(\"Cathin_dead\", \"GLOBAL\", 1)",
+    "NumTimesTalkedTo(0)"
+  ],
+  "TriggersResponse": [
+    "!Global(\"Cathin_dead\", \"GLOBAL\", 1)",
+    "Global(\"Cathin_dead\", \"GLOBAL\", 1)",
+    "CheckSkillGT(Protagonist,9,Knowledge)"
+  ],
+  "Actions": [
+    "SetGlobal(\"41PlayerKnowsStaffOfPower\", \"GLOBAL\", 1)",
+    "SetGlobal(\"41RetributiveStrike\", \"LOCALS\", 1)",
+    "SetGlobal(\"41RetributiveStrike\", \"LOCALS\", 1)",
+    "SetGlobal(\"41RetributiveStrike\", \"LOCALS\", 1)",
+    "SetGlobal(\"41RetributiveStrike\", \"LOCALS\", 1)",
+    "SetGlobal(\"41RetributiveStrike\", \"LOCALS\", 1)",
+    "SetGlobal(\"41RetributiveStrike\", \"LOCALS\", 1)",
+    "SetGlobal(\"41RetributiveStrike\", \"LOCALS\", 1)",
+    "SetGlobal(\"41RetributiveStrike\", \"LOCALS\", 1)",
+    "ClearAllActions()\r\nApplySpell(Player1,2082)\r\nApplySpell(Player2,2082)\r\nApplySpell(Player3,2082)\r\nApplySpell(Player4,2082)\r\nApplySpell(Player5,2082)\r\nApplySpell(Player6,2082)\r\nApplySpell(Myself,CLERIC_HEAL)\r\nSetGlobal(\"PlayerSurrendered\",\"LOCALS\",1)\r\nStartCutSceneMode()\r\nStartCutScene(\"41cPriso\")",
+    "SetGlobal(\"41RetributiveStrike\", \"LOCALS\", 4)\nSetGlobal(\"41OriaIsEthereal\",\"GLOBAL\",1)\nEnemy()",
+    "SetGlobal(\"41SaidPainting4\", \"GLOBAL\", 1)\nEnemy()"
+  ],
+  "Checksum": null,
+  "Filename": "41ORIA.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 31897
+}

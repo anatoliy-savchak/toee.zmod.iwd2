@@ -1,0 +1,1791 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Halt!  Who goes there?  Step forward and identify yourself!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12659
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 4,
+      "TriggerIndex": 5,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "What happened?  Goblin raiders in town is what happened - now get back to your ship; we've tracked down most of the little bastards, but there's still a band northeast of the docks and there may be others about.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12674
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "I let a damned goblin get too close and paid the price - now get back to your ship before the same happens to you!  There's still a band northeast of the docks and there may be others about.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20747
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "I let a goblin get too close and my arm paid the price - now enough of your damned questions!  Get back to your ship and stay there!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20748
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "You?!  Look, just get *back* to your ship, we don't need any more blood spilt th-",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20749
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Damn it all!  All right - we need all the swords we can get.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20751
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "But by the hells, drop those pieces of firewood and grab some *real* weapons before you commit yourselves - there's plenty of goblin axes and shields scattered about - and here's a blade I can spare.  Take it - I can't use it, my arm the way it is.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20752
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Do you think I know?  There were no warning horns from the Palisade, that's for sure.  At first, we thought worg riders had leapt the walls, but we haven't seen any of them, thank Tymora.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20756
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "However they got in, they need to be hunted down before they can do any more harm.  If they set fire to the docks, Targos is done for.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20757
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Do you think I know?  There were no warning horns from the Palisade, that's for sure.  At first, we thought worg riders had leapt the walls, but we haven't seen any of them, thank Tymora.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20756
+      },
+      "ResponsesIndexFirst": 20,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "However they got in, we need to stop them.  If they set fire to the docks, Targos is done for.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20758
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Goblin axe took a bite out of it - but I'm better off than Brohn here, poor bastard took a goblin arrow in the neck.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20760
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "Well, Jon here wrapped up my arm, but you're right, it's bleeding bad.  If you can find the harbor master, Magdar, he might have a supply of healing draughts stored in the warehouse north of here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20761
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 13,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "Be careful.  We spotted a nest of goblins off to the northeast - a group of our men went after them, but we haven't seen them since.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20813
+      },
+      "ResponsesIndexFirst": 36,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "You're a healer?  Looks like Tymora's taking pity on us at last - if you have any magic that would help, I'd be grateful.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20816
+      },
+      "ResponsesIndexFirst": 37,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "Did you find Magdar?  My damned arm's getting worse, and I need that potion he's got.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20819
+      },
+      "ResponsesIndexFirst": 39,
+      "ResponsesCount": 14,
+      "TriggerIndex": 4,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "My arm's better, thanks for your help.  Looks like you're praying to the right gods.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20833
+      },
+      "ResponsesIndexFirst": 53,
+      "ResponsesCount": 2,
+      "TriggerIndex": 2,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "I could still use that healing draught from Magdar if you can find him.  Hope the goblins haven't got him yet.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20835
+      },
+      "ResponsesIndexFirst": 55,
+      "ResponsesCount": 3,
+      "TriggerIndex": 3,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "Thanks - down the hatch... Echkk!  Pah!  You'd think those damn alchemists could learn to make potions that taste like dwarven stout instead of gutter runoff.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20837
+      },
+      "ResponsesIndexFirst": 58,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "Looks like you sailed into Targos at the right time.  If you can help us hunt down any of those goblins, we'd welcome your help.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20838
+      },
+      "ResponsesIndexFirst": 59,
+      "ResponsesCount": 3,
+      "TriggerIndex": 1,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "Excellent - that's the first good news we've had all day.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20867
+      },
+      "ResponsesIndexFirst": 62,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "Now that the raiders have been taken care of, we should be all right.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20910
+      },
+      "ResponsesIndexFirst": 63,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "You're right - here, take my leather jerkin - it probably won't stop a goblin's axe, but it may turn aside a knife or arrow.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20938
+      },
+      "ResponsesIndexFirst": 64,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "What in the h-?!  You watch your tongue!  Brohn was a good soldier, not some filthy goblin corpse you can loot!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 21296
+      },
+      "ResponsesIndexFirst": 70,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 23
+    },
+    {
+      "Text": {
+        "Text": "You... you're right again.  Here you are then - take them.  Brohn'll get no more use of them anyway.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 21306
+      },
+      "ResponsesIndexFirst": 71,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 24
+    },
+    {
+      "Text": {
+        "Text": "I can *see* that, Jon, dammit!  Did you think the goblins took my eyes?!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 21315
+      },
+      "ResponsesIndexFirst": 73,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 25
+    },
+    {
+      "Text": {
+        "Text": "You, dark elf, are you in league with these goblins?  If so, then you'll die with them, I promise you that!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24046
+      },
+      "ResponsesIndexFirst": 74,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 26
+    },
+    {
+      "Text": {
+        "Text": "Resting out here isn't safe - I'd head back to your ship and take refuge there, or, if you're feeling brave, see if you can hole up in one of the homes or warehouses along the shore - provided you kill any goblins inside first.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27909
+      },
+      "ResponsesIndexFirst": 76,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 27
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I'm <CHARNAME>.  What happened here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12660
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Calm down - what's wrong with your arm?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12661
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'm <CHARNAME>.  What happened here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12660
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 2,
+      "NextScriptDialog": "10Jon",
+      "NextPhraseIndex": 5,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Calm down - what's wrong with your arm?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12661
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 3,
+      "NextScriptDialog": "10Jon",
+      "NextPhraseIndex": 5,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We've come from Luskan to aid Targos.  Perhaps we can help you stop these raiders.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12675
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 4,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Goblins?  How did they get into town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12676
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 9,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What's wrong with your arm?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20745
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 3,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We've come from Luskan to aid Targos.  Perhaps we can help you stop these raiders.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12675
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 4,
+      "Index": 7,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Goblins?  How did they get into town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12676
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 9,
+      "Index": 8,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We've come from Luskan to aid Targos.  Perhaps we can help you stop these raiders.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12675
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 4,
+      "Index": 9,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Goblins?  How did they get into town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12676
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 9,
+      "Index": 10,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "10Jon",
+      "NextPhraseIndex": 2,
+      "Index": 11,
+      "Flags": "HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 9,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 6,
+      "Index": 12,
+      "Flags": "HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Thanks for the blade - but we could also use some armor if we're going to be hunting goblins.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20753
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 10,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 22,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Thanks for the blade - but we could also use some armor if we're going to be hunting goblins.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20753
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": 11,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 22,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  How did the goblins get into town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20754
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 7,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's wrong with your arm?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20745
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 11,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Your arm looks in pretty bad shape - your bandages are almost soaked through.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20755
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 12,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 8,
+      "Index": 18,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "What's wrong with your arm?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20745
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 11,
+      "Index": 19,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 10,
+      "Index": 20,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "We've come from Luskan to aid Targos.  Perhaps we can help you stop these raiders.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 12675
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 12,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 4,
+      "Index": 21,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Your arm looks in pretty bad shape - your bandages are almost soaked through.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20755
+      },
+      "JournalIndex": 1476,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 12,
+      "Index": 22,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'm an Ilmatari, a Painbearer of Ilmater.  My healing magic may be able to draw the pain from your wound and end your suffering.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38715
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Come the dawn, all things may be healed, Lathander teaches us.  I can aid you with my healing magic, if you wish. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38716
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Let Selune's light fall upon you, guardsman, and her healing magic shall seal your wound.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38717
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Wounds are the price of a strong defense, guardsman, so the teachings of Helm tell us.  Let a Watcher's healing magic aid you. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38719
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 26,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Much blood is shed in the pursuit of knowledge, Oghma teaches us.  As a Lorekeeper, I may call upon his healing magic to aid you, if you wish. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38720
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Wounds are the price of battle - and an inspiration to others.  Let a Battleguard call upon Tempus' magics to seal your wound. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38722
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 28,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Dreadmasters know much of the ways of pain.  Perhaps I could return strength to your arm... if it is Bane's will that you live.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38723
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 29,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Ah, a supply of healing draughts may be found close by, you say?  Hmm... first, let a Demarch of Mask attend to your wound. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38724
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 30,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "A rain of blood follows the storms, so teaches Talos.  We Stormlords know much of pain... and how to end it.   ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38725
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 31,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'm a druid.  I may be able to call upon nature's power to heal your arm.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20765
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 32,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'm a paladin.  I may be able to use my healing magics to help your arm.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20766
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 33,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I already found a healing potion.  It should help - drink it down.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20767
+      },
+      "JournalIndex": 1477,
+      "TriggerIndex": 20,
+      "ActionIndex": 13,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 18,
+      "Index": 34,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'll go see if I can find Magdar, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20768
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 13,
+      "Index": 35,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I'll be careful.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20815
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 36,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Let me see what I can do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20817
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 37,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I wouldn't call myself a healer...  but let me see what I can do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20818
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 22,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 38,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'm an Ilmatari, a Painbearer of Ilmater.  My healing magic may be able to draw the pain from your wound and end your suffering.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38726
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 39,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Come the dawn, all things may be healed, Lathander teaches us.  I can aid you with my healing magic, if you wish. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38727
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 24,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 40,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Let Selune's light fall upon you, guardsman, and her healing magic shall seal your wound.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38728
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 25,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 41,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Wounds are the price of a strong defense, guardsman, so the teachings of Helm tell us.  Let a Watcher's healing magic aid you. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38729
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 42,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Much blood is shed in the pursuit of knowledge, Oghma teaches us.  As a Lorekeeper, I may call upon his healing magic to aid you, if you wish. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38730
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 27,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 43,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Wounds are the price of battle - and an inspiration to others.  Let a Battleguard call upon Tempus' magics to seal your wound. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38731
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 44,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Dreadmasters know much of the ways of pain.  Perhaps I could return strength to your arm... if it is Bane's will that you live.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38732
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 29,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 45,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Ah, a supply of healing draughts may be found close by, you say?  Hmm... first, let a Demarch of Mask attend to your wound. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38733
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 30,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "A rain of blood follows the storms, so teaches Talos.  We Stormlords know much of pain... and how to end it.   ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38734
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 31,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 47,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'm a druid.  I may be able to call upon nature's power to heal you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20821
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 32,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 48,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'm a paladin.  I may be able to use my healing magics to help your arm.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20766
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 33,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 14,
+      "Index": 49,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Here's the healing potion.  It should help - drink it down.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20823
+      },
+      "JournalIndex": 1477,
+      "TriggerIndex": 34,
+      "ActionIndex": 14,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 18,
+      "Index": 50,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We need to rest.  Can you watch over us while we catch our second wind?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20831
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 27,
+      "Index": 51,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Not yet.  I'll return when I've found him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20832
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 52,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "The wound's closed, but there may be more damage.  You still don't look too good.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20834
+      },
+      "JournalIndex": 1478,
+      "TriggerIndex": 35,
+      "ActionIndex": 15,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 17,
+      "Index": 53,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "The wound's closed, but there may be more damage.  You still don't look too good.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20834
+      },
+      "JournalIndex": 1478,
+      "TriggerIndex": 36,
+      "ActionIndex": 16,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 17,
+      "Index": 54,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Here's the healing potion.  It should help - drink it down.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20823
+      },
+      "JournalIndex": 1477,
+      "TriggerIndex": 37,
+      "ActionIndex": 17,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 18,
+      "Index": 55,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We need to rest.  Can you watch over us while we catch our second wind?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20831
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 27,
+      "Index": 56,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Let me see what I can do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20817
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 57,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 19,
+      "Index": 58,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "We need to rest.  Can you watch over us while we catch our second wind?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20831
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 38,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 27,
+      "Index": 59,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'll see what I can do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20839
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 39,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 60,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We've wiped out the last of the goblins along the docks.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20840
+      },
+      "JournalIndex": 1479,
+      "TriggerIndex": 40,
+      "ActionIndex": 18,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 20,
+      "Index": 61,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I'll go see him, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20887
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 62,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'll go see him, then.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20887
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 63,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Also, your dead friend here, Brohn, shouldn't be needing his equipment any longer, so pass that along as well.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20956
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 41,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 23,
+      "Index": 64,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Also, your dead friend here, Brohn, shouldn't be needing his equipment any longer, so pass that along as well.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 20956
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 42,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 23,
+      "Index": 65,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I mean no disrespect to your fellow soldier, but we could also use any of the equipment your fallen comrade Brohn had, if any.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 21168
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 43,
+      "ActionIndex": 19,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 24,
+      "Index": 66,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I mean no disrespect to your fallen friend, but we could also use any of the equipment your fallen comrade Brohn had, if any.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 21192
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 44,
+      "ActionIndex": 20,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 24,
+      "Index": 67,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Thank you.  Do you know how these goblins got into town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 21294
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 7,
+      "Index": 68,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I hope so - what's wrong with your arm?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 21295
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 11,
+      "Index": 69,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Without arms and armor, both our corpses will lie next to his soon enough.  Brohn's equipment may give us the... edge... we need to drive the goblins back, so make your choice.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 21297
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 21,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 24,
+      "Index": 70,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  Do you know how these goblins got into town?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 21307
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 7,
+      "Index": 71,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "All right - now, what's wrong with your arm?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 21309
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 11,
+      "Index": 72,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 26,
+      "Index": 73,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "I've come to aid Targos, not attack it.  What happened here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27907
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 1,
+      "Index": 74,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Be *careful* with your promises, lest you anger one who has come to help you.  Now... how did you come to be wounded?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27908
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "10Reig",
+      "NextPhraseIndex": 2,
+      "Index": 75,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Very well.  We'll go see if we can find some shelter, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27910
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 76,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"Told_Reig\", \"GLOBAL\", 1)",
+    "Global(\"Reig_Quest\", \"GLOBAL\", 2)",
+    "HPGT(Myself, 3)\nGlobal(\"Reig_Quest\", \"GLOBAL\", 1)\nGlobal(\"Reig_Heal_Priest\", \"GLOBAL\", 0)",
+    "Global(\"Reig_Quest\", \"GLOBAL\", 1)\nGlobal(\"Reig_Heal_Priest\", \"GLOBAL\", 1)",
+    "Global(\"Reig_Quest\", \"GLOBAL\", 1)",
+    "NumTimesTalkedTo(0)"
+  ],
+  "TriggersResponse": [
+    "!SubRace(Protagonist, ELF_DROW)",
+    "!SubRace(Protagonist, ELF_DROW)",
+    "SubRace(Protagonist, ELF_DROW)",
+    "SubRace(Protagonist, ELF_DROW)",
+    "CheckSkillGT(Protagonist, 0, Diplomacy)",
+    "CheckSkillLT(Protagonist, 1, Diplomacy)\r\nCheckStatGT(Protagonist, 11, INT)",
+    "Global(\"Know_Goblin_Reig\", \"GLOBAL\", 0)",
+    "Global(\"Know_Arm\", \"GLOBAL\", 0)",
+    "Global(\"Know_Arm\", \"GLOBAL\", 1)",
+    "Kit(Protagonist, CLERIC_ILMATER)",
+    "Kit(Protagonist, CLERIC_LATHANDER)",
+    "Kit(Protagonist, CLERIC_SELUNE)",
+    "Kit(Protagonist, CLERIC_HELM)",
+    "Kit(Protagonist, CLERIC_OGHMA)",
+    "Kit(Protagonist, CLERIC_TEMPUS)",
+    "Kit(Protagonist, CLERIC_BANE)",
+    "Kit(Protagonist, CLERIC_MASK)",
+    "Kit(Protagonist, CLERIC_TALOS)",
+    "ClassEx(Protagonist, Druid)",
+    "ClassEx(Protagonist, Paladin)",
+    "PartyHasItem(\"00Potn04\")",
+    "!Alignment(Protagonist, 3)",
+    "Alignment(Protagonist, 3)",
+    "Kit(Protagonist, CLERIC_ILMATER)",
+    "Kit(Protagonist, CLERIC_LATHANDER)",
+    "Kit(Protagonist, CLERIC_SELUNE)",
+    "Kit(Protagonist, CLERIC_HELM)",
+    "Kit(Protagonist, CLERIC_OGHMA)",
+    "Kit(Protagonist, CLERIC_TEMPUS)",
+    "Kit(Protagonist, CLERIC_BANE)",
+    "Kit(Protagonist, CLERIC_MASK)",
+    "Kit(Protagonist, CLERIC_TALOS)",
+    "ClassEx(Protagonist, Druid)",
+    "ClassEx(Protagonist, Paladin)",
+    "PartyHasItem(\"00Potn04\")",
+    "Global(\"Reig_Heal_Priest\", \"GLOBAL\", 0)",
+    "Global(\"Reig_Heal_Priest\", \"GLOBAL\", 1)",
+    "PartyHasItem(\"00Potn04\")",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 0)",
+    "Global(\"Dock_Goblin_Quest\", \"GLOBAL\", 1)",
+    "CheckSkillGT(Protagonist, 2, Intimidate)!Alignment(Protagonist,1)",
+    "CheckSkillLT(Protagonist, 3, Intimidate)CheckStatGT(Protagonist, 14, INT)!Alignment(Protagonist,1)",
+    "CheckSkillGT(Protagonist, 2, Diplomacy)!Alignment(Protagonist,3)",
+    "CheckSkillLT(Protagonist, 3, Diplomacy)CheckStatGT(Protagonist, 14, INT)!Alignment(Protagonist,3)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Reig_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Reig_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Reig_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Reig_Quest\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Arm\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Arm\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Arm\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_Arm\", \"GLOBAL\", 1)",
+    "SetCriticalPathObject(\"Reig\",FALSE)",
+    "GiveItemCreate(\"00Swds01\", Protagonist, 0, 0, 0)",
+    "GiveItem(\"00Leat01\", Protagonist)",
+    "GiveItem(\"00Leat01\", Protagonist)",
+    "SetGlobal(\"Know_Goblin_Reig\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_1_Average\",1484)\nTakePartyItemNum(\"00Potn04\", 1)\nDestroyItem(\"00Potn04\")\nSetGlobal(\"Reig_Quest\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_1_Average\",1484)\nTakePartyItemNum(\"00Potn04\", 1)\nDestroyItem(\"00Potn04\")\nSetGlobal(\"Reig_Quest\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_1_Easy\",1483)\nSetGlobal(\"Reig_Heal_Priest\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_1_Easy\",1483)\n",
+    "AddXpVar(\"Level_1_Average\",1484)\nTakePartyItemNum(\"00Potn04\", 1)\nDestroyItem(\"00Potn04\")\nSetGlobal(\"Reig_Quest\", \"GLOBAL\", 2)",
+    "SetGlobal(\"Told_Reig\", \"GLOBAL\", 1)",
+    "GiveItemCreate(\"00Leat01\", Protagonist, 0, 0, 0)\nGiveItemCreate(\"00Helm01\", Protagonist, 0, 0, 0)\nGiveItemCreate(\"00Dagg01\", Protagonist, 0, 0, 0)\nGiveItemCreate(\"00ax1h11\", Protagonist, 0, 0, 0)",
+    "GiveItemCreate(\"00Leat01\", Protagonist, 0, 0, 0)\nGiveItemCreate(\"00Helm01\", Protagonist, 0, 0, 0)\nGiveItemCreate(\"00Dagg01\", Protagonist, 0, 0, 0)\nGiveItemCreate(\"00ax1h11\", Protagonist, 0, 0, 0)",
+    "GiveItemCreate(\"00Leat01\", Protagonist, 0, 0, 0)\nGiveItemCreate(\"00Helm01\", Protagonist, 0, 0, 0)\nGiveItemCreate(\"00Dagg01\", Protagonist, 0, 0, 0)\nGiveItemCreate(\"00ax1h11\", Protagonist, 0, 0, 0)"
+  ],
+  "Checksum": null,
+  "Filename": "10REIG.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 12659
+}

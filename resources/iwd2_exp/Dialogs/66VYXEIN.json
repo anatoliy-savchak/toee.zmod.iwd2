@@ -1,0 +1,107 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Don't get overly anxious, Captain Pudu, the treaty is not signed - yet.  When Nalakora and her envoy arrive, then the final details of the treaty may be worked out.  Until then, we are nothing more than two empires with similar interests.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24589
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "I was wondering when you were going to get to your *true* intentions.  Your brashness is unusual for someone of your, shall we say, limited height.  What makes you think I would have any interest in one such as you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24591
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Hmmm... perhaps.  From what I've seen of this Legion of the Chimera, they do not tolerate weakness of any sort.  It is impressive that you were able to achieve such a high rank in a short time - yes, very impressive.  It might be agreeable to be by your side, Captain Pudu, once that treaty is signed.  I think we can be of great use to each other.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24592
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Pudu",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Pudu",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Pudu",
+      "NextPhraseIndex": 3,
+      "Index": 2,
+      "Flags": "None"
+    }
+  ],
+  "TriggersPhrase": [],
+  "TriggersResponse": [],
+  "Actions": [],
+  "Checksum": null,
+  "Filename": "66VYXEIN.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 24589
+}

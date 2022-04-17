@@ -16,8 +16,10 @@ def TurnBasedStatusInitNoActions(attachee, args, evt_obj):
 	evt_obj.tb_status.flags |= 2
 	print("TurnBasedStatusInitNoActions for {}".format(attachee))
 	#debug.breakp("TurnBasedStatusInitNoActions")
-	print("Surprised2 Removed for {}".format(attachee))
-	args.condition_remove()
+	if not args.get_arg(0) or (args.get_arg(0) and attachee.is_active_combatant()):
+		print("Surprised2 Removed for {}".format(attachee))
+		args.condition_remove()
+		print("Surprised2 Removed for {}".format(attachee))
 	return 0
 
 def Surprised2_OnBeginRound(attachee, args, evt_obj):
@@ -51,9 +53,16 @@ def Surprised2_OnGetEffectTooltip(attachee, args, evt_obj):
 	evt_obj.append(tpdp.hash("SURPRISED2"), -1, "")
 	return 0
 
-modObj1 = templeplus.pymod.PythonModifier(GetConditionName(), 2, 1) #
+def OnD20Query_Q_AOOPossible(attachee, args, evt_obj):
+	assert isinstance(attachee, toee.PyObjHandle)
+	assert isinstance(args, tpdp.EventArgs)
+	assert isinstance(evt_obj, tpdp.EventObjD20Signal)
+	evt_obj.return_val = 0
+	return 1
+
+modObj1 = templeplus.pymod.PythonModifier(GetConditionName(), 2, 1) # 0: no remove unless in combat
 modObj1.AddHook(toee.ET_OnTurnBasedStatusInit, toee.EK_NONE, TurnBasedStatusInitNoActions, ())
 #modObj1.AddHook(toee.ET_OnBeginRound, toee.EK_NONE, Surprised2_OnBeginRound, ())
-#modObj1.AddHook(toee.ET_OnD20Signal, toee.EK_S_BeginTurn, Surprised2_S_BeginTurn, ())
+modObj1.AddHook(toee.ET_OnD20Query, toee.EK_Q_AOOPossible, OnD20Query_Q_AOOPossible, ())
 modObj1.AddHook(toee.ET_OnGetTooltip, toee.EK_NONE, Surprised2_OnGetTooltip, ())
 modObj1.AddHook(toee.ET_OnGetEffectTooltip, toee.EK_NONE, Surprised2_OnGetEffectTooltip, ())

@@ -13,11 +13,3 @@ def san_new_map(attachee, triggerer):
 		
 	return toee.RUN_DEFAULT
 
-def san_enter_combat(attachee, triggerer):
-	assert isinstance(attachee, toee.PyObjHandle)
-	debug.breakp("pc san_enter_combat {}".format(attachee))
-	daemon = ctrl_daemon.CtrlDaemon.get_current_daemon()
-	print("san_new_map daemon: {}".format(daemon))
-	if (daemon and "pc_san_enter_combat" in dir(daemon)):
-		daemon.pc_san_enter_combat(attachee, triggerer)
-	return toee.RUN_DEFAULT

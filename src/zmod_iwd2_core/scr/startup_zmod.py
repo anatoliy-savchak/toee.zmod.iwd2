@@ -1,4 +1,7 @@
-import toee, tpdp, const_toee, factions_zmod, debug
+import toee, tpdp, const_toee, factions_zmod
+import combat_strategy_hooks
+import sys, logging
+
 
 def zmod_conditions_apply_pc():
 	for pc in toee.game.party:
@@ -6,8 +9,12 @@ def zmod_conditions_apply_pc():
 		pc.condition_add("Smash_Object")
 		#pc.condition_add("Skill_Appraise_Bonus")
 		pc.condition_add("Inspect")
-		pc.faction_add(factions_zmod.FACTION_ALLY_NPC)
-		pc.faction_add(factions_zmod.FACTION_FIRENDY_NPC)
+		pc.condition_add('Rest_Full')
+		#pc.condition_add("Debug_Location")
+		#pc.condition_add("Debug_Rotation")
+
+		#pc.faction_add(factions_zmod.FACTION_ALLY_NPC)
+		#pc.faction_add(factions_zmod.FACTION_FIRENDY_NPC)
 	return
 
 def zmod_templeplus_config_apply():
@@ -24,10 +31,20 @@ def zmod_templeplus_config_apply():
 		tpdp.config_set_bool("disablechooserandomspell_regardinvulnerablestatus", 1)
 		tpdp.config_set_bool("iszmod", 1)
 	
-	firstpc = toee.game.party[0]
-	firstpc.scripts[const_toee.sn_new_map] = 6101
-	#debug.breakp("[const_toee.sn_enter_combat] = 6101")
-	firstpc.scripts[const_toee.sn_enter_combat] = 6101
+
+	combat_strategy_hooks.hook_module()
+
+	# could be run from startup.txt
+	party = toee.game.party
+	if (party):
+		firstpc = party[0]
+		if (firstpc):
+			firstpc.scripts[const_toee.sn_new_map] = 6101
+			firstpc.condition_add("InitiativeInfo")
+			# DEBUG!!
+			#firstpc.feat_add("Forge Weapon and Armor") # CHEAT
+
+	#zmod_setup_logging()
 	return
 
 def zmod_change_pcs_radius():
@@ -37,4 +54,20 @@ def zmod_change_pcs_radius():
 		print("pc proto: {}".format(pc.proto))
 		protoobj = toee.game.getproto(pc.proto)
 		protoobj.radius = 30
+	return
+
+ghandler = None
+
+def zmod_setup_logging():
+	global ghandler
+	if (ghandler is None):
+		logger = logging.getLogger()
+		logger.setLevel(logging.DEBUG)
+		formatter = logging.Formatter('%(funcName)s %(message)s')
+		stdout_handler = logging.StreamHandler(sys.stdout)
+		#stdout_handler.setLevel(logging.DEBUG)
+		stdout_handler.setLevel(5)
+		stdout_handler.setFormatter(formatter)
+		ghandler = stdout_handler
+		logger.addHandler(stdout_handler)
 	return

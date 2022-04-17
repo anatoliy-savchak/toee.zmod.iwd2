@@ -11,7 +11,12 @@ def OnQueryReturnTrue(attachee, args, evt_obj):
 	assert isinstance(attachee, toee.PyObjHandle)
 	assert isinstance(args, tpdp.EventArgs)
 	assert isinstance(evt_obj, tpdp.EventObjD20Query)
-	
+
+	blindsight_range = attachee.d20_query("Blindsight Range")
+	if blindsight_range and not attachee.d20_query(toee.Q_Critter_Is_Deafened):
+		# can see through hearing
+		return 0
+
 	evt_obj.return_val = 1
 	return 0
 
@@ -19,6 +24,11 @@ def OnQueryReturnFalse(attachee, args, evt_obj):
 	assert isinstance(attachee, toee.PyObjHandle)
 	assert isinstance(args, tpdp.EventArgs)
 	assert isinstance(evt_obj, tpdp.EventObjD20Query)
+
+	blindsight_range = attachee.d20_query("Blindsight Range")
+	if blindsight_range and not attachee.d20_query(toee.Q_Critter_Is_Deafened):
+		# can see through hearing
+		return 0
 	
 	evt_obj.return_val = 0
 	return 0
@@ -29,6 +39,10 @@ def OnGetMoveSpeed(attachee, args, evt_obj):
 	assert isinstance(evt_obj, tpdp.EventObjMoveSpeed)
 	
 	if (not attachee.d20_query(toee.Q_Critter_Has_True_Seeing)):
+		blindsight_range = attachee.d20_query("Blindsight Range")
+		if blindsight_range and not attachee.d20_query(toee.Q_Critter_Is_Deafened):
+			# can see through hearing
+			return 0
 		evt_obj.factor = evt_obj.factor * 0.5
 	return 0
 
@@ -53,6 +67,10 @@ def OnToHitBonusFromDefenderCondition(attachee, args, evt_obj):
 	assert isinstance(args, tpdp.EventArgs)
 	assert isinstance(evt_obj, tpdp.EventObjAttack)
 
+	blindsight_range = attachee.d20_query("Blindsight Range")
+	if blindsight_range and not attachee.d20_query(toee.Q_Critter_Is_Deafened):
+		# can see through hearing
+		return 0
 	evt_obj.bonus_list.add(2, 0, 161) #{161}{Attacker is not Visible}
 	return 0
 
@@ -60,6 +78,11 @@ def OnGetAC(attachee, args, evt_obj):
 	assert isinstance(attachee, toee.PyObjHandle)
 	assert isinstance(args, tpdp.EventArgs)
 	assert isinstance(evt_obj, tpdp.EventObjAttack)
+
+	blindsight_range = attachee.d20_query("Blindsight Range")
+	if blindsight_range and not attachee.d20_query(toee.Q_Critter_Is_Deafened):
+		# can see through hearing
+		return 0
 
 	evt_obj.bonus_list.add_cap(8, 0, 189)#{189}{~Blinded~[TAG_BLINDED]}
 	evt_obj.bonus_list.add_cap(3, 0, 189)#{189}{~Blinded~[TAG_BLINDED]}

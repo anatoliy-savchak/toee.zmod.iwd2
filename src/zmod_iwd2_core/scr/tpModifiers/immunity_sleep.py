@@ -13,7 +13,7 @@ def OnConditionAddPre(attachee, args, evt_obj):
 	assert isinstance(args, tpdp.EventArgs)
 	assert isinstance(evt_obj, tpdp.EventObjModifier)
 
-	if (evt_obj.is_modifier("sp-Sleep") or evt_obj.is_modifier("sp-Deep Slumber")):
+	if (evt_obj.is_modifier("sp-Sleep")):
 		#attachee.float_text_line( "Sleep Immunity", toee.tf_red)
 		evt_obj.return_val = 0
 		attachee.float_mesfile_line("mes\\combat.mes", 5059, toee.tf_red ) # "Sleep Immunity"

@@ -89,6 +89,18 @@ class TacticsHelper(object):
 		self.add_simple("target friend nospell")
 		return
 
+	def add_target_bad_will(self):
+		self.add_simple("target bad will")
+		return
+
+	def add_target_bad_fort(self):
+		self.add_simple("target bad fort")
+		return
+
+	def add_target_bad_reflex(self):
+		self.add_simple("target bad reflex")
+		return
+
 	def add_target_prone(self):
 		self.custom_tactics.append("target prone")
 		self.custom_tactics.append("")
@@ -172,12 +184,42 @@ class TacticsHelper(object):
 		self.custom_tactics[0] = name
 		return
 
+	def set_name(self, name):
+		self.custom_tactics[0] = name
+		return
+
 	def add_goto_loc(self, loc):
 		self.add_triplet("goto", str(loc), "")
 		return
 
 	def add_goto(self, locx, locy):
 		self.add_triplet("goto", str(locx) + " " + str(locy), "")
+		return
+
+	def add_move_to(self, abs_x, abs_y):
+		abs_x, abs_y = int(round(abs_x)), int(round(abs_y))
+		self.add_triplet("move to", str(int(abs_x)) + " " + str(int(abs_y)), "")
+		return
+
+	def add_move_to(self, loc_full):
+		abs_x, abs_y = loc_full.get_overall_offset()
+		abs_x, abs_y = int(round(abs_x)), int(round(abs_y))
+		self.add_triplet("move to", str(int(abs_x)) + " " + str(int(abs_y)), "")
+		return
+
+	def add_moving_to(self, abs_x, abs_y):
+		abs_x, abs_y = int(round(abs_x)), int(round(abs_y))
+		self.add_triplet("moving to", str(int(abs_x)) + " " + str(int(abs_y)), "")
+		return
+
+	def add_moving_to(self, loc_full):
+		abs_x, abs_y = loc_full.get_overall_offset()
+		abs_x, abs_y = int(round(abs_x)), int(round(abs_y))
+		self.add_triplet("moving to", str(int(abs_x)) + " " + str(int(abs_y)), "")
+		return
+
+	def add_strike(self):
+		self.add_simple("strike")
 		return
 
 	def add_halt(self):
@@ -253,9 +295,25 @@ class TacticsHelper(object):
 		self.add_simple("reload")
 		return
 
+	def add_trip(self):
+		self.add_simple("trip")
+		return
+
+	def add_go_ranged(self):
+		self.add_simple("go ranged")
+		return
+
+	def add_go_melee(self):
+		self.add_simple("go melee")
+		return
+
+	def add_withdraw_to(self, abs_x, abs_y):
+		abs_x, abs_y = int(round(abs_x)), int(round(abs_y))
+		self.add_triplet("withdraw to", str(abs_x) + " " + str(abs_y), "")
+		return
+
 	def set_strategy(self, npc):
 		self.make_name()
 		print(self.custom_tactics)
 		npc.ai_strategy_set_custom(self.custom_tactics, 0)
 		return
-

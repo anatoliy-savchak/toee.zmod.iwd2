@@ -80,6 +80,20 @@ def _off_on_timeevent(obj):
 	obj.object_flag_set(toee.OF_OFF)
 	return 1
 
+def obj_timed_receive(obj, item, time = 1000, is_realtime = 0):
+	assert isinstance(obj, toee.PyObjHandle)
+	assert isinstance(item, toee.PyObjHandle)
+	toee.game.timevent_add(_receive_on_timeevent, ( obj, item ), time, is_realtime) # 1000 = 1 second
+	return
+
+def _receive_on_timeevent(obj, item):
+	assert isinstance(obj, toee.PyObjHandle)
+	assert isinstance(item, toee.PyObjHandle)
+	if (obj and item):
+		obj.item_get(item)
+	return 1
+
+
 def scroll_to_leader(time = 100):
 	toee.game.timevent_add(_scroll_to_leader_on_timeevent, (), time, 1) # 1000 = 1 second
 	return
@@ -224,3 +238,24 @@ def obj_setup_secret(obj, secret_door_dc, automatic_detect_allowed_from_ranks = 
 	dc_value = (automatic_detect_allowed_from_ranks << 7) + secret_door_dc
 	obj.obj_set_int(toee.obj_f_secretdoor_dc, dc_value)
 	return
+
+def money_to_str(value_cp):
+	assert isinstance(value_cp, int)
+	if (not value_cp):
+		return "0 gp"
+
+	gold = int(value_cp // const_toee.gp)
+	gold_str = "{:n} gp".format(gold) if (gold) else ""
+
+	reminder = value_cp - gold * const_toee.gp
+	if (not reminder):
+		if (gold_str == ""): gold_str = "0 gp"
+		return gold_str
+
+	silver = int(reminder // 10)
+	silver_str = "{:n} sp".format(silver) if (silver) else ""
+
+	reminder = int(reminder - silver * 10)
+	if (not reminder):
+		return "{} {}".format(gold_str, silver_str).strip()
+	return "{} {} {} cp".format(gold_str, silver_str, reminder).strip()

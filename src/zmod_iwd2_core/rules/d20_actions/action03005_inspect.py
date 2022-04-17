@@ -4,7 +4,7 @@ def GetActionName():
 	return "Inspect"
 
 def GetActionDefinitionFlags():
-	return toee.D20ADF_TargetSingleExcSelf | toee.D20ADF_UseCursorForPicking | toee.D20ADF_MagicEffectTargeting | toee.D20ADF_Breaks_Concentration
+	return toee.D20ADF_TargetSingleExcSelf | toee.D20ADF_UseCursorForPicking | toee.D20ADF_MagicEffectTargeting
 	
 def GetTargetingClassification():
 	return toee.D20TC_CastSpell

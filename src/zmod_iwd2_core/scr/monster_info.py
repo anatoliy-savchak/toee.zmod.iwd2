@@ -35,8 +35,7 @@ class MonsterInfo:
 				#npc = monster.get_npc()
 				continue
 			alive = utils_npc.npc_is_alive(npc, 1)
-			if (debug):
-				print("alive: {}, npc: {}".format(alive, npc))
+			if (debug): print("alive: {}, npc: {}".format(alive, npc))
 			dead = alive == 0
 			if (npc): 
 				for faction in npc.factions:

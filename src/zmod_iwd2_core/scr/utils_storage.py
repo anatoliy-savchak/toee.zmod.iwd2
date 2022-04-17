@@ -1,4 +1,4 @@
-import toee, json, os, sys, inspect, imp, traceback, debug, tpdp
+import toee, json, os, sys, inspect, imp, traceback, debug, tpdp, debugg
 
 def obj_storage(obj):
 	assert isinstance(obj, toee.PyObjHandle)
@@ -60,12 +60,7 @@ class MyEncoder(json.JSONEncoder):
 			#print(type(m.__file__))
 			#print(m.__file__)
 		#breakp("MyEncoder")
-		d = dict()
-		for key, value in o.__dict__.iteritems():
-			assert isinstance(key, str)
-			if (key.startswith("_")): continue
-			d[key] = value
-		return d
+		return o.__dict__
 
 class Storage(object):
 	_objs = dict()
@@ -82,10 +77,10 @@ class Storage(object):
 		#breakp("Storage.save({})".format(savegame))
 		try:
 			saveDirBase = "modules\\{}\\save\\".format(Storage.get_default_module())
-			saveDirName = "d" + savegame
-			#saveDirName = "\\Current\\dSlot"
+			saveDirName = "d" + savegame if (debugg.DEBUG_STORAGE_USE_FOLDER_CURRENT != 0) else "Current\\dSlot"
 			saveDir = saveDirBase + saveDirName
-			print(saveDir)
+			if (debugg.DEBUG_STORAGE_PRINT_FOLDER):
+				print("Saving ZMOD storage: {}".format(saveDir))
 			if (not os.path.exists(saveDir)):
 				os.makedirs(saveDir)
 
@@ -107,13 +102,13 @@ class Storage(object):
 	def load(savegame):
 		#breakp("Storage.load({})".format(savegame))
 		saveDirBase = "modules\\{}\\save\\".format(Storage.get_default_module())
-		saveDirName = "d" + savegame
-		#saveDirName = "\\Current\\dSlot"
+		saveDirName = "d" + savegame if (debugg.DEBUG_STORAGE_USE_FOLDER_CURRENT > 0) else "Current\\dSlot"
 		saveDir = saveDirBase + saveDirName
+		if (debugg.DEBUG_STORAGE_PRINT_FOLDER):
+			print("Loading ZMOD storage: {}".format(saveDir))
 		ss = Storage()
 		oo = ss.objs
 		oo.clear()
-		print("load: {}".format(saveDir))
 		if (os.path.exists(saveDir)):
 			Storage.loadObjects(saveDir)
 		else: 
@@ -123,6 +118,7 @@ class Storage(object):
 
 	@staticmethod
 	def reset():
+		print("STORAGE RESET")
 		ss = Storage()
 		oo = ss.objs
 		oo.clear()
@@ -191,6 +187,8 @@ class Storage(object):
 		if (v is None): return 0
 		fileName = n + ".json"
 		filePath = os.path.join(dirname, fileName)
+		if (debugg.DEBUG_STORAGE_PRINT_FILE):
+			print("Saving {}...".format(fileName))
 		#print("saveObjectStorage: filePath {}".format(filePath))
 		#breakp("saveObjectStorage")
 		result = 1
@@ -228,6 +226,8 @@ class Storage(object):
 			mod_cache = dict()
 			local_objects = list()
 			for fileName in files:
+				if (debugg.DEBUG_STORAGE_PRINT_FILE):
+					print("Loading {}...".format(fileName))
 				o = Storage.loadObjectStorage(dirname, fileName, mod_cache)
 				if (not (o is None)):
 					oo[o.name] = o

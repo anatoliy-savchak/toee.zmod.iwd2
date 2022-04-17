@@ -24,6 +24,7 @@ def OnGetMaxHP(attachee, args, evt_obj):
 
 	if (hp_bonus):
 		evt_obj.bonus_list.add(hp_bonus, 0, "Construct trait")
+		#debug.breakp("Construct trait")
 		#evt_obj.bonus_list.modify(hp_bonus, 0, 0)
 		#print("Construct_Max_HP, size: {}, hp_bonus: {}, flags: {}, sum: {}".format(size, hp_bonus, evt_obj.flags, evt_obj.bonus_list.get_sum()))
 		#debug.breakp("Construct trait")

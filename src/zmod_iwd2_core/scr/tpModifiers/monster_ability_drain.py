@@ -16,7 +16,10 @@ def Monster_Ability_Drain_Su_OnDealingDamage2(attachee, args, evt_obj):
 		print("Monster_Ability_Drain_Su_OnDealingDamage2")
 		attacks_with_drain = args.get_arg(4)
 		num_nat_attack = evt_obj.attack_packet.event_key - 1000
-		print("evt_obj.attack_packet.event_key: {}, mode: {}".format(evt_obj.attack_packet.event_key, attacks_with_drain))
+		print("evt_obj.attack_packet.event_key: {}, attacks_with_drain: {}, action_type: {}, attack_power: {}".format(evt_obj.attack_packet.event_key, attacks_with_drain, evt_obj.attack_packet.action_type, evt_obj.damage_packet.attack_power))
+
+		if evt_obj.attack_packet.action_type == toee.D20A_CAST_SPELL:
+			return 0
 
 		if (attacks_with_drain != 0): # 0 for all
 			flag = 1

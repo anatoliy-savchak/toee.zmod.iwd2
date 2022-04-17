@@ -13,7 +13,7 @@ class PyObjHandle(object):
 		self.location = 9223372036854775807	#	Gets location LongLong
 		self.location_full	= object()	#	Gets location tpdp.LocAndOffsets
 		self.type = obj_t_npc	#	Gets obj_f type like obj_t_npc
-		self.radius = 1.1	#	Gets and Sets radius
+		self.radius = 1.1	#	Gets and Sets radius, inches!
 		self.height = 1.1	#	Gets and Sets RenderHeight double
 		self.rotation = 1.1	#	Gets and Sets rotation double
 		self.map = 1	#	Gets current map id
@@ -30,7 +30,7 @@ class PyObjHandle(object):
 			self.substitute_inventory = PyObjHandle()	#	Gets and Sets object inventory substitute
 		self.factions = [0, 1]	#	Gets object factions tuple
 		self.feats = [0, 1]	#	Gets object feats tuple
-		self.spells_known = [PySpell(), PySpell()]	#	Gets spells known
+		self.spells_known = [PySpellStore(), PySpellStore()]	#	Gets spells known
 		self.spells_memorized = [PySpell(), PySpell()]	#	Gets spells memorized
 		self.loots = 1	#	Gets and Sets LootBehaviour
 		self.proto = 1	#	GetProtoId
@@ -90,9 +90,21 @@ class PyObjHandle(object):
 	def anim_goal_push_attack(self, tgt, anim_idx, is_crit, is_secondary):
 		""" npc.anim_goal_push_attack(PyObjHandle: tgt, anim_idx, is_crit, is_secondary) -> int"""
 		return
+	
+	def anim_goal_push_dodge(self, tgt, anim_idx, is_crit, is_secondary):
+		""" npc.anim_goal_push_dodge(PyObjHandle: tgt, anim_idx, is_crit, is_secondary) -> int"""
+		return
+	
+	def anim_goal_push_hit_by_weapon(self, tgt, anim_idx, is_crit, is_secondary):
+		""" npc.anim_goal_push_hit_by_weapon(PyObjHandle: tgt, anim_idx, is_crit, is_secondary) -> int"""
+		return
 
 	def anim_goal_use_object(self, target, goal_type = 40, target_loc = None, some_flag = None):
 		""" npc.anim_goal_use_object(PyObjHandle: target, int: goal_type = 40, int: target_loc = None, int: some_flag = None) -> int"""
+		return
+
+	def anim_goal_push_walk_to_tile(self, x, y, off_x, off_y):
+		""" npc.anim_goal_push_walk_to_tile(x, y, off_x, off_y) -> int"""
 		return
 
 	def anim_goal_get_new_id(self):
@@ -115,7 +127,7 @@ class PyObjHandle(object):
 		return
 
 	def begin_dialog(self, target, line):
-		"""Schedules a Python dialog time event in 1ms. pc.begin_dialog(PyObjHandle: target, int: line) -> none"""
+		"""Schedules a Python dialog time event in 1 ms, MUST BE PC!. pc.begin_dialog(PyObjHandle: target, int: line) -> none"""
 		return
 
 	def can_sneak_attack(self, target):
@@ -215,7 +227,7 @@ class PyObjHandle(object):
 	def d20_query(self, key):
 		"""npc.d20_query(int: key) -> int
 		key --- if string then D20QueryPython
-		key --- if int then d20Query, e.g. EK_Q_Helpless
+		key --- if int then d20Query, e.g. Q_Helpless
 		"""
 		return 0
 
@@ -250,6 +262,10 @@ class PyObjHandle(object):
 		"""npc.deal_attack_damage(PyObjHandle: attacker, int[dispatcher]: d20_data, int[D20CAF_HIT]: flags, int[D20A_NONE]: actionType) -> None"""
 		return
 
+	def heal(self, healer, dice, actionType, dummySpellId):
+		"""npc.heal(PyObjHandle: healer, PyDice: dice, int[D20A_NONE]: actionType, 0) -> None"""
+		return
+
 	def destroy(self):
 		"""Destroys the object"""
 		return
@@ -274,10 +290,26 @@ class PyObjHandle(object):
 		"""npc.is_friendly(PyObjHandle: npc) -> int"""
 		return 1
 
+	def is_flanked_by(self, critter):
+		"""npc.is_flanked_by(PyObjHandle: critter) -> int"""
+		return 1
+
 	def is_active_combatant(self):
 		"""npc.is_active_combatant() -> int"""
 		return 1
 
+	def is_category_type(self, type):
+		"""npc.is_category_type(type: int[mc_type_aberration]) -> int"""
+		return
+
+	def is_category_subtype(self, type):
+		"""npc.is_category_subtype(type: int[mc_subtype_air]) -> int"""
+		return
+
+	def is_category_subtype(self, type):
+		"""npc.is_category_subtype(type: int[mc_subtype_air]) -> int"""
+		return
+	
 	def inventory_item(self, index):
 		"""npc.inventory_item(int: index) -> PyObjHandle"""
 		return PyObjHandle()
@@ -287,7 +319,7 @@ class PyObjHandle(object):
 		return PyObjHandle()
 
 	def item_get(self, item, flags = 0):
-		"""npc.item_get(item: PyObjHandle, flags: int = 0) -> int"""
+		"""npc.item_get(item: PyObjHandle, flags: int[ItemInsertFlags] = 0) -> int"""
 		return 1
 
 	def item_flags_get(self):
@@ -311,7 +343,7 @@ class PyObjHandle(object):
 		return 
 
 	def item_worn_at(self, equip_slot):
-		"""npc.item_worn_at(int[item_wear_helmet-item_wear_lockpicks]: equip_slot) -> PyObjHandle"""
+		"""npc.item_worn_at(int[item_wear_weapon_primary]: equip_slot) -> PyObjHandle"""
 		return PyObjHandle()
 
 	def item_worn_unwield(self, equip_slot, drop_flag):
@@ -356,7 +388,7 @@ class PyObjHandle(object):
 
 	def get_category_type(self):
 		"""npc.get_category_type() -> int"""
-		return mc_type_humanoid
+		return
 
 	def get_initiative(self):
 		"""npc.get_initiative() -> int"""
@@ -468,6 +500,10 @@ class PyObjHandle(object):
 		"""Set internal field int value. npc.obj_set_int(int[obj_f_*]: field, int: value) -> None"""
 		return
 
+	def obj_set_int64(self, field, value):
+		"""Set internal field int64 value. npc.obj_set_int64(int[obj_f_*]: field, int: value) -> None"""
+		return
+
 	def obj_set_obj(self, field, value):
 		"""Set internal field obj value. npc.obj_set_obj(int[obj_f_*]: field, PyObjHandle: value) -> int"""
 		return 1
@@ -475,6 +511,18 @@ class PyObjHandle(object):
 	def obj_get_obj(self, field):
 		"""Get internal field obj value. npc.obj_get_obj(int[obj_f_*]: field) -> PyObjHandle"""
 		return PyObjHandle()
+
+	def obj_get_string(self, field):
+		return ""
+
+	def obj_get_idx_obj(self, field, idx):
+		return PyObjHandle()
+
+	def obj_get_idx_obj_size(self, field):
+		return 0
+
+	def obj_get_spell(self, field, idx):
+		return PySpellStore()
 
 	def object_script_execute(self, triggerer, scriptEvent):
 		"""npc.object_script_execute(PyObjHandle: triggerer, int[sn_first_heartbeat]: field) -> int"""
@@ -513,6 +561,9 @@ class PyObjHandle(object):
 	def runoff(self, loc, off_x, off_y):
 		return
 
+	def rumor_log_add(self, rumor_id):
+		return
+
 	def saving_throw(self, dc, type, saving_throw_flags, attacker, d20a_type = None):
 		"""npc.saving_throw_spell(int: dc, int[D20_Save_Fortitude]: type, int[D20STD_F_REROLL]: saving_throw_flags, PyObjHandle: attacker) -> int (finalSaveThrowMod + diceResult >= dc): """
 		return 0
@@ -541,8 +592,8 @@ class PyObjHandle(object):
 		""" npc.skill_roll(int[skill_appraise...]: skill_id, int: dc, int: flags) -> int"""
 		return 0
 
-	def spell_known_add(self, spellIdx, spellClassCode, slotLevel):
-		"""npc.spell_known_add(int[...]: spellIdx, int: spellClassCode, int: slotLevel [zero based]) -> None"""
+	def spell_known_add(self, spell_enum, spellClassCode, slotLevel):
+		"""npc.spell_known_add(int: spell_enum, int: spellClassCode, int: slotLevel [zero based]) -> None"""
 		return
 
 	def spell_memorized_add(self, spellIdx, spellClassCode, slotLevel):
@@ -551,9 +602,6 @@ class PyObjHandle(object):
 	
 	def spells_pending_to_memorized(self):
 		return
-
-	def standpoint_get(self, type = STANDPOINT_DAY):
-		return {"mapId": 1, "location": 123, "loc_x": 1, "loc_y": 1, "off_x": 0.123, "off_y": 0.123, "jumpPointId": -1}
 
 	def standpoint_set(self, type, jumppoint, loc = 0, mapid = None, loc_x = 0.0, loc_y = 0.0):
 		"""npc.standpoint_set(int[STANDPOINT_DAY]: type, int: jumppoint, long: loc = 0, int: mapid = None, float: loc_x = 0.0, float: loc_y = 0.0) -> None, see jumppoint.tab"""
@@ -592,7 +640,12 @@ class game(object):
 	quests = PyQuests()
 	char_ui_display_type = 0
 	global_flags = PyGlobalFlags()
+	global_vars = PyGlobalVars()
 	time = PyTimeStamp()
+	story_state = 1
+	party_alignment = ALIGNMENT_LAWFUL_GOOD
+	selected = (PyObjHandle(), PyObjHandle())
+	hovered = PyObjHandle()
 
 	@staticmethod
 	def obj_create(protoId, loc, offset_x = None, offset_y = None):
@@ -662,18 +715,29 @@ class game(object):
 	
 	@staticmethod
 	def obj_list_range(location, radius, flags):
-		""" obj_list_range(long: location, int[feet]: radius, int[OLC_NONE]: flags) -> (PyObjHandle(), PyObjHandle())"""
+		""" obj_list_range(long: location, int[feet]: radius, int[OLC_CRITTERS]: flags) -> (PyObjHandle(), PyObjHandle())"""
 		return (PyObjHandle(), PyObjHandle())
 
 	@staticmethod
 	def obj_list_vicinity(location, flags):
-		""" obj_list_vicinity(long: location, int[OLC_NONE]: flags) -> (PyObjHandle(), PyObjHandle())"""
+		""" obj_list_vicinity(long: location, int[OLC_CRITTERS]: flags) -> (PyObjHandle(), PyObjHandle())"""
 		return (PyObjHandle(), PyObjHandle())
 
 	@staticmethod
 	def obj_list_cone(originHndl, flags, radius, coneLeft, coneArc):
 		""" obj_list_cone(PyObjHandle: originHndl, int[OLC_NONE]: flags, int[feet]: radius, int: coneLeft, int: coneArc) -> (PyObjHandle(), PyObjHandle())"""
 		return (PyObjHandle(), PyObjHandle())
+
+	@staticmethod
+	def sound(sound_id, loop_count = 0):
+		assert isinstance(sound_id, int)
+		return
+
+	@staticmethod
+	def sound_local_obj(sound_id, obj, loop_count = 0):
+		assert isinstance(sound_id, int)
+		assert isinstance(obj, PyObjHandle)
+		return
 
 	@staticmethod
 	def timevent_add(func, func_args_tuple, time_ms, is_realtime = 0):
@@ -753,7 +817,7 @@ def anyone(targetObjs, methodName, methodArg):
 
 class PyObjScripts(object):
 	def __getitem__(self, key):
-		return PyObjHandle()
+		return 1
 	def __setitem__(self, key, value):
 		return
 
@@ -830,6 +894,27 @@ class PyDice(object):
 def dice_new(dice_str):
 	"""dice_new(str: dice_str) -> PyDice"""
 	return PyDice()
+
+class PySpellStore(object):
+	def __init__(self):
+		self.spell_enum = 0
+		self.spell_level = 0
+		self.spell_class = 0
+		self.spell_name = ""
+		return
+
+	def is_area_spell(self):
+		return 0
+
+	def is_mode_target(self, modeTarget):
+		"""is_mode_target(UiPickerType: modeTarget) -> 0"""
+		return 0
+
+	def is_naturally_cast(self):
+		return 0
+
+	def is_used_up(self):
+		return 0
 
 class PySpell(object):
 	def __init__(self, spellEnum = 0):
@@ -923,6 +1008,17 @@ class PyTrap(object):
 		return D20CAF_HIT
 
 class PyGlobalFlags(object):
+	def __init__(self):
+		return
+
+	def __getitem__(self, index):
+		return 1
+
+	def __setitem__(self, index, data):
+		assert isinstance(data, int)
+		return
+
+class PyGlobalVars(object):
 	def __init__(self):
 		return
 
@@ -2212,6 +2308,7 @@ stat_level_loremaster = 29
 stat_level_mystic_theurge = 30
 stat_level_shadowdancer = 31
 stat_level_thaumaturgist = 32
+
 stat_level_warlock = 33
 stat_level_favored_soul = 34
 stat_level_red_avenger = 35
@@ -2225,6 +2322,11 @@ stat_level_cryokineticist = 42
 stat_level_frost_mage = 43
 stat_level_artificer = 44
 stat_level_abjurant_champion = 45
+stat_level_scout = 46
+stat_level_warmage = 47
+stat_level_beguiler = 48
+stat_level_swashbuckler = 49
+
 stat_level_psion = 58
 stat_level_psychic_warrior = 59
 stat_level_soulknife = 60
@@ -2238,6 +2340,7 @@ stat_level_pyrokineticist = 67
 stat_level_slayer = 68
 stat_level_thrallherd = 69
 stat_level_war_mind = 70
+
 stat_level_crusader = 71
 stat_level_swordsage = 72
 stat_level_warblade = 73
@@ -2249,6 +2352,9 @@ stat_level_jade_phoenix_mage = 78
 stat_level_master_of_nine = 79
 stat_level_ruby_knight_vindicator = 80
 stat_level_shadow_sun_ninja = 81
+stat_level_fochlucan_lyrist = 82
+stat_level_marshal = 83
+
 stat_hp_max = 228
 stat_hp_current = 229
 stat_race = 230
@@ -2589,8 +2695,8 @@ EK_S_HealSkill = 148
 EK_S_Sequence = 149
 EK_S_Pre_Action_Sequence = 150
 EK_S_Action_Recipient = 151
-EK_S_BeginTurn = 152
-EK_S_EndTurn = 153
+EK_S_BeginTurn = 152 # after dispTypeTurnBasedStatusInit
+EK_S_EndTurn = 153 # just before other dude start his turn
 EK_S_Dropped_Enemy = 154
 EK_S_Concentration_Broken = 155
 EK_S_Remove_Concentration = 156
@@ -2610,8 +2716,8 @@ EK_S_Combat_End = 169
 EK_S_Initiative_Update = 170
 EK_S_RadialMenu_Clear_Checkbox_Group = 171
 EK_S_Combat_Critter_Moved = 172
-EK_S_Hide = 173
-EK_S_Show = 174
+EK_S_Hide = 173 # TransparencySet <= 64
+EK_S_Show = 174 # TransparencySet > 64
 EK_S_Feat_Remove_Slippery_Mind = 175
 EK_S_Broadcast_Action = 176
 EK_S_Remove_Disease = 177
@@ -2826,8 +2932,7 @@ skill_ride = 39
 skill_swim = 40
 skill_use_rope = 41
 
-spell_acid_splash = 555
-spell_ahobm = 570
+spell_none = 0
 spell_aid = 1
 spell_air_walk = 2
 spell_alarm = 3
@@ -2867,7 +2972,6 @@ spell_blasphemy = 36
 spell_bless = 37
 spell_bless_water = 38
 spell_bless_weapon = 39
-spell_blight = 542
 spell_blindness_deafness = 40
 spell_blink = 41
 spell_blur = 42
@@ -2875,13 +2979,13 @@ spell_break_enchantment = 43
 spell_bulls_strength = 44
 spell_burning_hands = 45
 spell_call_lightning = 46
-spell_call_lightning_storm = 560
 spell_calm_animals = 47
 spell_calm_emotions = 48
 spell_cats_grace = 49
 spell_cause_fear = 50
 spell_chain_lightning = 51
 spell_change_self = 52
+spell_disguise_self = 52
 spell_changestaff = 53
 spell_chaos_hammer = 54
 spell_charm_monster = 55
@@ -2918,7 +3022,6 @@ spell_create_greater_undead = 85
 spell_create_undead = 86
 spell_create_water = 87
 spell_creeping_doom = 88
-spell_crushing_despair = 563
 spell_cure_critical_wounds = 89
 spell_cure_light_wounds = 90
 spell_cure_minor_wounds = 91
@@ -2930,11 +3033,9 @@ spell_darkness = 96
 spell_darkvision = 97
 spell_daylight = 98
 spell_daze = 99
-spell_daze_monster = 556
 spell_death_knell = 100
 spell_death_ward = 101
 spell_deathwatch = 102
-spell_deep_slumber = 562
 spell_deeper_darkness = 103
 spell_delay_poison = 104
 spell_delayed_blast_fireball = 105
@@ -2954,23 +3055,18 @@ spell_detect_snares_and_pits = 118
 spell_detect_thoughts = 119
 spell_detect_undead = 120
 spell_dictum = 121
-spell_dimension_door = 123
 spell_dimensional_anchor = 122
+spell_dimension_door = 123
 spell_diminish_plants = 124
 spell_discern_lies = 125
 spell_discern_location = 126
-spell_disguise_self = 52
 spell_disintegrate = 127
 spell_dismissal = 128
-spell_dispel_air = 543
 spell_dispel_chaos = 129
-spell_dispel_earth = 544
 spell_dispel_evil = 130
-spell_dispel_fire = 545
 spell_dispel_good = 131
 spell_dispel_law = 132
 spell_dispel_magic = 133
-spell_dispel_water = 546
 spell_displacement = 134
 spell_disrupt_undead = 135
 spell_divination = 136
@@ -2982,7 +3078,6 @@ spell_dominate_person = 141
 spell_doom = 142
 spell_drawmijs_instant_summons = 143
 spell_dream = 144
-spell_eagles_splendor = 548
 spell_earthquake = 145
 spell_elemental_swarm = 146
 spell_emotion = 147
@@ -3002,7 +3097,6 @@ spell_explosive_runes = 160
 spell_eyebite = 161
 spell_fabricate = 162
 spell_faerie_fire = 163
-spell_false_life = 553
 spell_false_vision = 164
 spell_fear = 165
 spell_feather_fall = 166
@@ -3010,11 +3104,11 @@ spell_feeblemind = 167
 spell_find_the_path = 168
 spell_find_traps = 169
 spell_finger_of_death = 170
+spell_fireball = 171
 spell_fire_seeds = 172
 spell_fire_shield = 173
 spell_fire_storm = 174
 spell_fire_trap = 175
-spell_fireball = 171
 spell_flame_arrow = 176
 spell_flame_blade = 177
 spell_flame_strike = 178
@@ -3026,7 +3120,6 @@ spell_fog_cloud = 183
 spell_forbiddance = 184
 spell_forcecage = 185
 spell_foresight = 186
-spell_foxs_cunning = 549
 spell_freedom = 187
 spell_freedom_of_movement = 188
 spell_gaseous_form = 189
@@ -3036,17 +3129,14 @@ spell_gentle_repose = 192
 spell_ghost_sound = 193
 spell_ghoul_touch = 194
 spell_giant_vermin = 195
-spell_glibness = 552
 spell_glitterdust = 196
 spell_globe_of_invulnerability = 197
 spell_glyph_of_warding = 198
-spell_good_hope = 564
 spell_goodberry = 199
 spell_grease = 200
 spell_greater_command = 201
 spell_greater_dispelling = 202
 spell_greater_glyph_of_warding = 203
-spell_greater_heroism = 558
 spell_greater_magic_fang = 204
 spell_greater_magic_weapon = 205
 spell_greater_planar_ally = 206
@@ -3061,15 +3151,12 @@ spell_gust_of_wind = 214
 spell_hallow = 215
 spell_hallucinatory_terrain = 216
 spell_halt_undead = 217
-spell_harm = 566
 spell_haste = 219
-spell_heal = 565
-spell_heal_mount = 222
 spell_healing_circle = 221
+spell_heal_mount = 222
 spell_heat_metal = 223
 spell_helping_hand = 224
 spell_heroes_feast = 225
-spell_heroism = 557
 spell_hold_animal = 226
 spell_hold_monster = 227
 spell_hold_person = 228
@@ -3108,24 +3195,12 @@ spell_jump = 260
 spell_keen_edge = 261
 spell_knock = 262
 spell_know_direction = 263
-spell_label_level_0 = 803
-spell_label_level_1 = 804
-spell_label_level_2 = 805
-spell_label_level_3 = 806
-spell_label_level_4 = 807
-spell_label_level_5 = 808
-spell_label_level_6 = 809
-spell_label_level_7 = 810
-spell_label_level_8 = 811
-spell_label_level_9 = 812
 spell_legend_lore = 264
 spell_leomunds_secret_chest = 265
 spell_leomunds_secure_shelter = 266
 spell_leomunds_tiny_hut = 267
 spell_leomunds_trap = 268
-spell_lesser_confusion = 561
 spell_lesser_geas = 269
-spell_lesser_globe_of_invulnerability = 311
 spell_lesser_planar_ally = 270
 spell_lesser_planar_binding = 271
 spell_lesser_restoration = 272
@@ -3133,22 +3208,9 @@ spell_levitate = 273
 spell_light = 274
 spell_lightning_bolt = 275
 spell_limited_wish = 276
-spell_list_type_any = 1
-spell_list_type_arcane = 2
-spell_list_type_bardic = 3
-spell_list_type_clerical = 4
-spell_list_type_divine = 5
-spell_list_type_druidic = 6
-spell_list_type_extender = 11
-spell_list_type_none = 0
-spell_list_type_paladin = 7
-spell_list_type_psionic = 8
-spell_list_type_ranger = 9
-spell_list_type_special = 10
 spell_liveoak = 277
 spell_locate_creature = 278
 spell_locate_object = 279
-spell_longstrider = 554
 spell_mage_armor = 280
 spell_mage_hand = 281
 spell_magic_circle_against_chaos = 282
@@ -3166,24 +3228,10 @@ spell_major_creation = 293
 spell_major_image = 294
 spell_make_whole = 295
 spell_mark_of_justice = 296
-spell_mass_bears_endurance = 571
-spell_mass_bulls_strength = 572
-spell_mass_cats_grace = 573
 spell_mass_charm_monster = 297
-spell_mass_cure_critical_wounds = 579
-spell_mass_cure_moderate_wounds = 577
-spell_mass_cure_serious_wounds = 578
-spell_mass_eagles_splendor = 574
-spell_mass_foxs_cunning = 575
 spell_mass_haste = 298
 spell_mass_heal = 299
-spell_mass_hold_monster = 585
-spell_mass_hold_person = 588
-spell_mass_inflict_critical_wounds = 583
-spell_mass_inflict_moderate_wounds = 581
-spell_mass_inflict_serious_wounds = 582
 spell_mass_invisibility = 300
-spell_mass_owls_wisdom = 576
 spell_mass_suggestion = 301
 spell_maze = 302
 spell_meld_into_stone = 303
@@ -3194,6 +3242,7 @@ spell_meteor_swarm = 307
 spell_mind_blank = 308
 spell_mind_fog = 309
 spell_minor_creation = 310
+spell_lesser_globe_of_invulnerability = 311
 spell_minor_image = 312
 spell_miracle = 313
 spell_mirage_arcana = 314
@@ -3205,25 +3254,13 @@ spell_mordenkainens_disjunction = 319
 spell_mordenkainens_faithful_hound = 320
 spell_mordenkainens_lucubration = 321
 spell_mordenkainens_magnificent_mansion = 322
-spell_mordenkainens_private_sanctum = 568
 spell_mordenkainens_sword = 323
 spell_mount = 324
 spell_move_earth = 325
 spell_negative_energy_protection = 326
 spell_neutralize_poison = 327
-spell_new_slot_lvl_0 = 1605
-spell_new_slot_lvl_1 = 1606
-spell_new_slot_lvl_2 = 1607
-spell_new_slot_lvl_3 = 1608
-spell_new_slot_lvl_4 = 1609
-spell_new_slot_lvl_5 = 1610
-spell_new_slot_lvl_6 = 1611
-spell_new_slot_lvl_7 = 1612
-spell_new_slot_lvl_8 = 1613
-spell_new_slot_lvl_9 = 1614
 spell_nightmare = 328
 spell_nondetection = 329
-spell_none = 0
 spell_nystuls_magic_aura = 330
 spell_nystuls_undetectable_aura = 331
 spell_obscure_object = 332
@@ -3234,9 +3271,8 @@ spell_otilukes_freezing_sphere = 336
 spell_otilukes_resilient_sphere = 337
 spell_otilukes_telekinetic_sphere = 338
 spell_ottos_irresistible_dance = 339
-spell_owls_wisdom = 550
-spell_pass_without_trace = 341
 spell_passwall = 340
+spell_pass_without_trace = 341
 spell_permanency = 342
 spell_permanent_image = 343
 spell_persistent_image = 344
@@ -3248,7 +3284,6 @@ spell_planar_binding = 349
 spell_plane_shift = 350
 spell_plant_growth = 351
 spell_poison = 352
-spell_polar_ray = 586
 spell_polymorph_any_object = 353
 spell_polymorph_other = 354
 spell_polymorph_self = 355
@@ -3273,8 +3308,6 @@ spell_protection_from_spells = 373
 spell_prying_eyes = 374
 spell_purify_food_and_drink = 375
 spell_pyrotechnics = 376
-spell_quench = 559
-spell_rage = 547
 spell_rainbow_pattern = 378
 spell_raise_dead = 379
 spell_random_action = 380
@@ -3283,14 +3316,10 @@ spell_rarys_telepathic_bond = 382
 spell_ray_of_enfeeblement = 383
 spell_ray_of_frost = 384
 spell_read_magic = 385
-spell_readying_innate = 1
-spell_readying_vancian = 0
 spell_reduce = 386
-spell_reduce_animal = 551
 spell_refuge = 387
 spell_regenerate = 388
 spell_reincarnate = 389
-spell_reincarnation = 567
 spell_remove_blindness_deafness = 390
 spell_remove_curse = 391
 spell_remove_disease = 392
@@ -3300,8 +3329,8 @@ spell_repel_metal_or_stone = 395
 spell_repel_vermin = 396
 spell_repel_wood = 397
 spell_repulsion = 398
-spell_resist_elements = 400
 spell_resistance = 399
+spell_resist_elements = 400
 spell_restoration = 401
 spell_resurrection = 402
 spell_reverse_gravity = 403
@@ -3310,6 +3339,7 @@ spell_rope_trick = 405
 spell_rusting_grasp = 406
 spell_sanctuary = 407
 spell_scare = 408
+spell_scorching_ray = 733
 spell_screen = 409
 spell_scrying = 410
 spell_sculpt_sound = 411
@@ -3347,18 +3377,14 @@ spell_soften_earth_and_stone = 442
 spell_solid_fog = 443
 spell_soul_bind = 444
 spell_sound_burst = 445
-spell_source_type_ability = 0
-spell_source_type_arcane = 1
-spell_source_type_divine = 2
-spell_source_type_psionic = 3
 spell_speak_with_animals = 446
 spell_speak_with_dead = 447
 spell_speak_with_plants = 448
 spell_spectral_hand = 449
 spell_spell_immunity = 450
 spell_spell_resistance = 451
-spell_spell_turning = 453
 spell_spellstaff = 452
+spell_spell_turning = 453
 spell_spider_climb = 454
 spell_spike_growth = 455
 spell_spike_stones = 456
@@ -3367,29 +3393,29 @@ spell_statue = 458
 spell_status = 459
 spell_stinking_cloud = 460
 spell_stone_shape = 461
+spell_stoneskin = 462
 spell_stone_tell = 463
 spell_stone_to_flesh = 464
-spell_stoneskin = 462
 spell_storm_of_vengeance = 465
 spell_suggestion = 466
 spell_summon_monster_i = 467
 spell_summon_monster_ii = 468
 spell_summon_monster_iii = 469
 spell_summon_monster_iv = 470
-spell_summon_monster_ix = 475
 spell_summon_monster_v = 471
 spell_summon_monster_vi = 472
 spell_summon_monster_vii = 473
 spell_summon_monster_viii = 474
+spell_summon_monster_ix = 475
 spell_summon_natures_ally_i = 476
 spell_summon_natures_ally_ii = 477
 spell_summon_natures_ally_iii = 478
 spell_summon_natures_ally_iv = 479
-spell_summon_natures_ally_ix = 484
 spell_summon_natures_ally_v = 480
 spell_summon_natures_ally_vi = 481
 spell_summon_natures_ally_vii = 482
 spell_summon_natures_ally_viii = 483
+spell_summon_natures_ally_ix = 484
 spell_summon_swarm = 485
 spell_sunbeam = 486
 spell_sunburst = 487
@@ -3398,8 +3424,8 @@ spell_sympathy = 489
 spell_tashas_hideous_laughter = 490
 spell_telekinesis = 491
 spell_teleport = 492
-spell_teleport_without_error = 494
 spell_teleportation_circle = 493
+spell_teleport_without_error = 494
 spell_temporal_stasis = 495
 spell_tensers_floating_disk = 496
 spell_tensers_transformation = 497
@@ -3415,13 +3441,11 @@ spell_tree_stride = 506
 spell_true_resurrection = 507
 spell_true_seeing = 508
 spell_true_strike = 509
-spell_undeath_to_death = 587
 spell_undetectable_alignment = 510
 spell_unhallow = 511
 spell_unholy_aura = 512
 spell_unholy_blight = 513
 spell_unseen_servant = 514
-spell_vacant = 802
 spell_vampiric_touch = 515
 spell_vanish = 516
 spell_veil = 517
@@ -3449,6 +3473,196 @@ spell_wood_shape = 538
 spell_word_of_chaos = 539
 spell_word_of_recall = 540
 spell_zone_of_truth = 541
+spell_blight = 542
+spell_dispel_air = 543
+spell_dispel_earth = 544
+spell_dispel_fire = 545
+spell_dispel_water = 546
+spell_rage = 547
+spell_eagles_splendor = 548
+spell_foxs_cunning = 549
+spell_owls_wisdom = 550
+spell_reduce_animal = 551
+spell_glibness = 552
+spell_false_life = 553
+spell_longstrider = 554
+spell_acid_splash = 555
+spell_daze_monster = 556
+spell_heroism = 557
+spell_greater_heroism = 558
+spell_quench = 559
+spell_call_lightning_storm = 560
+spell_lesser_confusion = 561
+spell_deep_slumber = 562
+spell_crushing_despair = 563
+spell_good_hope = 564
+spell_heal = 565
+spell_harm = 566
+spell_reincarnation = 567
+spell_mordenkainens_private_sanctum = 568
+spell_ahobm = 570
+spell_mass_bears_endurance = 571
+spell_mass_bulls_strength = 572
+spell_mass_cats_grace = 573
+spell_mass_eagles_splendor = 574
+spell_mass_foxs_cunning = 575
+spell_mass_owls_wisdom = 576
+spell_mass_cure_moderate_wounds = 577
+spell_mass_cure_serious_wounds = 578
+spell_mass_cure_critical_wounds = 579
+spell_mass_inflict_moderate_wounds = 581
+spell_mass_inflict_serious_wounds = 582
+spell_mass_inflict_critical_wounds = 583
+spell_mass_hold_monster = 585
+spell_polar_ray = 586
+spell_undeath_to_death = 587
+spell_mass_hold_person = 588
+spell_vacant = 802
+spell_label_level_0 = 803
+spell_label_level_1 = 804
+spell_label_level_2 = 805
+spell_label_level_3 = 806
+spell_label_level_4 = 807
+spell_label_level_5 = 808
+spell_label_level_6 = 809
+spell_label_level_7 = 810
+spell_label_level_8 = 811
+spell_label_level_9 = 812
+# Reserved for doug 1000-1049
+spell_moment_of_prescience = 1000
+spell_touch_of_fatigue = 1001
+spell_ray_of_exhaustion = 1002
+spell_waves_of_fatigue = 1003
+spell_waves_of_exhaustion = 1004
+# Reserved for Sagenlicht 1050-1199
+spell_sound_lance = 1050
+spell_critical_strike = 1051
+spell_camouflage = 1052
+spell_appraising_touch = 1053
+spell_phantom_threat = 1054
+spell_distort_speech = 1055
+spell_distract = 1056
+spell_focusing_chant = 1057
+spell_heralds_call = 1058
+spell_improvisation = 1059
+spell_joyful_noise = 1060
+spell_inspirational_boost = 1061
+spell_invisibility_swift = 1062
+spell_ironguts = 1063
+spell_ironthunder_horn = 1064
+spell_insidious_rhythm = 1065
+spell_masters_touch = 1066
+spell_serene_visage = 1067
+spell_shock_and_awe = 1068
+spell_sticky_fingers = 1069
+spell_undersong = 1070
+spell_distract_assailant = 1071
+spell_insightfull_feint = 1072
+spell_lightfoot = 1073
+spell_snipers_shot = 1074
+spell_sonic_weapon = 1075
+spell_bonefiddle = 1076
+spell_cloud_of_bewilderment = 1077
+spell_curse_of_impending_blades = 1078
+spell_wave_of_grief = 1079
+spell_harmonic_chorus = 1080
+spell_iron_silence = 1081
+spell_war_cry = 1082
+spell_bladeweave = 1084
+spell_fell_the_greatest_foe = 1085
+spell_fire_shuriken = 1086
+spell_phantom_foe = 1087
+spell_veil_of_shadow = 1088
+spell_curse_of_impending_blades_mass = 1089
+spell_dissonant_chord = 1090
+spell_haunting_tune = 1091
+spell_loves_lament = 1092
+spell_ray_of_dizziness = 1093
+spell_wounding_whispers = 1094
+spell_dirge_of_discord = 1095
+spell_allegro = 1096
+spell_find_the_gap = 1097
+spell_wraithstrike = 1098
+spell_resonating_bolt = 1099
+spell_resistance_greater = 1100
+spell_fugue = 1101
+spell_sirines_grace = 1102
+spell_dolorous_blow = 1103
+spell_bolts_of_bedevilment = 1104
+spell_cacophonic_burst = 1105
+spell_wail_of_doom = 1106
+spell_heart_ripper = 1107
+spell_dirge = 1108
+spell_nixies_grace = 1109
+spell_ray_of_light = 1110
+spell_resistance_superior = 1111
+spell_strategic_charge = 1112
+spell_blessed_aim = 1113
+spell_clear_mind = 1114
+spell_deafening_clang = 1115
+spell_grave_strike = 1116
+spell_faith_healing = 1118
+spell_summon_undead_i = 1119
+spell_angelskin = 1120
+spell_demonhide = 1121
+spell_summon_undead_ii = 1122
+spell_hand_of_divinity = 1123
+spell_curse_of_ill_fortune = 1124
+spell_awaken_sin = 1125
+spell_checkmates_light = 1126
+spell_cloak_of_bravery = 1127
+spell_divine_protection = 1128
+spell_quick_march = 1129
+spell_shield_of_warding = 1130
+spell_blessing_of_bahamut = 1131
+spell_diamondsteel = 1132
+spell_righteous_fury = 1133
+spell_undead_bane_weapon = 1134
+spell_weapon_of_the_deity = 1135
+spell_axiomatic_storm = 1136
+spell_holy_storm = 1137
+spell_unholy_storm = 1138
+spell_summon_undead_iii = 1139
+spell_visage_of_the_deity_lesser = 1140
+spell_lawful_sword = 1141
+spell_summon_undead_iv = 1142
+spell_castigate = 1143
+spell_summon_undead_v = 1144
+spell_conviction = 1145
+spell_foundation_of_stone = 1146
+spell_nightshield = 1147
+spell_nimbus_of_light = 1148
+spell_brambles = 1149
+spell_deific_vengeance = 1150
+spell_frost_breath = 1151
+spell_ghost_touch_armor = 1152
+spell_aid_mass = 1153
+spell_align_weapon_mass = 1154
+spell_bless_weapon_swift = 1155
+spell_anarchic_storm = 1156
+spell_clutch_of_orcus = 1157
+spell_conviction_mass = 1158
+spell_corona_of_cold = 1159
+spell_align_weapon = 1160
+spell_demon_dirge = 1161
+spell_devil_blight = 1162
+spell_energy_vortex = 1163
+spell_grace = 1164
+spell_resist_energy_mass = 1165
+spell_nauseating_breath = 1166
+spell_slashing_darkness = 1167
+spell_spikes = 1168
+spell_tremor = 1169
+spell_weapon_of_energy = 1170
+spell_inevitable_defeat = 1302
+spell_kelgores_fire_bolt = 1303
+spell_rouse = 1305
+spell_bigbys_tripping_hand = 1306
+spell_vertigo = 1307
+spell_whelm = 1308
+spell_mass_whelm = 1309
+spell_whelming_blast = 1310
+spell_greater_mirror_image = 1311
 
 # object flags
 OF_DESTROYED = 1
@@ -3457,32 +3671,32 @@ OF_FLAT = 4
 OF_TEXT = 8
 OF_SEE_THROUGH = 16
 OF_SHOOT_THROUGH = 32
+OF_ANIMATED_DEAD = 536870912
 OF_TRANSLUCENT = 64
 OF_SHRUNK = 128
-OF_DONTDRAW = 256
-OF_INVISIBLE = 512
-OF_NO_BLOCK = 1024
 OF_CLICK_THROUGH = 2048
-OF_INVENTORY = 4096
-OF_DYNAMIC = 8192
-OF_PROVIDES_COVER = 16384
-OF_RANDOM_SIZE = 32768
-OF_NOHEIGHT = 65536
-OF_WADING = 131072
-OF_UNUSED_40000 = 262144
-OF_STONED = 524288
+OF_DISALLOW_WADING = 67108864
+OF_DONTDRAW = 256
 OF_DONTLIGHT = 1048576
-OF_TEXT_FLOATER = 2097152
-OF_INVULNERABLE = 4194304
+OF_DYNAMIC = 8192
 OF_EXTINCT = 8388608
+OF_HEIGHT_SET = 268435456
+OF_INVENTORY = 4096
+OF_INVISIBLE = 512
+OF_INVULNERABLE = 4194304
+OF_NOHEIGHT = 65536
+OF_NO_BLOCK = 1024
+OF_PROVIDES_COVER = 16384
+OF_RADIUS_SET = 2147483648 #2147483648L
+OF_RANDOM_SIZE = 32768
+OF_STONED = 524288
+OF_TELEPORTED = 1073741824
+OF_TEXT_FLOATER = 2097152
 OF_TRAP_PC = 16777216
 OF_TRAP_SPOTTED = 33554432
-OF_DISALLOW_WADING = 67108864
 OF_UNUSED_08000000 = 134217728
-OF_HEIGHT_SET = 268435456
-OF_ANIMATED_DEAD = 536870912
-OF_TELEPORTED = 1073741824
-OF_RADIUS_SET = 2147483648 #2147483648L
+OF_UNUSED_40000 = 262144
+OF_WADING = 131072
 
 OPF_ALWAYS_LOCKED = 16
 OPF_BUSTED = 128
@@ -3958,6 +4172,29 @@ ALIGNMENT_EVIL = 8
 ALIGNMENT_NEUTRAL_EVIL = 8
 ALIGNMENT_LAWFUL_EVIL = 9
 ALIGNMENT_CHAOTIC_EVIL = 10
+
+# Weapon Flags
+OWF_LOUD = 1
+OWF_SILENT= 2 
+OWF_UNUSED_1 = 4
+OWF_UNUSED_2 = 8
+OWF_THROWABLE = 0x10
+OWF_TRANS_PROJECTILE = 0x20
+OWF_BOOMERANGS = 0x40
+OWF_IGNORE_RESISTANCE = 0x80
+OWF_DAMAGE_ARMOR = 0x100
+OWF_DEFAULT_THROWS = 0x200
+OWF_RANGED_WEAPON = 0x400
+OWF_WEAPON_LOADED = 0x800
+OWF_MAGIC_STAFF = 0x1000
+
+# Armor Type
+ARMOR_TYPE_LIGHT = 0
+ARMOR_TYPE_MEDIUM = 1
+ARMOR_TYPE_HEAVY = 2
+ARMOR_TYPE_SHIELD = 3
+ARMOR_TYPE_BITMASK = 3
+ARMOR_TYPE_NONE = 0x10
 
 # Weapon Type
 wt_bastard_sword = 57
@@ -4486,6 +4723,7 @@ trickery = 20
 war = 21
 water = 22
 special = 23
+domain_special = 23
 
 # Schools
 Abjuration = 1
@@ -4514,3 +4752,42 @@ Scrying = 12
 STANDPOINT_DAY = 0
 STANDPOINT_NIGHT = 1
 STANDPOINT_SCOUT = 2
+
+SCF_VERBAL = 1
+SCF_SOMATIC = 2
+SCF_XP = 4
+SCF_GP = 8
+
+# Race Definition Flags
+RDF_None = 0
+RDF_Vanilla = 1   # Vanilla ToEE race
+RDF_Monstrous = 2 # Monster races e.g. Trolls
+
+CDF_None = 0
+CDF_BaseClass = 1 # denotes class is base class (can be taken at level 1, and factors into multiclass calculations; unlike Prestige Classes for instance)
+CDF_CoreClass = 2 # class is drawn from Core 3.5 rules. Those that aren't will not be selectable unless "Non-Core Materials" is enabled.
+
+base_attack_bonus_type_martial = 0
+base_attack_bonus_type_semi_martial = 1
+base_attack_bonus_type_non_martial = 2
+
+spell_list_type_none = 0
+spell_list_type_any = 1
+spell_list_type_arcane = 2
+spell_list_type_bardic = 3 # note: bard spells are a subset of arcane spells in terms of mechanics
+spell_list_type_clerical = 4 #
+spell_list_type_divine = 5
+spell_list_type_druidic = 6
+spell_list_type_paladin = 7
+spell_list_type_psionic = 8
+spell_list_type_ranger = 9
+spell_list_type_special = 10
+spell_list_type_extender = 11
+
+spell_source_type_ability = 0
+spell_source_type_arcane = 1
+spell_source_type_divine = 2
+spell_source_type_psionic = 3
+
+spell_readying_vancian = 0
+spell_readying_innate = 1

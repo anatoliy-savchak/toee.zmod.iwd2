@@ -1,98 +1,8 @@
 from toee import *
 from math import sqrt, atan2
-import _include
-from co8Util.PersistentData import *
 import os
-
-#########################################
-# Persistent flags/vars/strs		#
-# Uses keys starting with		#
-# 'Flaggg', 'Varrr', 'Stringgg' 	#
-#########################################
-
-def get_f(flagkey):
-	flagkey_stringized = 'Flaggg' + str(flagkey)
-	tempp = Co8PersistentData.getData(flagkey_stringized)
-	if isNone(tempp):
-		return 0
-	else:
-		return int(tempp) != 0
-
-def set_f(flagkey, new_value = 1):
-	flagkey_stringized = 'Flaggg' + str(flagkey)
-	Co8PersistentData.setData(flagkey_stringized, new_value)
-
-def get_v(varkey):
-	varkey_stringized = 'Varrr' + str(varkey)
-	tempp = Co8PersistentData.getData(varkey_stringized)
-	if isNone(tempp):
-		return 0
-	else:
-		return int(tempp)
-
-def set_v(varkey, new_value):
-	varkey_stringized = 'Varrr' + str(varkey)
-	Co8PersistentData.setData(varkey_stringized, new_value)
-	return get_v(varkey)
-
-def inc_v(varkey, inc_amount = 1):
-	varkey_stringized = 'Varrr' + str(varkey)
-	Co8PersistentData.setData(varkey_stringized, get_v(varkey) + inc_amount)
-	return get_v(varkey)
-
-def get_s(strkey):
-	strkey_stringized = 'Stringgg' + str(strkey)
-	tempp = Co8PersistentData.getData(strkey_stringized)
-	if isNone(tempp):
-		return ''
-	else:
-		return str(tempp)
-
-def set_s(strkey, new_value):
-	new_value_stringized = str(new_value)
-	strkey_stringized = 'Stringgg' + str(strkey)
-	Co8PersistentData.setData(strkey_stringized, new_value_stringized)
-
-
-#########################################
-# Bitwise NPC internal flags			#
-# 1-31									#
-# Uses obj_f_npc_pad_i_4			 	#
-# obj_f_pad_i_3 is sometimes nonzero    #
-# pad_i_4, pad_i_5 tested clean on all  #
-# protos								#
-#########################################
-
-def npc_set(attachee,flagno):
-	# flagno is assumed to be from 1 to 31
-	exponent = flagno - 1
-	if exponent > 30 or exponent < 0:
-		print('error!')
-	else:
-		abc = pow(2,exponent)
-	tempp = attachee.obj_get_int(obj_f_npc_pad_i_4) | abc
-	attachee.obj_set_int(obj_f_npc_pad_i_4, tempp)
-	return	
-
-def npc_unset(attachee,flagno):
-	# flagno is assumed to be from 1 to 31
-	exponent = flagno - 1
-	if exponent > 30 or exponent < 0:
-		print ('error!')
-	else:
-		abc = pow(2,exponent)
-	tempp = (attachee.obj_get_int(obj_f_npc_pad_i_4) | abc) - abc
-	attachee.obj_set_int(obj_f_npc_pad_i_4, tempp)
-	return	
-
-def npc_get(attachee,flagno):
-	# flagno is assumed to be from 1 to 31
-	exponent = flagno - 1
-	if exponent > 30 or exponent < 0:
-		print ('error!')
-	else:
-		abc = pow(2,exponent)
-	return attachee.obj_get_int(obj_f_npc_pad_i_4) & abc != 0
+import tpdp
+import subprocess
 
 def readMes(mesfile):
 	""" Read the mesfile into a dictionary indexed by line number. """
@@ -175,3 +85,37 @@ def get_obj_by_id(id):
 def time_hours2_from_elapsed_sec(elapsed_sec):
 	h = elapsed_sec // 3600 % 24
 	return h
+
+def map_calc_limits(topLeft, bottomRight):
+	# measure: https://co8.org/community/threads/toeezwb-pet-project.12138/#post-145329
+	# import utils_toee
+	# a=utils_toee.map_calc_limits((501, 434), (450, 494))
+	# utils_toee.copy2clip(utils_toee.map_calc_limits((501, 434), (450, 494)))
+	# utils_toee.copy2clip(utils_toee.map_calc_limits((546, 408), (428, 526)))
+
+	# Corinth. TopLeft: 510, 420; TopRight: 415, 414; BottomRight: 427, 533; BottomLeft: 541, 512;
+	# utils_toee.copy2clip(utils_toee.map_calc_limits((510, 420), (427, 533)))
+
+	# Orc Fort. TopLeft: 525, 427; BottomRight: 416, 524; 
+	# utils_toee.copy2clip(utils_toee.map_calc_limits((525, 427), (416, 524)))
+
+	# Orc Fort Towers. TopLeft: 501, 458; BottomRight: 461, 492; 
+	# utils_toee.copy2clip(utils_toee.map_calc_limits((501, 458), (461, 492)))
+
+	# Caves Level 2
+	# utils_toee.copy2clip(utils_toee.map_calc_limits((532, 424), (426, 530)))
+
+	# AR1000
+	# utils_toee.copy2clip(utils_toee.map_calc_limits((478, 342), (482, 616)))
+	# x: 342, 619, y: 341, 617
+	# utils_toee.copy2clip(utils_toee.map_calc_limits((619, 341), (342, 617)))
+	middle = tpdp.LocAndOffsets(480, 489, 0, 0).get_overall_offset()
+	left = tpdp.LocAndOffsets(topLeft[0]+40, topLeft[0]+40, 0, 0).get_overall_offset()[0]-middle[0]
+	right = tpdp.LocAndOffsets(bottomRight[0]-27, bottomRight[0]-27, 0, 0).get_overall_offset()[0]-middle[0]
+	top = -tpdp.LocAndOffsets(topLeft[1]-10, topLeft[1]-10, 0, 0).get_overall_offset()[1]
+	bottom = -tpdp.LocAndOffsets(bottomRight[1]+10, bottomRight[1]+10, 0, 0).get_overall_offset()[1]
+	return "{},{},{},{}".format(int(left), int(top), int(right), int(bottom))
+
+def copy2clip(txt):
+	cmd='echo '+txt.strip()+'|clip'
+	return subprocess.check_call(cmd, shell=True)

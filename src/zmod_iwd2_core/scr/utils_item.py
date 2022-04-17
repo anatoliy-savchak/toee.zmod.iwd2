@@ -1,12 +1,13 @@
-import toee, debugg, const_proto_items
+import toee, debugg, const_proto_items, utils_obj, const_proto_containers, utils_const
 
 def item_create_in_inventory(item_proto_num, npc, quantity = 1, is_loot = 1):
 	assert isinstance(item_proto_num, int)
 	assert isinstance(npc, toee.PyObjHandle)
 	assert isinstance(is_loot, int)
 	item = toee.game.obj_create(item_proto_num, npc.location)
-	#item_alter_worth_as_raw(item, is_loot)
-	if (npc.type == toee.obj_t_pc):
+	
+	is_loot = 0 # only for kots
+	if (npc.type == toee.obj_t_pc or not is_loot):
 		item.item_flag_set(toee.OIF_IDENTIFIED)
 	else: item.item_flag_unset(toee.OIF_IDENTIFIED)
 
@@ -79,6 +80,20 @@ def item_create_in_inventory_mass(npc, protos):
 	for item_proto_num in protos:
 		item_create_in_inventory(item_proto_num, npc)
 	return
+
+def item_create(proto, loc, off_x = 0.0, off_y = 0.0):
+	item = toee.game.obj_create(proto, loc, off_x, off_y)
+	item.item_flag_set(toee.OIF_IDENTIFIED)
+	return item
+
+def item_created(item):
+	item.item_flag_set(toee.OIF_IDENTIFIED)
+	return item
+
+def wand_created(wand, charges):
+	wand.item_flag_set(toee.OIF_IDENTIFIED)
+	wand.obj_set_int(toee.obj_f_item_spell_charges_idx, charges)
+	return wand
 
 def item_clear_all(npc):
 	assert isinstance(npc, toee.PyObjHandle)
@@ -214,7 +229,7 @@ def items_get(npc, unwield_all = 1):
 		invenNumField = toee.obj_f_critter_inventory_num
 	numItems = npc.obj_get_int(invenNumField)
 	result = list()
-	print("numItems: {}".format(numItems))
+	#print("numItems: {}".format(numItems))
 	if (numItems > 0):
 		#debugg.breakp("numItems")
 		if (unwield_all):
@@ -229,11 +244,11 @@ def items_get(npc, unwield_all = 1):
 		for i in range(0, 199):
 			item = npc.inventory_item(i)
 			if (item and not item in result):
-				print(item)
+				#print(item)
 				result.append(item)
 				numItems -= 1
 			if (numItems <=0): break
-	print(result)
+	#print(result)
 	return result
 
 def item_has(npc, itemproto): # find
@@ -328,15 +343,39 @@ def barter_sell(npc):
 	item_clear_all(npc.substitute_inventory)
 	return
 
-def barter_list(npc, protos):
+def barter_list(npc, protos, create_subs = 0, additional_objects = None):
 	assert isinstance(npc, toee.PyObjHandle)
+	print("barter_list {}".format(npc))
 	subs = npc.substitute_inventory
+	if (not subs):
+		subs_i = npc.obj_get_obj(toee.obj_f_npc_substitute_inventory)
+		print("npc.substitute_inventory null! {}".format(npc))
+		if (create_subs):
+			if (subs_i):
+				print("destroying previous substitute_inventory...")
+				subs_i.destroy()
+				npc.obj_set_obj(toee.obj_f_npc_substitute_inventory, toee.OBJ_HANDLE_NULL)
+
+			box = toee.game.obj_create(const_proto_containers.PROTO_CONTAINER_CHEST_GENERIC, npc.location)
+			print("created new inventory: {}".format(box))
+			box.move(npc.location)
+			box.object_flag_set(toee.OF_DONTDRAW)
+			box.obj_set_int(toee.obj_f_container_inventory_source, 0)
+			npc.substitute_inventory = box
+			subs = npc.substitute_inventory
+			print("substitute_inventory {}".format(subs))
+		else: 
+			return
+
+	if (not subs):
+		debugg.breakp("barter_list")
+		return
+
 	item_clear_all(subs)
 	items = dict()
 	j = 0
-	for i in protos:
-		j += 1
-		item = toee.game.obj_create(i, subs.location)
+
+	def configure_item(item):
 		item.item_flag_set(toee.OIF_IDENTIFIED)
 
 		item_type = item.type
@@ -345,10 +384,23 @@ def barter_list(npc, protos):
 			kind = get_armor_type(item)
 		elif (item_type == toee.obj_t_ammo):
 			item.obj_set_int(toee.obj_f_ammo_quantity, 10*item.obj_get_int(toee.obj_f_ammo_quantity))
-			#item.obj_set_int(toee.obj_f_item_worth, 10*item.obj_get_int(toee.obj_f_item_worth))
-		#items["{}_{}_{}".format(item.description, i, j)] = i
+		elif (item_type == toee.obj_t_scroll):
+			item.obj_set_int(toee.obj_f_item_quantity, 10)
 		items["{}_{}_{}_{}".format(kind, item.description, i, j)] = item
-		#item.destroy()
+		return
+
+	for i in protos:
+		j += 1
+		item = toee.game.obj_create(i, subs.location)
+		if (not item):
+			print("Failed to create proto: {}".format(i))
+			debugg.breakp("barter_list")
+		utils_obj.obj_scripts_clear(item) # todo - clear all weapons!
+		configure_item(item)
+
+	if additional_objects:
+		for item in additional_objects:
+			configure_item(item)
 
 	for key in sorted(items):
 		print(key)
@@ -358,55 +410,6 @@ def barter_list(npc, protos):
 		subs.item_get(item)
 	return
 
-items_const = None
-
-def items_const_init_module(module_name, module_items):
-	assert isinstance(module_name, str)
-	assert isinstance(module_items, dict)
-	for item_name in module_items:
-		assert isinstance(item_name, str)
-		if (not item_name.lower().startswith("proto")): continue
-		item_full_name = "{}.{}".format(module_name, item_name)
-		ev = "__import__('{}').{}".format(module_name, item_name)
-		print("eval(\"{}\")".format(ev))
-		item_value = eval(ev, {}, {})
-		if (not type(item_value) is int): continue
-		items_const[item_value] = item_full_name
-	return
-
-def items_const_init():
-	global items_const
-	if (not items_const):
-		items_const = dict()
-		import const_proto_armor
-		items_const_init_module("const_proto_armor", dir(const_proto_armor))
-		import const_proto_cloth
-		items_const_init_module("const_proto_cloth", dir(const_proto_cloth))
-		import const_proto_containers
-		items_const_init_module("const_proto_containers", dir(const_proto_containers))
-		import const_proto_food
-		items_const_init_module("const_proto_food", dir(const_proto_food))
-		import const_proto_items
-		items_const_init_module("const_proto_items", dir(const_proto_items))
-		import const_proto_potions
-		items_const_init_module("const_proto_potions", dir(const_proto_potions))
-		import const_proto_rings
-		items_const_init_module("const_proto_rings", dir(const_proto_rings))
-		import const_proto_scrolls
-		items_const_init_module("const_proto_scrolls", dir(const_proto_scrolls))
-		import const_proto_wands
-		items_const_init_module("const_proto_wands", dir(const_proto_wands))
-		import const_proto_weapon
-		items_const_init_module("const_proto_weapon", dir(const_proto_weapon))
-		import const_proto_wondrous
-		items_const_init_module("const_proto_wondrous", dir(const_proto_wondrous))
-	return items_const
-
-def item_get_const(proto):
-	assert isinstance(proto, toee.PyObjHandle)
-	items_const_ = items_const_init()
-	if (proto in items_const_): return items_const_[proto]
-	return
 
 def npc_build_items(npc, lines, prefix = ""):
 	assert isinstance(npc, toee.PyObjHandle)
@@ -414,7 +417,7 @@ def npc_build_items(npc, lines, prefix = ""):
 	items = items_get(npc, 0)
 	for item in items:
 		assert isinstance(item, toee.PyObjHandle)
-		item_name = item_get_const(item.proto)
+		item_name = utils_const.item_get_const(item.proto)
 		desc = ""
 		if (not item_name): 
 			item_name = str(item.proto)
@@ -432,3 +435,17 @@ def get_armor_type(obj):
 	if (armor_flags & toee.ARMOR_TYPE_NONE):
 		return toee.ARMOR_TYPE_NONE
 	return (armor_flags & (toee.ARMOR_TYPE_LIGHT | toee.ARMOR_TYPE_MEDIUM | toee.ARMOR_TYPE_HEAVY))
+
+def weapon_has_ammo(npc, weapon):
+	assert isinstance(npc, toee.PyObjHandle)
+	assert isinstance(weapon, toee.PyObjHandle)
+
+	if not weapon: 
+		return 0
+
+	if toee.game.is_ranged_weapon(weapon.get_weapon_type()):
+		ammo = npc.item_worn_at(toee.item_wear_ammo)
+		if ammo:
+			if ammo.obj_get_int(toee.obj_f_ammo_type) == weapon.obj_get_int(toee.obj_f_weapon_ammo_type):
+				return ammo.obj_get_int(toee.obj_f_ammo_quantity)
+	return 0

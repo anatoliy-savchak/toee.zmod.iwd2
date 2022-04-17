@@ -21,6 +21,6 @@ def Weapon_Damage_Dice_OnGetAttackDice(attachee, args, evt_obj):
 		evt_obj.dice_packed = dice_packed
 	return 0
 
-modObj = templeplus.pymod.PythonModifier(GetConditionName(), 8, 0) # 0 - dice_packed, 0 - weapon_proto_filter
+modObj = templeplus.pymod.PythonModifier(GetConditionName(), 8, 0) # 0 - dice_packed, 1 - weapon_proto_filter
 modObj.AddHook(toee.ET_OnGetAttackDice, toee.EK_NONE, Weapon_Damage_Dice_OnGetAttackDice, ())
 

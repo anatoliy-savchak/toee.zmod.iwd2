@@ -44,10 +44,6 @@ def config_set_int(config_item, value):
 	assert isinstance(value, int)
 	return
 
-# experimental
-def cur_seq_get_turn_based_status():
-	return TurnBasedStatus()
-
 class LocXY:
 	def __init__(self):
 		self.x = 0
@@ -56,6 +52,18 @@ class LocXY:
 
 class LocAndOffsets:
 	def __init__(self):
+		self.loc_xy = LocXY()
+		self.off_x = 0.0
+		self.off_y = 0.0
+		return
+
+	def __init__(self, x, y, off_x, off_y):
+		self.loc_xy = LocXY()
+		self.off_x = 0.0
+		self.off_y = 0.0
+		return
+
+	def __init__(self, off_x, off_y):
 		self.loc_xy = LocXY()
 		self.off_x = 0.0
 		self.off_y = 0.0
@@ -72,6 +80,12 @@ class LocAndOffsets:
 		assert isinstance(angle_rad, float)
 		assert isinstance(range_ft, float)
 		return LocAndOffsets()
+
+	def normalize(self):
+		return
+
+	def get_overall_offset(self):
+		return (1.1, 2.2)
 
 class TurnBasedStatus:
 	def __init__(self):
@@ -222,6 +236,14 @@ class RadialMenuEntryPythonAction(RadialMenuEntryAction):
 		return
 	def __init__(self, spell_store, action_type, action_id, data1, helpTopic):
 		"""RadialMenuEntryPythonAction(PySpellStore: spell_store, int: action_type, int: action_id, int: data1, str: helpTopic)"""
+		return
+
+class RadialMenuEntrySlider(RadialMenuEntry):
+	def __init__(self, radialText, titleText, min_val, max_val, helpTopic):
+		"""RadialMenuEntrySlider(str: radialText, str: titleText, int: min_val, int: max_val, str: helpTopic)"""
+		return
+
+	def link_to_args(self, args, argIdx):
 		return
 
 class RadialMenuEntryParent(RadialMenuEntry):
@@ -441,7 +463,6 @@ class EventArgs(object):
 		self.evt_obj = EventObj()
 		return
 	def get_arg(self, arg_idx):
-		#condArgs[2] = invIdx
 		return 1
 	def set_arg(self, arg_idx, value):
 		""" args.set_arg(int: arg_idx, int: value) -> None """
@@ -659,32 +680,63 @@ class D20SpellData:
 		return object()
 
 	def set_spell_class(self, spClass): 
-		return
+		return 1
 
 	def get_metamagic_data(self, spLvl): 
 		return object()
+
+class SpellRangeType:
+	SRT_Specified = 0
+	SRT_Personal = 1
+	SRT_Touch = 2
+	SRT_Close = 3
+	SRT_Medium = 4
+	SRT_Long = 5
+	SRT_Unlimited = 6
+	SRT_Special_Inivibility_Purge = 7
 
 class SpellEntry:
 	def __init__(self, spell_enum = 0):
 		self.spell_enum = toee.spell_aid
 		self.spell_school_enum = 0
 		self.spell_subschool_enum = 0
+		self.spell_component_flags = toee.SCF_VERBAL | toee.SCF_SOMATIC
 		self.descriptor = 0
 		self.casting_time = 0
 		self.saving_throw_type = toee.D20_Save_Fortitude
 		self.min_target = 0
 		self.max_target = 0
 		self.mode_target = 0
+		self.spellRange = 0
+		self.spellRangeType = SpellRangeType.SRT_Specified
 		return
 
 	def is_base_mode_target(self, type): 
 		return 1
 
 	def get_level_specs(self): 
-		return list()
+		result = list()
+		result.append(SpellEntryLevelSpec())
+		return result
 
 	def level_for_spell_class(self, spellClass): 
+		assert isinstance(spellClass, int)
 		return 1
+
+	def get_spell_range_exact(self, casterLevel, caster):
+		assert isinstance(casterLevel, int)
+		assert isinstance(caster, toee.PyObjHandle)
+		return 1 # ft
+
+class SpellEntryLevelSpec:
+	def __init__(self):
+		self.spell_class_code = 0
+		self.spell_level = 0
+		return
+
+	def casting_class(self):
+		# Returns casting class. Domain spell specs will return negative numbers.
+		return toee.stat_level_wizard
 
 class SpellPacket:
 	def __init__(self, spell_enum = 0):

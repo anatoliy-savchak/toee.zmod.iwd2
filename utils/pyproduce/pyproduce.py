@@ -40,9 +40,15 @@ class InfinityExportedDir:
         self.cre = value
         return value
 
+    def load_template(self, file_name):
+        with open(file_name, 'r') as f:
+            self.lines_script = f.readlines()
+        return
+
     def save(self, file_name):
-        with open(file_name, ''w) as f:
-            write(self.lines_script.join('n'))
+        content = '\n'.join(self.lines_script)
+        with open(file_name, 'w') as f:
+            f.write(content)
         return
     
     def produce_npc(self, cre_name):
@@ -50,6 +56,7 @@ class InfinityExportedDir:
         self.current_crename = cre_name
 
         self.lines_script.append(f"class Ctrl{self.current_crename}: {self.elements['base_class']}:")
+        self.lines_script.append("")
 
         self.produce_npc_baseproto()
         return
@@ -68,4 +75,10 @@ class InfinityExportedDir:
         else:
             raise Exception(f"Unknown race: {race_name}({race})")
 
+        self.lines_script.append("\t\t@classmethod")
+        self.lines_script.append(f"\t\tdef get_proto_id(cls): return {proto}")
+        self.lines_script.append("")
+        return
+
+    def produce_npc_appearance(self):
         return

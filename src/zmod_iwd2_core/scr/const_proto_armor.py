@@ -27,6 +27,8 @@ PROTO_ARMOR_LEATHER_ARMOR_PLUS_3_BROWN = 6395 # Cost: 9160 gp, AC: 2, Max Dex: 6
 PROTO_ARMOR_STUDDED_LEATHER_ARMOR = 6056 # Cost: 25 gp, AC: 3, Max Dex: 5, Weight: 20
 PROTO_ARMOR_STUDDED_LEATHER_ARMOR_MASTERWORK = 6222 # Cost: 175 gp, AC: 3, Max Dex: 5
 PROTO_ARMOR_STUDDED_LEATHER_ARMOR_PLUS_1 = 6726 # Cost: 1175 gp, AC: 3, Max Dex: 5, Ench: 1
+PROTO_ARMOR_STUDDED_LEATHER_ARMOR_PLUS_2 = 6727 # Cost: 4175 gp, AC: 3, Max Dex: 5, Ench: 2
+PROTO_ARMOR_STUDDED_LEATHER_ARMOR_MASTERWORK_BARBARIAN = 6055 # Cost: 15 gp??, AC: 3, Max Dex: 5
 
 # CHAIN_SHIRT
 PROTO_ARMOR_CHAIN_SHIRT = 6093 # Cost: 100 gp, AC: 4, Max Dex: 4
@@ -49,10 +51,11 @@ PROTO_ARMOR_SCALE_MAIL_MASTERWORK = 6154 # Cost: 300 gp, AC: 4, Max Dex: 3
 
 # CHAINMAIL
 PROTO_ARMOR_CHAINMAIL = 6454 # Cost: 150 gp, AC: 5, Max Dex: 2
-PROTO_ARMOR_CHAINMAIL_FINE = 6475 # Cost: 150 gp, AC: 5, Max Dex: 2
+PROTO_ARMOR_CHAINMAIL_FINE = 6153 # Cost: 150 gp, AC: 5, Max Dex: 2
 PROTO_ARMOR_CHAINMAIL_RED = 6019 # Cost: 175 gp, AC: 5, Max Dex: 2
 PROTO_ARMOR_CHAINMAIL_GOLD = 6476 # Cost: 150 gp, AC: 5, Max Dex: 2
 PROTO_ARMOR_CHAINMAIL_MASTERWORK_FINE = 6474 # Cost: 400 gp, AC: 5, Max Dex: 2
+PROTO_ARMOR_CHAINMAIL_MITHRAL = 6736 # Cost: 4150 gp, AC: 5, Max Dex: 4, Masterwork
 PROTO_ARMOR_CHAINMAIL_MASTERWORK_RED = 6225 # Cost: 400 gp, AC: 5, Max Dex: 2
 PROTO_ARMOR_CHAINMAIL_PLUS_1 = 6297 # Cost: 1500 (!!! 1300) gp, AC: 5, Max Dex: 2
 PROTO_ARMOR_CHAINMAIL_PLUS_1_RED = 6049 # Cost: 1500 (!!! 1300) gp, AC: 5, Max Dex: 2
@@ -70,6 +73,7 @@ PROTO_ARMOR_CHAIN_ELVEN_BLUE = 6125 # Cost: 13150 gp, AC: 5, Max Dex: 4, Ench: +
 PROTO_ARMOR_BREASTPLATE = 6103 # Cost: 200 gp, AC: 5, Max Dex: 3
 PROTO_ARMOR_BREASTPLATE_BLACK = 6155 # Cost: 200 gp, AC: 5, Max Dex: 3
 PROTO_ARMOR_BREASTPLATE_GOLD = 6477 # Cost: 200 gp, AC: 5, Max Dex: 3
+PROTO_ARMOR_BREASTPLATE_LAMELLAR = 6423 # Cost: 150 gp, AC: 5, Max Dex: 3
 PROTO_ARMOR_BREASTPLATE_MASTERWORK = 6226 # Cost: 350 gp, AC: 5, Max Dex: 3
 PROTO_ARMOR_BREASTPLATE_ADAM = 6314 # Cost: 10200 gp, AC: 5, Max Dex: 3, DR: 2/-, Masterwork
 PROTO_ARMOR_BREASTPLATE_PLUS_1 = 6396 # Cost: 1350 gp, AC: 5, Max Dex: 3, Ench: +1
@@ -81,7 +85,7 @@ PROTO_ARMOR_SPLINT_MAIL = 6096 # Cost: 200 gp, AC: 6, Max Dex: 0
 PROTO_ARMOR_SPLINT_MAIL_MASTERWORK = 6227 # Cost: 350 gp, AC: 6, Max Dex: 0
 
 # BANDED_MAIL
-PROTO_ARMOR_BANDED_MAIL = 6096 # Cost: 250 gp, AC: 6, Max Dex: 1
+PROTO_ARMOR_BANDED_MAIL = 6120 # Cost: 250 gp, AC: 6, Max Dex: 1
 PROTO_ARMOR_BANDED_MAIL_BLACK = 6341 # Cost: 250 gp, AC: 6, Max Dex: 1
 PROTO_ARMOR_BANDED_MAIL_SILVER = 6120 # Cost: 250 gp, AC: 6, Max Dex: 1
 PROTO_ARMOR_BANDED_MAIL_MASTERWORK = 6228 # Cost: 500 gp, AC: 6, Max Dex: 1
@@ -95,6 +99,7 @@ PROTO_ARMOR_HALF_PLATE_MASTERWORK = 6229 # Cost: 750 gp, AC: 7, Max Dex: 0
 
 # FULL_PLATE
 PROTO_ARMOR_FULL_PLATE = 6039 # Cost: 1500 gp, AC: 8, Max Dex: 1
+PROTO_ARMOR_FULL_PLATE_BLACK = 6030 # Cost: 1500 gp, AC: 8, Max Dex: 1
 PROTO_ARMOR_FULL_PLATE_MASTERWORK = 6230 # Cost: 1650 gp, AC: 8, Max Dex: 1
 PROTO_ARMOR_FULL_PLATE_MASTERWORK2 = 6141 # Cost: 1650 gp, AC: 8, Max Dex: 1
 PROTO_ARMOR_FULL_PLATE_DRAGONHIDE = 6316 # Cost: 3300 gp, AC: 8, Max Dex: 1, Masterwork
@@ -116,10 +121,11 @@ PROTO_SHIELD_SMALL_STEEL = 6074 # Cost 9 gp, AC: +1, Arcane Spell Failure: 5, Sk
 PROTO_SHIELD_SMALL_STEEL_2 = 6077 # Cost 9 gp, AC: +1, Arcane Spell Failure: 5, Skill Check Penalty: -1
 PROTO_SHIELD_SMALL_MASTERWORK_STEEL = 6074 # Cost 159 gp, AC: +1, Arcane Spell Failure: 5, Skill Check Penalty: -1
 
-PROTO_SHIELD_LARGE_WOODEN = 6064 # Cost 7 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2
-PROTO_SHIELD_LARGE_WOODEN_2 = 6070 # Cost 7 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2
+PROTO_SHIELD_LARGE_WOODEN = 6064 # Cost 7 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2, mesh: shield_LG_norman1
+PROTO_SHIELD_LARGE_WOODEN_2 = 6070 # Cost 7 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2, mesh: shield_LG_RND_wood1
 PROTO_SHIELD_LARGE_WOODEN_3 = 6071 # Cost 7 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2
 PROTO_SHIELD_LARGE_WOODEN_4 = 6072 # Cost 7 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2
+PROTO_SHIELD_LARGE_WOODEN_ORCISH = 6067 # Cost 7 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2
 PROTO_SHIELD_LARGE_WOODEN_SPIKED = 6136 # Cost 7 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2
 PROTO_SHIELD_LARGE_MASTERWORK_WOODEN = 6065 # Cost 207 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2
 
@@ -127,7 +133,12 @@ PROTO_SHIELD_LARGE_STEEL = 6060 # Cost 20 gp, AC: +2, Arcane Spell Failure: 15, 
 PROTO_SHIELD_LARGE_STEEL_2 = 6062 # Cost 20 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2, Weight: 15
 PROTO_SHIELD_LARGE_STEEL_3 = 6068 # Cost 20 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2, Weight: 15
 PROTO_SHIELD_LARGE_STEEL_4 = 6069 # Cost 20 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2, Weight: 15
+PROTO_SHIELD_LARGE_STEEL_ORCISH = 6066 # Cost 20 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2, Weight: 15
 PROTO_SHIELD_LARGE_ELVISH = 6073 # Overpowered!!. Cost 100 gp, AC: +2, Arcane Spell Failure: 0, Skill Check Penalty: 0, Weight: 0
+PROTO_SHIELD_LARGE_STEEL_GNOLL_1 = 6004 # Cost 20 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2, Weight: 15
+PROTO_SHIELD_LARGE_STEEL_GNOLL_2 = 6005 # Cost 20 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2, Weight: 15
+PROTO_SHIELD_LARGE_STEEL_GNOLL_3 = 6006 # Cost 20 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2, Weight: 15
+PROTO_SHIELD_LARGE_STEEL_GNOLL_4 = 6007 # Cost 20 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2, Weight: 15
 
 PROTO_SHIELD_LARGE_MASTERWORK_STEEL = 6063 # Cost 170 gp, AC: +2, Arcane Spell Failure: 15, Skill Check Penalty: -2, Weight: 15
 PROTO_SHIELD_LARGE_PLUS_1_STEEL = 6050 # Cost 1170 gp, AC: +2, Ench: +1, Arcane Spell Failure: 15, Skill Check Penalty: -2, Weight: 15

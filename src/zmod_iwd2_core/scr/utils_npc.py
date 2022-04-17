@@ -25,6 +25,111 @@ def npc_generate_hp_random(npc):
 	#print("Current HP: {}".format(hp))
 	return hp
 
+def char_class_get_hit_dice(char_class):
+	assert isinstance(char_class, int)
+	# todo in T+
+
+	d12 = [toee.stat_level_barbarian \
+		, toee.stat_level_dragon_disciple, toee.stat_level_dwarven_defender]
+
+	d10 = [toee.stat_level_fighter, toee.stat_level_paladin, toee.stat_level_blackguard, toee.stat_level_duelist, toee.stat_level_abjurant_champion, toee.stat_level_swashbuckler]
+
+	d8 = [toee.stat_level_cleric, toee.stat_level_druid, toee.stat_level_ranger, toee.stat_level_monk \
+		, toee.stat_level_arcane_archer, toee.stat_level_hierophant, toee.stat_level_horizon_walker, toee.stat_level_horizon_walker \
+		, toee.stat_level_shadowdancer, toee.stat_level_favored_soul, toee.stat_level_stormlord, toee.stat_level_scout \
+		, const_toee.stat_level_npc_aristocrat, const_toee.stat_level_npc_warriror]
+
+	d6 = [toee.stat_level_rogue, toee.stat_level_bard \
+		, toee.stat_level_assassin, toee.stat_level_eldritch_knight, toee.stat_level_warlock, toee.stat_level_warmage, toee.stat_level_beguiler, toee.stat_level_fochlucan_lyrist \
+		, const_toee.stat_level_npc_adept, const_toee.stat_level_npc_expert]
+
+	d4 = [toee.stat_level_sorcerer, toee.stat_level_wizard \
+		, toee.stat_level_arcane_trickster, toee.stat_level_archmage, toee.stat_level_loremaster, toee.stat_level_mystic_theurge, toee.stat_level_thaumaturgist \
+		, const_toee.stat_level_npc_commoner]
+
+	if (char_class in d12): return 12
+	elif (char_class in d10): return 10
+	elif (char_class in d8): return 8
+	elif (char_class in d6): return 6
+	elif (char_class in d4): return 4
+	return 8
+
+def npc_generate_hp_random_first(npc, hd_first_is_full = 1):
+	return npc_generate_hp_ext(npc, hd_first_is_full, NPC_GENERATE_HP_EXT_RANDOM)
+
+def npc_generate_hp_avg_first(npc, hd_first_is_full = 1):
+	return npc_generate_hp_ext(npc, hd_first_is_full, NPC_GENERATE_HP_EXT_AVG)
+
+NPC_GENERATE_HP_EXT_AVG = 0
+NPC_GENERATE_HP_EXT_RANDOM = 1
+def npc_generate_hp_ext(npc, hd_first_is_full, method):
+	assert isinstance(npc, toee.PyObjHandle)
+	assert isinstance(hd_first_is_full, int)
+	assert isinstance(method, int)# 0: avg, 1: random
+
+	hd = npc.hit_dice
+	# con bonus applied in GlobalMaxHPCalc
+
+	pts = 0
+	was_hd_natural = 0
+	lines = []
+	if (hd.size or hd.bonus):
+		dstr = "{}d{}".format(hd.number, hd.size)
+		print(dstr)
+		d = hd.size
+		for i in range(1, hd.number+1):
+			full = hd_first_is_full == 1 and i == 1
+			dstr = "r d{}".format(d)
+			if not full:
+				if method== NPC_GENERATE_HP_EXT_AVG:
+					dstr = "r d{}/2".format(d)
+			hp = d
+			if not full:
+				if method == NPC_GENERATE_HP_EXT_AVG:
+					hp = d // 2
+				elif method == NPC_GENERATE_HP_EXT_RANDOM: 
+					hp = toee.game.random_range(1, d)
+
+			if (i % 2 == 0 and i > 1): 
+				hp += 1
+				dstr += " + 1"
+			pts += hp + hd.bonus
+			s = "{}: {}={}".format(i, dstr, hp)
+			lines.append(s)
+			was_hd_natural = 1
+
+	i = 0
+	for c in npc.char_classes:
+		i += 1
+		d = char_class_get_hit_dice(c)
+		full = (hd_first_is_full == 2 or (not was_hd_natural and hd_first_is_full)) and i == 1
+		dstr = "r d{}".format(d)
+		if not full:
+			if method== NPC_GENERATE_HP_EXT_AVG:
+				dstr = "r d{}/2".format(d)
+		hp = d
+		if not full:
+			if method == NPC_GENERATE_HP_EXT_AVG:
+				hp = d // 2
+			elif method == NPC_GENERATE_HP_EXT_RANDOM: 
+				hp = toee.game.random_range(1, d)
+
+		if (i % 2 == 0 and i > 1): 
+			hp += 1
+			dstr += " + 1"
+		pts += hp
+		s = "{}: {}: {}={}".format(i, toee.game.get_mesline('mes\\stat.mes', c), dstr, hp)
+		lines.append(s)
+	
+	npc.obj_set_int(toee.obj_f_hp_pts, pts)
+	hp = npc.stat_level_get(toee.stat_hp_current)
+
+	kindstr = "AVG" if method == NPC_GENERATE_HP_EXT_AVG else "RND"
+	kindstr_first = " F" if hd_first_is_full else ""
+	print("GEN {}{} HP {} (w/o con: {})={} for {}".format(kindstr, kindstr_first, hp, pts, lines, npc))
+
+	return (hp, lines)
+
 def npc_money_set(npc, copper):
 	assert isinstance(npc, toee.PyObjHandle)
 	assert isinstance(copper, int)
@@ -35,12 +140,21 @@ def npc_money_set(npc, copper):
 
 def npc_spell_ensure(npc, spell_id, stat_class, spell_level, memorize = 0):
 	assert isinstance(npc, toee.PyObjHandle)
-	print("{}.npc_spell_ensure(spell_id: {}, stat_class: {}, spell_level: {})".format(npc, spell_id, stat_class, spell_level))
+	print("{}.npc_spell_ensure(spell_num: {} ({}), stat_class: {}, caster_level: {})".format(npc, spell_id, toee.game.get_spell_mesline(spell_id), stat_class, spell_level))
 	if (stat_class == toee.domain_special):
 		npc.spell_known_add(spell_id, stat_class, spell_level, 1)
 		npc.spell_memorized_add(spell_id, stat_class, spell_level, 1)
 	else:
-		npc.spell_known_add(spell_id, stat_class, spell_level)
+		result = npc.spell_known_add(spell_id, stat_class, spell_level)
+		if (not result is None):
+			if (not result):
+				has = next((ss for ss in npc.spells_known if ss.spell_enum == spell_id), None)
+				if has:
+					print("Spell {}({}) already known!".format(toee.game.get_spell_mesline(spell_id), spell_id))
+				else:
+					print("Spell {}({}) was not added!".format(toee.game.get_spell_mesline(spell_id), spell_id))
+					debug.breakp("npc_spell_ensure")
+					return 0
 		npc.spell_memorized_add(spell_id, stat_class, spell_level)
 	if (memorize):
 		npc.spells_pending_to_memorized()
@@ -58,7 +172,7 @@ def npc_skill_ensure(npc, skill_id, target_skill_value):
 def npc_is_alive(npc, dead_when_negative_hp = 0):
 	assert isinstance(npc, toee.PyObjHandle)
 	object_flags = npc.object_flags_get()
-	if ((object_flags & toee.OF_DESTROYED) or (object_flags & toee.OF_OFF)): 
+	if ((object_flags & toee.OF_DESTROYED) or (object_flags & toee.OF_OFF) or (object_flags & toee.OF_DONTDRAW) or (object_flags & toee.OF_INVULNERABLE)):
 		#print("destroyed: {}".format(npc))
 		return 0
 	result = npc.d20_query(toee.Q_Dead)
@@ -73,6 +187,13 @@ def npc_is_alive(npc, dead_when_negative_hp = 0):
 
 def npc_is_dead_or_unconscious(npc, dead_when_negative_hp = False):
 	assert isinstance(npc, toee.PyObjHandle)
+	if npc_is_dead_or_destroyed(npc, dead_when_negative_hp): return 1
+	result = npc.d20_query(toee.Q_Unconscious)
+	if (result): return 1
+	return 0
+
+def npc_is_dead_or_destroyed(npc, dead_when_negative_hp = False):
+	assert isinstance(npc, toee.PyObjHandle)
 	if (not npc): return 1
 	object_flags = npc.object_flags_get()
 	if ((object_flags & toee.OF_DESTROYED) or (object_flags & toee.OF_OFF)): return 1
@@ -83,8 +204,6 @@ def npc_is_dead_or_unconscious(npc, dead_when_negative_hp = False):
 	result = npc.d20_query(toee.Q_Dead)
 	if (result): return 1
 	result = npc.d20_query(toee.Q_Dying)
-	if (result): return 1
-	result = npc.d20_query(toee.Q_Unconscious)
 	if (result): return 1
 	return 0
 
@@ -105,7 +224,7 @@ def npc_find_nearest_pc(npc, distance_ft, should_see):
 	assert isinstance(npc, toee.PyObjHandle)
 	nearest = None
 	nearest_dist = 10000
-	for obj in toee.game.obj_list_range(npc.location, distance_ft, toee.OLC_NPC | toee.OLC_PC):
+	for obj in toee.game.obj_list_range(npc.location, distance_ft, toee.OLC_NPC | toee.OLC_PC): # todo check why NPC is here
 		assert isinstance(obj, toee.PyObjHandle)
 		if (should_see):
 			if (not npc.can_see(obj)): continue
@@ -113,6 +232,25 @@ def npc_find_nearest_pc(npc, distance_ft, should_see):
 		if (obj_dist < nearest_dist):
 			nearest = obj
 			nearest_dist = obj_dist
+	return nearest
+
+def npc_find_nearest_pc_prefer_leader(npc, distance_ft = 25, should_see = 1):
+	assert isinstance(npc, toee.PyObjHandle)
+
+	if (toee.game.leader and (not should_see or npc.can_see(toee.game.leader)) and npc.distance_to(toee.game.leader) <= distance_ft):
+		return toee.game.leader
+
+	nearest = None
+	nearest_dist = 10000
+	for obj in toee.game.obj_list_range(npc.location, distance_ft, toee.OLC_PC): 
+		assert isinstance(obj, toee.PyObjHandle)
+		if (should_see):
+			if (not npc.can_see(obj)): continue
+		obj_dist = npc.distance_to(obj)
+		if (obj_dist < nearest_dist):
+			nearest = obj
+			nearest_dist = obj_dist
+
 	return nearest
 
 def npc_find_nearest_npc_by_proto(npc, distance_ft, proto):
@@ -161,11 +299,22 @@ def find_npc_by_proto(loc, proto):
 	return OBJ_HANDLE_NULL
 
 def npc_get_cr(npc):
+	assert isinstance(npc, toee.PyObjHandle)
 	cr = 0
 	if (npc.type == toee.obj_t_npc):
 		cr = npc.obj_get_int(toee.obj_f_npc_challenge_rating)
 	level_cr = npc.stat_level_get(toee.stat_level)
-	result = cr + level_cr
+	if level_cr:
+		if (cr < 0): cr = 0
+		result = cr + level_cr
+	else:
+		if cr == -1:
+			result = 0.5
+		elif cr == -2:
+			result = 0.3
+		else:
+			result = cr
+
 	return result
 
 def npc_get_cr_exp(pc, cr):
@@ -255,7 +404,17 @@ def pc_award_experience_party(xp_awarded_party):
 		pc.award_experience(xp_awarded_party // count)
 	return
 
+def pc_award_experience_ensure(target_xp):
+	for pc in toee.game.party:
+		curr_xp = pc.obj_get_int(toee.obj_f_critter_experience)
+		delta_xp = target_xp - curr_xp
+		if delta_xp > 0:
+			pc.award_experience(delta_xp)
+	return
+
 def npc_kill_foes():
+	# import utils_npc
+	# utils_npc.npc_kill_foes()
 	# placeholder
 	killer = toee.game.leader
 	for npc in toee.game.obj_list_vicinity(killer.location, toee.OLC_NPC):
@@ -504,6 +663,25 @@ def stats_roll(val_min, val_max):
 		result.append(stat_roll(val_min, val_max))
 	return sorted(result, None, None, True)
 
+def stats_random(val_min, val_max):
+	assert isinstance(val_min, int)
+	assert isinstance(val_max, int)
+	result = list()
+	for i in range(0, 6):
+		result.append(toee.game.random_range(val_min, val_max))
+	return result
+
+def stats_sum(stats, sum_stats):
+	assert isinstance(npc, toee.PyObjHandle)
+	assert isinstance(stats, list)
+	assert isinstance(stats, list)
+	for i in range(0, len(stats)-1):
+		if (i >= len(sum_stats)): break
+		stats[i] += sum_stats[i]
+		if (stats[i] < 1):
+			stats[i] = 1
+	return stats
+
 def stats_elite_array():
 	result = list()
 	result.append(15)
@@ -569,6 +747,8 @@ def npc_goto_loc_full(npc, loc, off_x, off_y):
 	assert isinstance(loc, int)
 	x, y = utils_obj.loc2sec(loc)
 	print("goto {}, {} ({}, {}) of {}".format(x, y, off_x, off_y, npc))
+	if False:
+		toee.game.obj_create(2071, loc, off_x, off_y)
 	npc.standpoint_set(toee.STANDPOINT_DAY, -1, loc, 0, off_x, off_y)
 	npc.standpoint_set(toee.STANDPOINT_NIGHT, -1, loc, 0, off_x, off_y)
 	return loc
@@ -613,6 +793,13 @@ def npc_find_path_to_target(npc, target, reach_ft = None):
 
 	loc = npc_loc_near_random(target)
 	return loc, 0, 0
+
+def npc_hitdice_set(npc, number, size, bonus):
+	assert isinstance(npc, toee.PyObjHandle)
+	npc.obj_set_idx_int(toee.obj_f_npc_hitdice_idx, 0, number)
+	npc.obj_set_idx_int(toee.obj_f_npc_hitdice_idx, 1, size)
+	npc.obj_set_idx_int(toee.obj_f_npc_hitdice_idx, 2, bonus)
+	return
 
 def get_npcs_range(loc, range = 200, lst = None):
 	npcs = list()
@@ -696,8 +883,10 @@ def build_npcs(npcs, options):
 def npc_get_reach(npc):
 	assert isinstance(npc, toee.PyObjHandle)
 
-	if ("critter_get_reach" in dic(npc)):
-		return npc.critter_get_reach()
+	if ("get_reaches" in dir(npc)):
+		reaches = npc.get_reaches()
+		if reaches:
+			return reaches[0]
 
 	reach = 5.0
 	weapon = npc.item_worn_at(toee.item_wear_weapon_primary)
@@ -712,23 +901,22 @@ def npc_get_radius_ft(npc):
 	assert isinstance(npc, toee.PyObjHandle)
 	if (not npc): return 0.0
 	radius_inches = npc.radius
+	#print("\t\tnpc_get_radius_ft {} in = {}".format(radius_inches, npc))
 	return radius_inches / 12.0
 
 def npc_is_within_reach_ext(npc, target_or_loc, npc_radius, npc_reach):
 	assert isinstance(npc, toee.PyObjHandle)
+	#print("\t\tnpc_is_within_reach_ext start ({}, {}, {}, {})".format(npc, target_or_loc, npc_radius, npc_reach))
 
 	target_radius = 0.0
-	target_loc = 0
+	if (not isinstance(target_or_loc, toee.PyObjHandle)):
+		target_radius = npc_get_radius_ft(target_or_loc)
 
-	if (target_or_loc is toee.PyObjHandle):
-		assert isinstance(target, toee.PyObjHandle)
-		target_loc = target.location
-		target_radius = npc_get_radius_ft(target)
-	else: 
-		target_loc = target_or_loc
-
-	distance_to_target = max(0.0, target_or_loc)
-	if (target_radius + npc_reach < distance_to_target): return 0
+	distance_to_target = npc.distance_to(target_or_loc) # obj to targ will be clean (without both radiuses); obj to loc will have obj radius removed from result;
+	if (target_radius + npc_reach < distance_to_target): 
+		#print("\t\tFalse: target_radius {} + npc_reach {} < distance_to_target {}".format(target_radius, npc_reach, distance_to_target))
+		return 0
+	#print("\t\tTrue: target_radius {} + npc_reach {} >= distance_to_target {}".format(target_radius, npc_reach, distance_to_target))
 	return 1
 
 def npc_is_within_reach(npc, target_or_loc):
@@ -766,3 +954,157 @@ def npc_can_melee(npc, target):
 	if (target_radius + npc_reach < distance_to_target): return 0
 
 	return 1
+
+def npc_has_miss_chance_ac(npc):
+	assert isinstance(npc, toee.PyObjHandle)
+	if (npc.d20_query_has_spell_condition(toee.spell_invisibility)):
+		return 50
+	if (npc.d20_query_has_spell_condition(toee.spell_improved_invisibility)):
+		return 50
+	if (npc.d20_query_has_spell_condition(toee.spell_blur)):
+		return 20
+	if (npc.d20_query(toee.Q_Critter_Is_Invisible)):
+		return 50
+	return 0
+
+def npc_has_miss_chance_hit(npc):
+	assert isinstance(npc, toee.PyObjHandle)
+	if (npc.d20_query(toee.Q_Critter_Is_Blinded)):
+		return 50
+	return 0
+
+def npc_to_hit_get(npc, target):
+	""" Returns how much NPC should roll to hit the target and reason text. -1 if never."""
+	assert isinstance(npc, toee.PyObjHandle)
+	assert isinstance(target, toee.PyObjHandle)
+	atk = npc.stat_level_get(toee.stat_attack_bonus)
+	ac = target.stat_level_get(toee.stat_ac)
+
+	miss_chance = npc_has_miss_chance_ac(target)
+	if miss_chance: ac += miss_chance // 10 # to be improved
+
+	if (not miss_chance):
+		miss_chance = npc_has_miss_chance_hit(target)
+		if miss_chance: ac += miss_chance // 10 # to be improved
+
+	tohit = ac - atk
+	return tohit, ""
+
+def npc_get_weapon(npc, primary = 1, should_be_ranged = 0, should_have_ammo = 0):
+	assert isinstance(npc, toee.PyObjHandle)
+	weapon = npc.item_worn_at(toee.item_wear_weapon_primary) if (primary) else npc.item_worn_at(toee.item_wear_weapon_secondary)
+	if not weapon:
+		return toee.OBJ_HANDLE_NULL
+
+	if should_be_ranged:
+		if toee.game.is_ranged_weapon(weapon.get_weapon_type()):
+			if should_have_ammo:
+				loaded = False
+				if weapon.get_weapon_type() in (toee.wt_heavy_crossbow, toee.wt_light_crossbow):
+					loaded = weapon.obj_get_int(toee.obj_f_weapon_flags) & toee.OWF_WEAPON_LOADED
+				ammou_q = utils_item.weapon_has_ammo(npc, weapon)
+				if ammou_q <= 0 and not loaded:
+					weapon = toee.OBJ_HANDLE_NULL
+		else:
+			weapon = toee.OBJ_HANDLE_NULL
+
+	return weapon
+
+
+def npc_could_be_attacked(npc, debug_print = 0):
+	assert isinstance(npc, toee.PyObjHandle)
+	object_flags = npc.object_flags_get()
+	if (object_flags & toee.OF_DESTROYED or object_flags & toee.OF_OFF or object_flags & toee.OF_DONTDRAW or object_flags & toee.OF_INVULNERABLE):
+		if (debug_print): print("\t\tnpc_could_be_attacked=0 due to flags {}".format(npc))
+		return 0
+	hp = npc.stat_level_get(toee.stat_hp_current)
+	if (hp <= -10):
+		if (debug_print): print("\t\tnpc_could_be_attacked=0 due to hp <= -10 {}".format(npc))
+		return 0
+	if (hp < 0): #if (hp < 0 and npc.type == toee.obj_t_pc):
+		if (debug_print): print("\t\tnpc_could_be_attacked=0 due to PC hp < 0 {}".format(npc))
+		return 0
+	if (debug_print): print("\t\tnpc_could_be_attacked=1 {}".format(npc))
+	return 1
+
+def critters_vicinity(npc, include_self = 0):
+	assert isinstance(npc, toee.PyObjHandle)
+	result = list()
+	for obj in toee.game.obj_list_vicinity(npc.location, toee.OLC_CRITTERS):
+		assert isinstance(obj, toee.PyObjHandle)
+		if (not include_self and obj == npc): continue
+		if (npc_is_alive(obj, 1)):
+			result.append(obj)
+	return result
+
+def npc_anim_goal_push_walk_to_tile(npc, loc):
+	return npc.anim_goal_push_walk_to_tile(loc.loc_xy.x, loc.loc_xy.y, loc.off_x, loc.off_y)
+
+def npc_get_alignment_short(npc):
+	return get_alignment_short(npc.obj_get_int(toee.obj_f_critter_alignment))
+
+def get_alignment_short(a):
+	if (a == toee.ALIGNMENT_NEUTRAL): return "N"
+	if (a == toee.ALIGNMENT_LAWFUL): return "L"
+	if (a == toee.ALIGNMENT_LAWFUL_NEUTRAL): return "LN"
+	if (a == toee.ALIGNMENT_CHAOTIC): return "C"
+	if (a == toee.ALIGNMENT_CHAOTIC_NEUTRAL): return "CN"
+	if (a == toee.ALIGNMENT_GOOD): return "G"
+	if (a == toee.ALIGNMENT_NEUTRAL_GOOD): return "NG"
+	if (a == toee.ALIGNMENT_LAWFUL_GOOD): return "LG"
+	if (a == toee.ALIGNMENT_CHAOTIC_GOOD): return "CG"
+	if (a == toee.ALIGNMENT_EVIL): return "E"
+	if (a == toee.ALIGNMENT_NEUTRAL_EVIL): return "NE"
+	if (a == toee.ALIGNMENT_LAWFUL_EVIL): return "LE"
+	if (a == toee.ALIGNMENT_CHAOTIC_EVIL ): return "CE"
+	return None
+
+def npc_can_sense_in_combat(npc, target):
+	assert isinstance(npc, toee.PyObjHandle)
+	assert isinstance(target, toee.PyObjHandle)
+
+	if (target.d20_query(toee.Q_Critter_Is_Invisible) and not target.d20_query(toee.Q_Critter_Can_See_Invisible)):
+		return 0
+	return 1
+
+def npc_find_nearest_enemy_loc(npc, loc, distance_ft, need_attackable = 1, need_sense = 1, need_los = 0):
+	assert isinstance(npc, toee.PyObjHandle)
+	nearest = None
+	nearest_dist = 10000
+	for obj in toee.game.obj_list_range(loc, distance_ft, toee.OLC_NPC | toee.OLC_PC):
+		assert isinstance(obj, toee.PyObjHandle)
+		if npc == obj: continue
+		if need_attackable and not npc_could_be_attacked(obj): continue
+		if need_sense and not npc_can_sense_in_combat(npc, obj): continue
+		if need_los and not npc.has_los(obj): continue
+		if npc.allegiance_shared(obj): continue
+		obj_dist = obj.distance_to(loc)
+		if (obj_dist < nearest_dist):
+			nearest = obj
+			nearest_dist = obj_dist
+	return nearest
+
+def npc_approach(npc, target):
+	assert isinstance(npc, toee.PyObjHandle)
+	assert isinstance(target, toee.PyObjHandle)
+	print("npc_approach {}, {}".format(npc, target))
+	loc_tup = npc_find_path_to_target(npc, target)
+	if loc_tup:
+		npc_goto_loc_full(npc, loc_tup[0], loc_tup[1], loc_tup[2])
+		if "anim_goal_push_walk_to_tile" in dir(npc):
+			x, y = utils_obj.loc2sec(loc_tup[0])
+			npc.anim_goal_push_walk_to_tile(x, y, loc_tup[1], loc_tup[2])
+	return loc_tup
+
+def npc_natural_attack(npc, index, attack_type, attack_bonus, number, damage_str):
+	assert isinstance(npc, toee.PyObjHandle)
+	assert isinstance(index, int)
+	assert isinstance(attack_type, int) # const_toee.nwt_claw
+	assert isinstance(attack_bonus, int) # monster bab, or minus second attack -5, or when multiattack then -3
+	assert isinstance(damage_str, str) # "1d4"
+
+	npc.obj_set_idx_int(toee.obj_f_attack_types_idx, index, attack_type)
+	npc.obj_set_idx_int(toee.obj_f_attack_bonus_idx, index, attack_bonus) # natural bab: +4
+	npc.obj_set_idx_int(toee.obj_f_critter_attacks_idx, index, 2) # x
+	npc.obj_set_idx_int(toee.obj_f_critter_damage_idx, index, toee.dice_new(damage_str).packed)
+	return

@@ -47,6 +47,9 @@ def do_san_heartbeat(attachee, triggerer, map_id, ctrl):
 
 def do_san_dying(attachee, triggerer, map_id, ctrl):
 	assert isinstance(attachee, toee.PyObjHandle)
+	assert isinstance(ctrl, CtrlDaemon2)
+	assert isinstance(map_id, int)
+	print("do_san_dying attachee: {}".format(attachee))
 	if (ctrl):
 		ctrl.critter_dying(attachee, triggerer)
 	storage = utils_storage.obj_storage_by_id(attachee.id)
@@ -56,21 +59,41 @@ def do_san_dying(attachee, triggerer, map_id, ctrl):
 			cb.dying(attachee, triggerer)
 	return toee.RUN_DEFAULT
 
-def do_san_use(attachee, triggerer, ctrl):
+def do_san_use(attachee, triggerer, map_id, ctrl):
 	assert isinstance(attachee, toee.PyObjHandle)
+	assert isinstance(ctrl, CtrlDaemon2)
+	assert isinstance(map_id, int)
 	print("san_use id: {}, nameid: {}".format(attachee.id, attachee.name))
 	if (attachee.map != map_id): toee.RUN_DEFAULT
 	if (ctrl):
 		return ctrl.do_san_use(attachee, triggerer)
 	return toee.RUN_DEFAULT
 
+def do_san_bust(attachee, triggerer, map_id, ctrl):
+	assert isinstance(attachee, toee.PyObjHandle)
+	assert isinstance(ctrl, CtrlDaemon2)
+	assert isinstance(map_id, int)
+	print("san_bust id: {}, nameid: {}".format(attachee.id, attachee.name))
+	if (attachee.map != map_id): toee.RUN_DEFAULT
+	if (ctrl):
+		return ctrl.do_san_bust(attachee, triggerer)
+	return toee.RUN_DEFAULT
+
+def do_san_destroy(attachee, triggerer, map_id, ctrl):
+	assert isinstance(attachee, toee.PyObjHandle)
+	assert isinstance(ctrl, CtrlDaemon2)
+	assert isinstance(map_id, int)
+	print("san_destroy id: {}, nameid: {}".format(attachee.id, attachee.name))
+	if (attachee.map != map_id): toee.RUN_DEFAULT
+	if (ctrl):
+		return ctrl.do_san_destroy(attachee, triggerer)
+	return toee.RUN_DEFAULT
+
 class CtrlDaemon2(ctrl_daemon.CtrlDaemon):
 	""" More modern than CtrlDaemon(object)"""
 
 	def __init__(self):
-		print("CtrlDaemon2 init1")
 		super(CtrlDaemon2, self).__init__()
-		print("CtrlDaemon2 init2")
 		self.last_heartbeat_time_sec = toee.game.time.time_game_in_seconds(toee.game.time)
 		self.last_heartbeat_time_hr = toee.game.time.time_game_in_hours2(toee.game.time)
 		self.default_map = 0
@@ -88,10 +111,11 @@ class CtrlDaemon2(ctrl_daemon.CtrlDaemon):
 		return cls.__name__
 
 	def init_daemon2_fields(self, default_map, default_script_id, default_monster_prefix, default_faction = None):
-		print("CtrlDaemon2 init_daemon2_fields")
+		print("init_daemon2_fields {}".format(self))
 		self.default_map = default_map
 		self.default_script_id = default_script_id
 		self.default_faction = default_faction
+		self.default_monster_prefix = default_monster_prefix
 		return
 
 	def monster_setup(self, npc, encounter_name, monster_code_name, monster_name, no_draw = 1, no_kos = 1, faction = None):
@@ -110,12 +134,14 @@ class CtrlDaemon2(ctrl_daemon.CtrlDaemon):
 		return self.default_map
 
 	def place_encounters(self, new_map):
-		print("new_map: {}".format(new_map))
-		print("place_encounters.encounters_placed == {}".format(self.encounters_placed))
+		print("new_map: {} for {}".format(new_map, self))
+		print("place_encounters.encounters_placed == {} for {}".format(self.encounters_placed, self))
 		startup_zmod.zmod_templeplus_config_apply()
 		startup_zmod.zmod_conditions_apply_pc()
 
-		if (self.encounters_placed and new_map == 0): return
+		if (self.encounters_placed and new_map == 0):
+			self.place_encounters_next()
+			return
 
 		this_entrance_time = toee.game.time.time_game_in_hours2(toee.game.time)
 		print("this_entrance_time == {}".format(this_entrance_time))
@@ -127,7 +153,8 @@ class CtrlDaemon2(ctrl_daemon.CtrlDaemon):
 
 		if (not self.encounters_placed and 1):
 			self.place_encounters_initial()
-			pass
+		else:
+			self.place_encounters_next()
 
 		self.encounters_placed += 1
 		self.factions_existance_refresh()
@@ -163,16 +190,29 @@ class CtrlDaemon2(ctrl_daemon.CtrlDaemon):
 	def place_encounters_initial(self):
 		return
 
+	def place_encounters_next(self):
+		return
+
 	def do_san_use(self, attachee, triggerer):
 		assert isinstance(attachee, toee.PyObjHandle)
 		print("san_use id: {}, nameid: {}".format(attachee.id, attachee.name))
 		return toee.RUN_DEFAULT
 
+	def do_san_bust(self, attachee, triggerer):
+		assert isinstance(attachee, toee.PyObjHandle)
+		print("san_bust id: {}, nameid: {}".format(attachee.id, attachee.name))
+		return toee.RUN_DEFAULT
+
+	def do_san_destroy(self, attachee, triggerer):
+		assert isinstance(attachee, toee.PyObjHandle)
+		print("do_san_destroy id: {}, nameid: {}, attachee: {}".format(attachee.id, attachee.name, attachee))
+		return toee.RUN_DEFAULT
+
 	def heartbeat(self, npc):
 		return
 
-	def create_npc_at(self, npc_loc, ctrl_class, rot, encounter, code_name, faction = None, no_draw = 1, no_kos = 1):
-		npc, ctrl = super(CtrlDaemon2, self).create_npc_at(npc_loc, ctrl_class, rot, encounter, code_name, faction, no_draw, no_kos)
+	def create_npc_at(self, npc_loc, ctrl_class, rot, encounter, code_name, faction = None, no_draw = 1, no_kos = 1, no_move = 0):
+		npc, ctrl = super(CtrlDaemon2, self).create_npc_at(npc_loc, ctrl_class, rot, encounter, code_name, faction, no_draw, no_kos, no_move)
 		if (ctrl):
 			ctrl.vars["daemon_name"] = self.get_name()
 		return npc, ctrl

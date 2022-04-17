@@ -23,9 +23,11 @@ class NPCSpells(object):
 		return 0
 
 	def get_spell(self, spell_num):
+		s = None
+		assert isinstance(s, NPCSpell)
 		if (spell_num in self.spells): 
-			return self.spells[spell_num]
-		return None
+			s = self.spells[spell_num]
+		return s
 
 	def prep_spell(self, npc, spell_num, decr = 1):
 		if (spell_num in self.spells): 
@@ -43,15 +45,18 @@ class NPCSpells(object):
 				class_name = "class_bard"
 			elif (rec.spell_class_stat == toee.stat_level_wizard):
 				class_name = "class_wizard"
+			elif (rec.spell_class_stat == toee.stat_level_sorcerer):
+				class_name = "class_sorcerer"
 			elif (rec.spell_class_stat == toee.stat_level_druid):
 				class_name = "class_druid"
-			else: # zero
+			else: # zero or toee.domain_special
 				class_name = "domain_special"
 			spell_code = "'{}' {} {}".format(utils_spell.spell_name_safe(rec.spell_num), class_name, rec.spell_level)
 			return spell_code
 		return None
 
 	def memorize_all(self, npc):
+		assert isinstance(npc, toee.PyObjHandle)
 		for spell_num in self.spells.iterkeys():
 			rec = self.spells[spell_num]
 			if (not rec.ensured):

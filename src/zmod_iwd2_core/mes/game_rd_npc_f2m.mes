@@ -1,0 +1,14 @@
+
+// This section is for RUMORS in the game.
+// these start at 0 and each new rumor is on a multiple of 10
+// the first message is the logbook message
+// the second message is the rumor as told by an NPC in dialog
+
+// Story State 0
+
+{0} {Some of the locals are afraid of Terjon.}
+{1} {I heard someone say that Terjon is really a monster!}
+
+{10} {The locals are talking about bandit activity around these parts.}
+{11} {There seem to be a lot more bandits around these days.}
+

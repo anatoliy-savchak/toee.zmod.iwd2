@@ -1,4 +1,4 @@
-import toee, debug, utils_storage, utils_item
+import toee, debug, utils_storage, utils_item, const_proto_wondrous, const_proto_items
 
 def san_use(attachee, triggerer):
 	assert isinstance(attachee, toee.PyObjHandle)
@@ -66,13 +66,14 @@ def _Bag_Of_Holding_elicit_on_timeevent(bag, chest):
 
 	CtrlBagOfHolding.eject_incompatible(chest)
 	max_weight = 0
-	if (bag.proto == 12501):
+	bagproto = bag.proto
+	if (bagproto == const_proto_wondrous.PROTO_WONDROUS_BAG_OF_HOLDING_TYPE_1):
 		max_weight = 250
-	elif (bag.proto == 12502):
+	elif (bagproto == const_proto_wondrous.PROTO_WONDROUS_BAG_OF_HOLDING_TYPE_2):
 		max_weight = 500
-	elif (bag.proto == 12503):
+	elif (bagproto == const_proto_wondrous.PROTO_WONDROUS_BAG_OF_HOLDING_TYPE_3):
 		max_weight = 1000
-	elif (bag.proto == 12504):
+	elif (bagproto == const_proto_wondrous.PROTO_WONDROUS_BAG_OF_HOLDING_TYPE_4):
 		max_weight = 1500
 	if (max_weight):
 		CtrlBagOfHolding.eject_overweight(chest, max_weight)
@@ -82,11 +83,13 @@ def _Bag_Of_Holding_elicit_on_timeevent(bag, chest):
 
 	ctrl = CtrlBagOfHolding.ensure(bag)
 	assert isinstance(ctrl, CtrlBagOfHolding)
-	ctrl.elicit(chest)
+	ctrl.extract_from_chest(chest)
 	print("BAG OF HOLDING SAVED!")
 	#print(ctrl.items)
 	return 1
 
+def is_bag_proto(proto):
+	return (proto in (const_proto_wondrous.PROTO_WONDROUS_BAG_OF_HOLDING_TYPE_1, const_proto_wondrous.PROTO_WONDROUS_BAG_OF_HOLDING_TYPE_2, const_proto_wondrous.PROTO_WONDROUS_BAG_OF_HOLDING_TYPE_3, const_proto_wondrous.PROTO_WONDROUS_BAG_OF_HOLDING_TYPE_4, const_proto_items.PROTO_GENERIC_BACKPACK))
 
 def find_bag(triggerer, chest):
 	assert isinstance(triggerer, toee.PyObjHandle)
@@ -97,13 +100,17 @@ def find_bag(triggerer, chest):
 		print("inv_idx: {}".format(inv_idx))
 		item = triggerer.inventory_item(inv_idx)
 		assert isinstance(item, toee.PyObjHandle)
-		if (item and item.type == toee.obj_t_bag):
+		if is_bag_proto(item.proto):
+			print("found: {}, {}".format(item, item.description))
 			return item
+		else:
+			print("bag is wrong: {}, bag.type: {}".format(item.id, item.type))
 
+	# workaround
 	for i in range(0, 199):
 		item = triggerer.inventory_item(i)
 		if (not item or item == toee.OBJ_HANDLE_NULL): continue
-		if (item.proto == 12501):
+		if is_bag_proto(item.proto):
 			return item
 	return None
 
@@ -122,15 +129,17 @@ class CtrlBagOfHolding(object):
 		return "CtrlBagOfHolding"
 
 	@classmethod
-	def ensure(cls, npc):
-		data = utils_storage.obj_storage(npc).data
+	def ensure(cls, bag):
+		assert isinstance(bag, toee.PyObjHandle)
+		print("ensure bag: {}, bag.type: {}".format(bag.id, bag.type))
+		data = utils_storage.obj_storage(bag).data
 		ctrl = None
 		if (cls.get_name() in data):
 			ctrl = data[cls.get_name()]
 		else:
 			ctrl = cls()
-			ctrl.created(npc)
-			utils_storage.obj_storage(npc).data[cls.get_name()] = ctrl
+			ctrl.created(bag)
+			utils_storage.obj_storage(bag).data[cls.get_name()] = ctrl
 		return ctrl
 
 	@classmethod
@@ -199,17 +208,17 @@ class CtrlBagOfHolding(object):
 	@classmethod
 	def is_obj_incompatible(cls, obj):
 		assert isinstance(obj, toee.PyObjHandle)
-		if (obj.proto == 12501): return 1
+		if is_bag_proto(obj.proto): return 1
 		return 0
 
-	def elicit(self, chest):
+	def extract_from_chest(self, chest):
 		assert isinstance(chest, toee.PyObjHandle)
 		self.items = dict()
 		for i in range(0, 199):
 			obj = chest.inventory_item(i)
 			if (not obj or obj == toee.OBJ_HANDLE_NULL): continue
 			item = HoldingItem()
-			item.assign(obj)
+			item.save(obj)
 			self.items[item.id] = item
 		return
 	
@@ -225,26 +234,39 @@ class CtrlBagOfHolding(object):
 		return
 
 class HoldingItem(object):
-	def _init_(self):
+	def __init__(self):
 		self.id = ""
 		self.proto = 0
-		self.item_flags = 0
-		self.ammo_quantity = 0
-		self.worth = 0
+		self.props = dict()
 		return
 
-	def assign(self, obj):
+	def save(self, obj):
 		assert isinstance(obj, toee.PyObjHandle)
 		self.id = obj.id
 		self.proto = obj.proto
-		print("assigned obj: {}, id: {}, proto: {}".format(obj, self.id, self.proto))
+		print("saved obj: {}, id: {}, proto: {}".format(obj, self.id, self.proto))
 		otype = obj.type
 		# IsEquipment
 		if (otype >= toee.obj_t_weapon and otype <= toee.obj_t_generic or otype <= toee.obj_t_bag):
-			self.item_flags = obj.obj_get_int(toee.obj_f_item_flags)
-			self.worth = obj.obj_get_int(toee.obj_f_item_worth)
+			self.save_prop(obj, "item_flags", toee.obj_f_item_flags)
+			self.save_prop(obj, "item_worth", toee.obj_f_item_worth)
+			self.save_prop(obj, "item_spell_charges_idx", toee.obj_f_item_spell_charges_idx)
 		if (otype == toee.obj_t_ammo):
-			self.ammo_quantity = obj.obj_get_int(toee.obj_f_ammo_quantity)
+			self.save_prop(obj, "ammo_quantity", toee.obj_f_ammo_quantity)
+		return
+
+	def load_prop(self, obj, prop_name, prop_code):
+		assert isinstance(obj, toee.PyObjHandle)
+		val = self.props.get(prop_name)
+		if (not val is None and val is int):
+			obj.obj_set_int(prop_code, val)
+		return
+
+	def save_prop(self, obj, prop_name, prop_code):
+		assert isinstance(obj, toee.PyObjHandle)
+		val = obj.obj_get_int(prop_code)
+		if (val):
+			self.props[prop_name] = val
 		return
 
 	def spawn(self, loc):
@@ -254,8 +276,10 @@ class HoldingItem(object):
 		otype = obj.type
 		# IsEquipment
 		if (otype >= toee.obj_t_weapon and otype <= toee.obj_t_generic or otype <= toee.obj_t_bag):
-			obj.obj_set_int(toee.obj_f_item_flags, self.item_flags)
-			obj.obj_set_int(toee.obj_f_item_worth, self.worth)
+			self.load_prop(obj, "item_flags", toee.obj_f_item_flags)
+			self.load_prop(obj, "item_worth", toee.obj_f_item_worth)
+			self.load_prop(obj, "item_spell_charges_idx", toee.obj_f_item_spell_charges_idx)
+			
 		if (otype == toee.obj_t_ammo):
-			obj.obj_set_int(toee.obj_f_ammo_quantity, self.ammo_quantity)
+			self.load_prop(obj, "ammo_quantity", toee.obj_f_ammo_quantity)
 		return obj

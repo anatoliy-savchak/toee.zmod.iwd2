@@ -1,4 +1,4 @@
-import toee, utils_storage, startup_zmod, utils_obj, const_proto_containers
+import toee, utils_storage, startup_zmod, utils_obj, const_proto_containers, debug, utils_pc, module_consts
 
 def san_dialog(attachee, triggerer):
 	triggerer.begin_dialog( attachee, 1 )
@@ -27,6 +27,7 @@ def place_chests():
 			obj.substitute_inventory = box
 		return
 
+	#debug.breakp("")
 	# Standard Equipment Chest
 	place_chest(14575, 492, 474, 2.82842779, 2.82842779, 2.3561945)
 
@@ -44,4 +45,13 @@ def place_chests():
 
 	# Supplies Chest
 	place_chest(14753, 485, 483, 12.7279215, 9.899496, 3.926991)
+
+	# reset money
+	pc = toee.game.party[0]
+	if (pc):
+		currentcp = pc.money_get()
+		print("{}: {}".format(pc, currentcp))
+		pc.money_adj(-currentcp)
+		utils_pc.pc_party_set_starting_gold_as_raw(0)
+
 	return

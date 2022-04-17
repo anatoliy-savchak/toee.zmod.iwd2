@@ -1,4 +1,4 @@
-import toee, debugg
+import toee, debugg, tpdp, ctrl_behaviour, utils_npc
 
 debug_print = 1
 class StatInspect:
@@ -23,7 +23,7 @@ class StatInspect:
 		self.stats["class_name_dict"] = self.get_class_name_level_dict()
 		self.stats["level"] = self.get_level()
 		# Alignment
-		self.stats["alignment_short"] = self.get_alignment_short()
+		self.stats["alignment_short"] = utils_npc.npc_get_alignment_short(self.npc)
 		# Size and Type
 		self.stats["size_name"] = self.get_size_name()
 		self.stats["type_name"] = self.get_type_name()
@@ -45,6 +45,15 @@ class StatInspect:
 		self.stats["hp_current"] = self.get_hp_current()
 		self.stats["hd"] = self.get_hd()
 
+		# ctrl_behaviour
+		ctrl = ctrl_behaviour.get_ctrl(self.npc.id)
+		if (ctrl):
+			pts = self.get_pts()
+			self.stats['pts'] = pts
+			hp_lines = ctrl.vars.get('hp_lines')
+			if (hp_lines):
+				self.stats['hp_lines'] = hp_lines
+
 		# saves
 		self.stats["save_fort"] = self.get_save_fort()
 		self.stats["save_ref"] = self.get_save_ref()
@@ -62,6 +71,8 @@ class StatInspect:
 		self.stats["int"] = self.get_int()
 		self.stats["wis"] = self.get_wis()
 		self.stats["cha"] = self.get_cha()
+
+		self.stats["con_mod"] = self.get_con_mod()
 
 		# feats
 		self.stats["feat_name_dic"] = self.get_feat_name_dic()
@@ -96,25 +107,17 @@ class StatInspect:
 		if (self.npc.type == toee.obj_t_npc):
 			cr = self.npc.obj_get_int(toee.obj_f_npc_challenge_rating)
 		level_cr = self.npc.stat_level_get(toee.stat_level)
-		result = cr + level_cr
+		if level_cr:
+			# if (cr < 0): cr = 0 -- actually it's being summed
+			result = cr + level_cr
+		else:
+			if cr == -1:
+				result = 0.5
+			elif cr == -2:
+				result = 0.3
+			else:
+				result = cr
 		return result
-
-	def get_alignment_short(self):
-		a = self.npc.obj_get_int(toee.obj_f_critter_alignment)
-		if (a == toee.ALIGNMENT_NEUTRAL): return "N"
-		if (a == toee.ALIGNMENT_LAWFUL): return "L"
-		if (a == toee.ALIGNMENT_LAWFUL_NEUTRAL): return "LN"
-		if (a == toee.ALIGNMENT_CHAOTIC): return "C"
-		if (a == toee.ALIGNMENT_CHAOTIC_NEUTRAL): return "CN"
-		if (a == toee.ALIGNMENT_GOOD): return "G"
-		if (a == toee.ALIGNMENT_NEUTRAL_GOOD): return "NG"
-		if (a == toee.ALIGNMENT_LAWFUL_GOOD): return "LG"
-		if (a == toee.ALIGNMENT_CHAOTIC_GOOD): return "CG"
-		if (a == toee.ALIGNMENT_EVIL): return "E"
-		if (a == toee.ALIGNMENT_NEUTRAL_EVIL): return "NE"
-		if (a == toee.ALIGNMENT_LAWFUL_EVIL): return "LE"
-		if (a == toee.ALIGNMENT_CHAOTIC_EVIL ): return "CE"
-		return None
 
 	def get_race_name(self):
 		race = self.npc.stat_level_get(toee.stat_race)
@@ -156,6 +159,7 @@ class StatInspect:
 		return result
 
 	def get_class_title(self, c):
+		return toee.game.get_mesline('mes\\stat.mes', c)
 		if (c == toee.stat_level_barbarian): return "barbarian"
 		if (c == toee.stat_level_bard): return "bard"
 		if (c == toee.stat_level_cleric): return "cleric"
@@ -337,7 +341,12 @@ class StatInspect:
 
 	def get_hd(self):
 		result = self.npc.hit_dice_num
+		if (not result):
+			result = self.npc.stat_level_get(toee.stat_level)
 		return result
+
+	def get_pts(self):
+		return self.npc.obj_get_int(toee.obj_f_hp_pts)
 
 	def get_save_fort(self):
 		result = self.npc.stat_level_get(toee.stat_save_fortitude)
@@ -367,6 +376,16 @@ class StatInspect:
 		result = self.npc.stat_level_get(toee.stat_constitution)
 		return result
 	
+	def get_con_mod(self):
+		if (self.npc.d20_query(toee.Q_Critter_Has_No_Con_Score)):
+			return 0
+		result = self.get_con()
+		if (result > 10):
+			result = (result - 10) // 2
+		else:
+			result = 0
+		return result
+
 	def get_int(self):
 		result = self.npc.stat_level_get(toee.stat_intelligence)
 		return result

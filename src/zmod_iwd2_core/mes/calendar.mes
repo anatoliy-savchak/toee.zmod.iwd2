@@ -1,0 +1,73 @@
+// line 1000: calendar string (uses the following escapes, which are CASE sensitive)
+// @H = hours (0-23)
+// @M = minutes (0-59)
+// @D = day the game
+// @W = day of the week (see lines 1100-1106)
+// @N = name of month / festival
+// @Y = numeric year
+// @@ = the @ symbol
+{1000}{@H:@M, Day @D (@W), @N, @Y CY}
+
+// line 1100-1106 day names
+{1100}{S}
+{1101}{S}
+{1102}{M}
+{1103}{G}
+{1104}{W}
+{1105}{E}
+{1106}{F}
+
+// lines 1200-1251: week names (months are 4 week blocks)
+// each season is comprised of 3 months and a week of festival
+{1200}{N}
+{1201}{F}
+{1202}{F}
+{1203}{F}
+{1204}{F}
+{1205}{Readying}
+{1206}{Readying}
+{1207}{Readying}
+{1208}{Readying}
+{1209}{Coldeven}
+{1210}{Coldeven}
+{1211}{Coldeven}
+{1212}{Coldeven}
+{1213}{Growfest}
+{1214}{Planting}
+{1215}{Planting}
+{1216}{Planting}
+{1217}{Planting}
+{1218}{Flocktime}
+{1219}{Flocktime}
+{1220}{Flocktime}
+{1221}{Flocktime}
+{1222}{Wealsun}
+{1223}{Wealsun}
+{1224}{Wealsun}
+{1225}{Wealsun}
+{1226}{Richfest}
+{1227}{Reaping}
+{1228}{Reaping}
+{1229}{Reaping}
+{1230}{Reaping}
+{1231}{Goodmonth}
+{1232}{Goodmonth}
+{1233}{Goodmonth}
+{1234}{Goodmonth}
+{1235}{Harvester}
+{1236}{Harvester}
+{1237}{Harvester}
+{1238}{Harvester}
+{1239}{Brewfest}
+{1240}{Patchwall}
+{1241}{Patchwall}
+{1242}{Patchwall}
+{1243}{Patchwall}
+{1244}{Ready'reat}
+{1245}{Ready'reat}
+{1246}{Ready'reat}
+{1247}{Ready'reat}
+{1248}{Sunswebb}
+{1249}{Sunswebb}
+{1250}{Sunswebb}
+{1251}{Sunswebb}

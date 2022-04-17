@@ -1,9 +1,6 @@
 ﻿import toee
 import tpdp
 
-def get_cur_seq():
-	return ActionSequence()
-
 class ActionSequence:
 	def __init__(self):
 		self.cur_idx = 0
@@ -44,3 +41,6 @@ class ModeTarget:
 	OnceMulti = 1024
 	Any30Feet = 2048
 	PickOrigin = 32768
+
+def get_cur_seq():
+	return ActionSequence()

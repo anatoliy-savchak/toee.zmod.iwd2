@@ -21,11 +21,16 @@ class StatGenerator:
 
 		if (not score): score = 10
 		score_mod = score - dc
+		score_mod = 100
 
 		# title
 		if (1):
 			line = self.values["full_name"]
-			if (cr):
+			if (cr): 
+				crstr = str(cr)
+				if cr < 1:
+					if cr == 0.5: crstr = "1/2"
+					elif cr == 0.3: crstr = "1/3"
 				line = "{}                              CR {}".format(line, inf(cr, score_mod, 0))
 			if (line):
 				lines.append(line)
@@ -112,8 +117,8 @@ class StatGenerator:
 				lines.append(line)
 
 		# hp, fast healing, regeneration, damage reduction (DR)
+		hp_max = self.values["hp_max"]
 		if (1 and score_mod >= 0):
-			hp_max = self.values["hp_max"]
 			hp_current = self.values["hp_current"]
 			stemplate = "hp {0} ({1} HD)"
 			if (hp_max != hp_current): stemplate = "hp {2}/{0} ({1} HD)"
@@ -290,6 +295,18 @@ class StatGenerator:
 					comma = ", "
 					line += phrase
 			if (line):
+				lines.append(line)
+
+		# hp lines
+		hp_lines = self.values.get('hp_lines')
+		if (hp_lines):
+			hp_lines = hp_lines[1]
+			pts = self.values.get('pts')
+			con_mod = self.values.get('con_mod')
+			#print(hp_lines)
+			line = 'hp rolls: {} (w/o con {} + {}*{}): {}'.format(hp_max, pts, hd, con_mod, (' ,'.join(hp_lines)).strip())
+			if (line):
+				lines.append("")
 				lines.append(line)
 		#
 		result = "\n".join(lines)

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #+-----------------+------------+-----------------+
 #| Character Level | NPC Wealth | PC Wealth       |
 #+-----------------+------------+-----------------+
@@ -45,7 +46,7 @@
 #+------------+-----------------+------------------------------------------------------+
 #| Item Level | Market Price    | Sample Items                                         |
 #+------------+-----------------+------------------------------------------------------+
-#| 1/2        | 1–50            | potion or scroll (1st-level spell), alchemist’s fire |
+#| 1/2        | 1–50            | potion or scroll (1st-level spell), alchemist's fire |
 #+------------+-----------------+------------------------------------------------------+
 #| 1st        | 51–150          | masterwork armor, scroll (2nd-level spell)           |
 #+------------+-----------------+------------------------------------------------------+
@@ -134,6 +135,7 @@ PROTO_INSTRUMENT_FLUTE_MASTERWORK = 12584 # Price: 500.00 gp
 PROTO_INSTRUMENT_HORN_MASTERWORK = 12586 # Price: 500.00 gp
 PROTO_INSTRUMENT_MANDOLIN_MASTERWORK = 12587 # Price: 500.00 gp
 
+PROTO_GENERIC_BACKPACK = 16000 # Cost: 0.2 gp
 PROTO_GENERIC_TOOLS_THIEVES = 12012 # Cost: 30 gp
 PROTO_GENERIC_TOOLS_HEALERS_KIT = 12846 # Cost: 50 gp
 PROTO_GENERIC_TOOLS_EYEGLASSES = 6031 # Cost: 50 gp

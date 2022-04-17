@@ -14,9 +14,10 @@ def TurnBasedStatusInitSingleActions(attachee, args, evt_obj):
 	assert isinstance(evt_obj, tpdp.EventObjTurnBasedStatus)
 	if (evt_obj.tb_status.hourglass_state > 3):
 		evt_obj.tb_status.hourglass_state = 3
-	print("TurnBasedStatusInitSingleActions for {}".format(attachee))
-	args.condition_remove()
-	print("SurpriseRound2 Removed for {}".format(attachee))
+	if not args.get_arg(0) or (args.get_arg(0) and attachee.is_active_combatant()):
+		print("TurnBasedStatusInitSingleActions for {}".format(attachee))
+		args.condition_remove()
+		print("SurpriseRound2 Removed for {}".format(attachee))
 	return 0
 
 def SurpriseRound2_OnGetTooltip(attachee, args, evt_obj):

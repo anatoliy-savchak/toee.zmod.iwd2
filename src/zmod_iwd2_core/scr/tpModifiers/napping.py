@@ -39,6 +39,8 @@ def NappingRemove(attachee, args):
 	assert isinstance(args, tpdp.EventArgs)
 	args.condition_remove()
 	attachee.critter_flag_unset(toee.OCF_SLEEPING)
+	if (toee.game.combat_is_active()):
+		attachee.condition_add("prone")
 	#attachee.condition_remove("prone")
 	print("NappingRemove")
 	return

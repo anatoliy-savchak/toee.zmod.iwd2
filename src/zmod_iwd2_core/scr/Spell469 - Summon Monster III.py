@@ -26,9 +26,11 @@ def	OnSpellEffect ( spell ):
 	if (option):
 		spell_arg = option
 
+	print("Summon Monster III spell_arg: {}".format(spell_arg))
 	if spell_arg not in options:
-		x = game.random_range(0,len(options)-1)
+		x = game.random_range(0, len(options)-1)
 		spell_arg = options[x]
+		print("Summon Monster III spell_arg: {}".format(spell_arg))
 
 	# create monster, monster should be added to target_list
 	spell.summon_monsters( 1, spell_arg)

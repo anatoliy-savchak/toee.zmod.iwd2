@@ -112,6 +112,7 @@ PROTO_WAND_OF_SHIELD_OF_FAITH = 12427 # Wand of Shield of Faith. Price: 750, Spe
 
 # Level 1 Divine Conjuration
 PROTO_WAND_OF_CURE_LIGHT_WOUNDS = 12090 # Wand of Cure Light Wounds. Price: 750, Spell Level: 1, Spell: 'Cure Light Wounds' class_cleric 1
+PROTO_WAND_OF_CURE_LIGHT_WOUNDS_USED = 12850 # Wand of Cure Light Wounds. Price: 750, Spell Level: 1, Spell: 'Cure Light Wounds' class_cleric 1
 PROTO_WAND_OF_SUMMON_NATURES_ALLY_I = 12476 # Wand of Summon Nature's Ally I. Price: 750, Spell Level: 1, Spell: 'Summon Natures Ally I' class_druid 1
 
 # Level 1 Divine Divination

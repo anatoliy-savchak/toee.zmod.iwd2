@@ -82,9 +82,7 @@
     <Compile Include="zmod_iwd2_core\scr.builtin\toee.py" />
     <Compile Include="zmod_iwd2_core\scr.builtin\tpactions.py" />
     <Compile Include="zmod_iwd2_core\scr.builtin\tpdp.py" />
-    <Compile Include="zmod_iwd2_core\scr\combat.py" />
     <Compile Include="zmod_iwd2_core\scr\const_proto_list_potions.py" />
-    <Compile Include="zmod_iwd2_core\scr\const_sceneries.py" />
     <Compile Include="zmod_iwd2_core\scr\const_animate.py" />
     <Compile Include="zmod_iwd2_core\scr\const_deseases.py" />
     <Compile Include="zmod_iwd2_core\scr\const_proto_armor.py" />
@@ -114,23 +112,11 @@
     <Compile Include="zmod_iwd2_core\scr\factions_zmod.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="zmod_iwd2_core\scr\game_ai_hooks.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="zmod_iwd2_core\scr\game_combat_hooks.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="zmod_iwd2_core\scr\py00334generic_spawner.py" />
-    <Compile Include="zmod_iwd2_core\scr\py00435the_postNPC.py" />
-    <Compile Include="zmod_iwd2_core\scr\py07012_daemon_temple_interior.py" />
-    <Compile Include="zmod_iwd2_core\scr\py07011_daemon_temple_exterior.py" />
-    <Compile Include="zmod_iwd2_core\scr\py07015_daemon_temple_house.py" />
-    <Compile Include="zmod_iwd2_core\scr\py07014_daemon_temple_tower_exterior.py" />
-    <Compile Include="zmod_iwd2_core\scr\py07023_npc_temple_tower.py" />
-    <Compile Include="zmod_iwd2_core\scr\py07013_daemon_temple_tower.py" />
-    <Compile Include="zmod_iwd2_core\scr\py07002_daemon_elder.py" />
-    <Compile Include="zmod_iwd2_core\scr\py07001_daemon_inn.py" />
-    <Compile Include="zmod_iwd2_core\scr\rttoee_consts.py" />
+    <Compile Include="zmod_iwd2_core\scr\module_cheats.py" />
+    <Compile Include="zmod_iwd2_core\scr\module_consts.py" />
+    <Compile Include="zmod_iwd2_core\scr\module_globals.py" />
+    <Compile Include="zmod_iwd2_core\scr\module_quests.py" />
+    <Compile Include="zmod_iwd2_core\scr\module_world_travel.py" />
     <Compile Include="zmod_iwd2_core\scr\monster_info.py" />
     <Compile Include="zmod_iwd2_core\scr\pc_build.py">
       <SubType>Code</SubType>
@@ -140,15 +126,13 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="zmod_iwd2_core\scr\py00406Game_Portal.py" />
-    <Compile Include="zmod_iwd2_core\scr\py05000_knowstone.py" />
+    <Compile Include="zmod_iwd2_core\scr\py01000_targos_docks_daemon.py" />
     <Compile Include="zmod_iwd2_core\scr\py05001_bag_of_holding.py" />
     <Compile Include="zmod_iwd2_core\scr\py06101_daemon_pc.py" />
     <Compile Include="zmod_iwd2_core\scr\py06111_sneak.py" />
     <Compile Include="zmod_iwd2_core\scr\py06122_cormyr_prompter.py" />
     <Compile Include="zmod_iwd2_core\scr\py06214_doors_autodestroy.py" />
-    <Compile Include="zmod_iwd2_core\scr\py07000_daemon_hommlet.py" />
     <Compile Include="zmod_iwd2_core\scr\random_encounter.py" />
-    <Compile Include="zmod_iwd2_core\scr\Spell067 - Command.py" />
     <Compile Include="zmod_iwd2_core\scr\Spell076 - Contagion.py" />
     <Compile Include="zmod_iwd2_core\scr\Spell090 - Cure Light Wounds.py" />
     <Compile Include="zmod_iwd2_core\scr\Spell096 - Darkness.py" />
@@ -297,10 +281,20 @@
     <Content Include="zmod_iwd2_core\mes\gamequestlog.mes" />
     <Content Include="zmod_iwd2_core\mes\skill_ui.mes" />
     <Content Include="zmod_iwd2_core\oemes\oname.mes" />
+    <Content Include="zmod_iwd2_core\rules\combat_vars.mes" />
+    <Content Include="zmod_iwd2_core\rules\gamequest.mes" />
+    <Content Include="zmod_iwd2_core\rules\InvenSource.mes" />
+    <Content Include="zmod_iwd2_core\rules\jumppoint.tab" />
+    <Content Include="zmod_iwd2_core\rules\MapLimits.mes" />
     <Content Include="zmod_iwd2_core\rules\partsys\ball_of_fire.tab" />
     <Content Include="zmod_iwd2_core\rules\partsys\darts.tab" />
     <Content Include="zmod_iwd2_core\rules\partsys\tppartsys.tab" />
+    <Content Include="zmod_iwd2_core\rules\protos_save.tab" />
+    <Content Include="zmod_iwd2_core\rules\skills_props.json" />
+    <Content Include="zmod_iwd2_core\rules\stat_enum.mes" />
+    <Content Include="zmod_iwd2_core\rules\stat_ext.mes" />
     <Content Include="zmod_iwd2_core\rules\traps.tab" />
+    <Content Include="zmod_iwd2_core\rules\written_ui.mes" />
     <Content Include="zmod_iwd2_core\scr\tpModifiers\condition_template.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />

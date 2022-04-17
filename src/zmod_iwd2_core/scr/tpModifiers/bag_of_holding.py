@@ -36,7 +36,7 @@ def items_get(npc):
 		invenNumField = toee.obj_f_critter_inventory_num
 	numItems = npc.obj_get_int(invenNumField)
 	result = list()
-	print("numItems: {}".format(numItems))
+	#print("numItems: {}".format(numItems))
 	if (numItems > 0):
 		if ((otype == toee.obj_t_npc) or (otype == toee.obj_t_pc)):
 			for i in range(toee.item_wear_helmet, toee.item_wear_lockpicks):
@@ -52,7 +52,7 @@ def items_get(npc):
 				result.append(item)
 				numItems -= 1
 			if (numItems <=0): break
-	print(result)
+	#print(result)
 	return result
 
 def item_clear_all(npc):
@@ -117,41 +117,68 @@ Bag_Of_Holding_Support = "Bag_Of_Holding_Support"
 
 def Bag_Of_Holding_OnBuildRadialMenuEntry(attachee, args, evt_obj):
 	assert isinstance(args, tpdp.EventArgs)
-	item = get_item(attachee, args)
-	#print("Bag_Of_Holding_OnBuildRadialMenuEntry item: {}".format(item))
-	inv_idx = args.get_arg(2)
-	item_name = "Bag of Holding"
-	if (item): item_name = item.description
+	try:
+		item = get_item(attachee, args)
+		#print("Bag_Of_Holding_OnBuildRadialMenuEntry item: {}".format(item))
+		inv_idx = args.get_arg(2)
+		item_name = "Bag of Holding"
+		if (item): item_name = item.description
 
-	radial_parent = tpdp.RadialMenuEntryParent(item_name)
-	radial_parent_id = radial_parent.add_child_to_standard(attachee, tpdp.RadialMenuStandardNode.Items)
+		radial_parent = tpdp.RadialMenuEntryParent(item_name)
+		radial_parent_id = radial_parent.add_child_to_standard(attachee, tpdp.RadialMenuStandardNode.Items)
 
-	radial_action = tpdp.RadialMenuEntryPythonAction("Inventory", toee.D20A_PYTHON_ACTION, 3006, inv_idx, "TAG_INTERFACE_HELP")
-	#assert isinstance(radial_action, tpdp.RadialMenuEntryParent)
-	radial_action.add_as_child(attachee, radial_parent_id)
-	#radial_action.add_child_to_standard(attachee, tpdp.RadialMenuStandardNode.Items)
+		radial_action = tpdp.RadialMenuEntryPythonAction("Inventory", toee.D20A_PYTHON_ACTION, 3006, inv_idx, "TAG_INTERFACE_HELP")
+		#assert isinstance(radial_action, tpdp.RadialMenuEntryParent)
+		radial_action.add_as_child(attachee, radial_parent_id)
+		#radial_action.add_child_to_standard(attachee, tpdp.RadialMenuStandardNode.Items)
 
-	radial_action = tpdp.RadialMenuEntryPythonAction("Examine bodies", toee.D20A_PYTHON_ACTION, 3007, inv_idx, "TAG_INTERFACE_HELP")
-	#assert isinstance(radial_action, tpdp.RadialMenuEntryParent)
-	#radial_action.add_child_to_standard(attachee, tpdp.RadialMenuStandardNode.Items)
-	radial_action.add_as_child(attachee, radial_parent_id)
-
-	radial_action = tpdp.RadialMenuEntryPythonAction("Transfer from bodies", toee.D20A_PYTHON_ACTION, 3008, inv_idx, "TAG_INTERFACE_HELP")
-	#assert isinstance(radial_action, tpdp.RadialMenuEntryParent)
-	#radial_action.add_child_to_standard(attachee, tpdp.RadialMenuStandardNode.Items)
-	radial_action.add_as_child(attachee, radial_parent_id)
-
-	radial_action = tpdp.RadialMenuEntryPythonAction("List contents", toee.D20A_PYTHON_ACTION, 3009, inv_idx, "TAG_INTERFACE_HELP")
-	#assert isinstance(radial_action, tpdp.RadialMenuEntryParent)
-	#radial_action.add_child_to_standard(attachee, tpdp.RadialMenuStandardNode.Items)
-	radial_action.add_as_child(attachee, radial_parent_id)
-
-	if (0):
-		radial_action = tpdp.RadialMenuEntryPythonAction("Autosell", toee.D20A_PYTHON_ACTION, 3013, inv_idx, "TAG_INTERFACE_HELP")
+		radial_action = tpdp.RadialMenuEntryPythonAction("Examine bodies", toee.D20A_PYTHON_ACTION, 3007, inv_idx, "TAG_INTERFACE_HELP")
 		#assert isinstance(radial_action, tpdp.RadialMenuEntryParent)
 		#radial_action.add_child_to_standard(attachee, tpdp.RadialMenuStandardNode.Items)
 		radial_action.add_as_child(attachee, radial_parent_id)
+
+		radial_action = tpdp.RadialMenuEntryPythonAction("Transfer from bodies", toee.D20A_PYTHON_ACTION, 3008, inv_idx, "TAG_INTERFACE_HELP")
+		#assert isinstance(radial_action, tpdp.RadialMenuEntryParent)
+		#radial_action.add_child_to_standard(attachee, tpdp.RadialMenuStandardNode.Items)
+		radial_action.add_as_child(attachee, radial_parent_id)
+
+		radial_action = tpdp.RadialMenuEntryPythonAction("List contents", toee.D20A_PYTHON_ACTION, 3009, inv_idx, "TAG_INTERFACE_HELP")
+		#assert isinstance(radial_action, tpdp.RadialMenuEntryParent)
+		#radial_action.add_child_to_standard(attachee, tpdp.RadialMenuStandardNode.Items)
+		radial_action.add_as_child(attachee, radial_parent_id)
+
+		radial_action = tpdp.RadialMenuEntrySlider("Min worth", "Min worth x50 when transfering - {}".format(item_name), 0, 20, "TAG_INTERFACE_HELP")
+		radial_action.link_to_args(args, 1)
+		#assert isinstance(radial_action, tpdp.RadialMenuEntryParent)
+		#radial_action.add_child_to_standard(attachee, tpdp.RadialMenuStandardNode.Items)
+		radial_action.add_as_child(attachee, radial_parent_id)
+
+		if (0):
+			radial_action = tpdp.RadialMenuEntryPythonAction("Autosell", toee.D20A_PYTHON_ACTION, 3013, inv_idx, "TAG_INTERFACE_HELP")
+			#assert isinstance(radial_action, tpdp.RadialMenuEntryParent)
+			#radial_action.add_child_to_standard(attachee, tpdp.RadialMenuStandardNode.Items)
+			radial_action.add_as_child(attachee, radial_parent_id)
+	except Exception, e:
+		print "Bag_Of_Holding_OnBuildRadialMenuEntry:"
+		print '-'*60
+		traceback.print_exc(file=sys.stdout)
+		print '-'*60		
 	return 0
+
+def check_approp_bag(attachee, args, evt_obj):
+	assert isinstance(attachee, toee.PyObjHandle)
+	assert isinstance(args, tpdp.EventArgs)
+	assert isinstance(evt_obj, tpdp.EventObjD20Action)
+
+	menu_idx_inv = evt_obj.d20a.data1
+	inv_idx = args.get_arg(2)
+	if (inv_idx != menu_idx_inv):
+		print("Bag_Of_Holding_OnD20PythonActionPerform_... wrong item menu_idx_inv: {}, inv_idx: {}".format(menu_idx_inv, inv_idx))
+		return False
+
+	for pc in toee.game.party:
+		pc.condition_add(Bag_Of_Holding_Support)
+	return True
 
 def Bag_Of_Holding_OnD20PythonActionPerform_inventory(attachee, args, evt_obj):
 	assert isinstance(attachee, toee.PyObjHandle)
@@ -159,14 +186,8 @@ def Bag_Of_Holding_OnD20PythonActionPerform_inventory(attachee, args, evt_obj):
 	assert isinstance(evt_obj, tpdp.EventObjD20Action)
 	#debug.breakp("Lodged_Quills_OnD20PythonActionPerform start")
 	try:
-		menu_idx_inv = evt_obj.d20a.data1
-		inv_idx = args.get_arg(2)
-		if (inv_idx != menu_idx_inv):
-			print("Bag_Of_Holding_OnD20PythonActionPerform_inventory wrong item menu_idx_inv: {}, inv_idx: {}".format(menu_idx_inv, inv_idx))
+		if not check_approp_bag(attachee, args, evt_obj):
 			return 0
-
-		for pc in toee.game.party:
-			pc.condition_add(Bag_Of_Holding_Support)
 
 		chest = make_chest(attachee, args)
 		print("Bag_Of_Holding_OnD20PythonActionPerform_inventory chest: {}, critter: {}".format(chest, attachee))
@@ -184,6 +205,9 @@ def Bag_Of_Holding_OnD20PythonActionPerform_examine_bodies(attachee, args, evt_o
 	assert isinstance(evt_obj, tpdp.EventObjD20Action)
 	#debug.breakp("Lodged_Quills_OnD20PythonActionPerform start")
 	try:
+		if not check_approp_bag(attachee, args, evt_obj):
+			return 0
+
 		print("Bag_Of_Holding_OnD20PythonActionPerform_3007")
 		for body in toee.game.obj_list_range(attachee.location, 20, toee.OLC_NPC):
 			hp = body.stat_level_get(toee.stat_hp_current)
@@ -196,15 +220,19 @@ def Bag_Of_Holding_OnD20PythonActionPerform_examine_bodies(attachee, args, evt_o
 						continue
 			items = items_get(body)
 			#items = body.inventory_items()
-			print("items: {}".format(len(items)))
+			skip_item = 0
+			skip_item_price = args.get_arg(1) * 50
+			print("skip_item_price: {}".format(skip_item_price))
+			#print("items: {}".format(len(items)))
 			if (items):
 				for item in items:
 					assert isinstance(item, toee.PyObjHandle)
 					text = item.description
-					print("{}: {}".format(text, body))
+					#print("{}: {}".format(text, body))
 					color = toee.tf_yellow
 					tpe = item.type
 					is_idenified = item.item_flags_get() & toee.OIF_IDENTIFIED
+					skip_item = 0
 					if ((tpe >= toee.obj_t_weapon) and (tpe <= toee.obj_t_armor)):
 						if (item.item_flags_get() & toee.OIF_IS_MAGICAL): 
 							color = toee.tf_blue
@@ -212,16 +240,28 @@ def Bag_Of_Holding_OnD20PythonActionPerform_examine_bodies(attachee, args, evt_o
 								if (tpe == toee.obj_t_weapon): text = "Magic Weapon"
 								elif (tpe == toee.obj_t_armor): text = "Magic Armor"
 								else: text = "Magic Item"
+						skip_item = 0
+						if skip_item_price > 0:
+							mult = 1
+							if tpe == toee.obj_t_ammo: mult = item.obj_get_int(toee.obj_f_ammo_quantity)
+							else: mult = item.obj_get_int(toee.obj_f_item_quantity)
+							worth = int(mult  * item.obj_get_int(toee.obj_f_item_worth) // 100)
+							if worth < skip_item_price:
+								skip_item = 1
+							print("{} {} ? {} = SKIP: {}".format(text, worth, skip_item_price, skip_item))
 					elif ((tpe == toee.obj_t_food) or (tpe == toee.obj_t_scroll) or (tpe == toee.obj_t_generic)):
 						color = toee.tf_green
 						if (not is_idenified):
 							if (tpe == toee.obj_t_scroll): text = "Magic Scroll"
 							elif (tpe == toee.obj_t_food and item.obj_get_int(toee.obj_f_category) == 4): text = "Magic Potion"
-					elif ((tpe == toee.obj_t_key) or (tpe == toee.obj_t_written)):
+					elif ((tpe == toee.obj_t_key) or (tpe == toee.obj_t_written) or (tpe == toee.obj_t_money)):
 						color = toee.tf_light_blue
-					body.float_text_line(text, color)
+
+					skip_item_text = "" if not skip_item else ". SKIPPED!"
+					body.float_text_line(text+skip_item_text, color)
+
 					weight = item.obj_get_int(toee.obj_f_item_weight)
-					text = "*. {}. {} lb\n".format(text, weight)
+					text = "*. {}. {} lb{}\n".format(text, weight, skip_item_text)
 					toee.game.create_history_freeform(text)
 	except Exception, e:
 		print "Bag_Of_Holding_OnD20PythonActionPerform_3007:"
@@ -236,6 +276,8 @@ def Bag_Of_Holding_OnD20PythonActionPerform_transfer_from_bodies(attachee, args,
 	assert isinstance(evt_obj, tpdp.EventObjD20Action)
 	#debug.breakp("Lodged_Quills_OnD20PythonActionPerform start")
 	try:
+		if not check_approp_bag(attachee, args, evt_obj):
+			return 0
 		#debug.breakp("Bag_Of_Holding_OnD20PythonActionPerform")
 		chest = make_chest(attachee, args)
 		# force load
@@ -253,7 +295,10 @@ def Bag_Of_Holding_OnD20PythonActionPerform_transfer_from_bodies(attachee, args,
 			items = items_get(body)
 			#items = body.inventory_items()
 			transfer_to_self = 0
-			print("items: {}".format(len(items)))
+			skip_item = 0
+			skip_item_price = args.get_arg(1) * 50
+			print("skip_item_price: {}".format(skip_item_price))
+			#print("items: {}".format(len(items)))
 			if (items):
 				for item in items:
 					assert isinstance(item, toee.PyObjHandle)
@@ -270,30 +315,46 @@ def Bag_Of_Holding_OnD20PythonActionPerform_transfer_from_bodies(attachee, args,
 								if (tpe == toee.obj_t_weapon): text = "Magic Weapon"
 								elif (tpe == toee.obj_t_armor): text = "Magic Armor"
 								else: text = "Magic Item"
+						skip_item = 0
+						if skip_item_price > 0:
+							mult = 1
+							if tpe == toee.obj_t_ammo: mult = item.obj_get_int(toee.obj_f_ammo_quantity)
+							else: mult = item.obj_get_int(toee.obj_f_item_quantity)
+							worth = int(mult  * item.obj_get_int(toee.obj_f_item_worth) // 100)
+							skip_item = worth < skip_item_price
 					elif ((tpe == toee.obj_t_food) or (tpe == toee.obj_t_scroll) or (tpe == toee.obj_t_generic)):
 						color = toee.tf_green
 						if (not is_idenified):
 							if (tpe == toee.obj_t_scroll): text = "Magic Scroll"
 							elif (tpe == toee.obj_t_food and item.obj_get_int(toee.obj_f_category) == 4): text = "Magic Potion"
-					elif ((tpe == toee.obj_t_key) or (tpe == toee.obj_t_written)):
+					elif ((tpe == toee.obj_t_key) or (tpe == toee.obj_t_written) or (tpe == toee.obj_t_money)):
 						transfer_to_self = 1
 						color = toee.tf_light_blue
 					if (not modified):
 						toee.game.create_history_freeform("Transferred:\n")
-					body.float_text_line(text, color)
+
+					skip_item_text = "" if not skip_item else ". SKIPPED!"
+					body.float_text_line(text+skip_item_text, color)
+
 					weight = item.obj_get_int(toee.obj_f_item_weight)
-					text = "*. {}. {} lb\n".format(text, weight)
+					measure_txt = ". {} lb".format(weight)
+					if tpe == toee.obj_t_money:
+						measure_txt = " {}".format(item.obj_get_int(toee.obj_f_money_quantity))
+
+					text = "*. {}{}{}\n".format(text, measure_txt, skip_item_text)
 					toee.game.create_history_freeform(text)
 					if (transfer_to_self):
 						attachee.item_get(item)
+					elif skip_item_text:
+						pass
 					else:
-						bag.item_get(item)
+						chest.item_get(item)
 					modified = 1
 		if (modified):
 			toee.game.create_history_freeform("\n")
 			# force save
 			chest.object_script_execute(attachee, 0x20) #sn_transfer
-		attachee.anim_goal_use_object(bag)
+		attachee.anim_goal_use_object(chest)
 		#attachee.container_open_ui(bag)
 	except Exception, e:
 		print "Bag_Of_Holding_OnD20PythonActionPerform_3008:"
@@ -322,7 +383,7 @@ def sell_modifier():
 	return result
 
 class ItemInfo:
-	def __init__(self, item, worth, weight, text = None):
+	def __init__(self, item, worth, weight, text = None, name = None):
 		assert isinstance(item, toee.PyObjHandle)
 		assert isinstance(worth, int)
 		assert isinstance(weight, int)
@@ -331,6 +392,7 @@ class ItemInfo:
 		self.worth = worth
 		self.weight = weight
 		self.text = text
+		self.name = name
 		self.ratio = worth
 		if (weight):
 			self.ratio = worth / weight
@@ -347,6 +409,8 @@ def Bag_Of_Holding_OnD20PythonActionPerform_autosell(attachee, args, evt_obj):
 	assert isinstance(evt_obj, tpdp.EventObjD20Action)
 	#debug.breakp("Lodged_Quills_OnD20PythonActionPerform start")
 	try:
+		if not check_approp_bag(attachee, args, evt_obj):
+			return 0
 		#debug.breakp("Bag_Of_Holding_OnD20PythonActionPerform")
 		chest = make_chest(attachee, args)
 
@@ -401,12 +465,14 @@ def Bag_Of_Holding_OnD20PythonActionPerform_list_bag(attachee, args, evt_obj):
 	assert isinstance(evt_obj, tpdp.EventObjD20Action)
 	#debug.breakp("Lodged_Quills_OnD20PythonActionPerform start")
 	try:
+		if not check_approp_bag(attachee, args, evt_obj):
+			return 0
 		#debug.breakp("Bag_Of_Holding_OnD20PythonActionPerform")
 		chest = make_chest(attachee, args)
 		# force load
-		bag.object_script_execute(attachee, 0x01) #sn_use
+		chest.object_script_execute(attachee, 0x01) #sn_use
 		toee.game.create_history_freeform("Bag of Holding contents:\n")
-		items = items_get(bag)
+		items = items_get(chest)
 		num = 0
 		total_lb = 0
 		total_gp = 0
@@ -427,8 +493,11 @@ def Bag_Of_Holding_OnD20PythonActionPerform_list_bag(attachee, args, evt_obj):
 			x = item.obj_get_int(toee.obj_f_item_quantity)
 			if (x > 1): x2 = " x{}".format(x)
 			info = ItemInfo(item, worth_gp, weight)
-			text = "{}{}.\n   {} lb. {} gp ({}), r {}\n".format(num, text, x2, weight, worth_gp, int(worth_gp_sell), int(info.ratio))
+			str_worth_gp_sell = "" if (worth_gp == int(worth_gp_sell)) else " (sell {})".format(int(worth_gp_sell))
+			text = "{}.\n   {} lb. {} gp{}\n".format(text, weight, worth_gp, str_worth_gp_sell, int(info.ratio))
+			name = "{}{}".format(num, text)
 			info.text = text
+			info.name = name
 			lst.append(info)
 			#toee.game.create_history_freeform(text)
 
@@ -443,7 +512,7 @@ def Bag_Of_Holding_OnD20PythonActionPerform_list_bag(attachee, args, evt_obj):
 			text = "Total: {} lb, {} gp, sell: {} gp\n".format(total_lb, total_gp, int(total_gp_sell))
 			toee.game.create_history_freeform(text)
 		toee.game.create_history_freeform("\n")
-		attachee.anim_goal_use_object(bag)
+		attachee.anim_goal_use_object(chest)
 		#attachee.container_open_ui(bag)
 	except Exception, e:
 		print "Bag_Of_Holding_OnD20PythonActionPerform_3009:"
@@ -498,7 +567,7 @@ def _Bag_Of_Holding_destroy_on_timeevent(chest):
 			Bag_Of_Holding_timed_destroy(chest, 1000)
 	return 1
 
-modObj = templeplus.pymod.PythonModifier(GetConditionName(), 3) # 0 - type, 1 - reserved, 2 - invIdx
+modObj = templeplus.pymod.PythonModifier(GetConditionName(), 3) # 0 - type, 1 - min value, 2 - invIdx
 modObj.AddHook(toee.ET_OnBuildRadialMenuEntry, toee.EK_NONE, Bag_Of_Holding_OnBuildRadialMenuEntry, ())
 modObj.AddHook(toee.ET_OnD20PythonActionPerform, 3006, Bag_Of_Holding_OnD20PythonActionPerform_inventory, ())
 modObj.AddHook(toee.ET_OnD20PythonActionPerform, 3007, Bag_Of_Holding_OnD20PythonActionPerform_examine_bodies, ())

@@ -1,4 +1,4 @@
-import toee, py06122_cormyr_prompter, utils_toee, const_toee, utils_storage, debug, utils_obj, utils_npc, ctrl_behaviour, monster_info, utils_item, factions_zmod
+import toee, py06122_cormyr_prompter, utils_toee, const_toee, utils_storage, debug, utils_obj, utils_npc, ctrl_behaviour, monster_info, utils_item, factions_zmod, module_cheats
 
 class CtrlDaemon(object):
 	def __init__(self):
@@ -23,9 +23,7 @@ class CtrlDaemon(object):
 		if (cls.get_name() in data):
 			ctrl = data[cls.get_name()]
 		else:
-			print("creating cls: {}".format(cls))
 			ctrl = cls()
-			print("created ctrl: {}".format(ctrl))
 			ctrl.created(npc)
 			o = utils_storage.obj_storage(npc)
 			o.data[cls.get_name()] = ctrl
@@ -86,6 +84,7 @@ class CtrlDaemon(object):
 		info = monster_info.MonsterInfo()
 		info.id = npc.id
 		info.proto = npc.proto
+		info.monster_code_name = new_name
 		self.promters_info.append(info)
 		return npc
 
@@ -143,13 +142,30 @@ class CtrlDaemon(object):
 			ctrl = ctrl_behaviour.get_ctrl(info.id)
 		return info, npc, ctrl
 
+	def get_monsterinfos_and_npc_and_ctrl_by_encounter(self, encounter_name):
+		result = list()
+		for key in self.monsters:
+			info = self.monsters[key]
+			assert isinstance(info, monster_info.MonsterInfo)
+			if info.encounter_code == encounter_name:
+				npc = toee.game.get_obj_by_id(info.id)
+				ctrl = ctrl_behaviour.get_ctrl(info.id)
+				result.append((info, npc, ctrl))
+		return result
+
+	def get_monster_npc(self, encounter_name, monster_code_name):
+		info = self.get_monsterinfo(encounter_name, monster_code_name)
+		if (info):
+			return toee.game.get_obj_by_id(info.id)
+		return None
+
 	def get_monsterinfo_by_npc(self, npc):
 		for tup in self.monsters.items():
 			info = tup[1]
 			assert isinstance(info, monster_info.MonsterInfo)
 			if (npc == info.get_npc()):
 				return info
-		return None
+		return
 
 	def print_portals(self):
 		for obj in toee.game.obj_list_range(toee.game.party[0].location, 200, toee.OLC_PORTAL ):
@@ -159,16 +175,21 @@ class CtrlDaemon(object):
 		return
 
 
-	def create_npc_at(self, npc_loc, ctrl_class, rot, encounter, code_name, faction = None, no_draw = 1, no_kos = 1):
+	def create_npc_at(self, npc_loc, ctrl_class, rot, encounter, code_name, faction = None, no_draw = 1, no_kos = 1, no_move = 0):
+		if module_cheats.ALL_FOES_PEACFULL:
+			no_kos = 1
 		npc, ctrl = ctrl_class.create_obj_and_class(npc_loc)
 		x, y = utils_obj.loc2sec(npc.location)
 		print("create_npc_at npc: {}, ctrl: {}, id: {}, coord: {},{}".format(npc, ctrl, npc.id, x, y))
 		if (npc):
-			npc.move(npc_loc)
+			if (not no_move):
+				npc.move(npc_loc)
 			npc.rotation = rot
+			npc.condition_add("InitiativeInfoHelper")
 			ctrl.vars["initial_position"] = utils_obj.loc2sec(npc.location)
 			ctrl.vars["initial_rotation"] = npc.rotation
 			self.monster_setup(npc, encounter, code_name, None, no_draw, no_kos, faction)
+		assert isinstance(npc, toee.PyObjHandle)
 		return npc, ctrl
 
 	def reveal_monster(self, encounter_name, monster_code_name, no_error = 0):
@@ -189,7 +210,19 @@ class CtrlDaemon(object):
 			debug.breakp("Monster not found")
 		return npc, info
 
+	def reveal_monster_list(self, encounter_name, monster_code_names, no_error = 0):
+		assert isinstance(encounter_name, str)
+		assert isinstance(monster_code_names, list)
+
+		result = list()
+		for monster_code_name in monster_code_names:
+			result.append(self.reveal_monster(encounter_name, monster_code_name, no_error))
+		return result # [(npc, info), ]
+
+
 	def activate_monster(self, encounter_name, monster_code_name, remove_no_attack = 1, remove_no_kos = 1, no_error = 0):
+		if module_cheats.ALL_FOES_PEACFULL:
+			remove_no_kos = 0
 		npc = None
 		info = self.get_monsterinfo(encounter_name, monster_code_name)
 		if (info):
@@ -212,6 +245,28 @@ class CtrlDaemon(object):
 			print("Monster {} {} not found!".format(encounter_name, monster_code_name))
 			debug.breakp("Monster not found")
 		return npc, info
+
+	def activate_monster_list(self, encounter_name, monster_code_names, remove_no_attack = 1, remove_no_kos = 1, no_error = 0):
+		assert isinstance(encounter_name, str)
+		assert isinstance(monster_code_names, list)
+
+		result = list()
+		for monster_code_name in monster_code_names:
+			result.append(self.activate_monster( encounter_name, monster_code_name, remove_no_attack, remove_no_kos, no_error))
+		return result # [(npc, info), ]
+
+	@staticmethod
+	def monsters_attack(monster_npc_infos, victim):
+		assert isinstance(monster_npc_infos, list)
+		assert isinstance(victim, toee.PyObjHandle)
+
+		for tup in monster_npc_infos:
+			if not tup or not tup[0]: continue
+			npc, info = tup
+			assert isinstance(npc, toee.PyObjHandle)
+			npc.turn_towards(victim)
+			npc.attack(victim)
+		return
 
 	def remove_door_by_name(self, door_name_id):
 		for obj in toee.game.obj_list_range(toee.game.party[0].location, 200, toee.OLC_PORTAL):
@@ -394,14 +449,13 @@ class CtrlDaemon(object):
 			print("drop objects, count: {}".format(len(to_del)))
 			for o in to_del:
 				del objs[o.name]
-
-		self.validate_minfo()
-		self.check_sleep_status_update(1)
+			self.validate_minfo()
+			self.check_sleep_status_update(1)
 		return
 
 	def factions_existance_refresh(self):
 		print("factions_existance_refresh")
-		self.factions_existance = monster_info.MonsterInfo.get_factions_existance(self.monsters, 1)
+		self.factions_existance = monster_info.MonsterInfo.get_factions_existance(self.monsters, 0)
 		print(self.factions_existance)
 		return
 
@@ -446,7 +500,7 @@ class CtrlDaemon(object):
 		return default_value
 
 	def validate_minfo(self):
-		print("validate_minfo")
+		print("validate_minfo {}".format(self))
 		objs = utils_storage.Storage().objs
 		assert isinstance(objs, dict)
 		m3 = dict()
@@ -460,6 +514,19 @@ class CtrlDaemon(object):
 				print("invalidated {}: {}".format(minfo.name, minfo.id))
 				id = minfo.id
 				del self.monsters[minfo.name]
-				del objs[id]
+				if (id in objs.keys()):
+					del objs[id]
 		print("validate_minfo completed")
+		return
+
+	def cheat_kill_all_foes(self, destroy_npc = 1):
+		killer = toee.game.leader
+		for item in self.monsters.itervalues():
+			npc = item.get_npc()
+			if (not npc): continue
+			if (not npc.faction_has(factions_zmod.FACTION_ENEMY)): continue
+			npc.critter_kill_by_effect(killer)
+			if destroy_npc:
+				npc.destroy()
+
 		return

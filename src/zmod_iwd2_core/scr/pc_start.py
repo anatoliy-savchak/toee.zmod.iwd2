@@ -1,4 +1,4 @@
-import toee, utils_item, const_proto_weapon, startup_zmod
+import toee, utils_item, const_proto_weapon, startup_zmod, utils_pc
 
 proto_table = {
 	toee.feat_exotic_weapon_proficiency_bastard_sword: const_proto_weapon.PROTO_WEAPON_SWORD_BASTARD,

@@ -2,10 +2,37 @@
 // MAX_QUESTS = 200
 // there are two text entries that the logbook will need for quests: title and description
 // for quest i; title will be at line i, and description will be at i + MAX_QUESTS
+// description should be not larger than 260 chars
 
 
 // Quest Titles 000 - 199
-{0} {Defend the Keep}
+{0} {Missing Constello}
+{1} {Defend the Keep}
+{2} {Tenkits Ring}
+{3} {Quoris needs help destroying elementals}
+{4} {Recover Holy Chalice}
+{5} {Liberate Corinth}
+{6} {Save Corinth villagers}
+{7} {Reveal Corinth attack truth}
+{8} {Invade Orc Fort}
+{9} {Escort Markus}
+{10} {Old Witch help}
+{11} {Bring zombie meat}
+{12} {Destroy undead for Giant Spiders}
+{13} {Kill Kessa}
 
 // Quest Descriptions 200 - 399
-{200} {Defend the Keep and save as much guardians as you can.}
+{200} {Commander Karef wants us to look for a Knight named Constello. We must go to Corinth, a village to the east, to find out what has happened to him.}
+{201} {The Keep is under attack. We should defend the Keep and save as much guardians as we can.}
+{202} {Tenkits, the quartermaster at the Keep, said that he will let us enter the store room if we bring back a silver ring which he has lost in a cave south west of the Keep.}
+{203} {Quoris, the wizard at the Tower of the Chalice, needs our help to destroy any hostile elementals he and his apprentice, Shania, might summon.}
+{204} {Quoris told us that the Knights of the Chalice have lost their most sacred relic, the Holy Chalice. If we bring the Chalice back to him, he will use it to make one of our weapon more powerful.}
+{205} {Corinth has been under attack recently. The village is littered with corpses and air is filled with acrid smoke.}
+{206} {Garn said that many Corinth villagers must have been taken prisoner. We need to seek them out as there may still be a chance to save them.}
+{207} {Markus told us that it was rogues from Orc Fort that attacked Corinth.}
+{208} {Markus, a trader, told us that bandits raided Corinth. According to him, they are from the Orc Fort, an ancient stockade located a little way to the south east of Corinth. We need to investigate this stockade. Constello may be prisoner there.}
+{209} {Markus, the trader we met in Corinth, asked us to escort him out of Corinth.}
+{210} {Old Witch offered to help us. She will go there in bird form and throw a rope down at us from the eastern tower. We have to cross the moat bridge, turn right and walk along the wall a short distance to the east or we can just go through the main entrance.}
+{211} {A couple of friendly bears living in the South-West caves asked us to bring them back zombie meat from the lower levels. We will then be able to make our camp with them.}
+{212} {Giant Spiders from the Black Cove asked us to destroy a group of undead creatures to the east. They promised to reward us.}
+{213} {We met Icarus, the leader of the guards. Icarus wants us to slay the real master of the fort, a sorceress called Kessa. He said that he will reward us well.}

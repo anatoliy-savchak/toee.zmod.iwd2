@@ -10,13 +10,13 @@ sn_throw = 0x6
 sn_hit = 0x7
 sn_miss = 0x8
 sn_dialog = 0x9
-sn_first_heartbeat = 0xA
+sn_first_heartbeat = 0xA # initial and after load savegame
 sn_catching_thief_pc = 0xB
 sn_dying = 0xC
-sn_enter_combat = 0xD
-sn_exit_combat = 0xE
-sn_start_combat = 0xF
-sn_end_combat = 0x10
+sn_enter_combat = 0xD # start encounter
+sn_exit_combat = 0xE # end encounter
+sn_start_combat = 0xF # start round
+sn_end_combat = 0x10 # end round
 sn_buy_object = 0x11
 sn_resurrect = 0x12
 sn_heartbeat = 0x13
@@ -41,7 +41,7 @@ sn_disband = 0x25
 sn_new_map = 0x26
 sn_trap = 0x27
 sn_true_seeing = 0x28
-sn_spell_cast = 0x29
+sn_spell_cast = 0x29 # send to target if ret 0 then cancel the spell
 sn_unlock_attempt = 0x2A
 
 san_all = (sn_examine, sn_use, sn_destroy, sn_unlock, sn_get, sn_drop, sn_throw, sn_hit, sn_miss, sn_dialog, sn_first_heartbeat, sn_catching_thief_pc, sn_dying, sn_enter_combat, sn_exit_combat, sn_start_combat, sn_end_combat, sn_buy_object, sn_resurrect, sn_heartbeat, sn_leader_killing, sn_insert_item, sn_will_kos, sn_taking_damage, sn_wield_on, sn_wield_off, sn_critter_hits, sn_new_sector, sn_remove_item, sn_leader_sleeping, sn_bust, sn_dialog_override, sn_transfer, sn_caught_thief, sn_critical_hit, sn_critical_miss, sn_join, sn_disband, sn_new_map, sn_trap, sn_true_seeing, sn_spell_cast, sn_unlock_attempt)
@@ -73,6 +73,19 @@ rotation_0800_oclock = 4.18879
 rotation_0900_oclock = 4.71239
 rotation_1000_oclock = 5.23599
 rotation_1100_oclock = 5.75959
+
+ROT00 = 0.00000
+ROT01 = 0.52360
+ROT02 = 1.04720
+ROT03 = 1.57080
+ROT04 = 2.09440
+ROT05 = 2.61799
+ROT06 = 3.14159
+ROT07 = 3.66519
+ROT08 = 4.18879
+ROT09 = 4.71239
+ROT10 = 5.23599
+ROT11 = 5.75959
 
 ROTATAION_01_DOOR = 0.785398185253
 
@@ -135,6 +148,17 @@ hair_style_mohawk = 8 # Mohawk (m/f)
 hair_style_medium = 9 # Medium (m)
 hair_style_ponytail2 = 10 # Ponytail2 (f)
 
+hair_size_big = 0
+hair_size_small = 1
+
+hair_race_human = 0
+hair_race_dwarf = 1
+hair_race_Elf = 2
+hair_race_gnome = 3
+hair_race_halfelf = 4
+hair_race_halforc = 5
+hair_race_halfling = 6
+
 hair_styles_all = (hair_style_longhair, hair_style_ponytail, hair_style_shorthair, hair_style_topknot, hair_style_mullet, \
 	hair_style_pigtails, hair_style_bald, hair_style_braids, hair_style_mohawk, hair_style_medium, hair_style_ponytail2)
 
@@ -192,3 +216,131 @@ OBJECT_FLAGS_NAMES = ("toee.OF_DESTROYED", "toee.OF_OFF", "toee.OF_FLAT", "toee.
 	, "toee.OF_TRAP_PC", "toee.OF_TRAP_SPOTTED", "toee.OF_DISALLOW_WADING", "toee.OF_UNUSED_08000000", "toee.OF_HEIGHT_SET" \
 	, "toee.OF_ANIMATED_DEAD", "toee.OF_TELEPORTED", "toee.OF_RADIUS_SET" \
 	)
+
+stat_level_npc_adept = 84
+stat_level_npc_aristocrat = 85
+stat_level_npc_commoner = 86
+stat_level_npc_expert = 87
+stat_level_npc_warriror = 88
+
+#bab = 3/4 HD
+mc_type_aberration = 0
+mc_type_animal = 1
+mc_type_beast = 2
+mc_type_construct = 3
+mc_type_elemental = 5
+mc_type_giant = 7
+mc_type_humanoid = 8
+mc_type_ooze = 11
+mc_type_plant = 13
+mc_type_shapechanger = 14
+mc_type_vermin = 16
+
+#bab = HD
+mc_type_dragon = 4
+mc_type_magical_beast = 9
+mc_type_monstrous_humanoid = 10
+mc_type_outsider = 12
+
+#bab = HD/2
+mc_type_fey = 6
+mc_type_undead = 15
+
+# natural weapon type, PHB p. 312
+nwt_bite = 0 # Bite: The creature attacks with its mouth, dealing piercing, slashing, and bludgeoning damage.
+nwt_claw = 1 # Claw or Talon:The creature rips with a sharp appendage, dealing piercing and slashing damage.
+nwt_rake = 2
+nwt_gore = 3 # Gore:The creature spears the opponent with an antler, horn, or similar appendage, dealing piercing damage. butsaty
+nwt_slap = 4 # Slap or Slam:The creature batters opponents with an appendage, dealing bludgeoning damage
+nwt_slam = 5 # Slap or Slam:The creature batters opponents with an appendage, dealing bludgeoning damage; Tentacle: The creature flails at opponents with a powerful tentacle, dealing bludgeoning (and sometimes slashing) damage.
+nwt_sting = 6 # Sting: The creature stabs with a stinger, dealing piercing damage. Sting attacks usually deal damage from poison in addition to hit point damage
+
+# female
+pcvf_raspy = 0
+pcvf_nature_dweller = 1
+pcvf_magician = 2 # halfling like
+pcvf_low_intelligence_berserker = 3
+pcvf_charismatic = 4
+pcvf_nimble = 5
+pcvf_noble = 6 # old woman
+pcvf_simple_warrior = 7 # like lizard
+pcvf_pious = 21
+
+# male
+pcvm_zealous_healer = 8
+pcvm_gruff_warrior = 9
+pcvm_nature_dweller = 10
+pcvm_older_magician = 11
+pcvm_illusionist = 12
+pcvm_nimble = 13
+pcvm_low_intelligence_berserker = 14
+pcvm_honest_fighter = 15
+pcvm_righteous_warrior = 16
+pcvm_happy_trickster = 17
+pcvm_arrogant = 18
+pcvm_simple_warrior = 19
+pcvm_lawful = 20
+
+# Poisons, desc combat.mes + 300
+poison_small_centipede = 0
+poison_greenblood_oil = 1
+poison_spider_venom = 2
+poison_blood_root = 3
+poison_purple_worm = 4
+poison_large_scorpion = 5
+poison_wyvern = 6
+poison_giant_wasp = 7
+poison_black_adder = 8
+poison_malyss_root_paste = 9
+poison_dragon_bile = 10
+poison_sassone_leaf_residue = 11
+poison_terinav_root = 12
+poison_carrion_crawler_brain_juice = 13
+poison_black_lotus_extract = 14
+poison_id_moss = 15
+poison_striped_toadstool = 16
+poison_lich_dust = 17
+poison_dark_reaver_powder = 18
+poison_burnt_othur_fumes = 19
+poison_quasit = 20
+poison_violet_fungi = 21
+poison_yellow_mold = 22
+poison_mystical = 23
+poison_other = 24
+poison_blue_whinnis = 25
+poison_shadow_essence = 26
+poison_deathblade = 27
+poison_nitharit = 28
+poison_oil_of_taggit = 29
+poison_arsenic = 30
+poison_ungol_dust = 31
+poison_insanity_mist = 32
+
+OCF2_ITEM_STOLEN = 0x1
+OCF2_AUTO_ANIMATES = 0x2
+OCF2_USING_BOOMERANG = 0x4
+OCF2_FATIGUE_DRAINING = 0x8
+OCF2_SLOW_PARTY = 0x10
+OCF2_20 = 0x20
+OCF2_NO_DECAY = 0x40
+OCF2_NO_PICKPOCKET = 0x80
+OCF2_NO_BLOOD_SPLOTCHES = 0x100
+OCF2_NIGH_INVULNERABLE = 0x200
+OCF2_ELEMENTAL = 0x400
+OCF2_DARK_SIGHT = 0x800
+OCF2_NO_SLIP = 0x1000
+OCF2_NO_DISINTEGRATE = 0x2000
+OCF2_REACTION_0 = 0x4000
+OCF2_REACTION_1 = 0x8000
+OCF2_REACTION_2 = 0x10000
+OCF2_REACTION_3 = 0x20000
+OCF2_REACTION_4 = 0x40000
+OCF2_REACTION_5 = 0x80000
+OCF2_REACTION_6 = 0x100000
+OCF2_TARGET_LOCK = 0x200000
+OCF2_ACTION0_PAUSED = 0x400000
+OCF2_ACTION1_PAUSED = 0x800000
+OCF2_ACTION2_PAUSED = 0x1000000
+OCF2_ACTION3_PAUSED = 0x2000000
+OCF2_ACTION4_PAUSED = 0x4000000
+OCF2_ACTION5_PAUSED = 0x8000000

@@ -40,6 +40,19 @@ class InfinityExportedDir:
         self.cre = value
         return value
 
+    @staticmethod
+    def cre_strref_to_string(strref):
+        if strref:
+            eText = strref.get("Text")
+            return eText
+        return None
+
+    def cre_get_full_name(self):
+        result = InfinityExportedDir.cre_strref_to_string(self.cre.get("LongName"))
+        if not result:
+            result = InfinityExportedDir.cre_strref_to_string(self.cre.get("ShortName"))
+        return result
+
     def load_template(self, file_name):
         with open(file_name, 'r') as f:
             self.lines_script = f.readlines()
@@ -81,4 +94,14 @@ class InfinityExportedDir:
         return
 
     def produce_npc_appearance(self):
+        self.lines_script.append("\t\t" + "def setup_appearance(self, npc):")
+        portrait_id = 8680 # none
+        self.lines_script.append("\t\t\t" + f"npc.obj_set_int(toee.obj_f_critter_portrait, {portrait_id})");
+
+        full_name = self.cre_get_full_name()
+        if full_name:
+            self.lines_script.append("\t\t\t" + f'utils_npc.npc_description_set_new(npc, "{full_name}")');
+
+        self.lines_script.append("\t\t\t"+"return")
+        self.lines_script.append("")
         return

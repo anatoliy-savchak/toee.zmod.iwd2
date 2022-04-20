@@ -26,3 +26,16 @@ class Ctrl10HEDRON(NPCBase):
 		utils_npc.npc_description_set_new(npc, "Hedron Kerdos")
 		return
 
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [13, 16, 12, 13, 14, 12])
+		
+		# class levels: 6
+		# stat_level_fighter: 6
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 1, toee.stat_level_fighter)
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 2, toee.stat_level_fighter)
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 3, toee.stat_level_fighter)
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 4, toee.stat_level_fighter)
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 5, toee.stat_level_fighter)
+		return
+

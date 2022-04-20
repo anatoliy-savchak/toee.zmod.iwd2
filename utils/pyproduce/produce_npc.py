@@ -56,6 +56,7 @@ class ProduceNPC:
 
         self.produce_npc_baseproto()
         self.produce_npc_appearance()
+        self.produce_npc_char()
         return
 
     def produce_npc_baseproto(self):
@@ -106,7 +107,7 @@ class ProduceNPC:
 
         if True:
             Fortitude = int(self.cre["SaveVsDeath"])
-            Reflex = int(self.cre["SaveVsWanrds"])
+            Reflex = int(self.cre["SaveVsWands"])
             Will = int(self.cre["SaveVsPolymorph"])
             # add code to check if actual difference is needed
 
@@ -115,6 +116,23 @@ class ProduceNPC:
             , int(self.cre["LevelFighter"]), int(self.cre["LevelMonk"]), int(self.cre["LevelPaladin"])
             , int(self.cre["LevelRanger"]), int(self.cre["LevelRogue"]), int(self.cre["LevelSorcerer"])
             , int(self.cre["LevelWizard"]))
+        levelsFromClasses = sum(ClassLevels)
+        classes = ("stat_level_bard", "stat_level_cleric", "stat_level_druid", "stat_level_fighter"
+            , "stat_level_monk", "stat_level_paladin", "stat_level_ranger", "stat_level_rogue", "stat_level_sorcerer"
+            , "stat_level_wizard")
+        if levelsFromClasses:
+            classLevel = 0
+            self.lines_script.append(i_code)
+            self.lines_script.append(i_code+f"# class levels: {levelsFromClasses}")
+            for i, levels in enumerate(ClassLevels):
+                if not levels: continue
+                statLevel = classes[i]
+                self.lines_script.append(i_code+f"# {statLevel}: {levels}")
+                for l in range(0, levels):
+                    self.lines_script.append(i_code + f"npc.obj_set_idx_int(toee.obj_f_critter_level_idx, {classLevel}, toee.{statLevel})");
+                    classLevel += 1
+        else:
+            raise Exception("No Classes!")
 
         self.lines_script.append(i_code+"return")
         self.lines_script.append("")

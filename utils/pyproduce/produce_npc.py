@@ -105,12 +105,6 @@ class ProduceNPC:
             Charisma = int(self.cre["Charisma"])
             self.lines_script.append(i_code + f"utils_npc.npc_abilities_set(npc, [{Strength}, {Dexterity}, {Constitution}, {Intelligence}, {Wisdom}, {Charisma}])");
 
-        if True:
-            Fortitude = int(self.cre["SaveVsDeath"])
-            Reflex = int(self.cre["SaveVsWands"])
-            Will = int(self.cre["SaveVsPolymorph"])
-            # TODO add code to check if actual difference is needed
-
         LevelTotal = int(self.cre["LevelTotal"])
         ClassLevels = (int(self.cre["LevelBard"]), int(self.cre["LevelCleric"]), int(self.cre["LevelDruid"])
             , int(self.cre["LevelFighter"]), int(self.cre["LevelMonk"]), int(self.cre["LevelPaladin"])
@@ -134,7 +128,16 @@ class ProduceNPC:
         else:
             raise Exception("No Classes!")
 
+        self.lines_script.append(i_code)
+
+        self.produce_alignment()
+        self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_critter_experience, {int(self.cre["XPReward"])}) # XPReward')
+        self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_npc_challenge_rating, {int(self.cre["ChallangeRating"])})')
+        
         self.produce_feats()
+        self.produce_saves()
+
+        self.produce_skills()
         self.lines_script.append(i_code+"return")
         self.lines_script.append("")
         return
@@ -276,292 +279,372 @@ class ProduceNPC:
         ft = feat.lower()
         feat_to_add = None
         feat_to_add0 = None
-        if ft == "aegis of rime":
-            # 19 entries
-            # TODO for NPC
-            pass
-        elif ft == "ambidexterity":
-            # 64 entries
-            # 3e one has no penalty... 
-            # TODO - add specifically for NPCs
-            feat_to_add = "feat_improved_two_weapon_fighting"
-        elif ft == "aqua mortis": 
-            # 27 entries
-            # TODO
-            pass
-        elif ft == "armor proficiency": 
-            # 732 entries
-            # handled with FeatArmorPreficiency
-            pass
-        elif ft == "armored arcana": 
-            # 5 entries
-            # handled with FeatArmoredArcana
-            pass
-        elif ft == "arterial strike": 
-            # 5 entries
-            # TODO - add for NPC
-            pass
-        elif ft == "blind fight": 
-            # 107 entries
-            feat_to_add = "feat_blind_fight"
-        elif ft == "bullheaded": 
-            # 30 entries
-            feat_to_add = "feat_iron_will"
-        elif ft == "cleave": 
-            # 195 entries
-            # handled with FeatCleave
-            pass
-        elif ft == "combat casting": 
-            # 198 entries
-            feat_to_add = "feat_combat_casting"
-        elif ft == "courteous magocracy": 
-            # 40 entries
-            # TODO
-            pass
-        elif ft == "crippling strike": 
-            # 40 entries
-            feat_to_add = "feat_crippling_strike"
-        elif ft == "dash": 
-            # 40 entries
-            # TODO - add it for PC as well
-            pass
-        elif ft == "deflect arrows": 
-            # 107 entries
-            feat_to_add = "feat_deflect_arrows"
-        elif ft == "dirty fighting": 
-            # 142 entries
-            # TODO - add it for PC as well
-            pass
-        elif ft == "discipline": 
-            # 56 entries
-            # TODO - add it for PC as well
-            pass
-        elif ft == "dodge":
-            # 237 entries
-            feat_to_add = "feat_dodge"
-        elif ft == "envenom weapon": 
-            # 10 entries
-            # TODO - add it for PC as well
-            pass
-        elif ft == "exotic bastard": 
-            # 4 entries
-            # handled with FeatWeaponProExoticBastardSword
-            pass
-        elif ft == "expertise":
-            # 47 entries
-            feat_to_add = "feat_combat_expertise"
-        elif ft == "extra rage":
-            # 3 entries
-            feat_to_add = "Extra Rage"
-        elif ft == "extra shapeshifting":
-            # 1 entries
-            feat_to_add = "Extra Wild Shape"
-        elif ft == "extra smiting":
-            # 2 entries
-            feat_to_add = "Extra Smiting"
-        elif ft == "extra turning": 
-            # 0 entries
-            # MAYBE - add it for PC as well
-            pass
-        elif ft == "fiendslayer": 
-            # 1 entries
-            # MAYBE - add it for PC as well
-            pass
-        elif ft == "forester": 
-            # 5 entries
-            # MAYBE - add it for PC as well
-            pass
-        elif ft == "great fortitude":
-            # 44 entries
-            feat_to_add = "feat_great_fortitude"
-        elif ft == "hamstring": 
-            # 6 entries
-            # MAYBE - add it for PC as well
-            pass
-        elif ft == "heretic's bane": 
-            # 58 entries
-            # TODO - for NPC only
-            pass
-        elif ft == "heroic inspiration": 
-            # 18 entries
-            # TODO - for NPC only
-            pass
-        elif ft == "improved critical": 
-            # 193 entries
-            # TODO - for NPC only
-            pass
-        elif ft == "improved evasion": 
-            # 49 entries
-            feat_to_add = "feat_improved_evasion"
-        elif ft == "improved initiative": 
-            # 325 entries
-            feat_to_add = "feat_improved_initiative"
-        elif ft == "improved turning": 
-            # 193 entries
-            # TODO - for NPC only
-            pass
-        elif ft == "iron will": 
-            # 140 entries
-            feat_to_add = "feat_iron_will"
-        elif ft == "lightning reflexes": 
-            # 126 entries
-            feat_to_add = "feat_lightning_reflexes"
-        elif ft == "lingering song": 
-            # 0 entries
-            feat_to_add = "Lingering Song"
-        elif ft == "luck of heroes": 
-            # 34 entries
-            # TODO - add it for PC as well
-            pass
-        elif ft == "martial axe": 
-            # 666 entries
-            # handled with FeatWeaponProAxe
-            pass
-        elif ft == "martial bow": 
-            # 648 entries
-            # handled with FeatWeaponProBow
-            pass
-        elif ft == "martial flail": 
-            # 640 entries
-            # handled with FeatWeaponProFlail
-            pass
-        elif ft == "martial greatsword": 
-            # 631 entries
-            # handled with FeatWeaponProGreatsword
-            pass
-        elif ft == "martial hammer": 
-            # 629 entries
-            # handled with FeatWeaponProHammer
-            pass
-        elif ft == "martial large sword": 
-            # 659 entries
-            # handled with FeatWeaponProLargeSword
-            pass
-        elif ft == "martial polearm": 
-            # 666 entries
-            # handled with FeatWeaponProPolearm
-            pass
-        elif ft == "maximized attacks": 
-            # 11 entries
-            # MAYBE - add it for NPC only
-            pass
-        elif ft == "mercantile background": 
-            # 0 entries
-            # I think that one is close enough
-            feat_to_add = "feat_diligent"
-        elif ft == "power attack": 
-            # 105 entries
-            feat_to_add = "feat_power_attack"
-        elif ft == "precise shot": 
-            # 44 entries
-            feat_to_add = "feat_precise_shot"
-        elif ft == "rapid shot": 
-            # 13 entries
-            feat_to_add = "feat_rapid_shot"
-        elif ft == "resist poison": 
-            # 71 entries
-            # MAYBE - add it for NPC only
-            pass
-        elif ft == "scion of storms": 
-            # 35 entries
-            # TODO - add it for PC as well
-            pass
-        elif ft == "shield proficiency": 
-            # 711 entries
-            feat_to_add = "feat_shield_proficiency"
-            pass
-        elif ft == "simple crossbow": 
-            # 772 entries
-            # handled with FeatWeaponProCrossbow
-            pass
-        elif ft == "simple mace": 
-            # 792 entries
-            # handled with FeatWeaponProMace
-            pass
-        elif ft == "simple missile": 
-            # 794 entries
-            # handled with FeatWeaponProMissle
-            pass
-        elif ft == "simple quarterstaff": 
-            # 799 entries
-            # handled with FeatWeaponProQuarterstaff
-            pass
-        elif ft == "simple small blade": 
-            # 814 entries
-            # handled with FeatWeaponProSmallBlade
-            pass
-        elif ft == "slippery mind": 
-            # 11 entries
-            # MAYBE - add it for NPC only
-            pass
-        elif ft == "snake blood": 
-            # 52 entries
-            # MAYBE - add it for NPC only
-            pass
-        elif ft == "spell focus enchantment": 
-            # 20 entries
-            # handled with FeatSpellFocusEnchantment
-            pass
-        elif ft == "spell focus evocation": 
-            # 26 entries
-            # handled with FeatSpellFocusEvocation
-            pass
-        elif ft == "spell focus necromancy": 
-            # 17 entries
-            # handled with FeatSpellFocusNecromancy
-            pass
-        elif ft == "spell focus transmutation": 
-            # 33 entries
-            # handled with FeatSpellFocusTransmutation
-            pass
+        if True:
+            if ft == "aegis of rime":
+                # 19 entries
+                # TODO for NPC
+                pass
+            elif ft == "ambidexterity":
+                # 64 entries
+                # 3e one has no penalty... 
+                # TODO - add specifically for NPCs
+                feat_to_add = "feat_improved_two_weapon_fighting"
+            elif ft == "aqua mortis": 
+                # 27 entries
+                # TODO
+                pass
+            elif ft == "armor proficiency": 
+                # 732 entries
+                # handled with FeatArmorPreficiency
+                pass
+            elif ft == "armored arcana": 
+                # 5 entries
+                # handled with FeatArmoredArcana
+                pass
+            elif ft == "arterial strike": 
+                # 5 entries
+                # TODO - add for NPC
+                pass
+            elif ft == "blind fight": 
+                # 107 entries
+                feat_to_add = "feat_blind_fight"
+            elif ft == "bullheaded": 
+                # 30 entries
+                feat_to_add = "feat_iron_will"
+            elif ft == "cleave": 
+                # 195 entries
+                # handled with FeatCleave
+                pass
+            elif ft == "combat casting": 
+                # 198 entries
+                feat_to_add = "feat_combat_casting"
+            elif ft == "courteous magocracy": 
+                # 40 entries
+                # TODO
+                pass
+            elif ft == "crippling strike": 
+                # 40 entries
+                feat_to_add = "feat_crippling_strike"
+            elif ft == "dash": 
+                # 40 entries
+                # TODO - add it for PC as well
+                pass
+            elif ft == "deflect arrows": 
+                # 107 entries
+                feat_to_add = "feat_deflect_arrows"
+            elif ft == "dirty fighting": 
+                # 142 entries
+                # TODO - add it for PC as well
+                pass
+            elif ft == "discipline": 
+                # 56 entries
+                # TODO - add it for PC as well
+                pass
+            elif ft == "dodge":
+                # 237 entries
+                feat_to_add = "feat_dodge"
+            elif ft == "envenom weapon": 
+                # 10 entries
+                # TODO - add it for PC as well
+                pass
+            elif ft == "exotic bastard": 
+                # 4 entries
+                # handled with FeatWeaponProExoticBastardSword
+                pass
+            elif ft == "expertise":
+                # 47 entries
+                feat_to_add = "feat_combat_expertise"
+            elif ft == "extra rage":
+                # 3 entries
+                feat_to_add = "Extra Rage"
+            elif ft == "extra shapeshifting":
+                # 1 entries
+                feat_to_add = "Extra Wild Shape"
+            elif ft == "extra smiting":
+                # 2 entries
+                feat_to_add = "Extra Smiting"
+            elif ft == "extra turning": 
+                # 0 entries
+                # MAYBE - add it for PC as well
+                pass
+            elif ft == "fiendslayer": 
+                # 1 entries
+                # MAYBE - add it for PC as well
+                pass
+            elif ft == "forester": 
+                # 5 entries
+                # MAYBE - add it for PC as well
+                pass
+            elif ft == "great fortitude":
+                # 44 entries
+                feat_to_add = "feat_great_fortitude"
+            elif ft == "hamstring": 
+                # 6 entries
+                # MAYBE - add it for PC as well
+                pass
+            elif ft == "heretic's bane": 
+                # 58 entries
+                # TODO - for NPC only
+                pass
+            elif ft == "heroic inspiration": 
+                # 18 entries
+                # TODO - for NPC only
+                pass
+            elif ft == "improved critical": 
+                # 193 entries
+                # TODO - for NPC only
+                pass
+            elif ft == "improved evasion": 
+                # 49 entries
+                feat_to_add = "feat_improved_evasion"
+            elif ft == "improved initiative": 
+                # 325 entries
+                feat_to_add = "feat_improved_initiative"
+            elif ft == "improved turning": 
+                # 193 entries
+                # TODO - for NPC only
+                pass
+            elif ft == "iron will": 
+                # 140 entries
+                feat_to_add = "feat_iron_will"
+            elif ft == "lightning reflexes": 
+                # 126 entries
+                feat_to_add = "feat_lightning_reflexes"
+            elif ft == "lingering song": 
+                # 0 entries
+                feat_to_add = "Lingering Song"
+            elif ft == "luck of heroes": 
+                # 34 entries
+                # TODO - add it for PC as well
+                pass
+            elif ft == "martial axe": 
+                # 666 entries
+                # handled with FeatWeaponProAxe
+                pass
+            elif ft == "martial bow": 
+                # 648 entries
+                # handled with FeatWeaponProBow
+                pass
+            elif ft == "martial flail": 
+                # 640 entries
+                # handled with FeatWeaponProFlail
+                pass
+            elif ft == "martial greatsword": 
+                # 631 entries
+                # handled with FeatWeaponProGreatsword
+                pass
+            elif ft == "martial hammer": 
+                # 629 entries
+                # handled with FeatWeaponProHammer
+                pass
+            elif ft == "martial large sword": 
+                # 659 entries
+                # handled with FeatWeaponProLargeSword
+                pass
+            elif ft == "martial polearm": 
+                # 666 entries
+                # handled with FeatWeaponProPolearm
+                pass
+            elif ft == "maximized attacks": 
+                # 11 entries
+                # MAYBE - add it for NPC only
+                pass
+            elif ft == "mercantile background": 
+                # 0 entries
+                # I think that one is close enough
+                feat_to_add = "feat_diligent"
+            elif ft == "power attack": 
+                # 105 entries
+                feat_to_add = "feat_power_attack"
+            elif ft == "precise shot": 
+                # 44 entries
+                feat_to_add = "feat_precise_shot"
+            elif ft == "rapid shot": 
+                # 13 entries
+                feat_to_add = "feat_rapid_shot"
+            elif ft == "resist poison": 
+                # 71 entries
+                # MAYBE - add it for NPC only
+                pass
+            elif ft == "scion of storms": 
+                # 35 entries
+                # TODO - add it for PC as well
+                pass
+            elif ft == "shield proficiency": 
+                # 711 entries
+                feat_to_add = "feat_shield_proficiency"
+                pass
+            elif ft == "simple crossbow": 
+                # 772 entries
+                # handled with FeatWeaponProCrossbow
+                pass
+            elif ft == "simple mace": 
+                # 792 entries
+                # handled with FeatWeaponProMace
+                pass
+            elif ft == "simple missile": 
+                # 794 entries
+                # handled with FeatWeaponProMissle
+                pass
+            elif ft == "simple quarterstaff": 
+                # 799 entries
+                # handled with FeatWeaponProQuarterstaff
+                pass
+            elif ft == "simple small blade": 
+                # 814 entries
+                # handled with FeatWeaponProSmallBlade
+                pass
+            elif ft == "slippery mind": 
+                # 11 entries
+                # MAYBE - add it for NPC only
+                pass
+            elif ft == "snake blood": 
+                # 52 entries
+                # MAYBE - add it for NPC only
+                pass
+            elif ft == "spell focus enchantment": 
+                # 20 entries
+                # handled with FeatSpellFocusEnchantment
+                pass
+            elif ft == "spell focus evocation": 
+                # 26 entries
+                # handled with FeatSpellFocusEvocation
+                pass
+            elif ft == "spell focus necromancy": 
+                # 17 entries
+                # handled with FeatSpellFocusNecromancy
+                pass
+            elif ft == "spell focus transmutation": 
+                # 33 entries
+                # handled with FeatSpellFocusTransmutation
+                pass
 
-        elif ft == "spell penetration": 
-            # 105 entries
-            feat_to_add = "feat_spell_penetration"
-        elif ft == "spirit of flame": 
-            # 62 entries
-            # TODO - for NPC only
-            pass
-        elif ft == "strong back": 
-            # 62 entries
-            # MAYBE - for NPC only
-            pass
-        elif ft == "stunning fist": 
-            # 38 entries
-            feat_to_add = "feat_stunning_fist"
-        elif ft == "subvocal casting": 
-            # 58 entries
-            feat_to_add = "feat_silent_spell"
-        elif ft == "toughness": 
-            # 20 entries
-            # handled with FeatToughness
-            pass
-        elif ft == "two-weapon fighting": 
-            # 14 entries
-            feat_to_add = "feat_two_weapon_fighting"
-        elif ft == "weapon finesse": 
-            # 52 entries
-            # TODO
-            feat_to_add = "feat_weapon_finesse_short_sword"
-        elif ft == "wild shape boar": 
-            # 3 entries
-            # MAYBE for NPC
-            pass
-        elif ft == "wild shape panther": 
-            # 12 entries
-            # MAYBE for NPC
-            pass
-        elif ft == "wild shape shambler": 
-            # 7 entries
-            # MAYBE for NPC
-            pass
+            elif ft == "spell penetration": 
+                # 105 entries
+                feat_to_add = "feat_spell_penetration"
+            elif ft == "spirit of flame": 
+                # 62 entries
+                # TODO - for NPC only
+                pass
+            elif ft == "strong back": 
+                # 62 entries
+                # MAYBE - for NPC only
+                pass
+            elif ft == "stunning fist": 
+                # 38 entries
+                feat_to_add = "feat_stunning_fist"
+            elif ft == "subvocal casting": 
+                # 58 entries
+                feat_to_add = "feat_silent_spell"
+            elif ft == "toughness": 
+                # 20 entries
+                # handled with FeatToughness
+                pass
+            elif ft == "two-weapon fighting": 
+                # 14 entries
+                feat_to_add = "feat_two_weapon_fighting"
+            elif ft == "weapon finesse": 
+                # 52 entries
+                # TODO
+                feat_to_add = "feat_weapon_finesse_short_sword"
+            elif ft == "wild shape boar": 
+                # 3 entries
+                # MAYBE for NPC
+                pass
+            elif ft == "wild shape panther": 
+                # 12 entries
+                # MAYBE for NPC
+                pass
+            elif ft == "wild shape shambler": 
+                # 7 entries
+                # MAYBE for NPC
+                pass
 
-        else: 
-            raise Exception(f"Unknown feat: {feat}")
+            else: 
+                raise Exception(f"Unknown feat: {feat}")
 
         if feat_to_add:
             if feat_to_add.startswith("feat_"):
-                self.lines_script.append(i_code+f"npc.feat_add(toee.{feat_to_add})")
+                self.lines_script.append(i_code+f"npc.feat_add(toee.{feat_to_add}) # {feat}")
             else:
-                self.lines_script.append(i_code+f'npc.feat_add("{feat_to_add}")')
+                self.lines_script.append(i_code+f'npc.feat_add("{feat_to_add}") # {feat}')
+        return
+
+    def produce_skills(self):
+        def produce_skill(prop: str, skill: str):
+            value = self.cre[prop]
+            self.lines_script.append(i_code+f"# {prop}: {value}")
+            if value:
+                self.lines_script.append(i_code+f"utils_npc.npc_skill_ensure(npc, toee.{skill}, {value})")
+            return
+
+        self.lines_script.append("")
+        self.lines_script.append(i_code+"# skills")
+        produce_skill("SkillAlchemy", "skill_alchemy")
+        produce_skill("SkillAnimalEmpathy", "skill_handle_animal")
+        produce_skill("SkillBluff", "skill_bluff")
+        produce_skill("SkillConcentration", "skill_concentration")
+        produce_skill("SkillDiplomacy", "skill_diplomacy")
+        produce_skill("SkillDisableDevice", "skill_disable_device")
+        produce_skill("SkillHide", "skill_hide")
+        produce_skill("SkillIntimidate", "skill_intimidate")
+        produce_skill("SkillKnowledgeArcana", "skill_knowledge_arcana")
+        produce_skill("SkillMoveSilently", "skill_move_silently")
+        produce_skill("SkillOpenLock", "skill_open_lock")
+        produce_skill("SkillPickPocket", "skill_pick_pocket")
+        produce_skill("SkillSearch", "skill_search")
+        produce_skill("SkillSpellcraft", "skill_spellcraft")
+        produce_skill("SkillUseMagicDevice", "skill_use_magic_device")
+        produce_skill("SkillWildernessLaw", "skill_wilderness_lore")
+        return
+
+    def produce_alignment(self):
+        al = int(self.cre["Alignment"])
+        alignment = "ALIGNMENT_NEUTRAL"
+        ids_line = str(al)
+        if al == 0x11: 
+            ids_line = "0x11 LAWFUL_GOOD"
+            alignment = "ALIGNMENT_LAWFUL_GOOD"
+        elif al == 0x12: 
+            ids_line = "0x12 LAWFUL_NEUTRAL"
+            alignment = "ALIGNMENT_LAWFUL_NEUTRAL"
+        elif al == 0x13: 
+            ids_line = "0x13 LAWFUL_EVIL"
+            alignment = "ALIGNMENT_LAWFUL_EVIL"
+        elif al == 0x21: 
+            ids_line = "0x21 NEUTRAL_GOOD"
+            alignment = "ALIGNMENT_NEUTRAL_GOOD"
+        elif al == 0x22: 
+            ids_line = "0x22 NEUTRAL"
+            alignment = "ALIGNMENT_TRUE_NEUTRAL"
+        elif al == 0x23: 
+            ids_line = "0x23 NEUTRAL_EVIL"
+            alignment = "ALIGNMENT_NEUTRAL_EVIL"
+        elif al == 0x31: 
+            ids_line = "0x31 CHAOTIC_GOOD"
+            alignment = "ALIGNMENT_CHAOTIC_GOOD"
+        elif al == 0x32: 
+            ids_line = "0x32 CHAOTIC_NEUTRAL"
+            alignment = "ALIGNMENT_CHAOTIC_NEUTRAL"
+        elif al == 0x33: 
+            ids_line = "0x33 CHAOTIC_EVIL"
+            alignment = "ALIGNMENT_CHAOTIC_EVIL"
+
+        self.lines_script.append(i_code+f"npc.obj_set_int(toee.obj_f_critter_alignment, toee.{alignment}) # {ids_line}")
+        return
+
+    def produce_saves(self):
+        def produce_safe(prop: str, save: str):
+            value = int(self.cre[prop])
+            self.lines_script.append(i_code+f"{save} = npc.stat_level_get(toee.stat_{save})")
+            self.lines_script.append(i_code+f"if {save} < {value}: npc.obj_set_int(toee.obj_f_npc_{save}_bonus, {value}-{save}) # {prop}: {value}")
+            return
+        
+        # should go after d20_refresh
+        self.lines_script.append(i_code)
+        self.lines_script.append(i_code+"# saves")
+        #produce_safe("SaveVsDeath", "save_fortitude")
+        #produce_safe("SaveVsWands", "save_reflexes")
+        #produce_safe("SaveVsPolymorph", "save_willpower")
+        self.lines_script.append(i_code+f'utils_npc.ensure_saves_natural(npc, {int(self.cre["SaveVsDeath"])}, {int(self.cre["SaveVsWands"])}, {int(self.cre["SaveVsPolymorph"])}) # SaveVsDeath: {int(self.cre["SaveVsDeath"])}, SaveVsWands: {int(self.cre["SaveVsWands"])}, SaveVsPolymorph: {int(self.cre["SaveVsPolymorph"])}')
         return

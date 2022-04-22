@@ -37,9 +37,13 @@ class Ctrl10HEDRON(NPCBase):
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 3, toee.stat_level_fighter)
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 4, toee.stat_level_fighter)
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 5, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_CHAOTIC_GOOD) # 0x31 CHAOTIC_GOOD
+		npc.obj_set_int(toee.obj_f_critter_experience, 270) # XPReward
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 5)
 
 		# feats
-		npc.feat_add(toee.feat_shield_proficiency)
+		npc.feat_add(toee.feat_shield_proficiency) # Shield proficiency
 		
 		# FeatArmorPreficiency: 3
 		npc.feat_add(toee.feat_armor_proficiency_light)
@@ -78,5 +82,26 @@ class Ctrl10HEDRON(NPCBase):
 		npc.feat_add(toee.feat_weapon_focus_halberd)
 
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves(npc, 5, 2, 2) # SaveVsDeath: 5, SaveVsWands: 2, SaveVsPolymorph: 2
+
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
 		return
 

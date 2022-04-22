@@ -37,5 +37,46 @@ class Ctrl10HEDRON(NPCBase):
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 3, toee.stat_level_fighter)
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 4, toee.stat_level_fighter)
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 5, toee.stat_level_fighter)
+
+		# feats
+		npc.feat_add(toee.feat_shield_proficiency)
+		
+		# FeatArmorPreficiency: 3
+		npc.feat_add(toee.feat_armor_proficiency_light)
+		npc.feat_add(toee.feat_armor_proficiency_medium)
+		npc.feat_add(toee.feat_armor_proficiency_heavy)
+		
+		# FeatWeaponProAxe: 1
+		npc.feat_add(toee.feat_martial_weapon_proficiency_throwing_axe)
+		npc.feat_add(toee.feat_martial_weapon_proficiency_handaxe)
+		npc.feat_add(toee.feat_martial_weapon_proficiency_battleaxe)
+		npc.feat_add(toee.feat_martial_weapon_proficiency_greataxe)
+		
+		# FeatWeaponProBow: 1
+		npc.feat_add(toee.feat_martial_weapon_proficiency_shortbow)
+		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_shortbow)
+		npc.feat_add(toee.feat_martial_weapon_proficiency_longbow)
+		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_longbow)
+		
+		# FeatWeaponProFlail: 1
+		npc.feat_add(toee.feat_martial_weapon_proficiency_light_flail)
+		npc.feat_add(toee.feat_martial_weapon_proficiency_heavy_flail)
+		
+		# FeatWeaponProGreatsword: 1
+		npc.feat_add(toee.feat_martial_weapon_proficiency_greatsword)
+		
+		# FeatWeaponProHammer: 1
+		npc.feat_add(toee.feat_martial_weapon_proficiency_light_hammer)
+		npc.feat_add(toee.feat_martial_weapon_proficiency_warhammer)
+		
+		# FeatWeaponProLargeSword: 1
+		npc.feat_add(toee.feat_martial_weapon_proficiency_longsword)
+		npc.feat_add(toee.feat_martial_weapon_proficiency_scimitar)
+		
+		# FeatWeaponProPolearm: 2
+		npc.feat_add(toee.feat_martial_weapon_proficiency_halberd)
+		npc.feat_add(toee.feat_weapon_focus_halberd)
+
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		return
 

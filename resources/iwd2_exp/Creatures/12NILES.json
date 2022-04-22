@@ -206,7 +206,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Studded Leather Armor"
+      "ItemNameEval": "Studded Leather Armor",
+      "ItemTypeEval": "StuddedLeatherArmor"
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -222,7 +223,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Short Sword "
+      "ItemNameEval": "Short Sword ",
+      "ItemTypeEval": "ShortSwords"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -238,7 +240,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     }
   ],
   "RaceName": "HUMAN",

@@ -199,7 +199,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Leather Armor of Dexterity"
+      "ItemNameEval": "Leather Armor of Dexterity",
+      "ItemTypeEval": "LeatherArmor"
     },
     {
       "SlotCode": "SLOT_GAUNTLETS",
@@ -215,7 +216,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gauntlets of Weapon Expertise"
+      "ItemNameEval": "Gauntlets of Weapon Expertise",
+      "ItemTypeEval": "Gauntlet"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -231,7 +233,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Short Sword +4"
+      "ItemNameEval": "Short Sword +4",
+      "ItemTypeEval": "ShortSwords"
     }
   ],
   "RaceName": "DROW",

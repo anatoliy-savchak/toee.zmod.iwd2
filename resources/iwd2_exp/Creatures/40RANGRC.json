@@ -218,7 +218,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Leather Armor"
+      "ItemNameEval": "Leather Armor",
+      "ItemTypeEval": "LeatherArmor"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -234,7 +235,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Composite Longbow"
+      "ItemNameEval": "Composite Longbow",
+      "ItemTypeEval": "Bows"
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -250,7 +252,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Longsword +1"
+      "ItemNameEval": "Longsword +1",
+      "ItemTypeEval": "LongsSwords"
     },
     {
       "SlotCode": "SLOT_SHIELD2",
@@ -266,7 +269,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dagger"
+      "ItemNameEval": "Dagger",
+      "ItemTypeEval": "Daggers"
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -282,7 +286,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Arrows +1"
+      "ItemNameEval": "Arrows +1",
+      "ItemTypeEval": "Arrows"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -298,7 +303,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -314,7 +320,8 @@
         "Charges3": 1,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "ELF",

@@ -327,7 +327,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Chainmail +2"
+      "ItemNameEval": "Chainmail +2",
+      "ItemTypeEval": "ChainMail"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -343,7 +344,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Flail +3"
+      "ItemNameEval": "Flail +3",
+      "ItemTypeEval": "Flails"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -359,7 +361,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Buckler of Denial"
+      "ItemNameEval": "Buckler of Denial",
+      "ItemTypeEval": "Buckler_Teeth"
     },
     {
       "SlotCode": "SLOT_CLOAK",
@@ -375,7 +378,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Cloak of Displacement"
+      "ItemNameEval": "Cloak of Displacement",
+      "ItemTypeEval": "CloaksRobes"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -391,7 +395,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Healing"
+      "ItemNameEval": "Potion of Healing",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -407,7 +412,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     }
   ],
   "RaceName": "ELF",

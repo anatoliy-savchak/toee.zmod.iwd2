@@ -207,7 +207,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Splint Mail"
+      "ItemNameEval": "Splint Mail",
+      "ItemTypeEval": "SplintMail"
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -223,7 +224,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Bastard Sword "
+      "ItemNameEval": "Bastard Sword ",
+      "ItemTypeEval": "BastardSword"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -239,7 +241,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     }
   ],
   "RaceName": "HUMAN",

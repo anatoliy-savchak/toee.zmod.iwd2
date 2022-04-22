@@ -274,7 +274,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Helmet"
+      "ItemNameEval": "Helmet",
+      "ItemTypeEval": "HelmsHats"
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -290,7 +291,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Chainmail Armor"
+      "ItemNameEval": "Chainmail Armor",
+      "ItemTypeEval": "ChainMail"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -306,7 +308,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Warhammer +1"
+      "ItemNameEval": "Warhammer +1",
+      "ItemTypeEval": "Hammers"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -322,7 +325,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Small Shield"
+      "ItemNameEval": "Small Shield",
+      "ItemTypeEval": "SmallShield"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -338,7 +342,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -354,7 +359,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -370,7 +376,8 @@
         "Charges3": 1,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "DWARF",

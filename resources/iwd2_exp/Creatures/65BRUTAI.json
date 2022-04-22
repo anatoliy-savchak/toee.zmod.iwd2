@@ -321,7 +321,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Mithral Field Plate Armor +2"
+      "ItemNameEval": "Mithral Field Plate Armor +2",
+      "ItemTypeEval": "ChainMail"
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -337,7 +338,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -353,7 +355,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Iyachtu Xvim Holy Symbol"
+      "ItemNameEval": "Iyachtu Xvim Holy Symbol",
+      "ItemTypeEval": "AmuletsNecklaces"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -369,7 +372,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -385,7 +389,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Brilliant Flail of Wounding"
+      "ItemNameEval": "Brilliant Flail of Wounding",
+      "ItemTypeEval": "Flails"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -401,7 +406,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -417,7 +423,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -433,7 +440,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -449,7 +457,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Monk's Antidote"
+      "ItemNameEval": "Monk's Antidote",
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -465,7 +474,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "DROW",

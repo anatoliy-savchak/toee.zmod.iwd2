@@ -208,7 +208,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Chainmail Armor"
+      "ItemNameEval": "Chainmail Armor",
+      "ItemTypeEval": "ChainMail"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -224,7 +225,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Longsword "
+      "ItemNameEval": "Longsword ",
+      "ItemTypeEval": "LongsSwords"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -240,7 +242,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Large Shield"
+      "ItemNameEval": "Large Shield",
+      "ItemTypeEval": "MediumShield"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -256,7 +259,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dagger"
+      "ItemNameEval": "Dagger",
+      "ItemTypeEval": "Daggers"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -272,7 +276,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Healing"
+      "ItemNameEval": "Potion of Healing",
+      "ItemTypeEval": "Potions"
     }
   ],
   "RaceName": "HUMAN",

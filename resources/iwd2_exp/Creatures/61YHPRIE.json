@@ -647,7 +647,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Longsword +1"
+      "ItemNameEval": "Longsword +1",
+      "ItemTypeEval": "LongsSwords"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -663,7 +664,8 @@
         "Charges3": 1,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -679,7 +681,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     }
   ],
   "RaceName": "YUANTI",

@@ -136,6 +136,7 @@ class ProduceNPC:
         
         self.produce_feats()
         self.produce_saves()
+        self.produce_hp()
 
         self.produce_skills()
         self.lines_script.append(i_code+"return")
@@ -647,4 +648,14 @@ class ProduceNPC:
         #produce_safe("SaveVsWands", "save_reflexes")
         #produce_safe("SaveVsPolymorph", "save_willpower")
         self.lines_script.append(i_code+f'utils_npc.ensure_saves_natural(npc, {int(self.cre["SaveVsDeath"])}, {int(self.cre["SaveVsWands"])}, {int(self.cre["SaveVsPolymorph"])}) # SaveVsDeath: {int(self.cre["SaveVsDeath"])}, SaveVsWands: {int(self.cre["SaveVsWands"])}, SaveVsPolymorph: {int(self.cre["SaveVsPolymorph"])}')
+        return
+
+    def produce_hp(self):
+        self.lines_script.append(i_code)
+        self.lines_script.append(i_code+"# HP")
+        maximumHP = int(self.cre["MaximumHP"])
+        currentHP = int(self.cre["CurrentHP"])
+        damage = maximumHP - currentHP
+        self.lines_script.append(i_code+f'utils_npc.ensure_hp(npc, {maximumHP}) # MaximumHP: {maximumHP}')
+        self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_hp_damage, {damage}) # CurrentHP: {currentHP}')
         return

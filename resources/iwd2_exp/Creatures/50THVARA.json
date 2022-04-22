@@ -258,7 +258,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Helmet"
+      "ItemNameEval": "Helmet",
+      "ItemTypeEval": "HelmsHats"
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -274,7 +275,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Half-plate Armor"
+      "ItemNameEval": "Half-plate Armor",
+      "ItemTypeEval": "HalfPlate"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -290,7 +292,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Mace +1"
+      "ItemNameEval": "Mace +1",
+      "ItemTypeEval": "Maces"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -306,7 +309,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Tower Shield"
+      "ItemNameEval": "Tower Shield",
+      "ItemTypeEval": "LargeShield"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -322,7 +326,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Wand of Fear"
+      "ItemNameEval": "Wand of Fear",
+      "ItemTypeEval": "Wands"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -338,7 +343,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Healing"
+      "ItemNameEval": "Potion of Healing",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -354,7 +360,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -370,7 +377,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Thvara's Journal"
+      "ItemNameEval": "Thvara's Journal",
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -386,7 +394,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     }
   ],
   "RaceName": "HUMAN",

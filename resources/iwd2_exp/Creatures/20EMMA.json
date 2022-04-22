@@ -261,21 +261,24 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_SELECTED_WEAPON",
       "SlotIndex": 50,
       "SlotItemIndex": -1,
       "Item": null,
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": null
     },
     {
       "SlotCode": "SLOT_SELECTED_WEAPON_ABILITY",
       "SlotIndex": 51,
       "SlotItemIndex": 0,
       "Item": null,
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": null
     }
   ],
   "RaceName": "HUMAN",

@@ -261,7 +261,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold Ring"
+      "ItemNameEval": "Gold Ring",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -277,7 +278,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Sunstone Gem"
+      "ItemNameEval": "Sunstone Gem",
+      "ItemTypeEval": "Gems"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -293,7 +295,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Masterwork Dagger"
+      "ItemNameEval": "Masterwork Dagger",
+      "ItemTypeEval": "Daggers"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -309,7 +312,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Mage Armor"
+      "ItemNameEval": "Mage Armor",
+      "ItemTypeEval": "Scrolls"
     }
   ],
   "RaceName": "ELF",

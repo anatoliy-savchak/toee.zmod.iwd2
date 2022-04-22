@@ -223,7 +223,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Helmet"
+      "ItemNameEval": "Helmet",
+      "ItemTypeEval": "HelmsHats"
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -239,7 +240,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Half-plate Armor"
+      "ItemNameEval": "Half-plate Armor",
+      "ItemTypeEval": "HalfPlate"
     },
     {
       "SlotCode": "SLOT_GAUNTLETS",
@@ -255,7 +257,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gauntlets of Weapon Expertise"
+      "ItemNameEval": "Gauntlets of Weapon Expertise",
+      "ItemTypeEval": "Gauntlet"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -271,7 +274,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -287,7 +291,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -303,7 +308,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -319,7 +325,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Captain Pudu's Key"
+      "ItemNameEval": "Captain Pudu's Key",
+      "ItemTypeEval": "Keys"
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -335,7 +342,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "GOBLIN",

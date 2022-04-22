@@ -209,7 +209,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Half-plate Armor"
+      "ItemNameEval": "Half-plate Armor",
+      "ItemTypeEval": "HalfPlate"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -225,7 +226,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Bastard Sword +1"
+      "ItemNameEval": "Bastard Sword +1",
+      "ItemTypeEval": "GreatSword"
     }
   ],
   "RaceName": "HUMAN",

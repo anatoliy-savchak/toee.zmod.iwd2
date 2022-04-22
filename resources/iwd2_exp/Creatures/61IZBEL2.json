@@ -643,7 +643,7 @@
           "Remaining": 6
         },
         {
-          "SpellName": "114",
+          "SpellName": "Flesh to Stone",
           "Memorized": 6,
           "Remaining": 6
         },
@@ -668,7 +668,7 @@
           "Remaining": 6
         },
         {
-          "SpellName": "210",
+          "SpellName": "Power Word Silence",
           "Memorized": 6,
           "Remaining": 6
         },
@@ -688,7 +688,7 @@
           "Remaining": 6
         },
         {
-          "SpellName": "273",
+          "SpellName": "Stone to Flesh",
           "Memorized": 6,
           "Remaining": 6
         },
@@ -703,7 +703,7 @@
           "Remaining": 6
         },
         {
-          "SpellName": "303",
+          "SpellName": "Tenser's Transformation",
           "Memorized": 6,
           "Remaining": 6
         },
@@ -1116,7 +1116,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -1132,7 +1133,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -1148,7 +1150,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "AmuletsNecklaces"
     },
     {
       "SlotCode": "SLOT_BOOTS",
@@ -1164,7 +1167,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Boots of the North"
+      "ItemNameEval": "Boots of the North",
+      "ItemTypeEval": "Boots"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -1180,7 +1184,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Scimitar +4"
+      "ItemNameEval": "Scimitar +4",
+      "ItemTypeEval": "LongsSwords"
     },
     {
       "SlotCode": "SLOT_INV3",
@@ -1196,7 +1201,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -1212,7 +1218,8 @@
         "Charges3": 1,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -1228,7 +1235,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Suffocate"
+      "ItemNameEval": "Suffocate",
+      "ItemTypeEval": "Scrolls"
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -1244,7 +1252,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Hold Person Wand"
+      "ItemNameEval": "Hold Person Wand",
+      "ItemTypeEval": "Wands"
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -1260,7 +1269,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Fire Agate Gem"
+      "ItemNameEval": "Fire Agate Gem",
+      "ItemTypeEval": "Gems"
     }
   ],
   "RaceName": "YUANTI",

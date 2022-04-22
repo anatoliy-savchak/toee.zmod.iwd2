@@ -208,7 +208,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Leather Armor"
+      "ItemNameEval": "Leather Armor",
+      "ItemTypeEval": "LeatherArmor"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -224,7 +225,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Spear"
+      "ItemNameEval": "Spear",
+      "ItemTypeEval": "Spears"
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -240,7 +242,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Longbow"
+      "ItemNameEval": "Longbow",
+      "ItemTypeEval": "Bows"
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -256,7 +259,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Arrows"
+      "ItemNameEval": "Arrows",
+      "ItemTypeEval": "Arrows"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -272,7 +276,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Hunting Arrows"
+      "ItemNameEval": "Hunting Arrows",
+      "ItemTypeEval": "Arrows"
     }
   ],
   "RaceName": "HUMAN",

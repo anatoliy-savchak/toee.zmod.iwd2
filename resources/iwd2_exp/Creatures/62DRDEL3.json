@@ -217,7 +217,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring"
+      "ItemNameEval": "Ring",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -233,7 +234,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "AmuletsNecklaces"
     },
     {
       "SlotCode": "SLOT_BOOTS",
@@ -249,7 +251,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Boots of Speed"
+      "ItemNameEval": "Boots of Speed",
+      "ItemTypeEval": "Boots"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -265,7 +268,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Longsword +1"
+      "ItemNameEval": "Longsword +1",
+      "ItemTypeEval": "LongsSwords"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -281,7 +285,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Longsword +1"
+      "ItemNameEval": "Longsword +1",
+      "ItemTypeEval": "LongsSwords"
     }
   ],
   "RaceName": "ELF",

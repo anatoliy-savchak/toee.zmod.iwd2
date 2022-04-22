@@ -205,7 +205,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Bracers of Defense +4"
+      "ItemNameEval": "Bracers of Defense +4",
+      "ItemTypeEval": "BracersGauntlets"
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -221,7 +222,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Chameleon Ring"
+      "ItemNameEval": "Chameleon Ring",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -237,7 +239,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring of the Warrior"
+      "ItemNameEval": "Ring of the Warrior",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_BOOTS",
@@ -253,7 +256,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Boots of Speed"
+      "ItemNameEval": "Boots of Speed",
+      "ItemTypeEval": "Boots"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -269,7 +273,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "DROW",

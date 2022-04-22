@@ -218,7 +218,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Chainmail +1"
+      "ItemNameEval": "Chainmail +1",
+      "ItemTypeEval": "ChainMail"
     },
     {
       "SlotCode": "SLOT_BOOTS",
@@ -234,7 +235,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Boots of Speed"
+      "ItemNameEval": "Boots of Speed",
+      "ItemTypeEval": "Boots"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -250,7 +252,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Warhammer +2"
+      "ItemNameEval": "Warhammer +2",
+      "ItemTypeEval": "Hammers"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -266,7 +269,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Large Shield"
+      "ItemNameEval": "Large Shield",
+      "ItemTypeEval": "MediumShield"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -282,7 +286,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -298,7 +303,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Vial of Elven Holy Water"
+      "ItemNameEval": "Vial of Elven Holy Water",
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "ELF",

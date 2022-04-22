@@ -208,7 +208,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Cloak of Protection +1"
+      "ItemNameEval": "Cloak of Protection +1",
+      "ItemTypeEval": "CloaksRobes"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -224,7 +225,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Short Sword +3"
+      "ItemNameEval": "Short Sword +3",
+      "ItemTypeEval": "ShortSwords"
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -240,7 +242,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring of Invisibility "
+      "ItemNameEval": "Ring of Invisibility ",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -256,7 +259,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -272,7 +276,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Short Sword +2"
+      "ItemNameEval": "Short Sword +2",
+      "ItemTypeEval": "ShortSwords"
     }
   ],
   "RaceName": "DROW",

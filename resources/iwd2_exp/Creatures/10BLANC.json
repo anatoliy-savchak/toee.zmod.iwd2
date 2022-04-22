@@ -206,7 +206,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Helmet"
+      "ItemNameEval": "Helmet",
+      "ItemTypeEval": "HelmsHats"
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -222,7 +223,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Studded Leather Armor"
+      "ItemNameEval": "Studded Leather Armor",
+      "ItemTypeEval": "StuddedLeatherArmor"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -238,7 +240,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Spear"
+      "ItemNameEval": "Spear",
+      "ItemTypeEval": "Spears"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -254,7 +257,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     }
   ],
   "RaceName": "HUMAN",

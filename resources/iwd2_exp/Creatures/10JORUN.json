@@ -207,7 +207,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Leather Armor"
+      "ItemNameEval": "Leather Armor",
+      "ItemTypeEval": "LeatherArmor"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -223,7 +224,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Warhammer"
+      "ItemNameEval": "Warhammer",
+      "ItemTypeEval": "Hammers"
     }
   ],
   "RaceName": "DWARF",

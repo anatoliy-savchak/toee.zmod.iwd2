@@ -209,7 +209,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Helmet"
+      "ItemNameEval": "Helmet",
+      "ItemTypeEval": "HelmsHats"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -225,7 +226,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Halberd +1"
+      "ItemNameEval": "Halberd +1",
+      "ItemTypeEval": "Halberds"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -241,7 +243,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -257,7 +260,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "GOBLIN",

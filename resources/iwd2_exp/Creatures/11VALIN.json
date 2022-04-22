@@ -258,7 +258,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Valin's Scroll"
+      "ItemNameEval": "Valin's Scroll",
+      "ItemTypeEval": "Notes"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -274,7 +275,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Andar Gem"
+      "ItemNameEval": "Andar Gem",
+      "ItemTypeEval": "Gems"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -290,7 +292,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Tchazar Gem"
+      "ItemNameEval": "Tchazar Gem",
+      "ItemTypeEval": "Gems"
     }
   ],
   "RaceName": "HUMAN",

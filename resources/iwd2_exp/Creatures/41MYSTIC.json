@@ -326,7 +326,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Adventurer's Robe"
+      "ItemNameEval": "Adventurer's Robe",
+      "ItemTypeEval": "Robe"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -342,7 +343,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Flaming Dart +1"
+      "ItemNameEval": "Flaming Dart +1",
+      "ItemTypeEval": "Darts"
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -358,7 +360,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Acid Tipped Darts"
+      "ItemNameEval": "Acid Tipped Darts",
+      "ItemTypeEval": "Darts"
     },
     {
       "SlotCode": "SLOT_WEAPON3",
@@ -374,7 +377,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Quarterstaff +1"
+      "ItemNameEval": "Quarterstaff +1",
+      "ItemTypeEval": "Quarterstaffs"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -390,7 +394,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Shroud of Flame"
+      "ItemNameEval": "Shroud of Flame",
+      "ItemTypeEval": "Scrolls"
     }
   ],
   "RaceName": "HALFORC",

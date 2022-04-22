@@ -316,7 +316,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Chainmail +1"
+      "ItemNameEval": "Chainmail +1",
+      "ItemTypeEval": "ChainMail"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -332,7 +333,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Battleaxe +1"
+      "ItemNameEval": "Battleaxe +1",
+      "ItemTypeEval": "Axes"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -348,7 +350,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Tower Shield +1"
+      "ItemNameEval": "Tower Shield +1",
+      "ItemTypeEval": "LargeShield"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -364,7 +367,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Prayer"
+      "ItemNameEval": "Prayer",
+      "ItemTypeEval": "Scrolls"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -380,7 +384,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Holy Smite"
+      "ItemNameEval": "Holy Smite",
+      "ItemTypeEval": "Scrolls"
     }
   ],
   "RaceName": "HUMAN",

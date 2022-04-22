@@ -206,7 +206,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Club"
+      "ItemNameEval": "Club",
+      "ItemTypeEval": "Club"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -222,7 +223,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dagger"
+      "ItemNameEval": "Dagger",
+      "ItemTypeEval": "Daggers"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -238,7 +240,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     }
   ],
   "RaceName": "HUMAN",

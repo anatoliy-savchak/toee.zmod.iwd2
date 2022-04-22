@@ -206,7 +206,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Leather Armor of Dexterity"
+      "ItemNameEval": "Leather Armor of Dexterity",
+      "ItemTypeEval": "LeatherArmor"
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -222,7 +223,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring of Freedom of Movement"
+      "ItemNameEval": "Ring of Freedom of Movement",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -238,7 +240,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Quarterstaff +4"
+      "ItemNameEval": "Quarterstaff +4",
+      "ItemTypeEval": "Quarterstaffs"
     },
     {
       "SlotCode": "SLOT_CLOAK",
@@ -254,7 +257,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Cloak of Displacement"
+      "ItemNameEval": "Cloak of Displacement",
+      "ItemTypeEval": "CloaksRobes"
     }
   ],
   "RaceName": "HUMAN",

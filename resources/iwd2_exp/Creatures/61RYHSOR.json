@@ -642,7 +642,7 @@
           "Remaining": 4
         },
         {
-          "SpellName": "114",
+          "SpellName": "Flesh to Stone",
           "Memorized": 4,
           "Remaining": 4
         },
@@ -667,7 +667,7 @@
           "Remaining": 4
         },
         {
-          "SpellName": "210",
+          "SpellName": "Power Word Silence",
           "Memorized": 4,
           "Remaining": 4
         },
@@ -682,7 +682,7 @@
           "Remaining": 4
         },
         {
-          "SpellName": "273",
+          "SpellName": "Stone to Flesh",
           "Memorized": 4,
           "Remaining": 4
         },
@@ -697,7 +697,7 @@
           "Remaining": 4
         },
         {
-          "SpellName": "303",
+          "SpellName": "Tenser's Transformation",
           "Memorized": 4,
           "Remaining": 4
         },
@@ -904,7 +904,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Longsword +1"
+      "ItemNameEval": "Longsword +1",
+      "ItemTypeEval": "LongsSwords"
     }
   ],
   "RaceName": "YUANTI",

@@ -240,7 +240,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -256,7 +257,8 @@
         "Charges3": 1,
         "Flags": 0
       },
-      "ItemNameEval": "Restoration"
+      "ItemNameEval": "Restoration",
+      "ItemTypeEval": "Scrolls"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -272,7 +274,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -288,7 +291,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Wand of Cure Moderate Wounds"
+      "ItemNameEval": "Wand of Cure Moderate Wounds",
+      "ItemTypeEval": "Wands"
     }
   ],
   "RaceName": "HUMAN",

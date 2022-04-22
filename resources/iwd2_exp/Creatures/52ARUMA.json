@@ -208,7 +208,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Raven Tomb Key"
+      "ItemNameEval": "Raven Tomb Key",
+      "ItemTypeEval": "Keys"
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -224,7 +225,8 @@
         "Charges3": 1,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "HUMAN",

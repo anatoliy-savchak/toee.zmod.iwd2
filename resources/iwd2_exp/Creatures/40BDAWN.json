@@ -210,7 +210,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Bastard Sword "
+      "ItemNameEval": "Bastard Sword ",
+      "ItemTypeEval": "GreatSword"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -226,7 +227,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Resurrection"
+      "ItemNameEval": "Resurrection",
+      "ItemTypeEval": "Scrolls"
     }
   ],
   "RaceName": "WOLF",

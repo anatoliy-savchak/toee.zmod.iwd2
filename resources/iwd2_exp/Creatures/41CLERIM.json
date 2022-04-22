@@ -298,7 +298,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Half-plate Armor"
+      "ItemNameEval": "Half-plate Armor",
+      "ItemTypeEval": "HalfPlate"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -314,7 +315,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Throwing Hammer +1"
+      "ItemNameEval": "Throwing Hammer +1",
+      "ItemTypeEval": "Hammers"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -330,7 +332,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Tower Shield"
+      "ItemNameEval": "Tower Shield",
+      "ItemTypeEval": "LargeShield"
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -346,7 +349,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Flail +1"
+      "ItemNameEval": "Flail +1",
+      "ItemTypeEval": "Flails"
     },
     {
       "SlotCode": "SLOT_SHIELD2",
@@ -362,7 +366,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Tower Shield"
+      "ItemNameEval": "Tower Shield",
+      "ItemTypeEval": "LargeShield"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -378,7 +383,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_INV2",
@@ -394,7 +400,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     }
   ],
   "RaceName": "HUMAN",

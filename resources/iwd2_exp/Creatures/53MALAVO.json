@@ -187,7 +187,7 @@
           "Remaining": 1
         },
         {
-          "SpellName": "114",
+          "SpellName": "Flesh to Stone",
           "Memorized": 1,
           "Remaining": 1
         },
@@ -433,7 +433,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Robe of the Evil Archmagi"
+      "ItemNameEval": "Robe of the Evil Archmagi",
+      "ItemTypeEval": "Robe"
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -449,7 +450,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring of Spell Resistance"
+      "ItemNameEval": "Ring of Spell Resistance",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -465,7 +467,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring of Protection +2"
+      "ItemNameEval": "Ring of Protection +2",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -481,7 +484,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dagger +3"
+      "ItemNameEval": "Dagger +3",
+      "ItemTypeEval": "Daggers"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -497,7 +501,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Malavon's Journal"
+      "ItemNameEval": "Malavon's Journal",
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -513,7 +518,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     }
   ],
   "RaceName": "ELF",

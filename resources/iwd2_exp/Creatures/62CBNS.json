@@ -206,7 +206,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -222,7 +223,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring"
+      "ItemNameEval": "Ring",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -238,7 +240,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Shortbow"
+      "ItemNameEval": "Shortbow",
+      "ItemTypeEval": "Bows"
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -254,7 +257,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Frost Arrows +1"
+      "ItemNameEval": "Frost Arrows +1",
+      "ItemTypeEval": "Arrows"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -270,7 +274,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "UNDEAD",

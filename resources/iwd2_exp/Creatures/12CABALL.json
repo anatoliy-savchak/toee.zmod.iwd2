@@ -254,7 +254,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -270,7 +271,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -286,7 +288,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -302,7 +305,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Healing"
+      "ItemNameEval": "Potion of Healing",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -318,7 +322,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -334,7 +339,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Chromatic Orb"
+      "ItemNameEval": "Chromatic Orb",
+      "ItemTypeEval": "Scrolls"
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -350,7 +356,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Larloch's Minor Drain"
+      "ItemNameEval": "Larloch's Minor Drain",
+      "ItemTypeEval": "Scrolls"
     }
   ],
   "RaceName": "GOBLIN",

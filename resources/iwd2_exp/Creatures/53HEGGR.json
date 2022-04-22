@@ -313,7 +313,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Helmet"
+      "ItemNameEval": "Helmet",
+      "ItemTypeEval": "HelmsHats"
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -329,7 +330,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Half-plate Armor"
+      "ItemNameEval": "Half-plate Armor",
+      "ItemTypeEval": "HalfPlate"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -345,7 +347,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Warhammer +3"
+      "ItemNameEval": "Warhammer +3",
+      "ItemTypeEval": "Hammers"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -361,7 +364,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Small Shield +1"
+      "ItemNameEval": "Small Shield +1",
+      "ItemTypeEval": "SmallShield"
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -377,7 +381,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Sling +1"
+      "ItemNameEval": "Sling +1",
+      "ItemTypeEval": "Slings"
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -393,7 +398,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Sparking Bullets +1"
+      "ItemNameEval": "Sparking Bullets +1",
+      "ItemTypeEval": "Bullets"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -409,7 +415,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Bloodstone Gem"
+      "ItemNameEval": "Bloodstone Gem",
+      "ItemTypeEval": "Gems"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -425,7 +432,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Cure Serious Wounds"
+      "ItemNameEval": "Cure Serious Wounds",
+      "ItemTypeEval": "Scrolls"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -441,7 +449,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     }
   ],
   "RaceName": "DWARF",

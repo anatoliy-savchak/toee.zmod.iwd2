@@ -213,7 +213,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Chainmail Armor"
+      "ItemNameEval": "Chainmail Armor",
+      "ItemTypeEval": "ChainMail"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -229,7 +230,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Spear +3"
+      "ItemNameEval": "Spear +3",
+      "ItemTypeEval": "Spears"
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -245,7 +247,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Light Crossbow +2"
+      "ItemNameEval": "Light Crossbow +2",
+      "ItemTypeEval": "Crossbows"
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -261,7 +264,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Bolt +2"
+      "ItemNameEval": "Bolt +2",
+      "ItemTypeEval": "Bolts"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -277,7 +281,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -293,7 +298,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     }
   ],
   "RaceName": "ELF",

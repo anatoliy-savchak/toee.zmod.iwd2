@@ -200,7 +200,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ruby Ring"
+      "ItemNameEval": "Ruby Ring",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -216,7 +217,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Fire Opal Ring"
+      "ItemNameEval": "Fire Opal Ring",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -232,7 +234,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Pearl Necklace"
+      "ItemNameEval": "Pearl Necklace",
+      "ItemTypeEval": "AmuletsNecklaces"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -248,7 +251,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -264,7 +268,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -280,7 +285,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -296,7 +302,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -312,7 +319,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Elixir of Health"
+      "ItemNameEval": "Elixir of Health",
+      "ItemTypeEval": "Potions"
     }
   ],
   "RaceName": "DROW",

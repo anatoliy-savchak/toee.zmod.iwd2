@@ -206,7 +206,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -222,7 +223,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dead Cat"
+      "ItemNameEval": "Dead Cat",
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -238,7 +240,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Bottle of Wine"
+      "ItemNameEval": "Bottle of Wine",
+      "ItemTypeEval": "Drink"
     }
   ],
   "RaceName": "HALF_ELF",

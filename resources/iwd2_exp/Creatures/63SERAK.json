@@ -215,7 +215,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Helmet"
+      "ItemNameEval": "Helmet",
+      "ItemTypeEval": "HelmsHats"
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -231,7 +232,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Mithral Field Plate Armor +2"
+      "ItemNameEval": "Mithral Field Plate Armor +2",
+      "ItemTypeEval": "ChainMail"
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -247,7 +249,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring of Protection +3"
+      "ItemNameEval": "Ring of Protection +3",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_BOOTS",
@@ -263,7 +266,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Boots of Grounding"
+      "ItemNameEval": "Boots of Grounding",
+      "ItemTypeEval": "Boots"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -279,7 +283,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Bastard Sword +4"
+      "ItemNameEval": "Bastard Sword +4",
+      "ItemTypeEval": "BastardSword"
     }
   ],
   "RaceName": "HUMAN",

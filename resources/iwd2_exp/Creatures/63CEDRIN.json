@@ -614,7 +614,7 @@
           "Remaining": 1
         },
         {
-          "SpellName": "114",
+          "SpellName": "Flesh to Stone",
           "Memorized": 1,
           "Remaining": 1
         },
@@ -649,7 +649,7 @@
           "Remaining": 1
         },
         {
-          "SpellName": "210",
+          "SpellName": "Power Word Silence",
           "Memorized": 1,
           "Remaining": 1
         },
@@ -669,12 +669,12 @@
           "Remaining": 1
         },
         {
-          "SpellName": "273",
+          "SpellName": "Stone to Flesh",
           "Memorized": 1,
           "Remaining": 1
         },
         {
-          "SpellName": "303",
+          "SpellName": "Tenser's Transformation",
           "Memorized": 1,
           "Remaining": 1
         },
@@ -1072,7 +1072,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Bracers of Defense +4"
+      "ItemNameEval": "Bracers of Defense +4",
+      "ItemTypeEval": "BracersGauntlets"
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -1088,7 +1089,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Shield Amulet"
+      "ItemNameEval": "Shield Amulet",
+      "ItemTypeEval": "AmuletsNecklaces"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -1104,7 +1106,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dagger +5"
+      "ItemNameEval": "Dagger +5",
+      "ItemTypeEval": "Daggers"
     },
     {
       "SlotCode": "SLOT_CLOAK",
@@ -1120,7 +1123,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Cloak of Protection +2"
+      "ItemNameEval": "Cloak of Protection +2",
+      "ItemTypeEval": "CloaksRobes"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -1136,7 +1140,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "HUMAN",

@@ -261,7 +261,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Chainmail Armor"
+      "ItemNameEval": "Chainmail Armor",
+      "ItemTypeEval": "ChainMail"
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -277,7 +278,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -293,7 +295,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Iyachtu Xvim Holy Symbol"
+      "ItemNameEval": "Iyachtu Xvim Holy Symbol",
+      "ItemTypeEval": "AmuletsNecklaces"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -309,7 +312,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Hammer of Bludgeoning +2"
+      "ItemNameEval": "Hammer of Bludgeoning +2",
+      "ItemTypeEval": "Hammers"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -325,7 +329,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -341,7 +346,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -357,7 +363,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "GOBLIN",

@@ -207,7 +207,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Helmet"
+      "ItemNameEval": "Helmet",
+      "ItemTypeEval": "HelmsHats"
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -223,7 +224,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Chainmail Armor"
+      "ItemNameEval": "Chainmail Armor",
+      "ItemTypeEval": "ChainMail"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -239,7 +241,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Masterwork Bastard Sword"
+      "ItemNameEval": "Masterwork Bastard Sword",
+      "ItemTypeEval": "GreatSword"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -255,7 +258,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "HUMAN",

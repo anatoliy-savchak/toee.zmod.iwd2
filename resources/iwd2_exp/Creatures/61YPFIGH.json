@@ -202,7 +202,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Helmet"
+      "ItemNameEval": "Helmet",
+      "ItemTypeEval": "HelmsHats"
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -218,7 +219,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Half-plate Armor"
+      "ItemNameEval": "Half-plate Armor",
+      "ItemTypeEval": "HalfPlate"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -234,7 +236,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Bastard Sword +1"
+      "ItemNameEval": "Bastard Sword +1",
+      "ItemTypeEval": "GreatSword"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -250,7 +253,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Large Shield"
+      "ItemNameEval": "Large Shield",
+      "ItemTypeEval": "MediumShield"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -266,7 +270,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -282,7 +287,8 @@
         "Charges3": 1,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -298,7 +304,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     }
   ],
   "RaceName": "YUANTI",

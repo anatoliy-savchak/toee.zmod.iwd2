@@ -284,7 +284,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring of Protection +2"
+      "ItemNameEval": "Ring of Protection +2",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -300,7 +301,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring"
+      "ItemNameEval": "Ring",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_BELT",
@@ -316,7 +318,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -332,7 +335,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Staff of Greater Spell Resistance +5"
+      "ItemNameEval": "Staff of Greater Spell Resistance +5",
+      "ItemTypeEval": "Quarterstaffs"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -348,7 +352,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -364,7 +369,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -380,7 +386,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Orc Encampment Bone Key"
+      "ItemNameEval": "Orc Encampment Bone Key",
+      "ItemTypeEval": "Keys"
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -396,7 +403,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "ORC",

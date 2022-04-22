@@ -209,7 +209,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Chainmail Armor"
+      "ItemNameEval": "Chainmail Armor",
+      "ItemTypeEval": "ChainMail"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -225,7 +226,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Longsword +1"
+      "ItemNameEval": "Longsword +1",
+      "ItemTypeEval": "LongsSwords"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -241,7 +243,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Short Sword +1"
+      "ItemNameEval": "Short Sword +1",
+      "ItemTypeEval": "ShortSwords"
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -257,7 +260,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Light Crossbow"
+      "ItemNameEval": "Light Crossbow",
+      "ItemTypeEval": "Crossbows"
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -273,7 +277,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Corrosive Bolts +1"
+      "ItemNameEval": "Corrosive Bolts +1",
+      "ItemTypeEval": "Bolts"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -289,7 +294,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -305,7 +311,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     }
   ],
   "RaceName": "ELF",

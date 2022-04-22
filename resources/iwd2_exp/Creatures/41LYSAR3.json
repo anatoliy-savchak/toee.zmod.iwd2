@@ -334,7 +334,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Aurilite Ceremonial Robe"
+      "ItemNameEval": "Aurilite Ceremonial Robe",
+      "ItemTypeEval": "Robe"
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -350,7 +351,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "AmuletsNecklaces"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -366,7 +368,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Aurilian Ice Axe"
+      "ItemNameEval": "Aurilian Ice Axe",
+      "ItemTypeEval": "Axes"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -382,7 +385,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Buckler"
+      "ItemNameEval": "Buckler",
+      "ItemTypeEval": "Buckler_Teeth"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -398,7 +402,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -414,7 +419,8 @@
         "Charges3": 1,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -430,7 +436,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "High Priestess Lysara's Temple Key"
+      "ItemNameEval": "High Priestess Lysara's Temple Key",
+      "ItemTypeEval": "Keys"
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -446,7 +453,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Leather Armor +2"
+      "ItemNameEval": "Leather Armor +2",
+      "ItemTypeEval": "LeatherArmor"
     }
   ],
   "RaceName": "HUMAN",

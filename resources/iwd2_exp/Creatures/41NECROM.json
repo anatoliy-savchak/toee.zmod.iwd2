@@ -289,7 +289,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -305,7 +306,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dart +1"
+      "ItemNameEval": "Dart +1",
+      "ItemTypeEval": "Darts"
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -321,7 +323,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dagger"
+      "ItemNameEval": "Dagger",
+      "ItemTypeEval": "Daggers"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -337,7 +340,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -353,7 +357,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "HUMAN",

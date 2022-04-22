@@ -324,7 +324,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Chainmail Armor"
+      "ItemNameEval": "Chainmail Armor",
+      "ItemTypeEval": "ChainMail"
     },
     {
       "SlotCode": "SLOT_GAUNTLETS",
@@ -340,7 +341,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gauntlets of Weapon Expertise"
+      "ItemNameEval": "Gauntlets of Weapon Expertise",
+      "ItemTypeEval": "Gauntlet"
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -356,7 +358,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring of Frost Resistance"
+      "ItemNameEval": "Ring of Frost Resistance",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -372,7 +375,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Flail +3"
+      "ItemNameEval": "Flail +3",
+      "ItemTypeEval": "Flails"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -388,7 +392,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Tower Shield"
+      "ItemNameEval": "Tower Shield",
+      "ItemTypeEval": "LargeShield"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -404,7 +409,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Black Opal"
+      "ItemNameEval": "Black Opal",
+      "ItemTypeEval": "Gems"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -420,7 +426,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Frost Giant Strength"
+      "ItemNameEval": "Potion of Frost Giant Strength",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -436,7 +443,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Symbol of Pain"
+      "ItemNameEval": "Symbol of Pain",
+      "ItemTypeEval": "Scrolls"
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -452,7 +460,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     }
   ],
   "RaceName": "ELF",

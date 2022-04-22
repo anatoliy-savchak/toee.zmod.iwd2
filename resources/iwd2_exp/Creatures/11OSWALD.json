@@ -264,7 +264,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Golden Girdle"
+      "ItemNameEval": "Golden Girdle",
+      "ItemTypeEval": "BeltsGirdles"
     },
     {
       "SlotCode": "SLOT_BOOTS",
@@ -280,7 +281,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Boots of Grounding"
+      "ItemNameEval": "Boots of Grounding",
+      "ItemTypeEval": "Boots"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -296,7 +298,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -312,7 +315,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Explosions"
+      "ItemNameEval": "Potion of Explosions",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_INV2",
@@ -328,7 +332,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Oil of Fiery Burning"
+      "ItemNameEval": "Oil of Fiery Burning",
+      "ItemTypeEval": "Potions"
     }
   ],
   "RaceName": "GNOME",

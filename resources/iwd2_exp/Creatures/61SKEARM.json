@@ -209,7 +209,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Helmet"
+      "ItemNameEval": "Helmet",
+      "ItemTypeEval": "HelmsHats"
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -225,7 +226,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Half-plate Armor"
+      "ItemNameEval": "Half-plate Armor",
+      "ItemTypeEval": "HalfPlate"
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -241,7 +243,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring"
+      "ItemNameEval": "Ring",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -257,7 +260,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Longsword +1"
+      "ItemNameEval": "Longsword +1",
+      "ItemTypeEval": "LongsSwords"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -273,7 +277,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Tower Shield"
+      "ItemNameEval": "Tower Shield",
+      "ItemTypeEval": "LargeShield"
     }
   ],
   "RaceName": "SKELETON",

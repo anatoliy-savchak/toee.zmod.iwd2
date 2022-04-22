@@ -84,7 +84,11 @@ class Ctrl10HEDRON(NPCBase):
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
-		utils_npc.ensure_saves(npc, 5, 2, 2) # SaveVsDeath: 5, SaveVsWands: 2, SaveVsPolymorph: 2
+		utils_npc.ensure_saves_natural(npc, 5, 2, 2) # SaveVsDeath: 5, SaveVsWands: 2, SaveVsPolymorph: 2
+		
+		# HP
+		utils_npc.ensure_hp(npc, 31) # MaximumHP: 31
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 31
 
 		# skills
 		# SkillAlchemy: 0

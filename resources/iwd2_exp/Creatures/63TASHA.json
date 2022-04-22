@@ -98,7 +98,7 @@
           "Remaining": 1
         },
         {
-          "SpellName": "210",
+          "SpellName": "Power Word Silence",
           "Memorized": 1,
           "Remaining": 1
         }
@@ -331,7 +331,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Quarterstaff +3"
+      "ItemNameEval": "Quarterstaff +3",
+      "ItemTypeEval": "Quarterstaffs"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -347,7 +348,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "HUMAN",

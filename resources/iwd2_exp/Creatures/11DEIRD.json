@@ -201,7 +201,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Leather Armor"
+      "ItemNameEval": "Leather Armor",
+      "ItemTypeEval": "LeatherArmor"
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -217,7 +218,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Short Sword "
+      "ItemNameEval": "Short Sword ",
+      "ItemTypeEval": "ShortSwords"
     },
     {
       "SlotCode": "SLOT_WEAPON3",
@@ -233,7 +235,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dagger"
+      "ItemNameEval": "Dagger",
+      "ItemTypeEval": "Daggers"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -249,7 +252,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Turquoise Gem"
+      "ItemNameEval": "Turquoise Gem",
+      "ItemTypeEval": "Gems"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -265,7 +269,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Moonstone Gem"
+      "ItemNameEval": "Moonstone Gem",
+      "ItemTypeEval": "Gems"
     }
   ],
   "RaceName": "HUMAN",

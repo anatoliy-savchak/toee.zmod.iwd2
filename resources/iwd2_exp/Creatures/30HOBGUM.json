@@ -209,7 +209,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Longsword "
+      "ItemNameEval": "Longsword ",
+      "ItemTypeEval": "LongsSwords"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -225,7 +226,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -241,7 +243,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Potion of Extra Healing"
+      "ItemNameEval": "Potion of Extra Healing",
+      "ItemTypeEval": "Potions"
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -257,7 +260,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Iron Ward Stone"
+      "ItemNameEval": "Iron Ward Stone",
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "HOBGOBLIN",

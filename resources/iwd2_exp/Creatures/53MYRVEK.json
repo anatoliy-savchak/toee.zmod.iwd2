@@ -307,7 +307,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Knave's Robe"
+      "ItemNameEval": "Knave's Robe",
+      "ItemTypeEval": "Robe"
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -323,7 +324,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring of Fire Resistance"
+      "ItemNameEval": "Ring of Fire Resistance",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -339,7 +341,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Quarterstaff +2"
+      "ItemNameEval": "Quarterstaff +2",
+      "ItemTypeEval": "Quarterstaffs"
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -355,7 +358,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Acid Tipped Darts"
+      "ItemNameEval": "Acid Tipped Darts",
+      "ItemTypeEval": "Darts"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -371,7 +375,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Lightning Bolt"
+      "ItemNameEval": "Lightning Bolt",
+      "ItemTypeEval": "Scrolls"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -387,7 +392,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Lower Resistance"
+      "ItemNameEval": "Lower Resistance",
+      "ItemTypeEval": "Scrolls"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -403,7 +409,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Andar Gem"
+      "ItemNameEval": "Andar Gem",
+      "ItemTypeEval": "Gems"
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -419,7 +426,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Tchazar Gem"
+      "ItemNameEval": "Tchazar Gem",
+      "ItemTypeEval": "Gems"
     },
     {
       "SlotCode": "SLOT_INV2",
@@ -435,7 +443,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Diamond"
+      "ItemNameEval": "Diamond",
+      "ItemTypeEval": "Gems"
     },
     {
       "SlotCode": "SLOT_INV3",
@@ -451,7 +460,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Water Opal"
+      "ItemNameEval": "Water Opal",
+      "ItemTypeEval": "Gems"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -467,7 +477,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     }
   ],
   "RaceName": "DWARF",

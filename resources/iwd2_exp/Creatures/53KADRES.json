@@ -278,7 +278,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Studded Leather Armor +2"
+      "ItemNameEval": "Studded Leather Armor +2",
+      "ItemTypeEval": "StuddedLeatherArmor"
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -294,7 +295,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Amulet of Protection +1"
+      "ItemNameEval": "Amulet of Protection +1",
+      "ItemTypeEval": "AmuletsNecklaces"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -310,7 +312,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Lightning Longsword +2"
+      "ItemNameEval": "Lightning Longsword +2",
+      "ItemTypeEval": "LongsSwords"
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -326,7 +329,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Vampiric Dagger +1"
+      "ItemNameEval": "Vampiric Dagger +1",
+      "ItemTypeEval": "Daggers"
     },
     {
       "SlotCode": "SLOT_WEAPON3",
@@ -342,7 +346,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Sling +2"
+      "ItemNameEval": "Sling +2",
+      "ItemTypeEval": "Slings"
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -358,7 +363,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Corrosive Bullets +1"
+      "ItemNameEval": "Corrosive Bullets +1",
+      "ItemTypeEval": "Bullets"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -374,7 +380,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Flame Strike"
+      "ItemNameEval": "Flame Strike",
+      "ItemTypeEval": "Scrolls"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -390,7 +397,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Cure Critical Wounds"
+      "ItemNameEval": "Cure Critical Wounds",
+      "ItemTypeEval": "Scrolls"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -406,7 +414,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Rogue Stone"
+      "ItemNameEval": "Rogue Stone",
+      "ItemTypeEval": "Gems"
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -422,7 +431,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Moonbar Gem"
+      "ItemNameEval": "Moonbar Gem",
+      "ItemTypeEval": "Gems"
     },
     {
       "SlotCode": "SLOT_INV2",
@@ -438,7 +448,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     }
   ],
   "RaceName": "ELF",

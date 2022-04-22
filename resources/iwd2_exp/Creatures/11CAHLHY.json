@@ -206,7 +206,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Short Sword "
+      "ItemNameEval": "Short Sword ",
+      "ItemTypeEval": "ShortSwords"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -222,7 +223,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dagger"
+      "ItemNameEval": "Dagger",
+      "ItemTypeEval": "Daggers"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -238,7 +240,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Horn Coral Gem"
+      "ItemNameEval": "Horn Coral Gem",
+      "ItemTypeEval": "Gems"
     }
   ],
   "RaceName": "HUMAN",

@@ -349,7 +349,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Traveler's Robe"
+      "ItemNameEval": "Traveler's Robe",
+      "ItemTypeEval": "Robe"
     },
     {
       "SlotCode": "SLOT_GAUNTLETS",
@@ -365,7 +366,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Bracers of Defense +2"
+      "ItemNameEval": "Bracers of Defense +2",
+      "ItemTypeEval": "BracersGauntlets"
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -381,7 +383,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring of Protection +2"
+      "ItemNameEval": "Ring of Protection +2",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -397,7 +400,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Wizards Ring"
+      "ItemNameEval": "Wizards Ring",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -413,7 +417,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dagger +2, Longtooth"
+      "ItemNameEval": "Dagger +2, Longtooth",
+      "ItemTypeEval": "Daggers"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -429,7 +434,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -445,7 +451,8 @@
         "Charges3": 1,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -461,7 +468,8 @@
         "Charges3": 1,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -477,7 +485,8 @@
         "Charges3": 1,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "HUMAN",

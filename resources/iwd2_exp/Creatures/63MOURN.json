@@ -372,7 +372,7 @@
           "Remaining": 1
         },
         {
-          "SpellName": "114",
+          "SpellName": "Flesh to Stone",
           "Memorized": 1,
           "Remaining": 1
         },
@@ -397,12 +397,12 @@
           "Remaining": 1
         },
         {
-          "SpellName": "273",
+          "SpellName": "Stone to Flesh",
           "Memorized": 1,
           "Remaining": 1
         },
         {
-          "SpellName": "303",
+          "SpellName": "Tenser's Transformation",
           "Memorized": 1,
           "Remaining": 1
         },
@@ -755,7 +755,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Robe of the Evil Archmagi"
+      "ItemNameEval": "Robe of the Evil Archmagi",
+      "ItemTypeEval": "Robe"
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -771,7 +772,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring of Protection +3"
+      "ItemNameEval": "Ring of Protection +3",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -787,7 +789,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring of Regeneration"
+      "ItemNameEval": "Ring of Regeneration",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -803,7 +806,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dagger +4"
+      "ItemNameEval": "Dagger +4",
+      "ItemTypeEval": "Daggers"
     }
   ],
   "RaceName": "DROW",

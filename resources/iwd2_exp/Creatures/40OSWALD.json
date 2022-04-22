@@ -264,7 +264,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Fist"
+      "ItemNameEval": "Fist",
+      "ItemTypeEval": "HandToHand"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -280,7 +281,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Gold"
+      "ItemNameEval": "Gold",
+      "ItemTypeEval": "Gold"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -296,7 +298,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Iron Rations"
+      "ItemNameEval": "Iron Rations",
+      "ItemTypeEval": "Food2"
     },
     {
       "SlotCode": "SLOT_INV2",
@@ -312,7 +315,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "GNOME",

@@ -200,7 +200,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Studded Leather Armor"
+      "ItemNameEval": "Studded Leather Armor",
+      "ItemTypeEval": "StuddedLeatherArmor"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -216,7 +217,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Club"
+      "ItemNameEval": "Club",
+      "ItemTypeEval": "Club"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -232,7 +234,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Oria's Note"
+      "ItemNameEval": "Oria's Note",
+      "ItemTypeEval": "Notes"
     }
   ],
   "RaceName": "HUMAN",

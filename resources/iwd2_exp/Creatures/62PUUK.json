@@ -214,7 +214,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Ring"
+      "ItemNameEval": "Ring",
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -230,7 +231,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -246,7 +248,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -262,7 +265,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Orc Encampment Bone Key"
+      "ItemNameEval": "Orc Encampment Bone Key",
+      "ItemTypeEval": "Keys"
     }
   ],
   "RaceName": "ORC",

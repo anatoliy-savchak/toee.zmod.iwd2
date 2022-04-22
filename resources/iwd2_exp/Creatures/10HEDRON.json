@@ -207,7 +207,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Leather Armor"
+      "ItemNameEval": "Leather Armor",
+      "ItemTypeEval": "LeatherArmor"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -223,7 +224,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Spear"
+      "ItemNameEval": "Spear",
+      "ItemTypeEval": "Spears"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -239,7 +241,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Dagger"
+      "ItemNameEval": "Dagger",
+      "ItemTypeEval": "Daggers"
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -255,7 +258,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Lynx Eye Gem"
+      "ItemNameEval": "Lynx Eye Gem",
+      "ItemTypeEval": "Gems"
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -271,7 +275,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Bottle of Wine"
+      "ItemNameEval": "Bottle of Wine",
+      "ItemTypeEval": "Drink"
     }
   ],
   "RaceName": "HUMAN",

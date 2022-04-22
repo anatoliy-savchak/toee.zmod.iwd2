@@ -274,7 +274,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -290,7 +291,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Rings"
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -306,7 +308,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": "Greatsword +4"
+      "ItemNameEval": "Greatsword +4",
+      "ItemTypeEval": "GreatSword"
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -322,7 +325,8 @@
         "Charges3": 0,
         "Flags": 0
       },
-      "ItemNameEval": null
+      "ItemNameEval": null,
+      "ItemTypeEval": "Books"
     }
   ],
   "RaceName": "HALF_DRAGON",

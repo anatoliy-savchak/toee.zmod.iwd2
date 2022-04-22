@@ -239,7 +239,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -256,7 +257,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring",
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -273,7 +275,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "HandToHand"
+      "ItemTypeEval": "HandToHand",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -290,7 +293,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -307,7 +311,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -324,7 +329,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Tamjan's Bracers",
-      "ItemTypeEval": "BracersGauntlets"
+      "ItemTypeEval": "BracersGauntlets",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -341,7 +347,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "TANARI",

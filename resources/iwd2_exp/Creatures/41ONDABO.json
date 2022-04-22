@@ -332,7 +332,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ruby Ring",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -349,7 +350,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -366,7 +368,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -383,7 +386,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Scimitar of the Defender +1",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -400,7 +404,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -417,7 +422,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "DJINNI",

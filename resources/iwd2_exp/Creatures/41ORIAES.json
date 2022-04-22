@@ -367,7 +367,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Battleaxe",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -384,7 +385,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Aurilian Ice Axe",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV14",
@@ -401,7 +403,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Cloudkill",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV15",
@@ -418,7 +421,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Wand of Magic Missiles",
-      "ItemTypeEval": "Wands"
+      "ItemTypeEval": "Wands",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "NO_RACE",

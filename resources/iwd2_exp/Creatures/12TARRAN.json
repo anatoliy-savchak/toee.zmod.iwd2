@@ -207,7 +207,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Studded Leather Armor",
-      "ItemTypeEval": "StuddedLeatherArmor"
+      "ItemTypeEval": "StuddedLeatherArmor",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -224,7 +225,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Short Sword ",
-      "ItemTypeEval": "ShortSwords"
+      "ItemTypeEval": "ShortSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -241,7 +243,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Small Shield",
-      "ItemTypeEval": "SmallShield"
+      "ItemTypeEval": "SmallShield",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -258,7 +261,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Dagger",
-      "ItemTypeEval": "Daggers"
+      "ItemTypeEval": "Daggers",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -275,7 +279,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

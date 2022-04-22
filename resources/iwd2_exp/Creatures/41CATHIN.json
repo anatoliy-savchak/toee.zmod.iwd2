@@ -277,7 +277,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Helmet",
-      "ItemTypeEval": "HelmsHats"
+      "ItemTypeEval": "HelmsHats",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -294,7 +295,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Half-plate Armor",
-      "ItemTypeEval": "HalfPlate"
+      "ItemTypeEval": "HalfPlate",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -311,7 +313,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -328,7 +331,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -345,7 +349,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ice Axe +1",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -362,7 +367,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ice Axe +1",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -379,7 +385,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -396,7 +403,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -413,7 +421,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -430,7 +439,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -447,7 +457,8 @@
         "Flags": 0
       },
       "ItemNameEval": "High Priestess Cathin's Temple Key",
-      "ItemTypeEval": "Keys"
+      "ItemTypeEval": "Keys",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

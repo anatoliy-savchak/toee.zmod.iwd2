@@ -212,7 +212,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -229,7 +230,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -246,7 +248,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Spear +1",
-      "ItemTypeEval": "Spears"
+      "ItemTypeEval": "Spears",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_CLOAK",
@@ -263,7 +266,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Cloak of Displacement",
-      "ItemTypeEval": "CloaksRobes"
+      "ItemTypeEval": "CloaksRobes",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

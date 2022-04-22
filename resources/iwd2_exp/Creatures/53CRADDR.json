@@ -268,7 +268,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -285,7 +286,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_BELT",
@@ -302,7 +304,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "BeltsGirdles"
+      "ItemTypeEval": "BeltsGirdles",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -319,7 +322,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Mace +1",
-      "ItemTypeEval": "Maces"
+      "ItemTypeEval": "Maces",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "DRIDER",

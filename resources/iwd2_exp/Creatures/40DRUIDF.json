@@ -230,7 +230,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -247,7 +248,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Sling ",
-      "ItemTypeEval": "Slings"
+      "ItemTypeEval": "Slings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -264,7 +266,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Buckler",
-      "ItemTypeEval": "Buckler_Teeth"
+      "ItemTypeEval": "Buckler_Teeth",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -281,7 +284,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Club",
-      "ItemTypeEval": "Club"
+      "ItemTypeEval": "Club",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -298,7 +302,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bullet",
-      "ItemTypeEval": "Bullets"
+      "ItemTypeEval": "Bullets",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -315,7 +320,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -332,7 +338,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -349,7 +356,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Healing",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV2",
@@ -366,7 +374,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Extra Healing",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HALF_ELF",

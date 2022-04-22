@@ -402,7 +402,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -419,7 +420,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Scimitar+4: Ichor",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -436,7 +438,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Scimitar+4: Ichor",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "TANARI",

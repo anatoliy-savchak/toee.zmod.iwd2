@@ -185,7 +185,8 @@
       "SlotItemIndex": -1,
       "Item": null,
       "ItemNameEval": null,
-      "ItemTypeEval": null
+      "ItemTypeEval": null,
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_SELECTED_WEAPON_ABILITY",
@@ -193,7 +194,8 @@
       "SlotItemIndex": 0,
       "Item": null,
       "ItemNameEval": null,
-      "ItemTypeEval": null
+      "ItemTypeEval": null,
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "GOBLIN",

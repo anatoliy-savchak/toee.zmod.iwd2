@@ -202,7 +202,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -219,7 +220,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -236,7 +238,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -253,7 +256,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Note to Guards",
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -270,7 +274,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -287,7 +292,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

@@ -1117,7 +1117,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Scimitar +4",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -1134,7 +1135,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Suffocate",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -1151,7 +1153,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Hold Person Wand",
-      "ItemTypeEval": "Wands"
+      "ItemTypeEval": "Wands",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -1168,7 +1171,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Fire Agate Gem",
-      "ItemTypeEval": "Gems"
+      "ItemTypeEval": "Gems",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV8",
@@ -1185,7 +1189,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Spirit Essence",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "YUANTI",

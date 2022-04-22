@@ -209,7 +209,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Half-plate Armor",
-      "ItemTypeEval": "HalfPlate"
+      "ItemTypeEval": "HalfPlate",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -226,7 +227,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Halberd",
-      "ItemTypeEval": "Halberds"
+      "ItemTypeEval": "Halberds",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "HUMAN",

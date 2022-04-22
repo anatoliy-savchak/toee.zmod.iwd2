@@ -207,7 +207,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -224,7 +225,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Stinking Cloud",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "DROW",

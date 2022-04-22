@@ -203,7 +203,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Full Plate Mail +1",
-      "ItemTypeEval": "FullPlate"
+      "ItemTypeEval": "FullPlate",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -220,7 +221,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring of the Wise",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -237,7 +239,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Warhammer +4",
-      "ItemTypeEval": "Hammers"
+      "ItemTypeEval": "Hammers",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SELECTED_WEAPON",
@@ -245,7 +248,8 @@
       "SlotItemIndex": -1,
       "Item": null,
       "ItemNameEval": null,
-      "ItemTypeEval": null
+      "ItemTypeEval": null,
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_SELECTED_WEAPON_ABILITY",
@@ -253,7 +257,8 @@
       "SlotItemIndex": 0,
       "Item": null,
       "ItemNameEval": null,
-      "ItemTypeEval": null
+      "ItemTypeEval": null,
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "DROW",

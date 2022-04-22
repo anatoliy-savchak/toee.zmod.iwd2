@@ -208,7 +208,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -225,7 +226,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Wight's Blade",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -242,7 +244,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -259,7 +262,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -276,7 +280,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring",
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "HUMAN",

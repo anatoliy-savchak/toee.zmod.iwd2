@@ -208,7 +208,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -225,7 +226,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Club",
-      "ItemTypeEval": "Club"
+      "ItemTypeEval": "Club",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -242,7 +244,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Dagger",
-      "ItemTypeEval": "Daggers"
+      "ItemTypeEval": "Daggers",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

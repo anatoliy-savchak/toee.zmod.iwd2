@@ -192,7 +192,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -209,7 +210,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "NO_RACE",

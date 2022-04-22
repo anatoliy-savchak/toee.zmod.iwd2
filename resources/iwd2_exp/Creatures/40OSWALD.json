@@ -265,7 +265,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Fist",
-      "ItemTypeEval": "HandToHand"
+      "ItemTypeEval": "HandToHand",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -282,7 +283,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -299,7 +301,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Iron Rations",
-      "ItemTypeEval": "Food2"
+      "ItemTypeEval": "Food2",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV2",
@@ -316,7 +319,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "GNOME",

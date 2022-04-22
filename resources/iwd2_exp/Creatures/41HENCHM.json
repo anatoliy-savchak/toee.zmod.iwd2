@@ -208,7 +208,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Helmet",
-      "ItemTypeEval": "HelmsHats"
+      "ItemTypeEval": "HelmsHats",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -225,7 +226,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Half-plate Armor",
-      "ItemTypeEval": "HalfPlate"
+      "ItemTypeEval": "HalfPlate",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -242,7 +244,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Spear",
-      "ItemTypeEval": "Spears"
+      "ItemTypeEval": "Spears",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "ELF",

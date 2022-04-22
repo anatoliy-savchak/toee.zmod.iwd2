@@ -211,7 +211,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Chainmail Armor",
-      "ItemTypeEval": "ChainMail"
+      "ItemTypeEval": "ChainMail",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -228,7 +229,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Masterwork Battleaxe",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -245,7 +247,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Tower Shield",
-      "ItemTypeEval": "LargeShield"
+      "ItemTypeEval": "LargeShield",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "DWARF",

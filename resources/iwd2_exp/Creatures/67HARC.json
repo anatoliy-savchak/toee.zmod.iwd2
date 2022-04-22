@@ -215,7 +215,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Viper's Fang +2",
-      "ItemTypeEval": "Daggers"
+      "ItemTypeEval": "Daggers",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -232,7 +233,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Dead Cat",
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -249,7 +251,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -266,7 +269,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -283,7 +287,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Skull",
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -300,7 +305,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "ORC",

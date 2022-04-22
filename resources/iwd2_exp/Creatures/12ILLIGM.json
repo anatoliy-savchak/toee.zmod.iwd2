@@ -208,7 +208,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Helmet",
-      "ItemTypeEval": "HelmsHats"
+      "ItemTypeEval": "HelmsHats",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -225,7 +226,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Studded Leather Armor",
-      "ItemTypeEval": "StuddedLeatherArmor"
+      "ItemTypeEval": "StuddedLeatherArmor",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -242,7 +244,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Greatsword",
-      "ItemTypeEval": "GreatSword"
+      "ItemTypeEval": "GreatSword",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -259,7 +262,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

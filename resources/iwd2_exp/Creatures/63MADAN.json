@@ -318,7 +318,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -335,7 +336,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -352,7 +354,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Corrosive Star +2",
-      "ItemTypeEval": "MorningStars"
+      "ItemTypeEval": "MorningStars",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "TANARI",

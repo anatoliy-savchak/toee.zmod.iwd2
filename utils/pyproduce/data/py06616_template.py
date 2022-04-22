@@ -17,3 +17,4 @@ def san_wield_off(attachee, triggerer): return ctrl_behaviour.san_wield_off(atta
 def ctrl(npc): return ctrl_behaviour.get_ctrl(npc.id)
 
 def cs(): return py06615_daemon_orc_fort.cs()
+

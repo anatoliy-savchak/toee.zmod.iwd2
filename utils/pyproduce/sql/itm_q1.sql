@@ -7,3 +7,5 @@ select Setting, count(*), max(Filename)
 from s
 group by Setting
 order by 1 asc
+
+

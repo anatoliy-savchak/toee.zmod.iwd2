@@ -275,7 +275,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Studded Leather Armor +2",
-      "ItemTypeEval": "StuddedLeatherArmor"
+      "ItemTypeEval": "StuddedLeatherArmor",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -292,7 +293,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -309,7 +311,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

@@ -216,7 +216,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_BELT",
@@ -233,7 +234,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "BeltsGirdles"
+      "ItemTypeEval": "BeltsGirdles",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -250,7 +252,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Longsword +1",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -267,7 +270,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Wands"
+      "ItemTypeEval": "Wands",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "DRIDER",

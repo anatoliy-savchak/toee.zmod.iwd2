@@ -241,7 +241,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Dagger",
-      "ItemTypeEval": "Daggers"
+      "ItemTypeEval": "Daggers",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -258,7 +259,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Dart +2",
-      "ItemTypeEval": "Darts"
+      "ItemTypeEval": "Darts",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "ELF",

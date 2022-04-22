@@ -259,7 +259,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Valin's Scroll",
-      "ItemTypeEval": "Notes"
+      "ItemTypeEval": "Notes",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -276,7 +277,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Andar Gem",
-      "ItemTypeEval": "Gems"
+      "ItemTypeEval": "Gems",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -293,7 +295,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Tchazar Gem",
-      "ItemTypeEval": "Gems"
+      "ItemTypeEval": "Gems",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

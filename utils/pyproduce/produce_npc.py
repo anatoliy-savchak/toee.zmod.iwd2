@@ -1,7 +1,9 @@
 from asyncore import write
 import json
 import os
+from xmlrpc.client import boolean
 import pyproduce
+import items_map
 
 i_def = "\t"
 i_code = "\t\t"
@@ -21,7 +23,7 @@ class ProduceNPC:
         return
 
     def setup_elements(self):
-        self.elements["base_class"] = "NPCBase"
+        self.elements["base_class"] = "ctrl_behaviour.CtrlBehaviourAI"
         return
 
     def read_cre(self, name: str):
@@ -52,11 +54,17 @@ class ProduceNPC:
         self.current_crename = cre_name
 
         self.lines_script.append(f"class Ctrl{self.current_crename}({self.elements['base_class']}):")
-        #self.lines_script.append("")
+        
+        deathVariable = self.cre["DeathVariable"]
+        if deathVariable:
+            self.lines_script.append(i_def + "@classmethod")
+            self.lines_script.append(i_def + f'def get_name(cls): "{deathVariable}"')
+            self.lines_script.append(i_def)
 
         self.produce_npc_baseproto()
         self.produce_npc_appearance()
         self.produce_npc_char()
+        self.setup_gear()
         return
 
     def produce_npc_baseproto(self):
@@ -139,6 +147,7 @@ class ProduceNPC:
         self.produce_hp()
 
         self.produce_skills()
+
         self.lines_script.append(i_code+"return")
         self.lines_script.append("")
         return
@@ -658,4 +667,44 @@ class ProduceNPC:
         damage = maximumHP - currentHP
         self.lines_script.append(i_code+f'utils_npc.ensure_hp(npc, {maximumHP}) # MaximumHP: {maximumHP}')
         self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_hp_damage, {damage}) # CurrentHP: {currentHP}')
+        return
+    
+    def setup_gear(self):
+        self.lines_script.append(i_def + "def setup_gear(self, npc):")
+        self.lines_script.append(i_code)
+        do_separate_line = False
+
+        wear_armor = None
+
+        items = self.cre["Items"]
+        for item in items:
+            item_file_name = item["Item"]["Filename"]
+            item_type = item["ItemTypeEval"]
+            slot_name = item["SlotCode"]
+            item_name = item["ItemNameEval"]
+            droppable = boolean(item["ItemDroppableEval"])
+            no_loot = not droppable
+            instr = items_map.item_to_proto_name(item_file_name, item_type, slot_name, item_name)
+
+            if do_separate_line: self.lines_script.append(i_code)
+            do_separate_line = False
+
+            self.lines_script.append(i_code+f'# {slot_name}: {item_name}({item_type}) at {item_file_name}')
+            if not instr is None:
+                for item_const_full_name, wear, comment in instr:
+                    if not item_const_full_name: continue
+                    self.lines_script.append(i_code+f'utils_item.item_create_in_inventory2({item_const_full_name}, npc, {no_loot}, {wear}) # {comment or ""}')
+                    do_separate_line = True
+                    if wear:
+                        if "_armor" in wear:
+                            wear_armor = item_const_full_name
+
+        # check from animation: TODO
+        if wear_armor is None:
+            self.lines_script.append(i_code)
+            self.lines_script.append(i_code+'utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, False, toee.item_wear_armor) # default')
+            self.lines_script.append(i_code+'utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, False, toee.item_wear_boots) # default')
+
+        self.lines_script.append(i_code+"return")
+        self.lines_script.append("")
         return

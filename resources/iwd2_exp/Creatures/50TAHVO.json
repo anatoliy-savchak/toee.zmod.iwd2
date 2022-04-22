@@ -210,7 +210,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -227,7 +228,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Spear",
-      "ItemTypeEval": "Spears"
+      "ItemTypeEval": "Spears",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -244,7 +246,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Longbow",
-      "ItemTypeEval": "Bows"
+      "ItemTypeEval": "Bows",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -261,7 +264,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Arrows",
-      "ItemTypeEval": "Arrows"
+      "ItemTypeEval": "Arrows",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -278,7 +282,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Hemp Rope",
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -295,7 +300,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Lynx Eye Gem",
-      "ItemTypeEval": "Gems"
+      "ItemTypeEval": "Gems",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

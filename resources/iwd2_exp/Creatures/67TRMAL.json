@@ -225,7 +225,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Helmet",
-      "ItemTypeEval": "HelmsHats"
+      "ItemTypeEval": "HelmsHats",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -242,7 +243,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_GAUNTLETS",
@@ -259,7 +261,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gauntlets of Weapon Expertise",
-      "ItemTypeEval": "Gauntlet"
+      "ItemTypeEval": "Gauntlet",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -276,7 +279,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Scimitar of Acid +2",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -293,7 +297,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Scimitar +3",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -310,7 +315,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -327,7 +333,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "DROW",

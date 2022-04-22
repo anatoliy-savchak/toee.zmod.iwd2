@@ -209,7 +209,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Chainmail Armor",
-      "ItemTypeEval": "ChainMail"
+      "ItemTypeEval": "ChainMail",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -226,7 +227,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold Ring",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -243,7 +245,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring of Protection +1",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -260,7 +263,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Mace +1",
-      "ItemTypeEval": "Maces"
+      "ItemTypeEval": "Maces",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -277,7 +281,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Dagger",
-      "ItemTypeEval": "Daggers"
+      "ItemTypeEval": "Daggers",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -294,7 +299,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

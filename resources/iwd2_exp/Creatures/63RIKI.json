@@ -213,7 +213,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Shadowed Studded Leather +1",
-      "ItemTypeEval": "StuddedLeatherArmor"
+      "ItemTypeEval": "StuddedLeatherArmor",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -230,7 +231,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Amulet of Protection +1",
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_BOOTS",
@@ -247,7 +249,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Boots of Stealth",
-      "ItemTypeEval": "Boots"
+      "ItemTypeEval": "Boots",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -264,7 +267,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Short Sword +4",
-      "ItemTypeEval": "ShortSwords"
+      "ItemTypeEval": "ShortSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -281,7 +285,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Short Sword +4",
-      "ItemTypeEval": "ShortSwords"
+      "ItemTypeEval": "ShortSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_CLOAK",
@@ -298,7 +303,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Cloak of Non-Detection",
-      "ItemTypeEval": "CloaksRobes"
+      "ItemTypeEval": "CloaksRobes",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "DROW",

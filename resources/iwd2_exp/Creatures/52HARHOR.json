@@ -215,7 +215,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Helmet",
-      "ItemTypeEval": "HelmsHats"
+      "ItemTypeEval": "HelmsHats",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -232,7 +233,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Half-plate Armor",
-      "ItemTypeEval": "HalfPlate"
+      "ItemTypeEval": "HalfPlate",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -249,7 +251,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Battleaxe +2",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -266,7 +269,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -283,7 +287,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Light Crossbow",
-      "ItemTypeEval": "Crossbows"
+      "ItemTypeEval": "Crossbows",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -300,7 +305,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Masterwork Bolt",
-      "ItemTypeEval": "Bolts"
+      "ItemTypeEval": "Bolts",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -317,7 +323,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -334,7 +341,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "DWARF",

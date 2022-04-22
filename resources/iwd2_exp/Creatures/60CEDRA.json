@@ -317,7 +317,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring of Protection +3",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -334,7 +335,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Scimitar of Acid +2",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "YUANTI",

@@ -213,7 +213,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Helmet",
-      "ItemTypeEval": "HelmsHats"
+      "ItemTypeEval": "HelmsHats",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -230,7 +231,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Half-plate Armor",
-      "ItemTypeEval": "HalfPlate"
+      "ItemTypeEval": "HalfPlate",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -247,7 +249,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Halberd +1",
-      "ItemTypeEval": "Halberds"
+      "ItemTypeEval": "Halberds",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -264,7 +267,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -281,7 +285,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "GOBLIN",

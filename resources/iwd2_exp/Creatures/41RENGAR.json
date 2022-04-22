@@ -253,7 +253,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -270,7 +271,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -287,7 +289,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Longsword +2",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -304,7 +307,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Large Shield",
-      "ItemTypeEval": "MediumShield"
+      "ItemTypeEval": "MediumShield",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -321,7 +325,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -338,7 +343,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Shout",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -355,7 +361,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ancient Armor",
-      "ItemTypeEval": "Bag_Eye_BrokenArmor"
+      "ItemTypeEval": "Bag_Eye_BrokenArmor",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "NO_RACE",

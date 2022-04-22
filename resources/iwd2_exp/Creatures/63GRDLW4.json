@@ -209,7 +209,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -226,7 +227,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Greatsword +1",
-      "ItemTypeEval": "GreatSword"
+      "ItemTypeEval": "GreatSword",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -243,7 +245,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -260,7 +263,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

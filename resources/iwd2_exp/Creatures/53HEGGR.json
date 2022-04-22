@@ -314,7 +314,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Helmet",
-      "ItemTypeEval": "HelmsHats"
+      "ItemTypeEval": "HelmsHats",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -331,7 +332,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Half-plate Armor",
-      "ItemTypeEval": "HalfPlate"
+      "ItemTypeEval": "HalfPlate",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -348,7 +350,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Warhammer +3",
-      "ItemTypeEval": "Hammers"
+      "ItemTypeEval": "Hammers",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -365,7 +368,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Small Shield +1",
-      "ItemTypeEval": "SmallShield"
+      "ItemTypeEval": "SmallShield",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -382,7 +386,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Sling +1",
-      "ItemTypeEval": "Slings"
+      "ItemTypeEval": "Slings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -399,7 +404,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Sparking Bullets +1",
-      "ItemTypeEval": "Bullets"
+      "ItemTypeEval": "Bullets",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -416,7 +422,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bloodstone Gem",
-      "ItemTypeEval": "Gems"
+      "ItemTypeEval": "Gems",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -433,7 +440,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Cure Serious Wounds",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -450,7 +458,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "DWARF",

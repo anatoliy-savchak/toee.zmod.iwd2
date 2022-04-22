@@ -208,7 +208,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Helmet",
-      "ItemTypeEval": "HelmsHats"
+      "ItemTypeEval": "HelmsHats",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -225,7 +226,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -242,7 +244,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Battleaxe +1",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -259,7 +262,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Masterwork Battleaxe",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "ORC",

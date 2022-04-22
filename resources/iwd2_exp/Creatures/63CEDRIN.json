@@ -1073,7 +1073,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bracers of Defense +4",
-      "ItemTypeEval": "BracersGauntlets"
+      "ItemTypeEval": "BracersGauntlets",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -1090,7 +1091,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Shield Amulet",
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -1107,7 +1109,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Dagger +5",
-      "ItemTypeEval": "Daggers"
+      "ItemTypeEval": "Daggers",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_CLOAK",
@@ -1124,7 +1127,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Cloak of Protection +2",
-      "ItemTypeEval": "CloaksRobes"
+      "ItemTypeEval": "CloaksRobes",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -1141,7 +1145,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

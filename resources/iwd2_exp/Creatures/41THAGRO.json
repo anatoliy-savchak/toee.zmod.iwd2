@@ -201,7 +201,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Studded Leather Armor",
-      "ItemTypeEval": "StuddedLeatherArmor"
+      "ItemTypeEval": "StuddedLeatherArmor",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -218,7 +219,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Club",
-      "ItemTypeEval": "Club"
+      "ItemTypeEval": "Club",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -235,7 +237,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Oria's Note",
-      "ItemTypeEval": "Notes"
+      "ItemTypeEval": "Notes",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

@@ -202,7 +202,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -219,7 +220,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Short Sword ",
-      "ItemTypeEval": "ShortSwords"
+      "ItemTypeEval": "ShortSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON3",
@@ -236,7 +238,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Dagger",
-      "ItemTypeEval": "Daggers"
+      "ItemTypeEval": "Daggers",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON4",
@@ -253,7 +256,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Throwing Dagger",
-      "ItemTypeEval": "Daggers"
+      "ItemTypeEval": "Daggers",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -270,7 +274,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bottle of Wine",
-      "ItemTypeEval": "Drink"
+      "ItemTypeEval": "Drink",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -287,7 +292,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Luck",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

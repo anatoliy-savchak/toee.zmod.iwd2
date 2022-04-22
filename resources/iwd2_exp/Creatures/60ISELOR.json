@@ -319,7 +319,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Studded Leather Armor +2",
-      "ItemTypeEval": "StuddedLeatherArmor"
+      "ItemTypeEval": "StuddedLeatherArmor",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -336,7 +337,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring of Regeneration",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -353,7 +355,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bane Scimitar of Flame",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -370,7 +373,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Buckler +1",
-      "ItemTypeEval": "Buckler_Teeth"
+      "ItemTypeEval": "Buckler_Teeth",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -387,7 +391,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Tremor",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -404,7 +409,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Creeping Doom",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HALF_ELF",

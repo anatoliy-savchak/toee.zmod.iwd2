@@ -207,7 +207,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -224,7 +225,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Spear",
-      "ItemTypeEval": "Spears"
+      "ItemTypeEval": "Spears",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "HUMAN",

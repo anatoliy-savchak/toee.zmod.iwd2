@@ -206,7 +206,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Helmet",
-      "ItemTypeEval": "HelmsHats"
+      "ItemTypeEval": "HelmsHats",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -223,7 +224,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -240,7 +242,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Warhammer +1",
-      "ItemTypeEval": "Hammers"
+      "ItemTypeEval": "Hammers",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -257,7 +260,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Short Sword +1",
-      "ItemTypeEval": "ShortSwords"
+      "ItemTypeEval": "ShortSwords",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -274,7 +278,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -291,7 +296,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -308,7 +314,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -325,7 +332,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Explosions",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "GIANT",

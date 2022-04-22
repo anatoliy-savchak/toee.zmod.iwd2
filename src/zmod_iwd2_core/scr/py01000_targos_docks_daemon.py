@@ -1,6 +1,7 @@
 import toee, debug, utils_toee, utils_storage, utils_obj, utils_item, const_toee, ctrl_daemon, ctrl_daemon2
 import ctrl_behaviour, py06122_cormyr_prompter, factions_zmod, utils_npc, utils_locks, const_proto_items, const_proto_scrolls, const_proto_rings
 import monster_info, module_quests, module_consts, module_globals
+import py01001_targos_docks_encounters
 
 
 DAEMON_SCRIPT_ID = 1000
@@ -46,7 +47,7 @@ class CtrlTargosDocks(ctrl_daemon2.CtrlDaemon2):
 	def place_encounters_initial(self):
 		self.place_portals()
 		self.place_doors()
-
+		self.place_npcs()
 		return
 
 	def place_encounters_next(self):
@@ -69,5 +70,6 @@ class CtrlTargosDocks(ctrl_daemon2.CtrlDaemon2):
 		return
 
 	def place_npcs(self):
-		#self.create_lib_foe(utils_obj.sec2loc(491, 480), py06616_orc_fort_encounters.CtrlOrcWarriorShield, const_toee.ROT07, "r03", "orc_melee2", factions_zmod.FACTION_ENEMY, 0, 0)
+		self.create_lib_foe(utils_obj.sec2loc(448, 492), py01001_targos_docks_encounters.Ctrl10HEDRON, const_toee.ROT09, "r01", py01001_targos_docks_encounters.Ctrl10HEDRON.get_name(), factions_zmod.FACTION_NEUTRAL_NPC, 0, 1)
+		self.create_lib_foe(utils_obj.sec2loc(446, 499), py01001_targos_docks_encounters.Ctrl10ELDGUL, const_toee.ROT04, "r01", py01001_targos_docks_encounters.Ctrl10ELDGUL.get_name(), factions_zmod.FACTION_NEUTRAL_NPC, 0, 1)
 		return

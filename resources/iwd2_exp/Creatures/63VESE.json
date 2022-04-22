@@ -290,7 +290,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Robe of the Evil Archmagi",
-      "ItemTypeEval": "Robe"
+      "ItemTypeEval": "Robe",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_BELT",
@@ -307,7 +308,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Golden Girdle",
-      "ItemTypeEval": "BeltsGirdles"
+      "ItemTypeEval": "BeltsGirdles",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_BOOTS",
@@ -324,7 +326,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Boots of Grounding",
-      "ItemTypeEval": "Boots"
+      "ItemTypeEval": "Boots",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -341,7 +344,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Quarterstaff +5",
-      "ItemTypeEval": "Quarterstaffs"
+      "ItemTypeEval": "Quarterstaffs",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_CLOAK",
@@ -358,7 +362,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Cloak of Displacement",
-      "ItemTypeEval": "CloaksRobes"
+      "ItemTypeEval": "CloaksRobes",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -375,7 +380,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

@@ -241,7 +241,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Quarterstaff",
-      "ItemTypeEval": "Quarterstaffs"
+      "ItemTypeEval": "Quarterstaffs",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -258,7 +259,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -275,7 +277,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "GNOME",

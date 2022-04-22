@@ -207,7 +207,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -224,7 +225,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Holy Water of Corellon Larethian",
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "NO_RACE",

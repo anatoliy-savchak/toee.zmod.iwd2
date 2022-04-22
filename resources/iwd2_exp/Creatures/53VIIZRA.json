@@ -325,7 +325,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Chainmail Armor",
-      "ItemTypeEval": "ChainMail"
+      "ItemTypeEval": "ChainMail",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_GAUNTLETS",
@@ -342,7 +343,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gauntlets of Weapon Expertise",
-      "ItemTypeEval": "Gauntlet"
+      "ItemTypeEval": "Gauntlet",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -359,7 +361,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring of Frost Resistance",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -376,7 +379,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Flail +3",
-      "ItemTypeEval": "Flails"
+      "ItemTypeEval": "Flails",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -393,7 +397,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Tower Shield",
-      "ItemTypeEval": "LargeShield"
+      "ItemTypeEval": "LargeShield",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -410,7 +415,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Black Opal",
-      "ItemTypeEval": "Gems"
+      "ItemTypeEval": "Gems",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -427,7 +433,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Frost Giant Strength",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -444,7 +451,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Symbol of Pain",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -461,7 +469,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "ELF",

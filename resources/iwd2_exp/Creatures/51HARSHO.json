@@ -337,7 +337,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bracers of Defense +2",
-      "ItemTypeEval": "BracersGauntlets"
+      "ItemTypeEval": "BracersGauntlets",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -354,7 +355,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Shield Ring",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -371,7 +373,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -388,7 +391,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Greatsword +1",
-      "ItemTypeEval": "GreatSword"
+      "ItemTypeEval": "GreatSword",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -405,7 +409,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Healing",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -422,7 +427,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Extra Healing",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -439,7 +445,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Raven Gate Key",
-      "ItemTypeEval": "Keys"
+      "ItemTypeEval": "Keys",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -456,7 +463,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

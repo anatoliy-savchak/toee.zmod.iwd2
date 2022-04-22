@@ -192,7 +192,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Helmet",
-      "ItemTypeEval": "HelmsHats"
+      "ItemTypeEval": "HelmsHats",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -209,7 +210,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -226,7 +228,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Masterwork Longsword",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -243,7 +246,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Tower Shield",
-      "ItemTypeEval": "LargeShield"
+      "ItemTypeEval": "LargeShield",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "GOLEM",

@@ -203,7 +203,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -220,7 +221,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Short Sword +1",
-      "ItemTypeEval": "ShortSwords"
+      "ItemTypeEval": "ShortSwords",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -237,7 +239,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Light Crossbow",
-      "ItemTypeEval": "Crossbows"
+      "ItemTypeEval": "Crossbows",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -254,7 +257,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bolt +2",
-      "ItemTypeEval": "Bolts"
+      "ItemTypeEval": "Bolts",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -271,7 +275,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -288,7 +293,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -305,7 +311,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -322,7 +329,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Sanctuary Potion",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "YUANTI",

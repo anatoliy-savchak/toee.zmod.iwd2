@@ -207,7 +207,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Helmet",
-      "ItemTypeEval": "HelmsHats"
+      "ItemTypeEval": "HelmsHats",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_ARMOR",
@@ -224,7 +225,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -241,7 +243,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Club",
-      "ItemTypeEval": "Club"
+      "ItemTypeEval": "Club",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "HUMAN",

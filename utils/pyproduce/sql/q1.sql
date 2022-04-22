@@ -1,6 +1,6 @@
 ;with s as (
 select  FileName = substring(t.FilePath, 81, 100)
-, Setting = json_value(t.Content, '$.Feats')
+, Setting = json_value(t.Content, '$.SkillAlchemy')
 from iwd2.cre t
 )
 select Setting, count(*), max(Filename)

@@ -270,7 +270,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -287,7 +288,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Mace +1",
-      "ItemTypeEval": "Maces"
+      "ItemTypeEval": "Maces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -304,7 +306,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Wands"
+      "ItemTypeEval": "Wands",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "DRIDER",

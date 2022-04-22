@@ -300,7 +300,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_GAUNTLETS",
@@ -317,7 +318,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bracers of Defense +4",
-      "ItemTypeEval": "BracersGauntlets"
+      "ItemTypeEval": "BracersGauntlets",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -334,7 +336,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring of Acid Resistance",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -351,7 +354,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ice Pick +1",
-      "ItemTypeEval": "Daggers"
+      "ItemTypeEval": "Daggers",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -368,7 +372,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

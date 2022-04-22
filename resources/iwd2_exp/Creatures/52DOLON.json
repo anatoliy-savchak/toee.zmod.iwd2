@@ -251,7 +251,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Cloak of Protection +1",
-      "ItemTypeEval": "CloaksRobes"
+      "ItemTypeEval": "CloaksRobes",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_GAUNTLETS",
@@ -268,7 +269,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bracers of Defense +3",
-      "ItemTypeEval": "BracersGauntlets"
+      "ItemTypeEval": "BracersGauntlets",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_RING_LEFT",
@@ -285,7 +287,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring of Charm",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -302,7 +305,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Longsword +2",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -319,7 +323,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Short Sword +3",
-      "ItemTypeEval": "ShortSwords"
+      "ItemTypeEval": "ShortSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -336,7 +341,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Healing",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -353,7 +359,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Extra Healing",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -370,7 +377,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Wand of Melf's Acid Arrow",
-      "ItemTypeEval": "Wands"
+      "ItemTypeEval": "Wands",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -387,7 +395,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Dolon's Chamber Key",
-      "ItemTypeEval": "Keys"
+      "ItemTypeEval": "Keys",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -404,7 +413,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -421,7 +431,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

@@ -328,7 +328,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Quarterstaff +3",
-      "ItemTypeEval": "Quarterstaffs"
+      "ItemTypeEval": "Quarterstaffs",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -345,7 +346,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

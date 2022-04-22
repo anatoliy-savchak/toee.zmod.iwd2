@@ -208,7 +208,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Chainmail Armor",
-      "ItemTypeEval": "ChainMail"
+      "ItemTypeEval": "ChainMail",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -225,7 +226,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Heavy Crossbow +1",
-      "ItemTypeEval": "Crossbows"
+      "ItemTypeEval": "Crossbows",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -242,7 +244,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Battleaxe +1",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -259,7 +262,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bolt +1",
-      "ItemTypeEval": "Bolts"
+      "ItemTypeEval": "Bolts",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMMO2",
@@ -276,7 +280,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bolt",
-      "ItemTypeEval": "Bolts"
+      "ItemTypeEval": "Bolts",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -293,7 +298,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Diamond",
-      "ItemTypeEval": "Gems"
+      "ItemTypeEval": "Gems",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -310,7 +316,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Emerald",
-      "ItemTypeEval": "Gems"
+      "ItemTypeEval": "Gems",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -327,7 +334,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Explosions",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "DWARF",

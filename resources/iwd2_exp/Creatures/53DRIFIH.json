@@ -216,7 +216,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -233,7 +234,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Longsword +1",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -250,7 +252,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Wands"
+      "ItemTypeEval": "Wands",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -267,7 +270,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Minor Elemental Barrier",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "DRIDER",

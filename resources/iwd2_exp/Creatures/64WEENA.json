@@ -207,7 +207,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Robe of the Neutral Archmagi",
-      "ItemTypeEval": "Robe"
+      "ItemTypeEval": "Robe",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -224,7 +225,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Dagger +3",
-      "ItemTypeEval": "Daggers"
+      "ItemTypeEval": "Daggers",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "GOBLIN",

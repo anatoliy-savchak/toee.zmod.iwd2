@@ -208,7 +208,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Boots of Speed",
-      "ItemTypeEval": "Boots"
+      "ItemTypeEval": "Boots",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -225,7 +226,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -242,7 +244,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Wooly Spider Body",
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "SPIDER",

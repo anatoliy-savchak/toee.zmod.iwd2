@@ -206,7 +206,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Fist",
-      "ItemTypeEval": "HandToHand"
+      "ItemTypeEval": "HandToHand",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -223,7 +224,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Fist",
-      "ItemTypeEval": "HandToHand"
+      "ItemTypeEval": "HandToHand",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "HUMAN",

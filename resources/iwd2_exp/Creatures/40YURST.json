@@ -192,7 +192,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Broken Armor",
-      "ItemTypeEval": "Bag_Eye_BrokenArmor"
+      "ItemTypeEval": "Bag_Eye_BrokenArmor",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -209,7 +210,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Broken weapon",
-      "ItemTypeEval": "BrokwnSword_Earring"
+      "ItemTypeEval": "BrokwnSword_Earring",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -226,7 +228,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Broken Shield",
-      "ItemTypeEval": "BrokenShield_Bracelet"
+      "ItemTypeEval": "BrokenShield_Bracelet",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -243,7 +246,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -260,7 +264,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Fire Shield (Red)",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -277,7 +282,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -294,7 +300,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Broken Miscellaneous",
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -311,7 +318,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Protection from Cold",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

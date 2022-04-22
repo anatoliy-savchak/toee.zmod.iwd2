@@ -209,7 +209,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -226,7 +227,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_BOOTS",
@@ -243,7 +245,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Boots of Speed",
-      "ItemTypeEval": "Boots"
+      "ItemTypeEval": "Boots",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -260,7 +263,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Composite Longbow of the Hand",
-      "ItemTypeEval": "Bows"
+      "ItemTypeEval": "Bows",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -277,7 +281,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Arrows",
-      "ItemTypeEval": "Arrows"
+      "ItemTypeEval": "Arrows",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -294,7 +299,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Frost Arrows +1",
-      "ItemTypeEval": "Arrows"
+      "ItemTypeEval": "Arrows",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -311,7 +317,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -328,7 +335,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "ELF",

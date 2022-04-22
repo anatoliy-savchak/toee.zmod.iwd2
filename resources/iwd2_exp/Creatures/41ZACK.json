@@ -356,7 +356,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor +2",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -373,7 +374,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Morningstar of Thorns +1",
-      "ItemTypeEval": "MorningStars"
+      "ItemTypeEval": "MorningStars",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -390,7 +392,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -407,7 +410,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "GNOME",

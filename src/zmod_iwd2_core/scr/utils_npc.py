@@ -25,6 +25,16 @@ def npc_generate_hp_random(npc):
 	#print("Current HP: {}".format(hp))
 	return hp
 
+def ensure_hp(npc, hp):
+	npc.obj_set_int(toee.obj_f_hp_pts, -65535)
+	npc.stat_level_get(toee.stat_hp_current)
+
+	npc.obj_set_int(toee.obj_f_hp_pts, 1)
+	hpc = npc.stat_level_get(toee.stat_hp_current)
+	adj = hp - (hpc - 2)
+	npc.obj_set_int(toee.obj_f_hp_pts, adj)
+	return adj
+
 def char_class_get_hit_dice(char_class):
 	assert isinstance(char_class, int)
 	# todo in T+
@@ -1107,4 +1117,7 @@ def npc_natural_attack(npc, index, attack_type, attack_bonus, number, damage_str
 	npc.obj_set_idx_int(toee.obj_f_attack_bonus_idx, index, attack_bonus) # natural bab: +4
 	npc.obj_set_idx_int(toee.obj_f_critter_attacks_idx, index, 2) # x
 	npc.obj_set_idx_int(toee.obj_f_critter_damage_idx, index, toee.dice_new(damage_str).packed)
+	return
+
+def ensure_saves_natural(npc, save_fortitude, save_reflex, save_will):
 	return

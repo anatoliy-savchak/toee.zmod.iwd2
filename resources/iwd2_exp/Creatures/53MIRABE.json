@@ -300,7 +300,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Adventurer's Robe",
-      "ItemTypeEval": "Robe"
+      "ItemTypeEval": "Robe",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_GAUNTLETS",
@@ -317,7 +318,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bracers of Defense +3",
-      "ItemTypeEval": "BracersGauntlets"
+      "ItemTypeEval": "BracersGauntlets",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -334,7 +336,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -351,7 +354,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Staff of the Defender +1",
-      "ItemTypeEval": "Quarterstaffs"
+      "ItemTypeEval": "Quarterstaffs",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -368,7 +372,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

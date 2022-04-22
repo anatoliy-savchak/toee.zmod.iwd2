@@ -265,7 +265,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Golden Girdle",
-      "ItemTypeEval": "BeltsGirdles"
+      "ItemTypeEval": "BeltsGirdles",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_BOOTS",
@@ -282,7 +283,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Boots of Grounding",
-      "ItemTypeEval": "Boots"
+      "ItemTypeEval": "Boots",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -299,7 +301,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -316,7 +319,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Explosions",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV2",
@@ -333,7 +337,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Oil of Fiery Burning",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "GNOME",

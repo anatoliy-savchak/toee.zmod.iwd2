@@ -213,7 +213,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring of Acid Resistance",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -230,7 +231,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -247,7 +249,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bastard Sword ",
-      "ItemTypeEval": "GreatSword"
+      "ItemTypeEval": "GreatSword",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -264,7 +267,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Dead Cat",
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -281,7 +285,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Skull",
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "YUANTI",

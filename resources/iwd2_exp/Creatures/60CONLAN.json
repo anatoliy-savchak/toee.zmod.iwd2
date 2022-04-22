@@ -207,7 +207,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Warhammer +3",
-      "ItemTypeEval": "Hammers"
+      "ItemTypeEval": "Hammers",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -224,7 +225,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

@@ -210,7 +210,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Half-plate Armor",
-      "ItemTypeEval": "HalfPlate"
+      "ItemTypeEval": "HalfPlate",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -227,7 +228,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bastard Sword +1",
-      "ItemTypeEval": "GreatSword"
+      "ItemTypeEval": "GreatSword",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "HUMAN",

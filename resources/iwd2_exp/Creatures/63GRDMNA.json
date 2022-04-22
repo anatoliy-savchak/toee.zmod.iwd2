@@ -208,7 +208,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Half-plate Armor",
-      "ItemTypeEval": "HalfPlate"
+      "ItemTypeEval": "HalfPlate",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -225,7 +226,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Battleaxe +1",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -242,7 +244,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Masterwork Battleaxe",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "ORC",

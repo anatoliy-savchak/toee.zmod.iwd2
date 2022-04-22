@@ -268,7 +268,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -285,7 +286,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Morningstar of the Eternal +3",
-      "ItemTypeEval": "MorningStars"
+      "ItemTypeEval": "MorningStars",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -302,7 +304,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Wands"
+      "ItemTypeEval": "Wands",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "SPIDER",

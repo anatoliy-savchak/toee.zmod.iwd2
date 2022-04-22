@@ -195,7 +195,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -212,7 +213,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Yeti Pelt",
-      "ItemTypeEval": "Fur_Pelt"
+      "ItemTypeEval": "Fur_Pelt",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "YETI",

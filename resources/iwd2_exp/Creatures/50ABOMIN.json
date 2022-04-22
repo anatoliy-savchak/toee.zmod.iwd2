@@ -196,7 +196,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -213,7 +214,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -230,7 +232,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "HandToHand"
+      "ItemTypeEval": "HandToHand",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -247,7 +250,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Yeti Pelt",
-      "ItemTypeEval": "Fur_Pelt"
+      "ItemTypeEval": "Fur_Pelt",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -264,7 +268,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "YETI",

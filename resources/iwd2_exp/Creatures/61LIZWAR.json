@@ -207,7 +207,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Throwing Axe +1",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -224,7 +225,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Large Shield",
-      "ItemTypeEval": "MediumShield"
+      "ItemTypeEval": "MediumShield",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -241,7 +243,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Morningstar +1",
-      "ItemTypeEval": "MorningStars"
+      "ItemTypeEval": "MorningStars",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -258,7 +261,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -275,7 +279,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "LIZARDMAN",

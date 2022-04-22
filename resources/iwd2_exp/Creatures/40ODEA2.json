@@ -293,7 +293,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -310,7 +311,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Masterwork Sling",
-      "ItemTypeEval": "Slings"
+      "ItemTypeEval": "Slings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -327,7 +329,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Quarterstaff +1",
-      "ItemTypeEval": "Quarterstaffs"
+      "ItemTypeEval": "Quarterstaffs",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -344,7 +347,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bullet +2",
-      "ItemTypeEval": "Bullets"
+      "ItemTypeEval": "Bullets",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_CLOAK",
@@ -361,7 +365,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -378,7 +383,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -395,7 +401,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Elixir of Health",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -412,7 +419,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Healing",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV6",
@@ -429,7 +437,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Extra Healing",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HALF_ELF",

@@ -429,7 +429,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bracers of Defense +4",
-      "ItemTypeEval": "BracersGauntlets"
+      "ItemTypeEval": "BracersGauntlets",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_RING_RIGHT",
@@ -446,7 +447,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring of Protection +3",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -463,7 +465,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -480,7 +483,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "HandToHand"
+      "ItemTypeEval": "HandToHand",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -497,7 +501,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring of Freedom of Movement",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "YUANTI",

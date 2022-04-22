@@ -211,7 +211,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -228,7 +229,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Short Sword +1",
-      "ItemTypeEval": "ShortSwords"
+      "ItemTypeEval": "ShortSwords",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -245,7 +247,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Short Sword +1",
-      "ItemTypeEval": "ShortSwords"
+      "ItemTypeEval": "ShortSwords",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "HUMAN",

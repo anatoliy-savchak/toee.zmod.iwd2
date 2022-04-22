@@ -211,7 +211,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Bastard Sword ",
-      "ItemTypeEval": "GreatSword"
+      "ItemTypeEval": "GreatSword",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -228,7 +229,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Resurrection",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "WOLF",

@@ -210,7 +210,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Chainmail Armor",
-      "ItemTypeEval": "ChainMail"
+      "ItemTypeEval": "ChainMail",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -227,7 +228,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Longsword +1",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -244,7 +246,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Light Crossbow",
-      "ItemTypeEval": "Crossbows"
+      "ItemTypeEval": "Crossbows",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -261,7 +264,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Corrosive Bolts +1",
-      "ItemTypeEval": "Bolts"
+      "ItemTypeEval": "Bolts",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "ELF",

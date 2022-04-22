@@ -279,7 +279,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Half-plate Armor",
-      "ItemTypeEval": "HalfPlate"
+      "ItemTypeEval": "HalfPlate",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -296,7 +297,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Amulet of Protection +1",
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -313,7 +315,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Poisoned Blood Flail +2",
-      "ItemTypeEval": "Flails"
+      "ItemTypeEval": "Flails",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -330,7 +333,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Tower Shield +1, +4 vs. Missiles",
-      "ItemTypeEval": "LargeShield"
+      "ItemTypeEval": "LargeShield",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -347,7 +351,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Potion of Extra Healing",
-      "ItemTypeEval": "Potions"
+      "ItemTypeEval": "Potions",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -364,7 +369,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Circle of Blades",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -381,7 +387,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Holy Power",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -398,7 +405,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Visions of Hierpherus",
-      "ItemTypeEval": "Notes"
+      "ItemTypeEval": "Notes",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "ORC",

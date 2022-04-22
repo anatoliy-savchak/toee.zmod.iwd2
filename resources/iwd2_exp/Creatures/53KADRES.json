@@ -279,7 +279,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Studded Leather Armor +2",
-      "ItemTypeEval": "StuddedLeatherArmor"
+      "ItemTypeEval": "StuddedLeatherArmor",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -296,7 +297,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Amulet of Protection +1",
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -313,7 +315,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Lightning Longsword +2",
-      "ItemTypeEval": "LongsSwords"
+      "ItemTypeEval": "LongsSwords",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -330,7 +333,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Vampiric Dagger +1",
-      "ItemTypeEval": "Daggers"
+      "ItemTypeEval": "Daggers",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON3",
@@ -347,7 +351,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Sling +2",
-      "ItemTypeEval": "Slings"
+      "ItemTypeEval": "Slings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -364,7 +369,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Corrosive Bullets +1",
-      "ItemTypeEval": "Bullets"
+      "ItemTypeEval": "Bullets",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -381,7 +387,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Flame Strike",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -398,7 +405,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Cure Critical Wounds",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK3",
@@ -415,7 +423,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Rogue Stone",
-      "ItemTypeEval": "Gems"
+      "ItemTypeEval": "Gems",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV1",
@@ -432,7 +441,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Moonbar Gem",
-      "ItemTypeEval": "Gems"
+      "ItemTypeEval": "Gems",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV2",
@@ -449,7 +459,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "ELF",

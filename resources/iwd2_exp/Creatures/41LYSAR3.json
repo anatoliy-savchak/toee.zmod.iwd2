@@ -335,7 +335,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Aurilite Ceremonial Robe",
-      "ItemTypeEval": "Robe"
+      "ItemTypeEval": "Robe",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMULET",
@@ -352,7 +353,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -369,7 +371,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Aurilian Ice Axe",
-      "ItemTypeEval": "Axes"
+      "ItemTypeEval": "Axes",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_SHIELD1",
@@ -386,7 +389,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Buckler",
-      "ItemTypeEval": "Buckler_Teeth"
+      "ItemTypeEval": "Buckler_Teeth",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -403,7 +407,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Gold",
-      "ItemTypeEval": "Gold"
+      "ItemTypeEval": "Gold",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK2",
@@ -420,7 +425,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "Books"
+      "ItemTypeEval": "Books",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -437,7 +443,8 @@
         "Flags": 0
       },
       "ItemNameEval": "High Priestess Lysara's Temple Key",
-      "ItemTypeEval": "Keys"
+      "ItemTypeEval": "Keys",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV5",
@@ -454,7 +461,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor +2",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

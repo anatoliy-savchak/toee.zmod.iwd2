@@ -218,7 +218,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Boots of the North",
-      "ItemTypeEval": "Boots"
+      "ItemTypeEval": "Boots",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -235,7 +236,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Club",
-      "ItemTypeEval": "Club"
+      "ItemTypeEval": "Club",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "ELF",

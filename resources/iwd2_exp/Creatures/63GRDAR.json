@@ -211,7 +211,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Leather Armor",
-      "ItemTypeEval": "LeatherArmor"
+      "ItemTypeEval": "LeatherArmor",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -228,7 +229,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Light Crossbow",
-      "ItemTypeEval": "Crossbows"
+      "ItemTypeEval": "Crossbows",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -245,7 +247,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Greatsword",
-      "ItemTypeEval": "GreatSword"
+      "ItemTypeEval": "GreatSword",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_AMMO1",
@@ -262,7 +265,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Corrosive Bolts +1",
-      "ItemTypeEval": "Bolts"
+      "ItemTypeEval": "Bolts",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HALF_ELF",

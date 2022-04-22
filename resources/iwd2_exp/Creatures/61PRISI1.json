@@ -418,7 +418,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Ring of Regeneration",
-      "ItemTypeEval": "Rings"
+      "ItemTypeEval": "Rings",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON1",
@@ -435,7 +436,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Dagger +4",
-      "ItemTypeEval": "Daggers"
+      "ItemTypeEval": "Daggers",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_WEAPON2",
@@ -452,7 +454,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Returning Poison Tipped Dart",
-      "ItemTypeEval": "Darts"
+      "ItemTypeEval": "Darts",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_QUICK1",
@@ -469,7 +472,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Fire Agate Gem",
-      "ItemTypeEval": "Gems"
+      "ItemTypeEval": "Gems",
+      "ItemDroppableEval": true
     },
     {
       "SlotCode": "SLOT_INV4",
@@ -486,7 +490,8 @@
         "Flags": 0
       },
       "ItemNameEval": "Malavon's Rage",
-      "ItemTypeEval": "Scrolls"
+      "ItemTypeEval": "Scrolls",
+      "ItemDroppableEval": true
     }
   ],
   "RaceName": "HUMAN",

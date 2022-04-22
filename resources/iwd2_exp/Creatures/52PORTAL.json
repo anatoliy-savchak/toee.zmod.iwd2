@@ -207,7 +207,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "HandToHand"
+      "ItemTypeEval": "HandToHand",
+      "ItemDroppableEval": false
     },
     {
       "SlotCode": "SLOT_INV7",
@@ -224,7 +225,8 @@
         "Flags": 0
       },
       "ItemNameEval": null,
-      "ItemTypeEval": "AmuletsNecklaces"
+      "ItemTypeEval": "AmuletsNecklaces",
+      "ItemDroppableEval": false
     }
   ],
   "RaceName": "GOLEM",

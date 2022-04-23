@@ -57,9 +57,12 @@ class ProduceDaemon:
                 found_def_return = found_def_returns[0]
 
             while found_def_return > found_def +1 and found_def_return < len(self.lines_script):
-                self.lines_script.pop(found_def_return-1)
+                found_def_return += -1
+                self.lines_script.pop(found_def_return)
 
         def add_line(line: str):
+            nonlocal found_def_return
+
             self.lines_script.insert(found_def_return, line)
             found_def_return += 1
             return
@@ -73,12 +76,11 @@ class ProduceDaemon:
             x = float(actor["CurrentXCoordinateSec"])
             y = float(actor["CurrentYCoordinateSec"])
             ctrl_class, class_file = self.find_npc_class(cre_file)
-            self.lines_script.append(i_code+f"# {name}: {cre_file} ({x:.1f}, {y:.1f}) {direction} ctrl: {class_file}.{ctrl_class}")
+            add_line(i_code+f"# {name}: {cre_file} ({x:.1f}, {y:.1f}) {direction} ctrl: {class_file}.{ctrl_class}")
             if ctrl_class:
-                self.lines_script.append(i_code+f'ctrl_class, loc = {class_file}.{ctrl_class},  utils_obj.sec2loc({int(x)}, {int(y)})')
-                self.lines_script.append(i_code+f'self.create_lib_foe(loc, ctrl_class, {direction}, "", "{name}", ctrl_class.get_class_faction(), 0, 1)')
-            self.lines_script.append(i_code)
-
+                add_line(i_code+f'ctrl_class, loc = {class_file}.{ctrl_class},  utils_obj.sec2loc({int(x)}, {int(y)})')
+                add_line(i_code+f'self.create_lib_foe(loc, ctrl_class, {direction}, "", "{name}", ctrl_class.get_class_faction(), 0, 1)')
+            add_line(i_code)
         return
 
     def find_npc_class(self, cre_name: str):

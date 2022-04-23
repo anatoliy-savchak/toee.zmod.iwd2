@@ -24,5 +24,5 @@ if True:
 daemon = produce_ar.ProduceDaemon(exported_dir, "AR1000")
 daemon.load_template(out_daemon_file)
 daemon.load_npc_classes(out_npcs_file)
-daemon.produce_npcs()
+daemon.produce_npcs("place_npcs")
 daemon.save(out_daemon_file)

@@ -11,6 +11,7 @@ class ProduceDaemon:
         self.lines_script = list()
         self.name = name
         self.ar = None
+        self.ar_sec = None
         self.npc_classes = dict() # name, lines
         self.load_ar()
         return
@@ -24,6 +25,10 @@ class ProduceDaemon:
         fn = os.path.join(self.exported_dir.dir, "Areas", self.name, self.name + ".json")
         with open(fn, 'r') as f:
             self.ar = json.load(f)
+        fn = os.path.join(self.exported_dir.dir, "Areas", self.name, self.name + "_sec.json")
+        if os.path.exists(fn):
+            with open(fn, 'r') as f:
+                self.ar_sec = json.load(f)
         return
 
     def load_npc_classes(self, file_path: str):
@@ -73,13 +78,22 @@ class ProduceDaemon:
             cre_file = actor["CREFile"]
             ori = int(actor["ActorOrientation"])
             direction = self.translate_orientation(ori)
-            x = float(actor["CurrentXCoordinateSec"])
-            y = float(actor["CurrentYCoordinateSec"])
+            actor_sec = actor
+            if self.ar_sec:
+                acts = [act for act in self.ar_sec["actors"] if act["Name"] == name]
+                if acts:
+                    actor_sec = acts[0]
+                
+            x = float(actor_sec["CurrentXCoordinateSec"])
+            y = float(actor_sec["CurrentYCoordinateSec"])
+
+            hidden = bool(actor["DefaultHiddenCalc"])
             ctrl_class, class_file = self.find_npc_class(cre_file)
-            add_line(i_code+f"# {name}: {cre_file} ({x:.1f}, {y:.1f}) {direction} ctrl: {class_file}.{ctrl_class}")
-            if ctrl_class:
-                add_line(i_code+f'ctrl_class, loc = {class_file}.{ctrl_class},  utils_obj.sec2loc({int(x)}, {int(y)})')
-                add_line(i_code+f'self.create_lib_foe(loc, ctrl_class, {direction}, "", "{name}", ctrl_class.get_class_faction(), 0, 1)')
+            add_line(i_code+f'# {name}: {cre_file} ({x:.1f}, {y:.1f}) {direction} ctrl: {class_file}.{ctrl_class} {"hidden" if hidden else ""}')
+            if not hidden:
+                if ctrl_class:
+                    add_line(i_code+f'ctrl_class, loc = {class_file}.{ctrl_class},  utils_obj.sec2loc({int(x)}, {int(y)})')
+                    add_line(i_code+f'self.create_lib_foe(loc, ctrl_class, {direction}, "", "{name}", ctrl_class.get_class_faction(), 0, 1)')
             add_line(i_code)
         return
 

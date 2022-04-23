@@ -718,7 +718,12 @@ class ProduceNPC:
         currentHP = int(self.cre["CurrentHP"])
         damage = maximumHP - currentHP
         self.lines_script.append(i_code+f'utils_npc.ensure_hp(npc, {maximumHP}) # MaximumHP: {maximumHP}')
-        self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_hp_damage, {damage}) # CurrentHP: {currentHP}')
+        statusFlags = self.cre["StatusFlags"]
+        STATE_DEAD = ""
+        if "STATE_DEAD" in str(statusFlags):
+            damage = 20 + maximumHP
+            STATE_DEAD = ", STATE_DEAD"
+        self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_hp_damage, {damage}) # CurrentHP: {currentHP}{STATE_DEAD}')
         return
 
     def produce_faction(self):
@@ -750,7 +755,7 @@ class ProduceNPC:
             no_loot = not droppable
 
             self.current_indent = i_code
-            self.lines_script.append(i_code+f'# {slot_name}: {item_name}({item_type}) at {item_file_name}')
+            self.lines_script.append(i_code+f'# {slot_name}: {item_name}({item_type}) from {item_file_name}')
             res = items_map.ItemBase.process(item, self)
 
             if False:

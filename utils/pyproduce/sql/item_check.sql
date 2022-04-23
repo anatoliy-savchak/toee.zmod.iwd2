@@ -1,6 +1,6 @@
 
 ;with s  as (
-select  FileName = substring(t.FilePath, 77, 100)
+select  FileName = replace(substring(t.FilePath, 77, 100), '.json', '')
 , Name = json_value(t.Content, '$.IdentifiedName.Text')
 , Price = cast(json_value(t.Content, '$.Price') as int)
 , Description = isnull(json_value(t.Content, '$.IdentifiedDescription.Text'), json_value(t.Content, '$.UnidentifiedDescription.Text'))
@@ -10,7 +10,8 @@ from iwd2.itm t
 ) 
 select *
 from s
-where ItemType = 'LeatherArmor' --and FileName = '00LEAT01.json'
+where ItemType = 'Axes' --and FileName = '00LEAT01.json'
+	and Name = 'Battleaxe'
 order by 3 asc
 
 ;with s as (
@@ -23,7 +24,7 @@ with (
 ) as j
 )
 select * from s
-where Item = '00LEAT01'
+where Item = '00HAMT01'
 
 ;with s as (
 select  CreFileName = substring(t.FilePath, 81, 100)
@@ -37,6 +38,6 @@ with (
 ) as j
 )
 select SlotCode, ItemTypeEval, [count] = count(*), CreFileName = min(CreFileName), ItemFileName = min(ItemFileName) from s 
-where ItemFileName is not null
+where ItemTypeEval is not null
 group by SlotCode, ItemTypeEval order by 1
 --where SlotCode = '00LEAT01'

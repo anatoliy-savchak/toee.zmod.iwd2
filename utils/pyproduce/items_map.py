@@ -200,6 +200,64 @@ class ItemClubDefault(ItemClubs):
     @classmethod
     def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_CLUB"    
 
+########## WEAPONS / AXES
+class ItemAxes(ItemBase):
+    @classmethod
+    def get_category(cls): return "Axes"
+
+class ItemThrowingAxe(ItemAxes):
+    @classmethod
+    def get_item_codes(cls): return ("00AX1H05",)
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_HANDAXE"    
+
+class ItemHandaxe(ItemAxes):
+    @classmethod
+    def get_item_codes(cls): return ("00AX1H11",)
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_HANDAXE"    
+
+class ItemBattleaxe(ItemAxes):
+    @classmethod
+    def get_item_codes(cls): return ("00AX1H01", "00CWAXEA", "00CWAXEE", "00CWRDE1")
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_BATTLEAXE"    
+
+class ItemGreataxe(ItemAxes):
+    @classmethod
+    def get_item_codes(cls): return ("00CWAXED", "00AX2H01")
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_GREATAXE"    
+
+########## WEAPONS / HAMMERS
+class ItemHammers(ItemBase):
+    @classmethod
+    def get_category(cls): return "Hammers"
+
+class ItemThrowingHammer(ItemHammers):
+    @classmethod
+    def get_item_codes(cls): 
+        return ("00HAMT01" # used by half orcs
+            ,)
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_HAMMER_LIGHT"    
+
+class ItemWarhammer(ItemHammers):
+    @classmethod
+    def get_item_codes(cls): 
+        return ("00CWHAMA" # used by half orcs
+            #,"00CWHAMD" # That one is 10d3 and Invisibility detection.
+            ,"00HAMM01" # very common
+            ,"00HAMM05")
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_WARHAMMER"    
+
 ########## ARMORS
 class ItemArmors(ItemBase):
     def process_item(self):
@@ -290,7 +348,7 @@ class ItemHelmPlumedBronze(ItemHelmets):
 
     @classmethod
     def get_proto_const(cls): return "const_proto_cloth.PROTO_CLOTH_HELMET_CHAIN"
-    
+
 ########## GOLD
 class ItemGold(ItemBase):
     @classmethod

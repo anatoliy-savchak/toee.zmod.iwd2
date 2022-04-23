@@ -70,7 +70,7 @@ class ItemBase(object):
     def get_category(cls): return ""
 
     @classmethod
-    def get_item_codes(cls): return ("", )
+    def get_item_codes(cls): return ()
 
     @classmethod
     def is_default(cls): return False
@@ -179,8 +179,28 @@ class ItemDaggerDefault(ItemDaggers):
     @classmethod
     def is_default(cls): return True
 
-########## ARMORS
+    @classmethod
+    def get_item_codes(cls): return ("00DAGG01",)
 
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_DAGGER"    
+
+########## WEAPONS / CLUB
+class ItemClubs(ItemBase):
+    @classmethod
+    def get_category(cls): return "Club"
+
+class ItemClubDefault(ItemClubs):
+    @classmethod
+    def is_default(cls): return True
+
+    @classmethod
+    def get_item_codes(cls): return ("00CLUB01",)
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_CLUB"    
+
+########## ARMORS
 class ItemArmors(ItemBase):
     def process_item(self):
         result = super().process_item()
@@ -207,6 +227,7 @@ class ItemArmors(ItemBase):
 
     def get_boots_proto_const(cls): return None
 
+########## ARMORS / LEATHER ARMORS
 class ItemLeatherArmors(ItemArmors):
     @classmethod
     def get_category(cls): return "LeatherArmor"
@@ -222,3 +243,65 @@ class ItemLeatherArmorDefault(ItemLeatherArmors):
 
     @classmethod
     def get_proto_const(cls): return "const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN"
+
+########## ARMORS / HELMS HATS
+class ItemHelmets(ItemArmors):
+    @classmethod
+    def get_category(cls): return "HelmsHats"
+
+class ItemHelmHorned(ItemHelmets):
+    @classmethod
+    def get_item_codes(cls): return ('00HELM01', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC"
+
+class ItemHelmBarbarian(ItemHelmets):
+    @classmethod
+    def get_item_codes(cls): return ('00HELM02', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_cloth.PROTO_CLOTH_HELM_BARBARIAN"
+
+class ItemHelmPlumed1(ItemHelmets):
+    @classmethod
+    def get_item_codes(cls): return ('00HELM03', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_cloth.PROTO_CLOTH_HELM_PLUMED_GOLD"
+
+class ItemHelmPlumedRed(ItemHelmets):
+    @classmethod
+    def get_item_codes(cls): return ('00HELM04', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_cloth.PROTO_CLOTH_HELM_PLUMED_SILVER"
+
+class ItemHelmPlumedMetal(ItemHelmets):
+    @classmethod
+    def get_item_codes(cls): return ('00HELM05', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_cloth.PROTO_CLOTH_HELM_GREAT"
+
+class ItemHelmPlumedBronze(ItemHelmets):
+    @classmethod
+    def get_item_codes(cls): return ('00HELM06', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_cloth.PROTO_CLOTH_HELMET_CHAIN"
+    
+########## GOLD
+class ItemGold(ItemBase):
+    @classmethod
+    def get_category(cls): return "Gold"
+
+    def process_item(self):
+        Charges1, Charges2, Charges3 = int(self.item_entry["Item"]["Charges1"]), int(self.item_entry["Item"]["Charges2"]), int(self.item_entry["Item"]["Charges3"])
+        platinum, gold, silver, copper = 0, Charges1, Charges2, Charges3
+        self.parent.lines_script.append(self.parent.current_indent
+            + f'utils_item.item_money_create_in_inventory(npc, {platinum}, {gold}, {silver}, {copper}) # Charges1: {Charges1}, Charges2: {Charges2}, Charges3: {Charges3}')
+        return True
+
+    @classmethod
+    def is_default(cls): return True

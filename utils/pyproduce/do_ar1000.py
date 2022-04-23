@@ -26,7 +26,7 @@ if True:
     pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10BROGAN').save()
     pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10JORUN').save()
 
-if False:
+if True:
     daemon = produce_ar.ProduceDaemon(exported_dir, "AR1000")
     daemon.load_template(out_daemon_file)
     daemon.load_npc_classes(out_npcs_file)

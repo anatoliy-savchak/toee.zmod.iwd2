@@ -130,7 +130,7 @@ class Ctrl10HEDRON(ctrl_behaviour.CtrlBehaviourAI): # 10HEDRON
 		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTSPEAR, npc, False, toee.item_wear_weapon_primary) # Spear (00SPER01) at SLOT_WEAPON1 OK
 		
 		# SLOT_QUICK1: Dagger(Daggers) at 00DAGG01
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_DAGGER, npc, False, None) # Dagger (00DAGG01) at SLOT_QUICK1 OK
 		
 		# SLOT_QUICK2: Lynx Eye Gem(Gems) at 00GEM02
 		# Not found! TODO ITEM
@@ -239,10 +239,10 @@ class Ctrl10ELDGUL(ctrl_behaviour.CtrlBehaviourAI): # 10ELDGUL
 
 	def setup_gear(self, npc):
 		# SLOT_QUICK1: Club(Club) at 00CLUB01
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_CLUB, npc, False, None) # Club (00CLUB01) at SLOT_QUICK1 OK
 		
 		# SLOT_QUICK2: Gold(Gold) at MISC07
-		# Not found! TODO ITEM
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
 		
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, False, toee.item_wear_armor) # default
@@ -348,10 +348,10 @@ class Ctrl10SCREED(ctrl_behaviour.CtrlBehaviourAI): # 10SCREED
 
 	def setup_gear(self, npc):
 		# SLOT_QUICK1: Dagger(Daggers) at 00DAGG01
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_DAGGER, npc, False, None) # Dagger (00DAGG01) at SLOT_QUICK1 OK
 		
 		# SLOT_QUICK2: Gold(Gold) at MISC07
-		# Not found! TODO ITEM
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
 		
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, False, toee.item_wear_armor) # default
@@ -461,10 +461,10 @@ class Ctrl10REIG(ctrl_behaviour.CtrlBehaviourAI): # 10REIG
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, False, toee.item_wear_boots) # boots for Leather Armor (00LEAT01) OK
 		
 		# SLOT_QUICK1: Dagger(Daggers) at 00DAGG01
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_DAGGER, npc, False, None) # Dagger (00DAGG01) at SLOT_QUICK1 OK
 		
 		# SLOT_QUICK2: Gold(Gold) at MISC07
-		# Not found! TODO ITEM
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
 		return
 
@@ -567,7 +567,7 @@ class Ctrl10JON(ctrl_behaviour.CtrlBehaviourAI): # 10JON
 
 	def setup_gear(self, npc):
 		# SLOT_HELMET: Helmet(HelmsHats) at 00HELM01
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, npc, False, toee.item_wear_helmet) # Helmet (00HELM01) at SLOT_HELMET OK
 		
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) at 00LEAT01
 		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, False, toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
@@ -577,10 +577,10 @@ class Ctrl10JON(ctrl_behaviour.CtrlBehaviourAI): # 10JON
 		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTSPEAR, npc, False, toee.item_wear_weapon_primary) # Spear (00SPER01) at SLOT_WEAPON1 OK
 		
 		# SLOT_QUICK1: Dagger(Daggers) at 00DAGG01
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_DAGGER, npc, False, None) # Dagger (00DAGG01) at SLOT_QUICK1 OK
 		
 		# SLOT_QUICK2: Gold(Gold) at MISC07
-		# Not found! TODO ITEM
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
 		return
 
@@ -683,7 +683,7 @@ class Ctrl10BROGAN(ctrl_behaviour.CtrlBehaviourAI): # 10BROGAN
 
 	def setup_gear(self, npc):
 		# SLOT_HELMET: Helmet(HelmsHats) at 00HELM01
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, npc, False, toee.item_wear_helmet) # Helmet (00HELM01) at SLOT_HELMET OK
 		
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) at 00LEAT01
 		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, False, toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
@@ -693,10 +693,10 @@ class Ctrl10BROGAN(ctrl_behaviour.CtrlBehaviourAI): # 10BROGAN
 		# Not found! TODO ITEM
 		
 		# SLOT_QUICK1: Dagger(Daggers) at 00DAGG01
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_DAGGER, npc, False, None) # Dagger (00DAGG01) at SLOT_QUICK1 OK
 		
 		# SLOT_QUICK2: Gold(Gold) at MISC07
-		# Not found! TODO ITEM
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
 		return
 

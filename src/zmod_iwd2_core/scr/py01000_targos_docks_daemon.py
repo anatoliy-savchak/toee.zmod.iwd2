@@ -84,15 +84,25 @@ class CtrlTargosDocks(ctrl_daemon2.CtrlDaemon2):
 		ctrl_class, loc = py01001_targos_docks_encounters.Ctrl10ELDGUL,  utils_obj.sec2loc(446, 499)
 		self.create_lib_foe(loc, ctrl_class, const_toee.ROT05, "", "Eldgull", ctrl_class.get_class_faction(), 0, 1)
 		
-		# Screed: 10SCREED (459.2, 478.7) const_toee.ROT06 ctrl: None.None 
+		# Screed: 10SCREED (459.2, 478.7) const_toee.ROT06 ctrl: py01001_targos_docks_encounters.Ctrl10SCREED 
+		ctrl_class, loc = py01001_targos_docks_encounters.Ctrl10SCREED,  utils_obj.sec2loc(459, 478)
+		self.create_lib_foe(loc, ctrl_class, const_toee.ROT06, "", "Screed", ctrl_class.get_class_faction(), 0, 1)
 		
-		# Reig: 10REIG (475.4, 466.7) const_toee.ROT06 ctrl: None.None 
+		# Reig: 10REIG (475.4, 466.7) const_toee.ROT06 ctrl: py01001_targos_docks_encounters.Ctrl10REIG 
+		ctrl_class, loc = py01001_targos_docks_encounters.Ctrl10REIG,  utils_obj.sec2loc(475, 466)
+		self.create_lib_foe(loc, ctrl_class, const_toee.ROT06, "", "Reig", ctrl_class.get_class_faction(), 0, 1)
 		
-		# Jon: 10JON (479.4, 466.8) const_toee.ROT02 ctrl: None.None 
+		# Jon: 10JON (479.4, 466.8) const_toee.ROT02 ctrl: py01001_targos_docks_encounters.Ctrl10JON 
+		ctrl_class, loc = py01001_targos_docks_encounters.Ctrl10JON,  utils_obj.sec2loc(479, 466)
+		self.create_lib_foe(loc, ctrl_class, const_toee.ROT02, "", "Jon", ctrl_class.get_class_faction(), 0, 1)
 		
-		# Brogan: 10BROGAN (447.2, 468.5) const_toee.ROT11 ctrl: None.None 
+		# Brogan: 10BROGAN (447.2, 468.5) const_toee.ROT11 ctrl: py01001_targos_docks_encounters.Ctrl10BROGAN 
+		ctrl_class, loc = py01001_targos_docks_encounters.Ctrl10BROGAN,  utils_obj.sec2loc(447, 468)
+		self.create_lib_foe(loc, ctrl_class, const_toee.ROT11, "", "Brogan", ctrl_class.get_class_faction(), 0, 1)
 		
-		# Jorun: 10JORUN (515.5, 466.5) const_toee.ROT11 ctrl: None.None 
+		# Jorun: 10JORUN (515.5, 466.5) const_toee.ROT11 ctrl: py01001_targos_docks_encounters.Ctrl10JORUN 
+		ctrl_class, loc = py01001_targos_docks_encounters.Ctrl10JORUN,  utils_obj.sec2loc(515, 466)
+		self.create_lib_foe(loc, ctrl_class, const_toee.ROT11, "", "Jorun", ctrl_class.get_class_faction(), 0, 1)
 		
 		# 1000_Goblin_01: 10GOB (493.9, 438.4) const_toee.ROT05 ctrl: None.None 
 		

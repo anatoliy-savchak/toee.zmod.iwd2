@@ -18,13 +18,16 @@ def ctrl(npc): return ctrl_behaviour.get_ctrl(npc.id)
 
 def cs(): return py06615_daemon_orc_fort.cs()
 
-class Ctrl10HEDRON(ctrl_behaviour.CtrlBehaviourAI):
+class Ctrl10HEDRON(ctrl_behaviour.CtrlBehaviourAI): # 10HEDRON 
 	@classmethod
 	def get_name(cls): "10Hedron"
 	
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
 
+	@classmethod
+	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
+		
 	def setup_appearance(self, npc):
 		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
 		utils_npc.npc_description_set_new(npc, "Hedron Kerdos")
@@ -114,7 +117,6 @@ class Ctrl10HEDRON(ctrl_behaviour.CtrlBehaviourAI):
 		return
 
 	def setup_gear(self, npc):
-		
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) at 00LEAT01
 		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, npc, False, toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, False, toee.item_wear_boots) # 
@@ -129,13 +131,16 @@ class Ctrl10HEDRON(ctrl_behaviour.CtrlBehaviourAI):
 		# SLOT_QUICK3: Bottle of Wine(Drink) at 00MISC08
 		return
 
-class Ctrl10ELDGUL(ctrl_behaviour.CtrlBehaviourAI):
+class Ctrl10ELDGUL(ctrl_behaviour.CtrlBehaviourAI): # 10ELDGUL 
 	@classmethod
 	def get_name(cls): "10Eldgul"
 	
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
 
+	@classmethod
+	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
+		
 	def setup_appearance(self, npc):
 		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
 		utils_npc.npc_description_set_new(npc, "Eldgull")
@@ -219,7 +224,6 @@ class Ctrl10ELDGUL(ctrl_behaviour.CtrlBehaviourAI):
 		return
 
 	def setup_gear(self, npc):
-		
 		# SLOT_QUICK1: Club(Club) at 00CLUB01
 		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_CLUB, npc, False, None) # 
 		

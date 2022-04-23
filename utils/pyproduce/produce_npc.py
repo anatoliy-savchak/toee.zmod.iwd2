@@ -53,7 +53,7 @@ class ProduceNPC:
         self.read_cre(cre_name)
         self.current_crename = cre_name
 
-        self.lines_script.append(f"class Ctrl{self.current_crename}({self.elements['base_class']}):")
+        self.lines_script.append(f"class Ctrl{self.current_crename}({self.elements['base_class']}): # {self.current_crename} ")
         
         deathVariable = self.cre["DeathVariable"]
         if deathVariable:
@@ -84,6 +84,8 @@ class ProduceNPC:
         self.lines_script.append(i_def + "@classmethod")
         self.lines_script.append(i_def + f"def get_proto_id(cls): return {proto}")
         self.lines_script.append("")
+
+        self.produce_faction()
         return
 
     def produce_npc_appearance(self):
@@ -668,10 +670,22 @@ class ProduceNPC:
         self.lines_script.append(i_code+f'utils_npc.ensure_hp(npc, {maximumHP}) # MaximumHP: {maximumHP}')
         self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_hp_damage, {damage}) # CurrentHP: {currentHP}')
         return
+
+    def produce_faction(self):
+        allegiance = int(self.cre["EnemyAlly"])
+        faction = "factions_zmod.FACTION_NEUTRAL_NPC"
+        if allegiance == 128:
+            faction = "factions_zmod.FACTION_NEUTRAL_NPC"
+        elif allegiance == 255:
+            faction = "factions_zmod.FACTION_ENEMY"
+        self.lines_script.append(i_def + "@classmethod")
+        self.lines_script.append(i_def + f"def get_class_faction(cls): return {faction} # allegiance: {allegiance}")
+        self.lines_script.append(i_code)
+        return
     
     def setup_gear(self):
         self.lines_script.append(i_def + "def setup_gear(self, npc):")
-        self.lines_script.append(i_code)
+        #self.lines_script.append(i_code)
         do_separate_line = False
 
         wear_armor = None

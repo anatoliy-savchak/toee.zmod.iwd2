@@ -64,7 +64,8 @@
       "CREFile": "40OSWALD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "40OSWALD"
+      "ScriptSpecial1": "40OSWALD",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "INVISIBLE",
@@ -130,7 +131,8 @@
       "CREFile": "61WEBGEN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "40INVIS1"
+      "ScriptSpecial1": "40INVIS1",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -3273,7 +3275,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "410370AC06DCE4AEFC3241CB0BCCB6FB",
+  "Checksum": "D9401FE5AFDEE396A5CF114CD7026AA6",
   "Filename": "AR4001.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -3342,7 +3344,8 @@
         "CREFile": "40OSWALD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "40OSWALD"
+        "ScriptSpecial1": "40OSWALD",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "INVISIBLE",
@@ -3408,7 +3411,8 @@
         "CREFile": "61WEBGEN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "40INVIS1"
+        "ScriptSpecial1": "40INVIS1",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -6551,7 +6555,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "410370AC06DCE4AEFC3241CB0BCCB6FB",
+    "Checksum": "D9401FE5AFDEE396A5CF114CD7026AA6",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

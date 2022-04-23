@@ -64,7 +64,8 @@
       "CREFile": "50WILX",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50WSPDST"
+      "ScriptSpecial1": "50WSPDST",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50RDEAR_01",
@@ -130,7 +131,8 @@
       "CREFile": "50RDEAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50WSPDST"
+      "ScriptSpecial1": "50WSPDST",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50RDEAR_02",
@@ -196,7 +198,8 @@
       "CREFile": "50RDEAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50WSPDST"
+      "ScriptSpecial1": "50WSPDST",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50RDEBA_03",
@@ -262,7 +265,8 @@
       "CREFile": "50RDEBA",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50WSPDST"
+      "ScriptSpecial1": "50WSPDST",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50RDEBA_04",
@@ -328,7 +332,8 @@
       "CREFile": "50RDEBA",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50WSPDST"
+      "ScriptSpecial1": "50WSPDST",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50RDEHU_05",
@@ -394,7 +399,8 @@
       "CREFile": "50RDEHU",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50WSPDST"
+      "ScriptSpecial1": "50WSPDST",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "07_50Caryna_01",
@@ -460,7 +466,8 @@
       "CREFile": "50CARYNA",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -2329,7 +2336,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "104D519996252177A201E4E73679C8F9",
+  "Checksum": "4262BB2CF06EF975FEDC7716C4451602",
   "Filename": "AR5016.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -2398,7 +2405,8 @@
         "CREFile": "50WILX",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50WSPDST"
+        "ScriptSpecial1": "50WSPDST",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50RDEAR_01",
@@ -2464,7 +2472,8 @@
         "CREFile": "50RDEAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50WSPDST"
+        "ScriptSpecial1": "50WSPDST",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50RDEAR_02",
@@ -2530,7 +2539,8 @@
         "CREFile": "50RDEAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50WSPDST"
+        "ScriptSpecial1": "50WSPDST",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50RDEBA_03",
@@ -2596,7 +2606,8 @@
         "CREFile": "50RDEBA",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50WSPDST"
+        "ScriptSpecial1": "50WSPDST",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50RDEBA_04",
@@ -2662,7 +2673,8 @@
         "CREFile": "50RDEBA",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50WSPDST"
+        "ScriptSpecial1": "50WSPDST",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50RDEHU_05",
@@ -2728,7 +2740,8 @@
         "CREFile": "50RDEHU",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50WSPDST"
+        "ScriptSpecial1": "50WSPDST",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "07_50Caryna_01",
@@ -2794,7 +2807,8 @@
         "CREFile": "50CARYNA",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -4663,7 +4677,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "104D519996252177A201E4E73679C8F9",
+    "Checksum": "4262BB2CF06EF975FEDC7716C4451602",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

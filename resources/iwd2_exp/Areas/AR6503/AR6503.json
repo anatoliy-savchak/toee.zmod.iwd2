@@ -64,7 +64,8 @@
       "CREFile": "65BRUTAI",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "6503STOP"
+      "ScriptSpecial1": "6503STOP",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Ruinlord3",
@@ -130,7 +131,8 @@
       "CREFile": "65RUCOL2",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "6503STOP"
+      "ScriptSpecial1": "6503STOP",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Ruinlord2",
@@ -196,7 +198,8 @@
       "CREFile": "65RUCOL3",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "6503STOP"
+      "ScriptSpecial1": "6503STOP",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Ruinlord1",
@@ -262,7 +265,8 @@
       "CREFile": "65RUCOL4",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "6503STOP"
+      "ScriptSpecial1": "6503STOP",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Undead_Gaernat_Sharptooth",
@@ -328,7 +332,8 @@
       "CREFile": "66DGAERN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Undead_Sherincal",
@@ -394,7 +399,8 @@
       "CREFile": "66DSHERI",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Undead_Harshom",
@@ -460,7 +466,8 @@
       "CREFile": "66DHARSH",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Undead_Guthma",
@@ -526,7 +533,8 @@
       "CREFile": "66DGUTH",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Cutscene",
@@ -592,7 +600,8 @@
       "CREFile": "65FLRART",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -4912,7 +4921,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "2AE3BE6D049627E94AE812BE4C39DCB1",
+  "Checksum": "28A77B16F5BC3ADFD9C0CB807E04C75A",
   "Filename": "AR6503.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -4981,7 +4990,8 @@
         "CREFile": "65BRUTAI",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "6503STOP"
+        "ScriptSpecial1": "6503STOP",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Ruinlord3",
@@ -5047,7 +5057,8 @@
         "CREFile": "65RUCOL2",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "6503STOP"
+        "ScriptSpecial1": "6503STOP",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Ruinlord2",
@@ -5113,7 +5124,8 @@
         "CREFile": "65RUCOL3",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "6503STOP"
+        "ScriptSpecial1": "6503STOP",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Ruinlord1",
@@ -5179,7 +5191,8 @@
         "CREFile": "65RUCOL4",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "6503STOP"
+        "ScriptSpecial1": "6503STOP",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Undead_Gaernat_Sharptooth",
@@ -5245,7 +5258,8 @@
         "CREFile": "66DGAERN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Undead_Sherincal",
@@ -5311,7 +5325,8 @@
         "CREFile": "66DSHERI",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Undead_Harshom",
@@ -5377,7 +5392,8 @@
         "CREFile": "66DHARSH",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Undead_Guthma",
@@ -5443,7 +5459,8 @@
         "CREFile": "66DGUTH",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Cutscene",
@@ -5509,7 +5526,8 @@
         "CREFile": "65FLRART",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -9829,7 +9847,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "2AE3BE6D049627E94AE812BE4C39DCB1",
+    "Checksum": "28A77B16F5BC3ADFD9C0CB807E04C75A",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

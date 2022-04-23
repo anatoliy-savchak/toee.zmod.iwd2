@@ -64,7 +64,8 @@
       "CREFile": "10GOHAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Guthewulfe Henghelm",
@@ -130,7 +131,8 @@
       "CREFile": "10GUTHE",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Black_Geoffrey",
@@ -196,7 +198,8 @@
       "CREFile": "10BLACK",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "10BARDEL"
+      "ScriptSpecial1": "10BARDEL",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Blanchard",
@@ -262,7 +265,8 @@
       "CREFile": "10BLANC",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "10BARDEL"
+      "ScriptSpecial1": "10BARDEL",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Kickshaw",
@@ -328,7 +332,8 @@
       "CREFile": "10KICKSH",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "10BARDEL"
+      "ScriptSpecial1": "10BARDEL",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -1387,7 +1392,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "C98945068B18BA335EF5791760F45B9C",
+  "Checksum": "DA9A8D707DEF53E7BD89FCBC2856AAA8",
   "Filename": "AR1003.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -1456,7 +1461,8 @@
         "CREFile": "10GOHAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Guthewulfe Henghelm",
@@ -1522,7 +1528,8 @@
         "CREFile": "10GUTHE",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Black_Geoffrey",
@@ -1588,7 +1595,8 @@
         "CREFile": "10BLACK",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "10BARDEL"
+        "ScriptSpecial1": "10BARDEL",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Blanchard",
@@ -1654,7 +1662,8 @@
         "CREFile": "10BLANC",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "10BARDEL"
+        "ScriptSpecial1": "10BARDEL",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Kickshaw",
@@ -1720,7 +1729,8 @@
         "CREFile": "10KICKSH",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "10BARDEL"
+        "ScriptSpecial1": "10BARDEL",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -2779,7 +2789,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "C98945068B18BA335EF5791760F45B9C",
+    "Checksum": "DA9A8D707DEF53E7BD89FCBC2856AAA8",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

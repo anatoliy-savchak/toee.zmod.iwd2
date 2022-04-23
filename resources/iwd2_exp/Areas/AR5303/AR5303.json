@@ -64,7 +64,8 @@
       "CREFile": "53MARALI",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "53UHOM"
+      "ScriptSpecial1": "53UHOM",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Majrash",
@@ -130,7 +131,8 @@
       "CREFile": "53MAJRAS",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Mirabel",
@@ -196,7 +198,8 @@
       "CREFile": "53MIRABE",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Harpy1",
@@ -262,7 +265,8 @@
       "CREFile": "53HARPY",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Harpy2",
@@ -328,7 +332,8 @@
       "CREFile": "53HARPY",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Harpy3",
@@ -394,7 +399,8 @@
       "CREFile": "53HARPY",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Harpy4",
@@ -460,7 +466,8 @@
       "CREFile": "53HARPY",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Harpy5",
@@ -526,7 +533,8 @@
       "CREFile": "53HARPY",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Harpy6",
@@ -592,7 +600,8 @@
       "CREFile": "53HARPY",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Harpy7",
@@ -658,7 +667,8 @@
       "CREFile": "53HARPY",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Earth_Elemental1",
@@ -724,7 +734,8 @@
       "CREFile": "53EAELEM",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Earth_Elemental2",
@@ -790,7 +801,8 @@
       "CREFile": "53EAELEM",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Earth_Elemental3",
@@ -856,7 +868,8 @@
       "CREFile": "53EAELEM",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Oswald",
@@ -922,7 +935,8 @@
       "CREFile": "53OSWALD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "53UHOM"
+      "ScriptSpecial1": "53UHOM",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Earth_Elemental4",
@@ -988,7 +1002,8 @@
       "CREFile": "53EAELEM",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Earth_Elemental5",
@@ -1054,7 +1069,8 @@
       "CREFile": "53EAELEM",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Harpy8",
@@ -1120,7 +1136,8 @@
       "CREFile": "53HARPY",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Harpy9",
@@ -1186,7 +1203,8 @@
       "CREFile": "53HARPY",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Harpy10",
@@ -1252,7 +1270,8 @@
       "CREFile": "53HARPY",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Harpy11",
@@ -1318,7 +1337,8 @@
       "CREFile": "53HARPY",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -2704,7 +2724,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "3905C61BE4148F9533DC860F6A7B32E6",
+  "Checksum": "A12913D9DA95815D1B3C88FF9A148EAA",
   "Filename": "AR5303.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -2773,7 +2793,8 @@
         "CREFile": "53MARALI",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "53UHOM"
+        "ScriptSpecial1": "53UHOM",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Majrash",
@@ -2839,7 +2860,8 @@
         "CREFile": "53MAJRAS",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Mirabel",
@@ -2905,7 +2927,8 @@
         "CREFile": "53MIRABE",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Harpy1",
@@ -2971,7 +2994,8 @@
         "CREFile": "53HARPY",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Harpy2",
@@ -3037,7 +3061,8 @@
         "CREFile": "53HARPY",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Harpy3",
@@ -3103,7 +3128,8 @@
         "CREFile": "53HARPY",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Harpy4",
@@ -3169,7 +3195,8 @@
         "CREFile": "53HARPY",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Harpy5",
@@ -3235,7 +3262,8 @@
         "CREFile": "53HARPY",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Harpy6",
@@ -3301,7 +3329,8 @@
         "CREFile": "53HARPY",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Harpy7",
@@ -3367,7 +3396,8 @@
         "CREFile": "53HARPY",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Earth_Elemental1",
@@ -3433,7 +3463,8 @@
         "CREFile": "53EAELEM",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Earth_Elemental2",
@@ -3499,7 +3530,8 @@
         "CREFile": "53EAELEM",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Earth_Elemental3",
@@ -3565,7 +3597,8 @@
         "CREFile": "53EAELEM",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Oswald",
@@ -3631,7 +3664,8 @@
         "CREFile": "53OSWALD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "53UHOM"
+        "ScriptSpecial1": "53UHOM",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Earth_Elemental4",
@@ -3697,7 +3731,8 @@
         "CREFile": "53EAELEM",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Earth_Elemental5",
@@ -3763,7 +3798,8 @@
         "CREFile": "53EAELEM",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Harpy8",
@@ -3829,7 +3865,8 @@
         "CREFile": "53HARPY",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Harpy9",
@@ -3895,7 +3932,8 @@
         "CREFile": "53HARPY",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Harpy10",
@@ -3961,7 +3999,8 @@
         "CREFile": "53HARPY",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Harpy11",
@@ -4027,7 +4066,8 @@
         "CREFile": "53HARPY",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -5413,7 +5453,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "3905C61BE4148F9533DC860F6A7B32E6",
+    "Checksum": "A12913D9DA95815D1B3C88FF9A148EAA",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

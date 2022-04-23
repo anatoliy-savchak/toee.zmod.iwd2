@@ -64,7 +64,8 @@
       "CREFile": "11KOLUHM",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead Goblin",
@@ -130,7 +131,8 @@
       "CREFile": "10GOBD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead Townsperson",
@@ -196,7 +198,8 @@
       "CREFile": "10MALED",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead Targos Soldier",
@@ -262,7 +265,8 @@
       "CREFile": "10SOLDRD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Strange Voice (Goblin)",
@@ -328,7 +332,8 @@
       "CREFile": "11DEADG",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Strange Voice (Soldier)",
@@ -394,7 +399,8 @@
       "CREFile": "11DEADS",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -1823,7 +1829,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "9F1103648729331EB3DE85212112D8FE",
+  "Checksum": "6C0F1B4A0991D5CB6B71D98465EC3C30",
   "Filename": "AR1107.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -1892,7 +1898,8 @@
         "CREFile": "11KOLUHM",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead Goblin",
@@ -1958,7 +1965,8 @@
         "CREFile": "10GOBD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead Townsperson",
@@ -2024,7 +2032,8 @@
         "CREFile": "10MALED",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead Targos Soldier",
@@ -2090,7 +2099,8 @@
         "CREFile": "10SOLDRD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Strange Voice (Goblin)",
@@ -2156,7 +2166,8 @@
         "CREFile": "11DEADG",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Strange Voice (Soldier)",
@@ -2222,7 +2233,8 @@
         "CREFile": "11DEADS",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -3651,7 +3663,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "9F1103648729331EB3DE85212112D8FE",
+    "Checksum": "6C0F1B4A0991D5CB6B71D98465EC3C30",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

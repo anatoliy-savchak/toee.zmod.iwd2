@@ -64,7 +64,8 @@
       "CREFile": "64ORRICK",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "IronGolem",
@@ -130,7 +131,8 @@
       "CREFile": "64IGOLEM",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -2095,7 +2097,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "6672F3BD92133F67C48898127320BAC0",
+  "Checksum": "4A11B50F777C3F84519D3620A394B5E8",
   "Filename": "AR6403.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -2164,7 +2166,8 @@
         "CREFile": "64ORRICK",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "IronGolem",
@@ -2230,7 +2233,8 @@
         "CREFile": "64IGOLEM",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -4195,7 +4199,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "6672F3BD92133F67C48898127320BAC0",
+    "Checksum": "4A11B50F777C3F84519D3620A394B5E8",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

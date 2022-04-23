@@ -64,7 +64,8 @@
       "CREFile": "10MALED",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Goblin_1",
@@ -130,7 +131,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Goblin_2",
@@ -196,7 +198,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -1124,7 +1127,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "4022CA6B0AC4A69BF3C4D666FF1F6100",
+  "Checksum": "61459DE0FFC423D4477EDB7DBBF483E0",
   "Filename": "AR1005.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -1193,7 +1196,8 @@
         "CREFile": "10MALED",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Goblin_1",
@@ -1259,7 +1263,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Goblin_2",
@@ -1325,7 +1330,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -2253,7 +2259,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "4022CA6B0AC4A69BF3C4D666FF1F6100",
+    "Checksum": "61459DE0FFC423D4477EDB7DBBF483E0",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

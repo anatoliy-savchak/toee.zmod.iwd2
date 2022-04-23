@@ -64,7 +64,8 @@
       "CREFile": "11DEIRD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Loman",
@@ -130,7 +131,8 @@
       "CREFile": "11LOMAN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "11LOMAN0"
+      "ScriptSpecial1": "11LOMAN0",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Jemeliah",
@@ -196,7 +198,8 @@
       "CREFile": "11JEMEL",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -1407,7 +1410,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "D114C95FA7CF13399AC9B19E13A7022B",
+  "Checksum": "ECD6D8E8A73BF74C27ABCDDF543FF77A",
   "Filename": "AR1102.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -1476,7 +1479,8 @@
         "CREFile": "11DEIRD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Loman",
@@ -1542,7 +1546,8 @@
         "CREFile": "11LOMAN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "11LOMAN0"
+        "ScriptSpecial1": "11LOMAN0",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Jemeliah",
@@ -1608,7 +1613,8 @@
         "CREFile": "11JEMEL",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -2819,7 +2825,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "D114C95FA7CF13399AC9B19E13A7022B",
+    "Checksum": "ECD6D8E8A73BF74C27ABCDDF543FF77A",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

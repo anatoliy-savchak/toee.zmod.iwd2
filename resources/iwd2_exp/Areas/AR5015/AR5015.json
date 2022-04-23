@@ -64,7 +64,8 @@
       "CREFile": "50TROSN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50TROSN_02",
@@ -130,7 +131,8 @@
       "CREFile": "50TROSN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50TROSN_03",
@@ -196,7 +198,8 @@
       "CREFile": "50TROSN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50TROSG_04",
@@ -262,7 +265,8 @@
       "CREFile": "50TROSG",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50TROSN_06",
@@ -328,7 +332,8 @@
       "CREFile": "50TROSN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50TROSG_08",
@@ -394,7 +399,8 @@
       "CREFile": "50TROSS",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50TROSG_09",
@@ -460,7 +466,8 @@
       "CREFile": "50TROSS",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "02_50TREDE_01",
@@ -526,7 +533,8 @@
       "CREFile": "50TREDE",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50UNHDT"
+      "ScriptSpecial1": "50UNHDT",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "02_50TREDG_03",
@@ -592,7 +600,8 @@
       "CREFile": "50TREDG",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50UNHDT"
+      "ScriptSpecial1": "50UNHDT",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "02_50TREDG_04",
@@ -658,7 +667,8 @@
       "CREFile": "50TREDG",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50UNHDT"
+      "ScriptSpecial1": "50UNHDT",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "02_50TREDG_05",
@@ -724,7 +734,8 @@
       "CREFile": "50TREDG",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50UNHDT"
+      "ScriptSpecial1": "50UNHDT",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "02_50TREDA_07",
@@ -790,7 +801,8 @@
       "CREFile": "50TREDA",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50UNHDT"
+      "ScriptSpecial1": "50UNHDT",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "02_50TREDA_08",
@@ -856,7 +868,8 @@
       "CREFile": "50TREDA",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50UNHDT"
+      "ScriptSpecial1": "50UNHDT",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "02_50TREDA_09",
@@ -922,7 +935,8 @@
       "CREFile": "50TREDA",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50UNHDT"
+      "ScriptSpecial1": "50UNHDT",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "02_50TREDA_10",
@@ -988,7 +1002,8 @@
       "CREFile": "50TREDA",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50UNHDT"
+      "ScriptSpecial1": "50UNHDT",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "TRAP_WISP",
@@ -1054,7 +1069,8 @@
       "CREFile": "50WILX",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -3450,7 +3466,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "FEB9A61CA202A3F8A1E0E8F895288B0F",
+  "Checksum": "DF62CE2E8648828410526CA6CD429097",
   "Filename": "AR5015.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -3519,7 +3535,8 @@
         "CREFile": "50TROSN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50TROSN_02",
@@ -3585,7 +3602,8 @@
         "CREFile": "50TROSN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50TROSN_03",
@@ -3651,7 +3669,8 @@
         "CREFile": "50TROSN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50TROSG_04",
@@ -3717,7 +3736,8 @@
         "CREFile": "50TROSG",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50TROSN_06",
@@ -3783,7 +3803,8 @@
         "CREFile": "50TROSN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50TROSG_08",
@@ -3849,7 +3870,8 @@
         "CREFile": "50TROSS",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50TROSG_09",
@@ -3915,7 +3937,8 @@
         "CREFile": "50TROSS",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "02_50TREDE_01",
@@ -3981,7 +4004,8 @@
         "CREFile": "50TREDE",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50UNHDT"
+        "ScriptSpecial1": "50UNHDT",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "02_50TREDG_03",
@@ -4047,7 +4071,8 @@
         "CREFile": "50TREDG",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50UNHDT"
+        "ScriptSpecial1": "50UNHDT",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "02_50TREDG_04",
@@ -4113,7 +4138,8 @@
         "CREFile": "50TREDG",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50UNHDT"
+        "ScriptSpecial1": "50UNHDT",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "02_50TREDG_05",
@@ -4179,7 +4205,8 @@
         "CREFile": "50TREDG",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50UNHDT"
+        "ScriptSpecial1": "50UNHDT",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "02_50TREDA_07",
@@ -4245,7 +4272,8 @@
         "CREFile": "50TREDA",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50UNHDT"
+        "ScriptSpecial1": "50UNHDT",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "02_50TREDA_08",
@@ -4311,7 +4339,8 @@
         "CREFile": "50TREDA",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50UNHDT"
+        "ScriptSpecial1": "50UNHDT",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "02_50TREDA_09",
@@ -4377,7 +4406,8 @@
         "CREFile": "50TREDA",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50UNHDT"
+        "ScriptSpecial1": "50UNHDT",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "02_50TREDA_10",
@@ -4443,7 +4473,8 @@
         "CREFile": "50TREDA",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50UNHDT"
+        "ScriptSpecial1": "50UNHDT",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "TRAP_WISP",
@@ -4509,7 +4540,8 @@
         "CREFile": "50WILX",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -6905,7 +6937,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "FEB9A61CA202A3F8A1E0E8F895288B0F",
+    "Checksum": "DF62CE2E8648828410526CA6CD429097",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

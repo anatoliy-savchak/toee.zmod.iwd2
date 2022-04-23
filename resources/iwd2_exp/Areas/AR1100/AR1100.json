@@ -64,7 +64,8 @@
       "CREFile": "11LUMBAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Oswald",
@@ -130,7 +131,8 @@
       "CREFile": "11OSWALD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Ghille-Laider",
@@ -196,7 +198,8 @@
       "CREFile": "11GHILLE",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "AR1100_Thomas",
@@ -262,7 +265,8 @@
       "CREFile": "12SWIFTH",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "1100THMV"
+      "ScriptSpecial1": "1100THMV",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -10450,7 +10454,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "B804E6E18A6A0EC6DECFEBC76D07FE1E",
+  "Checksum": "1C04FD3C33E3F9225B86CF1F0490164C",
   "Filename": "AR1100.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -10519,7 +10523,8 @@
         "CREFile": "11LUMBAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Oswald",
@@ -10585,7 +10590,8 @@
         "CREFile": "11OSWALD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Ghille-Laider",
@@ -10651,7 +10657,8 @@
         "CREFile": "11GHILLE",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "AR1100_Thomas",
@@ -10717,7 +10724,8 @@
         "CREFile": "12SWIFTH",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "1100THMV"
+        "ScriptSpecial1": "1100THMV",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -20905,7 +20913,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "B804E6E18A6A0EC6DECFEBC76D07FE1E",
+    "Checksum": "1C04FD3C33E3F9225B86CF1F0490164C",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

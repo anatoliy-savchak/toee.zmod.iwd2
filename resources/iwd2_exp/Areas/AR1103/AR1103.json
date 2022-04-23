@@ -64,7 +64,8 @@
       "CREFile": "11RAGNIB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00TOWNI"
+      "ScriptSpecial1": "00TOWNI",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Denham",
@@ -130,7 +131,8 @@
       "CREFile": "11DENHAM",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "11T1103"
+      "ScriptSpecial1": "11T1103",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Maxiel of Silverymoo",
@@ -196,7 +198,8 @@
       "CREFile": "11MAXIEL",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Valin",
@@ -262,7 +265,8 @@
       "CREFile": "11VALIN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "11VALIN1"
+      "ScriptSpecial1": "11VALIN1",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Garradun",
@@ -328,7 +332,8 @@
       "CREFile": "11GARRAD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Deagle Elmwood",
@@ -394,7 +399,8 @@
       "CREFile": "11DEAGLE",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Doppelganger",
@@ -460,7 +466,8 @@
       "CREFile": "10DOP",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Urbek",
@@ -526,7 +533,8 @@
       "CREFile": "11URBEKS",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -1770,7 +1778,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "68937C751E0BC0DDF5085BFC5F6692F5",
+  "Checksum": "AE13EA3B797C065657B0639E54C3D92D",
   "Filename": "AR1103.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -1839,7 +1847,8 @@
         "CREFile": "11RAGNIB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00TOWNI"
+        "ScriptSpecial1": "00TOWNI",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Denham",
@@ -1905,7 +1914,8 @@
         "CREFile": "11DENHAM",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "11T1103"
+        "ScriptSpecial1": "11T1103",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Maxiel of Silverymoo",
@@ -1971,7 +1981,8 @@
         "CREFile": "11MAXIEL",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Valin",
@@ -2037,7 +2048,8 @@
         "CREFile": "11VALIN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "11VALIN1"
+        "ScriptSpecial1": "11VALIN1",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Garradun",
@@ -2103,7 +2115,8 @@
         "CREFile": "11GARRAD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Deagle Elmwood",
@@ -2169,7 +2182,8 @@
         "CREFile": "11DEAGLE",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Doppelganger",
@@ -2235,7 +2249,8 @@
         "CREFile": "10DOP",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Urbek",
@@ -2301,7 +2316,8 @@
         "CREFile": "11URBEKS",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -3545,7 +3561,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "68937C751E0BC0DDF5085BFC5F6692F5",
+    "Checksum": "AE13EA3B797C065657B0639E54C3D92D",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

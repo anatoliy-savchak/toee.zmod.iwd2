@@ -64,7 +64,8 @@
       "CREFile": "50WILX",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50WSPDST"
+      "ScriptSpecial1": "50WSPDST",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -1959,7 +1960,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "F3C34140F17C2B11FE893FCF063C98EC",
+  "Checksum": "51C027DAD92A8C02123C52538BDE1325",
   "Filename": "AR5014.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -2028,7 +2029,8 @@
         "CREFile": "50WILX",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50WSPDST"
+        "ScriptSpecial1": "50WSPDST",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -3923,7 +3925,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "F3C34140F17C2B11FE893FCF063C98EC",
+    "Checksum": "51C027DAD92A8C02123C52538BDE1325",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

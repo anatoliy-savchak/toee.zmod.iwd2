@@ -64,7 +64,8 @@
       "CREFile": "50LIMHA",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "02_50Hannu_01",
@@ -130,7 +131,8 @@
       "CREFile": "50HANNU",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50Agog_02",
@@ -196,7 +198,8 @@
       "CREFile": "50AGOG",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00T01ET"
+      "ScriptSpecial1": "00T01ET",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -2587,7 +2590,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "73E5E78E55C6AB22A92A0CC5FEF61D02",
+  "Checksum": "7AC9E3AA3933E29FF0A0051F4AE79CE1",
   "Filename": "AR5002.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -2656,7 +2659,8 @@
         "CREFile": "50LIMHA",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "02_50Hannu_01",
@@ -2722,7 +2726,8 @@
         "CREFile": "50HANNU",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50Agog_02",
@@ -2788,7 +2793,8 @@
         "CREFile": "50AGOG",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00T01ET"
+        "ScriptSpecial1": "00T01ET",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -5179,7 +5185,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "73E5E78E55C6AB22A92A0CC5FEF61D02",
+    "Checksum": "7AC9E3AA3933E29FF0A0051F4AE79CE1",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

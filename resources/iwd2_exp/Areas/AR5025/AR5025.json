@@ -64,7 +64,8 @@
       "CREFile": "50WILX",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "50WSPDST"
+      "ScriptSpecial1": "50WSPDST",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50TROSG_01",
@@ -130,7 +131,8 @@
       "CREFile": "50TROSG",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50TROSG_02",
@@ -196,7 +198,8 @@
       "CREFile": "50TROSG",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50TROSN_03",
@@ -262,7 +265,8 @@
       "CREFile": "50TROSN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50TROSN_04",
@@ -328,7 +332,8 @@
       "CREFile": "50TROSN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "01_50TROSN_05",
@@ -394,7 +399,8 @@
       "CREFile": "50TROSS",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -2103,7 +2109,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "DD9CDCD007A9BD579BF22B53EE5FECD1",
+  "Checksum": "A05E5344A23C32CA84FEEA9A884F7235",
   "Filename": "AR5025.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -2172,7 +2178,8 @@
         "CREFile": "50WILX",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "50WSPDST"
+        "ScriptSpecial1": "50WSPDST",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50TROSG_01",
@@ -2238,7 +2245,8 @@
         "CREFile": "50TROSG",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50TROSG_02",
@@ -2304,7 +2312,8 @@
         "CREFile": "50TROSG",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50TROSN_03",
@@ -2370,7 +2379,8 @@
         "CREFile": "50TROSN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50TROSN_04",
@@ -2436,7 +2446,8 @@
         "CREFile": "50TROSN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "01_50TROSN_05",
@@ -2502,7 +2513,8 @@
         "CREFile": "50TROSS",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -4211,7 +4223,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "DD9CDCD007A9BD579BF22B53EE5FECD1",
+    "Checksum": "A05E5344A23C32CA84FEEA9A884F7235",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

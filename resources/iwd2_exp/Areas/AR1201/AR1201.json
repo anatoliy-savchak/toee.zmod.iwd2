@@ -64,7 +64,8 @@
       "CREFile": "12SHAWFO",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "12SHAWF0"
+      "ScriptSpecial1": "12SHAWF0",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Messenger_Hidden",
@@ -130,7 +131,8 @@
       "CREFile": "12MESS",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Swift_Thomas_Hidden",
@@ -196,7 +198,8 @@
       "CREFile": "12SWIFTH",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Nolan",
@@ -262,7 +265,8 @@
       "CREFile": "12NOLAN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -1482,7 +1486,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "8CC7F8118D7F97C044E458C7AAC9A4F6",
+  "Checksum": "9C3C9DCF837DF747324DDE451012D903",
   "Filename": "AR1201.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -1551,7 +1555,8 @@
         "CREFile": "12SHAWFO",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "12SHAWF0"
+        "ScriptSpecial1": "12SHAWF0",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Messenger_Hidden",
@@ -1617,7 +1622,8 @@
         "CREFile": "12MESS",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Swift_Thomas_Hidden",
@@ -1683,7 +1689,8 @@
         "CREFile": "12SWIFTH",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Nolan",
@@ -1749,7 +1756,8 @@
         "CREFile": "12NOLAN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -2969,7 +2977,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "8CC7F8118D7F97C044E458C7AAC9A4F6",
+    "Checksum": "9C3C9DCF837DF747324DDE451012D903",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

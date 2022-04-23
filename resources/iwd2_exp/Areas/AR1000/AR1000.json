@@ -6,10 +6,10 @@
       "CurrentYCoordinate": 900,
       "DestinationXCoordinate": 2503,
       "DestinationYCoordinate": 900,
-      "CurrentXCoordinateSec": 448.9,
-      "CurrentYCoordinateSec": 493.1,
-      "DestinationXCoordinateSec": 448.9,
-      "DestinationYCoordinateSec": 493.1,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": true,
@@ -64,7 +64,8 @@
       "CREFile": "10HEDRON",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "10HEDRO0"
+      "ScriptSpecial1": "10HEDRO0",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Eldgull",
@@ -72,10 +73,10 @@
       "CurrentYCoordinate": 953,
       "DestinationXCoordinate": 2667,
       "DestinationYCoordinate": 953,
-      "CurrentXCoordinateSec": 446.7,
-      "CurrentYCoordinateSec": 499.0,
-      "DestinationXCoordinateSec": 446.7,
-      "DestinationYCoordinateSec": 499.0,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -130,7 +131,8 @@
       "CREFile": "10ELDGUL",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Screed",
@@ -138,10 +140,10 @@
       "CurrentYCoordinate": 843,
       "DestinationXCoordinate": 2011,
       "DestinationYCoordinate": 843,
-      "CurrentXCoordinateSec": 459.2,
-      "CurrentYCoordinateSec": 478.7,
-      "DestinationXCoordinateSec": 459.2,
-      "DestinationYCoordinateSec": 478.7,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -196,7 +198,8 @@
       "CREFile": "10SCREED",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Reig",
@@ -204,10 +207,10 @@
       "CurrentYCoordinate": 901,
       "DestinationXCoordinate": 1448,
       "DestinationYCoordinate": 901,
-      "CurrentXCoordinateSec": 475.4,
-      "CurrentYCoordinateSec": 466.7,
-      "DestinationXCoordinateSec": 475.4,
-      "DestinationYCoordinateSec": 466.7,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": true,
@@ -262,7 +265,8 @@
       "CREFile": "10REIG",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00TOWNID"
+      "ScriptSpecial1": "00TOWNID",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Jon",
@@ -270,10 +274,10 @@
       "CurrentYCoordinate": 959,
       "DestinationXCoordinate": 1369,
       "DestinationYCoordinate": 959,
-      "CurrentXCoordinateSec": 479.4,
-      "CurrentYCoordinateSec": 466.8,
-      "DestinationXCoordinateSec": 479.4,
-      "DestinationYCoordinateSec": 466.8,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -328,7 +332,8 @@
       "CREFile": "10JON",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00TOWNID"
+      "ScriptSpecial1": "00TOWNID",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Brogan",
@@ -336,10 +341,10 @@
       "CurrentYCoordinate": 532,
       "DestinationXCoordinate": 2047,
       "DestinationYCoordinate": 532,
-      "CurrentXCoordinateSec": 447.2,
-      "CurrentYCoordinateSec": 468.5,
-      "DestinationXCoordinateSec": 447.2,
-      "DestinationYCoordinateSec": 468.5,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -394,7 +399,8 @@
       "CREFile": "10BROGAN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00TOWNID"
+      "ScriptSpecial1": "00TOWNID",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Jorun",
@@ -402,10 +408,10 @@
       "CurrentYCoordinate": 1461,
       "DestinationXCoordinate": 641,
       "DestinationYCoordinate": 1461,
-      "CurrentXCoordinateSec": 515.5,
-      "CurrentYCoordinateSec": 466.5,
-      "DestinationXCoordinateSec": 515.5,
-      "DestinationYCoordinateSec": 466.5,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -460,7 +466,8 @@
       "CREFile": "10JORUN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00TOWNID"
+      "ScriptSpecial1": "00TOWNID",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_01",
@@ -468,10 +475,10 @@
       "CurrentYCoordinate": 763,
       "DestinationXCoordinate": 511,
       "DestinationYCoordinate": 763,
-      "CurrentXCoordinateSec": 493.9,
-      "CurrentYCoordinateSec": 438.4,
-      "DestinationXCoordinateSec": 493.9,
-      "DestinationYCoordinateSec": 438.4,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -526,7 +533,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Goblin_0",
@@ -534,10 +542,10 @@
       "CurrentYCoordinate": 984,
       "DestinationXCoordinate": 545,
       "DestinationYCoordinate": 984,
-      "CurrentXCoordinateSec": 500.9,
-      "CurrentYCoordinateSec": 447.1,
-      "DestinationXCoordinateSec": 500.9,
-      "DestinationYCoordinateSec": 447.1,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -592,7 +600,8 @@
       "CREFile": "10GOBD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Townsperson_0",
@@ -600,10 +609,10 @@
       "CurrentYCoordinate": 1049,
       "DestinationXCoordinate": 611,
       "DestinationYCoordinate": 1049,
-      "CurrentXCoordinateSec": 501.6,
-      "CurrentYCoordinateSec": 451.1,
-      "DestinationXCoordinateSec": 501.6,
-      "DestinationYCoordinateSec": 451.1,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -658,7 +667,8 @@
       "CREFile": "10MALED",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Brohn_Dead",
@@ -666,10 +676,10 @@
       "CurrentYCoordinate": 928,
       "DestinationXCoordinate": 1405,
       "DestinationYCoordinate": 928,
-      "CurrentXCoordinateSec": 477.4,
-      "CurrentYCoordinateSec": 466.6,
-      "DestinationXCoordinateSec": 477.4,
-      "DestinationYCoordinateSec": 466.6,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -724,7 +734,8 @@
       "CREFile": "10SOLDRD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Goblin_1",
@@ -732,10 +743,10 @@
       "CurrentYCoordinate": 656,
       "DestinationXCoordinate": 1604,
       "DestinationYCoordinate": 656,
-      "CurrentXCoordinateSec": 462.7,
-      "CurrentYCoordinateSec": 461.9,
-      "DestinationXCoordinateSec": 462.7,
-      "DestinationYCoordinateSec": 461.9,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -790,7 +801,8 @@
       "CREFile": "10GOBD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Goblin_2",
@@ -798,10 +810,10 @@
       "CurrentYCoordinate": 575,
       "DestinationXCoordinate": 1464,
       "DestinationYCoordinate": 575,
-      "CurrentXCoordinateSec": 463.3,
-      "CurrentYCoordinateSec": 455.5,
-      "DestinationXCoordinateSec": 463.3,
-      "DestinationYCoordinateSec": 455.5,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -856,7 +868,8 @@
       "CREFile": "10GOBD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Goblin_3",
@@ -864,10 +877,10 @@
       "CurrentYCoordinate": 401,
       "DestinationXCoordinate": 1846,
       "DestinationYCoordinate": 401,
-      "CurrentXCoordinateSec": 447.5,
-      "CurrentYCoordinateSec": 458.8,
-      "DestinationXCoordinateSec": 447.5,
-      "DestinationYCoordinateSec": 458.8,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -922,7 +935,8 @@
       "CREFile": "10GOBD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Soldier_0",
@@ -930,10 +944,10 @@
       "CurrentYCoordinate": 386,
       "DestinationXCoordinate": 1785,
       "DestinationYCoordinate": 386,
-      "CurrentXCoordinateSec": 448.5,
-      "CurrentYCoordinateSec": 456.7,
-      "DestinationXCoordinateSec": 448.5,
-      "DestinationYCoordinateSec": 456.7,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -988,7 +1002,8 @@
       "CREFile": "10SOLDRD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Goblin_J1",
@@ -996,10 +1011,10 @@
       "CurrentYCoordinate": 1431,
       "DestinationXCoordinate": 584,
       "DestinationYCoordinate": 1431,
-      "CurrentXCoordinateSec": 515.9,
-      "CurrentYCoordinateSec": 464.0,
-      "DestinationXCoordinateSec": 515.9,
-      "DestinationYCoordinateSec": 464.0,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1054,7 +1069,8 @@
       "CREFile": "10GOBD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Goblin_J2",
@@ -1062,10 +1078,10 @@
       "CurrentYCoordinate": 1528,
       "DestinationXCoordinate": 719,
       "DestinationYCoordinate": 1528,
-      "CurrentXCoordinateSec": 516.0,
-      "CurrentYCoordinateSec": 470.9,
-      "DestinationXCoordinateSec": 516.0,
-      "DestinationYCoordinateSec": 470.9,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1120,7 +1136,8 @@
       "CREFile": "10GOBD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Goblin_6",
@@ -1128,10 +1145,10 @@
       "CurrentYCoordinate": 1521,
       "DestinationXCoordinate": 560,
       "DestinationYCoordinate": 1521,
-      "CurrentXCoordinateSec": 519.7,
-      "CurrentYCoordinateSec": 466.7,
-      "DestinationXCoordinateSec": 519.7,
-      "DestinationYCoordinateSec": 466.7,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1186,7 +1203,8 @@
       "CREFile": "10GOBD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_02",
@@ -1194,10 +1212,10 @@
       "CurrentYCoordinate": 1896,
       "DestinationXCoordinate": 611,
       "DestinationYCoordinate": 1896,
-      "CurrentXCoordinateSec": 531.8,
-      "CurrentYCoordinateSec": 481.3,
-      "DestinationXCoordinateSec": 531.8,
-      "DestinationYCoordinateSec": 481.3,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1252,7 +1270,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_03",
@@ -1260,10 +1279,10 @@
       "CurrentYCoordinate": 1812,
       "DestinationXCoordinate": 713,
       "DestinationYCoordinate": 1812,
-      "CurrentXCoordinateSec": 526.3,
-      "CurrentYCoordinateSec": 480.9,
-      "DestinationXCoordinateSec": 526.3,
-      "DestinationYCoordinateSec": 480.9,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1318,7 +1337,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Townsperson_1",
@@ -1326,10 +1346,10 @@
       "CurrentYCoordinate": 1835,
       "DestinationXCoordinate": 646,
       "DestinationYCoordinate": 1835,
-      "CurrentXCoordinateSec": 528.8,
-      "CurrentYCoordinateSec": 480.0,
-      "DestinationXCoordinateSec": 528.8,
-      "DestinationYCoordinateSec": 480.0,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1384,7 +1404,8 @@
       "CREFile": "10MALED",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Goblin_7",
@@ -1392,10 +1413,10 @@
       "CurrentYCoordinate": 1761,
       "DestinationXCoordinate": 1431,
       "DestinationYCoordinate": 1761,
-      "CurrentXCoordinateSec": 506.5,
-      "CurrentYCoordinateSec": 497.0,
-      "DestinationXCoordinateSec": 506.5,
-      "DestinationYCoordinateSec": 497.0,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1450,7 +1471,8 @@
       "CREFile": "10GOBARD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Soldier_1",
@@ -1458,10 +1480,10 @@
       "CurrentYCoordinate": 1601,
       "DestinationXCoordinate": 1405,
       "DestinationYCoordinate": 1601,
-      "CurrentXCoordinateSec": 501.4,
-      "CurrentYCoordinateSec": 490.6,
-      "DestinationXCoordinateSec": 501.4,
-      "DestinationYCoordinateSec": 490.6,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1516,7 +1538,8 @@
       "CREFile": "10SOLDRD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Sailor",
@@ -1524,10 +1547,10 @@
       "CurrentYCoordinate": 1474,
       "DestinationXCoordinate": 2231,
       "DestinationYCoordinate": 1474,
-      "CurrentXCoordinateSec": 476.2,
-      "CurrentYCoordinateSec": 506.8,
-      "DestinationXCoordinateSec": 476.2,
-      "DestinationYCoordinateSec": 506.8,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1582,7 +1605,8 @@
       "CREFile": "10SAILRD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_04",
@@ -1590,10 +1614,10 @@
       "CurrentYCoordinate": 1457,
       "DestinationXCoordinate": 2172,
       "DestinationYCoordinate": 1457,
-      "CurrentXCoordinateSec": 477.1,
-      "CurrentYCoordinateSec": 504.7,
-      "DestinationXCoordinateSec": 477.1,
-      "DestinationYCoordinateSec": 504.7,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1648,7 +1672,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_05",
@@ -1656,10 +1681,10 @@
       "CurrentYCoordinate": 1509,
       "DestinationXCoordinate": 2186,
       "DestinationYCoordinate": 1509,
-      "CurrentXCoordinateSec": 478.6,
-      "CurrentYCoordinateSec": 506.9,
-      "DestinationXCoordinateSec": 478.6,
-      "DestinationYCoordinateSec": 506.9,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1714,7 +1739,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_06",
@@ -1722,10 +1748,10 @@
       "CurrentYCoordinate": 2173,
       "DestinationXCoordinate": 2038,
       "DestinationYCoordinate": 2173,
-      "CurrentXCoordinateSec": 506.0,
-      "CurrentYCoordinateSec": 526.9,
-      "DestinationXCoordinateSec": 506.0,
-      "DestinationYCoordinateSec": 526.9,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1780,7 +1806,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_Archer_01",
@@ -1788,10 +1815,10 @@
       "CurrentYCoordinate": 2106,
       "DestinationXCoordinate": 2094,
       "DestinationYCoordinate": 2106,
-      "CurrentXCoordinateSec": 502.2,
-      "CurrentYCoordinateSec": 525.9,
-      "DestinationXCoordinateSec": 502.2,
-      "DestinationYCoordinateSec": 525.9,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1846,7 +1873,8 @@
       "CREFile": "10GOBAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_07",
@@ -1854,10 +1882,10 @@
       "CurrentYCoordinate": 2157,
       "DestinationXCoordinate": 2161,
       "DestinationYCoordinate": 2157,
-      "CurrentXCoordinateSec": 502.4,
-      "CurrentYCoordinateSec": 529.4,
-      "DestinationXCoordinateSec": 502.4,
-      "DestinationYCoordinateSec": 529.4,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1912,7 +1940,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_19",
@@ -1920,10 +1949,10 @@
       "CurrentYCoordinate": 2131,
       "DestinationXCoordinate": 1975,
       "DestinationYCoordinate": 2131,
-      "CurrentXCoordinateSec": 506.1,
-      "CurrentYCoordinateSec": 523.8,
-      "DestinationXCoordinateSec": 506.1,
-      "DestinationYCoordinateSec": 523.8,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1978,7 +2007,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_Archer_02",
@@ -1986,10 +2016,10 @@
       "CurrentYCoordinate": 2203,
       "DestinationXCoordinate": 2113,
       "DestinationYCoordinate": 2203,
-      "CurrentXCoordinateSec": 505.2,
-      "CurrentYCoordinateSec": 529.8,
-      "DestinationXCoordinateSec": 505.2,
-      "DestinationYCoordinateSec": 529.8,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2044,7 +2074,8 @@
       "CREFile": "10GOBAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_08",
@@ -2052,10 +2083,10 @@
       "CurrentYCoordinate": 2190,
       "DestinationXCoordinate": 2260,
       "DestinationYCoordinate": 2190,
-      "CurrentXCoordinateSec": 501.1,
-      "CurrentYCoordinateSec": 533.1,
-      "DestinationXCoordinateSec": 501.1,
-      "DestinationYCoordinateSec": 533.1,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2110,7 +2141,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_Archer_03",
@@ -2118,10 +2150,10 @@
       "CurrentYCoordinate": 1874,
       "DestinationXCoordinate": 434,
       "DestinationYCoordinate": 1874,
-      "CurrentXCoordinateSec": 535.5,
-      "CurrentYCoordinateSec": 476.1,
-      "DestinationXCoordinateSec": 535.5,
-      "DestinationYCoordinateSec": 476.1,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2176,7 +2208,8 @@
       "CREFile": "10GOBAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_09",
@@ -2184,10 +2217,10 @@
       "CurrentYCoordinate": 1951,
       "DestinationXCoordinate": 846,
       "DestinationYCoordinate": 1951,
-      "CurrentXCoordinateSec": 527.9,
-      "CurrentYCoordinateSec": 489.2,
-      "DestinationXCoordinateSec": 527.9,
-      "DestinationYCoordinateSec": 489.2,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2242,7 +2275,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_10",
@@ -2250,10 +2284,10 @@
       "CurrentYCoordinate": 2038,
       "DestinationXCoordinate": 676,
       "DestinationYCoordinate": 2038,
-      "CurrentXCoordinateSec": 535.3,
-      "CurrentYCoordinateSec": 488.0,
-      "DestinationXCoordinateSec": 535.3,
-      "DestinationYCoordinateSec": 488.0,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2308,7 +2342,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_Archer_04",
@@ -2316,10 +2351,10 @@
       "CurrentYCoordinate": 1935,
       "DestinationXCoordinate": 713,
       "DestinationYCoordinate": 1935,
-      "CurrentXCoordinateSec": 530.7,
-      "CurrentYCoordinateSec": 485.3,
-      "DestinationXCoordinateSec": 530.7,
-      "DestinationYCoordinateSec": 485.3,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2374,7 +2409,8 @@
       "CREFile": "10GOBAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_11",
@@ -2382,10 +2418,10 @@
       "CurrentYCoordinate": 843,
       "DestinationXCoordinate": 437,
       "DestinationYCoordinate": 843,
-      "CurrentXCoordinateSec": 498.6,
-      "CurrentYCoordinateSec": 439.4,
-      "DestinationXCoordinateSec": 498.6,
-      "DestinationYCoordinateSec": 439.4,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2440,7 +2476,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_12",
@@ -2448,10 +2485,10 @@
       "CurrentYCoordinate": 733,
       "DestinationXCoordinate": 705,
       "DestinationYCoordinate": 733,
-      "CurrentXCoordinateSec": 487.9,
-      "CurrentYCoordinateSec": 442.1,
-      "DestinationXCoordinateSec": 487.9,
-      "DestinationYCoordinateSec": 442.1,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2506,7 +2543,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_Archer_05",
@@ -2514,10 +2552,10 @@
       "CurrentYCoordinate": 727,
       "DestinationXCoordinate": 351,
       "DestinationYCoordinate": 727,
-      "CurrentXCoordinateSec": 496.6,
-      "CurrentYCoordinateSec": 433.1,
-      "DestinationXCoordinateSec": 496.6,
-      "DestinationYCoordinateSec": 433.1,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2572,7 +2610,8 @@
       "CREFile": "10GOBAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_Archer_06",
@@ -2580,10 +2619,10 @@
       "CurrentYCoordinate": 888,
       "DestinationXCoordinate": 335,
       "DestinationYCoordinate": 888,
-      "CurrentXCoordinateSec": 502.7,
-      "CurrentYCoordinateSec": 438.4,
-      "DestinationXCoordinateSec": 502.7,
-      "DestinationYCoordinateSec": 438.4,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2638,7 +2677,8 @@
       "CREFile": "10GOBAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_Archer_07",
@@ -2646,10 +2686,10 @@
       "CurrentYCoordinate": 1448,
       "DestinationXCoordinate": 2287,
       "DestinationYCoordinate": 1448,
-      "CurrentXCoordinateSec": 473.9,
-      "CurrentYCoordinateSec": 507.2,
-      "DestinationXCoordinateSec": 473.9,
-      "DestinationYCoordinateSec": 507.2,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2704,7 +2744,8 @@
       "CREFile": "10GOBAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_Archer_08",
@@ -2712,10 +2753,10 @@
       "CurrentYCoordinate": 1481,
       "DestinationXCoordinate": 2334,
       "DestinationYCoordinate": 1481,
-      "CurrentXCoordinateSec": 473.9,
-      "CurrentYCoordinateSec": 509.6,
-      "DestinationXCoordinateSec": 473.9,
-      "DestinationYCoordinateSec": 509.6,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2770,7 +2811,8 @@
       "CREFile": "10GOBAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_13",
@@ -2778,10 +2820,10 @@
       "CurrentYCoordinate": 1496,
       "DestinationXCoordinate": 2077,
       "DestinationYCoordinate": 1496,
-      "CurrentXCoordinateSec": 480.9,
-      "CurrentYCoordinateSec": 503.7,
-      "DestinationXCoordinateSec": 480.9,
-      "DestinationYCoordinateSec": 503.7,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2836,7 +2878,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_14",
@@ -2844,10 +2887,10 @@
       "CurrentYCoordinate": 1450,
       "DestinationXCoordinate": 1155,
       "DestinationYCoordinate": 1450,
-      "CurrentXCoordinateSec": 502.3,
-      "CurrentYCoordinateSec": 479.0,
-      "DestinationXCoordinateSec": 502.3,
-      "DestinationYCoordinateSec": 479.0,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2902,7 +2945,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_15",
@@ -2910,10 +2954,10 @@
       "CurrentYCoordinate": 1526,
       "DestinationXCoordinate": 1315,
       "DestinationYCoordinate": 1526,
-      "CurrentXCoordinateSec": 501.0,
-      "CurrentYCoordinateSec": 485.7,
-      "DestinationXCoordinateSec": 501.0,
-      "DestinationYCoordinateSec": 485.7,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -2968,7 +3012,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_Archer_09",
@@ -2976,10 +3021,10 @@
       "CurrentYCoordinate": 1435,
       "DestinationXCoordinate": 1279,
       "DestinationYCoordinate": 1435,
-      "CurrentXCoordinateSec": 498.7,
-      "CurrentYCoordinateSec": 481.6,
-      "DestinationXCoordinateSec": 498.7,
-      "DestinationYCoordinateSec": 481.6,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -3034,7 +3079,8 @@
       "CREFile": "10GOBAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_16",
@@ -3042,10 +3088,10 @@
       "CurrentYCoordinate": 2188,
       "DestinationXCoordinate": 1014,
       "DestinationYCoordinate": 2188,
-      "CurrentXCoordinateSec": 532.2,
-      "CurrentYCoordinateSec": 501.8,
-      "DestinationXCoordinateSec": 532.2,
-      "DestinationYCoordinateSec": 501.8,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -3100,7 +3146,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_17",
@@ -3108,10 +3155,10 @@
       "CurrentYCoordinate": 2107,
       "DestinationXCoordinate": 1272,
       "DestinationYCoordinate": 2107,
-      "CurrentXCoordinateSec": 522.8,
-      "CurrentYCoordinateSec": 505.4,
-      "DestinationXCoordinateSec": 522.8,
-      "DestinationYCoordinateSec": 505.4,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -3166,7 +3213,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_18",
@@ -3174,10 +3222,10 @@
       "CurrentYCoordinate": 2217,
       "DestinationXCoordinate": 1365,
       "DestinationYCoordinate": 2217,
-      "CurrentXCoordinateSec": 524.4,
-      "CurrentYCoordinateSec": 511.6,
-      "DestinationXCoordinateSec": 524.4,
-      "DestinationYCoordinateSec": 511.6,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -3232,7 +3280,8 @@
       "CREFile": "10GOB",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "1000_Goblin_Archer_10",
@@ -3240,10 +3289,10 @@
       "CurrentYCoordinate": 2266,
       "DestinationXCoordinate": 1058,
       "DestinationYCoordinate": 2266,
-      "CurrentXCoordinateSec": 533.9,
-      "CurrentYCoordinateSec": 505.7,
-      "DestinationXCoordinateSec": 533.9,
-      "DestinationYCoordinateSec": 505.7,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -3298,7 +3347,8 @@
       "CREFile": "10GOBAR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Crandall",
@@ -3306,10 +3356,10 @@
       "CurrentYCoordinate": 1857,
       "DestinationXCoordinate": 1709,
       "DestinationYCoordinate": 1857,
-      "CurrentXCoordinateSec": 503.0,
-      "CurrentYCoordinateSec": 507.4,
-      "DestinationXCoordinateSec": 503.0,
-      "DestinationYCoordinateSec": 507.4,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -3364,7 +3414,8 @@
       "CREFile": "10CRANDA",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00TOWNID"
+      "ScriptSpecial1": "00TOWNID",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Swift Thomas (Hidden)",
@@ -3372,10 +3423,10 @@
       "CurrentYCoordinate": 939,
       "DestinationXCoordinate": 386,
       "DestinationYCoordinate": 939,
-      "CurrentXCoordinateSec": 503.3,
-      "CurrentYCoordinateSec": 441.5,
-      "DestinationXCoordinateSec": 503.3,
-      "DestinationYCoordinateSec": 441.5,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -3430,7 +3481,8 @@
       "CREFile": "12SWIFTH",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "1000THMV"
+      "ScriptSpecial1": "1000THMV",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Dead_Townsperson_2",
@@ -3438,10 +3490,10 @@
       "CurrentYCoordinate": 2173,
       "DestinationXCoordinate": 392,
       "DestinationYCoordinate": 2173,
-      "CurrentXCoordinateSec": 547.2,
-      "CurrentYCoordinateSec": 485.7,
-      "DestinationXCoordinateSec": 547.2,
-      "DestinationYCoordinateSec": 485.7,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -3496,7 +3548,8 @@
       "CREFile": "10MALED",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Door_Hint_Text_00",
@@ -3504,10 +3557,10 @@
       "CurrentYCoordinate": 569,
       "DestinationXCoordinate": 976,
       "DestinationYCoordinate": 569,
-      "CurrentXCoordinateSec": 475.3,
-      "CurrentYCoordinateSec": 443.0,
-      "DestinationXCoordinateSec": 475.3,
-      "DestinationYCoordinateSec": 443.0,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -3562,7 +3615,8 @@
       "CREFile": "10HINT",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Door_Hint_Text_01",
@@ -3570,10 +3624,10 @@
       "CurrentYCoordinate": 608,
       "DestinationXCoordinate": 2354,
       "DestinationYCoordinate": 608,
-      "CurrentXCoordinateSec": 442.2,
-      "CurrentYCoordinateSec": 478.9,
-      "DestinationXCoordinateSec": 442.2,
-      "DestinationYCoordinateSec": 478.9,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -3628,7 +3682,8 @@
       "CREFile": "10HINT",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Firtha Kerdos",
@@ -3636,10 +3691,10 @@
       "CurrentYCoordinate": 2063,
       "DestinationXCoordinate": 936,
       "DestinationYCoordinate": 2063,
-      "CurrentXCoordinateSec": 529.7,
-      "CurrentYCoordinateSec": 495.4,
-      "DestinationXCoordinateSec": 529.7,
-      "DestinationYCoordinateSec": 495.4,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -3694,7 +3749,8 @@
       "CREFile": "10FIRTHH",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "10FIRTHV"
+      "ScriptSpecial1": "10FIRTHV",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -13760,7 +13816,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "77516E34F17D60DFC5E6A9E2C8B60AEC",
+  "Checksum": "E2071F99FBB391735AAF9695637C9B1C",
   "Filename": "AR1000.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -13771,10 +13827,10 @@
         "CurrentYCoordinate": 900,
         "DestinationXCoordinate": 2503,
         "DestinationYCoordinate": 900,
-        "CurrentXCoordinateSec": 448.9,
-        "CurrentYCoordinateSec": 493.1,
-        "DestinationXCoordinateSec": 448.9,
-        "DestinationYCoordinateSec": 493.1,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": true,
@@ -13829,7 +13885,8 @@
         "CREFile": "10HEDRON",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "10HEDRO0"
+        "ScriptSpecial1": "10HEDRO0",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Eldgull",
@@ -13837,10 +13894,10 @@
         "CurrentYCoordinate": 953,
         "DestinationXCoordinate": 2667,
         "DestinationYCoordinate": 953,
-        "CurrentXCoordinateSec": 446.7,
-        "CurrentYCoordinateSec": 499.0,
-        "DestinationXCoordinateSec": 446.7,
-        "DestinationYCoordinateSec": 499.0,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -13895,7 +13952,8 @@
         "CREFile": "10ELDGUL",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Screed",
@@ -13903,10 +13961,10 @@
         "CurrentYCoordinate": 843,
         "DestinationXCoordinate": 2011,
         "DestinationYCoordinate": 843,
-        "CurrentXCoordinateSec": 459.2,
-        "CurrentYCoordinateSec": 478.7,
-        "DestinationXCoordinateSec": 459.2,
-        "DestinationYCoordinateSec": 478.7,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -13961,7 +14019,8 @@
         "CREFile": "10SCREED",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Reig",
@@ -13969,10 +14028,10 @@
         "CurrentYCoordinate": 901,
         "DestinationXCoordinate": 1448,
         "DestinationYCoordinate": 901,
-        "CurrentXCoordinateSec": 475.4,
-        "CurrentYCoordinateSec": 466.7,
-        "DestinationXCoordinateSec": 475.4,
-        "DestinationYCoordinateSec": 466.7,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": true,
@@ -14027,7 +14086,8 @@
         "CREFile": "10REIG",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00TOWNID"
+        "ScriptSpecial1": "00TOWNID",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Jon",
@@ -14035,10 +14095,10 @@
         "CurrentYCoordinate": 959,
         "DestinationXCoordinate": 1369,
         "DestinationYCoordinate": 959,
-        "CurrentXCoordinateSec": 479.4,
-        "CurrentYCoordinateSec": 466.8,
-        "DestinationXCoordinateSec": 479.4,
-        "DestinationYCoordinateSec": 466.8,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14093,7 +14153,8 @@
         "CREFile": "10JON",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00TOWNID"
+        "ScriptSpecial1": "00TOWNID",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Brogan",
@@ -14101,10 +14162,10 @@
         "CurrentYCoordinate": 532,
         "DestinationXCoordinate": 2047,
         "DestinationYCoordinate": 532,
-        "CurrentXCoordinateSec": 447.2,
-        "CurrentYCoordinateSec": 468.5,
-        "DestinationXCoordinateSec": 447.2,
-        "DestinationYCoordinateSec": 468.5,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14159,7 +14220,8 @@
         "CREFile": "10BROGAN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00TOWNID"
+        "ScriptSpecial1": "00TOWNID",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Jorun",
@@ -14167,10 +14229,10 @@
         "CurrentYCoordinate": 1461,
         "DestinationXCoordinate": 641,
         "DestinationYCoordinate": 1461,
-        "CurrentXCoordinateSec": 515.5,
-        "CurrentYCoordinateSec": 466.5,
-        "DestinationXCoordinateSec": 515.5,
-        "DestinationYCoordinateSec": 466.5,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14225,7 +14287,8 @@
         "CREFile": "10JORUN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00TOWNID"
+        "ScriptSpecial1": "00TOWNID",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_01",
@@ -14233,10 +14296,10 @@
         "CurrentYCoordinate": 763,
         "DestinationXCoordinate": 511,
         "DestinationYCoordinate": 763,
-        "CurrentXCoordinateSec": 493.9,
-        "CurrentYCoordinateSec": 438.4,
-        "DestinationXCoordinateSec": 493.9,
-        "DestinationYCoordinateSec": 438.4,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14291,7 +14354,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Goblin_0",
@@ -14299,10 +14363,10 @@
         "CurrentYCoordinate": 984,
         "DestinationXCoordinate": 545,
         "DestinationYCoordinate": 984,
-        "CurrentXCoordinateSec": 500.9,
-        "CurrentYCoordinateSec": 447.1,
-        "DestinationXCoordinateSec": 500.9,
-        "DestinationYCoordinateSec": 447.1,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14357,7 +14421,8 @@
         "CREFile": "10GOBD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Townsperson_0",
@@ -14365,10 +14430,10 @@
         "CurrentYCoordinate": 1049,
         "DestinationXCoordinate": 611,
         "DestinationYCoordinate": 1049,
-        "CurrentXCoordinateSec": 501.6,
-        "CurrentYCoordinateSec": 451.1,
-        "DestinationXCoordinateSec": 501.6,
-        "DestinationYCoordinateSec": 451.1,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14423,7 +14488,8 @@
         "CREFile": "10MALED",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Brohn_Dead",
@@ -14431,10 +14497,10 @@
         "CurrentYCoordinate": 928,
         "DestinationXCoordinate": 1405,
         "DestinationYCoordinate": 928,
-        "CurrentXCoordinateSec": 477.4,
-        "CurrentYCoordinateSec": 466.6,
-        "DestinationXCoordinateSec": 477.4,
-        "DestinationYCoordinateSec": 466.6,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14489,7 +14555,8 @@
         "CREFile": "10SOLDRD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Goblin_1",
@@ -14497,10 +14564,10 @@
         "CurrentYCoordinate": 656,
         "DestinationXCoordinate": 1604,
         "DestinationYCoordinate": 656,
-        "CurrentXCoordinateSec": 462.7,
-        "CurrentYCoordinateSec": 461.9,
-        "DestinationXCoordinateSec": 462.7,
-        "DestinationYCoordinateSec": 461.9,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14555,7 +14622,8 @@
         "CREFile": "10GOBD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Goblin_2",
@@ -14563,10 +14631,10 @@
         "CurrentYCoordinate": 575,
         "DestinationXCoordinate": 1464,
         "DestinationYCoordinate": 575,
-        "CurrentXCoordinateSec": 463.3,
-        "CurrentYCoordinateSec": 455.5,
-        "DestinationXCoordinateSec": 463.3,
-        "DestinationYCoordinateSec": 455.5,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14621,7 +14689,8 @@
         "CREFile": "10GOBD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Goblin_3",
@@ -14629,10 +14698,10 @@
         "CurrentYCoordinate": 401,
         "DestinationXCoordinate": 1846,
         "DestinationYCoordinate": 401,
-        "CurrentXCoordinateSec": 447.5,
-        "CurrentYCoordinateSec": 458.8,
-        "DestinationXCoordinateSec": 447.5,
-        "DestinationYCoordinateSec": 458.8,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14687,7 +14756,8 @@
         "CREFile": "10GOBD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Soldier_0",
@@ -14695,10 +14765,10 @@
         "CurrentYCoordinate": 386,
         "DestinationXCoordinate": 1785,
         "DestinationYCoordinate": 386,
-        "CurrentXCoordinateSec": 448.5,
-        "CurrentYCoordinateSec": 456.7,
-        "DestinationXCoordinateSec": 448.5,
-        "DestinationYCoordinateSec": 456.7,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14753,7 +14823,8 @@
         "CREFile": "10SOLDRD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Goblin_J1",
@@ -14761,10 +14832,10 @@
         "CurrentYCoordinate": 1431,
         "DestinationXCoordinate": 584,
         "DestinationYCoordinate": 1431,
-        "CurrentXCoordinateSec": 515.9,
-        "CurrentYCoordinateSec": 464.0,
-        "DestinationXCoordinateSec": 515.9,
-        "DestinationYCoordinateSec": 464.0,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14819,7 +14890,8 @@
         "CREFile": "10GOBD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Goblin_J2",
@@ -14827,10 +14899,10 @@
         "CurrentYCoordinate": 1528,
         "DestinationXCoordinate": 719,
         "DestinationYCoordinate": 1528,
-        "CurrentXCoordinateSec": 516.0,
-        "CurrentYCoordinateSec": 470.9,
-        "DestinationXCoordinateSec": 516.0,
-        "DestinationYCoordinateSec": 470.9,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14885,7 +14957,8 @@
         "CREFile": "10GOBD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Goblin_6",
@@ -14893,10 +14966,10 @@
         "CurrentYCoordinate": 1521,
         "DestinationXCoordinate": 560,
         "DestinationYCoordinate": 1521,
-        "CurrentXCoordinateSec": 519.7,
-        "CurrentYCoordinateSec": 466.7,
-        "DestinationXCoordinateSec": 519.7,
-        "DestinationYCoordinateSec": 466.7,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -14951,7 +15024,8 @@
         "CREFile": "10GOBD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_02",
@@ -14959,10 +15033,10 @@
         "CurrentYCoordinate": 1896,
         "DestinationXCoordinate": 611,
         "DestinationYCoordinate": 1896,
-        "CurrentXCoordinateSec": 531.8,
-        "CurrentYCoordinateSec": 481.3,
-        "DestinationXCoordinateSec": 531.8,
-        "DestinationYCoordinateSec": 481.3,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15017,7 +15091,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_03",
@@ -15025,10 +15100,10 @@
         "CurrentYCoordinate": 1812,
         "DestinationXCoordinate": 713,
         "DestinationYCoordinate": 1812,
-        "CurrentXCoordinateSec": 526.3,
-        "CurrentYCoordinateSec": 480.9,
-        "DestinationXCoordinateSec": 526.3,
-        "DestinationYCoordinateSec": 480.9,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15083,7 +15158,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Townsperson_1",
@@ -15091,10 +15167,10 @@
         "CurrentYCoordinate": 1835,
         "DestinationXCoordinate": 646,
         "DestinationYCoordinate": 1835,
-        "CurrentXCoordinateSec": 528.8,
-        "CurrentYCoordinateSec": 480.0,
-        "DestinationXCoordinateSec": 528.8,
-        "DestinationYCoordinateSec": 480.0,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15149,7 +15225,8 @@
         "CREFile": "10MALED",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Goblin_7",
@@ -15157,10 +15234,10 @@
         "CurrentYCoordinate": 1761,
         "DestinationXCoordinate": 1431,
         "DestinationYCoordinate": 1761,
-        "CurrentXCoordinateSec": 506.5,
-        "CurrentYCoordinateSec": 497.0,
-        "DestinationXCoordinateSec": 506.5,
-        "DestinationYCoordinateSec": 497.0,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15215,7 +15292,8 @@
         "CREFile": "10GOBARD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Soldier_1",
@@ -15223,10 +15301,10 @@
         "CurrentYCoordinate": 1601,
         "DestinationXCoordinate": 1405,
         "DestinationYCoordinate": 1601,
-        "CurrentXCoordinateSec": 501.4,
-        "CurrentYCoordinateSec": 490.6,
-        "DestinationXCoordinateSec": 501.4,
-        "DestinationYCoordinateSec": 490.6,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15281,7 +15359,8 @@
         "CREFile": "10SOLDRD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Sailor",
@@ -15289,10 +15368,10 @@
         "CurrentYCoordinate": 1474,
         "DestinationXCoordinate": 2231,
         "DestinationYCoordinate": 1474,
-        "CurrentXCoordinateSec": 476.2,
-        "CurrentYCoordinateSec": 506.8,
-        "DestinationXCoordinateSec": 476.2,
-        "DestinationYCoordinateSec": 506.8,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15347,7 +15426,8 @@
         "CREFile": "10SAILRD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_04",
@@ -15355,10 +15435,10 @@
         "CurrentYCoordinate": 1457,
         "DestinationXCoordinate": 2172,
         "DestinationYCoordinate": 1457,
-        "CurrentXCoordinateSec": 477.1,
-        "CurrentYCoordinateSec": 504.7,
-        "DestinationXCoordinateSec": 477.1,
-        "DestinationYCoordinateSec": 504.7,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15413,7 +15493,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_05",
@@ -15421,10 +15502,10 @@
         "CurrentYCoordinate": 1509,
         "DestinationXCoordinate": 2186,
         "DestinationYCoordinate": 1509,
-        "CurrentXCoordinateSec": 478.6,
-        "CurrentYCoordinateSec": 506.9,
-        "DestinationXCoordinateSec": 478.6,
-        "DestinationYCoordinateSec": 506.9,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15479,7 +15560,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_06",
@@ -15487,10 +15569,10 @@
         "CurrentYCoordinate": 2173,
         "DestinationXCoordinate": 2038,
         "DestinationYCoordinate": 2173,
-        "CurrentXCoordinateSec": 506.0,
-        "CurrentYCoordinateSec": 526.9,
-        "DestinationXCoordinateSec": 506.0,
-        "DestinationYCoordinateSec": 526.9,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15545,7 +15627,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_Archer_01",
@@ -15553,10 +15636,10 @@
         "CurrentYCoordinate": 2106,
         "DestinationXCoordinate": 2094,
         "DestinationYCoordinate": 2106,
-        "CurrentXCoordinateSec": 502.2,
-        "CurrentYCoordinateSec": 525.9,
-        "DestinationXCoordinateSec": 502.2,
-        "DestinationYCoordinateSec": 525.9,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15611,7 +15694,8 @@
         "CREFile": "10GOBAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_07",
@@ -15619,10 +15703,10 @@
         "CurrentYCoordinate": 2157,
         "DestinationXCoordinate": 2161,
         "DestinationYCoordinate": 2157,
-        "CurrentXCoordinateSec": 502.4,
-        "CurrentYCoordinateSec": 529.4,
-        "DestinationXCoordinateSec": 502.4,
-        "DestinationYCoordinateSec": 529.4,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15677,7 +15761,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_19",
@@ -15685,10 +15770,10 @@
         "CurrentYCoordinate": 2131,
         "DestinationXCoordinate": 1975,
         "DestinationYCoordinate": 2131,
-        "CurrentXCoordinateSec": 506.1,
-        "CurrentYCoordinateSec": 523.8,
-        "DestinationXCoordinateSec": 506.1,
-        "DestinationYCoordinateSec": 523.8,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15743,7 +15828,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_Archer_02",
@@ -15751,10 +15837,10 @@
         "CurrentYCoordinate": 2203,
         "DestinationXCoordinate": 2113,
         "DestinationYCoordinate": 2203,
-        "CurrentXCoordinateSec": 505.2,
-        "CurrentYCoordinateSec": 529.8,
-        "DestinationXCoordinateSec": 505.2,
-        "DestinationYCoordinateSec": 529.8,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15809,7 +15895,8 @@
         "CREFile": "10GOBAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_08",
@@ -15817,10 +15904,10 @@
         "CurrentYCoordinate": 2190,
         "DestinationXCoordinate": 2260,
         "DestinationYCoordinate": 2190,
-        "CurrentXCoordinateSec": 501.1,
-        "CurrentYCoordinateSec": 533.1,
-        "DestinationXCoordinateSec": 501.1,
-        "DestinationYCoordinateSec": 533.1,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15875,7 +15962,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_Archer_03",
@@ -15883,10 +15971,10 @@
         "CurrentYCoordinate": 1874,
         "DestinationXCoordinate": 434,
         "DestinationYCoordinate": 1874,
-        "CurrentXCoordinateSec": 535.5,
-        "CurrentYCoordinateSec": 476.1,
-        "DestinationXCoordinateSec": 535.5,
-        "DestinationYCoordinateSec": 476.1,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -15941,7 +16029,8 @@
         "CREFile": "10GOBAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_09",
@@ -15949,10 +16038,10 @@
         "CurrentYCoordinate": 1951,
         "DestinationXCoordinate": 846,
         "DestinationYCoordinate": 1951,
-        "CurrentXCoordinateSec": 527.9,
-        "CurrentYCoordinateSec": 489.2,
-        "DestinationXCoordinateSec": 527.9,
-        "DestinationYCoordinateSec": 489.2,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16007,7 +16096,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_10",
@@ -16015,10 +16105,10 @@
         "CurrentYCoordinate": 2038,
         "DestinationXCoordinate": 676,
         "DestinationYCoordinate": 2038,
-        "CurrentXCoordinateSec": 535.3,
-        "CurrentYCoordinateSec": 488.0,
-        "DestinationXCoordinateSec": 535.3,
-        "DestinationYCoordinateSec": 488.0,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16073,7 +16163,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_Archer_04",
@@ -16081,10 +16172,10 @@
         "CurrentYCoordinate": 1935,
         "DestinationXCoordinate": 713,
         "DestinationYCoordinate": 1935,
-        "CurrentXCoordinateSec": 530.7,
-        "CurrentYCoordinateSec": 485.3,
-        "DestinationXCoordinateSec": 530.7,
-        "DestinationYCoordinateSec": 485.3,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16139,7 +16230,8 @@
         "CREFile": "10GOBAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_11",
@@ -16147,10 +16239,10 @@
         "CurrentYCoordinate": 843,
         "DestinationXCoordinate": 437,
         "DestinationYCoordinate": 843,
-        "CurrentXCoordinateSec": 498.6,
-        "CurrentYCoordinateSec": 439.4,
-        "DestinationXCoordinateSec": 498.6,
-        "DestinationYCoordinateSec": 439.4,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16205,7 +16297,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_12",
@@ -16213,10 +16306,10 @@
         "CurrentYCoordinate": 733,
         "DestinationXCoordinate": 705,
         "DestinationYCoordinate": 733,
-        "CurrentXCoordinateSec": 487.9,
-        "CurrentYCoordinateSec": 442.1,
-        "DestinationXCoordinateSec": 487.9,
-        "DestinationYCoordinateSec": 442.1,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16271,7 +16364,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_Archer_05",
@@ -16279,10 +16373,10 @@
         "CurrentYCoordinate": 727,
         "DestinationXCoordinate": 351,
         "DestinationYCoordinate": 727,
-        "CurrentXCoordinateSec": 496.6,
-        "CurrentYCoordinateSec": 433.1,
-        "DestinationXCoordinateSec": 496.6,
-        "DestinationYCoordinateSec": 433.1,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16337,7 +16431,8 @@
         "CREFile": "10GOBAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_Archer_06",
@@ -16345,10 +16440,10 @@
         "CurrentYCoordinate": 888,
         "DestinationXCoordinate": 335,
         "DestinationYCoordinate": 888,
-        "CurrentXCoordinateSec": 502.7,
-        "CurrentYCoordinateSec": 438.4,
-        "DestinationXCoordinateSec": 502.7,
-        "DestinationYCoordinateSec": 438.4,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16403,7 +16498,8 @@
         "CREFile": "10GOBAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_Archer_07",
@@ -16411,10 +16507,10 @@
         "CurrentYCoordinate": 1448,
         "DestinationXCoordinate": 2287,
         "DestinationYCoordinate": 1448,
-        "CurrentXCoordinateSec": 473.9,
-        "CurrentYCoordinateSec": 507.2,
-        "DestinationXCoordinateSec": 473.9,
-        "DestinationYCoordinateSec": 507.2,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16469,7 +16565,8 @@
         "CREFile": "10GOBAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_Archer_08",
@@ -16477,10 +16574,10 @@
         "CurrentYCoordinate": 1481,
         "DestinationXCoordinate": 2334,
         "DestinationYCoordinate": 1481,
-        "CurrentXCoordinateSec": 473.9,
-        "CurrentYCoordinateSec": 509.6,
-        "DestinationXCoordinateSec": 473.9,
-        "DestinationYCoordinateSec": 509.6,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16535,7 +16632,8 @@
         "CREFile": "10GOBAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_13",
@@ -16543,10 +16641,10 @@
         "CurrentYCoordinate": 1496,
         "DestinationXCoordinate": 2077,
         "DestinationYCoordinate": 1496,
-        "CurrentXCoordinateSec": 480.9,
-        "CurrentYCoordinateSec": 503.7,
-        "DestinationXCoordinateSec": 480.9,
-        "DestinationYCoordinateSec": 503.7,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16601,7 +16699,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_14",
@@ -16609,10 +16708,10 @@
         "CurrentYCoordinate": 1450,
         "DestinationXCoordinate": 1155,
         "DestinationYCoordinate": 1450,
-        "CurrentXCoordinateSec": 502.3,
-        "CurrentYCoordinateSec": 479.0,
-        "DestinationXCoordinateSec": 502.3,
-        "DestinationYCoordinateSec": 479.0,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16667,7 +16766,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_15",
@@ -16675,10 +16775,10 @@
         "CurrentYCoordinate": 1526,
         "DestinationXCoordinate": 1315,
         "DestinationYCoordinate": 1526,
-        "CurrentXCoordinateSec": 501.0,
-        "CurrentYCoordinateSec": 485.7,
-        "DestinationXCoordinateSec": 501.0,
-        "DestinationYCoordinateSec": 485.7,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16733,7 +16833,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_Archer_09",
@@ -16741,10 +16842,10 @@
         "CurrentYCoordinate": 1435,
         "DestinationXCoordinate": 1279,
         "DestinationYCoordinate": 1435,
-        "CurrentXCoordinateSec": 498.7,
-        "CurrentYCoordinateSec": 481.6,
-        "DestinationXCoordinateSec": 498.7,
-        "DestinationYCoordinateSec": 481.6,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16799,7 +16900,8 @@
         "CREFile": "10GOBAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_16",
@@ -16807,10 +16909,10 @@
         "CurrentYCoordinate": 2188,
         "DestinationXCoordinate": 1014,
         "DestinationYCoordinate": 2188,
-        "CurrentXCoordinateSec": 532.2,
-        "CurrentYCoordinateSec": 501.8,
-        "DestinationXCoordinateSec": 532.2,
-        "DestinationYCoordinateSec": 501.8,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16865,7 +16967,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_17",
@@ -16873,10 +16976,10 @@
         "CurrentYCoordinate": 2107,
         "DestinationXCoordinate": 1272,
         "DestinationYCoordinate": 2107,
-        "CurrentXCoordinateSec": 522.8,
-        "CurrentYCoordinateSec": 505.4,
-        "DestinationXCoordinateSec": 522.8,
-        "DestinationYCoordinateSec": 505.4,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16931,7 +17034,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_18",
@@ -16939,10 +17043,10 @@
         "CurrentYCoordinate": 2217,
         "DestinationXCoordinate": 1365,
         "DestinationYCoordinate": 2217,
-        "CurrentXCoordinateSec": 524.4,
-        "CurrentYCoordinateSec": 511.6,
-        "DestinationXCoordinateSec": 524.4,
-        "DestinationYCoordinateSec": 511.6,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -16997,7 +17101,8 @@
         "CREFile": "10GOB",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "1000_Goblin_Archer_10",
@@ -17005,10 +17110,10 @@
         "CurrentYCoordinate": 2266,
         "DestinationXCoordinate": 1058,
         "DestinationYCoordinate": 2266,
-        "CurrentXCoordinateSec": 533.9,
-        "CurrentYCoordinateSec": 505.7,
-        "DestinationXCoordinateSec": 533.9,
-        "DestinationYCoordinateSec": 505.7,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -17063,7 +17168,8 @@
         "CREFile": "10GOBAR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Crandall",
@@ -17071,10 +17177,10 @@
         "CurrentYCoordinate": 1857,
         "DestinationXCoordinate": 1709,
         "DestinationYCoordinate": 1857,
-        "CurrentXCoordinateSec": 503.0,
-        "CurrentYCoordinateSec": 507.4,
-        "DestinationXCoordinateSec": 503.0,
-        "DestinationYCoordinateSec": 507.4,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -17129,7 +17235,8 @@
         "CREFile": "10CRANDA",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00TOWNID"
+        "ScriptSpecial1": "00TOWNID",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Swift Thomas (Hidden)",
@@ -17137,10 +17244,10 @@
         "CurrentYCoordinate": 939,
         "DestinationXCoordinate": 386,
         "DestinationYCoordinate": 939,
-        "CurrentXCoordinateSec": 503.3,
-        "CurrentYCoordinateSec": 441.5,
-        "DestinationXCoordinateSec": 503.3,
-        "DestinationYCoordinateSec": 441.5,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -17195,7 +17302,8 @@
         "CREFile": "12SWIFTH",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "1000THMV"
+        "ScriptSpecial1": "1000THMV",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Dead_Townsperson_2",
@@ -17203,10 +17311,10 @@
         "CurrentYCoordinate": 2173,
         "DestinationXCoordinate": 392,
         "DestinationYCoordinate": 2173,
-        "CurrentXCoordinateSec": 547.2,
-        "CurrentYCoordinateSec": 485.7,
-        "DestinationXCoordinateSec": 547.2,
-        "DestinationYCoordinateSec": 485.7,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -17261,7 +17369,8 @@
         "CREFile": "10MALED",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Door_Hint_Text_00",
@@ -17269,10 +17378,10 @@
         "CurrentYCoordinate": 569,
         "DestinationXCoordinate": 976,
         "DestinationYCoordinate": 569,
-        "CurrentXCoordinateSec": 475.3,
-        "CurrentYCoordinateSec": 443.0,
-        "DestinationXCoordinateSec": 475.3,
-        "DestinationYCoordinateSec": 443.0,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -17327,7 +17436,8 @@
         "CREFile": "10HINT",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Door_Hint_Text_01",
@@ -17335,10 +17445,10 @@
         "CurrentYCoordinate": 608,
         "DestinationXCoordinate": 2354,
         "DestinationYCoordinate": 608,
-        "CurrentXCoordinateSec": 442.2,
-        "CurrentYCoordinateSec": 478.9,
-        "DestinationXCoordinateSec": 442.2,
-        "DestinationYCoordinateSec": 478.9,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -17393,7 +17503,8 @@
         "CREFile": "10HINT",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Firtha Kerdos",
@@ -17401,10 +17512,10 @@
         "CurrentYCoordinate": 2063,
         "DestinationXCoordinate": 936,
         "DestinationYCoordinate": 2063,
-        "CurrentXCoordinateSec": 529.7,
-        "CurrentYCoordinateSec": 495.4,
-        "DestinationXCoordinateSec": 529.7,
-        "DestinationYCoordinateSec": 495.4,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -17459,7 +17570,8 @@
         "CREFile": "10FIRTHH",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "10FIRTHV"
+        "ScriptSpecial1": "10FIRTHV",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -27525,7 +27637,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "77516E34F17D60DFC5E6A9E2C8B60AEC",
+    "Checksum": "E2071F99FBB391735AAF9695637C9B1C",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

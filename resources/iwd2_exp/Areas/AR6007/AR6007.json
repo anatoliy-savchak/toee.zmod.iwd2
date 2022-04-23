@@ -64,7 +64,8 @@
       "CREFile": "11OSWALD",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Maralie Fiddlebender",
@@ -130,7 +131,8 @@
       "CREFile": "53MARALI",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": ""
+      "ScriptSpecial1": "",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -1511,7 +1513,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "D6734ECA8ED45226736183FAAC819460",
+  "Checksum": "BE9F0070007C553A494813FB0D9E0107",
   "Filename": "AR6007.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -1580,7 +1582,8 @@
         "CREFile": "11OSWALD",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Maralie Fiddlebender",
@@ -1646,7 +1649,8 @@
         "CREFile": "53MARALI",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": ""
+        "ScriptSpecial1": "",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -3027,7 +3031,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "D6734ECA8ED45226736183FAAC819460",
+    "Checksum": "BE9F0070007C553A494813FB0D9E0107",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

@@ -64,7 +64,8 @@
       "CREFile": "67TRMAL",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Nalakora",
@@ -130,7 +131,8 @@
       "CREFile": "67NALAK",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "HalfOrc1",
@@ -196,7 +198,8 @@
       "CREFile": "67HAORC",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "HalfOrc2",
@@ -262,7 +265,8 @@
       "CREFile": "67HAORC2",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "RedWizard1",
@@ -328,7 +332,8 @@
       "CREFile": "67REDWI3",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "RedWizard2",
@@ -394,7 +399,8 @@
       "CREFile": "67REDWI3",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "HalfDragon1",
@@ -460,7 +466,8 @@
       "CREFile": "65BHDR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "HalfDragon2",
@@ -526,7 +533,8 @@
       "CREFile": "65BHDR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "NeoOrogShaman",
@@ -592,7 +600,8 @@
       "CREFile": "673NORC",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "SlayerKnightofXvi1",
@@ -658,7 +667,8 @@
       "CREFile": "673SKXVM",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "SlayerKnightofXvi2",
@@ -724,7 +734,8 @@
       "CREFile": "673SKXVM",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "RedHalfDragon",
@@ -790,7 +801,8 @@
       "CREFile": "673RHDR",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "00ASTIVN"
+      "ScriptSpecial1": "00ASTIVN",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -1911,7 +1923,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "7BCF57A95E249FA604E7855347E14C28",
+  "Checksum": "B8A9AD965D1B90E1DD6FC89A7052BFF1",
   "Filename": "AR6703.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -1980,7 +1992,8 @@
         "CREFile": "67TRMAL",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Nalakora",
@@ -2046,7 +2059,8 @@
         "CREFile": "67NALAK",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "HalfOrc1",
@@ -2112,7 +2126,8 @@
         "CREFile": "67HAORC",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "HalfOrc2",
@@ -2178,7 +2193,8 @@
         "CREFile": "67HAORC2",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "RedWizard1",
@@ -2244,7 +2260,8 @@
         "CREFile": "67REDWI3",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "RedWizard2",
@@ -2310,7 +2327,8 @@
         "CREFile": "67REDWI3",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "HalfDragon1",
@@ -2376,7 +2394,8 @@
         "CREFile": "65BHDR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "HalfDragon2",
@@ -2442,7 +2461,8 @@
         "CREFile": "65BHDR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "NeoOrogShaman",
@@ -2508,7 +2528,8 @@
         "CREFile": "673NORC",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "SlayerKnightofXvi1",
@@ -2574,7 +2595,8 @@
         "CREFile": "673SKXVM",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "SlayerKnightofXvi2",
@@ -2640,7 +2662,8 @@
         "CREFile": "673SKXVM",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "RedHalfDragon",
@@ -2706,7 +2729,8 @@
         "CREFile": "673RHDR",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "00ASTIVN"
+        "ScriptSpecial1": "00ASTIVN",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -3827,7 +3851,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "7BCF57A95E249FA604E7855347E14C28",
+    "Checksum": "B8A9AD965D1B90E1DD6FC89A7052BFF1",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

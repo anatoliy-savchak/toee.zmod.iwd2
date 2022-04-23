@@ -64,7 +64,8 @@
       "CREFile": "66PUDU",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "66UHPUDU"
+      "ScriptSpecial1": "66UHPUDU",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Vyxein",
@@ -130,7 +131,8 @@
       "CREFile": "66VYXEIN",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "66UHPUDU"
+      "ScriptSpecial1": "66UHPUDU",
+      "DefaultHiddenCalc": false
     },
     {
       "Name": "Bisbe",
@@ -196,7 +198,8 @@
       "CREFile": "66BISBE",
       "CreOffset": 0,
       "CreSize": 0,
-      "ScriptSpecial1": "66HBISBE"
+      "ScriptSpecial1": "66HBISBE",
+      "DefaultHiddenCalc": false
     }
   ],
   "regions": [
@@ -2048,7 +2051,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "D2199358742312BD1B5C642969115FBB",
+  "Checksum": "3108E6A0E04322B8CA5C0F5DE0D90A4F",
   "Filename": "AR6603.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -2117,7 +2120,8 @@
         "CREFile": "66PUDU",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "66UHPUDU"
+        "ScriptSpecial1": "66UHPUDU",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Vyxein",
@@ -2183,7 +2187,8 @@
         "CREFile": "66VYXEIN",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "66UHPUDU"
+        "ScriptSpecial1": "66UHPUDU",
+        "DefaultHiddenCalc": false
       },
       {
         "Name": "Bisbe",
@@ -2249,7 +2254,8 @@
         "CREFile": "66BISBE",
         "CreOffset": 0,
         "CreSize": 0,
-        "ScriptSpecial1": "66HBISBE"
+        "ScriptSpecial1": "66HBISBE",
+        "DefaultHiddenCalc": false
       }
     ],
     "regions": [
@@ -4101,7 +4107,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "D2199358742312BD1B5C642969115FBB",
+    "Checksum": "3108E6A0E04322B8CA5C0F5DE0D90A4F",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

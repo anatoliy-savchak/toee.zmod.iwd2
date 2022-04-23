@@ -6,6 +6,10 @@
       "CurrentYCoordinate": 300,
       "DestinationXCoordinate": 500,
       "DestinationYCoordinate": 300,
+      "CurrentXCoordinateSec": 0,
+      "CurrentYCoordinateSec": 0,
+      "DestinationXCoordinateSec": 0,
+      "DestinationYCoordinateSec": 0,
       "ActorFlags": {
         "CreAttached": true,
         "Bit01": false,
@@ -1413,7 +1417,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "A2047A803B5DA6C5AB08143D289617E8",
+  "Checksum": "7EC6B4ACC2450D627141727AB348A3E0",
   "Filename": "AR5019.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -1424,6 +1428,10 @@
         "CurrentYCoordinate": 300,
         "DestinationXCoordinate": 500,
         "DestinationYCoordinate": 300,
+        "CurrentXCoordinateSec": 0,
+        "CurrentYCoordinateSec": 0,
+        "DestinationXCoordinateSec": 0,
+        "DestinationYCoordinateSec": 0,
         "ActorFlags": {
           "CreAttached": true,
           "Bit01": false,
@@ -2831,7 +2839,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "A2047A803B5DA6C5AB08143D289617E8",
+    "Checksum": "7EC6B4ACC2450D627141727AB348A3E0",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

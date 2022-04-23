@@ -20,6 +20,11 @@ with open(out_npcs_file, 'w') as f:
 if True:
     pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10HEDRON').save()
     pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10ELDGUL').save()
+    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10SCREED').save()
+    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10REIG').save()
+    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10JON').save()
+    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10BROGAN').save()
+    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10JORUN').save()
 
 if False:
     daemon = produce_ar.ProduceDaemon(exported_dir, "AR1000")

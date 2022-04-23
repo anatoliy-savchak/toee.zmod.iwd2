@@ -19,6 +19,9 @@ class ProduceNPC:
         self.current_crename = ""
         self.cre = dict()
         self.out_file_path = out_file_path
+        self.current_indent = ""
+        self.wears = dict()
+        self.items = list()
 
         self.setup_elements()
 
@@ -83,6 +86,11 @@ class ProduceNPC:
                 proto = "const_proto_npc.PROTO_NPC_MAN"
             else:
                 proto = "const_proto_npc.PROTO_NPC_WOMAN"
+        elif race_name == "dwarf":
+            if gander:
+                proto = "const_proto_npc.PROTO_NPC_DWARF_MAN"
+            else:
+                proto = "const_proto_npc.PROTO_NPC_DWARF_WOMAN"
         else:
             raise Exception(f"Unknown race: {race_name}({race})")
 
@@ -102,9 +110,43 @@ class ProduceNPC:
         full_name = self.cre_get_full_name()
         if full_name:
             self.lines_script.append(i_code + f'utils_npc.npc_description_set_new(npc, "{full_name}")');
+            self.lines_script.append(i_code)
+
+        self.produce_hair()
 
         self.lines_script.append(i_code+"return")
         self.lines_script.append("")
+        return
+
+    def produce_hair(self):
+        self.lines_script.append(i_code + "hairStyle = utils_npc.HairStyle.from_npc(npc)")
+        if not int(self.cre["Gender"]):
+            self.lines_script.append(i_code + "hairStyle.style = const_toee.hair_style_longhair")
+        else:
+            self.lines_script.append(i_code + "hairStyle.style = const_toee.hair_style_shorthair")
+
+        if True:
+            color_const = "const_toee.hair_color_black"
+            hairColourIndex = int(self.cre["HairColourIndex"])
+            if hairColourIndex == 0: # Hair Black
+                color_const = "const_toee.hair_color_black"
+            elif hairColourIndex == 1: # Hair Lt Brown
+                color_const = "const_toee.hair_color_light_brown"
+            elif hairColourIndex == 2: # Hair Dk Brown
+                color_const = "const_toee.hair_color_brown"
+            elif hairColourIndex == 3: # Hair Blonde
+                color_const = "const_toee.hair_color_blonde"
+            elif hairColourIndex == 4: # Hair Red
+                color_const = "const_toee.hair_color_red"
+            elif hairColourIndex == 5: # Hair Lt Grey
+                color_const = "const_toee.hair_color_light_brown"
+            elif hairColourIndex == 6: # Hair Dk Grey
+                color_const = "const_toee.hair_color_white"
+            elif hairColourIndex == 7: # Hair Lt Green
+                color_const = "const_toee.hair_color_blue"
+
+            self.lines_script.append(i_code + f"hairStyle.color = {color_const} # HairColourIndex: {hairColourIndex}")
+        self.lines_script.append(i_code + "hairStyle.update_npc(npc)")
         return
     
     def produce_npc_char(self):
@@ -147,7 +189,10 @@ class ProduceNPC:
 
         self.produce_alignment()
         self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_critter_experience, {int(self.cre["XPReward"])}) # XPReward')
-        self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_npc_challenge_rating, {int(self.cre["ChallangeRating"])})')
+        cr = int(self.cre["ChallangeRating"])
+        cr_adj = cr - levelsFromClasses
+        if cr_adj < -2: cr_adj = -2
+        self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_npc_challenge_rating, {cr_adj}) # CR: {cr}')
         
         self.produce_feats()
         self.produce_saves()
@@ -703,32 +748,39 @@ class ProduceNPC:
             item_name = item["ItemNameEval"]
             droppable = boolean(item["ItemDroppableEval"])
             no_loot = not droppable
-            instr = items_map.item_to_proto_name(item_file_name, item_type, slot_name, item_name, item)
 
-            if do_separate_line: self.lines_script.append(i_code)
-            do_separate_line = False
-
+            self.current_indent = i_code
             self.lines_script.append(i_code+f'# {slot_name}: {item_name}({item_type}) at {item_file_name}')
-            if not instr is None:
-                for entry in instr:
-                    if not entry: continue
-                    item_const_full_name = entry[0]
-                    wear = entry[1] if len(entry )> 1 else None
-                    comment = entry[2] if len(entry) > 2 else None
-                    line = entry[3] if len(entry) > 3 else None
-                    if item_const_full_name:
-                        self.lines_script.append(i_code+f'utils_item.item_create_in_inventory2({item_const_full_name}, npc, {no_loot}, {wear}) # {comment or ""}')
-                    elif not item_const_full_name:
-                        self.lines_script.append(i_code+line)
-                    do_separate_line = True
-                    if wear:
-                        if "_armor" in wear:
-                            wear_armor = item_const_full_name
-            else:
-                self.lines_script.append(i_code+"# Not found!!")
+            res = items_map.ItemBase.process(item, self)
+
+            if False:
+                instr = items_map.item_to_proto_name(item_file_name, item_type, slot_name, item_name, item)
+
+                if do_separate_line: self.lines_script.append(i_code)
+                do_separate_line = False
+
+                self.lines_script.append(i_code+f'# {slot_name}: {item_name}({item_type}) at {item_file_name}')
+                if not instr is None:
+                    for entry in instr:
+                        if not entry: continue
+                        item_const_full_name = entry[0]
+                        wear = entry[1] if len(entry )> 1 else None
+                        comment = entry[2] if len(entry) > 2 else None
+                        line = entry[3] if len(entry) > 3 else None
+                        if item_const_full_name:
+                            self.lines_script.append(i_code+f'utils_item.item_create_in_inventory2({item_const_full_name}, npc, {no_loot}, {wear}) # {comment or ""}')
+                        elif not item_const_full_name:
+                            self.lines_script.append(i_code+line)
+                        do_separate_line = True
+                        if wear:
+                            if "_armor" in wear:
+                                wear_armor = item_const_full_name
+            if not res:
+                self.lines_script.append(i_code+"# Not found! TODO ITEM")
+            self.lines_script.append(i_code)
 
         # check from animation: TODO
-        if wear_armor is None:
+        if not self.wears.get("toee.item_wear_armor"):
             self.lines_script.append(i_code)
             self.lines_script.append(i_code+'utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, False, toee.item_wear_armor) # default')
             self.lines_script.append(i_code+'utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, False, toee.item_wear_boots) # default')

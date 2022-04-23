@@ -24,3 +24,19 @@ with (
 )
 select * from s
 where Item = '00LEAT01'
+
+;with s as (
+select  CreFileName = substring(t.FilePath, 81, 100)
+, SlotCode, ItemTypeEval, ItemFileName
+from iwd2.cre t
+cross apply openjson(t.Content, '$.Items') 
+with (
+	SlotCode nvarchar(max) '$.SlotCode',
+	ItemTypeEval nvarchar(max) '$.ItemTypeEval',
+	ItemFileName nvarchar(max) '$.Item.Filename'
+) as j
+)
+select SlotCode, ItemTypeEval, [count] = count(*), CreFileName = min(CreFileName), ItemFileName = min(ItemFileName) from s 
+where ItemFileName is not null
+group by SlotCode, ItemTypeEval order by 1
+--where SlotCode = '00LEAT01'

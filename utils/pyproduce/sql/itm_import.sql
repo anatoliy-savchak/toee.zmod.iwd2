@@ -1,3 +1,6 @@
+truncate table iwd2.itm;
+go
+
 insert into iwd2.itm(FilePath, Content) select 'D:\Dev.Home\GitHub\anatoliy-savchak\toee.zmod.iwd2\resources\iwd2_exp\Items\001D10C.json', BulkColumn from openrowset(bulk 'D:\Dev.Home\GitHub\anatoliy-savchak\toee.zmod.iwd2\resources\iwd2_exp\Items\001D10C.json', single_clob) as Contents;
 go
 insert into iwd2.itm(FilePath, Content) select 'D:\Dev.Home\GitHub\anatoliy-savchak\toee.zmod.iwd2\resources\iwd2_exp\Items\001D10P.json', BulkColumn from openrowset(bulk 'D:\Dev.Home\GitHub\anatoliy-savchak\toee.zmod.iwd2\resources\iwd2_exp\Items\001D10P.json', single_clob) as Contents;

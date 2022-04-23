@@ -128,7 +128,9 @@ class Ctrl10HEDRON(ctrl_behaviour.CtrlBehaviourAI): # 10HEDRON
 		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_DAGGER, npc, False, None) # 
 		
 		# SLOT_QUICK2: Lynx Eye Gem(Gems) at 00GEM02
+		# Not found!!
 		# SLOT_QUICK3: Bottle of Wine(Drink) at 00MISC08
+		# Not found!!
 		return
 
 class Ctrl10ELDGUL(ctrl_behaviour.CtrlBehaviourAI): # 10ELDGUL 
@@ -228,6 +230,7 @@ class Ctrl10ELDGUL(ctrl_behaviour.CtrlBehaviourAI): # 10ELDGUL
 		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_CLUB, npc, False, None) # 
 		
 		# SLOT_QUICK2: Gold(Gold) at MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0)
 		
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, False, toee.item_wear_armor) # default
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, False, toee.item_wear_boots) # default

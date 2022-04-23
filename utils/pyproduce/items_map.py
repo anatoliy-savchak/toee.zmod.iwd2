@@ -1,6 +1,6 @@
-def item_to_proto_name(item_file_name: str, item_type: str, slot_name: str, item_name: str) -> tuple:
+def item_to_proto_name(item_file_name: str, item_type: str, slot_name: str, item_name: str, item_entry: dict) -> tuple:
     # returns array of Temple items:
-    # (item_const_full_name, wear, comment)
+    # (item_const_full_name, wear, comment, line)
 
     #fn = item_file_name.lower()
     #sname = slot_name.lower()
@@ -41,6 +41,10 @@ def item_to_proto_name(item_file_name: str, item_type: str, slot_name: str, item
         do_default = True
         if do_default:
             result = (("const_proto_weapon.PROTO_WEAPON_CLUB", slot, None), )
+    elif item_type == "Gold":
+        # TODO verify!!
+        platinum, gold, silver, copper = 0, int(item_entry["Item"]["Charges1"]), int(item_entry["Item"]["Charges2"]), int(item_entry["Item"]["Charges3"])
+        result = ((None, None, None, f"utils_item.item_money_create_in_inventory(npc, {platinum}, {gold}, {silver}, {copper})"), )
 
 
     return result

@@ -9,7 +9,7 @@ i_def = "\t"
 i_code = "\t\t"
 
 class ProduceNPC:
-    def __init__(self, exported_dir: pyproduce.InfinityExportedDir) -> None:
+    def __init__(self, exported_dir: pyproduce.InfinityExportedDir, out_file_path: str = None) -> None:
         self.exported_dir = exported_dir
         self.elements = dict()
 
@@ -18,8 +18,12 @@ class ProduceNPC:
         self.copy_speaches = list()
         self.current_crename = ""
         self.cre = dict()
+        self.out_file_path = out_file_path
 
         self.setup_elements()
+
+        if self.out_file_path:
+            self.load_template(self.out_file_path)
         return
 
     def setup_elements(self):
@@ -42,12 +46,13 @@ class ProduceNPC:
             self.lines_script = f.readlines()
         return
 
-    def save(self, file_name):
+    def save(self, file_name = None):
+        if not file_name: file_name = self.out_file_path
         with open(file_name, 'w') as f:
             for line in self.lines_script:
                 #aline = line
                 f.write(line + ("\n" if not "\n" in line else ""))
-        return
+        return self
     
     def produce_npc(self, cre_name):
         self.read_cre(cre_name)
@@ -65,7 +70,7 @@ class ProduceNPC:
         self.produce_npc_appearance()
         self.produce_npc_char()
         self.setup_gear()
-        return
+        return self
 
     def produce_npc_baseproto(self):
         proto = "const_proto_npc.PROTO_NPC_MAN"
@@ -698,20 +703,29 @@ class ProduceNPC:
             item_name = item["ItemNameEval"]
             droppable = boolean(item["ItemDroppableEval"])
             no_loot = not droppable
-            instr = items_map.item_to_proto_name(item_file_name, item_type, slot_name, item_name)
+            instr = items_map.item_to_proto_name(item_file_name, item_type, slot_name, item_name, item)
 
             if do_separate_line: self.lines_script.append(i_code)
             do_separate_line = False
 
             self.lines_script.append(i_code+f'# {slot_name}: {item_name}({item_type}) at {item_file_name}')
             if not instr is None:
-                for item_const_full_name, wear, comment in instr:
-                    if not item_const_full_name: continue
-                    self.lines_script.append(i_code+f'utils_item.item_create_in_inventory2({item_const_full_name}, npc, {no_loot}, {wear}) # {comment or ""}')
+                for entry in instr:
+                    if not entry: continue
+                    item_const_full_name = entry[0]
+                    wear = entry[1] if len(entry )> 1 else None
+                    comment = entry[2] if len(entry) > 2 else None
+                    line = entry[3] if len(entry) > 3 else None
+                    if item_const_full_name:
+                        self.lines_script.append(i_code+f'utils_item.item_create_in_inventory2({item_const_full_name}, npc, {no_loot}, {wear}) # {comment or ""}')
+                    elif not item_const_full_name:
+                        self.lines_script.append(i_code+line)
                     do_separate_line = True
                     if wear:
                         if "_armor" in wear:
                             wear_armor = item_const_full_name
+            else:
+                self.lines_script.append(i_code+"# Not found!!")
 
         # check from animation: TODO
         if wear_armor is None:

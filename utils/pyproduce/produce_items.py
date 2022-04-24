@@ -137,7 +137,7 @@ class ItemBase(object):
 
         wear = self.get_wear()
         self.parent.lines_script.append(self.parent.current_indent
-            + f'utils_item.item_create_in_inventory2({item_const_full_name}, npc, {self.no_loot}, {wear}) # {self.item_name} ({self.item_file_name}) at {self.slot_name} {"OK" if self.item_file_name in self.get_item_codes() else "default TODO ITEM" if self.is_default() else "base! TODO ITEM"}')
+            + f'utils_item.item_create_in_inventory2({item_const_full_name}, npc, no_loot = {self.no_loot}, wear_on = {wear}) # {self.item_name} ({self.item_file_name}) at {self.slot_name} {"OK" if self.item_file_name in self.get_item_codes() else "default TODO ITEM" if self.is_default() else "base! TODO ITEM"}')
 
         self.log_item(item_const_full_name, wear)
         return True
@@ -277,7 +277,7 @@ class ItemArmors(ItemBase):
                 if not already:
                     self.parent.lines_script.append(self.parent.current_indent
                         + f'utils_item.item_create_in_inventory2({boots_proto_const}'
-                        + f', npc, {self.no_loot}, toee.item_wear_boots) # boots for {self.item_name} ({self.item_file_name}) {"OK" if self.item_file_name in self.get_item_codes() else "default"}')
+                        + f', npc, no_loot = {self.no_loot}, wear_on = toee.item_wear_boots) # boots for {self.item_name} ({self.item_file_name}) {"OK" if self.item_file_name in self.get_item_codes() else "default"}')
                     
                     self.log_item(boots_proto_const, "toee.item_wear_boots")
 

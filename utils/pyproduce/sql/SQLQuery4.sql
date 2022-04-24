@@ -1,5 +1,8 @@
 begin tran
 
+truncate table iwd2.cre;
+go
+
 insert into iwd2.cre(FilePath, Content) select 'D:\Dev.Home\GitHub\anatoliy-savchak\toee.zmod.iwd2\resources\iwd2_exp\Creatures\00BUG.json', BulkColumn from openrowset(bulk 'D:\Dev.Home\GitHub\anatoliy-savchak\toee.zmod.iwd2\resources\iwd2_exp\Creatures\00BUG.json', single_clob) as Contents;
 go
 insert into iwd2.cre(FilePath, Content) select 'D:\Dev.Home\GitHub\anatoliy-savchak\toee.zmod.iwd2\resources\iwd2_exp\Creatures\00CHI.json', BulkColumn from openrowset(bulk 'D:\Dev.Home\GitHub\anatoliy-savchak\toee.zmod.iwd2\resources\iwd2_exp\Creatures\00CHI.json', single_clob) as Contents;

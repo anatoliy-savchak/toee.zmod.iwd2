@@ -2,9 +2,11 @@ import os
 import pyproduce
 import produce_npc
 import produce_ar
+import produce_dialog
 
 npc_template_file = 'data/py06616_template.py'
 out_npcs_file = '../../src/zmod_iwd2_core/scr/py01001_targos_docks_encounters.py'
+out_dialog_file = '../../src/zmod_iwd2_core/dlg/01001_targos_docks_encounters.dlg'
 out_daemon_file = '../../src/zmod_iwd2_core/scr/py01000_targos_docks_daemon.py'
 exported_dir = pyproduce.InfinityExportedDir('../../resources/iwd2_exp')
 exported_dir.load_toee_class_specs('../../../TemplePlus/tpdatasrc/tpgamefiles/rules/char_class')
@@ -17,22 +19,27 @@ with open(out_npcs_file, 'w') as f:
     with open(npc_template_file, 'r') as fi:
         f.writelines(fi.readlines())
 
+dialog_file = produce_dialog.DialogFile(out_dialog_file)
+
+def produce_cre(name):
+    global exported_dir, out_npcs_file, dialog_file
+    return produce_npc.ProduceNPC(exported_dir, out_npcs_file, dialog_file).produce_npc(name).save()
 
 if True:
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10HEDRON').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10ELDGUL').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10SCREED').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10REIG').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10JON').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10BROGAN').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10JORUN').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10MALED').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10SOLDRD').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10GOB').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10GOBD').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10GOBAR').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10GOBARD').save()
-    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10SAILRD').save()
+    produce_cre('10HEDRON')
+    produce_cre('10ELDGUL')
+    produce_cre('10SCREED')
+    produce_cre('10REIG')
+    produce_cre('10JON')
+    produce_cre('10BROGAN')
+    produce_cre('10JORUN')
+    produce_cre('10MALED')
+    produce_cre('10SOLDRD')
+    produce_cre('10GOB')
+    produce_cre('10GOBD')
+    produce_cre('10GOBAR')
+    produce_cre('10GOBARD')
+    produce_cre('10SAILRD')
     
 
 if True:

@@ -86,3 +86,8 @@ class InfinityExportedDir:
                 return name
 
         return
+
+    def load_cre_dialog(self, dialog_name):
+        fn = os.path.join(self.dir, 'Dialogs', dialog_name + '.json')
+        result = self.read_file(fn)
+        return result

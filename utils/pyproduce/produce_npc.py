@@ -5,12 +5,13 @@ from xmlrpc.client import boolean
 import pyproduce
 import produce_items
 import produce_anim
+import produce_dialog
 
 i_def = "\t"
 i_code = "\t\t"
 
 class ProduceNPC:
-    def __init__(self, exported_dir: pyproduce.InfinityExportedDir, out_file_path: str = None) -> None:
+    def __init__(self, exported_dir: pyproduce.InfinityExportedDir, out_file_path: str, dialog_file) -> None:
         self.exported_dir = exported_dir
         self.elements = dict()
 
@@ -24,11 +25,24 @@ class ProduceNPC:
         self.wears = dict()
         self.items = list()
         self.anim = None
+        self.dialog_file = dialog_file
+        self.dialog = None
 
         self.setup_elements()
 
         if self.out_file_path:
             self.load_template(self.out_file_path)
+        return
+
+    def _add_line(self, line):
+        self.lines_script.append(self.current_indent + line)
+        return
+
+    def _indent(self, forward: bool):
+        if not forward:
+            self.current_indent = self.current_indent[:-1]
+        else:
+            self.current_indent += "\t"
         return
 
     def setup_elements(self):
@@ -57,6 +71,8 @@ class ProduceNPC:
             for line in self.lines_script:
                 #aline = line
                 f.write(line + ("\n" if not "\n" in line else ""))
+        if self.dialog:
+            self.dialog.save()
         return self
     
     def produce_npc(self, cre_name):
@@ -75,6 +91,7 @@ class ProduceNPC:
         self.produce_npc_appearance()
         self.produce_npc_char()
         self.setup_gear()
+        self.produce_dialog()
         return self
 
     def produce_npc_baseproto(self):
@@ -130,6 +147,9 @@ class ProduceNPC:
     
     def produce_npc_char(self):
         self.lines_script.append(i_def + "def setup_char(self, npc):")
+        if (dialog_name := self.cre["DialogFile"]) and (dialog_name != "None"):
+            self._add_line("npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID")
+            self._add_line("")
 
         if True:
             Strength = int(self.cre["Strength"])
@@ -781,4 +801,13 @@ class ProduceNPC:
 
         self.lines_script.append(i_code+"return")
         self.lines_script.append("")
+        return
+
+    def produce_dialog(self):
+        dialog_name = self.cre["DialogFile"]
+        if not dialog_name or dialog_name == "None":
+            return
+        dialog = self.exported_dir.load_cre_dialog(dialog_name)
+        self.dialog = produce_dialog.ProduceNPCDialog(dialog_name, self, dialog, self.dialog_file)
+        self.dialog.produce()
         return

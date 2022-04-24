@@ -24,7 +24,7 @@ with (
 ) as j
 )
 select * from s
-where Item = '00HAMT01'
+where Item = '001D4S'
 
 ;with s as (
 select  CreFileName = substring(t.FilePath, 81, 100)

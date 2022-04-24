@@ -114,6 +114,9 @@
     <Compile Include="zmod_iwd2_core\scr\factions_zmod.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="zmod_iwd2_core\scr\inf_scripts.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="zmod_iwd2_core\scr\module_cheats.py" />
     <Compile Include="zmod_iwd2_core\scr\module_consts.py" />
     <Compile Include="zmod_iwd2_core\scr\module_globals.py" />
@@ -135,6 +138,7 @@
     <Compile Include="zmod_iwd2_core\scr\py06111_sneak.py" />
     <Compile Include="zmod_iwd2_core\scr\py06122_cormyr_prompter.py" />
     <Compile Include="zmod_iwd2_core\scr\py06214_doors_autodestroy.py" />
+    <Compile Include="zmod_iwd2_core\scr\py14714_keep_commander.py" />
     <Compile Include="zmod_iwd2_core\scr\random_encounter.py" />
     <Compile Include="zmod_iwd2_core\scr\Spell076 - Contagion.py" />
     <Compile Include="zmod_iwd2_core\scr\Spell090 - Cure Light Wounds.py" />

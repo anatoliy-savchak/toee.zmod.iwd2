@@ -41,6 +41,8 @@ class Ctrl10HEDRON(ctrl_behaviour.CtrlBehaviourAI): # 10HEDRON
 		return
 
 	def setup_char(self, npc):
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
+		
 		utils_npc.npc_abilities_set(npc, [13, 16, 12, 13, 14, 12])
 		
 		# class levels: 6
@@ -116,6 +118,53 @@ class Ctrl10HEDRON(ctrl_behaviour.CtrlBehaviourAI): # 10HEDRON
 		
 		return
 
+	def dialog(self, attachee, triggerer):
+		assert isinstance(attachee, toee.PyObjHandle)
+		assert isinstance(triggerer, toee.PyObjHandle)
+		
+		attachee.turn_towards(triggerer)
+		
+		line_id = -1
+		# NumTimesTalkedTo(0)
+		if not attachee.has_met(triggerer):
+			line_id = 10 # Well, here ye are, straight from Bremen to the scenic shore of Targos herself.  Now that ye be seeing the skeleton of the town ye'll be defendin', ye sure ye don't want me to take ye back?
+		
+		# GlobalGT("Reig_Quest", "GLOBAL", 0)
+		# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+		# Global("Hedron_Know_Attack", "GLOBAL", 0)
+		if ies.GlobalGT("Reig_Quest", "GLOBAL", 0) \
+			and ies.Global("Dock_Goblin_Quest", "GLOBAL", 0) \
+			and ies.Global("Hedron_Know_Attack", "GLOBAL", 0):
+			line_id = 20 # I was hoping ye might come back - what's the word from the docks?  Not even Magdar's come out to shake me down yet, and he usually sends some half-drunk stumblers to help unload my supplies.
+		
+		# GlobalGT("Reig_Quest", "GLOBAL", 0)
+		# GlobalLT("Hedron_Know_Attack", "GLOBAL", 2)
+		if ies.GlobalGT("Reig_Quest", "GLOBAL", 0) \
+			and ies.GlobalLT("Hedron_Know_Attack", "GLOBAL", 2):
+			line_id = 30 # What's going on along the shore?  I heard something about an attack on the docks, but no one can tell me anything for certain.
+		
+		# GlobalGT("Hedron_Know_Attack", "GLOBAL", 0)
+		# GlobalGT("Hedron_Quest", "GLOBAL", 0)
+		# GlobalLT("Hedron_Quest", "GLOBAL", 4)
+		if ies.GlobalGT("Hedron_Know_Attack", "GLOBAL", 0) \
+			and ies.GlobalGT("Hedron_Quest", "GLOBAL", 0) \
+			and ies.GlobalLT("Hedron_Quest", "GLOBAL", 4):
+			line_id = 40 # You're back - any word of me Ma?
+		
+		# NumTimesTalkedToGT(0)
+		# Global("Reig_Quest", "GLOBAL", 0)
+		if attachee.has_met(triggerer) \
+			and ies.Global("Reig_Quest", "GLOBAL", 0):
+			line_id = 50 # Aye, look who's come back aboard - sick of Targos already, are ye?
+		
+		# Global("Hedron_Know_Attack", "GLOBAL", 2)
+		if ies.Global("Hedron_Know_Attack", "GLOBAL", 2):
+			line_id = 60 # Aye, look who's come back aboard - the great goblin slayers of Targos.  What can I do for ye?
+		
+		if line_id >= 0:
+			triggerer.begin_dialog(attachee, line_id)
+		return toee.SKIP_DEFAULT
+	
 class Ctrl10ELDGUL(ctrl_behaviour.CtrlBehaviourAI): # 10ELDGUL 
 	@classmethod
 	def get_name(cls): "10Eldgul"
@@ -138,6 +187,8 @@ class Ctrl10ELDGUL(ctrl_behaviour.CtrlBehaviourAI): # 10ELDGUL
 		return
 
 	def setup_char(self, npc):
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
+		
 		utils_npc.npc_abilities_set(npc, [9, 15, 9, 9, 9, 9])
 		
 		# class levels: 1
@@ -200,6 +251,29 @@ class Ctrl10ELDGUL(ctrl_behaviour.CtrlBehaviourAI): # 10ELDGUL
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 
+	def dialog(self, attachee, triggerer):
+		assert isinstance(attachee, toee.PyObjHandle)
+		assert isinstance(triggerer, toee.PyObjHandle)
+		
+		attachee.turn_towards(triggerer)
+		
+		line_id = -1
+		# True()
+		if ies.True():
+			line_id = 70 # Can't stop t'bandy words with ye; Hedron be findin' *more* work for me after I finish this bit.  Fare thee well.
+		
+		# GlobalGT("Reig_Quest", "GLOBAL", 0)
+		if ies.GlobalGT("Reig_Quest", "GLOBAL", 0):
+			line_id = 80 # Is it true?  I hear th'town's bein' attacked by the goblins!
+		
+		# Global("Dock_Goblin_Quest", "GLOBAL", 1)
+		if ies.Global("Dock_Goblin_Quest", "GLOBAL", 1):
+			line_id = 90 # Caught word 'bout the battle - looks like ye pulled through - good for ye.
+		
+		if line_id >= 0:
+			triggerer.begin_dialog(attachee, line_id)
+		return toee.SKIP_DEFAULT
+	
 class Ctrl10SCREED(ctrl_behaviour.CtrlBehaviourAI): # 10SCREED 
 	@classmethod
 	def get_name(cls): "10Screed"
@@ -222,6 +296,8 @@ class Ctrl10SCREED(ctrl_behaviour.CtrlBehaviourAI): # 10SCREED
 		return
 
 	def setup_char(self, npc):
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
+		
 		utils_npc.npc_abilities_set(npc, [12, 12, 9, 9, 9, 9])
 		
 		# class levels: 1
@@ -284,6 +360,29 @@ class Ctrl10SCREED(ctrl_behaviour.CtrlBehaviourAI): # 10SCREED
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 
+	def dialog(self, attachee, triggerer):
+		assert isinstance(attachee, toee.PyObjHandle)
+		assert isinstance(triggerer, toee.PyObjHandle)
+		
+		attachee.turn_towards(triggerer)
+		
+		line_id = -1
+		# True()
+		if ies.True():
+			line_id = 100 # Was good havin' ye with us, even for only a short time.  Hope fortune's wind fills yer sails, friend.
+		
+		# GlobalGT("Reig_Quest", "GLOBAL", 0)
+		if ies.GlobalGT("Reig_Quest", "GLOBAL", 0):
+			line_id = 110 # I hear the town's being attacked again - the Wicked Wench's all ready to set sail if ye need to fall back.
+		
+		# Global("Dock_Goblin_Quest", "GLOBAL", 1)
+		if ies.Global("Dock_Goblin_Quest", "GLOBAL", 1):
+			line_id = 120 # Heard th' fightin' up along the docks was fierce - drove those goblins back, did ye?
+		
+		if line_id >= 0:
+			triggerer.begin_dialog(attachee, line_id)
+		return toee.SKIP_DEFAULT
+	
 class Ctrl10REIG(ctrl_behaviour.CtrlBehaviourAI): # 10REIG 
 	@classmethod
 	def get_name(cls): "10Reig"
@@ -306,6 +405,8 @@ class Ctrl10REIG(ctrl_behaviour.CtrlBehaviourAI): # 10REIG
 		return
 
 	def setup_char(self, npc):
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
+		
 		utils_npc.npc_abilities_set(npc, [12, 11, 10, 9, 9, 9])
 		
 		# class levels: 1
@@ -370,6 +471,47 @@ class Ctrl10REIG(ctrl_behaviour.CtrlBehaviourAI): # 10REIG
 		
 		return
 
+	def dialog(self, attachee, triggerer):
+		assert isinstance(attachee, toee.PyObjHandle)
+		assert isinstance(triggerer, toee.PyObjHandle)
+		
+		attachee.turn_towards(triggerer)
+		
+		line_id = -1
+		# NumTimesTalkedTo(0)
+		if not attachee.has_met(triggerer):
+			line_id = 130 # Halt!  Who goes there?  Step forward and identify yourself!
+		
+		# Global("Reig_Quest", "GLOBAL", 1)
+		if ies.Global("Reig_Quest", "GLOBAL", 1):
+			line_id = 140 # Did you find Magdar?  My damned arm's getting worse, and I need that potion he's got.
+		
+		# HPGT(Myself, 3)
+		# Global("Reig_Quest", "GLOBAL", 1)
+		# Global("Reig_Heal_Priest", "GLOBAL", 0)
+		if ies.HPGT(Myself, 3) \
+			and ies.Global("Reig_Quest", "GLOBAL", 1) \
+			and ies.Global("Reig_Heal_Priest", "GLOBAL", 0):
+			line_id = 150 # My arm's better, thanks for your help.  Looks like you're praying to the right gods.
+		
+		# Global("Reig_Quest", "GLOBAL", 1)
+		# Global("Reig_Heal_Priest", "GLOBAL", 1)
+		if ies.Global("Reig_Quest", "GLOBAL", 1) \
+			and ies.Global("Reig_Heal_Priest", "GLOBAL", 1):
+			line_id = 160 # I could still use that healing draught from Magdar if you can find him.  Hope the goblins haven't got him yet.
+		
+		# Global("Reig_Quest", "GLOBAL", 2)
+		if ies.Global("Reig_Quest", "GLOBAL", 2):
+			line_id = 170 # Looks like you sailed into Targos at the right time.  If you can help us hunt down any of those goblins, we'd welcome your help.
+		
+		# Global("Told_Reig", "GLOBAL", 1)
+		if ies.Global("Told_Reig", "GLOBAL", 1):
+			line_id = 180 # Now that the raiders have been taken care of, we should be all right.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.
+		
+		if line_id >= 0:
+			triggerer.begin_dialog(attachee, line_id)
+		return toee.SKIP_DEFAULT
+	
 class Ctrl10JON(ctrl_behaviour.CtrlBehaviourAI): # 10JON 
 	@classmethod
 	def get_name(cls): "10Jon"
@@ -392,6 +534,8 @@ class Ctrl10JON(ctrl_behaviour.CtrlBehaviourAI): # 10JON
 		return
 
 	def setup_char(self, npc):
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
+		
 		utils_npc.npc_abilities_set(npc, [12, 11, 12, 9, 9, 9])
 		
 		# class levels: 1
@@ -462,6 +606,25 @@ class Ctrl10JON(ctrl_behaviour.CtrlBehaviourAI): # 10JON
 		
 		return
 
+	def dialog(self, attachee, triggerer):
+		assert isinstance(attachee, toee.PyObjHandle)
+		assert isinstance(triggerer, toee.PyObjHandle)
+		
+		attachee.turn_towards(triggerer)
+		
+		line_id = -1
+		# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+		if ies.Global("Dock_Goblin_Quest", "GLOBAL", 0):
+			line_id = 190 # No idea where those goblins came from - one moment we're stepping out of the Salty Dog, and suddenly there's a mess of them running through town.  We sounded the alarm, but...
+		
+		# Global("Dock_Goblin_Quest", "GLOBAL", 1)
+		if ies.Global("Dock_Goblin_Quest", "GLOBAL", 1):
+			line_id = 200 # Tymora must have been smiling on us when you sailed into town.  Without you to drive back the goblins, the docks might have been burning now, and Targos overrun.
+		
+		if line_id >= 0:
+			triggerer.begin_dialog(attachee, line_id)
+		return toee.SKIP_DEFAULT
+	
 class Ctrl10BROGAN(ctrl_behaviour.CtrlBehaviourAI): # 10BROGAN 
 	@classmethod
 	def get_name(cls): "10Brogan"
@@ -484,6 +647,8 @@ class Ctrl10BROGAN(ctrl_behaviour.CtrlBehaviourAI): # 10BROGAN
 		return
 
 	def setup_char(self, npc):
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
+		
 		utils_npc.npc_abilities_set(npc, [12, 11, 12, 9, 9, 9])
 		
 		# class levels: 1
@@ -554,6 +719,63 @@ class Ctrl10BROGAN(ctrl_behaviour.CtrlBehaviourAI): # 10BROGAN
 		
 		return
 
+	def dialog(self, attachee, triggerer):
+		assert isinstance(attachee, toee.PyObjHandle)
+		assert isinstance(triggerer, toee.PyObjHandle)
+		
+		attachee.turn_towards(triggerer)
+		
+		line_id = -1
+		# True()
+		if ies.True():
+			line_id = 210 # Halt!  Identify yourself!
+		
+		# GlobalGT("Iron_Collar_Quest", "GLOBAL", 0)
+		# GlobalLT("Iron_Collar_Quest", "GLOBAL", 3)
+		# Global("Brogan_Quest", "GLOBAL", 0)
+		# Global("AR1002_Visited", "GLOBAL", 0)
+		if ies.GlobalGT("Iron_Collar_Quest", "GLOBAL", 0) \
+			and ies.GlobalLT("Iron_Collar_Quest", "GLOBAL", 3) \
+			and ies.Global("Brogan_Quest", "GLOBAL", 0) \
+			and ies.Global("AR1002_Visited", "GLOBAL", 0):
+			line_id = 220 # You're back!  Did you bring the Iron Collar Band with you?
+		
+		# Global("Brogan_Quest", "GLOBAL", 1)
+		if ies.Global("Brogan_Quest", "GLOBAL", 1):
+			line_id = 230 # Did you take out those goblins yet?  Time's running short.
+		
+		# Global("Brogan_Quest", "GLOBAL", 1)
+		# Global("AR1002_Visited", "GLOBAL", 1)
+		# Global("AR1007_Visited", "GLOBAL", 1)
+		if ies.Global("Brogan_Quest", "GLOBAL", 1) \
+			and ies.Global("AR1002_Visited", "GLOBAL", 1) \
+			and ies.Global("AR1007_Visited", "GLOBAL", 1):
+			line_id = 240 # Where in Tempus' name have you *been?*  I heard the fighting, and then everything went silent.  Thought you were dead.
+		
+		# Global("AR1002_Visited", "GLOBAL", 1)
+		# Global("Know_Brogan", "GLOBAL", 0)
+		if ies.Global("AR1002_Visited", "GLOBAL", 1) \
+			and ies.Global("Know_Brogan", "GLOBAL", 0):
+			line_id = 250 # Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!
+		
+		# Global("Brogan_Leave", "GLOBAL", 1)
+		if ies.Global("Brogan_Leave", "GLOBAL", 1):
+			line_id = 260 # I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.
+		
+		# GlobalGT("Iron_Collar_Quest", "GLOBAL", 0)
+		# GlobalLT("Iron_Collar_Quest", "GLOBAL", 3)
+		# Global("Brogan_Quest", "GLOBAL", 0)
+		# Global("AR1002_Visited", "GLOBAL", 1)
+		if ies.GlobalGT("Iron_Collar_Quest", "GLOBAL", 0) \
+			and ies.GlobalLT("Iron_Collar_Quest", "GLOBAL", 3) \
+			and ies.Global("Brogan_Quest", "GLOBAL", 0) \
+			and ies.Global("AR1002_Visited", "GLOBAL", 1):
+			line_id = 270 # Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!
+		
+		if line_id >= 0:
+			triggerer.begin_dialog(attachee, line_id)
+		return toee.SKIP_DEFAULT
+	
 class Ctrl10JORUN(ctrl_behaviour.CtrlBehaviourAI): # 10JORUN 
 	@classmethod
 	def get_name(cls): "10Jorun"
@@ -576,6 +798,8 @@ class Ctrl10JORUN(ctrl_behaviour.CtrlBehaviourAI): # 10JORUN
 		return
 
 	def setup_char(self, npc):
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
+		
 		utils_npc.npc_abilities_set(npc, [13, 12, 16, 15, 12, 9])
 		
 		# class levels: 3
@@ -640,6 +864,85 @@ class Ctrl10JORUN(ctrl_behaviour.CtrlBehaviourAI): # 10JORUN
 		
 		return
 
+	def dialog(self, attachee, triggerer):
+		assert isinstance(attachee, toee.PyObjHandle)
+		assert isinstance(triggerer, toee.PyObjHandle)
+		
+		attachee.turn_towards(triggerer)
+		
+		line_id = -1
+		# Global("Know_Jorun", "GLOBAL", 0)
+		# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+		if ies.Global("Know_Jorun", "GLOBAL", 0) \
+			and ies.Global("Dock_Goblin_Quest", "GLOBAL", 0):
+			line_id = 280 # Damnable goblins... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye stand with Targos?
+		
+		# Global("Know_Jorun", "GLOBAL", 1)
+		# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+		if ies.Global("Know_Jorun", "GLOBAL", 1) \
+			and ies.Global("Dock_Goblin_Quest", "GLOBAL", 0):
+			line_id = 290 # Have ye spilled any more goblin blood?  Ye better not be greedy - make ye sure ye save a handful for me.
+		
+		# Global("Know_Jorun", "GLOBAL", 0)
+		# Global("Dock_Goblin_Quest", "GLOBAL", 1)
+		if ies.Global("Know_Jorun", "GLOBAL", 0) \
+			and ies.Global("Dock_Goblin_Quest", "GLOBAL", 1):
+			line_id = 300 # Well, now, something I can help ye with?  I'm not doing business with the attacks an' all, and there's not much call for building ships as much as taking them down.
+		
+		# Global("Know_Jorun", "GLOBAL", 1)
+		# Global("Dock_Goblin_Quest", "GLOBAL", 1)
+		if ies.Global("Know_Jorun", "GLOBAL", 1) \
+			and ies.Global("Dock_Goblin_Quest", "GLOBAL", 1):
+			line_id = 310 # More than once ye've crossed my path; if ye plan on makin' a habit of it, the least ye could do is bring a winecask with ye... or two. Somethin' I can do for ye?
+		
+		# NumTimesTalkedTo(0)
+		# Subrace(Protagonist, Dwarf_Gray)
+		# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+		if not attachee.has_met(triggerer) \
+			and ies.Subrace(Protagonist, Dwarf_Gray) \
+			and ies.Global("Dock_Goblin_Quest", "GLOBAL", 0):
+			line_id = 320 # Eh?!  A duergar in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.
+		
+		# NumTimesTalkedTo(0)
+		# Subrace(Protagonist, Elf_Drow)
+		# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+		if not attachee.has_met(triggerer) \
+			and ies.Subrace(Protagonist, Elf_Drow) \
+			and ies.Global("Dock_Goblin_Quest", "GLOBAL", 0):
+			line_id = 330 # Eh?!  A drow in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.
+		
+		# NumTimesTalkedTo(0)
+		# Subrace(Protagonist, Gnome_Deep)
+		# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+		if not attachee.has_met(triggerer) \
+			and ies.Subrace(Protagonist, Gnome_Deep) \
+			and ies.Global("Dock_Goblin_Quest", "GLOBAL", 0):
+			line_id = 340 # Damn me eyes... are ye a deep gnome?  What in the hells are ye doing in Targos?
+		
+		# NumTimesTalkedTo(0)Subrace(Protagonist, Dwarf_Gray)Global("Dock_Goblin_Quest", "GLOBAL", 1)
+		if ies.NumTimesTalkedTo(0)Subrace(Protagonist, Dwarf_Gray)Global("Dock_Goblin_Quest", "GLOBAL", 1):
+			line_id = 350 # I heard talk of a duergar around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?
+		
+		# NumTimesTalkedTo(0)Subrace(Protagonist, Elf_Drow)Global("Dock_Goblin_Quest", "GLOBAL", 1)
+		if ies.NumTimesTalkedTo(0)Subrace(Protagonist, Elf_Drow)Global("Dock_Goblin_Quest", "GLOBAL", 1):
+			line_id = 360 # I heard talk of a drow around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?
+		
+		# NumTimesTalkedTo(0)Subrace(Protagonist, Gnome_Deep)Global("Dock_Goblin_Quest", "GLOBAL", 1)
+		if ies.NumTimesTalkedTo(0)Subrace(Protagonist, Gnome_Deep)Global("Dock_Goblin_Quest", "GLOBAL", 1):
+			line_id = 370 # Damn me eyes... ye're the deep gnome everyone's going on about.  I was hoping ye might be crossing me path - something this ol' shipbuilder can help ye with? 
+		
+		# NumTimesTalkedTo(0)Race(Protagonist, Dwarf)Global("Dock_Goblin_Quest", "GLOBAL", 0)
+		if ies.NumTimesTalkedTo(0)Race(Protagonist, Dwarf)Global("Dock_Goblin_Quest", "GLOBAL", 0):
+			line_id = 380 # It's good to see another dwarf on the shore of Maer Dualdon especially with these damnable goblins about... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye come to add yer axe and hammer to Targos? 
+		
+		# NumTimesTalkedTo(0)Race(Protagonist, Dwarf)Global("Dock_Goblin_Quest", "GLOBAL", 0)
+		if ies.NumTimesTalkedTo(0)Race(Protagonist, Dwarf)Global("Dock_Goblin_Quest", "GLOBAL", 0):
+			line_id = 390 # Well, now, a dwarf is a sight for sore eyes in these windswept lands... especially one who can cleave goblins as well as ye can.  Something this ol' shipbuilder can help ye with?  
+		
+		if line_id >= 0:
+			triggerer.begin_dialog(attachee, line_id)
+		return toee.SKIP_DEFAULT
+	
 class Ctrl10MALED(ctrl_behaviour.CtrlBehaviourAI): # 10MALED 
 	@classmethod
 	def get_name(cls): "10MaleD"

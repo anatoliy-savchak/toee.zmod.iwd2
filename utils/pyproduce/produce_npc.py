@@ -93,6 +93,11 @@ class ProduceNPC:
                 proto = "const_proto_npc.PROTO_NPC_DWARF_MAN"
             else:
                 proto = "const_proto_npc.PROTO_NPC_DWARF_WOMAN"
+        elif race_name == "goblin":
+            if gander:
+                proto = "const_proto_npc.PROTO_NPC_GOBLIN"
+            else:
+                proto = "const_proto_npc.PROTO_NPC_GOBLIN"
         else:
             raise Exception(f"Unknown race: {race_name}({race})")
 
@@ -104,21 +109,19 @@ class ProduceNPC:
         return
 
     def produce_npc_appearance(self):
+        self.anim = produce_anim.AnimBase.process(self.cre, self)
+        if not self.anim:
+            raise Exception("No anim object!!")
+            
         self.lines_script.append(i_def + "def setup_appearance(self, npc):")
-        portrait_id = 8680 # none
-        portrait_comment_name = "none"
-        self.lines_script.append(i_code + f"npc.obj_set_int(toee.obj_f_critter_portrait, {portrait_id}) # {portrait_comment_name}");
 
         full_name = self.cre_get_full_name()
         if full_name:
             self.lines_script.append(i_code + f'utils_npc.npc_description_set_new(npc, "{full_name}")');
             self.lines_script.append(i_code)
 
-        self.anim = produce_anim.AnimBase.process(self.cre, self)
-        if self.anim:
-            self.anim.produce_hair()
-        else:
-            raise Exception("No anim object!!")
+        self.anim.produce_portrait()
+        self.anim.produce_hair()
 
         self.lines_script.append(i_code+"return")
         self.lines_script.append("")
@@ -164,8 +167,13 @@ class ProduceNPC:
         else:
             raise Exception("No Classes!")
 
-        self.lines_script.append(i_code)
+        items = self.cre["Items"]
+        for item in items:
+            if item_process := produce_items.ItemBase.pick(item, self):
+                item_process.process_char()
 
+        self.lines_script.append(i_code)
+        
         self.produce_alignment()
         self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_critter_experience, {int(self.cre["XPReward"])}) # XPReward')
         cr = int(self.cre["ChallangeRating"])
@@ -176,24 +184,24 @@ class ProduceNPC:
         self.produce_feats()
         self.produce_saves()
         self.produce_hp()
-
         self.produce_skills()
 
         self.lines_script.append(i_code+"return")
         self.lines_script.append("")
         return
 
+    def check_feat(self, feat_to_add, value_name, value):
+        if "proficiency" in feat_to_add:
+            classes_toee = self.elements.get("classes_toee")
+            if classes_toee:
+                for class_toee, level_count in classes_toee.items():
+                    if not level_count: continue
+                    if cname := self.exported_dir.toee_class_spec_has_prof(class_toee, feat_to_add):
+                        self.lines_script.append(i_code + f"# {value_name}: {value} => {feat_to_add} skip for {cname}")
+                        return True
+        return False
+
     def produce_feats(self):
-        def check_feat(feat_to_add, value_name, value):
-            if "proficiency" in feat_to_add:
-                classes_toee = self.elements.get("classes_toee")
-                if classes_toee:
-                    for class_toee, level_count in classes_toee.items():
-                        if not level_count: continue
-                        if cname := self.exported_dir.toee_class_spec_has_prof(class_toee, feat_to_add):
-                            self.lines_script.append(i_code + f"# {value_name}: {value} => {feat_to_add} skip for {cname}")
-                            return True
-            return False
 
         def feat_pro_add(value_name: str, levels: list):
             value = self.cre[value_name]
@@ -203,7 +211,7 @@ class ProduceNPC:
                 if not feat_to_addv: continue
 
                 if isinstance(feat_to_addv, str):
-                    if not check_feat(feat_to_addv, value_name, value):
+                    if not self.check_feat(feat_to_addv, value_name, value):
                         if not splitter_added:
                             splitter_added = True
                             self.lines_script.append(i_code)
@@ -212,7 +220,7 @@ class ProduceNPC:
                 else:
                     for feat_to_add in feat_to_addv:
                         if not feat_to_add: continue
-                        if check_feat(feat_to_add, value_name, value):
+                        if self.check_feat(feat_to_add, value_name, value):
                             continue
                         if not splitter_added:
                             splitter_added = True
@@ -229,7 +237,7 @@ class ProduceNPC:
                     feat_template = levels[level-1]
                     if not feat_template: continue
                     feat_to_add = feat_template + weapon
-                    if check_feat(feat_to_add, value_name, value):
+                    if self.check_feat(feat_to_add, value_name, value):
                         return
                     if not splitter_added:
                         splitter_added = True
@@ -625,6 +633,8 @@ class ProduceNPC:
                 raise Exception(f"Unknown feat: {feat}")
 
         if feat_to_add:
+            if self.check_feat(feat_to_add, ft, ""):
+                return
             if feat_to_add.startswith("feat_"):
                 self.lines_script.append(i_code+f"npc.feat_add(toee.{feat_to_add}) # {feat}")
             else:
@@ -755,30 +765,10 @@ class ProduceNPC:
 
             self.current_indent = i_code
             self.lines_script.append(i_code+f'# {slot_name}: {item_name}({item_type}) from {item_file_name}')
-            res = produce_items.ItemBase.process(item, self)
+            res = False
+            if item_process := produce_items.ItemBase.pick(item, self):
+                res = item_process.process_item()
 
-            if False:
-                instr = produce_items.item_to_proto_name(item_file_name, item_type, slot_name, item_name, item)
-
-                if do_separate_line: self.lines_script.append(i_code)
-                do_separate_line = False
-
-                self.lines_script.append(i_code+f'# {slot_name}: {item_name}({item_type}) at {item_file_name}')
-                if not instr is None:
-                    for entry in instr:
-                        if not entry: continue
-                        item_const_full_name = entry[0]
-                        wear = entry[1] if len(entry )> 1 else None
-                        comment = entry[2] if len(entry) > 2 else None
-                        line = entry[3] if len(entry) > 3 else None
-                        if item_const_full_name:
-                            self.lines_script.append(i_code+f'utils_item.item_create_in_inventory2({item_const_full_name}, npc, {no_loot}, {wear}) # {comment or ""}')
-                        elif not item_const_full_name:
-                            self.lines_script.append(i_code+line)
-                        do_separate_line = True
-                        if wear:
-                            if "_armor" in wear:
-                                wear_armor = item_const_full_name
             if not res:
                 self.lines_script.append(i_code+"# Not found! TODO ITEM")
             self.lines_script.append(i_code)

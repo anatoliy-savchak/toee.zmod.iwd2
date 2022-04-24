@@ -27,6 +27,11 @@ if True:
     pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10BROGAN').save()
     pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10JORUN').save()
     pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10MALED').save()
+    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10SOLDRD').save()
+    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10GOB').save()
+    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10GOBD').save()
+    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10GOBAR').save()
+    
 
 if True:
     daemon = produce_ar.ProduceDaemon(exported_dir, "AR1000")

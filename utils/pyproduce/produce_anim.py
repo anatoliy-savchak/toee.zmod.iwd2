@@ -24,23 +24,38 @@ class AnimBase(object):
         result = category_class(cre, parent)
         return result
 
+    def _add_line(self, line):
+        self.parent.lines_script.append(self.parent.current_indent + line)
+        return
+
     def produce_hair(self):
         return
 
     def produce_cloth(self):
         return
 
+    def produce_portrait(self):
+        portrait_id = 8680 # none
+        portrait_comment_name = "none"
+        self._portrait_print(portrait_id, portrait_comment_name)
+        return
+
+    def _portrait_print(self, portrait_id, portrait_comment_name):
+        self._add_line(f"npc.obj_set_int(toee.obj_f_critter_portrait, {portrait_id}) # {portrait_comment_name}")
+        return
+
     def get_major_color_name(self):
         name = ""
         return
 
+    @classmethod
+    def disallow_weapon(cls): return False
+
 class AnimHumanoid(AnimBase):
     def produce_hair(self):
-        indent = self.parent.current_indent
-        lines = self.parent.lines_script
-        lines.append(indent + "hairStyle = utils_npc.HairStyle.from_npc(npc)")
+        self._add_line("hairStyle = utils_npc.HairStyle.from_npc(npc)")
         style_const = self.get_hair_style_const()
-        lines.append(indent + f"hairStyle.style = {style_const}")
+        self._add_line(f"hairStyle.style = {style_const}")
 
         if True:
             color_const = "const_toee.hair_color_black"
@@ -62,8 +77,8 @@ class AnimHumanoid(AnimBase):
             elif hairColourIndex == 7: # Hair Lt Green
                 color_const = "const_toee.hair_color_blue"
 
-            lines.append(indent + f"hairStyle.color = {color_const} # HairColourIndex: {hairColourIndex}")
-        lines.append(indent + "hairStyle.update_npc(npc)")
+            self._add_line(f"hairStyle.color = {color_const} # HairColourIndex: {hairColourIndex}")
+        self._add_line("hairStyle.update_npc(npc)")
         return
 
     def get_hair_style_const(self): return "const_toee.hair_style_shorthair"
@@ -75,14 +90,12 @@ class AnimHumanoid(AnimBase):
             if armor_proto_const:
                 aname = armor_proto_const if not isinstance(armor_proto_const, tuple) else armor_proto_const[0]
                 acomment = "" if not isinstance(armor_proto_const, tuple) else armor_proto_const[1]
-                self.parent.lines_script.append(self.parent.current_indent
-                    + f'utils_item.item_create_in_inventory2({aname}, npc, no_loot = True, wear_on = toee.item_wear_armor) # {acomment}')
+                self._add_line(f'utils_item.item_create_in_inventory2({aname}, npc, no_loot = True, wear_on = toee.item_wear_armor) # {acomment}')
         
         worn_boots = self.parent.wears.get("toee.item_wear_boots")
         if not worn_boots:
             boots_proto_const = self.get_boots_proto_const()
-            self.parent.lines_script.append(self.parent.current_indent
-                + f'utils_item.item_create_in_inventory2({boots_proto_const}, npc, no_loot = True, wear_on = toee.item_wear_boots)')
+            self._add_line(f'utils_item.item_create_in_inventory2({boots_proto_const}, npc, no_loot = True, wear_on = toee.item_wear_boots)')
 
         return
 
@@ -199,3 +212,32 @@ class AnimDwarfFighterFemale(AnimDwarfFighter):
     def get_codes(cls): return ("FIGHTER_FEMALE_DWARF", )
 
     def get_hair_style_const(self): return "const_toee.hair_style_ponytail"
+
+class AnimGoblinoids(AnimHumanoid):
+    def produce_hair(self): return
+
+    def produce_cloth(self): return
+
+class AnimGoblin(AnimGoblinoids):
+
+    def produce_portrait(self):
+        # use default
+        return
+
+class AnimGoblinWithAxe(AnimGoblin):
+    @classmethod
+    def get_codes(cls): return ("Goblin_w_Axe", )
+
+    def produce_cloth(self):
+        self._add_line(f'utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: {self.anim_name}')
+        #DEBUG self._add_line('npc.obj_set_int(toee.obj_f_hp_damage, 100)')
+        return
+
+class AnimGoblinWithBow(AnimGoblin):
+    @classmethod
+    def get_codes(cls): return ("Goblin_w_Bow", )
+
+    def produce_cloth(self):
+        #self._add_line(f'utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: {self.anim_name}')
+        #DEBUG self._add_line('npc.obj_set_int(toee.obj_f_hp_damage, 100)')
+        return

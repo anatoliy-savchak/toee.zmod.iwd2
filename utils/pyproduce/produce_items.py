@@ -2,57 +2,6 @@
 import sys
 import inspect
 
-def item_to_proto_name(item_file_name: str, item_type: str, slot_name: str, item_name: str, item_entry: dict) -> tuple:
-    # returns array of Temple items:
-    # (item_const_full_name, wear, comment, line)
-
-    #fn = item_file_name.lower()
-    #sname = slot_name.lower()
-
-    result = None
-
-    slot = None
-    if slot_name[:11] == 'SLOT_WEAPON':
-        slot = "toee.item_wear_weapon_primary"
-        if slot_name[:11] == 'SLOT_WEAPON2':
-            slot = "toee.item_wear_weapon_secondary"
-
-    if item_type == 'LeatherArmor':
-        # Leather Armor 00CIARMA is not used
-        do_default = item_file_name in ('00CIARMB', '00LEAT01')
-        do_default = True
-            
-        if do_default:
-            if not slot_name == 'SLOT_ARMOR':
-                result = (("const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN", None, None), )
-            else:
-                result = (
-                    ("const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN", "toee.item_wear_armor", None),
-                    ("const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE", "toee.item_wear_boots", None)
-                )
-    elif item_type == "Spears":
-        do_default = item_file_name in ('00SPER01', )
-        do_default = True
-        if do_default:
-            result = (("const_proto_weapon.PROTO_WEAPON_SHORTSPEAR", slot, None), )
-    elif item_type == "Daggers":
-        do_default = item_file_name in ('00DAGG01', )
-        do_default = True
-        if do_default:
-            result = (("const_proto_weapon.PROTO_WEAPON_DAGGER", slot, None), )
-    elif item_type == "Club":
-        do_default = item_file_name in ('00CLUB01', )
-        do_default = True
-        if do_default:
-            result = (("const_proto_weapon.PROTO_WEAPON_CLUB", slot, None), )
-    elif item_type == "Gold":
-        # TODO verify!!
-        platinum, gold, silver, copper = 0, int(item_entry["Item"]["Charges1"]), int(item_entry["Item"]["Charges2"]), int(item_entry["Item"]["Charges3"])
-        result = ((None, None, None, f"utils_item.item_money_create_in_inventory(npc, {platinum}, {gold}, {silver}, {copper})"), )
-
-
-    return result
-
 class ItemBase(object):
     def __init__(self, item_entry: dict, parent):
         self.item_entry = item_entry
@@ -79,12 +28,12 @@ class ItemBase(object):
     def get_proto_const(cls): return None
 
     @staticmethod
-    def process(item_entry: dict, parent):
+    def pick(item_entry: dict, parent):
         item_type = item_entry["ItemTypeEval"]
 
         category_classes = [cls for name, cls in inspect.getmembers(sys.modules[__name__], inspect.isclass) if issubclass(cls, ItemBase) and cls.get_category() == item_type]
         if not category_classes:
-            return False
+            return None
 
         item_file_name = item_entry["Item"]["Filename"]
         # cls = None
@@ -96,11 +45,11 @@ class ItemBase(object):
         if not cls:
             cls = next((cls for cls in category_classes if cls.is_default()), None)
         if not cls:
-            return False
+            return None
 
-        result = cls(item_entry, parent).process_item()
+        result = cls(item_entry, parent)
         return result
-
+        
     def get_wear(self):
         wear = None
         if self.slot_name == 'SLOT_WEAPON1':
@@ -136,11 +85,14 @@ class ItemBase(object):
         if not item_const_full_name: return False
 
         wear = self.get_wear()
-        self.parent.lines_script.append(self.parent.current_indent
-            + f'utils_item.item_create_in_inventory2({item_const_full_name}, npc, no_loot = {self.no_loot}, wear_on = {wear}) # {self.item_name} ({self.item_file_name}) at {self.slot_name} {"OK" if self.item_file_name in self.get_item_codes() else "default TODO ITEM" if self.is_default() else "base! TODO ITEM"}')
+        self._add_line(self._get_item_create_prefix() + f'utils_item.item_create_in_inventory2({item_const_full_name}, npc, no_loot = {self.no_loot}, wear_on = {wear}) # {self.item_name} ({self.item_file_name}) at {self.slot_name} {"OK" if self.item_file_name in self.get_item_codes() else "default TODO ITEM" if self.is_default() else "base! TODO ITEM"}')
 
         self.log_item(item_const_full_name, wear)
         return True
+
+    def process_char(self):
+        return
+
 
     def log_item(self, item_const, wear):
         if item_const:
@@ -149,6 +101,12 @@ class ItemBase(object):
                 self.parent.wears[wear] = item_const
         return
 
+    def _add_line(self, line):
+        self.parent.lines_script.append(self.parent.current_indent + line)
+        return
+
+    def _get_item_create_prefix(self):
+        return ""
 
 ########## WEAPONS
 
@@ -258,6 +216,53 @@ class ItemWarhammer(ItemHammers):
     @classmethod
     def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_WARHAMMER"    
 
+########## WEAPONS / BOWS
+class ItemBows(ItemBase):
+    @classmethod
+    def get_category(cls): return "Bows"
+
+class ItemGoblinsShortbow(ItemBows):
+    @classmethod
+    def get_item_codes(cls): 
+        return ("00CWBOWK" # used by goblins
+            ,)
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_SHORTBOW"    
+
+    def _get_item_create_prefix(self): return "weapon = "
+
+    def process_item(self):
+        result = super().process_item()
+        if result:
+            self._add_line('weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d6-4").packed)')
+        return result 
+
+########## WEAPONS / ARROWS
+class ItemArrows(ItemBase):
+    @classmethod
+    def get_category(cls): return "Arrows"
+
+    def _get_item_create_prefix(self): return "quiver = "
+
+class ItemQuiver1(ItemArrows):
+    @classmethod
+    def get_item_codes(cls): 
+        return ("00AROW01" # used by goblins
+            ,)
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_AMMO_ARROW_QUIVER"
+
+    def process_item(self):
+        result = super().process_item()
+        if result:
+            q = int(self.item_entry["Item"]["Charges1"])
+            if q:
+                self._add_line(f"quiver.obj_set_int(toee.obj_f_ammo_quantity, {q})")
+
+        return result 
+
 ########## ARMORS
 class ItemArmors(ItemBase):
     def process_item(self):
@@ -275,8 +280,7 @@ class ItemArmors(ItemBase):
                 if not already:
                     already = self.parent.wears.get("toee.item_wear_boots")
                 if not already:
-                    self.parent.lines_script.append(self.parent.current_indent
-                        + f'utils_item.item_create_in_inventory2({boots_proto_const}'
+                    self._add_line(f'utils_item.item_create_in_inventory2({boots_proto_const}'
                         + f', npc, no_loot = {self.no_loot}, wear_on = toee.item_wear_boots) # boots for {self.item_name} ({self.item_file_name}) {"OK" if self.item_file_name in self.get_item_codes() else "default"}')
                     
                     self.log_item(boots_proto_const, "toee.item_wear_boots")
@@ -357,9 +361,55 @@ class ItemGold(ItemBase):
     def process_item(self):
         Charges1, Charges2, Charges3 = int(self.item_entry["Item"]["Charges1"]), int(self.item_entry["Item"]["Charges2"]), int(self.item_entry["Item"]["Charges3"])
         platinum, gold, silver, copper = 0, Charges1, Charges2, Charges3
-        self.parent.lines_script.append(self.parent.current_indent
-            + f'utils_item.item_money_create_in_inventory(npc, {platinum}, {gold}, {silver}, {copper}) # Charges1: {Charges1}, Charges2: {Charges2}, Charges3: {Charges3}')
+        self._add_line(f'utils_item.item_money_create_in_inventory(npc, {platinum}, {gold}, {silver}, {copper}) # Charges1: {Charges1}, Charges2: {Charges2}, Charges3: {Charges3}')
         return True
 
     @classmethod
     def is_default(cls): return True
+
+########## MISC | BOOKS
+class ItemMisc(ItemBase):
+    @classmethod
+    def get_category(cls): return "Books"
+
+class ItemMiscJunk(ItemBase):
+    # No actual usability, verified
+    @classmethod
+    def get_category(cls): return "Books"
+
+    @classmethod
+    def get_item_codes(cls): return ('00RTGOB1', )
+    
+    def process_item(self):
+        self._add_line("# junk, skip and forget")
+        return True
+
+class ItemMiscMeleeSlashing1d4(ItemMisc):
+    # used by Goblins as axes
+
+    def process_item(self):
+        if not self.parent.anim.disallow_weapon():
+            wear = self.get_wear()
+            self._add_line(f'weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = {self.no_loot}, wear_on = {wear}) # {self.item_name} ({self.item_file_name}) at {self.slot_name} # TODO CHECK if condition to lower 1d6=>1d4 is needed!!')
+            self._add_line('weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)')
+        return True
+
+    @classmethod
+    def get_item_codes(cls): return ('001D4S', )
+
+
+class ItemMiscMeleeNatural1d3(ItemMisc):
+    # used by Goblin archers as melee
+
+    def process_item(self):
+        self._add_line("# see natural")
+        return True
+
+    def process_char(self):
+        self._add_line('')
+        self._add_line(f'# from {self.item_name}({self.item_file_name}) at {self.slot_name} by {self.__class__.__name__}')
+        self._add_line('utils_npc.npc_natural_attack(npc, 0, const_toee.nwt_bite, 0, "1d3") # TODO check BAB here')
+        return
+
+    @classmethod
+    def get_item_codes(cls): return ('001D3P', )

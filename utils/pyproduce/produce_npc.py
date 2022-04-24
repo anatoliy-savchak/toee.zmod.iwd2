@@ -171,6 +171,8 @@ class ProduceNPC:
         classes = ("stat_level_bard", "stat_level_cleric", "stat_level_druid", "stat_level_fighter"
             , "stat_level_monk", "stat_level_paladin", "stat_level_ranger", "stat_level_rogue", "stat_level_sorcerer"
             , "stat_level_wizard")
+
+        self.elements["classes_toee"] = dict()
         if levelsFromClasses:
             classLevel = 0
             self.lines_script.append(i_code)
@@ -180,6 +182,7 @@ class ProduceNPC:
                 statLevel = classes[i]
                 self.lines_script.append(i_code+f"# {statLevel}: {levels}")
                 for l in range(0, levels):
+                    self.elements["classes_toee"][statLevel] = int(self.elements["classes_toee"].get(statLevel, 0)) + 1
                     self.lines_script.append(i_code + f"npc.obj_set_idx_int(toee.obj_f_critter_level_idx, {classLevel}, toee.{statLevel})");
                     classLevel += 1
         else:
@@ -205,22 +208,40 @@ class ProduceNPC:
         return
 
     def produce_feats(self):
+        def check_feat(feat_to_add, value_name, value):
+            if "proficiency" in feat_to_add:
+                classes_toee = self.elements.get("classes_toee")
+                if classes_toee:
+                    for class_toee, level_count in classes_toee.items():
+                        if not level_count: continue
+                        if cname := self.exported_dir.toee_class_spec_has_prof(class_toee, feat_to_add):
+                            self.lines_script.append(i_code + f"# {value_name}: {value} => {feat_to_add} skip for {cname}")
+                            return True
+            return False
+
         def feat_pro_add(value_name: str, levels: list):
             value = self.cre[value_name]
             splitter_added = False
             for level in range(1, value+1):
                 feat_to_addv = levels[level-1]
                 if not feat_to_addv: continue
-                if not splitter_added:
-                    splitter_added = True
-                    self.lines_script.append(i_code)
-                    self.lines_script.append(i_code + f"# {value_name}: {value}")
 
                 if isinstance(feat_to_addv, str):
-                    self.lines_script.append(i_code+f"npc.feat_add(toee.{feat_to_addv})")
+                    if not check_feat(feat_to_addv, value_name, value):
+                        if not splitter_added:
+                            splitter_added = True
+                            self.lines_script.append(i_code)
+                            self.lines_script.append(i_code + f"# {value_name}: {value}")
+                        self.lines_script.append(i_code+f"npc.feat_add(toee.{feat_to_addv})")
                 else:
                     for feat_to_add in feat_to_addv:
                         if not feat_to_add: continue
+                        if check_feat(feat_to_add, value_name, value):
+                            continue
+                        if not splitter_added:
+                            splitter_added = True
+                            self.lines_script.append(i_code)
+                            self.lines_script.append(i_code + f"# {value_name}: {value}")
                         self.lines_script.append(i_code+f"npc.feat_add(toee.{feat_to_add})")
             return
 
@@ -232,6 +253,8 @@ class ProduceNPC:
                     feat_template = levels[level-1]
                     if not feat_template: continue
                     feat_to_add = feat_template + weapon
+                    if check_feat(feat_to_add, value_name, value):
+                        return
                     if not splitter_added:
                         splitter_added = True
                         self.lines_script.append(i_code)

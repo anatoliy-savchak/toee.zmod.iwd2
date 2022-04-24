@@ -56,42 +56,16 @@ class Ctrl10HEDRON(ctrl_behaviour.CtrlBehaviourAI): # 10HEDRON
 
 		# feats
 		npc.feat_add(toee.feat_shield_proficiency) # Shield proficiency
-		
-		# FeatArmorPreficiency: 3
-		npc.feat_add(toee.feat_armor_proficiency_light)
-		npc.feat_add(toee.feat_armor_proficiency_medium)
-		npc.feat_add(toee.feat_armor_proficiency_heavy)
-		
-		# FeatWeaponProAxe: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_throwing_axe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_handaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_battleaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greataxe)
-		
-		# FeatWeaponProBow: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_longbow)
-		
-		# FeatWeaponProFlail: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_flail)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_heavy_flail)
-		
-		# FeatWeaponProGreatsword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greatsword)
-		
-		# FeatWeaponProHammer: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_hammer)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_warhammer)
-		
-		# FeatWeaponProLargeSword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longsword)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_scimitar)
-		
-		# FeatWeaponProPolearm: 2
-		npc.feat_add(toee.feat_martial_weapon_proficiency_halberd)
-		npc.feat_add(toee.feat_weapon_focus_halberd)
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 2 => feat_martial_weapon_proficiency_halberd skip for fighter
 
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
@@ -173,41 +147,16 @@ class Ctrl10ELDGUL(ctrl_behaviour.CtrlBehaviourAI): # 10ELDGUL
 
 		# feats
 		npc.feat_add(toee.feat_shield_proficiency) # Shield proficiency
-		
-		# FeatArmorPreficiency: 3
-		npc.feat_add(toee.feat_armor_proficiency_light)
-		npc.feat_add(toee.feat_armor_proficiency_medium)
-		npc.feat_add(toee.feat_armor_proficiency_heavy)
-		
-		# FeatWeaponProAxe: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_throwing_axe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_handaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_battleaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greataxe)
-		
-		# FeatWeaponProBow: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_longbow)
-		
-		# FeatWeaponProFlail: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_flail)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_heavy_flail)
-		
-		# FeatWeaponProGreatsword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greatsword)
-		
-		# FeatWeaponProHammer: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_hammer)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_warhammer)
-		
-		# FeatWeaponProLargeSword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longsword)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_scimitar)
-		
-		# FeatWeaponProPolearm: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_halberd)
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
 
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
@@ -282,41 +231,16 @@ class Ctrl10SCREED(ctrl_behaviour.CtrlBehaviourAI): # 10SCREED
 
 		# feats
 		npc.feat_add(toee.feat_shield_proficiency) # Shield proficiency
-		
-		# FeatArmorPreficiency: 3
-		npc.feat_add(toee.feat_armor_proficiency_light)
-		npc.feat_add(toee.feat_armor_proficiency_medium)
-		npc.feat_add(toee.feat_armor_proficiency_heavy)
-		
-		# FeatWeaponProAxe: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_throwing_axe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_handaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_battleaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greataxe)
-		
-		# FeatWeaponProBow: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_longbow)
-		
-		# FeatWeaponProFlail: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_flail)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_heavy_flail)
-		
-		# FeatWeaponProGreatsword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greatsword)
-		
-		# FeatWeaponProHammer: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_hammer)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_warhammer)
-		
-		# FeatWeaponProLargeSword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longsword)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_scimitar)
-		
-		# FeatWeaponProPolearm: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_halberd)
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
 
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
@@ -391,41 +315,16 @@ class Ctrl10REIG(ctrl_behaviour.CtrlBehaviourAI): # 10REIG
 
 		# feats
 		npc.feat_add(toee.feat_shield_proficiency) # Shield proficiency
-		
-		# FeatArmorPreficiency: 3
-		npc.feat_add(toee.feat_armor_proficiency_light)
-		npc.feat_add(toee.feat_armor_proficiency_medium)
-		npc.feat_add(toee.feat_armor_proficiency_heavy)
-		
-		# FeatWeaponProAxe: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_throwing_axe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_handaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_battleaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greataxe)
-		
-		# FeatWeaponProBow: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_longbow)
-		
-		# FeatWeaponProFlail: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_flail)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_heavy_flail)
-		
-		# FeatWeaponProGreatsword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greatsword)
-		
-		# FeatWeaponProHammer: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_hammer)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_warhammer)
-		
-		# FeatWeaponProLargeSword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longsword)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_scimitar)
-		
-		# FeatWeaponProPolearm: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_halberd)
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
 
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
@@ -501,41 +400,16 @@ class Ctrl10JON(ctrl_behaviour.CtrlBehaviourAI): # 10JON
 
 		# feats
 		npc.feat_add(toee.feat_shield_proficiency) # Shield proficiency
-		
-		# FeatArmorPreficiency: 3
-		npc.feat_add(toee.feat_armor_proficiency_light)
-		npc.feat_add(toee.feat_armor_proficiency_medium)
-		npc.feat_add(toee.feat_armor_proficiency_heavy)
-		
-		# FeatWeaponProAxe: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_throwing_axe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_handaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_battleaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greataxe)
-		
-		# FeatWeaponProBow: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_longbow)
-		
-		# FeatWeaponProFlail: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_flail)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_heavy_flail)
-		
-		# FeatWeaponProGreatsword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greatsword)
-		
-		# FeatWeaponProHammer: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_hammer)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_warhammer)
-		
-		# FeatWeaponProLargeSword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longsword)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_scimitar)
-		
-		# FeatWeaponProPolearm: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_halberd)
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
 
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
@@ -617,41 +491,16 @@ class Ctrl10BROGAN(ctrl_behaviour.CtrlBehaviourAI): # 10BROGAN
 
 		# feats
 		npc.feat_add(toee.feat_shield_proficiency) # Shield proficiency
-		
-		# FeatArmorPreficiency: 3
-		npc.feat_add(toee.feat_armor_proficiency_light)
-		npc.feat_add(toee.feat_armor_proficiency_medium)
-		npc.feat_add(toee.feat_armor_proficiency_heavy)
-		
-		# FeatWeaponProAxe: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_throwing_axe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_handaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_battleaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greataxe)
-		
-		# FeatWeaponProBow: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_longbow)
-		
-		# FeatWeaponProFlail: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_flail)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_heavy_flail)
-		
-		# FeatWeaponProGreatsword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greatsword)
-		
-		# FeatWeaponProHammer: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_hammer)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_warhammer)
-		
-		# FeatWeaponProLargeSword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longsword)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_scimitar)
-		
-		# FeatWeaponProPolearm: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_halberd)
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
 
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
@@ -736,41 +585,16 @@ class Ctrl10JORUN(ctrl_behaviour.CtrlBehaviourAI): # 10JORUN
 		# feats
 		npc.feat_add(toee.feat_iron_will) # Bullheaded
 		npc.feat_add(toee.feat_shield_proficiency) # Shield proficiency
-		
-		# FeatArmorPreficiency: 3
-		npc.feat_add(toee.feat_armor_proficiency_light)
-		npc.feat_add(toee.feat_armor_proficiency_medium)
-		npc.feat_add(toee.feat_armor_proficiency_heavy)
-		
-		# FeatWeaponProAxe: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_throwing_axe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_handaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_battleaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greataxe)
-		
-		# FeatWeaponProBow: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_longbow)
-		
-		# FeatWeaponProFlail: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_flail)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_heavy_flail)
-		
-		# FeatWeaponProGreatsword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greatsword)
-		
-		# FeatWeaponProHammer: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_hammer)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_warhammer)
-		
-		# FeatWeaponProLargeSword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longsword)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_scimitar)
-		
-		# FeatWeaponProPolearm: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_halberd)
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
 
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
@@ -843,41 +667,16 @@ class Ctrl10MALED(ctrl_behaviour.CtrlBehaviourAI): # 10MALED
 
 		# feats
 		npc.feat_add(toee.feat_shield_proficiency) # Shield proficiency
-		
-		# FeatArmorPreficiency: 3
-		npc.feat_add(toee.feat_armor_proficiency_light)
-		npc.feat_add(toee.feat_armor_proficiency_medium)
-		npc.feat_add(toee.feat_armor_proficiency_heavy)
-		
-		# FeatWeaponProAxe: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_throwing_axe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_handaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_battleaxe)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greataxe)
-		
-		# FeatWeaponProBow: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_shortbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longbow)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_composite_longbow)
-		
-		# FeatWeaponProFlail: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_flail)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_heavy_flail)
-		
-		# FeatWeaponProGreatsword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_greatsword)
-		
-		# FeatWeaponProHammer: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_light_hammer)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_warhammer)
-		
-		# FeatWeaponProLargeSword: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_longsword)
-		npc.feat_add(toee.feat_martial_weapon_proficiency_scimitar)
-		
-		# FeatWeaponProPolearm: 1
-		npc.feat_add(toee.feat_martial_weapon_proficiency_halberd)
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
 
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		

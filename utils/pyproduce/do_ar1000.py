@@ -7,6 +7,7 @@ npc_template_file = 'data/py06616_template.py'
 out_npcs_file = '../../src/zmod_iwd2_core/scr/py01001_targos_docks_encounters.py'
 out_daemon_file = '../../src/zmod_iwd2_core/scr/py01000_targos_docks_daemon.py'
 exported_dir = pyproduce.InfinityExportedDir('../../resources/iwd2_exp')
+exported_dir.load_toee_class_specs('../../../TemplePlus/tpdatasrc/tpgamefiles/rules/char_class')
 #exported_dir.read_cre('10HEDRON')
 
 #os_command = f"copy /Y {os.path.abspath(npc_template_file)} {os.path.abspath(out_npcs_file)}"

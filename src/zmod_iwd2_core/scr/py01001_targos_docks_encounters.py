@@ -33,6 +33,7 @@ class Ctrl10HEDRON(ctrl_behaviour.CtrlBehaviourAI): # 10HEDRON
 		utils_npc.npc_description_set_new(npc, "Hedron Kerdos")
 		
 		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
 		hairStyle.color = const_toee.hair_color_light_brown # HairColourIndex: 5
@@ -129,6 +130,7 @@ class Ctrl10ELDGUL(ctrl_behaviour.CtrlBehaviourAI): # 10ELDGUL
 		utils_npc.npc_description_set_new(npc, "Eldgull")
 		
 		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
 		hairStyle.color = const_toee.hair_color_light_brown # HairColourIndex: 5
@@ -212,6 +214,7 @@ class Ctrl10SCREED(ctrl_behaviour.CtrlBehaviourAI): # 10SCREED
 		utils_npc.npc_description_set_new(npc, "Screed")
 		
 		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
 		hairStyle.color = const_toee.hair_color_black # HairColourIndex: 0
@@ -295,6 +298,7 @@ class Ctrl10REIG(ctrl_behaviour.CtrlBehaviourAI): # 10REIG
 		utils_npc.npc_description_set_new(npc, "Reig Redwaters")
 		
 		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
 		hairStyle.color = const_toee.hair_color_brown # HairColourIndex: 2
@@ -380,6 +384,7 @@ class Ctrl10JON(ctrl_behaviour.CtrlBehaviourAI): # 10JON
 		utils_npc.npc_description_set_new(npc, "Honest Jon")
 		
 		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
 		hairStyle.color = const_toee.hair_color_blonde # HairColourIndex: 3
@@ -471,6 +476,7 @@ class Ctrl10BROGAN(ctrl_behaviour.CtrlBehaviourAI): # 10BROGAN
 		utils_npc.npc_description_set_new(npc, "Brogan")
 		
 		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
 		hairStyle.color = const_toee.hair_color_brown # HairColourIndex: 2
@@ -562,6 +568,7 @@ class Ctrl10JORUN(ctrl_behaviour.CtrlBehaviourAI): # 10JORUN
 		utils_npc.npc_description_set_new(npc, "Jorun Tamewater")
 		
 		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
 		hairStyle.color = const_toee.hair_color_black # HairColourIndex: 0
@@ -647,6 +654,7 @@ class Ctrl10MALED(ctrl_behaviour.CtrlBehaviourAI): # 10MALED
 		utils_npc.npc_description_set_new(npc, "Townsperson")
 		
 		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
 		hairStyle.color = const_toee.hair_color_black # HairColourIndex: 0
@@ -684,7 +692,7 @@ class Ctrl10MALED(ctrl_behaviour.CtrlBehaviourAI): # 10MALED
 		
 		# HP
 		utils_npc.ensure_hp(npc, 5) # MaximumHP: 5
-		npc.obj_set_int(toee.obj_f_hp_damage, 25) # CurrentHP: 5, STATE_DEAD
+		npc.obj_set_int(toee.obj_f_hp_damage, 15) # CurrentHP: 5, STATE_DEAD
 
 		# skills
 		# SkillAlchemy: 0
@@ -724,6 +732,7 @@ class Ctrl10SOLDRD(ctrl_behaviour.CtrlBehaviourAI): # 10SOLDRD
 		utils_npc.npc_description_set_new(npc, "Targos Soldier")
 		
 		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
 		hairStyle.color = const_toee.hair_color_brown # HairColourIndex: 2
@@ -761,7 +770,7 @@ class Ctrl10SOLDRD(ctrl_behaviour.CtrlBehaviourAI): # 10SOLDRD
 		
 		# HP
 		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
-		npc.obj_set_int(toee.obj_f_hp_damage, 26) # CurrentHP: 6, STATE_DEAD
+		npc.obj_set_int(toee.obj_f_hp_damage, 16) # CurrentHP: 6, STATE_DEAD
 
 		# skills
 		# SkillAlchemy: 0
@@ -914,7 +923,7 @@ class Ctrl10GOBD(ctrl_behaviour.CtrlBehaviourAI): # 10GOBD
 		
 		# HP
 		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
-		npc.obj_set_int(toee.obj_f_hp_damage, 24) # CurrentHP: 4, STATE_DEAD
+		npc.obj_set_int(toee.obj_f_hp_damage, 14) # CurrentHP: 4, STATE_DEAD
 
 		# skills
 		# SkillAlchemy: 0
@@ -962,7 +971,7 @@ class Ctrl10GOBAR(ctrl_behaviour.CtrlBehaviourAI): # 10GOBAR
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		# from None(001D3P) at SLOT_WEAPON2 by ItemMiscMeleeNatural1d3
-		utils_npc.npc_natural_attack(npc, 0, const_toee.nwt_bite, 0, "1d3") # TODO check BAB here
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
 		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward
@@ -1027,5 +1036,153 @@ class Ctrl10GOBAR(ctrl_behaviour.CtrlBehaviourAI): # 10GOBAR
 		# SLOT_QUICK2: None(Books) from 00RTGOB1
 		# junk, skip and forget
 		
+		return
+
+class Ctrl10GOBARD(ctrl_behaviour.CtrlBehaviourAI): # 10GOBARD 
+	@classmethod
+	def get_name(cls): "10gobArD"
+	
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+
+	@classmethod
+	def get_class_faction(cls): return factions_zmod.FACTION_ENEMY # allegiance: 255
+		
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
+
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 14) # CurrentHP: 4, STATE_DEAD
+
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+
+	def setup_gear(self, npc):
+		return
+
+class Ctrl10SAILRD(ctrl_behaviour.CtrlBehaviourAI): # 10SAILRD 
+	@classmethod
+	def get_name(cls): "10SailrD"
+	
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
+
+	@classmethod
+	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
+		
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Sailor")
+		
+		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
+		hairStyle = utils_npc.HairStyle.from_npc(npc)
+		hairStyle.style = const_toee.hair_style_shorthair
+		hairStyle.color = const_toee.hair_color_black # HairColourIndex: 0
+		hairStyle.update_npc(npc)
+		return
+
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [11, 12, 12, 9, 10, 9])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
+
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
+		npc.obj_set_int(toee.obj_f_hp_damage, 16) # CurrentHP: 6, STATE_DEAD
+
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 

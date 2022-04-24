@@ -42,6 +42,7 @@ class AnimBase(object):
 
     def _portrait_print(self, portrait_id, portrait_comment_name):
         self._add_line(f"npc.obj_set_int(toee.obj_f_critter_portrait, {portrait_id}) # {portrait_comment_name}")
+        self._add_line("")
         return
 
     def get_major_color_name(self):

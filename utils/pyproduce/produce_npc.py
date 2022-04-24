@@ -173,7 +173,7 @@ class ProduceNPC:
                 item_process.process_char()
 
         self.lines_script.append(i_code)
-        
+
         self.produce_alignment()
         self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_critter_experience, {int(self.cre["XPReward"])}) # XPReward')
         cr = int(self.cre["ChallangeRating"])
@@ -730,7 +730,7 @@ class ProduceNPC:
         statusFlags = self.cre["StatusFlags"]
         STATE_DEAD = ""
         if "STATE_DEAD" in str(statusFlags):
-            damage = 20 + maximumHP
+            damage = 10 + maximumHP
             STATE_DEAD = ", STATE_DEAD"
         self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_hp_damage, {damage}) # CurrentHP: {currentHP}{STATE_DEAD}')
         return

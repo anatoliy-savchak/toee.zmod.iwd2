@@ -160,13 +160,17 @@ class CtrlTargosDocks(ctrl_daemon2.CtrlDaemon2):
 		ctrl_class, loc = py01001_targos_docks_encounters.Ctrl10MALED,  utils_obj.sec2loc(528, 480)
 		self.create_lib_foe(loc, ctrl_class, const_toee.ROT05, "", "Dead_Townsperson_1", ctrl_class.get_class_faction(), 0, 1)
 		
-		# Dead_Goblin_7: 10GOBARD (506.5, 497.0) const_toee.ROT00 ctrl: None.None 
+		# Dead_Goblin_7: 10GOBARD (506.5, 497.0) const_toee.ROT00 ctrl: py01001_targos_docks_encounters.Ctrl10GOBARD 
+		ctrl_class, loc = py01001_targos_docks_encounters.Ctrl10GOBARD,  utils_obj.sec2loc(506, 497)
+		self.create_lib_foe(loc, ctrl_class, const_toee.ROT00, "", "Dead_Goblin_7", ctrl_class.get_class_faction(), 0, 1)
 		
 		# Dead_Soldier_1: 10SOLDRD (501.4, 490.6) const_toee.ROT06 ctrl: py01001_targos_docks_encounters.Ctrl10SOLDRD 
 		ctrl_class, loc = py01001_targos_docks_encounters.Ctrl10SOLDRD,  utils_obj.sec2loc(501, 490)
 		self.create_lib_foe(loc, ctrl_class, const_toee.ROT06, "", "Dead_Soldier_1", ctrl_class.get_class_faction(), 0, 1)
 		
-		# Dead_Sailor: 10SAILRD (476.2, 506.8) const_toee.ROT08 ctrl: None.None 
+		# Dead_Sailor: 10SAILRD (476.2, 506.8) const_toee.ROT08 ctrl: py01001_targos_docks_encounters.Ctrl10SAILRD 
+		ctrl_class, loc = py01001_targos_docks_encounters.Ctrl10SAILRD,  utils_obj.sec2loc(476, 506)
+		self.create_lib_foe(loc, ctrl_class, const_toee.ROT08, "", "Dead_Sailor", ctrl_class.get_class_faction(), 0, 1)
 		
 		# 1000_Goblin_04: 10GOB (477.1, 504.7) const_toee.ROT03 ctrl: py01001_targos_docks_encounters.Ctrl10GOB 
 		ctrl_class, loc = py01001_targos_docks_encounters.Ctrl10GOB,  utils_obj.sec2loc(477, 504)

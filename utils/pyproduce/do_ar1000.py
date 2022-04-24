@@ -31,6 +31,8 @@ if True:
     pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10GOB').save()
     pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10GOBD').save()
     pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10GOBAR').save()
+    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10GOBARD').save()
+    pnpc = produce_npc.ProduceNPC(exported_dir, out_npcs_file).produce_npc('10SAILRD').save()
     
 
 if True:

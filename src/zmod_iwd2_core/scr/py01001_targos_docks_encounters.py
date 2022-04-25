@@ -4,7 +4,7 @@ import const_proto_items, const_proto_rings, const_proto_cloth, const_proto_wond
 import py06615_daemon_orc_fort, py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, module_consts, rumor_control, py14764_npc_portal, utils_pc
 import const_proto_armor_iwd2, ctrl_behaviour_ie
 
-MODULE_SCRIPT_ID = 6616
+MODULE_SCRIPT_ID = 1001
 
 def san_start_combat(attachee, triggerer): return ctrl_behaviour.san_start_combat(attachee, triggerer)
 def san_enter_combat(attachee, triggerer): return ctrl_behaviour.san_enter_combat(attachee, triggerer)
@@ -119,7 +119,7 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 		return
 
 	def script_dialog(self, attachee, triggerer):
-		# 10HEDRON
+		print("script_dialog 10HEDRON")
 		assert isinstance(attachee, toee.PyObjHandle)
 		assert isinstance(triggerer, toee.PyObjHandle)
 		
@@ -127,11 +127,14 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 		
 		line_id = -1
 		while True:
+			print("STATE 0")
 			# NumTimesTalkedTo(0)
 			if self.iNumTimesTalkedTo(0):
 				line_id = 10 # Well, here ye are, straight from Bremen to the scenic shore of Targos herself.  Now that ye be seeing the skeleton of the town ye'll be defendin', ye sure ye don't want me to take ye back?
+				print("STATE 0: line_id = 10")
 				break
 			
+			print("STATE 21")
 			# GlobalGT("Reig_Quest", "GLOBAL", 0)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
 			# Global("Hedron_Know_Attack", "GLOBAL", 0)
@@ -139,15 +142,19 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0) \
 				 and self.iGlobal("Hedron_Know_Attack", "GLOBAL", 0):
 				line_id = 20 # I was hoping ye might come back - what's the word from the docks?  Not even Magdar's come out to shake me down yet, and he usually sends some half-drunk stumblers to help unload my supplies.
+				print("STATE 21: line_id = 20")
 				break
 			
+			print("STATE 30")
 			# GlobalGT("Reig_Quest", "GLOBAL", 0)
 			# GlobalLT("Hedron_Know_Attack", "GLOBAL", 2)
 			if self.iGlobalGT("Reig_Quest", "GLOBAL", 0) \
 				 and self.iGlobalLT("Hedron_Know_Attack", "GLOBAL", 2):
 				line_id = 30 # What's going on along the shore?  I heard something about an attack on the docks, but no one can tell me anything for certain.
+				print("STATE 30: line_id = 30")
 				break
 			
+			print("STATE 33")
 			# GlobalGT("Hedron_Know_Attack", "GLOBAL", 0)
 			# GlobalGT("Hedron_Quest", "GLOBAL", 0)
 			# GlobalLT("Hedron_Quest", "GLOBAL", 4)
@@ -155,22 +162,28 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 				 and self.iGlobalGT("Hedron_Quest", "GLOBAL", 0) \
 				 and self.iGlobalLT("Hedron_Quest", "GLOBAL", 4):
 				line_id = 40 # You're back - any word of me Ma?
+				print("STATE 33: line_id = 40")
 				break
 			
+			print("STATE 34")
 			# NumTimesTalkedToGT(0)
 			# Global("Reig_Quest", "GLOBAL", 0)
 			if self.iNumTimesTalkedToGT(0) \
 				 and self.iGlobal("Reig_Quest", "GLOBAL", 0):
 				line_id = 50 # Aye, look who's come back aboard - sick of Targos already, are ye?
+				print("STATE 34: line_id = 50")
 				break
 			
+			print("STATE 38")
 			# Global("Hedron_Know_Attack", "GLOBAL", 2)
 			if self.iGlobal("Hedron_Know_Attack", "GLOBAL", 2):
 				line_id = 60 # Aye, look who's come back aboard - the great goblin slayers of Targos.  What can I do for ye?
+				print("STATE 38: line_id = 60")
 				break
 			
 			break # while
 			
+		print("script_dialog line_id: {}".format(line_id))
 		if line_id >= 0:
 			triggerer.begin_dialog(attachee, line_id)
 		
@@ -263,7 +276,7 @@ class Ctrl10ELDGUL(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		return
 
 	def script_dialog(self, attachee, triggerer):
-		# 10ELDGUL
+		print("script_dialog 10ELDGUL")
 		assert isinstance(attachee, toee.PyObjHandle)
 		assert isinstance(triggerer, toee.PyObjHandle)
 		
@@ -271,23 +284,30 @@ class Ctrl10ELDGUL(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		
 		line_id = -1
 		while True:
+			print("STATE 0")
 			# True()
 			if True:
 				line_id = 70 # Can't stop t'bandy words with ye; Hedron be findin' *more* work for me after I finish this bit.  Fare thee well.
+				print("STATE 0: line_id = 70")
 				break
 			
+			print("STATE 3")
 			# GlobalGT("Reig_Quest", "GLOBAL", 0)
 			if self.iGlobalGT("Reig_Quest", "GLOBAL", 0):
 				line_id = 80 # Is it true?  I hear th'town's bein' attacked by the goblins!
+				print("STATE 3: line_id = 80")
 				break
 			
+			print("STATE 5")
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
 			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
 				line_id = 90 # Caught word 'bout the battle - looks like ye pulled through - good for ye.
+				print("STATE 5: line_id = 90")
 				break
 			
 			break # while
 			
+		print("script_dialog line_id: {}".format(line_id))
 		if line_id >= 0:
 			triggerer.begin_dialog(attachee, line_id)
 		
@@ -380,7 +400,7 @@ class Ctrl10SCREED(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		return
 
 	def script_dialog(self, attachee, triggerer):
-		# 10SCREED
+		print("script_dialog 10SCREED")
 		assert isinstance(attachee, toee.PyObjHandle)
 		assert isinstance(triggerer, toee.PyObjHandle)
 		
@@ -388,23 +408,30 @@ class Ctrl10SCREED(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		
 		line_id = -1
 		while True:
+			print("STATE 0")
 			# True()
 			if True:
 				line_id = 100 # Was good havin' ye with us, even for only a short time.  Hope fortune's wind fills yer sails, friend.
+				print("STATE 0: line_id = 100")
 				break
 			
+			print("STATE 3")
 			# GlobalGT("Reig_Quest", "GLOBAL", 0)
 			if self.iGlobalGT("Reig_Quest", "GLOBAL", 0):
 				line_id = 110 # I hear the town's being attacked again - the Wicked Wench's all ready to set sail if ye need to fall back.
+				print("STATE 3: line_id = 110")
 				break
 			
+			print("STATE 4")
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
 			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
 				line_id = 120 # Heard th' fightin' up along the docks was fierce - drove those goblins back, did ye?
+				print("STATE 4: line_id = 120")
 				break
 			
 			break # while
 			
+		print("script_dialog line_id: {}".format(line_id))
 		if line_id >= 0:
 			triggerer.begin_dialog(attachee, line_id)
 		
@@ -499,7 +526,7 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 		return
 
 	def script_dialog(self, attachee, triggerer):
-		# 10REIG
+		print("script_dialog 10REIG")
 		assert isinstance(attachee, toee.PyObjHandle)
 		assert isinstance(triggerer, toee.PyObjHandle)
 		
@@ -507,16 +534,21 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 		
 		line_id = -1
 		while True:
+			print("STATE 0")
 			# NumTimesTalkedTo(0)
 			if self.iNumTimesTalkedTo(0):
 				line_id = 130 # Halt!  Who goes there?  Step forward and identify yourself!
+				print("STATE 0: line_id = 130")
 				break
 			
+			print("STATE 15")
 			# Global("Reig_Quest", "GLOBAL", 1)
 			if self.iGlobal("Reig_Quest", "GLOBAL", 1):
 				line_id = 140 # Did you find Magdar?  My damned arm's getting worse, and I need that potion he's got.
+				print("STATE 15: line_id = 140")
 				break
 			
+			print("STATE 16")
 			# HPGT(Myself, 3)
 			# Global("Reig_Quest", "GLOBAL", 1)
 			# Global("Reig_Heal_Priest", "GLOBAL", 0)
@@ -524,27 +556,35 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 				 and self.iGlobal("Reig_Quest", "GLOBAL", 1) \
 				 and self.iGlobal("Reig_Heal_Priest", "GLOBAL", 0):
 				line_id = 150 # My arm's better, thanks for your help.  Looks like you're praying to the right gods.
+				print("STATE 16: line_id = 150")
 				break
 			
+			print("STATE 17")
 			# Global("Reig_Quest", "GLOBAL", 1)
 			# Global("Reig_Heal_Priest", "GLOBAL", 1)
 			if self.iGlobal("Reig_Quest", "GLOBAL", 1) \
 				 and self.iGlobal("Reig_Heal_Priest", "GLOBAL", 1):
 				line_id = 160 # I could still use that healing draught from Magdar if you can find him.  Hope the goblins haven't got him yet.
+				print("STATE 17: line_id = 160")
 				break
 			
+			print("STATE 19")
 			# Global("Reig_Quest", "GLOBAL", 2)
 			if self.iGlobal("Reig_Quest", "GLOBAL", 2):
 				line_id = 170 # Looks like you sailed into Targos at the right time.  If you can help us hunt down any of those goblins, we'd welcome your help.
+				print("STATE 19: line_id = 170")
 				break
 			
+			print("STATE 21")
 			# Global("Told_Reig", "GLOBAL", 1)
 			if self.iGlobal("Told_Reig", "GLOBAL", 1):
 				line_id = 180 # Now that the raiders have been taken care of, we should be all right.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.
+				print("STATE 21: line_id = 180")
 				break
 			
 			break # while
 			
+		print("script_dialog line_id: {}".format(line_id))
 		if line_id >= 0:
 			triggerer.begin_dialog(attachee, line_id)
 		
@@ -645,7 +685,7 @@ class Ctrl10JON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 		return
 
 	def script_dialog(self, attachee, triggerer):
-		# 10JON
+		print("script_dialog 10JON")
 		assert isinstance(attachee, toee.PyObjHandle)
 		assert isinstance(triggerer, toee.PyObjHandle)
 		
@@ -653,18 +693,23 @@ class Ctrl10JON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 		
 		line_id = -1
 		while True:
+			print("STATE 0")
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
 			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
 				line_id = 190 # No idea where those goblins came from - one moment we're stepping out of the Salty Dog, and suddenly there's a mess of them running through town.  We sounded the alarm, but...
+				print("STATE 0: line_id = 190")
 				break
 			
+			print("STATE 8")
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
 			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
 				line_id = 200 # Tymora must have been smiling on us when you sailed into town.  Without you to drive back the goblins, the docks might have been burning now, and Targos overrun.
+				print("STATE 8: line_id = 200")
 				break
 			
 			break # while
 			
+		print("script_dialog line_id: {}".format(line_id))
 		if line_id >= 0:
 			triggerer.begin_dialog(attachee, line_id)
 		
@@ -765,7 +810,7 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 		return
 
 	def script_dialog(self, attachee, triggerer):
-		# 10BROGAN
+		print("script_dialog 10BROGAN")
 		assert isinstance(attachee, toee.PyObjHandle)
 		assert isinstance(triggerer, toee.PyObjHandle)
 		
@@ -773,11 +818,14 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 		
 		line_id = -1
 		while True:
+			print("STATE 0")
 			# True()
 			if True:
 				line_id = 210 # Halt!  Identify yourself!
+				print("STATE 0: line_id = 210")
 				break
 			
+			print("STATE 6")
 			# GlobalGT("Iron_Collar_Quest", "GLOBAL", 0)
 			# GlobalLT("Iron_Collar_Quest", "GLOBAL", 3)
 			# Global("Brogan_Quest", "GLOBAL", 0)
@@ -787,13 +835,17 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 				 and self.iGlobal("Brogan_Quest", "GLOBAL", 0) \
 				 and self.iGlobal("AR1002_Visited", "GLOBAL", 0):
 				line_id = 220 # You're back!  Did you bring the Iron Collar Band with you?
+				print("STATE 6: line_id = 220")
 				break
 			
+			print("STATE 10")
 			# Global("Brogan_Quest", "GLOBAL", 1)
 			if self.iGlobal("Brogan_Quest", "GLOBAL", 1):
 				line_id = 230 # Did you take out those goblins yet?  Time's running short.
+				print("STATE 10: line_id = 230")
 				break
 			
+			print("STATE 13")
 			# Global("Brogan_Quest", "GLOBAL", 1)
 			# Global("AR1002_Visited", "GLOBAL", 1)
 			# Global("AR1007_Visited", "GLOBAL", 1)
@@ -801,20 +853,26 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 				 and self.iGlobal("AR1002_Visited", "GLOBAL", 1) \
 				 and self.iGlobal("AR1007_Visited", "GLOBAL", 1):
 				line_id = 240 # Where in Tempus' name have you *been?*  I heard the fighting, and then everything went silent.  Thought you were dead.
+				print("STATE 13: line_id = 240")
 				break
 			
+			print("STATE 18")
 			# Global("AR1002_Visited", "GLOBAL", 1)
 			# Global("Know_Brogan", "GLOBAL", 0)
 			if self.iGlobal("AR1002_Visited", "GLOBAL", 1) \
 				 and self.iGlobal("Know_Brogan", "GLOBAL", 0):
 				line_id = 250 # Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!
+				print("STATE 18: line_id = 250")
 				break
 			
+			print("STATE 19")
 			# Global("Brogan_Leave", "GLOBAL", 1)
 			if self.iGlobal("Brogan_Leave", "GLOBAL", 1):
 				line_id = 260 # I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.
+				print("STATE 19: line_id = 260")
 				break
 			
+			print("STATE 20")
 			# GlobalGT("Iron_Collar_Quest", "GLOBAL", 0)
 			# GlobalLT("Iron_Collar_Quest", "GLOBAL", 3)
 			# Global("Brogan_Quest", "GLOBAL", 0)
@@ -824,10 +882,12 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 				 and self.iGlobal("Brogan_Quest", "GLOBAL", 0) \
 				 and self.iGlobal("AR1002_Visited", "GLOBAL", 1):
 				line_id = 270 # Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!
+				print("STATE 20: line_id = 270")
 				break
 			
 			break # while
 			
+		print("script_dialog line_id: {}".format(line_id))
 		if line_id >= 0:
 			triggerer.begin_dialog(attachee, line_id)
 		
@@ -922,7 +982,7 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 		return
 
 	def script_dialog(self, attachee, triggerer):
-		# 10JORUN
+		print("script_dialog 10JORUN")
 		assert isinstance(attachee, toee.PyObjHandle)
 		assert isinstance(triggerer, toee.PyObjHandle)
 		
@@ -930,34 +990,43 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 		
 		line_id = -1
 		while True:
+			print("STATE 0")
 			# Global("Know_Jorun", "GLOBAL", 0)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
 			if self.iGlobal("Know_Jorun", "GLOBAL", 0) \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
 				line_id = 280 # Damnable goblins... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye stand with Targos?
+				print("STATE 0: line_id = 280")
 				break
 			
+			print("STATE 13")
 			# Global("Know_Jorun", "GLOBAL", 1)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
 			if self.iGlobal("Know_Jorun", "GLOBAL", 1) \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
 				line_id = 290 # Have ye spilled any more goblin blood?  Ye better not be greedy - make ye sure ye save a handful for me.
+				print("STATE 13: line_id = 290")
 				break
 			
+			print("STATE 14")
 			# Global("Know_Jorun", "GLOBAL", 0)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
 			if self.iGlobal("Know_Jorun", "GLOBAL", 0) \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
 				line_id = 300 # Well, now, something I can help ye with?  I'm not doing business with the attacks an' all, and there's not much call for building ships as much as taking them down.
+				print("STATE 14: line_id = 300")
 				break
 			
+			print("STATE 20")
 			# Global("Know_Jorun", "GLOBAL", 1)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
 			if self.iGlobal("Know_Jorun", "GLOBAL", 1) \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
 				line_id = 310 # More than once ye've crossed my path; if ye plan on makin' a habit of it, the least ye could do is bring a winecask with ye... or two. Somethin' I can do for ye?
+				print("STATE 20: line_id = 310")
 				break
 			
+			print("STATE 31")
 			# NumTimesTalkedTo(0)
 			# Subrace(Protagonist, Dwarf_Gray)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
@@ -965,8 +1034,10 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 				 and self.iSubrace("Protagonist", "Dwarf_Gray") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
 				line_id = 320 # Eh?!  A duergar in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.
+				print("STATE 31: line_id = 320")
 				break
 			
+			print("STATE 32")
 			# NumTimesTalkedTo(0)
 			# Subrace(Protagonist, Elf_Drow)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
@@ -974,8 +1045,10 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 				 and self.iSubrace("Protagonist", "Elf_Drow") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
 				line_id = 330 # Eh?!  A drow in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.
+				print("STATE 32: line_id = 330")
 				break
 			
+			print("STATE 35")
 			# NumTimesTalkedTo(0)
 			# Subrace(Protagonist, Gnome_Deep)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
@@ -983,8 +1056,10 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 				 and self.iSubrace("Protagonist", "Gnome_Deep") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
 				line_id = 340 # Damn me eyes... are ye a deep gnome?  What in the hells are ye doing in Targos?
+				print("STATE 35: line_id = 340")
 				break
 			
+			print("STATE 37")
 			# NumTimesTalkedTo(0)
 			# Subrace(Protagonist, Dwarf_Gray)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
@@ -992,8 +1067,10 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 				 and self.iSubrace("Protagonist", "Dwarf_Gray") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
 				line_id = 350 # I heard talk of a duergar around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?
+				print("STATE 37: line_id = 350")
 				break
 			
+			print("STATE 38")
 			# NumTimesTalkedTo(0)
 			# Subrace(Protagonist, Elf_Drow)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
@@ -1001,8 +1078,10 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 				 and self.iSubrace("Protagonist", "Elf_Drow") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
 				line_id = 360 # I heard talk of a drow around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?
+				print("STATE 38: line_id = 360")
 				break
 			
+			print("STATE 39")
 			# NumTimesTalkedTo(0)
 			# Subrace(Protagonist, Gnome_Deep)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
@@ -1010,8 +1089,10 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 				 and self.iSubrace("Protagonist", "Gnome_Deep") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
 				line_id = 370 # Damn me eyes... ye're the deep gnome everyone's going on about.  I was hoping ye might be crossing me path - something this ol' shipbuilder can help ye with? 
+				print("STATE 39: line_id = 370")
 				break
 			
+			print("STATE 40")
 			# NumTimesTalkedTo(0)
 			# Race(Protagonist, Dwarf)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
@@ -1019,8 +1100,10 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 				 and self.iRace("Protagonist", "Dwarf") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
 				line_id = 380 # It's good to see another dwarf on the shore of Maer Dualdon especially with these damnable goblins about... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye come to add yer axe and hammer to Targos? 
+				print("STATE 40: line_id = 380")
 				break
 			
+			print("STATE 41")
 			# NumTimesTalkedTo(0)
 			# Race(Protagonist, Dwarf)
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
@@ -1028,10 +1111,12 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 				 and self.iRace("Protagonist", "Dwarf") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
 				line_id = 390 # Well, now, a dwarf is a sight for sore eyes in these windswept lands... especially one who can cleave goblins as well as ye can.  Something this ol' shipbuilder can help ye with?  
+				print("STATE 41: line_id = 390")
 				break
 			
 			break # while
 			
+		print("script_dialog line_id: {}".format(line_id))
 		if line_id >= 0:
 			triggerer.begin_dialog(attachee, line_id)
 		

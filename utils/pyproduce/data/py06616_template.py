@@ -4,7 +4,7 @@ import const_proto_items, const_proto_rings, const_proto_cloth, const_proto_wond
 import py06615_daemon_orc_fort, py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, module_consts, rumor_control, py14764_npc_portal, utils_pc
 import const_proto_armor_iwd2, ctrl_behaviour_ie
 
-MODULE_SCRIPT_ID = 6616
+MODULE_SCRIPT_ID = 1001
 
 def san_start_combat(attachee, triggerer): return ctrl_behaviour.san_start_combat(attachee, triggerer)
 def san_enter_combat(attachee, triggerer): return ctrl_behaviour.san_enter_combat(attachee, triggerer)

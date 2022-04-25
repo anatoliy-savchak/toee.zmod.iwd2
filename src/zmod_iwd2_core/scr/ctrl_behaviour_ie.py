@@ -28,6 +28,7 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 			self.vars["triggerer"] = triggerer
 			
 			self.script_dialog(attachee, triggerer)
+			print("debug after self.script_dialog(attachee, triggerer)")
 		finally:
 			self.vars["attachee"] = None
 			self.vars["triggerer"] = None

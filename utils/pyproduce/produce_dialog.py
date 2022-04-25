@@ -79,7 +79,8 @@ class ProduceNPCDialog:
         self.parent._indent(False)
         self._add_line("def script_dialog(self, attachee, triggerer):")
         self.parent._indent(True)
-        self._add_line(f"# {self.dialog_name}")
+        #self._add_line(f"# {self.dialog_name}")
+        self._add_line(f'print("script_dialog {self.dialog_name}")')
         self._add_line("assert isinstance(attachee, toee.PyObjHandle)")
         self._add_line("assert isinstance(triggerer, toee.PyObjHandle)")
         self._add_line("")
@@ -93,30 +94,16 @@ class ProduceNPCDialog:
             triggerIndex = int(phrase["TriggerIndex"])
             if triggerIndex == -1: continue
 
+            phase_index = phrase["Index"]
+            self._add_line(f'print("STATE {phase_index}")')
+            #self._add_line(f'# STATE {phase_index}')
+
             trigger = triggersPhrase[triggerIndex]
             trigger_lines = produce_scripts.condition_split(trigger)
             for trigger_line in trigger_lines:
                 self._add_line(f"# {trigger_line}")
 
-
             out_lines = produce_scripts.transate_trigger_lines(trigger_lines)
-            # for index, trigger_line in enumerate(trigger_lines):
-            #     is_last_line = index + 1 == len(trigger_lines)
-            #     line = ""
-            #     tline = trigger_line
-            #     if tline == "NumTimesTalkedTo(0)": 
-            #         tline = "not attachee.has_met(triggerer)"
-            #     elif tline == "NumTimesTalkedToGT(0)": 
-            #         tline = "attachee.has_met(triggerer)"
-            #     else:
-            #         tline = "ies." + tline
-            #     if index == 0:
-            #         line = "if "
-            #     else:
-            #         line = "\tand "
-            #     line = line + tline + (" \\" if not is_last_line else ":")
-                
-            #     self._add_line(line)
             for l in out_lines:
                 self._add_line(l)
                 
@@ -127,6 +114,7 @@ class ProduceNPCDialog:
             self.parent._indent(True)
             #self._add_line(f'triggerer.begin_dialog(attachee, {line_id}) # {phrase_text}')
             self._add_line(f'line_id = {line_id} # {phrase_text}')
+            self._add_line(f'print("STATE {phase_index}: line_id = {line_id}")')
             self._add_line('break')
             self.parent._indent(False)
             self._add_line("")
@@ -134,6 +122,7 @@ class ProduceNPCDialog:
         self._add_line("break # while")
         self._add_line("")
         self.parent._indent(False)
+        self._add_line('print("script_dialog line_id: {}".format(line_id))')
         self._add_line('if line_id >= 0:')
         self._add_line(f'\ttriggerer.begin_dialog(attachee, line_id)')
         self._add_line("")

@@ -107,7 +107,9 @@
     <Compile Include="zmod_iwd2_core\scr\const_proto_wondrous.py" />
     <Compile Include="zmod_iwd2_core\scr\const_toee.py" />
     <Compile Include="zmod_iwd2_core\scr\const_traps.py" />
+    <Compile Include="zmod_iwd2_core\scr\ctrl_behaviour_ie.py" />
     <Compile Include="zmod_iwd2_core\scr\ctrl_behaviour.py" />
+    <Compile Include="zmod_iwd2_core\scr\ctrl_daemon_ie.py" />
     <Compile Include="zmod_iwd2_core\scr\ctrl_daemon2.py" />
     <Compile Include="zmod_iwd2_core\scr\ctrl_daemon.py" />
     <Compile Include="zmod_iwd2_core\scr\debugg.py" />
@@ -287,6 +289,7 @@
   <ItemGroup>
     <Content Include="zmod_iwd2\rules\MapList.mes" />
     <Content Include="zmod_iwd2_core\dlg\00406Game_Portal.dlg" />
+    <Content Include="zmod_iwd2_core\dlg\01001_targos_docks_encounters.dlg" />
     <Content Include="zmod_iwd2_core\mes\gamekeylog.mes" />
     <Content Include="zmod_iwd2_core\mes\gamequestlog.mes" />
     <Content Include="zmod_iwd2_core\mes\skill_ui.mes" />

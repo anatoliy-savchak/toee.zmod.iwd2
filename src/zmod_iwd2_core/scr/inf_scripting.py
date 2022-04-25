@@ -131,20 +131,20 @@ class InfScriptSupportNPC(InfScriptSupport):
 		NB. NumTimesTalkedTo seems to increment when a PC initiates conversion with an NPC, or an NPC initiates conversation with a PC.
 		NumTimesTalkedTo does not seem to increment for force-talks, interactions, interjections and self-talking.
 		"""
-		result = self._gnpc().has_met(self._gtriggerer())
+		result = int(self._gnpc().has_met(self._gtriggerer()))
 		if num:
 			if num > 1: 
 				print("{} ({}) -- num is greater than 1, not supported!".format(inspect.stack()[0][3]), num)
 				debug.breakp("")
 			result = not result
-		return result
+		return result == num
 
 	def iNumTimesTalkedToGT(self, num):
 		""" 
 		0x403A NumTimesTalkedToGT(I:Num*)
 		Returns true only if the player's party has spoken to the active CRE more than the number of times specified.
 		"""
-		result = self._gnpc().has_met(self._gtriggerer())
+		result = not self._gnpc().has_met(self._gtriggerer())
 		if num:
 			if num > 1: 
 				print("{} ({}) -- num is greater than 1, not supported!".format(inspect.stack()[0][3]), num)

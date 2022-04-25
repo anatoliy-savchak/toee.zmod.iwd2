@@ -1,5 +1,6 @@
 import os
 import re
+import produce_scripts
 
 class DialogFile:
     def __init__(self, file_name):
@@ -49,45 +50,75 @@ class ProduceNPCDialog:
         def text_strip_directions(text: str):
             return re.sub("[\[].*?[\]]", "", text)
 
+        if self.dialog_name == "10JORUN": # debug!
+            print("")
+
         #self.parent.current_indent = "\t"
+        # self.parent._indent(False)
+        # self._add_line("def dialog(self, attachee, triggerer):")
+        # self.parent._indent(True)
+        # self._add_line("assert isinstance(attachee, toee.PyObjHandle)")
+        # self._add_line("assert isinstance(triggerer, toee.PyObjHandle)")
+        # self._add_line("")
+        # self._add_line("try:")
+        # self.parent._indent(True)
+        # self._add_line('self.vars["attachee"] = attachee')
+        # self._add_line('self.vars["triggerer"] = triggerer')
+        # self._add_line("")
+        # self._add_line("self.script_dialog(attachee, triggerer)")
+        # self.parent._indent(False)
+        # self._add_line("finally:")
+        # self.parent._indent(True)
+        # self._add_line('self.vars["attachee"] = None')
+        # self._add_line('self.vars["triggerer"] = None')
+        # self.parent._indent(False)
+        # self._add_line("")
+        # self._add_line("return toee.SKIP_DEFAULT")
+        # self._add_line("")
+
         self.parent._indent(False)
-        self._add_line("def dialog(self, attachee, triggerer):")
+        self._add_line("def script_dialog(self, attachee, triggerer):")
         self.parent._indent(True)
+        self._add_line(f"# {self.dialog_name}")
         self._add_line("assert isinstance(attachee, toee.PyObjHandle)")
         self._add_line("assert isinstance(triggerer, toee.PyObjHandle)")
-
         self._add_line("")
         self._add_line("attachee.turn_towards(triggerer)")
         self._add_line("")
         self._add_line('line_id = -1')
+        self._add_line("while True:")
+        self.parent._indent(True)
 
         for phrase in phrases:
             triggerIndex = int(phrase["TriggerIndex"])
             if triggerIndex == -1: continue
 
             trigger = triggersPhrase[triggerIndex]
-            trigger_lines = str(trigger).splitlines(False)
+            trigger_lines = produce_scripts.condition_split(trigger)
             for trigger_line in trigger_lines:
                 self._add_line(f"# {trigger_line}")
 
 
-            for index, trigger_line in enumerate(trigger_lines):
-                is_last_line = index + 1 == len(trigger_lines)
-                line = ""
-                tline = trigger_line
-                if tline == "NumTimesTalkedTo(0)": 
-                    tline = "not attachee.has_met(triggerer)"
-                elif tline == "NumTimesTalkedToGT(0)": 
-                    tline = "attachee.has_met(triggerer)"
-                else:
-                    tline = "ies." + tline
-                if index == 0:
-                    line = "if "
-                else:
-                    line = "\tand "
-                line = line + tline + (" \\" if not is_last_line else ":")
+            out_lines = produce_scripts.transate_trigger_lines(trigger_lines)
+            # for index, trigger_line in enumerate(trigger_lines):
+            #     is_last_line = index + 1 == len(trigger_lines)
+            #     line = ""
+            #     tline = trigger_line
+            #     if tline == "NumTimesTalkedTo(0)": 
+            #         tline = "not attachee.has_met(triggerer)"
+            #     elif tline == "NumTimesTalkedToGT(0)": 
+            #         tline = "attachee.has_met(triggerer)"
+            #     else:
+            #         tline = "ies." + tline
+            #     if index == 0:
+            #         line = "if "
+            #     else:
+            #         line = "\tand "
+            #     line = line + tline + (" \\" if not is_last_line else ":")
                 
-                self._add_line(line)
+            #     self._add_line(line)
+            for l in out_lines:
+                self._add_line(l)
                 
             phrase_text = phrase["Text"]["Text"]
             phrase_text = text_strip_directions(phrase_text)
@@ -96,16 +127,29 @@ class ProduceNPCDialog:
             self.parent._indent(True)
             #self._add_line(f'triggerer.begin_dialog(attachee, {line_id}) # {phrase_text}')
             self._add_line(f'line_id = {line_id} # {phrase_text}')
+            self._add_line('break')
             self.parent._indent(False)
             self._add_line("")
 
+        self._add_line("break # while")
+        self._add_line("")
+        self.parent._indent(False)
         self._add_line('if line_id >= 0:')
         self._add_line(f'\ttriggerer.begin_dialog(attachee, line_id)')
-        self._add_line("return toee.SKIP_DEFAULT")
+        self._add_line("")
+        self._add_line("return # script_dialog")
         self.parent._indent(False)
         self._add_line("")
         return
 
     def save(self):
         self.dialog_file.save()
+        return
+
+    def translate_trigger(self, trigger: str):
+        # should produce if (conditions):
+        return
+
+    def translate_trigger_line(self, trigger_line: str):
+        # should produce condition:
         return

@@ -15,7 +15,7 @@ class AnimBase(object):
     @staticmethod
     def process(cre: dict, parent):
         anim_name = cre["AnimationNameCalc"]
-        print(f"AnimationNameCalc: {anim_name}")
+        #print(f"AnimationNameCalc: {anim_name}")
 
         category_class = next((cls for name, cls in inspect.getmembers(sys.modules[__name__], inspect.isclass) if issubclass(cls, AnimBase) and anim_name in cls.get_codes()), None)
         if not category_class:

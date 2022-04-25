@@ -46,7 +46,7 @@ class ProduceNPC:
         return
 
     def setup_elements(self):
-        self.elements["base_class"] = "ctrl_behaviour.CtrlBehaviourAI"
+        self.elements["base_class"] = "ctrl_behaviour_ie.CtrlBehaviourIE"
         return
 
     def read_cre(self, name: str):

@@ -1,6 +1,7 @@
 import toee, debug, utils_toee, utils_storage, utils_obj, utils_item, const_toee, ctrl_daemon, ctrl_daemon2
 import ctrl_behaviour, py06122_cormyr_prompter, factions_zmod, utils_npc, utils_locks, const_proto_items, const_proto_scrolls, const_proto_rings
 import monster_info, module_quests, module_consts, module_globals
+import ctrl_daemon_ie
 import py01001_targos_docks_encounters
 
 
@@ -38,7 +39,7 @@ def cs():
 	assert isinstance(result, CtrlTargosDocks)
 	return result
 
-class CtrlTargosDocks(ctrl_daemon2.CtrlDaemon2):
+class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 	def created(self, npc):
 		self.init_daemon2_fields(DAEMON_MAP_ID, DAEMON_SCRIPT_ID, "targos_docks")
 		super(CtrlTargosDocks, self).created(npc)

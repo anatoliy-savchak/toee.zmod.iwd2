@@ -39,7 +39,7 @@ def transate_trigger_line(trigger_line: str):
         
     trigger_line = reassamble_call(trigger_line)
 
-    line = trigger_line
+    line += trigger_line
 
     return line
 
@@ -64,7 +64,7 @@ def reassamble_call(line: str):
         result += ")"
 
         if not check_func_implemented("i" + funct_name):
-            print(f"Func not implemented: {funct_name}")
+            print(f"Func not implemented: {funct_name} => {line}")
     else:
         if line == "True()":
             return "True"

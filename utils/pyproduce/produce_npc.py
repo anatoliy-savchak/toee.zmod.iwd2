@@ -162,12 +162,12 @@ class ProduceNPC:
             self.lines_script.append(i_code + f"utils_npc.npc_abilities_set(npc, [{Strength}, {Dexterity}, {Constitution}, {Intelligence}, {Wisdom}, {Charisma}])");
 
         LevelTotal = int(self.cre["LevelTotal"])
-        ClassLevels = (int(self.cre["LevelBard"]), int(self.cre["LevelCleric"]), int(self.cre["LevelDruid"])
+        ClassLevels = (int(self.cre["LevelBarbarian"]), int(self.cre["LevelBard"]), int(self.cre["LevelCleric"]), int(self.cre["LevelDruid"])
             , int(self.cre["LevelFighter"]), int(self.cre["LevelMonk"]), int(self.cre["LevelPaladin"])
             , int(self.cre["LevelRanger"]), int(self.cre["LevelRogue"]), int(self.cre["LevelSorcerer"])
             , int(self.cre["LevelWizard"]))
         levelsFromClasses = sum(ClassLevels)
-        classes = ("stat_level_bard", "stat_level_cleric", "stat_level_druid", "stat_level_fighter"
+        classes = ("stat_level_barbarian", "stat_level_bard", "stat_level_cleric", "stat_level_druid", "stat_level_fighter"
             , "stat_level_monk", "stat_level_paladin", "stat_level_ranger", "stat_level_rogue", "stat_level_sorcerer"
             , "stat_level_wizard")
 

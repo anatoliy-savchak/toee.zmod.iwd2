@@ -2,6 +2,7 @@ import toee
 import debug
 import inspect
 import utils_storage
+import utils_inf
 
 __metaclass__ = type
 
@@ -108,6 +109,45 @@ class InfScriptSupport:
 		Returns true only if the current hitpoints of the specified object are less than the 2nd parameter.
 		"""
 		return self._hp(obj_name) < hp
+	
+	def iClassEx(self, obj_name, classname):
+		""" 
+		0x4098 ClassEx(O:Object*,I:Class*class*)
+		As Class(), except ClassEx() also returns true if the specified object is multi-classed.
+		"""
+		toee_class = utils_inf.iwd2_classname_to_class(classname)
+		npc, ctrl = self._get_ie_object(obj_name)
+		if npc:
+			cc = npc.get_character_classes()
+			if toee_class in cc:
+				return True
+		return False
+	
+	def iCheckStatLT(self, obj_name, value, statname):
+		""" 
+		0x4046 CheckStatLT(O:Object*,I:Value*,I:StatNum*Stats)
+		Returns true only if the specified object has the statistic in the 3rd parameter less than the value of the 2nd parameter.
+		"""
+		tup = utils_inf.iwd2_stat_convert(statname)
+		if tup:
+			npc, ctrl = self._get_ie_object(obj_name)
+			if npc:
+				level = npc.stat_level_get(tup[0])
+				return level < value
+		return False
+	
+	def iCheckStatGT(self, obj_name, value, statname):
+		""" 
+		0x4045 CheckStatGT(O:Object*,I:Value*,I:StatNum*Stats)
+		Returns true only if the specified object has the statistic in the 3rd parameter greater than the value of the 2nd parameter.
+		"""
+		tup = utils_inf.iwd2_stat_convert(statname)
+		if tup:
+			npc, ctrl = self._get_ie_object(obj_name)
+			if npc:
+				level = npc.stat_level_get(tup[0])
+				return level > value
+		return False
 
 class InfScriptSupportNPC(InfScriptSupport):
 	def _gtriggerer(self):

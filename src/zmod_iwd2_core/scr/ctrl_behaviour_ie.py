@@ -34,3 +34,19 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 			self.vars["triggerer"] = None
 		
 		return toee.SKIP_DEFAULT
+
+	def dialog_test(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		
+		try:
+			self.vars["attachee"] = npc
+			self.vars["triggerer"] = pc
+			
+			result = self.dialog_test_do(npc, pc, index)
+		finally:
+			self.vars["attachee"] = None
+			self.vars["triggerer"] = None
+		
+		return result

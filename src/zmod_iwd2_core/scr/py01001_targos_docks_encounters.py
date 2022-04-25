@@ -141,8 +141,8 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 			if self.iGlobalGT("Reig_Quest", "GLOBAL", 0) \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0) \
 				 and self.iGlobal("Hedron_Know_Attack", "GLOBAL", 0):
-				line_id = 20 # I was hoping ye might come back - what's the word from the docks?  Not even Magdar's come out to shake me down yet, and he usually sends some half-drunk stumblers to help unload my supplies.
-				print("STATE 21: line_id = 20")
+				line_id = 230 # I was hoping ye might come back - what's the word from the docks?  Not even Magdar's come out to shake me down yet, and he usually sends some half-drunk stumblers to help unload my supplies.
+				print("STATE 21: line_id = 230")
 				break
 			
 			print("STATE 30")
@@ -150,8 +150,8 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 			# GlobalLT("Hedron_Know_Attack", "GLOBAL", 2)
 			if self.iGlobalGT("Reig_Quest", "GLOBAL", 0) \
 				 and self.iGlobalLT("Hedron_Know_Attack", "GLOBAL", 2):
-				line_id = 30 # What's going on along the shore?  I heard something about an attack on the docks, but no one can tell me anything for certain.
-				print("STATE 30: line_id = 30")
+				line_id = 330 # What's going on along the shore?  I heard something about an attack on the docks, but no one can tell me anything for certain.
+				print("STATE 30: line_id = 330")
 				break
 			
 			print("STATE 33")
@@ -161,8 +161,8 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 			if self.iGlobalGT("Hedron_Know_Attack", "GLOBAL", 0) \
 				 and self.iGlobalGT("Hedron_Quest", "GLOBAL", 0) \
 				 and self.iGlobalLT("Hedron_Quest", "GLOBAL", 4):
-				line_id = 40 # You're back - any word of me Ma?
-				print("STATE 33: line_id = 40")
+				line_id = 390 # You're back - any word of me Ma?
+				print("STATE 33: line_id = 390")
 				break
 			
 			print("STATE 34")
@@ -170,15 +170,15 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 			# Global("Reig_Quest", "GLOBAL", 0)
 			if self.iNumTimesTalkedToGT(0) \
 				 and self.iGlobal("Reig_Quest", "GLOBAL", 0):
-				line_id = 50 # Aye, look who's come back aboard - sick of Targos already, are ye?
-				print("STATE 34: line_id = 50")
+				line_id = 400 # Aye, look who's come back aboard - sick of Targos already, are ye?
+				print("STATE 34: line_id = 400")
 				break
 			
 			print("STATE 38")
 			# Global("Hedron_Know_Attack", "GLOBAL", 2)
 			if self.iGlobal("Hedron_Know_Attack", "GLOBAL", 2):
-				line_id = 60 # Aye, look who's come back aboard - the great goblin slayers of Targos.  What can I do for ye?
-				print("STATE 38: line_id = 60")
+				line_id = 420 # Aye, look who's come back aboard - the great goblin slayers of Targos.  What can I do for ye?
+				print("STATE 38: line_id = 420")
 				break
 			
 			break # while
@@ -188,6 +188,361 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 			triggerer.begin_dialog(attachee, line_id)
 		
 		return # script_dialog
+	
+	def dialog_test_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		
+		if index == 0:
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 156: Mostly decent folk?
+			
+		elif index == 1:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 4)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 4):
+				return True # 171: If your mother lives in Targos, why are you staying on the ship?
+			
+		elif index == 3:
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 191: You named your ship after your mother?
+			
+		elif index == 4:
+			# GlobalGT("Know_Hedron", "GLOBAL", 0)
+			if self.iGlobalGT("Know_Hedron", "GLOBAL", 0):
+				return True # 204: I see.  I must take my leave.  Farewell.
+			
+		elif index == 5:
+			# Global("Know_Hedron", "GLOBAL", 0)
+			if self.iGlobal("Know_Hedron", "GLOBAL", 0):
+				return True # 121: All right.  Thanks for your help, Hedron.
+			
+		elif index == 6:
+			# Global("Know_Hedron", "GLOBAL", 1)
+			if self.iGlobal("Know_Hedron", "GLOBAL", 1):
+				return True # 142: All right.  Thanks for your help, Hedron.
+			
+		elif index == 7:
+			# Global("Firtha_Dead", "GLOBAL", 1)
+			if self.iGlobal("Firtha_Dead", "GLOBAL", 1):
+				return True # 251: I'm afraid she didn't make it, Hedron... she, uh, was killed by goblins in her home.
+			
+		elif index == 8:
+			# GlobalGT("Hedron_Quest", "GLOBAL", 1)
+			# GlobalLT("Hedron_Quest", "GLOBAL", 4)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalGT("Hedron_Quest", "GLOBAL", 1) \
+				 and self.iGlobalLT("Hedron_Quest", "GLOBAL", 4) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 262: We already checked on her, Hedron.  Some goblins had broken into her house, but we took them out and rescued her.
+			
+		elif index == 9:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 2)
+			# Global("AR1004_GOBLINS_CLEAR", "GLOBAL", 1)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 2) \
+				 and self.iGlobal("AR1004_GOBLINS_CLEAR", "GLOBAL", 1) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 300: We encountered an old woman being menaced by goblins - I don't know whether it was your mother or not.
+			
+		elif index == 10:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 2)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 2) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 312: Your mother?  Which house is hers?
+			
+		elif index == 11:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 2)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 2) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 323: We'll see what we can do - but we need someplace safe to rest.  Can you watch over us while we catch our second wind?
+			
+		elif index == 12:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 2)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 2) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 324: We'll go check on her, Hedron.  We'll return when she's safe.
+			
+		elif index == 13:
+			# ClassEx(Protagonist, Paladin)
+			if self.iClassEx("Protagonist", "Paladin"):
+				return True # 271: It is likely the goblin attack merely frightened her.  Any harsh words she spoke probably stemmed from fear, not anger.
+			
+		elif index == 14:
+			# ClassEx(Protagonist, Monk)
+			if self.iClassEx("Protagonist", "Monk"):
+				return True # 285: It is likely the goblin attack merely frightened her.  Any harsh words she spoke probably stemmed from fear, not anger.
+			
+		elif index == 15:
+			# CheckStatLT(Protagonist, 12, CHR)
+			# !ClassEx(Protagonist, Paladin)
+			# !ClassEx(Protagonist, Monk)
+			if self.iCheckStatLT("Protagonist", 12, "CHR") \
+				 and not self.iClassEx("Protagonist", "Paladin") \
+				 and not self.iClassEx("Protagonist", "Monk"):
+				return True # 286: She's certainly got a tongue on her, no doubt.
+			
+		elif index == 16:
+			# CheckStatGT(Protagonist, 11, CHR)
+			# CheckStatLT(Protagonist, 16, CHR)
+			# !ClassEx(Protagonist, Paladin)
+			# !ClassEx(Protagonist, Monk)
+			if self.iCheckStatGT("Protagonist", 11, "CHR") \
+				 and self.iCheckStatLT("Protagonist", 16, "CHR") \
+				 and not self.iClassEx("Protagonist", "Paladin") \
+				 and not self.iClassEx("Protagonist", "Monk"):
+				return True # 295: She's certainly got a tongue on her, no doubt.
+			
+		elif index == 17:
+			# CheckStatGT(Protagonist, 15, CHR)
+			# !ClassEx(Protagonist, Paladin)
+			# !ClassEx(Protagonist, Monk)
+			if self.iCheckStatGT("Protagonist", 15, "CHR") \
+				 and not self.iClassEx("Protagonist", "Paladin") \
+				 and not self.iClassEx("Protagonist", "Monk"):
+				return True # 296: She's certainly got a tongue on her, no doubt.
+			
+		elif index == 18:
+			# CheckStatLT(Protagonist, 12, CHR)
+			# !ClassEx(Protagonist, Paladin)
+			# !ClassEx(Protagonist, Monk)
+			if self.iCheckStatLT("Protagonist", 12, "CHR") \
+				 and not self.iClassEx("Protagonist", "Paladin") \
+				 and not self.iClassEx("Protagonist", "Monk"):
+				return True # 297: She was somewhat sparse with her gratitude, Hedron.  Perhaps you could remedy that.
+			
+		elif index == 19:
+			# CheckStatGT(Protagonist, 11, CHR)
+			# CheckStatLT(Protagonist,16, CHR)
+			# !ClassEx(Protagonist, Paladin)
+			# !ClassEx(Protagonist, Monk)
+			if self.iCheckStatGT("Protagonist", 11, "CHR") \
+				 and self.iCheckStatLT("Protagonist", 16, "CHR") \
+				 and not self.iClassEx("Protagonist", "Paladin") \
+				 and not self.iClassEx("Protagonist", "Monk"):
+				return True # 298: She was somewhat sparse with her gratitude, Hedron.  Perhaps you could remedy that.
+			
+		elif index == 20:
+			# CheckStatGT(Protagonist, 15, CHR)
+			# !ClassEx(Protagonist, Paladin)
+			# !ClassEx(Protagonist, Monk)
+			if self.iCheckStatGT("Protagonist", 15, "CHR") \
+				 and not self.iClassEx("Protagonist", "Paladin") \
+				 and not self.iClassEx("Protagonist", "Monk"):
+				return True # 299: She was somewhat sparse with her gratitude, Hedron.  Perhaps you could remedy that.
+			
+		elif index == 21:
+			# ClassEx(Protagonist, Paladin)
+			if self.iClassEx("Protagonist", "Paladin"):
+				return True # 291: The tenets of my faith preclude me from accepting this much wealth.  Your gratitude is enough.  Farewell.
+			
+		elif index == 22:
+			# ClassEx(Protagonist, Monk)
+			if self.iClassEx("Protagonist", "Monk"):
+				return True # 292: The tenets of my order preclude the acceptance of this much wealth.  Your gratitude is enough.  Farewell.
+			
+		elif index == 23:
+			# !ClassEx(Protagonist, Paladin)
+			# !ClassEx(Protagonist, Monk)
+			if not self.iClassEx("Protagonist", "Paladin") \
+				 and not self.iClassEx("Protagonist", "Monk"):
+				return True # 293: Glad we could help.  Take care, Hedron.
+			
+		elif index == 24:
+			# !ClassEx(Protagonist, Paladin)
+			# !ClassEx(Protagonist, Monk)
+			if not self.iClassEx("Protagonist", "Paladin") \
+				 and not self.iClassEx("Protagonist", "Monk"):
+				return True # 294: She tested our patience, but this should serve to make up for it.  Farewell, Hedron.
+			
+		elif index == 25:
+			# ClassEx(Protagonist, Paladin)
+			if self.iClassEx("Protagonist", "Paladin"):
+				return True # 281: The tenets of my faith preclude me from accepting this much wealth.  We were pleased to help you, and let us leave it at that.  Farewell.
+			
+		elif index == 26:
+			# ClassEx(Protagonist, Monk)
+			if self.iClassEx("Protagonist", "Monk"):
+				return True # 282: The tenets of my order preclude the acceptance of this much wealth.  We were pleased to help you, and let us leave it at that.  Farewell.
+			
+		elif index == 27:
+			# !ClassEx(Protagonist, Paladin)
+			# !ClassEx(Protagonist, Monk)
+			if not self.iClassEx("Protagonist", "Paladin") \
+				 and not self.iClassEx("Protagonist", "Monk"):
+				return True # 283: Glad we could help.  Take care, Hedron.
+			
+		elif index == 28:
+			# !ClassEx(Protagonist, Paladin)
+			# !ClassEx(Protagonist, Monk)
+			if not self.iClassEx("Protagonist", "Paladin") \
+				 and not self.iClassEx("Protagonist", "Monk"):
+				return True # 284: She tested our patience, but this should serve to make up for it.  Farewell, Hedron.
+			
+		elif index == 29:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
+			# GlobalLT("Hedron_Know_Attack", "GLOBAL", 2)
+			# GlobalLT("Hedron_Quest", "GLOBAL", 4)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1) \
+				 and self.iGlobalLT("Hedron_Know_Attack", "GLOBAL", 2) \
+				 and self.iGlobalLT("Hedron_Quest", "GLOBAL", 4):
+				return True # 331: The town was attacked by goblins.  We managed to drive them off and retake the docks.
+			
+		elif index == 30:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
+			# GlobalLT("Hedron_Know_Attack", "GLOBAL", 2)
+			# GlobalLT("Hedron_Quest", "GLOBAL", 4)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1) \
+				 and self.iGlobalLT("Hedron_Know_Attack", "GLOBAL", 2) \
+				 and self.iGlobalLT("Hedron_Quest", "GLOBAL", 4):
+				return True # 358: There's been an attack on the docks.  If this keeps up, I suspect Targos is going to be the new home of the goblin horde in the near future.
+			
+		elif index == 31:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
+			# GlobalLT("Hedron_Know_Attack", "GLOBAL", 2)
+			# GlobalGT("Hedron_Quest", "GLOBAL", 3)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1) \
+				 and self.iGlobalLT("Hedron_Know_Attack", "GLOBAL", 2) \
+				 and self.iGlobalGT("Hedron_Quest", "GLOBAL", 3):
+				return True # 359: We've managed to drive off the goblins, though it was a near thing.  Could you put us up for the night, Hedron?
+			
+		elif index == 32:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
+			# GlobalLT("Hedron_Know_Attack", "GLOBAL", 2)
+			# GlobalGT("Hedron_Quest", "GLOBAL", 3)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1) \
+				 and self.iGlobalLT("Hedron_Know_Attack", "GLOBAL", 2) \
+				 and self.iGlobalGT("Hedron_Quest", "GLOBAL", 3):
+				return True # 360: The goblins have been taken care of... but if you caught word of the goblin attack, how come you haven't left yet?
+			
+		elif index == 33:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
+			# GlobalLT("Hedron_Know_Attack", "GLOBAL", 2)
+			# GlobalGT("Hedron_Quest", "GLOBAL", 3)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1) \
+				 and self.iGlobalLT("Hedron_Know_Attack", "GLOBAL", 2) \
+				 and self.iGlobalGT("Hedron_Quest", "GLOBAL", 3):
+				return True # 384: The docks are safe, and the attacking goblins are dead.  Just returned to the ship to let you know - we'll speak again later.
+			
+		elif index == 34:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
+				return True # 385: There's still goblins about, and we need someplace safe to rest.  Can you watch over us while we catch our second wind?
+			
+		elif index == 35:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
+				return True # 386: We're still figuring out the extent of the goblin attack.  We'll return when we know more.  Farewell.
+			
+		elif index == 36:
+			# Global("Firtha_Dead", "GLOBAL", 1)
+			if self.iGlobal("Firtha_Dead", "GLOBAL", 1):
+				return True # 351: I'm afraid she didn't make it, Hedron... she, uh, was killed by goblins in her home.
+			
+		elif index == 37:
+			# GlobalGT("Hedron_Quest", "GLOBAL", 1)
+			# GlobalLT("Hedron_Quest", "GLOBAL", 4)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalGT("Hedron_Quest", "GLOBAL", 1) \
+				 and self.iGlobalLT("Hedron_Quest", "GLOBAL", 4) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 352: We already checked on her, Hedron.  Some goblins had broken into her house, but we took them out and rescued her.
+			
+		elif index == 38:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 2)
+			# Global("AR1004_GOBLINS_CLEAR", "GLOBAL", 1)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 2) \
+				 and self.iGlobal("AR1004_GOBLINS_CLEAR", "GLOBAL", 1) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 353: We encountered an old woman being menaced by goblins - I don't know whether it was your mother or not.
+			
+		elif index == 39:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 2)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 2) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 354: Your mother?  Which house is hers?
+			
+		elif index == 40:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 2)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 2) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 355: We'll see what we can do - but we need someplace safe to rest.  Can you watch over us while we catch our second wind?
+			
+		elif index == 41:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 2)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 2) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 356: We'll go check on her, Hedron.  We'll return when she's safe.
+			
+		elif index == 42:
+			# Global("Firtha_Dead", "GLOBAL", 1)
+			if self.iGlobal("Firtha_Dead", "GLOBAL", 1):
+				return True # 391: I'm afraid she didn't make it, Hedron... she, uh, was killed by goblins in her home.
+			
+		elif index == 43:
+			# GlobalGT("Hedron_Quest", "GLOBAL", 1)
+			# GlobalLT("Hedron_Quest", "GLOBAL", 4)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalGT("Hedron_Quest", "GLOBAL", 1) \
+				 and self.iGlobalLT("Hedron_Quest", "GLOBAL", 4) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 392: We already checked on her, Hedron.  Some goblins had broken into her house, but we took them out and rescued her.
+			
+		elif index == 44:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 2)
+			# Global("AR1004_GOBLINS_CLEAR", "GLOBAL", 1)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 2) \
+				 and self.iGlobal("AR1004_GOBLINS_CLEAR", "GLOBAL", 1) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 393: We encountered an old woman being menaced by goblins - I don't know whether it was your mother or not.
+			
+		elif index == 45:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 2)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 2) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 394: Which house is hers again?
+			
+		elif index == 46:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 2)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 2) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 395: We'll see what we can do - but we need someplace safe to rest.  Can you watch over us while we catch our second wind?
+			
+		elif index == 47:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 2)
+			# Global("Firtha_Dead", "GLOBAL", 0)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 2) \
+				 and self.iGlobal("Firtha_Dead", "GLOBAL", 0):
+				return True # 396: We'll go check on her, Hedron.  We'll return when she's safe.
+			
+		elif index == 48:
+			# Global("Reig_Quest", "GLOBAL", 0)
+			if self.iGlobal("Reig_Quest", "GLOBAL", 0):
+				return True # 405: Nothing today, thanks.  Farewell.
+			
+		elif index == 49:
+			# GlobalGT("Reig_Quest", "GLOBAL", 0)
+			if self.iGlobalGT("Reig_Quest", "GLOBAL", 0):
+				return True # 412: Nothing today, thanks.  Farewell.
+			
+		elif index == 50:
+			# GlobalLT("Hedron_Quest", "GLOBAL", 4)
+			if self.iGlobalLT("Hedron_Quest", "GLOBAL", 4):
+				return True # 381: If your mother's here why are you still aboard the ship?
+			
+		return False # dialog_test_do
 	
 class Ctrl10ELDGUL(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL 
 	@classmethod
@@ -287,22 +642,22 @@ class Ctrl10ELDGUL(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 			print("STATE 0")
 			# True()
 			if True:
-				line_id = 70 # Can't stop t'bandy words with ye; Hedron be findin' *more* work for me after I finish this bit.  Fare thee well.
-				print("STATE 0: line_id = 70")
+				line_id = 10 # None
+				print("STATE 0: line_id = 10")
 				break
 			
 			print("STATE 3")
 			# GlobalGT("Reig_Quest", "GLOBAL", 0)
 			if self.iGlobalGT("Reig_Quest", "GLOBAL", 0):
-				line_id = 80 # Is it true?  I hear th'town's bein' attacked by the goblins!
-				print("STATE 3: line_id = 80")
+				line_id = 30 # None
+				print("STATE 3: line_id = 30")
 				break
 			
 			print("STATE 5")
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
 			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
-				line_id = 90 # Caught word 'bout the battle - looks like ye pulled through - good for ye.
-				print("STATE 5: line_id = 90")
+				line_id = 160 # None
+				print("STATE 5: line_id = 160")
 				break
 			
 			break # while
@@ -312,6 +667,13 @@ class Ctrl10ELDGUL(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 			triggerer.begin_dialog(attachee, line_id)
 		
 		return # script_dialog
+	
+	def dialog_test_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		
+		return False # dialog_test_do
 	
 class Ctrl10SCREED(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED 
 	@classmethod
@@ -411,22 +773,22 @@ class Ctrl10SCREED(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 			print("STATE 0")
 			# True()
 			if True:
-				line_id = 100 # Was good havin' ye with us, even for only a short time.  Hope fortune's wind fills yer sails, friend.
-				print("STATE 0: line_id = 100")
+				line_id = 10 # None
+				print("STATE 0: line_id = 10")
 				break
 			
 			print("STATE 3")
 			# GlobalGT("Reig_Quest", "GLOBAL", 0)
 			if self.iGlobalGT("Reig_Quest", "GLOBAL", 0):
-				line_id = 110 # I hear the town's being attacked again - the Wicked Wench's all ready to set sail if ye need to fall back.
-				print("STATE 3: line_id = 110")
+				line_id = 30 # None
+				print("STATE 3: line_id = 30")
 				break
 			
 			print("STATE 4")
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
 			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
-				line_id = 120 # Heard th' fightin' up along the docks was fierce - drove those goblins back, did ye?
-				print("STATE 4: line_id = 120")
+				line_id = 40 # None
+				print("STATE 4: line_id = 40")
 				break
 			
 			break # while
@@ -436,6 +798,13 @@ class Ctrl10SCREED(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 			triggerer.begin_dialog(attachee, line_id)
 		
 		return # script_dialog
+	
+	def dialog_test_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		
+		return False # dialog_test_do
 	
 class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG 
 	@classmethod
@@ -537,15 +906,15 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			print("STATE 0")
 			# NumTimesTalkedTo(0)
 			if self.iNumTimesTalkedTo(0):
-				line_id = 130 # Halt!  Who goes there?  Step forward and identify yourself!
-				print("STATE 0: line_id = 130")
+				line_id = 10 # None
+				print("STATE 0: line_id = 10")
 				break
 			
 			print("STATE 15")
 			# Global("Reig_Quest", "GLOBAL", 1)
 			if self.iGlobal("Reig_Quest", "GLOBAL", 1):
-				line_id = 140 # Did you find Magdar?  My damned arm's getting worse, and I need that potion he's got.
-				print("STATE 15: line_id = 140")
+				line_id = 200 # None
+				print("STATE 15: line_id = 200")
 				break
 			
 			print("STATE 16")
@@ -555,8 +924,8 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			if self.iHPGT("Myself", 3) \
 				 and self.iGlobal("Reig_Quest", "GLOBAL", 1) \
 				 and self.iGlobal("Reig_Heal_Priest", "GLOBAL", 0):
-				line_id = 150 # My arm's better, thanks for your help.  Looks like you're praying to the right gods.
-				print("STATE 16: line_id = 150")
+				line_id = 430 # My arm's better, thanks for your help.  Looks like you're praying to the right gods.
+				print("STATE 16: line_id = 430")
 				break
 			
 			print("STATE 17")
@@ -564,22 +933,22 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			# Global("Reig_Heal_Priest", "GLOBAL", 1)
 			if self.iGlobal("Reig_Quest", "GLOBAL", 1) \
 				 and self.iGlobal("Reig_Heal_Priest", "GLOBAL", 1):
-				line_id = 160 # I could still use that healing draught from Magdar if you can find him.  Hope the goblins haven't got him yet.
-				print("STATE 17: line_id = 160")
+				line_id = 110 # None
+				print("STATE 17: line_id = 110")
 				break
 			
 			print("STATE 19")
 			# Global("Reig_Quest", "GLOBAL", 2)
 			if self.iGlobal("Reig_Quest", "GLOBAL", 2):
-				line_id = 170 # Looks like you sailed into Targos at the right time.  If you can help us hunt down any of those goblins, we'd welcome your help.
-				print("STATE 19: line_id = 170")
+				line_id = 130 # None
+				print("STATE 19: line_id = 130")
 				break
 			
 			print("STATE 21")
 			# Global("Told_Reig", "GLOBAL", 1)
 			if self.iGlobal("Told_Reig", "GLOBAL", 1):
-				line_id = 180 # Now that the raiders have been taken care of, we should be all right.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.
-				print("STATE 21: line_id = 180")
+				line_id = 230 # None
+				print("STATE 21: line_id = 230")
 				break
 			
 			break # while
@@ -589,6 +958,23 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			triggerer.begin_dialog(attachee, line_id)
 		
 		return # script_dialog
+	
+	def dialog_test_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		
+		if index == 35:
+			# Global("Reig_Heal_Priest", "GLOBAL", 0)
+			if self.iGlobal("Reig_Heal_Priest", "GLOBAL", 0):
+				return True # 431: The wound's closed, but there may be more damage.  You still don't look too good.
+			
+		elif index == 36:
+			# Global("Reig_Heal_Priest", "GLOBAL", 1)
+			if self.iGlobal("Reig_Heal_Priest", "GLOBAL", 1):
+				return True # 432: The wound's closed, but there may be more damage.  You still don't look too good.
+			
+		return False # dialog_test_do
 	
 class Ctrl10JON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON 
 	@classmethod
@@ -696,15 +1082,15 @@ class Ctrl10JON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 			print("STATE 0")
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
 			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
-				line_id = 190 # No idea where those goblins came from - one moment we're stepping out of the Salty Dog, and suddenly there's a mess of them running through town.  We sounded the alarm, but...
-				print("STATE 0: line_id = 190")
+				line_id = 10 # None
+				print("STATE 0: line_id = 10")
 				break
 			
 			print("STATE 8")
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
 			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
-				line_id = 200 # Tymora must have been smiling on us when you sailed into town.  Without you to drive back the goblins, the docks might have been burning now, and Targos overrun.
-				print("STATE 8: line_id = 200")
+				line_id = 150 # None
+				print("STATE 8: line_id = 150")
 				break
 			
 			break # while
@@ -714,6 +1100,13 @@ class Ctrl10JON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 			triggerer.begin_dialog(attachee, line_id)
 		
 		return # script_dialog
+	
+	def dialog_test_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		
+		return False # dialog_test_do
 	
 class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN 
 	@classmethod
@@ -821,8 +1214,8 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 			print("STATE 0")
 			# True()
 			if True:
-				line_id = 210 # Halt!  Identify yourself!
-				print("STATE 0: line_id = 210")
+				line_id = 10 # None
+				print("STATE 0: line_id = 10")
 				break
 			
 			print("STATE 6")
@@ -834,15 +1227,15 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 				 and self.iGlobalLT("Iron_Collar_Quest", "GLOBAL", 3) \
 				 and self.iGlobal("Brogan_Quest", "GLOBAL", 0) \
 				 and self.iGlobal("AR1002_Visited", "GLOBAL", 0):
-				line_id = 220 # You're back!  Did you bring the Iron Collar Band with you?
-				print("STATE 6: line_id = 220")
+				line_id = 170 # None
+				print("STATE 6: line_id = 170")
 				break
 			
 			print("STATE 10")
 			# Global("Brogan_Quest", "GLOBAL", 1)
 			if self.iGlobal("Brogan_Quest", "GLOBAL", 1):
-				line_id = 230 # Did you take out those goblins yet?  Time's running short.
-				print("STATE 10: line_id = 230")
+				line_id = 90 # None
+				print("STATE 10: line_id = 90")
 				break
 			
 			print("STATE 13")
@@ -852,8 +1245,8 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 			if self.iGlobal("Brogan_Quest", "GLOBAL", 1) \
 				 and self.iGlobal("AR1002_Visited", "GLOBAL", 1) \
 				 and self.iGlobal("AR1007_Visited", "GLOBAL", 1):
-				line_id = 240 # Where in Tempus' name have you *been?*  I heard the fighting, and then everything went silent.  Thought you were dead.
-				print("STATE 13: line_id = 240")
+				line_id = 180 # None
+				print("STATE 13: line_id = 180")
 				break
 			
 			print("STATE 18")
@@ -861,15 +1254,15 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 			# Global("Know_Brogan", "GLOBAL", 0)
 			if self.iGlobal("AR1002_Visited", "GLOBAL", 1) \
 				 and self.iGlobal("Know_Brogan", "GLOBAL", 0):
-				line_id = 250 # Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!
-				print("STATE 18: line_id = 250")
+				line_id = 120 # None
+				print("STATE 18: line_id = 120")
 				break
 			
 			print("STATE 19")
 			# Global("Brogan_Leave", "GLOBAL", 1)
 			if self.iGlobal("Brogan_Leave", "GLOBAL", 1):
-				line_id = 260 # I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.
-				print("STATE 19: line_id = 260")
+				line_id = 130 # None
+				print("STATE 19: line_id = 130")
 				break
 			
 			print("STATE 20")
@@ -881,8 +1274,8 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 				 and self.iGlobalLT("Iron_Collar_Quest", "GLOBAL", 3) \
 				 and self.iGlobal("Brogan_Quest", "GLOBAL", 0) \
 				 and self.iGlobal("AR1002_Visited", "GLOBAL", 1):
-				line_id = 270 # Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!
-				print("STATE 20: line_id = 270")
+				line_id = 140 # None
+				print("STATE 20: line_id = 140")
 				break
 			
 			break # while
@@ -892,6 +1285,13 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 			triggerer.begin_dialog(attachee, line_id)
 		
 		return # script_dialog
+	
+	def dialog_test_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		
+		return False # dialog_test_do
 	
 class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN 
 	@classmethod
@@ -995,8 +1395,8 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
 			if self.iGlobal("Know_Jorun", "GLOBAL", 0) \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
-				line_id = 280 # Damnable goblins... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye stand with Targos?
-				print("STATE 0: line_id = 280")
+				line_id = 10 # None
+				print("STATE 0: line_id = 10")
 				break
 			
 			print("STATE 13")
@@ -1004,8 +1404,8 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
 			if self.iGlobal("Know_Jorun", "GLOBAL", 1) \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
-				line_id = 290 # Have ye spilled any more goblin blood?  Ye better not be greedy - make ye sure ye save a handful for me.
-				print("STATE 13: line_id = 290")
+				line_id = 180 # None
+				print("STATE 13: line_id = 180")
 				break
 			
 			print("STATE 14")
@@ -1013,8 +1413,8 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
 			if self.iGlobal("Know_Jorun", "GLOBAL", 0) \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
-				line_id = 300 # Well, now, something I can help ye with?  I'm not doing business with the attacks an' all, and there's not much call for building ships as much as taking them down.
-				print("STATE 14: line_id = 300")
+				line_id = 190 # None
+				print("STATE 14: line_id = 190")
 				break
 			
 			print("STATE 20")
@@ -1022,8 +1422,8 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
 			if self.iGlobal("Know_Jorun", "GLOBAL", 1) \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
-				line_id = 310 # More than once ye've crossed my path; if ye plan on makin' a habit of it, the least ye could do is bring a winecask with ye... or two. Somethin' I can do for ye?
-				print("STATE 20: line_id = 310")
+				line_id = 140 # None
+				print("STATE 20: line_id = 140")
 				break
 			
 			print("STATE 31")
@@ -1033,8 +1433,8 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			if self.iNumTimesTalkedTo(0) \
 				 and self.iSubrace("Protagonist", "Dwarf_Gray") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
-				line_id = 320 # Eh?!  A duergar in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.
-				print("STATE 31: line_id = 320")
+				line_id = 340 # None
+				print("STATE 31: line_id = 340")
 				break
 			
 			print("STATE 32")
@@ -1044,8 +1444,8 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			if self.iNumTimesTalkedTo(0) \
 				 and self.iSubrace("Protagonist", "Elf_Drow") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
-				line_id = 330 # Eh?!  A drow in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.
-				print("STATE 32: line_id = 330")
+				line_id = 350 # None
+				print("STATE 32: line_id = 350")
 				break
 			
 			print("STATE 35")
@@ -1055,8 +1455,8 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			if self.iNumTimesTalkedTo(0) \
 				 and self.iSubrace("Protagonist", "Gnome_Deep") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
-				line_id = 340 # Damn me eyes... are ye a deep gnome?  What in the hells are ye doing in Targos?
-				print("STATE 35: line_id = 340")
+				line_id = 370 # None
+				print("STATE 35: line_id = 370")
 				break
 			
 			print("STATE 37")
@@ -1066,8 +1466,8 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			if self.iNumTimesTalkedTo(0) \
 				 and self.iSubrace("Protagonist", "Dwarf_Gray") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
-				line_id = 350 # I heard talk of a duergar around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?
-				print("STATE 37: line_id = 350")
+				line_id = 410 # None
+				print("STATE 37: line_id = 410")
 				break
 			
 			print("STATE 38")
@@ -1077,8 +1477,8 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			if self.iNumTimesTalkedTo(0) \
 				 and self.iSubrace("Protagonist", "Elf_Drow") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
-				line_id = 360 # I heard talk of a drow around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?
-				print("STATE 38: line_id = 360")
+				line_id = 420 # None
+				print("STATE 38: line_id = 420")
 				break
 			
 			print("STATE 39")
@@ -1088,8 +1488,8 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			if self.iNumTimesTalkedTo(0) \
 				 and self.iSubrace("Protagonist", "Gnome_Deep") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
-				line_id = 370 # Damn me eyes... ye're the deep gnome everyone's going on about.  I was hoping ye might be crossing me path - something this ol' shipbuilder can help ye with? 
-				print("STATE 39: line_id = 370")
+				line_id = 60 # None
+				print("STATE 39: line_id = 60")
 				break
 			
 			print("STATE 40")
@@ -1099,8 +1499,8 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			if self.iNumTimesTalkedTo(0) \
 				 and self.iRace("Protagonist", "Dwarf") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
-				line_id = 380 # It's good to see another dwarf on the shore of Maer Dualdon especially with these damnable goblins about... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye come to add yer axe and hammer to Targos? 
-				print("STATE 40: line_id = 380")
+				line_id = 70 # None
+				print("STATE 40: line_id = 70")
 				break
 			
 			print("STATE 41")
@@ -1110,8 +1510,8 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			if self.iNumTimesTalkedTo(0) \
 				 and self.iRace("Protagonist", "Dwarf") \
 				 and self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
-				line_id = 390 # Well, now, a dwarf is a sight for sore eyes in these windswept lands... especially one who can cleave goblins as well as ye can.  Something this ol' shipbuilder can help ye with?  
-				print("STATE 41: line_id = 390")
+				line_id = 440 # Well, now, a dwarf is a sight for sore eyes in these windswept lands... especially one who can cleave goblins as well as ye can.  Something this ol' shipbuilder can help ye with?  
+				print("STATE 41: line_id = 440")
 				break
 			
 			break # while
@@ -1121,6 +1521,13 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			triggerer.begin_dialog(attachee, line_id)
 		
 		return # script_dialog
+	
+	def dialog_test_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		
+		return False # dialog_test_do
 	
 class Ctrl10MALED(ctrl_behaviour_ie.CtrlBehaviourIE): # 10MALED 
 	@classmethod

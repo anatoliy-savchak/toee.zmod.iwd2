@@ -11,14 +11,19 @@ out_dialog_file = '../../src/zmod_iwd2_core/dlg/01001_targos_docks_encounters.dl
 out_daemon_file = '../../src/zmod_iwd2_core/scr/py01000_targos_docks_daemon.py'
 out_rumors_file = '../../src/zmod_iwd2_core/mes/game_rd_npc_m2m.mes'
 template_rumors_file = '../../src/zmod_iwd2_core/mes/game_rd_npc_f2m.mes'
+map_rumors_file = '../../resources/iwd2_exp/journal/journal_map.json'
+rumors_file = '../../resources/iwd2_exp/journal/journal.json'
 exported_dir = pyproduce.InfinityExportedDir('../../resources/iwd2_exp')
 exported_dir.load_toee_class_specs('../../../TemplePlus/tpdatasrc/tpgamefiles/rules/char_class')
 #exported_dir.read_cre('10HEDRON')
 
 print(f" cwd: {os.getcwd()}")
 
-journalFile = JournalFile(os.path.join(exported_dir.dir, "journal/journal.json"))
-journalFile.produce_rumors(out_rumors_file, template_rumors_file)
+journalFile = JournalFile()
+#journalFile.load_iwd_journal(rumors_file)
+#journalFile.produce_rumors(out_rumors_file, template_rumors_file)
+#journalFile.save_map(map_rumors_file)
+journalFile.load_map(map_rumors_file)
 exported_dir.journal = journalFile
 
 with open(out_npcs_file, 'w') as f:

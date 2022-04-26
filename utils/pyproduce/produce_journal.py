@@ -1,14 +1,11 @@
 import json
 
 class JournalFile:
-    def __init__(self, file_path: str):
-        self.file_path = file_path
+    def __init__(self):
         self.data = dict();
         self.text_max_len = 113
         self.lines = dict()
         self.last_line_id = -1
-
-        self._load()
         return
 
     def _add_line(self, text: str, strref: int):
@@ -17,8 +14,8 @@ class JournalFile:
 
         return self.last_line_id
 
-    def _load(self):
-        with open(self.file_path, 'r') as f:
+    def load_iwd_journal(self, file_path: str):
+        with open(file_path, 'r') as f:
             j = json.load(f)
 
         self.data = j["Entries"]
@@ -57,3 +54,13 @@ class JournalFile:
     def get_rumors_by_strref(self, strref: int):
         result = "(" + ", ".join([str(rumor_id) for rumor_id, rec in self.lines.items() if rec[1] == strref]) + ", )"
         return result
+
+    def save_map(self, file_path: str):
+        with open(file_path, 'w') as f:
+            json.dump(self.lines, f, indent=4)
+        return
+
+    def load_map(self, file_path: str):
+        with open(file_path, 'r') as f:
+            self.lines = json.load(f)
+        return

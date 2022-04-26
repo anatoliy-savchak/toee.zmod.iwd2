@@ -3,6 +3,7 @@ import const_proto_potions, utils_obj, const_proto_food, utils_npc, utils_target
 import const_proto_items, const_proto_rings, const_proto_cloth, const_proto_wondrous, utils_races, utils_npc_build, const_proto_npc, utils_toee, tpai, tpactions, utils_strategy
 import py06615_daemon_orc_fort, py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, module_consts, rumor_control, py14764_npc_portal, utils_pc
 import const_proto_armor_iwd2, ctrl_behaviour_ie
+import utils_journal as uj
 
 MODULE_SCRIPT_ID = 1001
 

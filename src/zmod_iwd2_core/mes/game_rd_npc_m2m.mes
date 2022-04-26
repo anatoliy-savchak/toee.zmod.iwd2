@@ -4,41 +4,2438 @@
 // the first message is the logbook message
 // the second message is the rumor as told by an NPC in dialog
 
-{0} {There is cave complex to the south-west.}
-{1} {}
+// Story State 0
+{0} {Hedron Kerdos, the captain of the Wicked Wench, has dropped our party off on the docks of Targos.  He told us to}
+{1} {Hedron Kerdos, the captain of the Wicked Wench, has dropped our party off on the docks of Targos.  He told us to}
 
-{10} {Shania at the Keep can decipher messages.}
-{11} {}
+{10} {... seek out Ulbrec Dinnsmore, the Lord of Targos, in the town above the cliffs and warned us to be careful of}
+{11} {... seek out Ulbrec Dinnsmore, the Lord of Targos, in the town above the cliffs and warned us to be careful of}
 
-{20} {Witch in Corinth lives on the South.}
-{21} {}
+{20} {... the goblin raiders in the region.}
+{21} {... the goblin raiders in the region.}
 
-{30} {We met fort's lieutenant, who offered information in exchange for his life.}
-{31} {}
+{30} {Turns out Hedron's mother lives in Targos, and once he heard about the goblin attack, he asked us to go make sure}
+{31} {Turns out Hedron's mother lives in Targos, and once he heard about the goblin attack, he asked us to go make sure}
 
-{40} {We rejected his offer and fought against him.}
-{41} {}
+{40} {... she was safe.}
+{41} {... she was safe.}
 
-{50} {Akrinax, the green dragon, can be defeated by hidden arrows in a pool.}
-{51} {}
+{50} {We told Hedron his mother had perished in the goblin attack, but we didn't elaborate on the circumstances.}
+{51} {We told Hedron his mother had perished in the goblin attack, but we didn't elaborate on the circumstances.}
 
-{60} {Fort belongs to Slaver Lords, and is operated by Icarus and Kessa.}
-{61} {}
+{60} {We told Hedron we'd rescued his mother from the goblins, and he thanked us for our efforts.}
+{61} {We told Hedron we'd rescued his mother from the goblins, and he thanked us for our efforts.}
 
-{70} {Fort will re-open if we manage to slay Icarus, or exit through the underground tunnels.}
-{71} {}
+{70} {We arrived at Targos, only to find it being attacked by a group of goblin raiders.  We ran across a wounded}
+{71} {We arrived at Targos, only to find it being attacked by a group of goblin raiders.  We ran across a wounded}
 
-{80} {The lieutenant wanted to run away, but we could not let this slaver escape.}
-{81} {}
+{80} {... soldier at the docks - he asked us to bring him a healing potion from the harbor master, a man named Magdar. }
+{81} {... soldier at the docks - he asked us to bring him a healing potion from the harbor master, a man named Magdar. }
 
-{90} {We should open the next door very softly in order to surprise the enemy.}
-{91} {}
+{90} {... He said we could probably find him in one of the warehouses north of the docks.}
+{91} {... He said we could probably find him in one of the warehouses north of the docks.}
 
-{100} {Tronen said defating fort leaders, like blind Icarus, will set us free.}
-{101} {}
+{100} {We brought Reig a healing potion.  Hopefully, it should heal the rest of his wounds and allow him to get back on}
+{101} {We brought Reig a healing potion.  Hopefully, it should heal the rest of his wounds and allow him to get back on}
 
-{110} {Icarus said Kessa is in a large room in the underground level.}
-{111} {}
+{110} {... his feet.}
+{111} {... his feet.}
 
-{120} {Icarus said that the fort will not re-open until Kessa is dead.}
-{121} {}
+{120} {We were able to cure Reig's wounds with our healing magic, but he still looked in pretty bad shape.  He asked us}
+{121} {We were able to cure Reig's wounds with our healing magic, but he still looked in pretty bad shape.  He asked us}
+
+{130} {... to find Magdar and bring him a healing potion.}
+{131} {... to find Magdar and bring him a healing potion.}
+
+{140} {We told Reig that we had wiped out the goblins along the docks, and he told us to go see Lord Ulbrec in the town}
+{141} {We told Reig that we had wiped out the goblins along the docks, and he told us to go see Lord Ulbrec in the town}
+
+{150} {... above.}
+{151} {... above.}
+
+{160} {We encountered a soldier named Brogan along the docks.  He had cornered a small band of goblins within a}
+{161} {We encountered a soldier named Brogan along the docks.  He had cornered a small band of goblins within a}
+
+{170} {... warehouse, and he asked us to go fetch reinforcements from the Salty Dog tavern - apparently, there is an}
+{171} {... warehouse, and he asked us to go fetch reinforcements from the Salty Dog tavern - apparently, there is an}
+
+{180} {... adventuring company called the Iron Collar Mercenaries holed up there, and he is in need of their extra}
+{181} {... adventuring company called the Iron Collar Mercenaries holed up there, and he is in need of their extra}
+
+{190} {... swords to drive the goblins out.}
+{191} {... swords to drive the goblins out.}
+
+{200} {We told Brogan we would go find the Iron Collar mercenaries... they're holed up in a tavern called the Salty Dog}
+{201} {We told Brogan we would go find the Iron Collar mercenaries... they're holed up in a tavern called the Salty Dog}
+
+{210} {... somewhere south along the docks.}
+{211} {... somewhere south along the docks.}
+
+{220} {We returned to Brogan and told him the Iron Collar Mercenaries wouldn't be coming to help, and we offered our}
+{221} {We returned to Brogan and told him the Iron Collar Mercenaries wouldn't be coming to help, and we offered our}
+
+{230} {... services.}
+{231} {... services.}
+
+{240} {We convinced Brogan to let us drive the goblins out of the warehouse.  He told us they had locked themselves}
+{241} {We convinced Brogan to let us drive the goblins out of the warehouse.  He told us they had locked themselves}
+
+{250} {... inside, and we'd need to break down the door to the warehouse with our weapons, or else we'd need to get a}
+{251} {... inside, and we'd need to break down the door to the warehouse with our weapons, or else we'd need to get a}
+
+{260} {... thief to pick the lock.}
+{261} {... thief to pick the lock.}
+
+{270} {We cleaned out the goblins in the caves beneath the warehouse for Brogan.  He seemed impressed, and he told us we}
+{271} {We cleaned out the goblins in the caves beneath the warehouse for Brogan.  He seemed impressed, and he told us we}
+
+{280} {... should seek out Lord Ulbrec in the town above to claim our reward.}
+{281} {... should seek out Lord Ulbrec in the town above to claim our reward.}
+
+{290} {We spoke to an elderly dwarf named Jorun Tamewater.  He told us he suspects goblin sappers tunneled into some of}
+{291} {We spoke to an elderly dwarf named Jorun Tamewater.  He told us he suspects goblin sappers tunneled into some of}
+
+{300} {... the old caves in the Targos cliffs and emerged on the docks.  If so, that means there's an opening to their}
+{301} {... the old caves in the Targos cliffs and emerged on the docks.  If so, that means there's an opening to their}
+
+{310} {... tunnels somewhere around the docks - we just have to find it.  Jorun also told us if we got overwhelmed by}
+{311} {... tunnels somewhere around the docks - we just have to find it.  Jorun also told us if we got overwhelmed by}
+
+{320} {... any goblins to lure them back to him, and he'll help us defeat them.}
+{321} {... any goblins to lure them back to him, and he'll help us defeat them.}
+
+{330} {We told Jorun the problem with the crane, and he gave us a spare crane wheel to fix it.  Apparently, all we need}
+{331} {We told Jorun the problem with the crane, and he gave us a spare crane wheel to fix it.  Apparently, all we need}
+
+{340} {... to do is simply place it in the crane, and it should work again.}
+{341} {... to do is simply place it in the crane, and it should work again.}
+
+{350} {Jorun told us if we need a place to rest, we could hole up in his house just to the south and west.  He told us}
+{351} {Jorun told us if we need a place to rest, we could hole up in his house just to the south and west.  He told us}
+
+{360} {... that he had a chest there rigged to spit out some gut-churning gas if someone tried to break it open, but a}
+{361} {... that he had a chest there rigged to spit out some gut-churning gas if someone tried to break it open, but a}
+
+{370} {... thief might be able to disarm the trap and get the weapons inside.}
+{371} {... thief might be able to disarm the trap and get the weapons inside.}
+
+{380} {We found the harbor master, Magdar Shenlen, in one of the warehouses along the docks.  He told us that there was}
+{381} {We found the harbor master, Magdar Shenlen, in one of the warehouses along the docks.  He told us that there was}
+
+{390} {... a supply of healing potions in one of the barrels or crates in the warehouse, but he didn't know which one. }
+{391} {... a supply of healing potions in one of the barrels or crates in the warehouse, but he didn't know which one. }
+
+{400} {... He mentioned that most of the supplies in the warehouse were under the protection of the Gallaway Coster, but}
+{401} {... He mentioned that most of the supplies in the warehouse were under the protection of the Gallaway Coster, but}
+
+{410} {... considering the goblin attack, he put the supplies at our disposal and told us to take what we need.}
+{411} {... considering the goblin attack, he put the supplies at our disposal and told us to take what we need.}
+
+{420} {We asked Gohar if he knew Viera's husband, Donovan, and he said the man died years ago.  He still had a piece of}
+{421} {We asked Gohar if he knew Viera's husband, Donovan, and he said the man died years ago.  He still had a piece of}
+
+{430} {... Donovan's boat which washed up on shore, though, and he gave it to us.  We should be able to take it to Veira}
+{431} {... Donovan's boat which washed up on shore, though, and he gave it to us.  We should be able to take it to Veira}
+
+{440} {... and set her heart at peace.}
+{441} {... and set her heart at peace.}
+
+{450} {Guthewulfe, a hulking northerner in the Salty Dog Tavern, has a standing bet: if someone can stomach more}
+{451} {Guthewulfe, a hulking northerner in the Salty Dog Tavern, has a standing bet: if someone can stomach more}
+
+{460} {... "braehg" - wild boar's blood mixed with milk - than he can, he'll give the victor his silver wolf charm.  The}
+{461} {... "braehg" - wild boar's blood mixed with milk - than he can, he'll give the victor his silver wolf charm.  The}
+
+{470} {... catch is, the challenger pays for every round of braehg...}
+{471} {... catch is, the challenger pays for every round of braehg...}
+
+{480} {We managed to choke down more braehg than Guthewulfe, winning his silver wolf charm.  It's doubtful the winner}
+{481} {We managed to choke down more braehg than Guthewulfe, winning his silver wolf charm.  It's doubtful the winner}
+
+{490} {... will be gaining any "girth on the arms and fire in the loins" anytime soon, but something about Guthewulfe's}
+{491} {... will be gaining any "girth on the arms and fire in the loins" anytime soon, but something about Guthewulfe's}
+
+{500} {... charm seems unusual...}
+{501} {... charm seems unusual...}
+
+{510} {The Iron Collar mercenaries mentioned there were two more in their band - a priest named Koluhm Bonecutter who}
+{511} {The Iron Collar mercenaries mentioned there were two more in their band - a priest named Koluhm Bonecutter who}
+
+{520} {... they said could speak to the dead, and the other was a wizard dressed in rags by the name of Phaen.}
+{521} {... they said could speak to the dead, and the other was a wizard dressed in rags by the name of Phaen.}
+
+{530} {The Iron Collar mercenaries would not come peacefully, so we were forced to deal with them.  I doubt Shawford}
+{531} {The Iron Collar mercenaries would not come peacefully, so we were forced to deal with them.  I doubt Shawford}
+
+{540} {... will have any more problems with any other companies on the Palisade after they hear about what happened at}
+{541} {... will have any more problems with any other companies on the Palisade after they hear about what happened at}
+
+{550} {... the Salty Dog.}
+{551} {... the Salty Dog.}
+
+{560} {By keeping a level head, we managed to convince the Iron Collar mercenaries to report to the Palisade for duty.}
+{561} {By keeping a level head, we managed to convince the Iron Collar mercenaries to report to the Palisade for duty.}
+
+{570} {By threatening to link the Iron Collar band to Phaen's treachery, we managed to convince the Iron Collar}
+{571} {By threatening to link the Iron Collar band to Phaen's treachery, we managed to convince the Iron Collar}
+
+{580} {... mercenaries to report to the Palisade for duty.  }
+{581} {... mercenaries to report to the Palisade for duty.  }
+
+{590} {With a choice turn of phrase, we managed to provoke the Iron Collar mercenaries into letting us make an example}
+{591} {With a choice turn of phrase, we managed to provoke the Iron Collar mercenaries into letting us make an example}
+
+{600} {... of them.  I doubt Crawford will have any more problems with any other companies on the Palisade after they}
+{601} {... of them.  I doubt Crawford will have any more problems with any other companies on the Palisade after they}
+
+{610} {... hear about what happened at the Salty Dog.}
+{611} {... hear about what happened at the Salty Dog.}
+
+{620} {With a choice turn of phrase, we managed to provoke the Iron Collar mercenaries into letting us make an example}
+{621} {With a choice turn of phrase, we managed to provoke the Iron Collar mercenaries into letting us make an example}
+
+{630} {... of them.  I doubt Crawford will have any more problems with any other companies on the Palisade after they}
+{631} {... of them.  I doubt Crawford will have any more problems with any other companies on the Palisade after they}
+
+{640} {... hear about what happened at the Salty Dog.}
+{641} {... hear about what happened at the Salty Dog.}
+
+{650} {The Iron Collar mercenaries would not come peacefully, so we were forced to deal with them.  I doubt Shawford}
+{651} {The Iron Collar mercenaries would not come peacefully, so we were forced to deal with them.  I doubt Shawford}
+
+{660} {... will have any more problems with any other companies on the Palisade after they hear about what happened at}
+{661} {... will have any more problems with any other companies on the Palisade after they hear about what happened at}
+
+{670} {... the Salty Dog.}
+{671} {... the Salty Dog.}
+
+{680} {We saved Hedron's mother from a small pack of goblins that had entered her home.  She was more hysterical than}
+{681} {We saved Hedron's mother from a small pack of goblins that had entered her home.  She was more hysterical than}
+
+{690} {... grateful for our efforts and accused us of being robbers - small thanks indeed for saving her life.}
+{691} {... grateful for our efforts and accused us of being robbers - small thanks indeed for saving her life.}
+
+{700} {We saved an elderly woman, Firtha Kerdos, from a small pack of goblins that had entered her home.  She was more}
+{701} {We saved an elderly woman, Firtha Kerdos, from a small pack of goblins that had entered her home.  She was more}
+
+{710} {... angry than grateful for our efforts and drove us from the house - small thanks indeed for saving her life.}
+{711} {... angry than grateful for our efforts and drove us from the house - small thanks indeed for saving her life.}
+
+{720} {It wasn't until we mentioned Hedron's ship, the Wicked Wench, by name that the old woman we saved ceased her}
+{721} {It wasn't until we mentioned Hedron's ship, the Wicked Wench, by name that the old woman we saved ceased her}
+
+{730} {... howling and reluctantly admitted we might be telling the truth about us coming to help her.  She told us to}
+{731} {... howling and reluctantly admitted we might be telling the truth about us coming to help her.  She told us to}
+
+{740} {... go back to Hedron and tell him she was safe.  Oddly enough, Firtha mentioned that she was blind, which is}
+{741} {... go back to Hedron and tell him she was safe.  Oddly enough, Firtha mentioned that she was blind, which is}
+
+{750} {... strange, because she seemed to see us quite clearly.}
+{751} {... strange, because she seemed to see us quite clearly.}
+
+{760} {We told Firtha what happened to her missing cat, Loki.  She flew into a rage when she heard that Anson had}
+{761} {We told Firtha what happened to her missing cat, Loki.  She flew into a rage when she heard that Anson had}
+
+{770} {... kidnapped him, but we managed to calm her down.}
+{771} {... kidnapped him, but we managed to calm her down.}
+
+{780} {When we asked Firtha Kerdos about the troubles in Icewind Dale and the Ten-Towns some thirty years past, she}
+{781} {When we asked Firtha Kerdos about the troubles in Icewind Dale and the Ten-Towns some thirty years past, she}
+
+{790} {... related the following tale to us:
+
+"Was the Year of the Cold Soul, and never a truer name been given to a}{791} {... related the following tale to us:
+
+"Was the Year of the Cold Soul, and never a truer name been given to a}
+{800} {... year.  With the winter rushing in fierce out of the North and all, it must have lit a fire under some young}
+{801} {... year.  With the winter rushing in fierce out of the North and all, it must have lit a fire under some young}
+
+{810} {... fools' heads, because a band of 'adventurers'... pure-blood southerners, if there ever was... humped their}
+{811} {... fools' heads, because a band of 'adventurers'... pure-blood southerners, if there ever was... humped their}
+
+{820} {... way up through the Spine of the World and into the small fishing village of Easthaven, one of the Ten-Towns}
+{821} {... way up through the Spine of the World and into the small fishing village of Easthaven, one of the Ten-Towns}
+
+{830} {... down to the south - along Lac Dinneshere.  They kicked up their feet at the Winter's Cradle Tavern, talking}
+{831} {... down to the south - along Lac Dinneshere.  They kicked up their feet at the Winter's Cradle Tavern, talking}
+
+{840} {... of fame and glory and this and that when those empty-headed fools got yanked into helping the local sword,}
+{841} {... of fame and glory and this and that when those empty-headed fools got yanked into helping the local sword,}
+
+{850} {... Hrothgar, go on an expedition to the tree town of Kuldahar and see what was amiss... because there was dark}
+{851} {... Hrothgar, go on an expedition to the tree town of Kuldahar and see what was amiss... because there was dark}
+
+{860} {... things brewing like there always is, which means some fool's got to go plunge his sword into a few hundred}
+{861} {... things brewing like there always is, which means some fool's got to go plunge his sword into a few hundred}
+
+{870} {... beasties to set the matter right.
+
+"Well, Hrothgar never made it, and neither did most of the expedition -}{871} {... beasties to set the matter right.
+
+"Well, Hrothgar never made it, and neither did most of the expedition -}
+{880} {... except for this band of newcomers.  They were caught in an avalanche, hear told, and they dragged themselves}
+{881} {... except for this band of newcomers.  They were caught in an avalanche, hear told, and they dragged themselves}
+
+{890} {... into Kuldahar like a line of wet cats.  The winter had picked up, though, and the avalanche had sealed off}
+{891} {... into Kuldahar like a line of wet cats.  The winter had picked up, though, and the avalanche had sealed off}
+
+{900} {... the Pass, so there was no choice for them but to sit under the shade of the great Kuldahar oak and make do}
+{901} {... the Pass, so there was no choice for them but to sit under the shade of the great Kuldahar oak and make do}
+
+{910} {... with what they could to solve Kuldahar's problems.  They nearly raised the hells themselves, the story goes,}
+{911} {... with what they could to solve Kuldahar's problems.  They nearly raised the hells themselves, the story goes,}
+
+{920} {... though I don't know all the particulars meself.  I heard some talk of tombs, and temples, and volcanoes, and}
+{921} {... though I don't know all the particulars meself.  I heard some talk of tombs, and temples, and volcanoes, and}
+
+{930} {... dwarven deeps and severed hands, and ghosts and shades and all manner of horrid things - but in the end, they}
+{931} {... dwarven deeps and severed hands, and ghosts and shades and all manner of horrid things - but in the end, they}
+
+{940} {... set things right, and the seasons resumed their normal heartbeat, and all was well... well, except for}
+{941} {... set things right, and the seasons resumed their normal heartbeat, and all was well... well, except for}
+
+{950} {... Kuldahar and Easthaven being a bit shabbier for wear than before, but that didn't last long."
+
+"As most}{951} {... Kuldahar and Easthaven being a bit shabbier for wear than before, but that didn't last long."
+
+"As most}
+{960} {... stories go, ye'd figure that'd be the end of it, and I'm sure those Southerners thought as much, too.  But no}
+{961} {... stories go, ye'd figure that'd be the end of it, and I'm sure those Southerners thought as much, too.  But no}
+
+{970} {... sooner had they saved the North from one fool evil then another popped up - a bad mix of barbarian blood and}
+{971} {... sooner had they saved the North from one fool evil then another popped up - a bad mix of barbarian blood and}
+
+{980} {... something that should have laid to rest at the bottom of Lac Dinneshere, that's what.  Some hide-wearing}
+{981} {... something that should have laid to rest at the bottom of Lac Dinneshere, that's what.  Some hide-wearing}
+
+{990} {... medicine man from one of the Northern tribes whisked those southerners right out of Kuldahar - walking right}
+{991} {... medicine man from one of the Northern tribes whisked those southerners right out of Kuldahar - walking right}
+
+{1000} {... on the wind itself, it's said, and he took them to Lonelywood where he told them he'd had some fool vision of}
+{1001} {... on the wind itself, it's said, and he took them to Lonelywood where he told them he'd had some fool vision of}
+
+{1010} {... them heading off the barbarian invasion that was about to begin, then he left them to it, no doubt leaving}
+{1011} {... them heading off the barbarian invasion that was about to begin, then he left them to it, no doubt leaving}
+
+{1020} {... them in the middle of town, blinking, with their mouths hanging open in the middle of that ramshackle logging}
+{1021} {... them in the middle of town, blinking, with their mouths hanging open in the middle of that ramshackle logging}
+
+{1030} {... town."
+
+"Well, when put to the test, they didn't fail the North twice, and they sent the barbarians and a}{1031} {... town."
+
+"Well, when put to the test, they didn't fail the North twice, and they sent the barbarians and a}
+{1040} {... whole flock of evil terrors running and stumbled their way back to Lonelywood.  Last word of them was they}
+{1041} {... whole flock of evil terrors running and stumbled their way back to Lonelywood.  Last word of them was they}
+
+{1050} {... were camped out at the Whistling Gallows Inn in Lonelywood, wondering whatever had possessed them to leave}
+{1051} {... were camped out at the Whistling Gallows Inn in Lonelywood, wondering whatever had possessed them to leave}
+
+{1060} {... the Winter's Cradle in the first place, when some halfling showed up, telling them of some old ruined castle}
+{1061} {... the Winter's Cradle in the first place, when some halfling showed up, telling them of some old ruined castle}
+
+{1070} {... where there were riches beyond a king's dreams - all for the taking."
+
+"The next morning, they were gone, no}{1071} {... where there were riches beyond a king's dreams - all for the taking."
+
+"The next morning, they were gone, no}
+{1080} {... trace of them, just empty rooms and a tale from an old woman's lips."}
+{1081} {... trace of them, just empty rooms and a tale from an old woman's lips."}
+
+{1090} {After Firtha told us the tale, she told us we might be able to find some interesting volumes in the Town Hall, in}
+{1091} {After Firtha told us the tale, she told us we might be able to find some interesting volumes in the Town Hall, in}
+
+{1100} {... the keeping of Lord Ulbrec's wife.  She also cautioned us to check our journal on occasion, in case we lost}
+{1101} {... the keeping of Lord Ulbrec's wife.  She also cautioned us to check our journal on occasion, in case we lost}
+
+{1110} {... our way and had forgotten some important tidbit that might give us a new focus.}
+{1111} {... our way and had forgotten some important tidbit that might give us a new focus.}
+
+{1120} {We crossed paths with Lumbar Grundwall, a red-faced tradesman in the streets of Targos.  Apparently, he had been}
+{1121} {We crossed paths with Lumbar Grundwall, a red-faced tradesman in the streets of Targos.  Apparently, he had been}
+
+{1130} {... commissioned to deliver a load of lumber to the Targos Palisade, but he is short-handed and the crane that}
+{1131} {... commissioned to deliver a load of lumber to the Targos Palisade, but he is short-handed and the crane that}
+
+{1140} {... was being used to move the lumber up the cliff face has been damaged.  Looks like Tymora's being light with}
+{1141} {... was being used to move the lumber up the cliff face has been damaged.  Looks like Tymora's being light with}
+
+{1150} {... the blessings this day.}
+{1151} {... the blessings this day.}
+
+{1160} {We brought Lumbar the wooden crane wheel to repair the crane.  He wanted nothing to do with it and told us to put}
+{1161} {We brought Lumbar the wooden crane wheel to repair the crane.  He wanted nothing to do with it and told us to put}
+
+{1170} {... it in the crane ourselves.}
+{1171} {... it in the crane ourselves.}
+
+{1180} {We told Oswald that Lord Ulbrec had asked him to take us to the Western Pass.  He told us we might never be able}
+{1181} {We told Oswald that Lord Ulbrec had asked him to take us to the Western Pass.  He told us we might never be able}
+
+{1190} {... to return to Targos, and that we should take everything we need before we leave town.}
+{1191} {... to return to Targos, and that we should take everything we need before we leave town.}
+
+{1200} {Once we had our gear together, Oswald flew us to the Western Pass.  As we neared the Pass, however, the storms}
+{1201} {Once we had our gear together, Oswald flew us to the Western Pass.  As we neared the Pass, however, the storms}
+
+{1210} {... and winds began to pick up, buffeting the airship...}
+{1211} {... and winds began to pick up, buffeting the airship...}
+
+{1220} {Oswald didn't awaken with us after we crashed in the Western Pass foothills.  He appears to be stuck in a trance.}
+{1221} {Oswald didn't awaken with us after we crashed in the Western Pass foothills.  He appears to be stuck in a trance.}
+
+{1230} {...  Though his piloting skills are questionable, he's been very useful to us so far, and we may need to rely on}
+{1231} {...  Though his piloting skills are questionable, he's been very useful to us so far, and we may need to rely on}
+
+{1240} {... his services in the future.  We should find a way to revive him.}
+{1241} {... his services in the future.  We should find a way to revive him.}
+
+{1250} {After nearly losing our voices we finally awakened Oswald from the trance he was in after crashing in the Western}
+{1251} {After nearly losing our voices we finally awakened Oswald from the trance he was in after crashing in the Western}
+
+{1260} {... Pass foothills.}
+{1261} {... Pass foothills.}
+
+{1270} {After a wild scavenger hunt we finally found all of the components required by Oswald's Mending spell.}
+{1271} {After a wild scavenger hunt we finally found all of the components required by Oswald's Mending spell.}
+
+{1280} {Oswald cast his Mending spell with the components we found and told us that it would take time to complete. }
+{1281} {Oswald cast his Mending spell with the components we found and told us that it would take time to complete. }
+
+{1290} {... Instead of waiting around, we decided to investigate the Western Pass further to learn more about what was}
+{1291} {... Instead of waiting around, we decided to investigate the Western Pass further to learn more about what was}
+
+{1300} {... going on.}
+{1301} {... going on.}
+
+{1310} {We agreed to retrieve the components required by Oswald's Mending spell so he can cast it to repair his badly}
+{1311} {We agreed to retrieve the components required by Oswald's Mending spell so he can cast it to repair his badly}
+
+{1320} {... damaged ship.}
+{1321} {... damaged ship.}
+
+{1330} {We met with Lord Ulbrec Dinnsmore, the spokesman of Targos.  He was somewhat short with us, and he demanded to}
+{1331} {We met with Lord Ulbrec Dinnsmore, the spokesman of Targos.  He was somewhat short with us, and he demanded to}
+
+{1340} {... know what was occurring at the docks.}
+{1341} {... know what was occurring at the docks.}
+
+{1350} {Lord Ulbrec has officially welcomed us into the Targos Guard, and he has told us to report to the commander of}
+{1351} {Lord Ulbrec has officially welcomed us into the Targos Guard, and he has told us to report to the commander of}
+
+{1360} {... the Targos Guard, Shawford Crale, for our assignments.  Ulbrec told us we could find Crale at the Palisade,}
+{1361} {... the Targos Guard, Shawford Crale, for our assignments.  Ulbrec told us we could find Crale at the Palisade,}
+
+{1370} {... just beyond the north gate.}
+{1371} {... just beyond the north gate.}
+
+{1380} {Lord Ulbrec praised us for our efforts in defending Targos during the goblin attack on the Palisade, but with his}
+{1381} {Lord Ulbrec praised us for our efforts in defending Targos during the goblin attack on the Palisade, but with his}
+
+{1390} {... praise came another mission: a goblin force has taken the Shaengarne Bridge to the south, a bridge that the}
+{1391} {... praise came another mission: a goblin force has taken the Shaengarne Bridge to the south, a bridge that the}
+
+{1400} {... Neverwinter reinforcements intended to use to reach Targos.  He wants us to travel to Shaengarne Bridge and}
+{1401} {... Neverwinter reinforcements intended to use to reach Targos.  He wants us to travel to Shaengarne Bridge and}
+
+{1410} {... retake it from the goblinoids.  He hopes our band can succeed where the Targos Guard cannot; only time will}
+{1411} {... retake it from the goblinoids.  He hopes our band can succeed where the Targos Guard cannot; only time will}
+
+{1420} {... prove him right or wrong.}
+{1421} {... prove him right or wrong.}
+
+{1430} {Lord Ulbrec heard of our success in retaking Shaengarne Bridge, and he believes a swift offensive has a chance to}
+{1431} {Lord Ulbrec heard of our success in retaking Shaengarne Bridge, and he believes a swift offensive has a chance to}
+
+{1440} {... break the goblin horde and drive them from the region.  He has asked us to meet two of his scouts, Ennelia}
+{1441} {... break the goblin horde and drive them from the region.  He has asked us to meet two of his scouts, Ennelia}
+
+{1450} {... and Braston, south and east of Targos and give them whatever aid they require to break the goblins' strength}
+{1451} {... and Braston, south and east of Targos and give them whatever aid they require to break the goblins' strength}
+
+{1460} {... in the region.}
+{1461} {... in the region.}
+
+{1470} {Lord Ulbrec heard of the destruction of Shaengarne Bridge, and he has determined that only if Targos can mount an}
+{1471} {Lord Ulbrec heard of the destruction of Shaengarne Bridge, and he has determined that only if Targos can mount an}
+
+{1480} {... offensive quickly can Targos hope to break the goblin horde before they strike the town again.  He has asked}
+{1481} {... offensive quickly can Targos hope to break the goblin horde before they strike the town again.  He has asked}
+
+{1490} {... us to meet two of his scouts, Ennelia and Braston, south and east of Targos and give them whatever aid they}
+{1491} {... us to meet two of his scouts, Ennelia and Braston, south and east of Targos and give them whatever aid they}
+
+{1500} {... require to break the goblins' strength in the region.}
+{1501} {... require to break the goblins' strength in the region.}
+
+{1510} {Lord Ulbrec heard of our success in infiltrating the horde fortress and defeating the bugbear chieftain, Guthma. }
+{1511} {Lord Ulbrec heard of our success in infiltrating the horde fortress and defeating the bugbear chieftain, Guthma. }
+
+{1520} {... He thanked us for our efforts and gave us our next mission, which should prove somewhat less strenuous than}
+{1521} {... He thanked us for our efforts and gave us our next mission, which should prove somewhat less strenuous than}
+
+{1530} {... the other suicide missions we've already taken.  He asked us to speak to Oswald Fiddlebender and have him}
+{1531} {... the other suicide missions we've already taken.  He asked us to speak to Oswald Fiddlebender and have him}
+
+{1540} {... ferry us to the Western Pass to rendezvous with the reinforcements from Neverwinter.}
+{1541} {... ferry us to the Western Pass to rendezvous with the reinforcements from Neverwinter.}
+
+{1550} {We told Elytharra that Phaen attacked us as soon as he saw we had the scroll - she thanked us for exposing him}
+{1551} {We told Elytharra that Phaen attacked us as soon as he saw we had the scroll - she thanked us for exposing him}
+
+{1560} {... before he could do more harm.}
+{1561} {... before he could do more harm.}
+
+{1570} {We told Elytharra that we had aided Valin, and that he was conscious again.  She was pleased and told us Targos}
+{1571} {We told Elytharra that we had aided Valin, and that he was conscious again.  She was pleased and told us Targos}
+
+{1580} {... was in our debt.}
+{1581} {... was in our debt.}
+
+{1590} {Elytharra mentioned that one of the wounded in the Temple Pavilion, a diviner named Valin Geldencross, has taken}
+{1591} {Elytharra mentioned that one of the wounded in the Temple Pavilion, a diviner named Valin Geldencross, has taken}
+
+{1600} {... ill - and he became ill shortly before his attempt to divine the location of the goblin fortress.  Sounds}
+{1601} {... ill - and he became ill shortly before his attempt to divine the location of the goblin fortress.  Sounds}
+
+{1610} {... suspicious.  Elytharra said that without knowing the cause and nature of his ailment, he is likely to die.}
+{1611} {... suspicious.  Elytharra said that without knowing the cause and nature of his ailment, he is likely to die.}
+
+{1620} {We showed Cahl-Hyred's ghost-touched bottle to the Lady Elytharra, and she told us that the bottle could be used}
+{1621} {We showed Cahl-Hyred's ghost-touched bottle to the Lady Elytharra, and she told us that the bottle could be used}
+
+{1630} {... to hold some of the substance of the ethereal plane within it.  If we could obtain some of the ethereal plane}
+{1631} {... to hold some of the substance of the ethereal plane within it.  If we could obtain some of the ethereal plane}
+
+{1640} {... and place it within the bottle, the material could be used to enchant an item or a weapon.  It bears looking}
+{1641} {... and place it within the bottle, the material could be used to enchant an item or a weapon.  It bears looking}
+
+{1650} {... into.}
+{1651} {... into.}
+
+{1660} {During our conversation with Elytharra, it occurred to us that we could place some of the tears of the spirit}
+{1661} {During our conversation with Elytharra, it occurred to us that we could place some of the tears of the spirit}
+
+{1670} {... from the Weeping Widow into the ghost-touched bottle.}
+{1671} {... from the Weeping Widow into the ghost-touched bottle.}
+
+{1680} {We showed the charred brimstone scroll we got from the goblin sappers to Lady Elytharra, and she told us it was}
+{1681} {We showed the charred brimstone scroll we got from the goblin sappers to Lady Elytharra, and she told us it was}
+
+{1690} {... one of a pair of scrolls.  Provided that the user knows something of spellcraft, they can teleport the holder}
+{1691} {... one of a pair of scrolls.  Provided that the user knows something of spellcraft, they can teleport the holder}
+
+{1700} {... of the second scroll (and the holder's allies, presumably) to the location of the first one.  Which means}
+{1701} {... of the second scroll (and the holder's allies, presumably) to the location of the first one.  Which means}
+
+{1710} {... that someone within town teleported the goblins into the caves beneath the warehouse.  We should see if we}
+{1711} {... that someone within town teleported the goblins into the caves beneath the warehouse.  We should see if we}
+
+{1720} {... can find this traitor and then tell Elytharra.}
+{1721} {... can find this traitor and then tell Elytharra.}
+
+{1730} {We told Elytharra that Phaen attacked us as soon as he saw we had the scroll - she thanked us for exposing him}
+{1731} {We told Elytharra that Phaen attacked us as soon as he saw we had the scroll - she thanked us for exposing him}
+
+{1740} {... before he could do more harm.  We also told her about Phaen's master, Harshom, and she seemed deeply}
+{1741} {... before he could do more harm.  We also told her about Phaen's master, Harshom, and she seemed deeply}
+
+{1750} {... concerned.}
+{1751} {... concerned.}
+
+{1760} {Through the threat of force and by explaining the dark side of human nature, we convinced Deirdre to ship the}
+{1761} {Through the threat of force and by explaining the dark side of human nature, we convinced Deirdre to ship the}
+
+{1770} {... arrows to the Palisade where they were needed.}
+{1771} {... arrows to the Palisade where they were needed.}
+
+{1780} {We appealed to Deirdre's better nature, and she agreed to deliver the arrows to the Palisade.}
+{1781} {We appealed to Deirdre's better nature, and she agreed to deliver the arrows to the Palisade.}
+
+{1790} {We paid Deirdre for the arrows with gold out of our own pockets.  I doubt we'll get any recompense from the}
+{1791} {We paid Deirdre for the arrows with gold out of our own pockets.  I doubt we'll get any recompense from the}
+
+{1800} {... Targos Guard.}
+{1801} {... Targos Guard.}
+
+{1810} {We told Denham we found some love letters on the shapeshifter's body in the Temple Pavilion.  The letters}
+{1811} {We told Denham we found some love letters on the shapeshifter's body in the Temple Pavilion.  The letters}
+
+{1820} {... contained information on troop movements within Icewind Dale, but without knowing who the letters were}
+{1821} {... contained information on troop movements within Icewind Dale, but without knowing who the letters were}
+
+{1830} {... intended for, we have no idea who the shapeshifter was trying to send them to.}
+{1831} {... intended for, we have no idea who the shapeshifter was trying to send them to.}
+
+{1840} {Denham Fisher told us that Garradun Tanner, the love-sick soldier from Neverwinter in the pavilion, is actually a}
+{1841} {Denham Fisher told us that Garradun Tanner, the love-sick soldier from Neverwinter in the pavilion, is actually a}
+
+{1850} {... shapeshifter - a doppleganger spy.  The priest fashioned some replacement letters for us to take in case we}
+{1851} {... shapeshifter - a doppleganger spy.  The priest fashioned some replacement letters for us to take in case we}
+
+{1860} {... meet the reinforcements from Luskan and Neverwinter.  He said something about the captain from Neverwinter}
+{1861} {... meet the reinforcements from Luskan and Neverwinter.  He said something about the captain from Neverwinter}
+
+{1870} {... being in for a surprise if he wasn't who he claimed to be.}
+{1871} {... being in for a surprise if he wasn't who he claimed to be.}
+
+{1880} {When we administered Guthewulfe's braehg to Valin, he awoke, coughing and spluttering.  Looks like that shock to}
+{1881} {When we administered Guthewulfe's braehg to Valin, he awoke, coughing and spluttering.  Looks like that shock to}
+
+{1890} {... his system was just what he needed.}
+{1891} {... his system was just what he needed.}
+
+{1900} {We came across a mumbling diviner in the Temple Pavilion.  He was barely conscious, and he was ranting about}
+{1901} {We came across a mumbling diviner in the Temple Pavilion.  He was barely conscious, and he was ranting about}
+
+{1910} {... goblins, ravens, and other visions.  He looked ill, perhaps poisoned by a goblin arrow.}
+{1911} {... goblins, ravens, and other visions.  He looked ill, perhaps poisoned by a goblin arrow.}
+
+{1920} {Valin mumbled something about "braehg" when he spoke to us - apparently, he needs it for some reason.}
+{1921} {Valin mumbled something about "braehg" when he spoke to us - apparently, he needs it for some reason.}
+
+{1930} {Valin apparently had fallen into a dreamstate while trying to scry the location of the goblin fortress.  Although}
+{1931} {Valin apparently had fallen into a dreamstate while trying to scry the location of the goblin fortress.  Although}
+
+{1940} {... he wasn't able to determine its location, he told us the goblin fortress would seek *us* out, whatever that}
+{1941} {... he wasn't able to determine its location, he told us the goblin fortress would seek *us* out, whatever that}
+
+{1950} {... means.  He also gave us a warning - that if we left Targos traveling on the sky, that we should be prepared}
+{1951} {... means.  He also gave us a warning - that if we left Targos traveling on the sky, that we should be prepared}
+
+{1960} {... not to return to Targos.}
+{1961} {... not to return to Targos.}
+
+{1970} {Valin apparently had fallen into a dreamstate while trying to scry the location of the goblin fortress.  He}
+{1971} {Valin apparently had fallen into a dreamstate while trying to scry the location of the goblin fortress.  He}
+
+{1980} {... didn't seem surprised by the fact we had already found it.  He also gave us a warning - that if we left}
+{1981} {... didn't seem surprised by the fact we had already found it.  He also gave us a warning - that if we left}
+
+{1990} {... Targos traveling on the sky, that we should be prepared not to return to Targos.}
+{1991} {... Targos traveling on the sky, that we should be prepared not to return to Targos.}
+
+{2000} {At the Targos Pavilion, a wounded scout named Garradun Tanner asked us to take a letter to Captain Mariner, the}
+{2001} {At the Targos Pavilion, a wounded scout named Garradun Tanner asked us to take a letter to Captain Mariner, the}
+
+{2010} {... commander of the relief forces from Neverwinter.  Garradun seems pessimistic about his chances for survival,}
+{2011} {... commander of the relief forces from Neverwinter.  Garradun seems pessimistic about his chances for survival,}
+
+{2020} {... and wrote this love letter for his bride-to-be.}
+{2021} {... and wrote this love letter for his bride-to-be.}
+
+{2030} {We confronted Garradun on his attempts to spy on Targos, and he dropped his fa�ade and attacked us -}
+{2031} {We confronted Garradun on his attempts to spy on Targos, and he dropped his fa�ade and attacked us -}
+
+{2040} {... unfortunately for him.}
+{2041} {... unfortunately for him.}
+
+{2050} {The innkeeper of the Weeping Widow at Targos told us that a woman's spirit haunts one of the upstairs rooms.  We}
+{2051} {The innkeeper of the Weeping Widow at Targos told us that a woman's spirit haunts one of the upstairs rooms.  We}
+
+{2060} {... offered to see if we could help him by putting the ghost to rest, and he gave us the key to the room}
+{2061} {... offered to see if we could help him by putting the ghost to rest, and he gave us the key to the room}
+
+{2070} {... upstairs.  He said she appears at night, so we should probably check the room then.}
+{2071} {... upstairs.  He said she appears at night, so we should probably check the room then.}
+
+{2080} {Apparently, Koluhm, the priest of Myrkul, paid Cahl-Hyred with an enchanted bottle of some sort, but Cahl-Hyred}
+{2081} {Apparently, Koluhm, the priest of Myrkul, paid Cahl-Hyred with an enchanted bottle of some sort, but Cahl-Hyred}
+
+{2090} {... is too frightened to open it, let alone drink its contents.  We told him we'd see if we could identify it for}
+{2091} {... is too frightened to open it, let alone drink its contents.  We told him we'd see if we could identify it for}
+
+{2100} {... him, and then bring it back to him.  One of the mages or priests in town should be able to help us. }
+{2101} {... him, and then bring it back to him.  One of the mages or priests in town should be able to help us. }
+
+{2110} {... Cahl-Hyred recommended Elytharra, the wife of Lord Ulbrec, and an enchantress in her own right.}
+{2111} {... Cahl-Hyred recommended Elytharra, the wife of Lord Ulbrec, and an enchantress in her own right.}
+
+{2120} {We told Cahl-Hyred that we had set the spirit haunting his inn to rest.  He was pleased by the news, though}
+{2121} {We told Cahl-Hyred that we had set the spirit haunting his inn to rest.  He was pleased by the news, though}
+
+{2130} {... reluctant to reward us otherwise.}
+{2131} {... reluctant to reward us otherwise.}
+
+{2140} {We identified Koluhm's ghost-touched bottle for Cahl-Hyred, only to find out that he didn't want it anymore.  He}
+{2141} {We identified Koluhm's ghost-touched bottle for Cahl-Hyred, only to find out that he didn't want it anymore.  He}
+
+{2150} {... told us to take it to Elytharra, Ulbrec's wife, and see if she had any use for it.}
+{2151} {... told us to take it to Elytharra, Ulbrec's wife, and see if she had any use for it.}
+
+{2160} {The innkeeper of the Weeping Widow told us it's possible that Donovan's ship wrecked up on the beach of Targos,}
+{2161} {The innkeeper of the Weeping Widow told us it's possible that Donovan's ship wrecked up on the beach of Targos,}
+
+{2170} {... and that we should check with Gohar at the Salty Dog Tavern - Gohar apparently keeps pieces of various ships}
+{2171} {... and that we should check with Gohar at the Salty Dog Tavern - Gohar apparently keeps pieces of various ships}
+
+{2180} {... and uses them to decorate the walls of the Salty Dog.}
+{2181} {... and uses them to decorate the walls of the Salty Dog.}
+
+{2190} {We met a ragged looking mage in one of the abandoned houses in Targos.  He didn't seem too pleased with us}
+{2191} {We met a ragged looking mage in one of the abandoned houses in Targos.  He didn't seem too pleased with us}
+
+{2200} {... barging into his room. He looks like a mercenary of sorts, which means he probably was allowed to occupy the}
+{2201} {... barging into his room. He looks like a mercenary of sorts, which means he probably was allowed to occupy the}
+
+{2210} {... building as a temporary barracks.}
+{2211} {... building as a temporary barracks.}
+
+{2220} {When the mage, Phaen, caught sight of our scroll that we had taken from the goblins, he attacked us, saying that}
+{2221} {When the mage, Phaen, caught sight of our scroll that we had taken from the goblins, he attacked us, saying that}
+
+{2230} {... he wished to see Targos fall - it seems he was trying to undermine Targos from within.}
+{2231} {... he wished to see Targos fall - it seems he was trying to undermine Targos from within.}
+
+{2240} {Phaen claimed he was serving a master named Harshom the Beastlord... and that Harshom himself was serving}
+{2241} {Phaen claimed he was serving a master named Harshom the Beastlord... and that Harshom himself was serving}
+
+{2250} {... "others."  Phaen wouldn't tell us who Harshom's masters were - and chose to try to kill us instead.}
+{2251} {... "others."  Phaen wouldn't tell us who Harshom's masters were - and chose to try to kill us instead.}
+
+{2260} {We met a priest of Myrkul called Koluhm Bonecutter.  He is serving Targos as a mortician of sorts, and he claims}
+{2261} {We met a priest of Myrkul called Koluhm Bonecutter.  He is serving Targos as a mortician of sorts, and he claims}
+
+{2270} {... to be able to speak to the dead as well as the living.}
+{2271} {... to be able to speak to the dead as well as the living.}
+
+{2280} {Koluhm said he had taken up residence at the Weeping Widow Inn, but that the weeping of a spirit had driven him}
+{2281} {Koluhm said he had taken up residence at the Weeping Widow Inn, but that the weeping of a spirit had driven him}
+
+{2290} {... from the building.  He told us if we wished to speak to this apparition, we should go to her at night.}
+{2291} {... from the building.  He told us if we wished to speak to this apparition, we should go to her at night.}
+
+{2300} {Koluhm told us that his mage compatriot, Phaen, had strange loyalties... perhaps this bears further}
+{2301} {Koluhm told us that his mage compatriot, Phaen, had strange loyalties... perhaps this bears further}
+
+{2310} {... investigation.}
+{2311} {... investigation.}
+
+{2320} {We spoke to Koluhm Bonecutter, and he couldn't give us a translation of what the dead goblin he was questioning}
+{2321} {We spoke to Koluhm Bonecutter, and he couldn't give us a translation of what the dead goblin he was questioning}
+
+{2330} {... said, so we asked him to write down what he could and have it sent to Shawford at the Palisade.  Hopefully,}
+{2331} {... said, so we asked him to write down what he could and have it sent to Shawford at the Palisade.  Hopefully,}
+
+{2340} {... someone there can make some sense of it.}
+{2341} {... someone there can make some sense of it.}
+
+{2350} {We spoke to Koluhm Bonecutter, and he couldn't give us a translation of what the dead goblin he was questioning,}
+{2351} {We spoke to Koluhm Bonecutter, and he couldn't give us a translation of what the dead goblin he was questioning,}
+
+{2360} {... so we asked him to tell us what it was saying, and we were able to translate some of it.  It sounds like the}
+{2361} {... so we asked him to tell us what it was saying, and we were able to translate some of it.  It sounds like the}
+
+{2370} {... goblin tribe attacking Targos is only one of many tribes in the region - that's not good news.}
+{2371} {... goblin tribe attacking Targos is only one of many tribes in the region - that's not good news.}
+
+{2380} {We spoke to Koluhm Bonecutter, and while he couldn't give tell us what the dead goblin he was questioning, we}
+{2381} {We spoke to Koluhm Bonecutter, and while he couldn't give tell us what the dead goblin he was questioning, we}
+
+{2390} {... were able to translate for him, and we think we understood most of what it was saying.  It sounds like we}
+{2391} {... were able to translate for him, and we think we understood most of what it was saying.  It sounds like we}
+
+{2400} {... should expect a three-pronged assault led by three different goblin leaders, and their attack was meant to}
+{2401} {... should expect a three-pronged assault led by three different goblin leaders, and their attack was meant to}
+
+{2410} {... coincide with the attack on the docks, so the Palisade could be in jeopardy right now.}
+{2411} {... coincide with the attack on the docks, so the Palisade could be in jeopardy right now.}
+
+{2420} {Koluhm told us that the dead townsman actually used to live in the house where Koluhm has set up shop. }
+{2421} {Koluhm told us that the dead townsman actually used to live in the house where Koluhm has set up shop. }
+
+{2430} {... Apparently, Koluhm was questioning the poor soul if he had any gold hidden in the place, and he discovered}
+{2431} {... Apparently, Koluhm was questioning the poor soul if he had any gold hidden in the place, and he discovered}
+
+{2440} {... that the man had a secret niche behind the fireplace.}
+{2441} {... that the man had a secret niche behind the fireplace.}
+
+{2450} {Under duress, Koluhm also told us that there is a ruined building in town with a secret cache beneath the}
+{2451} {Under duress, Koluhm also told us that there is a ruined building in town with a secret cache beneath the}
+
+{2460} {... floorboard.  We'll keep an eye out for it.}
+{2461} {... floorboard.  We'll keep an eye out for it.}
+
+{2470} {We confronted Koluhm on the real use of the ghost-touched bottle he gave to Cahl-Hyred.  It seems he didn't know}
+{2471} {We confronted Koluhm on the real use of the ghost-touched bottle he gave to Cahl-Hyred.  It seems he didn't know}
+
+{2480} {... it was ghost-touched, and he told us that we might make use of it by capturing the tears of the spirit in the}
+{2481} {... it was ghost-touched, and he told us that we might make use of it by capturing the tears of the spirit in the}
+
+{2490} {... Weeping Widow and taking them to the enchantress Elytharra, Lord Ulbrec's wife.}
+{2491} {... Weeping Widow and taking them to the enchantress Elytharra, Lord Ulbrec's wife.}
+
+{2500} {We met with Shawford Crale, commander of the Targos Guard.  He told us to speak to Olap Tamewater, a dwarven}
+{2501} {We met with Shawford Crale, commander of the Targos Guard.  He told us to speak to Olap Tamewater, a dwarven}
+
+{2510} {... engineer assigned to the Palisade and give him whatever assistance is required.}
+{2511} {... engineer assigned to the Palisade and give him whatever assistance is required.}
+
+{2520} {We returned to Shawford and told him that the Palisade had been repaired.  He thanked us and sent us on our next}
+{2521} {We returned to Shawford and told him that the Palisade had been repaired.  He thanked us and sent us on our next}
+
+{2530} {... mission, to see the captain of the archers on the western wall, a man named Isherwood, and see about getting}
+{2531} {... mission, to see the captain of the archers on the western wall, a man named Isherwood, and see about getting}
+
+{2540} {... him a supply of arrows for his men.}
+{2541} {... him a supply of arrows for his men.}
+
+{2550} {We returned to Shawford and told him that the only one who could have solved Olap's problem is dead.  He}
+{2551} {We returned to Shawford and told him that the only one who could have solved Olap's problem is dead.  He}
+
+{2560} {... understood and sent us on our next mission, to see the captain of the archers on the western wall, a man}
+{2561} {... understood and sent us on our next mission, to see the captain of the archers on the western wall, a man}
+
+{2570} {... named Isherwood, and see about getting him a supply of arrows for his men.}
+{2571} {... named Isherwood, and see about getting him a supply of arrows for his men.}
+
+{2580} {We returned to Shawford and told him we had gotten Isherwood the arrows he needed.  He thanked us, and then sent}
+{2581} {We returned to Shawford and told him we had gotten Isherwood the arrows he needed.  He thanked us, and then sent}
+
+{2590} {... us on our next mission.  He wants us to go speak to Koluhm in town, and find out what the Priest of Myrkul}
+{2591} {... us on our next mission.  He wants us to go speak to Koluhm in town, and find out what the Priest of Myrkul}
+
+{2600} {... has gleaned from questioning a goblin's dead body.}
+{2601} {... has gleaned from questioning a goblin's dead body.}
+
+{2610} {We told Shawford we couldn't go speak to Koluhm because he'd accidentally died while tangling with us.  We didn't}
+{2611} {We told Shawford we couldn't go speak to Koluhm because he'd accidentally died while tangling with us.  We didn't}
+
+{2620} {... say it exactly like that - after all, Shawford has enough to worry about without locking us up in the}
+{2621} {... say it exactly like that - after all, Shawford has enough to worry about without locking us up in the}
+
+{2630} {... gallows.  He took it well, and he sent us on our next assignment; to go to the Salty Dog Tavern and haul}
+{2631} {... gallows.  He took it well, and he sent us on our next assignment; to go to the Salty Dog Tavern and haul}
+
+{2640} {... those drunken fools that call themselves the Iron Collar Mercenary Band up to the Palisade.}
+{2641} {... those drunken fools that call themselves the Iron Collar Mercenary Band up to the Palisade.}
+
+{2650} {We returned to Shawford after speaking with Koluhm, and he sent us on our next assignment; to go to the Salty Dog}
+{2651} {We returned to Shawford after speaking with Koluhm, and he sent us on our next assignment; to go to the Salty Dog}
+
+{2660} {... Tavern and haul those drunken fools that call themselves the Iron Collar Mercenary Band up to the Palisade.}
+{2661} {... Tavern and haul those drunken fools that call themselves the Iron Collar Mercenary Band up to the Palisade.}
+
+{2670} {We told Shawford that the Iron Collar band met with an unfortunate... accident while we were attempting to get}
+{2671} {We told Shawford that the Iron Collar band met with an unfortunate... accident while we were attempting to get}
+
+{2680} {... them to report for duty, and he took it all in stride, like it was what he expected to hear.  Odd.  No sooner}
+{2681} {... them to report for duty, and he took it all in stride, like it was what he expected to hear.  Odd.  No sooner}
+
+{2690} {... had we told him the fate of the Iron Collar band, then we heard an explosion from outside, and the Palisade}
+{2691} {... had we told him the fate of the Iron Collar band, then we heard an explosion from outside, and the Palisade}
+
+{2700} {... was under attack!}
+{2701} {... was under attack!}
+
+{2710} {We told Shawford that we'd pressured the Iron Collar band to get their worthless hides onto the Palisade, and he}
+{2711} {We told Shawford that we'd pressured the Iron Collar band to get their worthless hides onto the Palisade, and he}
+
+{2720} {... seemed surprised and grateful at our efforts.  No sooner had he finished congratulating us when we heard an}
+{2721} {... seemed surprised and grateful at our efforts.  No sooner had he finished congratulating us when we heard an}
+
+{2730} {... explosion from outside, and the Palisade was under attack!}
+{2731} {... explosion from outside, and the Palisade was under attack!}
+
+{2740} {We came across Olap Tamewater, a dwarven engineer supervising the construction of the Palisade.  We told Olap}
+{2741} {We came across Olap Tamewater, a dwarven engineer supervising the construction of the Palisade.  We told Olap}
+
+{2750} {... that Shawford has sent us to him, and he promptly enlisted us to help him repair a section of the Palisade}
+{2751} {... that Shawford has sent us to him, and he promptly enlisted us to help him repair a section of the Palisade}
+
+{2760} {... wall.  Apparently, Olap has a supply of lumber in the main town, but it has yet to be delivered.  He told us}
+{2761} {... wall.  Apparently, Olap has a supply of lumber in the main town, but it has yet to be delivered.  He told us}
+
+{2770} {... to track down a lumber merchant named Lumbar Grundwall in the main Targos Town and see what's holding up the}
+{2771} {... to track down a lumber merchant named Lumbar Grundwall in the main Targos Town and see what's holding up the}
+
+{2780} {... shipment of lumber to the Palisade.}
+{2781} {... shipment of lumber to the Palisade.}
+
+{2790} {We came across Olap Tamewater, a dwarven engineer supervising the construction of the Palisade.  He told us to go}
+{2791} {We came across Olap Tamewater, a dwarven engineer supervising the construction of the Palisade.  He told us to go}
+
+{2800} {... find the Guard Commander, Shawford Crale, in the meeting house to the south.}
+{2801} {... find the Guard Commander, Shawford Crale, in the meeting house to the south.}
+
+{2810} {Olap told us to track down a lumber merchant named Lumbar Grundwall in the main Targos Town and see what's}
+{2811} {Olap told us to track down a lumber merchant named Lumbar Grundwall in the main Targos Town and see what's}
+
+{2820} {... holding up the shipment of lumber to the Palisade.}
+{2821} {... holding up the shipment of lumber to the Palisade.}
+
+{2830} {We told Olap that the crane that hauled lumber up the cliffs is broken and needs to be repaired.  He told us to}
+{2831} {We told Olap that the crane that hauled lumber up the cliffs is broken and needs to be repaired.  He told us to}
+
+{2840} {... find his father, Jorun Tamewater, at the docks and see about fixing the crane.}
+{2841} {... find his father, Jorun Tamewater, at the docks and see about fixing the crane.}
+
+{2850} {We told Olap that his father perished at the docks, and he dismissed us, telling us to go to Shawford for our}
+{2851} {We told Olap that his father perished at the docks, and he dismissed us, telling us to go to Shawford for our}
+
+{2860} {... next assignment.}
+{2861} {... next assignment.}
+
+{2870} {We returned to Olap and told him that we had fixed the crane.  He was too busy patting himself on the back to}
+{2871} {We returned to Olap and told him that we had fixed the crane.  He was too busy patting himself on the back to}
+
+{2880} {... acknowledge our efforts.}
+{2881} {... acknowledge our efforts.}
+
+{2890} {We found Isherwood at the western wall and told him that Crale had sent us.  Isherwood told us he needed three}
+{2891} {We found Isherwood at the western wall and told him that Crale had sent us.  Isherwood told us he needed three}
+
+{2900} {... hundred arrows, and we told him we'd go to the Gallaway Trade Depot and see about having them delivered to}
+{2901} {... hundred arrows, and we told him we'd go to the Gallaway Trade Depot and see about having them delivered to}
+
+{2910} {... the wall.}
+{2911} {... the wall.}
+
+{2920} {We ran across Isherwood again, and he gave us a couple bottles that he and his men had stashed away, as thanks}
+{2921} {We ran across Isherwood again, and he gave us a couple bottles that he and his men had stashed away, as thanks}
+
+{2930} {... for our efforts.}
+{2931} {... for our efforts.}
+
+{2940} {Although it took some convincing, we told Isherwood he could take our arrows.  He thanked us and gave us a couple}
+{2941} {Although it took some convincing, we told Isherwood he could take our arrows.  He thanked us and gave us a couple}
+
+{2950} {... bottles that he and his men had stashed away, as thanks for our efforts.}
+{2951} {... bottles that he and his men had stashed away, as thanks for our efforts.}
+
+{2960} {By calling on our racial background, we were able to convince Caulder... after much debate... to let us help him}
+{2961} {By calling on our racial background, we were able to convince Caulder... after much debate... to let us help him}
+
+{2970} {... by fetching a hammer.  We're still debating the wisdom of our decision.}
+{2971} {... by fetching a hammer.  We're still debating the wisdom of our decision.}
+
+{2980} {We had a shock on the southwest Palisade - we came across a laborer named Caulder who *didn't* want us to fetch}
+{2981} {We had a shock on the southwest Palisade - we came across a laborer named Caulder who *didn't* want us to fetch}
+
+{2990} {... something.  In fact, he didn't want our help at all, which is a nice change of pace, except that his}
+{2991} {... something.  In fact, he didn't want our help at all, which is a nice change of pace, except that his}
+
+{3000} {... stubbornness may be putting Targos at risk.  Maybe a more persuasive member of our party could convince him}
+{3001} {... stubbornness may be putting Targos at risk.  Maybe a more persuasive member of our party could convince him}
+
+{3010} {... to let us help him.}
+{3011} {... to let us help him.}
+
+{3020} {By calling on our persuasive abilities, we were able to convince Caulder... after much debate... to let us help}
+{3021} {By calling on our persuasive abilities, we were able to convince Caulder... after much debate... to let us help}
+
+{3030} {... him by fetching a hammer.  We're still debating the wisdom of our decision.}
+{3031} {... him by fetching a hammer.  We're still debating the wisdom of our decision.}
+
+{3040} {We brought Caulder a hammer and then watched as he attacked the nails on the catapult in a berserker frenzy.  The}
+{3041} {We brought Caulder a hammer and then watched as he attacked the nails on the catapult in a berserker frenzy.  The}
+
+{3050} {... fellow must have some barbarian blood coursing in his veins.  Once he was finished, the catapult looked}
+{3051} {... fellow must have some barbarian blood coursing in his veins.  Once he was finished, the catapult looked}
+
+{3060} {... repaired... and frightened.}
+{3061} {... repaired... and frightened.}
+
+{3070} {We blessed some of Targos' new recruits, and set the fires of battle blazing in their hearts.}
+{3071} {We blessed some of Targos' new recruits, and set the fires of battle blazing in their hearts.}
+
+{3080} {We inspired some of Targos' new recruits; they should face the battle to come with greater courage than they had}
+{3081} {We inspired some of Targos' new recruits; they should face the battle to come with greater courage than they had}
+
+{3090} {... before.}
+{3091} {... before.}
+
+{3100} {We inspired some of Targos' new recruits by showing them the hopelessness and desperation of their situation -}
+{3101} {We inspired some of Targos' new recruits by showing them the hopelessness and desperation of their situation -}
+
+{3110} {... and then showing them how much WORSE it could be.  The part where we elaborated on their corpses hanging from}
+{3111} {... and then showing them how much WORSE it could be.  The part where we elaborated on their corpses hanging from}
+
+{3120} {... the bone trees in the fields of the dead seemed to hold their interest immensely.}
+{3121} {... the bone trees in the fields of the dead seemed to hold their interest immensely.}
+
+{3130} {We were able to give some basics in spearwork to some of the Targos recruits.  It should help them fare a little}
+{3131} {We were able to give some basics in spearwork to some of the Targos recruits.  It should help them fare a little}
+
+{3140} {... better on the battlefield.}
+{3141} {... better on the battlefield.}
+
+{3150} {We took a wager from a fellow named Gable at the Palisade.  He bet us that we couldn't knock a barrel from atop}
+{3151} {We took a wager from a fellow named Gable at the Palisade.  He bet us that we couldn't knock a barrel from atop}
+
+{3160} {... its perch on the wall... we'll see about that.}
+{3161} {... its perch on the wall... we'll see about that.}
+
+{3170} {We collected on our bet from Gable, and I think we have dulled him of any desire to gamble in the near future.}
+{3171} {We collected on our bet from Gable, and I think we have dulled him of any desire to gamble in the near future.}
+
+{3180} {We convinced some moon-eyed soldier to leave a weapons rack unattended so that we might inspect it at our}
+{3181} {We convinced some moon-eyed soldier to leave a weapons rack unattended so that we might inspect it at our}
+
+{3190} {... leisure.  He's bound to be wandering the Palisade forever, trying to figure out which one of the "captains"}
+{3191} {... leisure.  He's bound to be wandering the Palisade forever, trying to figure out which one of the "captains"}
+
+{3200} {... was looking for him.}
+{3201} {... was looking for him.}
+
+{3210} {We encountered a mercenary, Niles, skulking behind one of the bunkhouses at the Palisade.  He asked us to fetch}
+{3211} {We encountered a mercenary, Niles, skulking behind one of the bunkhouses at the Palisade.  He asked us to fetch}
+
+{3220} {... him a bottle of alcohol.}
+{3221} {... him a bottle of alcohol.}
+
+{3230} {After we refused to bring him any alcohol, Niles snapped at us, and we responded by ordering him back to his}
+{3231} {After we refused to bring him any alcohol, Niles snapped at us, and we responded by ordering him back to his}
+
+{3240} {... post.  Hopefully, our warning will keep him on the straight and narrow until the goblin threat is over.}
+{3241} {... post.  Hopefully, our warning will keep him on the straight and narrow until the goblin threat is over.}
+
+{3250} {We had a spare bottle of wine, so we passed it along to Niles.}
+{3251} {We had a spare bottle of wine, so we passed it along to Niles.}
+
+{3260} {Black Geoffrey made his way to the Palisade right before the goblins struck, and it looks like his blade was able}
+{3261} {Black Geoffrey made his way to the Palisade right before the goblins struck, and it looks like his blade was able}
+
+{3270} {... to cut down some goblins before the battle was over.  He told us he was striking out for Luskan, overland if}
+{3271} {... to cut down some goblins before the battle was over.  He told us he was striking out for Luskan, overland if}
+
+{3280} {... need be, and we'd see no more of him... I don't know about his band.}
+{3281} {... need be, and we'd see no more of him... I don't know about his band.}
+
+{3290} {We had gotten a letter from Garradun Tanner, a courier we met in Targos, written to his beloved Raina.  We}
+{3291} {We had gotten a letter from Garradun Tanner, a courier we met in Targos, written to his beloved Raina.  We}
+
+{3300} {... delivered the letter to his commander, Captain Ingrath Mariner, just as he'd asked.}
+{3301} {... delivered the letter to his commander, Captain Ingrath Mariner, just as he'd asked.}
+
+{3310} {We delivered Denham's trapped replacement for Garradun the spy's false love-letter to Captain Ingrath Mariner. }
+{3311} {We delivered Denham's trapped replacement for Garradun the spy's false love-letter to Captain Ingrath Mariner. }
+
+{3320} {... We also gave Denham's note of warning to Sergeant Rahm Dammel, the commander of the Luskan forces.}
+{3321} {... We also gave Denham's note of warning to Sergeant Rahm Dammel, the commander of the Luskan forces.}
+
+{3330} {It turns out that the Captain Ingrath Mariner we met was actually a doppelganger in the employ of the Legion of}
+{3331} {It turns out that the Captain Ingrath Mariner we met was actually a doppelganger in the employ of the Legion of}
+
+{3340} {... the Chimera.  The doppelganger and its associates must have slain the real Ingrath and his men as they were}
+{3341} {... the Chimera.  The doppelganger and its associates must have slain the real Ingrath and his men as they were}
+
+{3350} {... on the way to the Western Pass.}
+{3351} {... on the way to the Western Pass.}
+
+{3360} {We rescued Zack Boosenburry, a svirfneblin, by killing the remorhaz that apparently had swallowed him whole. }
+{3361} {We rescued Zack Boosenburry, a svirfneblin, by killing the remorhaz that apparently had swallowed him whole. }
+
+{3370} {... We're still not sure how he or anyone else could've survived living in that worm's stomach for days.}
+{3371} {... We're still not sure how he or anyone else could've survived living in that worm's stomach for days.}
+
+{3380} {Zack told us that he had a spider mount named Aocha with him when he was attacked by the remorhaz, but she was}
+{3381} {Zack told us that he had a spider mount named Aocha with him when he was attacked by the remorhaz, but she was}
+
+{3390} {... nowhere to be found.  We agreed to help him find her.}
+{3391} {... nowhere to be found.  We agreed to help him find her.}
+
+{3400} {Apparently Zack is also investigating the ice temple, and we agreed to share whatever information we learned}
+{3401} {Apparently Zack is also investigating the ice temple, and we agreed to share whatever information we learned}
+
+{3410} {... about it with him.  He was looking for as many details as possible, including who made it and for what}
+{3411} {... about it with him.  He was looking for as many details as possible, including who made it and for what}
+
+{3420} {... purpose.}
+{3421} {... purpose.}
+
+{3430} {We found Zack's mount Aocha in a room that appears to be used to store the livestock fed to the remorhaz roaming}
+{3431} {We found Zack's mount Aocha in a room that appears to be used to store the livestock fed to the remorhaz roaming}
+
+{3440} {... the area.}
+{3441} {... the area.}
+
+{3450} {We informed Zack of what we had learned about the ice temple.}
+{3451} {We informed Zack of what we had learned about the ice temple.}
+
+{3460} {A monk named Salisam told us to ask Aruma Blane, who controls the monastery, about accessing the Underdark}
+{3461} {A monk named Salisam told us to ask Aruma Blane, who controls the monastery, about accessing the Underdark}
+
+{3470} {... passage.  He warned us that she would probably say no, but asked that we come and talk to him after speaking}
+{3471} {... passage.  He warned us that she would probably say no, but asked that we come and talk to him after speaking}
+
+{3480} {... to Aruma, regardless of her reply.}
+{3481} {... to Aruma, regardless of her reply.}
+
+{3490} {We informed the leader of Black Raven Monastery of Ven the thief's plans to loot the Black Raven's tomb.}
+{3491} {We informed the leader of Black Raven Monastery of Ven the thief's plans to loot the Black Raven's tomb.}
+
+{3500} {Salisam explained to us that, if we found a way to remove Aruma from power, he'll allow us to face the Eight}
+{3501} {Salisam explained to us that, if we found a way to remove Aruma from power, he'll allow us to face the Eight}
+
+{3510} {... Chambers in an effort to become associates of the monastery.  When that's done, we'll be allowed access to}
+{3511} {... Chambers in an effort to become associates of the monastery.  When that's done, we'll be allowed access to}
+
+{3520} {... the Underdark passage.  Salisam suggested that Aruma's turning against the archimandrite has something to do}
+{3521} {... the Underdark passage.  Salisam suggested that Aruma's turning against the archimandrite has something to do}
+
+{3530} {... with Dolon Daemba, the envoy from Isair and Madae - that he's somehow corrupted her.  In any case, we're}
+{3531} {... with Dolon Daemba, the envoy from Isair and Madae - that he's somehow corrupted her.  In any case, we're}
+
+{3540} {... forbidden from attacking both Aruma and Dolon or speaking of Salisam's offer to anyone else - should we do}
+{3541} {... forbidden from attacking both Aruma and Dolon or speaking of Salisam's offer to anyone else - should we do}
+
+{3550} {... either, the offer is negated.}
+{3551} {... either, the offer is negated.}
+
+{3560} {We showed Salisam the letters we found in Dolon's chambers.  He suggested that we take them to Aruma immediately.}
+{3561} {We showed Salisam the letters we found in Dolon's chambers.  He suggested that we take them to Aruma immediately.}
+
+{3570} {Salisam told us that, with Aruma removed from power, we were allowed to face the Eight Chambers - mastering them}
+{3571} {Salisam told us that, with Aruma removed from power, we were allowed to face the Eight Chambers - mastering them}
+
+{3580} {... will give us access to the Underdark passage.  We're to speak with Morohem on the second level of the}
+{3581} {... will give us access to the Underdark passage.  We're to speak with Morohem on the second level of the}
+
+{3590} {... Monastery.}
+{3591} {... Monastery.}
+
+{3600} {Salisam congratulated us as associates of the Black Raven Monastery, saying that the gate on the third level of}
+{3601} {Salisam congratulated us as associates of the Black Raven Monastery, saying that the gate on the third level of}
+
+{3610} {... the monastery - and thus the Underdark passage - was now open to us.}
+{3611} {... the monastery - and thus the Underdark passage - was now open to us.}
+
+{3620} {Bered, the librarian of the Black Raven Monastery, mentioned Eight Chambers on the second level of the place that}
+{3621} {Bered, the librarian of the Black Raven Monastery, mentioned Eight Chambers on the second level of the place that}
+
+{3630} {... were used to test the worthiness of potential monks or associates to the order.  A monk named Morohem -}
+{3631} {... were used to test the worthiness of potential monks or associates to the order.  A monk named Morohem -}
+
+{3640} {... "Master of the Chambers" - oversees them.}
+{3641} {... "Master of the Chambers" - oversees them.}
+
+{3650} {We managed to convince Svaltid, master trainer of the Black Raven Monastery, to give Sersa the additional}
+{3651} {We managed to convince Svaltid, master trainer of the Black Raven Monastery, to give Sersa the additional}
+
+{3660} {... training that she needs to advance.}
+{3661} {... training that she needs to advance.}
+
+{3670} {We encountered a "monk" named Ven who was actually a thief in disguise.  He's trying to loot the Black Raven's}
+{3671} {We encountered a "monk" named Ven who was actually a thief in disguise.  He's trying to loot the Black Raven's}
+
+{3680} {... tomb, but needed someone's help to open the gate.}
+{3681} {... tomb, but needed someone's help to open the gate.}
+
+{3690} {Ven betrayed us in the Black Raven's tomb, taking all the loot for himself and setting off the alarm.}
+{3691} {Ven betrayed us in the Black Raven's tomb, taking all the loot for himself and setting off the alarm.}
+
+{3700} {We agreed to help Ven loot the Black Raven's tomb.  He's supposed to meet us on the third level of the monastery}
+{3701} {We agreed to help Ven loot the Black Raven's tomb.  He's supposed to meet us on the third level of the monastery}
+
+{3710} {... when we finally get the gate open.}
+{3711} {... when we finally get the gate open.}
+
+{3720} {We refused to be part of Ven's plans to loot the Black Raven's tomb, and he gave us a ring so that we'd allow him}
+{3721} {We refused to be part of Ven's plans to loot the Black Raven's tomb, and he gave us a ring so that we'd allow him}
+
+{3730} {... to escape peacefully.}
+{3731} {... to escape peacefully.}
+
+{3740} {Nonin, the monk that works in the monastery's kitchens, mentioned that he'd lost his father's gold and ruby ring.}
+{3741} {Nonin, the monk that works in the monastery's kitchens, mentioned that he'd lost his father's gold and ruby ring.}
+
+{3750} {...  He asked that we return it if we found it.}
+{3751} {...  He asked that we return it if we found it.}
+
+{3760} {We returned a ring that we thought was Nonin's to the monk, but it turns out that it wasn't his.  Not only did we}
+{3761} {We returned a ring that we thought was Nonin's to the monk, but it turns out that it wasn't his.  Not only did we}
+
+{3770} {... get to keep the ring, but Nonin rewarded us for our honesty - he gave us a key to the monastery's locked}
+{3771} {... get to keep the ring, but Nonin rewarded us for our honesty - he gave us a key to the monastery's locked}
+
+{3780} {... storeroom, saying that there were some potions for us in an unlocked crate.}
+{3781} {... storeroom, saying that there were some potions for us in an unlocked crate.}
+
+{3790} {We found and returned Nonin's ring - he rewarded us with some potions.}
+{3791} {We found and returned Nonin's ring - he rewarded us with some potions.}
+
+{3800} {Sersa, the monastery's quartermaster, claims to have stumbled upon a mental wall with her training.  She can't}
+{3801} {Sersa, the monastery's quartermaster, claims to have stumbled upon a mental wall with her training.  She can't}
+
+{3810} {... increase her martial skills, but Svaltid - the monastery's trainer - won't spend any more time with her.}
+{3811} {... increase her martial skills, but Svaltid - the monastery's trainer - won't spend any more time with her.}
+
+{3820} {We were able to help Sersa improve her skills by giving her some techniques to practice.  In return, she'll allow}
+{3821} {We were able to help Sersa improve her skills by giving her some techniques to practice.  In return, she'll allow}
+
+{3830} {... us to rest at the monastery at no cost.}
+{3831} {... us to rest at the monastery at no cost.}
+
+{3840} {We told Sersa that we 'd managed to convince Svaltid to spend more training time with her.  In return, she'll}
+{3841} {We told Sersa that we 'd managed to convince Svaltid to spend more training time with her.  In return, she'll}
+
+{3850} {... allow us to rest at the monastery at no cost.}
+{3851} {... allow us to rest at the monastery at no cost.}
+
+{3860} {Aruma Blane, leader of the Black Raven Monastery, refused to let us use the Underdark passage.}
+{3861} {Aruma Blane, leader of the Black Raven Monastery, refused to let us use the Underdark passage.}
+
+{3870} {We informed the leader of Black Raven Monastery of Ven the thief's plans to loot the Black Raven's tomb.}
+{3871} {We informed the leader of Black Raven Monastery of Ven the thief's plans to loot the Black Raven's tomb.}
+
+{3880} {After showing Dolon's letters to Aruma, she has decided to leave the monastery in the charge of Salisam.  Oddly}
+{3881} {After showing Dolon's letters to Aruma, she has decided to leave the monastery in the charge of Salisam.  Oddly}
+
+{3890} {... enough, it seems that she and Dolon Daemba - Isair and Madae's envoy to the archimandrite - have fallen in}
+{3891} {... enough, it seems that she and Dolon Daemba - Isair and Madae's envoy to the archimandrite - have fallen in}
+
+{3900} {... love and are running off together.}
+{3901} {... love and are running off together.}
+
+{3910} {After informing Aruma of Salisam's offer and winning her confidence, she has allowed us to face the Eight}
+{3911} {After informing Aruma of Salisam's offer and winning her confidence, she has allowed us to face the Eight}
+
+{3920} {... Chambers - mastering them will give us access to the Underdark passage.  We're to speak with Morohem on the}
+{3921} {... Chambers - mastering them will give us access to the Underdark passage.  We're to speak with Morohem on the}
+
+{3930} {... second level of the monastery.}
+{3931} {... second level of the monastery.}
+
+{3940} {Aruma congratulated us as associates of the Black Raven Monastery, saying that the gate on the third level of the}
+{3941} {Aruma congratulated us as associates of the Black Raven Monastery, saying that the gate on the third level of the}
+
+{3950} {... monastery - and thus the Underdark passage - was now open to us.}
+{3951} {... monastery - and thus the Underdark passage - was now open to us.}
+
+{3960} {We showed Dolon's letters to Aruma, but she explained that she'd already seen them and then chastised us for}
+{3961} {We showed Dolon's letters to Aruma, but she explained that she'd already seen them and then chastised us for}
+
+{3970} {... having broken into Dolon's chambers.}
+{3971} {... having broken into Dolon's chambers.}
+
+{3980} {Aruma grew angry with our breaking into Dolon's chambers; we were forced to flee the monastery.}
+{3981} {Aruma grew angry with our breaking into Dolon's chambers; we were forced to flee the monastery.}
+
+{3990} {Aruma grew angry with our breaking into Dolon's chambers; we were forced to fight her and the rest of the monks.}
+{3991} {Aruma grew angry with our breaking into Dolon's chambers; we were forced to fight her and the rest of the monks.}
+
+{4000} {We met Morohem, the Black Raven Monastery's Master of Chambers.  His duties are to guide challengers through the}
+{4001} {We met Morohem, the Black Raven Monastery's Master of Chambers.  His duties are to guide challengers through the}
+
+{4010} {... testing chambers, offering instructions and advice.}
+{4011} {... testing chambers, offering instructions and advice.}
+
+{4020} {Morohem has allowed us to face the Eight Chambers.  We must choose one of our number to enter alone and without}
+{4021} {Morohem has allowed us to face the Eight Chambers.  We must choose one of our number to enter alone and without}
+
+{4030} {... equipment; he mentioned that Nonin, upstairs, can help us store any items that the others can't carry. }
+{4031} {... equipment; he mentioned that Nonin, upstairs, can help us store any items that the others can't carry. }
+
+{4040} {... However, each chamber has a hidden compartment filled with weapons; they're opened by large golden buttons. }
+{4041} {... However, each chamber has a hidden compartment filled with weapons; they're opened by large golden buttons. }
+
+{4050} {... Morohem will let the challenger into each chamber in turn and seal the door behind him or her, at which point}
+{4051} {... Morohem will let the challenger into each chamber in turn and seal the door behind him or her, at which point}
+
+{4060} {... the test will begin - the challenger can't leave a chamber until he or she masters it or dies trying.  He}
+{4061} {... the test will begin - the challenger can't leave a chamber until he or she masters it or dies trying.  He}
+
+{4070} {... also says we can rest here so long as we're facing the chambers.}
+{4071} {... also says we can rest here so long as we're facing the chambers.}
+
+{4080} {We encountered a cleric of Auril named Thvara Baelm.  It seems that while we were doing battle in the Western}
+{4081} {We encountered a cleric of Auril named Thvara Baelm.  It seems that while we were doing battle in the Western}
+
+{4090} {... Pass glacier, she was gathering barbarian recruits in the east.  Our paths happened to cross as we made for}
+{4091} {... Pass glacier, she was gathering barbarian recruits in the east.  Our paths happened to cross as we made for}
+
+{4100} {... the Eastern Pass and she was returning with a number of barbarians in tow.  Needless to say, the situation}
+{4101} {... the Eastern Pass and she was returning with a number of barbarians in tow.  Needless to say, the situation}
+
+{4110} {... degenerated rapidly.}
+{4111} {... degenerated rapidly.}
+
+{4120} {It seems that the barrow wight is out and about on account of a common thief - someone has made off with its}
+{4121} {It seems that the barrow wight is out and about on account of a common thief - someone has made off with its}
+
+{4130} {... favorite drinking horn, and it's doubtful that the spirit will rest without it.  If we found the horn, the}
+{4131} {... favorite drinking horn, and it's doubtful that the spirit will rest without it.  If we found the horn, the}
+
+{4140} {... angry spirit should stop haunting the area.}
+{4141} {... angry spirit should stop haunting the area.}
+
+{4150} {We found the barrow wight's stolen drinking horn on a thief's corpse in the woods east of the village.  We}
+{4151} {We found the barrow wight's stolen drinking horn on a thief's corpse in the woods east of the village.  We}
+
+{4160} {... returned it to Sordirsin - his spirit was grateful and left with the horn, claiming that we could take}
+{4161} {... returned it to Sordirsin - his spirit was grateful and left with the horn, claiming that we could take}
+
+{4170} {... whatever we liked from his now-vacant tomb.}
+{4171} {... whatever we liked from his now-vacant tomb.}
+
+{4180} {One of our number composed a heroic song for Sordirsin the barrow wight... the spirit was grateful and left for}
+{4181} {One of our number composed a heroic song for Sordirsin the barrow wight... the spirit was grateful and left for}
+
+{4190} {... Warrior's Rest, claiming that we could take whatever we liked from his now-vacant tomb.}
+{4191} {... Warrior's Rest, claiming that we could take whatever we liked from his now-vacant tomb.}
+
+{4200} {We met a group of hunters while traveling towards the Eastern Pass.  They asked us to stop at their village in}
+{4201} {We met a group of hunters while traveling towards the Eastern Pass.  They asked us to stop at their village in}
+
+{4210} {... the northeast and speak to a woman called Suoma the Elder.}
+{4211} {... the northeast and speak to a woman called Suoma the Elder.}
+
+{4220} {We brought the remains of the Fell Wood dead back to the Wandering Village and gave them to Suoma the Elder, who}
+{4221} {We brought the remains of the Fell Wood dead back to the Wandering Village and gave them to Suoma the Elder, who}
+
+{4230} {... will inter them.}
+{4231} {... will inter them.}
+
+{4240} {Suoma, the elder of Wandering Village, has asked that we speak with and help Venla the Healer.  She claims that}
+{4241} {Suoma, the elder of Wandering Village, has asked that we speak with and help Venla the Healer.  She claims that}
+
+{4250} {... if we aid the village, she will aid us in turn, telling us the way through the haunted Fell Wood to the east.}
+{4251} {... if we aid the village, she will aid us in turn, telling us the way through the haunted Fell Wood to the east.}
+
+{4260} {After defeating Limha and recovering the missing village children for Venla, Suoma the Elder has asked another}
+{4261} {After defeating Limha and recovering the missing village children for Venla, Suoma the Elder has asked another}
+
+{4270} {... favor of us: she wants us to speak with and aid Tahvo the Huntmaster.}
+{4271} {... favor of us: she wants us to speak with and aid Tahvo the Huntmaster.}
+
+{4280} {We put the barrow wight Tahvo spoke of to peace and returned to Suoma, who had yet another request.  This time,}
+{4281} {We put the barrow wight Tahvo spoke of to peace and returned to Suoma, who had yet another request.  This time,}
+
+{4290} {... she wanted us to speak with and help Kurttu.   For the sake of this village and of Kuldahar, we can only hope}
+{4291} {... she wanted us to speak with and help Kurttu.   For the sake of this village and of Kuldahar, we can only hope}
+
+{4300} {... this is the last task she has for us.}
+{4301} {... this is the last task she has for us.}
+
+{4310} {We spoke with Kurttu and uncovered the mystery of Kyosti's silent ghost.  This was the third and final task Suoma}
+{4311} {We spoke with Kurttu and uncovered the mystery of Kyosti's silent ghost.  This was the third and final task Suoma}
+
+{4320} {... had given us; having aided the village to the best of our ability, she is now willing to tell us how to pass}
+{4321} {... had given us; having aided the village to the best of our ability, she is now willing to tell us how to pass}
+
+{4330} {... through the Fell Wood.}
+{4331} {... through the Fell Wood.}
+
+{4340} {Suoma the Elder told us the way through the Fell Wood: apparently, there is a sort of creature called a "dark}
+{4341} {Suoma the Elder told us the way through the Fell Wood: apparently, there is a sort of creature called a "dark}
+
+{4350} {... treant" whose evil power can twist and hide paths and confuse travelers, causing them to become hopelessly}
+{4351} {... treant" whose evil power can twist and hide paths and confuse travelers, causing them to become hopelessly}
+
+{4360} {... lost.  If we destroy the dark treants of Fell Wood, we should be able to pass through it and to the Cold}
+{4361} {... lost.  If we destroy the dark treants of Fell Wood, we should be able to pass through it and to the Cold}
+
+{4370} {... Marshes beyond.}
+{4371} {... Marshes beyond.}
+
+{4380} {We went to Venla the Healer after defeating the diabolical witch Limha and freeing the village's children from}
+{4381} {We went to Venla the Healer after defeating the diabolical witch Limha and freeing the village's children from}
+
+{4390} {... her wicked grasp.  We should let Suoma the Elder know.}
+{4391} {... her wicked grasp.  We should let Suoma the Elder know.}
+
+{4400} {Venla the Healer asked that we try to find out what's happened to the village's vanishing children.}
+{4401} {Venla the Healer asked that we try to find out what's happened to the village's vanishing children.}
+
+{4410} {When we asked Venla if there were any clues about the village's missing children, she said that their best}
+{4411} {When we asked Venla if there were any clues about the village's missing children, she said that their best}
+
+{4420} {... hunters have searched everywhere and found no trace of them.  Some of the villagers feel that the children}
+{4421} {... hunters have searched everywhere and found no trace of them.  Some of the villagers feel that the children}
+
+{4430} {... were lost in the Fell Wood to the east, having fallen prey to some "fey creature" like a dryad or nymph.}
+{4431} {... were lost in the Fell Wood to the east, having fallen prey to some "fey creature" like a dryad or nymph.}
+
+{4440} {We found some frostrose around the Cold Marshes and returned it to Venla.  In return, she gave us some medicine}
+{4441} {We found some frostrose around the Cold Marshes and returned it to Venla.  In return, she gave us some medicine}
+
+{4450} {... made with the stuff, and let us know that she'd be selling more of it along with her other herbs and}
+{4451} {... made with the stuff, and let us know that she'd be selling more of it along with her other herbs and}
+
+{4460} {... poultices in the future.}
+{4461} {... poultices in the future.}
+
+{4470} {Venla the Healer told us about a rare herb called "frostrose" that grows around the Cold Marshes.  She said that}
+{4471} {Venla the Healer told us about a rare herb called "frostrose" that grows around the Cold Marshes.  She said that}
+
+{4480} {... if we found some and returned it to her, she would give us some medicine that cures both poison and disease.}
+{4481} {... if we found some and returned it to her, she would give us some medicine that cures both poison and disease.}
+
+{4490} {Venla the Healer told us of a hidden trail in the woods east of the village.  In a large clearing split by a}
+{4491} {Venla the Healer told us of a hidden trail in the woods east of the village.  In a large clearing split by a}
+
+{4500} {... switch-back and three twisted, limbless trees, we're to go northeast, southeast, northwest, and then}
+{4501} {... switch-back and three twisted, limbless trees, we're to go northeast, southeast, northwest, and then}
+
+{4510} {... southeast again.  It should lead to some standing stones.}
+{4511} {... southeast again.  It should lead to some standing stones.}
+
+{4520} {Tahvo the Huntmaster told of us a "furious ghost" that has been terrorizing their hunting grounds to the west. }
+{4521} {Tahvo the Huntmaster told of us a "furious ghost" that has been terrorizing their hunting grounds to the west. }
+
+{4530} {... Apparently they've slain it at least once, but it simply comes back every day.  There must be some way to get}
+{4531} {... Apparently they've slain it at least once, but it simply comes back every day.  There must be some way to get}
+
+{4540} {... rid of it for good.}
+{4541} {... rid of it for good.}
+
+{4550} {We told Tahvo that we'd appeased the barrow wight.  We should let Suoma the Elder know.}
+{4551} {We told Tahvo that we'd appeased the barrow wight.  We should let Suoma the Elder know.}
+
+{4560} {Based on Tahvo's information about their "furious ghost," it sounds as if the creature is a wight of some sort. }
+{4561} {Based on Tahvo's information about their "furious ghost," it sounds as if the creature is a wight of some sort. }
+
+{4570} {... Perhaps someone stole something from its barrow - that would explain why it has come back to life and is}
+{4571} {... Perhaps someone stole something from its barrow - that would explain why it has come back to life and is}
+
+{4580} {... attacking people.}
+{4581} {... attacking people.}
+
+{4590} {Tahvo the Huntmaster suggested that, if we found ourselves lost and moving in circles in the woods east of the}
+{4591} {Tahvo the Huntmaster suggested that, if we found ourselves lost and moving in circles in the woods east of the}
+
+{4600} {... village, we try dropping stones or thrusting arrows into the earth to mark our progress.  He also mentioned}
+{4601} {... village, we try dropping stones or thrusting arrows into the earth to mark our progress.  He also mentioned}
+
+{4610} {... making notes on our map.}
+{4611} {... making notes on our map.}
+
+{4620} {Kurttu has asked that we help uncover the mystery of the disappearance of Kyosti and his silent ghost.  Kyosti}
+{4621} {Kurttu has asked that we help uncover the mystery of the disappearance of Kyosti and his silent ghost.  Kyosti}
+
+{4630} {... vanished some time ago, but his spirit occasionally returns to haunt the area between the village and the}
+{4631} {... vanished some time ago, but his spirit occasionally returns to haunt the area between the village and the}
+
+{4640} {... Fell Wood to the east.  Since it won't speak, the villagers don't know why the hunter's soul can't rest.}
+{4641} {... Fell Wood to the east.  Since it won't speak, the villagers don't know why the hunter's soul can't rest.}
+
+{4650} {According to Kurttu, the recently vanished Kyosti was Carita's husband and one of the village's best hunters. }
+{4651} {According to Kurttu, the recently vanished Kyosti was Carita's husband and one of the village's best hunters. }
+
+{4660} {... Kurttu also claimed that Carita, his widow, said that when Kyosti disappeared, he had been going to the Fell}
+{4661} {... Kurttu also claimed that Carita, his widow, said that when Kyosti disappeared, he had been going to the Fell}
+
+{4670} {... Wood east of the village to hunt the huge white wolves that dwell there.  However, it seems that his body was}
+{4671} {... Wood east of the village to hunt the huge white wolves that dwell there.  However, it seems that his body was}
+
+{4680} {... never found.}
+{4681} {... never found.}
+
+{4690} {According to Kurttu, Kyosti's widow Carita always seems angry, even when she was with her husband.  Kurttu also}
+{4691} {According to Kurttu, Kyosti's widow Carita always seems angry, even when she was with her husband.  Kurttu also}
+
+{4700} {... mentioned that after Kyosti's disappearance, Carita turned to a man named Leevi for comfort.}
+{4701} {... mentioned that after Kyosti's disappearance, Carita turned to a man named Leevi for comfort.}
+
+{4710} {According to Kurttu, Leevi is one of the best hunters in the village.  She also mentioned that he and Kyosti were}
+{4711} {According to Kurttu, Leevi is one of the best hunters in the village.  She also mentioned that he and Kyosti were}
+
+{4720} {... perpetually competing friends and rivals.}
+{4721} {... perpetually competing friends and rivals.}
+
+{4730} {We explained to Kurttu that Kyosti was murdered by his wife Carita and that Leevi - her lover - had hidden the}
+{4731} {We explained to Kurttu that Kyosti was murdered by his wife Carita and that Leevi - her lover - had hidden the}
+
+{4740} {... corpse, removing its tongue so that Kyosti's ghost could not speak to reveal their shame.  Leevi and Carita}
+{4741} {... corpse, removing its tongue so that Kyosti's ghost could not speak to reveal their shame.  Leevi and Carita}
+
+{4750} {... have vanished themselves, presumably fleeing the village after somehow finding out that I had discovered}
+{4751} {... have vanished themselves, presumably fleeing the village after somehow finding out that I had discovered}
+
+{4760} {... their terrible secret.}
+{4761} {... their terrible secret.}
+
+{4770} {After speaking with Kurttu about Kyosti's ghost, we tried to ask to Carita about her dead husband - however, she}
+{4771} {After speaking with Kurttu about Kyosti's ghost, we tried to ask to Carita about her dead husband - however, she}
+
+{4780} {... wouldn't talk with us.}
+{4781} {... wouldn't talk with us.}
+
+{4790} {We met a young hunter named Jari who is in love with a woman named Anja.  Jari is troubled as he doesn't have the}
+{4791} {We met a young hunter named Jari who is in love with a woman named Anja.  Jari is troubled as he doesn't have the}
+
+{4800} {... skills to best Anja's other suitors in a hunting contest, and without her father's permission, he and Anja}
+{4801} {... skills to best Anja's other suitors in a hunting contest, and without her father's permission, he and Anja}
+
+{4810} {... will have to flee the village to be together.}
+{4811} {... will have to flee the village to be together.}
+
+{4820} {We gave Jari a winter wolf's pelt that we obtained in the woods east of the village.  He's now certain to win the}
+{4821} {We gave Jari a winter wolf's pelt that we obtained in the woods east of the village.  He's now certain to win the}
+
+{4830} {... hunting competition, and Anja's father's permission to marry her with it.  Jari was most grateful, actually}
+{4831} {... hunting competition, and Anja's father's permission to marry her with it.  Jari was most grateful, actually}
+
+{4840} {... giving us a gift in return.}
+{4841} {... giving us a gift in return.}
+
+{4850} {We sold Jari a winter wolf's pelt that we obtained in the woods east of the village.  He's now certain to win the}
+{4851} {We sold Jari a winter wolf's pelt that we obtained in the woods east of the village.  He's now certain to win the}
+
+{4860} {... hunting competition, and Anja's father's permission to marry her with it.}
+{4861} {... hunting competition, and Anja's father's permission to marry her with it.}
+
+{4870} {A young woman named Pairi told us that some men had recently passed by the village, entering the woods to the}
+{4871} {A young woman named Pairi told us that some men had recently passed by the village, entering the woods to the}
+
+{4880} {... east and never returning.  Pairi said that the angry ghost began to haunt the western hunting grounds shortly}
+{4881} {... east and never returning.  Pairi said that the angry ghost began to haunt the western hunting grounds shortly}
+
+{4890} {... thereafter.}
+{4891} {... thereafter.}
+
+{4900} {A young woman named Pairi told us of a hidden path in the eastern woods.  When we reach a narrow clearing with a}
+{4901} {A young woman named Pairi told us of a hidden path in the eastern woods.  When we reach a narrow clearing with a}
+
+{4910} {... stump, we are to travel north, east, and east again.  It's supposed to lead somewhere otherwise inaccessible.}
+{4911} {... stump, we are to travel north, east, and east again.  It's supposed to lead somewhere otherwise inaccessible.}
+
+{4920} {We met a young half-elven sorceress-to-be named Pairi en route to the Ice Lakes, and helped her to better}
+{4921} {We met a young half-elven sorceress-to-be named Pairi en route to the Ice Lakes, and helped her to better}
+
+{4930} {... understand her budding abilities.}
+{4931} {... understand her budding abilities.}
+
+{4940} {We met a drow mechant named Nym in a small village.  He was waiting there for the military expedition from}
+{4941} {We met a drow mechant named Nym in a small village.  He was waiting there for the military expedition from}
+
+{4950} {... Neverwinter - the same one destroyed by the Aurilites at the glacier in the Western Pass - to arrive.}
+{4951} {... Neverwinter - the same one destroyed by the Aurilites at the glacier in the Western Pass - to arrive.}
+
+{4960} {The drow merchant Nym left the village, but not before issuing a vague warning about the Legion of the Chimera}
+{4961} {The drow merchant Nym left the village, but not before issuing a vague warning about the Legion of the Chimera}
+
+{4970} {... knowing of our meddling and taking pains to stop us.  He suggested that we not remain there long.}
+{4971} {... knowing of our meddling and taking pains to stop us.  He suggested that we not remain there long.}
+
+{4980} {The drow merchant Nym told us that the Eastern Pass was entirely blocked by troops of the Legion of the Chimera. }
+{4981} {The drow merchant Nym told us that the Eastern Pass was entirely blocked by troops of the Legion of the Chimera. }
+
+{4990} {... However, he explained that there was another route over the Spine of the World: through the Underdark.  We}
+{4991} {... However, he explained that there was another route over the Spine of the World: through the Underdark.  We}
+
+{5000} {... will follow the Black Raven River north to where it flows from the Spine of the World mountains.  There}
+{5001} {... will follow the Black Raven River north to where it flows from the Spine of the World mountains.  There}
+
+{5010} {... should be a network of caves there that leads to a monastery high in the mountains.  Beneath the monastery is}
+{5011} {... should be a network of caves there that leads to a monastery high in the mountains.  Beneath the monastery is}
+
+{5020} {... an entrance to the Underdark.  From there we'll enter the ancient dwarven ruins of Dorn's Deep from below. }
+{5021} {... an entrance to the Underdark.  From there we'll enter the ancient dwarven ruins of Dorn's Deep from below. }
+
+{5030} {... From there we can surface on the northern side of the Spine of the World.}
+{5031} {... From there we can surface on the northern side of the Spine of the World.}
+
+{5040} {Isair and Madae, twin commanders of the Legion of the Chimera, appeared before us in the Wandering Village.  They}
+{5041} {Isair and Madae, twin commanders of the Legion of the Chimera, appeared before us in the Wandering Village.  They}
+
+{5050} {... claim to have found us with information purchased from Nym, the drow merchant who told us of the underdark}
+{5051} {... claim to have found us with information purchased from Nym, the drow merchant who told us of the underdark}
+
+{5060} {... passage beneath the Black Raven Monastery.  Madae claimed that the Legion would still attack Kuldahar, and}
+{5061} {... passage beneath the Black Raven Monastery.  Madae claimed that the Legion would still attack Kuldahar, and}
+
+{5070} {... Isair warned us to stop our "meddling," claiming that Targos wasn't alone in having Luskan allies.  To}
+{5071} {... Isair warned us to stop our "meddling," claiming that Targos wasn't alone in having Luskan allies.  To}
+
+{5080} {... demonstrate his seriousness, Isair slew several villagers and raised them as zombies against us before}
+{5081} {... demonstrate his seriousness, Isair slew several villagers and raised them as zombies against us before}
+
+{5090} {... vanishing along with his sister.}
+{5091} {... vanishing along with his sister.}
+
+{5100} {We found the corpse of Kyosti buried in a shallow grave east of the Wandering Village, where we encountered his}
+{5101} {We found the corpse of Kyosti buried in a shallow grave east of the Wandering Village, where we encountered his}
+
+{5110} {... silent ghost.  It turns out that Kyosti was murdered by his own wife, Carita, who then forced Kyosti's old}
+{5111} {... silent ghost.  It turns out that Kyosti was murdered by his own wife, Carita, who then forced Kyosti's old}
+
+{5120} {... friend Leevi to hide the corpse.  Leevi, fearful of Kyosti's return as a ghost, removed the corpse's tongue}
+{5121} {... friend Leevi to hide the corpse.  Leevi, fearful of Kyosti's return as a ghost, removed the corpse's tongue}
+
+{5130} {... so that the spirit could not speak.  It didn't work.}
+{5131} {... so that the spirit could not speak.  It didn't work.}
+
+{5140} {Just as the paladin sensed Limha's true nature, a child suddenly burst out of a holding pen hidden in Limha's}
+{5141} {Just as the paladin sensed Limha's true nature, a child suddenly burst out of a holding pen hidden in Limha's}
+
+{5150} {... home and begged us to save him - a happy coincidence for all involved save Limha, no doubt.}
+{5151} {... home and begged us to save him - a happy coincidence for all involved save Limha, no doubt.}
+
+{5160} {We came to Limha after speaking to the dryad Carynara and asked her of the village's missing children.  The witch}
+{5161} {We came to Limha after speaking to the dryad Carynara and asked her of the village's missing children.  The witch}
+
+{5170} {... tried to deny it, but a child suddenly burst out of a holding pen hidden in Limha's home and begged us to}
+{5171} {... tried to deny it, but a child suddenly burst out of a holding pen hidden in Limha's home and begged us to}
+
+{5180} {... save him - a happy coincidence for all involved save Limha, no doubt.}
+{5181} {... save him - a happy coincidence for all involved save Limha, no doubt.}
+
+{5190} {Limha, a woman we met in the wild east of the Wandering Village, has been stealing the village's children and}
+{5191} {Limha, a woman we met in the wild east of the Wandering Village, has been stealing the village's children and}
+
+{5200} {... using their energy to prolong her power and beauty.  The process drains the children of most of their souls,}
+{5201} {... using their energy to prolong her power and beauty.  The process drains the children of most of their souls,}
+
+{5210} {... after which she turns them into minks and sets them free in the wild.}
+{5211} {... after which she turns them into minks and sets them free in the wild.}
+
+{5220} {According to Limha, if we slay her, the children that she'd already transformed into animals will revert to their}
+{5221} {According to Limha, if we slay her, the children that she'd already transformed into animals will revert to their}
+
+{5230} {... original shapes.  We've often discussed the likelihood that her final thought was to regret telling us that.}
+{5231} {... original shapes.  We've often discussed the likelihood that her final thought was to regret telling us that.}
+
+{5240} {We encountered an eccentric but powerful mage called Harshom in the river caves near Black Raven Monastery.  He'd}
+{5241} {We encountered an eccentric but powerful mage called Harshom in the river caves near Black Raven Monastery.  He'd}
+
+{5250} {... been sent to kill us by the Hosttower of the Arcane Brotherhood in Luskan.  They must be the allies that}
+{5251} {... been sent to kill us by the Hosttower of the Arcane Brotherhood in Luskan.  They must be the allies that}
+
+{5260} {... Isair and Madae spoke of in the Wandering Village.}
+{5261} {... Isair and Madae spoke of in the Wandering Village.}
+
+{5270} {Harshom claims to have found us through the aid of Carita and Leevi.  The couple was slain and fed to the}
+{5271} {Harshom claims to have found us through the aid of Carita and Leevi.  The couple was slain and fed to the}
+
+{5280} {... enchanter's beasts after they'd told him everything.}
+{5281} {... enchanter's beasts after they'd told him everything.}
+
+{5290} {It seems that Phaen of the Rags, who we met in Targos, was also an agent of the Hosttower of the Arcane}
+{5291} {It seems that Phaen of the Rags, who we met in Targos, was also an agent of the Hosttower of the Arcane}
+
+{5300} {... Brotherhood.}
+{5301} {... Brotherhood.}
+
+{5310} {During a battle with Aurilite High Priestess Oria we challenged her to break the staff she wielded, resulting in}
+{5311} {During a battle with Aurilite High Priestess Oria we challenged her to break the staff she wielded, resulting in}
+
+{5320} {... a bright flash followed by a wave of magical energy.  When the dust from the blast finally settled, her body}
+{5321} {... a bright flash followed by a wave of magical energy.  When the dust from the blast finally settled, her body}
+
+{5330} {... was nowhere to be found.}
+{5331} {... was nowhere to be found.}
+
+{5340} {After what we thought to be her demise, we met High Priestess Oria once again and very much alive.  She claimed}
+{5341} {After what we thought to be her demise, we met High Priestess Oria once again and very much alive.  She claimed}
+
+{5350} {... to exist within some sort of ethereal realm created by Nickademus called the Inner Sanctum, and it appears}
+{5351} {... to exist within some sort of ethereal realm created by Nickademus called the Inner Sanctum, and it appears}
+
+{5360} {... we'll be unable to affect her while we remain on the Prime Material Plane.}
+{5361} {... we'll be unable to affect her while we remain on the Prime Material Plane.}
+
+{5370} {We met a pack of barbarians whose leader ordered our heads severed and placed before their "cunning}
+{5371} {We met a pack of barbarians whose leader ordered our heads severed and placed before their "cunning}
+
+{5380} {... Gate-of-Stone" - probably some sort of crude wall or other obstacle designed to hold up caravans so that the}
+{5381} {... Gate-of-Stone" - probably some sort of crude wall or other obstacle designed to hold up caravans so that the}
+
+{5390} {... barbarians can waylay them at their leisure.}
+{5391} {... barbarians can waylay them at their leisure.}
+
+{5400} {We encountered a large force of duergar waiting outside the Underdark gate in the Black Raven Monastery. }
+{5401} {We encountered a large force of duergar waiting outside the Underdark gate in the Black Raven Monastery. }
+
+{5410} {... Apparently they'd simply been camped there, waiting for the opportunity to storm in and attack the place.}
+{5411} {... Apparently they'd simply been camped there, waiting for the opportunity to storm in and attack the place.}
+
+{5420} {Barud Barzam, commander of the duergar complex in the river caves, told us that we could take the mining tools}
+{5421} {Barud Barzam, commander of the duergar complex in the river caves, told us that we could take the mining tools}
+
+{5430} {... from the storage area there.  He said that since the duergar had intended to clear the caved-in eastern}
+{5431} {... from the storage area there.  He said that since the duergar had intended to clear the caved-in eastern}
+
+{5440} {... passage themselves, they would be more than willing to give us the tools if we would perform the labor - a}
+{5441} {... passage themselves, they would be more than willing to give us the tools if we would perform the labor - a}
+
+{5450} {... fair enough deal, it seems.}
+{5451} {... fair enough deal, it seems.}
+
+{5460} {Barud Barzam offered us a deal - if we would clear the river caves of all monsters, he will reward us handsomely.}
+{5461} {Barud Barzam offered us a deal - if we would clear the river caves of all monsters, he will reward us handsomely.}
+
+{5470} {...  In addition, he'll let us rest in the complex so long as we're helping him.}
+{5471} {...  In addition, he'll let us rest in the complex so long as we're helping him.}
+
+{5480} {We accepted Barud's offer to clear the river caves of all monsters.  We're to return to him for our reward when}
+{5481} {We accepted Barud's offer to clear the river caves of all monsters.  We're to return to him for our reward when}
+
+{5490} {... done.}
+{5491} {... done.}
+
+{5500} {Barud Barzam rewarded us for clearing the river caves with wealth and magical items.  He then made another offer}
+{5501} {Barud Barzam rewarded us for clearing the river caves with wealth and magical items.  He then made another offer}
+
+{5510} {... - if we kill all the monks of the Black Raven Monastery, he will reward us even further.  Barud claims that}
+{5511} {... - if we kill all the monks of the Black Raven Monastery, he will reward us even further.  Barud claims that}
+
+{5520} {... the duergar lost both the outpost and the Underdark passage to the monks long ago; with the outpost secured,}
+{5521} {... the duergar lost both the outpost and the Underdark passage to the monks long ago; with the outpost secured,}
+
+{5530} {... he now wants our help in recovering the passage beneath the monastery.}
+{5531} {... he now wants our help in recovering the passage beneath the monastery.}
+
+{5540} {Barud Barzam tried to reward us for clearing the river caves with wealth and magical items, but we refused.  He}
+{5541} {Barud Barzam tried to reward us for clearing the river caves with wealth and magical items, but we refused.  He}
+
+{5550} {... then made another offer - if we kill all the monks of the Black Raven Monastery, he will reward us even}
+{5551} {... then made another offer - if we kill all the monks of the Black Raven Monastery, he will reward us even}
+
+{5560} {... further.  Barud claims that the duergar lost both the outpost and the Underdark passage to the monks long}
+{5561} {... further.  Barud claims that the duergar lost both the outpost and the Underdark passage to the monks long}
+
+{5570} {... ago; with the outpost secured, he now wants our help in recovering the passage beneath the monastery.}
+{5571} {... ago; with the outpost secured, he now wants our help in recovering the passage beneath the monastery.}
+
+{5580} {We accepted Barud's offer to kill all the monks in the Black Raven Monastery.  We're to return to him for our}
+{5581} {We accepted Barud's offer to kill all the monks in the Black Raven Monastery.  We're to return to him for our}
+
+{5590} {... reward when done.}
+{5591} {... reward when done.}
+
+{5600} {Barud Barzam rewarded us for killing all the monks of Black Raven Monastery with wealth and magical items.}
+{5601} {Barud Barzam rewarded us for killing all the monks of Black Raven Monastery with wealth and magical items.}
+
+{5610} {Barud Barzam tried to reward us for killing all the monks of Black Raven Monastery with wealth and magical items,}
+{5611} {Barud Barzam tried to reward us for killing all the monks of Black Raven Monastery with wealth and magical items,}
+
+{5620} {... but we refused.}
+{5621} {... but we refused.}
+
+{5630} {According to Barud Barzam, the duergar complex in the river-caves was founded more than a century ago by a group}
+{5631} {According to Barud Barzam, the duergar complex in the river-caves was founded more than a century ago by a group}
+
+{5640} {... of cleric-led duergar.  The Black Raven Monastery was built some time later, and eventually came to blows}
+{5641} {... of cleric-led duergar.  The Black Raven Monastery was built some time later, and eventually came to blows}
+
+{5650} {... with the duergar over control of the nearby Underdark passage.  Barud told us that the monks butchered the}
+{5651} {... with the duergar over control of the nearby Underdark passage.  Barud told us that the monks butchered the}
+
+{5660} {... small duergar garrison and sealed both the outpost and passage.  He and his followers have come to the river}
+{5661} {... small duergar garrison and sealed both the outpost and passage.  He and his followers have come to the river}
+
+{5670} {... caves to reclaim both.}
+{5671} {... caves to reclaim both.}
+
+{5680} {Barud told us that he intends to make the duergar complex a base from which to assault the Black Raven Monastery}
+{5681} {Barud told us that he intends to make the duergar complex a base from which to assault the Black Raven Monastery}
+
+{5690} {... in conjunction with a second body of duergar troops.}
+{5691} {... in conjunction with a second body of duergar troops.}
+
+{5700} {Barud told us that, now that we've helped him clear the river caves and eliminated the monks of Black Raven}
+{5701} {Barud told us that, now that we've helped him clear the river caves and eliminated the monks of Black Raven}
+
+{5710} {... Monastery, he would be joining with a second body of duergar troops and reclaiming the Underdark passage.}
+{5711} {... Monastery, he would be joining with a second body of duergar troops and reclaiming the Underdark passage.}
+
+{5720} {According to Barud Barzam, all duergar possess the ability to become invisible at will.}
+{5721} {According to Barud Barzam, all duergar possess the ability to become invisible at will.}
+
+{5730} {We lied to the duergar cleric Zama Rogadimne, convincing her the Barud Barzam had directed her to aid us.  She}
+{5731} {We lied to the duergar cleric Zama Rogadimne, convincing her the Barud Barzam had directed her to aid us.  She}
+
+{5740} {... gave us healing potions of great power, but threatened to kill us if she found out that we'd lied to her.}
+{5741} {... gave us healing potions of great power, but threatened to kill us if she found out that we'd lied to her.}
+
+{5750} {Dargab, the duergar slave-master, explained that we'd eventually need mining tools to get past the collapsed}
+{5751} {Dargab, the duergar slave-master, explained that we'd eventually need mining tools to get past the collapsed}
+
+{5760} {... passage in the eastern river caves.  He told us to speak with Barud Barzam, the leader of the duergar}
+{5761} {... passage in the eastern river caves.  He told us to speak with Barud Barzam, the leader of the duergar}
+
+{5770} {... complex.}
+{5771} {... complex.}
+
+{5780} {Dargab, the duergar slave-master, warned us to stay away from the dungeons.}
+{5781} {Dargab, the duergar slave-master, warned us to stay away from the dungeons.}
+
+{5790} {We encountered a spectre in the torture chamber of the duergar outpost.  It seemed to be the anguished remnants}
+{5791} {We encountered a spectre in the torture chamber of the duergar outpost.  It seemed to be the anguished remnants}
+
+{5800} {... of someone who'd been abandoned by friends and tortured death by his captors - it mistook us for companions}
+{5801} {... of someone who'd been abandoned by friends and tortured death by his captors - it mistook us for companions}
+
+{5810} {... of old and attacked.}
+{5811} {... of old and attacked.}
+
+{5820} {We tricked the spectre into believing that the present duergar are the ones responsible for his horrible death. }
+{5821} {We tricked the spectre into believing that the present duergar are the ones responsible for his horrible death. }
+
+{5830} {... The spirit promptly attacked them, seeking revenge.}
+{5831} {... The spirit promptly attacked them, seeking revenge.}
+
+{5840} {After turning the spectre we encountered in the duergar torture chamber, we managed to calm the spirit.  It left}
+{5841} {After turning the spectre we encountered in the duergar torture chamber, we managed to calm the spirit.  It left}
+
+{5850} {... of its own free will.}
+{5851} {... of its own free will.}
+
+{5860} {A duergar artisan is trying to design a simplified version of his overly-complex Hell Bolter.  We might be able}
+{5861} {A duergar artisan is trying to design a simplified version of his overly-complex Hell Bolter.  We might be able}
+
+{5870} {... to help him.}
+{5871} {... to help him.}
+
+{5880} {A duergar artisan showed us a sort of automated heavy crossbow known as a Hell Bolter.  Its loading and firing}
+{5881} {A duergar artisan showed us a sort of automated heavy crossbow known as a Hell Bolter.  Its loading and firing}
+
+{5890} {... mechanism was too complex to be understood by most.}
+{5891} {... mechanism was too complex to be understood by most.}
+
+{5900} {We helped a duergar artisan finish the design of the Doom Bolter, an automated heavy crossbow.  He told us that}
+{5901} {We helped a duergar artisan finish the design of the Doom Bolter, an automated heavy crossbow.  He told us that}
+
+{5910} {... he would sell us one if we were interested.}
+{5911} {... he would sell us one if we were interested.}
+
+{5920} {We helped a duergar artisan finish the design of the Doom Bolter, an automated heavy crossbow, in return for a}
+{5921} {We helped a duergar artisan finish the design of the Doom Bolter, an automated heavy crossbow, in return for a}
+
+{5930} {... copy of the weapon for ourselves.}
+{5931} {... copy of the weapon for ourselves.}
+
+{5940} {We helped a duergar artisan finish the design of the Doom Bolter, an automated heavy crossbow, in return for}
+{5941} {We helped a duergar artisan finish the design of the Doom Bolter, an automated heavy crossbow, in return for}
+
+{5950} {... seven thousand gold pieces.  He told us that he would sell us one if we were interested.}
+{5951} {... seven thousand gold pieces.  He told us that he would sell us one if we were interested.}
+
+{5960} {We helped a duergar artisan finish the design of the Doom Bolter, an automated heavy crossbow, in return for five}
+{5961} {We helped a duergar artisan finish the design of the Doom Bolter, an automated heavy crossbow, in return for five}
+
+{5970} {... thousand gold pieces.  He told us that he would sell us one if we were interested.}
+{5971} {... thousand gold pieces.  He told us that he would sell us one if we were interested.}
+
+{5980} {We tried to communicate with one of the mind flayers' thralls - slaves whose minds have been broken by the}
+{5981} {We tried to communicate with one of the mind flayers' thralls - slaves whose minds have been broken by the}
+
+{5990} {... sinister psychic powers of the illithid - but to no avail.}
+{5991} {... sinister psychic powers of the illithid - but to no avail.}
+
+{6000} {We found an inanimate flesh golem.  It seems to have been somehow modified.}
+{6001} {We found an inanimate flesh golem.  It seems to have been somehow modified.}
+
+{6010} {Imphraili's inanimate enhanced flesh golem is now ready to be awakened via an electrical blast.}
+{6011} {Imphraili's inanimate enhanced flesh golem is now ready to be awakened via an electrical blast.}
+
+{6020} {We were able to use some of the reagents in the alchemical laboratory in the drider caves to increase the potency}
+{6021} {We were able to use some of the reagents in the alchemical laboratory in the drider caves to increase the potency}
+
+{6030} {... of a healing potion.}
+{6031} {... of a healing potion.}
+
+{6040} {We used the last of reagents necessary to increase the potency of healing potions in the drider cave laboratory.}
+{6041} {We used the last of reagents necessary to increase the potency of healing potions in the drider cave laboratory.}
+
+{6050} {We used Imphraili's notes to concoct the Sanguis Anima.  Once the life-giving solution is injected into the}
+{6051} {We used Imphraili's notes to concoct the Sanguis Anima.  Once the life-giving solution is injected into the}
+
+{6060} {... inanimate flesh golem, jolting the monster with electricity should awaken it to serve us.}
+{6061} {... inanimate flesh golem, jolting the monster with electricity should awaken it to serve us.}
+
+{6070} {We used Imphraili's notes to complete her theoretical experiment regarding the transfusion of a modified Sanguis}
+{6071} {We used Imphraili's notes to complete her theoretical experiment regarding the transfusion of a modified Sanguis}
+
+{6080} {... Anima into one's own bloodstream.  The process was difficult and painful but left our transmuter strangely}
+{6081} {... Anima into one's own bloodstream.  The process was difficult and painful but left our transmuter strangely}
+
+{6090} {... invigorated.}
+{6091} {... invigorated.}
+
+{6100} {We used Imphraili's notes to concoct a conversion poison for the Viciscamera.  The poison should turn the living}
+{6101} {We used Imphraili's notes to concoct a conversion poison for the Viciscamera.  The poison should turn the living}
+
+{6110} {... machine's formidable defenses against itself, causing it to rot and die within seconds.}
+{6111} {... machine's formidable defenses against itself, causing it to rot and die within seconds.}
+
+{6120} {We used the white wyrm's egg to create two potions of strength.}
+{6121} {We used the white wyrm's egg to create two potions of strength.}
+
+{6130} {We used the white wyrm's egg to form a magical liquid which was then mixed into the transmuter's bloodstream. }
+{6131} {We used the white wyrm's egg to form a magical liquid which was then mixed into the transmuter's bloodstream. }
+
+{6140} {... The process cooled the blood, making the transmuter resistant to cold but more vulnerable to heat.}
+{6141} {... The process cooled the blood, making the transmuter resistant to cold but more vulnerable to heat.}
+
+{6150} {In the jungle, we heard a yuan-ti priest named Sashkta reciting a list of challenges to white-robed initiates. }
+{6151} {In the jungle, we heard a yuan-ti priest named Sashkta reciting a list of challenges to white-robed initiates. }
+
+{6160} {... The questions were as follows: what approaches at dusk, what drowns Selune's gleaming on a cloudlesss night,}
+{6161} {... The questions were as follows: what approaches at dusk, what drowns Selune's gleaming on a cloudlesss night,}
+
+{6170} {... who keeps the ancient venom of Sseth potent, and where does Sseth embrace unbelievers?  The answers were: the}
+{6171} {... who keeps the ancient venom of Sseth potent, and where does Sseth embrace unbelievers?  The answers were: the}
+
+{6180} {... growing darkness, the obscuring moon of our faith, his faithful followers, and the cradle of scales,}
+{6181} {... growing darkness, the obscuring moon of our faith, his faithful followers, and the cradle of scales,}
+
+{6190} {... respectively.  After that point in their training, our presence was detected by the priest.}
+{6191} {... respectively.  After that point in their training, our presence was detected by the priest.}
+
+{6200} {Once again we faced Saablic Tan.  He seemed none too pleased that we successfully cleared out the Fields of}
+{6201} {Once again we faced Saablic Tan.  He seemed none too pleased that we successfully cleared out the Fields of}
+
+{6210} {... Slaughter, and now he has vowed to halt our progress.  We cannot allow that to happen.}
+{6211} {... Slaughter, and now he has vowed to halt our progress.  We cannot allow that to happen.}
+
+{6220} {A yuan-ti assassin of the Viper's Fangs explained the temple treasury's locking mechanism to us.  There are}
+{6221} {A yuan-ti assassin of the Viper's Fangs explained the temple treasury's locking mechanism to us.  There are}
+
+{6230} {... eleven plates, ten of which must be depressed in the correct order to unseal the chamber.}
+{6231} {... eleven plates, ten of which must be depressed in the correct order to unseal the chamber.}
+
+{6240} {The first half of the temple treasury's combination is to open the tenth plate, then the third, and then the}
+{6241} {The first half of the temple treasury's combination is to open the tenth plate, then the third, and then the}
+
+{6250} {... fifth.}
+{6251} {... fifth.}
+
+{6260} {The mistress of the Viper's Fangs, a sect of yuan-ti assassins, claimed that if we speak to her again she'd have}
+{6261} {The mistress of the Viper's Fangs, a sect of yuan-ti assassins, claimed that if we speak to her again she'd have}
+
+{6270} {... us killed.}
+{6271} {... us killed.}
+
+{6280} {A yuan-ti sorcerer of the Coiled Cabal explained the greater significance of this temple: it is a fortress that}
+{6281} {A yuan-ti sorcerer of the Coiled Cabal explained the greater significance of this temple: it is a fortress that}
+
+{6290} {... guards the crossroads back to Kuldahar.  If we can locate the five missing stone stele - some of which are}
+{6291} {... guards the crossroads back to Kuldahar.  If we can locate the five missing stone stele - some of which are}
+
+{6300} {... hidden around the temple and in the jungle outside - and place them around the altar outside, the crossroads'}
+{6301} {... hidden around the temple and in the jungle outside - and place them around the altar outside, the crossroads'}
+
+{6310} {... guardian will be summoned: the Black Serpent Chahopek.  When Chahopek is slain, the portal will slowly begin}
+{6311} {... guardian will be summoned: the Black Serpent Chahopek.  When Chahopek is slain, the portal will slowly begin}
+
+{6320} {... to close; once it collapses entirely, it will never open again.  Needless to say, we'll have to be quick}
+{6321} {... to close; once it collapses entirely, it will never open again.  Needless to say, we'll have to be quick}
+
+{6330} {... about getting back through the portal if we manage to kill this Black Serpent...}
+{6331} {... about getting back through the portal if we manage to kill this Black Serpent...}
+
+{6340} {We chose to fight a magical duel with one of Inhatri's Coiled Cabal sorcerers.}
+{6341} {We chose to fight a magical duel with one of Inhatri's Coiled Cabal sorcerers.}
+
+{6350} {We defeated one of Inhatri's Coiled Cabal sorcerers in a duel.}
+{6351} {We defeated one of Inhatri's Coiled Cabal sorcerers in a duel.}
+
+{6360} {We spoke to an addle-minded yuan-ti chef in the temple, and he said he knew the last half of the six stone}
+{6361} {We spoke to an addle-minded yuan-ti chef in the temple, and he said he knew the last half of the six stone}
+
+{6370} {... combination to the door to the north.  He said not to hit any stone twice, and that there were "...only three}
+{6371} {... combination to the door to the north.  He said not to hit any stone twice, and that there were "...only three}
+
+{6380} {... steps, for the other three your feet would be hard-pressed to step.  Hit not the same stone twice, and the}
+{6381} {... steps, for the other three your feet would be hard-pressed to step.  Hit not the same stone twice, and the}
+
+{6390} {... sixth be the fourth, and the stone that follows the first be the last.  The fifth... count the number of}
+{6391} {... sixth be the fourth, and the stone that follows the first be the last.  The fifth... count the number of}
+
+{6400} {... fangs Ashra teaches, and the fifth number you shall have."  He then told us to seek out of the Viper's Fangs}
+{6401} {... fangs Ashra teaches, and the fifth number you shall have."  He then told us to seek out of the Viper's Fangs}
+
+{6410} {... resting in the chamber west of Ashra, as when they are out of her sight, their tongues loosen, and they may}
+{6411} {... resting in the chamber west of Ashra, as when they are out of her sight, their tongues loosen, and they may}
+
+{6420} {... tell us one of the first half of the puzzle.  Whatever's beyond the door better be worth it.}
+{6421} {... tell us one of the first half of the puzzle.  Whatever's beyond the door better be worth it.}
+
+{6430} {We met a yuan-ti inquisitor on the last level of Dragon's Eye named Venomin.  He claimed to have caused a war}
+{6431} {We met a yuan-ti inquisitor on the last level of Dragon's Eye named Venomin.  He claimed to have caused a war}
+
+{6440} {... between the yuan-ti and the "Lords of Fire", wishing he could "return to yesterday" to undo the damage he'd}
+{6441} {... between the yuan-ti and the "Lords of Fire", wishing he could "return to yesterday" to undo the damage he'd}
+
+{6450} {... caused.  Before we could question him further he leapt to his death into the sea of magma.}
+{6451} {... caused.  Before we could question him further he leapt to his death into the sea of magma.}
+
+{6460} {We met Inquisitor Venomin again in the same location as yesterday and he said the exact same thing to us, but we}
+{6461} {We met Inquisitor Venomin again in the same location as yesterday and he said the exact same thing to us, but we}
+
+{6470} {... were still unable to get any more information from him before he wished for "yesterday" then committed}
+{6471} {... were still unable to get any more information from him before he wished for "yesterday" then committed}
+
+{6480} {... suicide.}
+{6481} {... suicide.}
+
+{6490} {It seems that when yuan-ti Inquisitor Venomin wished he could "return to yesterday" that was more wishful}
+{6491} {It seems that when yuan-ti Inquisitor Venomin wished he could "return to yesterday" that was more wishful}
+
+{6500} {... thinking than an actual granted wish.  We doubt he's the cause of the time loop.}
+{6501} {... thinking than an actual granted wish.  We doubt he's the cause of the time loop.}
+
+{6510} {Amidst a ruined palace on Dragon's Eye's last level - its magma chamber - we met a fire salamander named}
+{6511} {Amidst a ruined palace on Dragon's Eye's last level - its magma chamber - we met a fire salamander named}
+
+{6520} {... Ambassador Jasper who was a liaison between the residents here and the yuan-ti.  He told us High Priest}
+{6521} {... Ambassador Jasper who was a liaison between the residents here and the yuan-ti.  He told us High Priest}
+
+{6530} {... Thorasskus sent yuan-ti pureblood inquisitor Venomin here three days ago to conduct an investigation into the}
+{6531} {... Thorasskus sent yuan-ti pureblood inquisitor Venomin here three days ago to conduct an investigation into the}
+
+{6540} {... disappearance of High Sorceress Izbelah.  For reasons he was unaware of, Venomin killed Lord Pyros yesterday}
+{6541} {... disappearance of High Sorceress Izbelah.  For reasons he was unaware of, Venomin killed Lord Pyros yesterday}
+
+{6550} {... and fled to Jasper's embassy east of the palace.  As a result, King Lothar assumed control, declared war on}
+{6551} {... and fled to Jasper's embassy east of the palace.  As a result, King Lothar assumed control, declared war on}
+
+{6560} {... the yuan-ti, destroyed the embassy, and sent efreet assassins after Thorasskus.  When the yuan-ti responded,}
+{6561} {... the yuan-ti, destroyed the embassy, and sent efreet assassins after Thorasskus.  When the yuan-ti responded,}
+
+{6570} {... chaos erupted.  Izbelah was instantly killed two days ago while, from what he understood, escaping from}
+{6571} {... chaos erupted.  Izbelah was instantly killed two days ago while, from what he understood, escaping from}
+
+{6580} {... Lothar's cage.}
+{6581} {... Lothar's cage.}
+
+{6590} {Jasper didn't know why Izbelah was caged because he was away on business, and she was already imprisoned when he}
+{6591} {Jasper didn't know why Izbelah was caged because he was away on business, and she was already imprisoned when he}
+
+{6600} {... returned.  Though he suspected foul play, he awaited the results of Venomin's investigation.}
+{6601} {... returned.  Though he suspected foul play, he awaited the results of Venomin's investigation.}
+
+{6610} {Jasper said someone named Zil-t'yor was the current leader who took control during the war and united the}
+{6611} {Jasper said someone named Zil-t'yor was the current leader who took control during the war and united the}
+
+{6620} {... survivors.}
+{6621} {... survivors.}
+
+{6630} {Jasper said Zil-t'yor often travels to and from the Fields of Slaughter.  He believes that's where he's from.}
+{6631} {Jasper said Zil-t'yor often travels to and from the Fields of Slaughter.  He believes that's where he's from.}
+
+{6640} {According to Jasper, not only was there no war, but also Lord Pyros and Inquisitor Venomin are both still alive}
+{6641} {According to Jasper, not only was there no war, but also Lord Pyros and Inquisitor Venomin are both still alive}
+
+{6650} {... and about to conclude their private meeting at the palace.}
+{6651} {... and about to conclude their private meeting at the palace.}
+
+{6660} {When asked about High Sorceress Izbelah, Jasper told us she died "last night" while trying to escape from King}
+{6661} {When asked about High Sorceress Izbelah, Jasper told us she died "last night" while trying to escape from King}
+
+{6670} {... Lothar's cage.  Since the last time we spoke to him about her he said she died "two days" ago, we conclude}
+{6671} {... Lothar's cage.  Since the last time we spoke to him about her he said she died "two days" ago, we conclude}
+
+{6680} {... that he was either lying or mistaken, or that we're victims of some type of phenomenon.  From what we've}
+{6681} {... that he was either lying or mistaken, or that we're victims of some type of phenomenon.  From what we've}
+
+{6690} {... observed so far, the latter seems to be the case.}
+{6691} {... observed so far, the latter seems to be the case.}
+
+{6700} {Jasper told us that they drove beholder Zil-t'yor away two days ago.  He must have healed his wounds and returned}
+{6701} {Jasper told us that they drove beholder Zil-t'yor away two days ago.  He must have healed his wounds and returned}
+
+{6710} {... with a vengeance when we fought him.}
+{6711} {... with a vengeance when we fought him.}
+
+{6720} {Jasper told us that they drove beholder Zil-t'yor away a day ago.  He must have healed his wounds and returned}
+{6721} {Jasper told us that they drove beholder Zil-t'yor away a day ago.  He must have healed his wounds and returned}
+
+{6730} {... with a vengeance when we fought him.}
+{6731} {... with a vengeance when we fought him.}
+
+{6740} {Stepping through what we thought was the exit from Dragon's Eye to the Fields of Slaughter we were surprised to}
+{6741} {Stepping through what we thought was the exit from Dragon's Eye to the Fields of Slaughter we were surprised to}
+
+{6750} {... find our surroundings quite familiar, though rather different.  Buildings that once were demolished are now}
+{6751} {... find our surroundings quite familiar, though rather different.  Buildings that once were demolished are now}
+
+{6760} {... in perfect condition and no signs of a war are visible.  In fact, it looks like we never left Dragon's Eye's}
+{6761} {... in perfect condition and no signs of a war are visible.  In fact, it looks like we never left Dragon's Eye's}
+
+{6770} {... magma chamber at all.  Another observation of note is the fact that the air feels much cooler, and it appears}
+{6771} {... magma chamber at all.  Another observation of note is the fact that the air feels much cooler, and it appears}
+
+{6780} {... the magma sea has receded somewhat.  When we encountered Ambassador Jasper again he acted as if he'd never}
+{6781} {... the magma sea has receded somewhat.  When we encountered Ambassador Jasper again he acted as if he'd never}
+
+{6790} {... met us.}
+{6791} {... met us.}
+
+{6800} {One of the Flamewalker residents of Dragon's Eye's magma chamber told us a trial was held for Izbelah two days}
+{6801} {One of the Flamewalker residents of Dragon's Eye's magma chamber told us a trial was held for Izbelah two days}
+
+{6810} {... ago at the amphitheatre.  She was accused of violating Nature's Order, but Inquisitor Venomin proved her}
+{6811} {... ago at the amphitheatre.  She was accused of violating Nature's Order, but Inquisitor Venomin proved her}
+
+{6820} {... innocence.}
+{6821} {... innocence.}
+
+{6830} {One of the Flamewalker residents of Dragon's Eye's magma chamber told us a trial was held for Izbelah yesterday}
+{6831} {One of the Flamewalker residents of Dragon's Eye's magma chamber told us a trial was held for Izbelah yesterday}
+
+{6840} {... at the amphitheatre.  She was accused of violating Nature's Order, but Inquisitor Venomin offered her a good}
+{6841} {... at the amphitheatre.  She was accused of violating Nature's Order, but Inquisitor Venomin offered her a good}
+
+{6850} {... defense.}
+{6851} {... defense.}
+
+{6860} {During the trial, the issue of Izbelah's guilt was discussed and the evidence presented, but they adjourned}
+{6861} {During the trial, the issue of Izbelah's guilt was discussed and the evidence presented, but they adjourned}
+
+{6870} {... because Venomin needed to ask a few questions of Ambassador Jasper, who was away on business.  Supposedly,}
+{6871} {... because Venomin needed to ask a few questions of Ambassador Jasper, who was away on business.  Supposedly,}
+
+{6880} {... Venomin has proven Izbelah's innocence today.}
+{6881} {... Venomin has proven Izbelah's innocence today.}
+
+{6890} {During the trial, the issue of Izbelah's guilt was discussed and the evidence presented, but they adjourned}
+{6891} {During the trial, the issue of Izbelah's guilt was discussed and the evidence presented, but they adjourned}
+
+{6900} {... because Venomin needed to ask a few questions of Ambassador Jasper, who was away on business.  Supposedly,}
+{6901} {... because Venomin needed to ask a few questions of Ambassador Jasper, who was away on business.  Supposedly,}
+
+{6910} {... Venomin proved her innocence yesterday, but she still tried to escape last night.}
+{6911} {... Venomin proved her innocence yesterday, but she still tried to escape last night.}
+
+{6920} {Lord Pyros, ruler of the Dragon's Eye's magma chamber, grants everyone, including members of the Legion of the}
+{6921} {Lord Pyros, ruler of the Dragon's Eye's magma chamber, grants everyone, including members of the Legion of the}
+
+{6930} {... Chimera, safe passage provided they keep the peace and pay Archon his requested payment.}
+{6931} {... Chimera, safe passage provided they keep the peace and pay Archon his requested payment.}
+
+{6940} {Lord Pyros told us he did not send efreet assassins after High Priest Thorasskus.}
+{6941} {Lord Pyros told us he did not send efreet assassins after High Priest Thorasskus.}
+
+{6950} {Roughly thirty years ago Kossuth, God of Fire, molded Lord Pyros from pure magma, giving him life, powers, will,}
+{6951} {Roughly thirty years ago Kossuth, God of Fire, molded Lord Pyros from pure magma, giving him life, powers, will,}
+
+{6960} {... and intelligence.  Unfortunately the magma chamber, within a violent eruption, was created in the process. }
+{6961} {... and intelligence.  Unfortunately the magma chamber, within a violent eruption, was created in the process. }
+
+{6970} {... Pyros then summoned allies, including the great King Lothar, by his side to maintain his domain.  Ambassador}
+{6971} {... Pyros then summoned allies, including the great King Lothar, by his side to maintain his domain.  Ambassador}
+
+{6980} {... Jasper voluntarily became the liaison between his magma city and the yuan-ti living above.}
+{6981} {... Jasper voluntarily became the liaison between his magma city and the yuan-ti living above.}
+
+{6990} {Three days "prior" to our arrival, Lord Pyros had no idea who Zil-t'yor was.  Perhaps the beholder will stay}
+{6991} {Three days "prior" to our arrival, Lord Pyros had no idea who Zil-t'yor was.  Perhaps the beholder will stay}
+
+{7000} {... dead, unlike the others on this level.}
+{7001} {... dead, unlike the others on this level.}
+
+{7010} {Lord Pyros said High Sorceress Izbelah broke one of his laws by attempting to curb the boil of magma and the flow}
+{7011} {Lord Pyros said High Sorceress Izbelah broke one of his laws by attempting to curb the boil of magma and the flow}
+
+{7020} {... of lava with twisted magic.  For that she must be judged and her confinement is Lothar's task.  We are to}
+{7021} {... of lava with twisted magic.  For that she must be judged and her confinement is Lothar's task.  We are to}
+
+{7030} {... consult Lothar either while he is on duty or at his citadel if we wish to ask about her.}
+{7031} {... consult Lothar either while he is on duty or at his citadel if we wish to ask about her.}
+
+{7040} {Before we said farewell to Lord Pyros, he told us to see one of the flamewalker plays in the amphitheater.  All}
+{7041} {Before we said farewell to Lord Pyros, he told us to see one of the flamewalker plays in the amphitheater.  All}
+
+{7050} {... we needed to do was speak to one of the flamewalkers, and they would perform for us. }
+{7051} {... we needed to do was speak to one of the flamewalkers, and they would perform for us. }
+
+{7060} {King Lothar told us that High Priestess Izbelah succeeded in casting a Temporal Stasis spell before being}
+{7061} {King Lothar told us that High Priestess Izbelah succeeded in casting a Temporal Stasis spell before being}
+
+{7070} {... captured, but it's been breaking down ever since.  He also said that the only thing the spell succeeded in}
+{7071} {... captured, but it's been breaking down ever since.  He also said that the only thing the spell succeeded in}
+
+{7080} {... doing was keeping people like Zil-t'yor and us away from this magma chamber.  Discussing it amongst}
+{7081} {... doing was keeping people like Zil-t'yor and us away from this magma chamber.  Discussing it amongst}
+
+{7090} {... ourselves, we're convinced that her flawed spell created the loop we're now in, and we can break it if we}
+{7091} {... ourselves, we're convinced that her flawed spell created the loop we're now in, and we can break it if we}
+
+{7100} {... prevent her from completing her spell at Jasper's embassy four days ago.}
+{7101} {... prevent her from completing her spell at Jasper's embassy four days ago.}
+
+{7110} {King Lothar told us that High Priestess Izbelah succeeded in casting a Temporal Stasis spell before being}
+{7111} {King Lothar told us that High Priestess Izbelah succeeded in casting a Temporal Stasis spell before being}
+
+{7120} {... captured, but it's been breaking down ever since.  He also said that the only thing the spell succeeded in}
+{7121} {... captured, but it's been breaking down ever since.  He also said that the only thing the spell succeeded in}
+
+{7130} {... doing was keeping people like Zil-t'yor and us away from this magma chamber.  Discussing it amongst}
+{7131} {... doing was keeping people like Zil-t'yor and us away from this magma chamber.  Discussing it amongst}
+
+{7140} {... ourselves, we're convinced that her flawed spell created the loop we're now in, and we can break it if we}
+{7141} {... ourselves, we're convinced that her flawed spell created the loop we're now in, and we can break it if we}
+
+{7150} {... prevent her from completing her spell at Jasper's embassy three days ago.}
+{7151} {... prevent her from completing her spell at Jasper's embassy three days ago.}
+
+{7160} {King Lothar told us that High Priestess Izbelah succeeded in casting a Temporal Stasis spell before being}
+{7161} {King Lothar told us that High Priestess Izbelah succeeded in casting a Temporal Stasis spell before being}
+
+{7170} {... captured, but it's been breaking down ever since.  He also said that the only thing the spell succeeded in}
+{7171} {... captured, but it's been breaking down ever since.  He also said that the only thing the spell succeeded in}
+
+{7180} {... doing was keeping people like Zil-t'yor and us away from this magma chamber.  Discussing it amongst}
+{7181} {... doing was keeping people like Zil-t'yor and us away from this magma chamber.  Discussing it amongst}
+
+{7190} {... ourselves, we're convinced that her flawed spell created the loop we're now in, and we can break it if we}
+{7191} {... ourselves, we're convinced that her flawed spell created the loop we're now in, and we can break it if we}
+
+{7200} {... prevent her from completing her spell at Jasper's embassy two days ago.}
+{7201} {... prevent her from completing her spell at Jasper's embassy two days ago.}
+
+{7210} {King Lothar told us that High Priestess Izbelah succeeded in casting a Temporal Stasis spell before being}
+{7211} {King Lothar told us that High Priestess Izbelah succeeded in casting a Temporal Stasis spell before being}
+
+{7220} {... captured, but it's been breaking down ever since.  He also said that the only thing the spell succeeded in}
+{7221} {... captured, but it's been breaking down ever since.  He also said that the only thing the spell succeeded in}
+
+{7230} {... doing was keeping people like Zil-t'yor and us away from this magma chamber.  Discussing it amongst}
+{7231} {... doing was keeping people like Zil-t'yor and us away from this magma chamber.  Discussing it amongst}
+
+{7240} {... ourselves, we're convinced that her flawed spell created the loop we're now in, and we can break it if we}
+{7241} {... ourselves, we're convinced that her flawed spell created the loop we're now in, and we can break it if we}
+
+{7250} {... prevent her from completing her spell at Jasper's embassy yesterday.}
+{7251} {... prevent her from completing her spell at Jasper's embassy yesterday.}
+
+{7260} {We accepted an alliance with Iyachtu Xvim, with his vow that his demons within the Severed Hand will not aid}
+{7261} {We accepted an alliance with Iyachtu Xvim, with his vow that his demons within the Severed Hand will not aid}
+
+{7270} {... Isair and Madae when we combat them.  However, in order to prove our allegiance to the Lord of Darkness, we}
+{7271} {... Isair and Madae when we combat them.  However, in order to prove our allegiance to the Lord of Darkness, we}
+
+{7280} {... must slay ten innocents.  He then told us that ten slaves within the Severed Hand would suffice.  A simple}
+{7281} {... must slay ten innocents.  He then told us that ten slaves within the Severed Hand would suffice.  A simple}
+
+{7290} {... task, we believe.}
+{7291} {... task, we believe.}
+
+{7300} {We fulfilled Iyachtu Xvim's requirements for allegiance.  Now our battle with Isair and Madae shall be easier}
+{7301} {We fulfilled Iyachtu Xvim's requirements for allegiance.  Now our battle with Isair and Madae shall be easier}
+
+{7310} {... without having to deal with all their demons.}
+{7311} {... without having to deal with all their demons.}
+
+{7320} {We accepted an alliance with Iyachtu Xvim, with his vow that his demons within the Severed Hand will not aid}
+{7321} {We accepted an alliance with Iyachtu Xvim, with his vow that his demons within the Severed Hand will not aid}
+
+{7330} {... Isair and Madae when we combat them.}
+{7331} {... Isair and Madae when we combat them.}
+
+{7340} {Iyachtu Xvim interrupted our performing of the Ilmater Ritual.  Depending on the outcome of our conversation with}
+{7341} {Iyachtu Xvim interrupted our performing of the Ilmater Ritual.  Depending on the outcome of our conversation with}
+
+{7350} {... Iyachtu Xvim, we may need to continue with the ritual.}
+{7351} {... Iyachtu Xvim, we may need to continue with the ritual.}
+
+{7360} {We have successfully completed the Ilmater Sanctification Ritual.  Already we can see a visible, cleansed change}
+{7361} {We have successfully completed the Ilmater Sanctification Ritual.  Already we can see a visible, cleansed change}
+
+{7370} {... in the water that surrounds the statues.  In addition, we obtained a vial of the newly sanctified water,}
+{7371} {... in the water that surrounds the statues.  In addition, we obtained a vial of the newly sanctified water,}
+
+{7380} {... which we may use on the mythal.}
+{7381} {... which we may use on the mythal.}
+
+{7390} {We lied to the dread orc shaman, Kratuuk, and said that we were the war party sent by Saablic Tan.  He told us}
+{7391} {We lied to the dread orc shaman, Kratuuk, and said that we were the war party sent by Saablic Tan.  He told us}
+
+{7400} {... that an elven lich, named M'darfein, attacked his camp on a regular basis, and that we must venture forth and}
+{7401} {... that an elven lich, named M'darfein, attacked his camp on a regular basis, and that we must venture forth and}
+
+{7410} {... slay the lich.  He also gave us a key that will open a secret door in the northeast section of the gate that}
+{7411} {... slay the lich.  He also gave us a key that will open a secret door in the northeast section of the gate that}
+
+{7420} {... leads out to the ancient battlefield.}
+{7421} {... leads out to the ancient battlefield.}
+
+{7430} {Evidently the dread orcs captured several elves, except for one, a cleric, who managed to escape.  Kratuuk}
+{7431} {Evidently the dread orcs captured several elves, except for one, a cleric, who managed to escape.  Kratuuk}
+
+{7440} {... instructed us to kill him if we find him, but we made no promises.}
+{7441} {... instructed us to kill him if we find him, but we made no promises.}
+
+{7450} {We came across a Red Wizard of Thay named Saablic Tan.  He tried to prevent us from entering the Fields of}
+{7451} {We came across a Red Wizard of Thay named Saablic Tan.  He tried to prevent us from entering the Fields of}
+
+{7460} {... Slaughter, saying something about us murdering his brothers and sisters.  His ramblings could not justify the}
+{7461} {... Slaughter, saying something about us murdering his brothers and sisters.  His ramblings could not justify the}
+
+{7470} {... actions of the Legion of the Chimera, so we pressed on through his attacking horde.}
+{7471} {... actions of the Legion of the Chimera, so we pressed on through his attacking horde.}
+
+{7480} {The cleric mentioned something about purifying the field with holy water during his argument with the lich.}
+{7481} {The cleric mentioned something about purifying the field with holy water during his argument with the lich.}
+
+{7490} {... Perhaps we can carry out the task he sacrificed his life attempting, and rid these plains of the vile,}
+{7491} {... Perhaps we can carry out the task he sacrificed his life attempting, and rid these plains of the vile,}
+
+{7500} {... walking dead.}
+{7501} {... walking dead.}
+
+{7510} {We found the captain of the guard attempting to have relations with a half-dragon.  Unfortunately for him, we had}
+{7511} {We found the captain of the guard attempting to have relations with a half-dragon.  Unfortunately for him, we had}
+
+{7520} {... need of his keys and could not wait until he was done.}
+{7521} {... need of his keys and could not wait until he was done.}
+
+{7530} {We managed to trick Captain Pudu into thinking we were delegates from the Church of Iyachtu Xvim and needed}
+{7531} {We managed to trick Captain Pudu into thinking we were delegates from the Church of Iyachtu Xvim and needed}
+
+{7540} {... access to the aerie in the war tower.  Luckily for us, he was in the middle of entertaining a lady friend and}
+{7541} {... access to the aerie in the war tower.  Luckily for us, he was in the middle of entertaining a lady friend and}
+
+{7550} {... was all too eager to hand over his keys.}
+{7551} {... was all too eager to hand over his keys.}
+
+{7560} {We could not fool Captain Pudu into giving us his keys, so our only other resort was to kill him and his}
+{7561} {We could not fool Captain Pudu into giving us his keys, so our only other resort was to kill him and his}
+
+{7570} {... half-dragon friend.}
+{7571} {... half-dragon friend.}
+
+{7580} {A demon stands watch at the exit to the Severed Hand.  We questioned the creature about its name and purpose, but}
+{7581} {A demon stands watch at the exit to the Severed Hand.  We questioned the creature about its name and purpose, but}
+
+{7590} {... it refused to answer.  In any case, the creature does not seem to be hostile.  Perhaps we should look into}
+{7591} {... it refused to answer.  In any case, the creature does not seem to be hostile.  Perhaps we should look into}
+
+{7600} {... what purpose it serves.}
+{7601} {... what purpose it serves.}
+
+{7610} {Jerre Stoh claims that the demon at the exit is there to prevent the slaves from escaping.  We confronted the}
+{7611} {Jerre Stoh claims that the demon at the exit is there to prevent the slaves from escaping.  We confronted the}
+
+{7620} {... demon with this, and it confirmed it.}
+{7621} {... demon with this, and it confirmed it.}
+
+{7630} {Jerre Stoh claims that the demon at the exit is immortal and cannot be slain.  We confronted the demon with this,}
+{7631} {Jerre Stoh claims that the demon at the exit is immortal and cannot be slain.  We confronted the demon with this,}
+
+{7640} {... and it confirmed it.  This could be idle boasting on the creature's part, but Jerre claims to have seen the}
+{7641} {... and it confirmed it.  This could be idle boasting on the creature's part, but Jerre claims to have seen the}
+
+{7650} {... creature slain only to rise again.  Should we put this to the test?}
+{7651} {... creature slain only to rise again.  Should we put this to the test?}
+
+{7660} {We asked the demon to name the power that spawned it.  It answered: Iyachtu Xvim, Godson of Bane.}
+{7661} {We asked the demon to name the power that spawned it.  It answered: Iyachtu Xvim, Godson of Bane.}
+
+{7670} {We decided to put the demon's claim of immortality to the test.  After the battle the creature did indeed rise}
+{7671} {We decided to put the demon's claim of immortality to the test.  After the battle the creature did indeed rise}
+
+{7680} {... again.  We need to find a way to put an end to this creature and any others like it.}
+{7681} {... again.  We need to find a way to put an end to this creature and any others like it.}
+
+{7690} {We freed a gnome, named Puddy Talltale, from the torturing of a greater feyr.  However, even though we unlocked}
+{7691} {We freed a gnome, named Puddy Talltale, from the torturing of a greater feyr.  However, even though we unlocked}
+
+{7700} {... his prison cell, he said he would not leave unless there was a safe way to get him to his home in Bryn}
+{7701} {... his prison cell, he said he would not leave unless there was a safe way to get him to his home in Bryn}
+
+{7710} {... Shander.  We promised to find safe passage for Puddy, for we agreed that he would not survive long in the}
+{7711} {... Shander.  We promised to find safe passage for Puddy, for we agreed that he would not survive long in the}
+
+{7720} {... frigid Dales by himself.}
+{7721} {... frigid Dales by himself.}
+
+{7730} {We were successful in finding safe passage for Puddy Talltale.  Orrick has offered to teleport him back to Bryn}
+{7731} {We were successful in finding safe passage for Puddy Talltale.  Orrick has offered to teleport him back to Bryn}
+
+{7740} {... Shander.  Now all Puddy must do is sneak to the mage tower and find Orrick on the top floor.  Puddy reassured}
+{7741} {... Shander.  Now all Puddy must do is sneak to the mage tower and find Orrick on the top floor.  Puddy reassured}
+
+{7750} {... us that he would have no trouble sneaking over to Orrick, especially since he was a gnome and adept at that}
+{7751} {... us that he would have no trouble sneaking over to Orrick, especially since he was a gnome and adept at that}
+
+{7760} {... sort of thing.}
+{7761} {... sort of thing.}
+
+{7770} {The War Tower gate guard, Stubnok, informed us that the only ones who have access keys to the landing pad are}
+{7771} {The War Tower gate guard, Stubnok, informed us that the only ones who have access keys to the landing pad are}
+
+{7780} {... Captain Pudu and Captain Malign.  Stubnok also said that we could possibly find Captain Pudu on the top floor}
+{7781} {... Captain Pudu and Captain Malign.  Stubnok also said that we could possibly find Captain Pudu on the top floor}
+
+{7790} {... of the Officer's Tower, evidently entertaining one of the half-dragon delegates.}
+{7791} {... of the Officer's Tower, evidently entertaining one of the half-dragon delegates.}
+
+{7800} {We met a spirit in the Fell Wood who warned us away, claiming that those who enter are doomed to wander its}
+{7801} {We met a spirit in the Fell Wood who warned us away, claiming that those who enter are doomed to wander its}
+
+{7810} {... trails for eternity.  According to this ghost, the woods are impassable until the "terrible secret within the}
+{7811} {... trails for eternity.  According to this ghost, the woods are impassable until the "terrible secret within the}
+
+{7820} {... Fell Wood" is laid bare.}
+{7821} {... Fell Wood" is laid bare.}
+
+{7830} {The spirit in the Fell Wood couldn't tell us the forest's secret, but said that the answer was not within the}
+{7831} {The spirit in the Fell Wood couldn't tell us the forest's secret, but said that the answer was not within the}
+
+{7840} {... woods themselves - that we have to search elsewhere.  He also rendered a few words of advice: that within the}
+{7841} {... woods themselves - that we have to search elsewhere.  He also rendered a few words of advice: that within the}
+
+{7850} {... Fell Wood, westwards always leads to safety, that the longer we wander the more lost we'll become, meaning}
+{7851} {... Fell Wood, westwards always leads to safety, that the longer we wander the more lost we'll become, meaning}
+
+{7860} {... that we should leave and return if we become too befuddled, and that if we die here, we'll join the "Restless}
+{7861} {... that we should leave and return if we become too befuddled, and that if we die here, we'll join the "Restless}
+
+{7870} {... Dead of Fell Wood" - the angry spirits of those lured to their deaths by ghost-lights.}
+{7871} {... Dead of Fell Wood" - the angry spirits of those lured to their deaths by ghost-lights.}
+
+{7880} {We asked the spirit we met in the Fell Wood about the missing Kyosti.  He told us that if we would extinguish the}
+{7881} {We asked the spirit we met in the Fell Wood about the missing Kyosti.  He told us that if we would extinguish the}
+
+{7890} {... ghost-lights and thereby put the Restless Dead of Fell Wood at ease, he would tell us what he knows.}
+{7891} {... ghost-lights and thereby put the Restless Dead of Fell Wood at ease, he would tell us what he knows.}
+
+{7900} {After we slew the will o'wisps, the hunter's ghost explained that we had given peace to the Restless Dead of Fell}
+{7901} {After we slew the will o'wisps, the hunter's ghost explained that we had given peace to the Restless Dead of Fell}
+
+{7910} {... Wood.  Many spirits, silent but grateful, appeared to give us thanks, and left their mortal remains in our}
+{7911} {... Wood.  Many spirits, silent but grateful, appeared to give us thanks, and left their mortal remains in our}
+
+{7920} {... care.}
+{7921} {... care.}
+
+{7930} {The spirit we met in the Fell Wood told us that Kyosti did not die there, but that he had seen a silent ghost}
+{7931} {The spirit we met in the Fell Wood told us that Kyosti did not die there, but that he had seen a silent ghost}
+
+{7940} {... floating over its shallow grave west of the woods - could it be Kyosti?  The spirit said that if we went}
+{7941} {... floating over its shallow grave west of the woods - could it be Kyosti?  The spirit said that if we went}
+
+{7950} {... there, the ghost might appear to us - we'll have to search the area between the Wandering Village and the}
+{7951} {... there, the ghost might appear to us - we'll have to search the area between the Wandering Village and the}
+
+{7960} {... Fell Wood.}
+{7961} {... Fell Wood.}
+
+{7970} {We encountered one of the "ghost-lights" of Fell Wood.  It almost seems as if the things are attempting to lead}
+{7971} {We encountered one of the "ghost-lights" of Fell Wood.  It almost seems as if the things are attempting to lead}
+
+{7980} {... us to our deaths at the hands of natural snares and pitfalls.}
+{7981} {... us to our deaths at the hands of natural snares and pitfalls.}
+
+{7990} {A dryad we met in the woods told us that she had seen a human woman taking children into her home.  The woman}
+{7991} {A dryad we met in the woods told us that she had seen a human woman taking children into her home.  The woman}
+
+{8000} {... lives west of the wood, in the wilderness between them and the Wandering Village.  We'd best go investigate.}
+{8001} {... lives west of the wood, in the wilderness between them and the Wandering Village.  We'd best go investigate.}
+
+{8010} {A dryad we met in the woods told us that she had seen Limha taking children into her home.  We'd best go}
+{8011} {A dryad we met in the woods told us that she had seen Limha taking children into her home.  We'd best go}
+
+{8020} {... investigate.}
+{8021} {... investigate.}
+
+{8030} {A dryad we met in the woods told us that she had seen Limha taking children into her home.  Since we've already}
+{8031} {A dryad we met in the woods told us that she had seen Limha taking children into her home.  Since we've already}
+
+{8040} {... slain Limha, perhaps we should return to the village to see if the children have returned.}
+{8041} {... slain Limha, perhaps we should return to the village to see if the children have returned.}
+
+{8050} {A dryad we met in the woods told us of a path through one portion of the forest.  She said that when we reach a}
+{8051} {A dryad we met in the woods told us of a path through one portion of the forest.  She said that when we reach a}
+
+{8060} {... pond to travel east, northeast, and then northwest.  This will take us to a creek from where we should go}
+{8061} {... pond to travel east, northeast, and then northwest.  This will take us to a creek from where we should go}
+
+{8070} {... northwest, northeast, and then southeast.  The dryad said that this path leads into the heart of the forest.}
+{8071} {... northwest, northeast, and then southeast.  The dryad said that this path leads into the heart of the forest.}
+

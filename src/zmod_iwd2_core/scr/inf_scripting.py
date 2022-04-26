@@ -17,6 +17,12 @@ def get_globals():
 	#	data["globals"] = result
 	return data #result
 
+# from inf_scripting import *
+# gv("Hedron_Quest")
+def gv(name): return get_globals().get(name, 0)
+# gvs("Hedron_Quest", 1)
+def gvs(name, value): get_globals()[name] = value
+
 class InfScriptSupport:
 	def _gnpc(self):
 		return toee.PyObjHandle()

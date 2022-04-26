@@ -264,6 +264,9 @@
     </Compile>
     <Compile Include="zmod_iwd2_core\scr\utils_inventory_source.py" />
     <Compile Include="zmod_iwd2_core\scr\utils_item.py" />
+    <Compile Include="zmod_iwd2_core\scr\utils_journal.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="zmod_iwd2_core\scr\utils_locks.py" />
     <Compile Include="zmod_iwd2_core\scr\utils_npc.py" />
     <Compile Include="zmod_iwd2_core\scr\utils_npc_build.py">
@@ -295,6 +298,7 @@
     <Content Include="zmod_iwd2_core\dlg\01001_targos_docks_encounters.dlg" />
     <Content Include="zmod_iwd2_core\mes\gamekeylog.mes" />
     <Content Include="zmod_iwd2_core\mes\gamequestlog.mes" />
+    <Content Include="zmod_iwd2_core\mes\game_rd_npc_m2m.mes" />
     <Content Include="zmod_iwd2_core\mes\skill_ui.mes" />
     <Content Include="zmod_iwd2_core\oemes\oname.mes" />
     <Content Include="zmod_iwd2_core\rules\combat_vars.mes" />

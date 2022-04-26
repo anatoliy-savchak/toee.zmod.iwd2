@@ -20,6 +20,7 @@ class InfinityExportedDir:
         self.cre = dict()
 
         self.setup_elements()
+        self.journal = None
         return
 
     @staticmethod

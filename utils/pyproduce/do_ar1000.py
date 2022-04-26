@@ -1,4 +1,5 @@
 import os
+from produce_journal import JournalFile
 import pyproduce
 import produce_npc
 import produce_ar
@@ -8,15 +9,18 @@ npc_template_file = 'data/py06616_template.py'
 out_npcs_file = '../../src/zmod_iwd2_core/scr/py01001_targos_docks_encounters.py'
 out_dialog_file = '../../src/zmod_iwd2_core/dlg/01001_targos_docks_encounters.dlg'
 out_daemon_file = '../../src/zmod_iwd2_core/scr/py01000_targos_docks_daemon.py'
+out_rumors_file = '../../src/zmod_iwd2_core/mes/game_rd_npc_m2m.mes'
+template_rumors_file = '../../src/zmod_iwd2_core/mes/game_rd_npc_f2m.mes'
 exported_dir = pyproduce.InfinityExportedDir('../../resources/iwd2_exp')
 exported_dir.load_toee_class_specs('../../../TemplePlus/tpdatasrc/tpgamefiles/rules/char_class')
 #exported_dir.read_cre('10HEDRON')
 
 print(f" cwd: {os.getcwd()}")
 
-#os_command = f"copy /Y {os.path.abspath(npc_template_file)} {os.path.abspath(out_npcs_file)}"
-#print(os_command)
-#os.popen(os_command)
+journalFile = JournalFile(os.path.join(exported_dir.dir, "journal/journal.json"))
+journalFile.produce_rumors(out_rumors_file, template_rumors_file)
+exported_dir.journal = journalFile
+
 with open(out_npcs_file, 'w') as f:
     with open(npc_template_file, 'r') as fi:
         f.writelines(fi.readlines())
@@ -43,7 +47,7 @@ if True:
     produce_cre('10GOBARD')
     produce_cre('10SAILRD')
 
-if True:
+if False:
     dialog_file.copy_sound_files("D:\\IE\\Resources\\IWD2\\WAV", "D:\\Temple\\Temple of Elemental Evil.template\\modules\\zmod_iwd2_core\\sound\\speech\\01001")
     
 

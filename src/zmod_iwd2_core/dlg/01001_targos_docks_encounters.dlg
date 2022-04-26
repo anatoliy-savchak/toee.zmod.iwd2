@@ -42,7 +42,7 @@
 {101}{Very well.  Do you know where I can go to sign on with the Targos guard?}{}{1}{}{110}{} # resp: 10HEDRON 25
 
 {110}{Well, ye'd want to be seeing the lord of this place, Ulbrec's his name.  Good enough fella... fer a lord.}{Well, ye'd want to be seeing the lord of this place, Ulbrec's his name.  Good enough fella... fer a lord.}{}{}{}{} # phrase: 10HEDRON 17
-{111}{Where can I find Lord Ulbrec?}{}{1}{}{120}{} # resp: 10HEDRON 36
+{111}{Where can I find Lord Ulbrec?}{}{1}{}{120}{uj.journal_add(739, (0, 1, 2, ))} # resp: 10HEDRON 36
 
 {120}{Scale the cliffs to the main town - he's bound to be in one of the manors up there.  Snag one of the locals, they can guide ye better than I could.}{Scale the cliffs to the main town - he's bound to be in one of the manors up there.  Snag one of the locals, they can guide ye better than I could.}{}{}{}{} # phrase: 10HEDRON 18
 {121}{All right.  Thanks for your help, Hedron.}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{130}{} # resp: 10HEDRON 37
@@ -87,12 +87,12 @@
 {222}{There's been an attack on the docks, and Targos has gained a number of bloodthirsty goblin citizens.}{}{1}{}{230}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 10HEDRON 42
 
 {230}{Goblins?  By the northern winds - the town's been *overrun?!*}{Goblins?  By the northern winds - the town's been *overrun?!*}{}{}{}{} # phrase: 10HEDRON 22
-{231}{We don't know yet - we'll come back when we know more.}{}{1}{}{240}{} # resp: 10HEDRON 43
-{232}{A good question.  You should probably set sail in any event - Targos is no longer safe.  }{}{1}{}{240}{} # resp: 10HEDRON 44
+{231}{We don't know yet - we'll come back when we know more.}{}{1}{}{240}{uj.journal_add(2568, (3, 4, ))} # resp: 10HEDRON 43
+{232}{A good question.  You should probably set sail in any event - Targos is no longer safe.  }{}{1}{}{240}{uj.journal_add(2568, (3, 4, ))} # resp: 10HEDRON 44
 
 {240}{But my Ma - I can't leave her here!  Look, she's a hard woman and all... but can you go back and make sure she's safe?}{But my Ma - I can't leave her here!  Look, she's a hard woman and all... but can you go back and make sure she's safe?}{}{}{}{} # phrase: 10HEDRON 23
-{241}{I'm afraid she didn't make it, Hedron... she, uh, was killed by goblins in her home.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{250}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 10HEDRON 45
-{242}{We already checked on her, Hedron.  Some goblins had broken into her house, but we took them out and rescued her.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{260}{ctrl(npc).dialog_action(npc, pc, 4)} # resp: 10HEDRON 46
+{241}{I'm afraid she didn't make it, Hedron... she, uh, was killed by goblins in her home.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{250}{ctrl(npc).dialog_action(npc, pc, 3); uj.journal_add(2571, (5, ))} # resp: 10HEDRON 45
+{242}{We already checked on her, Hedron.  Some goblins had broken into her house, but we took them out and rescued her.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{260}{ctrl(npc).dialog_action(npc, pc, 4); uj.journal_add(2569, (6, ))} # resp: 10HEDRON 46
 {243}{We encountered an old woman being menaced by goblins - I don't know whether it was your mother or not.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{290}{ctrl(npc).dialog_action(npc, pc, 5)} # resp: 10HEDRON 47
 {244}{Your mother?  Which house is hers?}{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{300}{ctrl(npc).dialog_action(npc, pc, 6)} # resp: 10HEDRON 48
 {245}{We'll see what we can do - but we need someplace safe to rest.  Can you watch over us while we catch our second wind?}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{0}{ctrl(npc).dialog_action(npc, pc, 7)} # resp: 10HEDRON 49
@@ -124,7 +124,7 @@
 {284}{She tested our patience, but this should serve to make up for it.  Farewell, Hedron.}{}{1}{ctrl(npc).dialog_test(npc, pc, 24)}{0}{} # resp: 10HEDRON 66
 
 {290}{This woman - was she wailing enough to wake the dead and surrounded by a wall o' cats?}{This woman - was she wailing enough to wake the dead and surrounded by a wall o' cats?}{}{}{}{} # phrase: 10HEDRON 25
-{291}{That's her.  Some goblin attackers had broken into her home, but we took care of them.  She's safe.}{}{1}{}{260}{ctrl(npc).dialog_action(npc, pc, 9)} # resp: 10HEDRON 52
+{291}{That's her.  Some goblin attackers had broken into her home, but we took care of them.  She's safe.}{}{1}{}{260}{ctrl(npc).dialog_action(npc, pc, 9); uj.journal_add(2569, (6, ))} # resp: 10HEDRON 52
 
 {300}{Her house is to the left as ye step off the docks - right in the shadow of the southern cliffs.  If that's not enough, listen for the howling of her cats, and ye'll find her right-quick.}{Her house is to the left as ye step off the docks - right in the shadow of the southern cliffs.  If that's not enough, listen for the howling of her cats, and ye'll find her right-quick.}{}{}{}{} # phrase: 10HEDRON 26
 {301}{The town's in danger, but we need someplace safe to rest - can you watch over us while we catch our second wind?}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 10)} # resp: 10HEDRON 53
@@ -144,8 +144,8 @@
 {322}{A good question.  You should probably set sail in any event - Targos is no longer safe.  }{}{1}{}{330}{} # resp: 10HEDRON 79
 
 {330}{Wait - do you know if me mother's all right?  She has a house along the docks, and could be the goblins got to her during the attack.}{Wait - do you know if me mother's all right?  She has a house along the docks, and could be the goblins got to her during the attack.}{}{}{}{} # phrase: 10HEDRON 32
-{331}{I'm afraid she didn't make it, Hedron... she, uh, was killed by goblins in her home.}{}{1}{ctrl(npc).dialog_test(npc, pc, 36)}{250}{ctrl(npc).dialog_action(npc, pc, 23)} # resp: 10HEDRON 80
-{332}{We already checked on her, Hedron.  Some goblins had broken into her house, but we took them out and rescued her.}{}{1}{ctrl(npc).dialog_test(npc, pc, 37)}{260}{ctrl(npc).dialog_action(npc, pc, 24)} # resp: 10HEDRON 81
+{331}{I'm afraid she didn't make it, Hedron... she, uh, was killed by goblins in her home.}{}{1}{ctrl(npc).dialog_test(npc, pc, 36)}{250}{ctrl(npc).dialog_action(npc, pc, 23); uj.journal_add(2571, (5, ))} # resp: 10HEDRON 80
+{332}{We already checked on her, Hedron.  Some goblins had broken into her house, but we took them out and rescued her.}{}{1}{ctrl(npc).dialog_test(npc, pc, 37)}{260}{ctrl(npc).dialog_action(npc, pc, 24); uj.journal_add(2569, (6, ))} # resp: 10HEDRON 81
 {333}{We encountered an old woman being menaced by goblins - I don't know whether it was your mother or not.}{}{1}{ctrl(npc).dialog_test(npc, pc, 38)}{290}{ctrl(npc).dialog_action(npc, pc, 25)} # resp: 10HEDRON 82
 {334}{Your mother?  Which house is hers?}{}{1}{ctrl(npc).dialog_test(npc, pc, 39)}{300}{ctrl(npc).dialog_action(npc, pc, 26)} # resp: 10HEDRON 83
 {335}{We'll see what we can do - but we need someplace safe to rest.  Can you watch over us while we catch our second wind?}{}{1}{ctrl(npc).dialog_test(npc, pc, 40)}{0}{ctrl(npc).dialog_action(npc, pc, 27)} # resp: 10HEDRON 84
@@ -160,8 +160,8 @@
 {352}{I see.  I must take my leave.  Farewell.}{}{1}{}{0}{} # resp: 10HEDRON 101
 
 {360}{You're back - any word of me Ma?}{You're back - any word of me Ma?}{}{}{}{} # phrase: 10HEDRON 33
-{361}{I'm afraid she didn't make it, Hedron... she, uh, was killed by goblins in her home.}{}{1}{ctrl(npc).dialog_test(npc, pc, 42)}{250}{ctrl(npc).dialog_action(npc, pc, 29)} # resp: 10HEDRON 86
-{362}{We already checked on her, Hedron.  Some goblins had broken into her house, but we took them out and rescued her.}{}{1}{ctrl(npc).dialog_test(npc, pc, 43)}{260}{ctrl(npc).dialog_action(npc, pc, 30)} # resp: 10HEDRON 87
+{361}{I'm afraid she didn't make it, Hedron... she, uh, was killed by goblins in her home.}{}{1}{ctrl(npc).dialog_test(npc, pc, 42)}{250}{ctrl(npc).dialog_action(npc, pc, 29); uj.journal_add(2571, (5, ))} # resp: 10HEDRON 86
+{362}{We already checked on her, Hedron.  Some goblins had broken into her house, but we took them out and rescued her.}{}{1}{ctrl(npc).dialog_test(npc, pc, 43)}{260}{ctrl(npc).dialog_action(npc, pc, 30); uj.journal_add(2569, (6, ))} # resp: 10HEDRON 87
 {363}{We encountered an old woman being menaced by goblins - I don't know whether it was your mother or not.}{}{1}{ctrl(npc).dialog_test(npc, pc, 44)}{290}{ctrl(npc).dialog_action(npc, pc, 31)} # resp: 10HEDRON 88
 {364}{Which house is hers again?}{}{1}{ctrl(npc).dialog_test(npc, pc, 45)}{300}{ctrl(npc).dialog_action(npc, pc, 32)} # resp: 10HEDRON 89
 {365}{We'll see what we can do - but we need someplace safe to rest.  Can you watch over us while we catch our second wind?}{}{1}{ctrl(npc).dialog_test(npc, pc, 46)}{0}{ctrl(npc).dialog_action(npc, pc, 33)} # resp: 10HEDRON 90
@@ -281,7 +281,7 @@
 {641}{What's wrong with your arm?}{}{1}{}{650}{} # resp: 10REIG 19
 
 {650}{Goblin axe took a bite out of it - but I'm better off than Brohn here, poor bastard took a goblin arrow in the neck.}{Goblin axe took a bite out of it - but I'm better off than Brohn here, poor bastard took a goblin arrow in the neck.}{}{}{}{} # phrase: 10REIG 11
-{651}{Your arm looks in pretty bad shape - your bandages are almost soaked through.}{}{1}{}{660}{} # resp: 10REIG 22
+{651}{Your arm looks in pretty bad shape - your bandages are almost soaked through.}{}{1}{}{660}{uj.journal_add(1476, (7, 8, 9, ))} # resp: 10REIG 22
 
 {660}{Well, Jon here wrapped up my arm, but you're right, it's bleeding bad.  If you can find the harbor master, Magdar, he might have a supply of healing draughts stored in the warehouse north of here.}{Well, Jon here wrapped up my arm, but you're right, it's bleeding bad.  If you can find the harbor master, Magdar, he might have a supply of healing draughts stored in the warehouse north of here.}{}{}{}{} # phrase: 10REIG 12
 {661}{I'm an Ilmatari, a Painbearer of Ilmater.  My healing magic may be able to draw the pain from your wound and end your suffering.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{680}{} # resp: 10REIG 23
@@ -295,7 +295,7 @@
 {669}{A rain of blood follows the storms, so teaches Talos.  We Stormlords know much of pain... and how to end it.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 17)}{680}{} # resp: 10REIG 31
 {670}{I'm a druid.  I may be able to call upon nature's power to heal your arm.}{}{1}{ctrl(npc).dialog_test(npc, pc, 18)}{680}{} # resp: 10REIG 32
 {671}{I'm a paladin.  I may be able to use my healing magics to help your arm.}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{680}{} # resp: 10REIG 33
-{672}{I already found a healing potion.  It should help - drink it down.}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{690}{ctrl(npc).dialog_action(npc, pc, 13)} # resp: 10REIG 34
+{672}{I already found a healing potion.  It should help - drink it down.}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{690}{ctrl(npc).dialog_action(npc, pc, 13); uj.journal_add(1477, (10, 11, ))} # resp: 10REIG 34
 {673}{I'll go see if I can find Magdar, then.  Farewell.}{}{1}{}{730}{} # resp: 10REIG 35
 
 {680}{You're a healer?  Looks like Tymora's taking pity on us at last - if you have any magic that would help, I'd be grateful.}{You're a healer?  Looks like Tymora's taking pity on us at last - if you have any magic that would help, I'd be grateful.}{}{}{}{} # phrase: 10REIG 14
@@ -308,7 +308,7 @@
 {700}{Looks like you sailed into Targos at the right time.  If you can help us hunt down any of those goblins, we'd welcome your help.}{Looks like you sailed into Targos at the right time.  If you can help us hunt down any of those goblins, we'd welcome your help.}{}{}{}{} # phrase: 10REIG 19
 {701}{We need to rest.  Can you watch over us while we catch our second wind?}{}{1}{ctrl(npc).dialog_test(npc, pc, 38)}{710}{} # resp: 10REIG 59
 {702}{I'll see what I can do.}{}{1}{ctrl(npc).dialog_test(npc, pc, 39)}{0}{} # resp: 10REIG 60
-{703}{We've wiped out the last of the goblins along the docks.}{}{1}{ctrl(npc).dialog_test(npc, pc, 40)}{720}{ctrl(npc).dialog_action(npc, pc, 18)} # resp: 10REIG 61
+{703}{We've wiped out the last of the goblins along the docks.}{}{1}{ctrl(npc).dialog_test(npc, pc, 40)}{720}{ctrl(npc).dialog_action(npc, pc, 18); uj.journal_add(1479, (14, 15, ))} # resp: 10REIG 61
 
 {710}{Resting out here isn't safe - I'd head back to your ship and take refuge there, or, if you're feeling brave, see if you can hole up in one of the homes or warehouses along the shore - provided you kill any goblins inside first.}{Resting out here isn't safe - I'd head back to your ship and take refuge there, or, if you're feeling brave, see if you can hole up in one of the homes or warehouses along the shore - provided you kill any goblins inside first.}{}{}{}{} # phrase: 10REIG 27
 {711}{Very well.  We'll go see if we can find some shelter, then.}{}{1}{}{0}{} # resp: 10REIG 76
@@ -331,16 +331,16 @@
 {749}{A rain of blood follows the storms, so teaches Talos.  We Stormlords know much of pain... and how to end it.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 31)}{680}{} # resp: 10REIG 47
 {750}{I'm a druid.  I may be able to call upon nature's power to heal you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 32)}{680}{} # resp: 10REIG 48
 {751}{I'm a paladin.  I may be able to use my healing magics to help your arm.}{}{1}{ctrl(npc).dialog_test(npc, pc, 33)}{680}{} # resp: 10REIG 49
-{752}{Here's the healing potion.  It should help - drink it down.}{}{1}{ctrl(npc).dialog_test(npc, pc, 34)}{690}{ctrl(npc).dialog_action(npc, pc, 14)} # resp: 10REIG 50
+{752}{Here's the healing potion.  It should help - drink it down.}{}{1}{ctrl(npc).dialog_test(npc, pc, 34)}{690}{ctrl(npc).dialog_action(npc, pc, 14); uj.journal_add(1477, (10, 11, ))} # resp: 10REIG 50
 {753}{We need to rest.  Can you watch over us while we catch our second wind?}{}{1}{}{710}{} # resp: 10REIG 51
 {754}{Not yet.  I'll return when I've found him.}{}{1}{}{0}{} # resp: 10REIG 52
 
 {760}{My arm's better, thanks for your help.  Looks like you're praying to the right gods.}{My arm's better, thanks for your help.  Looks like you're praying to the right gods.}{}{}{}{} # phrase: 10REIG 16
-{761}{The wound's closed, but there may be more damage.  You still don't look too good.}{}{1}{ctrl(npc).dialog_test(npc, pc, 35)}{770}{ctrl(npc).dialog_action(npc, pc, 15)} # resp: 10REIG 53
-{762}{The wound's closed, but there may be more damage.  You still don't look too good.}{}{1}{ctrl(npc).dialog_test(npc, pc, 36)}{770}{ctrl(npc).dialog_action(npc, pc, 16)} # resp: 10REIG 54
+{761}{The wound's closed, but there may be more damage.  You still don't look too good.}{}{1}{ctrl(npc).dialog_test(npc, pc, 35)}{770}{ctrl(npc).dialog_action(npc, pc, 15); uj.journal_add(1478, (12, 13, ))} # resp: 10REIG 53
+{762}{The wound's closed, but there may be more damage.  You still don't look too good.}{}{1}{ctrl(npc).dialog_test(npc, pc, 36)}{770}{ctrl(npc).dialog_action(npc, pc, 16); uj.journal_add(1478, (12, 13, ))} # resp: 10REIG 54
 
 {770}{I could still use that healing draught from Magdar if you can find him.  Hope the goblins haven't got him yet.}{I could still use that healing draught from Magdar if you can find him.  Hope the goblins haven't got him yet.}{}{}{}{} # phrase: 10REIG 17
-{771}{Here's the healing potion.  It should help - drink it down.}{}{1}{ctrl(npc).dialog_test(npc, pc, 37)}{690}{ctrl(npc).dialog_action(npc, pc, 17)} # resp: 10REIG 55
+{771}{Here's the healing potion.  It should help - drink it down.}{}{1}{ctrl(npc).dialog_test(npc, pc, 37)}{690}{ctrl(npc).dialog_action(npc, pc, 17); uj.journal_add(1477, (10, 11, ))} # resp: 10REIG 55
 {772}{We need to rest.  Can you watch over us while we catch our second wind?}{}{1}{}{710}{} # resp: 10REIG 56
 {773}{Let me see what I can do.}{}{1}{}{0}{} # resp: 10REIG 57
 
@@ -388,7 +388,7 @@
 {882}{Calm yourself - what's the problem?}{}{1}{}{890}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 10BROGAN 1
 
 {890}{Stay back - there's a band of goblin raiders cornered inside this warehouse... I was awaiting the sell-swords in the Salty Dog before rushing in.}{Stay back - there's a band of goblin raiders cornered inside this warehouse... I was awaiting the sell-swords in the Salty Dog before rushing in.}{}{}{}{} # phrase: 10BROGAN 1
-{891}{Continue}{}{1}{}{900}{} # resp: 10BROGAN 2
+{891}{Continue}{}{1}{}{900}{uj.journal_add(27682, (16, 17, 18, 19, ))} # resp: 10BROGAN 2
 
 {900}{Time's short, though - if those raiders start a fire within the warehouse, they could set the dock and the ships ablaze.}{Time's short, though - if those raiders start a fire within the warehouse, they could set the dock and the ships ablaze.}{}{}{}{} # phrase: 10BROGAN 2
 {901}{Uh, the sell-swords from the Salty Dog?}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{910}{} # resp: 10BROGAN 3
@@ -405,7 +405,7 @@
 {922}{Actually, uh, I think the goblins may have already killed them.  It might be best if you let us go in and take out those goblins ourselves.}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{930}{} # resp: 10BROGAN 10
 {923}{Look, there's no reason to wait for those mercenaries.  Let me go in and take those goblins out for you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{970}{} # resp: 10BROGAN 11
 {924}{Where's the Salty Dog Tavern?  I could go find those sell-swords you're waiting for and bring them here.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{980}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 10BROGAN 12
-{925}{I'll go grab the Iron Collar company from the Salty Dog, and perhaps between the three groups of us we can dispatch these goblins.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{0}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 10BROGAN 13
+{925}{I'll go grab the Iron Collar company from the Salty Dog, and perhaps between the three groups of us we can dispatch these goblins.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{0}{ctrl(npc).dialog_action(npc, pc, 3); uj.journal_add(27686, (20, 21, ))} # resp: 10BROGAN 13
 
 {930}{All right then, maybe Tymora will grace your blades - and time is against us.  But the goblins have locked the door from the inside... you'll need to break it down.}{All right then, maybe Tymora will grace your blades - and time is against us.  But the goblins have locked the door from the inside... you'll need to break it down.}{}{}{}{} # phrase: 10BROGAN 8
 {931}{Hmmm. I might be able to pick the lock as well. Stand back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 21)}{0}{ctrl(npc).dialog_action(npc, pc, 12)} # resp: 10BROGAN 27
@@ -424,21 +424,21 @@
 {963}{All right, then - we'll see about getting this door open.  Stand back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 41)}{0}{} # resp: 10BROGAN 59
 
 {970}{You?  Have you ever *seen* battle?  We need seasoned warriors here, not pups playing at being soldiers.}{You?  Have you ever *seen* battle?  We need seasoned warriors here, not pups playing at being soldiers.}{}{}{}{} # phrase: 10BROGAN 7
-{971}{Let me in that warehouse, and you'll see how good we play at being soldiers.}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{930}{ctrl(npc).dialog_action(npc, pc, 6)} # resp: 10BROGAN 21
+{971}{Let me in that warehouse, and you'll see how good we play at being soldiers.}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{930}{ctrl(npc).dialog_action(npc, pc, 6); uj.journal_add(27684, (24, 25, 26, ))} # resp: 10BROGAN 21
 {972}{Where's the Salty Dog Tavern?  I could go find those sell-swords you're waiting for and bring them here.}{}{1}{ctrl(npc).dialog_test(npc, pc, 17)}{980}{ctrl(npc).dialog_action(npc, pc, 7)} # resp: 10BROGAN 22
 {973}{Where's the Salty Dog Tavern again?  I could go find those sell-swords you're waiting for and bring them here.}{}{1}{ctrl(npc).dialog_test(npc, pc, 18)}{980}{ctrl(npc).dialog_action(npc, pc, 8)} # resp: 10BROGAN 23
-{974}{I'll go grab the Iron Collar company from the Salty Dog, and perhaps between the three groups of us we can dispatch these goblins.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 9)} # resp: 10BROGAN 24
-{975}{But the Iron Collar mercenaries might not be able to get here in time.}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{930}{ctrl(npc).dialog_action(npc, pc, 10)} # resp: 10BROGAN 25
-{976}{If you want soldiers, then you shouldn't be waiting for those Iron Collar drunks - if you want those goblins dead, then talk to *me.*}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{930}{ctrl(npc).dialog_action(npc, pc, 11)} # resp: 10BROGAN 26
+{974}{I'll go grab the Iron Collar company from the Salty Dog, and perhaps between the three groups of us we can dispatch these goblins.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 9); uj.journal_add(27686, (20, 21, ))} # resp: 10BROGAN 24
+{975}{But the Iron Collar mercenaries might not be able to get here in time.}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{930}{ctrl(npc).dialog_action(npc, pc, 10); uj.journal_add(27684, (24, 25, 26, ))} # resp: 10BROGAN 25
+{976}{If you want soldiers, then you shouldn't be waiting for those Iron Collar drunks - if you want those goblins dead, then talk to *me.*}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{930}{ctrl(npc).dialog_action(npc, pc, 11); uj.journal_add(27684, (24, 25, 26, ))} # resp: 10BROGAN 26
 
 {980}{The Salty Dog lies along the south side of the docks, near the shoreline - make haste!}{The Salty Dog lies along the south side of the docks, near the shoreline - make haste!}{}{}{}{} # phrase: 10BROGAN 5
-{981}{Very well.  Watch yourself... I will return shortly.}{}{1}{}{0}{} # resp: 10BROGAN 14
+{981}{Very well.  Watch yourself... I will return shortly.}{}{1}{}{0}{uj.journal_add(27686, (20, 21, ))} # resp: 10BROGAN 14
 
 {990}{You're back!  Did you bring the Iron Collar Band with you?}{You're back!  Did you bring the Iron Collar Band with you?}{}{}{}{} # phrase: 10BROGAN 6
 {991}{There was an altercation at the Salty Dog, and the Iron Collar Mercenaries refused to back down - they won't be coming.  We can take out those goblins for you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{930}{} # resp: 10BROGAN 15
 {992}{Actually, uh, I think the goblins may have already killed them.  It might be best if you let us go in and take out those goblins ourselves.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{930}{} # resp: 10BROGAN 16
-{993}{They're not coming.  They've too many kegs to slaughter in the Salty Dog to come to Targos' aid.  Let us handle the goblins.}{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{930}{ctrl(npc).dialog_action(npc, pc, 4)} # resp: 10BROGAN 17
-{994}{The Iron Collar mercenaries will not be coming.  It's just us.}{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{930}{ctrl(npc).dialog_action(npc, pc, 5)} # resp: 10BROGAN 18
+{993}{They're not coming.  They've too many kegs to slaughter in the Salty Dog to come to Targos' aid.  Let us handle the goblins.}{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{930}{ctrl(npc).dialog_action(npc, pc, 4); uj.journal_add(27683, (22, 23, ))} # resp: 10BROGAN 17
+{994}{The Iron Collar mercenaries will not be coming.  It's just us.}{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{930}{ctrl(npc).dialog_action(npc, pc, 5); uj.journal_add(27683, (22, 23, ))} # resp: 10BROGAN 18
 {995}{Forget the Iron Collar - let me go in and take out those goblins for you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{970}{} # resp: 10BROGAN 19
 {996}{No, I haven't found them yet.  I'll return when I do.}{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{0}{} # resp: 10BROGAN 20
 
@@ -464,7 +464,7 @@
 {1042}{Well, there were some collapsed passages - could be the goblins accidentally sealed themselves in.  Found this scroll on one of the goblins, however, and it looks magical... or was, at least.}{}{1}{ctrl(npc).dialog_test(npc, pc, 30)}{1080}{} # resp: 10BROGAN 41
 
 {1050}{Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.}{Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.}{}{}{}{} # phrase: 10BROGAN 15
-{1051}{Continue}{}{1}{}{1060}{ctrl(npc).dialog_action(npc, pc, 15)} # resp: 10BROGAN 42
+{1051}{Continue}{}{1}{}{1060}{ctrl(npc).dialog_action(npc, pc, 15); uj.journal_add(27685, (27, 28, ))} # resp: 10BROGAN 42
 
 {1060}{In any event, I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.}{In any event, I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.}{}{}{}{} # phrase: 10BROGAN 16
 {1061}{I hope so.  Where can I find him?}{}{1}{}{1070}{ctrl(npc).dialog_action(npc, pc, 16)} # resp: 10BROGAN 43
@@ -474,7 +474,7 @@
 {1071}{I will seek him out, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 18)} # resp: 10BROGAN 45
 
 {1080}{Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.  Still, you might want to take that scroll to Ulbrec's wife, she knows something of magic and might be able to identify it.}{Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.  Still, you might want to take that scroll to Ulbrec's wife, she knows something of magic and might be able to identify it.}{}{}{}{} # phrase: 10BROGAN 23
-{1081}{Continue}{}{1}{}{1060}{ctrl(npc).dialog_action(npc, pc, 23)} # resp: 10BROGAN 60
+{1081}{Continue}{}{1}{}{1060}{ctrl(npc).dialog_action(npc, pc, 23); uj.journal_add(27685, (27, 28, ))} # resp: 10BROGAN 60
 
 {1090}{Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!}{Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!}{}{}{}{} # phrase: 10BROGAN 18
 {1091}{Swift action was called for.  There are still some goblins in the warehouse.  We're going back in shortly to take care of them.}{}{1}{ctrl(npc).dialog_test(npc, pc, 31)}{0}{} # resp: 10BROGAN 46
@@ -510,7 +510,7 @@
 {1154}{Agreed.  Farewell, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{0}{} # resp: 10JORUN 8
 
 {1160}{If ye need a place to hole up that's free o' the goblins, me house is to the south and west of here - ye can catch yer breath and bind your wounds there.  It should be safe - if any of those damned goblins tried to break in, they'll wish they hadn't.}{If ye need a place to hole up that's free o' the goblins, me house is to the south and west of here - ye can catch yer breath and bind your wounds there.  It should be safe - if any of those damned goblins tried to break in, they'll wish they hadn't.}{}{}{}{} # phrase: 10JORUN 25
-{1161}{Why is that?}{}{1}{}{1170}{ctrl(npc).dialog_action(npc, pc, 10)} # resp: 10JORUN 48
+{1161}{Why is that?}{}{1}{}{1170}{ctrl(npc).dialog_action(npc, pc, 10); uj.journal_add(15164, (35, 36, 37, ))} # resp: 10JORUN 48
 
 {1170}{Rigged a mean little trap on one of me chests that'll gas any fool goblin that tries to break it open.  Turn their stomachs inside out, it will - that'd be something to see.}{Rigged a mean little trap on one of me chests that'll gas any fool goblin that tries to break it open.  Turn their stomachs inside out, it will - that'd be something to see.}{}{}{}{} # phrase: 10JORUN 26
 {1171}{We already opened your chest - do you mind if we put your equipment to use?}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{1180}{} # resp: 10JORUN 49
@@ -542,7 +542,7 @@
 
 {1230}{No telling - but I didn't hear a warning horn from the Palisade.  What worries me is they *didn't* jump the town wall.}{No telling - but I didn't hear a warning horn from the Palisade.  What worries me is they *didn't* jump the town wall.}{}{}{}{} # phrase: 10JORUN 4
 {1231}{It looks like they tunneled into some old caves in the Targos cliffs and used them to get to the docks.}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{1240}{} # resp: 10JORUN 9
-{1232}{What do you mean?}{}{1}{}{1280}{} # resp: 10JORUN 10
+{1232}{What do you mean?}{}{1}{}{1280}{uj.journal_add(15154, (29, 30, 31, 32, ))} # resp: 10JORUN 10
 
 {1240}{Shouldn't surprise me - these cliffs are thick with tunnels, but last word was the Targos Guard had collapsed most o' em.}{Shouldn't surprise me - these cliffs are thick with tunnels, but last word was the Targos Guard had collapsed most o' em.}{}{}{}{} # phrase: 10JORUN 9
 {1241}{Continue}{}{1}{}{1250}{} # resp: 10JORUN 20
@@ -597,7 +597,7 @@
 {1361}{Can you fix it?}{}{1}{}{1370}{} # resp: 10JORUN 44
 
 {1370}{Aye, if someone had bothered to tell me the problem sooner, I could have had it fixed right quick.  In fact - ye could even do it.}{Aye, if someone had bothered to tell me the problem sooner, I could have had it fixed right quick.  In fact - ye could even do it.}{}{}{}{} # phrase: 10JORUN 22
-{1371}{How?}{}{1}{}{1380}{ctrl(npc).dialog_action(npc, pc, 8)} # resp: 10JORUN 45
+{1371}{How?}{}{1}{}{1380}{ctrl(npc).dialog_action(npc, pc, 8); uj.journal_add(15159, (33, 34, ))} # resp: 10JORUN 45
 
 {1380}{I keep spares, especially when the shipping season is in full swing.  Take this crane wheel, and just set it into the crane, should be ready to go without a hitch.}{I keep spares, especially when the shipping season is in full swing.  Take this crane wheel, and just set it into the crane, should be ready to go without a hitch.}{}{}{}{} # phrase: 10JORUN 23
 {1381}{All right.  We'll see about fixing the crane.  Thanks, Jorun.}{}{1}{}{0}{} # resp: 10JORUN 46

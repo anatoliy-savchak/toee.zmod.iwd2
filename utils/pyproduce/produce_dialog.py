@@ -325,6 +325,13 @@ class ProduceNPCDialog:
                 effect_code = f"ctrl(npc).dialog_action(npc, pc, {actionIndex})"
                 self.response_actions[actionIndex] = (response_text, -1)
 
+            if "HasJournal" in response_flags:
+                journalIndex = response["JournalIndex"]
+                rums = self.parent.exported_dir.journal.get_rumors_by_strref(journalIndex)
+                if effect_code:
+                    effect_code = effect_code.strip()
+                effect_code = (effect_code + "; " if effect_code else "") + f'uj.journal_add({journalIndex}, {rums})'
+
             resp_line_id = self.dialog_file.add_response(response_index, response_text, answer_id=phrase_line_id, test_field=test_field, effect_code=effect_code)
 
             if "HasTrigger" in response_flags:

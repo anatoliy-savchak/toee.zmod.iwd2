@@ -53,7 +53,7 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		return
 
 	def place_encounters_next(self):
-		self.update_witch()
+		# TODO = verify that it's triggered only when returning to map, not loading
 		return
 
 	# Sleep interface

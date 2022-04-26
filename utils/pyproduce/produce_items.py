@@ -49,7 +49,21 @@ class ItemBase(object):
 
         result = cls(item_entry, parent)
         return result
+
+    @classmethod
+    def give_item_create_line(cls, item_file_name: str, charges1: int = None):
+        return None
         
+    @staticmethod
+    def find_item_class(item_file_name: str):
+        item_file_name_l = item_file_name.lower()
+        #cls = next((cls for name, cls in inspect.getmembers(sys.modules[__name__], inspect.isclass) if issubclass(cls, ItemBase) and item_file_name in cls.get_item_codes()), None)
+        for cls in [cls for name, cls in inspect.getmembers(sys.modules[__name__], inspect.isclass) if issubclass(cls, ItemBase)]:
+            for code in cls.get_item_codes():
+                if item_file_name_l == code.lower():
+                    return cls
+        return None
+
     def get_wear(self):
         wear = None
         if self.slot_name == 'SLOT_WEAPON1':
@@ -358,11 +372,19 @@ class ItemGold(ItemBase):
     @classmethod
     def get_category(cls): return "Gold"
 
+    @classmethod
+    def get_item_codes(cls): return ('MISC07', )
+
     def process_item(self):
         Charges1, Charges2, Charges3 = int(self.item_entry["Item"]["Charges1"]), int(self.item_entry["Item"]["Charges2"]), int(self.item_entry["Item"]["Charges3"])
         platinum, gold, silver, copper = 0, Charges1, Charges2, Charges3
         self._add_line(f'utils_item.item_money_create_in_inventory(npc, {platinum}, {gold}, {silver}, {copper}) # Charges1: {Charges1}, Charges2: {Charges2}, Charges3: {Charges3}')
         return True
+
+    @classmethod
+    def give_item_create_line(cls, item_file_name: str, charges1: int = None):
+        #return f'utils_item.item_money_create_in_inventory(npc, gold={charges1})'
+        return f'utils_pc.pc_party_receive_money_and_print({charges1} * const_toee.gp)'
 
     @classmethod
     def is_default(cls): return True

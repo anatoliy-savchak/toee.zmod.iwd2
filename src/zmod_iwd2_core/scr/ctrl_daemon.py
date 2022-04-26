@@ -1,5 +1,10 @@
 import toee, py06122_cormyr_prompter, utils_toee, const_toee, utils_storage, debug, utils_obj, utils_npc, ctrl_behaviour, monster_info, utils_item, factions_zmod, module_cheats
 
+# import ctrl_daemon
+# ctrl_daemon.gdc()
+# ctrl_daemon.gdc().gmc("Hedron")
+def gdc(): return CtrlDaemon.get_current_daemon()
+
 class CtrlDaemon(object):
 	def __init__(self):
 		self.encounters_placed = 0
@@ -98,6 +103,13 @@ class CtrlDaemon(object):
 	def get_map_default(self):
 		return 0
 
+	def _monster_name(self, encounter_name, monster_code_name):
+		prefix = self.get_monster_prefix_default()
+		prefix2 = '' if not prefix else prefix + '_'
+		encounter_name2 = '' if not encounter_name else encounter_name + '_'
+		name = "{}{}{}".format(prefix2, encounter_name2, monster_code_name)
+		return name
+
 	def monster_setup(self, npc, encounter_name, monster_code_name, monster_name, no_draw = 1, no_kos = 1, faction = None):
 		assert isinstance(npc, toee.PyObjHandle)
 		if (not faction): faction = self.get_monster_faction_default(npc)
@@ -121,12 +133,12 @@ class CtrlDaemon(object):
 		info.cr = utils_npc.npc_get_cr(npc)
 		info.encounter_code = encounter_name
 		info.monster_code_name = monster_code_name
-		info.name = "{}_{}_{}".format(self.get_monster_prefix_default(), encounter_name, monster_code_name)
+		info.name = self._monster_name(encounter_name, monster_code_name)
 		self.monsters[info.name] = info
 		return
 
 	def get_monsterinfo(self, encounter_name, monster_code_name):
-		key = "{}_{}_{}".format(self.get_monster_prefix_default(), encounter_name, monster_code_name)
+		key = self._monster_name(encounter_name, monster_code_name)
 		if (key in self.monsters):
 			info = self.monsters[key]
 			assert isinstance(info, monster_info.MonsterInfo)
@@ -141,6 +153,13 @@ class CtrlDaemon(object):
 			npc = toee.game.get_obj_by_id(info.id)
 			ctrl = ctrl_behaviour.get_ctrl(info.id)
 		return info, npc, ctrl
+
+	def gmc(self, monster_code_name, encounter_name = ""):
+		ctrl = None
+		info = self.get_monsterinfo(encounter_name, monster_code_name)
+		if (info):
+			ctrl = ctrl_behaviour.get_ctrl(info.id)
+		return ctrl
 
 	def get_monsterinfos_and_npc_and_ctrl_by_encounter(self, encounter_name):
 		result = list()

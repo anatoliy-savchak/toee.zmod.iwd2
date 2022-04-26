@@ -12,6 +12,8 @@ exported_dir = pyproduce.InfinityExportedDir('../../resources/iwd2_exp')
 exported_dir.load_toee_class_specs('../../../TemplePlus/tpdatasrc/tpgamefiles/rules/char_class')
 #exported_dir.read_cre('10HEDRON')
 
+print(f" cwd: {os.getcwd()}")
+
 #os_command = f"copy /Y {os.path.abspath(npc_template_file)} {os.path.abspath(out_npcs_file)}"
 #print(os_command)
 #os.popen(os_command)
@@ -40,6 +42,9 @@ if True:
     produce_cre('10GOBAR')
     produce_cre('10GOBARD')
     produce_cre('10SAILRD')
+
+if True:
+    dialog_file.copy_sound_files("D:\\IE\\Resources\\IWD2\\WAV", "D:\\Temple\\Temple of Elemental Evil.template\\modules\\zmod_iwd2_core\\sound\\speech\\01001")
     
 
 if True:

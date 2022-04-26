@@ -259,6 +259,9 @@
     <Compile Include="zmod_iwd2_core\scr\tpModifiers\wand_attack.py" />
     <Compile Include="zmod_iwd2_core\scr\tpModifiers\weapon_damage_dice.py" />
     <Compile Include="zmod_iwd2_core\scr\utils_conds.py" />
+    <Compile Include="zmod_iwd2_core\scr\utils_inf.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="zmod_iwd2_core\scr\utils_inventory_source.py" />
     <Compile Include="zmod_iwd2_core\scr\utils_item.py" />
     <Compile Include="zmod_iwd2_core\scr\utils_locks.py" />

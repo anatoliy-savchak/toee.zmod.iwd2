@@ -36,7 +36,7 @@ class ProduceNPC:
 
     def _add_line(self, line):
         self.lines_script.append(self.current_indent + line)
-        return
+        return len(self.lines_script) - 1
 
     def _indent(self, forward: bool):
         if not forward:

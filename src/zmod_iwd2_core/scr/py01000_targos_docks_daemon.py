@@ -49,6 +49,7 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		self.place_portals()
 		self.place_doors()
 		self.place_npcs()
+		#self.iSetGlobal(name='Know_Hedron', area='GLOBAL', value=1)
 		return
 
 	def place_encounters_next(self):

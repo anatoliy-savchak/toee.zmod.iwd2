@@ -1,13 +1,21 @@
 import toee
 import debug
-import inspect
+import inspect, itertools
 import utils_storage
 import utils_inf
+import utils_pc
+import utils_item
+import const_toee
 
 __metaclass__ = type
 
 def get_globals():
-	return utils_storage.obj_storage_by_id("globals").data
+	data = utils_storage.obj_storage_by_id("globals").data
+	#result = data.get("globals")
+	#if result is None:
+	#	result = dict()
+	#	data["globals"] = result
+	return data #result
 
 class InfScriptSupport:
 	def _gnpc(self):
@@ -28,6 +36,11 @@ class InfScriptSupport:
 			g[name] = 0
 			v = 0
 		return v
+
+	def _set_global(self, name, area, value):
+		g = self._get_globals(area)
+		g[name] = value
+		return
 
 	def _get_ie_object(self, name):
 		# returns (npc, ctrl) if known
@@ -73,6 +86,19 @@ class InfScriptSupport:
 		"""
 		global_value = self._ensure_global(name, area)
 		return global_value < value
+
+	#@dump_args
+	def iSetGlobal(self, name, area, value):
+		""" 
+		30 SetGlobal(S:Name*,S:Area*,I:Value*)
+		This action sets a variable (specified by name) in the scope (specified by area) to the value (specified by value).
+		"""
+		print("setting {} {} = {}".format(area, name, value))
+		self._set_global(name, area, value)
+		g = self._get_globals(area)
+		print("got {} {} = {}".format(area, name, g[name]))
+		return
+
 
 	def iSubrace(self, obj_name, subrace_names):
 		""" 
@@ -149,6 +175,55 @@ class InfScriptSupport:
 				return level > value
 		return False
 
+	def iFadeToColor(self, point_str, value):
+		""" 
+		202 FadeToColor(P:Point*,I:Blue*) Variants: [BG1/BG2/BGEE/IWD1/IWD2] [PST]
+		This action will fade the screen. The point parameter is given in [x.y] format with the x coordinate specifying the number of AI 
+		updates (which default to 15 per second) to take to complete the fade action.
+		"""
+		# do nothing
+		return
+
+	def iFadeFromColor(self, point_str, value):
+		""" 
+		203 FadeFromColor(P:Point*,I:Blue*) Variants: [BG1/BG2/BGEE/IWD1/IWD2] [PST]
+		This action will unfade the screen. The point parameter is given in [x.y] format with the x coordinate specifying 
+		the number of AI updates (which default to 15 per second) to take to complete the fade action.
+		"""
+		# do nothing
+		return
+
+	def iAddXpVar(self, difficulty_str, value):
+		""" 
+		238 AddXPVar(S:VarTableEntry*,I:Strref*) Variants: [IWD1/IWD2] 
+		"""
+		utils_pc.pc_award_experience_party(value, 1) # TODO verify that it's per party
+		return
+
+	def iRestUntilHealed(self):
+		""" 
+		258 RestUntilHealed() Variants: [IWD1/IWD2] [BG1/BG2/BGEE/PST]
+		This action rests the party until all PCs are fully healed. Healing Spells are cast by the party at the start of each rest period except the first.
+		"""
+		# TODO TEMPLE+
+		return
+
+	def iGiveItemCreate(self, proto, target_obj_name, usage1 = 0, usage2 = 0, usage3 = 0):
+		""" 
+		140 GiveItemCreate(S:ResRef*,O:Object*,I:Usage1*,I:Usage2*,I:Usage3*)
+		This action creates the item specified by the resref parameter on the creature specified by the object parameter, with quantity/charges controlled by the usage parameters. 
+		"""
+		target, ctrl = self._get_ie_object(target_obj_name)
+		if target:
+			if isinstance(proto, str):
+				if proto == "Misc07": # gold
+					utils_pc.pc_party_receive_money_and_print(usage1 * const_toee.gp)
+			else:
+				item = utils_item.item_create_in_inventory2(proto, target, 0, None)
+
+		# TODO
+		return
+
 class InfScriptSupportNPC(InfScriptSupport):
 	def _gtriggerer(self):
 		return toee.PyObjHandle()
@@ -171,7 +246,10 @@ class InfScriptSupportNPC(InfScriptSupport):
 		NB. NumTimesTalkedTo seems to increment when a PC initiates conversion with an NPC, or an NPC initiates conversation with a PC.
 		NumTimesTalkedTo does not seem to increment for force-talks, interactions, interjections and self-talking.
 		"""
-		result = int(self._gnpc().has_met(self._gtriggerer()))
+		npc = self._gnpc()
+		triggerer = self._gtriggerer()
+		result = npc.has_met(triggerer)
+		print("has_met = {} for {} to {}".format(result, npc, triggerer))
 		if num:
 			if num > 1: 
 				print("{} ({}) -- num is greater than 1, not supported!".format(inspect.stack()[0][3]), num)
@@ -184,13 +262,30 @@ class InfScriptSupportNPC(InfScriptSupport):
 		0x403A NumTimesTalkedToGT(I:Num*)
 		Returns true only if the player's party has spoken to the active CRE more than the number of times specified.
 		"""
-		result = not self._gnpc().has_met(self._gtriggerer())
+		npc = self._gnpc()
+		triggerer = self._gtriggerer()
+		result = npc.has_met(triggerer)
+		print("has_met = {} for {} to {}".format(result, npc, triggerer))
 		if num:
 			if num > 1: 
 				print("{} ({}) -- num is greater than 1, not supported!".format(inspect.stack()[0][3]), num)
 				debug.breakp("")
 		result = int(result) > num
 		return result
+
+	def iGiveItem(self, proto, target_obj_name):
+		""" 
+		15 GiveItem(S:Object*,O:Target*)
+		This action instructs the active creature to give the specified item (parameter 1) to the specified 
+		target (parameter 2). The active creature must possess the item to pass it. 
+		"""
+		target, ctrl = self._get_ie_object(target_obj_name)
+		if target:
+			npc = self._gnpc()
+			item = npc.item_find_by_proto(proto)
+			if item:
+				target.item_get(item)
+		return
 
 class InfScriptSupportDaemon(InfScriptSupport):
 	def _get_globals(self, area):

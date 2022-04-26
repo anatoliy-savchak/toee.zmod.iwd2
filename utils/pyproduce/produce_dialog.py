@@ -188,11 +188,11 @@ class ProduceNPCDialog:
 
         self._add_line("def dialog_test_do(self, npc, pc, index):")
         self.parent._indent(True)
-        #self._add_line(f"# {self.dialog_name}")
         #self._add_line(f'print("dialog_test_do {self.dialog_name}")')
         self._add_line("assert isinstance(npc, toee.PyObjHandle)")
         self._add_line("assert isinstance(pc, toee.PyObjHandle)")
         self._add_line("assert isinstance(index, int)")
+        self._add_line(f"# {self.dialog_name}")
         self._add_line("")
 
         _iff = "if"

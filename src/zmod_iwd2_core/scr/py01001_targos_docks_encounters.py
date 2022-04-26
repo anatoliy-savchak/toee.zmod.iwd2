@@ -194,6 +194,7 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 		assert isinstance(npc, toee.PyObjHandle)
 		assert isinstance(pc, toee.PyObjHandle)
 		assert isinstance(index, int)
+		# 10HEDRON
 		
 		if index == 0:
 			# Global("Firtha_Dead", "GLOBAL", 0)
@@ -919,6 +920,7 @@ class Ctrl10ELDGUL(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		assert isinstance(npc, toee.PyObjHandle)
 		assert isinstance(pc, toee.PyObjHandle)
 		assert isinstance(index, int)
+		# 10ELDGUL
 		
 		return False # dialog_test_do
 	
@@ -1057,6 +1059,7 @@ class Ctrl10SCREED(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		assert isinstance(npc, toee.PyObjHandle)
 		assert isinstance(pc, toee.PyObjHandle)
 		assert isinstance(index, int)
+		# 10SCREED
 		
 		return False # dialog_test_do
 	
@@ -1224,6 +1227,7 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 		assert isinstance(npc, toee.PyObjHandle)
 		assert isinstance(pc, toee.PyObjHandle)
 		assert isinstance(index, int)
+		# 10REIG
 		
 		if index == 0:
 			# !SubRace(Protagonist, ELF_DROW)
@@ -1750,6 +1754,7 @@ class Ctrl10JON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 		assert isinstance(npc, toee.PyObjHandle)
 		assert isinstance(pc, toee.PyObjHandle)
 		assert isinstance(index, int)
+		# 10JON
 		
 		if index == 0:
 			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
@@ -2014,6 +2019,7 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 		assert isinstance(npc, toee.PyObjHandle)
 		assert isinstance(pc, toee.PyObjHandle)
 		assert isinstance(index, int)
+		# 10BROGAN
 		
 		if index == 0:
 			# Global("Know_Iron_Collar", "GLOBAL", 0)
@@ -2625,6 +2631,7 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 		assert isinstance(npc, toee.PyObjHandle)
 		assert isinstance(pc, toee.PyObjHandle)
 		assert isinstance(index, int)
+		# 10JORUN
 		
 		if index == 0:
 			# Global("Jorun_Rest", "GLOBAL", 0)

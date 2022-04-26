@@ -60,6 +60,10 @@ class InfScriptSupport:
 		elif _name == "protagonist": # not sure, maybe either a leader or first PC TODO
 			npc = self._gnpc()
 			ctrl = self
+		else:
+			err = "Unknown objname: {}".format(name)
+			print(err)
+			debug.breakp("_get_ie_object")
 		return (npc, ctrl)
 
 	def _hp(self, obj_name):
@@ -68,6 +72,17 @@ class InfScriptSupport:
 		if obj:
 			result = obj.stat_level_get(toee.stat_hp_current)
 		return result
+
+	def _skill(self, obj_name, skill_name):
+		obj, ctrl = self._get_ie_object(obj_name)
+		result = 0
+		if obj:
+			stat = utils_inf.iwd2_skill_convert(skill_name)
+			if not stat is None:
+				result = obj.stat_level_get(stat)
+		return result
+
+	############# TRIGGERS
 
 	def iGlobal(self, name, area, value):
 		""" 
@@ -106,19 +121,28 @@ class InfScriptSupport:
 		return
 
 
-	def iSubrace(self, obj_name, subrace_names):
+	def iSubRace(self, obj_name, subrace_names):
 		""" 
 		0x40CD SubRace(O:Object*,I:SubRace*SubRace)
 		"""
-		# TODO
-		return False
+		# IMPROVE
+		race_name = subrace_names.split("_", 1)[0]
+		return self.iRace(obj_name, race_name)
 
-	def iRace(self, obj_name, subrace_names):
+	def iSubrace(self, obj_name, subrace_names): return self.iSubRace(obj_name, subrace_names)
+
+	def iRace(self, obj_name, race_names):
 		""" 
 		0x4017 Race(O:Object*,I:Race*Race)
 		Returns true only if the Race of the specified object is the same as that specified by the 2nd parameter.
 		"""
-		# TODO
+		# IMPROVE
+		race_id = utils_inf.iwd2_race_convert(race_names)
+		if not race_id is None:
+			obj, ctrl = self._get_ie_object(obj_name)
+			if obj:
+				orace = obj.obj_get_int(toee.obj_f_critter_race)
+				return race_id == orace
 		return False
 	
 	def iHP(self, obj_name, hp):
@@ -180,6 +204,55 @@ class InfScriptSupport:
 				level = npc.stat_level_get(tup[0])
 				return level > value
 		return False
+
+	def CheckSkill(self, obj_name, value, statname):
+		""" 
+		0x40E6 CheckSkill(O:Object*,I:Value*,I:SkillNum*Skills)
+		"""
+		return self._skill(obj_name, statname) == value
+
+	def iCheckSkillGT(self, obj_name, value, statname):
+		""" 
+		0x40E7 CheckSkillGT(O:Object*,I:Value*,I:SkillNum*Skills)
+		"""
+		return self._skill(obj_name, statname) > value
+
+	def iCheckSkillLT(self, obj_name, value, statname):
+		""" 
+		0x40E8 CheckSkillLT(O:Object*,I:Value*,I:SkillNum*Skills)
+		"""
+		return self._skill(obj_name, statname) < value
+
+	def iKit(self, obj_name, statname):
+		""" 
+		0x40BB Kit(O:Object*,I:Kit*KIT)
+		NT Returns true only if the specified object is of the kit specified.
+		NB. A creature's assigned kit is stored as a dword, however the Kit() trigger only checks the upper word. 
+		This, in conjunction with various incorrect values in the game cre files, and an incorrect kits.ids file, 
+		means the Kit() trigger can often fail. For optimal usage, the default kit.ids file should be replaced 
+		with the updated one listed in the BG2: ToB ids page.
+		"""
+
+		result = False
+		npc, ctrl = self._get_ie_object(obj_name)
+		if npc:
+			result = utils_inf.iwd2_kit_has(statname, npc)
+		return result
+
+	def iAlignment(self, obj_name, statname, value):
+		""" 
+		0x400A Alignment(O:Object*,I:Alignment*Align)
+		Returns true only if the alignment of the specified object matches that in the second parameter.
+		"""
+
+		result = False
+		npc, ctrl = self._get_ie_object(obj_name)
+		if npc:
+			v = npc.obj_get_int(toee.obj_f_critter_alignment)
+			result = utils_inf.iwd2_alignment_equals(statname, npc)
+		return result
+
+	############# ACTIONS
 
 	def iFadeToColor(self, point_str, value):
 		""" 

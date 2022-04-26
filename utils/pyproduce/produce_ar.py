@@ -93,7 +93,7 @@ class ProduceDaemon:
             if not hidden:
                 if ctrl_class:
                     add_line(i_code+f'ctrl_class, loc = {class_file}.{ctrl_class},  utils_obj.sec2loc({int(x)}, {int(y)})')
-                    add_line(i_code+f'self.create_lib_foe(loc, ctrl_class, {direction}, "", "{name}", ctrl_class.get_class_faction(), 0, 1)')
+                    add_line(i_code+f'self.create_npc_at(loc, ctrl_class, {direction}, "{name}", 0, 1)')
             add_line(i_code)
         return
 

@@ -889,7 +889,7 @@ class Ctrl10ELDGUL(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		while True:
 			print("STATE 0")
 			# True()
-			if T:
+			if True:
 				line_id = 400 # Can't stop t'bandy words with ye; Hedron be findin' *more* work for me after I finish this bit.  Fare thee well.
 				print("STATE 0: line_id = 400")
 				break
@@ -1028,7 +1028,7 @@ class Ctrl10SCREED(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		while True:
 			print("STATE 0")
 			# True()
-			if T:
+			if True:
 				line_id = 460 # Was good havin' ye with us, even for only a short time.  Hope fortune's wind fills yer sails, friend.
 				print("STATE 0: line_id = 460")
 				break
@@ -1942,7 +1942,7 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 		while True:
 			print("STATE 0")
 			# True()
-			if T:
+			if True:
 				line_id = 880 # Halt!  Identify yourself!
 				print("STATE 0: line_id = 880")
 				break

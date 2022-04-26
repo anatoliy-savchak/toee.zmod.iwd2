@@ -1,5 +1,5 @@
 import toee, debug
-import ctrl_behaviour, inf_scripting, ctrl_daemon
+import ctrl_behaviour, inf_scripting, ctrl_daemon, utils_storage
 
 __metaclass__ = type
 
@@ -23,6 +23,13 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		self.vars["attachee"] = self.npc_get() if not clear else None
 		self.vars["triggerer"] = toee.game.leader if not clear else None
 		return
+
+	def set_alias(self, alias, npc):
+		self.vars["alias"] = alias
+		o = utils_storage.obj_storage(npc)
+		o.alias = alias
+		return
+
 
 	def dialog(self, attachee, triggerer):
 		assert isinstance(attachee, toee.PyObjHandle)

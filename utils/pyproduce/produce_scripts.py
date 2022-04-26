@@ -83,7 +83,7 @@ def reassamble_call(line: str):
             print(f"Func not implemented: {funct_name} => {line}")
     else:
         if line == "True()":
-            return "True"
+            return ("True", None, None)
         print(f"Unparsed: {line}")
         return (line, funct_name, func_args)
     result = "self." + result 

@@ -2,6 +2,7 @@ from asyncore import write
 from importlib.resources import path
 import json
 import os
+import inf_commands
 
 class InfinityExportedDir:
     def __init__(self, dir: str) -> None:
@@ -21,6 +22,7 @@ class InfinityExportedDir:
 
         self.setup_elements()
         self.journal = None
+        self.commands = inf_commands.InfCommands()
         return
 
     @staticmethod

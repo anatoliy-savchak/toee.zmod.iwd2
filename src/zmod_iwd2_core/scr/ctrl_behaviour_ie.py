@@ -78,3 +78,11 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 			self.vars["triggerer"] = None
 		
 		return result
+
+	def critter_dying(self, attachee, triggerer):
+		super(CtrlBehaviourIE, self).critter_dying(attachee, triggerer)
+		if self.vars.get("critical_path"):
+			# that critter should not die!
+			# see iSetCriticalPathObject
+			toee.game.moviequeue_play_end_game()
+		return

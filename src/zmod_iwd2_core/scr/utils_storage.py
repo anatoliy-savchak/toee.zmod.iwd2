@@ -186,6 +186,9 @@ class Storage(object):
 	def saveObjectStorage(dirname, n, v):
 		if (v is None): return 0
 		fileName = n + ".json"
+		if debugg.DEBUG_STORAGE_USE_ALIAS:
+			if v.alias:
+				fileName = v.alias + ".json"
 		filePath = os.path.join(dirname, fileName)
 		if (debugg.DEBUG_STORAGE_PRINT_FILE):
 			print("Saving {}...".format(fileName))

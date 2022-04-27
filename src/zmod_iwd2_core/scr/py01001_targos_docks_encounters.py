@@ -1517,7 +1517,7 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			
 		elif index == 8:
 			# SetCriticalPathObject("Reig",FALSE)
-			self.iSetCriticalPathObject("Reig", "FALSE")
+			self.iSetCriticalPathObject("Reig", False)
 			# 531: Continue
 			
 		elif index == 9:
@@ -1527,12 +1527,12 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			
 		elif index == 10:
 			# GiveItem("00Leat01", Protagonist)
-			self.iGiveItem("00Leat01", "Protagonist")
+			self.iGiveItem(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, "Protagonist")
 			# 591: Thanks for the blade - but we could also use some armor if we're going to be hunting goblins.
 			
 		elif index == 11:
 			# GiveItem("00Leat01", Protagonist)
-			self.iGiveItem("00Leat01", "Protagonist")
+			self.iGiveItem(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, "Protagonist")
 			# 592: Thanks for the blade - but we could also use some armor if we're going to be hunting goblins.
 			
 		elif index == 12:
@@ -1592,35 +1592,35 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			
 		elif index == 19:
 			# GiveItemCreate("00Leat01", Protagonist, 0, 0, 0)
-			GiveItemCreate("const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, "Protagonist", 0, 0, 0)
 			# GiveItemCreate("00Helm01", Protagonist, 0, 0, 0)
-			GiveItemCreate("const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, "Protagonist", 0, 0, 0)
 			# GiveItemCreate("00Dagg01", Protagonist, 0, 0, 0)
-			GiveItemCreate("const_proto_weapon.PROTO_WEAPON_DAGGER", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_DAGGER, "Protagonist", 0, 0, 0)
 			# GiveItemCreate("00ax1h11", Protagonist, 0, 0, 0)
-			GiveItemCreate("const_proto_weapon.PROTO_WEAPON_HANDAXE", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_HANDAXE, "Protagonist", 0, 0, 0)
 			# 603: I mean no disrespect to your fellow soldier, but we could also use any of the equipment your fallen comrade Brohn had, if any.
 			
 		elif index == 20:
 			# GiveItemCreate("00Leat01", Protagonist, 0, 0, 0)
-			GiveItemCreate("const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, "Protagonist", 0, 0, 0)
 			# GiveItemCreate("00Helm01", Protagonist, 0, 0, 0)
-			GiveItemCreate("const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, "Protagonist", 0, 0, 0)
 			# GiveItemCreate("00Dagg01", Protagonist, 0, 0, 0)
-			GiveItemCreate("const_proto_weapon.PROTO_WEAPON_DAGGER", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_DAGGER, "Protagonist", 0, 0, 0)
 			# GiveItemCreate("00ax1h11", Protagonist, 0, 0, 0)
-			GiveItemCreate("const_proto_weapon.PROTO_WEAPON_HANDAXE", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_HANDAXE, "Protagonist", 0, 0, 0)
 			# 604: I mean no disrespect to your fallen friend, but we could also use any of the equipment your fallen comrade Brohn had, if any.
 			
 		elif index == 21:
 			# GiveItemCreate("00Leat01", Protagonist, 0, 0, 0)
-			GiveItemCreate("const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, "Protagonist", 0, 0, 0)
 			# GiveItemCreate("00Helm01", Protagonist, 0, 0, 0)
-			GiveItemCreate("const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, "Protagonist", 0, 0, 0)
 			# GiveItemCreate("00Dagg01", Protagonist, 0, 0, 0)
-			GiveItemCreate("const_proto_weapon.PROTO_WEAPON_DAGGER", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_DAGGER, "Protagonist", 0, 0, 0)
 			# GiveItemCreate("00ax1h11", Protagonist, 0, 0, 0)
-			GiveItemCreate("const_proto_weapon.PROTO_WEAPON_HANDAXE", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_HANDAXE, "Protagonist", 0, 0, 0)
 			# 611: Without arms and armor, both our corpses will lie next to his soon enough.  Brohn's equipment may give us the... edge... we need to drive the goblins back, so make your choice.
 			
 		return # dialog_action_do
@@ -1813,14 +1813,14 @@ class Ctrl10JON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 		
 		if index == 0:
 			# GiveItem("00Dagg01", Protagonist)
-			self.iGiveItem("00Dagg01", "Protagonist")
+			self.iGiveItem(const_proto_weapon.PROTO_WEAPON_DAGGER, "Protagonist")
 			# SetGlobal("Jon_Has_No_Pants", "GLOBAL", 1)
 			self.iSetGlobal("Jon_Has_No_Pants", "GLOBAL", 1)
 			# 801: We'll see what we can do.  In the meantime, do you have an extra blade you can spare?
 			
 		elif index == 1:
 			# GiveItem("00Dagg01", Protagonist)
-			self.iGiveItem("00Dagg01", "Protagonist")
+			self.iGiveItem(const_proto_weapon.PROTO_WEAPON_DAGGER, "Protagonist")
 			# SetGlobal("Jon_Has_No_Pants", "GLOBAL", 1)
 			self.iSetGlobal("Jon_Has_No_Pants", "GLOBAL", 1)
 			# 802: We'll see what we can do.  In the meantime, do you have an extra blade you can spare?
@@ -2715,19 +2715,19 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			
 		elif index == 16:
 			# PartyHasItem("00helm05")
-			if self.iPartyHasItem("00helm05"):
+			if self.iPartyHasItem(const_proto_cloth.PROTO_CLOTH_HELM_GREAT):
 				return True # 1171: We already opened your chest - do you mind if we put your equipment to use?
 			
 		elif index == 17:
 			# PartyHasItem("00helm05")
 			# !ClassEx(Protagonist, Paladin)
-			if self.iPartyHasItem("00helm05") \
+			if self.iPartyHasItem(const_proto_cloth.PROTO_CLOTH_HELM_GREAT) \
 				 and not self.iClassEx("Protagonist", "Paladin"):
 				return True # 1172: Uh, the goblins may have looted it already.  That would be terrible. What's in this chest of yours?
 			
 		elif index == 18:
 			# !PartyHasItem("00helm05")
-			if not self.iPartyHasItem("00helm05"):
+			if not self.iPartyHasItem(const_proto_cloth.PROTO_CLOTH_HELM_GREAT):
 				return True # 1173: What's in the chest?
 			
 		elif index == 19:
@@ -2742,13 +2742,13 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			
 		elif index == 21:
 			# !PartyHasItem("00helm05")
-			if not self.iPartyHasItem("00helm05"):
+			if not self.iPartyHasItem(const_proto_cloth.PROTO_CLOTH_HELM_GREAT):
 				return True # 1201: If we could get your chest open, would you mind if we used your equipment?
 			
 		elif index == 22:
 			# PartyHasItem("00helm05")
 			# !ClassEx(Protagonist, Paladin)
-			if self.iPartyHasItem("00helm05") \
+			if self.iPartyHasItem(const_proto_cloth.PROTO_CLOTH_HELM_GREAT) \
 				 and not self.iClassEx("Protagonist", "Paladin"):
 				return True # 1202: Uh, if we could, say, get your chest open, would you mind if we used your equipment?
 			

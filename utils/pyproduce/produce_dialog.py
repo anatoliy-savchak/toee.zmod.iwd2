@@ -257,12 +257,12 @@ class ProduceNPCDialog:
 
     def calc_trigger(self, trigger: str):
         trigger_lines = produce_scripts.condition_split(trigger)
-        out_lines = produce_scripts.transate_trigger_lines(trigger_lines)
+        out_lines = produce_scripts.transate_trigger_lines(trigger_lines, self.parent.exported_dir)
         return trigger_lines, out_lines
 
     def calc_actions(self, action: str):
         action_lines = produce_scripts.condition_split(action)
-        out_lines = produce_scripts.transate_action_lines(action_lines)
+        out_lines = produce_scripts.transate_action_lines(action_lines, self.parent.exported_dir)
         return action_lines, out_lines
 
     def process_phrase_dialog(self, phrase: dict, check_trigger: bool):

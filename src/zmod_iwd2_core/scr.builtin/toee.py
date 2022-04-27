@@ -812,8 +812,23 @@ class game(object):
 		""" game.get_mesline(file_path_rel: str, line_id: int) -> str"""
 		return "str"
 
+	@staticmethod
+	def moviequeue_add(movie_id):
+		""" game.moviequeue_add(movie_id: int): -> None"""
+		return
+
+	@staticmethod
+	def moviequeue_play():
+		""" game.moviequeue_play(): -> None"""
+		return
+
+	@staticmethod
+	def moviequeue_play_end_game():
+		""" game.moviequeue_play_end_game(): -> None"""
+		return
+
 def anyone(targetObjs, methodName, methodArg):
-	return PyObjHandle()
+	return False
 
 class PyObjScripts(object):
 	def __getitem__(self, key):

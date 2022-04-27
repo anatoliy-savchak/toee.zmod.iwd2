@@ -1,5 +1,8 @@
+import sys
+import inspect
 import ast
 import produce_items
+import pyproduce
 
 _inf_scripting_lines = None
 
@@ -14,10 +17,11 @@ def init_inf_scripting_lines():
 
     return
 
-def transate_trigger_lines(trigger_lines: list):
+def transate_trigger_lines(trigger_lines: list, exported_dir: pyproduce.InfinityExportedDir):
     lines = list()
     for i, trigger_line in enumerate(trigger_lines):
-        line = transate_trigger_line(trigger_line)
+        #line = transate_trigger_line(trigger_line)
+        line = ScriptTran.translate_script_line(trigger_line, exported_dir)
         if i == 0:
             line = "if " + line
         else:
@@ -31,10 +35,11 @@ def transate_trigger_lines(trigger_lines: list):
 
     return lines
 
-def transate_action_lines(action_lines: list):
+def transate_action_lines(action_lines: list, exported_dir: pyproduce.InfinityExportedDir):
     lines = list()
     for i, action_line in enumerate(action_lines):
-        line = transate_trigger_line(action_line)
+        #line = transate_trigger_line(action_line)
+        line = ScriptTran.translate_script_line(action_line, exported_dir)
         lines.append(line)
 
     return lines
@@ -49,6 +54,7 @@ def transate_trigger_line(trigger_line: str):
     line_tup = reassamble_call(trigger_line)
     line_tup = process_func(line_tup)
     trigger_line = line_tup[0]
+    #trigger_line = ScriptTran.translate_script_line(trigger_line)
 
     line += trigger_line
 
@@ -67,14 +73,20 @@ def reassamble_call(line: str):
         func_args = list()
         for arg in tree.body[0].value.args:
             s = ""
+            sarg = None
             if isinstance(arg, ast.Name):
                 s = '"' + arg.id + '"'
+                sarg = arg.id
             else:
                 if isinstance(arg.value, int):
                     s = str(arg.value)
+                    sarg = arg.value
                 else:
+                    if funct_name == "ClassEx":
+                        funct_name = "ClassEx"
                     s = '"' + str(arg.value) + '"'
-            func_args.append(s)
+                    sarg = arg.value
+            func_args.append(sarg)
             result += comma + s
             comma = ", "
         result += ")"
@@ -154,7 +166,219 @@ def process_func(line_tup: tuple):
                             args.append(f'"{proto_const}"')
                         else:
                             args.append(a)
-                    line = f'{line_tup[1]}({", ".join(args)})' 
+                    line = f'{line_tup[1]}({", ".join([str(v or "") for v in args])})' 
                     result = (line, line_tup[1], line_tup[2])
 
     return result
+
+class ScriptTran:
+    def __init__(self, line: str, exported_dir: pyproduce.InfinityExportedDir):
+        self.line = line
+        self.exported_dir = exported_dir
+        return
+
+    @staticmethod
+    def translate_script_line(aline: str, exported_dir: pyproduce.InfinityExportedDir):
+        result = None
+        prefix = ""
+        if aline and aline[0] == "!":
+            prefix = "not "
+            aline = aline.removeprefix("!")
+
+        while True:
+            lline = aline.lower()
+            # first check simple things like True()
+            whole_class = next((cls for name, cls in inspect.getmembers(sys.modules[__name__], inspect.isclass) if issubclass(cls, ScriptTran) 
+                and cls.is_whole_liner() and lline in cls.whole_lines()), None)
+            if whole_class:
+                result = whole_class(aline, exported_dir).do_translate_script_line(aline)
+                break
+
+            func_classes = [cls for name, cls in inspect.getmembers(sys.modules[__name__], inspect.isclass) if issubclass(cls, ScriptTran) and cls.is_func_liner()]
+            if func_classes:
+                func_name, args = ScriptTran._parse_func(aline)
+                func_name_lo = func_name.lower()
+                if func_name_lo == "giveitemcreate":
+                    func_name_lo = func_name_lo
+                cls = next((cls for cls in func_classes if func_name_lo in cls.supports_func()), None)
+                if cls:
+                    o = cls(aline, exported_dir)
+                    result = o.translate_func(func_name, args)
+                    break
+                cls = next((cls for cls in func_classes if cls.supports_funcs_default()), None)
+                if cls:
+                    o = cls(aline, exported_dir)
+                    result = o.translate_func(func_name, args)
+                    break
+            break
+        if result is None:
+            raise Exception("No line support!")
+        return prefix + result
+
+    @staticmethod
+    def _parse_func(line: str):
+        line = line.replace("[", '"[').replace("]", ']"')
+        tree = ast.parse(line)
+        f = tree.body[0].value.func
+        funct_name = None
+        func_args = None
+        if isinstance(f, ast.Name):
+            funct_name = f.id
+            func_args = list()
+            for arg in tree.body[0].value.args:
+                func_args.append(arg)
+            return (funct_name, func_args)
+        else:
+            raise Exception("Not func!")
+        return
+
+    @classmethod
+    def is_whole_liner(cls): return False
+
+    @classmethod
+    def is_func_liner(cls): return False
+
+    @classmethod
+    def whole_lines(cls): return (None, )
+
+    @classmethod
+    def supports_func(cls): return (None, )
+
+    @classmethod
+    def supports_funcs_default(cls): return False
+
+    def do_translate_script_line(self, aline: str): return
+
+    def translate_func(self, func_name: str, args: list): return
+
+class ScriptTran_True(ScriptTran):
+    @classmethod
+    def is_whole_liner(cls): return True
+
+    @classmethod
+    def whole_lines(cls): return ("true()", )
+
+    def do_translate_script_line(self, aline: str): return "True"
+
+class ScriptTranFuncs(ScriptTran):
+    def __init__(self, line: str, exported_dir: pyproduce.InfinityExportedDir):
+        super().__init__(line, exported_dir)
+        self.args = None
+        return
+
+    @classmethod
+    def is_func_liner(cls): return True
+
+    def translate_func(self, func_name: str, args: list): 
+        func_info = next((func_info for func_info in self.exported_dir.commands.commands if func_info.func_name.lower() == func_name.lower()), None)
+        if not func_info:
+            raise Exception(f"No info for func {func_name}")
+        return self.do_translate_func(func_name, args, func_info)
+    
+    def do_translate_func(self, func_name: str, args: list, func_info): 
+        strargs = list()
+        self.args = args
+        for index, arg in enumerate(args):
+            arg_info = func_info.args[index]
+            s = self.do_translate_param(arg, index, arg_info)
+            strargs.append(s)
+        result = "self.i" + func_name + "(" + ", ".join(strargs) + ")"
+
+        if not check_func_implemented("i" + func_name):
+            print(f"Func not implemented: {func_name} => {self.line}")
+
+        return result
+
+    def do_translate_param(self, arg, index: int, arg_info):
+        w = "'" if index in self.literal_params_to_wrap() else ""
+        s = ""
+        if isinstance(arg, ast.Name):
+            s = self.d_translate_param_name(arg, index)
+        else:
+            if isinstance(arg.value, int):
+                s = str(arg.value)
+            else:
+                s = '"' + w + str(arg.value) + w + '"'
+        return s
+
+    def d_translate_param_name(self, arg: ast.Name, index: int):
+        s = arg.id
+        if s.lower() == 'false': return "False"
+        elif s.lower() == 'true': return "True"
+        return '"' + arg.id + '"'
+
+    @classmethod
+    def literal_params_to_wrap(cls): return(None, )
+
+class ScriptTranFuncsAny(ScriptTranFuncs):
+    @classmethod
+    def is_func_liner(cls): return True
+
+    @classmethod
+    def supports_funcs_default(cls): return True
+
+class ScriptTranFuncsItem(ScriptTranFuncs):
+    @classmethod
+    def params_to_itemize(): return (None, ) # not sure
+
+    def do_translate_func(self, func_name: str, args: list, func_info): 
+        line = self.do_process_item(func_name, args, func_info, index_with_item = 0, make_create = True, make_proto = True)
+        if not line is None:
+            return line
+
+        return super().do_translate_func(func_name, args, func_info)
+
+    def do_process_item(self, func_name: str, args: list, func_info, index_with_item: int, make_create: bool, make_proto: bool):
+        item_file_name = self.do_translate_param(args[index_with_item], index_with_item, func_info.args[index_with_item])
+        item_file_name = item_file_name.replace('"', '')
+        if item_file_name == "00Leat01":
+            print("")
+        item_cls = produce_items.ItemBase.find_item_class(item_file_name)
+        if item_cls:
+            if make_create:
+                line = item_cls.give_item_create_line(item_file_name, self.do_translate_param(args[2], 2, func_info.args[2]) if len(args) > 2 else 0)
+                if not line is None:
+                    return line
+
+            if make_proto:
+                proto_const = item_cls.get_proto_const()
+                if proto_const:
+                    args2 = list()
+                    for i, a in enumerate(args):
+                        if i == 0:
+                            args2.append(f'{proto_const}')
+                        else:
+                            args2.append(self.do_translate_param(a, i, func_info.args[i]))
+                    line = f'self.i{func_name}({", ".join([str(v or "") for v in args2])})' 
+                    return line
+        print(f"Not supported func {func_name} param: {item_file_name} => {self.line}")
+        return
+
+class ScriptTranFuncsItem_GiveItemCreate(ScriptTranFuncsItem):
+    @classmethod
+    def params_to_itemize(cls): return (0, )
+
+    @classmethod
+    def supports_func(cls): return ("GiveItemCreate".lower(), "GiveItem".lower())
+
+class ScriptTranFuncsItem_GiveItemEval(ScriptTranFuncsItem):
+    @classmethod
+    def params_to_itemize(cls): return (0, )
+
+    def do_translate_func(self, func_name: str, args: list, func_info): 
+        line = self.do_process_item(func_name, args, func_info, index_with_item = 0, make_create = False, make_proto = True)
+        if not line is None:
+            return line
+
+        return super().do_translate_func(func_name, args, func_info)
+
+    @classmethod
+    def supports_func(cls): return ("PartyHasItem".lower(), "TakePartyItemNum".lower())
+
+class ScriptTranFuncsItem_Debug(ScriptTranFuncs):
+    @classmethod
+    def supports_func(cls): return ("SetCriticalPathObject".lower(), )
+
+    #def do_translate_func(self, func_name: str, args: list, func_info): return super().do_translate_func(func_name, args, func_info)
+
+    #def do_translate_param(self, arg, index: int, arg_info): return super().do_translate_param(arg, index, arg_info)

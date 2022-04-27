@@ -82,6 +82,14 @@ class InfScriptSupport:
 				result = obj.stat_level_get(stat)
 		return result
 
+	def _get_proto(self, item_name):
+		if isinstance(item_name, int):
+			return int(item_name)
+		err = "Unknown item: {}".format(item_name)
+		print(err)
+		debug.breakp("_get_proto")
+		return None
+
 	############# TRIGGERS
 
 	def iGlobal(self, name, area, value):
@@ -205,7 +213,7 @@ class InfScriptSupport:
 				return level > value
 		return False
 
-	def CheckSkill(self, obj_name, value, statname):
+	def iCheckSkill(self, obj_name, value, statname):
 		""" 
 		0x40E6 CheckSkill(O:Object*,I:Value*,I:SkillNum*Skills)
 		"""
@@ -252,6 +260,31 @@ class InfScriptSupport:
 			result = utils_inf.iwd2_alignment_equals(statname, npc)
 		return result
 
+	def iPartyHasItem(self, item_name):
+		""" 
+		0x4042 PartyHasItem(S:Item*)
+		Returns true if any of the party members have the specified item in their inventory. This trigger also checks with container items (e.g. Bags of Holding).
+		"""
+
+		result = False
+		proto = self._get_proto(item_name)
+		if not proto is None:
+			result = toee.anyone(toee.game.party, "item_find_by_proto", proto)
+		return result
+
+	def iHasItem(self, item_name, obj_name):
+		""" 
+		0x4061 HasItem(S:ResRef*,O:Object*)
+		Returns true only if the specified object has the specified item in its inventory. This trigger also checks with container items (e.g. Bags of Holding).
+		"""
+		npc, ctrl = self._get_ie_object(obj_name)
+		if npc:
+			npc = self._gnpc()
+			proto = self._get_proto(item_name)
+			item = npc.item_find_by_proto(proto)
+			return item != None
+		return
+
 	############# ACTIONS
 
 	def iFadeToColor(self, point_str, value):
@@ -287,21 +320,61 @@ class InfScriptSupport:
 		# TODO TEMPLE+
 		return
 
-	def iGiveItemCreate(self, proto, target_obj_name, usage1 = 0, usage2 = 0, usage3 = 0):
+	def iGiveItemCreate(self, item_name, obj_name, usage1 = 0, usage2 = 0, usage3 = 0):
 		""" 
 		140 GiveItemCreate(S:ResRef*,O:Object*,I:Usage1*,I:Usage2*,I:Usage3*)
 		This action creates the item specified by the resref parameter on the creature specified by the object parameter, with quantity/charges controlled by the usage parameters. 
 		"""
-		target, ctrl = self._get_ie_object(target_obj_name)
-		if target:
-			if isinstance(proto, str):
-				if proto == "Misc07": # gold
-					utils_pc.pc_party_receive_money_and_print(usage1 * const_toee.gp)
-			else:
-				item = utils_item.item_create_in_inventory2(proto, target, 0, None)
+		npc, ctrl = self._get_ie_object(obj_name)
+		if npc:
+			proto = self._get_proto(item_name)
+			#if isinstance(proto, str):
+			#	if proto == "Misc07": # gold
+			#		utils_pc.pc_party_receive_money_and_print(usage1 * const_toee.gp)
+			if not proto is None:
+				item_obj = utils_item.item_create_in_inventory2(proto, npc, 0, None)
+			#else:
+			#	item = utils_item.item_create_in_inventory2(proto, target, 0, None)
 
 		# TODO
 		return
+
+	def iSetCriticalPathObject(self, obj_name, value):
+		""" 
+		283 SetCriticalPathObject(O:Object*,I:Critical*Boolean) Variants: [IWD2] [BG1/BG2/BGEE/IWD1/PST]
+		This action sets the Critical Path flag on the specified objects to the specified value. The game ends if a creature with the Critical Path flag set is killed.
+		"""
+		npc, ctrl = self._get_ie_object(obj_name)
+		if ctrl:
+			ctrl.vars["critical_path"] = value
+		return
+
+	def iTakePartyItemNum(self, item_name, num):
+		""" 
+		204 TakePartyItemNum(S:ResRef*,I:Num*) Variants: [BG1/BG2/BGEE/IWD2] [IWD1/PST]
+		This action will remove a number of instances (specified by the Num parameter) of the specified item from the party. 
+		The items will be removed from players in order, for example; Player1 has 3 instances of “MYITEM” in their inventory, 
+		Player2 has 2 instance of “MYITEM,” and Player3 has 1 instance. If the action TakePartyItemNum(“MYITEM”, 4) is run, 
+		all 3 instances of “MYITEM” will be taken from Player1, and 1 instance will be taken from Player2. 
+		This leaves Player2 and Player3 each with one instance of “MYITEM.” If the last item of an item type stored in a container 
+		STO file is removed by this action, the amount becomes zero. Items with zero quantities cannot be seen in-game, 
+		cannot be removed by TakePartyItem, and will not count toward a container’s current item load. 
+		If the item to be taken is in a stack, and the stack is in a quickslot, the item will be removed, and the remaining stack will be placed in the inventory. 
+		If the inventory is full, the stack item will be dropped on the ground.
+		"""
+
+		proto = self._get_proto(item_name)
+		if not proto is None:
+			for pc in toee.game.party:
+				while num:
+					item = pc.item_find_by_proto(proto)
+					if item:
+						item.destroy()
+						num = num - 1
+				if not num:
+					break
+		return
+
 
 class InfScriptSupportNPC(InfScriptSupport):
 	def _gtriggerer(self):
@@ -352,7 +425,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 		result = int(result) > num
 		return result
 
-	def iGiveItem(self, proto, target_obj_name):
+	def iGiveItem(self, item_name, target_obj_name):
 		""" 
 		15 GiveItem(S:Object*,O:Target*)
 		This action instructs the active creature to give the specified item (parameter 1) to the specified 
@@ -361,9 +434,23 @@ class InfScriptSupportNPC(InfScriptSupport):
 		target, ctrl = self._get_ie_object(target_obj_name)
 		if target:
 			npc = self._gnpc()
+			proto = self._get_proto(item_name)
 			item = npc.item_find_by_proto(proto)
 			if item:
 				target.item_get(item)
+		return
+
+	def iDestroyItem(self, item_name):
+		""" 
+		169 DestroyItem(S:ResRef*)
+		This action removes a single instance of the specified item from the active creature, unless the item exists in a stack, 
+		in which case the entire stack is removed. The example script is from ar1000.bcs.
+		"""
+		npc = self._gnpc()
+		proto = self._get_proto(item_name)
+		item = npc.item_find_by_proto(proto)
+		if item:
+			item.destroy()
 		return
 
 class InfScriptSupportDaemon(InfScriptSupport):

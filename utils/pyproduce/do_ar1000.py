@@ -15,9 +15,16 @@ map_rumors_file = '../../resources/iwd2_exp/journal/journal_map.json'
 rumors_file = '../../resources/iwd2_exp/journal/journal.json'
 exported_dir = pyproduce.InfinityExportedDir('../../resources/iwd2_exp')
 exported_dir.load_toee_class_specs('../../../TemplePlus/tpdatasrc/tpgamefiles/rules/char_class')
+inf_commans_path_actions = '../../resources/iwd2_src/IDS/ACTION.IDS'
+inf_commans_path_triggers = '../../resources/iwd2_src/IDS/TRIGGER.IDS'
 #exported_dir.read_cre('10HEDRON')
 
-print(f" cwd: {os.getcwd()}")
+#print(f" cwd: {os.getcwd()}")
+for i in range(1, 20):
+    print("")
+
+print("################### START")
+
 
 journalFile = JournalFile()
 #journalFile.load_iwd_journal(rumors_file)
@@ -25,6 +32,8 @@ journalFile = JournalFile()
 #journalFile.save_map(map_rumors_file)
 journalFile.load_map(map_rumors_file)
 exported_dir.journal = journalFile
+exported_dir.commands.parse_file_actions(inf_commans_path_actions)
+exported_dir.commands.parse_file_triggers(inf_commans_path_triggers)
 
 with open(out_npcs_file, 'w') as f:
     with open(npc_template_file, 'r') as fi:

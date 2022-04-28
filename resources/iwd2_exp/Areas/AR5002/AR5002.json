@@ -1627,8 +1627,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 7
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "bubbling cauldron",
@@ -1650,8 +1651,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "ghostley_whispers",
@@ -1673,8 +1675,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 20,
       "FrequencyVariation": 10,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     }
   ],
   "variables": [],
@@ -2061,7 +2064,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "3073C2798EECA61B5542C3A14D07FFE5",
+  "Checksum": "044184019827B212E71341C6977CA0D8",
   "Filename": "AR5002.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -3693,8 +3696,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 7
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "bubbling cauldron",
@@ -3716,8 +3720,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "ghostley_whispers",
@@ -3739,8 +3744,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 20,
         "FrequencyVariation": 10,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       }
     ],
     "variables": [],
@@ -4127,7 +4133,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "3073C2798EECA61B5542C3A14D07FFE5",
+    "Checksum": "044184019827B212E71341C6977CA0D8",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

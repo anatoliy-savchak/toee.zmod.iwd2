@@ -10682,8 +10682,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 7
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "camp fire",
@@ -10705,8 +10706,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "campfire2",
@@ -10728,8 +10730,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "campfire5",
@@ -10751,8 +10754,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "campfire3",
@@ -10774,8 +10778,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "campfire4",
@@ -10797,8 +10802,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     }
   ],
   "variables": [],
@@ -18040,7 +18046,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "7586D82C626A6F44AC54EBDC4DC7BD21",
+  "Checksum": "560AECCCCB9C729540FF57C1166F09C7",
   "Filename": "AR4100.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -28727,8 +28733,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 7
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "camp fire",
@@ -28750,8 +28757,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "campfire2",
@@ -28773,8 +28781,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "campfire5",
@@ -28796,8 +28805,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "campfire3",
@@ -28819,8 +28829,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "campfire4",
@@ -28842,8 +28853,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       }
     ],
     "variables": [],
@@ -36085,7 +36097,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "7586D82C626A6F44AC54EBDC4DC7BD21",
+    "Checksum": "560AECCCCB9C729540FF57C1166F09C7",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

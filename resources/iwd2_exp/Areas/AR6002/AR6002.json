@@ -4613,7 +4613,8 @@
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
       "AmbientAppearenceSchedule": 131040,
-      "Flags": 7
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": ""
     },
     {
       "Name": "Main Loop Night",
@@ -4635,8 +4636,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -131041,
-      "Flags": 7
+      "AmbientAppearenceSchedule": 4294836255,
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "Night owls",
@@ -4658,8 +4660,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 30,
       "FrequencyVariation": 10,
-      "AmbientAppearenceSchedule": -131041,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294836255,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     }
   ],
   "variables": [],
@@ -5093,7 +5096,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "7E9B0CD1E5E80512912A5D8D1DDF6F07",
+  "Checksum": "F3C2191C76CDC740EC4B7612E3BDBB23",
   "Filename": "AR6002.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -9711,7 +9714,8 @@
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
         "AmbientAppearenceSchedule": 131040,
-        "Flags": 7
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": ""
       },
       {
         "Name": "Main Loop Night",
@@ -9733,8 +9737,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -131041,
-        "Flags": 7
+        "AmbientAppearenceSchedule": 4294836255,
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "Night owls",
@@ -9756,8 +9761,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 30,
         "FrequencyVariation": 10,
-        "AmbientAppearenceSchedule": -131041,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294836255,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       }
     ],
     "variables": [],
@@ -10191,7 +10197,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "7E9B0CD1E5E80512912A5D8D1DDF6F07",
+    "Checksum": "F3C2191C76CDC740EC4B7612E3BDBB23",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

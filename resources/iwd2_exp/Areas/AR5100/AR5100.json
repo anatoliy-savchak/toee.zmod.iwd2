@@ -2284,8 +2284,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 7
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "River",
@@ -2307,8 +2308,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "Hook Horror vox",
@@ -2330,8 +2332,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 20,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "Hook Horror clicking",
@@ -2353,8 +2356,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 20,
       "FrequencyVariation": 10,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "icecracksd",
@@ -2376,8 +2380,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 20,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     }
   ],
   "variables": [],
@@ -2790,7 +2795,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "C335BC3ED3B26D100AB74239B329B3E3",
+  "Checksum": "8554CD7E13932C1659377A7F03BC3EBB",
   "Filename": "AR5100.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -5079,8 +5084,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 7
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "River",
@@ -5102,8 +5108,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "Hook Horror vox",
@@ -5125,8 +5132,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 20,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "Hook Horror clicking",
@@ -5148,8 +5156,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 20,
         "FrequencyVariation": 10,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "icecracksd",
@@ -5171,8 +5180,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 20,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       }
     ],
     "variables": [],
@@ -5585,7 +5595,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "C335BC3ED3B26D100AB74239B329B3E3",
+    "Checksum": "8554CD7E13932C1659377A7F03BC3EBB",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

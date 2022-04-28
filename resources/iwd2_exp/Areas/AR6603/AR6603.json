@@ -774,8 +774,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 7
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "acid_loop",
@@ -797,8 +798,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "evil_whispers",
@@ -820,8 +822,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 10,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "evil_rodents",
@@ -843,8 +846,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 20,
       "FrequencyVariation": 10,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "happy_birds",
@@ -866,8 +870,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 10,
       "FrequencyVariation": 5,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "magic_tone",
@@ -889,8 +894,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "pond_loop",
@@ -912,8 +918,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     }
   ],
   "variables": [],
@@ -1223,7 +1230,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "4AF57E6DF22FCE03617E08973B88F9A1",
+  "Checksum": "25B1C1B01C01409938526B868E160BA5",
   "Filename": "AR6603.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -2002,8 +2009,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 7
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "acid_loop",
@@ -2025,8 +2033,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "evil_whispers",
@@ -2048,8 +2057,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 10,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "evil_rodents",
@@ -2071,8 +2081,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 20,
         "FrequencyVariation": 10,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "happy_birds",
@@ -2094,8 +2105,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 10,
         "FrequencyVariation": 5,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "magic_tone",
@@ -2117,8 +2129,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "pond_loop",
@@ -2140,8 +2153,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       }
     ],
     "variables": [],
@@ -2451,7 +2465,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "4AF57E6DF22FCE03617E08973B88F9A1",
+    "Checksum": "25B1C1B01C01409938526B868E160BA5",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

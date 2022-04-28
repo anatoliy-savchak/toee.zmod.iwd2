@@ -6503,7 +6503,8 @@
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
       "AmbientAppearenceSchedule": 131040,
-      "Flags": 7
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": ""
     },
     {
       "Name": "Main Loop Night",
@@ -6525,8 +6526,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -131041,
-      "Flags": 7
+      "AmbientAppearenceSchedule": 4294836255,
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "Happy Bird SS",
@@ -6549,7 +6551,8 @@
       "FrequencyBase": 20,
       "FrequencyVariation": 10,
       "AmbientAppearenceSchedule": 131040,
-      "Flags": 13
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": ""
     },
     {
       "Name": "Stream",
@@ -6571,8 +6574,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "Wind SS",
@@ -6594,8 +6598,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 10,
       "FrequencyVariation": 5,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 9
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "Owls",
@@ -6617,8 +6622,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 10,
       "FrequencyVariation": 5,
-      "AmbientAppearenceSchedule": -131041,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294836255,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "Rope Creaks",
@@ -6640,8 +6646,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "moaning",
@@ -6663,8 +6670,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 10,
       "FrequencyVariation": 5,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 9
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     }
   ],
   "variables": [],
@@ -7209,7 +7217,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "D5D2C8360944C1C97CA8E044D1B68F4D",
+  "Checksum": "7907D9E01C1188AB03C77813973A8A67",
   "Filename": "AR6000.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -13717,7 +13725,8 @@
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
         "AmbientAppearenceSchedule": 131040,
-        "Flags": 7
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": ""
       },
       {
         "Name": "Main Loop Night",
@@ -13739,8 +13748,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -131041,
-        "Flags": 7
+        "AmbientAppearenceSchedule": 4294836255,
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "Happy Bird SS",
@@ -13763,7 +13773,8 @@
         "FrequencyBase": 20,
         "FrequencyVariation": 10,
         "AmbientAppearenceSchedule": 131040,
-        "Flags": 13
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": ""
       },
       {
         "Name": "Stream",
@@ -13785,8 +13796,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "Wind SS",
@@ -13808,8 +13820,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 10,
         "FrequencyVariation": 5,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 9
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "Owls",
@@ -13831,8 +13844,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 10,
         "FrequencyVariation": 5,
-        "AmbientAppearenceSchedule": -131041,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294836255,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "Rope Creaks",
@@ -13854,8 +13868,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "moaning",
@@ -13877,8 +13892,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 10,
         "FrequencyVariation": 5,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 9
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       }
     ],
     "variables": [],
@@ -14423,7 +14439,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "D5D2C8360944C1C97CA8E044D1B68F4D",
+    "Checksum": "7907D9E01C1188AB03C77813973A8A67",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

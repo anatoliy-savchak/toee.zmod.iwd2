@@ -4461,8 +4461,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 7
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "Dripping Water Singles",
@@ -4484,8 +4485,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 10,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "dstnt axes",
@@ -4507,8 +4509,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 15,
       "FrequencyVariation": 10,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "goblins",
@@ -4530,8 +4533,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 20,
       "FrequencyVariation": 10,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     }
   ],
   "variables": [],
@@ -5198,7 +5202,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "797BFA885C5544DC6E82AE1C243CB0D6",
+  "Checksum": "214A9E1A27A2B9C615F1BA40BE6B5CE2",
   "Filename": "AR1007.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -9664,8 +9668,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 7
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "Dripping Water Singles",
@@ -9687,8 +9692,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 10,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "dstnt axes",
@@ -9710,8 +9716,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 15,
         "FrequencyVariation": 10,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "goblins",
@@ -9733,8 +9740,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 20,
         "FrequencyVariation": 10,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       }
     ],
     "variables": [],
@@ -10401,7 +10409,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "797BFA885C5544DC6E82AE1C243CB0D6",
+    "Checksum": "214A9E1A27A2B9C615F1BA40BE6B5CE2",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

@@ -13971,8 +13971,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 7
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "wind gusts",
@@ -13994,8 +13995,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 15,
       "FrequencyVariation": 5,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "birds",
@@ -14018,7 +14020,8 @@
       "FrequencyBase": 20,
       "FrequencyVariation": 10,
       "AmbientAppearenceSchedule": 131040,
-      "Flags": 13
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": ""
     },
     {
       "Name": "wolfs",
@@ -14040,8 +14043,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 10,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "ice cracking",
@@ -14063,8 +14067,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 10,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 9
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "ice cracking 2",
@@ -14086,8 +14091,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 20,
       "FrequencyVariation": 5,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 9
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     }
   ],
   "variables": [],
@@ -15007,7 +15013,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "1D55D5D25739F675DEC509037C9230BA",
+  "Checksum": "0142925410563E035640C8421E7B88DD",
   "Filename": "AR2000.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -28983,8 +28989,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 7
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "wind gusts",
@@ -29006,8 +29013,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 15,
         "FrequencyVariation": 5,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "birds",
@@ -29030,7 +29038,8 @@
         "FrequencyBase": 20,
         "FrequencyVariation": 10,
         "AmbientAppearenceSchedule": 131040,
-        "Flags": 13
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": ""
       },
       {
         "Name": "wolfs",
@@ -29052,8 +29061,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 10,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "ice cracking",
@@ -29075,8 +29085,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 10,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 9
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "ice cracking 2",
@@ -29098,8 +29109,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 20,
         "FrequencyVariation": 5,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 9
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       }
     ],
     "variables": [],
@@ -30019,7 +30031,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "1D55D5D25739F675DEC509037C9230BA",
+    "Checksum": "0142925410563E035640C8421E7B88DD",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

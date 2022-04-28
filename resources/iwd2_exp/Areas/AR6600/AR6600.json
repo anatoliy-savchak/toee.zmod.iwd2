@@ -1692,8 +1692,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 7
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "walla",
@@ -1715,8 +1716,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 5,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "mtl_mvmnt",
@@ -1738,8 +1740,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 15,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     }
   ],
   "variables": [],
@@ -2278,7 +2281,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "F0CD418F477F7F06FB756FCB5D1AC32F",
+  "Checksum": "AC4FAC9DF7A3B6997C8F9805EC204BF5",
   "Filename": "AR6600.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -3975,8 +3978,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 7
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "walla",
@@ -3998,8 +4002,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 5,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "mtl_mvmnt",
@@ -4021,8 +4026,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 15,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       }
     ],
     "variables": [],
@@ -4561,7 +4567,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "F0CD418F477F7F06FB756FCB5D1AC32F",
+    "Checksum": "AC4FAC9DF7A3B6997C8F9805EC204BF5",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

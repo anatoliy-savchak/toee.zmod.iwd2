@@ -668,8 +668,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 7
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "Veira_Cry",
@@ -691,8 +692,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 5,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 9
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "wind through window",
@@ -715,7 +717,8 @@
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
       "AmbientAppearenceSchedule": 131040,
-      "Flags": 3
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": ""
     }
   ],
   "variables": [],
@@ -1293,7 +1296,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "5EA90C10F3A9FE5C876EB0424B0F7FA4",
+  "Checksum": "CEAFC7B7F97C17CE39A7C27B27A2B470",
   "Filename": "AR1105.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -1966,8 +1969,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 7
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "Veira_Cry",
@@ -1989,8 +1993,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 5,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 9
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "wind through window",
@@ -2013,7 +2018,8 @@
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
         "AmbientAppearenceSchedule": 131040,
-        "Flags": 3
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": ""
       }
     ],
     "variables": [],
@@ -2591,7 +2597,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "5EA90C10F3A9FE5C876EB0424B0F7FA4",
+    "Checksum": "CEAFC7B7F97C17CE39A7C27B27A2B470",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

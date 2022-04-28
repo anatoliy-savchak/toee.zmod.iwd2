@@ -3916,7 +3916,8 @@
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
       "AmbientAppearenceSchedule": 131040,
-      "Flags": 7
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": ""
     },
     {
       "Name": "Main Loop NIght",
@@ -3938,8 +3939,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -131041,
-      "Flags": 7
+      "AmbientAppearenceSchedule": 4294836255,
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "birds",
@@ -3962,7 +3964,8 @@
       "FrequencyBase": 20,
       "FrequencyVariation": 10,
       "AmbientAppearenceSchedule": 131040,
-      "Flags": 13
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": ""
     },
     {
       "Name": "snakes",
@@ -3984,8 +3987,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 30,
       "FrequencyVariation": 10,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 13
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius, RandomOrder",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "snake_chanting",
@@ -4007,8 +4011,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 30,
       "FrequencyVariation": 10,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 5
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     },
     {
       "Name": "portal",
@@ -4030,8 +4035,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 3
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     }
   ],
   "variables": [],
@@ -5367,7 +5373,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "3D545D179E92D9F95CC6973BEE3ECFCD",
+  "Checksum": "700FCDB502FC0E487BC06105332A9930",
   "Filename": "AR6050.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -9288,7 +9294,8 @@
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
         "AmbientAppearenceSchedule": 131040,
-        "Flags": 7
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": ""
       },
       {
         "Name": "Main Loop NIght",
@@ -9310,8 +9317,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -131041,
-        "Flags": 7
+        "AmbientAppearenceSchedule": 4294836255,
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "birds",
@@ -9334,7 +9342,8 @@
         "FrequencyBase": 20,
         "FrequencyVariation": 10,
         "AmbientAppearenceSchedule": 131040,
-        "Flags": 13
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": ""
       },
       {
         "Name": "snakes",
@@ -9356,8 +9365,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 30,
         "FrequencyVariation": 10,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 13
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius, RandomOrder",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "snake_chanting",
@@ -9379,8 +9389,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 30,
         "FrequencyVariation": 10,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 5
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       },
       {
         "Name": "portal",
@@ -9402,8 +9413,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 3
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       }
     ],
     "variables": [],
@@ -10739,7 +10751,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "3D545D179E92D9F95CC6973BEE3ECFCD",
+    "Checksum": "700FCDB502FC0E487BC06105332A9930",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

@@ -538,8 +538,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": -1,
-      "Flags": 7
+      "AmbientAppearenceSchedule": 4294967295,
+      "Flags": "Enabled, Looping, IgnoreRadius",
+      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
     }
   ],
   "variables": [],
@@ -758,7 +759,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "29672854CA05C64702B832EE2C022C1E",
+  "Checksum": "211FD86E7481079E99B3F6580437FB49",
   "Filename": "AR1005.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -1301,8 +1302,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": -1,
-        "Flags": 7
+        "AmbientAppearenceSchedule": 4294967295,
+        "Flags": "Enabled, Looping, IgnoreRadius",
+        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
       }
     ],
     "variables": [],
@@ -1521,7 +1523,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "29672854CA05C64702B832EE2C022C1E",
+    "Checksum": "211FD86E7481079E99B3F6580437FB49",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

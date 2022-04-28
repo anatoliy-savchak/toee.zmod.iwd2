@@ -62,10 +62,14 @@
       "TrapDetected": 0,
       "TrapLaunchXCoordinate": 212,
       "TrapLaunchYCoordinate": 308,
+      "TrapLaunchXCoordinateSec": 0,
+      "TrapLaunchYCoordinateSec": 0,
       "KeyItem": "",
       "RegionScript": "",
       "AlternativeUsePointXCoordinate": 0,
       "AlternativeUsePointYCoordinate": 0,
+      "AlternativeUsePointXCoordinateSec": 0,
+      "AlternativeUsePointYCoordinateSec": 0,
       "Unknown2": 296,
       "Unknown3": {
         "character01": "Е",
@@ -104,6 +108,8 @@
       "Sound": "",
       "TalkLocationXCoordinate": 0,
       "TalkLocationYCoordinate": 0,
+      "TalkLocationXCoordinateSec": 0,
+      "TalkLocationYCoordinateSec": 0,
       "DialogName": {
         "Text": null,
         "Flags": "NoMessageData",
@@ -121,6 +127,8 @@
       "Name": "FR6005",
       "XCoordinate": 193,
       "YCoordinate": 157,
+      "XCoordinateSec": 0,
+      "YCoordinateSec": 0,
       "Orientation": 4
     }
   ],
@@ -254,6 +262,8 @@
       "Name": "Desk",
       "XCoordinate": 246,
       "YCoordinate": 286,
+      "XCoordinateSec": 0,
+      "YCoordinateSec": 0,
       "ContainerType": "Drawer",
       "LockDifficulty": 100,
       "Flags": {
@@ -296,6 +306,8 @@
       "TrapDetected": 0,
       "TrapLaunchXCoordinate": 244,
       "TrapLaunchYCoordinate": 244,
+      "TrapLaunchXCoordinateSec": 0,
+      "TrapLaunchYCoordinateSec": 0,
       "BoundingBoxLeft": 261,
       "BoundingBoxTop": 246,
       "BoundingBoxRight": 291,
@@ -320,6 +332,8 @@
       "Name": "Main Loop",
       "XCoordinate": 192,
       "YCoordinate": 256,
+      "XCoordinateSec": 0,
+      "YCoordinateSec": 0,
       "Radius": 500,
       "Height": 0,
       "Volume": 50,
@@ -542,7 +556,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "4BE10DED0FC8E8C5D0D2BED8397966EF",
+  "Checksum": "A24A5FDF033907033E330E4B27071C1E",
   "Filename": "AR6006.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -609,10 +623,14 @@
         "TrapDetected": 0,
         "TrapLaunchXCoordinate": 212,
         "TrapLaunchYCoordinate": 308,
+        "TrapLaunchXCoordinateSec": 0,
+        "TrapLaunchYCoordinateSec": 0,
         "KeyItem": "",
         "RegionScript": "",
         "AlternativeUsePointXCoordinate": 0,
         "AlternativeUsePointYCoordinate": 0,
+        "AlternativeUsePointXCoordinateSec": 0,
+        "AlternativeUsePointYCoordinateSec": 0,
         "Unknown2": 296,
         "Unknown3": {
           "character01": "Е",
@@ -651,6 +669,8 @@
         "Sound": "",
         "TalkLocationXCoordinate": 0,
         "TalkLocationYCoordinate": 0,
+        "TalkLocationXCoordinateSec": 0,
+        "TalkLocationYCoordinateSec": 0,
         "DialogName": {
           "Text": null,
           "Flags": "NoMessageData",
@@ -668,6 +688,8 @@
         "Name": "FR6005",
         "XCoordinate": 193,
         "YCoordinate": 157,
+        "XCoordinateSec": 0,
+        "YCoordinateSec": 0,
         "Orientation": 4
       }
     ],
@@ -801,6 +823,8 @@
         "Name": "Desk",
         "XCoordinate": 246,
         "YCoordinate": 286,
+        "XCoordinateSec": 0,
+        "YCoordinateSec": 0,
         "ContainerType": "Drawer",
         "LockDifficulty": 100,
         "Flags": {
@@ -843,6 +867,8 @@
         "TrapDetected": 0,
         "TrapLaunchXCoordinate": 244,
         "TrapLaunchYCoordinate": 244,
+        "TrapLaunchXCoordinateSec": 0,
+        "TrapLaunchYCoordinateSec": 0,
         "BoundingBoxLeft": 261,
         "BoundingBoxTop": 246,
         "BoundingBoxRight": 291,
@@ -867,6 +893,8 @@
         "Name": "Main Loop",
         "XCoordinate": 192,
         "YCoordinate": 256,
+        "XCoordinateSec": 0,
+        "YCoordinateSec": 0,
         "Radius": 500,
         "Height": 0,
         "Volume": 50,
@@ -1089,7 +1117,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "4BE10DED0FC8E8C5D0D2BED8397966EF",
+    "Checksum": "A24A5FDF033907033E330E4B27071C1E",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

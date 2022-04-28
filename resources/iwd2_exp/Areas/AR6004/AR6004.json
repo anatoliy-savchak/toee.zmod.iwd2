@@ -130,10 +130,14 @@
       "TrapDetected": 0,
       "TrapLaunchXCoordinate": 73,
       "TrapLaunchYCoordinate": 295,
+      "TrapLaunchXCoordinateSec": 0,
+      "TrapLaunchYCoordinateSec": 0,
       "KeyItem": "",
       "RegionScript": "",
       "AlternativeUsePointXCoordinate": 0,
       "AlternativeUsePointYCoordinate": 0,
+      "AlternativeUsePointXCoordinateSec": 0,
+      "AlternativeUsePointYCoordinateSec": 0,
       "Unknown2": 72,
       "Unknown3": {
         "character01": "&",
@@ -172,6 +176,8 @@
       "Sound": "",
       "TalkLocationXCoordinate": 0,
       "TalkLocationYCoordinate": 0,
+      "TalkLocationXCoordinateSec": 0,
+      "TalkLocationYCoordinateSec": 0,
       "DialogName": {
         "Text": null,
         "Flags": "NoMessageData",
@@ -243,10 +249,14 @@
       "TrapDetected": 0,
       "TrapLaunchXCoordinate": 83,
       "TrapLaunchYCoordinate": 164,
+      "TrapLaunchXCoordinateSec": 0,
+      "TrapLaunchYCoordinateSec": 0,
       "KeyItem": "",
       "RegionScript": "",
       "AlternativeUsePointXCoordinate": 0,
       "AlternativeUsePointYCoordinate": 0,
+      "AlternativeUsePointXCoordinateSec": 0,
+      "AlternativeUsePointYCoordinateSec": 0,
       "Unknown2": 0,
       "Unknown3": {
         "character01": "\u0000",
@@ -285,6 +295,8 @@
       "Sound": "",
       "TalkLocationXCoordinate": 0,
       "TalkLocationYCoordinate": 0,
+      "TalkLocationXCoordinateSec": 0,
+      "TalkLocationYCoordinateSec": 0,
       "DialogName": {
         "Text": null,
         "Flags": "NoMessageData",
@@ -302,6 +314,8 @@
       "Name": "FR6001",
       "XCoordinate": 233,
       "YCoordinate": 247,
+      "XCoordinateSec": 0,
+      "YCoordinateSec": 0,
       "Orientation": 12
     }
   ],
@@ -312,6 +326,8 @@
       "Name": "Main Loop",
       "XCoordinate": 256,
       "YCoordinate": 192,
+      "XCoordinateSec": 0,
+      "YCoordinateSec": 0,
       "Radius": 500,
       "Height": 0,
       "Volume": 50,
@@ -534,7 +550,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "0585178678D1B1D4EFEC2E03F031CA71",
+  "Checksum": "9CB8A7D3223BC96F3DB3F053703F6F83",
   "Filename": "AR6004.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -669,10 +685,14 @@
         "TrapDetected": 0,
         "TrapLaunchXCoordinate": 73,
         "TrapLaunchYCoordinate": 295,
+        "TrapLaunchXCoordinateSec": 0,
+        "TrapLaunchYCoordinateSec": 0,
         "KeyItem": "",
         "RegionScript": "",
         "AlternativeUsePointXCoordinate": 0,
         "AlternativeUsePointYCoordinate": 0,
+        "AlternativeUsePointXCoordinateSec": 0,
+        "AlternativeUsePointYCoordinateSec": 0,
         "Unknown2": 72,
         "Unknown3": {
           "character01": "&",
@@ -711,6 +731,8 @@
         "Sound": "",
         "TalkLocationXCoordinate": 0,
         "TalkLocationYCoordinate": 0,
+        "TalkLocationXCoordinateSec": 0,
+        "TalkLocationYCoordinateSec": 0,
         "DialogName": {
           "Text": null,
           "Flags": "NoMessageData",
@@ -782,10 +804,14 @@
         "TrapDetected": 0,
         "TrapLaunchXCoordinate": 83,
         "TrapLaunchYCoordinate": 164,
+        "TrapLaunchXCoordinateSec": 0,
+        "TrapLaunchYCoordinateSec": 0,
         "KeyItem": "",
         "RegionScript": "",
         "AlternativeUsePointXCoordinate": 0,
         "AlternativeUsePointYCoordinate": 0,
+        "AlternativeUsePointXCoordinateSec": 0,
+        "AlternativeUsePointYCoordinateSec": 0,
         "Unknown2": 0,
         "Unknown3": {
           "character01": "\u0000",
@@ -824,6 +850,8 @@
         "Sound": "",
         "TalkLocationXCoordinate": 0,
         "TalkLocationYCoordinate": 0,
+        "TalkLocationXCoordinateSec": 0,
+        "TalkLocationYCoordinateSec": 0,
         "DialogName": {
           "Text": null,
           "Flags": "NoMessageData",
@@ -841,6 +869,8 @@
         "Name": "FR6001",
         "XCoordinate": 233,
         "YCoordinate": 247,
+        "XCoordinateSec": 0,
+        "YCoordinateSec": 0,
         "Orientation": 12
       }
     ],
@@ -851,6 +881,8 @@
         "Name": "Main Loop",
         "XCoordinate": 256,
         "YCoordinate": 192,
+        "XCoordinateSec": 0,
+        "YCoordinateSec": 0,
         "Radius": 500,
         "Height": 0,
         "Volume": 50,
@@ -1073,7 +1105,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "0585178678D1B1D4EFEC2E03F031CA71",
+    "Checksum": "9CB8A7D3223BC96F3DB3F053703F6F83",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

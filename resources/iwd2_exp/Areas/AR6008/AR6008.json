@@ -197,10 +197,14 @@
       "TrapDetected": 0,
       "TrapLaunchXCoordinate": 318,
       "TrapLaunchYCoordinate": 556,
+      "TrapLaunchXCoordinateSec": 0,
+      "TrapLaunchYCoordinateSec": 0,
       "KeyItem": "",
       "RegionScript": "",
       "AlternativeUsePointXCoordinate": 0,
       "AlternativeUsePointYCoordinate": 0,
+      "AlternativeUsePointXCoordinateSec": 0,
+      "AlternativeUsePointYCoordinateSec": 0,
       "Unknown2": 332,
       "Unknown3": {
         "character01": ";",
@@ -239,6 +243,8 @@
       "Sound": "",
       "TalkLocationXCoordinate": 0,
       "TalkLocationYCoordinate": 0,
+      "TalkLocationXCoordinateSec": 0,
+      "TalkLocationYCoordinateSec": 0,
       "DialogName": {
         "Text": null,
         "Flags": "NoMessageData",
@@ -310,10 +316,14 @@
       "TrapDetected": 0,
       "TrapLaunchXCoordinate": 69,
       "TrapLaunchYCoordinate": 423,
+      "TrapLaunchXCoordinateSec": 0,
+      "TrapLaunchYCoordinateSec": 0,
       "KeyItem": "",
       "RegionScript": "",
       "AlternativeUsePointXCoordinate": 0,
       "AlternativeUsePointYCoordinate": 0,
+      "AlternativeUsePointXCoordinateSec": 0,
+      "AlternativeUsePointYCoordinateSec": 0,
       "Unknown2": 72,
       "Unknown3": {
         "character01": "Ј",
@@ -352,6 +362,8 @@
       "Sound": "",
       "TalkLocationXCoordinate": 0,
       "TalkLocationYCoordinate": 0,
+      "TalkLocationXCoordinateSec": 0,
+      "TalkLocationYCoordinateSec": 0,
       "DialogName": {
         "Text": null,
         "Flags": "NoMessageData",
@@ -369,12 +381,16 @@
       "Name": "FR6000a",
       "XCoordinate": 316,
       "YCoordinate": 549,
+      "XCoordinateSec": 0,
+      "YCoordinateSec": 0,
       "Orientation": 6
     },
     {
       "Name": "FR6000b",
       "XCoordinate": 99,
       "YCoordinate": 517,
+      "XCoordinateSec": 0,
+      "YCoordinateSec": 0,
       "Orientation": 12
     }
   ],
@@ -385,6 +401,8 @@
       "Name": "Main Loop",
       "XCoordinate": 192,
       "YCoordinate": 320,
+      "XCoordinateSec": 0,
+      "YCoordinateSec": 0,
       "Radius": 500,
       "Height": 0,
       "Volume": 70,
@@ -607,7 +625,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "08A27B7F64B5B38A2380F92469AC3AC3",
+  "Checksum": "3FFB1D8DEE9ED746CBB7D24F1DAB026D",
   "Filename": "AR6008.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -809,10 +827,14 @@
         "TrapDetected": 0,
         "TrapLaunchXCoordinate": 318,
         "TrapLaunchYCoordinate": 556,
+        "TrapLaunchXCoordinateSec": 0,
+        "TrapLaunchYCoordinateSec": 0,
         "KeyItem": "",
         "RegionScript": "",
         "AlternativeUsePointXCoordinate": 0,
         "AlternativeUsePointYCoordinate": 0,
+        "AlternativeUsePointXCoordinateSec": 0,
+        "AlternativeUsePointYCoordinateSec": 0,
         "Unknown2": 332,
         "Unknown3": {
           "character01": ";",
@@ -851,6 +873,8 @@
         "Sound": "",
         "TalkLocationXCoordinate": 0,
         "TalkLocationYCoordinate": 0,
+        "TalkLocationXCoordinateSec": 0,
+        "TalkLocationYCoordinateSec": 0,
         "DialogName": {
           "Text": null,
           "Flags": "NoMessageData",
@@ -922,10 +946,14 @@
         "TrapDetected": 0,
         "TrapLaunchXCoordinate": 69,
         "TrapLaunchYCoordinate": 423,
+        "TrapLaunchXCoordinateSec": 0,
+        "TrapLaunchYCoordinateSec": 0,
         "KeyItem": "",
         "RegionScript": "",
         "AlternativeUsePointXCoordinate": 0,
         "AlternativeUsePointYCoordinate": 0,
+        "AlternativeUsePointXCoordinateSec": 0,
+        "AlternativeUsePointYCoordinateSec": 0,
         "Unknown2": 72,
         "Unknown3": {
           "character01": "Ј",
@@ -964,6 +992,8 @@
         "Sound": "",
         "TalkLocationXCoordinate": 0,
         "TalkLocationYCoordinate": 0,
+        "TalkLocationXCoordinateSec": 0,
+        "TalkLocationYCoordinateSec": 0,
         "DialogName": {
           "Text": null,
           "Flags": "NoMessageData",
@@ -981,12 +1011,16 @@
         "Name": "FR6000a",
         "XCoordinate": 316,
         "YCoordinate": 549,
+        "XCoordinateSec": 0,
+        "YCoordinateSec": 0,
         "Orientation": 6
       },
       {
         "Name": "FR6000b",
         "XCoordinate": 99,
         "YCoordinate": 517,
+        "XCoordinateSec": 0,
+        "YCoordinateSec": 0,
         "Orientation": 12
       }
     ],
@@ -997,6 +1031,8 @@
         "Name": "Main Loop",
         "XCoordinate": 192,
         "YCoordinate": 320,
+        "XCoordinateSec": 0,
+        "YCoordinateSec": 0,
         "Radius": 500,
         "Height": 0,
         "Volume": 70,
@@ -1219,7 +1255,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "08A27B7F64B5B38A2380F92469AC3AC3",
+    "Checksum": "3FFB1D8DEE9ED746CBB7D24F1DAB026D",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

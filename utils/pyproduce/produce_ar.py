@@ -72,6 +72,7 @@ class ProduceDaemon:
             found_def_return += 1
             return
 
+        #add_line(i_code+'Global = global_injector()')
         actors = self.ar["actors"]
         for actor in actors:
             name = actor["Name"]
@@ -94,6 +95,17 @@ class ProduceDaemon:
                 if ctrl_class:
                     add_line(i_code+f'ctrl_class, loc = {class_file}.{ctrl_class},  utils_obj.sec2loc({int(x)}, {int(y)})')
                     add_line(i_code+f'self.create_npc_at(loc, ctrl_class, {direction}, "{name}", 0, 1)')
+                    #add_line(i_code+f'npc, ctrl = self.create_npc_at(loc, ctrl_class, {direction}, "{name}", 0, 1)')
+                    #global_name = f"npc_{name}"
+                    #add_line(i_code+f'Global.{global_name} = npc')
+                    #add_line(i_code+f'Global["{global_name}"] = npc')
+                    #add_line(i_code+f'builtins.{global_name} = npc')
+                    #add_line(i_code+f'globals()["{global_name}"] = npc')
+                    #add_line(i_code+f'global {global_name}')
+                    #add_line(i_code+f'{global_name} = npc')
+                    #global_name = f"npc_{name}_ctrl"
+                    #add_line(i_code+f'global {global_name}')
+                    #add_line(i_code+f'{global_name} = ctrl')
             add_line(i_code)
         return
 

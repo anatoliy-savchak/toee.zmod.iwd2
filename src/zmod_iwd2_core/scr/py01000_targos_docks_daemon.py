@@ -4,7 +4,6 @@ import monster_info, module_quests, module_consts, module_globals
 import ctrl_daemon_ie
 import py01001_targos_docks_encounters
 
-
 DAEMON_SCRIPT_ID = 1000
 DAEMON_MAP_ID = module_consts.MAP_ID_TARGOS_DOCKS
 DAEMON_GID = "G_53D450E2_29FE_401E_BE97_20F806DF94FA"
@@ -49,6 +48,7 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		self.place_portals()
 		self.place_doors()
 		self.place_npcs()
+		self.debug_glob_npcs()
 		#self.iSetGlobal(name='Know_Hedron', area='GLOBAL', value=1)
 		return
 

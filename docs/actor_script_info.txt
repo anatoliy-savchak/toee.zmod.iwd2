@@ -1,0 +1,25 @@
+ScriptOverride
+ScriptGeneral = Special 3
+ScriptClass = Special 2
+ScriptRace = Combat Script
+ScriptDefault = Movement Script
+ScriptSpecific = Team Script
+ScriptSpecial1 = Special1 
+
+
+Movement 
+many floats there. also go to saved location, if not near.
+should go to heartbeat.
+
+Team
+usually reaction if hit. or if town has become hostile.
+
+Combat 
+can be used to determine preferred enemy, or to flee.
+
+Special1 
+for allies used for check if pickpocket failed etc. On palisade for example wolf hides itself unless attack. 
+To use in heartbeat.
+
+Special 2 
+seems to determine whom to attack if for foes.

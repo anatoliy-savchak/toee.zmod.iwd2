@@ -15,7 +15,7 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		return triggerer
 
 	def _get_globals(self, area):
-		if area.lower() == "area":
+		if area.lower() == "myarea" or area.lower() == "area":
 			return ctrl_daemon.CtrlDaemon.get_current_daemon()._get_globals(area)
 		return super(CtrlBehaviourIE, self)._get_globals(area)
 

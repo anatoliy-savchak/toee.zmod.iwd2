@@ -5502,149 +5502,13 @@
       "Name": "FR6302",
       "XCoordinate": 1129,
       "YCoordinate": 1297,
-      "Orientation": 2,
-      "Unknown": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0,
-        "byte34": 0,
-        "byte35": 0,
-        "byte36": 0,
-        "byte37": 0,
-        "byte38": 0,
-        "byte39": 0,
-        "byte40": 0,
-        "byte41": 0,
-        "byte42": 0,
-        "byte43": 0,
-        "byte44": 0,
-        "byte45": 0,
-        "byte46": 0,
-        "byte47": 0,
-        "byte48": 0,
-        "byte49": 0,
-        "byte50": 0,
-        "byte51": 0,
-        "byte52": 0,
-        "byte53": 0,
-        "byte54": 0,
-        "byte55": 0,
-        "byte56": 0,
-        "byte57": 0,
-        "byte58": 0,
-        "byte59": 0,
-        "byte60": 0,
-        "byte61": 0,
-        "byte62": 0,
-        "byte63": 0,
-        "byte64": 0,
-        "byte65": 0
-      }
+      "Orientation": 2
     },
     {
       "Name": "FR6304",
       "XCoordinate": 1563,
       "YCoordinate": 1639,
-      "Orientation": 12,
-      "Unknown": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0,
-        "byte34": 0,
-        "byte35": 0,
-        "byte36": 0,
-        "byte37": 0,
-        "byte38": 0,
-        "byte39": 0,
-        "byte40": 0,
-        "byte41": 0,
-        "byte42": 0,
-        "byte43": 0,
-        "byte44": 0,
-        "byte45": 0,
-        "byte46": 0,
-        "byte47": 0,
-        "byte48": 0,
-        "byte49": 0,
-        "byte50": 0,
-        "byte51": 0,
-        "byte52": 0,
-        "byte53": 0,
-        "byte54": 0,
-        "byte55": 0,
-        "byte56": 0,
-        "byte57": 0,
-        "byte58": 0,
-        "byte59": 0,
-        "byte60": 0,
-        "byte61": 0,
-        "byte62": 0,
-        "byte63": 0,
-        "byte64": 0,
-        "byte65": 0
-      }
+      "Orientation": 12
     }
   ],
   "containers": [
@@ -5744,44 +5608,7 @@
       "TrapScript": "",
       "VertexIndex": 242,
       "VertexCount": 16,
-      "Unknown1": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0
-      },
       "KeyItem": "",
-      "Unknown2": 0,
       "LockpickString": {
         "Text": null,
         "Flags": "NoMessageData",
@@ -5789,64 +5616,6 @@
         "VolumeVariance": 0,
         "PitchVariance": 0,
         "Strref": 0
-      },
-      "Unknown3": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0,
-        "byte34": 0,
-        "byte35": 0,
-        "byte36": 0,
-        "byte37": 0,
-        "byte38": 0,
-        "byte39": 0,
-        "byte40": 0,
-        "byte41": 0,
-        "byte42": 0,
-        "byte43": 0,
-        "byte44": 0,
-        "byte45": 0,
-        "byte46": 0,
-        "byte47": 0,
-        "byte48": 0,
-        "byte49": 0,
-        "byte50": 0,
-        "byte51": 0,
-        "byte52": 0,
-        "byte53": 0,
-        "byte54": 0,
-        "byte55": 0
       }
     },
     {
@@ -5945,44 +5714,7 @@
       "TrapScript": "",
       "VertexIndex": 258,
       "VertexCount": 10,
-      "Unknown1": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0
-      },
       "KeyItem": "",
-      "Unknown2": 0,
       "LockpickString": {
         "Text": null,
         "Flags": "NoMessageData",
@@ -5990,64 +5722,6 @@
         "VolumeVariance": 0,
         "PitchVariance": 0,
         "Strref": 0
-      },
-      "Unknown3": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0,
-        "byte34": 0,
-        "byte35": 0,
-        "byte36": 0,
-        "byte37": 0,
-        "byte38": 0,
-        "byte39": 0,
-        "byte40": 0,
-        "byte41": 0,
-        "byte42": 0,
-        "byte43": 0,
-        "byte44": 0,
-        "byte45": 0,
-        "byte46": 0,
-        "byte47": 0,
-        "byte48": 0,
-        "byte49": 0,
-        "byte50": 0,
-        "byte51": 0,
-        "byte52": 0,
-        "byte53": 0,
-        "byte54": 0,
-        "byte55": 0
       }
     },
     {
@@ -6104,44 +5778,7 @@
       "TrapScript": "63PPOR",
       "VertexIndex": 268,
       "VertexCount": 35,
-      "Unknown1": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0
-      },
       "KeyItem": "",
-      "Unknown2": 0,
       "LockpickString": {
         "Text": null,
         "Flags": "NoMessageData",
@@ -6149,64 +5786,6 @@
         "VolumeVariance": 0,
         "PitchVariance": 0,
         "Strref": 0
-      },
-      "Unknown3": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0,
-        "byte34": 0,
-        "byte35": 0,
-        "byte36": 0,
-        "byte37": 0,
-        "byte38": 0,
-        "byte39": 0,
-        "byte40": 0,
-        "byte41": 0,
-        "byte42": 0,
-        "byte43": 0,
-        "byte44": 0,
-        "byte45": 0,
-        "byte46": 0,
-        "byte47": 0,
-        "byte48": 0,
-        "byte49": 0,
-        "byte50": 0,
-        "byte51": 0,
-        "byte52": 0,
-        "byte53": 0,
-        "byte54": 0,
-        "byte55": 0
       }
     },
     {
@@ -6387,44 +5966,7 @@
       "TrapScript": "",
       "VertexIndex": 303,
       "VertexCount": 16,
-      "Unknown1": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0
-      },
       "KeyItem": "",
-      "Unknown2": 0,
       "LockpickString": {
         "Text": null,
         "Flags": "NoMessageData",
@@ -6432,64 +5974,6 @@
         "VolumeVariance": 0,
         "PitchVariance": 0,
         "Strref": 0
-      },
-      "Unknown3": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0,
-        "byte34": 0,
-        "byte35": 0,
-        "byte36": 0,
-        "byte37": 0,
-        "byte38": 0,
-        "byte39": 0,
-        "byte40": 0,
-        "byte41": 0,
-        "byte42": 0,
-        "byte43": 0,
-        "byte44": 0,
-        "byte45": 0,
-        "byte46": 0,
-        "byte47": 0,
-        "byte48": 0,
-        "byte49": 0,
-        "byte50": 0,
-        "byte51": 0,
-        "byte52": 0,
-        "byte53": 0,
-        "byte54": 0,
-        "byte55": 0
       }
     }
   ],
@@ -6501,14 +5985,6 @@
       "YCoordinate": 320,
       "Radius": 500,
       "Height": 0,
-      "Unknown1": {
-        "character1": "\u0000",
-        "character2": "\u0000",
-        "character3": "\u0000",
-        "character4": "\u0000",
-        "character5": "\u0000",
-        "character6": "\u0000"
-      },
       "Volume": 70,
       "Resref1": "AM6301",
       "Resref2": "",
@@ -6521,77 +5997,10 @@
       "Resref9": "",
       "Resref10": "",
       "ResRefCount": 0,
-      "Unknown2": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
       "AmbientAppearenceSchedule": -1,
-      "Flags": 7,
-      "Unknown3": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0,
-        "byte34": 0,
-        "byte35": 0,
-        "byte36": 0,
-        "byte37": 0,
-        "byte38": 0,
-        "byte39": 0,
-        "byte40": 0,
-        "byte41": 0,
-        "byte42": 0,
-        "byte43": 0,
-        "byte44": 0,
-        "byte45": 0,
-        "byte46": 0,
-        "byte47": 0,
-        "byte48": 0,
-        "byte49": 0,
-        "byte50": 0,
-        "byte51": 0,
-        "byte52": 0,
-        "byte53": 0,
-        "byte54": 0,
-        "byte55": 0,
-        "byte56": 0,
-        "byte57": 0,
-        "byte58": 0,
-        "byte59": 0,
-        "byte60": 0,
-        "byte61": 0,
-        "byte62": 0,
-        "byte63": 0
-      }
+      "Flags": 7
     }
   ],
   "variables": [],
@@ -6651,17 +6060,7 @@
         "PitchVariance": 0,
         "Strref": 0
       },
-      "DialogResref": "",
-      "Unknown": {
-        "character1": "\u0000",
-        "character2": "\u0000",
-        "character3": "\u0000",
-        "character4": "\u0000",
-        "character5": "\u0000",
-        "character6": "\u0000",
-        "character7": "\u0000",
-        "character8": "\u0000"
-      }
+      "DialogResref": ""
     },
     {
       "Name": "AR6303_Door2",
@@ -6718,17 +6117,7 @@
         "PitchVariance": 0,
         "Strref": 0
       },
-      "DialogResref": "",
-      "Unknown": {
-        "character1": "\u0000",
-        "character2": "\u0000",
-        "character3": "\u0000",
-        "character4": "\u0000",
-        "character5": "\u0000",
-        "character6": "\u0000",
-        "character7": "\u0000",
-        "character8": "\u0000"
-      }
+      "DialogResref": ""
     },
     {
       "Name": "AR6303_Door3",
@@ -6785,17 +6174,7 @@
         "PitchVariance": 0,
         "Strref": 0
       },
-      "DialogResref": "",
-      "Unknown": {
-        "character1": "\u0000",
-        "character2": "\u0000",
-        "character3": "\u0000",
-        "character4": "\u0000",
-        "character5": "\u0000",
-        "character6": "\u0000",
-        "character7": "\u0000",
-        "character8": "\u0000"
-      }
+      "DialogResref": ""
     },
     {
       "Name": "AR6303_Door4",
@@ -6852,17 +6231,7 @@
         "PitchVariance": 0,
         "Strref": 0
       },
-      "DialogResref": "",
-      "Unknown": {
-        "character1": "\u0000",
-        "character2": "\u0000",
-        "character3": "\u0000",
-        "character4": "\u0000",
-        "character5": "\u0000",
-        "character6": "\u0000",
-        "character7": "\u0000",
-        "character8": "\u0000"
-      }
+      "DialogResref": ""
     },
     {
       "Name": "AR6303_Door5",
@@ -6919,17 +6288,7 @@
         "PitchVariance": 0,
         "Strref": 0
       },
-      "DialogResref": "",
-      "Unknown": {
-        "character1": "\u0000",
-        "character2": "\u0000",
-        "character3": "\u0000",
-        "character4": "\u0000",
-        "character5": "\u0000",
-        "character6": "\u0000",
-        "character7": "\u0000",
-        "character8": "\u0000"
-      }
+      "DialogResref": ""
     },
     {
       "Name": "AR6303_Door6",
@@ -6986,17 +6345,7 @@
         "PitchVariance": 0,
         "Strref": 0
       },
-      "DialogResref": "",
-      "Unknown": {
-        "character1": "\u0000",
-        "character2": "\u0000",
-        "character3": "\u0000",
-        "character4": "\u0000",
-        "character5": "\u0000",
-        "character6": "\u0000",
-        "character7": "\u0000",
-        "character8": "\u0000"
-      }
+      "DialogResref": ""
     }
   ],
   "animations": [
@@ -7014,8 +6363,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7031,8 +6379,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7048,8 +6395,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7065,8 +6411,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7082,8 +6427,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7099,8 +6443,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7116,8 +6459,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7133,8 +6475,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -7150,8 +6491,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -7167,8 +6507,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -7184,8 +6523,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -7201,8 +6539,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -7218,8 +6555,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -7235,8 +6571,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -7252,8 +6587,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -7269,8 +6603,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7286,8 +6619,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7303,8 +6635,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7320,8 +6651,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7337,8 +6667,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7354,8 +6683,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7371,8 +6699,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7388,8 +6715,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7405,8 +6731,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7422,8 +6747,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7439,8 +6763,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7456,8 +6779,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7473,8 +6795,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7490,8 +6811,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7507,8 +6827,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -7524,8 +6843,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -7541,8 +6859,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7558,8 +6875,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7575,8 +6891,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7592,8 +6907,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7609,8 +6923,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7626,8 +6939,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7643,8 +6955,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7660,8 +6971,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7677,8 +6987,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7694,8 +7003,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7711,8 +7019,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7728,8 +7035,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7745,8 +7051,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7762,8 +7067,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7779,8 +7083,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7796,8 +7099,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7813,8 +7115,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_LR",
@@ -7830,8 +7131,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_LR",
@@ -7847,8 +7147,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7864,8 +7163,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7881,8 +7179,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7898,8 +7195,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7915,8 +7211,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7932,8 +7227,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7949,8 +7243,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7966,8 +7259,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -7983,8 +7275,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8000,8 +7291,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8017,8 +7307,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8034,8 +7323,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8051,8 +7339,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8068,8 +7355,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8085,8 +7371,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8102,8 +7387,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8119,8 +7403,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8136,8 +7419,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8153,8 +7435,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -8170,8 +7451,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -8187,8 +7467,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -8204,8 +7483,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -8221,8 +7499,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "FIRE_3",
@@ -8238,8 +7515,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8255,8 +7531,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8272,8 +7547,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8289,8 +7563,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8306,8 +7579,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8323,8 +7595,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8340,8 +7611,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "TORCH_L2",
@@ -8357,8 +7627,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     },
     {
       "Name": "6303MS1",
@@ -8374,8 +7643,7 @@
       "StartFrame": 0,
       "LoopChance": 0,
       "SkipCycles": 0,
-      "Palette": "",
-      "Unknown": 0
+      "Palette": ""
     }
   ],
   "notes": [],
@@ -8388,80 +7656,13 @@
       "WinSong": -1,
       "BattleSong": -1,
       "LoseSong": -1,
-      "Unknown1": -1,
-      "Unknown2": -1,
-      "Unknown3": -1,
-      "Unknown4": -1,
-      "Unknown5": -1,
       "DayAmbient1Wav": "",
       "DayAmbient2Wav": "",
       "DayAmbientVolume": 100,
       "NightAmbient1Wav": "",
       "NightAmbient2Wav": "",
       "NightAmbientVolume": 100,
-      "Reverb": 0,
-      "Unknown6": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0,
-        "byte34": 0,
-        "byte35": 0,
-        "byte36": 0,
-        "byte37": 0,
-        "byte38": 0,
-        "byte39": 0,
-        "byte40": 0,
-        "byte41": 0,
-        "byte42": 0,
-        "byte43": 0,
-        "byte44": 0,
-        "byte45": 0,
-        "byte46": 0,
-        "byte47": 0,
-        "byte48": 0,
-        "byte49": 0,
-        "byte50": 0,
-        "byte51": 0,
-        "byte52": 0,
-        "byte53": 0,
-        "byte54": 0,
-        "byte55": 0,
-        "byte56": 0,
-        "byte57": 0,
-        "byte58": 0,
-        "byte59": 0
-      }
+      "Reverb": 0
     }
   ],
   "interruptions": [
@@ -8495,65 +7696,7 @@
       "MaximumCreaturesToSpawn": 10,
       "Enabled": 1,
       "DayProbability": 10,
-      "NightProbability": 10,
-      "Unknown": {
-        "byte00": 0,
-        "byte01": 0,
-        "byte02": 0,
-        "byte03": 0,
-        "byte04": 0,
-        "byte05": 0,
-        "byte06": 0,
-        "byte07": 0,
-        "byte08": 0,
-        "byte09": 0,
-        "byte10": 0,
-        "byte11": 0,
-        "byte12": 0,
-        "byte13": 0,
-        "byte14": 0,
-        "byte15": 0,
-        "byte16": 0,
-        "byte17": 0,
-        "byte18": 0,
-        "byte19": 0,
-        "byte20": 0,
-        "byte21": 0,
-        "byte22": 0,
-        "byte23": 0,
-        "byte24": 0,
-        "byte25": 0,
-        "byte26": 0,
-        "byte27": 0,
-        "byte28": 0,
-        "byte29": 0,
-        "byte30": 0,
-        "byte31": 0,
-        "byte32": 0,
-        "byte33": 0,
-        "byte34": 0,
-        "byte35": 0,
-        "byte36": 0,
-        "byte37": 0,
-        "byte38": 0,
-        "byte39": 0,
-        "byte40": 0,
-        "byte41": 0,
-        "byte42": 0,
-        "byte43": 0,
-        "byte44": 0,
-        "byte45": 0,
-        "byte46": 0,
-        "byte47": 0,
-        "byte48": 0,
-        "byte49": 0,
-        "byte50": 0,
-        "byte51": 0,
-        "byte52": 0,
-        "byte53": 0,
-        "byte54": 0,
-        "byte55": 0
-      }
+      "NightProbability": 10
     }
   ],
   "exploration": [],
@@ -9099,13 +8242,9 @@
     "Bit31": false
   },
   "AreaToTheNorth": "",
-  "Unknown1": 0,
   "AreaToTheEast": "",
-  "Unknown2": 0,
   "AreaToTheSouth": "",
-  "Unknown3": 0,
   "AreaToTheWest": "",
-  "Unknown4": 0,
   "AreaTypeFlags": {
     "Outdoor": false,
     "DayNight": false,
@@ -9128,7 +8267,6 @@
   "WeatherProbabilitySnow": 0,
   "WeatherProbabilityFog": 0,
   "WeatherProbabilityLightning": 0,
-  "Unknown5": 0,
   "VertexOffset": 0,
   "VertexCount": 0,
   "Unknown6": 0,
@@ -9195,7 +8333,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "C81C8E6A285998D13876CC384DB027F2",
+  "Checksum": "2E68829610A55C5EB8C2BBDC199A04A2",
   "Filename": "AR6303.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -14702,149 +13840,13 @@
         "Name": "FR6302",
         "XCoordinate": 1129,
         "YCoordinate": 1297,
-        "Orientation": 2,
-        "Unknown": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0,
-          "byte34": 0,
-          "byte35": 0,
-          "byte36": 0,
-          "byte37": 0,
-          "byte38": 0,
-          "byte39": 0,
-          "byte40": 0,
-          "byte41": 0,
-          "byte42": 0,
-          "byte43": 0,
-          "byte44": 0,
-          "byte45": 0,
-          "byte46": 0,
-          "byte47": 0,
-          "byte48": 0,
-          "byte49": 0,
-          "byte50": 0,
-          "byte51": 0,
-          "byte52": 0,
-          "byte53": 0,
-          "byte54": 0,
-          "byte55": 0,
-          "byte56": 0,
-          "byte57": 0,
-          "byte58": 0,
-          "byte59": 0,
-          "byte60": 0,
-          "byte61": 0,
-          "byte62": 0,
-          "byte63": 0,
-          "byte64": 0,
-          "byte65": 0
-        }
+        "Orientation": 2
       },
       {
         "Name": "FR6304",
         "XCoordinate": 1563,
         "YCoordinate": 1639,
-        "Orientation": 12,
-        "Unknown": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0,
-          "byte34": 0,
-          "byte35": 0,
-          "byte36": 0,
-          "byte37": 0,
-          "byte38": 0,
-          "byte39": 0,
-          "byte40": 0,
-          "byte41": 0,
-          "byte42": 0,
-          "byte43": 0,
-          "byte44": 0,
-          "byte45": 0,
-          "byte46": 0,
-          "byte47": 0,
-          "byte48": 0,
-          "byte49": 0,
-          "byte50": 0,
-          "byte51": 0,
-          "byte52": 0,
-          "byte53": 0,
-          "byte54": 0,
-          "byte55": 0,
-          "byte56": 0,
-          "byte57": 0,
-          "byte58": 0,
-          "byte59": 0,
-          "byte60": 0,
-          "byte61": 0,
-          "byte62": 0,
-          "byte63": 0,
-          "byte64": 0,
-          "byte65": 0
-        }
+        "Orientation": 12
       }
     ],
     "containers": [
@@ -14944,44 +13946,7 @@
         "TrapScript": "",
         "VertexIndex": 242,
         "VertexCount": 16,
-        "Unknown1": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0
-        },
         "KeyItem": "",
-        "Unknown2": 0,
         "LockpickString": {
           "Text": null,
           "Flags": "NoMessageData",
@@ -14989,64 +13954,6 @@
           "VolumeVariance": 0,
           "PitchVariance": 0,
           "Strref": 0
-        },
-        "Unknown3": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0,
-          "byte34": 0,
-          "byte35": 0,
-          "byte36": 0,
-          "byte37": 0,
-          "byte38": 0,
-          "byte39": 0,
-          "byte40": 0,
-          "byte41": 0,
-          "byte42": 0,
-          "byte43": 0,
-          "byte44": 0,
-          "byte45": 0,
-          "byte46": 0,
-          "byte47": 0,
-          "byte48": 0,
-          "byte49": 0,
-          "byte50": 0,
-          "byte51": 0,
-          "byte52": 0,
-          "byte53": 0,
-          "byte54": 0,
-          "byte55": 0
         }
       },
       {
@@ -15145,44 +14052,7 @@
         "TrapScript": "",
         "VertexIndex": 258,
         "VertexCount": 10,
-        "Unknown1": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0
-        },
         "KeyItem": "",
-        "Unknown2": 0,
         "LockpickString": {
           "Text": null,
           "Flags": "NoMessageData",
@@ -15190,64 +14060,6 @@
           "VolumeVariance": 0,
           "PitchVariance": 0,
           "Strref": 0
-        },
-        "Unknown3": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0,
-          "byte34": 0,
-          "byte35": 0,
-          "byte36": 0,
-          "byte37": 0,
-          "byte38": 0,
-          "byte39": 0,
-          "byte40": 0,
-          "byte41": 0,
-          "byte42": 0,
-          "byte43": 0,
-          "byte44": 0,
-          "byte45": 0,
-          "byte46": 0,
-          "byte47": 0,
-          "byte48": 0,
-          "byte49": 0,
-          "byte50": 0,
-          "byte51": 0,
-          "byte52": 0,
-          "byte53": 0,
-          "byte54": 0,
-          "byte55": 0
         }
       },
       {
@@ -15304,44 +14116,7 @@
         "TrapScript": "63PPOR",
         "VertexIndex": 268,
         "VertexCount": 35,
-        "Unknown1": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0
-        },
         "KeyItem": "",
-        "Unknown2": 0,
         "LockpickString": {
           "Text": null,
           "Flags": "NoMessageData",
@@ -15349,64 +14124,6 @@
           "VolumeVariance": 0,
           "PitchVariance": 0,
           "Strref": 0
-        },
-        "Unknown3": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0,
-          "byte34": 0,
-          "byte35": 0,
-          "byte36": 0,
-          "byte37": 0,
-          "byte38": 0,
-          "byte39": 0,
-          "byte40": 0,
-          "byte41": 0,
-          "byte42": 0,
-          "byte43": 0,
-          "byte44": 0,
-          "byte45": 0,
-          "byte46": 0,
-          "byte47": 0,
-          "byte48": 0,
-          "byte49": 0,
-          "byte50": 0,
-          "byte51": 0,
-          "byte52": 0,
-          "byte53": 0,
-          "byte54": 0,
-          "byte55": 0
         }
       },
       {
@@ -15587,44 +14304,7 @@
         "TrapScript": "",
         "VertexIndex": 303,
         "VertexCount": 16,
-        "Unknown1": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0
-        },
         "KeyItem": "",
-        "Unknown2": 0,
         "LockpickString": {
           "Text": null,
           "Flags": "NoMessageData",
@@ -15632,64 +14312,6 @@
           "VolumeVariance": 0,
           "PitchVariance": 0,
           "Strref": 0
-        },
-        "Unknown3": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0,
-          "byte34": 0,
-          "byte35": 0,
-          "byte36": 0,
-          "byte37": 0,
-          "byte38": 0,
-          "byte39": 0,
-          "byte40": 0,
-          "byte41": 0,
-          "byte42": 0,
-          "byte43": 0,
-          "byte44": 0,
-          "byte45": 0,
-          "byte46": 0,
-          "byte47": 0,
-          "byte48": 0,
-          "byte49": 0,
-          "byte50": 0,
-          "byte51": 0,
-          "byte52": 0,
-          "byte53": 0,
-          "byte54": 0,
-          "byte55": 0
         }
       }
     ],
@@ -15701,14 +14323,6 @@
         "YCoordinate": 320,
         "Radius": 500,
         "Height": 0,
-        "Unknown1": {
-          "character1": "\u0000",
-          "character2": "\u0000",
-          "character3": "\u0000",
-          "character4": "\u0000",
-          "character5": "\u0000",
-          "character6": "\u0000"
-        },
         "Volume": 70,
         "Resref1": "AM6301",
         "Resref2": "",
@@ -15721,77 +14335,10 @@
         "Resref9": "",
         "Resref10": "",
         "ResRefCount": 0,
-        "Unknown2": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
         "AmbientAppearenceSchedule": -1,
-        "Flags": 7,
-        "Unknown3": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0,
-          "byte34": 0,
-          "byte35": 0,
-          "byte36": 0,
-          "byte37": 0,
-          "byte38": 0,
-          "byte39": 0,
-          "byte40": 0,
-          "byte41": 0,
-          "byte42": 0,
-          "byte43": 0,
-          "byte44": 0,
-          "byte45": 0,
-          "byte46": 0,
-          "byte47": 0,
-          "byte48": 0,
-          "byte49": 0,
-          "byte50": 0,
-          "byte51": 0,
-          "byte52": 0,
-          "byte53": 0,
-          "byte54": 0,
-          "byte55": 0,
-          "byte56": 0,
-          "byte57": 0,
-          "byte58": 0,
-          "byte59": 0,
-          "byte60": 0,
-          "byte61": 0,
-          "byte62": 0,
-          "byte63": 0
-        }
+        "Flags": 7
       }
     ],
     "variables": [],
@@ -15851,17 +14398,7 @@
           "PitchVariance": 0,
           "Strref": 0
         },
-        "DialogResref": "",
-        "Unknown": {
-          "character1": "\u0000",
-          "character2": "\u0000",
-          "character3": "\u0000",
-          "character4": "\u0000",
-          "character5": "\u0000",
-          "character6": "\u0000",
-          "character7": "\u0000",
-          "character8": "\u0000"
-        }
+        "DialogResref": ""
       },
       {
         "Name": "AR6303_Door2",
@@ -15918,17 +14455,7 @@
           "PitchVariance": 0,
           "Strref": 0
         },
-        "DialogResref": "",
-        "Unknown": {
-          "character1": "\u0000",
-          "character2": "\u0000",
-          "character3": "\u0000",
-          "character4": "\u0000",
-          "character5": "\u0000",
-          "character6": "\u0000",
-          "character7": "\u0000",
-          "character8": "\u0000"
-        }
+        "DialogResref": ""
       },
       {
         "Name": "AR6303_Door3",
@@ -15985,17 +14512,7 @@
           "PitchVariance": 0,
           "Strref": 0
         },
-        "DialogResref": "",
-        "Unknown": {
-          "character1": "\u0000",
-          "character2": "\u0000",
-          "character3": "\u0000",
-          "character4": "\u0000",
-          "character5": "\u0000",
-          "character6": "\u0000",
-          "character7": "\u0000",
-          "character8": "\u0000"
-        }
+        "DialogResref": ""
       },
       {
         "Name": "AR6303_Door4",
@@ -16052,17 +14569,7 @@
           "PitchVariance": 0,
           "Strref": 0
         },
-        "DialogResref": "",
-        "Unknown": {
-          "character1": "\u0000",
-          "character2": "\u0000",
-          "character3": "\u0000",
-          "character4": "\u0000",
-          "character5": "\u0000",
-          "character6": "\u0000",
-          "character7": "\u0000",
-          "character8": "\u0000"
-        }
+        "DialogResref": ""
       },
       {
         "Name": "AR6303_Door5",
@@ -16119,17 +14626,7 @@
           "PitchVariance": 0,
           "Strref": 0
         },
-        "DialogResref": "",
-        "Unknown": {
-          "character1": "\u0000",
-          "character2": "\u0000",
-          "character3": "\u0000",
-          "character4": "\u0000",
-          "character5": "\u0000",
-          "character6": "\u0000",
-          "character7": "\u0000",
-          "character8": "\u0000"
-        }
+        "DialogResref": ""
       },
       {
         "Name": "AR6303_Door6",
@@ -16186,17 +14683,7 @@
           "PitchVariance": 0,
           "Strref": 0
         },
-        "DialogResref": "",
-        "Unknown": {
-          "character1": "\u0000",
-          "character2": "\u0000",
-          "character3": "\u0000",
-          "character4": "\u0000",
-          "character5": "\u0000",
-          "character6": "\u0000",
-          "character7": "\u0000",
-          "character8": "\u0000"
-        }
+        "DialogResref": ""
       }
     ],
     "animations": [
@@ -16214,8 +14701,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16231,8 +14717,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16248,8 +14733,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16265,8 +14749,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16282,8 +14765,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16299,8 +14781,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16316,8 +14797,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16333,8 +14813,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -16350,8 +14829,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -16367,8 +14845,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -16384,8 +14861,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -16401,8 +14877,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -16418,8 +14893,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -16435,8 +14909,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -16452,8 +14925,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -16469,8 +14941,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16486,8 +14957,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16503,8 +14973,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16520,8 +14989,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16537,8 +15005,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16554,8 +15021,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16571,8 +15037,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16588,8 +15053,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16605,8 +15069,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16622,8 +15085,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16639,8 +15101,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16656,8 +15117,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16673,8 +15133,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16690,8 +15149,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16707,8 +15165,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -16724,8 +15181,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -16741,8 +15197,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16758,8 +15213,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16775,8 +15229,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16792,8 +15245,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16809,8 +15261,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16826,8 +15277,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16843,8 +15293,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16860,8 +15309,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16877,8 +15325,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16894,8 +15341,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16911,8 +15357,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16928,8 +15373,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16945,8 +15389,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16962,8 +15405,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16979,8 +15421,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -16996,8 +15437,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17013,8 +15453,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_LR",
@@ -17030,8 +15469,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_LR",
@@ -17047,8 +15485,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17064,8 +15501,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17081,8 +15517,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17098,8 +15533,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17115,8 +15549,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17132,8 +15565,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17149,8 +15581,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17166,8 +15597,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17183,8 +15613,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17200,8 +15629,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17217,8 +15645,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17234,8 +15661,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17251,8 +15677,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17268,8 +15693,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17285,8 +15709,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17302,8 +15725,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17319,8 +15741,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17336,8 +15757,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17353,8 +15773,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -17370,8 +15789,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -17387,8 +15805,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -17404,8 +15821,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -17421,8 +15837,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "FIRE_3",
@@ -17438,8 +15853,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17455,8 +15869,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17472,8 +15885,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17489,8 +15901,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17506,8 +15917,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17523,8 +15933,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17540,8 +15949,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "TORCH_L2",
@@ -17557,8 +15965,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       },
       {
         "Name": "6303MS1",
@@ -17574,8 +15981,7 @@
         "StartFrame": 0,
         "LoopChance": 0,
         "SkipCycles": 0,
-        "Palette": "",
-        "Unknown": 0
+        "Palette": ""
       }
     ],
     "notes": [],
@@ -17588,80 +15994,13 @@
         "WinSong": -1,
         "BattleSong": -1,
         "LoseSong": -1,
-        "Unknown1": -1,
-        "Unknown2": -1,
-        "Unknown3": -1,
-        "Unknown4": -1,
-        "Unknown5": -1,
         "DayAmbient1Wav": "",
         "DayAmbient2Wav": "",
         "DayAmbientVolume": 100,
         "NightAmbient1Wav": "",
         "NightAmbient2Wav": "",
         "NightAmbientVolume": 100,
-        "Reverb": 0,
-        "Unknown6": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0,
-          "byte34": 0,
-          "byte35": 0,
-          "byte36": 0,
-          "byte37": 0,
-          "byte38": 0,
-          "byte39": 0,
-          "byte40": 0,
-          "byte41": 0,
-          "byte42": 0,
-          "byte43": 0,
-          "byte44": 0,
-          "byte45": 0,
-          "byte46": 0,
-          "byte47": 0,
-          "byte48": 0,
-          "byte49": 0,
-          "byte50": 0,
-          "byte51": 0,
-          "byte52": 0,
-          "byte53": 0,
-          "byte54": 0,
-          "byte55": 0,
-          "byte56": 0,
-          "byte57": 0,
-          "byte58": 0,
-          "byte59": 0
-        }
+        "Reverb": 0
       }
     ],
     "interruptions": [
@@ -17695,65 +16034,7 @@
         "MaximumCreaturesToSpawn": 10,
         "Enabled": 1,
         "DayProbability": 10,
-        "NightProbability": 10,
-        "Unknown": {
-          "byte00": 0,
-          "byte01": 0,
-          "byte02": 0,
-          "byte03": 0,
-          "byte04": 0,
-          "byte05": 0,
-          "byte06": 0,
-          "byte07": 0,
-          "byte08": 0,
-          "byte09": 0,
-          "byte10": 0,
-          "byte11": 0,
-          "byte12": 0,
-          "byte13": 0,
-          "byte14": 0,
-          "byte15": 0,
-          "byte16": 0,
-          "byte17": 0,
-          "byte18": 0,
-          "byte19": 0,
-          "byte20": 0,
-          "byte21": 0,
-          "byte22": 0,
-          "byte23": 0,
-          "byte24": 0,
-          "byte25": 0,
-          "byte26": 0,
-          "byte27": 0,
-          "byte28": 0,
-          "byte29": 0,
-          "byte30": 0,
-          "byte31": 0,
-          "byte32": 0,
-          "byte33": 0,
-          "byte34": 0,
-          "byte35": 0,
-          "byte36": 0,
-          "byte37": 0,
-          "byte38": 0,
-          "byte39": 0,
-          "byte40": 0,
-          "byte41": 0,
-          "byte42": 0,
-          "byte43": 0,
-          "byte44": 0,
-          "byte45": 0,
-          "byte46": 0,
-          "byte47": 0,
-          "byte48": 0,
-          "byte49": 0,
-          "byte50": 0,
-          "byte51": 0,
-          "byte52": 0,
-          "byte53": 0,
-          "byte54": 0,
-          "byte55": 0
-        }
+        "NightProbability": 10
       }
     ],
     "exploration": [],
@@ -18299,13 +16580,9 @@
       "Bit31": false
     },
     "AreaToTheNorth": "",
-    "Unknown1": 0,
     "AreaToTheEast": "",
-    "Unknown2": 0,
     "AreaToTheSouth": "",
-    "Unknown3": 0,
     "AreaToTheWest": "",
-    "Unknown4": 0,
     "AreaTypeFlags": {
       "Outdoor": false,
       "DayNight": false,
@@ -18328,7 +16605,6 @@
     "WeatherProbabilitySnow": 0,
     "WeatherProbabilityFog": 0,
     "WeatherProbabilityLightning": 0,
-    "Unknown5": 0,
     "VertexOffset": 0,
     "VertexCount": 0,
     "Unknown6": 0,
@@ -18395,7 +16671,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "C81C8E6A285998D13876CC384DB027F2",
+    "Checksum": "2E68829610A55C5EB8C2BBDC199A04A2",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

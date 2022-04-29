@@ -11,14 +11,14 @@ i_def = "\t"
 i_code = "\t\t"
 
 class ProduceNPC:
-    def __init__(self, exported_dir: pyproduce.InfinityExportedDir, out_file_path: str, dialog_file) -> None:
-        self.exported_dir = exported_dir
+    def __init__(self, producer_app, out_file_path: str, dialog_file) -> None:
+        self.producer_app = producer_app
         self.elements = dict()
 
         self.lines_script = list()
-        self.lines_dialog = list()
         self.copy_speaches = list()
         self.current_crename = ""
+        self.ctrl_name = ""
         self.cre = dict()
         self.out_file_path = out_file_path
         self.current_indent = i_code
@@ -50,14 +50,14 @@ class ProduceNPC:
         return
 
     def read_cre(self, name: str):
-        value = self.exported_dir.read_cre(name)
+        value = self.producer_app.read_file_json(self.producer_app.get_cre_path(name))
         self.cre = value
         return value
 
     def cre_get_full_name(self):
-        result = self.exported_dir.cre_strref_to_string(self.cre.get("LongName"))
+        result = self.producer_app.cre_strref_to_string(self.cre.get("LongName"))
         if not result:
-            result = self.exported_dir.cre_strref_to_string(self.cre.get("ShortName"))
+            result = self.producer_app.cre_strref_to_string(self.cre.get("ShortName"))
         return result
 
     def load_template(self, file_name):
@@ -79,7 +79,8 @@ class ProduceNPC:
         self.read_cre(cre_name)
         self.current_crename = cre_name
 
-        self.lines_script.append(f"class Ctrl{self.current_crename}({self.elements['base_class']}): # {self.current_crename} ")
+        self.ctrl_name = f'Ctrl{self.current_crename}'
+        self.lines_script.append(f"class {self.ctrl_name}({self.elements['base_class']}): # {self.current_crename} ") # leave trailing whitespace here
         
         deathVariable = self.cre["DeathVariable"]
         if deathVariable:
@@ -216,7 +217,7 @@ class ProduceNPC:
             if classes_toee:
                 for class_toee, level_count in classes_toee.items():
                     if not level_count: continue
-                    if cname := self.exported_dir.toee_class_spec_has_prof(class_toee, feat_to_add):
+                    if cname := self.producer_app.toee_class_spec_has_prof(class_toee, feat_to_add):
                         self.lines_script.append(i_code + f"# {value_name}: {value} => {feat_to_add} skip for {cname}")
                         return True
         return False
@@ -807,7 +808,7 @@ class ProduceNPC:
         dialog_name = self.cre["DialogFile"]
         if not dialog_name or dialog_name == "None":
             return
-        dialog = self.exported_dir.load_cre_dialog(dialog_name)
+        dialog = self.producer_app.load_cre_dialog(dialog_name)
         self.dialog = produce_dialog.ProduceNPCDialog(dialog_name, self, dialog, self.dialog_file)
         self.dialog.produce()
         return

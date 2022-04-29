@@ -1,0 +1,513 @@
+{
+    "AR1000": {
+        "are_main_music": 1,
+        "recs": [
+            {
+                "name": "Main Loop day",
+                "is_looping": true,
+                "volume": 85,
+                "entries": [
+                    {
+                        "sound_name": "AM1000",
+                        "sound_index": 1,
+                        "index": 0,
+                        "durationf": 35.366667
+                    }
+                ]
+            },
+            {
+                "name": "Main Loop Night",
+                "is_looping": true,
+                "volume": 85,
+                "entries": [
+                    {
+                        "sound_name": "AM1000_N",
+                        "sound_index": 2,
+                        "index": 0,
+                        "durationf": 32.608345
+                    }
+                ]
+            },
+            {
+                "name": "Water laps1",
+                "is_looping": false,
+                "volume": 70,
+                "entries": [
+                    {
+                        "sound_name": "AM1000A1",
+                        "sound_index": 3,
+                        "index": 0,
+                        "durationf": 3.180363
+                    },
+                    {
+                        "sound_name": "AM1000A2",
+                        "sound_index": 4,
+                        "index": 1,
+                        "durationf": 2.797007
+                    },
+                    {
+                        "sound_name": "AM1000A3",
+                        "sound_index": 5,
+                        "index": 2,
+                        "durationf": 3.360136
+                    },
+                    {
+                        "sound_name": "AM1000A4",
+                        "sound_index": 6,
+                        "index": 3,
+                        "durationf": 3.220816
+                    },
+                    {
+                        "sound_name": "AM1000A5",
+                        "sound_index": 7,
+                        "index": 4,
+                        "durationf": 3.722585
+                    },
+                    {
+                        "sound_name": "AM1000A6",
+                        "sound_index": 8,
+                        "index": 5,
+                        "durationf": 3.123673
+                    }
+                ]
+            },
+            {
+                "name": "Dock Creaks1",
+                "is_looping": false,
+                "volume": 60,
+                "entries": [
+                    {
+                        "sound_name": "AM1000B1",
+                        "sound_index": 9,
+                        "index": 0,
+                        "durationf": 2.911156
+                    },
+                    {
+                        "sound_name": "AM1000B2",
+                        "sound_index": 10,
+                        "index": 1,
+                        "durationf": 2.328934
+                    },
+                    {
+                        "sound_name": "AM1000B3",
+                        "sound_index": 11,
+                        "index": 2,
+                        "durationf": 3.767347
+                    },
+                    {
+                        "sound_name": "AM1000B4",
+                        "sound_index": 12,
+                        "index": 3,
+                        "durationf": 4.462993
+                    },
+                    {
+                        "sound_name": "AM1000B5",
+                        "sound_index": 13,
+                        "index": 4,
+                        "durationf": 3.065215
+                    },
+                    {
+                        "sound_name": "AM1000B6",
+                        "sound_index": 14,
+                        "index": 5,
+                        "durationf": 3.536508
+                    }
+                ]
+            },
+            {
+                "name": "Walla",
+                "is_looping": false,
+                "volume": 70,
+                "entries": [
+                    {
+                        "sound_name": "AM1000D1",
+                        "sound_index": 15,
+                        "index": 0,
+                        "durationf": 1.801814
+                    },
+                    {
+                        "sound_name": "AM1000D2",
+                        "sound_index": 16,
+                        "index": 1,
+                        "durationf": 1.668345
+                    },
+                    {
+                        "sound_name": "AM1000D3",
+                        "sound_index": 17,
+                        "index": 2,
+                        "durationf": 1.134467
+                    },
+                    {
+                        "sound_name": "AM1000D4",
+                        "sound_index": 18,
+                        "index": 3,
+                        "durationf": 2.035374
+                    },
+                    {
+                        "sound_name": "AM1000D5",
+                        "sound_index": 19,
+                        "index": 4,
+                        "durationf": 1.801814
+                    },
+                    {
+                        "sound_name": "AM1000D6",
+                        "sound_index": 20,
+                        "index": 5,
+                        "durationf": 2.636009
+                    },
+                    {
+                        "sound_name": "AM1000D7",
+                        "sound_index": 21,
+                        "index": 6,
+                        "durationf": 3.9039
+                    }
+                ]
+            },
+            {
+                "name": "Distant fighting",
+                "is_looping": false,
+                "volume": 70,
+                "entries": [
+                    {
+                        "sound_name": "AM1000E1",
+                        "sound_index": 22,
+                        "index": 0,
+                        "durationf": 5.772426
+                    },
+                    {
+                        "sound_name": "AM1000E2",
+                        "sound_index": 23,
+                        "index": 1,
+                        "durationf": 7.10712
+                    },
+                    {
+                        "sound_name": "AM1000E3",
+                        "sound_index": 24,
+                        "index": 2,
+                        "durationf": 5.505533
+                    },
+                    {
+                        "sound_name": "AM1000E4",
+                        "sound_index": 25,
+                        "index": 3,
+                        "durationf": 4.070748
+                    },
+                    {
+                        "sound_name": "AM1000E5",
+                        "sound_index": 26,
+                        "index": 4,
+                        "durationf": 5.705714
+                    },
+                    {
+                        "sound_name": "AM1000E6",
+                        "sound_index": 27,
+                        "index": 5,
+                        "durationf": 2.669342
+                    },
+                    {
+                        "sound_name": "AM1000E7",
+                        "sound_index": 28,
+                        "index": 6,
+                        "durationf": 6.395646
+                    }
+                ]
+            },
+            {
+                "name": "Horn_Blow",
+                "is_looping": false,
+                "volume": 90,
+                "entries": [
+                    {
+                        "sound_name": "AM1000J",
+                        "sound_index": 29,
+                        "index": 0,
+                        "durationf": 4.331565
+                    }
+                ]
+            },
+            {
+                "name": "Sail Flaps1",
+                "is_looping": false,
+                "volume": 70,
+                "entries": [
+                    {
+                        "sound_name": "AM1000M1",
+                        "sound_index": 30,
+                        "index": 0,
+                        "durationf": 3.948345
+                    },
+                    {
+                        "sound_name": "AM1000M2",
+                        "sound_index": 31,
+                        "index": 1,
+                        "durationf": 4.373333
+                    },
+                    {
+                        "sound_name": "AM1000M3",
+                        "sound_index": 32,
+                        "index": 2,
+                        "durationf": 3.601678
+                    },
+                    {
+                        "sound_name": "AM1000M4",
+                        "sound_index": 33,
+                        "index": 3,
+                        "durationf": 3.601678
+                    },
+                    {
+                        "sound_name": "AM1000M5",
+                        "sound_index": 34,
+                        "index": 4,
+                        "durationf": 2.998367
+                    }
+                ]
+            },
+            {
+                "name": "Sail Flaps2",
+                "is_looping": false,
+                "volume": 60,
+                "entries": [
+                    {
+                        "sound_name": "AM1000M1",
+                        "sound_index": 35,
+                        "index": 0,
+                        "durationf": 3.948345
+                    },
+                    {
+                        "sound_name": "AM1000M2",
+                        "sound_index": 36,
+                        "index": 1,
+                        "durationf": 4.373333
+                    },
+                    {
+                        "sound_name": "AM1000M3",
+                        "sound_index": 37,
+                        "index": 2,
+                        "durationf": 3.601678
+                    },
+                    {
+                        "sound_name": "AM1000M4",
+                        "sound_index": 38,
+                        "index": 3,
+                        "durationf": 3.601678
+                    },
+                    {
+                        "sound_name": "AM1000M5",
+                        "sound_index": 39,
+                        "index": 4,
+                        "durationf": 2.998367
+                    }
+                ]
+            },
+            {
+                "name": "Wind Singles",
+                "is_looping": false,
+                "volume": 75,
+                "entries": [
+                    {
+                        "sound_name": "AM1000O1",
+                        "sound_index": 40,
+                        "index": 0,
+                        "durationf": 10.643991
+                    },
+                    {
+                        "sound_name": "AM1000O2",
+                        "sound_index": 41,
+                        "index": 1,
+                        "durationf": 6.840181
+                    },
+                    {
+                        "sound_name": "AM1000O3",
+                        "sound_index": 42,
+                        "index": 2,
+                        "durationf": 8.675329
+                    },
+                    {
+                        "sound_name": "AM1000O4",
+                        "sound_index": 43,
+                        "index": 3,
+                        "durationf": 7.507528
+                    },
+                    {
+                        "sound_name": "AM1000O5",
+                        "sound_index": 44,
+                        "index": 4,
+                        "durationf": 7.007029
+                    },
+                    {
+                        "sound_name": "AM1000O6",
+                        "sound_index": 45,
+                        "index": 5,
+                        "durationf": 8.508526
+                    },
+                    {
+                        "sound_name": "AM1000O7",
+                        "sound_index": 46,
+                        "index": 6,
+                        "durationf": 12.2122
+                    }
+                ]
+            },
+            {
+                "name": "cat_singles_exterior",
+                "is_looping": false,
+                "volume": 100,
+                "entries": [
+                    {
+                        "sound_name": "AM1000P1",
+                        "sound_index": 47,
+                        "index": 0,
+                        "durationf": 0.940181
+                    },
+                    {
+                        "sound_name": "AM1000P2",
+                        "sound_index": 48,
+                        "index": 1,
+                        "durationf": 1.3639
+                    },
+                    {
+                        "sound_name": "AM1000P3",
+                        "sound_index": 49,
+                        "index": 2,
+                        "durationf": 1.08585
+                    },
+                    {
+                        "sound_name": "AM1000P4",
+                        "sound_index": 50,
+                        "index": 3,
+                        "durationf": 1.092472
+                    },
+                    {
+                        "sound_name": "AM1000P5",
+                        "sound_index": 51,
+                        "index": 4,
+                        "durationf": 1.08585
+                    }
+                ]
+            },
+            {
+                "name": "lighthouse loop",
+                "is_looping": true,
+                "volume": 55,
+                "entries": [
+                    {
+                        "sound_name": "AM1000K",
+                        "sound_index": 52,
+                        "index": 0,
+                        "durationf": 9.029478
+                    }
+                ]
+            },
+            {
+                "name": "goblin_walla",
+                "is_looping": false,
+                "volume": 75,
+                "entries": [
+                    {
+                        "sound_name": "AM1000F1",
+                        "sound_index": 53,
+                        "index": 0,
+                        "durationf": 7.282721
+                    },
+                    {
+                        "sound_name": "AM1000F2",
+                        "sound_index": 54,
+                        "index": 1,
+                        "durationf": 3.48907
+                    },
+                    {
+                        "sound_name": "AM1000F3",
+                        "sound_index": 55,
+                        "index": 2,
+                        "durationf": 4.923673
+                    },
+                    {
+                        "sound_name": "AM1000F4",
+                        "sound_index": 56,
+                        "index": 3,
+                        "durationf": 6.028889
+                    },
+                    {
+                        "sound_name": "AM1000F5",
+                        "sound_index": 57,
+                        "index": 4,
+                        "durationf": 4.349569
+                    },
+                    {
+                        "sound_name": "AM1000F6",
+                        "sound_index": 58,
+                        "index": 5,
+                        "durationf": 4.055918
+                    },
+                    {
+                        "sound_name": "AM1000F7",
+                        "sound_index": 59,
+                        "index": 6,
+                        "durationf": 4.761179
+                    },
+                    {
+                        "sound_name": "AM1000F8",
+                        "sound_index": 60,
+                        "index": 7,
+                        "durationf": 3.722993
+                    },
+                    {
+                        "sound_name": "AM1000F9",
+                        "sound_index": 61,
+                        "index": 8,
+                        "durationf": 4.497143
+                    }
+                ]
+            },
+            {
+                "name": "tavern_walla_ext",
+                "is_looping": false,
+                "volume": 60,
+                "entries": [
+                    {
+                        "sound_name": "AM1000I1",
+                        "sound_index": 62,
+                        "index": 0,
+                        "durationf": 6.027302
+                    },
+                    {
+                        "sound_name": "AM1000I2",
+                        "sound_index": 63,
+                        "index": 1,
+                        "durationf": 3.67034
+                    },
+                    {
+                        "sound_name": "AM1000I3",
+                        "sound_index": 64,
+                        "index": 2,
+                        "durationf": 4.838186
+                    },
+                    {
+                        "sound_name": "AM1000I4",
+                        "sound_index": 65,
+                        "index": 3,
+                        "durationf": 6.64
+                    },
+                    {
+                        "sound_name": "AM1000I5",
+                        "sound_index": 66,
+                        "index": 4,
+                        "durationf": 5.138503
+                    },
+                    {
+                        "sound_name": "AM1000I6",
+                        "sound_index": 67,
+                        "index": 5,
+                        "durationf": 2.636009
+                    },
+                    {
+                        "sound_name": "AM1000I7",
+                        "sound_index": 68,
+                        "index": 6,
+                        "durationf": 6.373061
+                    }
+                ]
+            }
+        ]
+    }
+}

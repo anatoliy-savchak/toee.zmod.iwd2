@@ -73,7 +73,12 @@ class DialogFile:
         return
 
     def copy_sound_files(self, source_dir: str, dest_dir: str):
-        os.system(f'del "{dest_dir}\\*.mp3" /Q')
+        source_dir = os.path.normpath(source_dir)
+        dest_dir = os.path.normpath(dest_dir)
+        if not os.path.exists(dest_dir) and os.path.exists(os.path.dirname(dest_dir)):
+            os.mkdir(dest_dir)
+        else:
+            os.system(f'del "{dest_dir}\\*.mp3" /Q')
         ffmpeg_path = "venv\\Library\\bin\\ffmpeg.exe"
         for line_id, sound_file_name in self.sound_map.items():
             sf = os.path.join(source_dir, sound_file_name + ".WAV")
@@ -257,12 +262,12 @@ class ProduceNPCDialog:
 
     def calc_trigger(self, trigger: str):
         trigger_lines = produce_scripts.condition_split(trigger)
-        out_lines = produce_scripts.transate_trigger_lines(trigger_lines, self.parent.exported_dir)
+        out_lines = produce_scripts.transate_trigger_lines(trigger_lines, self.parent.producer_app)
         return trigger_lines, out_lines
 
     def calc_actions(self, action: str):
         action_lines = produce_scripts.condition_split(action)
-        out_lines = produce_scripts.transate_action_lines(action_lines, self.parent.exported_dir)
+        out_lines = produce_scripts.transate_action_lines(action_lines, self.parent.producer_app)
         return action_lines, out_lines
 
     def process_phrase_dialog(self, phrase: dict, check_trigger: bool):
@@ -327,7 +332,7 @@ class ProduceNPCDialog:
 
             if "HasJournal" in response_flags:
                 journalIndex = response["JournalIndex"]
-                rums = self.parent.exported_dir.journal.get_rumors_by_strref(journalIndex)
+                rums = self.parent.producer_app.journal.get_rumors_by_strref(journalIndex)
                 if effect_code:
                     effect_code = effect_code.strip()
                 effect_code = (effect_code + "; " if effect_code else "") + f'uj.journal_add({journalIndex}, {rums})'

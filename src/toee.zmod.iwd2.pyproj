@@ -136,13 +136,13 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="zmod_iwd2_core\scr\py00406Game_Portal.py" />
-    <Compile Include="zmod_iwd2_core\scr\py01000_targos_docks_daemon.py" />
-    <Compile Include="zmod_iwd2_core\scr\py01001_targos_docks_encounters.py" />
+    <Compile Include="zmod_iwd2_core\scr\py10000_ar1000_daemon.py" />
     <Compile Include="zmod_iwd2_core\scr\py05001_bag_of_holding.py" />
     <Compile Include="zmod_iwd2_core\scr\py06101_daemon_pc.py" />
     <Compile Include="zmod_iwd2_core\scr\py06111_sneak.py" />
     <Compile Include="zmod_iwd2_core\scr\py06122_cormyr_prompter.py" />
     <Compile Include="zmod_iwd2_core\scr\py06214_doors_autodestroy.py" />
+    <Compile Include="zmod_iwd2_core\scr\py10001_ar1000_npcs.py" />
     <Compile Include="zmod_iwd2_core\scr\py14714_keep_commander.py" />
     <Compile Include="zmod_iwd2_core\scr\random_encounter.py" />
     <Compile Include="zmod_iwd2_core\scr\Spell076 - Contagion.py" />
@@ -295,7 +295,7 @@
   <ItemGroup>
     <Content Include="zmod_iwd2\rules\MapList.mes" />
     <Content Include="zmod_iwd2_core\dlg\00406Game_Portal.dlg" />
-    <Content Include="zmod_iwd2_core\dlg\01001_targos_docks_encounters.dlg" />
+    <Content Include="zmod_iwd2_core\dlg\10001_ar1000.dlg" />
     <Content Include="zmod_iwd2_core\mes\gamekeylog.mes" />
     <Content Include="zmod_iwd2_core\mes\gamequestlog.mes" />
     <Content Include="zmod_iwd2_core\mes\game_rd_npc_m2m.mes" />

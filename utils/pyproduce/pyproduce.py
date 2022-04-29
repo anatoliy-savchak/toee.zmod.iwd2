@@ -3,46 +3,35 @@ from importlib.resources import path
 import json
 import os
 import inf_commands
+import produce_npc
+from types import SimpleNamespace
+import produce_dialog
+import common
+import produce_ar
 
-class InfinityExportedDir:
-    def __init__(self, dir: str) -> None:
-        self.dir = dir
-        self.folders = dict()
-        self.folders["act"] = dict()
-        self.folders["cre"] = dict()
-        self.folders["dlg"] = dict()
+class ProducerApp:
+    def __init__(self, exp_dir:str, core_dir: str, wav_dir: str, src_dir: str, module_dir: str) -> None:
+        self.exp_dir = exp_dir
+        self.core_dir = core_dir
+        self.wav_dir = wav_dir
+        self.src_dir = src_dir
+        self.module_dir = module_dir
 
-        self.elements = dict()
-
-        self.lines_script = list()
-        self.lines_dialog = list()
         self.copy_speaches = list()
-        self.current_crename = ""
-        self.cre = dict()
+        self.cres = dict()
+        self.elements = dict()
+        self.current_are_name = ""
+        self.current_dialog_file = None
 
-        self.setup_elements()
         self.journal = None
         self.commands = inf_commands.InfCommands()
         return
 
     @staticmethod
-    def read_file(file_name: str):
+    def read_file_json(file_name: str):
         with open(file_name, 'r') as f:
             file_ = json.load(f)
         return file_
-
-    def setup_elements(self):
-        self.elements["base_class"] = "NPCBase"
-        return
-
-    def read_cre(self, name: str):
-        file_name = os.path.join(self.dir, "Creatures", name + '.json')
-        value = self.folders["cre"].get(name)
-        if not value:
-            value = self.read_file(file_name)
-            self.folders["cre"][name] = value
-        self.cre = value
-        return value
 
     @staticmethod
     def cre_strref_to_string(strref):
@@ -91,6 +80,132 @@ class InfinityExportedDir:
         return
 
     def load_cre_dialog(self, dialog_name):
-        fn = os.path.join(self.dir, 'Dialogs', dialog_name + '.json')
-        result = self.read_file(fn)
+        fn = os.path.join(self.exp_dir, 'Dialogs', dialog_name + '.json')
+        result = self.read_file_json(fn)
         return result
+
+    def get_cre_path(self, cre_name: str):
+        return os.path.join(self.exp_dir, 'Creatures', cre_name + ".json")
+
+    def get_path_sounds_index(self):
+        return os.path.join(self.core_dir, "sound/sounds.json")
+
+    def get_path_sound_scheme(self):
+        return os.path.join(self.core_dir, "sound/schemelist.mes")
+
+    def get_path_sound_index(self):
+        return os.path.join(self.core_dir, "sound/schemeindex.mes")        
+
+    def get_path_sound(self):
+        return os.path.join(self.core_dir, "sound")                
+
+    def get_path_actions(self):
+        return os.path.join(self.src_dir, "IDS/ACTION.IDS")
+
+    def get_path_triggers(self):
+        return os.path.join(self.src_dir, "IDS/TRIGGER.IDS")
+
+    def get_path_out_rumors_file(self):
+        return os.path.join(self.core_dir, "mes/game_rd_npc_m2m.mes")
+
+    def get_path_template_rumors_file(self):
+        return os.path.join(self.core_dir, "mes/game_rd_npc_f2m.mes")
+
+    def get_path_map_rumors_file(self):
+        return os.path.join(self.exp_dir, "journal/journal_map.json")
+
+    def get_path_out_npcs_file(self, are_name: str, script_id: int = None):
+        if script_id is None:
+            script_id = self.are_name_to_script_id(are_name) + 1
+        name = f"py{script_id:05d}_{are_name.lower()}_npcs.py"
+        return os.path.join(self.core_dir, "scr", name)
+
+    def get_path_out_npcs_dialog_file(self, are_name: str, script_id: int = None):
+        if script_id is None:
+            script_id = self.are_name_to_script_id(are_name) + 1
+        name = f"{script_id:05d}_{are_name.lower()}_npcs.dlg"
+        return os.path.join(self.core_dir, "dlg", name)
+
+    def get_path_out_daemon_file(self, are_name: str, script_id: int = None):
+        if script_id is None:
+            script_id = self.are_name_to_script_id(are_name)
+        name = f"py{script_id:05d}_{are_name.lower()}_daemon.py"
+        return os.path.join(self.core_dir, "scr", name)
+
+    def get_path_template_npcs_file(self, are_name):
+        return 'data/py06616_template.py'
+
+    def get_path_template_daemon_file(self, are_name):
+        return 'data/daemon_template.py'
+
+    def get_path_out_map_info(self, are_name):
+        return os.path.join(self.module_dir, "maps", are_name, "mapinfo.txt")
+
+    def produce_are_start(self, are_name: str):
+        self.current_are_name = are_name
+        self.current_dialog_file = produce_dialog.DialogFile(self.get_path_out_npcs_dialog_file(are_name))
+        script_id = self.are_name_to_script_id(are_name) + 1
+        dfn = self.get_path_out_npcs_file(are_name, script_id)
+        #sfn = self.get_path_template_npcs_file(are_name)
+        with open(dfn, 'r') as fi:
+            lines = fi.readlines()
+        common.lines_after_cutoff(lines, common.marked_line("NPCS"))
+        lines.append(f"MODULE_SCRIPT_ID = {script_id}\n")
+        lines.append(" ")
+        with open(dfn, 'w') as f:
+            f.writelines(lines)
+        return
+
+    def produce_are_end(self):
+        script_id = self.are_name_to_script_id(self.current_are_name) + 1
+        dest_speech_path = os.path.join(self.get_path_sound(), "speech", f"{script_id:05d}")
+        self.current_dialog_file.copy_sound_files(self.wav_dir, dest_speech_path)
+        self.current_are_name = None
+        self.current_dialog_file = None
+        return
+
+    def produce_are_npc(self, cre_name: str, are_name: str = None):
+        are_name = are_name if are_name else self.current_are_name
+        if rec := self.cres.get(cre_name):
+            rec.are_names.append(are_name)
+            return
+
+        script_id = self.are_name_to_script_id(are_name) + 1
+        out_npcs_file = self.get_path_out_npcs_file(are_name, script_id)
+        prod = produce_npc.ProduceNPC(self
+            , out_npcs_file
+            , self.current_dialog_file
+        ).produce_npc(cre_name)
+        prod.save()
+
+        are_names = list()
+        are_names.append(are_name)
+        rec = SimpleNamespace(are_names = are_names, cre_name = cre_name, ctrl_name= prod.ctrl_name, out_npcs_file = out_npcs_file)
+        self.cres[cre_name] = rec
+        return
+
+    @staticmethod
+    def are_name_to_script_id(are_name: str):
+        return int(are_name.lower().replace("ar", ""))*10
+
+    def produce_are(self, are_name: str):
+        daemon = produce_ar.ProduceDaemon(self, are_name)
+        fn = self.get_path_out_daemon_file(are_name)
+        fnt = self.get_path_template_npcs_file
+        daemon.load_template(fn)
+        daemon.produce_npcs("place_npcs")
+        daemon.save(fn)
+        return
+
+    def find_npc_class(self, cre_name: str) -> tuple: # ctrl_name, module_name
+        #next((for are_name, rec in self.cres.items() if rec.), None)
+        rec = self.cres.get(cre_name)
+        if rec:
+            module_name = os.path.basename(rec.out_npcs_file).replace(".py", "")
+            return (rec.ctrl_name, module_name)
+        return (None, None)
+
+
+
+
+

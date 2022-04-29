@@ -1,13 +1,12 @@
 import os
 import json
-import pyproduce
 
 i_def = "\t"
 i_code = "\t\t"
 
 class ProduceDaemon:
-    def __init__(self, exported_dir: pyproduce.InfinityExportedDir, name: str) -> None:
-        self.exported_dir = exported_dir
+    def __init__(self, producer_app, name: str) -> None:
+        self.producer_app = producer_app
         self.lines_script = list()
         self.name = name
         self.ar = None
@@ -22,10 +21,10 @@ class ProduceDaemon:
         return
 
     def load_ar(self):
-        fn = os.path.join(self.exported_dir.dir, "Areas", self.name, self.name + ".json")
+        fn = os.path.join(self.producer_app.exp_dir, "Areas", self.name, self.name + ".json")
         with open(fn, 'r') as f:
             self.ar = json.load(f)
-        fn = os.path.join(self.exported_dir.dir, "Areas", self.name, self.name + "_sec.json")
+        fn = os.path.join(self.producer_app.exp_dir, "Areas", self.name, self.name + "_sec.json")
         if os.path.exists(fn):
             with open(fn, 'r') as f:
                 self.ar_sec = json.load(f)
@@ -56,8 +55,8 @@ class ProduceDaemon:
             self.lines_script.append("")
         else:
             found_def = found_defs[0]
-            subline = "return"
-            found_def_returns = [index for index, line in enumerate(self.lines_script) if subline in line and index > found_def ]
+            subline = "\t\treturn"
+            found_def_returns = [index for index, line in enumerate(self.lines_script) if index > found_def and str(line).startswith(subline)]
             if found_def_returns:
                 found_def_return = found_def_returns[0]
 
@@ -110,19 +109,7 @@ class ProduceDaemon:
         return
 
     def find_npc_class(self, cre_name: str):
-        word = f" {cre_name} "
-        for npc_file, lines in self.npc_classes.items():
-            found_lines = [line for line in lines if word in line]
-            if not found_lines: continue
-            found_line = str(found_lines[0])
-            class_pos = found_line.find("class")
-            if class_pos < 0: continue
-            class_pos += len("class") + 1
-            par_pos = found_line.find("(")
-            if par_pos < 0: continue
-            value = found_line[class_pos:par_pos]
-            return value, npc_file.replace(".py", "")
-        return None, None
+        return self.producer_app.find_npc_class(cre_name)
 
     def translate_orientation(self, ori: int):
         # TODO - modify const_toee to have rotation_0645_oclock

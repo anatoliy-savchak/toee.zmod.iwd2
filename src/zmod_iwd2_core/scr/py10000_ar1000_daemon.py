@@ -1,7 +1,7 @@
 import toee, debug, utils_toee, utils_storage, utils_obj, utils_item, const_toee, ctrl_daemon, ctrl_daemon2
 import ctrl_behaviour, py06122_cormyr_prompter, factions_zmod, utils_npc, utils_locks, const_proto_items, const_proto_scrolls, const_proto_rings
 import monster_info, module_quests, module_consts, module_globals
-import ctrl_daemon_ie
+import ctrl_daemon_ie, ctrl_ambients
 #### NPCS IMPORT ####
 import py10001_ar1000_npcs
 #### NPCS IMPORT END ####
@@ -49,7 +49,9 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 	def place_encounters_initial(self):
 		self.place_portals()
 		self.place_doors()
+		self.setup_ambients()
 		self.place_npcs()
+
 		self.debug_glob_npcs()
 		#self.iSetGlobal(name='Know_Hedron', area='GLOBAL', value=1)
 		return
@@ -288,3 +290,5 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		
 		return
 
+	def setup_ambients(self):
+		return

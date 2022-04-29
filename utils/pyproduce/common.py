@@ -25,3 +25,25 @@ def lines_after_before_cutoff(lines: list, after: str, before: str):
 
 def marked_line(code: str):
     return f"#### {code} ####"
+
+def lines_method(lines: list, method_line: str):
+    subline = method_line
+    found_def = len(lines)
+    found_def_return = found_def + 1
+
+    found_defs = [index for index, line in enumerate(lines) if subline in line ]
+    if not found_defs:
+        lines.append(method_line)
+        lines.append("\t"+"return")
+        lines.append("")
+    else:
+        found_def = found_defs[0]
+        subline = "\t\treturn"
+        found_def_returns = [index for index, line in enumerate(lines) if index > found_def and str(line).startswith(subline)]
+        if found_def_returns:
+            found_def_return = found_def_returns[0]
+
+        while found_def_return > found_def +1 and found_def_return < len(lines):
+            found_def_return += -1
+            lines.pop(found_def_return)
+    return found_def_return

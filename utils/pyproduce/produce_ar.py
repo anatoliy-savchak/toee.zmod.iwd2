@@ -1,5 +1,6 @@
 import os
 import json
+import common
 
 i_def = "\t"
 i_code = "\t\t"
@@ -130,3 +131,38 @@ class ProduceDaemon:
         elif ori == 14: return "const_toee.ROT05" # SE
         elif ori == 15: return "const_toee.ROT05" # SSE
         return "const_toee.ROT06"
+
+    def produce_ambients(self, def_name: str):
+        found_def_return = common.lines_method(self.lines_script, "\tdef setup_ambients(self):")
+        def add_codeline(line: str):
+            nonlocal found_def_return
+
+            self.lines_script.insert(found_def_return, i_code + line)
+            found_def_return += 1
+            return
+
+        ambients = self.producer_app.produceSound.dict_index[self.name]
+        for ambient_dict in self.ar_sec["ambients"]:
+            flags_str = ambient_dict["Flags"]
+            if not "Enabled" in flags_str: continue
+            name = ambient_dict["Name"]
+            if "main" in name.lower(): continue
+            is_looping = "Looping" in flags_str
+            ignoreRadius = "IgnoreRadius" in flags_str
+
+            sound_indexes = list()
+            durations = list()
+            rec = next((rec for rec in ambients["recs"] if rec["name"] == name), None)
+            for entry in rec["entries"]:
+                sound_index = entry["sound_index"]
+                durationf = entry["durationf"]
+                sound_indexes.apend(int(sound_index))
+                durations.apend(int(durationf))
+           
+            sound_indexes_str = str(sound_indexes)
+            durations_str = str(durations)
+            add_codeline('handler = ctrl_ambients.AmbientHanlder()')
+            add_codeline(f'handler.setup(name="{name}", flags="{flags_str}", frequency={ambient_dict["FrequencyBase"]}, variation={ambient_dict["FrequencyVariation"]}, x={ambient_dict["XCoordinateSec"]}, x={ambient_dict["YCoordinateSec"]}, sound_indexes={sound_indexes_str}, durations={durations_str})')
+
+        
+        return

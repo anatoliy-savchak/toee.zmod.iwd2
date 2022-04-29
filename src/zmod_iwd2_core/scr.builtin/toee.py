@@ -1059,6 +1059,16 @@ class PyTimeStamp:
 		assert isinstance(time_stamp, PyTimeStamp)
 		return 1
 
+	def time_game_in_seconds(self):
+		""" seconds from the beginning in game in game time"""
+		return 1
+
+	@staticmethod
+	def time_in_game_in_seconds():
+		""" seconds from the beginning in game in real time"""
+		return 1
+	
+
 RUN_DEFAULT = 1
 SKIP_DEFAULT = 0
 

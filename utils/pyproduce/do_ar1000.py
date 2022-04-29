@@ -70,14 +70,3 @@ if True:
     producer_app.produce_are_end()
 
     producer_app.produce_are("AR1000")
-
-if False:
-    dialog_file.copy_sound_files("D:\\IE\\Resources\\IWD2\\WAV", "D:\\Temple\\Temple of Elemental Evil.template\\modules\\zmod_iwd2_core\\sound\\speech\\01001")
-    
-
-if False:
-    daemon = produce_ar.ProduceDaemon(producer_app, "AR1000")
-    daemon.load_template(out_daemon_file)
-    daemon.load_npc_classes(out_npcs_file)
-    daemon.produce_npcs("place_npcs")
-    daemon.save(out_daemon_file)

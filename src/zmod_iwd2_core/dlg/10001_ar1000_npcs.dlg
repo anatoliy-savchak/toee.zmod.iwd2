@@ -657,3 +657,57 @@
 
 {1530}{Well, now, a dwarf is a sight for sore eyes in these windswept lands... especially one who can cleave goblins as well as ye can.  Something this ol' shipbuilder can help ye with?  }{Well, now, a dwarf is a sight for sore eyes in these windswept lands... especially one who can cleave goblins as well as ye can.  Something this ol' shipbuilder can help ye with?  }{}{}{}{} # phrase: 10JORUN 41
 {1531}{My name is @pcname@ .  Who are you?}{}{1}{}{1350}{ctrl(npc).dialog_action(npc, pc, 24)} # resp: 10JORUN 81
+
+{1540}{Hold!  Do you stand with Targos or against her?}{Hold!  Do you stand with Targos or against her?}{}{}{}{} # phrase: 10CRANDA 0
+{1541}{We stand with Targos.  We just sailed in on the Wicked Wench.}{}{1}{}{1550}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 10CRANDA 0
+{1542}{Put down your damned weapon, boy, or we'll cleave it from your wrist.  It's plain we're not goblins.}{}{1}{}{1630}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 10CRANDA 1
+
+{1550}{Then keep your blades close - goblins are prowling the town, and we have no word of their strength or how they breeched the wall.  It was possible that they had help... from someone inside the town.}{Then keep your blades close - goblins are prowling the town, and we have no word of their strength or how they breeched the wall.  It was possible that they had help... from someone inside the town.}{}{}{}{} # phrase: 10CRANDA 1
+{1551}{Continue}{}{1}{}{1560}{} # resp: 10CRANDA 2
+
+{1560}{I was assigned to protect the dock to Dualdon's Wake and to keep it from the goblins.  Unless reinforcements come soon, however, I fear a band of goblins will chance upon me first.}{I was assigned to protect the dock to Dualdon's Wake and to keep it from the goblins.  Unless reinforcements come soon, however, I fear a band of goblins will chance upon me first.}{}{}{}{} # phrase: 10CRANDA 2
+{1561}{Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{1570}{} # resp: 10CRANDA 3
+{1562}{Have no fear of that.  We've dispatched the goblin attackers - the docks belong to Targos again.}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{1610}{} # resp: 10CRANDA 4
+{1563}{Have you seen any goblins?}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{1580}{} # resp: 10CRANDA 5
+{1564}{Stay here and watch the docks - we'll see about taking care of the goblins in the town.}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{0}{} # resp: 10CRANDA 6
+
+{1570}{Magdar?  Magdar is the harbor master.  If he's still alive, he'd most likely be at one of the warehouses on the northern end of the docks.}{Magdar?  Magdar is the harbor master.  If he's still alive, he'd most likely be at one of the warehouses on the northern end of the docks.}{}{}{}{} # phrase: 10CRANDA 4
+{1571}{Have you seen any goblins in the area?}{}{1}{}{1580}{} # resp: 10CRANDA 8
+{1572}{Thanks - stay here and watch the docks.  We'll return.}{}{1}{}{0}{} # resp: 10CRANDA 9
+
+{1580}{I've heard the sounds of fighting at the dock to the north and to the southeast - if you head in either direction, take care.  We don't know how many are in the town.}{I've heard the sounds of fighting at the dock to the north and to the southeast - if you head in either direction, take care.  We don't know how many are in the town.}{}{}{}{} # phrase: 10CRANDA 5
+{1581}{Continue}{}{1}{}{1590}{} # resp: 10CRANDA 10
+
+{1590}{If your band numbers someone who has skill in hiding in shadows, they might be able to scout the town for goblins without being detected.  Once you know where the goblins are, wiping them out should prove easier, especially if the scout takes them unawares.}{If your band numbers someone who has skill in hiding in shadows, they might be able to scout the town for goblins without being detected.  Once you know where the goblins are, wiping them out should prove easier, especially if the scout takes them unawares.}{}{}{}{} # phrase: 10CRANDA 10
+{1591}{What do you mean?}{}{1}{}{1600}{} # resp: 10CRANDA 20
+{1592}{Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{1570}{} # resp: 10CRANDA 21
+{1593}{Not a bad idea.  Maybe a little hide in shadows and scouting could prove useful.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{0}{} # resp: 10CRANDA 22
+{1594}{Indeed.  Scouting Targos unseen could prove useful to us - and detrimental to our foes.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{0}{} # resp: 10CRANDA 23
+{1595}{Not a bad idea.  Maybe a little scouting could prove useful.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{0}{} # resp: 10CRANDA 24
+{1596}{Thanks for the advice - stay here and watch the docks.  We'll return.}{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{0}{} # resp: 10CRANDA 25
+
+{1600}{This may not hold true for every profession, but I've seen rogues in Luskan drop a man twice their size just by striking from the shadows and taking them by surprise.  The victims just hit the ground like logs.  Not a proud tactic, but a successful one. }{This may not hold true for every profession, but I've seen rogues in Luskan drop a man twice their size just by striking from the shadows and taking them by surprise.  The victims just hit the ground like logs.  Not a proud tactic, but a successful one. }{}{}{}{} # phrase: 10CRANDA 11
+{1601}{Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.}{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{1570}{} # resp: 10CRANDA 26
+{1602}{Hells, a sneak attack's worked for *me* on more than one occasion.  No reason not to use it now.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{0}{} # resp: 10CRANDA 27
+{1603}{A backstab is a thieves' trick - a monk has no need of such things.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{0}{} # resp: 10CRANDA 28
+{1604}{Thanks for the advice - stay here and watch the docks.  We'll return.}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{0}{} # resp: 10CRANDA 29
+
+{1610}{That is welcome news!  You should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.}{That is welcome news!  You should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.}{}{}{}{} # phrase: 10CRANDA 6
+{1611}{Lord Ulbrec?  Where can I find him?}{}{1}{}{1620}{} # resp: 10CRANDA 11
+{1612}{I will speak to him, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 10CRANDA 12
+
+{1620}{You can find him in Targos in the cliffs above, in the Town Hall.  If you are searching for a contract with the Targos Guard, then he will no doubt sign you on.}{You can find him in Targos in the cliffs above, in the Town Hall.  If you are searching for a contract with the Targos Guard, then he will no doubt sign you on.}{}{}{}{} # phrase: 10CRANDA 7
+{1621}{I will speak to him, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 10CRANDA 13
+
+{1630}{That's plain enough, but I had to be sure - goblins are prowling the town, and we have no word of their strength or how they breeched the wall.  It was possible that they had help... from someone inside the town.}{That's plain enough, but I had to be sure - goblins are prowling the town, and we have no word of their strength or how they breeched the wall.  It was possible that they had help... from someone inside the town.}{}{}{}{} # phrase: 10CRANDA 3
+{1631}{Continue}{}{1}{}{1560}{} # resp: 10CRANDA 7
+
+{1640}{Any word of goblins or the guard?}{Any word of goblins or the guard?}{}{}{}{} # phrase: 10CRANDA 8
+{1641}{Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.}{}{1}{ctrl(npc).dialog_test(npc, pc, 4)}{1570}{} # resp: 10CRANDA 14
+{1642}{Have you seen any goblins in the area?}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{1580}{} # resp: 10CRANDA 15
+{1643}{Have no fear of goblins.  We've dispatched them - the docks belong to Targos again.}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{1610}{} # resp: 10CRANDA 16
+{1644}{No word yet - keep to your post.  If we hear of anything, we will summon you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{0}{} # resp: 10CRANDA 17
+
+{1650}{If you haven't already, you should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.}{If you haven't already, you should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.}{}{}{}{} # phrase: 10CRANDA 9
+{1651}{Lord Ulbrec?  Where can I find him?}{}{1}{}{1620}{} # resp: 10CRANDA 18
+{1652}{I will speak to him, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 4)} # resp: 10CRANDA 19

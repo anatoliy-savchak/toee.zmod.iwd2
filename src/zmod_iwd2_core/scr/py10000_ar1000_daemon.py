@@ -270,7 +270,9 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(533, 505)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "1000_Goblin_Archer_10", 0, 1)
 		
-		# Crandall: 10CRANDA (503.0, 507.4) const_toee.ROT09 ctrl: None.None 
+		# Crandall: 10CRANDA (503.0, 507.4) const_toee.ROT09 ctrl: py10001_ar1000_npcs.Ctrl10CRANDA 
+		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10CRANDA,  utils_obj.sec2loc(503, 507)
+		self.create_npc_at(loc, ctrl_class, const_toee.ROT09, "Crandall", 0, 1)
 		
 		# Swift Thomas (Hidden): 12SWIFTH (503.3, 441.5) const_toee.ROT05 ctrl: None.None hidden
 		

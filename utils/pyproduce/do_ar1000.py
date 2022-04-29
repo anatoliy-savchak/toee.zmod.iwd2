@@ -65,6 +65,7 @@ if True:
     producer_app.produce_are_npc('10GOBAR')
     producer_app.produce_are_npc('10GOBARD')
     producer_app.produce_are_npc('10SAILRD')
+    producer_app.produce_are_npc('10CRANDA')
 
     producer_app.produce_are_end()
 

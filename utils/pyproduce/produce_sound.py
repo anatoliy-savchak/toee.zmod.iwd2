@@ -16,7 +16,7 @@ class ProduceSound:
 
         self.lines_sound_scheme = self._preload_file(self.file_path_sound_scheme, "{0}{dummy - none}")
         self.lines_sound_index = self._preload_file(self.file_path_sound_index, "{0}{<<NONE>>}")
-        self.dict_index = self._preload_json_file(self.file_path_index)
+        self.dict_index = dict()
         self.last_sound_index = 0
         self.music_files = dict() # source name = dest path
         self.main_are_music = dict()
@@ -128,6 +128,17 @@ class ProduceSound:
             with open(fp, 'w') as f:
                 json.dump(self.dict_index, f, indent=4)
         return
+
+    def load_file_index(self):
+        if os.path.exists(self.file_path_index):
+            self.dict_index = self._preload_json_file(self.file_path_index)
+            return True
+        return False
+
+    def is_are_loaded(self, are_name: str):
+        if self.dict_index.get(are_name):
+            return True
+        return False
 
     @staticmethod
     def get_music_duration(file_path: str):

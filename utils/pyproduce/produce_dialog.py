@@ -72,17 +72,20 @@ class DialogFile:
             json.dump(self.sound_map, f, indent=4)
         return
 
-    def copy_sound_files(self, source_dir: str, dest_dir: str):
+    def copy_sound_files(self, source_dir: str, dest_dir: str, overwrite: bool = False):
         source_dir = os.path.normpath(source_dir)
         dest_dir = os.path.normpath(dest_dir)
         if not os.path.exists(dest_dir) and os.path.exists(os.path.dirname(dest_dir)):
             os.mkdir(dest_dir)
         else:
-            os.system(f'del "{dest_dir}\\*.mp3" /Q')
+            if overwrite:
+                os.system(f'del "{dest_dir}\\*.mp3" /Q')
         ffmpeg_path = "venv\\Library\\bin\\ffmpeg.exe"
         for line_id, sound_file_name in self.sound_map.items():
             sf = os.path.join(source_dir, sound_file_name + ".WAV")
             tf = os.path.join(dest_dir, f"v{line_id}_m.mp3")
+            if not overwrite and os.path.exists(tf):
+                continue
             #os.system(f'copy "{sf}" "{tf}"')
             command = f'{ffmpeg_path} -i "{sf}" -acodec libmp3lame "{tf}" -y'
             print(command)

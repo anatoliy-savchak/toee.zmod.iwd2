@@ -8,6 +8,7 @@ from types import SimpleNamespace
 import produce_dialog
 import common
 import produce_ar
+import produce_sound
 
 class ProducerApp:
     def __init__(self, exp_dir:str, core_dir: str, wav_dir: str, src_dir: str, module_dir: str) -> None:
@@ -25,6 +26,14 @@ class ProducerApp:
 
         self.journal = None
         self.commands = inf_commands.InfCommands()
+        self.produceSound = produce_sound.ProduceSound(self.get_path_sounds_index()
+            , file_path_sound_scheme = self.get_path_sound_scheme()
+            , file_path_sound_index = self.get_path_sound_index()
+            , dir_wav = self.wav_dir
+            , dir_sound = self.get_path_sound()
+            , producer_app = self
+        )
+
         return
 
     @staticmethod
@@ -141,8 +150,18 @@ class ProducerApp:
     def get_path_out_map_info(self, are_name):
         return os.path.join(self.module_dir, "maps", are_name, "mapinfo.txt")
 
-    def produce_are_start(self, are_name: str):
+    def produce_are_start(self, are_name: str, force_process_ambients: bool = False):
         self.current_are_name = are_name
+        process_ambients = force_process_ambients
+        if not process_ambients:
+            process_ambients = not self.produceSound.load_file_index()
+        if process_ambients or not self.produceSound.is_are_loaded(are_name):
+            self.produceSound.process_are(are_name)
+            self.produceSound.save_schemes()
+            self.produceSound.save_map_info_file(are_name)
+            self.produceSound.save_file_index()
+            self.produceSound.save_music_files()
+
         self.current_dialog_file = produce_dialog.DialogFile(self.get_path_out_npcs_dialog_file(are_name))
         script_id = self.are_name_to_script_id(are_name) + 1
         dfn = self.get_path_out_npcs_file(are_name, script_id)

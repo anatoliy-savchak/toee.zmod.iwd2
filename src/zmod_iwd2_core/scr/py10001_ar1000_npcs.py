@@ -3495,3 +3495,274 @@ class Ctrl10SAILRD(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SAILRD
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 
+class Ctrl10CRANDA(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA 
+	@classmethod
+	def get_name(cls): "10Cranda"
+	
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
+
+	@classmethod
+	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
+		
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Crandall")
+		
+		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
+		hairStyle = utils_npc.HairStyle.from_npc(npc)
+		hairStyle.style = const_toee.hair_style_shorthair
+		hairStyle.color = const_toee.hair_color_red # HairColourIndex: 4
+		hairStyle.update_npc(npc)
+		return
+
+	def setup_char(self, npc):
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
+		
+		utils_npc.npc_abilities_set(npc, [12, 11, 12, 9, 9, 9])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
+
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 6
+
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+
+	def setup_gear(self, npc):
+		# SLOT_ARMOR: Leather Armor(LeatherArmor) from 00LEAT01
+		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = False, wear_on = toee.item_wear_boots) # boots for Leather Armor (00LEAT01) OK
+		
+		# SLOT_WEAPON1: Spear(Spears) from 00SPER01
+		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTSPEAR, npc, no_loot = False, wear_on = toee.item_wear_weapon_primary) # Spear (00SPER01) at SLOT_WEAPON1 OK
+		
+		# SLOT_QUICK2: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
+		
+		return
+
+	def script_dialog(self, attachee, triggerer):
+		print("script_dialog 10CRANDA")
+		assert isinstance(attachee, toee.PyObjHandle)
+		assert isinstance(triggerer, toee.PyObjHandle)
+		
+		attachee.turn_towards(triggerer)
+		
+		line_id = -1
+		while True:
+			print("STATE 0")
+			# NumTimesTalkedTo(0)
+			if self.iNumTimesTalkedTo(0):
+				line_id = 1540 # Hold!  Do you stand with Targos or against her?
+				print("STATE 0: line_id = 1540")
+				break
+			
+			print("STATE 8")
+			# NumTimesTalkedToGT(0)
+			if self.iNumTimesTalkedToGT(0):
+				line_id = 1640 # Any word of goblins or the guard?
+				print("STATE 8: line_id = 1640")
+				break
+			
+			print("STATE 9")
+			# Global("Crandall_Leave", "GLOBAL", 1)
+			if self.iGlobal("Crandall_Leave", "GLOBAL", 1):
+				line_id = 1650 # If you haven't already, you should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.
+				print("STATE 9: line_id = 1650")
+				break
+			
+			break # while
+			
+		print("script_dialog line_id: {}".format(line_id))
+		if line_id >= 0:
+			triggerer.begin_dialog(attachee, line_id)
+		
+		return # script_dialog
+	
+	def dialog_test_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		# 10CRANDA
+		
+		if index == 0:
+			# Global("Reig_Quest", "GLOBAL", 1)
+			# Global("Know_Magdar", "GLOBAL", 0)
+			if self.iGlobal("Reig_Quest", "GLOBAL", 1) \
+				 and self.iGlobal("Know_Magdar", "GLOBAL", 0):
+				return True # 1561: Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.
+			
+		elif index == 1:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
+				return True # 1562: Have no fear of that.  We've dispatched the goblin attackers - the docks belong to Targos again.
+			
+		elif index == 2:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
+				return True # 1563: Have you seen any goblins?
+			
+		elif index == 3:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
+				return True # 1564: Stay here and watch the docks - we'll see about taking care of the goblins in the town.
+			
+		elif index == 4:
+			# Global("Reig_Quest", "GLOBAL", 1)
+			# Global("Know_Magdar", "GLOBAL", 0)
+			if self.iGlobal("Reig_Quest", "GLOBAL", 1) \
+				 and self.iGlobal("Know_Magdar", "GLOBAL", 0):
+				return True # 1641: Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.
+			
+		elif index == 5:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
+				return True # 1642: Have you seen any goblins in the area?
+			
+		elif index == 6:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 1)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 1):
+				return True # 1643: Have no fear of goblins.  We've dispatched them - the docks belong to Targos again.
+			
+		elif index == 7:
+			# Global("Dock_Goblin_Quest", "GLOBAL", 0)
+			if self.iGlobal("Dock_Goblin_Quest", "GLOBAL", 0):
+				return True # 1644: No word yet - keep to your post.  If we hear of anything, we will summon you.
+			
+		elif index == 8:
+			# Global("Reig_Quest", "GLOBAL", 1)
+			# Global("Know_Magdar", "GLOBAL", 0)
+			if self.iGlobal("Reig_Quest", "GLOBAL", 1) \
+				 and self.iGlobal("Know_Magdar", "GLOBAL", 0):
+				return True # 1592: Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.
+			
+		elif index == 9:
+			# ClassEx(Protagonist, Thief)
+			if self.iClassEx("Protagonist", "Thief"):
+				return True # 1593: Not a bad idea.  Maybe a little hide in shadows and scouting could prove useful.  Farewell.
+			
+		elif index == 10:
+			# ClassEx(Protagonist, Monk)
+			# !ClassEx(Protagonist, Thief)
+			if self.iClassEx("Protagonist", "Monk") \
+				 and not self.iClassEx("Protagonist", "Thief"):
+				return True # 1594: Indeed.  Scouting Targos unseen could prove useful to us - and detrimental to our foes.  Farewell.
+			
+		elif index == 11:
+			# !ClassEx(Protagonist, Thief)
+			# !ClassEx(Protagonist, Monk)
+			# ClassEx(Protagonist, Ranger)
+			if not self.iClassEx("Protagonist", "Thief") \
+				 and not self.iClassEx("Protagonist", "Monk") \
+				 and self.iClassEx("Protagonist", "Ranger"):
+				return True # 1595: Not a bad idea.  Maybe a little scouting could prove useful.  Farewell.
+			
+		elif index == 12:
+			# !ClassEx(Protagonist, Thief)
+			# !ClassEx(Protagonist, Monk)
+			# !ClassEx(Protagonist, Ranger)
+			if not self.iClassEx("Protagonist", "Thief") \
+				 and not self.iClassEx("Protagonist", "Monk") \
+				 and not self.iClassEx("Protagonist", "Ranger"):
+				return True # 1596: Thanks for the advice - stay here and watch the docks.  We'll return.
+			
+		elif index == 13:
+			# Global("Reig_Quest", "GLOBAL", 1)
+			# Global("Know_Magdar", "GLOBAL", 0)
+			if self.iGlobal("Reig_Quest", "GLOBAL", 1) \
+				 and self.iGlobal("Know_Magdar", "GLOBAL", 0):
+				return True # 1601: Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.
+			
+		elif index == 14:
+			# ClassEx(Protagonist, Thief)
+			if self.iClassEx("Protagonist", "Thief"):
+				return True # 1602: Hells, a sneak attack's worked for *me* on more than one occasion.  No reason not to use it now.  Farewell.
+			
+		elif index == 15:
+			# ClassEx(Protagonist, Monk)
+			if self.iClassEx("Protagonist", "Monk"):
+				return True # 1603: A backstab is a thieves' trick - a monk has no need of such things.  Farewell.
+			
+		elif index == 16:
+			# !ClassEx(Protagonist, Thief)
+			# !ClassEx(Protagonist, Monk)
+			if not self.iClassEx("Protagonist", "Thief") \
+				 and not self.iClassEx("Protagonist", "Monk"):
+				return True # 1604: Thanks for the advice - stay here and watch the docks.  We'll return.
+			
+		return False # dialog_test_do
+	
+	def dialog_action_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		
+		if index == 0:
+			# SetGlobal("Know_Crandall", "GLOBAL", 1)
+			self.iSetGlobal("Know_Crandall", "GLOBAL", 1)
+			# 1541: We stand with Targos.  We just sailed in on the Wicked Wench.
+			
+		elif index == 1:
+			# SetGlobal("Know_Crandall", "GLOBAL", 1)
+			self.iSetGlobal("Know_Crandall", "GLOBAL", 1)
+			# 1542: Put down your damned weapon, boy, or we'll cleave it from your wrist.  It's plain we're not goblins.
+			
+		elif index == 2:
+			# SetGlobal("Crandall_Leave", "GLOBAL", 1)
+			self.iSetGlobal("Crandall_Leave", "GLOBAL", 1)
+			# 1612: I will speak to him, then.  Farewell.
+			
+		elif index == 3:
+			# SetGlobal("Crandall_Leave", "GLOBAL", 1)
+			self.iSetGlobal("Crandall_Leave", "GLOBAL", 1)
+			# 1621: I will speak to him, then.  Farewell.
+			
+		elif index == 4:
+			# SetGlobal("Crandall_Leave", "GLOBAL", 1)
+			self.iSetGlobal("Crandall_Leave", "GLOBAL", 1)
+			# 1652: I will speak to him, then.  Farewell.
+			
+		return # dialog_action_do
+	

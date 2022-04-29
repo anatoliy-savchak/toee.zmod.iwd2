@@ -213,6 +213,7 @@ class ProducerApp:
         fnt = self.get_path_template_npcs_file
         daemon.load_template(fn)
         daemon.produce_npcs("place_npcs")
+        daemon.produce_ambients("setup_ambients")
         daemon.save(fn)
         return
 

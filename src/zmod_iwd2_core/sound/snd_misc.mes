@@ -1,0 +1,42 @@
+// snd_misc.mes
+// Miscellaneous Sounds
+// ranges 4000-4999
+
+{4000}{Splash.wav}
+{4001}{ShortBow-Fire.wav}
+{4002}{LongBow-Fire.wav}
+{4003}{LightCrossBow-Fire.wav}
+{4004}{HeavyCrossBow-Fire.wav}
+{4005}{water_wheel.wav}
+{4006}{zombie_eating.wav}
+{4007}{anvil.wav}
+
+// Door sounds
+
+
+{4050}{door_small_close.wav}
+{4051}{door_small_open.wav}
+{4052}{door_medium_close.wav}
+{4053}{door_medium_open.wav}
+{4054}{door_large_close.wav}
+{4055}{door_large_open.wav}
+{4056}{door_stone_close.wav}
+{4057}{door_stone_open.wav}
+{4058}{door_stone_close01.wav}
+{4059}{door_stone_open01.wav}
+{4060}{door_pillar.wav}
+{4061}{door_stone.wav}
+{4062}{door_metal_close.wav}
+{4063}{door_metal_open.wav}
+{4070}{door_lockpick.wav}
+{4071}{door_lockpick01.wav}
+
+{4100}{speech\slide\LG_2.mp3}
+{4101}{speech\slide\NG_2.mp3}
+{4102}{speech\slide\CG_2.mp3}
+{4103}{speech\slide\LN_2.mp3}
+{4104}{speech\slide\TN_2.mp3}
+{4105}{speech\slide\CN_2.mp3}
+{4106}{speech\slide\LE_2.mp3}
+{4107}{speech\slide\NE_2.mp3}
+{4108}{speech\slide\CE_2.mp3}

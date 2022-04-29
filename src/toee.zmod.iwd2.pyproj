@@ -107,6 +107,9 @@
     <Compile Include="zmod_iwd2_core\scr\const_proto_wondrous.py" />
     <Compile Include="zmod_iwd2_core\scr\const_toee.py" />
     <Compile Include="zmod_iwd2_core\scr\const_traps.py" />
+    <Compile Include="zmod_iwd2_core\scr\ctrl_ambients.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="zmod_iwd2_core\scr\ctrl_behaviour_ie.py" />
     <Compile Include="zmod_iwd2_core\scr\ctrl_behaviour.py" />
     <Compile Include="zmod_iwd2_core\scr\ctrl_daemon_ie.py" />
@@ -295,7 +298,7 @@
   <ItemGroup>
     <Content Include="zmod_iwd2\rules\MapList.mes" />
     <Content Include="zmod_iwd2_core\dlg\00406Game_Portal.dlg" />
-    <Content Include="zmod_iwd2_core\dlg\10001_ar1000.dlg" />
+    <Content Include="zmod_iwd2_core\dlg\10001_ar1000_npcs.dlg" />
     <Content Include="zmod_iwd2_core\mes\gamekeylog.mes" />
     <Content Include="zmod_iwd2_core\mes\gamequestlog.mes" />
     <Content Include="zmod_iwd2_core\mes\game_rd_npc_m2m.mes" />

@@ -112,6 +112,7 @@ class ProduceSound:
         return
 
     def save_map_info_file(self, are_name: str):
+        return # debug!
         rec = self.main_are_music.get(are_name)
         if rec:
             fp = self.producer_app.get_path_out_map_info(are_name)

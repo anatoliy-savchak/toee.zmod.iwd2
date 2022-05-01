@@ -142,31 +142,32 @@ class ProduceDaemon:
             found_def_return += 1
             return
 
-        ambients = self.producer_app.produceSound.dict_index[self.name]
-        for ambient_dict in self.ar_sec["ambients"]:
-            flags_str = ambient_dict["Flags"]
-            if not "Enabled" in flags_str: continue
-            name = ambient_dict["Name"]
-            if "main" in name.lower(): continue
-            is_looping = "Looping" in flags_str
-            ignoreRadius = "IgnoreRadius" in flags_str
+        ambients = self.producer_app.produceSound.dict_index.get(self.name)
+        if ambients:
+            for ambient_dict in self.ar_sec["ambients"]:
+                flags_str = ambient_dict["Flags"]
+                if not "Enabled" in flags_str: continue
+                name = ambient_dict["Name"]
+                if "main" in name.lower(): continue
+                is_looping = "Looping" in flags_str
+                ignoreRadius = "IgnoreRadius" in flags_str
 
-            sound_indexes = list()
-            durations = list()
-            rec = next((rec for rec in ambients["recs"] if rec["name"] == name), None)
-            for entry in rec["entries"]:
-                sound_index = entry["sound_index"]
-                durationf = entry["durationf"]
-                sound_indexes.append(int(sound_index))
-                duration = int(math.ceil(durationf))
-                durations.append(duration)
-           
-            sound_indexes_str = str(sound_indexes)
-            durations_str = str(durations)
-            add_codeline('')
-            add_codeline('handler = ctrl_ambients.AmbientHanlder()')
-            add_codeline(f'handler.setup(name="{name}", flags="{flags_str}", frequency={ambient_dict["FrequencyBase"]}, variation={ambient_dict["FrequencyVariation"]}, x={ambient_dict["XCoordinateSec"]}, y={ambient_dict["YCoordinateSec"]}, sound_indexes={sound_indexes_str}, durations={durations_str})')
-            add_codeline('self.ambients.append(handler)')
-
-        
+                sound_indexes = list()
+                durations = list()
+                rec = next((rec for rec in ambients["recs"] if rec["name"] == name), None)
+                if not rec:
+                    continue
+                for entry in rec["entries"]:
+                    sound_index = entry["sound_index"]
+                    durationf = entry["durationf"]
+                    sound_indexes.append(int(sound_index))
+                    duration = int(math.ceil(durationf))
+                    durations.append(duration)
+            
+                sound_indexes_str = str(sound_indexes)
+                durations_str = str(durations)
+                add_codeline('')
+                add_codeline('handler = ctrl_ambients.AmbientHanlder()')
+                add_codeline(f'handler.setup(name="{name}", flags="{flags_str}", frequency={ambient_dict["FrequencyBase"]}, variation={ambient_dict["FrequencyVariation"]}, x={ambient_dict["XCoordinateSec"]}, y={ambient_dict["YCoordinateSec"]}, sound_indexes={sound_indexes_str}, durations={durations_str})')
+                add_codeline('self.ambients.append(handler)')
         return

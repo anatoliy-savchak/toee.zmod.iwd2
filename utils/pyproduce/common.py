@@ -1,3 +1,5 @@
+import json
+
 from json import JSONEncoder
 class EncodeAsDict(JSONEncoder):
     def default(self, o):
@@ -47,3 +49,8 @@ def lines_method(lines: list, method_line: str):
             found_def_return += -1
             lines.pop(found_def_return)
     return found_def_return
+
+def read_file_json(file_path: str) -> dict:
+    with open(file_path, encoding='utf-8', mode='r') as f:
+        file_ = json.load(f)
+    return file_

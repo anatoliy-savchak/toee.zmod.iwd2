@@ -259,3 +259,14 @@ def money_to_str(value_cp):
 	if (not reminder):
 		return "{} {}".format(gold_str, silver_str).strip()
 	return "{} {} {} cp".format(gold_str, silver_str, reminder).strip()
+
+def scenery_flags_to_str(flags):
+	words = list()
+	for k, v in const_toee.OSCF_ENUM_DICT.iteritems():
+		if (flags & k):
+			words.append(v)
+	return "{:x}: {}".format(flags, str(words))
+
+def get_scenery_flags_to_str(scenery_obj):
+	flags = scenery_obj.obj_get_int(toee.obj_f_scenery_flags)
+	return scenery_flags_to_str(flags)

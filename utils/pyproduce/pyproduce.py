@@ -2,6 +2,7 @@ from asyncore import write
 from importlib.resources import path
 import json
 import os
+from posixpath import basename
 import inf_commands
 import produce_npc
 from types import SimpleNamespace
@@ -11,18 +12,20 @@ import produce_ar
 import produce_sound
 
 class ProducerApp:
-    def __init__(self, exp_dir:str, core_dir: str, wav_dir: str, src_dir: str, module_dir: str) -> None:
+    def __init__(self, exp_dir:str, core_dir: str, wav_dir: str, src_dir: str, module_dir: str, baf_dir: str) -> None:
         self.exp_dir = exp_dir
         self.core_dir = core_dir
         self.wav_dir = wav_dir
         self.src_dir = src_dir
         self.module_dir = module_dir
+        self.baf_dir = baf_dir
 
         self.copy_speaches = list()
         self.cres = dict()
         self.elements = dict()
         self.current_are_name = ""
         self.current_dialog_file = None
+        self.bafs = dict()
 
         self.journal = None
         self.commands = inf_commands.InfCommands()
@@ -225,7 +228,52 @@ class ProducerApp:
             return (rec.ctrl_name, module_name)
         return (None, None)
 
+    def find_first_in_bafs(self, lines: list):
+        for fn in os.listdir(self.baf_dir):
+            if not fn.lower().endswith(".baf"): continue
+            baf_path = os.path.join(self.baf_dir, fn)
+            src = self.bafs.get(fn)
+            if src is None:
+                with open(baf_path, 'r') as f:
+                    src = f.readlines()
+                    self.bafs[fn] = src
+            
+            result = self.find_first_in_baf_lines(src, lines, baf_path)
+            if result:
+                return result
+        return None
 
+    @staticmethod
+    def find_first_in_baf(baf_path: str, lines: list):
+        lowerlines = list()
+        for l in lines: lowerlines.append(l.lower())
+        with open(baf_path,'r') as src:
+            found= None
+            for line in src:
+                if len(line) == 0: break #happens at end of file, then stop loop
+                for i, l in enumerate(lines):
+                    if l in line or lowerlines[i] in line.lower():
+                        return (baf_path, line)
+        return
 
+    @staticmethod
+    def find_first_in_baf_lines(src: list, lines: list, baf_path: str):
+        lowerlines = list()
+        for l in lines: lowerlines.append(l.lower())
+        found= None
+        for line in src:
+            if len(line) == 0: break #happens at end of file, then stop loop
+            for i, l in enumerate(lines):
+                if l in line or lowerlines[i] in line.lower():
+                    return (baf_path, line)
+        return
 
-
+    def list_ares(self):
+        dir = os.path.join(self.exp_dir, "Areas")
+        for are_name in os.listdir(dir):
+            aredir = os.path.join(dir, are_name)
+            fn = os.path.join(aredir, are_name + "_sec.json")
+            if not os.path.exists(fn):
+                fn = os.path.join(aredir, are_name + ".json")
+            yield fn
+        return

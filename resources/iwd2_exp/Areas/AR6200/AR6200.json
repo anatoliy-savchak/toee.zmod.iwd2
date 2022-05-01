@@ -13668,9 +13668,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 15,
       "FrequencyVariation": 5,
-      "AmbientAppearenceSchedule": 4294967295,
+      "AmbientAppearenceSchedule": "ALL",
       "Flags": "Enabled, RandomOrder",
-      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+      "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
     },
     {
       "Name": "Sound_MainLoopDay",
@@ -13694,9 +13694,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": 131040,
+      "AmbientAppearenceSchedule": "From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729",
       "Flags": "Enabled, Looping, IgnoreRadius",
-      "AmbientAppearenceScheduleStr": ""
+      "AmbientAppearenceScheduleStr": "From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729"
     },
     {
       "Name": "Sound_MainLoopNight",
@@ -13720,9 +13720,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": 4294836255,
+      "AmbientAppearenceSchedule": -131041,
       "Flags": "Enabled, Looping, IgnoreRadius",
-      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+      "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
     },
     {
       "Name": "Sound_wind_gusts",
@@ -13746,9 +13746,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 30,
       "FrequencyVariation": 10,
-      "AmbientAppearenceSchedule": 4294967295,
+      "AmbientAppearenceSchedule": "ALL",
       "Flags": "Enabled, IgnoreRadius, RandomOrder",
-      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+      "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
     },
     {
       "Name": "Sound_icecracks1",
@@ -13772,9 +13772,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 10,
       "FrequencyVariation": 5,
-      "AmbientAppearenceSchedule": 4294967295,
+      "AmbientAppearenceSchedule": "ALL",
       "Flags": "Enabled, RandomOrder",
-      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+      "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
     },
     {
       "Name": "Sound_Snow_Drifts",
@@ -13798,9 +13798,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 30,
       "FrequencyVariation": 10,
-      "AmbientAppearenceSchedule": 4294967295,
+      "AmbientAppearenceSchedule": "ALL",
       "Flags": "Enabled, IgnoreRadius, RandomOrder",
-      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+      "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
     },
     {
       "Name": "Sound_campfire",
@@ -13824,9 +13824,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": 4294967295,
+      "AmbientAppearenceSchedule": "ALL",
       "Flags": "Enabled, Looping",
-      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+      "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
     },
     {
       "Name": "Sound_Happy_birds",
@@ -13850,9 +13850,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 10,
       "FrequencyVariation": 5,
-      "AmbientAppearenceSchedule": 4294967295,
+      "AmbientAppearenceSchedule": "ALL",
       "Flags": "IgnoreRadius, RandomOrder",
-      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+      "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
     },
     {
       "Name": "Sound_waterfall",
@@ -13876,9 +13876,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 0,
       "FrequencyVariation": 0,
-      "AmbientAppearenceSchedule": 4294967295,
+      "AmbientAppearenceSchedule": "ALL",
       "Flags": "Looping",
-      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+      "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
     },
     {
       "Name": "Sound_moaning",
@@ -13902,9 +13902,9 @@
       "ResRefCount": 0,
       "FrequencyBase": 20,
       "FrequencyVariation": 10,
-      "AmbientAppearenceSchedule": 4294967295,
+      "AmbientAppearenceSchedule": "ALL",
       "Flags": "Enabled, IgnoreRadius, RandomOrder",
-      "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+      "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
     }
   ],
   "variables": [],
@@ -15131,7 +15131,7 @@
     "byte54": 0,
     "byte55": 0
   },
-  "Checksum": "0DB8604702671EC9A1C56616EFCD6525",
+  "Checksum": "CA6015ABDF21F8D64AC4E57419A1B18B",
   "Filename": "AR6200.Are",
   "FileType": "Are",
   "OriginalFile": {
@@ -28804,9 +28804,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 15,
         "FrequencyVariation": 5,
-        "AmbientAppearenceSchedule": 4294967295,
+        "AmbientAppearenceSchedule": "ALL",
         "Flags": "Enabled, RandomOrder",
-        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+        "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
       },
       {
         "Name": "Sound_MainLoopDay",
@@ -28830,9 +28830,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": 131040,
+        "AmbientAppearenceSchedule": "From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729",
         "Flags": "Enabled, Looping, IgnoreRadius",
-        "AmbientAppearenceScheduleStr": ""
+        "AmbientAppearenceScheduleStr": "From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729"
       },
       {
         "Name": "Sound_MainLoopNight",
@@ -28856,9 +28856,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": 4294836255,
+        "AmbientAppearenceSchedule": -131041,
         "Flags": "Enabled, Looping, IgnoreRadius",
-        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+        "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
       },
       {
         "Name": "Sound_wind_gusts",
@@ -28882,9 +28882,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 30,
         "FrequencyVariation": 10,
-        "AmbientAppearenceSchedule": 4294967295,
+        "AmbientAppearenceSchedule": "ALL",
         "Flags": "Enabled, IgnoreRadius, RandomOrder",
-        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+        "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
       },
       {
         "Name": "Sound_icecracks1",
@@ -28908,9 +28908,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 10,
         "FrequencyVariation": 5,
-        "AmbientAppearenceSchedule": 4294967295,
+        "AmbientAppearenceSchedule": "ALL",
         "Flags": "Enabled, RandomOrder",
-        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+        "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
       },
       {
         "Name": "Sound_Snow_Drifts",
@@ -28934,9 +28934,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 30,
         "FrequencyVariation": 10,
-        "AmbientAppearenceSchedule": 4294967295,
+        "AmbientAppearenceSchedule": "ALL",
         "Flags": "Enabled, IgnoreRadius, RandomOrder",
-        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+        "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
       },
       {
         "Name": "Sound_campfire",
@@ -28960,9 +28960,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": 4294967295,
+        "AmbientAppearenceSchedule": "ALL",
         "Flags": "Enabled, Looping",
-        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+        "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
       },
       {
         "Name": "Sound_Happy_birds",
@@ -28986,9 +28986,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 10,
         "FrequencyVariation": 5,
-        "AmbientAppearenceSchedule": 4294967295,
+        "AmbientAppearenceSchedule": "ALL",
         "Flags": "IgnoreRadius, RandomOrder",
-        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+        "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
       },
       {
         "Name": "Sound_waterfall",
@@ -29012,9 +29012,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 0,
         "FrequencyVariation": 0,
-        "AmbientAppearenceSchedule": 4294967295,
+        "AmbientAppearenceSchedule": "ALL",
         "Flags": "Looping",
-        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+        "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
       },
       {
         "Name": "Sound_moaning",
@@ -29038,9 +29038,9 @@
         "ResRefCount": 0,
         "FrequencyBase": 20,
         "FrequencyVariation": 10,
-        "AmbientAppearenceSchedule": 4294967295,
+        "AmbientAppearenceSchedule": "ALL",
         "Flags": "Enabled, IgnoreRadius, RandomOrder",
-        "AmbientAppearenceScheduleStr": "From_0330_to_0429, From_0030_to_0129, From_0630_to_0729, From_1030_to_1129, From_1830_to_1929"
+        "AmbientAppearenceScheduleStr": "From_0030_to_0129, From_0130_to_0229, From_0230_to_0329, From_0330_to_0429, From_0430_to_0529, From_0530_to_0629, From_0630_to_0729, From_0730_to_0829, From_0830_to_0929, From_0930_to_1029, From_1030_to_1129, From_1130_to_1229, From_1230_to_1329, From_1330_to_1429, From_1430_to_1529, From_1530_to_1629, From_1630_to_1729, From_1730_to_1829, From_1830_to_1929, From_1930_to_2029, From_2030_to_2129, From_2130_to_2229, From_2230_to_2329, From_2330_to_0029"
       }
     ],
     "variables": [],
@@ -30267,7 +30267,7 @@
       "byte54": 0,
       "byte55": 0
     },
-    "Checksum": "0DB8604702671EC9A1C56616EFCD6525",
+    "Checksum": "CA6015ABDF21F8D64AC4E57419A1B18B",
     "Filename": null,
     "FileType": "Are",
     "OriginalFile": null

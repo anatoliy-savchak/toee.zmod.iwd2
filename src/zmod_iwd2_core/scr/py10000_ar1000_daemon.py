@@ -53,6 +53,18 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		self.place_npcs()
 
 		self.debug_glob_npcs()
+		cabb = toee.game.obj_create(2068, utils_obj.sec2loc(448, 493))
+		ctrl_daemon_ie.global_injector().set_name("cabb", cabb)
+		cabb.obj_set_int(toee.obj_f_sound_effect, 4111)
+		cabb.obj_set_int(toee.obj_f_scenery_flags, const_toee.OSCF_SOUND_EXTRA_LARGE)
+		print("cabb flags: {}, obj: {}", utils_obj.get_scenery_flags_to_str(cabb), cabb)
+		cabb2 = None
+		for obj in toee.game.obj_list_range(utils_obj.sec2loc(495, 454), 50, toee.OLC_SCENERY):
+			cabb2 = obj
+			break
+		if cabb2:
+			print("cabb2 flags: {}, obj: {}", utils_obj.get_scenery_flags_to_str(cabb2), cabb2)
+			#debug.breakp("cabb")
 		#self.iSetGlobal(name='Know_Hedron', area='GLOBAL', value=1)
 		return
 
@@ -65,7 +77,7 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		return toee.SLEEP_IMPOSSIBLE
 
 	def heartbeat(self, npc):
-		print("CtrlTargosDocks heartbeat")
+		#print("CtrlTargosDocks heartbeat")
 		for handler in self.ambients:
 			handler.tick()
 		return
@@ -296,53 +308,4 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		return
 
 	def setup_ambients(self):
-		
-		handler = ctrl_ambients.AmbientHanlder()
-		handler.setup(name="Water laps1", flags="Enabled, RandomOrder", frequency=5, variation=0, x=471.1, y=488.0, sound_indexes=[3, 4, 5, 6, 7, 8], durations=[4, 3, 4, 4, 4, 4])
-		self.ambients.append(handler)
-
-		if False:
-			handler = ctrl_ambients.AmbientHanlder()
-			handler.setup(name="Dock Creaks1", flags="Enabled, RandomOrder", frequency=5, variation=0, x=460.5, y=492.1, sound_indexes=[9, 10, 11, 12, 13, 14], durations=[3, 3, 4, 5, 4, 4])
-			self.ambients.append(handler)
-		
-			handler = ctrl_ambients.AmbientHanlder()
-			handler.setup(name="Walla", flags="Enabled, IgnoreRadius, RandomOrder", frequency=20, variation=10, x=482.1, y=402.5, sound_indexes=[15, 16, 17, 18, 19, 20, 21], durations=[2, 2, 2, 3, 2, 3, 4])
-			self.ambients.append(handler)
-		
-			handler = ctrl_ambients.AmbientHanlder()
-			handler.setup(name="Distant fighting", flags="Enabled, IgnoreRadius, RandomOrder", frequency=30, variation=15, x=483.5, y=403.9, sound_indexes=[22, 23, 24, 25, 26, 27, 28], durations=[6, 8, 6, 5, 6, 3, 7])
-			self.ambients.append(handler)
-		
-			handler = ctrl_ambients.AmbientHanlder()
-			handler.setup(name="Horn_Blow", flags="Enabled, IgnoreRadius", frequency=30, variation=5, x=527.2, y=477.3, sound_indexes=[29], durations=[5])
-			self.ambients.append(handler)
-		
-			handler = ctrl_ambients.AmbientHanlder()
-			handler.setup(name="Sail Flaps1", flags="Enabled, RandomOrder", frequency=5, variation=0, x=452.3, y=483.6, sound_indexes=[30, 31, 32, 33, 34], durations=[4, 5, 4, 4, 3])
-			self.ambients.append(handler)
-		
-			handler = ctrl_ambients.AmbientHanlder()
-			handler.setup(name="Sail Flaps2", flags="Enabled, RandomOrder", frequency=5, variation=0, x=470.5, y=518.6, sound_indexes=[35, 36, 37, 38, 39], durations=[4, 5, 4, 4, 3])
-			self.ambients.append(handler)
-		
-			handler = ctrl_ambients.AmbientHanlder()
-			handler.setup(name="Wind Singles", flags="Enabled, IgnoreRadius, RandomOrder", frequency=20, variation=10, x=484.8, y=405.3, sound_indexes=[40, 41, 42, 43, 44, 45, 46], durations=[11, 7, 9, 8, 8, 9, 13])
-			self.ambients.append(handler)
-		
-			handler = ctrl_ambients.AmbientHanlder()
-			handler.setup(name="cat_singles_exterior", flags="Enabled, RandomOrder", frequency=3, variation=0, x=534.3, y=494.6, sound_indexes=[47, 48, 49, 50, 51], durations=[1, 2, 2, 2, 2])
-			self.ambients.append(handler)
-		
-			handler = ctrl_ambients.AmbientHanlder()
-			handler.setup(name="lighthouse loop", flags="Enabled, Looping", frequency=0, variation=0, x=490.0, y=538.2, sound_indexes=[52], durations=[10])
-			self.ambients.append(handler)
-		
-			handler = ctrl_ambients.AmbientHanlder()
-			handler.setup(name="goblin_walla", flags="Enabled, IgnoreRadius, RandomOrder", frequency=20, variation=10, x=481.2, y=419.4, sound_indexes=[53, 54, 55, 56, 57, 58, 59, 60, 61], durations=[8, 4, 5, 7, 5, 5, 5, 4, 5])
-			self.ambients.append(handler)
-		
-			handler = ctrl_ambients.AmbientHanlder()
-			handler.setup(name="tavern_walla_ext", flags="Enabled, RandomOrder", frequency=10, variation=0, x=512.0, y=482.2, sound_indexes=[62, 63, 64, 65, 66, 67, 68], durations=[7, 4, 5, 7, 6, 3, 7])
-			self.ambients.append(handler)
 		return

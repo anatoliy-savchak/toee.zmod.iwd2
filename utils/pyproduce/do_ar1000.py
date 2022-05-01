@@ -15,7 +15,8 @@ src_dir = '../../resources/iwd2_src'
 core_dir = '../../src/zmod_iwd2_core'
 module_dir = '../../src/zmod_iwd2'
 wav_dir = r'D:\IE\Resources\IWD2\WAV'
-producer_app = pyproduce.ProducerApp(exp_dir=exp_dir, core_dir=core_dir, wav_dir = wav_dir, src_dir = src_dir, module_dir = module_dir)
+baf_dir = r'D:\IE\Resources\IWD2\SCR'
+producer_app = pyproduce.ProducerApp(exp_dir=exp_dir, core_dir=core_dir, wav_dir = wav_dir, src_dir = src_dir, module_dir = module_dir, baf_dir = baf_dir)
 
 map_rumors_file = '../../resources/iwd2_exp/journal/journal_map.json'
 rumors_file = '../../resources/iwd2_exp/journal/journal.json'
@@ -24,7 +25,6 @@ producer_app.load_toee_class_specs('../../../TemplePlus/tpdatasrc/tpgamefiles/ru
 for i in range(1, 20): print("")
 
 print("################### START")
-
 
 journalFile = JournalFile()
 journalFile.load_map(producer_app.get_path_map_rumors_file())
@@ -50,7 +50,8 @@ if False:
     produceSound.save_music_files()
 
 if True:
-    producer_app.produce_are_start("AR1000")
+    producer_app.produceSound.build_index()
+    producer_app.produce_are_start("AR1000", force_process_ambients=True)
     producer_app.produce_are_npc('10HEDRON')
     producer_app.produce_are_npc('10ELDGUL')
     producer_app.produce_are_npc('10SCREED')

@@ -2,7 +2,7 @@ import toee, debug, tpdp, utils_storage, utils_npc_spells, const_toee, utils_tac
 import const_proto_potions, utils_obj, const_proto_food, utils_npc, utils_target_list, const_proto_wands, utils_sneak, const_deseases, utils_npc_spells, utils_npc, factions_zmod
 import const_proto_items, const_proto_rings, const_proto_cloth, const_proto_wondrous, utils_races, utils_npc_build, const_proto_npc, utils_toee, tpai, tpactions, utils_strategy
 import ctrl_daemon, py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, module_consts, rumor_control, utils_pc
-import const_proto_armor_iwd2, ctrl_behaviour_ie
+import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2
 import utils_journal as uj
 
 def san_start_combat(attachee, triggerer): return ctrl_behaviour.san_start_combat(attachee, triggerer)
@@ -113,7 +113,7 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_DAGGER, npc, no_loot = False, wear_on = None) # Dagger (00DAGG01) at SLOT_QUICK1 OK
 		
 		# SLOT_QUICK2: Lynx Eye Gem(Gems) from 00GEM02
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_items_iwd2.PROTO_GENERIC_LYNX_EYE_GEM, npc, no_loot = False, wear_on = None) # Lynx Eye Gem (00GEM02) at SLOT_QUICK2 OK
 		
 		# SLOT_QUICK3: Bottle of Wine(Drink) from 00MISC08
 		# Not found! TODO ITEM
@@ -628,14 +628,14 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 			# GiveItemCreate("Misc07", Protagonist, 123, 0, 0)
 			utils_pc.pc_party_receive_money_and_print(123 * const_toee.gp)
 			# GiveItem("00Gem02", Protagonist)
-			self.iGiveItem("00Gem02", "Protagonist")
+			self.iGiveItem(const_proto_items_iwd2.PROTO_GENERIC_LYNX_EYE_GEM, "Protagonist")
 			# 264: She's certainly got a tongue on her, no doubt.
 			
 		elif index == 13:
 			# GiveItemCreate("Misc07", Protagonist, 173, 0, 0)
 			utils_pc.pc_party_receive_money_and_print(173 * const_toee.gp)
 			# GiveItem("00Gem02", Protagonist)
-			self.iGiveItem("00Gem02", "Protagonist")
+			self.iGiveItem(const_proto_items_iwd2.PROTO_GENERIC_LYNX_EYE_GEM, "Protagonist")
 			# 265: She's certainly got a tongue on her, no doubt.
 			
 		elif index == 14:
@@ -647,14 +647,14 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 			# GiveItemCreate("Misc07", Protagonist, 123, 0, 0)
 			utils_pc.pc_party_receive_money_and_print(123 * const_toee.gp)
 			# GiveItem("00Gem02", Protagonist)
-			self.iGiveItem("00Gem02", "Protagonist")
+			self.iGiveItem(const_proto_items_iwd2.PROTO_GENERIC_LYNX_EYE_GEM, "Protagonist")
 			# 267: She was somewhat sparse with her gratitude, Hedron.  Perhaps you could remedy that.
 			
 		elif index == 16:
 			# GiveItemCreate("Misc07", Protagonist, 173, 0, 0)
 			utils_pc.pc_party_receive_money_and_print(173 * const_toee.gp)
 			# GiveItem("00Gem02", Protagonist)
-			self.iGiveItem("00Gem02", "Protagonist")
+			self.iGiveItem(const_proto_items_iwd2.PROTO_GENERIC_LYNX_EYE_GEM, "Protagonist")
 			# 268: She was somewhat sparse with her gratitude, Hedron.  Perhaps you could remedy that.
 			
 		elif index == 17:

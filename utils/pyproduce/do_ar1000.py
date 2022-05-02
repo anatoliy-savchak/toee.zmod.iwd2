@@ -42,24 +42,8 @@ producer_app.commands.parse_file_actions(producer_app.get_path_actions())
 producer_app.commands.parse_file_triggers(producer_app.get_path_triggers())
 
 script_items.process(producer_app)
-#dialog_file = produce_dialog.DialogFile(out_dialog_file)
 
-if False:
-    produceSound = produce_sound.ProduceSound(producer_app.get_path_sounds_index()
-        , file_path_sound_scheme = producer_app.get_path_sound_scheme()
-        , file_path_sound_index = producer_app.get_path_sound_index()
-        , dir_wav = producer_app.wav_dir
-        , dir_sound = producer_app.get_path_sound()
-        , producer_app = producer_app
-        )
-    produceSound.process_are("AR1000")
-    produceSound.save_schemes()
-    produceSound.save_map_info_file("AR1000")
-    produceSound.save_file_index()
-    produceSound.save_music_files()
-
-
-if False:
+if True:
     #producer_app.produceSound.build_index()
     producer_app.produceSound.load_file_index()
     #producer_app.produceSound.build_and_save_sounds_file()

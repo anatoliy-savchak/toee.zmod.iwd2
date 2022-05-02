@@ -389,6 +389,18 @@ class ItemGold(ItemBase):
     @classmethod
     def is_default(cls): return True
 
+########## GEMS
+class ItemGems(ItemArmors):
+    @classmethod
+    def get_category(cls): return "Gems"
+
+class ItemGemLynx(ItemGems):
+    @classmethod
+    def get_item_codes(cls): return ('00GEM02', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_items_iwd2.PROTO_GENERIC_LYNX_EYE_GEM"
+
 ########## MISC | BOOKS
 class ItemMisc(ItemBase):
     @classmethod

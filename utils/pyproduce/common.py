@@ -54,3 +54,8 @@ def read_file_json(file_path: str) -> dict:
     with open(file_path, encoding='utf-8', mode='r') as f:
         file_ = json.load(f)
     return file_
+
+def write_json(file_path: str, obj):
+    with open(file_path, 'w') as f:
+        json.dump(obj, f, indent=4)
+    return

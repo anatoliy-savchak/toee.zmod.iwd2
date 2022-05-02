@@ -12,13 +12,14 @@ import produce_ar
 import produce_sound
 
 class ProducerApp:
-    def __init__(self, exp_dir:str, core_dir: str, wav_dir: str, src_dir: str, module_dir: str, baf_dir: str) -> None:
+    def __init__(self, exp_dir:str, core_dir: str, wav_dir: str, src_dir: str, module_dir: str, baf_dir: str, bam_dir: str) -> None:
         self.exp_dir = exp_dir
         self.core_dir = core_dir
         self.wav_dir = wav_dir
         self.src_dir = src_dir
         self.module_dir = module_dir
         self.baf_dir = baf_dir
+        self.bam_dir = bam_dir
 
         self.copy_speaches = list()
         self.cres = dict()
@@ -210,7 +211,7 @@ class ProducerApp:
         fnt = self.get_path_template_npcs_file
         daemon.load_template(fn)
         daemon.produce_npcs("place_npcs")
-        daemon.produce_ambients("setup_ambients")
+        #daemon.produce_ambients("setup_ambients")
         daemon.save(fn)
         return
 

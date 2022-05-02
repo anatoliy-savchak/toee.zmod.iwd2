@@ -246,10 +246,11 @@ class ProduceSound:
                     activate_str = f'Activate("{name}")'
                     deactivate_str = f'Deactivate("{name}")'
                     found = self.producer_app.find_first_in_bafs([activate_str, deactivate_str])
-                    if not found:
+                    if False: # disabled for now
                         theme_ambient_ambs.append(amb)
                     else:
-                        amb["baf"] = found
+                        if found:
+                            amb["baf"] = found
                         environment_ambient_ambs.append(amb)
 
                 theme_ambient_ambs_names = [describe(amb) for amb in theme_ambient_ambs]

@@ -40,16 +40,6 @@ def cs():
 	assert isinstance(result, CtrlTargosDocks)
 	return result
 
-def _timed(args):
-	map = args["map"]
-	if map != toee.game.leader.map:
-		return
-	ctrl = cs()
-	if not ctrl:
-		return
-	ctrl.do_timed(args)
-	return
-
 class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 	def created(self, npc):
 		self.init_daemon2_fields(DAEMON_MAP_ID, DAEMON_SCRIPT_ID, "targos_docks")
@@ -432,16 +422,5 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		amb.setup_sound(sound_id=4169, durationf=6.373061, volume=60, title="AR1000\tavern_walla_ext AM1000I7")
 		self.ambients.append(amb)
 		
-		self.ambs_timer_start()
-		return
-	
-	def ambs_timer_start(self): 
-		args = {"map": toee.game.leader.map}
-		toee.game.timevent_add(_timed, (args), 1000, 1) # 1000 = 1 second
-		return
-
-	def do_timed(self, args):
-		for amb in self.ambients:
-			amb.tick()
 		self.ambs_timer_start()
 		return

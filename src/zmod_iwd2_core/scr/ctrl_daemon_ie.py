@@ -4,6 +4,7 @@ import inf_scripting
 import ctrl_behaviour_ie
 import monster_info
 import sys
+import uuid
 
 class global_injector:
 	'''Inject into the *real global namespace*, i.e. "builtins" namespace or "__builtin__" for python2.
@@ -30,11 +31,23 @@ class global_injector:
 	def set_name(self, name, value):
 		self.builtin[name] = value
 
+		
+def _timed(args):
+	map = args["map"]
+	if map != toee.game.leader.map:
+		return
+	ctrl = ctrl_daemon.gdc()
+	if not ctrl:
+		return
+	ctrl.do_timed(args)
+	return
+
 class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemon):
 	def __init__(self):
 		super(CtrlDaemonIE, self).__init__()
 
 		self.ambients = list()
+		self.timer_context = str(uuid.uuid4())
 		return
 
 	def create_npc_at(self, npc_loc, ctrl_class, rot, code_name, no_draw = 1, no_kos = 1, no_move = 0):
@@ -66,3 +79,24 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 			if alias:
 				ctrl.set_alias(alias, npc)
 		return npc, ctrl
+
+	def ambs_timer_start(self): 
+		args = {"map": toee.game.leader.map, "timer_context": self.timer_context}
+		toee.game.timevent_add(_timed, (args), 1000, 1) # 1000 = 1 second
+		return
+
+	def do_timed(self, args):
+		if args["timer_context"] != self.timer_context:
+			return
+		for amb in self.ambients:
+			amb.tick()
+		self.ambs_timer_start()
+		return
+
+	# Storage events
+	def storage_data_loaded(self):
+		super(CtrlDaemonIE, self).storage_data_loaded()
+
+		self.timer_context = str(uuid.uuid4())
+		self.ambs_timer_start()
+		return

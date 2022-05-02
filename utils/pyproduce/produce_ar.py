@@ -142,32 +142,29 @@ class ProduceDaemon:
             found_def_return += 1
             return
 
-        ambients = self.producer_app.produceSound.dict_index.get(self.name)
+        ambients = self.producer_app.produceSound.dict_index["Ares"].get(self.name)
         if ambients:
-            for ambient_dict in self.ar_sec["ambients"]:
-                flags_str = ambient_dict["Flags"]
-                if not "Enabled" in flags_str: continue
+            for ambient_dict in ambients["ambient_sounds"].values():
                 name = ambient_dict["Name"]
-                if "main" in name.lower(): continue
-                is_looping = "Looping" in flags_str
-                ignoreRadius = "IgnoreRadius" in flags_str
+                x, y = int(ambient_dict["XCoordinateSec"]), int(ambient_dict["YCoordinateSec"])
+                if x <= 0 or y <= 0:
+                    raise Exception("Incorrect x, y!")
 
-                sound_indexes = list()
-                durations = list()
-                rec = next((rec for rec in ambients["recs"] if rec["name"] == name), None)
-                if not rec:
-                    continue
-                for entry in rec["entries"]:
-                    sound_index = entry["sound_index"]
-                    durationf = entry["durationf"]
-                    sound_indexes.append(int(sound_index))
-                    duration = int(math.ceil(durationf))
-                    durations.append(duration)
-            
-                sound_indexes_str = str(sound_indexes)
-                durations_str = str(durations)
+                schedule = ambient_dict["AmbientAppearenceScheduleStr"]
+                schedule_all = ambient_dict["AmbientAppearenceSchedule"]
+                if str(schedule_all) == "ALL": schedule = schedule_all
+                baf = ambient_dict.get('baf')
+                alias = f'"{name}"' if baf else 'None'
+
                 add_codeline('')
-                add_codeline('handler = ctrl_ambients.AmbientHanlder()')
-                add_codeline(f'handler.setup(name="{name}", flags="{flags_str}", frequency={ambient_dict["FrequencyBase"]}, variation={ambient_dict["FrequencyVariation"]}, x={ambient_dict["XCoordinateSec"]}, y={ambient_dict["YCoordinateSec"]}, sound_indexes={sound_indexes_str}, durations={durations_str})')
-                add_codeline('self.ambients.append(handler)')
+                add_codeline(f'ctrl_class, loc = ctrl_ambients.CtrlAmbient,  utils_obj.sec2loc({x}, {y})')
+                add_codeline(f'npc, ctrl = self.create_ambient(loc, ctrl_class, {alias})')
+                add_codeline(f'ctrl.setup(name="{name}", flags="{ambient_dict["Flags"]}", frequency={ambient_dict["FrequencyBase"]}, frequency_variation={ambient_dict["FrequencyVariation"]}, radius={ambient_dict["Radius"]}, x={x}, y={y}, schedule="{schedule}")')
+                for rec in ambient_dict["Sounds"]:
+                    sname = rec["sound_name"]
+                    stitle = ""
+                    if (names := rec.get("names")):
+                        stitle = f', title="{names[0][0] + " " + sname}"'
+                    add_codeline(f'ctrl.setup_sound(sound_id={rec["sound_id"]}, durationf={rec["durationf"]}, volume={rec["volume"]}{stitle})')
+                add_codeline('ctrl.run(npc)')
         return

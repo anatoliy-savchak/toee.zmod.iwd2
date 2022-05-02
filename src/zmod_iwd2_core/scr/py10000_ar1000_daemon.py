@@ -53,18 +53,19 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		self.place_npcs()
 
 		self.debug_glob_npcs()
-		cabb = toee.game.obj_create(2068, utils_obj.sec2loc(448, 493))
-		ctrl_daemon_ie.global_injector().set_name("cabb", cabb)
-		cabb.obj_set_int(toee.obj_f_sound_effect, 4111)
-		cabb.obj_set_int(toee.obj_f_scenery_flags, const_toee.OSCF_SOUND_EXTRA_LARGE)
-		print("cabb flags: {}, obj: {}", utils_obj.get_scenery_flags_to_str(cabb), cabb)
-		cabb2 = None
-		for obj in toee.game.obj_list_range(utils_obj.sec2loc(495, 454), 50, toee.OLC_SCENERY):
-			cabb2 = obj
-			break
-		if cabb2:
-			print("cabb2 flags: {}, obj: {}", utils_obj.get_scenery_flags_to_str(cabb2), cabb2)
-			#debug.breakp("cabb")
+
+		#cabb = toee.game.obj_create(2068, utils_obj.sec2loc(448, 493))
+		#ctrl_daemon_ie.global_injector().set_name("cabb", cabb)
+		#cabb.obj_set_int(toee.obj_f_sound_effect, 4111)
+		#cabb.obj_set_int(toee.obj_f_scenery_flags, const_toee.OSCF_SOUND_EXTRA_LARGE)
+		#print("cabb flags: {}, obj: {}", utils_obj.get_scenery_flags_to_str(cabb), cabb)
+		#cabb2 = None
+		#for obj in toee.game.obj_list_range(utils_obj.sec2loc(495, 454), 50, toee.OLC_SCENERY):
+		#	cabb2 = obj
+		#	break
+		#if cabb2:
+		#	print("cabb2 flags: {}, obj: {}", utils_obj.get_scenery_flags_to_str(cabb2), cabb2)
+		#	#debug.breakp("cabb")
 		#self.iSetGlobal(name='Know_Hedron', area='GLOBAL', value=1)
 		return
 
@@ -308,4 +309,106 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		return
 
 	def setup_ambients(self):
+		
+		ctrl_class, loc = ctrl_ambients.CtrlAmbient,  utils_obj.sec2loc(482, 402)
+		npc, ctrl = self.create_ambient(loc, ctrl_class, "Walla")
+		ctrl.setup(name="Walla", flags="Enabled, IgnoreRadius, RandomOrder", frequency=20, frequency_variation=10, radius=500, x=482, y=402, schedule="ALL")
+		ctrl.setup_sound(sound_id=4109, durationf=1.801814, volume=70, title="AR1000\Walla AM1000D1")
+		ctrl.setup_sound(sound_id=4110, durationf=1.668345, volume=70, title="AR1000\Walla AM1000D2")
+		ctrl.setup_sound(sound_id=4111, durationf=1.134467, volume=70, title="AR1000\Walla AM1000D3")
+		ctrl.setup_sound(sound_id=4112, durationf=2.035374, volume=70, title="AR1000\Walla AM1000D4")
+		ctrl.setup_sound(sound_id=4113, durationf=1.801814, volume=70, title="AR1000\Walla AM1000D5")
+		ctrl.setup_sound(sound_id=4114, durationf=2.636009, volume=70, title="AR1000\Walla AM1000D6")
+		ctrl.setup_sound(sound_id=4115, durationf=3.9039, volume=70, title="AR1000\Walla AM1000D7")
+		ctrl.run(npc)
+		
+		ctrl_class, loc = ctrl_ambients.CtrlAmbient,  utils_obj.sec2loc(527, 477)
+		npc, ctrl = self.create_ambient(loc, ctrl_class, "Horn_Blow")
+		ctrl.setup(name="Horn_Blow", flags="Enabled, IgnoreRadius", frequency=30, frequency_variation=5, radius=100, x=527, y=477, schedule="ALL")
+		ctrl.setup_sound(sound_id=4116, durationf=4.331565, volume=90, title="AR1000\Horn_Blow AM1000J")
+		ctrl.run(npc)
+		
+		ctrl_class, loc = ctrl_ambients.CtrlAmbient,  utils_obj.sec2loc(481, 419)
+		npc, ctrl = self.create_ambient(loc, ctrl_class, "goblin_walla")
+		ctrl.setup(name="goblin_walla", flags="Enabled, IgnoreRadius, RandomOrder", frequency=20, frequency_variation=10, radius=500, x=481, y=419, schedule="ALL")
+		ctrl.setup_sound(sound_id=4117, durationf=7.282721, volume=75, title="AR1000\goblin_walla AM1000F1")
+		ctrl.setup_sound(sound_id=4118, durationf=3.48907, volume=75, title="AR1000\goblin_walla AM1000F2")
+		ctrl.setup_sound(sound_id=4119, durationf=4.923673, volume=75, title="AR1000\goblin_walla AM1000F3")
+		ctrl.setup_sound(sound_id=4120, durationf=6.028889, volume=75, title="AR1000\goblin_walla AM1000F4")
+		ctrl.setup_sound(sound_id=4121, durationf=4.349569, volume=75, title="AR1000\goblin_walla AM1000F5")
+		ctrl.setup_sound(sound_id=4122, durationf=4.055918, volume=75, title="AR1000\goblin_walla AM1000F6")
+		ctrl.setup_sound(sound_id=4123, durationf=4.761179, volume=75, title="AR1000\goblin_walla AM1000F7")
+		ctrl.setup_sound(sound_id=4124, durationf=3.722993, volume=75, title="AR1000\goblin_walla AM1000F8")
+		ctrl.setup_sound(sound_id=4125, durationf=4.497143, volume=75, title="AR1000\goblin_walla AM1000F9")
+		ctrl.run(npc)
+		
+		ctrl_class, loc = ctrl_ambients.CtrlAmbient,  utils_obj.sec2loc(471, 488)
+		npc, ctrl = self.create_ambient(loc, ctrl_class, None)
+		ctrl.setup(name="Water laps1", flags="Enabled, RandomOrder", frequency=5, frequency_variation=0, radius=1200, x=471, y=488, schedule="ALL")
+		ctrl.setup_sound(sound_id=4126, durationf=3.180363, volume=70, title="AR1000\Water laps1 AM1000A1")
+		ctrl.setup_sound(sound_id=4127, durationf=2.797007, volume=70, title="AR1000\Water laps1 AM1000A2")
+		ctrl.setup_sound(sound_id=4128, durationf=3.360136, volume=70, title="AR1000\Water laps1 AM1000A3")
+		ctrl.setup_sound(sound_id=4129, durationf=3.220816, volume=70, title="AR1000\Water laps1 AM1000A4")
+		ctrl.setup_sound(sound_id=4130, durationf=3.722585, volume=70, title="AR1000\Water laps1 AM1000A5")
+		ctrl.setup_sound(sound_id=4131, durationf=3.123673, volume=70, title="AR1000\Water laps1 AM1000A6")
+		ctrl.run(npc)
+		
+		ctrl_class, loc = ctrl_ambients.CtrlAmbient,  utils_obj.sec2loc(460, 492)
+		npc, ctrl = self.create_ambient(loc, ctrl_class, None)
+		ctrl.setup(name="Dock Creaks1", flags="Enabled, RandomOrder", frequency=5, frequency_variation=0, radius=1200, x=460, y=492, schedule="ALL")
+		ctrl.setup_sound(sound_id=4132, durationf=2.911156, volume=60, title="AR1000\Dock Creaks1 AM1000B1")
+		ctrl.setup_sound(sound_id=4133, durationf=2.328934, volume=60, title="AR1000\Dock Creaks1 AM1000B2")
+		ctrl.setup_sound(sound_id=4134, durationf=3.767347, volume=60, title="AR1000\Dock Creaks1 AM1000B3")
+		ctrl.setup_sound(sound_id=4135, durationf=4.462993, volume=60, title="AR1000\Dock Creaks1 AM1000B4")
+		ctrl.setup_sound(sound_id=4136, durationf=3.065215, volume=60, title="AR1000\Dock Creaks1 AM1000B5")
+		ctrl.setup_sound(sound_id=4137, durationf=3.536508, volume=60, title="AR1000\Dock Creaks1 AM1000B6")
+		ctrl.run(npc)
+		
+		ctrl_class, loc = ctrl_ambients.CtrlAmbient,  utils_obj.sec2loc(452, 483)
+		npc, ctrl = self.create_ambient(loc, ctrl_class, None)
+		ctrl.setup(name="Sail Flaps1", flags="Enabled, RandomOrder", frequency=5, frequency_variation=0, radius=300, x=452, y=483, schedule="ALL")
+		ctrl.setup_sound(sound_id=4138, durationf=3.948345, volume=70, title="AR1000\Sail Flaps1 AM1000M1")
+		ctrl.setup_sound(sound_id=4139, durationf=4.373333, volume=70, title="AR1000\Sail Flaps1 AM1000M2")
+		ctrl.setup_sound(sound_id=4140, durationf=3.601678, volume=70, title="AR1000\Sail Flaps1 AM1000M3")
+		ctrl.setup_sound(sound_id=4141, durationf=3.601678, volume=70, title="AR1000\Sail Flaps1 AM1000M4")
+		ctrl.setup_sound(sound_id=4142, durationf=2.998367, volume=70, title="AR1000\Sail Flaps1 AM1000M5")
+		ctrl.run(npc)
+		
+		ctrl_class, loc = ctrl_ambients.CtrlAmbient,  utils_obj.sec2loc(470, 518)
+		npc, ctrl = self.create_ambient(loc, ctrl_class, None)
+		ctrl.setup(name="Sail Flaps2", flags="Enabled, RandomOrder", frequency=5, frequency_variation=0, radius=500, x=470, y=518, schedule="ALL")
+		ctrl.setup_sound(sound_id=4138, durationf=3.948345, volume=70, title="AR1000\Sail Flaps1 AM1000M1")
+		ctrl.setup_sound(sound_id=4139, durationf=4.373333, volume=70, title="AR1000\Sail Flaps1 AM1000M2")
+		ctrl.setup_sound(sound_id=4140, durationf=3.601678, volume=70, title="AR1000\Sail Flaps1 AM1000M3")
+		ctrl.setup_sound(sound_id=4141, durationf=3.601678, volume=70, title="AR1000\Sail Flaps1 AM1000M4")
+		ctrl.setup_sound(sound_id=4142, durationf=2.998367, volume=70, title="AR1000\Sail Flaps1 AM1000M5")
+		ctrl.run(npc)
+		
+		ctrl_class, loc = ctrl_ambients.CtrlAmbient,  utils_obj.sec2loc(534, 494)
+		npc, ctrl = self.create_ambient(loc, ctrl_class, "cat_singles_exterior")
+		ctrl.setup(name="cat_singles_exterior", flags="Enabled, RandomOrder", frequency=3, frequency_variation=0, radius=800, x=534, y=494, schedule="ALL")
+		ctrl.setup_sound(sound_id=4143, durationf=0.940181, volume=100, title="AR1000\cat_singles_exterior AM1000P1")
+		ctrl.setup_sound(sound_id=4144, durationf=1.3639, volume=100, title="AR1000\cat_singles_exterior AM1000P2")
+		ctrl.setup_sound(sound_id=4145, durationf=1.08585, volume=100, title="AR1000\cat_singles_exterior AM1000P3")
+		ctrl.setup_sound(sound_id=4146, durationf=1.092472, volume=100, title="AR1000\cat_singles_exterior AM1000P4")
+		ctrl.setup_sound(sound_id=4147, durationf=1.08585, volume=100, title="AR1000\cat_singles_exterior AM1000P5")
+		ctrl.run(npc)
+		
+		ctrl_class, loc = ctrl_ambients.CtrlAmbient,  utils_obj.sec2loc(490, 538)
+		npc, ctrl = self.create_ambient(loc, ctrl_class, None)
+		ctrl.setup(name="lighthouse loop", flags="Enabled, Looping", frequency=0, frequency_variation=0, radius=900, x=490, y=538, schedule="ALL")
+		ctrl.setup_sound(sound_id=4148, durationf=9.029478, volume=55, title="AR1000\lighthouse loop AM1000K")
+		ctrl.run(npc)
+		
+		ctrl_class, loc = ctrl_ambients.CtrlAmbient,  utils_obj.sec2loc(512, 482)
+		npc, ctrl = self.create_ambient(loc, ctrl_class, None)
+		ctrl.setup(name="tavern_walla_ext", flags="Enabled, RandomOrder", frequency=10, frequency_variation=0, radius=900, x=512, y=482, schedule="ALL")
+		ctrl.setup_sound(sound_id=4149, durationf=6.027302, volume=60, title="AR1000\tavern_walla_ext AM1000I1")
+		ctrl.setup_sound(sound_id=4150, durationf=3.67034, volume=60, title="AR1000\tavern_walla_ext AM1000I2")
+		ctrl.setup_sound(sound_id=4151, durationf=4.838186, volume=60, title="AR1000\tavern_walla_ext AM1000I3")
+		ctrl.setup_sound(sound_id=4152, durationf=6.64, volume=60, title="AR1000\tavern_walla_ext AM1000I4")
+		ctrl.setup_sound(sound_id=4153, durationf=5.138503, volume=60, title="AR1000\tavern_walla_ext AM1000I5")
+		ctrl.setup_sound(sound_id=4154, durationf=2.636009, volume=60, title="AR1000\tavern_walla_ext AM1000I6")
+		ctrl.setup_sound(sound_id=4155, durationf=6.373061, volume=60, title="AR1000\tavern_walla_ext AM1000I7")
+		ctrl.run(npc)
 		return

@@ -47,7 +47,6 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 		return npc, ctrl
 
 	def debug_glob_npcs(self):
-	#def debug_define_global_npcs(self):
 		gi = global_injector()
 		for m in self.monsters.itervalues():
 			assert isinstance(m, monster_info.MonsterInfo)
@@ -59,3 +58,11 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 				#print(exec_line)
 				#exec(exec_line)
 		return
+
+	def create_ambient(self, loc, ctrl_class, alias):
+		npc, ctrl = ctrl_class.create_obj_and_class(loc)
+		if (npc):
+			npc.move(loc)
+			if alias:
+				ctrl.set_alias(alias, npc)
+		return npc, ctrl

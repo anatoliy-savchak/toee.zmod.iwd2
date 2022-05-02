@@ -160,6 +160,12 @@ class CtrlBehaviour(object):
 	def get_name(cls):
 		return type(cls).__name__
 
+	def set_alias(self, alias, npc):
+		self.vars["alias"] = alias
+		o = utils_storage.obj_storage(npc)
+		o.alias = alias
+		return
+
 	@classmethod
 	def ensure(cls, npc):
 		data = utils_storage.obj_storage(npc).data

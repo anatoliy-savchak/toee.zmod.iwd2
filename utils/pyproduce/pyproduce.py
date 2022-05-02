@@ -100,13 +100,16 @@ class ProducerApp:
         return os.path.join(self.exp_dir, 'Creatures', cre_name + ".json")
 
     def get_path_sounds_index(self):
-        return os.path.join(self.core_dir, "sound/sounds.json")
+        return os.path.join(self.exp_dir, "Sounds/sounds.json")
 
     def get_path_sound_scheme(self):
         return os.path.join(self.core_dir, "sound/schemelist.mes")
 
     def get_path_sound_index(self):
         return os.path.join(self.core_dir, "sound/schemeindex.mes")        
+
+    def get_path_sounds_file(self):
+        return os.path.join(self.core_dir, "sound/snd_misc.mes")
 
     def get_path_sound(self):
         return os.path.join(self.core_dir, "sound")                
@@ -155,15 +158,6 @@ class ProducerApp:
 
     def produce_are_start(self, are_name: str, force_process_ambients: bool = False):
         self.current_are_name = are_name
-        process_ambients = force_process_ambients
-        if not process_ambients:
-            process_ambients = not self.produceSound.load_file_index()
-        if process_ambients or not self.produceSound.is_are_loaded(are_name):
-            self.produceSound.process_are(are_name)
-            self.produceSound.save_schemes()
-            self.produceSound.save_map_info_file(are_name)
-            self.produceSound.save_file_index()
-            self.produceSound.save_music_files()
 
         self.current_dialog_file = produce_dialog.DialogFile(self.get_path_out_npcs_dialog_file(are_name))
         script_id = self.are_name_to_script_id(are_name) + 1
@@ -276,4 +270,15 @@ class ProducerApp:
             if not os.path.exists(fn):
                 fn = os.path.join(aredir, are_name + ".json")
             yield fn
+        return
+
+    def list_ares_with_sec(self):
+        dir = os.path.join(self.exp_dir, "Areas")
+        for are_name in os.listdir(dir):
+            aredir = os.path.join(dir, are_name)
+            fnsec = os.path.join(aredir, are_name + "_sec.json")
+            if not os.path.exists(fnsec):
+                fnsec = None
+            fn = os.path.join(aredir, are_name + ".json")
+            yield fn, fnsec
         return

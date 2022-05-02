@@ -50,8 +50,12 @@ if False:
     produceSound.save_music_files()
 
 if True:
-    producer_app.produceSound.build_index()
-    producer_app.produce_are_start("AR1000", force_process_ambients=True)
+    #producer_app.produceSound.build_index()
+    producer_app.produceSound.load_file_index()
+    #producer_app.produceSound.build_and_save_sounds_file()
+    #producer_app.produceSound.save_music_files()
+    #producer_app.produceSound.build_and_save_schemes()
+    producer_app.produce_are_start("AR1000")
     producer_app.produce_are_npc('10HEDRON')
     producer_app.produce_are_npc('10ELDGUL')
     producer_app.produce_are_npc('10SCREED')

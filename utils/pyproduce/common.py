@@ -11,10 +11,10 @@ def tDict(**kwargs):
 def lines_find(lines: list, after: str):
     return next((index for index, line in enumerate(lines) if after in line), None)
 
-def lines_after_cutoff(lines: list, after: str):
+def lines_after_cutoff(lines: list, after: str, add_more_line_count: int = 0):
     index = lines_find(lines, after)
     if not index is None:
-        del lines[index+1:]
+        del lines[index + 1 + add_more_line_count:]
     return index
 
 def lines_after_before_cutoff(lines: list, after: str, before: str):

@@ -24,13 +24,6 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		self.vars["triggerer"] = toee.game.leader if not clear else None
 		return
 
-	def set_alias(self, alias, npc):
-		self.vars["alias"] = alias
-		o = utils_storage.obj_storage(npc)
-		o.alias = alias
-		return
-
-
 	def dialog(self, attachee, triggerer):
 		assert isinstance(attachee, toee.PyObjHandle)
 		assert isinstance(triggerer, toee.PyObjHandle)

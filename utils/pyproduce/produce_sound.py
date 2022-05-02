@@ -14,14 +14,14 @@ class ProduceSound:
         self.dir_sound = dir_sound
         self.are_dict = dict()
 
-        self.lines_sound_scheme = self._preload_file(self.file_path_sound_scheme, "{0}{dummy - none}")
-        self.lines_sound_index = self._preload_file(self.file_path_sound_index, "{0}{<<NONE>>}")
+        self.lines_sound_scheme = list()
+        self.lines_sound_index = list()
 
         self.dict_index = dict()
 
-        self.last_sound_index = 0
         self.music_files = dict() # source name = dest path
         self.main_are_music = dict()
+        self.last_sound_id = 4108
 
         return
 
@@ -49,131 +49,35 @@ class ProduceSound:
 
         with open(are_path, 'r') as fi:
             self.are_dict = json.load(fi)
-
-        def describe(d: dict):
-            return d["Name"] + ("" if "IgnoreRadius" in d.get("Flags")  else f'({d["Radius"]})')
-
-        ambients = self.are_dict["ambients"]
-        theme_music_ambs = [amb for amb in ambients 
-            if ("Enabled" in amb.get("Flags") 
-                and "IgnoreRadius" in amb.get("Flags") 
-                and "Looping" in amb.get("Flags") 
-                )
-        ]
-        theme_ambient_ambs0 = [amb for amb in ambients 
-            if ("Enabled" in amb.get("Flags") 
-                and "IgnoreRadius" in amb.get("Flags") 
-                and not amb in theme_music_ambs
-                )
-        ]
-        theme_music_amb_names = [describe(amb) for amb in theme_music_ambs]
-
-        theme_ambient_ambs = list()
-        environment_ambient_ambs = list()
-        for amb in theme_ambient_ambs0:
-            name = amb["Name"]
-            activate_str = f'Activate("{name}")'
-            deactivate_str = f'Deactivate("{name}")'
-            found = self.producer_app.find_first_in_bafs([activate_str, deactivate_str])
-            if not found:
-                theme_ambient_ambs.append(amb)
-            else:
-                environment_ambient_ambs.append(amb)
-
-        theme_ambient_ambs_names = [describe(amb) for amb in theme_ambient_ambs]
-        environment_ambient_names = [describe(amb) for amb in environment_ambient_ambs]
-
-        effects_ambs = [amb for amb in ambients 
-            if ("Enabled" in amb.get("Flags") 
-                and not "IgnoreRadius" in amb.get("Flags") 
-                )
-        ]
-        effects_ambs_names = [describe(amb) for amb in effects_ambs]
-
-
-        print(f"theme music: {theme_music_amb_names}")
-        print(f"theme ambient: {theme_ambient_ambs_names}")
-        print(f"sounds map: {environment_ambient_names}")
-        print(f"sounds local: {effects_ambs_names}")
-
-        print('')
-        if False:
-            are_main_music = None
-            recs = list()
-            for ambient_dict in self.are_dict["ambients"]:
-                flags_str = ambient_dict["Flags"]
-                if not "Enabled" in flags_str: continue
-                name = ambient_dict["Name"]
-                ignoreRadius = "IgnoreRadius" in flags_str
-                if not ignoreRadius:
-                    continue
-                #add_count = ambient_dict["ResRefCount"]
-                music_names = list()
-                is_looping = "Looping" in flags_str
-                #if not is_looping:
-                #    continue
-                activate_str = f'Activate("{name}")'
-                deactivate_str = f'Deactivate("{name}")'
-                found = self.producer_app.find_first_in_bafs([activate_str, deactivate_str])
-                if found:
-                    print(f"sound {name} found {found}")
-                    continue
-                sloop = " /loop" if is_looping else ""
-                volume = int(ambient_dict["Volume"])
-                for i in range(1, 11):
-                    s = f"Resref{i}"
-                    s = ambient_dict.get(s)
-                    music_names.append(s)
-                entries = list()
-                for index, sound_name in enumerate(music_names):
-                    if not sound_name: continue
-                    self.last_sound_index += 1
-                    scheme_index = self.last_sound_index * 100
-                    suffix = f" - {index}" if index > 0 else ""
-                    self.lines_sound_index.append(f'{{{self.last_sound_index}}}{{{are_name} - {name}{suffix} #{scheme_index}}}')
-                    self.lines_sound_scheme.append('')
-                    self.lines_sound_scheme.append(f'§§§ {are_name} - {name}{suffix} §§§')
-                    self.lines_sound_scheme.append('')
-                    if not are_main_music and is_looping:
-                        are_main_music = self.last_sound_index
-
-                    mrec = self.ensure_sound_name(sound_name)
-
-                    self.lines_sound_scheme.append(f'{{{scheme_index}}}{{{mrec["sound_path"]}.mp3 /VOL:{volume}{sloop}}}')
-                    if are_main_music and are_main_music == self.last_sound_index:
-                        self.lines_sound_scheme.append('{101}{music\\hommlet_combat_Rev1_loop.mp3 /VOL:50 /combatmusic}')
-
-                    entry = common.tDict(sound_name = sound_name, sound_index = self.last_sound_index, index = index, durationf = mrec["durationf"])
-                    entries.append(entry)
-                rec = common.tDict(name = name, is_looping = is_looping, volume = volume, entries = entries)
-                recs.append(rec)
-            self.dict_index[are_name] = common.tDict(are_main_music = are_main_music, recs = recs)
-
-            if are_main_music:
-                self.main_are_music[are_name] = common.tDict(are_main_music = are_main_music)
-
         return
 
-    def ensure_sound_name(self, sound_name: str):
-        if not (mrec := self.music_files.get(sound_name)):
-            sound_path = f"ambient\\{sound_name}"
-            src_file_path = os.path.join(self.producer_app.wav_dir, sound_name + ".wav")
-            durationf = self.get_music_duration(src_file_path)
-            mrec = common.tDict(sound_path = sound_path, sound_name = sound_name, durationf = durationf, src_file_path = src_file_path)
-            self.music_files[sound_name] = mrec
-        return mrec
-
-    def ensure_sound_name2(self, sound_name: str, music_files: dict, folder: str, volume: int, name):
+    def ensure_sound_name2(self, sound_name: str, music_files: dict, volume: int, name, should_be_sound: bool):
+        folder = "ambients" if should_be_sound else "music"
         nv = (name, volume)
         if not (mrec := music_files.get(sound_name)):
             sound_path = f"{folder}\\{sound_name}"
             src_file_path = os.path.join(self.producer_app.wav_dir, sound_name + ".wav")
             durationf = self.get_music_duration(src_file_path)
-            mrec = common.tDict(sound_path = sound_path, sound_name = sound_name, durationf = durationf, volume = volume, src_file_path = src_file_path, names = [nv, ])
+            sound_id = -1
+            if should_be_sound:
+                self.last_sound_id += 1
+                sound_id = self.last_sound_id
+            mrec = common.tDict(sound_path = sound_path, sound_name = sound_name
+                , durationf = durationf, volume = volume, src_file_path = src_file_path
+                , sound_id = sound_id
+                , names = [nv, ])
             music_files[sound_name] = mrec
         else:
             #if int(mrec["volume"]) != volume: print("")
             names = mrec["names"]
+            sound_id = mrec["sound_id"]
+            if sound_id < 0 and should_be_sound:
+                self.last_sound_id += 1
+                sound_id = self.last_sound_id
+                sound_path = f"{folder}\\{sound_name}"
+                mrec["sound_id"] = sound_id
+                mrec["sound_path"] = sound_path
+
             already = next((n for n, vol in names if n == name and vol == volume), None)
             if not already:
                 names.append(nv)
@@ -190,15 +94,17 @@ class ProduceSound:
         return
 
     def save_map_info_file(self, are_name: str):
-        return # debug!
         rec = self.main_are_music.get(are_name)
+        fp = self.producer_app.get_path_out_map_info(are_name)
+        music_theme_index = 0
+        ambients_theme_index = 0
         if rec:
-            fp = self.producer_app.get_path_out_map_info(are_name)
-            if fp:
-                with open(fp, 'w') as f:
-                    theme_index = rec["are_main_music"]
-                    ambient_index = theme_index
-                    f.write(f'SoundScheme: {theme_index},{ambient_index}\n')
+            music_theme_index = rec["music_theme_index"]
+            if music_theme_index is None: music_theme_index = 0
+            ambients_theme_index = rec["ambients_theme_index"]
+            if ambients_theme_index is None: ambients_theme_index = 0
+        with open(fp, 'w') as f:
+            f.write(f'SoundScheme: {music_theme_index},{ambients_theme_index}\n')
         return
 
     def save_file_index(self):
@@ -231,7 +137,7 @@ class ProduceSound:
     def save_music_files(self, overwrite: bool = False):
         ffmpeg_path = "venv\\Library\\bin\\ffmpeg.exe"
         path_sound = os.path.abspath(self.producer_app.get_path_sound())
-        for sound_name, mrec in self.music_files.items():
+        for mrec in self.dict_index["Files"].values():
             src_file_path = os.path.normpath(mrec["src_file_path"])
             sound_path = mrec["sound_path"]
             tf = os.path.normpath(os.path.join(path_sound, sound_path + ".mp3"))
@@ -239,6 +145,8 @@ class ProduceSound:
                 continue
             command = f'{ffmpeg_path} -i "{src_file_path}" -acodec libmp3lame "{tf}" -y'
             os.system(command)
+            if not os.path.exists(tf):
+                pass
         return
 
     def build_index(self):
@@ -257,10 +165,12 @@ class ProduceSound:
             )
 
         """
+        lastSoundID = 4108
         Files = {}
         Ares = {}
-        for are_path in self.producer_app.list_ares():
+        for are_path, are_sec_path in self.producer_app.list_ares_with_sec():
             are_src = common.read_file_json(are_path)
+            are_src_sec = common.read_file_json(are_sec_path) if are_sec_path else None
             are_name = os.path.basename(os.path.dirname(are_path))
             music_themes = {}
             music_ambients = {}
@@ -271,7 +181,7 @@ class ProduceSound:
                 def describe(d: dict):
                     return d["Name"] + ("" if "IgnoreRadius" in d.get("Flags")  else f'({d["Radius"]})')
 
-                def transcribe(d: dict, folder: str) -> dict:
+                def transcribe(d: dict, dsec: dict, should_be_sound = True) -> dict:
                     name = d["Name"]
                     volume = int(d["Volume"])
                     sounds = []
@@ -279,14 +189,14 @@ class ProduceSound:
                         s = f"Resref{i}"
                         s = d.get(s)
                         if s:
-                            rec = self.ensure_sound_name2(s, Files, folder, volume, rf'{are_name}\{name}')
+                            rec = self.ensure_sound_name2(s, Files, volume, rf'{are_name}\{name}', should_be_sound)
                             sounds.append(rec)
 
                     r = {
                         "Name" : name,
                         "Flags" : d["Flags"],
-                        "XCoordinateSec" : d.get("XCoordinateSec"),
-                        "YCoordinateSec" : d.get("YCoordinateSec"),
+                        "XCoordinateSec" : dsec.get("XCoordinateSec") if dsec else -1,
+                        "YCoordinateSec" : dsec.get("YCoordinateSec") if dsec else -1,
                         "Radius" : d["Radius"],
                         "Volume" : volume,
                         "FrequencyBase" : d["FrequencyBase"],
@@ -295,6 +205,9 @@ class ProduceSound:
                         "AmbientAppearenceScheduleStr" : d["AmbientAppearenceScheduleStr"],
                         "Sounds": sounds
                     }
+                    if baf := d.get("baf"):
+                        r["baf"] = baf
+
                     return r
 
                 def check_for_baf(l):
@@ -306,6 +219,11 @@ class ProduceSound:
                         if found:
                             amb["baf"] = found
                     return
+
+                def get_amb_sec(name: str):
+                    nonlocal are_src_sec
+                    if not are_src_sec: return None
+                    return next((amb for amb in are_src_sec["ambients"] if amb["Name"] == name), None)
 
                 theme_music_ambs = [amb for amb in ambients 
                     if ("Enabled" in amb.get("Flags") 
@@ -349,15 +267,138 @@ class ProduceSound:
                 print(f"theme ambient: {theme_ambient_ambs_names}")
                 print(f"sounds map: {environment_ambient_names}")
                 print(f"sounds local: {effects_ambs_names}")
-                for amb in theme_music_ambs: music_themes[amb["Name"]] = transcribe(amb, "music")
-                for amb in theme_ambient_ambs: music_ambients[amb["Name"]] = transcribe(amb, "ambients")
-                for amb in environment_ambient_ambs: ambient_sounds[amb["Name"]] = transcribe(amb, "music")
-                for amb in effects_ambs: ambient_sounds[amb["Name"]] = transcribe(amb, "music")
+                for amb in theme_music_ambs: music_themes[amb["Name"]] = transcribe(amb, get_amb_sec(amb["Name"]), False)
+                for amb in theme_ambient_ambs: music_ambients[amb["Name"]] = transcribe(amb, get_amb_sec(amb["Name"]), False)
+                for amb in environment_ambient_ambs: ambient_sounds[amb["Name"]] = transcribe(amb, get_amb_sec(amb["Name"]))
+                for amb in effects_ambs: ambient_sounds[amb["Name"]] = transcribe(amb, get_amb_sec(amb["Name"]))
 
             are_dest = {"music_themes": music_themes, "music_ambients": music_ambients, "ambient_sounds": ambient_sounds}
             Ares[are_name] = are_dest
 
+
         self.dict_index = {"Ares": Ares, "Files": Files}
         self.save_file_index()
+        return
 
+    def build_and_save_sounds_file(self):
+        fn = self.producer_app.get_path_sounds_file()
+        with open(fn, 'r') as f:
+            lines = f.readlines()
+        common.lines_after_cutoff(lines, "{4108}{speech\slide\CE_2.mp3}", 1)
+        items = sorted(self.dict_index["Files"].values(), key=lambda item: int(item["sound_id"]))
+        for mrec in items:
+            sound_id = mrec["sound_id"]
+            if sound_id < 0: continue
+            sound_path = mrec["sound_path"]
+            if not ".mp3" in sound_path.lower():
+                sound_path += ".mp3"
+            line = f'{{{sound_id}}}{{{sound_path}}}'
+            lines.append(line)
+
+        with open(fn, 'w') as f:
+            for line in lines:
+                f.write(line + ("\n" if not "\n" in line else ""))
+        return
+
+    def build_and_save_schemes(self):
+        self.lines_sound_scheme = self._preload_file(self.file_path_sound_scheme, "{0}{dummy - none}")
+        self.lines_sound_index = self._preload_file(self.file_path_sound_index, "{0}{<<NONE>>}")
+
+        last_index = 0
+        last_scheme_index = 0
+        for are_name, arrec in self.dict_index["Ares"].items():
+            music_theme_index = None
+            ambients_theme_index = None
+            music_themes = arrec["music_themes"]
+            if music_themes:
+                last_index += 1
+                music_theme_index = last_index
+                last_scheme_index = last_index * 100
+                self.lines_sound_index.append(f'{{{last_index}}}{{{are_name} - music #{last_scheme_index}}}')
+
+                self.lines_sound_scheme.append('')
+                self.lines_sound_scheme.append(f'§§§ {are_name} - music §§§')
+                self.lines_sound_scheme.append('')
+                last_scheme_index += -1
+                for name, rec in music_themes.items():
+                    ambientAppearenceScheduleStr = rec["AmbientAppearenceScheduleStr"]
+                    ambientAppearenceSchedule = rec["AmbientAppearenceSchedule"]
+                    is_all = str(ambientAppearenceSchedule) == "ALL"
+                    is_day = ("From_0530_to_0629" in ambientAppearenceScheduleStr) and ("From_1630_to_1729" in ambientAppearenceScheduleStr)
+                    is_night = ("From_0030_to_0129" in ambientAppearenceScheduleStr) and ("From_2330_to_0029" in ambientAppearenceScheduleStr)
+                    if not is_all and not is_day and not is_night:
+                        raise Exception("Not supported")
+                    if not is_all and is_day and is_night:
+                        raise Exception("Not supported")
+
+                    last_scheme_index += 1
+                    mrec = rec["Sounds"][0]# always 1 for music
+                    sound_file_name = mrec["sound_path"]
+                    volume = int(mrec["volume"])
+                    content_no_time = f'{sound_file_name}.mp3 /VOL:{volume} /loop'
+
+                    if is_all:
+                        self.lines_sound_scheme.append(f'{{{last_scheme_index}}}{{{content_no_time}}}')
+                    elif is_night:
+                        self.lines_sound_scheme.append(f'{{{last_scheme_index}}}{{{content_no_time} /time:18-23}}')
+                        self.lines_sound_scheme.append(f'{{{last_scheme_index}}}{{{content_no_time} /time:0-5}}')
+                    elif is_day:
+                        self.lines_sound_scheme.append(f'{{{last_scheme_index}}}{{{content_no_time} /time:6-17}}')
+
+                # comabat music
+                last_scheme_index += 1
+                self.lines_sound_scheme.append(f'{{{last_scheme_index}}}{{music\hommlet_combat_Rev1_loop.mp3 /VOL:50 /combatmusic}}')
+
+            music_ambients = arrec["music_ambients"]
+            if music_ambients:
+                last_index += 1
+                ambients_theme_index = last_index
+                last_scheme_index = last_index * 100
+                self.lines_sound_index.append(f'{{{last_index}}}{{{are_name} - ambients #{last_scheme_index}}}')
+
+                self.lines_sound_scheme.append('')
+                self.lines_sound_scheme.append(f'§§§ {are_name} - ambients §§§')
+                self.lines_sound_scheme.append('')
+                last_scheme_index += -1
+                for name, rec in music_ambients.items():
+                    ambientAppearenceScheduleStr = rec["AmbientAppearenceScheduleStr"]
+                    ambientAppearenceSchedule = rec["AmbientAppearenceSchedule"]
+                    is_all = str(ambientAppearenceSchedule) == "ALL"
+                    is_day = ("From_0530_to_0629" in ambientAppearenceScheduleStr) and ("From_1630_to_1729" in ambientAppearenceScheduleStr)
+                    is_night = ("From_0030_to_0129" in ambientAppearenceScheduleStr) and ("From_2330_to_0029" in ambientAppearenceScheduleStr)
+                    if not is_all and not is_day and not is_night:
+                        raise Exception("Not supported")
+                    if not is_all and is_day and is_night:
+                        raise Exception("Not supported")
+
+                    sounds_count = len(rec["Sounds"])
+                    is_loop = "LOOP" in rec["Flags"]
+                    for mrec in rec["Sounds"]:
+                        last_scheme_index += 1
+                        sound_file_name = mrec["sound_path"]
+                        volume = int(mrec["volume"])
+                        sloop = "" if not is_loop else " /loop"
+                        scatter_val = 50 - sounds_count
+                        frequencyBase = rec["FrequencyBase"]
+                        freq_val = 50 - frequencyBase
+                        s_scatter = ""
+                        s_freq = ""
+                        if sounds_count > 1:
+                            s_scatter = f" /scatter:{scatter_val}"
+                            s_freq = f" /freq:{freq_val}"
+                            if is_loop:
+                                raise Exception("Not supported")
+
+                        content_no_time = f'{sound_file_name}.mp3 /VOL:{volume}{sloop}{s_scatter}{s_freq}'
+                        if is_all:
+                            self.lines_sound_scheme.append(f'{{{last_scheme_index}}}{{{content_no_time}}}')
+                        elif is_night:
+                            self.lines_sound_scheme.append(f'{{{last_scheme_index}}}{{{content_no_time} /time:18-23}}')
+                            self.lines_sound_scheme.append(f'{{{last_scheme_index}}}{{{content_no_time} /time:0-5}}')
+                        elif is_day:
+                            self.lines_sound_scheme.append(f'{{{last_scheme_index}}}{{{content_no_time} /time:6-17}}')
+            self.main_are_music[are_name] = {"music_theme_index": music_theme_index, "ambients_theme_index": ambients_theme_index}
+            self.save_map_info_file(are_name)
+
+        self.save_schemes()
         return

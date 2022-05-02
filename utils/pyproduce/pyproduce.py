@@ -12,7 +12,8 @@ import produce_ar
 import produce_sound
 
 class ProducerApp:
-    def __init__(self, exp_dir:str, core_dir: str, wav_dir: str, src_dir: str, module_dir: str, baf_dir: str, bam_dir: str) -> None:
+    def __init__(self, exp_dir:str, core_dir: str, wav_dir: str, src_dir: str, module_dir: str
+        , baf_dir: str, bam_dir: str, protos_paths: str) -> None:
         self.exp_dir = exp_dir
         self.core_dir = core_dir
         self.wav_dir = wav_dir
@@ -20,6 +21,7 @@ class ProducerApp:
         self.module_dir = module_dir
         self.baf_dir = baf_dir
         self.bam_dir = bam_dir
+        self.protos_paths = protos_paths
 
         self.copy_speaches = list()
         self.cres = dict()
@@ -283,3 +285,40 @@ class ProducerApp:
             fn = os.path.join(aredir, are_name + ".json")
             yield fn, fnsec
         return
+
+    def list_protos_filesy(self):
+        paths = list()
+        for p in self.protos_paths.split(';'):
+            fp = str(p).strip()
+            if fp.lower().endswith(".tab"):
+                yield fp
+                continue
+
+            for fn in os.listdir(fp):
+                if fn == "protos_save.tab": continue
+                fpath = os.path.join(fp, fn)
+                if fpath.lower().endswith(".tab"):
+                    yield fpath
+
+        return
+
+    def list_protos_files(self):
+        paths = list()
+        for p in self.protos_paths.split(';'):
+            fp = str(p).strip()
+            if fp.lower().endswith(".tab"):
+                paths.append(fp)
+                continue
+
+            for fn in os.listdir(fp):
+                if fn == "protos_save.tab": continue
+                fpath = os.path.join(fp, fn)
+                if fpath.lower().endswith(".tab"):
+                    paths.append(fpath)
+
+        return paths
+
+    def get_itm(self, itm_name: str):
+        fn = os.path.join(self.exp_dir, "Items", itm_name + ".json")
+        itm = common.read_file_json(fn)
+        return itm

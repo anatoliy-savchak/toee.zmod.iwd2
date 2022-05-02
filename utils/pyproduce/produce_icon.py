@@ -50,7 +50,7 @@ class ProduceIcons(object):
                 f.write(f'{{{self.icon_id_last:05d}}} {{{dest_name}}}\n')
         if save_index:
             self.save_index()
-        return
+        return self.icon_id_last
 
     def load_index(self):
         fp = os.path.join(self.app.exp_dir, "Icons", "icons.json")
@@ -62,6 +62,11 @@ class ProduceIcons(object):
     def find_icon(self, icon_name: str):
         return next((rec for rec in self.invenory_index if rec["icon_name"] == icon_name), None)
     
+    def find_icon_id(self, icon_name: str):
+        if rec := self.find_icon(icon_name):
+            return rec.get("icon_id")
+        return None
+
     def save_index(self):
         fp = os.path.join(self.app.exp_dir, "Icons", "icons.json")
         common.write_json(fp, self.invenory_index)

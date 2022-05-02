@@ -1,3 +1,8 @@
+from tkinter.tix import Tree
+import common
+import os
+import re
+
 """
 How to create a gem:
 Given: gem_name, gem_icon_name, gem_value, gem_desc
@@ -11,3 +16,75 @@ Given: gem_name, gem_icon_name, gem_value, gem_desc
 3. Take gem template, replace proto fields and store into protos.json
 4. Store proto_id as const into the lookup. Also save producer class for that one.
 """
+class ProduceProtos(object):
+    def __init__(self, app):
+        self.app = app
+        self.protos_index = dict()
+        return
+
+    def build_index(self):
+        for fp in self.app.list_protos_filesy():
+            self.parse_proto_for_index(fp)
+        return
+
+    def parse_proto_for_index(self, file_path: str):
+        with open(file_path, 'r') as f:
+            for line in f:
+                if not line: continue
+                values = line.split('\t', 24)
+                if len(values) < 24: 
+                    continue
+                proto = int(values[0])
+                proto_type = values[1]
+                proto_desc_id = values[23]
+                self.protos_index[proto] = common.tDict(proto = proto, proto_type = proto_type, proto_desc_id = proto_desc_id, file_path = file_path, content = line)
+        return
+
+    def find_unused_proto(self, obj_type_range_start_proto: int):
+        for i in range(obj_type_range_start_proto + 1, obj_type_range_start_proto + 1000):
+            proto_rec = self.protos_index.get(i)
+            if not proto_rec:
+                return i
+        return
+
+    def create_proto_gem(self, proto: int, icon_id: int, price_gp: int):
+        base_proto = 12036 # PROTO_GENERIC_DIAMOND = 12036 # Cost: 5000 gp
+        tabbed = self.protos_index[base_proto]["content"].split('\t')
+        tabbed[0] = str(proto)
+        tabbed[52] = str(price_gp*100) # obj_f_item_worth
+        tabbed[22] = str(proto) #obj_f_name
+        tabbed[23] = str(proto) #obj_f_description
+        tabbed[53] = str(icon_id) #obj_f_item_inv_aid
+        return tabbed
+
+    def save_proto_files(self, proto: int, tabbed: list, title: str, name: str, long_description: str, proto_type: str = "", save: bool = True):
+        prefix_ = "" if not proto_type else proto_type + "_"
+        title_ = re.sub('\W|^(?=\d)','_', title)
+        proto_stem = f'{prefix_}{proto}_{title_}_iwd2_{name.lower()}'
+        proto_fn = proto_stem + '.tab'
+        proto_path = os.path.join(self.app.core_dir, "rules","protos", proto_fn)
+        if save:
+            with open(proto_path, 'w') as f:
+                f.write('\t'.join(tabbed))
+        result = {"proto": proto, "title": title, "title_name": title_, "proto_stem": proto_stem, "proto_fn": proto_fn, "proto_path": proto_path}
+
+        if title:
+            desc_fn = proto_stem + '.mes'
+            desc_path = os.path.join(self.app.core_dir, "mes","description", desc_fn)
+            if save:
+                with open(desc_path, 'w') as f:
+                    f.write(f'{{{proto}}}{{{title}}}')
+            result["desc_fn"] = desc_fn
+            result["desc_path"] = desc_path
+
+        if long_description:
+            desc_fn = proto_stem + '.mes'
+            desc_path = os.path.join(self.app.core_dir, "mes","long_descr", desc_fn)
+            if save:
+                with open(desc_path, 'w') as f:
+                    f.write(f'{{{proto}}}{{{long_description}}}')
+            result["long_desc_fn"] = desc_fn
+            result["long_desc_path"] = desc_path
+
+        self.protos_index[proto] = common.tDict(proto = proto, proto_type = proto_type, proto_desc_id = proto, file_path = proto_path)
+        return result

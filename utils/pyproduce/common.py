@@ -59,3 +59,14 @@ def write_json(file_path: str, obj):
     with open(file_path, 'w') as f:
         json.dump(obj, f, indent=4)
     return
+
+def text_of_strrefs(d: dict, name1: str, name2: str = None):
+    text = None
+    if el := d.get(name1):
+        if text := el.get("Text"):
+            return text
+    if name2:
+        if el := d.get(name2):
+            if text := el.get("Text"):
+                return text
+    return text

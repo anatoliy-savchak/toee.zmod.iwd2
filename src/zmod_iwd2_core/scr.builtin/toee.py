@@ -740,6 +740,12 @@ class game(object):
 		return
 
 	@staticmethod
+	def sound_local_loc(sound_id, loc, loop_count = 0):
+		assert isinstance(sound_id, int)
+		assert isinstance(loc, int)
+		return
+
+	@staticmethod
 	def timevent_add(func, func_args_tuple, time_ms, is_realtime = 0):
 		""" Schedule function call game.timevent_add(func, func_args_tuple, time_ms, is_realtime = 0) -> None"""
 		return 0

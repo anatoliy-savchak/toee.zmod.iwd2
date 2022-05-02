@@ -144,6 +144,7 @@ class ProduceDaemon:
 
         ambients = self.producer_app.produceSound.dict_index["Ares"].get(self.name)
         if ambients:
+            handlers_count = 0
             for ambient_dict in ambients["ambient_sounds"].values():
                 name = ambient_dict["Name"]
                 x, y = int(ambient_dict["XCoordinateSec"]), int(ambient_dict["YCoordinateSec"])
@@ -155,16 +156,33 @@ class ProduceDaemon:
                 if str(schedule_all) == "ALL": schedule = schedule_all
                 baf = ambient_dict.get('baf')
                 alias = f'"{name}"' if baf else 'None'
+                is_looping = "Looping" in ambient_dict["Flags"]
 
                 add_codeline('')
-                add_codeline(f'ctrl_class, loc = ctrl_ambients.CtrlAmbient,  utils_obj.sec2loc({x}, {y})')
-                add_codeline(f'npc, ctrl = self.create_ambient(loc, ctrl_class, {alias})')
-                add_codeline(f'ctrl.setup(name="{name}", flags="{ambient_dict["Flags"]}", frequency={ambient_dict["FrequencyBase"]}, frequency_variation={ambient_dict["FrequencyVariation"]}, radius={ambient_dict["Radius"]}, x={x}, y={y}, schedule="{schedule}")')
-                for rec in ambient_dict["Sounds"]:
-                    sname = rec["sound_name"]
-                    stitle = ""
-                    if (names := rec.get("names")):
-                        stitle = f', title="{names[0][0] + " " + sname}"'
-                    add_codeline(f'ctrl.setup_sound(sound_id={rec["sound_id"]}, durationf={rec["durationf"]}, volume={rec["volume"]}{stitle})')
-                add_codeline('ctrl.run(npc)')
+                if is_looping:
+                    add_codeline(f'ctrl_class, loc = ctrl_ambients.CtrlAmbient, utils_obj.sec2loc({x}, {y})')
+                    add_codeline(f'npc, ctrl = self.create_cabbage(loc, ctrl_class, {alias})')
+                    add_codeline(f'ctrl.setup(name="{name}", flags="{ambient_dict["Flags"]}", frequency={ambient_dict["FrequencyBase"]}, frequency_variation={ambient_dict["FrequencyVariation"]}, radius={ambient_dict["Radius"]}, x={x}, y={y}, schedule="{schedule}")')
+                    for rec in ambient_dict["Sounds"]:
+                        sname = rec["sound_name"]
+                        stitle = ""
+                        if (names := rec.get("names")):
+                            stitle = f', title="{names[0][0] + " " + sname}"'
+                        add_codeline(f'ctrl.setup_sound(sound_id={rec["sound_id"]}, durationf={rec["durationf"]}, volume={rec["volume"]}{stitle})')
+                    add_codeline('ctrl.run(npc)')
+                else:
+                    add_codeline(f'amb = ctrl_ambients.AmbientHanlder()')
+                    add_codeline(f'loc = utils_obj.sec2loc({x}, {y})')
+                    add_codeline(f'amb.setup(name="{name}", flags="{ambient_dict["Flags"]}", frequency={ambient_dict["FrequencyBase"]}, frequency_variation={ambient_dict["FrequencyVariation"]}, radius={ambient_dict["Radius"]}, loc=loc, schedule="{schedule}")')
+                    for rec in ambient_dict["Sounds"]:
+                        sname = rec["sound_name"]
+                        stitle = ""
+                        if (names := rec.get("names")):
+                            stitle = f', title="{names[0][0] + " " + sname}"'
+                        add_codeline(f'amb.setup_sound(sound_id={rec["sound_id"]}, durationf={rec["durationf"]}, volume={rec["volume"]}{stitle})')
+                    add_codeline('self.ambients.append(amb)')
+                    handlers_count += 1
+            if handlers_count:
+                add_codeline('')
+                add_codeline('self.ambs_timer_start()')
         return

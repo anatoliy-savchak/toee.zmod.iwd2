@@ -59,7 +59,7 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 				#exec(exec_line)
 		return
 
-	def create_ambient(self, loc, ctrl_class, alias):
+	def create_cabbage(self, loc, ctrl_class, alias):
 		npc, ctrl = ctrl_class.create_obj_and_class(loc)
 		if (npc):
 			npc.move(loc)

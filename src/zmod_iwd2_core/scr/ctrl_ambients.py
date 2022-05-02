@@ -54,11 +54,11 @@ class AmbientHanlder(object):
 		self.name = ""
 		self.flags = ""
 		self.frequency = 0
-		self.variation = 0
-		self.x = 0.0
-		self.y = 0.0
-		self.sound_indexes = [-1, ]
-		self.durations = [-1, ]
+		self.frequency_variation = 0
+		self.radius = 0
+		self.loc = 0
+		self.schedule = ""
+		self.sounds = list()
 
 		self.status = ""
 		self.prev_index = -1
@@ -66,56 +66,63 @@ class AmbientHanlder(object):
 		self.duration = 0
 		return
 
-	def setup(self, name, flags, frequency, variation, x, y, sound_indexes, durations):
+	def setup(self, name, flags, frequency, frequency_variation, radius, loc, schedule):
 		self.name = name
 		self.flags = flags
 		self.frequency = frequency
-		self.variation = variation
-		self.x = x
-		self.y = y
-		self.sound_indexes = sound_indexes
-		self.durations = durations
+		self.frequency_variation = frequency_variation
+		self.radius = radius
+		self.loc = loc
+		self.schedule = schedule
 
 		self.status = ""
 		self.prev_index = -1
 		return
 
-	def tick(self):
+	def setup_sound(self, sound_id, durationf, volume, title = None):
+		self.sounds.append((sound_id, durationf, volume, title))
 		return
+
+	def tick(self):
 		cstime = toee.game.time.time_in_game_in_seconds()
 		past = cstime - self.timesec_started
-		print("AmbientHanlder {} heartbeat, past: {}, status: {}".format(self.name, past, self.status))
+		#print("AmbientHanlder {} heartbeat, past: {}, duration: {}, status: {}".format(self.name, past, self.duration, self.status))
 		if not self.status:
-			self.status = "playing"
 			self.do_play()
 		elif (self.status == "playing"):
 			if past <= self.duration:
 				pass
 			else:
-				self.status = "cooldown"
 				self.do_cooldown()
 		elif (self.status == "cooldown"):
 			if past <= self.duration:
 				pass
 			else:
-				self.status = "playing"
 				self.do_play()
 		return
 
 	def do_play(self):
-		sound_id = self.sound_indexes[0]
-		print("AmbientHanlder {} do_play sound_id: {}".format(self.name, sound_id))
+		self.status = "playing"
+		sound_index = 0
+		if "RandomOrder" in self.flags and len(self.sounds) > 1:
+			sound_index = -1
+			while sound_index < 0 or sound_index == self.prev_index:
+				sound_index = toee.game.random_range(0, len(self.sounds)-1)
+		sound_id = self.sounds[sound_index][0]
+		#print("AmbientHanlder {} do_play sound_id: {}".format(self.name, sound_id))
 		self.timesec_started = toee.game.time.time_in_game_in_seconds()
-		self.duration = self.durations[0]
+		self.duration = self.sounds[sound_index][1]
 		#ret = toee.game.sound(sound_id)
-		ret = toee.game.sound_local_obj(sound_id, toee.game.leader)
+		ret = toee.game.sound_local_loc(sound_id, self.loc)
 		
-		print("AmbientHanlder {} toee.game.sound({})=, duration: ".format(self.name, sound_id, ret, self.duration))
+		#print("AmbientHanlder {} toee.game.sound({})={}, duration: {}, index: {} (old: {})".format(self.name, sound_id, ret, self.duration, sound_index, self.prev_index))
+		self.prev_index = sound_index
 		return
 
 	def do_cooldown(self):
+		self.status = "cooldown"
 		self.timesec_started = toee.game.time.time_in_game_in_seconds()
-		vari = 0 if not self.variation else toee.game.random_range(0, self.variation)
+		vari = 0 if not self.frequency_variation else toee.game.random_range(0, self.frequency_variation)
 		self.duration = self.frequency + vari
-		print("AmbientHanlder {} do_cooldown duraiton: {}".format(self.name, self.duration))
+		#print("AmbientHanlder {} do_cooldown duraiton: {}".format(self.name, self.duration))
 		return

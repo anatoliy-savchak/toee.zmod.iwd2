@@ -4,42 +4,15 @@ MANUAL
 import produce_icon
 import produce_proto
 import common
-import proto_file
+from proto_file import *
 import re
 import os
 import copy
 
 def process(producer_app):
-    ProtoBuilderItem(producer_app).copy_from_proto(12036).update_from_item("00Gem02").set_proto(12710).save()
-    ProtoBuilderItem(producer_app).copy_from_proto(9000).update_from_item("10Vellum").set_proto(12711).set_field(proto_file.idx_obj_f_item_flags, "OIF_IS_MAGICAL OIF_NO_DECAY").save()
-    return
-
-def process_item_generic(name, producer_app, icons, protos, obj_type_range_start_proto, proto, base_proto, save = True):
-    proto0 = proto
-    if proto0 < 0: save = False
-    itm = producer_app.get_itm(name)
-    icon_name = itm["InventoryIcon"]
-    icon_id = icons.find_icon_id(icon_name)
-    if not icon_id:
-        icon_id = icons.produce_icon(icon_name)
-
-    if proto < 0:
-        new_proto = protos.find_unused_proto(obj_type_range_start_proto)
-        proto = new_proto
-
-    if itm and proto > 0:
-        title = common.text_of_strrefs(itm, "IdentifiedName", "UnidentifiedName")
-        utitle = common.text_of_strrefs(itm, "UnidentifiedName")
-        description = common.text_of_strrefs(itm, "IdentifiedDescription")
-        price_gp = int(itm["Price"])
-        tabbed = protos.create_proto_item(proto, icon_id, price_gp, base_proto)
-        obj_type_name = "obj_t_generic"
-        rec = protos.save_proto_files(proto, tabbed, title, utitle, name, description, obj_type_name, save)
-        const_line = f'PROTO_{obj_type_name.replace("obj_t_", "").upper()}_{rec["title_name"].upper()} = {proto} # Cost: {price_gp} gp; {name}'
-        print(f"proto: {proto}")
-        print(const_line)
-        if proto0 < 0:
-            raise Exception("Setup proto!")
+    ProtoBuilderItem(producer_app).cfp(12036).ufi("00Gem02").sp(12710).save()
+    ProtoBuilderItem(producer_app).cfp(9000).ufi("10Vellum").sp(12711).sf(idx_obj_f_item_flags, "OIF_IS_MAGICAL OIF_NO_DECAY").save()
+    ProtoBuilderItem(producer_app).cfp(9000).ufi("10GenCrW").sp(12712, 12711).sf(idx_int32_two_fields, "12083").save()
     return
 
 class ProtoBuilder(object):
@@ -48,6 +21,7 @@ class ProtoBuilder(object):
         self.tabbed = dict()
         self.proto = -1
         self.obj = obj
+        self.obj_name = None
         self.object_type_str = None
         self.proto_code_name = None
         self.proto_file_stem = None
@@ -60,9 +34,12 @@ class ProtoBuilder(object):
         if tabbed:
             self.tabbed = copy.deepcopy(tabbed)
             self.tabbed[0] = str(self.proto)
-            self.object_type_str = self.tabbed[proto_file.idx_obj_type]
-            self.tabbed[proto_file.idx_obj_f_name] = ""
+            self.object_type_str = self.tabbed[idx_obj_type]
+            self.tabbed[idx_obj_f_name] = ""
         return self
+
+    def cfp(self, src_proto: int):
+        return self.copy_from_proto(src_proto)
 
     def _update_file_names(self):
         return
@@ -70,6 +47,15 @@ class ProtoBuilder(object):
     def set_field(self, field_idx: int, value: str):
         self.tabbed[field_idx] = value
         return self
+
+    def sf(self, field_idx: int, value: str):
+        return self.set_field(field_idx, value)
+
+    def get_field(self, field_idx: int):
+        return self.tabbed[field_idx]
+
+    def gf(self, field_idx: int):
+        return self.get_field(field_idx)
 
 class ProtoBuilderItem(ProtoBuilder):
     def __init__(self, app, obj: dict = None):
@@ -91,20 +77,21 @@ class ProtoBuilderItem(ProtoBuilder):
         self.proto_file_path = os.path.join(self.app.core_dir, "rules","protos", self.proto_file_name)
 
         self.item_udescription_id = proto_override + 20000
-        self.tabbed[proto_file.idx_obj_f_item_description_unknown] = str(self.item_udescription_id) if self.item_udescription else ""
+        self.tabbed[idx_obj_f_item_description_unknown] = str(self.item_udescription_id) if self.item_udescription else ""
 
-        self.tabbed[proto_file.idx_obj_f_description] = str(proto_override) if self.item_udescription else ""
+        self.tabbed[idx_obj_f_description] = str(proto_override) if self.item_udescription else ""
         return
 
     def update_from_item(self, item_name: str, elicit_icon: bool = True):
         self.obj = self.app.get_itm(item_name)
+        self.obj_name = item_name
         icon_name = self.obj["InventoryIcon"]
         if elicit_icon:
             self.icon_id = self.app.icons.find_icon_id(icon_name)
             if not self.icon_id:
                 self.icon_id = self.app.icons.produce_icon(icon_name)
             if self.icon_id > 0:
-                self.tabbed[proto_file.idx_obj_f_item_inv_aid] = str(self.icon_id)
+                self.tabbed[idx_obj_f_item_inv_aid] = str(self.icon_id)
 
         self.item_description = common.text_of_strrefs(self.obj, "IdentifiedName", "UnidentifiedName")
 
@@ -115,17 +102,24 @@ class ProtoBuilderItem(ProtoBuilder):
         self._update_file_names()
         return self
 
+    def ufi(self, item_name: str, elicit_icon: bool = True):
+        return self.update_from_item(item_name, elicit_icon)
+
     def set_proto(self, new_proto: int, obj_type_range_start_proto: int = None):
         if new_proto is None or new_proto <= 0:
             if obj_type_range_start_proto is None:
                 raise Exception("obj_type_range_start_proto must be provided if proto: -1!")
             new_proto = self.app.protos.find_unused_proto(obj_type_range_start_proto)
             self._update_file_names(new_proto)
+            self.print_const(new_proto)
             raise Exception("Write this and call again with correct proto!")
         self.proto = new_proto
         self.tabbed[0] = str(self.proto)
         self._update_file_names()
         return self
+
+    def sp(self, new_proto: int, obj_type_range_start_proto: int = None):
+        return self.set_proto(new_proto, obj_type_range_start_proto)
 
     def save(self):
         if self.proto is None or self.proto <=0:
@@ -153,4 +147,11 @@ class ProtoBuilderItem(ProtoBuilder):
             , proto_desc_id = self.proto, file_path = self.proto_file_path, uproto = self.item_udescription_id
             , content = content)
 
+        return
+
+    def print_const(self, proto: int = None):
+        if not proto: proto = self.proto
+        const_line = f'PROTO_{self.object_type_str.replace("obj_t_", "").upper()}_{self.proto_code_name.upper()} = {proto} # Cost: {self.gf(idx_obj_f_item_worth)} gp; {self.obj_name}'
+        print(f"proto: {proto}")
+        print(const_line)
         return

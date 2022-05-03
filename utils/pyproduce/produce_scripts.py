@@ -330,7 +330,7 @@ class ScriptTranFuncsItem(ScriptTranFuncs):
 
     def do_process_item(self, func_name: str, args: list, func_info, index_with_item: int, make_create: bool, make_proto: bool):
         item_file_name = self.do_translate_param(args[index_with_item], index_with_item, func_info.args[index_with_item])
-        item_file_name = item_file_name.replace('"', '')
+        item_file_name = item_file_name.replace('"', '').strip()
         if item_file_name == "00Leat01":
             print("")
         item_cls = produce_items.ItemBase.find_item_class(item_file_name)

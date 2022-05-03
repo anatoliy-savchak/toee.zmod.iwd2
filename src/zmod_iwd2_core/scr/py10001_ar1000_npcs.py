@@ -1523,7 +1523,7 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			
 		elif index == 9:
 			# GiveItemCreate("00Swds01", Protagonist, 0, 0, 0)
-			self.iGiveItemCreate("00Swds01", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_SHORTSWORD, "Protagonist", 0, 0, 0)
 			# 581: Continue
 			
 		elif index == 10:
@@ -2191,12 +2191,12 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 			
 		elif index == 29:
 			# !PartyHasItem("10Vellum")
-			if not self.iPartyHasItem("10Vellum"):
+			if not self.iPartyHasItem(const_proto_items_iwd2.PROTO_GENERIC_EXPENDED_TELEPORTATION_SCROLL):
 				return True # 1041: Well, there were some collapsed passages - could be the goblins accidentally sealed themselves in.
 			
 		elif index == 30:
 			# PartyHasItem("10Vellum")
-			if self.iPartyHasItem("10Vellum"):
+			if self.iPartyHasItem(const_proto_items_iwd2.PROTO_GENERIC_EXPENDED_TELEPORTATION_SCROLL):
 				return True # 1042: Well, there were some collapsed passages - could be the goblins accidentally sealed themselves in.  Found this scroll on one of the goblins, however, and it looks magical... or was, at least.
 			
 		elif index == 31:
@@ -2856,7 +2856,7 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			# SetGlobal("Lumber_Quest", "GLOBAL", 4)
 			self.iSetGlobal("Lumber_Quest", "GLOBAL", 4)
 			# GiveItemCreate("10GenCrW ", Protagonist, 0, 0, 0)
-			self.iGiveItemCreate("10GenCrW ", "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_items_iwd2.PROTO_SCROLL_WOODEN_CRANE_WHEEL, "Protagonist", 0, 0, 0)
 			# 1371: How?
 			
 		elif index == 9:

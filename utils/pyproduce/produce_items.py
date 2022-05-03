@@ -367,6 +367,18 @@ class ItemHelmPlumedBronze(ItemHelmets):
     @classmethod
     def get_proto_const(cls): return "const_proto_cloth.PROTO_CLOTH_HELMET_CHAIN"
 
+########## SHORTSWORDS
+class ItemShortswords(ItemBase):
+    @classmethod
+    def get_category(cls): return "ShortSwords"
+
+class ItemShortsword(ItemShortswords):
+    @classmethod
+    def get_item_codes(cls): return ('00Swds01'.upper(), )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_SHORTSWORD"
+
 ########## GOLD
 class ItemGold(ItemBase):
     @classmethod
@@ -415,6 +427,30 @@ class ItemPotionOfHealing(ItemPotions):
 
     @classmethod
     def get_proto_const(cls): return "const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS"
+
+########## NOTES
+class ItemNotes(ItemBase):
+    @classmethod
+    def get_category(cls): return "Notes"
+
+class ItemNotesExpendedTS(ItemNotes):
+    @classmethod
+    def get_item_codes(cls): return ('10Vellum'.upper(), )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_items_iwd2.PROTO_GENERIC_EXPENDED_TELEPORTATION_SCROLL"
+
+########## KEYS
+class ItemKeys(ItemBase):
+    @classmethod
+    def get_category(cls): return "Keys"
+
+class ItemWoodenCraneWheel(ItemKeys):
+    @classmethod
+    def get_item_codes(cls): return ('10GenCrW'.upper(), )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_items_iwd2.PROTO_SCROLL_WOODEN_CRANE_WHEEL"
 
 ########## MISC | BOOKS
 class ItemMisc(ItemBase):

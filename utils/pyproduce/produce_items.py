@@ -390,7 +390,7 @@ class ItemGold(ItemBase):
     def is_default(cls): return True
 
 ########## GEMS
-class ItemGems(ItemArmors):
+class ItemGems(ItemBase):
     @classmethod
     def get_category(cls): return "Gems"
 
@@ -400,6 +400,21 @@ class ItemGemLynx(ItemGems):
 
     @classmethod
     def get_proto_const(cls): return "const_proto_items_iwd2.PROTO_GENERIC_LYNX_EYE_GEM"
+
+########## POTIONS
+class ItemPotions(ItemBase):
+    @classmethod
+    def get_category(cls): return "Potions"
+
+class ItemPotionOfHealing(ItemPotions):
+    """ It is not exact, as heals 9 hp not 1d8+1. And costs 75, not 50!
+    TODO ITEM
+    """
+    @classmethod
+    def get_item_codes(cls): return ('00Potn04', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS"
 
 ########## MISC | BOOKS
 class ItemMisc(ItemBase):

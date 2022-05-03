@@ -47,33 +47,37 @@ class ProduceProtos(object):
                 return i
         return
 
-    def create_proto_gem(self, proto: int, icon_id: int, price_gp: int):
-        base_proto = 12036 # PROTO_GENERIC_DIAMOND = 12036 # Cost: 5000 gp
+    def create_proto_item(self, proto: int, icon_id: int, price_gp: int, base_proto: int):
+        
         tabbed = self.protos_index[base_proto]["content"].split('\t')
         tabbed[0] = str(proto)
         tabbed[52] = str(price_gp*100) # obj_f_item_worth
         tabbed[22] = str(proto) #obj_f_name
         tabbed[23] = str(proto) #obj_f_description
         tabbed[53] = str(icon_id) #obj_f_item_inv_aid
+        tabbed[55] = ""
         return tabbed
 
-    def save_proto_files(self, proto: int, tabbed: list, title: str, name: str, long_description: str, proto_type: str = "", save: bool = True):
+    def save_proto_files(self, proto: int, tabbed: list, title: str, utitle: str, name: str, long_description: str, proto_type: str = "", save: bool = True):
         prefix_ = "" if not proto_type else proto_type + "_"
         title_ = re.sub('\W|^(?=\d)','_', title)
         proto_stem = f'{prefix_}{proto}_{title_}_iwd2_{name.lower()}'
         proto_fn = proto_stem + '.tab'
         proto_path = os.path.join(self.app.core_dir, "rules","protos", proto_fn)
-        if save:
-            with open(proto_path, 'w') as f:
-                f.write('\t'.join(tabbed))
         result = {"proto": proto, "title": title, "title_name": title_, "proto_stem": proto_stem, "proto_fn": proto_fn, "proto_path": proto_path}
 
+        uproto = None
         if title:
+            if utitle:
+                uproto = proto + 20000
+                tabbed[55] = str(uproto) #obj_f_item_description_unknown
             desc_fn = proto_stem + '.mes'
             desc_path = os.path.join(self.app.core_dir, "mes","description", desc_fn)
             if save:
                 with open(desc_path, 'w') as f:
                     f.write(f'{{{proto}}}{{{title}}}')
+                    if utitle:
+                        f.write(f'\n{{{uproto}}}{{{utitle}}}')
             result["desc_fn"] = desc_fn
             result["desc_path"] = desc_path
 
@@ -86,5 +90,9 @@ class ProduceProtos(object):
             result["long_desc_fn"] = desc_fn
             result["long_desc_path"] = desc_path
 
-        self.protos_index[proto] = common.tDict(proto = proto, proto_type = proto_type, proto_desc_id = proto, file_path = proto_path)
+        if save:
+            with open(proto_path, 'w') as f:
+                f.write('\t'.join(tabbed))
+
+        self.protos_index[proto] = common.tDict(proto = proto, proto_type = proto_type, proto_desc_id = proto, file_path = proto_path, uproto = uproto)
         return result

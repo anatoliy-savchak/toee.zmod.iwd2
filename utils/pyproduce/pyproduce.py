@@ -10,6 +10,8 @@ import produce_dialog
 import common
 import produce_ar
 import produce_sound
+import produce_icon
+import produce_proto
 
 class ProducerApp:
     def __init__(self, exp_dir:str, core_dir: str, wav_dir: str, src_dir: str, module_dir: str
@@ -39,6 +41,10 @@ class ProducerApp:
             , dir_sound = self.get_path_sound()
             , producer_app = self
         )
+        self.icons = produce_icon.ProduceIcons(self)
+        self.icons.load_index()
+        self.protos = produce_proto.ProduceProtos(self)
+        self.protos.build_index()
 
         return
 

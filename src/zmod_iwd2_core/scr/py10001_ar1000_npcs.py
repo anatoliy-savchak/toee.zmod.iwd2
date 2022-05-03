@@ -1334,7 +1334,7 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			
 		elif index == 20:
 			# PartyHasItem("00Potn04")
-			if self.iPartyHasItem("00Potn04"):
+			if self.iPartyHasItem(const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS):
 				return True # 672: I already found a healing potion.  It should help - drink it down.
 			
 		elif index == 21:
@@ -1404,7 +1404,7 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			
 		elif index == 34:
 			# PartyHasItem("00Potn04")
-			if self.iPartyHasItem("00Potn04"):
+			if self.iPartyHasItem(const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS):
 				return True # 752: Here's the healing potion.  It should help - drink it down.
 			
 		elif index == 35:
@@ -1419,7 +1419,7 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			
 		elif index == 37:
 			# PartyHasItem("00Potn04")
-			if self.iPartyHasItem("00Potn04"):
+			if self.iPartyHasItem(const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS):
 				return True # 771: Here's the healing potion.  It should help - drink it down.
 			
 		elif index == 38:
@@ -1545,7 +1545,7 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			# AddXpVar("Level_1_Average",1484)
 			self.iAddXpVar("Level_1_Average", 1484)
 			# TakePartyItemNum("00Potn04", 1)
-			self.iTakePartyItemNum("00Potn04", 1)
+			self.iTakePartyItemNum(const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS, 1)
 			# DestroyItem("00Potn04")
 			self.iDestroyItem("00Potn04")
 			# SetGlobal("Reig_Quest", "GLOBAL", 2)
@@ -1556,7 +1556,7 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			# AddXpVar("Level_1_Average",1484)
 			self.iAddXpVar("Level_1_Average", 1484)
 			# TakePartyItemNum("00Potn04", 1)
-			self.iTakePartyItemNum("00Potn04", 1)
+			self.iTakePartyItemNum(const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS, 1)
 			# DestroyItem("00Potn04")
 			self.iDestroyItem("00Potn04")
 			# SetGlobal("Reig_Quest", "GLOBAL", 2)
@@ -1579,7 +1579,7 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			# AddXpVar("Level_1_Average",1484)
 			self.iAddXpVar("Level_1_Average", 1484)
 			# TakePartyItemNum("00Potn04", 1)
-			self.iTakePartyItemNum("00Potn04", 1)
+			self.iTakePartyItemNum(const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS, 1)
 			# DestroyItem("00Potn04")
 			self.iDestroyItem("00Potn04")
 			# SetGlobal("Reig_Quest", "GLOBAL", 2)

@@ -22,8 +22,8 @@ def lines_after_before_cutoff(lines: list, after: str, before: str):
     index_before = lines_find(lines, before)
     if not index_after is None and not index_before is None:
         if index_after + 1 < index_before:
-            del lines[index_after+1:index_before-1]
-    return index_after + 1
+            del lines[index_after+1:index_before]
+    return index_after+1
 
 def marked_line(code: str):
     return f"#### {code} ####"

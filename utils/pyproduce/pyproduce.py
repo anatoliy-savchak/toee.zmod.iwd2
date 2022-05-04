@@ -31,6 +31,7 @@ class ProducerApp:
         self.current_are_name = ""
         self.current_dialog_file = None
         self.bafs = dict()
+        self.imports_npcs_manual = list()
 
         self.journal = None
         self.commands = inf_commands.InfCommands()
@@ -141,13 +142,19 @@ class ProducerApp:
     def get_path_out_npcs_file(self, are_name: str, script_id: int = None):
         if script_id is None:
             script_id = self.are_name_to_script_id(are_name) + 1
+        name = f"py{script_id:05d}_{are_name.lower()}_npcs_auto.py"
+        return os.path.join(self.core_dir, "scr", name)
+
+    def get_path_out_npcs_manual_file(self, are_name: str, script_id: int = None):
+        if script_id is None:
+            script_id = self.are_name_to_script_id(are_name) + 2
         name = f"py{script_id:05d}_{are_name.lower()}_npcs.py"
         return os.path.join(self.core_dir, "scr", name)
 
     def get_path_out_npcs_dialog_file(self, are_name: str, script_id: int = None):
         if script_id is None:
             script_id = self.are_name_to_script_id(are_name) + 1
-        name = f"{script_id:05d}_{are_name.lower()}_npcs.dlg"
+        name = f"{script_id:05d}_{are_name.lower()}_npcs_auto.dlg"
         return os.path.join(self.core_dir, "dlg", name)
 
     def get_path_out_daemon_file(self, are_name: str, script_id: int = None):
@@ -169,22 +176,50 @@ class ProducerApp:
         self.current_are_name = are_name
 
         self.current_dialog_file = produce_dialog.DialogFile(self.get_path_out_npcs_dialog_file(are_name))
-        script_id = self.are_name_to_script_id(are_name) + 1
-        dfn = self.get_path_out_npcs_file(are_name, script_id)
-        #sfn = self.get_path_template_npcs_file(are_name)
-        with open(dfn, 'r') as fi:
-            lines = fi.readlines()
-        common.lines_after_cutoff(lines, common.marked_line("NPCS"))
-        lines.append(f"MODULE_SCRIPT_ID = {script_id}\n")
-        lines.append(" ")
-        with open(dfn, 'w') as f:
-            f.writelines(lines)
+        if True:
+            script_id = self.are_name_to_script_id(are_name) + 1
+            dfn = self.get_path_out_npcs_file(are_name, script_id)
+            fn = dfn
+            if not os.path.exists(fn): fn = self.get_path_template_npcs_file(are_name)
+            with open(fn, 'r') as fi:
+                lines = fi.readlines()
+            common.lines_after_cutoff(lines, common.marked_line("NPCS"))
+            lines.append(f"MODULE_SCRIPT_ID = {script_id}\n")
+            lines.append(" ")
+            with open(dfn, 'w') as f:
+                f.writelines(lines)
+        if True:
+            script_id = self.are_name_to_script_id(are_name) + 2
+            dfn = self.get_path_out_npcs_manual_file(are_name, script_id)
+            fn = dfn
+            if not os.path.exists(fn): fn = self.get_path_template_npcs_file(are_name)
+            with open(fn, 'r') as fi:
+                lines = fi.readlines()
+            common.lines_after_cutoff(lines, common.marked_line("NPCS"))
+            lines.append(f"MODULE_SCRIPT_ID = {script_id}\n")
+            lines.append(" ")
+            with open(dfn, 'w') as f:
+                f.writelines(lines)
+
+        self.imports_npcs_manual = list()
         return
 
     def produce_are_end(self):
         script_id = self.are_name_to_script_id(self.current_are_name) + 1
         dest_speech_path = os.path.join(self.get_path_sound(), "speech", f"{script_id:05d}")
         self.current_dialog_file.copy_sound_files(self.wav_dir, dest_speech_path)
+
+        script_manual_id = self.are_name_to_script_id(self.current_are_name) + 2
+        out_npcs_manual_file = self.get_path_out_npcs_manual_file(self.current_are_name, script_manual_id)
+        with open(out_npcs_manual_file, 'r') as f: lines = f.readlines()
+        line_id = common.lines_after_before_cutoff(lines, "#### IMPORT ####", "#### IMPORT END ####")
+        if line_id and self.imports_npcs_manual:
+            used_imports_text = 'import ' + ', '.join(self.imports_npcs_manual)
+            lines.insert(line_id, used_imports_text)
+        with open(out_npcs_manual_file, 'w') as f:
+            for line in lines:
+                f.write(line + ("\n" if not "\n" in line else ""))
+
         self.current_are_name = None
         self.current_dialog_file = None
         return
@@ -197,15 +232,23 @@ class ProducerApp:
 
         script_id = self.are_name_to_script_id(are_name) + 1
         out_npcs_file = self.get_path_out_npcs_file(are_name, script_id)
+        script_manual_id = self.are_name_to_script_id(are_name) + 2
+        out_npcs_manual_file = self.get_path_out_npcs_manual_file(are_name, script_manual_id)
         prod = produce_npc.ProduceNPC(self
             , out_npcs_file
             , self.current_dialog_file
-        ).produce_npc(cre_name)
+            , out_npcs_manual_file
+        ).produce_npc_auto(cre_name)
         prod.save()
+        for i in prod.imports_manual: 
+            if not i in self.imports_npcs_manual: 
+                self.imports_npcs_manual.append(i)
 
         are_names = list()
         are_names.append(are_name)
-        rec = SimpleNamespace(are_names = are_names, cre_name = cre_name, ctrl_name= prod.ctrl_name, out_npcs_file = out_npcs_file)
+        rec = common.tDict(are_names = are_names, cre_name = cre_name
+            , ctrl_name= prod.ctrl_name, ctrl_manual_name= prod.ctrl_manual_name
+            , out_npcs_file = out_npcs_file, out_npcs_manual_file = out_npcs_manual_file)
         self.cres[cre_name] = rec
         return
 
@@ -227,9 +270,10 @@ class ProducerApp:
         #next((for are_name, rec in self.cres.items() if rec.), None)
         rec = self.cres.get(cre_name)
         if rec:
-            module_name = os.path.basename(rec.out_npcs_file).replace(".py", "")
-            return (rec.ctrl_name, module_name)
-        return (None, None)
+            module_name = os.path.basename(rec["out_npcs_file"]).replace(".py", "")
+            module_manual_name = os.path.basename(rec["out_npcs_manual_file"]).replace(".py", "")
+            return (rec["ctrl_name"], module_name, rec["ctrl_manual_name"], module_manual_name)
+        return (None, None, None, None)
 
     def find_first_in_bafs(self, lines: list):
         for fn in os.listdir(self.baf_dir):

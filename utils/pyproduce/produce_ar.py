@@ -14,6 +14,7 @@ class ProduceDaemon:
         self.ar = None
         self.ar_sec = None
         self.npc_classes = dict() # name, lines
+        self.used_imports = list()
         self.load_ar()
         return
 
@@ -90,7 +91,8 @@ class ProduceDaemon:
             y = float(actor_sec["CurrentYCoordinateSec"])
 
             hidden = bool(actor["DefaultHiddenCalc"])
-            ctrl_class, class_file = self.find_npc_class(cre_file)
+            ctrl_class_auto, class_file_auto, ctrl_class, class_file = self.find_npc_class(cre_file)
+            if class_file and not class_file in self.used_imports: self.used_imports.append(class_file)
             add_line(i_code+f'# {name}: {cre_file} ({x:.1f}, {y:.1f}) {direction} ctrl: {class_file}.{ctrl_class} {"hidden" if hidden else ""}')
             if not hidden:
                 if ctrl_class:
@@ -108,6 +110,14 @@ class ProduceDaemon:
                     #add_line(i_code+f'global {global_name}')
                     #add_line(i_code+f'{global_name} = ctrl')
             add_line(i_code)
+            self.produce_are_end()
+        return
+
+    def produce_are_end(self):
+        line_id = common.lines_after_before_cutoff(self.lines_script, "#### NPCS IMPORT ####", "#### NPCS IMPORT END ####")
+        if line_id and self.used_imports:
+            used_imports_text = 'import ' + ', '.join(self.used_imports)
+            self.lines_script.insert(line_id, used_imports_text)
         return
 
     def find_npc_class(self, cre_name: str):

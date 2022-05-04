@@ -3,7 +3,7 @@ import ctrl_behaviour, py06122_cormyr_prompter, factions_zmod, utils_npc, utils_
 import monster_info, module_quests, module_consts, module_globals
 import ctrl_daemon_ie, ctrl_ambients
 #### NPCS IMPORT ####
-import py10001_ar1000_npcs
+import py10002_ar1000_npcs
 #### NPCS IMPORT END ####
 
 DAEMON_SCRIPT_ID = 10000
@@ -76,214 +76,214 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		return
 	
 	def place_npcs(self):
-		# Hedron: 10HEDRON (448.9, 493.1) const_toee.ROT09 ctrl: py10001_ar1000_npcs.Ctrl10HEDRON 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10HEDRON,  utils_obj.sec2loc(448, 493)
+		# Hedron: 10HEDRON (448.9, 493.1) const_toee.ROT09 ctrl: py10002_ar1000_npcs.Ctrl10HEDRON 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10HEDRON,  utils_obj.sec2loc(448, 493)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT09, "Hedron", 0, 1)
 		
-		# Eldgull: 10ELDGUL (446.7, 499.0) const_toee.ROT05 ctrl: py10001_ar1000_npcs.Ctrl10ELDGUL 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10ELDGUL,  utils_obj.sec2loc(446, 499)
+		# Eldgull: 10ELDGUL (446.7, 499.0) const_toee.ROT05 ctrl: py10002_ar1000_npcs.Ctrl10ELDGUL 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10ELDGUL,  utils_obj.sec2loc(446, 499)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT05, "Eldgull", 0, 1)
 		
-		# Screed: 10SCREED (459.2, 478.7) const_toee.ROT06 ctrl: py10001_ar1000_npcs.Ctrl10SCREED 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10SCREED,  utils_obj.sec2loc(459, 478)
+		# Screed: 10SCREED (459.2, 478.7) const_toee.ROT06 ctrl: py10002_ar1000_npcs.Ctrl10SCREED 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10SCREED,  utils_obj.sec2loc(459, 478)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "Screed", 0, 1)
 		
-		# Reig: 10REIG (475.4, 466.7) const_toee.ROT06 ctrl: py10001_ar1000_npcs.Ctrl10REIG 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10REIG,  utils_obj.sec2loc(475, 466)
+		# Reig: 10REIG (475.4, 466.7) const_toee.ROT06 ctrl: py10002_ar1000_npcs.Ctrl10REIG 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10REIG,  utils_obj.sec2loc(475, 466)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "Reig", 0, 1)
 		
-		# Jon: 10JON (479.4, 466.8) const_toee.ROT02 ctrl: py10001_ar1000_npcs.Ctrl10JON 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10JON,  utils_obj.sec2loc(479, 466)
+		# Jon: 10JON (479.4, 466.8) const_toee.ROT02 ctrl: py10002_ar1000_npcs.Ctrl10JON 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10JON,  utils_obj.sec2loc(479, 466)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "Jon", 0, 1)
 		
-		# Brogan: 10BROGAN (447.2, 468.5) const_toee.ROT11 ctrl: py10001_ar1000_npcs.Ctrl10BROGAN 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10BROGAN,  utils_obj.sec2loc(447, 468)
+		# Brogan: 10BROGAN (447.2, 468.5) const_toee.ROT11 ctrl: py10002_ar1000_npcs.Ctrl10BROGAN 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10BROGAN,  utils_obj.sec2loc(447, 468)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT11, "Brogan", 0, 1)
 		
-		# Jorun: 10JORUN (515.5, 466.5) const_toee.ROT11 ctrl: py10001_ar1000_npcs.Ctrl10JORUN 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10JORUN,  utils_obj.sec2loc(515, 466)
+		# Jorun: 10JORUN (515.5, 466.5) const_toee.ROT11 ctrl: py10002_ar1000_npcs.Ctrl10JORUN 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10JORUN,  utils_obj.sec2loc(515, 466)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT11, "Jorun", 0, 1)
 		
-		# 1000_Goblin_01: 10GOB (493.9, 438.4) const_toee.ROT05 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(493, 438)
+		# 1000_Goblin_01: 10GOB (493.9, 438.4) const_toee.ROT05 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(493, 438)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT05, "1000_Goblin_01", 0, 1)
 		
-		# Dead_Goblin_0: 10GOBD (500.9, 447.1) const_toee.ROT05 ctrl: py10001_ar1000_npcs.Ctrl10GOBD 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(500, 447)
+		# Dead_Goblin_0: 10GOBD (500.9, 447.1) const_toee.ROT05 ctrl: py10002_ar1000_npcs.Ctrl10GOBD 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(500, 447)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT05, "Dead_Goblin_0", 0, 1)
 		
-		# Dead_Townsperson_0: 10MALED (501.6, 451.1) const_toee.ROT11 ctrl: py10001_ar1000_npcs.Ctrl10MALED 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10MALED,  utils_obj.sec2loc(501, 451)
+		# Dead_Townsperson_0: 10MALED (501.6, 451.1) const_toee.ROT11 ctrl: py10002_ar1000_npcs.Ctrl10MALED 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10MALED,  utils_obj.sec2loc(501, 451)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT11, "Dead_Townsperson_0", 0, 1)
 		
-		# Brohn_Dead: 10SOLDRD (477.4, 466.6) const_toee.ROT05 ctrl: py10001_ar1000_npcs.Ctrl10SOLDRD 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10SOLDRD,  utils_obj.sec2loc(477, 466)
+		# Brohn_Dead: 10SOLDRD (477.4, 466.6) const_toee.ROT05 ctrl: py10002_ar1000_npcs.Ctrl10SOLDRD 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10SOLDRD,  utils_obj.sec2loc(477, 466)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT05, "Brohn_Dead", 0, 1)
 		
-		# Dead_Goblin_1: 10GOBD (462.7, 461.9) const_toee.ROT08 ctrl: py10001_ar1000_npcs.Ctrl10GOBD 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(462, 461)
+		# Dead_Goblin_1: 10GOBD (462.7, 461.9) const_toee.ROT08 ctrl: py10002_ar1000_npcs.Ctrl10GOBD 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(462, 461)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT08, "Dead_Goblin_1", 0, 1)
 		
-		# Dead_Goblin_2: 10GOBD (463.3, 455.5) const_toee.ROT05 ctrl: py10001_ar1000_npcs.Ctrl10GOBD 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(463, 455)
+		# Dead_Goblin_2: 10GOBD (463.3, 455.5) const_toee.ROT05 ctrl: py10002_ar1000_npcs.Ctrl10GOBD 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(463, 455)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT05, "Dead_Goblin_2", 0, 1)
 		
-		# Dead_Goblin_3: 10GOBD (447.5, 458.8) const_toee.ROT08 ctrl: py10001_ar1000_npcs.Ctrl10GOBD 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(447, 458)
+		# Dead_Goblin_3: 10GOBD (447.5, 458.8) const_toee.ROT08 ctrl: py10002_ar1000_npcs.Ctrl10GOBD 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(447, 458)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT08, "Dead_Goblin_3", 0, 1)
 		
-		# Dead_Soldier_0: 10SOLDRD (448.5, 456.7) const_toee.ROT05 ctrl: py10001_ar1000_npcs.Ctrl10SOLDRD 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10SOLDRD,  utils_obj.sec2loc(448, 456)
+		# Dead_Soldier_0: 10SOLDRD (448.5, 456.7) const_toee.ROT05 ctrl: py10002_ar1000_npcs.Ctrl10SOLDRD 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10SOLDRD,  utils_obj.sec2loc(448, 456)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT05, "Dead_Soldier_0", 0, 1)
 		
-		# Dead_Goblin_J1: 10GOBD (515.9, 464.0) const_toee.ROT05 ctrl: py10001_ar1000_npcs.Ctrl10GOBD 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(515, 464)
+		# Dead_Goblin_J1: 10GOBD (515.9, 464.0) const_toee.ROT05 ctrl: py10002_ar1000_npcs.Ctrl10GOBD 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(515, 464)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT05, "Dead_Goblin_J1", 0, 1)
 		
-		# Dead_Goblin_J2: 10GOBD (516.0, 470.9) const_toee.ROT09 ctrl: py10001_ar1000_npcs.Ctrl10GOBD 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(516, 470)
+		# Dead_Goblin_J2: 10GOBD (516.0, 470.9) const_toee.ROT09 ctrl: py10002_ar1000_npcs.Ctrl10GOBD 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(516, 470)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT09, "Dead_Goblin_J2", 0, 1)
 		
-		# Dead_Goblin_6: 10GOBD (519.7, 466.7) const_toee.ROT02 ctrl: py10001_ar1000_npcs.Ctrl10GOBD 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(519, 466)
+		# Dead_Goblin_6: 10GOBD (519.7, 466.7) const_toee.ROT02 ctrl: py10002_ar1000_npcs.Ctrl10GOBD 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBD,  utils_obj.sec2loc(519, 466)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "Dead_Goblin_6", 0, 1)
 		
-		# 1000_Goblin_02: 10GOB (531.8, 481.3) const_toee.ROT02 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(531, 481)
+		# 1000_Goblin_02: 10GOB (531.8, 481.3) const_toee.ROT02 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(531, 481)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "1000_Goblin_02", 0, 1)
 		
-		# 1000_Goblin_03: 10GOB (526.3, 480.9) const_toee.ROT08 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(526, 480)
+		# 1000_Goblin_03: 10GOB (526.3, 480.9) const_toee.ROT08 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(526, 480)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT08, "1000_Goblin_03", 0, 1)
 		
-		# Dead_Townsperson_1: 10MALED (528.8, 480.0) const_toee.ROT05 ctrl: py10001_ar1000_npcs.Ctrl10MALED 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10MALED,  utils_obj.sec2loc(528, 480)
+		# Dead_Townsperson_1: 10MALED (528.8, 480.0) const_toee.ROT05 ctrl: py10002_ar1000_npcs.Ctrl10MALED 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10MALED,  utils_obj.sec2loc(528, 480)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT05, "Dead_Townsperson_1", 0, 1)
 		
-		# Dead_Goblin_7: 10GOBARD (506.5, 497.0) const_toee.ROT00 ctrl: py10001_ar1000_npcs.Ctrl10GOBARD 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBARD,  utils_obj.sec2loc(506, 497)
+		# Dead_Goblin_7: 10GOBARD (506.5, 497.0) const_toee.ROT00 ctrl: py10002_ar1000_npcs.Ctrl10GOBARD 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBARD,  utils_obj.sec2loc(506, 497)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT00, "Dead_Goblin_7", 0, 1)
 		
-		# Dead_Soldier_1: 10SOLDRD (501.4, 490.6) const_toee.ROT06 ctrl: py10001_ar1000_npcs.Ctrl10SOLDRD 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10SOLDRD,  utils_obj.sec2loc(501, 490)
+		# Dead_Soldier_1: 10SOLDRD (501.4, 490.6) const_toee.ROT06 ctrl: py10002_ar1000_npcs.Ctrl10SOLDRD 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10SOLDRD,  utils_obj.sec2loc(501, 490)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "Dead_Soldier_1", 0, 1)
 		
-		# Dead_Sailor: 10SAILRD (476.2, 506.8) const_toee.ROT08 ctrl: py10001_ar1000_npcs.Ctrl10SAILRD 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10SAILRD,  utils_obj.sec2loc(476, 506)
+		# Dead_Sailor: 10SAILRD (476.2, 506.8) const_toee.ROT08 ctrl: py10002_ar1000_npcs.Ctrl10SAILRD 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10SAILRD,  utils_obj.sec2loc(476, 506)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT08, "Dead_Sailor", 0, 1)
 		
-		# 1000_Goblin_04: 10GOB (477.1, 504.7) const_toee.ROT03 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(477, 504)
+		# 1000_Goblin_04: 10GOB (477.1, 504.7) const_toee.ROT03 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(477, 504)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT03, "1000_Goblin_04", 0, 1)
 		
-		# 1000_Goblin_05: 10GOB (478.6, 506.9) const_toee.ROT02 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(478, 506)
+		# 1000_Goblin_05: 10GOB (478.6, 506.9) const_toee.ROT02 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(478, 506)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "1000_Goblin_05", 0, 1)
 		
-		# 1000_Goblin_06: 10GOB (506.0, 526.9) const_toee.ROT09 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(506, 526)
+		# 1000_Goblin_06: 10GOB (506.0, 526.9) const_toee.ROT09 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(506, 526)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT09, "1000_Goblin_06", 0, 1)
 		
-		# 1000_Goblin_Archer_01: 10GOBAR (502.2, 525.9) const_toee.ROT11 ctrl: py10001_ar1000_npcs.Ctrl10GOBAR 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(502, 525)
+		# 1000_Goblin_Archer_01: 10GOBAR (502.2, 525.9) const_toee.ROT11 ctrl: py10002_ar1000_npcs.Ctrl10GOBAR 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(502, 525)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT11, "1000_Goblin_Archer_01", 0, 1)
 		
-		# 1000_Goblin_07: 10GOB (502.4, 529.4) const_toee.ROT02 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(502, 529)
+		# 1000_Goblin_07: 10GOB (502.4, 529.4) const_toee.ROT02 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(502, 529)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "1000_Goblin_07", 0, 1)
 		
-		# 1000_Goblin_19: 10GOB (506.1, 523.8) const_toee.ROT09 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(506, 523)
+		# 1000_Goblin_19: 10GOB (506.1, 523.8) const_toee.ROT09 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(506, 523)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT09, "1000_Goblin_19", 0, 1)
 		
-		# 1000_Goblin_Archer_02: 10GOBAR (505.2, 529.8) const_toee.ROT09 ctrl: py10001_ar1000_npcs.Ctrl10GOBAR 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(505, 529)
+		# 1000_Goblin_Archer_02: 10GOBAR (505.2, 529.8) const_toee.ROT09 ctrl: py10002_ar1000_npcs.Ctrl10GOBAR 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(505, 529)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT09, "1000_Goblin_Archer_02", 0, 1)
 		
-		# 1000_Goblin_08: 10GOB (501.1, 533.1) const_toee.ROT03 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(501, 533)
+		# 1000_Goblin_08: 10GOB (501.1, 533.1) const_toee.ROT03 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(501, 533)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT03, "1000_Goblin_08", 0, 1)
 		
-		# 1000_Goblin_Archer_03: 10GOBAR (535.5, 476.1) const_toee.ROT02 ctrl: py10001_ar1000_npcs.Ctrl10GOBAR 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(535, 476)
+		# 1000_Goblin_Archer_03: 10GOBAR (535.5, 476.1) const_toee.ROT02 ctrl: py10002_ar1000_npcs.Ctrl10GOBAR 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(535, 476)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "1000_Goblin_Archer_03", 0, 1)
 		
-		# 1000_Goblin_09: 10GOB (527.9, 489.2) const_toee.ROT03 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(527, 489)
+		# 1000_Goblin_09: 10GOB (527.9, 489.2) const_toee.ROT03 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(527, 489)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT03, "1000_Goblin_09", 0, 1)
 		
-		# 1000_Goblin_10: 10GOB (535.3, 488.0) const_toee.ROT06 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(535, 488)
+		# 1000_Goblin_10: 10GOB (535.3, 488.0) const_toee.ROT06 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(535, 488)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "1000_Goblin_10", 0, 1)
 		
-		# 1000_Goblin_Archer_04: 10GOBAR (530.7, 485.3) const_toee.ROT02 ctrl: py10001_ar1000_npcs.Ctrl10GOBAR 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(530, 485)
+		# 1000_Goblin_Archer_04: 10GOBAR (530.7, 485.3) const_toee.ROT02 ctrl: py10002_ar1000_npcs.Ctrl10GOBAR 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(530, 485)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "1000_Goblin_Archer_04", 0, 1)
 		
-		# 1000_Goblin_11: 10GOB (498.6, 439.4) const_toee.ROT06 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(498, 439)
+		# 1000_Goblin_11: 10GOB (498.6, 439.4) const_toee.ROT06 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(498, 439)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "1000_Goblin_11", 0, 1)
 		
-		# 1000_Goblin_12: 10GOB (487.9, 442.1) const_toee.ROT03 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(487, 442)
+		# 1000_Goblin_12: 10GOB (487.9, 442.1) const_toee.ROT03 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(487, 442)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT03, "1000_Goblin_12", 0, 1)
 		
-		# 1000_Goblin_Archer_05: 10GOBAR (496.6, 433.1) const_toee.ROT05 ctrl: py10001_ar1000_npcs.Ctrl10GOBAR 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(496, 433)
+		# 1000_Goblin_Archer_05: 10GOBAR (496.6, 433.1) const_toee.ROT05 ctrl: py10002_ar1000_npcs.Ctrl10GOBAR 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(496, 433)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT05, "1000_Goblin_Archer_05", 0, 1)
 		
-		# 1000_Goblin_Archer_06: 10GOBAR (502.7, 438.4) const_toee.ROT06 ctrl: py10001_ar1000_npcs.Ctrl10GOBAR 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(502, 438)
+		# 1000_Goblin_Archer_06: 10GOBAR (502.7, 438.4) const_toee.ROT06 ctrl: py10002_ar1000_npcs.Ctrl10GOBAR 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(502, 438)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "1000_Goblin_Archer_06", 0, 1)
 		
-		# 1000_Goblin_Archer_07: 10GOBAR (473.9, 507.2) const_toee.ROT08 ctrl: py10001_ar1000_npcs.Ctrl10GOBAR 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(473, 507)
+		# 1000_Goblin_Archer_07: 10GOBAR (473.9, 507.2) const_toee.ROT08 ctrl: py10002_ar1000_npcs.Ctrl10GOBAR 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(473, 507)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT08, "1000_Goblin_Archer_07", 0, 1)
 		
-		# 1000_Goblin_Archer_08: 10GOBAR (473.9, 509.6) const_toee.ROT08 ctrl: py10001_ar1000_npcs.Ctrl10GOBAR 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(473, 509)
+		# 1000_Goblin_Archer_08: 10GOBAR (473.9, 509.6) const_toee.ROT08 ctrl: py10002_ar1000_npcs.Ctrl10GOBAR 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(473, 509)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT08, "1000_Goblin_Archer_08", 0, 1)
 		
-		# 1000_Goblin_13: 10GOB (480.9, 503.7) const_toee.ROT06 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(480, 503)
+		# 1000_Goblin_13: 10GOB (480.9, 503.7) const_toee.ROT06 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(480, 503)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "1000_Goblin_13", 0, 1)
 		
-		# 1000_Goblin_14: 10GOB (502.3, 479.0) const_toee.ROT09 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(502, 479)
+		# 1000_Goblin_14: 10GOB (502.3, 479.0) const_toee.ROT09 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(502, 479)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT09, "1000_Goblin_14", 0, 1)
 		
-		# 1000_Goblin_15: 10GOB (501.0, 485.7) const_toee.ROT06 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(501, 485)
+		# 1000_Goblin_15: 10GOB (501.0, 485.7) const_toee.ROT06 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(501, 485)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "1000_Goblin_15", 0, 1)
 		
-		# 1000_Goblin_Archer_09: 10GOBAR (498.7, 481.6) const_toee.ROT08 ctrl: py10001_ar1000_npcs.Ctrl10GOBAR 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(498, 481)
+		# 1000_Goblin_Archer_09: 10GOBAR (498.7, 481.6) const_toee.ROT08 ctrl: py10002_ar1000_npcs.Ctrl10GOBAR 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(498, 481)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT08, "1000_Goblin_Archer_09", 0, 1)
 		
-		# 1000_Goblin_16: 10GOB (532.2, 501.8) const_toee.ROT02 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(532, 501)
+		# 1000_Goblin_16: 10GOB (532.2, 501.8) const_toee.ROT02 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(532, 501)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "1000_Goblin_16", 0, 1)
 		
-		# 1000_Goblin_17: 10GOB (522.8, 505.4) const_toee.ROT08 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(522, 505)
+		# 1000_Goblin_17: 10GOB (522.8, 505.4) const_toee.ROT08 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(522, 505)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT08, "1000_Goblin_17", 0, 1)
 		
-		# 1000_Goblin_18: 10GOB (524.4, 511.6) const_toee.ROT02 ctrl: py10001_ar1000_npcs.Ctrl10GOB 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(524, 511)
+		# 1000_Goblin_18: 10GOB (524.4, 511.6) const_toee.ROT02 ctrl: py10002_ar1000_npcs.Ctrl10GOB 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOB,  utils_obj.sec2loc(524, 511)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "1000_Goblin_18", 0, 1)
 		
-		# 1000_Goblin_Archer_10: 10GOBAR (533.9, 505.7) const_toee.ROT02 ctrl: py10001_ar1000_npcs.Ctrl10GOBAR 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(533, 505)
+		# 1000_Goblin_Archer_10: 10GOBAR (533.9, 505.7) const_toee.ROT02 ctrl: py10002_ar1000_npcs.Ctrl10GOBAR 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10GOBAR,  utils_obj.sec2loc(533, 505)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "1000_Goblin_Archer_10", 0, 1)
 		
-		# Crandall: 10CRANDA (503.0, 507.4) const_toee.ROT09 ctrl: py10001_ar1000_npcs.Ctrl10CRANDA 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10CRANDA,  utils_obj.sec2loc(503, 507)
+		# Crandall: 10CRANDA (503.0, 507.4) const_toee.ROT09 ctrl: py10002_ar1000_npcs.Ctrl10CRANDA 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10CRANDA,  utils_obj.sec2loc(503, 507)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT09, "Crandall", 0, 1)
 		
 		# Swift Thomas (Hidden): 12SWIFTH (503.3, 441.5) const_toee.ROT05 ctrl: None.None hidden
 		
-		# Dead_Townsperson_2: 10MALED (547.2, 485.7) const_toee.ROT08 ctrl: py10001_ar1000_npcs.Ctrl10MALED 
-		ctrl_class, loc = py10001_ar1000_npcs.Ctrl10MALED,  utils_obj.sec2loc(547, 485)
+		# Dead_Townsperson_2: 10MALED (547.2, 485.7) const_toee.ROT08 ctrl: py10002_ar1000_npcs.Ctrl10MALED 
+		ctrl_class, loc = py10002_ar1000_npcs.Ctrl10MALED,  utils_obj.sec2loc(547, 485)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT08, "Dead_Townsperson_2", 0, 1)
 		
 		# Door_Hint_Text_00: 10HINT (475.3, 443.0) const_toee.ROT06 ctrl: None.None hidden

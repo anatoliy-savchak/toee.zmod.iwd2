@@ -11,27 +11,35 @@ i_def = "\t"
 i_code = "\t\t"
 
 class ProduceNPC:
-    def __init__(self, producer_app, out_file_path: str, dialog_file) -> None:
+    def __init__(self, producer_app, out_file_path: str, dialog_file, out_file_manual_path: str) -> None:
         self.producer_app = producer_app
         self.elements = dict()
 
         self.lines_script = list()
         self.copy_speaches = list()
+        self.lines_script_manuals = list()
         self.current_crename = ""
         self.ctrl_name = ""
+        self.ctrl_manual_name = ""
         self.cre = dict()
         self.out_file_path = out_file_path
+        self.out_file_manual_path = out_file_manual_path
         self.current_indent = i_code
         self.wears = dict()
         self.items = list()
         self.anim = None
         self.dialog_file = dialog_file
         self.dialog = None
+        self.imports_manual = list()
 
         self.setup_elements()
 
         if self.out_file_path:
             self.load_template(self.out_file_path)
+        if out_file_manual_path:
+            with open(out_file_manual_path, 'r') as f:
+                self.lines_script_manuals = f.readlines()
+
         return
 
     def _add_line(self, line):
@@ -71,15 +79,19 @@ class ProduceNPC:
             for line in self.lines_script:
                 #aline = line
                 f.write(line + ("\n" if not "\n" in line else ""))
+        if self.out_file_manual_path:
+            with open(self.out_file_manual_path, 'w') as f:
+                for line in self.lines_script_manuals:
+                    f.write(line + ("\n" if not "\n" in line else ""))
         if self.dialog:
             self.dialog.save()
         return self
     
-    def produce_npc(self, cre_name):
+    def produce_npc_auto(self, cre_name):
         self.read_cre(cre_name)
         self.current_crename = cre_name
 
-        self.ctrl_name = f'Ctrl{self.current_crename}'
+        self.ctrl_name = f'Ctrl{self.current_crename}Auto'
         self.lines_script.append(f"class {self.ctrl_name}({self.elements['base_class']}): # {self.current_crename} ") # leave trailing whitespace here
         
         deathVariable = self.cre["DeathVariable"]
@@ -93,7 +105,21 @@ class ProduceNPC:
         self.produce_npc_char()
         self.setup_gear()
         self.produce_dialog()
+
+        self.produce_npc_manual()
         return self
+
+    def produce_npc_manual(self):
+        self.ctrl_manual_name = f'Ctrl{self.current_crename}'
+        imp_name = os.path.basename(self.out_file_path).replace('.py', '')
+        line_p1 = f"class {self.ctrl_manual_name}({imp_name}.{self.ctrl_name}): "
+        line_p2 = f"# {self.current_crename} " # leave trailing whitespace here
+        if not next((1 for line in self.lines_script_manuals if line_p1 in line), None):
+            if not imp_name in self.imports_manual: self.imports_manual.append(imp_name)
+            self.lines_script_manuals.append(line_p1 + line_p2) # leave trailing whitespace here
+            self.lines_script_manuals.append(i_def + 'pass')
+            self.lines_script_manuals.append('')
+        return
 
     def produce_npc_baseproto(self):
         proto = "const_proto_npc.PROTO_NPC_MAN"

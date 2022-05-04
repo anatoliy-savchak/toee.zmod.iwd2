@@ -1,9 +1,12 @@
 import toee, debug, tpdp, utils_storage, utils_npc_spells, const_toee, utils_tactics, const_proto_weapon, utils_item, const_proto_armor, const_proto_scrolls, ctrl_behaviour
 import const_proto_potions, utils_obj, const_proto_food, utils_npc, utils_target_list, const_proto_wands, utils_sneak, const_deseases, utils_npc_spells, utils_npc, factions_zmod
 import const_proto_items, const_proto_rings, const_proto_cloth, const_proto_wondrous, utils_races, utils_npc_build, const_proto_npc, utils_toee, tpai, tpactions, utils_strategy
-import ctrl_daemon, py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, module_consts, rumor_control, utils_pc
+import py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, module_consts, rumor_control, utils_pc
 import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2
 import utils_journal as uj
+#### IMPORT ####
+#### IMPORT END ####
+
 
 def san_start_combat(attachee, triggerer): return ctrl_behaviour.san_start_combat(attachee, triggerer)
 def san_enter_combat(attachee, triggerer): return ctrl_behaviour.san_enter_combat(attachee, triggerer)
@@ -15,13 +18,11 @@ def san_heartbeat(attachee, triggerer): return ctrl_behaviour.san_heartbeat(atta
 def san_wield_off(attachee, triggerer): return ctrl_behaviour.san_wield_off(attachee, triggerer)
 
 def ctrl(npc): return ctrl_behaviour.get_ctrl(npc.id)
-
 def cs(): return ctrl_daemon.gdc()
-
 #### NPCS ####
 MODULE_SCRIPT_ID = 10001
  
-class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON 
+class Ctrl10HEDRONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON 
 	@classmethod
 	def get_name(cls): "10Hedron"
 	
@@ -793,7 +794,7 @@ class Ctrl10HEDRON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 			
 		return # dialog_action_do
 	
-class Ctrl10ELDGUL(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL 
+class Ctrl10ELDGULAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL 
 	@classmethod
 	def get_name(cls): "10Eldgul"
 	
@@ -932,7 +933,7 @@ class Ctrl10ELDGUL(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		
 		return # dialog_action_do
 	
-class Ctrl10SCREED(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED 
+class Ctrl10SCREEDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED 
 	@classmethod
 	def get_name(cls): "10Screed"
 	
@@ -1071,7 +1072,7 @@ class Ctrl10SCREED(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		
 		return # dialog_action_do
 	
-class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG 
+class Ctrl10REIGAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG 
 	@classmethod
 	def get_name(cls): "10Reig"
 	
@@ -1626,7 +1627,7 @@ class Ctrl10REIG(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			
 		return # dialog_action_do
 	
-class Ctrl10JON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON 
+class Ctrl10JONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON 
 	@classmethod
 	def get_name(cls): "10Jon"
 	
@@ -1838,7 +1839,7 @@ class Ctrl10JON(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 			
 		return # dialog_action_do
 	
-class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN 
+class Ctrl10BROGANAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN 
 	@classmethod
 	def get_name(cls): "10Brogan"
 	
@@ -2399,7 +2400,7 @@ class Ctrl10BROGAN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 			
 		return # dialog_action_do
 	
-class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN 
+class Ctrl10JORUNAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN 
 	@classmethod
 	def get_name(cls): "10Jorun"
 	
@@ -2949,7 +2950,7 @@ class Ctrl10JORUN(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			
 		return # dialog_action_do
 	
-class Ctrl10MALED(ctrl_behaviour_ie.CtrlBehaviourIE): # 10MALED 
+class Ctrl10MALEDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10MALED 
 	@classmethod
 	def get_name(cls): "10MaleD"
 	
@@ -3027,7 +3028,7 @@ class Ctrl10MALED(ctrl_behaviour_ie.CtrlBehaviourIE): # 10MALED
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 
-class Ctrl10SOLDRD(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SOLDRD 
+class Ctrl10SOLDRDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SOLDRD 
 	@classmethod
 	def get_name(cls): "10SoldrD"
 	
@@ -3105,7 +3106,7 @@ class Ctrl10SOLDRD(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SOLDRD
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 
-class Ctrl10GOB(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+class Ctrl10GOBAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
 	@classmethod
 	def get_name(cls): "10gob"
 	
@@ -3186,7 +3187,7 @@ class Ctrl10GOB(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB
 		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
 		return
 
-class Ctrl10GOBD(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD 
+class Ctrl10GOBDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD 
 	@classmethod
 	def get_name(cls): "10gobd"
 	
@@ -3257,7 +3258,7 @@ class Ctrl10GOBD(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD
 		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
 		return
 
-class Ctrl10GOBAR(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
+class Ctrl10GOBARAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
 	@classmethod
 	def get_name(cls): "10gobar"
 	
@@ -3347,7 +3348,7 @@ class Ctrl10GOBAR(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR
 		
 		return
 
-class Ctrl10GOBARD(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBARD 
+class Ctrl10GOBARDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBARD 
 	@classmethod
 	def get_name(cls): "10gobArD"
 	
@@ -3417,7 +3418,7 @@ class Ctrl10GOBARD(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBARD
 	def setup_gear(self, npc):
 		return
 
-class Ctrl10SAILRD(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SAILRD 
+class Ctrl10SAILRDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SAILRD 
 	@classmethod
 	def get_name(cls): "10SailrD"
 	
@@ -3495,7 +3496,7 @@ class Ctrl10SAILRD(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SAILRD
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 
-class Ctrl10CRANDA(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA 
+class Ctrl10CRANDAAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA 
 	@classmethod
 	def get_name(cls): "10Cranda"
 	

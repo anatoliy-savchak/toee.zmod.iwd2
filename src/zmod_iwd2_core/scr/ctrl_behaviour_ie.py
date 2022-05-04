@@ -67,6 +67,7 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 			
 			result = self.dialog_action_do(npc, pc, index)
 		finally:
+			self.vars["has_met"] = self.has_met() + 1
 			self.vars["attachee"] = None
 			self.vars["triggerer"] = None
 		
@@ -79,3 +80,10 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 			# see iSetCriticalPathObject
 			toee.game.moviequeue_play_end_game()
 		return
+
+	def has_met(self):
+		result = self.vars.get("has_met")
+		if result is None:
+			result = 0
+			self.vars["has_met"] = result
+		return result

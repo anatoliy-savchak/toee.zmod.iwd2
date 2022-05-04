@@ -23,6 +23,21 @@ def gv(name): return get_globals().get(name, 0)
 # gvs("Hedron_Quest", 1)
 def gvs(name, value): get_globals()[name] = value
 
+def dump_args(func):
+	"This decorator dumps out the arguments passed to a function before calling it"
+	argnames = func.func_code.co_varnames[:func.func_code.co_argcount]
+	fname = func.func_name
+
+	def echo_func(*args,**kwargs):
+		r = "error!"
+		try:
+			r = func(*args, **kwargs)
+		finally:
+			line = '{}({})={}'.format(fname, ', '.join('%s=%r' % entry for entry in zip(argnames,args) + kwargs.items()), r)
+			print(line)
+		return r
+	return echo_func
+
 class InfScriptSupport:
 	def _gnpc(self):
 		return toee.PyObjHandle()
@@ -92,6 +107,7 @@ class InfScriptSupport:
 
 	############# TRIGGERS
 
+	@dump_args
 	def iGlobal(self, name, area, value):
 		""" 
 		0x400F Global(S:Name*,S:Area*,I:Value*)
@@ -100,6 +116,7 @@ class InfScriptSupport:
 		global_value = self._ensure_global(name, area)
 		return global_value == value
 
+	@dump_args
 	def iGlobalGT(self, name, area, value):
 		""" 
 		0x4034 GlobalGT(S:Name*,S:Area*,I:Value*)
@@ -108,6 +125,7 @@ class InfScriptSupport:
 		global_value = self._ensure_global(name, area)
 		return global_value > value
 
+	@dump_args
 	def iGlobalLT(self, name, area, value):
 		""" 
 		0x4035 GlobalLT(S:Name*,S:Area*,I:Value*)
@@ -116,7 +134,7 @@ class InfScriptSupport:
 		global_value = self._ensure_global(name, area)
 		return global_value < value
 
-	#@dump_args
+	@dump_args
 	def iSetGlobal(self, name, area, value):
 		""" 
 		30 SetGlobal(S:Name*,S:Area*,I:Value*)
@@ -129,6 +147,7 @@ class InfScriptSupport:
 		return
 
 
+	@dump_args
 	def iSubRace(self, obj_name, subrace_names):
 		""" 
 		0x40CD SubRace(O:Object*,I:SubRace*SubRace)
@@ -137,8 +156,10 @@ class InfScriptSupport:
 		race_name = subrace_names.split("_", 1)[0]
 		return self.iRace(obj_name, race_name)
 
+	@dump_args
 	def iSubrace(self, obj_name, subrace_names): return self.iSubRace(obj_name, subrace_names)
 
+	@dump_args
 	def iRace(self, obj_name, race_names):
 		""" 
 		0x4017 Race(O:Object*,I:Race*Race)
@@ -153,6 +174,7 @@ class InfScriptSupport:
 				return race_id == orace
 		return False
 	
+	@dump_args
 	def iHP(self, obj_name, hp):
 		""" 
 		0x4010 HP(O:Object*,I:Hit Points*)
@@ -160,6 +182,7 @@ class InfScriptSupport:
 		"""
 		return self._hp(obj_name) == hp
 	
+	@dump_args
 	def iHPGT(self, obj_name, hp):
 		""" 
 		00x4011 HPGT(O:Object*,I:Hit Points*)
@@ -167,6 +190,7 @@ class InfScriptSupport:
 		"""
 		return self._hp(obj_name) > hp
 	
+	@dump_args
 	def iHPLT(self, obj_name, hp):
 		""" 
 		0x4012 HPLT(O:Object*,I:Hit Points*)
@@ -174,6 +198,7 @@ class InfScriptSupport:
 		"""
 		return self._hp(obj_name) < hp
 	
+	@dump_args
 	def iClassEx(self, obj_name, classname):
 		""" 
 		0x4098 ClassEx(O:Object*,I:Class*class*)
@@ -187,6 +212,7 @@ class InfScriptSupport:
 				return True
 		return False
 	
+	@dump_args
 	def iCheckStatLT(self, obj_name, value, statname):
 		""" 
 		0x4046 CheckStatLT(O:Object*,I:Value*,I:StatNum*Stats)
@@ -200,6 +226,7 @@ class InfScriptSupport:
 				return level < value
 		return False
 	
+	@dump_args
 	def iCheckStatGT(self, obj_name, value, statname):
 		""" 
 		0x4045 CheckStatGT(O:Object*,I:Value*,I:StatNum*Stats)
@@ -213,24 +240,28 @@ class InfScriptSupport:
 				return level > value
 		return False
 
+	@dump_args
 	def iCheckSkill(self, obj_name, value, statname):
 		""" 
 		0x40E6 CheckSkill(O:Object*,I:Value*,I:SkillNum*Skills)
 		"""
 		return self._skill(obj_name, statname) == value
 
+	@dump_args
 	def iCheckSkillGT(self, obj_name, value, statname):
 		""" 
 		0x40E7 CheckSkillGT(O:Object*,I:Value*,I:SkillNum*Skills)
 		"""
 		return self._skill(obj_name, statname) > value
 
+	@dump_args
 	def iCheckSkillLT(self, obj_name, value, statname):
 		""" 
 		0x40E8 CheckSkillLT(O:Object*,I:Value*,I:SkillNum*Skills)
 		"""
 		return self._skill(obj_name, statname) < value
 
+	@dump_args
 	def iKit(self, obj_name, statname):
 		""" 
 		0x40BB Kit(O:Object*,I:Kit*KIT)
@@ -247,6 +278,7 @@ class InfScriptSupport:
 			result = utils_inf.iwd2_kit_has(statname, npc)
 		return result
 
+	@dump_args
 	def iAlignment(self, obj_name, statname, value):
 		""" 
 		0x400A Alignment(O:Object*,I:Alignment*Align)
@@ -260,6 +292,7 @@ class InfScriptSupport:
 			result = utils_inf.iwd2_alignment_equals(statname, npc)
 		return result
 
+	@dump_args
 	def iPartyHasItem(self, item_name):
 		""" 
 		0x4042 PartyHasItem(S:Item*)
@@ -272,6 +305,7 @@ class InfScriptSupport:
 			result = toee.anyone(toee.game.party, "item_find_by_proto", proto)
 		return result
 
+	@dump_args
 	def iHasItem(self, item_name, obj_name):
 		""" 
 		0x4061 HasItem(S:ResRef*,O:Object*)
@@ -287,6 +321,7 @@ class InfScriptSupport:
 
 	############# ACTIONS
 
+	@dump_args
 	def iFadeToColor(self, point_str, value):
 		""" 
 		202 FadeToColor(P:Point*,I:Blue*) Variants: [BG1/BG2/BGEE/IWD1/IWD2] [PST]
@@ -296,6 +331,7 @@ class InfScriptSupport:
 		# do nothing
 		return
 
+	@dump_args
 	def iFadeFromColor(self, point_str, value):
 		""" 
 		203 FadeFromColor(P:Point*,I:Blue*) Variants: [BG1/BG2/BGEE/IWD1/IWD2] [PST]
@@ -305,6 +341,7 @@ class InfScriptSupport:
 		# do nothing
 		return
 
+	@dump_args
 	def iAddXpVar(self, difficulty_str, value):
 		""" 
 		238 AddXPVar(S:VarTableEntry*,I:Strref*) Variants: [IWD1/IWD2] 
@@ -312,6 +349,7 @@ class InfScriptSupport:
 		utils_pc.pc_award_experience_party(value, 1) # TODO verify that it's per party
 		return
 
+	@dump_args
 	def iRestUntilHealed(self):
 		""" 
 		258 RestUntilHealed() Variants: [IWD1/IWD2] [BG1/BG2/BGEE/PST]
@@ -320,6 +358,7 @@ class InfScriptSupport:
 		# TODO TEMPLE+
 		return
 
+	@dump_args
 	def iGiveItemCreate(self, item_name, obj_name, usage1 = 0, usage2 = 0, usage3 = 0):
 		""" 
 		140 GiveItemCreate(S:ResRef*,O:Object*,I:Usage1*,I:Usage2*,I:Usage3*)
@@ -339,6 +378,7 @@ class InfScriptSupport:
 		# TODO
 		return
 
+	@dump_args
 	def iSetCriticalPathObject(self, obj_name, value):
 		""" 
 		283 SetCriticalPathObject(O:Object*,I:Critical*Boolean) Variants: [IWD2] [BG1/BG2/BGEE/IWD1/PST]
@@ -349,6 +389,7 @@ class InfScriptSupport:
 			ctrl.vars["critical_path"] = value
 		return
 
+	@dump_args
 	def iTakePartyItemNum(self, item_name, num):
 		""" 
 		204 TakePartyItemNum(S:ResRef*,I:Num*) Variants: [BG1/BG2/BGEE/IWD2] [IWD1/PST]
@@ -390,6 +431,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 
 		return super(InfScriptSupportNPC, self)._get_globals(area)
 
+	@dump_args
 	def iNumTimesTalkedTo(self, num):
 		""" 
 		0x4039 NumTimesTalkedTo(I:Num*)
@@ -398,10 +440,10 @@ class InfScriptSupportNPC(InfScriptSupport):
 		NB. NumTimesTalkedTo seems to increment when a PC initiates conversion with an NPC, or an NPC initiates conversation with a PC.
 		NumTimesTalkedTo does not seem to increment for force-talks, interactions, interjections and self-talking.
 		"""
-		npc = self._gnpc()
-		triggerer = self._gtriggerer()
-		result = npc.has_met(triggerer)
-		print("has_met = {} for {} to {}".format(result, npc, triggerer))
+		#npc = self._gnpc()
+		#triggerer = self._gtriggerer()
+		#result = npc.has_met(triggerer)
+		result = self.has_met()
 		if num:
 			if num > 1: 
 				print("{} ({}) -- num is greater than 1, not supported!".format(inspect.stack()[0][3]), num)
@@ -409,15 +451,17 @@ class InfScriptSupportNPC(InfScriptSupport):
 			result = not result
 		return result == num
 
+	@dump_args
 	def iNumTimesTalkedToGT(self, num):
 		""" 
 		0x403A NumTimesTalkedToGT(I:Num*)
 		Returns true only if the player's party has spoken to the active CRE more than the number of times specified.
 		"""
-		npc = self._gnpc()
-		triggerer = self._gtriggerer()
-		result = npc.has_met(triggerer)
-		print("has_met = {} for {} to {}".format(result, npc, triggerer))
+		#npc = self._gnpc()
+		#triggerer = self._gtriggerer()
+		#result = npc.has_met(triggerer)
+		result = self.has_met()
+		#print("has_met = {} for {} to {}".format(result, npc, triggerer))
 		if num:
 			if num > 1: 
 				print("{} ({}) -- num is greater than 1, not supported!".format(inspect.stack()[0][3]), num)
@@ -425,6 +469,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 		result = int(result) > num
 		return result
 
+	@dump_args
 	def iGiveItem(self, item_name, target_obj_name):
 		""" 
 		15 GiveItem(S:Object*,O:Target*)
@@ -440,6 +485,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 				target.item_get(item)
 		return
 
+	@dump_args
 	def iDestroyItem(self, item_name):
 		""" 
 		169 DestroyItem(S:ResRef*)

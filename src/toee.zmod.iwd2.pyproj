@@ -45,6 +45,7 @@
     <Folder Include="zmod_iwd2_core\scr\tpModifiers\" />
     <Folder Include="zmod_iwd2_core\rules\" />
     <Folder Include="zmod_iwd2_core\rules\d20_actions\" />
+    <Folder Include="zmod_iwd2_core\rules\d20_combat\" />
     <Folder Include="zmod_iwd2_core\art\" />
     <Folder Include="zmod_iwd2_core\dlg\" />
     <Folder Include="zmod_iwd2_core\mes\" />
@@ -75,6 +76,7 @@
     <Compile Include="zmod_iwd2_core\rules\d20_actions\action03019_ball_of_fire.py" />
     <Compile Include="zmod_iwd2_core\rules\d20_actions\action03020_activate_item_swift.py" />
     <Compile Include="zmod_iwd2_core\rules\d20_actions\action03020_stench.py" />
+    <Compile Include="zmod_iwd2_core\rules\d20_combat\to_hit_processing.py" />
     <Compile Include="zmod_iwd2_core\scr.builtin\char_editor.py" />
     <Compile Include="zmod_iwd2_core\scr.builtin\debug.py" />
     <Compile Include="zmod_iwd2_core\scr.builtin\templeplus\pymod.py" />

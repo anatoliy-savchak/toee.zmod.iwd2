@@ -3,7 +3,7 @@ import const_proto_potions, utils_obj, const_proto_food, utils_npc, utils_target
 import const_proto_items, const_proto_rings, const_proto_cloth, const_proto_wondrous, utils_races, utils_npc_build, const_proto_npc, utils_toee, tpai, tpactions, utils_strategy
 import py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, module_consts, rumor_control, utils_pc
 import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2
-import utils_journal as uj
+import utils_journal as uj, inf_scripting
 #### IMPORT ####
 #### IMPORT END ####
 
@@ -20,22 +20,15 @@ def san_wield_off(attachee, triggerer): return ctrl_behaviour.san_wield_off(atta
 def ctrl(npc): return ctrl_behaviour.get_ctrl(npc.id)
 def cs(): return ctrl_daemon.gdc()
 #### NPCS ####
-MODULE_SCRIPT_ID = 10001
- 
-class Ctrl10HEDRONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON 
-	@classmethod
-	def get_name(cls): "10Hedron"
-	
+class Ctrl_10HEDRON_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
-		
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10HEDRON_Auto).setup_scripts(npc)
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
 		return
-		
+	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Hedron Kerdos")
 		
@@ -46,10 +39,8 @@ class Ctrl10HEDRONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 		hairStyle.color = const_toee.hair_color_light_brown # HairColourIndex: 5
 		hairStyle.update_npc(npc)
 		return
-
+	
 	def setup_char(self, npc):
-		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
-		
 		utils_npc.npc_abilities_set(npc, [13, 16, 12, 13, 14, 12])
 		
 		# class levels: 6
@@ -62,9 +53,9 @@ class Ctrl10HEDRONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 5, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_CHAOTIC_GOOD) # 0x31 CHAOTIC_GOOD
-		npc.obj_set_int(toee.obj_f_critter_experience, 270) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, -1) # CR: 5
-
+		npc.obj_set_int(toee.obj_f_critter_experience, 270) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, -1) # CR: 5 TODO!!!
+		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
 		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
@@ -77,7 +68,7 @@ class Ctrl10HEDRONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 2 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
@@ -86,7 +77,7 @@ class Ctrl10HEDRONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 		# HP
 		utils_npc.ensure_hp(npc, 31) # MaximumHP: 31
 		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 31
-
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -105,7 +96,7 @@ class Ctrl10HEDRONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
+	
 	def setup_gear(self, npc):
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) from 00LEAT01
 		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
@@ -124,7 +115,7 @@ class Ctrl10HEDRONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 		# Not found! TODO ITEM
 		
 		return
-
+	
 	def script_dialog(self, attachee, triggerer):
 		print("script_dialog 10HEDRON")
 		assert isinstance(attachee, toee.PyObjHandle)
@@ -797,21 +788,16 @@ class Ctrl10HEDRONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 			# 393: Could you put us up for the night, Hedron?
 			
 		return # dialog_action_do
-	
-class Ctrl10ELDGULAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL 
-	@classmethod
-	def get_name(cls): "10Eldgul"
-	
+		
+class Ctrl_10ELDGUL_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
-		
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10ELDGUL_Auto).setup_scripts(npc)
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
 		return
-		
+	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Eldgull")
 		
@@ -822,10 +808,8 @@ class Ctrl10ELDGULAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		hairStyle.color = const_toee.hair_color_light_brown # HairColourIndex: 5
 		hairStyle.update_npc(npc)
 		return
-
+	
 	def setup_char(self, npc):
-		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
-		
 		utils_npc.npc_abilities_set(npc, [9, 15, 9, 9, 9, 9])
 		
 		# class levels: 1
@@ -833,9 +817,9 @@ class Ctrl10ELDGULAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_CHAOTIC_NEUTRAL) # 0x32 CHAOTIC_NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
 		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
@@ -848,7 +832,7 @@ class Ctrl10ELDGULAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
@@ -857,7 +841,7 @@ class Ctrl10ELDGULAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		# HP
 		utils_npc.ensure_hp(npc, 5) # MaximumHP: 5
 		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 5
-
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -876,7 +860,7 @@ class Ctrl10ELDGULAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
+	
 	def setup_gear(self, npc):
 		# SLOT_QUICK1: Club(Club) from 00CLUB01
 		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_CLUB, npc, no_loot = False, wear_on = None) # Club (00CLUB01) at SLOT_QUICK1 OK
@@ -887,7 +871,7 @@ class Ctrl10ELDGULAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
-
+	
 	def script_dialog(self, attachee, triggerer):
 		print("script_dialog 10ELDGUL")
 		assert isinstance(attachee, toee.PyObjHandle)
@@ -940,21 +924,16 @@ class Ctrl10ELDGULAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		assert isinstance(index, int)
 		
 		return # dialog_action_do
-	
-class Ctrl10SCREEDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED 
-	@classmethod
-	def get_name(cls): "10Screed"
-	
+		
+class Ctrl_10SCREED_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
-		
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10SCREED_Auto).setup_scripts(npc)
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
 		return
-		
+	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Screed")
 		
@@ -965,10 +944,8 @@ class Ctrl10SCREEDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		hairStyle.color = const_toee.hair_color_black # HairColourIndex: 0
 		hairStyle.update_npc(npc)
 		return
-
+	
 	def setup_char(self, npc):
-		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
-		
 		utils_npc.npc_abilities_set(npc, [12, 12, 9, 9, 9, 9])
 		
 		# class levels: 1
@@ -976,9 +953,9 @@ class Ctrl10SCREEDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
 		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
@@ -991,7 +968,7 @@ class Ctrl10SCREEDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
@@ -1000,7 +977,7 @@ class Ctrl10SCREEDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		# HP
 		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
 		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 6
-
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -1019,7 +996,7 @@ class Ctrl10SCREEDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
+	
 	def setup_gear(self, npc):
 		# SLOT_QUICK1: Dagger(Daggers) from 00DAGG01
 		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_DAGGER, npc, no_loot = False, wear_on = None) # Dagger (00DAGG01) at SLOT_QUICK1 OK
@@ -1030,7 +1007,7 @@ class Ctrl10SCREEDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
-
+	
 	def script_dialog(self, attachee, triggerer):
 		print("script_dialog 10SCREED")
 		assert isinstance(attachee, toee.PyObjHandle)
@@ -1083,21 +1060,16 @@ class Ctrl10SCREEDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		assert isinstance(index, int)
 		
 		return # dialog_action_do
-	
-class Ctrl10REIGAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG 
-	@classmethod
-	def get_name(cls): "10Reig"
-	
+		
+class Ctrl_10REIG_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
-		
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10REIG_Auto).setup_scripts(npc)
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
 		return
-		
+	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Reig Redwaters")
 		
@@ -1108,10 +1080,8 @@ class Ctrl10REIGAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 		hairStyle.color = const_toee.hair_color_brown # HairColourIndex: 2
 		hairStyle.update_npc(npc)
 		return
-
+	
 	def setup_char(self, npc):
-		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
-		
 		utils_npc.npc_abilities_set(npc, [12, 11, 10, 9, 9, 9])
 		
 		# class levels: 1
@@ -1119,9 +1089,9 @@ class Ctrl10REIGAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
 		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
@@ -1134,7 +1104,7 @@ class Ctrl10REIGAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
@@ -1143,7 +1113,7 @@ class Ctrl10REIGAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 		# HP
 		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
 		npc.obj_set_int(toee.obj_f_hp_damage, 3) # CurrentHP: 3
-
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -1162,7 +1132,7 @@ class Ctrl10REIGAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
+	
 	def setup_gear(self, npc):
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) from 00LEAT01
 		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
@@ -1175,7 +1145,7 @@ class Ctrl10REIGAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
 		return
-
+	
 	def script_dialog(self, attachee, triggerer):
 		print("script_dialog 10REIG")
 		assert isinstance(attachee, toee.PyObjHandle)
@@ -1642,21 +1612,16 @@ class Ctrl10REIGAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			# 611: Without arms and armor, both our corpses will lie next to his soon enough.  Brohn's equipment may give us the... edge... we need to drive the goblins back, so make your choice.
 			
 		return # dialog_action_do
-	
-class Ctrl10JONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON 
-	@classmethod
-	def get_name(cls): "10Jon"
-	
+		
+class Ctrl_10JON_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
-		
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10JON_Auto).setup_scripts(npc)
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
 		return
-		
+	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Honest Jon")
 		
@@ -1667,10 +1632,8 @@ class Ctrl10JONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 		hairStyle.color = const_toee.hair_color_blonde # HairColourIndex: 3
 		hairStyle.update_npc(npc)
 		return
-
+	
 	def setup_char(self, npc):
-		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
-		
 		utils_npc.npc_abilities_set(npc, [12, 11, 12, 9, 9, 9])
 		
 		# class levels: 1
@@ -1678,9 +1641,9 @@ class Ctrl10JONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
 		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
@@ -1693,7 +1656,7 @@ class Ctrl10JONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
@@ -1702,7 +1665,7 @@ class Ctrl10JONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 		# HP
 		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
 		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 6
-
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -1721,7 +1684,7 @@ class Ctrl10JONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
+	
 	def setup_gear(self, npc):
 		# SLOT_HELMET: Helmet(HelmsHats) from 00HELM01
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, npc, no_loot = False, wear_on = toee.item_wear_helmet) # Helmet (00HELM01) at SLOT_HELMET OK
@@ -1740,7 +1703,7 @@ class Ctrl10JONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
 		return
-
+	
 	def script_dialog(self, attachee, triggerer):
 		print("script_dialog 10JON")
 		assert isinstance(attachee, toee.PyObjHandle)
@@ -1858,21 +1821,16 @@ class Ctrl10JONAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 			# 804: We'll see what we can do.  In the meantime, do you have an extra blade you can spare?
 			
 		return # dialog_action_do
-	
-class Ctrl10BROGANAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN 
-	@classmethod
-	def get_name(cls): "10Brogan"
-	
+		
+class Ctrl_10BROGAN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
-		
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10BROGAN_Auto).setup_scripts(npc)
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
 		return
-		
+	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Brogan")
 		
@@ -1883,10 +1841,8 @@ class Ctrl10BROGANAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 		hairStyle.color = const_toee.hair_color_brown # HairColourIndex: 2
 		hairStyle.update_npc(npc)
 		return
-
+	
 	def setup_char(self, npc):
-		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
-		
 		utils_npc.npc_abilities_set(npc, [12, 11, 12, 9, 9, 9])
 		
 		# class levels: 1
@@ -1894,9 +1850,9 @@ class Ctrl10BROGANAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
 		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
@@ -1909,7 +1865,7 @@ class Ctrl10BROGANAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
@@ -1918,7 +1874,7 @@ class Ctrl10BROGANAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 		# HP
 		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
 		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 6
-
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -1937,7 +1893,7 @@ class Ctrl10BROGANAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
+	
 	def setup_gear(self, npc):
 		# SLOT_HELMET: Helmet(HelmsHats) from 00HELM01
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, npc, no_loot = False, wear_on = toee.item_wear_helmet) # Helmet (00HELM01) at SLOT_HELMET OK
@@ -1956,7 +1912,7 @@ class Ctrl10BROGANAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
 		return
-
+	
 	def script_dialog(self, attachee, triggerer):
 		print("script_dialog 10BROGAN")
 		assert isinstance(attachee, toee.PyObjHandle)
@@ -2423,21 +2379,16 @@ class Ctrl10BROGANAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 			# 1081: Continue
 			
 		return # dialog_action_do
-	
-class Ctrl10JORUNAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN 
-	@classmethod
-	def get_name(cls): "10Jorun"
-	
+		
+class Ctrl_10JORUN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_DWARF_MAN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
-		
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10JORUN_Auto).setup_scripts(npc)
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
 		return
-		
+	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Jorun Tamewater")
 		
@@ -2448,10 +2399,8 @@ class Ctrl10JORUNAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 		hairStyle.color = const_toee.hair_color_black # HairColourIndex: 0
 		hairStyle.update_npc(npc)
 		return
-
+	
 	def setup_char(self, npc):
-		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
-		
 		utils_npc.npc_abilities_set(npc, [13, 12, 16, 15, 12, 9])
 		
 		# class levels: 3
@@ -2461,9 +2410,9 @@ class Ctrl10JORUNAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 2, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_NEUTRAL) # 0x12 LAWFUL_NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 65) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, -1) # CR: 2
-
+		npc.obj_set_int(toee.obj_f_critter_experience, 65) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, -1) # CR: 2 TODO!!!
+		
 		# feats
 		npc.feat_add(toee.feat_iron_will) # Bullheaded
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -2477,7 +2426,7 @@ class Ctrl10JORUNAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
@@ -2486,7 +2435,7 @@ class Ctrl10JORUNAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 		# HP
 		utils_npc.ensure_hp(npc, 18) # MaximumHP: 18
 		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 18
-
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -2505,7 +2454,7 @@ class Ctrl10JORUNAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
+	
 	def setup_gear(self, npc):
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) from 00LEAT01
 		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
@@ -2515,7 +2464,7 @@ class Ctrl10JORUNAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_WARHAMMER, npc, no_loot = False, wear_on = toee.item_wear_weapon_primary) # Warhammer (00HAMM01) at SLOT_WEAPON1 OK
 		
 		return
-
+	
 	def script_dialog(self, attachee, triggerer):
 		print("script_dialog 10JORUN")
 		assert isinstance(attachee, toee.PyObjHandle)
@@ -2977,190 +2926,20 @@ class Ctrl10JORUNAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			# 1531: My name is @pcname@ .  Who are you?
 			
 		return # dialog_action_do
-	
-class Ctrl10MALEDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10MALED 
-	@classmethod
-	def get_name(cls): "10MaleD"
-	
-	@classmethod
-	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
 		
-	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
-		return
-		
-	def setup_appearance(self, npc):
-		utils_npc.npc_description_set_new(npc, "Townsperson")
-		
-		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
-		
-		hairStyle = utils_npc.HairStyle.from_npc(npc)
-		hairStyle.style = const_toee.hair_style_shorthair
-		hairStyle.color = const_toee.hair_color_black # HairColourIndex: 0
-		hairStyle.update_npc(npc)
-		return
-
-	def setup_char(self, npc):
-		utils_npc.npc_abilities_set(npc, [11, 9, 12, 9, 10, 9])
-		
-		# class levels: 1
-		# stat_level_fighter: 1
-		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
-		
-		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
-		# feats
-		# shield proficiency:  => feat_shield_proficiency skip for fighter
-		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
-		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
-		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
-		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
-		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
-		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
-		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
-		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
-		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
-		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
-		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
-		
-		# saves
-		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
-		
-		# HP
-		utils_npc.ensure_hp(npc, 5) # MaximumHP: 5
-		npc.obj_set_int(toee.obj_f_hp_damage, 15) # CurrentHP: 5, STATE_DEAD
-
-		# skills
-		# SkillAlchemy: 0
-		# SkillAnimalEmpathy: 0
-		# SkillBluff: 0
-		# SkillConcentration: 0
-		# SkillDiplomacy: 0
-		# SkillDisableDevice: 0
-		# SkillHide: 0
-		# SkillIntimidate: 0
-		# SkillKnowledgeArcana: 0
-		# SkillMoveSilently: 0
-		# SkillOpenLock: 0
-		# SkillPickPocket: 0
-		# SkillSearch: 0
-		# SkillSpellcraft: 0
-		# SkillUseMagicDevice: 0
-		# SkillWildernessLaw: 0
-		return
-
-	def setup_gear(self, npc):
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_GARB_MYSTIC_TEAL, npc, no_loot = True, wear_on = toee.item_wear_armor) # CLOTH LT INDIGO
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
-		return
-
-class Ctrl10SOLDRDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SOLDRD 
-	@classmethod
-	def get_name(cls): "10SoldrD"
-	
-	@classmethod
-	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
-		
-	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
-		return
-		
-	def setup_appearance(self, npc):
-		utils_npc.npc_description_set_new(npc, "Targos Soldier")
-		
-		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
-		
-		hairStyle = utils_npc.HairStyle.from_npc(npc)
-		hairStyle.style = const_toee.hair_style_shorthair
-		hairStyle.color = const_toee.hair_color_brown # HairColourIndex: 2
-		hairStyle.update_npc(npc)
-		return
-
-	def setup_char(self, npc):
-		utils_npc.npc_abilities_set(npc, [12, 11, 12, 9, 9, 9])
-		
-		# class levels: 1
-		# stat_level_fighter: 1
-		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
-		
-		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
-		# feats
-		# shield proficiency:  => feat_shield_proficiency skip for fighter
-		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
-		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
-		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
-		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
-		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
-		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
-		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
-		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
-		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
-		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
-		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
-		
-		# saves
-		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
-		
-		# HP
-		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
-		npc.obj_set_int(toee.obj_f_hp_damage, 16) # CurrentHP: 6, STATE_DEAD
-
-		# skills
-		# SkillAlchemy: 0
-		# SkillAnimalEmpathy: 0
-		# SkillBluff: 0
-		# SkillConcentration: 0
-		# SkillDiplomacy: 0
-		# SkillDisableDevice: 0
-		# SkillHide: 0
-		# SkillIntimidate: 0
-		# SkillKnowledgeArcana: 0
-		# SkillMoveSilently: 0
-		# SkillOpenLock: 0
-		# SkillPickPocket: 0
-		# SkillSearch: 0
-		# SkillSpellcraft: 0
-		# SkillUseMagicDevice: 0
-		# SkillWildernessLaw: 0
-		return
-
-	def setup_gear(self, npc):
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
-		return
-
-class Ctrl10GOBAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
-	@classmethod
-	def get_name(cls): "10gob"
-	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_ENEMY # allegiance: 255
-		
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
 		return
-		
+	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Goblin")
 		
 		return
-
+	
 	def setup_char(self, npc):
 		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
 		
@@ -3169,9 +2948,9 @@ class Ctrl10GOBAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
 		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
@@ -3184,7 +2963,7 @@ class Ctrl10GOBAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
@@ -3193,7 +2972,7 @@ class Ctrl10GOBAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB
 		# HP
 		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
 		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
-
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -3212,7 +2991,7 @@ class Ctrl10GOBAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
+	
 	def setup_gear(self, npc):
 		# SLOT_WEAPON1: None(Books) from 001D4S
 		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
@@ -3226,26 +3005,20 @@ class Ctrl10GOBAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB
 		
 		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
 		return
-
-class Ctrl10GOBDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD 
-	@classmethod
-	def get_name(cls): "10gobd"
 	
+class Ctrl_10GOBD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_ENEMY # allegiance: 255
-		
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10GOBD_Auto).setup_scripts(npc)
 		return
-		
+	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Goblin")
 		
 		return
-
+	
 	def setup_char(self, npc):
 		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
 		
@@ -3254,9 +3027,9 @@ class Ctrl10GOBDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
 		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
@@ -3269,7 +3042,7 @@ class Ctrl10GOBDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
@@ -3278,7 +3051,7 @@ class Ctrl10GOBDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD
 		# HP
 		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
 		npc.obj_set_int(toee.obj_f_hp_damage, 14) # CurrentHP: 4, STATE_DEAD
-
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -3297,30 +3070,1357 @@ class Ctrl10GOBDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
+	
 	def setup_gear(self, npc):
 		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
 		return
-
-class Ctrl10GOBARAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
-	@classmethod
-	def get_name(cls): "10gobar"
 	
+class Ctrl_10MALED_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10MALED 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10MALED_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Townsperson")
+		
+		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
+		hairStyle = utils_npc.HairStyle.from_npc(npc)
+		hairStyle.style = const_toee.hair_style_shorthair
+		hairStyle.color = const_toee.hair_color_black # HairColourIndex: 0
+		hairStyle.update_npc(npc)
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [11, 9, 12, 9, 10, 9])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 5) # MaximumHP: 5
+		npc.obj_set_int(toee.obj_f_hp_damage, 15) # CurrentHP: 5, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_GARB_MYSTIC_TEAL, npc, no_loot = True, wear_on = toee.item_wear_armor) # CLOTH LT INDIGO
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
+		return
+	
+class Ctrl_10SOLDRD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SOLDRD 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10SOLDRD_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Targos Soldier")
+		
+		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
+		hairStyle = utils_npc.HairStyle.from_npc(npc)
+		hairStyle.style = const_toee.hair_style_shorthair
+		hairStyle.color = const_toee.hair_color_brown # HairColourIndex: 2
+		hairStyle.update_npc(npc)
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [12, 11, 12, 9, 9, 9])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
+		npc.obj_set_int(toee.obj_f_hp_damage, 16) # CurrentHP: 6, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
+		return
+	
+class Ctrl_10GOBD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_ENEMY # allegiance: 255
-		
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10GOBD_Auto).setup_scripts(npc)
 		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
 		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 14) # CurrentHP: 4, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOBD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBD_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 14) # CurrentHP: 4, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOBD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBD_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 14) # CurrentHP: 4, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10SOLDRD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SOLDRD 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10SOLDRD_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Targos Soldier")
+		
+		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
+		hairStyle = utils_npc.HairStyle.from_npc(npc)
+		hairStyle.style = const_toee.hair_style_shorthair
+		hairStyle.color = const_toee.hair_color_brown # HairColourIndex: 2
+		hairStyle.update_npc(npc)
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [12, 11, 12, 9, 9, 9])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
+		npc.obj_set_int(toee.obj_f_hp_damage, 16) # CurrentHP: 6, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
+		return
+	
+class Ctrl_10GOBD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBD_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 14) # CurrentHP: 4, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOBD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBD_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 14) # CurrentHP: 4, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOBD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBD_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 14) # CurrentHP: 4, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10MALED_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10MALED 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10MALED_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Townsperson")
+		
+		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
+		hairStyle = utils_npc.HairStyle.from_npc(npc)
+		hairStyle.style = const_toee.hair_style_shorthair
+		hairStyle.color = const_toee.hair_color_black # HairColourIndex: 0
+		hairStyle.update_npc(npc)
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [11, 9, 12, 9, 10, 9])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 5) # MaximumHP: 5
+		npc.obj_set_int(toee.obj_f_hp_damage, 15) # CurrentHP: 5, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_GARB_MYSTIC_TEAL, npc, no_loot = True, wear_on = toee.item_wear_armor) # CLOTH LT INDIGO
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
+		return
+	
+class Ctrl_10GOBARD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBARD 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBARD_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 14) # CurrentHP: 4, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		return
+	
+class Ctrl_10SOLDRD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SOLDRD 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10SOLDRD_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Targos Soldier")
+		
+		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
+		hairStyle = utils_npc.HairStyle.from_npc(npc)
+		hairStyle.style = const_toee.hair_style_shorthair
+		hairStyle.color = const_toee.hair_color_brown # HairColourIndex: 2
+		hairStyle.update_npc(npc)
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [12, 11, 12, 9, 9, 9])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
+		npc.obj_set_int(toee.obj_f_hp_damage, 16) # CurrentHP: 6, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
+		return
+	
+class Ctrl_10SAILRD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SAILRD 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10SAILRD_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Sailor")
+		
+		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
+		hairStyle = utils_npc.HairStyle.from_npc(npc)
+		hairStyle.style = const_toee.hair_style_shorthair
+		hairStyle.color = const_toee.hair_color_black # HairColourIndex: 0
+		hairStyle.update_npc(npc)
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [11, 12, 12, 9, 10, 9])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
+		npc.obj_set_int(toee.obj_f_hp_damage, 16) # CurrentHP: 6, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOBAR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBAR_Auto).setup_scripts(npc)
+		return
+	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Goblin Archer")
 		
 		return
-
+	
 	def setup_char(self, npc):
 		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
 		
@@ -3332,9 +4432,9 @@ class Ctrl10GOBARAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR
 		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
-		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
+		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
 		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
@@ -3347,7 +4447,7 @@ class Ctrl10GOBARAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
@@ -3356,7 +4456,7 @@ class Ctrl10GOBARAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR
 		# HP
 		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
 		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
-
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -3375,7 +4475,7 @@ class Ctrl10GOBARAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
+	
 	def setup_gear(self, npc):
 		# SLOT_WEAPON1: Shortbow(Bows) from 00CWBOWK
 		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTBOW, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # Shortbow (00CWBOWK) at SLOT_WEAPON1 OK
@@ -3395,26 +4495,20 @@ class Ctrl10GOBARAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR
 		# junk, skip and forget
 		
 		return
-
-class Ctrl10GOBARDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBARD 
-	@classmethod
-	def get_name(cls): "10gobArD"
 	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_ENEMY # allegiance: 255
-		
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
 		return
-		
+	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Goblin")
 		
 		return
-
+	
 	def setup_char(self, npc):
 		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
 		
@@ -3423,9 +4517,9 @@ class Ctrl10GOBARDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBARD
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
 		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
@@ -3438,7 +4532,7 @@ class Ctrl10GOBARDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBARD
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
@@ -3446,8 +4540,8 @@ class Ctrl10GOBARDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBARD
 		
 		# HP
 		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
-		npc.obj_set_int(toee.obj_f_hp_damage, 14) # CurrentHP: 4, STATE_DEAD
-
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -3466,46 +4560,45 @@ class Ctrl10GOBARDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBARD
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
-	def setup_gear(self, npc):
-		return
-
-class Ctrl10SAILRDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SAILRD 
-	@classmethod
-	def get_name(cls): "10SailrD"
 	
-	@classmethod
-	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
 		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
 		return
-		
+	
 	def setup_appearance(self, npc):
-		utils_npc.npc_description_set_new(npc, "Sailor")
+		utils_npc.npc_description_set_new(npc, "Goblin")
 		
-		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
-		
-		hairStyle = utils_npc.HairStyle.from_npc(npc)
-		hairStyle.style = const_toee.hair_style_shorthair
-		hairStyle.color = const_toee.hair_color_black # HairColourIndex: 0
-		hairStyle.update_npc(npc)
 		return
-
+	
 	def setup_char(self, npc):
-		utils_npc.npc_abilities_set(npc, [11, 12, 12, 9, 10, 9])
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
 		
 		# class levels: 1
 		# stat_level_fighter: 1
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
-		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
 		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
@@ -3518,16 +4611,16 @@ class Ctrl10SAILRDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SAILRD
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
 		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
 		
 		# HP
-		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
-		npc.obj_set_int(toee.obj_f_hp_damage, 16) # CurrentHP: 6, STATE_DEAD
-
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -3546,26 +4639,1691 @@ class Ctrl10SAILRDAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SAILRD
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
-	def setup_gear(self, npc):
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
-		return
-
-class Ctrl10CRANDAAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA 
-	@classmethod
-	def get_name(cls): "10Cranda"
 	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOBAR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBAR_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin Archer")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		# from None(001D3P) at SLOT_WEAPON2 by ItemMiscMeleeNatural1d3
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: Shortbow(Bows) from 00CWBOWK
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTBOW, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # Shortbow (00CWBOWK) at SLOT_WEAPON1 OK
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d6-4").packed)
+		
+		# SLOT_WEAPON2: None(Books) from 001D3P
+		# see natural
+		
+		# SLOT_AMMO1: Arrows(Arrows) from 00AROW01
+		quiver = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_AMMO_ARROW_QUIVER, npc, no_loot = False, wear_on = toee.item_wear_ammo) # Arrows (00AROW01) at SLOT_AMMO1 OK
+		quiver.obj_set_int(toee.obj_f_ammo_quantity, 10)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOBAR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBAR_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin Archer")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		# from None(001D3P) at SLOT_WEAPON2 by ItemMiscMeleeNatural1d3
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: Shortbow(Bows) from 00CWBOWK
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTBOW, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # Shortbow (00CWBOWK) at SLOT_WEAPON1 OK
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d6-4").packed)
+		
+		# SLOT_WEAPON2: None(Books) from 001D3P
+		# see natural
+		
+		# SLOT_AMMO1: Arrows(Arrows) from 00AROW01
+		quiver = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_AMMO_ARROW_QUIVER, npc, no_loot = False, wear_on = toee.item_wear_ammo) # Arrows (00AROW01) at SLOT_AMMO1 OK
+		quiver.obj_set_int(toee.obj_f_ammo_quantity, 10)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOBAR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBAR_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin Archer")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		# from None(001D3P) at SLOT_WEAPON2 by ItemMiscMeleeNatural1d3
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: Shortbow(Bows) from 00CWBOWK
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTBOW, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # Shortbow (00CWBOWK) at SLOT_WEAPON1 OK
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d6-4").packed)
+		
+		# SLOT_WEAPON2: None(Books) from 001D3P
+		# see natural
+		
+		# SLOT_AMMO1: Arrows(Arrows) from 00AROW01
+		quiver = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_AMMO_ARROW_QUIVER, npc, no_loot = False, wear_on = toee.item_wear_ammo) # Arrows (00AROW01) at SLOT_AMMO1 OK
+		quiver.obj_set_int(toee.obj_f_ammo_quantity, 10)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOBAR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBAR_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin Archer")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		# from None(001D3P) at SLOT_WEAPON2 by ItemMiscMeleeNatural1d3
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: Shortbow(Bows) from 00CWBOWK
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTBOW, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # Shortbow (00CWBOWK) at SLOT_WEAPON1 OK
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d6-4").packed)
+		
+		# SLOT_WEAPON2: None(Books) from 001D3P
+		# see natural
+		
+		# SLOT_AMMO1: Arrows(Arrows) from 00AROW01
+		quiver = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_AMMO_ARROW_QUIVER, npc, no_loot = False, wear_on = toee.item_wear_ammo) # Arrows (00AROW01) at SLOT_AMMO1 OK
+		quiver.obj_set_int(toee.obj_f_ammo_quantity, 10)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		return
+	
+class Ctrl_10GOBAR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBAR_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin Archer")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		# from None(001D3P) at SLOT_WEAPON2 by ItemMiscMeleeNatural1d3
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: Shortbow(Bows) from 00CWBOWK
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTBOW, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # Shortbow (00CWBOWK) at SLOT_WEAPON1 OK
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d6-4").packed)
+		
+		# SLOT_WEAPON2: None(Books) from 001D3P
+		# see natural
+		
+		# SLOT_AMMO1: Arrows(Arrows) from 00AROW01
+		quiver = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_AMMO_ARROW_QUIVER, npc, no_loot = False, wear_on = toee.item_wear_ammo) # Arrows (00AROW01) at SLOT_AMMO1 OK
+		quiver.obj_set_int(toee.obj_f_ammo_quantity, 10)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		return
+	
+class Ctrl_10GOBAR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBAR_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin Archer")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		# from None(001D3P) at SLOT_WEAPON2 by ItemMiscMeleeNatural1d3
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: Shortbow(Bows) from 00CWBOWK
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTBOW, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # Shortbow (00CWBOWK) at SLOT_WEAPON1 OK
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d6-4").packed)
+		
+		# SLOT_WEAPON2: None(Books) from 001D3P
+		# see natural
+		
+		# SLOT_AMMO1: Arrows(Arrows) from 00AROW01
+		quiver = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_AMMO_ARROW_QUIVER, npc, no_loot = False, wear_on = toee.item_wear_ammo) # Arrows (00AROW01) at SLOT_AMMO1 OK
+		quiver.obj_set_int(toee.obj_f_ammo_quantity, 10)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		return
+	
+class Ctrl_10GOBAR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBAR_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin Archer")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		# from None(001D3P) at SLOT_WEAPON2 by ItemMiscMeleeNatural1d3
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: Shortbow(Bows) from 00CWBOWK
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTBOW, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # Shortbow (00CWBOWK) at SLOT_WEAPON1 OK
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d6-4").packed)
+		
+		# SLOT_WEAPON2: None(Books) from 001D3P
+		# see natural
+		
+		# SLOT_AMMO1: Arrows(Arrows) from 00AROW01
+		quiver = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_AMMO_ARROW_QUIVER, npc, no_loot = False, wear_on = toee.item_wear_ammo) # Arrows (00AROW01) at SLOT_AMMO1 OK
+		quiver.obj_set_int(toee.obj_f_ammo_quantity, 10)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOBAR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBAR_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin Archer")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		# from None(001D3P) at SLOT_WEAPON2 by ItemMiscMeleeNatural1d3
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: Shortbow(Bows) from 00CWBOWK
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTBOW, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # Shortbow (00CWBOWK) at SLOT_WEAPON1 OK
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d6-4").packed)
+		
+		# SLOT_WEAPON2: None(Books) from 001D3P
+		# see natural
+		
+		# SLOT_AMMO1: Arrows(Arrows) from 00AROW01
+		quiver = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_AMMO_ARROW_QUIVER, npc, no_loot = False, wear_on = toee.item_wear_ammo) # Arrows (00AROW01) at SLOT_AMMO1 OK
+		quiver.obj_set_int(toee.obj_f_ammo_quantity, 10)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOB_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: None(Books) from 001D4S
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D4S) at SLOT_WEAPON1 # TODO CHECK if condition to lower 1d6=>1d4 is needed!!
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: Goblin_w_Axe
+		return
+	
+class Ctrl_10GOBAR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10GOBAR_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Goblin Archer")
+		
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 13, 11, 10, 11, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		# from None(001D3P) at SLOT_WEAPON2 by ItemMiscMeleeNatural1d3
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
+		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 4) # MaximumHP: 4
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 4
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_WEAPON1: Shortbow(Bows) from 00CWBOWK
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTBOW, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # Shortbow (00CWBOWK) at SLOT_WEAPON1 OK
+		weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d6-4").packed)
+		
+		# SLOT_WEAPON2: None(Books) from 001D3P
+		# see natural
+		
+		# SLOT_AMMO1: Arrows(Arrows) from 00AROW01
+		quiver = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_AMMO_ARROW_QUIVER, npc, no_loot = False, wear_on = toee.item_wear_ammo) # Arrows (00AROW01) at SLOT_AMMO1 OK
+		quiver.obj_set_int(toee.obj_f_ammo_quantity, 10)
+		
+		# SLOT_QUICK1: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 3, 0) # Charges1: 1, Charges2: 3, Charges3: 0
+		
+		# SLOT_QUICK2: None(Books) from 00RTGOB1
+		# junk, skip and forget
+		
+		return
+	
+class Ctrl_10CRANDA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
-
-	@classmethod
-	def get_class_faction(cls): return factions_zmod.FACTION_NEUTRAL_NPC # allegiance: 128
-		
+	
 	def setup_scripts(self, npc):
-		npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID
+		base(self, Ctrl_10CRANDA_Auto).setup_scripts(npc)
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
 		return
-		
+	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Crandall")
 		
@@ -3576,10 +6334,8 @@ class Ctrl10CRANDAAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA
 		hairStyle.color = const_toee.hair_color_red # HairColourIndex: 4
 		hairStyle.update_npc(npc)
 		return
-
+	
 	def setup_char(self, npc):
-		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
-		
 		utils_npc.npc_abilities_set(npc, [12, 11, 12, 9, 9, 9])
 		
 		# class levels: 1
@@ -3587,9 +6343,9 @@ class Ctrl10CRANDAAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1
-
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
 		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
@@ -3602,7 +6358,7 @@ class Ctrl10CRANDAAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA
 		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
 		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
 		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
-
+		
 		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
 		
 		# saves
@@ -3611,7 +6367,7 @@ class Ctrl10CRANDAAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA
 		# HP
 		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
 		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 6
-
+		
 		# skills
 		# SkillAlchemy: 0
 		# SkillAnimalEmpathy: 0
@@ -3630,7 +6386,7 @@ class Ctrl10CRANDAAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
 		return
-
+	
 	def setup_gear(self, npc):
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) from 00LEAT01
 		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
@@ -3643,7 +6399,7 @@ class Ctrl10CRANDAAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA
 		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
 		return
-
+	
 	def script_dialog(self, attachee, triggerer):
 		print("script_dialog 10CRANDA")
 		assert isinstance(attachee, toee.PyObjHandle)
@@ -3826,4 +6582,80 @@ class Ctrl10CRANDAAuto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA
 			# 1652: I will speak to him, then.  Farewell.
 			
 		return # dialog_action_do
+		
+class Ctrl_10MALED_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10MALED 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
+	
+	def setup_scripts(self, npc):
+		base(self, Ctrl_10MALED_Auto).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Townsperson")
+		
+		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
+		hairStyle = utils_npc.HairStyle.from_npc(npc)
+		hairStyle.style = const_toee.hair_style_shorthair
+		hairStyle.color = const_toee.hair_color_black # HairColourIndex: 0
+		hairStyle.update_npc(npc)
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [11, 9, 12, 9, 10, 9])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 5) # MaximumHP: 5
+		npc.obj_set_int(toee.obj_f_hp_damage, 15) # CurrentHP: 5, STATE_DEAD
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_GARB_MYSTIC_TEAL, npc, no_loot = True, wear_on = toee.item_wear_armor) # CLOTH LT INDIGO
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
+		return
 	

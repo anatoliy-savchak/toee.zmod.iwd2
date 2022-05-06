@@ -87,6 +87,19 @@ class ProduceDaemon:
                 if acts:
                     actor_sec = acts[0]
                 
+            bcs_used = list()
+            def add_bcs(scr_name: str):
+                nonlocal bcs_used
+                bcs_name = self.ar.get(scr_name)
+                if bcs_name:
+                    t = self.producer_app.ensure_bcs(bcs_name: '', file_path_out: '')
+                    if t:
+                        bcs_used.append(t[0] + '.' + t[1])
+                return
+            add_bcs('ScriptGeneral')
+            scr_classes = ', '.join(bcs_used)
+            if scr_classes: scr_classes = ', ' + scr_classes
+
             x = float(actor_sec["CurrentXCoordinateSec"])
             y = float(actor_sec["CurrentYCoordinateSec"])
 
@@ -195,4 +208,12 @@ class ProduceDaemon:
             if handlers_count:
                 add_codeline('')
                 add_codeline('self.ambs_timer_start()')
+        return
+
+    def produce_npc_insts(self):
+        actors = self.ar["actors"]
+        for actor in actors:
+            name = actor["Name"]
+            cre_file = actor["CREFile"]
+
         return

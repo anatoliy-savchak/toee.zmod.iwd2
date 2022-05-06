@@ -25,7 +25,7 @@ class AnimBase(object):
         return result
 
     def _add_line(self, line):
-        self.parent.lines_script.append(self.parent.current_indent + line)
+        self.parent.writeline(line)
         return
 
     def produce_hair(self):

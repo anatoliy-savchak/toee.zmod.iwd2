@@ -116,7 +116,7 @@ class ItemBase(object):
         return
 
     def _add_line(self, line):
-        self.parent.lines_script.append(self.parent.current_indent + line)
+        self.parent.writeline(line)
         return
 
     def _get_item_create_prefix(self):

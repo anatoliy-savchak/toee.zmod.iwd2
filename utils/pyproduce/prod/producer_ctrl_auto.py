@@ -1,125 +1,56 @@
-from asyncore import write
-import json
 import os
-from xmlrpc.client import boolean
-import pyproduce
-import produce_items
+import producer_base
 import produce_anim
+import common
+import produce_items
 import produce_dialog
 
-i_def = "\t"
-i_code = "\t\t"
+class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
+    def __init__(self, doc
+        , cre_name: str
+        , are_name: str
+        , script_id: int
+        , make_new: bool
+        , dialog_file
+    ):
+        template_path = doc.get_path_npcs_class_file()
+        out_path = doc.get_path_out_npcs_class_file(are_name, script_id)
+        src_path = doc.get_path_cre(cre_name)
+        super().__init__(doc, out_path=out_path, template_path=template_path, make_new=make_new, src_path=src_path)
 
-class ProduceNPC:
-    def __init__(self, producer_app, out_npcs_class_file: str, dialog_file, out_npcs_class_manual_file: str) -> None:
-        self.producer_app = producer_app
-        self.elements = dict()
+        self.cre_name = cre_name
+        self.are_name = are_name
+        self.script_id = script_id
+        self.dialog_file = dialog_file
 
-        self.lines_script = list()
-        self.copy_speaches = list()
-        self.lines_script_manuals = list()
-        self.current_crename = ""
-        self.ctrl_name = ""
-        self.ctrl_manual_name = ""
-        self.cre = dict()
-        self.out_npcs_class_file = out_npcs_class_file
-        self.out_npcs_class_manual_file = out_npcs_class_manual_file
-        self.current_indent = i_code
+        self.ctrl_name = None
+        self.base_class = 'ctrl_behaviour_ie.CtrlBehaviourIE'
+        self.cre = self.src
         self.wears = dict()
         self.items = list()
-        self.anim = None
-        self.dialog_file = dialog_file
-        self.dialog = None
-        self.imports_manual = list()
-
-        self.setup_elements()
-
-        if self.out_npcs_class_file:
-            self.load_template(self.out_npcs_class_file)
-        if out_npcs_class_manual_file:
-            with open(out_npcs_class_manual_file, 'r') as f:
-                self.lines_script_manuals = f.readlines()
-
+        self.classes_toee = dict()
         return
 
-    def _add_line(self, line):
-        self.lines_script.append(self.current_indent + line)
-        return len(self.lines_script) - 1
-
-    def _indent(self, forward: bool):
-        if not forward:
-            self.current_indent = self.current_indent[:-1]
-        else:
-            self.current_indent += "\t"
+    @classmethod
+    def overwrite_by_template(cls, doc, are_name, script_id):
+        template_path = doc.get_path_npcs_class_file()
+        out_path = doc.get_path_out_npcs_class_file(are_name, script_id)
+        with open(template_path, 'r') as fs:
+            with open(out_path, 'w') as fo:
+                fo.writelines(fs.readlines())
         return
 
-    def setup_elements(self):
-        self.elements["base_class"] = "ctrl_behaviour_ie.CtrlBehaviourIE"
-        return
-
-    def read_cre(self, name: str):
-        value = self.producer_app.read_file_json(self.producer_app.get_cre_path(name))
-        self.cre = value
-        return value
-
-    def cre_get_full_name(self):
-        result = self.producer_app.cre_strref_to_string(self.cre.get("LongName"))
-        if not result:
-            result = self.producer_app.cre_strref_to_string(self.cre.get("ShortName"))
-        return result
-
-    def load_template(self, file_name):
-        with open(file_name, 'r') as f:
-            self.lines_script = f.readlines()
-        return
-
-    def save(self, file_name = None):
-        if not file_name: file_name = self.out_npcs_class_file
-        with open(file_name, 'w') as f:
-            for line in self.lines_script:
-                #aline = line
-                f.write(line + ("\n" if not "\n" in line else ""))
-        if self.out_npcs_class_manual_file:
-            with open(self.out_npcs_class_manual_file, 'w') as f:
-                for line in self.lines_script_manuals:
-                    f.write(line + ("\n" if not "\n" in line else ""))
-        if self.dialog:
-            self.dialog.save()
-        return self
-    
-    def produce_npc_class_auto(self, cre_name):
-        self.read_cre(cre_name)
-        self.current_crename = cre_name
-
-        self.ctrl_name = f'Ctrl{self.current_crename}Auto'
-        self.lines_script.append(f"class {self.ctrl_name}({self.elements['base_class']}): # {self.current_crename} ") # leave trailing whitespace here
+    def produce(self):
+        self.ctrl_name = f'Ctrl_{self.cre_name}_Auto'
+        self.writeline(f"class {self.ctrl_name}({self.base_class}): # {self.cre_name} ") # leave trailing whitespace here
+        self.indent(True)
         
-        deathVariable = self.cre["DeathVariable"]
-        if deathVariable:
-            self.lines_script.append(i_def + "@classmethod")
-            self.lines_script.append(i_def + f'def get_name(cls): "{deathVariable}"')
-            self.lines_script.append(i_def)
-
         self.produce_npc_baseproto()
         self.produce_npc_script_hooks()
         self.produce_npc_appearance()
         self.produce_npc_char()
         self.setup_gear()
         self.produce_dialog()
-
-        self.produce_npc_manual()
-        return self
-
-    def produce_npc_manual(self):
-        self.ctrl_manual_name = f'Ctrl{self.current_crename}'
-        imp_name = os.path.basename(self.out_npcs_class_file).replace('.py', '')
-        line_p1 = f"class {self.ctrl_manual_name}({imp_name}.{self.ctrl_name}): "
-        line_p2 = f"# {self.current_crename} " # leave trailing whitespace here
-        if not next((1 for line in self.lines_script_manuals if line_p1 in line), None):
-            if not imp_name in self.imports_manual: self.imports_manual.append(imp_name)
-            self.lines_script_manuals.append(line_p1 + line_p2) # leave trailing whitespace here
-            self.lines_script_manuals.append(i_def + 'pass')
-            self.lines_script_manuals.append('')
         return
 
     def produce_npc_baseproto(self):
@@ -146,11 +77,21 @@ class ProduceNPC:
         else:
             raise Exception(f"Unknown race: {race_name}({race})")
 
-        self.lines_script.append(i_def + "@classmethod")
-        self.lines_script.append(i_def + f"def get_proto_id(cls): return {proto}")
-        self.lines_script.append("")
+        self.writeline("@classmethod")
+        self.writeline(f"def get_proto_id(cls): return {proto}")
+        self.writeline("")
+        return
 
-        self.produce_faction()
+    def produce_npc_script_hooks(self):
+        self.writeline("def setup_scripts(self, npc):")
+        self.indent(True)
+        self.writeline(f'base(self, {self.ctrl_name}).setup_scripts(npc)')
+        if (dialog_name := self.cre["DialogFile"]) and (dialog_name != "None"):
+            self.writeline("npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID")
+        #self.writeline("npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID")
+        self.writeline("return")
+        self.indent(False)
+        self.writeline("")
         return
 
     def produce_npc_appearance(self):
@@ -158,26 +99,28 @@ class ProduceNPC:
         if not self.anim:
             raise Exception("No anim object!!")
             
-        self.lines_script.append(i_def + "def setup_appearance(self, npc):")
+        self.writeline("def setup_appearance(self, npc):")
+        self.indent()
 
         full_name = self.cre_get_full_name()
         if full_name:
-            self.lines_script.append(i_code + f'utils_npc.npc_description_set_new(npc, "{full_name}")');
-            self.lines_script.append(i_code)
+            self.writeline(f'utils_npc.npc_description_set_new(npc, "{full_name}")');
+            self.writeline()
 
         self.anim.produce_portrait()
         self.anim.produce_hair()
 
-        self.lines_script.append(i_code+"return")
-        self.lines_script.append("")
+        self.writeline("return")
+        self.indent(False)
+        self.writeline()
         return
 
-    
+    def cre_get_full_name(self):
+        return common.text_of_strrefs(self.cre, "LongName", "ShortName")
+
     def produce_npc_char(self):
-        self.lines_script.append(i_def + "def setup_char(self, npc):")
-        if (dialog_name := self.cre["DialogFile"]) and (dialog_name != "None"):
-            self._add_line("npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID")
-            self._add_line("")
+        self.writeline("def setup_char(self, npc):")
+        self.indent()
 
         if True:
             Strength = int(self.cre["Strength"])
@@ -187,7 +130,7 @@ class ProduceNPC:
             Intelligence = int(self.cre["Intelligence"])
             Wisdom = int(self.cre["Wisdom"])
             Charisma = int(self.cre["Charisma"])
-            self.lines_script.append(i_code + f"utils_npc.npc_abilities_set(npc, [{Strength}, {Dexterity}, {Constitution}, {Intelligence}, {Wisdom}, {Charisma}])");
+            self.writeline(f"utils_npc.npc_abilities_set(npc, [{Strength}, {Dexterity}, {Constitution}, {Intelligence}, {Wisdom}, {Charisma}])");
 
         LevelTotal = int(self.cre["LevelTotal"])
         ClassLevels = (int(self.cre["LevelBarbarian"]), int(self.cre["LevelBard"]), int(self.cre["LevelCleric"]), int(self.cre["LevelDruid"])
@@ -199,18 +142,17 @@ class ProduceNPC:
             , "stat_level_monk", "stat_level_paladin", "stat_level_ranger", "stat_level_rogue", "stat_level_sorcerer"
             , "stat_level_wizard")
 
-        self.elements["classes_toee"] = dict()
         if levelsFromClasses:
             classLevel = 0
-            self.lines_script.append(i_code)
-            self.lines_script.append(i_code+f"# class levels: {levelsFromClasses}")
+            self.writeline()
+            self.writeline(f"# class levels: {levelsFromClasses}")
             for i, levels in enumerate(ClassLevels):
                 if not levels: continue
                 statLevel = classes[i]
-                self.lines_script.append(i_code+f"# {statLevel}: {levels}")
+                self.writeline(f"# {statLevel}: {levels}")
                 for l in range(0, levels):
-                    self.elements["classes_toee"][statLevel] = int(self.elements["classes_toee"].get(statLevel, 0)) + 1
-                    self.lines_script.append(i_code + f"npc.obj_set_idx_int(toee.obj_f_critter_level_idx, {classLevel}, toee.{statLevel})");
+                    self.classes_toee[statLevel] = int(self.classes_toee.get(statLevel, 0)) + 1
+                    self.writeline(f"npc.obj_set_idx_int(toee.obj_f_critter_level_idx, {classLevel}, toee.{statLevel})");
                     classLevel += 1
         else:
             raise Exception("No Classes!")
@@ -220,32 +162,138 @@ class ProduceNPC:
             if item_process := produce_items.ItemBase.pick(item, self):
                 item_process.process_char()
 
-        self.lines_script.append(i_code)
+        self.writeline()
 
         self.produce_alignment()
-        self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_critter_experience, {int(self.cre["XPReward"])}) # XPReward')
+        self.writeline(f'npc.obj_set_int(toee.obj_f_critter_experience, {int(self.cre["XPReward"])}) # XPReward TODO!!!')
         cr = int(self.cre["ChallangeRating"])
         cr_adj = cr - levelsFromClasses
         if cr_adj < -2: cr_adj = -2
-        self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_npc_challenge_rating, {cr_adj}) # CR: {cr}')
+        self.writeline(f'npc.obj_set_int(toee.obj_f_npc_challenge_rating, {cr_adj}) # CR: {cr} TODO!!!')
         
         self.produce_feats()
         self.produce_saves()
         self.produce_hp()
         self.produce_skills()
 
-        self.lines_script.append(i_code+"return")
-        self.lines_script.append("")
+        self.writeline("return")
+        self.indent(False)
+        self.writeline()
+        return
+
+    def produce_alignment(self):
+        al = int(self.cre["Alignment"])
+        alignment = "ALIGNMENT_NEUTRAL"
+        ids_line = str(al)
+        if al == 0x11: 
+            ids_line = "0x11 LAWFUL_GOOD"
+            alignment = "ALIGNMENT_LAWFUL_GOOD"
+        elif al == 0x12: 
+            ids_line = "0x12 LAWFUL_NEUTRAL"
+            alignment = "ALIGNMENT_LAWFUL_NEUTRAL"
+        elif al == 0x13: 
+            ids_line = "0x13 LAWFUL_EVIL"
+            alignment = "ALIGNMENT_LAWFUL_EVIL"
+        elif al == 0x21: 
+            ids_line = "0x21 NEUTRAL_GOOD"
+            alignment = "ALIGNMENT_NEUTRAL_GOOD"
+        elif al == 0x22: 
+            ids_line = "0x22 NEUTRAL"
+            alignment = "ALIGNMENT_TRUE_NEUTRAL"
+        elif al == 0x23: 
+            ids_line = "0x23 NEUTRAL_EVIL"
+            alignment = "ALIGNMENT_NEUTRAL_EVIL"
+        elif al == 0x31: 
+            ids_line = "0x31 CHAOTIC_GOOD"
+            alignment = "ALIGNMENT_CHAOTIC_GOOD"
+        elif al == 0x32: 
+            ids_line = "0x32 CHAOTIC_NEUTRAL"
+            alignment = "ALIGNMENT_CHAOTIC_NEUTRAL"
+        elif al == 0x33: 
+            ids_line = "0x33 CHAOTIC_EVIL"
+            alignment = "ALIGNMENT_CHAOTIC_EVIL"
+
+        self.writeline(f"npc.obj_set_int(toee.obj_f_critter_alignment, toee.{alignment}) # {ids_line}")
+        return
+
+    def produce_saves(self):
+        def produce_safe(prop: str, save: str):
+            value = int(self.cre[prop])
+            self.writeline(f"{save} = npc.stat_level_get(toee.stat_{save})")
+            self.writeline(f"if {save} < {value}: npc.obj_set_int(toee.obj_f_npc_{save}_bonus, {value}-{save}) # {prop}: {value}")
+            return
+        
+        # should go after d20_refresh
+        self.writeline()
+        self.writeline("# saves")
+        #produce_safe("SaveVsDeath", "save_fortitude")
+        #produce_safe("SaveVsWands", "save_reflexes")
+        #produce_safe("SaveVsPolymorph", "save_willpower")
+        self.writeline(f'utils_npc.ensure_saves_natural(npc, {int(self.cre["SaveVsDeath"])}, {int(self.cre["SaveVsWands"])}, {int(self.cre["SaveVsPolymorph"])}) # SaveVsDeath: {int(self.cre["SaveVsDeath"])}, SaveVsWands: {int(self.cre["SaveVsWands"])}, SaveVsPolymorph: {int(self.cre["SaveVsPolymorph"])}')
+        return
+
+    def produce_hp(self):
+        self.writeline()
+        self.writeline("# HP")
+        maximumHP = int(self.cre["MaximumHP"])
+        currentHP = int(self.cre["CurrentHP"])
+        damage = maximumHP - currentHP
+        self.writeline(f'utils_npc.ensure_hp(npc, {maximumHP}) # MaximumHP: {maximumHP}')
+        statusFlags = self.cre["StatusFlags"]
+        STATE_DEAD = ""
+        if "STATE_DEAD" in str(statusFlags):
+            damage = 10 + maximumHP
+            STATE_DEAD = ", STATE_DEAD"
+        self.writeline(f'npc.obj_set_int(toee.obj_f_hp_damage, {damage}) # CurrentHP: {currentHP}{STATE_DEAD}')
+        return
+
+    def produce_faction(self):
+        allegiance = int(self.cre["EnemyAlly"])
+        faction = "factions_zmod.FACTION_NEUTRAL_NPC"
+        if allegiance == 128:
+            faction = "factions_zmod.FACTION_NEUTRAL_NPC"
+        elif allegiance == 255:
+            faction = "factions_zmod.FACTION_ENEMY"
+        self.writeline("@classmethod")
+        self.writeline(f"def get_class_faction(cls): return {faction} # allegiance: {allegiance}")
+        self.writeline()
+        return
+    
+    def setup_gear(self):
+        self.writeline("def setup_gear(self, npc):")
+        self.indent()
+        items = self.cre["Items"]
+        for item in items:
+            item_file_name = item["Item"]["Filename"]
+            item_type = item["ItemTypeEval"]
+            slot_name = item["SlotCode"]
+            item_name = item["ItemNameEval"]
+            droppable = bool(item["ItemDroppableEval"])
+            no_loot = not droppable
+
+            self.writeline(f'# {slot_name}: {item_name}({item_type}) from {item_file_name}')
+            res = False
+            if item_process := produce_items.ItemBase.pick(item, self):
+                res = item_process.process_item()
+
+            if not res:
+                self.writeline("# Not found! TODO ITEM")
+            self.writeline()
+
+        self.anim.produce_cloth()
+        self.writeline("return")
+        self.indent(False)
+        self.writeline()
         return
 
     def check_feat(self, feat_to_add, value_name, value):
         if "proficiency" in feat_to_add:
-            classes_toee = self.elements.get("classes_toee")
+            classes_toee = self.classes_toee
             if classes_toee:
                 for class_toee, level_count in classes_toee.items():
                     if not level_count: continue
-                    if cname := self.producer_app.toee_class_spec_has_prof(class_toee, feat_to_add):
-                        self.lines_script.append(i_code + f"# {value_name}: {value} => {feat_to_add} skip for {cname}")
+                    if cname := self.doc.templeClassSpecs.toee_class_spec_has_prof(class_toee, feat_to_add):
+                        self.writeline(f"# {value_name}: {value} => {feat_to_add} skip for {cname}")
                         return True
         return False
 
@@ -262,9 +310,9 @@ class ProduceNPC:
                     if not self.check_feat(feat_to_addv, value_name, value):
                         if not splitter_added:
                             splitter_added = True
-                            self.lines_script.append(i_code)
-                            self.lines_script.append(i_code + f"# {value_name}: {value}")
-                        self.lines_script.append(i_code+f"npc.feat_add(toee.{feat_to_addv})")
+                            self.writeline()
+                            self.writeline(f"# {value_name}: {value}")
+                        self.writeline(f"npc.feat_add(toee.{feat_to_addv})")
                 else:
                     for feat_to_add in feat_to_addv:
                         if not feat_to_add: continue
@@ -272,9 +320,9 @@ class ProduceNPC:
                             continue
                         if not splitter_added:
                             splitter_added = True
-                            self.lines_script.append(i_code)
-                            self.lines_script.append(i_code + f"# {value_name}: {value}")
-                        self.lines_script.append(i_code+f"npc.feat_add(toee.{feat_to_add})")
+                            self.writeline()
+                            self.writeline(f"# {value_name}: {value}")
+                        self.writeline(f"npc.feat_add(toee.{feat_to_add})")
             return
 
         def feat_pro_add_weapon(value_name: str, levels: list, weapons: list):
@@ -289,13 +337,13 @@ class ProduceNPC:
                         return
                     if not splitter_added:
                         splitter_added = True
-                        self.lines_script.append(i_code)
-                        self.lines_script.append(i_code + f"# {value_name}: {value}")
-                    self.lines_script.append(i_code+f"npc.feat_add(toee.{feat_to_add})")
+                        self.writeline()
+                        self.writeline(f"# {value_name}: {value}")
+                    self.writeline(f"npc.feat_add(toee.{feat_to_add})")
             return
 
-        self.lines_script.append("")
-        self.lines_script.append(i_code+"# feats")
+        self.writeline()
+        self.writeline("# feats")
         feats = self.cre["Feats"]
         for feat in feats:
             self.produce_feat(feat)
@@ -386,8 +434,8 @@ class ProduceNPC:
             , ["feat_toughness"]
         )
 
-        self.lines_script.append("")
-        self.lines_script.append(i_code+f"npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status")
+        self.writeline()
+        self.writeline(f"npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status")
         return
 
     def produce_feat(self, feat: str):
@@ -684,21 +732,21 @@ class ProduceNPC:
             if self.check_feat(feat_to_add, ft, ""):
                 return
             if feat_to_add.startswith("feat_"):
-                self.lines_script.append(i_code+f"npc.feat_add(toee.{feat_to_add}) # {feat}")
+                self.writeline(f"npc.feat_add(toee.{feat_to_add}) # {feat}")
             else:
-                self.lines_script.append(i_code+f'npc.feat_add("{feat_to_add}") # {feat}')
+                self.writeline(f'npc.feat_add("{feat_to_add}") # {feat}')
         return
 
     def produce_skills(self):
         def produce_skill(prop: str, skill: str):
             value = self.cre[prop]
-            self.lines_script.append(i_code+f"# {prop}: {value}")
+            self.writeline(f"# {prop}: {value}")
             if value:
-                self.lines_script.append(i_code+f"utils_npc.npc_skill_ensure(npc, toee.{skill}, {value})")
+                self.writeline(f"utils_npc.npc_skill_ensure(npc, toee.{skill}, {value})")
             return
 
-        self.lines_script.append("")
-        self.lines_script.append(i_code+"# skills")
+        self.writeline()
+        self.writeline("# skills")
         produce_skill("SkillAlchemy", "skill_alchemy")
         produce_skill("SkillAnimalEmpathy", "skill_handle_animal")
         produce_skill("SkillBluff", "skill_bluff")
@@ -717,135 +765,12 @@ class ProduceNPC:
         produce_skill("SkillWildernessLaw", "skill_wilderness_lore")
         return
 
-    def produce_alignment(self):
-        al = int(self.cre["Alignment"])
-        alignment = "ALIGNMENT_NEUTRAL"
-        ids_line = str(al)
-        if al == 0x11: 
-            ids_line = "0x11 LAWFUL_GOOD"
-            alignment = "ALIGNMENT_LAWFUL_GOOD"
-        elif al == 0x12: 
-            ids_line = "0x12 LAWFUL_NEUTRAL"
-            alignment = "ALIGNMENT_LAWFUL_NEUTRAL"
-        elif al == 0x13: 
-            ids_line = "0x13 LAWFUL_EVIL"
-            alignment = "ALIGNMENT_LAWFUL_EVIL"
-        elif al == 0x21: 
-            ids_line = "0x21 NEUTRAL_GOOD"
-            alignment = "ALIGNMENT_NEUTRAL_GOOD"
-        elif al == 0x22: 
-            ids_line = "0x22 NEUTRAL"
-            alignment = "ALIGNMENT_TRUE_NEUTRAL"
-        elif al == 0x23: 
-            ids_line = "0x23 NEUTRAL_EVIL"
-            alignment = "ALIGNMENT_NEUTRAL_EVIL"
-        elif al == 0x31: 
-            ids_line = "0x31 CHAOTIC_GOOD"
-            alignment = "ALIGNMENT_CHAOTIC_GOOD"
-        elif al == 0x32: 
-            ids_line = "0x32 CHAOTIC_NEUTRAL"
-            alignment = "ALIGNMENT_CHAOTIC_NEUTRAL"
-        elif al == 0x33: 
-            ids_line = "0x33 CHAOTIC_EVIL"
-            alignment = "ALIGNMENT_CHAOTIC_EVIL"
-
-        self.lines_script.append(i_code+f"npc.obj_set_int(toee.obj_f_critter_alignment, toee.{alignment}) # {ids_line}")
-        return
-
-    def produce_saves(self):
-        def produce_safe(prop: str, save: str):
-            value = int(self.cre[prop])
-            self.lines_script.append(i_code+f"{save} = npc.stat_level_get(toee.stat_{save})")
-            self.lines_script.append(i_code+f"if {save} < {value}: npc.obj_set_int(toee.obj_f_npc_{save}_bonus, {value}-{save}) # {prop}: {value}")
-            return
-        
-        # should go after d20_refresh
-        self.lines_script.append(i_code)
-        self.lines_script.append(i_code+"# saves")
-        #produce_safe("SaveVsDeath", "save_fortitude")
-        #produce_safe("SaveVsWands", "save_reflexes")
-        #produce_safe("SaveVsPolymorph", "save_willpower")
-        self.lines_script.append(i_code+f'utils_npc.ensure_saves_natural(npc, {int(self.cre["SaveVsDeath"])}, {int(self.cre["SaveVsWands"])}, {int(self.cre["SaveVsPolymorph"])}) # SaveVsDeath: {int(self.cre["SaveVsDeath"])}, SaveVsWands: {int(self.cre["SaveVsWands"])}, SaveVsPolymorph: {int(self.cre["SaveVsPolymorph"])}')
-        return
-
-    def produce_hp(self):
-        self.lines_script.append(i_code)
-        self.lines_script.append(i_code+"# HP")
-        maximumHP = int(self.cre["MaximumHP"])
-        currentHP = int(self.cre["CurrentHP"])
-        damage = maximumHP - currentHP
-        self.lines_script.append(i_code+f'utils_npc.ensure_hp(npc, {maximumHP}) # MaximumHP: {maximumHP}')
-        statusFlags = self.cre["StatusFlags"]
-        STATE_DEAD = ""
-        if "STATE_DEAD" in str(statusFlags):
-            damage = 10 + maximumHP
-            STATE_DEAD = ", STATE_DEAD"
-        self.lines_script.append(i_code+f'npc.obj_set_int(toee.obj_f_hp_damage, {damage}) # CurrentHP: {currentHP}{STATE_DEAD}')
-        return
-
-    def produce_faction(self):
-        allegiance = int(self.cre["EnemyAlly"])
-        faction = "factions_zmod.FACTION_NEUTRAL_NPC"
-        if allegiance == 128:
-            faction = "factions_zmod.FACTION_NEUTRAL_NPC"
-        elif allegiance == 255:
-            faction = "factions_zmod.FACTION_ENEMY"
-        self.lines_script.append(i_def + "@classmethod")
-        self.lines_script.append(i_def + f"def get_class_faction(cls): return {faction} # allegiance: {allegiance}")
-        self.lines_script.append(i_code)
-        return
-    
-    def setup_gear(self):
-        self.lines_script.append(i_def + "def setup_gear(self, npc):")
-        #self.lines_script.append(i_code)
-        do_separate_line = False
-
-        wear_armor = None
-
-        items = self.cre["Items"]
-        for item in items:
-            item_file_name = item["Item"]["Filename"]
-            item_type = item["ItemTypeEval"]
-            slot_name = item["SlotCode"]
-            item_name = item["ItemNameEval"]
-            droppable = boolean(item["ItemDroppableEval"])
-            no_loot = not droppable
-
-            self.current_indent = i_code
-            self.lines_script.append(i_code+f'# {slot_name}: {item_name}({item_type}) from {item_file_name}')
-            res = False
-            if item_process := produce_items.ItemBase.pick(item, self):
-                res = item_process.process_item()
-
-            if not res:
-                self.lines_script.append(i_code+"# Not found! TODO ITEM")
-            self.lines_script.append(i_code)
-
-        self.anim.produce_cloth()
-        # if not self.wears.get("toee.item_wear_armor"):
-        #     self.lines_script.append(i_code)
-        #     self.lines_script.append(i_code+'utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, False, toee.item_wear_armor) # default')
-        #     self.lines_script.append(i_code+'utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, False, toee.item_wear_boots) # default')
-
-        self.lines_script.append(i_code+"return")
-        self.lines_script.append("")
-        return
-
     def produce_dialog(self):
         dialog_name = self.cre["DialogFile"]
         if not dialog_name or dialog_name == "None":
             return
-        dialog = self.producer_app.load_cre_dialog(dialog_name)
-        self.dialog = produce_dialog.ProduceNPCDialog(dialog_name, self, dialog, self.dialog_file)
+        fn = os.path.join(self.doc.exp_dir, 'Dialogs', dialog_name + '.json')
+        dialog_dict = common.read_file_json(fn)
+        self.dialog = produce_dialog.ProduceNPCDialog(dialog_name, self, dialog_dict, self.dialog_file)
         self.dialog.produce()
         return
-
-    def produce_npc_script_hooks(self):
-        self.lines_script.append(i_def + "def setup_scripts(self, npc):")
-        #self._indent(True)
-        self._add_line("npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID")
-        self._add_line("return")
-        #self._indent(False)
-        self._add_line("")
-        return
-

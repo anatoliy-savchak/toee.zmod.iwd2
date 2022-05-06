@@ -12,6 +12,7 @@ import produce_ar
 import produce_sound
 import produce_icon
 import produce_proto
+import produce_bcs_manager
 
 class ProducerApp:
     def __init__(self, exp_dir:str, core_dir: str, wav_dir: str, src_dir: str, module_dir: str
@@ -42,6 +43,8 @@ class ProducerApp:
             , dir_sound = self.get_path_sound()
             , producer_app = self
         )
+        self.produceBCSManager = produce_bcs_manager.ProduceBCSManager(self)
+
         self.icons = produce_icon.ProduceIcons(self)
         self.icons.load_index()
         self.protos = produce_proto.ProduceProtos(self)
@@ -139,22 +142,37 @@ class ProducerApp:
     def get_path_map_rumors_file(self):
         return os.path.join(self.exp_dir, "journal/journal_map.json")
 
-    def get_path_out_npcs_file(self, are_name: str, script_id: int = None):
+    def get_bcs_template_path(self):
+        return 'data/bcs_template.py'
+
+    def get_path_out_npcs_class_file(self, are_name: str, script_id: int = None):
         if script_id is None:
             script_id = self.are_name_to_script_id(are_name) + 1
-        name = f"py{script_id:05d}_{are_name.lower()}_npcs_auto.py"
+        name = f"py{script_id:05d}_{are_name.lower()}_npc_classes_auto.py"
         return os.path.join(self.core_dir, "scr", name)
 
-    def get_path_out_npcs_manual_file(self, are_name: str, script_id: int = None):
+    def get_path_out_npcs_class_manual_file(self, are_name: str, script_id: int = None):
         if script_id is None:
             script_id = self.are_name_to_script_id(are_name) + 2
-        name = f"py{script_id:05d}_{are_name.lower()}_npcs.py"
+        name = f"py{script_id:05d}_{are_name.lower()}_npc_classes.py"
+        return os.path.join(self.core_dir, "scr", name)
+
+    def get_path_out_npcs_inst_file(self, are_name: str, script_id: int = None):
+        if script_id is None:
+            script_id = self.are_name_to_script_id(are_name) + 3
+        name = f"py{script_id:05d}_{are_name.lower()}_npc_insts_auto.py"
+        return os.path.join(self.core_dir, "scr", name)
+
+    def get_path_out_npcs_manual_inst_file(self, are_name: str, script_id: int = None):
+        if script_id is None:
+            script_id = self.are_name_to_script_id(are_name) + 4
+        name = f"py{script_id:05d}_{are_name.lower()}_npc_insts.py"
         return os.path.join(self.core_dir, "scr", name)
 
     def get_path_out_npcs_dialog_file(self, are_name: str, script_id: int = None):
         if script_id is None:
             script_id = self.are_name_to_script_id(are_name) + 1
-        name = f"{script_id:05d}_{are_name.lower()}_npcs_auto.dlg"
+        name = f"{script_id:05d}_{are_name.lower()}_npc_classes_auto.dlg"
         return os.path.join(self.core_dir, "dlg", name)
 
     def get_path_out_daemon_file(self, are_name: str, script_id: int = None):
@@ -230,15 +248,13 @@ class ProducerApp:
             rec.are_names.append(are_name)
             return
 
-        script_id = self.are_name_to_script_id(are_name) + 1
-        out_npcs_file = self.get_path_out_npcs_file(are_name, script_id)
-        script_manual_id = self.are_name_to_script_id(are_name) + 2
-        out_npcs_manual_file = self.get_path_out_npcs_manual_file(are_name, script_manual_id)
+        out_npcs_class_file = self.get_path_out_npcs_class_file(are_name)
+        out_npcs_class_manual_file = self.get_path_out_npcs_class_manual_file(are_name)
         prod = produce_npc.ProduceNPC(self
-            , out_npcs_file
+            , out_npcs_class_file
             , self.current_dialog_file
-            , out_npcs_manual_file
-        ).produce_npc_auto(cre_name)
+            , out_npcs_class_manual_file
+        ).produce_npc_class_auto(cre_name)
         prod.save()
         for i in prod.imports_manual: 
             if not i in self.imports_npcs_manual: 
@@ -248,7 +264,8 @@ class ProducerApp:
         are_names.append(are_name)
         rec = common.tDict(are_names = are_names, cre_name = cre_name
             , ctrl_name= prod.ctrl_name, ctrl_manual_name= prod.ctrl_manual_name
-            , out_npcs_file = out_npcs_file, out_npcs_manual_file = out_npcs_manual_file)
+            , out_npcs_class_file = out_npcs_class_file
+            , out_npcs_class_manual_file = out_npcs_class_manual_file)
         self.cres[cre_name] = rec
         return
 

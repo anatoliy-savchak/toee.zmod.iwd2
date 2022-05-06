@@ -9,6 +9,7 @@ import produce_icon
 import produce_proto
 import common
 import script_items
+import produce_bcs_manager
 
 npc_template_file = 'data/py06616_template.py'
 out_npcs_file = '../../src/zmod_iwd2_core/scr/py01001_targos_docks_encounters.py'

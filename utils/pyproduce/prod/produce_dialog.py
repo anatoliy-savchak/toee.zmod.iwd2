@@ -109,7 +109,7 @@ class ProduceNPCDialog:
         return
 
     def _add_line(self, line):
-        return self.parent._add_line(line)
+        return self.parent.writeline(line)
 
     def produce(self):
         phrases, responses, triggersPhrase, triggersResponse = self.dialog.get("Phrases"), self.dialog.get("Responses"), self.dialog.get("TriggersPhrase"), self.dialog.get("TriggersResponse")
@@ -123,31 +123,30 @@ class ProduceNPCDialog:
             print("")
 
         #self.parent.current_indent = "\t"
-        # self.parent._indent(False)
+        # self.parent.indent(False)
         # self._add_line("def dialog(self, attachee, triggerer):")
-        # self.parent._indent(True)
+        # self.parent.indent(True)
         # self._add_line("assert isinstance(attachee, toee.PyObjHandle)")
         # self._add_line("assert isinstance(triggerer, toee.PyObjHandle)")
         # self._add_line("")
         # self._add_line("try:")
-        # self.parent._indent(True)
+        # self.parent.indent(True)
         # self._add_line('self.vars["attachee"] = attachee')
         # self._add_line('self.vars["triggerer"] = triggerer')
         # self._add_line("")
         # self._add_line("self.script_dialog(attachee, triggerer)")
-        # self.parent._indent(False)
+        # self.parent.indent(False)
         # self._add_line("finally:")
-        # self.parent._indent(True)
+        # self.parent.indent(True)
         # self._add_line('self.vars["attachee"] = None')
         # self._add_line('self.vars["triggerer"] = None')
-        # self.parent._indent(False)
+        # self.parent.indent(False)
         # self._add_line("")
         # self._add_line("return toee.SKIP_DEFAULT")
         # self._add_line("")
 
-        self.parent._indent(False)
         self._add_line("def script_dialog(self, attachee, triggerer):")
-        self.parent._indent(True)
+        self.parent.indent(True)
         #self._add_line(f"# {self.dialog_name}")
         self._add_line(f'print("script_dialog {self.dialog_name}")')
         self._add_line("assert isinstance(attachee, toee.PyObjHandle)")
@@ -157,7 +156,7 @@ class ProduceNPCDialog:
         self._add_line("")
         self._add_line('line_id = -1')
         self._add_line("while True:")
-        self.parent._indent(True)
+        self.parent.indent(True)
 
         for phrase in phrases:
             triggerIndex = int(phrase["TriggerIndex"])
@@ -175,27 +174,27 @@ class ProduceNPCDialog:
                 
             line_id, phrase_text = self.process_phrase_dialog(phrase, False)
 
-            self.parent._indent(True)
+            self.parent.indent(True)
             #self._add_line(f'triggerer.begin_dialog(attachee, {line_id}) # {phrase_text}')
             self._add_line(f'line_id = {line_id} # {phrase_text}')
             self._add_line(f'print("STATE {phase_index}: line_id = {line_id}")')
             self._add_line('break')
-            self.parent._indent(False)
+            self.parent.indent(False)
             self._add_line("")
 
         self._add_line("break # while")
         self._add_line("")
-        self.parent._indent(False)
+        self.parent.indent(False)
         self._add_line('print("script_dialog line_id: {}".format(line_id))')
         self._add_line('if line_id >= 0:')
         self._add_line(f'\ttriggerer.begin_dialog(attachee, line_id)')
         self._add_line("")
         self._add_line("return # script_dialog")
-        self.parent._indent(False)
+        self.parent.indent(False)
         self._add_line("")
 
         self._add_line("def dialog_test_do(self, npc, pc, index):")
-        self.parent._indent(True)
+        self.parent.indent(True)
         #self._add_line(f'print("dialog_test_do {self.dialog_name}")')
         self._add_line("assert isinstance(npc, toee.PyObjHandle)")
         self._add_line("assert isinstance(pc, toee.PyObjHandle)")
@@ -207,7 +206,7 @@ class ProduceNPCDialog:
         for triggerIndex in sorted(self.response_triggers.keys()):
             self._add_line(f'{_iff} index == {triggerIndex}:')
             _iff = "elif"
-            self.parent._indent(True)
+            self.parent.indent(True)
             
             trigger_lines, out_lines = self.calc_trigger(triggersResponse[triggerIndex])
             for trigger_line in trigger_lines:
@@ -216,19 +215,19 @@ class ProduceNPCDialog:
             for l in out_lines:
                 self._add_line(l)
 
-            self.parent._indent(True)
+            self.parent.indent(True)
             response_text, resp_line_id = self.response_triggers[triggerIndex]
             self._add_line(f'return True # {resp_line_id}: {response_text}')
-            self.parent._indent(False)
+            self.parent.indent(False)
             self._add_line("")
-            self.parent._indent(False)
+            self.parent.indent(False)
         
         self._add_line("return False # dialog_test_do")
-        self.parent._indent(False)
+        self.parent.indent(False)
         self._add_line("")
 
         self._add_line("def dialog_action_do(self, npc, pc, index):")
-        self.parent._indent(True)
+        self.parent.indent(True)
         #self._add_line(f"# {self.dialog_name}")
         #self._add_line(f'print("dialog_test_do {self.dialog_name}")')
         self._add_line("assert isinstance(npc, toee.PyObjHandle)")
@@ -240,7 +239,7 @@ class ProduceNPCDialog:
         for actionIndex in sorted(self.response_actions.keys()):
             self._add_line(f'{_iff} index == {actionIndex}:')
             _iff = "elif"
-            self.parent._indent(True)
+            self.parent.indent(True)
             
             trigger_lines, out_lines = self.calc_actions(actions[actionIndex])
             #for trigger_line in trigger_lines:
@@ -255,22 +254,20 @@ class ProduceNPCDialog:
             response_text, resp_line_id = self.response_actions[actionIndex]
             self._add_line(f'# {resp_line_id}: {response_text}')
             self._add_line("")
-            self.parent._indent(False)
+            self.parent.indent(False)
         
         self._add_line("return # dialog_action_do")
-        self.parent._indent(False)
         self._add_line("")
-
         return
 
     def calc_trigger(self, trigger: str):
         trigger_lines = produce_scripts.condition_split(trigger)
-        out_lines = produce_scripts.transate_trigger_lines(trigger_lines, self.parent.producer_app)
+        out_lines = produce_scripts.transate_trigger_lines(trigger_lines, self.parent.doc)
         return trigger_lines, out_lines
 
     def calc_actions(self, action: str):
         action_lines = produce_scripts.condition_split(action)
-        out_lines = produce_scripts.transate_action_lines(action_lines, self.parent.producer_app)
+        out_lines = produce_scripts.transate_action_lines(action_lines, self.parent.doc)
         return action_lines, out_lines
 
     def process_phrase_dialog(self, phrase: dict, check_trigger: bool):
@@ -335,7 +332,7 @@ class ProduceNPCDialog:
 
             if "HasJournal" in response_flags:
                 journalIndex = response["JournalIndex"]
-                rums = self.parent.producer_app.journal.get_rumors_by_strref(journalIndex)
+                rums = self.parent.doc.journalFile.get_rumors_by_strref(journalIndex)
                 if effect_code:
                     effect_code = effect_code.strip()
                 effect_code = (effect_code + "; " if effect_code else "") + f'uj.journal_add({journalIndex}, {rums})'

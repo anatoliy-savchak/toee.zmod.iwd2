@@ -87,3 +87,9 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 			result = 0
 			self.vars["has_met"] = result
 		return result
+
+	def heartbeat(self, attachee, triggerer):
+		assert isinstance(attachee, toee.PyObjHandle)
+		assert isinstance(triggerer, toee.PyObjHandle)
+		# DEBUG!!
+		return toee.SKIP_DEFAULT

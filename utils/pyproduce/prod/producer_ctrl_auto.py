@@ -13,8 +13,8 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         , make_new: bool
         , dialog_file
     ):
-        template_path = doc.get_path_npcs_class_file()
-        out_path = doc.get_path_out_npcs_class_file(are_name, script_id)
+        template_path = doc.get_path_template_npcs_class_auto_file()
+        out_path = doc.get_path_out_npcs_class_auto_file(are_name, script_id)
         src_path = doc.get_path_cre(cre_name)
         super().__init__(doc, out_path=out_path, template_path=template_path, make_new=make_new, src_path=src_path)
 
@@ -33,8 +33,8 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
 
     @classmethod
     def overwrite_by_template(cls, doc, are_name, script_id):
-        template_path = doc.get_path_npcs_class_file()
-        out_path = doc.get_path_out_npcs_class_file(are_name, script_id)
+        template_path = doc.get_path_template_npcs_class_auto_file()
+        out_path = doc.get_path_out_npcs_class_auto_file(are_name, script_id)
         with open(template_path, 'r') as fs:
             with open(out_path, 'w') as fo:
                 fo.writelines(fs.readlines())
@@ -52,6 +52,8 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.setup_gear()
         self.produce_dialog()
         return
+
+    def get_ctrl_tuple(self): return (self.ctrl_name, os.path.basename(self.out_path).replace('.py', ''))
 
     def produce_npc_baseproto(self):
         proto = "const_proto_npc.PROTO_NPC_MAN"
@@ -773,4 +775,10 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         dialog_dict = common.read_file_json(fn)
         self.dialog = produce_dialog.ProduceNPCDialog(dialog_name, self, dialog_dict, self.dialog_file)
         self.dialog.produce()
+        return
+
+    def save(self):
+        super().save()
+
+        self.dialog_file.save()
         return

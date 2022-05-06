@@ -79,7 +79,11 @@ class ProducerOfFile(Producer):
         return
 
     def writeline(self, line: str = ''):
-        self.lines.append(self.current_indent + line)
+        if self.current_line_id < 0:
+            self.lines.append(self.current_indent + line)
+        else:
+            self.lines.insert(self.current_line_id, self.current_indent + line)
+            self.current_line_id += 1
         return
 
     def indent(self, forward: bool = True):

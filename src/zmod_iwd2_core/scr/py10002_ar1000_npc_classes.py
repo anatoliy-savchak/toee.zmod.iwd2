@@ -5,7 +5,7 @@ import py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, modu
 import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2
 import utils_journal as uj, inf_scripting
 #### IMPORT ####
-import py10001_ar1000_npcs_auto
+import py10001_ar1000_npc_classes_auto
 #### IMPORT END ####
 
 
@@ -21,50 +21,48 @@ def san_wield_off(attachee, triggerer): return ctrl_behaviour.san_wield_off(atta
 def ctrl(npc): return ctrl_behaviour.get_ctrl(npc.id)
 def cs(): return ctrl_daemon.gdc()
 #### NPCS ####
-MODULE_SCRIPT_ID = 10002
- 
-class Ctrl10HEDRON(py10001_ar1000_npcs_auto.Ctrl10HEDRONAuto): # 10HEDRON 
+class Ctrl_10HEDRON(py10001_ar1000_npc_classes_auto.Ctrl_10HEDRON_Auto): # 10HEDRON 
 	pass
 
-class Ctrl10ELDGUL(py10001_ar1000_npcs_auto.Ctrl10ELDGULAuto): # 10ELDGUL 
+class Ctrl_10ELDGUL(py10001_ar1000_npc_classes_auto.Ctrl_10ELDGUL_Auto): # 10ELDGUL 
 	pass
 
-class Ctrl10SCREED(py10001_ar1000_npcs_auto.Ctrl10SCREEDAuto): # 10SCREED 
+class Ctrl_10SCREED(py10001_ar1000_npc_classes_auto.Ctrl_10SCREED_Auto): # 10SCREED 
 	pass
 
-class Ctrl10REIG(py10001_ar1000_npcs_auto.Ctrl10REIGAuto): # 10REIG 
+class Ctrl_10REIG(py10001_ar1000_npc_classes_auto.Ctrl_10REIG_Auto): # 10REIG 
 	pass
 
-class Ctrl10JON(py10001_ar1000_npcs_auto.Ctrl10JONAuto): # 10JON 
+class Ctrl_10JON(py10001_ar1000_npc_classes_auto.Ctrl_10JON_Auto): # 10JON 
 	pass
 
-class Ctrl10BROGAN(py10001_ar1000_npcs_auto.Ctrl10BROGANAuto): # 10BROGAN 
+class Ctrl_10BROGAN(py10001_ar1000_npc_classes_auto.Ctrl_10BROGAN_Auto): # 10BROGAN 
 	pass
 
-class Ctrl10JORUN(py10001_ar1000_npcs_auto.Ctrl10JORUNAuto): # 10JORUN 
+class Ctrl_10JORUN(py10001_ar1000_npc_classes_auto.Ctrl_10JORUN_Auto): # 10JORUN 
 	pass
 
-class Ctrl10MALED(py10001_ar1000_npcs_auto.Ctrl10MALEDAuto): # 10MALED 
+class Ctrl_10GOB(py10001_ar1000_npc_classes_auto.Ctrl_10GOB_Auto): # 10GOB 
 	pass
 
-class Ctrl10SOLDRD(py10001_ar1000_npcs_auto.Ctrl10SOLDRDAuto): # 10SOLDRD 
+class Ctrl_10GOBD(py10001_ar1000_npc_classes_auto.Ctrl_10GOBD_Auto): # 10GOBD 
 	pass
 
-class Ctrl10GOB(py10001_ar1000_npcs_auto.Ctrl10GOBAuto): # 10GOB 
+class Ctrl_10MALED(py10001_ar1000_npc_classes_auto.Ctrl_10MALED_Auto): # 10MALED 
 	pass
 
-class Ctrl10GOBD(py10001_ar1000_npcs_auto.Ctrl10GOBDAuto): # 10GOBD 
+class Ctrl_10SOLDRD(py10001_ar1000_npc_classes_auto.Ctrl_10SOLDRD_Auto): # 10SOLDRD 
 	pass
 
-class Ctrl10GOBAR(py10001_ar1000_npcs_auto.Ctrl10GOBARAuto): # 10GOBAR 
+class Ctrl_10GOBARD(py10001_ar1000_npc_classes_auto.Ctrl_10GOBARD_Auto): # 10GOBARD 
 	pass
 
-class Ctrl10GOBARD(py10001_ar1000_npcs_auto.Ctrl10GOBARDAuto): # 10GOBARD 
+class Ctrl_10SAILRD(py10001_ar1000_npc_classes_auto.Ctrl_10SAILRD_Auto): # 10SAILRD 
 	pass
 
-class Ctrl10SAILRD(py10001_ar1000_npcs_auto.Ctrl10SAILRDAuto): # 10SAILRD 
+class Ctrl_10GOBAR(py10001_ar1000_npc_classes_auto.Ctrl_10GOBAR_Auto): # 10GOBAR 
 	pass
 
-class Ctrl10CRANDA(py10001_ar1000_npcs_auto.Ctrl10CRANDAAuto): # 10CRANDA 
+class Ctrl_10CRANDA(py10001_ar1000_npc_classes_auto.Ctrl_10CRANDA_Auto): # 10CRANDA 
 	pass
 

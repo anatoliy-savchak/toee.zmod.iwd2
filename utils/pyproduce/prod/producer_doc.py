@@ -110,10 +110,10 @@ class ProducerDoc(object):
     def get_path_cre(self, cre_name: str):
         return os.path.join(self.exp_dir, 'Creatures', cre_name + ".json")
 
-    def get_path_npcs_class_file(self):
+    def get_path_template_npcs_class_auto_file(self):
         return 'data/py06616_template.py'
 
-    def get_path_out_npcs_class_file(self, are_name: str, script_id: int = None):
+    def get_path_out_npcs_class_auto_file(self, are_name: str, script_id: int = None):
         if script_id is None:
             script_id = self.are_name_to_script_id(are_name) + 1
         name = f"py{script_id:05d}_{are_name.lower()}_npc_classes_auto.py"
@@ -125,6 +125,14 @@ class ProducerDoc(object):
         name = f"{script_id:05d}_{are_name.lower()}_npc_classes_auto.dlg"
         return os.path.join(self.core_dir, "dlg", name)
 
+    def get_path_template_npcs_class_manual_file(self):
+        return 'data/py06616_template.py'
+
+    def get_path_out_npcs_class_manual_file(self, are_name: str, script_id: int = None):
+        if script_id is None:
+            script_id = self.are_name_to_script_id(are_name) + 2
+        name = f"py{script_id:05d}_{are_name.lower()}_npc_classes.py"
+        return os.path.join(self.core_dir, "scr", name)
 
     @staticmethod
     def are_name_to_script_id(are_name: str):

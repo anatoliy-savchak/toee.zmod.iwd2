@@ -21,7 +21,9 @@ def transate_trigger_lines(trigger_lines: list, doc):
     lines = list()
     for i, trigger_line in enumerate(trigger_lines):
         #line = transate_trigger_line(trigger_line)
-        line = ScriptTran.translate_script_line(trigger_line, doc)
+        trigger_linea = trigger_line.strip()
+        print(f'Translating {trigger_linea}')
+        line = ScriptTran.translate_script_line(trigger_linea, doc)
         if i == 0:
             line = "if " + line
         else:
@@ -194,26 +196,30 @@ class ScriptTran:
                 result = whole_class(aline, doc).do_translate_script_line(aline)
                 break
 
-            func_classes = [cls for name, cls in inspect.getmembers(sys.modules[__name__], inspect.isclass) if issubclass(cls, ScriptTran) and cls.is_func_liner()]
-            if func_classes:
-                func_name, args = ScriptTran._parse_func(aline)
-                func_name_lo = func_name.lower()
-                if func_name_lo == "giveitemcreate":
-                    func_name_lo = func_name_lo
-                cls = next((cls for cls in func_classes if func_name_lo in cls.supports_func()), None)
-                if cls:
-                    o = cls(aline, doc)
-                    result = o.translate_func(func_name, args)
-                    break
-                cls = next((cls for cls in func_classes if cls.supports_funcs_default()), None)
-                if cls:
-                    o = cls(aline, doc)
-                    result = o.translate_func(func_name, args)
-                    break
+            func_name, args = ScriptTran._parse_func(aline)
+            result = ScriptTran._process_func(aline, func_name, args, doc)
             break
         if result is None:
             raise Exception("No line support!")
         return prefix + result
+
+    @staticmethod
+    def _process_func(aline, func_name, args, doc):
+        func_classes = [cls for name, cls in inspect.getmembers(sys.modules[__name__], inspect.isclass) if issubclass(cls, ScriptTran) and cls.is_func_liner()]
+        func_name_lo = func_name.lower()
+        if func_name_lo == "giveitemcreate":
+            func_name_lo = func_name_lo
+        cls = next((cls for cls in func_classes if func_name_lo in cls.supports_func()), None)
+        if cls:
+            o = cls(aline, doc)
+            result = o.translate_func(func_name, args)
+            return result
+        cls = next((cls for cls in func_classes if cls.supports_funcs_default()), None)
+        if cls:
+            o = cls(aline, doc)
+            result = o.translate_func(func_name, args)
+            return result
+        return None
 
     @staticmethod
     def _parse_func(line: str):
@@ -272,6 +278,7 @@ class ScriptTranFuncs(ScriptTran):
     def translate_func(self, func_name: str, args: list): 
         func_info = next((func_info for func_info in self.doc.commands.commands if func_info.func_name.lower() == func_name.lower()), None)
         if not func_info:
+            print(f"No info for func {func_name}")
             raise Exception(f"No info for func {func_name}")
         return self.do_translate_func(func_name, args, func_info)
     
@@ -294,11 +301,30 @@ class ScriptTranFuncs(ScriptTran):
         s = ""
         if isinstance(arg, ast.Name):
             s = self.d_translate_param_name(arg, index)
-        else:
-            if isinstance(arg.value, int):
-                s = str(arg.value)
+        elif isinstance(arg, ast.Call):
+            #c = ast.Call(arg)
+            c = arg
+            s = ScriptTran._process_func(None, c.func.id, c.args, self.doc)
+        elif isinstance(arg, ast.UnaryOp):
+            # ex: -2
+            #c = ast.UnaryOp(arg)
+            c = arg
+            m = 1
+            if isinstance(c.op, ast.USub):
+                m = -1
             else:
-                s = '"' + w + str(arg.value) + w + '"'
+                raise Exception("Unknown op!")
+            v = c.operand.value
+            v = v * m
+            s = str(v)
+        else:
+            if 'value' in dir(arg):
+                if isinstance(arg.value, int):
+                    s = str(arg.value)
+                else:
+                    s = '"' + w + str(arg.value) + w + '"'
+            else:
+                print('Wrong value!')
         return s
 
     def d_translate_param_name(self, arg: ast.Name, index: int):

@@ -5,6 +5,7 @@ import inf_commands
 import producer_sound
 import producer_are
 import classes_registry
+import produce_bcs_manager
 
 class ProducerDoc(object):
     def __init__(self
@@ -35,6 +36,7 @@ class ProducerDoc(object):
         self.producers_are = dict()
         self.classesRegistry = None
         self.make_new = False
+        self.bcsManager = None
 
         self.copy_speaches = list()
         return
@@ -51,6 +53,7 @@ class ProducerDoc(object):
         if self.commands:
             self.commands.parse_file_actions(self.get_path_actions())
             self.commands.parse_file_triggers(self.get_path_triggers())
+            self.commands.parse_file_triggers(self.get_path_identifiers())
 
         self.producerSound = producer_sound.ProducerSound(self.get_path_sounds_index()
             , file_path_sound_scheme = self.get_path_sound_scheme()
@@ -69,6 +72,8 @@ class ProducerDoc(object):
                 self.producerSound.build_and_save_schemes()
 
         self.classesRegistry = classes_registry.ClassesRegistry(self)
+
+        self.bcsManager = produce_bcs_manager.ProduceBCSManager(self)
         return
 
     def get_path_map_rumors_file(self):
@@ -79,6 +84,9 @@ class ProducerDoc(object):
 
     def get_path_triggers(self):
         return os.path.join(self.src_dir, "IDS/TRIGGER.IDS")
+
+    def get_path_identifiers(self):
+        return os.path.join(self.src_dir, "IDS/OBJECT_FIXED.IDS")
 
     def get_path_sounds_index(self):
         return os.path.join(self.exp_dir, "Sounds/sounds.json")
@@ -134,6 +142,15 @@ class ProducerDoc(object):
         name = f"py{script_id:05d}_{are_name.lower()}_npc_classes.py"
         return os.path.join(self.core_dir, "scr", name)
 
+    def get_path_template_are_bcs_file(self):
+        return 'data/bcs_template.py'
+
+    def get_path_out_are_bcs_file(self, are_name: str, script_id: int = None):
+        if script_id is None:
+            script_id = self.are_name_to_script_id(are_name) + 5
+        name = f"py{script_id:05d}_{are_name.lower()}_scripts.py"
+        return os.path.join(self.core_dir, "scr", name)
+        
     @staticmethod
     def are_name_to_script_id(are_name: str):
         return int(are_name.lower().replace("ar", ""))*10

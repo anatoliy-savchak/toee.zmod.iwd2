@@ -1,9 +1,11 @@
 import os
+import producer_base
+import produce_scripts
 
-class ProduceBCSManager(object):
-    def __init__(self, app):
-        self.app = app
-        self.dict_index = dict()
+
+class ProduceBCSManager(producer_base.Producer):
+    def __init__(self, doc):
+        super().__init__(doc)
         return
 
     def ensure_bcs(self, bcs_name: str, file_path_out: str):
@@ -13,20 +15,57 @@ class ProduceBCSManager(object):
         return
 
     def get_bc(self, bcs_name: str):
-        return self.dict_index.get(bcs_name)
+        return self.index_file.get(bcs_name)
 
-    def produce_bcs(self, bcs_name: str, file_path_out: str):
+class ProduceBCSFile(producer_base.ProducerOfFile):
+    def __init__(self, doc
+        , bcs_name: str
+        , are_name: str
+        , script_id: int
+        , make_new: bool
+    ):
+        template_path = doc.get_path_template_are_bcs_file()
+        out_path = doc.get_path_out_are_bcs_file(are_name, script_id)
+        super().__init__(doc, out_path, template_path, make_new)
+
+        self.bcs_name = bcs_name
+        self.ctrl_name = f'Script_{self.bcs_name}'
+
         fn = bcs_name + '.BAF'
-        fn = os.path.join(self.app.baf_dir, fn)
+        fn = os.path.join(self.doc.baf_dir, fn)
         with open(fn, 'r') as f:
-            script_lines = f.readlines()
+            self.script_lines = f.readlines()
+        return
 
-        fn = self.app.get_bcs_template_path()
-        if os.path.exists(file_path_out):
-            fn = file_path_out
-        with open(fn, 'r') as f:
-            lines = f.readlines()
+    def produce(self, def_name: str):
+        blocks = self._parse_blocks()
+        self.writeline(f'class {self.ctrl_name}(object):')
+        self.indent()
+        self.writeline()
+        self.writeline(f'def {def_name}(self, npc):')
+        self.indent()
 
+        self.writeline('while True:')
+        self.indent()
+        for block in blocks:
+            if_lines = self.script_lines[block["if"]["start_index"]:int(block["if"]["last_index"])+1]
+            if_lines_translated = produce_scripts.transate_trigger_lines(if_lines, self.doc)
+            for line in if_lines:
+                self.writeline(f'# {line}')
+
+            for line in if_lines_translated:
+                self.writeline(f'{line}')
+            self.indent()
+            self.writeline('break')
+            self.indent(False)
+            self.writeline('')
+        self.writeline('break # while')
+        self.indent(False)
+        self.writeline('return')
+        self.writeline('')
+        return
+
+    def _parse_blocks(self):
         # block(if_index, end_index, if_body(start_index, last_index), then(sub(start_index, end_index, has_continue), ...))
         blocks = list()
         block_started = False
@@ -38,7 +77,7 @@ class ProduceBCSManager(object):
         then_list = list()
         resp_dict = dict()
 
-        for i, line in enumerate(script_lines):
+        for i, line in enumerate(self.script_lines):
             lline = line.lower().strip()
 
             if lline == "if":
@@ -71,7 +110,8 @@ class ProduceBCSManager(object):
                 block = None
                 continue
 
-            if lline.startswith("\tresponse"):
+            if lline.startswith("response"):
+                #00MONKS5
                 if resp_started:
                     resp_started = False
                     resp_dict["end_index"] = i-1
@@ -83,6 +123,6 @@ class ProduceBCSManager(object):
                 resp_dict["resp_index"] = i
                 continue
 
-        print(blocks)
-
-        return
+            if resp_started and 'continue' in lline:
+                resp_dict["continue_index"] = i
+        return blocks

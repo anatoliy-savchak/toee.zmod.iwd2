@@ -4,6 +4,7 @@ import producer_daemon
 import producer_ctrl_auto
 import produce_dialog
 import producer_ctrl_manual
+import produce_bcs_manager
 
 class ProducerOfAre(producer_base.Producer):
     def __init__(self, doc, are_name: str, script_id: int, make_new: bool):
@@ -15,6 +16,7 @@ class ProducerOfAre(producer_base.Producer):
         self.make_new = make_new
         self.are_name = are_name
         self.script_id = script_id
+        self.bcs_counter = 0
 
         self.daemon = producer_daemon.ProducerOfDaemon(self.doc
             , self.are_name
@@ -29,6 +31,8 @@ class ProducerOfAre(producer_base.Producer):
         for actor in self.daemon.get_eligible_actor_recs():
             actor_name = actor['Name']
             actor_cre_name = actor['CREFile']
+            self.ensure_actor_bcses(actor)
+
             if not self.doc.classesRegistry.get_class_tup('class_auto', actor_cre_name):
                 self.produce_cre_class_auto(actor_cre_name)
 
@@ -82,3 +86,21 @@ class ProducerOfAre(producer_base.Producer):
 
     def produce_cre_class_inst_manual(self, actor_name: str, cre_name: str):
         return                
+
+    def ensure_actor_bcses(self, actor_dict: dict):
+        scriptGeneral = actor_dict["ScriptGeneral"]
+        if scriptGeneral:
+            if not self.doc.bcsManager.get_bc(scriptGeneral):
+                #file_path_out = self.doc.get_path_out_are_bcs_file(self.are_name)
+                #self.doc.bcsManager.produce_bcs(scriptGeneral, file_path_out)
+                make_new_bcs = True
+                if self.bcs_counter == 0:
+                    make_new_bcs = False
+                bcs_prod = produce_bcs_manager.ProduceBCSFile(self.doc, scriptGeneral, self.are_name, self.script_id + 5, make_new_bcs)
+                bcs_prod.produce('script_general')
+                bcs_prod.save()
+                self.bcs_counter += 1
+        return
+
+    def ensure_bcs(self, actor_name: str, bcs_name: str):
+        return

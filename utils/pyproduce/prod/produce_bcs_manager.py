@@ -49,7 +49,7 @@ class ProduceBCSFileAuto(producer_base.ProducerOfFile):
         self.indent()
         for block in blocks:
             if_lines = self.script_lines[block["if"]["start_index"]:int(block["if"]["last_index"])+1]
-            if_lines_translated = produce_scripts.transate_trigger_lines(if_lines, self.doc)
+            if_lines_translated = self.doc.producerOfScripts.transate_trigger_lines(if_lines)
             for line in if_lines:
                 self.writeline(f'# {line.strip()}')
 
@@ -65,7 +65,7 @@ class ProduceBCSFileAuto(producer_base.ProducerOfFile):
                     is_continue = True
                     continue
                 resp_lines_stripped.append(line)
-            resp_lines_translated = produce_scripts.transate_action_lines(resp_lines_stripped, self.doc)
+            resp_lines_translated = self.doc.producerOfScripts.transate_action_lines(resp_lines_stripped)
 
             for line in resp_lines:
                 self.writeline(f'# {line.strip()}')

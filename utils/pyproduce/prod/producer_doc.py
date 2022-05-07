@@ -6,6 +6,7 @@ import producer_sound
 import producer_are
 import classes_registry
 import produce_bcs_manager
+import produce_scripts
 
 class ProducerDoc(object):
     def __init__(self
@@ -37,6 +38,7 @@ class ProducerDoc(object):
         self.classesRegistry = None
         self.make_new = False
         self.bcsManager = None
+        self.producerOfScripts = None
 
         self.copy_speaches = list()
         return
@@ -74,6 +76,9 @@ class ProducerDoc(object):
         self.classesRegistry = classes_registry.ClassesRegistry(self)
 
         self.bcsManager = produce_bcs_manager.ProduceBCSManager(self)
+
+        path_inf_scripting = os.path.join(self.core_dir, "scr/inf_scripting.py")
+        self.producerOfScripts = produce_scripts.ProducerOfScripts(self, path_inf_scripting = path_inf_scripting)
         return
 
     def get_path_map_rumors_file(self):

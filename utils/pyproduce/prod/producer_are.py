@@ -93,12 +93,14 @@ class ProducerOfAre(producer_base.Producer):
             if not self.doc.bcsManager.get_bc(scriptGeneral):
                 #file_path_out = self.doc.get_path_out_are_bcs_file(self.are_name)
                 #self.doc.bcsManager.produce_bcs(scriptGeneral, file_path_out)
-                make_new_bcs = True
+                make_new_bcs = False
                 if self.bcs_counter == 0:
-                    make_new_bcs = False
+                    make_new_bcs = True
                 bcs_prod = produce_bcs_manager.ProduceBCSFile(self.doc, scriptGeneral, self.are_name, self.script_id + 5, make_new_bcs)
                 bcs_prod.produce('script_general')
                 bcs_prod.save()
+                t = bcs_prod.get_ctrl_tuple()
+                self.doc.bcsManager.set_bc(bcs_prod.bcs_name, t[1], t[0])
                 self.bcs_counter += 1
         return
 

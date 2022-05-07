@@ -8,14 +8,13 @@ class ProduceBCSManager(producer_base.Producer):
         super().__init__(doc)
         return
 
-    def ensure_bcs(self, bcs_name: str, file_path_out: str):
-        result = self.get_bc(bcs_name)
-        if not result:
-            pass
-        return
-
     def get_bc(self, bcs_name: str):
         return self.index_file.get(bcs_name)
+
+    def set_bc(self, bcs_name: str, file_name: str, class_name: str):
+        rec = (file_name, class_name)
+        self.index_file[bcs_name] = rec
+        return
 
 class ProduceBCSFile(producer_base.ProducerOfFile):
     def __init__(self, doc
@@ -51,12 +50,32 @@ class ProduceBCSFile(producer_base.ProducerOfFile):
             if_lines = self.script_lines[block["if"]["start_index"]:int(block["if"]["last_index"])+1]
             if_lines_translated = produce_scripts.transate_trigger_lines(if_lines, self.doc)
             for line in if_lines:
-                self.writeline(f'# {line}')
+                self.writeline(f'# {line.strip()}')
 
             for line in if_lines_translated:
                 self.writeline(f'{line}')
             self.indent()
-            self.writeline('break')
+
+            resp_lines = self.script_lines[block["then"][0]["start_index"]:int(block["then"][0]["end_index"])+1]
+            is_continue = False
+            resp_lines_stripped = list()
+            for line in resp_lines:
+                if 'continue' in line.strip().lower():
+                    is_continue = True
+                    continue
+                resp_lines_stripped.append(line)
+            resp_lines_translated = produce_scripts.transate_action_lines(resp_lines_stripped, self.doc)
+
+            for line in resp_lines:
+                self.writeline(f'# {line.strip()}')
+
+            for line in resp_lines_translated:
+                self.writeline(f'{line}')
+
+            if not is_continue:
+                self.writeline('break')
+            else:
+                self.writeline('pass # continue() - let it pass below')
             self.indent(False)
             self.writeline('')
         self.writeline('break # while')
@@ -126,3 +145,5 @@ class ProduceBCSFile(producer_base.ProducerOfFile):
             if resp_started and 'continue' in lline:
                 resp_dict["continue_index"] = i
         return blocks
+
+    def get_ctrl_tuple(self): return (self.ctrl_name, os.path.basename(self.out_path).replace('.py', ''))

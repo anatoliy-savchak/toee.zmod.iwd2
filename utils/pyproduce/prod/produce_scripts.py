@@ -19,15 +19,34 @@ def init_inf_scripting_lines():
 
 def transate_trigger_lines(trigger_lines: list, doc):
     lines = list()
+    or_left = 0
+    or_count_max = 0
     for i, trigger_line in enumerate(trigger_lines):
         #line = transate_trigger_line(trigger_line)
         trigger_linea = trigger_line.strip()
-        print(f'Translating {trigger_linea}')
-        line = ScriptTran.translate_script_line(trigger_linea, doc)
-        if i == 0:
-            line = "if " + line
-        else:
+        #print(f'Translating {trigger_linea}')
+        if str(trigger_linea).lower().startswith('or('):
+            or_left = int(trigger_linea.split('(', 2)[1].split(')', 2)[0].strip())
+            or_count_max = or_left
+            line = '('
             line = "\t and " + line
+        else:
+            line = ScriptTran.translate_script_line(trigger_linea, doc)
+
+            if i == 0:
+                line = "if " + line
+            elif or_left:
+                if or_left == or_count_max:
+                    line = "\t\t" + line
+                elif or_left == 1:
+                    line = "\t\tor " + line + ' )'
+                else:
+                    line = "\t\tor " + line
+                or_left += -1
+                if not or_left: 
+                    or_count_max = 0
+            else:
+                line = "\t and " + line
 
         if i == len(trigger_lines) - 1: # last
             line = line + ":"
@@ -41,7 +60,8 @@ def transate_action_lines(action_lines: list, doc):
     lines = list()
     for i, action_line in enumerate(action_lines):
         #line = transate_trigger_line(action_line)
-        line = ScriptTran.translate_script_line(action_line, doc)
+        action_linea = action_line.strip()
+        line = ScriptTran.translate_script_line(action_linea, doc)
         lines.append(line)
 
     return lines
@@ -224,6 +244,11 @@ class ScriptTran:
     @staticmethod
     def _parse_func(line: str):
         line = line.replace("[", '"[').replace("]", ']"')
+        if '//' in line:
+            if pos := line.index('//'):
+                line = line[:pos]
+                line = line.strip()
+            
         tree = ast.parse(line)
         f = tree.body[0].value.func
         funct_name = None

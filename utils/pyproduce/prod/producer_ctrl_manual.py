@@ -23,11 +23,11 @@ class ProducerOfCtrlManual(producer_base.ProducerOfFile):
         return
 
     def produce(self):
-        line1 = f'class {self.ctrl_name}({self.base_class["file_name"]}.{self.base_class["class_name"]})'
-        if line1 in self.lines:
+        line1 = f'class {self.ctrl_name}('
+        if next((line for line in self.lines if line1 in line), None):
             return
 
-        line2 = f': # {self.cre_name} ' # leave trailing whitespace here
+        line2 = f'{self.base_class["file_name"]}.{self.base_class["class_name"]}): # {self.cre_name} ' # leave trailing whitespace here
         self.writeline(line1 + line2)
         self.indent()
         self.writeline('pass')

@@ -148,8 +148,9 @@
     <Compile Include="zmod_iwd2_core\scr\py06111_sneak.py" />
     <Compile Include="zmod_iwd2_core\scr\py06122_cormyr_prompter.py" />
     <Compile Include="zmod_iwd2_core\scr\py06214_doors_autodestroy.py" />
-    <Compile Include="zmod_iwd2_core\scr\py10001_ar1000_npcs_auto.py" />
-    <Compile Include="zmod_iwd2_core\scr\py10002_ar1000_npcs.py" />
+    <Compile Include="zmod_iwd2_core\scr\py10001_ar1000_npc_classes_auto.py" />
+    <Compile Include="zmod_iwd2_core\scr\py10002_ar1000_npc_classes.py" />
+    <Compile Include="zmod_iwd2_core\scr\py10005_ar1000_scripts.py" />
     <Compile Include="zmod_iwd2_core\scr\random_encounter.py" />
     <Compile Include="zmod_iwd2_core\scr\Spell076 - Contagion.py" />
     <Compile Include="zmod_iwd2_core\scr\Spell090 - Cure Light Wounds.py" />
@@ -301,7 +302,7 @@
   <ItemGroup>
     <Content Include="zmod_iwd2\rules\MapList.mes" />
     <Content Include="zmod_iwd2_core\dlg\00406Game_Portal.dlg" />
-    <Content Include="zmod_iwd2_core\dlg\10001_ar1000_npcs_auto.dlg" />
+    <Content Include="zmod_iwd2_core\dlg\10001_ar1000_npc_classes_auto.dlg" />
     <Content Include="zmod_iwd2_core\mes\gamekeylog.mes" />
     <Content Include="zmod_iwd2_core\mes\gamequestlog.mes" />
     <Content Include="zmod_iwd2_core\mes\game_rd_npc_m2m.mes" />

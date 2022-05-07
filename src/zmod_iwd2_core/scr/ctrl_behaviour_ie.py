@@ -91,8 +91,8 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 	def heartbeat(self, attachee, triggerer):
 		assert isinstance(attachee, toee.PyObjHandle)
 		assert isinstance(triggerer, toee.PyObjHandle)
-		# DEBUG!!
-		return toee.SKIP_DEFAULT
+
+		return toee.RUN_DEFAULT
 
 	def setup_bcs(self):
 		self.vars["bcs_general"] = None

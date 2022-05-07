@@ -8,8 +8,8 @@ class EncodeAsDict(JSONEncoder):
 def tDict(**kwargs):
     return dict(kwargs)
 
-def lines_find(lines: list, after: str):
-    return next((index for index, line in enumerate(lines) if after in line), None)
+def lines_find(lines: list, after: str, after_line_id: int = None):
+    return next((index for index, line in enumerate(lines) if (after_line_id is None or index > after_line_id) and after in line), None)
 
 def lines_after_cutoff(lines: list, after: str, add_more_line_count: int = 0):
     index = lines_find(lines, after)
@@ -19,7 +19,9 @@ def lines_after_cutoff(lines: list, after: str, add_more_line_count: int = 0):
 
 def lines_after_before_cutoff(lines: list, after: str, before: str):
     index_after = lines_find(lines, after)
-    index_before = lines_find(lines, before)
+    if index_after is None:
+        return None
+    index_before = lines_find(lines, before, after_line_id = index_after)
     if not index_after is None and not index_before is None:
         if index_after + 1 < index_before:
             del lines[index_after+1:index_before]

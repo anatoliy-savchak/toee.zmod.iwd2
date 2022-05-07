@@ -48,6 +48,7 @@ class ProducerOfAre(producer_base.Producer):
                 self.produce_cre_class_inst_manual(actor_name, actor_cre_name)
 
         self.daemon.produce()
+        self.daemon.save()
         return
 
     def produce_start(self):

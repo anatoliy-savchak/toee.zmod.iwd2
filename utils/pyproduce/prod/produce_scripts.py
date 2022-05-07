@@ -24,7 +24,7 @@ def transate_trigger_lines(trigger_lines: list, doc):
     for i, trigger_line in enumerate(trigger_lines):
         #line = transate_trigger_line(trigger_line)
         trigger_linea = trigger_line.strip()
-        #print(f'Translating {trigger_linea}')
+        print(f'Translating {trigger_linea}')
         if str(trigger_linea).lower().startswith('or('):
             or_left = int(trigger_linea.split('(', 2)[1].split(')', 2)[0].strip())
             or_count_max = or_left
@@ -346,6 +346,11 @@ class ScriptTranFuncs(ScriptTran):
             if 'value' in dir(arg):
                 if isinstance(arg.value, int):
                     s = str(arg.value)
+                elif isinstance(arg.value, str):
+                    if arg.value and arg.value.startswith('['):
+                        s = '"' + w + str(arg.value) + w + '"'
+                    else:
+                        s = '"\'' + w + str(arg.value) + w + '\'"'
                 else:
                     s = '"' + w + str(arg.value) + w + '"'
             else:

@@ -13,7 +13,7 @@
 14 GetItem(S:Object*,O:Target*)
 15 GiveItem(S:Object*,O:Target*)
 16 GiveOrder(O:Object*,I:Order*)
-17 Help()
+17 Help(O:Object*)
 18 Hide()
 19 JoinParty()
 20 LayHands(O:Target*)

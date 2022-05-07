@@ -28,6 +28,7 @@ class ProduceBCSFile(producer_base.ProducerOfFile):
         super().__init__(doc, out_path, template_path, make_new)
 
         self.bcs_name = bcs_name
+        self.are_name = are_name
         self.ctrl_name = f'Script_{self.bcs_name}'
 
         fn = bcs_name + '.BAF'
@@ -36,12 +37,12 @@ class ProduceBCSFile(producer_base.ProducerOfFile):
             self.script_lines = f.readlines()
         return
 
-    def produce(self, def_name: str):
+    def produce(self, def_name: str, cre_name: str = None, actor_name: str = None, script_code: str = None):
         blocks = self._parse_blocks()
         self.writeline(f'class {self.ctrl_name}(object):')
         self.indent()
-        self.writeline()
-        self.writeline(f'def {def_name}(self, npc):')
+        self.writeline(f'# {self.are_name}{str((" "+cre_name) if cre_name else "")}{str((" "+actor_name) if actor_name else "")}{str((" "+script_code) if script_code else "")}')
+        self.writeline(f'def {def_name}(self):')
         self.indent()
 
         self.writeline('while True:')

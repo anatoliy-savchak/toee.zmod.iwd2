@@ -1,0 +1,111 @@
+{
+    "func_name": "SpellWait",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Spell",
+                "arg_ids": "Spell",
+                "arg_line": "I:Spell*Spell"
+            },
+            "values": [
+                {
+                    "src": "CLERIC_CLOUD_OF_PESTILENCE",
+                    "used_count": 1,
+                    "value": "\"CLERIC_CLOUD_OF_PESTILENCE\"",
+                    "first_occurence": "AR5000.50THVARA.01_50Thvara_02"
+                },
+                {
+                    "src": "WIZARD_ANIMATE_DEAD",
+                    "used_count": 1,
+                    "value": "\"WIZARD_ANIMATE_DEAD\"",
+                    "first_occurence": "AR5101.51ZAMA.13_51Zama_01"
+                },
+                {
+                    "src": "CLERIC_GIANT_INSECT",
+                    "used_count": 1,
+                    "value": "\"CLERIC_GIANT_INSECT\"",
+                    "first_occurence": "AR5101.51ZAMA.13_51Zama_01"
+                },
+                {
+                    "src": "WIZARD_POLYMORPH_SELF",
+                    "used_count": 1,
+                    "value": "\"WIZARD_POLYMORPH_SELF\"",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
+                    "src": "WIZARD_EMOTION_HOPELESSNESS",
+                    "used_count": 2,
+                    "value": "\"WIZARD_EMOTION_HOPELESSNESS\"",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
+                    "src": "WIZARD_DISINTEGRATE",
+                    "used_count": 1,
+                    "value": "\"WIZARD_DISINTEGRATE\"",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
+                    "src": "WIZARD_BANISHMENT",
+                    "used_count": 1,
+                    "value": "\"WIZARD_BANISHMENT\"",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
+                    "src": "CLERIC_DIVINE_SHELL",
+                    "used_count": 1,
+                    "value": "\"CLERIC_DIVINE_SHELL\"",
+                    "first_occurence": "AR6001.60ISELOR.Iselore"
+                },
+                {
+                    "src": "CLERIC_IMPERVIOUS_SANCTITY_OF_MIND",
+                    "used_count": 1,
+                    "value": "\"CLERIC_IMPERVIOUS_SANCTITY_OF_MIND\"",
+                    "first_occurence": "AR6001.60ISELOR.Iselore"
+                },
+                {
+                    "src": "CLERIC_AURA_OF_VITALITY",
+                    "used_count": 1,
+                    "value": "\"CLERIC_AURA_OF_VITALITY\"",
+                    "first_occurence": "AR6001.60ISELOR.Iselore"
+                },
+                {
+                    "src": "WIZARD_DIMENSION_DOOR",
+                    "used_count": 8,
+                    "value": "\"WIZARD_DIMENSION_DOOR\"",
+                    "first_occurence": "AR6051.60CCABAL.Coiled_Cabal1"
+                },
+                {
+                    "src": "WIZARD_FIRESHIELD_RED",
+                    "used_count": 22,
+                    "value": "\"WIZARD_FIRESHIELD_RED\"",
+                    "first_occurence": "AR6103.61EFREET.03_Efreeti_01"
+                },
+                {
+                    "src": "WIZARD_STONESKIN",
+                    "used_count": 1,
+                    "value": "\"WIZARD_STONESKIN\"",
+                    "first_occurence": "AR6200.62MDARF.Mdarfein"
+                },
+                {
+                    "src": "WIZARD_IMPROVED_INVISIBILITY",
+                    "used_count": 1,
+                    "value": "\"WIZARD_IMPROVED_INVISIBILITY\"",
+                    "first_occurence": "AR6200.62MDARF.Mdarfein"
+                },
+                {
+                    "src": "WIZARD_GLOBE_OF_INVULNERABILITY",
+                    "used_count": 1,
+                    "value": "\"WIZARD_GLOBE_OF_INVULNERABILITY\"",
+                    "first_occurence": "AR6200.62MDARF.Mdarfein"
+                },
+                {
+                    "src": "CLERIC_INVISIBILITY_PURGE",
+                    "used_count": 1,
+                    "value": "\"CLERIC_INVISIBILITY_PURGE\"",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                }
+            ]
+        }
+    ]
+}

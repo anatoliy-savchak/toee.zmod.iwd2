@@ -1,0 +1,21 @@
+{
+    "func_name": "IsPathCriticalObject",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 20,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR6304.63GLBXP.AL_GlabrezuGuard1"
+                }
+            ]
+        }
+    ]
+}

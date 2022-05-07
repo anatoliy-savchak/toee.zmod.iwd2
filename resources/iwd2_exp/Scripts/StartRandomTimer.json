@@ -1,0 +1,383 @@
+{
+    "func_name": "StartRandomTimer",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "TimerID",
+                "arg_ids": "",
+                "arg_line": "I:TimerID*"
+            },
+            "values": [
+                {
+                    "src": "19",
+                    "used_count": 540,
+                    "value": "19",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "18",
+                    "used_count": 527,
+                    "value": "18",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "21",
+                    "used_count": 100,
+                    "value": "21",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "20",
+                    "used_count": 4,
+                    "value": "20",
+                    "first_occurence": "AR1200.12CAULDE.Caulder"
+                },
+                {
+                    "src": "5",
+                    "used_count": 16,
+                    "value": "5",
+                    "first_occurence": "AR1200.12KADENC.Kadence"
+                },
+                {
+                    "src": "4",
+                    "used_count": 194,
+                    "value": "4",
+                    "first_occurence": "AR1200.12NILES.Niles"
+                },
+                {
+                    "src": "22",
+                    "used_count": 16,
+                    "value": "22",
+                    "first_occurence": "AR3000.30ORCTRU.16_OrcTru"
+                },
+                {
+                    "src": "3",
+                    "used_count": 3,
+                    "value": "3",
+                    "first_occurence": "AR3002.30OROTAS.04_OroTas"
+                },
+                {
+                    "src": "100",
+                    "used_count": 9,
+                    "value": "100",
+                    "first_occurence": "AR4000.40GIAFOM.03_Fomorian_01"
+                },
+                {
+                    "src": "1",
+                    "used_count": 147,
+                    "value": "1",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "104",
+                    "used_count": 3,
+                    "value": "104",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "103",
+                    "used_count": 3,
+                    "value": "103",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "105",
+                    "used_count": 3,
+                    "value": "105",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "42",
+                    "used_count": 13,
+                    "value": "42",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "16",
+                    "used_count": 1,
+                    "value": "16",
+                    "first_occurence": "AR6101.61PRISF2.04_FemalePrisoner_07"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "MinTime",
+                "arg_ids": "",
+                "arg_line": "I:MinTime*"
+            },
+            "values": [
+                {
+                    "src": "2",
+                    "used_count": 340,
+                    "value": "2",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "3",
+                    "used_count": 34,
+                    "value": "3",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "10",
+                    "used_count": 519,
+                    "value": "10",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "1",
+                    "used_count": 250,
+                    "value": "1",
+                    "first_occurence": "AR1000.10JON.Jon"
+                },
+                {
+                    "src": "20",
+                    "used_count": 41,
+                    "value": "20",
+                    "first_occurence": "AR1000.10GOB.1000_Goblin_01"
+                },
+                {
+                    "src": "5",
+                    "used_count": 200,
+                    "value": "5",
+                    "first_occurence": "AR1003.10GOHAR.Gohar Tavernkeep"
+                },
+                {
+                    "src": "35",
+                    "used_count": 47,
+                    "value": "35",
+                    "first_occurence": "AR1003.10GOHAR.Gohar Tavernkeep"
+                },
+                {
+                    "src": "8",
+                    "used_count": 31,
+                    "value": "8",
+                    "first_occurence": "AR1003.10GUTHE.Guthewulfe Henghelm"
+                },
+                {
+                    "src": "6",
+                    "used_count": 29,
+                    "value": "6",
+                    "first_occurence": "AR1003.10GUTHE.Guthewulfe Henghelm"
+                },
+                {
+                    "src": "15",
+                    "used_count": 26,
+                    "value": "15",
+                    "first_occurence": "AR1004.10CATF.Cat_1"
+                },
+                {
+                    "src": "25",
+                    "used_count": 18,
+                    "value": "25",
+                    "first_occurence": "AR1100.11GHILLE.Ghille-Laider"
+                },
+                {
+                    "src": "40",
+                    "used_count": 1,
+                    "value": "40",
+                    "first_occurence": "AR1103.11MAXIEL.Maxiel of Silverymoo"
+                },
+                {
+                    "src": "13",
+                    "used_count": 6,
+                    "value": "13",
+                    "first_occurence": "AR1103.11VALIN.Valin"
+                },
+                {
+                    "src": "24",
+                    "used_count": 1,
+                    "value": "24",
+                    "first_occurence": "AR1103.11URBEKS.Urbek"
+                },
+                {
+                    "src": "14",
+                    "used_count": 1,
+                    "value": "14",
+                    "first_occurence": "AR1104.11CAHLHY.Cahl-Hyred"
+                },
+                {
+                    "src": "9",
+                    "used_count": 12,
+                    "value": "9",
+                    "first_occurence": "AR1200.12DRILL.Drill_Sergeant_West"
+                },
+                {
+                    "src": "4",
+                    "used_count": 4,
+                    "value": "4",
+                    "first_occurence": "AR3002.30OROTAS.04_OroTas"
+                },
+                {
+                    "src": "30",
+                    "used_count": 3,
+                    "value": "30",
+                    "first_occurence": "AR4000.40GIAFOM.03_Fomorian_01"
+                },
+                {
+                    "src": "7",
+                    "used_count": 6,
+                    "value": "7",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "70",
+                    "used_count": 3,
+                    "value": "70",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "16",
+                    "used_count": 7,
+                    "value": "16",
+                    "first_occurence": "AR6600.66HAGOB1.HalfGoblin"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "MaxTime",
+                "arg_ids": "",
+                "arg_line": "I:MaxTime*"
+            },
+            "values": [
+                {
+                    "src": "5",
+                    "used_count": 223,
+                    "value": "5",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "6",
+                    "used_count": 2,
+                    "value": "6",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "15",
+                    "used_count": 673,
+                    "value": "15",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "30",
+                    "used_count": 47,
+                    "value": "30",
+                    "first_occurence": "AR1000.10GOB.1000_Goblin_01"
+                },
+                {
+                    "src": "10",
+                    "used_count": 190,
+                    "value": "10",
+                    "first_occurence": "AR1003.10GOHAR.Gohar Tavernkeep"
+                },
+                {
+                    "src": "45",
+                    "used_count": 48,
+                    "value": "45",
+                    "first_occurence": "AR1003.10GOHAR.Gohar Tavernkeep"
+                },
+                {
+                    "src": "12",
+                    "used_count": 17,
+                    "value": "12",
+                    "first_occurence": "AR1003.10GUTHE.Guthewulfe Henghelm"
+                },
+                {
+                    "src": "18",
+                    "used_count": 12,
+                    "value": "18",
+                    "first_occurence": "AR1003.10GUTHE.Guthewulfe Henghelm"
+                },
+                {
+                    "src": "25",
+                    "used_count": 12,
+                    "value": "25",
+                    "first_occurence": "AR1004.10CATF.Cat_1"
+                },
+                {
+                    "src": "26",
+                    "used_count": 1,
+                    "value": "26",
+                    "first_occurence": "AR1103.11URBEKS.Urbek"
+                },
+                {
+                    "src": "16",
+                    "used_count": 4,
+                    "value": "16",
+                    "first_occurence": "AR1104.11CAHLHY.Cahl-Hyred"
+                },
+                {
+                    "src": "35",
+                    "used_count": 15,
+                    "value": "35",
+                    "first_occurence": "AR1200.12SWIFT.Swift_Thomas"
+                },
+                {
+                    "src": "20",
+                    "used_count": 71,
+                    "value": "20",
+                    "first_occurence": "AR1200.12CAULDE.Caulder"
+                },
+                {
+                    "src": "11",
+                    "used_count": 21,
+                    "value": "11",
+                    "first_occurence": "AR1200.12DRILL.Drill_Sergeant_West"
+                },
+                {
+                    "src": "7",
+                    "used_count": 6,
+                    "value": "7",
+                    "first_occurence": "AR1200.12TABARD.Tabard_Mooncalf"
+                },
+                {
+                    "src": "8",
+                    "used_count": 17,
+                    "value": "8",
+                    "first_occurence": "AR3000.30OGRGAR.17_OgrGar"
+                },
+                {
+                    "src": "4",
+                    "used_count": 184,
+                    "value": "4",
+                    "first_occurence": "AR3001.30GOBMOK.02_GobMok"
+                },
+                {
+                    "src": "60",
+                    "used_count": 3,
+                    "value": "60",
+                    "first_occurence": "AR4000.40GIAFOM.03_Fomorian_01"
+                },
+                {
+                    "src": "14",
+                    "used_count": 6,
+                    "value": "14",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "100",
+                    "used_count": 3,
+                    "value": "100",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "3",
+                    "used_count": 17,
+                    "value": "3",
+                    "first_occurence": "AR5000.50NYM.06_50Nym_01"
+                },
+                {
+                    "src": "24",
+                    "used_count": 7,
+                    "value": "24",
+                    "first_occurence": "AR6600.66HAGOB1.HalfGoblin"
+                }
+            ]
+        }
+    ]
+}

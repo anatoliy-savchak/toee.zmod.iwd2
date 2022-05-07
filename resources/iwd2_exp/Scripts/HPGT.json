@@ -1,0 +1,61 @@
+{
+    "func_name": "HPGT",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 7,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 30,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Hit Points",
+                "arg_ids": "",
+                "arg_line": "I:Hit Points*"
+            },
+            "values": [
+                {
+                    "src": "3",
+                    "used_count": 2,
+                    "value": "3",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "6",
+                    "used_count": 1,
+                    "value": "6",
+                    "first_occurence": "AR3000.30ENNELI.Ennelia"
+                },
+                {
+                    "src": "1",
+                    "used_count": 30,
+                    "value": "1",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "10",
+                    "used_count": 4,
+                    "value": "10",
+                    "first_occurence": "AR5101.51OCH.09_51OCH_01"
+                }
+            ]
+        }
+    ]
+}

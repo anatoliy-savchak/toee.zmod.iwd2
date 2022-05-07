@@ -201,3 +201,12 @@ class ProducerDoc(object):
             prod = self.acquire_are_producer(are_name)
             prod.produce()
         return
+
+    def scan_all_ares(self):
+        dir = os.path.join(self.exp_dir, 'Areas')
+        for dn in os.listdir(dir):
+            if not os.path.isdir(os.path.join(dir, dn)): continue
+            are_name = dn
+            prod = self.acquire_are_producer(are_name)
+            prod.scan()
+        return

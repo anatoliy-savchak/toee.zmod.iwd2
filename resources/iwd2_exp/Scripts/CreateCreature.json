@@ -1,0 +1,957 @@
+{
+    "func_name": "CreateCreature",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "NewObject",
+                "arg_ids": "",
+                "arg_line": "S:NewObject*"
+            },
+            "values": [
+                {
+                    "src": "\"11Veira\"",
+                    "used_count": 1,
+                    "value": "\"'11Veira'\"",
+                    "first_occurence": "AR1105.None.None"
+                },
+                {
+                    "src": "\"DynoKeg\"",
+                    "used_count": 3,
+                    "value": "\"'DynoKeg'\"",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                },
+                {
+                    "src": "\"41Zack\"",
+                    "used_count": 7,
+                    "value": "\"'41Zack'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"40betBor\"",
+                    "used_count": 2,
+                    "value": "\"'40betBor'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"40CULTWW\"",
+                    "used_count": 12,
+                    "value": "\"'40CULTWW'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"40BDCULT\"",
+                    "used_count": 12,
+                    "value": "\"'40BDCULT'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"40spiPhS\"",
+                    "used_count": 2,
+                    "value": "\"'40spiPhS'\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "\"41sSnk\"",
+                    "used_count": 1,
+                    "value": "\"'41sSnk'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sWolf\"",
+                    "used_count": 1,
+                    "value": "\"'41sWolf'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sSklar\"",
+                    "used_count": 1,
+                    "value": "\"'41sSklar'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sInv\"",
+                    "used_count": 1,
+                    "value": "\"'41sInv'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sChZmb\"",
+                    "used_count": 1,
+                    "value": "\"'41sChZmb'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sOty\"",
+                    "used_count": 1,
+                    "value": "\"'41sOty'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sDji\"",
+                    "used_count": 1,
+                    "value": "\"'41sDji'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sEfret\"",
+                    "used_count": 1,
+                    "value": "\"'41sEfret'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sZmbLo\"",
+                    "used_count": 1,
+                    "value": "\"'41sZmbLo'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"00sAbisW\"",
+                    "used_count": 1,
+                    "value": "\"'00sAbisW'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sCrn\"",
+                    "used_count": 1,
+                    "value": "\"'41sCrn'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sShm\"",
+                    "used_count": 1,
+                    "value": "\"'41sShm'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sGdnd\"",
+                    "used_count": 1,
+                    "value": "\"'41sGdnd'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sCrD\"",
+                    "used_count": 1,
+                    "value": "\"'41sCrD'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sBwht\"",
+                    "used_count": 1,
+                    "value": "\"'41sBwht'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sCyc\"",
+                    "used_count": 1,
+                    "value": "\"'41sCyc'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sAbgd\"",
+                    "used_count": 2,
+                    "value": "\"'41sAbgd'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sFrGnt\"",
+                    "used_count": 1,
+                    "value": "\"'41sFrGnt'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sFdnd\"",
+                    "used_count": 1,
+                    "value": "\"'41sFdnd'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sEar20\"",
+                    "used_count": 1,
+                    "value": "\"'41sEar20'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sSdw21\"",
+                    "used_count": 2,
+                    "value": "\"'41sSdw21'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sEar24\"",
+                    "used_count": 1,
+                    "value": "\"'41sEar24'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sAir24\"",
+                    "used_count": 1,
+                    "value": "\"'41sAir24'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sWat24\"",
+                    "used_count": 1,
+                    "value": "\"'41sWat24'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sFir24\"",
+                    "used_count": 1,
+                    "value": "\"'41sFir24'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sShCrn\"",
+                    "used_count": 1,
+                    "value": "\"'41sShCrn'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41sShGlb\"",
+                    "used_count": 2,
+                    "value": "\"'41sShGlb'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"53ViDrFi\"",
+                    "used_count": 1,
+                    "value": "\"'53ViDrFi'\"",
+                    "first_occurence": "AR5301.None.None"
+                },
+                {
+                    "src": "\"53ViDrWi\"",
+                    "used_count": 1,
+                    "value": "\"'53ViDrWi'\"",
+                    "first_occurence": "AR5301.None.None"
+                },
+                {
+                    "src": "\"53ViDrPr\"",
+                    "used_count": 1,
+                    "value": "\"'53ViDrPr'\"",
+                    "first_occurence": "AR5301.None.None"
+                },
+                {
+                    "src": "\"53SpiCra\"",
+                    "used_count": 4,
+                    "value": "\"'53SpiCra'\"",
+                    "first_occurence": "AR5301.53CRADDR.Cradoldrider"
+                },
+                {
+                    "src": "\"53VIDRW2\"",
+                    "used_count": 52,
+                    "value": "\"'53VIDRW2'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"53VIDRP2\"",
+                    "used_count": 65,
+                    "value": "\"'53VIDRP2'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"53VIDRF2\"",
+                    "used_count": 52,
+                    "value": "\"'53VIDRF2'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"53GOLIMH\"",
+                    "used_count": 6,
+                    "value": "\"'53GOLIMH'\"",
+                    "first_occurence": "AR5301.53GOLIMX.53GolImX"
+                },
+                {
+                    "src": "\"60ViFang\"",
+                    "used_count": 5,
+                    "value": "\"'60ViFang'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"60ViprGo\"",
+                    "used_count": 5,
+                    "value": "\"'60ViprGo'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"61feyr\"",
+                    "used_count": 6,
+                    "value": "\"'61feyr'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"61rYHPri\"",
+                    "used_count": 6,
+                    "value": "\"'61rYHPri'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"61YASumm\"",
+                    "used_count": 1,
+                    "value": "\"'61YASumm'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"61Jaguar\"",
+                    "used_count": 1,
+                    "value": "\"'61Jaguar'\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"61xEfree\"",
+                    "used_count": 1,
+                    "value": "\"'61xEfree'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61xFirpe\"",
+                    "used_count": 6,
+                    "value": "\"'61xFirpe'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61xTroll\"",
+                    "used_count": 5,
+                    "value": "\"'61xTroll'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61xHelho\"",
+                    "used_count": 5,
+                    "value": "\"'61xHelho'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61xMepLa\"",
+                    "used_count": 3,
+                    "value": "\"'61xMepLa'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61mepLav\"",
+                    "used_count": 9,
+                    "value": "\"'61mepLav'\"",
+                    "first_occurence": "AR6104.61MEPLAV.04_LavaMephit_02"
+                },
+                {
+                    "src": "\"63GlabSL\"",
+                    "used_count": 1,
+                    "value": "\"'63GlabSL'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"63GlabSR\"",
+                    "used_count": 1,
+                    "value": "\"'63GlabSR'\"",
+                    "first_occurence": "AR6305.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "ScriptName",
+                "arg_ids": "",
+                "arg_line": "S:ScriptName*"
+            },
+            "values": [
+                {
+                    "src": "\"\"",
+                    "used_count": 199,
+                    "value": "\"''\"",
+                    "first_occurence": "AR1105.None.None"
+                },
+                {
+                    "src": "\"41Zack\"",
+                    "used_count": 7,
+                    "value": "\"'41Zack'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"40betBor\"",
+                    "used_count": 2,
+                    "value": "\"'40betBor'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"40CULTWW\"",
+                    "used_count": 12,
+                    "value": "\"'40CULTWW'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"40BDCULT\"",
+                    "used_count": 12,
+                    "value": "\"'40BDCULT'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"40spiPhS\"",
+                    "used_count": 2,
+                    "value": "\"'40spiPhS'\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "\"B_S_C\"",
+                    "used_count": 30,
+                    "value": "\"'B_S_C'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"61feyr\"",
+                    "used_count": 6,
+                    "value": "\"'61feyr'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"Halfbreed1\"",
+                    "used_count": 6,
+                    "value": "\"'Halfbreed1'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"Summoner\"",
+                    "used_count": 1,
+                    "value": "\"'Summoner'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"Efreeti_01\"",
+                    "used_count": 1,
+                    "value": "\"'Efreeti_01'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Flamewalker_02\"",
+                    "used_count": 1,
+                    "value": "\"'Flamewalker_02'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Flamewalker_03\"",
+                    "used_count": 1,
+                    "value": "\"'Flamewalker_03'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Flamewalker_04\"",
+                    "used_count": 1,
+                    "value": "\"'Flamewalker_04'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Flamewalker_05\"",
+                    "used_count": 1,
+                    "value": "\"'Flamewalker_05'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Flamewalker_06\"",
+                    "used_count": 1,
+                    "value": "\"'Flamewalker_06'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Flamewalker_07\"",
+                    "used_count": 1,
+                    "value": "\"'Flamewalker_07'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Troll_08\"",
+                    "used_count": 1,
+                    "value": "\"'Troll_08'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Troll_09\"",
+                    "used_count": 1,
+                    "value": "\"'Troll_09'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Troll_10\"",
+                    "used_count": 1,
+                    "value": "\"'Troll_10'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Troll_11\"",
+                    "used_count": 1,
+                    "value": "\"'Troll_11'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Troll_12\"",
+                    "used_count": 1,
+                    "value": "\"'Troll_12'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"HellHound_13\"",
+                    "used_count": 1,
+                    "value": "\"'HellHound_13'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"HellHound_14\"",
+                    "used_count": 1,
+                    "value": "\"'HellHound_14'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"HellHound_15\"",
+                    "used_count": 1,
+                    "value": "\"'HellHound_15'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"HellHound_16\"",
+                    "used_count": 1,
+                    "value": "\"'HellHound_16'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"HellHound_17\"",
+                    "used_count": 1,
+                    "value": "\"'HellHound_17'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"LavaMephit_18\"",
+                    "used_count": 1,
+                    "value": "\"'LavaMephit_18'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"LavaMephit_19\"",
+                    "used_count": 1,
+                    "value": "\"'LavaMephit_19'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"LavaMephit_20\"",
+                    "used_count": 1,
+                    "value": "\"'LavaMephit_20'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"MyBuddy\"",
+                    "used_count": 9,
+                    "value": "\"'MyBuddy'\"",
+                    "first_occurence": "AR6104.61MEPLAV.04_LavaMephit_02"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "P",
+                "arg_name": "Location",
+                "arg_ids": "",
+                "arg_line": "P:Location*"
+            },
+            "values": [
+                {
+                    "src": "\"[459.199]\"",
+                    "used_count": 1,
+                    "value": "\"[459.199]\"",
+                    "first_occurence": "AR1105.None.None"
+                },
+                {
+                    "src": "\"[-1.-1]\"",
+                    "used_count": 50,
+                    "value": "\"[-1.-1]\"",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                },
+                {
+                    "src": "\"[1375.1503]\"",
+                    "used_count": 1,
+                    "value": "\"[1375.1503]\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"[415.1759]\"",
+                    "used_count": 1,
+                    "value": "\"[415.1759]\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"[540.100]\"",
+                    "used_count": 1,
+                    "value": "\"[540.100]\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "\"[297.297]\"",
+                    "used_count": 1,
+                    "value": "\"[297.297]\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "\"[415.159]\"",
+                    "used_count": 1,
+                    "value": "\"[415.159]\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "\"[64.2560]\"",
+                    "used_count": 2,
+                    "value": "\"[64.2560]\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "\"[1120.2144]\"",
+                    "used_count": 2,
+                    "value": "\"[1120.2144]\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "\"[2975.1245]\"",
+                    "used_count": 2,
+                    "value": "\"[2975.1245]\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"[2180.2580]\"",
+                    "used_count": 30,
+                    "value": "\"[2180.2580]\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"[180.1390]\"",
+                    "used_count": 3,
+                    "value": "\"[180.1390]\"",
+                    "first_occurence": "AR5301.None.None"
+                },
+                {
+                    "src": "\"[2300.1330]\"",
+                    "used_count": 13,
+                    "value": "\"[2300.1330]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[2540.1340]\"",
+                    "used_count": 13,
+                    "value": "\"[2540.1340]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[2420.1160]\"",
+                    "used_count": 13,
+                    "value": "\"[2420.1160]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[2480.1110]\"",
+                    "used_count": 13,
+                    "value": "\"[2480.1110]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[2900.1210]\"",
+                    "used_count": 13,
+                    "value": "\"[2900.1210]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[3230.1380]\"",
+                    "used_count": 13,
+                    "value": "\"[3230.1380]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[2630.910]\"",
+                    "used_count": 13,
+                    "value": "\"[2630.910]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[2670.1000]\"",
+                    "used_count": 13,
+                    "value": "\"[2670.1000]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[2780.720]\"",
+                    "used_count": 13,
+                    "value": "\"[2780.720]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[3050.1000]\"",
+                    "used_count": 13,
+                    "value": "\"[3050.1000]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[2980.650]\"",
+                    "used_count": 13,
+                    "value": "\"[2980.650]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[3200.820]\"",
+                    "used_count": 13,
+                    "value": "\"[3200.820]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[3400.900]\"",
+                    "used_count": 13,
+                    "value": "\"[3400.900]\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[1475.1945]\"",
+                    "used_count": 6,
+                    "value": "\"[1475.1945]\"",
+                    "first_occurence": "AR5301.53GOLIMX.53GolImX"
+                },
+                {
+                    "src": "\"[2295.280]\"",
+                    "used_count": 1,
+                    "value": "\"[2295.280]\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"[2906.2076]\"",
+                    "used_count": 1,
+                    "value": "\"[2906.2076]\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"[3552.224]\"",
+                    "used_count": 1,
+                    "value": "\"[3552.224]\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"[1312.2718]\"",
+                    "used_count": 1,
+                    "value": "\"[1312.2718]\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"[2200.1820]\"",
+                    "used_count": 6,
+                    "value": "\"[2200.1820]\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"[1500.2620]\"",
+                    "used_count": 1,
+                    "value": "\"[1500.2620]\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"[352.1632]\"",
+                    "used_count": 1,
+                    "value": "\"[352.1632]\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"[3000.1400]\"",
+                    "used_count": 1,
+                    "value": "\"[3000.1400]\"",
+                    "first_occurence": "AR6103.None.None"
+                },
+                {
+                    "src": "\"[2920.1000]\"",
+                    "used_count": 1,
+                    "value": "\"[2920.1000]\"",
+                    "first_occurence": "AR6103.None.None"
+                },
+                {
+                    "src": "\"[1050.2010]\"",
+                    "used_count": 1,
+                    "value": "\"[1050.2010]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[2640.1216]\"",
+                    "used_count": 1,
+                    "value": "\"[2640.1216]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[2560.1410]\"",
+                    "used_count": 1,
+                    "value": "\"[2560.1410]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[2530.1480]\"",
+                    "used_count": 1,
+                    "value": "\"[2530.1480]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[2430.1480]\"",
+                    "used_count": 1,
+                    "value": "\"[2430.1480]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[2350.1530]\"",
+                    "used_count": 1,
+                    "value": "\"[2350.1530]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[2980.1340]\"",
+                    "used_count": 1,
+                    "value": "\"[2980.1340]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1085.1795]\"",
+                    "used_count": 1,
+                    "value": "\"[1085.1795]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1420.1960]\"",
+                    "used_count": 1,
+                    "value": "\"[1420.1960]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1710.1380]\"",
+                    "used_count": 1,
+                    "value": "\"[1710.1380]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1090.1670]\"",
+                    "used_count": 1,
+                    "value": "\"[1090.1670]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1500.1890]\"",
+                    "used_count": 1,
+                    "value": "\"[1500.1890]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1060.2130]\"",
+                    "used_count": 1,
+                    "value": "\"[1060.2130]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1220.2140]\"",
+                    "used_count": 1,
+                    "value": "\"[1220.2140]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1360.2195]\"",
+                    "used_count": 1,
+                    "value": "\"[1360.2195]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1700.960]\"",
+                    "used_count": 1,
+                    "value": "\"[1700.960]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1925.970]\"",
+                    "used_count": 1,
+                    "value": "\"[1925.970]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[520.570]\"",
+                    "used_count": 1,
+                    "value": "\"[520.570]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[3250.2330]\"",
+                    "used_count": 1,
+                    "value": "\"[3250.2330]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1925.1775]\"",
+                    "used_count": 1,
+                    "value": "\"[1925.1775]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[806.547]\"",
+                    "used_count": 1,
+                    "value": "\"[806.547]\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"[1178.434]\"",
+                    "used_count": 1,
+                    "value": "\"[1178.434]\"",
+                    "first_occurence": "AR6305.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Face",
+                "arg_ids": "",
+                "arg_line": "I:Face*"
+            },
+            "values": [
+                {
+                    "src": "8",
+                    "used_count": 34,
+                    "value": "8",
+                    "first_occurence": "AR1105.None.None"
+                },
+                {
+                    "src": "0",
+                    "used_count": 225,
+                    "value": "0",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                },
+                {
+                    "src": "12",
+                    "used_count": 2,
+                    "value": "12",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "2",
+                    "used_count": 3,
+                    "value": "2",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "10",
+                    "used_count": 6,
+                    "value": "10",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "6",
+                    "used_count": 3,
+                    "value": "6",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "4",
+                    "used_count": 30,
+                    "value": "4",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "14",
+                    "used_count": 3,
+                    "value": "14",
+                    "first_occurence": "AR6102.None.None"
+                }
+            ]
+        }
+    ]
+}

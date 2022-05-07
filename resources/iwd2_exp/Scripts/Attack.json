@@ -1,0 +1,33 @@
+{
+    "func_name": "Attack",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 112,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR2101.20MALARA.Malarite"
+                },
+                {
+                    "src": "\"Support_Beam_North\"",
+                    "used_count": 2,
+                    "value": "\"'Support_Beam_North'\"",
+                    "first_occurence": "AR2102.21OGR.Ogre_North"
+                },
+                {
+                    "src": "\"Support_Beam_South\"",
+                    "used_count": 2,
+                    "value": "\"'Support_Beam_South'\"",
+                    "first_occurence": "AR2102.21OGR.Ogre_North"
+                }
+            ]
+        }
+    ]
+}

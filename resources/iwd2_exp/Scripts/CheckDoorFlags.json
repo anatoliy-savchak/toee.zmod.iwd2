@@ -1,0 +1,151 @@
+{
+    "func_name": "CheckDoorFlags",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"AR2102_Bridge\"",
+                    "used_count": 1,
+                    "value": "\"'AR2102_Bridge'\"",
+                    "first_occurence": "AR2102.21XUKI.Xuki"
+                },
+                {
+                    "src": "\"AR4102_Switch4\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch4'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch5\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch5'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch6\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch6'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch7\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch7'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch8\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch8'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch9\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch9'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch10\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch10'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch11\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch11'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch12\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch12'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch13\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch13'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR5201_Door1\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door1'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door2\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door2'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door3\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door3'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door4\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door4'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door5\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door5'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door6\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door6'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR6200_West_Gate\"",
+                    "used_count": 1,
+                    "value": "\"'AR6200_West_Gate'\"",
+                    "first_occurence": "AR6200.62KRATU.Kratuuk"
+                },
+                {
+                    "src": "\"AR6303_Door1\"",
+                    "used_count": 1,
+                    "value": "\"'AR6303_Door1'\"",
+                    "first_occurence": "AR6305.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Flags",
+                "arg_ids": "DoorFlag",
+                "arg_line": "I:Flags*DoorFlag"
+            },
+            "values": [
+                {
+                    "src": "DOOROPEN",
+                    "used_count": 3,
+                    "value": "\"DOOROPEN\"",
+                    "first_occurence": "AR2102.21XUKI.Xuki"
+                },
+                {
+                    "src": "DOORLOCKED",
+                    "used_count": 22,
+                    "value": "\"DOORLOCKED\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                }
+            ]
+        }
+    ]
+}

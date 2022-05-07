@@ -1,0 +1,39 @@
+{
+    "func_name": "SmallWait",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Time",
+                "arg_ids": "",
+                "arg_line": "I:Time*"
+            },
+            "values": [
+                {
+                    "src": "7",
+                    "used_count": 29,
+                    "value": "7",
+                    "first_occurence": "AR4000.40GIAFOM.03_Fomorian_01"
+                },
+                {
+                    "src": "10",
+                    "used_count": 2,
+                    "value": "10",
+                    "first_occurence": "AR4100.41REMHZQ.Remorhaz_Queen"
+                },
+                {
+                    "src": "4",
+                    "used_count": 1,
+                    "value": "4",
+                    "first_occurence": "AR5201.52SVALTI.02_52Svalti_01"
+                },
+                {
+                    "src": "5",
+                    "used_count": 4,
+                    "value": "5",
+                    "first_occurence": "AR6104.61LOTHAR.Lothar4"
+                }
+            ]
+        }
+    ]
+}

@@ -1,29 +1,55 @@
+from cmath import e
+from email import message
+import os
 import sys
 import inspect
 import ast
 import produce_items
 import producer_base
+import json
 #import pyproduce
 
 class ProducerOfScripts(producer_base.Producer):
     def __init__(self, doc, path_inf_scripting: str):
-        super().__init__(doc, index_path = None)
+        index_path = os.path.join(doc.exp_dir, 'Scripts', 'scripts_index.json')
+        super().__init__(doc, index_path = index_path)
 
         self.path_inf_scripting = path_inf_scripting
         self.inf_scripting_lines = list()
         if self.path_inf_scripting:
             with open(self.path_inf_scripting, 'r') as f:
                 self.inf_scripting_lines = f.readlines()
+
+        if self.index_file.get("statistics") is None:
+            self.index_file["statistics"] = dict()
+        if self.index_file["statistics"].get("funcs") is None:
+            self.index_file["statistics"]["funcs"] = dict()
+        if self.index_file["statistics"].get("funcs_log") is None:
+            self.index_file["statistics"]["funcs_log"] = list()
+
+        self.current_are_name = None
+        self.current_cre_name = None
+        self.current_actor_name = None
+        self.error_messages = list()
         return
 
-    def transate_trigger_lines(self, trigger_lines: list):
+    def transate_trigger_lines(self, trigger_lines: list, are_name: str, cre_name: str, actor_name: str = None):
+        self.current_are_name = are_name
+        self.current_cre_name = cre_name
+        self.current_actor_name = actor_name
+
+        trigger_lines2 = list()
+        for i, action_line in enumerate(trigger_lines):
+            action_linea = action_line.strip()
+            trigger_lines2.extend(condition_split(action_linea))
+
         lines = list()
         or_left = 0
         or_count_max = 0
-        for i, trigger_line in enumerate(trigger_lines):
+        for i, trigger_line in enumerate(trigger_lines2):
             #line = transate_trigger_line(trigger_line)
             trigger_linea = trigger_line.strip()
-            print(f'Translating {trigger_linea}')
+            #print(f'Translating {trigger_linea}')
             if str(trigger_linea).lower().startswith('or('):
                 or_left = int(trigger_linea.split('(', 2)[1].split(')', 2)[0].strip())
                 or_count_max = or_left
@@ -34,6 +60,9 @@ class ProducerOfScripts(producer_base.Producer):
                     line = "\t and " + line + ' False'
             else:
                 line = ScriptTran.translate_script_line(trigger_linea, self)
+                if line is None:
+                    line = ''
+                    continue
 
                 if i == 0:
                     line = "if " + line
@@ -58,31 +87,25 @@ class ProducerOfScripts(producer_base.Producer):
 
         return lines
 
-    def transate_action_lines(self, action_lines: list):
+    def transate_action_lines(self, action_lines: list, are_name: str = None, cre_name: str = None):
+        self.current_are_name = are_name
+        self.current_cre_name = cre_name
         lines = list()
+        action_lines2 = list()
         for i, action_line in enumerate(action_lines):
+            action_linea = action_line.strip()
+            action_lines2.extend(condition_split(action_linea))
+        
+        for i, action_line in enumerate(action_lines2):
             #line = transate_trigger_line(action_line)
             action_linea = action_line.strip()
+            action_linea = action_linea.replace('#', '"')
             line = ScriptTran.translate_script_line(action_linea, self)
+            if line is None:
+                line = 'pass'
             lines.append(line)
 
         return lines
-
-    def transate_trigger_line(self, trigger_line: str):
-        line = ""
-        if not trigger_line: return line
-        if trigger_line[0] == "!":
-            line += "not "
-            trigger_line = trigger_line.removeprefix("!")
-            
-        line_tup = self.reassamble_call(trigger_line)
-        line_tup = process_func(line_tup)
-        trigger_line = line_tup[0]
-        #trigger_line = ScriptTran.translate_script_line(trigger_line)
-
-        line += trigger_line
-
-        return line
 
     def check_func_implemented(self, func_name: str):
         if not self.inf_scripting_lines:
@@ -91,46 +114,63 @@ class ProducerOfScripts(producer_base.Producer):
         result = not next((line for line in self.inf_scripting_lines if func_name in line), None) is None
         return result
 
-    def reassamble_call(self, line: str):
-        line = line.replace("[", '"[').replace("]", ']"')
-        tree = ast.parse(line)
-        f = tree.body[0].value.func
-        funct_name = None
-        func_args = None
-        if isinstance(f, ast.Name):
-            funct_name = f.id
-            result = "i" + funct_name + "("
-            comma = ""
-            func_args = list()
-            for arg in tree.body[0].value.args:
-                s = ""
-                sarg = None
-                if isinstance(arg, ast.Name):
-                    s = '"' + arg.id + '"'
-                    sarg = arg.id
-                else:
-                    if isinstance(arg.value, int):
-                        s = str(arg.value)
-                        sarg = arg.value
-                    else:
-                        if funct_name == "ClassEx":
-                            funct_name = "ClassEx"
-                        s = '"' + str(arg.value) + '"'
-                        sarg = arg.value
-                func_args.append(sarg)
-                result += comma + s
-                comma = ", "
-            result += ")"
+    def log_func(self, line: str, func_name: str, args_src: list, args: list, func_info: dict):
+        log_usage = True
+        if not line is None:
+            if not next((rec for rec in self.index_file["statistics"]["funcs_log"] if line.lower() == rec["line"].lower()), None):
+                log_rec = {
+                    "line": line,
+                    "func_name": func_name,
+                    "args": args,
+                }
+                self.index_file["statistics"]["funcs_log"].append(log_rec)
 
-            if not self.check_func_implemented("i" + funct_name):
-                print(f"Func not implemented: {funct_name} => {line}")
-        else:
-            if line == "True()":
-                return ("True", None, None)
-            print(f"Unparsed: {line}")
-            return (line, funct_name, func_args)
-        result = "self." + result 
-        return (result, funct_name, func_args)
+        usage_rec = self.index_file["statistics"]["funcs"].get(func_name)
+        if usage_rec is None:
+            usage_rec = {"func_name": func_name, "args": list()}
+
+        for index, arg_value in enumerate(args):
+            arg_rec = dict()
+            arg_value_src = args_src[index]
+            if len(usage_rec["args"]) > index:
+                arg_rec = usage_rec["args"][index]
+            else:
+                arg_info = func_info["args"][index]
+                arg_rec["def"] = arg_info
+                arg_rec["values"] = list()
+                usage_rec["args"].append(arg_rec)
+
+            value_rec = next((rec for rec in arg_rec["values"] if arg_value_src.lower() == rec["src"].lower()), None)
+            if value_rec is None:
+                value_rec = {"src": arg_value_src
+                    , "used_count": 1
+                    , "value": arg_value
+                    , "first_occurence": f'{self.current_are_name}.{self.current_cre_name}.{self.current_actor_name}'
+                }
+                arg_rec["values"].append(value_rec)
+            else:
+                if log_usage:
+                    value_rec["used_count"] += 1
+
+        self.index_file["statistics"]["funcs"][func_name] = usage_rec
+        return
+
+    def log_error(self, error_message: str):
+        self.error_messages.append(error_message)
+        return
+
+    def _save_index(self):
+        if self.index_path and self.index_file:
+            d = self.index_file["statistics"]["funcs"]
+            for func, func_body in d.items():
+                fn = os.path.join(os.path.dirname(self.index_path), func + '.json')
+                with open(fn, 'w') as f:
+                    json.dump(func_body, f, indent=4)
+                    
+            with open(self.index_path, 'w') as f:
+                json.dump(self.index_file, f, indent=4)
+        return
+
 
 def condition_split(cond: str):
     result = cond.splitlines(False)
@@ -165,32 +205,6 @@ def condition_split(cond: str):
 
     return result
 
-def process_func(line_tup: tuple):
-    result = line_tup
-    if line_tup and line_tup[1]:
-        # is function
-        func_namel = line_tup[1].lower()
-        func_namel = str(func_namel).replace('"', '')
-        if func_namel == "giveitemcreate":
-            item_file_name = line_tup[2][0].replace('"', '')
-            item_cls = produce_items.ItemBase.find_item_class(item_file_name)
-            if item_cls:
-                line = item_cls.give_item_create_line(item_file_name, line_tup[2][2] if len(line_tup[2]) > 2 else 0)
-                if line:
-                    return (line, line_tup[1], line_tup[2])
-
-                proto_const = item_cls.get_proto_const()
-                if proto_const:
-                    args = list()
-                    for a in line_tup[2]:
-                        if len(args) == 0:
-                            args.append(f'"{proto_const}"')
-                        else:
-                            args.append(a)
-                    line = f'{line_tup[1]}({", ".join([str(v or "") for v in args])})' 
-                    result = (line, line_tup[1], line_tup[2])
-
-    return result
 
 class ScriptTran:
     def __init__(self, line: str, producer):
@@ -215,7 +229,9 @@ class ScriptTran:
                 result = whole_class(aline, producer).do_translate_script_line(aline)
                 break
 
-            func_name, args = ScriptTran._parse_func(aline)
+            func_name, args = ScriptTran._parse_func(aline, producer)
+            if func_name is None:
+                return None
             result = ScriptTran._process_func(aline, func_name, args, producer)
             break
         if result is None:
@@ -241,14 +257,22 @@ class ScriptTran:
         return None
 
     @staticmethod
-    def _parse_func(line: str):
+    def _parse_func(line: str, producer):
         line = line.replace("[", '"[').replace("]", ']"')
         if '//' in line:
-            if pos := line.index('//'):
+            pos = line.index('//')
+            if pos > 0:
                 line = line[:pos]
                 line = line.strip()
+            elif(pos == 0):
+                return None, None
             
-        tree = ast.parse(line)
+        try:
+            tree = ast.parse(line)
+        except SyntaxError as e:
+            producer.log_error(error_message=e.msg + ' ' + line)
+            return None, None
+
         f = tree.body[0].value.func
         funct_name = None
         func_args = None
@@ -300,27 +324,35 @@ class ScriptTranFuncs(ScriptTran):
     def is_func_liner(cls): return True
 
     def translate_func(self, func_name: str, args: list): 
-        func_info = next((func_info for func_info in self.producer.doc.commands.commands if func_info.func_name.lower() == func_name.lower()), None)
+        func_info = next((func_info for func_info in self.producer.doc.commands.commands if func_info["func_name"].lower() == func_name.lower()), None)
         if not func_info:
-            print(f"No info for func {func_name}")
-            raise Exception(f"No info for func {func_name}")
+            print(f"No info for func {func_name}, line: {self.line}")
+            self.producer.log_error(f"No info for func {func_name}, line: {self.line}")
+            #raise Exception(f"No info for func {func_name}, line: {self.line}")
+            return None
         return self.do_translate_func(func_name, args, func_info)
     
-    def do_translate_func(self, func_name: str, args: list, func_info): 
+    def do_translate_func(self, func_name: str, args: list, func_info: dict): 
         strargs = list()
+        strargs_src = list()
         self.args = args
         for index, arg in enumerate(args):
-            arg_info = func_info.args[index]
+            arg_info = func_info["args"][index]
             s = self.do_translate_param(arg, index, arg_info)
+            if s is None:
+                s = ''
+            src = self.do_get_param(arg, index, arg_info)
             strargs.append(s)
+            strargs_src.append(src)
         result = "self.i" + func_name + "(" + ", ".join(strargs) + ")"
+        self.producer.log_func(self.line, func_name, strargs_src, strargs, func_info)
 
         if not self.producer.check_func_implemented("i" + func_name):
             print(f"Func not implemented: {func_name} => {self.line}")
 
         return result
 
-    def do_translate_param(self, arg, index: int, arg_info):
+    def do_translate_param(self, arg, index: int, arg_info: dict):
         w = "'" if index in self.literal_params_to_wrap() else ""
         s = ""
         if isinstance(arg, ast.Name):
@@ -328,7 +360,50 @@ class ScriptTranFuncs(ScriptTran):
         elif isinstance(arg, ast.Call):
             #c = ast.Call(arg)
             c = arg
-            s = ScriptTran._process_func(None, c.func.id, c.args, self.producer)
+            s = ScriptTran._process_func(self.line, c.func.id, c.args, self.producer)
+        elif isinstance(arg, ast.UnaryOp):
+            # ex: -2
+            #c = ast.UnaryOp(arg)
+            c = arg
+            m = 1
+            if isinstance(c.op, ast.USub):
+                m = -1
+            else:
+                raise Exception("Unknown op!")
+            v = c.operand.value
+            v = v * m
+            s = str(v)
+        elif isinstance(arg, ast.BinOp):
+            #c = ast.BinOp(arg)
+            c = arg
+            s = ""
+            s += self.do_translate_param(c.left, index, arg_info)
+            if isinstance(c.op, ast.BitOr):
+                s += " | "
+            else:
+                raise Exception("Unknown op!")
+            s += self.do_translate_param(c.right, index, arg_info)
+        else:
+            if 'value' in dir(arg):
+                if isinstance(arg.value, int):
+                    s = str(arg.value)
+                elif isinstance(arg.value, str):
+                    if arg.value and arg.value.startswith('['):
+                        s = '"' + w + str(arg.value) + w + '"'
+                    else:
+                        s = '"\'' + w + str(arg.value) + w + '\'"'
+                else:
+                    s = '"' + w + str(arg.value) + w + '"'
+            else:
+                print('Wrong value!')
+        return s
+
+    def do_get_param(self, arg, index: int, arg_info: dict):
+        s = ""
+        if isinstance(arg, ast.Name):
+            s = arg.id
+        elif isinstance(arg, ast.Call):
+            s = arg.func.id
         elif isinstance(arg, ast.UnaryOp):
             # ex: -2
             #c = ast.UnaryOp(arg)
@@ -346,12 +421,9 @@ class ScriptTranFuncs(ScriptTran):
                 if isinstance(arg.value, int):
                     s = str(arg.value)
                 elif isinstance(arg.value, str):
-                    if arg.value and arg.value.startswith('['):
-                        s = '"' + w + str(arg.value) + w + '"'
-                    else:
-                        s = '"\'' + w + str(arg.value) + w + '\'"'
+                    s = '"' + arg.value + '"'
                 else:
-                    s = '"' + w + str(arg.value) + w + '"'
+                    s = str(arg.value)
             else:
                 print('Wrong value!')
         return s
@@ -384,7 +456,7 @@ class ScriptTranFuncsItem(ScriptTranFuncs):
         return super().do_translate_func(func_name, args, func_info)
 
     def do_process_item(self, func_name: str, args: list, func_info, index_with_item: int, make_create: bool, make_proto: bool):
-        item_file_name = self.do_translate_param(args[index_with_item], index_with_item, func_info.args[index_with_item])
+        item_file_name = self.do_translate_param(args[index_with_item], index_with_item, func_info["args"][index_with_item])
         item_file_name = item_file_name.replace('"', '').strip()
         if item_file_name == "00Leat01":
             print("")

@@ -1,0 +1,21 @@
+{
+    "func_name": "SetExtendedNight",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "TrueOrFalse",
+                "arg_ids": "BOOLEAN",
+                "arg_line": "I:TrueOrFalse*BOOLEAN"
+            },
+            "values": [
+                {
+                    "src": "FALSE",
+                    "used_count": 21,
+                    "value": "False",
+                    "first_occurence": "AR5010.None.None"
+                }
+            ]
+        }
+    ]
+}

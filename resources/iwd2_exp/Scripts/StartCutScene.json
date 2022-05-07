@@ -1,0 +1,27 @@
+{
+    "func_name": "StartCutscene",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "CutScene",
+                "arg_ids": "",
+                "arg_line": "S:CutScene*"
+            },
+            "values": [
+                {
+                    "src": "\"53cKulda\"",
+                    "used_count": 5,
+                    "value": "\"'53cKulda'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"PC_5200a\"",
+                    "used_count": 1,
+                    "value": "\"'PC_5200a'\"",
+                    "first_occurence": "AR5201.52ARUMA.None"
+                }
+            ]
+        }
+    ]
+}

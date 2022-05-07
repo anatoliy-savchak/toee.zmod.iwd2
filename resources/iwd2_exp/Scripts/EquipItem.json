@@ -1,0 +1,151 @@
+{
+    "func_name": "EquipItem",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "S:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"00CIHELA\"",
+                    "used_count": 12,
+                    "value": "\"'00CIHELA'\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "\"00CIHELB\"",
+                    "used_count": 12,
+                    "value": "\"'00CIHELB'\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "\"00CISHLD\"",
+                    "used_count": 12,
+                    "value": "\"'00CISHLD'\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "\"00CISHLB\"",
+                    "used_count": 12,
+                    "value": "\"'00CISHLB'\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "\"00CWSWDB\"",
+                    "used_count": 12,
+                    "value": "\"'00CWSWDB'\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "\"00MSTR96\"",
+                    "used_count": 12,
+                    "value": "\"'00MSTR96'\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "\"001D20P\"",
+                    "used_count": 21,
+                    "value": "\"'001D20P'\"",
+                    "first_occurence": "AR5300.53OINCHA.Oinchack'olp"
+                },
+                {
+                    "src": "\"001D4P\"",
+                    "used_count": 21,
+                    "value": "\"'001D4P'\"",
+                    "first_occurence": "AR5300.53OINCHA.Oinchack'olp"
+                },
+                {
+                    "src": "\"00BRAC03\"",
+                    "used_count": 5,
+                    "value": "\"'00BRAC03'\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"00BULL89\"",
+                    "used_count": 5,
+                    "value": "\"'00BULL89'\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"00PLAT11\"",
+                    "used_count": 5,
+                    "value": "\"'00PLAT11'\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"00SHLD86\"",
+                    "used_count": 5,
+                    "value": "\"'00SHLD86'\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"00HELM01\"",
+                    "used_count": 5,
+                    "value": "\"'00HELM01'\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"00LEAT92\"",
+                    "used_count": 5,
+                    "value": "\"'00LEAT92'\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"00SHLD92\"",
+                    "used_count": 5,
+                    "value": "\"'00SHLD92'\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"00BOLT04\"",
+                    "used_count": 5,
+                    "value": "\"'00BOLT04'\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"00CIPFND\"",
+                    "used_count": 1,
+                    "value": "\"'00CIPFND'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"00CIWWLF\"",
+                    "used_count": 1,
+                    "value": "\"'00CIWWLF'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"00CIDED1\"",
+                    "used_count": 1,
+                    "value": "\"'00CIDED1'\"",
+                    "first_occurence": "AR6102.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "EquipUnEquip",
+                "arg_ids": "",
+                "arg_line": "I:EquipUnEquip*"
+            },
+            "values": [
+                {
+                    "src": "1",
+                    "used_count": 91,
+                    "value": "1",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "0",
+                    "used_count": 66,
+                    "value": "0",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                }
+            ]
+        }
+    ]
+}

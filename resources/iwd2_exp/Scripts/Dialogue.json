@@ -1,0 +1,75 @@
+{
+    "func_name": "Dialogue",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 155,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "NearestPC",
+                    "used_count": 4,
+                    "value": "\"NearestPC\"",
+                    "first_occurence": "AR2102.21XUKI.Xuki"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 1,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR3000.30ENNELI.Ennelia"
+                },
+                {
+                    "src": "\"[PC]\"",
+                    "used_count": 18,
+                    "value": "\"[PC]\"",
+                    "first_occurence": "AR4101.41PRISO1.04_Prisoner_01"
+                },
+                {
+                    "src": "Player1",
+                    "used_count": 1,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                },
+                {
+                    "src": "Player2",
+                    "used_count": 1,
+                    "value": "\"Player2\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                },
+                {
+                    "src": "Player3",
+                    "used_count": 1,
+                    "value": "\"Player3\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                },
+                {
+                    "src": "Player4",
+                    "used_count": 1,
+                    "value": "\"Player4\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                },
+                {
+                    "src": "Player5",
+                    "used_count": 1,
+                    "value": "\"Player5\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                },
+                {
+                    "src": "Player6",
+                    "used_count": 1,
+                    "value": "\"Player6\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                }
+            ]
+        }
+    ]
+}

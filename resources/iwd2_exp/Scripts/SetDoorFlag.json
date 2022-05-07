@@ -1,0 +1,125 @@
+{
+    "func_name": "SetDoorFlag",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"AR4102_Door11\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Door11'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch2\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch2'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch3\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch3'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch4\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch4'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch5\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch5'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch6\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch6'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch7\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch7'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch8\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch8'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch9\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch9'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch10\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch10'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch11\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch11'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch12\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch12'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Switch13\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch13'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Flags",
+                "arg_ids": "DoorFlag",
+                "arg_line": "I:Flags*DoorFlag"
+            },
+            "values": [
+                {
+                    "src": "HIDDEN",
+                    "used_count": 13,
+                    "value": "\"HIDDEN\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "BOOLEAN",
+                "arg_line": "I:Value*BOOLEAN"
+            },
+            "values": [
+                {
+                    "src": "FALSE",
+                    "used_count": 13,
+                    "value": "False",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "func_name": "WaitAnimation",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 11175,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Sequence",
+                "arg_ids": "Sequence",
+                "arg_line": "I:Sequence*Sequence"
+            },
+            "values": [
+                {
+                    "src": "WALK",
+                    "used_count": 3725,
+                    "value": "\"WALK\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                },
+                {
+                    "src": "CONJURE",
+                    "used_count": 3725,
+                    "value": "\"CONJURE\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                },
+                {
+                    "src": "CAST",
+                    "used_count": 3725,
+                    "value": "\"CAST\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                }
+            ]
+        }
+    ]
+}

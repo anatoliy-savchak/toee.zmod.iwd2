@@ -1,0 +1,59 @@
+{
+    "func_name": "SetInternal",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 15,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR6501.65RUCOL7.Ruinlord"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Index",
+                "arg_ids": "",
+                "arg_line": "I:Index*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 15,
+                    "value": "0",
+                    "first_occurence": "AR6501.65RUCOL7.Ruinlord"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "",
+                "arg_line": "I:Value*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 5,
+                    "value": "0",
+                    "first_occurence": "AR6501.65RUCOL7.Ruinlord"
+                },
+                {
+                    "src": "1",
+                    "used_count": 10,
+                    "value": "1",
+                    "first_occurence": "AR6501.65RUCOL7.Ruinlord"
+                }
+            ]
+        }
+    ]
+}

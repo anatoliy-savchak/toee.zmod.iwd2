@@ -1,0 +1,61 @@
+{
+    "func_name": "SetMusic",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "SetSlot",
+                "arg_ids": "MUSICS",
+                "arg_line": "I:SetSlot*MUSICS"
+            },
+            "values": [
+                {
+                    "src": "COMBAT_NORMAL",
+                    "used_count": 6,
+                    "value": "\"COMBAT_NORMAL\"",
+                    "first_occurence": "AR3101.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "With",
+                "arg_ids": "MUSIC",
+                "arg_line": "I:With*MUSIC"
+            },
+            "values": [
+                {
+                    "src": "none",
+                    "used_count": 2,
+                    "value": "\"none\"",
+                    "first_occurence": "AR3101.None.None"
+                },
+                {
+                    "src": "BA3101",
+                    "used_count": 1,
+                    "value": "\"BA3101\"",
+                    "first_occurence": "AR3101.None.None"
+                },
+                {
+                    "src": "BLANK",
+                    "used_count": 1,
+                    "value": "\"BLANK\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "BATTLE3",
+                    "used_count": 1,
+                    "value": "\"BATTLE3\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "BATTLE7",
+                    "used_count": 1,
+                    "value": "\"BATTLE7\"",
+                    "first_occurence": "AR4101.None.None"
+                }
+            ]
+        }
+    ]
+}

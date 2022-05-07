@@ -1,0 +1,95 @@
+{
+    "func_name": "CheckSkillGT",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Player1",
+                    "used_count": 3,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "Player2",
+                    "used_count": 3,
+                    "value": "\"Player2\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "Player3",
+                    "used_count": 3,
+                    "value": "\"Player3\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "Player4",
+                    "used_count": 3,
+                    "value": "\"Player4\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "Player5",
+                    "used_count": 3,
+                    "value": "\"Player5\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "Player6",
+                    "used_count": 3,
+                    "value": "\"Player6\"",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "",
+                "arg_line": "I:Value*"
+            },
+            "values": [
+                {
+                    "src": "16",
+                    "used_count": 6,
+                    "value": "16",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "9",
+                    "used_count": 6,
+                    "value": "9",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "4",
+                    "used_count": 6,
+                    "value": "4",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "SkillNum",
+                "arg_ids": "Skills",
+                "arg_line": "I:SkillNum*Skills"
+            },
+            "values": [
+                {
+                    "src": "Bluff",
+                    "used_count": 18,
+                    "value": "\"Bluff\"",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        }
+    ]
+}

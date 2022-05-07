@@ -1,0 +1,179 @@
+{
+    "func_name": "ScreenShake",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Duration",
+                "arg_ids": "",
+                "arg_line": "I:Duration*"
+            },
+            "values": [
+                {
+                    "src": "75",
+                    "used_count": 38,
+                    "value": "75",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "300",
+                    "used_count": 60,
+                    "value": "300",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "120",
+                    "used_count": 1,
+                    "value": "120",
+                    "first_occurence": "AR4103.None.None"
+                },
+                {
+                    "src": "15",
+                    "used_count": 6,
+                    "value": "15",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "30",
+                    "used_count": 1,
+                    "value": "30",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "45",
+                    "used_count": 5,
+                    "value": "45",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "150",
+                    "used_count": 1,
+                    "value": "150",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "25",
+                    "used_count": 6,
+                    "value": "25",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "50",
+                    "used_count": 4,
+                    "value": "50",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "MagX",
+                "arg_ids": "",
+                "arg_line": "I:MagX*"
+            },
+            "values": [
+                {
+                    "src": "16",
+                    "used_count": 44,
+                    "value": "16",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "160",
+                    "used_count": 60,
+                    "value": "160",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "40",
+                    "used_count": 10,
+                    "value": "40",
+                    "first_occurence": "AR4103.None.None"
+                },
+                {
+                    "src": "5",
+                    "used_count": 1,
+                    "value": "5",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "10",
+                    "used_count": 2,
+                    "value": "10",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "20",
+                    "used_count": 1,
+                    "value": "20",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "4",
+                    "used_count": 4,
+                    "value": "4",
+                    "first_occurence": "AR6101.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "MagY",
+                "arg_ids": "",
+                "arg_line": "I:MagY*"
+            },
+            "values": [
+                {
+                    "src": "12",
+                    "used_count": 44,
+                    "value": "12",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "120",
+                    "used_count": 60,
+                    "value": "120",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "30",
+                    "used_count": 9,
+                    "value": "30",
+                    "first_occurence": "AR4103.None.None"
+                },
+                {
+                    "src": "5",
+                    "used_count": 1,
+                    "value": "5",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "10",
+                    "used_count": 2,
+                    "value": "10",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "20",
+                    "used_count": 1,
+                    "value": "20",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "40",
+                    "used_count": 1,
+                    "value": "40",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "3",
+                    "used_count": 4,
+                    "value": "3",
+                    "first_occurence": "AR6101.None.None"
+                }
+            ]
+        }
+    ]
+}

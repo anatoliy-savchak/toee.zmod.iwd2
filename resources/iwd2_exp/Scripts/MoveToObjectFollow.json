@@ -1,0 +1,33 @@
+{
+    "func_name": "MoveToObjectFollow",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"10_GobVun\"",
+                    "used_count": 9,
+                    "value": "\"'10_GobVun'\"",
+                    "first_occurence": "AR3001.30GOBSOR.10_GobSor"
+                },
+                {
+                    "src": "NearestPC",
+                    "used_count": 1,
+                    "value": "\"NearestPC\"",
+                    "first_occurence": "AR3101.31BRASTO.Braston"
+                },
+                {
+                    "src": "\"13_51Barud_04\"",
+                    "used_count": 1,
+                    "value": "\"'13_51Barud_04'\"",
+                    "first_occurence": "AR5101.51HARHOR.13_51Harhor_05"
+                }
+            ]
+        }
+    ]
+}

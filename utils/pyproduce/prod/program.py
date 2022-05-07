@@ -27,9 +27,13 @@ def main():
         , temple_src_path = temple_src_path
     )
     doc.init(from_scratch=False)
-    are_prod = doc.acquire_are_producer('AR1000')
-    are_prod.produce()
-    #doc.produce_all_ares()
+    #are_prod = doc.acquire_are_producer('AR1000')
+    #are_prod.produce()
+
+    doc.scan_all_ares()
+    doc.producerOfScripts._save_index()
+    for e in doc.producerOfScripts.error_messages:
+        print(e)
 
     return 0
 

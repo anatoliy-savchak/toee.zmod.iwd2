@@ -1,0 +1,37 @@
+{
+    "func_name": "SetApparentNameSTRREF",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 1,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "StrRef",
+                "arg_ids": "",
+                "arg_line": "I:StrRef*"
+            },
+            "values": [
+                {
+                    "src": "27113",
+                    "used_count": 1,
+                    "value": "27113",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                }
+            ]
+        }
+    ]
+}

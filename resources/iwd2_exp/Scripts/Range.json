@@ -1,0 +1,347 @@
+{
+    "func_name": "Range",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 35,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "\"[PC]\"",
+                    "used_count": 626,
+                    "value": "\"[PC]\"",
+                    "first_occurence": "AR1000.10GOB.1000_Goblin_01"
+                },
+                {
+                    "src": "NearestEnemyOf",
+                    "used_count": 236,
+                    "value": "self.iNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR2000.20ORCW3.T1_Orc_4"
+                },
+                {
+                    "src": "LastHeardBy",
+                    "used_count": 4,
+                    "value": "self.iLastHeardBy(\"Myself\")",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                },
+                {
+                    "src": "NearestPC",
+                    "used_count": 58,
+                    "value": "\"NearestPC\"",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                },
+                {
+                    "src": "\"Braston\"",
+                    "used_count": 1,
+                    "value": "\"'Braston'\"",
+                    "first_occurence": "AR3000.30ENNELI.Ennelia"
+                },
+                {
+                    "src": "\"DRUM_2\"",
+                    "used_count": 2,
+                    "value": "\"'DRUM_2'\"",
+                    "first_occurence": "AR3000.30GOBSH1.07_GobRu"
+                },
+                {
+                    "src": "\"DRUM_3\"",
+                    "used_count": 2,
+                    "value": "\"'DRUM_3'\"",
+                    "first_occurence": "AR3000.30ORCWD.15_OrcRu"
+                },
+                {
+                    "src": "\"DRUM_1\"",
+                    "used_count": 2,
+                    "value": "\"'DRUM_1'\"",
+                    "first_occurence": "AR3000.30ORCSH1.02_OrcRu"
+                },
+                {
+                    "src": "\"DRUM_4\"",
+                    "used_count": 2,
+                    "value": "\"'DRUM_4'\"",
+                    "first_occurence": "AR3001.30HOBDGU.09_HobDGu"
+                },
+                {
+                    "src": "\"DRUM_5\"",
+                    "used_count": 2,
+                    "value": "\"'DRUM_5'\"",
+                    "first_occurence": "AR3002.30ORCRU2.02_OrcRu"
+                },
+                {
+                    "src": "\"DRUM_6\"",
+                    "used_count": 2,
+                    "value": "\"'DRUM_6'\"",
+                    "first_occurence": "AR3002.30ORCRU.08_OrcRu"
+                },
+                {
+                    "src": "\"BEACON_1\"",
+                    "used_count": 36,
+                    "value": "\"'BEACON_1'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"BEACON_2\"",
+                    "used_count": 48,
+                    "value": "\"'BEACON_2'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"BEACON_3\"",
+                    "used_count": 36,
+                    "value": "\"'BEACON_3'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 280,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 56,
+                    "value": "self.iLastAttackerOf(\"Myself\")",
+                    "first_occurence": "AR4100.41NECROM.03_Cultist_02"
+                },
+                {
+                    "src": "\"B_S_C\"",
+                    "used_count": 1,
+                    "value": "\"'B_S_C'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR5201_Door1\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door1'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door2\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door2'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door3\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door3'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door4\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door4'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door5\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door5'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door6\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door6'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"HeartstoneGem\"",
+                    "used_count": 1,
+                    "value": "\"'HeartstoneGem'\"",
+                    "first_occurence": "AR6001.60ISELOR.Iselore"
+                },
+                {
+                    "src": "ThirdNearestEnemyOf",
+                    "used_count": 2,
+                    "value": "self.iThirdNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR6051.60INHATR.Inhatri"
+                },
+                {
+                    "src": "FourthNearest",
+                    "used_count": 2,
+                    "value": "self.iFourthNearest(\"[ENEMY]\")",
+                    "first_occurence": "AR6051.60INHATR.Inhatri"
+                },
+                {
+                    "src": "MyTarget",
+                    "used_count": 79,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"[PC.0.0.0.0.0.0.0.0.CLASSMASK_CLERIC]\"",
+                    "used_count": 2,
+                    "value": "\"[PC.0.0.0.0.0.0.0.0.CLASSMASK_CLERIC]\"",
+                    "first_occurence": "AR6200.62CBNS2.Cold_Bones_2"
+                },
+                {
+                    "src": "\"[PC.0.0.0.0.0.0.0.0.CLASSMASK_GROUP_HOLIES]\"",
+                    "used_count": 6,
+                    "value": "\"[PC.0.0.0.0.0.0.0.0.CLASSMASK_GROUP_HOLIES]\"",
+                    "first_occurence": "AR6200.62CBNS3.Cold_Bones_3"
+                },
+                {
+                    "src": "\"[PC.0.0.0.0.0.0.0.0.CLASSMASK_GROUP_WARRIORS]\"",
+                    "used_count": 2,
+                    "value": "\"[PC.0.0.0.0.0.0.0.0.CLASSMASK_GROUP_WARRIORS]\"",
+                    "first_occurence": "AR6201.63GRDAR.Guard_Crossbow_1"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Range",
+                "arg_ids": "",
+                "arg_line": "I:Range*"
+            },
+            "values": [
+                {
+                    "src": "18",
+                    "used_count": 2,
+                    "value": "18",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "15",
+                    "used_count": 104,
+                    "value": "15",
+                    "first_occurence": "AR1000.10BROGAN.Brogan"
+                },
+                {
+                    "src": "40",
+                    "used_count": 603,
+                    "value": "40",
+                    "first_occurence": "AR1000.10GOB.1000_Goblin_01"
+                },
+                {
+                    "src": "3",
+                    "used_count": 101,
+                    "value": "3",
+                    "first_occurence": "AR2000.20ORCW3.T1_Orc_4"
+                },
+                {
+                    "src": "5",
+                    "used_count": 155,
+                    "value": "5",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                },
+                {
+                    "src": "4",
+                    "used_count": 158,
+                    "value": "4",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                },
+                {
+                    "src": "1",
+                    "used_count": 12,
+                    "value": "1",
+                    "first_occurence": "AR2101.20MALARA.Malarite"
+                },
+                {
+                    "src": "6",
+                    "used_count": 32,
+                    "value": "6",
+                    "first_occurence": "AR3000.30ENNELI.Ennelia"
+                },
+                {
+                    "src": "10",
+                    "used_count": 87,
+                    "value": "10",
+                    "first_occurence": "AR3000.30WWLF.20_Winter_Wolf_1"
+                },
+                {
+                    "src": "7",
+                    "used_count": 13,
+                    "value": "7",
+                    "first_occurence": "AR3001.30YQUOGG.15_Yquog"
+                },
+                {
+                    "src": "30",
+                    "used_count": 1,
+                    "value": "30",
+                    "first_occurence": "AR4000.40YURST.Yurst"
+                },
+                {
+                    "src": "9",
+                    "used_count": 189,
+                    "value": "9",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "25",
+                    "used_count": 42,
+                    "value": "25",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "19",
+                    "used_count": 1,
+                    "value": "19",
+                    "first_occurence": "AR6001.60ISELOR.Iselore"
+                },
+                {
+                    "src": "2",
+                    "used_count": 16,
+                    "value": "2",
+                    "first_occurence": "AR6050.60KATCHM.Katchmat"
+                },
+                {
+                    "src": "50",
+                    "used_count": 1,
+                    "value": "50",
+                    "first_occurence": "AR6101.61PRISI1.05_WizardPrisoner"
+                },
+                {
+                    "src": "20",
+                    "used_count": 3,
+                    "value": "20",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "11",
+                    "used_count": 8,
+                    "value": "11",
+                    "first_occurence": "AR6104.61LOTHAR.Lothar4"
+                },
+                {
+                    "src": "12",
+                    "used_count": 7,
+                    "value": "12",
+                    "first_occurence": "AR6200.62NEOORC.NeoOrogShaman"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "diffmode",
+                "arg_ids": "diffmode",
+                "arg_line": "I:diffmode*diffmode"
+            },
+            "values": [
+                {
+                    "src": "LESS_THAN",
+                    "used_count": 1249,
+                    "value": "\"LESS_THAN\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "GREATER_THAN",
+                    "used_count": 286,
+                    "value": "\"GREATER_THAN\"",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                }
+            ]
+        }
+    ]
+}

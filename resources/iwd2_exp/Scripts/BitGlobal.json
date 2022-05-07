@@ -1,0 +1,231 @@
+{
+    "func_name": "BitGlobal",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "String1",
+                "arg_ids": "",
+                "arg_line": "S:String1*"
+            },
+            "values": [
+                {
+                    "src": "\"WerewolfReturnSpot\"",
+                    "used_count": 144,
+                    "value": "\"'WerewolfReturnSpot'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"BattleSquarePlayerScore\"",
+                    "used_count": 42,
+                    "value": "\"'BattleSquarePlayerScore'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"BattleSquareArenaScore\"",
+                    "used_count": 66,
+                    "value": "\"'BattleSquareArenaScore'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"BattleSquareWinRank1\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank1'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank2\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank2'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank3\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank3'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank4\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank4'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank5\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank5'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank6\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank6'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank7\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank7'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank8\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank8'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank9\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank9'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank10\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank10'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"FountainTally\"",
+                    "used_count": 4,
+                    "value": "\"'FountainTally'\"",
+                    "first_occurence": "AR6103.None.None"
+                },
+                {
+                    "src": "\"PlayersVisible\"",
+                    "used_count": 6,
+                    "value": "\"'PlayersVisible'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "String2",
+                "arg_ids": "",
+                "arg_line": "S:String2*"
+            },
+            "values": [
+                {
+                    "src": "\"MYAREA\"",
+                    "used_count": 256,
+                    "value": "\"'MYAREA'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"GLOBAL\"",
+                    "used_count": 50,
+                    "value": "\"'GLOBAL'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"LOCALS\"",
+                    "used_count": 6,
+                    "value": "\"'LOCALS'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": null,
+                "arg_line": "I:Value"
+            },
+            "values": [
+                {
+                    "src": "1",
+                    "used_count": 27,
+                    "value": "1",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "2",
+                    "used_count": 24,
+                    "value": "2",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "4",
+                    "used_count": 37,
+                    "value": "4",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "8",
+                    "used_count": 34,
+                    "value": "8",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "16",
+                    "used_count": 39,
+                    "value": "16",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "32",
+                    "used_count": 33,
+                    "value": "32",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "64",
+                    "used_count": 35,
+                    "value": "64",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "128",
+                    "used_count": 22,
+                    "value": "128",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "256",
+                    "used_count": 25,
+                    "value": "256",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "512",
+                    "used_count": 12,
+                    "value": "512",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "1024",
+                    "used_count": 12,
+                    "value": "1024",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "2048",
+                    "used_count": 12,
+                    "value": "2048",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Mode",
+                "arg_ids": "BitMode",
+                "arg_line": "I:Mode*BitMode"
+            },
+            "values": [
+                {
+                    "src": "AND",
+                    "used_count": 312,
+                    "value": "\"AND\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                }
+            ]
+        }
+    ]
+}

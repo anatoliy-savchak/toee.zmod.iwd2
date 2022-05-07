@@ -1,0 +1,27 @@
+{
+    "func_name": "AllowAreaResting",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "TrueOrFalse",
+                "arg_ids": "BOOLEAN",
+                "arg_line": "I:TrueOrFalse*BOOLEAN"
+            },
+            "values": [
+                {
+                    "src": "TRUE",
+                    "used_count": 11,
+                    "value": "True",
+                    "first_occurence": "AR1001.None.None"
+                },
+                {
+                    "src": "FALSE",
+                    "used_count": 8,
+                    "value": "False",
+                    "first_occurence": "AR4102.None.None"
+                }
+            ]
+        }
+    ]
+}

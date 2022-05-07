@@ -1,0 +1,483 @@
+{
+    "func_name": "OpenDoor",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"AR1100_Wheel\"",
+                    "used_count": 1,
+                    "value": "\"'AR1100_Wheel'\"",
+                    "first_occurence": "AR1100.None.None"
+                },
+                {
+                    "src": "\"AR1100_Logs1\"",
+                    "used_count": 1,
+                    "value": "\"'AR1100_Logs1'\"",
+                    "first_occurence": "AR1100.None.None"
+                },
+                {
+                    "src": "\"AR1100_Logs2\"",
+                    "used_count": 1,
+                    "value": "\"'AR1100_Logs2'\"",
+                    "first_occurence": "AR1100.None.None"
+                },
+                {
+                    "src": "\"AR1100_Logs3\"",
+                    "used_count": 1,
+                    "value": "\"'AR1100_Logs3'\"",
+                    "first_occurence": "AR1100.None.None"
+                },
+                {
+                    "src": "\"AR3001_DOOR3\"",
+                    "used_count": 1,
+                    "value": "\"'AR3001_DOOR3'\"",
+                    "first_occurence": "AR3001.30GOBVUN.10_GobVun"
+                },
+                {
+                    "src": "\"AR4100_Rockwall\"",
+                    "used_count": 1,
+                    "value": "\"'AR4100_Rockwall'\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "\"AR4100_Door13\"",
+                    "used_count": 5,
+                    "value": "\"'AR4100_Door13'\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "\"AR4100_Door14\"",
+                    "used_count": 1,
+                    "value": "\"'AR4100_Door14'\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "\"AR4100_LEFTSLIDE\"",
+                    "used_count": 4,
+                    "value": "\"'AR4100_LEFTSLIDE'\"",
+                    "first_occurence": "AR4100.41CLERIF.02_Frosttouch_03"
+                },
+                {
+                    "src": "\"AR4100_RIGHTSLIDE\"",
+                    "used_count": 3,
+                    "value": "\"'AR4100_RIGHTSLIDE'\"",
+                    "first_occurence": "AR4100.41SHAMAF.02_Stormsister_05"
+                },
+                {
+                    "src": "\"AR4101_Door5\"",
+                    "used_count": 2,
+                    "value": "\"'AR4101_Door5'\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "\"AR4101_Door16\"",
+                    "used_count": 1,
+                    "value": "\"'AR4101_Door16'\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "\"AR4101_Door17\"",
+                    "used_count": 7,
+                    "value": "\"'AR4101_Door17'\"",
+                    "first_occurence": "AR4101.41ONDABO.Ondabo"
+                },
+                {
+                    "src": "\"AR4101_Door12\"",
+                    "used_count": 3,
+                    "value": "\"'AR4101_Door12'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"AR4101_Door26Dummy2\"",
+                    "used_count": 3,
+                    "value": "\"'AR4101_Door26Dummy2'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"AR4101_DOOR26DUMMY1\"",
+                    "used_count": 3,
+                    "value": "\"'AR4101_DOOR26DUMMY1'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"AR4101_DOOR7\"",
+                    "used_count": 3,
+                    "value": "\"'AR4101_DOOR7'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"AR4101_DOOR8\"",
+                    "used_count": 3,
+                    "value": "\"'AR4101_DOOR8'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"AR4101_DOOR21\"",
+                    "used_count": 3,
+                    "value": "\"'AR4101_DOOR21'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"AR4101_DOOR20\"",
+                    "used_count": 3,
+                    "value": "\"'AR4101_DOOR20'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"AR4101_DOOR18\"",
+                    "used_count": 3,
+                    "value": "\"'AR4101_DOOR18'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"AR4102_Switch5\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch5'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"AR4102_Switch6\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch6'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"AR4102_Switch7\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch7'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"AR4102_Switch8\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch8'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"AR4102_Switch9\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch9'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"AR4102_Switch10\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch10'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"AR4102_Switch11\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch11'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"AR4102_Switch12\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch12'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"AR4102_Switch13\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Switch13'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"AR4102_Door1\"",
+                    "used_count": 6,
+                    "value": "\"'AR4102_Door1'\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "\"AR4102_Door11\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Door11'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Door9\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Door9'\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "\"AR4102_Door10\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Door10'\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "\"AR5011_North\"",
+                    "used_count": 1,
+                    "value": "\"'AR5011_North'\"",
+                    "first_occurence": "AR5011.None.None"
+                },
+                {
+                    "src": "\"AR5011_SouthEast\"",
+                    "used_count": 1,
+                    "value": "\"'AR5011_SouthEast'\"",
+                    "first_occurence": "AR5011.None.None"
+                },
+                {
+                    "src": "\"AR5011_NorthWest\"",
+                    "used_count": 1,
+                    "value": "\"'AR5011_NorthWest'\"",
+                    "first_occurence": "AR5011.None.None"
+                },
+                {
+                    "src": "\"AR5015_North\"",
+                    "used_count": 1,
+                    "value": "\"'AR5015_North'\"",
+                    "first_occurence": "AR5015.None.None"
+                },
+                {
+                    "src": "\"AR5016_West\"",
+                    "used_count": 1,
+                    "value": "\"'AR5016_West'\"",
+                    "first_occurence": "AR5016.None.None"
+                },
+                {
+                    "src": "\"AR5016_NorthEast\"",
+                    "used_count": 1,
+                    "value": "\"'AR5016_NorthEast'\"",
+                    "first_occurence": "AR5016.None.None"
+                },
+                {
+                    "src": "\"AR5016_SouthEast\"",
+                    "used_count": 1,
+                    "value": "\"'AR5016_SouthEast'\"",
+                    "first_occurence": "AR5016.None.None"
+                },
+                {
+                    "src": "\"AR5201_Door1\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door1'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door2\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door2'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door3\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door3'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door4\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door4'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door5\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door5'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5201_Door6\"",
+                    "used_count": 2,
+                    "value": "\"'AR5201_Door6'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"AR5202_Door2\"",
+                    "used_count": 6,
+                    "value": "\"'AR5202_Door2'\"",
+                    "first_occurence": "AR5202.52MOROHE.01_52Morohe_01"
+                },
+                {
+                    "src": "\"AR5301_Cells\"",
+                    "used_count": 2,
+                    "value": "\"'AR5301_Cells'\"",
+                    "first_occurence": "AR5301.None.None"
+                },
+                {
+                    "src": "\"AR5301_Web1\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web1'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR5301_Web2\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web2'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR5301_Web3\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web3'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR5301_Web4\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web4'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR5301_Web5\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web5'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR5301_Web6\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web6'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR5301_Web7\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web7'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR5301_Web8\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web8'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR5301_Web9\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web9'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR5301_Web10\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web10'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR5301_Web11\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web11'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR5301_Web12\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web12'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR5301_Web13\"",
+                    "used_count": 26,
+                    "value": "\"'AR5301_Web13'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AR6050_IntPillar1\"",
+                    "used_count": 1,
+                    "value": "\"'AR6050_IntPillar1'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"AR6050_IntPillar2\"",
+                    "used_count": 1,
+                    "value": "\"'AR6050_IntPillar2'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"AR6050_IntPillar3\"",
+                    "used_count": 1,
+                    "value": "\"'AR6050_IntPillar3'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"AR6050_IntPillar4\"",
+                    "used_count": 1,
+                    "value": "\"'AR6050_IntPillar4'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"AR6050_IntPillar5\"",
+                    "used_count": 1,
+                    "value": "\"'AR6050_IntPillar5'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"AR6103_RockDoor1\"",
+                    "used_count": 1,
+                    "value": "\"'AR6103_RockDoor1'\"",
+                    "first_occurence": "AR6103.None.None"
+                },
+                {
+                    "src": "\"AR6103_RockDoor2\"",
+                    "used_count": 1,
+                    "value": "\"'AR6103_RockDoor2'\"",
+                    "first_occurence": "AR6103.None.None"
+                },
+                {
+                    "src": "\"AR6104_South_Bridge\"",
+                    "used_count": 4,
+                    "value": "\"'AR6104_South_Bridge'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_West_Rocks\"",
+                    "used_count": 1,
+                    "value": "\"'AR6104_West_Rocks'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_East_Rocks\"",
+                    "used_count": 1,
+                    "value": "\"'AR6104_East_Rocks'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Ruins2\"",
+                    "used_count": 6,
+                    "value": "\"'AR6104_Ruins2'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Ruins3\"",
+                    "used_count": 6,
+                    "value": "\"'AR6104_Ruins3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Ruins4\"",
+                    "used_count": 6,
+                    "value": "\"'AR6104_Ruins4'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Ruins1\"",
+                    "used_count": 6,
+                    "value": "\"'AR6104_Ruins1'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Throne\"",
+                    "used_count": 6,
+                    "value": "\"'AR6104_Throne'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6200_West_Gate\"",
+                    "used_count": 1,
+                    "value": "\"'AR6200_West_Gate'\"",
+                    "first_occurence": "AR6200.62KRATU.Kratuuk"
+                }
+            ]
+        }
+    ]
+}

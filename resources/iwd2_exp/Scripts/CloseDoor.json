@@ -1,0 +1,165 @@
+{
+    "func_name": "CloseDoor",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"AR2100_Door1\"",
+                    "used_count": 3,
+                    "value": "\"'AR2100_Door1'\"",
+                    "first_occurence": "AR2100.21WERRAT.Wererat_Scripted_Event"
+                },
+                {
+                    "src": "\"AR4000_Pit\"",
+                    "used_count": 1,
+                    "value": "\"'AR4000_Pit'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"AR4000_Boat\"",
+                    "used_count": 1,
+                    "value": "\"'AR4000_Boat'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"AR4100_LeftSlide\"",
+                    "used_count": 1,
+                    "value": "\"'AR4100_LeftSlide'\"",
+                    "first_occurence": "AR4100.41TEMLEV.LeftLever"
+                },
+                {
+                    "src": "\"AR4100_RightSlide\"",
+                    "used_count": 1,
+                    "value": "\"'AR4100_RightSlide'\"",
+                    "first_occurence": "AR4100.41TEMLEV.RightLever"
+                },
+                {
+                    "src": "\"AR4101_DOOR26DUMMY1\"",
+                    "used_count": 3,
+                    "value": "\"'AR4101_DOOR26DUMMY1'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"AR4102_SWITCH1\"",
+                    "used_count": 89,
+                    "value": "\"'AR4102_SWITCH1'\"",
+                    "first_occurence": "AR4102.41ASSASS.02_Assassin_01"
+                },
+                {
+                    "src": "\"AR4102_Door11\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Door11'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"AR4102_Door9\"",
+                    "used_count": 2,
+                    "value": "\"'AR4102_Door9'\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "\"AR4102_Door10\"",
+                    "used_count": 1,
+                    "value": "\"'AR4102_Door10'\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "\"AR6102_Trees\"",
+                    "used_count": 1,
+                    "value": "\"'AR6102_Trees'\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"AR6104_Throne\"",
+                    "used_count": 1,
+                    "value": "\"'AR6104_Throne'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Ruins1\"",
+                    "used_count": 1,
+                    "value": "\"'AR6104_Ruins1'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Ruins2\"",
+                    "used_count": 1,
+                    "value": "\"'AR6104_Ruins2'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Ruins3\"",
+                    "used_count": 1,
+                    "value": "\"'AR6104_Ruins3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Ruins4\"",
+                    "used_count": 1,
+                    "value": "\"'AR6104_Ruins4'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Lava_Bridge2\"",
+                    "used_count": 2,
+                    "value": "\"'AR6104_Lava_Bridge2'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Cage\"",
+                    "used_count": 3,
+                    "value": "\"'AR6104_Cage'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Lava_Bridge1\"",
+                    "used_count": 1,
+                    "value": "\"'AR6104_Lava_Bridge1'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Lava_Bridge6\"",
+                    "used_count": 5,
+                    "value": "\"'AR6104_Lava_Bridge6'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Lava_Bridge3\"",
+                    "used_count": 4,
+                    "value": "\"'AR6104_Lava_Bridge3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Lava_Bridge4\"",
+                    "used_count": 1,
+                    "value": "\"'AR6104_Lava_Bridge4'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_Lava_Bridge5\"",
+                    "used_count": 2,
+                    "value": "\"'AR6104_Lava_Bridge5'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_East_Rocks\"",
+                    "used_count": 2,
+                    "value": "\"'AR6104_East_Rocks'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"AR6104_West_Rocks\"",
+                    "used_count": 1,
+                    "value": "\"'AR6104_West_Rocks'\"",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        }
+    ]
+}

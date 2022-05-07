@@ -1,0 +1,33 @@
+{
+    "func_name": "IsMarkedSpell",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Spell",
+                "arg_ids": "Spell",
+                "arg_line": "I:Spell*Spell"
+            },
+            "values": [
+                {
+                    "src": "MARKED_SPELL",
+                    "used_count": 943,
+                    "value": "\"MARKED_SPELL\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                },
+                {
+                    "src": "WIZARD_EXECUTIONERS_EYES",
+                    "used_count": 1,
+                    "value": "\"WIZARD_EXECUTIONERS_EYES\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "WIZARD_IMPROVED_HASTE",
+                    "used_count": 1,
+                    "value": "\"WIZARD_IMPROVED_HASTE\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                }
+            ]
+        }
+    ]
+}

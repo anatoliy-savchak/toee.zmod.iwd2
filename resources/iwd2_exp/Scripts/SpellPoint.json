@@ -1,0 +1,73 @@
+{
+    "func_name": "SpellPoint",
+    "args": [
+        {
+            "def": {
+                "arg_type": "P",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "P:Target*"
+            },
+            "values": [
+                {
+                    "src": "\"[646.571]\"",
+                    "used_count": 3,
+                    "value": "\"[646.571]\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"[2048.1760]\"",
+                    "used_count": 2,
+                    "value": "\"[2048.1760]\"",
+                    "first_occurence": "AR4102.41NICK.Nickademus"
+                },
+                {
+                    "src": "\"[530.1260]\"",
+                    "used_count": 1,
+                    "value": "\"[530.1260]\"",
+                    "first_occurence": "AR5000.50THVARA.01_50Thvara_02"
+                },
+                {
+                    "src": "\"[671.863]\"",
+                    "used_count": 2,
+                    "value": "\"[671.863]\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Spell",
+                "arg_ids": "Spell",
+                "arg_line": "I:Spell*Spell"
+            },
+            "values": [
+                {
+                    "src": "CLERIC_GLYPH_OF_WARDING",
+                    "used_count": 3,
+                    "value": "\"CLERIC_GLYPH_OF_WARDING\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "WIZARD_DIMENSION_DOOR",
+                    "used_count": 2,
+                    "value": "\"WIZARD_DIMENSION_DOOR\"",
+                    "first_occurence": "AR4102.41NICK.Nickademus"
+                },
+                {
+                    "src": "CLERIC_CLOUD_OF_PESTILENCE",
+                    "used_count": 1,
+                    "value": "\"CLERIC_CLOUD_OF_PESTILENCE\"",
+                    "first_occurence": "AR5000.50THVARA.01_50Thvara_02"
+                },
+                {
+                    "src": "MARKED_SPELL",
+                    "used_count": 2,
+                    "value": "\"MARKED_SPELL\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                }
+            ]
+        }
+    ]
+}

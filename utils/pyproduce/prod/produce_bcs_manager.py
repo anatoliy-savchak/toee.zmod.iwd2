@@ -33,8 +33,12 @@ class ProduceBCSFileAuto(producer_base.ProducerOfFile):
 
         fn = bcs_name + '.BAF'
         fn = os.path.join(self.doc.baf_dir, fn)
-        with open(fn, 'r') as f:
-            self.script_lines = f.readlines()
+        if os.path.exists(fn):
+            with open(fn, 'r') as f:
+                self.script_lines = f.readlines()
+        else:
+            print(f'Script {fn} does not exists!')
+            self.script_lines = list()
         return
 
     def produce(self, def_name: str, cre_name: str = None, actor_name: str = None, script_code: str = None):
@@ -49,7 +53,7 @@ class ProduceBCSFileAuto(producer_base.ProducerOfFile):
         self.indent()
         for block in blocks:
             if_lines = self.script_lines[block["if"]["start_index"]:int(block["if"]["last_index"])+1]
-            if_lines_translated = self.doc.producerOfScripts.transate_trigger_lines(if_lines)
+            if_lines_translated = self.doc.producerOfScripts.transate_trigger_lines(if_lines, are_name = self.are_name, cre_name = cre_name, actor_name = actor_name)
             for line in if_lines:
                 self.writeline(f'# {line.strip()}')
 
@@ -83,6 +87,22 @@ class ProduceBCSFileAuto(producer_base.ProducerOfFile):
         self.indent(False)
         self.writeline('return')
         self.writeline('')
+        return
+
+    def scan(self, cre_name: str = None, actor_name: str = None):
+        blocks = self._parse_blocks()
+        for block in blocks:
+            if_lines = self.script_lines[block["if"]["start_index"]:int(block["if"]["last_index"])+1]
+            if_lines_translated = self.doc.producerOfScripts.transate_trigger_lines(if_lines, are_name = self.are_name, cre_name = cre_name, actor_name = actor_name)
+            resp_lines = self.script_lines[block["then"][0]["start_index"]:int(block["then"][0]["end_index"])+1]
+            is_continue = False
+            resp_lines_stripped = list()
+            for line in resp_lines:
+                if 'continue' in line.strip().lower():
+                    is_continue = True
+                    continue
+                resp_lines_stripped.append(line)
+            resp_lines_translated = self.doc.producerOfScripts.transate_action_lines(resp_lines_stripped, are_name = self.are_name, cre_name = cre_name)
         return
 
     def _parse_blocks(self):

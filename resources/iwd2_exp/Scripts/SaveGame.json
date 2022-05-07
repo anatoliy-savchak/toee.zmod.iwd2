@@ -1,0 +1,27 @@
+{
+    "func_name": "SaveGame",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "STRREF",
+                "arg_ids": "",
+                "arg_line": "I:STRREF*"
+            },
+            "values": [
+                {
+                    "src": "16202",
+                    "used_count": 1,
+                    "value": "16202",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "39588",
+                    "used_count": 1,
+                    "value": "39588",
+                    "first_occurence": "AR6050.None.None"
+                }
+            ]
+        }
+    ]
+}

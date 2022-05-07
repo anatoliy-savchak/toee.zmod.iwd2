@@ -1,0 +1,27 @@
+{
+    "func_name": "SetLastMarkedObject",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"[GOODCUTOFF.0.0.0.150][0.0.10000.10000]\"",
+                    "used_count": 6,
+                    "value": "\"[GOODCUTOFF.0.0.0.150][0.0.10000.10000]\"",
+                    "first_occurence": "AR5102.51HNTMN.01_51HNTMN_04"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 66,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "func_name": "DialogInterrupt",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "State",
+                "arg_ids": "Boolean",
+                "arg_line": "I:State*Boolean"
+            },
+            "values": [
+                {
+                    "src": "FALSE",
+                    "used_count": 8,
+                    "value": "False",
+                    "first_occurence": "AR4100.41REMHZA.Remorhaz_Attacker"
+                },
+                {
+                    "src": "TRUE",
+                    "used_count": 3,
+                    "value": "True",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                }
+            ]
+        }
+    ]
+}

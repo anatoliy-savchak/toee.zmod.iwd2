@@ -1,0 +1,131 @@
+{
+    "func_name": "SetHPPercent",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 85,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR2002.20VREK.Vrek Vileclaw"
+                },
+                {
+                    "src": "Player1",
+                    "used_count": 1,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "Player2",
+                    "used_count": 1,
+                    "value": "\"Player2\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "Player3",
+                    "used_count": 1,
+                    "value": "\"Player3\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "Player4",
+                    "used_count": 1,
+                    "value": "\"Player4\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "Player5",
+                    "used_count": 1,
+                    "value": "\"Player5\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "Player6",
+                    "used_count": 1,
+                    "value": "\"Player6\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "\"Isair2\"",
+                    "used_count": 1,
+                    "value": "\"'Isair2'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Madae2\"",
+                    "used_count": 1,
+                    "value": "\"'Madae2'\"",
+                    "first_occurence": "AR6305.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Percent",
+                "arg_ids": "",
+                "arg_line": "I:Percent*"
+            },
+            "values": [
+                {
+                    "src": "75",
+                    "used_count": 75,
+                    "value": "75",
+                    "first_occurence": "AR2002.20VREK.Vrek Vileclaw"
+                },
+                {
+                    "src": "100",
+                    "used_count": 12,
+                    "value": "100",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "50",
+                    "used_count": 3,
+                    "value": "50",
+                    "first_occurence": "AR5101.51OCH.09_51OCH_01"
+                },
+                {
+                    "src": "45",
+                    "used_count": 1,
+                    "value": "45",
+                    "first_occurence": "AR5302.53MORHIZ.None"
+                },
+                {
+                    "src": "33",
+                    "used_count": 2,
+                    "value": "33",
+                    "first_occurence": "AR6305.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Flags",
+                "arg_ids": "HPFlags",
+                "arg_line": "I:Flags*HPFlags"
+            },
+            "values": [
+                {
+                    "src": "MAX_HP",
+                    "used_count": 90,
+                    "value": "\"MAX_HP\"",
+                    "first_occurence": "AR2002.20VREK.Vrek Vileclaw"
+                },
+                {
+                    "src": "CURRENT_HP",
+                    "used_count": 3,
+                    "value": "\"CURRENT_HP\"",
+                    "first_occurence": "AR5101.51OCH.09_51OCH_01"
+                }
+            ]
+        }
+    ]
+}

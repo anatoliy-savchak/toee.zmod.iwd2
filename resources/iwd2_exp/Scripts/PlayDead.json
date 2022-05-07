@@ -1,0 +1,39 @@
+{
+    "func_name": "PlayDead",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Time",
+                "arg_ids": "",
+                "arg_line": "I:Time*"
+            },
+            "values": [
+                {
+                    "src": "600",
+                    "used_count": 75,
+                    "value": "600",
+                    "first_occurence": "AR2002.20VREK.Vrek Vileclaw"
+                },
+                {
+                    "src": "10",
+                    "used_count": 1,
+                    "value": "10",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "100",
+                    "used_count": 1,
+                    "value": "100",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "0",
+                    "used_count": 2,
+                    "value": "0",
+                    "first_occurence": "AR4100.41ZACK.None"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "func_name": "CheckStatLT",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 352,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 9,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 5,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "",
+                "arg_line": "I:Value*"
+            },
+            "values": [
+                {
+                    "src": "4",
+                    "used_count": 85,
+                    "value": "4",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "8",
+                    "used_count": 85,
+                    "value": "8",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "12",
+                    "used_count": 85,
+                    "value": "12",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "16",
+                    "used_count": 85,
+                    "value": "16",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "6",
+                    "used_count": 9,
+                    "value": "6",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "5",
+                    "used_count": 1,
+                    "value": "5",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "100",
+                    "used_count": 4,
+                    "value": "100",
+                    "first_occurence": "AR6101.None.None"
+                },
+                {
+                    "src": "30",
+                    "used_count": 12,
+                    "value": "30",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "StatNum",
+                "arg_ids": "Stats",
+                "arg_line": "I:StatNum*Stats"
+            },
+            "values": [
+                {
+                    "src": "CLASSLEVELSUM",
+                    "used_count": 350,
+                    "value": "\"CLASSLEVELSUM\"",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "RESISTFIRE",
+                    "used_count": 10,
+                    "value": "\"RESISTFIRE\"",
+                    "first_occurence": "AR6101.None.None"
+                },
+                {
+                    "src": "RESISTELECTRICITY",
+                    "used_count": 6,
+                    "value": "\"RESISTELECTRICITY\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                }
+            ]
+        }
+    ]
+}

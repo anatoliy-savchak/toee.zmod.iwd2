@@ -1,0 +1,61 @@
+{
+    "func_name": "SubRace",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 3,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "Protagonist",
+                    "used_count": 11,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR6200.62TSOL.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "SubRace",
+                "arg_ids": "SubRace",
+                "arg_line": "I:SubRace*SubRace"
+            },
+            "values": [
+                {
+                    "src": "PURERACE",
+                    "used_count": 3,
+                    "value": "\"PURERACE\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "ELF_DROW",
+                    "used_count": 1,
+                    "value": "\"ELF_DROW\"",
+                    "first_occurence": "AR6200.62TSOL.None"
+                },
+                {
+                    "src": "Human_Aasimar",
+                    "used_count": 5,
+                    "value": "\"Human_Aasimar\"",
+                    "first_occurence": "AR6301.63GLABS1.None"
+                },
+                {
+                    "src": "Human_Tiefling",
+                    "used_count": 5,
+                    "value": "\"Human_Tiefling\"",
+                    "first_occurence": "AR6301.63GLABS1.None"
+                }
+            ]
+        }
+    ]
+}

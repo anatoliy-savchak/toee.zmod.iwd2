@@ -1,0 +1,37 @@
+{
+    "func_name": "RunAwayFromNoLeaveArea",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "NearestEnemyOf",
+                    "used_count": 35,
+                    "value": "self.iNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR2101.20MALARA.Malarite"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Duration",
+                "arg_ids": "",
+                "arg_line": "I:Duration*"
+            },
+            "values": [
+                {
+                    "src": "3",
+                    "used_count": 35,
+                    "value": "3",
+                    "first_occurence": "AR2101.20MALARA.Malarite"
+                }
+            ]
+        }
+    ]
+}

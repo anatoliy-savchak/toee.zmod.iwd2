@@ -1,0 +1,73 @@
+{
+    "func_name": "General",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 6,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 176,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4102.41ASSASS.02_Assassin_01"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 41,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR5300.53OINCHA.Oinchack'olp"
+                },
+                {
+                    "src": "MyTarget",
+                    "used_count": 12,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "General",
+                "arg_ids": "General",
+                "arg_line": "I:General*General"
+            },
+            "values": [
+                {
+                    "src": "ANIMAL",
+                    "used_count": 3,
+                    "value": "\"ANIMAL\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "UNDEAD",
+                    "used_count": 24,
+                    "value": "\"UNDEAD\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "HUMANOID",
+                    "used_count": 188,
+                    "value": "\"HUMANOID\"",
+                    "first_occurence": "AR4102.41ASSASS.02_Assassin_01"
+                },
+                {
+                    "src": "GENERAL_ITEM",
+                    "used_count": 20,
+                    "value": "\"GENERAL_ITEM\"",
+                    "first_occurence": "AR6304.63GLBXP.AL_GlabrezuGuard1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,243 @@
+{
+    "func_name": "Exists",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"Brogan\"",
+                    "used_count": 3,
+                    "value": "\"'Brogan'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"Jon\"",
+                    "used_count": 1,
+                    "value": "\"'Jon'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"Reig\"",
+                    "used_count": 1,
+                    "value": "\"'Reig'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"Brohn_Dead\"",
+                    "used_count": 1,
+                    "value": "\"'Brohn_Dead'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"Crandall\"",
+                    "used_count": 1,
+                    "value": "\"'Crandall'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "NearestPC",
+                    "used_count": 2048,
+                    "value": "\"NearestPC\"",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "\"SCREED\"",
+                    "used_count": 1,
+                    "value": "\"'SCREED'\"",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "\"ELDGULL\"",
+                    "used_count": 1,
+                    "value": "\"'ELDGULL'\"",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "\"MAGDAR\"",
+                    "used_count": 2,
+                    "value": "\"'MAGDAR'\"",
+                    "first_occurence": "AR1001.None.None"
+                },
+                {
+                    "src": "\"BLANCHARD\"",
+                    "used_count": 1,
+                    "value": "\"'BLANCHARD'\"",
+                    "first_occurence": "AR1003.10BLACK.Black_Geoffrey"
+                },
+                {
+                    "src": "\"KICKSHAW\"",
+                    "used_count": 1,
+                    "value": "\"'KICKSHAW'\"",
+                    "first_occurence": "AR1003.10BLACK.Black_Geoffrey"
+                },
+                {
+                    "src": "\"[PC][1984.384.2687.767]\"",
+                    "used_count": 2,
+                    "value": "\"[PC][1984.384.2687.767]\"",
+                    "first_occurence": "AR2000.20ORCFIR.T7_Firestarter_1"
+                },
+                {
+                    "src": "\"41Zack\"",
+                    "used_count": 13,
+                    "value": "\"'41Zack'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "Player1",
+                    "used_count": 7,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player2",
+                    "used_count": 7,
+                    "value": "\"Player2\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player3",
+                    "used_count": 7,
+                    "value": "\"Player3\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player4",
+                    "used_count": 7,
+                    "value": "\"Player4\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player5",
+                    "used_count": 7,
+                    "value": "\"Player5\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player6",
+                    "used_count": 7,
+                    "value": "\"Player6\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "MyTarget",
+                    "used_count": 6,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 1,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4102.41MYSTIC.02_Mystic_03"
+                },
+                {
+                    "src": "\"B_S_C\"",
+                    "used_count": 1,
+                    "value": "\"'B_S_C'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"Pod1\"",
+                    "used_count": 13,
+                    "value": "\"'Pod1'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"Pod2\"",
+                    "used_count": 13,
+                    "value": "\"'Pod2'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"Pod3\"",
+                    "used_count": 13,
+                    "value": "\"'Pod3'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"Pod4\"",
+                    "used_count": 13,
+                    "value": "\"'Pod4'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"Pod5\"",
+                    "used_count": 13,
+                    "value": "\"'Pod5'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"Pod6\"",
+                    "used_count": 13,
+                    "value": "\"'Pod6'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"Pod7\"",
+                    "used_count": 13,
+                    "value": "\"'Pod7'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"Pod8\"",
+                    "used_count": 13,
+                    "value": "\"'Pod8'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"Pod9\"",
+                    "used_count": 13,
+                    "value": "\"'Pod9'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"Pod10\"",
+                    "used_count": 13,
+                    "value": "\"'Pod10'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"Pod11\"",
+                    "used_count": 13,
+                    "value": "\"'Pod11'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"Pod12\"",
+                    "used_count": 13,
+                    "value": "\"'Pod12'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"Pod13\"",
+                    "used_count": 13,
+                    "value": "\"'Pod13'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"[0.0.YUANTI][0.0.10000.10000]\"",
+                    "used_count": 1,
+                    "value": "\"[0.0.YUANTI][0.0.10000.10000]\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"61feyr\"",
+                    "used_count": 2,
+                    "value": "\"'61feyr'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 1,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                }
+            ]
+        }
+    ]
+}

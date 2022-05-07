@@ -1,0 +1,73 @@
+{
+    "func_name": "ClassEx",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "MyTarget",
+                    "used_count": 30,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 21,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR6104.61YAPRIE.05_AbominationPriest_01"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Class",
+                "arg_ids": "Class",
+                "arg_line": "I:Class*Class"
+            },
+            "values": [
+                {
+                    "src": "MAGE",
+                    "used_count": 6,
+                    "value": "\"MAGE\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "CLERIC",
+                    "used_count": 6,
+                    "value": "\"CLERIC\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "DRUID",
+                    "used_count": 6,
+                    "value": "\"DRUID\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "BARD",
+                    "used_count": 6,
+                    "value": "\"BARD\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "SORCERER",
+                    "used_count": 6,
+                    "value": "\"SORCERER\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "FIGHTER",
+                    "used_count": 21,
+                    "value": "\"FIGHTER\"",
+                    "first_occurence": "AR6104.61YAPRIE.05_AbominationPriest_01"
+                }
+            ]
+        }
+    ]
+}

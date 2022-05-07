@@ -1,0 +1,217 @@
+{
+    "func_name": "ApplySpell",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": null,
+                "arg_line": "O:Target"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 7,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 78,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4101.41GOLEIC.Champion_01"
+                },
+                {
+                    "src": "\"02_Assassin_01\"",
+                    "used_count": 1,
+                    "value": "\"'02_Assassin_01'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Bishop_02\"",
+                    "used_count": 1,
+                    "value": "\"'02_Bishop_02'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Mystic_03\"",
+                    "used_count": 1,
+                    "value": "\"'02_Mystic_03'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Warrior_04\"",
+                    "used_count": 1,
+                    "value": "\"'02_Warrior_04'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_05\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_05'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_06\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_06'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_07\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_07'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_08\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_08'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_09\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_09'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_10\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_10'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_11\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_11'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_12\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_12'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_13\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_13'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"OriaEssence\"",
+                    "used_count": 3,
+                    "value": "\"'OriaEssence'\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "\"B_S_C\"",
+                    "used_count": 2,
+                    "value": "\"'B_S_C'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "Player1",
+                    "used_count": 4,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR6101.None.None"
+                },
+                {
+                    "src": "Player2",
+                    "used_count": 4,
+                    "value": "\"Player2\"",
+                    "first_occurence": "AR6101.None.None"
+                },
+                {
+                    "src": "Player3",
+                    "used_count": 4,
+                    "value": "\"Player3\"",
+                    "first_occurence": "AR6101.None.None"
+                },
+                {
+                    "src": "Player4",
+                    "used_count": 4,
+                    "value": "\"Player4\"",
+                    "first_occurence": "AR6101.None.None"
+                },
+                {
+                    "src": "Player5",
+                    "used_count": 4,
+                    "value": "\"Player5\"",
+                    "first_occurence": "AR6101.None.None"
+                },
+                {
+                    "src": "Player6",
+                    "used_count": 4,
+                    "value": "\"Player6\"",
+                    "first_occurence": "AR6101.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Spell",
+                "arg_ids": "Spell",
+                "arg_line": "I:Spell*Spell"
+            },
+            "values": [
+                {
+                    "src": "2085",
+                    "used_count": 3,
+                    "value": "2085",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "CLERIC_CURE_LIGHT_WOUNDS",
+                    "used_count": 8,
+                    "value": "\"CLERIC_CURE_LIGHT_WOUNDS\"",
+                    "first_occurence": "AR4101.41GOLEIC.Champion_01"
+                },
+                {
+                    "src": "2084",
+                    "used_count": 17,
+                    "value": "2084",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "2082",
+                    "used_count": 2,
+                    "value": "2082",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "INNATE_INVISIBILITY_NO_FEEDBACK",
+                    "used_count": 41,
+                    "value": "\"INNATE_INVISIBILITY_NO_FEEDBACK\"",
+                    "first_occurence": "AR5300.53DUFITH.Duergar Fighter Thrall 1"
+                },
+                {
+                    "src": "WIZARD_IMPROVED_HASTE",
+                    "used_count": 1,
+                    "value": "\"WIZARD_IMPROVED_HASTE\"",
+                    "first_occurence": "AR5301.53CELEDR.Celeridrider"
+                },
+                {
+                    "src": "2099",
+                    "used_count": 28,
+                    "value": "2099",
+                    "first_occurence": "AR6101.None.None"
+                },
+                {
+                    "src": "2096",
+                    "used_count": 5,
+                    "value": "2096",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "WIZARD_SLEEP",
+                    "used_count": 22,
+                    "value": "\"WIZARD_SLEEP\"",
+                    "first_occurence": "AR6304.63GADU.RuinlordGaduCrum"
+                }
+            ]
+        }
+    ]
+}

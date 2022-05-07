@@ -1,0 +1,181 @@
+{
+    "func_name": "HPPercentGT",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"Support_Beam_North\"",
+                    "used_count": 2,
+                    "value": "\"'Support_Beam_North'\"",
+                    "first_occurence": "AR2102.21OGR.Ogre_North"
+                },
+                {
+                    "src": "\"Support_Beam_South\"",
+                    "used_count": 2,
+                    "value": "\"'Support_Beam_South'\"",
+                    "first_occurence": "AR2102.21OGR.Ogre_North"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 41,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "MyTarget",
+                    "used_count": 6,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Hit Points",
+                "arg_ids": "",
+                "arg_line": "I:Hit Points*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 4,
+                    "value": "0",
+                    "first_occurence": "AR2102.21OGR.Ogre_North"
+                },
+                {
+                    "src": "49",
+                    "used_count": 22,
+                    "value": "49",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "94",
+                    "used_count": 1,
+                    "value": "94",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "89",
+                    "used_count": 1,
+                    "value": "89",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "84",
+                    "used_count": 1,
+                    "value": "84",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "79",
+                    "used_count": 1,
+                    "value": "79",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "74",
+                    "used_count": 1,
+                    "value": "74",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "69",
+                    "used_count": 1,
+                    "value": "69",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "64",
+                    "used_count": 1,
+                    "value": "64",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "59",
+                    "used_count": 1,
+                    "value": "59",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "54",
+                    "used_count": 1,
+                    "value": "54",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "44",
+                    "used_count": 1,
+                    "value": "44",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "39",
+                    "used_count": 1,
+                    "value": "39",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "34",
+                    "used_count": 1,
+                    "value": "34",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "29",
+                    "used_count": 1,
+                    "value": "29",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "24",
+                    "used_count": 1,
+                    "value": "24",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "19",
+                    "used_count": 1,
+                    "value": "19",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "14",
+                    "used_count": 1,
+                    "value": "14",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "9",
+                    "used_count": 1,
+                    "value": "9",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "4",
+                    "used_count": 1,
+                    "value": "4",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "50",
+                    "used_count": 6,
+                    "value": "50",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "80",
+                    "used_count": 1,
+                    "value": "80",
+                    "first_occurence": "AR6302.63VESE.Vese_Nejj"
+                }
+            ]
+        }
+    ]
+}

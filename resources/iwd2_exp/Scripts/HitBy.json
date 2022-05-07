@@ -1,0 +1,157 @@
+{
+    "func_name": "HitBy",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"[GOODCUTOFF]\"",
+                    "used_count": 191,
+                    "value": "\"[GOODCUTOFF]\"",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "\"[ANYONE]\"",
+                    "used_count": 428,
+                    "value": "\"[ANYONE]\"",
+                    "first_occurence": "AR2000.DYNOKEG.T3_Dynokeg_1"
+                },
+                {
+                    "src": "\"[PC]\"",
+                    "used_count": 38,
+                    "value": "\"[PC]\"",
+                    "first_occurence": "AR4100.41NECROM.03_Cultist_02"
+                },
+                {
+                    "src": "Player1",
+                    "used_count": 1,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR5301.53GOLIMX.53GolImX"
+                },
+                {
+                    "src": "Player2",
+                    "used_count": 1,
+                    "value": "\"Player2\"",
+                    "first_occurence": "AR5301.53GOLIMX.53GolImX"
+                },
+                {
+                    "src": "Player3",
+                    "used_count": 1,
+                    "value": "\"Player3\"",
+                    "first_occurence": "AR5301.53GOLIMX.53GolImX"
+                },
+                {
+                    "src": "Player4",
+                    "used_count": 1,
+                    "value": "\"Player4\"",
+                    "first_occurence": "AR5301.53GOLIMX.53GolImX"
+                },
+                {
+                    "src": "Player5",
+                    "used_count": 1,
+                    "value": "\"Player5\"",
+                    "first_occurence": "AR5301.53GOLIMX.53GolImX"
+                },
+                {
+                    "src": "Player6",
+                    "used_count": 1,
+                    "value": "\"Player6\"",
+                    "first_occurence": "AR5301.53GOLIMX.53GolImX"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "DameType",
+                "arg_ids": "Damages",
+                "arg_line": "I:DameType*Damages"
+            },
+            "values": [
+                {
+                    "src": "CRUSHING",
+                    "used_count": 66,
+                    "value": "\"CRUSHING\"",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "SLASHING",
+                    "used_count": 26,
+                    "value": "\"SLASHING\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "PIERCING",
+                    "used_count": 26,
+                    "value": "\"PIERCING\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "MISSILE",
+                    "used_count": 35,
+                    "value": "\"MISSILE\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "FIRE",
+                    "used_count": 185,
+                    "value": "\"FIRE\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "ELECTRICITY",
+                    "used_count": 143,
+                    "value": "\"ELECTRICITY\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "POISON",
+                    "used_count": 31,
+                    "value": "\"POISON\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "MAGIC",
+                    "used_count": 49,
+                    "value": "\"MAGIC\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "COLD",
+                    "used_count": 39,
+                    "value": "\"COLD\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "ACID",
+                    "used_count": 31,
+                    "value": "\"ACID\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "MAGICFIRE",
+                    "used_count": 15,
+                    "value": "\"MAGICFIRE\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "MAGICCOLD",
+                    "used_count": 15,
+                    "value": "\"MAGICCOLD\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "STUNNING",
+                    "used_count": 2,
+                    "value": "\"STUNNING\"",
+                    "first_occurence": "AR4100.41TEMLEV.LeftLever"
+                }
+            ]
+        }
+    ]
+}

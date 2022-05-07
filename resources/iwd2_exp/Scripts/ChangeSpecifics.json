@@ -1,0 +1,145 @@
+{
+    "func_name": "ChangeSpecifics",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 4,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR1200.12WEAPON.Weapon_Instructor"
+                },
+                {
+                    "src": "Protagonist",
+                    "used_count": 2,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR1200.12WEAPON.None"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 96,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR2000.DYNOKEG.T3_Dynokeg_1"
+                },
+                {
+                    "src": "NearestPC",
+                    "used_count": 6,
+                    "value": "\"NearestPC\"",
+                    "first_occurence": "AR5102.51HNTMN.01_51HNTMN_04"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 3,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"[GOODCUTOFF.0.0.0.0.255][0.0.10000.10000]\"",
+                    "used_count": 2,
+                    "value": "\"[GOODCUTOFF.0.0.0.0.255][0.0.10000.10000]\"",
+                    "first_occurence": "AR5301.53IMPHRA.Imphraili"
+                },
+                {
+                    "src": "\"61Embassy\"",
+                    "used_count": 1,
+                    "value": "\"'61Embassy'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Palace\"",
+                    "used_count": 1,
+                    "value": "\"'61Palace'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Citadel\"",
+                    "used_count": 1,
+                    "value": "\"'61Citadel'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Amphitheatre\"",
+                    "used_count": 1,
+                    "value": "\"'61Amphitheatre'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Throne\"",
+                    "used_count": 1,
+                    "value": "\"'61Throne'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Bridge\"",
+                    "used_count": 1,
+                    "value": "\"'61Bridge'\"",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "Specific",
+                "arg_line": "I:Value*Specific"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 6,
+                    "value": "0",
+                    "first_occurence": "AR1200.12WEAPON.Weapon_Instructor"
+                },
+                {
+                    "src": "125",
+                    "used_count": 2,
+                    "value": "125",
+                    "first_occurence": "AR1200.12WEAPON.None"
+                },
+                {
+                    "src": "NORMAL",
+                    "used_count": 24,
+                    "value": "\"NORMAL\"",
+                    "first_occurence": "AR2000.DYNOKEG.T3_Dynokeg_1"
+                },
+                {
+                    "src": "200",
+                    "used_count": 8,
+                    "value": "200",
+                    "first_occurence": "AR2000.DYNOKEG.T3_Dynokeg_1"
+                },
+                {
+                    "src": "254",
+                    "used_count": 29,
+                    "value": "254",
+                    "first_occurence": "AR4101.41GOLEIC.Champion_04"
+                },
+                {
+                    "src": "150",
+                    "used_count": 10,
+                    "value": "150",
+                    "first_occurence": "AR5101.51BARUD.13_51Barud_04"
+                },
+                {
+                    "src": "255",
+                    "used_count": 2,
+                    "value": "255",
+                    "first_occurence": "AR5301.53IMPHRA.Imphraili"
+                },
+                {
+                    "src": "253",
+                    "used_count": 38,
+                    "value": "253",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        }
+    ]
+}

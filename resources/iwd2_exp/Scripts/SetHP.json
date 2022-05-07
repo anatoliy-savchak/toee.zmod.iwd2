@@ -1,0 +1,121 @@
+{
+    "func_name": "SetHP",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": null,
+                "arg_line": "O:Target"
+            },
+            "values": [
+                {
+                    "src": "\"Reig\"",
+                    "used_count": 1,
+                    "value": "\"'Reig'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"Ennelia\"",
+                    "used_count": 1,
+                    "value": "\"'Ennelia'\"",
+                    "first_occurence": "AR3000.None.None"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 14,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"61Bridge\"",
+                    "used_count": 1,
+                    "value": "\"'61Bridge'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Throne\"",
+                    "used_count": 1,
+                    "value": "\"'61Throne'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Amphitheatre\"",
+                    "used_count": 1,
+                    "value": "\"'61Amphitheatre'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Embassy\"",
+                    "used_count": 1,
+                    "value": "\"'61Embassy'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Palace\"",
+                    "used_count": 1,
+                    "value": "\"'61Palace'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Citadel\"",
+                    "used_count": 1,
+                    "value": "\"'61Citadel'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"63GlabSL\"",
+                    "used_count": 1,
+                    "value": "\"'63GlabSL'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"63GlabSR\"",
+                    "used_count": 1,
+                    "value": "\"'63GlabSR'\"",
+                    "first_occurence": "AR6305.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "HP",
+                "arg_ids": "",
+                "arg_line": "I:HP*"
+            },
+            "values": [
+                {
+                    "src": "3",
+                    "used_count": 1,
+                    "value": "3",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "6",
+                    "used_count": 1,
+                    "value": "6",
+                    "first_occurence": "AR3000.None.None"
+                },
+                {
+                    "src": "0",
+                    "used_count": 12,
+                    "value": "0",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "10",
+                    "used_count": 4,
+                    "value": "10",
+                    "first_occurence": "AR6010.60GERBAS.Gerbash"
+                },
+                {
+                    "src": "100",
+                    "used_count": 6,
+                    "value": "100",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        }
+    ]
+}

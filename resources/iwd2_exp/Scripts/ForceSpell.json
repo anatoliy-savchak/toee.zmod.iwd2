@@ -1,0 +1,403 @@
+{
+    "func_name": "ForceSpell",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": null,
+                "arg_line": "O:Target"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 329,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR2000.20ORCW3.T1_Orc_4"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 94,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR3000.30WWLF.20_Winter_Wolf_1"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 192,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR3001.30YQUOGG.15_Yquog"
+                },
+                {
+                    "src": "\"Yurst\"",
+                    "used_count": 3,
+                    "value": "\"'Yurst'\"",
+                    "first_occurence": "AR4000.40GIAFOM.03_Fomorian_01"
+                },
+                {
+                    "src": "FarthestEnemyOf",
+                    "used_count": 12,
+                    "value": "self.iFarthestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR4101.41XHAAN.Xhaan"
+                },
+                {
+                    "src": "SpellTarget",
+                    "used_count": 18,
+                    "value": "\"SpellTarget\"",
+                    "first_occurence": "AR4101.41XHAAN.Xhaan"
+                },
+                {
+                    "src": "LastHeardBy",
+                    "used_count": 1,
+                    "value": "self.iLastHeardBy(\"Myself\")",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 1,
+                    "value": "self.iLastAttackerOf(\"Myself\")",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "MyTarget",
+                    "used_count": 162,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "NearestEnemyOf",
+                    "used_count": 3,
+                    "value": "self.iNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR6303.63YXBU.Yxbudurzmutkimdu"
+                },
+                {
+                    "src": "NearestPC",
+                    "used_count": 1,
+                    "value": "\"NearestPC\"",
+                    "first_occurence": "AR6403.64ORRICK.OrrickTheGrey"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Spell",
+                "arg_ids": "Spell",
+                "arg_line": "I:Spell*Spell"
+            },
+            "values": [
+                {
+                    "src": "INNATE_BARBARIAN_RAGE",
+                    "used_count": 164,
+                    "value": "\"INNATE_BARBARIAN_RAGE\"",
+                    "first_occurence": "AR2000.20ORCW3.T1_Orc_4"
+                },
+                {
+                    "src": "CLERIC_CURE_MODERATE_WOUNDS",
+                    "used_count": 1,
+                    "value": "\"CLERIC_CURE_MODERATE_WOUNDS\"",
+                    "first_occurence": "AR3000.30ORCTRU.16_OrcTru"
+                },
+                {
+                    "src": "CLERIC_CURE_LIGHT_WOUNDS",
+                    "used_count": 1,
+                    "value": "\"CLERIC_CURE_LIGHT_WOUNDS\"",
+                    "first_occurence": "AR3000.30ORCTRU.16_OrcTru"
+                },
+                {
+                    "src": "INNATE_WINTER_WOLF_BREATH",
+                    "used_count": 52,
+                    "value": "\"INNATE_WINTER_WOLF_BREATH\"",
+                    "first_occurence": "AR3000.30WWLF.20_Winter_Wolf_1"
+                },
+                {
+                    "src": "WIZARD_DIMENSION_DOOR",
+                    "used_count": 1,
+                    "value": "\"WIZARD_DIMENSION_DOOR\"",
+                    "first_occurence": "AR3001.30YQUOGG.15_Yquog"
+                },
+                {
+                    "src": "2098",
+                    "used_count": 3,
+                    "value": "2098",
+                    "first_occurence": "AR4000.40GIAFOM.03_Fomorian_01"
+                },
+                {
+                    "src": "WIZARD_ICE_STORM",
+                    "used_count": 1,
+                    "value": "\"WIZARD_ICE_STORM\"",
+                    "first_occurence": "AR4101.41ONDABO.Ondabo"
+                },
+                {
+                    "src": "WIZARD_INVISIBILITY",
+                    "used_count": 1,
+                    "value": "\"WIZARD_INVISIBILITY\"",
+                    "first_occurence": "AR4101.41ONDABO.Ondabo"
+                },
+                {
+                    "src": "INNATE_SUMMON_LEMURES_WHITE_ABISHAI",
+                    "used_count": 6,
+                    "value": "\"INNATE_SUMMON_LEMURES_WHITE_ABISHAI\"",
+                    "first_occurence": "AR4101.41XHAAN.Xhaan"
+                },
+                {
+                    "src": "WIZARD_SHADOW_CONJURATION",
+                    "used_count": 6,
+                    "value": "\"WIZARD_SHADOW_CONJURATION\"",
+                    "first_occurence": "AR4101.41XHAAN.Xhaan"
+                },
+                {
+                    "src": "MARKED_SPELL",
+                    "used_count": 18,
+                    "value": "\"MARKED_SPELL\"",
+                    "first_occurence": "AR4101.41XHAAN.Xhaan"
+                },
+                {
+                    "src": "WIZARD_SHIELD",
+                    "used_count": 3,
+                    "value": "\"WIZARD_SHIELD\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "WIZARD_GLOBE_OF_INVULNERABILITY",
+                    "used_count": 4,
+                    "value": "\"WIZARD_GLOBE_OF_INVULNERABILITY\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "WIZARD_LIGHTNING_BOLT",
+                    "used_count": 3,
+                    "value": "\"WIZARD_LIGHTNING_BOLT\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "WIZARD_RAY_OF_ENFEEBLEMENT",
+                    "used_count": 3,
+                    "value": "\"WIZARD_RAY_OF_ENFEEBLEMENT\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "WIZARD_CONE_OF_COLD",
+                    "used_count": 3,
+                    "value": "\"WIZARD_CONE_OF_COLD\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "CLERIC_HEAL",
+                    "used_count": 66,
+                    "value": "\"CLERIC_HEAL\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "CLERIC_ARMOR_OF_FAITH",
+                    "used_count": 1,
+                    "value": "\"CLERIC_ARMOR_OF_FAITH\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "WIZARD_LUCK",
+                    "used_count": 1,
+                    "value": "\"WIZARD_LUCK\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "CLERIC_STRENGTH_OF_ONE",
+                    "used_count": 1,
+                    "value": "\"CLERIC_STRENGTH_OF_ONE\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "WIZARD_STONESKIN",
+                    "used_count": 2,
+                    "value": "\"WIZARD_STONESKIN\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "CLERIC_SHIELD_OF_LATHANDER",
+                    "used_count": 1,
+                    "value": "\"CLERIC_SHIELD_OF_LATHANDER\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "WIZARD_TROLLISH_FORTITUDE",
+                    "used_count": 1,
+                    "value": "\"WIZARD_TROLLISH_FORTITUDE\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "WIZARD_SEVEN_EYES",
+                    "used_count": 1,
+                    "value": "\"WIZARD_SEVEN_EYES\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "CLERIC_DIVINE_SHELL",
+                    "used_count": 2,
+                    "value": "\"CLERIC_DIVINE_SHELL\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "WIZARD_AEGIS",
+                    "used_count": 1,
+                    "value": "\"WIZARD_AEGIS\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "WIZARD_EXECUTIONERS_EYES",
+                    "used_count": 1,
+                    "value": "\"WIZARD_EXECUTIONERS_EYES\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "INNATE_DRAGON_BREATH_REDUCED_DAMAGE",
+                    "used_count": 1,
+                    "value": "\"INNATE_DRAGON_BREATH_REDUCED_DAMAGE\"",
+                    "first_occurence": "AR5100.51DRAWY.02_51DRAWY_01"
+                },
+                {
+                    "src": "WIZARD_POLYMORPH_SELF",
+                    "used_count": 1,
+                    "value": "\"WIZARD_POLYMORPH_SELF\"",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
+                    "src": "INNATE_IRON_GOLEM_CLOUD",
+                    "used_count": 18,
+                    "value": "\"INNATE_IRON_GOLEM_CLOUD\"",
+                    "first_occurence": "AR5203.52GOLIR.01_52GOLIR_01"
+                },
+                {
+                    "src": "INNATE_FAERIE_FIRE",
+                    "used_count": 21,
+                    "value": "\"INNATE_FAERIE_FIRE\"",
+                    "first_occurence": "AR5300.53DESPGU.House_Despana_Guard_01"
+                },
+                {
+                    "src": "INNATE_MIND_FLAYER_PSIONIC_BLAST",
+                    "used_count": 14,
+                    "value": "\"INNATE_MIND_FLAYER_PSIONIC_BLAST\"",
+                    "first_occurence": "AR5300.53OINCHA.Oinchack'olp"
+                },
+                {
+                    "src": "INNATE_MYCONID_SPORES",
+                    "used_count": 9,
+                    "value": "\"INNATE_MYCONID_SPORES\"",
+                    "first_occurence": "AR5301.53REDMYC.Red_Myconid1"
+                },
+                {
+                    "src": "INNATE_INVISIBILITY_NO_FEEDBACK",
+                    "used_count": 2,
+                    "value": "\"INNATE_INVISIBILITY_NO_FEEDBACK\"",
+                    "first_occurence": "AR5302.53DUFITH.Du_Fighter_Thrall16"
+                },
+                {
+                    "src": "CLERIC_IMPERVIOUS_SANCTITY_OF_MIND",
+                    "used_count": 1,
+                    "value": "\"CLERIC_IMPERVIOUS_SANCTITY_OF_MIND\"",
+                    "first_occurence": "AR6001.60ISELOR.Iselore"
+                },
+                {
+                    "src": "CLERIC_AURA_OF_VITALITY",
+                    "used_count": 1,
+                    "value": "\"CLERIC_AURA_OF_VITALITY\"",
+                    "first_occurence": "AR6001.60ISELOR.Iselore"
+                },
+                {
+                    "src": "CLERIC_INVISIBILITY_PURGE",
+                    "used_count": 2,
+                    "value": "\"CLERIC_INVISIBILITY_PURGE\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "INNATE_CHAMELEON_POWER",
+                    "used_count": 10,
+                    "value": "\"INNATE_CHAMELEON_POWER\"",
+                    "first_occurence": "AR6051.60VIFANG.Viper_Fang1"
+                },
+                {
+                    "src": "CLERIC_NEUTRALIZE_POISON",
+                    "used_count": 108,
+                    "value": "\"CLERIC_NEUTRALIZE_POISON\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "CLERIC_CHARM_PERSON_OR_MAMMAL",
+                    "used_count": 54,
+                    "value": "\"CLERIC_CHARM_PERSON_OR_MAMMAL\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "INNATE_BEHOLDER_FEAR",
+                    "used_count": 54,
+                    "value": "\"INNATE_BEHOLDER_FEAR\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "CLERIC_COMMAND",
+                    "used_count": 54,
+                    "value": "\"CLERIC_COMMAND\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "CLERIC_SYMBOL_OF_PAIN",
+                    "used_count": 54,
+                    "value": "\"CLERIC_SYMBOL_OF_PAIN\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "INNATE_MONK_WHOLENESS_OF_BODY",
+                    "used_count": 1,
+                    "value": "\"INNATE_MONK_WHOLENESS_OF_BODY\"",
+                    "first_occurence": "AR6101.61PRISF2.04_FemalePrisoner_07"
+                },
+                {
+                    "src": "WIZARD_FIRESHIELD_RED",
+                    "used_count": 22,
+                    "value": "\"WIZARD_FIRESHIELD_RED\"",
+                    "first_occurence": "AR6103.61EFREET.03_Efreeti_01"
+                },
+                {
+                    "src": "WIZARD_BURNING_HANDS",
+                    "used_count": 22,
+                    "value": "\"WIZARD_BURNING_HANDS\"",
+                    "first_occurence": "AR6103.61EFREET.03_Efreeti_01"
+                },
+                {
+                    "src": "INNATE_MUSTARD_JELLY_VAPOR",
+                    "used_count": 10,
+                    "value": "\"INNATE_MUSTARD_JELLY_VAPOR\"",
+                    "first_occurence": "AR6103.61MUSJEL.05_MustardJelly_01"
+                },
+                {
+                    "src": "WIZARD_SUMMON_MONSTER_VII",
+                    "used_count": 1,
+                    "value": "\"WIZARD_SUMMON_MONSTER_VII\"",
+                    "first_occurence": "AR6104.61YAPRIE.05_AbominationPriest_01"
+                },
+                {
+                    "src": "WIZARD_IMPROVED_INVISIBILITY",
+                    "used_count": 1,
+                    "value": "\"WIZARD_IMPROVED_INVISIBILITY\"",
+                    "first_occurence": "AR6200.62MDARF.Mdarfein"
+                },
+                {
+                    "src": "WIZARD_EMOTION_HOPELESSNESS",
+                    "used_count": 3,
+                    "value": "\"WIZARD_EMOTION_HOPELESSNESS\"",
+                    "first_occurence": "AR6201.62GFYR.Greater Feyr"
+                },
+                {
+                    "src": "WIZARD_DISPEL_MAGIC",
+                    "used_count": 3,
+                    "value": "\"WIZARD_DISPEL_MAGIC\"",
+                    "first_occurence": "AR6303.63YXBU.Yxbudurzmutkimdu"
+                },
+                {
+                    "src": "INNATE_ORRICKS_SOUL_DEVOURER",
+                    "used_count": 1,
+                    "value": "\"INNATE_ORRICKS_SOUL_DEVOURER\"",
+                    "first_occurence": "AR6403.64ORRICK.OrrickTheGrey"
+                }
+            ]
+        }
+    ]
+}

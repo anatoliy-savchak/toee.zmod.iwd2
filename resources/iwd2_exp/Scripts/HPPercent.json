@@ -1,0 +1,43 @@
+{
+    "func_name": "HPPercent",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Protagonist",
+                    "used_count": 2,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR5000.50VENLA.None"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 3,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Hit Points",
+                "arg_ids": "",
+                "arg_line": "I:Hit Points*"
+            },
+            "values": [
+                {
+                    "src": "100",
+                    "used_count": 5,
+                    "value": "100",
+                    "first_occurence": "AR5000.50VENLA.None"
+                }
+            ]
+        }
+    ]
+}

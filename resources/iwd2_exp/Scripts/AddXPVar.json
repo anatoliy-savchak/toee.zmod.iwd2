@@ -1,0 +1,727 @@
+{
+    "func_name": "AddXpVar",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "VarTableEntry",
+                "arg_ids": "",
+                "arg_line": "S:VarTableEntry*"
+            },
+            "values": [
+                {
+                    "src": "\"Level_1_Easy\"",
+                    "used_count": 47,
+                    "value": "\"'Level_1_Easy'\"",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
+                    "src": "\"Level_1_Average\"",
+                    "used_count": 20,
+                    "value": "\"'Level_1_Average'\"",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "\"Level_2_Easy\"",
+                    "used_count": 45,
+                    "value": "\"'Level_2_Easy'\"",
+                    "first_occurence": "AR1003.10BLACK.None"
+                },
+                {
+                    "src": "\"Level_2_Average\"",
+                    "used_count": 18,
+                    "value": "\"'Level_2_Average'\"",
+                    "first_occurence": "AR1003.10BLACK.None"
+                },
+                {
+                    "src": "\"Level_7_Average\"",
+                    "used_count": 5,
+                    "value": "\"'Level_7_Average'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"Level_7_Very_Hard\"",
+                    "used_count": 30,
+                    "value": "\"'Level_7_Very_Hard'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"Level_3_Average\"",
+                    "used_count": 1,
+                    "value": "\"'Level_3_Average'\"",
+                    "first_occurence": "AR1101.11ULBREC.None"
+                },
+                {
+                    "src": "\"Level_4_Very_Hard\"",
+                    "used_count": 1,
+                    "value": "\"'Level_4_Very_Hard'\"",
+                    "first_occurence": "AR1101.11ULBREC.None"
+                },
+                {
+                    "src": "\"Level_4_Hard\"",
+                    "used_count": 1,
+                    "value": "\"'Level_4_Hard'\"",
+                    "first_occurence": "AR1101.11ULBREC.None"
+                },
+                {
+                    "src": "\"Level_6_Hard\"",
+                    "used_count": 1,
+                    "value": "\"'Level_6_Hard'\"",
+                    "first_occurence": "AR1101.11ULBREC.None"
+                },
+                {
+                    "src": "\"Level_1_Hard\"",
+                    "used_count": 7,
+                    "value": "\"'Level_1_Hard'\"",
+                    "first_occurence": "AR1101.11ELYTHA.None"
+                },
+                {
+                    "src": "\"Level_2_Hard\"",
+                    "used_count": 3,
+                    "value": "\"'Level_2_Hard'\"",
+                    "first_occurence": "AR1107.11KOLUHM.None"
+                },
+                {
+                    "src": "\"Level_8_Hard\"",
+                    "used_count": 9,
+                    "value": "\"'Level_8_Hard'\"",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "\"Level_8_Very_Hard\"",
+                    "used_count": 3,
+                    "value": "\"'Level_8_Very_Hard'\"",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "\"Level_8_Easy\"",
+                    "used_count": 2,
+                    "value": "\"'Level_8_Easy'\"",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "\"Level_8_Average\"",
+                    "used_count": 1,
+                    "value": "\"'Level_8_Average'\"",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "\"Level_Nine_Easy\"",
+                    "used_count": 4,
+                    "value": "\"'Level_Nine_Easy'\"",
+                    "first_occurence": "AR5000.50WITBA.None"
+                },
+                {
+                    "src": "\"Level_9_Easy\"",
+                    "used_count": 19,
+                    "value": "\"'Level_9_Easy'\"",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "\"Level_9_Hard\"",
+                    "used_count": 2,
+                    "value": "\"'Level_9_Hard'\"",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "\"Level_9_Average\"",
+                    "used_count": 13,
+                    "value": "\"'Level_9_Average'\"",
+                    "first_occurence": "AR5000.50VENLA.None"
+                },
+                {
+                    "src": "\"Level_10_Easy\"",
+                    "used_count": 8,
+                    "value": "\"'Level_10_Easy'\"",
+                    "first_occurence": "AR5101.51BARUD.None"
+                },
+                {
+                    "src": "\"Level_10_Average\"",
+                    "used_count": 4,
+                    "value": "\"'Level_10_Average'\"",
+                    "first_occurence": "AR5101.51BARUD.None"
+                },
+                {
+                    "src": "\"Level_11_Easy\"",
+                    "used_count": 8,
+                    "value": "\"'Level_11_Easy'\"",
+                    "first_occurence": "AR5201.52SALISA.None"
+                },
+                {
+                    "src": "\"Level_11_Average\"",
+                    "used_count": 6,
+                    "value": "\"'Level_11_Average'\"",
+                    "first_occurence": "AR5201.52SALISA.None"
+                },
+                {
+                    "src": "\"Level_12_Easy\"",
+                    "used_count": 8,
+                    "value": "\"'Level_12_Easy'\"",
+                    "first_occurence": "AR6051.60VIFANG.None"
+                },
+                {
+                    "src": "\"Level_13_Hard\"",
+                    "used_count": 3,
+                    "value": "\"'Level_13_Hard'\"",
+                    "first_occurence": "AR6200.62KRATU.None"
+                },
+                {
+                    "src": "\"Level_13_Easy\"",
+                    "used_count": 2,
+                    "value": "\"'Level_13_Easy'\"",
+                    "first_occurence": "AR6200.62TSOL.None"
+                },
+                {
+                    "src": "\"Level_13_Average\"",
+                    "used_count": 3,
+                    "value": "\"'Level_13_Average'\"",
+                    "first_occurence": "AR6200.62TSOL.None"
+                },
+                {
+                    "src": "\"Level_14_Easy\"",
+                    "used_count": 10,
+                    "value": "\"'Level_14_Easy'\"",
+                    "first_occurence": "AR6301.63GLABS1.None"
+                },
+                {
+                    "src": "\"Level_15_Average\"",
+                    "used_count": 1,
+                    "value": "\"'Level_15_Average'\"",
+                    "first_occurence": "AR6700.67PUDDY.None"
+                },
+                {
+                    "src": "\"Level_15_Hard\"",
+                    "used_count": 1,
+                    "value": "\"'Level_15_Hard'\"",
+                    "first_occurence": "AR6700.67PUDDY.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Strref",
+                "arg_ids": "",
+                "arg_line": "I:Strref*"
+            },
+            "values": [
+                {
+                    "src": "2578",
+                    "used_count": 4,
+                    "value": "2578",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
+                    "src": "1484",
+                    "used_count": 3,
+                    "value": "1484",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "1483",
+                    "used_count": 2,
+                    "value": "1483",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "27693",
+                    "used_count": 2,
+                    "value": "27693",
+                    "first_occurence": "AR1000.10BROGAN.None"
+                },
+                {
+                    "src": "27695",
+                    "used_count": 3,
+                    "value": "27695",
+                    "first_occurence": "AR1000.10BROGAN.None"
+                },
+                {
+                    "src": "27697",
+                    "used_count": 2,
+                    "value": "27697",
+                    "first_occurence": "AR1000.10BROGAN.None"
+                },
+                {
+                    "src": "7430",
+                    "used_count": 1,
+                    "value": "7430",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "11503",
+                    "used_count": 3,
+                    "value": "11503",
+                    "first_occurence": "AR1003.10BLACK.None"
+                },
+                {
+                    "src": "1507",
+                    "used_count": 2,
+                    "value": "1507",
+                    "first_occurence": "AR1003.10BLACK.None"
+                },
+                {
+                    "src": "11523",
+                    "used_count": 4,
+                    "value": "11523",
+                    "first_occurence": "AR1003.10KICKSH.None"
+                },
+                {
+                    "src": "1352",
+                    "used_count": 6,
+                    "value": "1352",
+                    "first_occurence": "AR1004.10FIRTH.None"
+                },
+                {
+                    "src": "19277",
+                    "used_count": 5,
+                    "value": "19277",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "19284",
+                    "used_count": 30,
+                    "value": "19284",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "6192",
+                    "used_count": 1,
+                    "value": "6192",
+                    "first_occurence": "AR1101.11ULBREC.None"
+                },
+                {
+                    "src": "6190",
+                    "used_count": 1,
+                    "value": "6190",
+                    "first_occurence": "AR1101.11ULBREC.None"
+                },
+                {
+                    "src": "6188",
+                    "used_count": 1,
+                    "value": "6188",
+                    "first_occurence": "AR1101.11ULBREC.None"
+                },
+                {
+                    "src": "6191",
+                    "used_count": 1,
+                    "value": "6191",
+                    "first_occurence": "AR1101.11ULBREC.None"
+                },
+                {
+                    "src": "429",
+                    "used_count": 12,
+                    "value": "429",
+                    "first_occurence": "AR1101.11ELYTHA.None"
+                },
+                {
+                    "src": "431",
+                    "used_count": 12,
+                    "value": "431",
+                    "first_occurence": "AR1101.11ELYTHA.None"
+                },
+                {
+                    "src": "430",
+                    "used_count": 1,
+                    "value": "430",
+                    "first_occurence": "AR1101.11ELYTHA.None"
+                },
+                {
+                    "src": "15717",
+                    "used_count": 4,
+                    "value": "15717",
+                    "first_occurence": "AR1102.11DEIRD.None"
+                },
+                {
+                    "src": "25122",
+                    "used_count": 5,
+                    "value": "25122",
+                    "first_occurence": "AR1103.11DENHAM.None"
+                },
+                {
+                    "src": "25121",
+                    "used_count": 1,
+                    "value": "25121",
+                    "first_occurence": "AR1103.11DENHAM.None"
+                },
+                {
+                    "src": "8070",
+                    "used_count": 4,
+                    "value": "8070",
+                    "first_occurence": "AR1103.11VALIN.None"
+                },
+                {
+                    "src": "28452",
+                    "used_count": 1,
+                    "value": "28452",
+                    "first_occurence": "AR1103.11GARRAD.None"
+                },
+                {
+                    "src": "7895",
+                    "used_count": 6,
+                    "value": "7895",
+                    "first_occurence": "AR1104.11CAHLHY.None"
+                },
+                {
+                    "src": "7897",
+                    "used_count": 2,
+                    "value": "7897",
+                    "first_occurence": "AR1104.11CAHLHY.None"
+                },
+                {
+                    "src": "9629",
+                    "used_count": 6,
+                    "value": "9629",
+                    "first_occurence": "AR1106.11PHAEN.None"
+                },
+                {
+                    "src": "9631",
+                    "used_count": 1,
+                    "value": "9631",
+                    "first_occurence": "AR1106.11PHAEN.None"
+                },
+                {
+                    "src": "9748",
+                    "used_count": 1,
+                    "value": "9748",
+                    "first_occurence": "AR1107.11KOLUHM.None"
+                },
+                {
+                    "src": "9745",
+                    "used_count": 1,
+                    "value": "9745",
+                    "first_occurence": "AR1107.11KOLUHM.None"
+                },
+                {
+                    "src": "9747",
+                    "used_count": 1,
+                    "value": "9747",
+                    "first_occurence": "AR1107.11KOLUHM.None"
+                },
+                {
+                    "src": "9737",
+                    "used_count": 1,
+                    "value": "9737",
+                    "first_occurence": "AR1107.11KOLUHM.None"
+                },
+                {
+                    "src": "9749",
+                    "used_count": 1,
+                    "value": "9749",
+                    "first_occurence": "AR1107.11KOLUHM.None"
+                },
+                {
+                    "src": "39399",
+                    "used_count": 2,
+                    "value": "39399",
+                    "first_occurence": "AR1200.12ISHER.None"
+                },
+                {
+                    "src": "14839",
+                    "used_count": 4,
+                    "value": "14839",
+                    "first_occurence": "AR1200.12CAULDE.None"
+                },
+                {
+                    "src": "14896",
+                    "used_count": 3,
+                    "value": "14896",
+                    "first_occurence": "AR1200.12CAULDE.None"
+                },
+                {
+                    "src": "24281",
+                    "used_count": 9,
+                    "value": "24281",
+                    "first_occurence": "AR1200.12DRILL.None"
+                },
+                {
+                    "src": "24282",
+                    "used_count": 2,
+                    "value": "24282",
+                    "first_occurence": "AR1200.12DRILL.None"
+                },
+                {
+                    "src": "7240",
+                    "used_count": 1,
+                    "value": "7240",
+                    "first_occurence": "AR1200.12WEAPON.None"
+                },
+                {
+                    "src": "15176",
+                    "used_count": 1,
+                    "value": "15176",
+                    "first_occurence": "AR1200.12TABARD.None"
+                },
+                {
+                    "src": "10654",
+                    "used_count": 3,
+                    "value": "10654",
+                    "first_occurence": "AR1200.12NILES.None"
+                },
+                {
+                    "src": "10655",
+                    "used_count": 12,
+                    "value": "10655",
+                    "first_occurence": "AR1200.12NILES.None"
+                },
+                {
+                    "src": "10785",
+                    "used_count": 8,
+                    "value": "10785",
+                    "first_occurence": "AR1201.12SHAWFO.None"
+                },
+                {
+                    "src": "10794",
+                    "used_count": 1,
+                    "value": "10794",
+                    "first_occurence": "AR1201.12SHAWFO.None"
+                },
+                {
+                    "src": "10795",
+                    "used_count": 1,
+                    "value": "10795",
+                    "first_occurence": "AR1201.12SHAWFO.None"
+                },
+                {
+                    "src": "10796",
+                    "used_count": 1,
+                    "value": "10796",
+                    "first_occurence": "AR1201.12SHAWFO.None"
+                },
+                {
+                    "src": "32202",
+                    "used_count": 4,
+                    "value": "32202",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "32226",
+                    "used_count": 6,
+                    "value": "32226",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "32227",
+                    "used_count": 2,
+                    "value": "32227",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "32228",
+                    "used_count": 1,
+                    "value": "32228",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "32229",
+                    "used_count": 1,
+                    "value": "32229",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "32231",
+                    "used_count": 1,
+                    "value": "32231",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "5667",
+                    "used_count": 3,
+                    "value": "5667",
+                    "first_occurence": "AR5000.50WITBA.None"
+                },
+                {
+                    "src": "38411",
+                    "used_count": 1,
+                    "value": "38411",
+                    "first_occurence": "AR5000.50WITBA.None"
+                },
+                {
+                    "src": "2714",
+                    "used_count": 8,
+                    "value": "2714",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "2713",
+                    "used_count": 2,
+                    "value": "2713",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "3197",
+                    "used_count": 9,
+                    "value": "3197",
+                    "first_occurence": "AR5000.50VENLA.None"
+                },
+                {
+                    "src": "3198",
+                    "used_count": 5,
+                    "value": "3198",
+                    "first_occurence": "AR5000.50VENLA.None"
+                },
+                {
+                    "src": "4407",
+                    "used_count": 3,
+                    "value": "4407",
+                    "first_occurence": "AR5000.50TAHVO.None"
+                },
+                {
+                    "src": "4740",
+                    "used_count": 1,
+                    "value": "4740",
+                    "first_occurence": "AR5000.50KURTTU.None"
+                },
+                {
+                    "src": "5064",
+                    "used_count": 3,
+                    "value": "5064",
+                    "first_occurence": "AR5000.50JARI.None"
+                },
+                {
+                    "src": "13990",
+                    "used_count": 1,
+                    "value": "13990",
+                    "first_occurence": "AR5000.50PAIRI.None"
+                },
+                {
+                    "src": "8424",
+                    "used_count": 2,
+                    "value": "8424",
+                    "first_occurence": "AR5010.50HGHOST.None"
+                },
+                {
+                    "src": "9221",
+                    "used_count": 4,
+                    "value": "9221",
+                    "first_occurence": "AR5101.51BARUD.None"
+                },
+                {
+                    "src": "9222",
+                    "used_count": 4,
+                    "value": "9222",
+                    "first_occurence": "AR5101.51BARUD.None"
+                },
+                {
+                    "src": "31055",
+                    "used_count": 4,
+                    "value": "31055",
+                    "first_occurence": "AR5101.51DRAGU.None"
+                },
+                {
+                    "src": "10507",
+                    "used_count": 4,
+                    "value": "10507",
+                    "first_occurence": "AR5201.52SALISA.None"
+                },
+                {
+                    "src": "10508",
+                    "used_count": 2,
+                    "value": "10508",
+                    "first_occurence": "AR5201.52SALISA.None"
+                },
+                {
+                    "src": "9834",
+                    "used_count": 2,
+                    "value": "9834",
+                    "first_occurence": "AR5201.52NONIN.None"
+                },
+                {
+                    "src": "9958",
+                    "used_count": 3,
+                    "value": "9958",
+                    "first_occurence": "AR5201.52SERSA.None"
+                },
+                {
+                    "src": "10748",
+                    "used_count": 1,
+                    "value": "10748",
+                    "first_occurence": "AR5201.52ARUMA.None"
+                },
+                {
+                    "src": "10749",
+                    "used_count": 2,
+                    "value": "10749",
+                    "first_occurence": "AR5201.52ARUMA.None"
+                },
+                {
+                    "src": "31316",
+                    "used_count": 1,
+                    "value": "31316",
+                    "first_occurence": "AR6051.60VIFANG.None"
+                },
+                {
+                    "src": "31183",
+                    "used_count": 3,
+                    "value": "31183",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                },
+                {
+                    "src": "31235",
+                    "used_count": 1,
+                    "value": "31235",
+                    "first_occurence": "AR6051.60CCABAL.None"
+                },
+                {
+                    "src": "31271",
+                    "used_count": 3,
+                    "value": "31271",
+                    "first_occurence": "AR6051.60INHATR.None"
+                },
+                {
+                    "src": "16669",
+                    "used_count": 3,
+                    "value": "16669",
+                    "first_occurence": "AR6200.62KRATU.None"
+                },
+                {
+                    "src": "33457",
+                    "used_count": 1,
+                    "value": "33457",
+                    "first_occurence": "AR6200.62TSOL.None"
+                },
+                {
+                    "src": "23074",
+                    "used_count": 2,
+                    "value": "23074",
+                    "first_occurence": "AR6200.62TSOL.None"
+                },
+                {
+                    "src": "23026",
+                    "used_count": 1,
+                    "value": "23026",
+                    "first_occurence": "AR6200.62SARALO.None"
+                },
+                {
+                    "src": "25401",
+                    "used_count": 1,
+                    "value": "25401",
+                    "first_occurence": "AR6200.62GORG.None"
+                },
+                {
+                    "src": "26491",
+                    "used_count": 5,
+                    "value": "26491",
+                    "first_occurence": "AR6301.63GLABS1.None"
+                },
+                {
+                    "src": "26492",
+                    "used_count": 5,
+                    "value": "26492",
+                    "first_occurence": "AR6301.63GLABS1.None"
+                },
+                {
+                    "src": "23135",
+                    "used_count": 1,
+                    "value": "23135",
+                    "first_occurence": "AR6700.67PUDDY.None"
+                },
+                {
+                    "src": "23136",
+                    "used_count": 1,
+                    "value": "23136",
+                    "first_occurence": "AR6700.67PUDDY.None"
+                }
+            ]
+        }
+    ]
+}

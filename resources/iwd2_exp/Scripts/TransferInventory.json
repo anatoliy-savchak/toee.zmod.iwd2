@@ -1,0 +1,85 @@
+{
+    "func_name": "TransferInventory",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Source",
+                "arg_ids": "",
+                "arg_line": "O:Source*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 3,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "Protagonist",
+                    "used_count": 1,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"ARMORYCHEST1\"",
+                    "used_count": 5,
+                    "value": "\"'ARMORYCHEST1'\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"ARMORYCHEST2\"",
+                    "used_count": 5,
+                    "value": "\"'ARMORYCHEST2'\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"ARMORYCHEST3\"",
+                    "used_count": 5,
+                    "value": "\"'ARMORYCHEST3'\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"Izbelah3\"",
+                    "used_count": 1,
+                    "value": "\"'Izbelah3'\"",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "\"OriaEssence\"",
+                    "used_count": 3,
+                    "value": "\"'OriaEssence'\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "\"Morohem_Container\"",
+                    "used_count": 1,
+                    "value": "\"'Morohem_Container'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 15,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"EmbassyShelf\"",
+                    "used_count": 1,
+                    "value": "\"'EmbassyShelf'\"",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        }
+    ]
+}

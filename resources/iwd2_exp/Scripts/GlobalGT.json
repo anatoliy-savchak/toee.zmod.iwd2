@@ -1,0 +1,53 @@
+{
+    "func_name": "GLOBALGT",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Name",
+                "arg_ids": "",
+                "arg_line": "S:Name*"
+            },
+            "values": [
+                {
+                    "src": "\"60DUEL_CCS\"",
+                    "used_count": 1,
+                    "value": "\"'60DUEL_CCS'\"",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Area",
+                "arg_ids": "",
+                "arg_line": "S:Area*"
+            },
+            "values": [
+                {
+                    "src": "\"GLOBAL\"",
+                    "used_count": 1,
+                    "value": "\"'GLOBAL'\"",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "",
+                "arg_line": "I:Value*"
+            },
+            "values": [
+                {
+                    "src": "3",
+                    "used_count": 1,
+                    "value": "3",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                }
+            ]
+        }
+    ]
+}

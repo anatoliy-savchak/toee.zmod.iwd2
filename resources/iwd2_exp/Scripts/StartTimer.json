@@ -1,0 +1,343 @@
+{
+    "func_name": "StartTimer",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "ID",
+                "arg_ids": "",
+                "arg_line": "I:ID*"
+            },
+            "values": [
+                {
+                    "src": "19",
+                    "used_count": 175,
+                    "value": "19",
+                    "first_occurence": "AR1000.10ELDGUL.Eldgull"
+                },
+                {
+                    "src": "2",
+                    "used_count": 69,
+                    "value": "2",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "18",
+                    "used_count": 27,
+                    "value": "18",
+                    "first_occurence": "AR1000.10JORUN.Jorun"
+                },
+                {
+                    "src": "20",
+                    "used_count": 9,
+                    "value": "20",
+                    "first_occurence": "AR1000.10CRANDA.Crandall"
+                },
+                {
+                    "src": "0",
+                    "used_count": 23,
+                    "value": "0",
+                    "first_occurence": "AR1003.10BLACK.Black_Geoffrey"
+                },
+                {
+                    "src": "24",
+                    "used_count": 9,
+                    "value": "24",
+                    "first_occurence": "AR2000.20DERETH.Dereth"
+                },
+                {
+                    "src": "21",
+                    "used_count": 8,
+                    "value": "21",
+                    "first_occurence": "AR3000.30OGRGAR.17_OgrGar"
+                },
+                {
+                    "src": "22",
+                    "used_count": 63,
+                    "value": "22",
+                    "first_occurence": "AR3000.30GOBSH1.07_GobRu"
+                },
+                {
+                    "src": "100",
+                    "used_count": 330,
+                    "value": "100",
+                    "first_occurence": "AR4000.40YURST.Yurst"
+                },
+                {
+                    "src": "11",
+                    "used_count": 340,
+                    "value": "11",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "99",
+                    "used_count": 36,
+                    "value": "99",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "23",
+                    "used_count": 96,
+                    "value": "23",
+                    "first_occurence": "AR4102.41ASSASS.02_Assassin_01"
+                },
+                {
+                    "src": "5",
+                    "used_count": 18,
+                    "value": "5",
+                    "first_occurence": "AR5203.52GOLIR.01_52GOLIR_01"
+                },
+                {
+                    "src": "31",
+                    "used_count": 1,
+                    "value": "31",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "32",
+                    "used_count": 1,
+                    "value": "32",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "73",
+                    "used_count": 15,
+                    "value": "73",
+                    "first_occurence": "AR5300.53NADAL.Nadal"
+                },
+                {
+                    "src": "42",
+                    "used_count": 14,
+                    "value": "42",
+                    "first_occurence": "AR5301.None.None"
+                },
+                {
+                    "src": "50",
+                    "used_count": 6,
+                    "value": "50",
+                    "first_occurence": "AR5302.53LIGGEN.Lightning_Gens1"
+                },
+                {
+                    "src": "51",
+                    "used_count": 6,
+                    "value": "51",
+                    "first_occurence": "AR5302.53LIGGEN.Lightning_Gens1"
+                },
+                {
+                    "src": "14",
+                    "used_count": 1,
+                    "value": "14",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "13",
+                    "used_count": 1,
+                    "value": "13",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "1",
+                    "used_count": 1,
+                    "value": "1",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "102",
+                    "used_count": 313,
+                    "value": "102",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "101",
+                    "used_count": 16,
+                    "value": "101",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "27",
+                    "used_count": 5,
+                    "value": "27",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "6",
+                    "used_count": 1,
+                    "value": "6",
+                    "first_occurence": "AR6101.61PRISF2.04_FemalePrisoner_07"
+                },
+                {
+                    "src": "7",
+                    "used_count": 1,
+                    "value": "7",
+                    "first_occurence": "AR6101.61PRISF2.04_FemalePrisoner_07"
+                },
+                {
+                    "src": "8",
+                    "used_count": 1,
+                    "value": "8",
+                    "first_occurence": "AR6101.61PRISF2.04_FemalePrisoner_07"
+                },
+                {
+                    "src": "103",
+                    "used_count": 6,
+                    "value": "103",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "28",
+                    "used_count": 3,
+                    "value": "28",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "89",
+                    "used_count": 1,
+                    "value": "89",
+                    "first_occurence": "AR6304.63THAYMF.GB_ThayvianMage1"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Time",
+                "arg_ids": "",
+                "arg_line": "I:Time*"
+            },
+            "values": [
+                {
+                    "src": "7",
+                    "used_count": 316,
+                    "value": "7",
+                    "first_occurence": "AR1000.10ELDGUL.Eldgull"
+                },
+                {
+                    "src": "10",
+                    "used_count": 44,
+                    "value": "10",
+                    "first_occurence": "AR1000.10ELDGUL.Eldgull"
+                },
+                {
+                    "src": "6",
+                    "used_count": 90,
+                    "value": "6",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "5",
+                    "used_count": 251,
+                    "value": "5",
+                    "first_occurence": "AR1000.10JORUN.Jorun"
+                },
+                {
+                    "src": "1",
+                    "used_count": 55,
+                    "value": "1",
+                    "first_occurence": "AR1003.10BLACK.Black_Geoffrey"
+                },
+                {
+                    "src": "9",
+                    "used_count": 2,
+                    "value": "9",
+                    "first_occurence": "AR1003.10BLACK.Black_Geoffrey"
+                },
+                {
+                    "src": "3",
+                    "used_count": 20,
+                    "value": "3",
+                    "first_occurence": "AR1003.10BLACK.Black_Geoffrey"
+                },
+                {
+                    "src": "30",
+                    "used_count": 13,
+                    "value": "30",
+                    "first_occurence": "AR1100.11LUMBAR.Lumbar Grundwall"
+                },
+                {
+                    "src": "15",
+                    "used_count": 16,
+                    "value": "15",
+                    "first_occurence": "AR1102.11DEIRD.Deirde_Gallaway"
+                },
+                {
+                    "src": "25",
+                    "used_count": 1,
+                    "value": "25",
+                    "first_occurence": "AR1200.12TABARD.Tabard_Mooncalf"
+                },
+                {
+                    "src": "2",
+                    "used_count": 55,
+                    "value": "2",
+                    "first_occurence": "AR2100.21WERRAT.Wererat_Scripted_Event"
+                },
+                {
+                    "src": "4",
+                    "used_count": 18,
+                    "value": "4",
+                    "first_occurence": "AR2102.21BUGCPT.Bugbear_Captain_1"
+                },
+                {
+                    "src": "43200",
+                    "used_count": 342,
+                    "value": "43200",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "16",
+                    "used_count": 1,
+                    "value": "16",
+                    "first_occurence": "AR5002.50LIMHA.01_50Limha_01"
+                },
+                {
+                    "src": "49",
+                    "used_count": 18,
+                    "value": "49",
+                    "first_occurence": "AR5203.52GOLIR.01_52GOLIR_01"
+                },
+                {
+                    "src": "21",
+                    "used_count": 1,
+                    "value": "21",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "2400",
+                    "used_count": 16,
+                    "value": "2400",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "7200",
+                    "used_count": 324,
+                    "value": "7200",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "302400",
+                    "used_count": 1,
+                    "value": "302400",
+                    "first_occurence": "AR6101.61PRISF2.04_FemalePrisoner_07"
+                },
+                {
+                    "src": "0",
+                    "used_count": 6,
+                    "value": "0",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "28",
+                    "used_count": 4,
+                    "value": "28",
+                    "first_occurence": "AR6300.66CHIM.Chimera"
+                },
+                {
+                    "src": "60",
+                    "used_count": 2,
+                    "value": "60",
+                    "first_occurence": "AR6304.63GRDFP.PatrollingGuard1"
+                }
+            ]
+        }
+    ]
+}

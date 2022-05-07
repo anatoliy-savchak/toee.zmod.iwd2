@@ -1,0 +1,1039 @@
+{
+    "func_name": "Spell",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "SpellTarget",
+                    "used_count": 772,
+                    "value": "\"SpellTarget\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 1166,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR1103.11DENHAM.Denham"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 349,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR1106.11PHAEN.Phaen_of_the_Rags"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 468,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR3002.30GOBSH1.05_GobSh_01"
+                },
+                {
+                    "src": "\"[PC]\"",
+                    "used_count": 1,
+                    "value": "\"[PC]\"",
+                    "first_occurence": "AR3100.31GOBSH1.07_GobSh"
+                },
+                {
+                    "src": "MyTarget",
+                    "used_count": 406,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 26,
+                    "value": "self.iLastAttackerOf(\"Myself\")",
+                    "first_occurence": "AR4100.41NECROM.03_Cultist_02"
+                },
+                {
+                    "src": "LastHeardBy",
+                    "used_count": 12,
+                    "value": "self.iLastHeardBy(\"Myself\")",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"05_TrollPrisoner\"",
+                    "used_count": 5,
+                    "value": "\"'05_TrollPrisoner'\"",
+                    "first_occurence": "AR6101.61PRISI1.05_WizardPrisoner"
+                },
+                {
+                    "src": "\"EmbassySummonSpot\"",
+                    "used_count": 6,
+                    "value": "\"'EmbassySummonSpot'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "\"EmbassyShelf\"",
+                    "used_count": 3,
+                    "value": "\"'EmbassyShelf'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Spell",
+                "arg_ids": "Spell",
+                "arg_line": "I:Spell*Spell"
+            },
+            "values": [
+                {
+                    "src": "MARKED_SPELL",
+                    "used_count": 778,
+                    "value": "\"MARKED_SPELL\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                },
+                {
+                    "src": "CLERIC_CURE_SERIOUS_WOUNDS",
+                    "used_count": 103,
+                    "value": "\"CLERIC_CURE_SERIOUS_WOUNDS\"",
+                    "first_occurence": "AR1103.11DENHAM.Denham"
+                },
+                {
+                    "src": "CLERIC_CURE_MODERATE_WOUNDS",
+                    "used_count": 285,
+                    "value": "\"CLERIC_CURE_MODERATE_WOUNDS\"",
+                    "first_occurence": "AR1103.11DENHAM.Denham"
+                },
+                {
+                    "src": "CLERIC_CURE_LIGHT_WOUNDS",
+                    "used_count": 310,
+                    "value": "\"CLERIC_CURE_LIGHT_WOUNDS\"",
+                    "first_occurence": "AR1103.11DENHAM.Denham"
+                },
+                {
+                    "src": "WIZARD_BLINK",
+                    "used_count": 7,
+                    "value": "\"WIZARD_BLINK\"",
+                    "first_occurence": "AR1106.11PHAEN.Phaen_of_the_Rags"
+                },
+                {
+                    "src": "WIZARD_BURNING_HANDS",
+                    "used_count": 14,
+                    "value": "\"WIZARD_BURNING_HANDS\"",
+                    "first_occurence": "AR1106.11PHAEN.Phaen_of_the_Rags"
+                },
+                {
+                    "src": "WIZARD_DIRE_CHARM",
+                    "used_count": 8,
+                    "value": "\"WIZARD_DIRE_CHARM\"",
+                    "first_occurence": "AR1106.11PHAEN.Phaen_of_the_Rags"
+                },
+                {
+                    "src": "CLERIC_CIRCLE_OF_BONES",
+                    "used_count": 11,
+                    "value": "\"CLERIC_CIRCLE_OF_BONES\"",
+                    "first_occurence": "AR1107.11KOLUHM.Koluhm"
+                },
+                {
+                    "src": "WIZARD_DEATH_ARMOR",
+                    "used_count": 25,
+                    "value": "\"WIZARD_DEATH_ARMOR\"",
+                    "first_occurence": "AR2000.20ORCSHM.T1_Shaman_1"
+                },
+                {
+                    "src": "CLERIC_BEAST_CLAW",
+                    "used_count": 24,
+                    "value": "\"CLERIC_BEAST_CLAW\"",
+                    "first_occurence": "AR2101.20MALARA.Malarite"
+                },
+                {
+                    "src": "CLERIC_CHARM_PERSON_OR_MAMMAL",
+                    "used_count": 23,
+                    "value": "\"CLERIC_CHARM_PERSON_OR_MAMMAL\"",
+                    "first_occurence": "AR2101.20MALARP.Malarite Priest"
+                },
+                {
+                    "src": "INNATE_DRUID_SHAPESHIFT_POLAR_BEAR",
+                    "used_count": 11,
+                    "value": "\"INNATE_DRUID_SHAPESHIFT_POLAR_BEAR\"",
+                    "first_occurence": "AR2101.20MALARH.Malarite High Priest"
+                },
+                {
+                    "src": "CLERIC_AID",
+                    "used_count": 112,
+                    "value": "\"CLERIC_AID\"",
+                    "first_occurence": "AR3000.30GOBSH1.08_GobSh"
+                },
+                {
+                    "src": "CLERIC_SILENCE_15_RADIUS",
+                    "used_count": 97,
+                    "value": "\"CLERIC_SILENCE_15_RADIUS\"",
+                    "first_occurence": "AR3000.30GOBSH1.08_GobSh"
+                },
+                {
+                    "src": "CLERIC_ENTANGLE",
+                    "used_count": 7,
+                    "value": "\"CLERIC_ENTANGLE\"",
+                    "first_occurence": "AR3000.30ORCTRU.16_OrcTru"
+                },
+                {
+                    "src": "CLERIC_BANE",
+                    "used_count": 7,
+                    "value": "\"CLERIC_BANE\"",
+                    "first_occurence": "AR3000.30ORCTRU.16_OrcTru"
+                },
+                {
+                    "src": "WIZARD_HOLD_PERSON",
+                    "used_count": 21,
+                    "value": "\"WIZARD_HOLD_PERSON\"",
+                    "first_occurence": "AR3000.30ORCTRU.16_OrcTru"
+                },
+                {
+                    "src": "CLERIC_COMMAND",
+                    "used_count": 10,
+                    "value": "\"CLERIC_COMMAND\"",
+                    "first_occurence": "AR3000.30ORCTRU.16_OrcTru"
+                },
+                {
+                    "src": "CLERIC_UNHOLY_BLIGHT",
+                    "used_count": 11,
+                    "value": "\"CLERIC_UNHOLY_BLIGHT\"",
+                    "first_occurence": "AR3000.30GOBSH1.16_GobSh"
+                },
+                {
+                    "src": "WIZARD_WEB",
+                    "used_count": 9,
+                    "value": "\"WIZARD_WEB\"",
+                    "first_occurence": "AR3001.30GOBSOR.04_GobSor_01"
+                },
+                {
+                    "src": "WIZARD_MAGIC_MISSILE",
+                    "used_count": 3,
+                    "value": "\"WIZARD_MAGIC_MISSILE\"",
+                    "first_occurence": "AR3001.30GOBSOR.04_GobSor_01"
+                },
+                {
+                    "src": "WIZARD_MIRROR_IMAGE",
+                    "used_count": 17,
+                    "value": "\"WIZARD_MIRROR_IMAGE\"",
+                    "first_occurence": "AR3100.31ORCWD.09_OrcWD_02"
+                },
+                {
+                    "src": "WIZARD_DISPEL_MAGIC",
+                    "used_count": 22,
+                    "value": "\"WIZARD_DISPEL_MAGIC\"",
+                    "first_occurence": "AR3101.31ORCWD2.05_OrcWD"
+                },
+                {
+                    "src": "WIZARD_HORROR",
+                    "used_count": 8,
+                    "value": "\"WIZARD_HORROR\"",
+                    "first_occurence": "AR3101.31ORCWD2.05_OrcWD"
+                },
+                {
+                    "src": "WIZARD_FLAME_ARROW",
+                    "used_count": 8,
+                    "value": "\"WIZARD_FLAME_ARROW\"",
+                    "first_occurence": "AR3101.31GOBSO2.04_GobSor"
+                },
+                {
+                    "src": "WIZARD_CHARM_PERSON",
+                    "used_count": 10,
+                    "value": "\"WIZARD_CHARM_PERSON\"",
+                    "first_occurence": "AR3101.31GOBSO2.04_GobSor"
+                },
+                {
+                    "src": "CLERIC_STORM_SHELL",
+                    "used_count": 3,
+                    "value": "\"CLERIC_STORM_SHELL\"",
+                    "first_occurence": "AR4000.40ILIUM.Illium"
+                },
+                {
+                    "src": "CLERIC_NEUTRALIZE_POISON",
+                    "used_count": 4,
+                    "value": "\"CLERIC_NEUTRALIZE_POISON\"",
+                    "first_occurence": "AR4000.40ILIUM.Illium"
+                },
+                {
+                    "src": "CLERIC_TORTOISE_SHELL",
+                    "used_count": 3,
+                    "value": "\"CLERIC_TORTOISE_SHELL\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "CLERIC_HOLD_ANIMAL",
+                    "used_count": 4,
+                    "value": "\"CLERIC_HOLD_ANIMAL\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "CLERIC_FREE_ACTION",
+                    "used_count": 18,
+                    "value": "\"CLERIC_FREE_ACTION\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "CLERIC_WALL_OF_MOONLIGHT",
+                    "used_count": 3,
+                    "value": "\"CLERIC_WALL_OF_MOONLIGHT\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "CLERIC_SLOW_POISON",
+                    "used_count": 49,
+                    "value": "\"CLERIC_SLOW_POISON\"",
+                    "first_occurence": "AR4000.40RANGRC.02_Commander_22"
+                },
+                {
+                    "src": "CLERIC_MINOR_ELEMENTAL_BARRIER",
+                    "used_count": 8,
+                    "value": "\"CLERIC_MINOR_ELEMENTAL_BARRIER\"",
+                    "first_occurence": "AR4000.40RANGRC.02_Commander_22"
+                },
+                {
+                    "src": "WIZARD_VAMPIRIC_TOUCH",
+                    "used_count": 16,
+                    "value": "\"WIZARD_VAMPIRIC_TOUCH\"",
+                    "first_occurence": "AR4100.41NECROM.03_Cultist_02"
+                },
+                {
+                    "src": "WIZARD_SKULL_TRAP",
+                    "used_count": 10,
+                    "value": "\"WIZARD_SKULL_TRAP\"",
+                    "first_occurence": "AR4100.41NECROM.03_Cultist_02"
+                },
+                {
+                    "src": "WIZARD_CIRCLE_OF_DEATH",
+                    "used_count": 11,
+                    "value": "\"WIZARD_CIRCLE_OF_DEATH\"",
+                    "first_occurence": "AR4100.41NECROM.03_Cultist_02"
+                },
+                {
+                    "src": "WIZARD_SHIELD",
+                    "used_count": 16,
+                    "value": "\"WIZARD_SHIELD\"",
+                    "first_occurence": "AR4100.41NECROM.03_Cultist_02"
+                },
+                {
+                    "src": "CLERIC_SANCTUARY",
+                    "used_count": 82,
+                    "value": "\"CLERIC_SANCTUARY\"",
+                    "first_occurence": "AR4100.41PRIESM.05_Postulant_07"
+                },
+                {
+                    "src": "CLERIC_PROTECTION_FROM_FIRE",
+                    "used_count": 131,
+                    "value": "\"CLERIC_PROTECTION_FROM_FIRE\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                },
+                {
+                    "src": "CLERIC_PROTECTION_FROM_LIGHTNING",
+                    "used_count": 103,
+                    "value": "\"CLERIC_PROTECTION_FROM_LIGHTNING\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                },
+                {
+                    "src": "CLERIC_REMOVE_FEAR",
+                    "used_count": 41,
+                    "value": "\"CLERIC_REMOVE_FEAR\"",
+                    "first_occurence": "AR4100.41BARSHA.02_Barbarian_Shaman_04"
+                },
+                {
+                    "src": "CLERIC_EXALTATION",
+                    "used_count": 11,
+                    "value": "\"CLERIC_EXALTATION\"",
+                    "first_occurence": "AR4100.41BARSHA.02_Barbarian_Shaman_04"
+                },
+                {
+                    "src": "CLERIC_REMOVE_PARALYSIS",
+                    "used_count": 57,
+                    "value": "\"CLERIC_REMOVE_PARALYSIS\"",
+                    "first_occurence": "AR4100.41SHAMAF.02_Stormsister_05"
+                },
+                {
+                    "src": "CLERIC_DISPEL_MAGIC",
+                    "used_count": 44,
+                    "value": "\"CLERIC_DISPEL_MAGIC\"",
+                    "first_occurence": "AR4100.41SHAMAF.02_Stormsister_05"
+                },
+                {
+                    "src": "CLERIC_CURE_CRITICAL_WOUNDS",
+                    "used_count": 21,
+                    "value": "\"CLERIC_CURE_CRITICAL_WOUNDS\"",
+                    "first_occurence": "AR4101.41CATHIN.Cathin"
+                },
+                {
+                    "src": "WIZARD_SUMMON_MONSTER_IV",
+                    "used_count": 8,
+                    "value": "\"WIZARD_SUMMON_MONSTER_IV\"",
+                    "first_occurence": "AR4102.41NICK.Nickademus"
+                },
+                {
+                    "src": "WIZARD_SPIDER_SPAWN",
+                    "used_count": 5,
+                    "value": "\"WIZARD_SPIDER_SPAWN\"",
+                    "first_occurence": "AR4102.41NICK.Nickademus"
+                },
+                {
+                    "src": "WIZARD_SHADOW_CONJURATION",
+                    "used_count": 2,
+                    "value": "\"WIZARD_SHADOW_CONJURATION\"",
+                    "first_occurence": "AR4102.41NICK.Nickademus"
+                },
+                {
+                    "src": "WIZARD_AEGIS",
+                    "used_count": 7,
+                    "value": "\"WIZARD_AEGIS\"",
+                    "first_occurence": "AR4102.41NICK.Nickademus"
+                },
+                {
+                    "src": "WIZARD_BLUR",
+                    "used_count": 10,
+                    "value": "\"WIZARD_BLUR\"",
+                    "first_occurence": "AR5000.50SUOMA.05_50Suoma_01"
+                },
+                {
+                    "src": "WIZARD_FEEBLEMIND",
+                    "used_count": 1,
+                    "value": "\"WIZARD_FEEBLEMIND\"",
+                    "first_occurence": "AR5000.50SUOMA.05_50Suoma_01"
+                },
+                {
+                    "src": "CLERIC_FROST_FINGERS",
+                    "used_count": 7,
+                    "value": "\"CLERIC_FROST_FINGERS\"",
+                    "first_occurence": "AR5000.50VENLA.05_50Venla_02"
+                },
+                {
+                    "src": "CLERIC_CLOAK_OF_FEAR",
+                    "used_count": 7,
+                    "value": "\"CLERIC_CLOAK_OF_FEAR\"",
+                    "first_occurence": "AR5101.51ZAMA.13_51Zama_01"
+                },
+                {
+                    "src": "WIZARD_ANIMATE_DEAD",
+                    "used_count": 17,
+                    "value": "\"WIZARD_ANIMATE_DEAD\"",
+                    "first_occurence": "AR5101.51ZAMA.13_51Zama_01"
+                },
+                {
+                    "src": "CLERIC_GIANT_INSECT",
+                    "used_count": 7,
+                    "value": "\"CLERIC_GIANT_INSECT\"",
+                    "first_occurence": "AR5101.51ZAMA.13_51Zama_01"
+                },
+                {
+                    "src": "CLERIC_ARMOR_OF_FAITH",
+                    "used_count": 15,
+                    "value": "\"CLERIC_ARMOR_OF_FAITH\"",
+                    "first_occurence": "AR5101.51DUECL.13_51DUECL_02"
+                },
+                {
+                    "src": "CLERIC_MISCAST_MAGIC",
+                    "used_count": 1,
+                    "value": "\"CLERIC_MISCAST_MAGIC\"",
+                    "first_occurence": "AR5101.51BARUD.13_51Barud_04"
+                },
+                {
+                    "src": "WIZARD_EMOTION_HOPELESSNESS",
+                    "used_count": 2,
+                    "value": "\"WIZARD_EMOTION_HOPELESSNESS\"",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
+                    "src": "WIZARD_DISINTEGRATE",
+                    "used_count": 1,
+                    "value": "\"WIZARD_DISINTEGRATE\"",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
+                    "src": "WIZARD_BANISHMENT",
+                    "used_count": 1,
+                    "value": "\"WIZARD_BANISHMENT\"",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
+                    "src": "WIZARD_STONESKIN",
+                    "used_count": 8,
+                    "value": "\"WIZARD_STONESKIN\"",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
+                    "src": "WIZARD_COLOR_SPRAY",
+                    "used_count": 1,
+                    "value": "\"WIZARD_COLOR_SPRAY\"",
+                    "first_occurence": "AR5201.52DOLON.06_52Dolon_02"
+                },
+                {
+                    "src": "WIZARD_SLOW",
+                    "used_count": 7,
+                    "value": "\"WIZARD_SLOW\"",
+                    "first_occurence": "AR5201.52DOLON.06_52Dolon_02"
+                },
+                {
+                    "src": "WIZARD_VOCALIZE",
+                    "used_count": 7,
+                    "value": "\"WIZARD_VOCALIZE\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "WIZARD_LOWER_RESISTANCE",
+                    "used_count": 2,
+                    "value": "\"WIZARD_LOWER_RESISTANCE\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "WIZARD_MALAVONS_RAGE",
+                    "used_count": 2,
+                    "value": "\"WIZARD_MALAVONS_RAGE\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "CLERIC_DRAW_UPON_HOLY_MIGHT",
+                    "used_count": 9,
+                    "value": "\"CLERIC_DRAW_UPON_HOLY_MIGHT\"",
+                    "first_occurence": "AR5300.53HEGGR.Heggr_Splitsteel"
+                },
+                {
+                    "src": "INNATE_MIND_FOG",
+                    "used_count": 4,
+                    "value": "\"INNATE_MIND_FOG\"",
+                    "first_occurence": "AR5302.53MGOLEM.MindGolem1"
+                },
+                {
+                    "src": "WIZARD_GEDLEES_ELECTRIC_LOOP",
+                    "used_count": 1,
+                    "value": "\"WIZARD_GEDLEES_ELECTRIC_LOOP\"",
+                    "first_occurence": "AR5303.53MAJRAS.Majrash"
+                },
+                {
+                    "src": "CLERIC_SLAY_LIVING",
+                    "used_count": 1,
+                    "value": "\"CLERIC_SLAY_LIVING\"",
+                    "first_occurence": "AR6003.60HIEPHE.Hiepherus"
+                },
+                {
+                    "src": "CLERIC_DIVINE_SHELL",
+                    "used_count": 1,
+                    "value": "\"CLERIC_DIVINE_SHELL\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "WIZARD_MINOR_GLOBE_OF_INVULNERABILITY",
+                    "used_count": 20,
+                    "value": "\"WIZARD_MINOR_GLOBE_OF_INVULNERABILITY\"",
+                    "first_occurence": "AR6051.60CCABAL.Coiled_Cabal1"
+                },
+                {
+                    "src": "WIZARD_SPIRIT_ARMOR",
+                    "used_count": 7,
+                    "value": "\"WIZARD_SPIRIT_ARMOR\"",
+                    "first_occurence": "AR6051.60CCABAL.Coiled_Cabal1"
+                },
+                {
+                    "src": "WIZARD_DISMISSAL",
+                    "used_count": 19,
+                    "value": "\"WIZARD_DISMISSAL\"",
+                    "first_occurence": "AR6051.60CCABAL.Coiled_Cabal1"
+                },
+                {
+                    "src": "WIZARD_BELTYNS_BURNING_BLOOD",
+                    "used_count": 7,
+                    "value": "\"WIZARD_BELTYNS_BURNING_BLOOD\"",
+                    "first_occurence": "AR6051.60INHATR.Inhatri"
+                },
+                {
+                    "src": "WIZARD_SUNFIRE",
+                    "used_count": 7,
+                    "value": "\"WIZARD_SUNFIRE\"",
+                    "first_occurence": "AR6051.60INHATR.Inhatri"
+                },
+                {
+                    "src": "CLERIC_PROTECTION_FROM_EVIL",
+                    "used_count": 13,
+                    "value": "\"CLERIC_PROTECTION_FROM_EVIL\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_FIRESHIELD_BLUE",
+                    "used_count": 6,
+                    "value": "\"WIZARD_FIRESHIELD_BLUE\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_FIRESHIELD_RED",
+                    "used_count": 6,
+                    "value": "\"WIZARD_FIRESHIELD_RED\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_PROTECTION_FROM_ELECTRICITY",
+                    "used_count": 6,
+                    "value": "\"WIZARD_PROTECTION_FROM_ELECTRICITY\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_PROTECTION_FROM_ACID",
+                    "used_count": 7,
+                    "value": "\"WIZARD_PROTECTION_FROM_ACID\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_PROTECTION_FROM_NORMAL_MISSILES",
+                    "used_count": 7,
+                    "value": "\"WIZARD_PROTECTION_FROM_NORMAL_MISSILES\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_OTILUKES_RESILIENT_SPHERE",
+                    "used_count": 12,
+                    "value": "\"WIZARD_OTILUKES_RESILIENT_SPHERE\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_SEE_INVISIBILITY",
+                    "used_count": 7,
+                    "value": "\"WIZARD_SEE_INVISIBILITY\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_NON_DETECTION",
+                    "used_count": 8,
+                    "value": "\"WIZARD_NON_DETECTION\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_CLOUDKILL",
+                    "used_count": 6,
+                    "value": "\"WIZARD_CLOUDKILL\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_ICE_STORM",
+                    "used_count": 6,
+                    "value": "\"WIZARD_ICE_STORM\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_SNILLOCS_SNOWBALL_SWARM",
+                    "used_count": 6,
+                    "value": "\"WIZARD_SNILLOCS_SNOWBALL_SWARM\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_STINKING_CLOUD",
+                    "used_count": 7,
+                    "value": "\"WIZARD_STINKING_CLOUD\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_GREASE",
+                    "used_count": 6,
+                    "value": "\"WIZARD_GREASE\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_HOLD_MONSTER",
+                    "used_count": 6,
+                    "value": "\"WIZARD_HOLD_MONSTER\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_CHAOS",
+                    "used_count": 6,
+                    "value": "\"WIZARD_CHAOS\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_PHANTOM_BLADE",
+                    "used_count": 6,
+                    "value": "\"WIZARD_PHANTOM_BLADE\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_DIMENSION_DOOR",
+                    "used_count": 7,
+                    "value": "\"WIZARD_DIMENSION_DOOR\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_EMOTION_HOPE",
+                    "used_count": 9,
+                    "value": "\"WIZARD_EMOTION_HOPE\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_IMPROVED_INVISIBILITY",
+                    "used_count": 8,
+                    "value": "\"WIZARD_IMPROVED_INVISIBILITY\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_HASTE",
+                    "used_count": 6,
+                    "value": "\"WIZARD_HASTE\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_INVISIBILITY_10_RADIUS",
+                    "used_count": 6,
+                    "value": "\"WIZARD_INVISIBILITY_10_RADIUS\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_DEAFNESS",
+                    "used_count": 6,
+                    "value": "\"WIZARD_DEAFNESS\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_POWER_WORD_SLEEP",
+                    "used_count": 6,
+                    "value": "\"WIZARD_POWER_WORD_SLEEP\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_RAY_OF_ENFEEBLEMENT",
+                    "used_count": 6,
+                    "value": "\"WIZARD_RAY_OF_ENFEEBLEMENT\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_AGANNAZAR_SCORCHER",
+                    "used_count": 6,
+                    "value": "\"WIZARD_AGANNAZAR_SCORCHER\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_CATS_GRACE",
+                    "used_count": 9,
+                    "value": "\"WIZARD_CATS_GRACE\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_INVISIBILITY",
+                    "used_count": 6,
+                    "value": "\"WIZARD_INVISIBILITY\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_LUCK",
+                    "used_count": 7,
+                    "value": "\"WIZARD_LUCK\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_MINOR_MIRROR_IMAGE",
+                    "used_count": 6,
+                    "value": "\"WIZARD_MINOR_MIRROR_IMAGE\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_PROTECTION_FROM_PETRIFICATION",
+                    "used_count": 7,
+                    "value": "\"WIZARD_PROTECTION_FROM_PETRIFICATION\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_SEVEN_EYES",
+                    "used_count": 5,
+                    "value": "\"WIZARD_SEVEN_EYES\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_GLOBE_OF_INVULNERABILITY",
+                    "used_count": 1,
+                    "value": "\"WIZARD_GLOBE_OF_INVULNERABILITY\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_SLEEP",
+                    "used_count": 1,
+                    "value": "\"WIZARD_SLEEP\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "WIZARD_GHOST_ARMOR",
+                    "used_count": 1,
+                    "value": "\"WIZARD_GHOST_ARMOR\"",
+                    "first_occurence": "AR6101.61PRISI1.05_WizardPrisoner"
+                },
+                {
+                    "src": "WIZARD_TROLLISH_FORTITUDE",
+                    "used_count": 1,
+                    "value": "\"WIZARD_TROLLISH_FORTITUDE\"",
+                    "first_occurence": "AR6101.61PRISI1.05_WizardPrisoner"
+                },
+                {
+                    "src": "WIZARD_MIND_BLANK",
+                    "used_count": 1,
+                    "value": "\"WIZARD_MIND_BLANK\"",
+                    "first_occurence": "AR6101.61PRISI1.05_WizardPrisoner"
+                },
+                {
+                    "src": "WIZARD_ELEMENTAL_BARRIER",
+                    "used_count": 2,
+                    "value": "\"WIZARD_ELEMENTAL_BARRIER\"",
+                    "first_occurence": "AR6101.61PRISI1.05_WizardPrisoner"
+                },
+                {
+                    "src": "WIZARD_PROTECTION_FROM_EVIL",
+                    "used_count": 2,
+                    "value": "\"WIZARD_PROTECTION_FROM_EVIL\"",
+                    "first_occurence": "AR6101.61PRISI1.05_WizardPrisoner"
+                },
+                {
+                    "src": "WIZARD_METEOR_SWARM",
+                    "used_count": 1,
+                    "value": "\"WIZARD_METEOR_SWARM\"",
+                    "first_occurence": "AR6101.61PRISI1.05_WizardPrisoner"
+                },
+                {
+                    "src": "WIZARD_FIERY_CLOUD",
+                    "used_count": 1,
+                    "value": "\"WIZARD_FIERY_CLOUD\"",
+                    "first_occurence": "AR6101.61PRISI1.05_WizardPrisoner"
+                },
+                {
+                    "src": "WIZARD_LIGHTNING_BOLT",
+                    "used_count": 1,
+                    "value": "\"WIZARD_LIGHTNING_BOLT\"",
+                    "first_occurence": "AR6101.61PRISI1.05_WizardPrisoner"
+                },
+                {
+                    "src": "CLERIC_CURE_DISEASE",
+                    "used_count": 13,
+                    "value": "\"CLERIC_CURE_DISEASE\"",
+                    "first_occurence": "AR6101.61PRISI2.04_SmartPrisoner_04"
+                },
+                {
+                    "src": "CLERIC_HEAL",
+                    "used_count": 1,
+                    "value": "\"CLERIC_HEAL\"",
+                    "first_occurence": "AR6101.61PRISI2.04_SmartPrisoner_04"
+                },
+                {
+                    "src": "CLERIC_RAISE_DEAD",
+                    "used_count": 1,
+                    "value": "\"CLERIC_RAISE_DEAD\"",
+                    "first_occurence": "AR6101.61PRISI2.04_SmartPrisoner_04"
+                },
+                {
+                    "src": "CLERIC_RESURRECTION",
+                    "used_count": 1,
+                    "value": "\"CLERIC_RESURRECTION\"",
+                    "first_occurence": "AR6101.61PRISI2.04_SmartPrisoner_04"
+                },
+                {
+                    "src": "CLERIC_HEALING_CIRCLE",
+                    "used_count": 2,
+                    "value": "\"CLERIC_HEALING_CIRCLE\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "CLERIC_PROTECTION_FROM_EVIL_10_RADIUS",
+                    "used_count": 6,
+                    "value": "\"CLERIC_PROTECTION_FROM_EVIL_10_RADIUS\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_LESSER_RESTORATION",
+                    "used_count": 12,
+                    "value": "\"CLERIC_LESSER_RESTORATION\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_NEGATIVE_ENERGY_PROTECTION",
+                    "used_count": 12,
+                    "value": "\"CLERIC_NEGATIVE_ENERGY_PROTECTION\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_INVISIBILITY_PURGE",
+                    "used_count": 7,
+                    "value": "\"CLERIC_INVISIBILITY_PURGE\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_CLOUD_OF_PESTILENCE",
+                    "used_count": 6,
+                    "value": "\"CLERIC_CLOUD_OF_PESTILENCE\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_BLOOD_RAGE",
+                    "used_count": 6,
+                    "value": "\"CLERIC_BLOOD_RAGE\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_POISON",
+                    "used_count": 6,
+                    "value": "\"CLERIC_POISON\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_HOLY_POWER",
+                    "used_count": 6,
+                    "value": "\"CLERIC_HOLY_POWER\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_ICE_BLADE",
+                    "used_count": 6,
+                    "value": "\"CLERIC_ICE_BLADE\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_DEFENSIVE_HARMONY",
+                    "used_count": 6,
+                    "value": "\"CLERIC_DEFENSIVE_HARMONY\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_RECITATION",
+                    "used_count": 6,
+                    "value": "\"CLERIC_RECITATION\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_DEATH_WARD",
+                    "used_count": 6,
+                    "value": "\"CLERIC_DEATH_WARD\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "WIZARD_HOLD_UNDEAD",
+                    "used_count": 6,
+                    "value": "\"WIZARD_HOLD_UNDEAD\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_CAUSE_DISEASE",
+                    "used_count": 6,
+                    "value": "\"CLERIC_CAUSE_DISEASE\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_MOLD_TOUCH",
+                    "used_count": 6,
+                    "value": "\"CLERIC_MOLD_TOUCH\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_RIGID_THINKING",
+                    "used_count": 6,
+                    "value": "\"CLERIC_RIGID_THINKING\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_MOONBLADE",
+                    "used_count": 6,
+                    "value": "\"CLERIC_MOONBLADE\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_PRAYER",
+                    "used_count": 6,
+                    "value": "\"CLERIC_PRAYER\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "WIZARD_BLINDNESS",
+                    "used_count": 6,
+                    "value": "\"WIZARD_BLINDNESS\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_STRENGTH_OF_ONE",
+                    "used_count": 6,
+                    "value": "\"CLERIC_STRENGTH_OF_ONE\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_RAINSTORM",
+                    "used_count": 6,
+                    "value": "\"CLERIC_RAINSTORM\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_SPELL_SHIELD",
+                    "used_count": 6,
+                    "value": "\"CLERIC_SPELL_SHIELD\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_ALICORN_LANCE",
+                    "used_count": 6,
+                    "value": "\"CLERIC_ALICORN_LANCE\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_CHANT",
+                    "used_count": 6,
+                    "value": "\"CLERIC_CHANT\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "WIZARD_STRENGTH",
+                    "used_count": 6,
+                    "value": "\"WIZARD_STRENGTH\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_DOOM",
+                    "used_count": 6,
+                    "value": "\"CLERIC_DOOM\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "CLERIC_BLESS",
+                    "used_count": 6,
+                    "value": "\"CLERIC_BLESS\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "WIZARD_SUMMON_SHADOW",
+                    "used_count": 3,
+                    "value": "\"WIZARD_SUMMON_SHADOW\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "WIZARD_SUMMON_MONSTER_IX",
+                    "used_count": 3,
+                    "value": "\"WIZARD_SUMMON_MONSTER_IX\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "2081",
+                    "used_count": 6,
+                    "value": "2081",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "CLERIC_UNDEAD_WARD",
+                    "used_count": 1,
+                    "value": "\"CLERIC_UNDEAD_WARD\"",
+                    "first_occurence": "AR6104.61YAPRIE.05_AbominationPriest_01"
+                },
+                {
+                    "src": "CLERIC_MAGIC_RESISTANCE",
+                    "used_count": 1,
+                    "value": "\"CLERIC_MAGIC_RESISTANCE\"",
+                    "first_occurence": "AR6104.61YAPRIE.05_AbominationPriest_01"
+                },
+                {
+                    "src": "WIZARD_EMOTION_FEAR",
+                    "used_count": 3,
+                    "value": "\"WIZARD_EMOTION_FEAR\"",
+                    "first_occurence": "AR6303.63PFIN.Pfinikmillillin"
+                },
+                {
+                    "src": "INNATE_ORRICKS_SOUL_DEVOURER",
+                    "used_count": 1,
+                    "value": "\"INNATE_ORRICKS_SOUL_DEVOURER\"",
+                    "first_occurence": "AR6403.64ORRICK.OrrickTheGrey"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,767 @@
+{
+    "func_name": "IncrementGlobal",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Name",
+                "arg_ids": "",
+                "arg_line": "S:Name*"
+            },
+            "values": [
+                {
+                    "src": "\"FLOATS\"",
+                    "used_count": 11,
+                    "value": "\"'FLOATS'\"",
+                    "first_occurence": "AR1003.10BLACK.Black_Geoffrey"
+                },
+                {
+                    "src": "\"FL_1\"",
+                    "used_count": 39,
+                    "value": "\"'FL_1'\"",
+                    "first_occurence": "AR1100.11GHILLE.Ghille-Laider"
+                },
+                {
+                    "src": "\"FL_2\"",
+                    "used_count": 67,
+                    "value": "\"'FL_2'\"",
+                    "first_occurence": "AR1100.11GHILLE.Ghille-Laider"
+                },
+                {
+                    "src": "\"FL_3\"",
+                    "used_count": 56,
+                    "value": "\"'FL_3'\"",
+                    "first_occurence": "AR1100.11GHILLE.Ghille-Laider"
+                },
+                {
+                    "src": "\"FL_4\"",
+                    "used_count": 70,
+                    "value": "\"'FL_4'\"",
+                    "first_occurence": "AR1100.11GHILLE.Ghille-Laider"
+                },
+                {
+                    "src": "\"40YellCount\"",
+                    "used_count": 25,
+                    "value": "\"'40YellCount'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"40OswaldRequest\"",
+                    "used_count": 715,
+                    "value": "\"'40OswaldRequest'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"FL_0\"",
+                    "used_count": 30,
+                    "value": "\"'FL_0'\"",
+                    "first_occurence": "AR1101.11ULBREC.Ulbrec Dinnsmore"
+                },
+                {
+                    "src": "\"RageCount\"",
+                    "used_count": 79,
+                    "value": "\"'RageCount'\"",
+                    "first_occurence": "AR2000.20ORCW3.T1_Orc_4"
+                },
+                {
+                    "src": "\"3001_LEADERS_ENEMY\"",
+                    "used_count": 4,
+                    "value": "\"'3001_LEADERS_ENEMY'\"",
+                    "first_occurence": "AR3001.None.None"
+                },
+                {
+                    "src": "\"ATTACK_COUNT\"",
+                    "used_count": 1,
+                    "value": "\"'ATTACK_COUNT'\"",
+                    "first_occurence": "AR3001.30YQUOGG.15_Yquog"
+                },
+                {
+                    "src": "\"40BeetleKills\"",
+                    "used_count": 2,
+                    "value": "\"'40BeetleKills'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"40BeetleDied\"",
+                    "used_count": 2,
+                    "value": "\"'40BeetleDied'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"40CurrentBeetleCount\"",
+                    "used_count": 3,
+                    "value": "\"'40CurrentBeetleCount'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"40BeetleSpawns\"",
+                    "used_count": 1,
+                    "value": "\"'40BeetleSpawns'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"WerewolfReturnSpot\"",
+                    "used_count": 144,
+                    "value": "\"'WerewolfReturnSpot'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"40BeetleSpawnRequests\"",
+                    "used_count": 1,
+                    "value": "\"'40BeetleSpawnRequests'\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "\"40SpiderSpawnRequests\"",
+                    "used_count": 2,
+                    "value": "\"'40SpiderSpawnRequests'\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "\"BARB_RAGE\"",
+                    "used_count": 85,
+                    "value": "\"'BARB_RAGE'\"",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "\"AbishaiEscape\"",
+                    "used_count": 1,
+                    "value": "\"'AbishaiEscape'\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "\"CurrentSacrifice\"",
+                    "used_count": 3,
+                    "value": "\"'CurrentSacrifice'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"Move\"",
+                    "used_count": 12,
+                    "value": "\"'Move'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"PartyResting\"",
+                    "used_count": 1,
+                    "value": "\"'PartyResting'\"",
+                    "first_occurence": "AR4101.41NATE.Nathaniel"
+                },
+                {
+                    "src": "\"BattleSquareLevel\"",
+                    "used_count": 16,
+                    "value": "\"'BattleSquareLevel'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareArenaScore\"",
+                    "used_count": 9,
+                    "value": "\"'BattleSquareArenaScore'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquarePlayerScore\"",
+                    "used_count": 9,
+                    "value": "\"'BattleSquarePlayerScore'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareArenaCount\"",
+                    "used_count": 1,
+                    "value": "\"'BattleSquareArenaCount'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquarePlayerCount\"",
+                    "used_count": 1,
+                    "value": "\"'BattleSquarePlayerCount'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank1\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank1'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank2\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank2'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank3\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank3'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank4\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank4'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank5\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank5'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank6\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank6'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank7\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank7'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank8\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank8'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank9\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank9'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleSquareWinRank10\"",
+                    "used_count": 5,
+                    "value": "\"'BattleSquareWinRank10'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"Num_Players_In_Melee_Range\"",
+                    "used_count": 3,
+                    "value": "\"'Num_Players_In_Melee_Range'\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "\"Num_PC_Allied_Monsters_Below_Level_Six\"",
+                    "used_count": 9,
+                    "value": "\"'Num_PC_Allied_Monsters_Below_Level_Six'\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "\"Use_Obj_List\"",
+                    "used_count": 3,
+                    "value": "\"'Use_Obj_List'\"",
+                    "first_occurence": "AR5300.53HEGGR.Heggr_Splitsteel"
+                },
+                {
+                    "src": "\"TwoFromTwo\"",
+                    "used_count": 1,
+                    "value": "\"'TwoFromTwo'\"",
+                    "first_occurence": "AR5300.53SORN.Sorn"
+                },
+                {
+                    "src": "\"Use_Spore_Attack\"",
+                    "used_count": 9,
+                    "value": "\"'Use_Spore_Attack'\"",
+                    "first_occurence": "AR5301.53REDMYC.Red_Myconid1"
+                },
+                {
+                    "src": "\"Buffed_Brain\"",
+                    "used_count": 1,
+                    "value": "\"'Buffed_Brain'\"",
+                    "first_occurence": "AR5302.53ECKTAR.Ecktarrilsenularr"
+                },
+                {
+                    "src": "\"Buffed_Self\"",
+                    "used_count": 1,
+                    "value": "\"'Buffed_Self'\"",
+                    "first_occurence": "AR5302.53ECKTAR.Ecktarrilsenularr"
+                },
+                {
+                    "src": "\"Action\"",
+                    "used_count": 57,
+                    "value": "\"'Action'\"",
+                    "first_occurence": "AR6003.60HIEPHE.Hiepherus"
+                },
+                {
+                    "src": "\"Chult_PortalClosing\"",
+                    "used_count": 6,
+                    "value": "\"'Chult_PortalClosing'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Ojaiha_Manual_Dialog_Timer\"",
+                    "used_count": 1,
+                    "value": "\"'Ojaiha_Manual_Dialog_Timer'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_DialogState\"",
+                    "used_count": 15,
+                    "value": "\"'Ritual_DialogState'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ashra_Demo\"",
+                    "used_count": 40,
+                    "value": "\"'Ashra_Demo'\"",
+                    "first_occurence": "AR6051.60ASHRA.Ashra"
+                },
+                {
+                    "src": "\"Ashra_Demo_State\"",
+                    "used_count": 1,
+                    "value": "\"'Ashra_Demo_State'\"",
+                    "first_occurence": "AR6051.60ASHRA.Ashra"
+                },
+                {
+                    "src": "\"Inhatri_Demo\"",
+                    "used_count": 24,
+                    "value": "\"'Inhatri_Demo'\"",
+                    "first_occurence": "AR6051.60INHATR.Inhatri"
+                },
+                {
+                    "src": "\"Buff_Count\"",
+                    "used_count": 1,
+                    "value": "\"'Buff_Count'\"",
+                    "first_occurence": "AR6051.60INHATR.Inhatri"
+                },
+                {
+                    "src": "\"Level1Spells\"",
+                    "used_count": 104,
+                    "value": "\"'Level1Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"Level4Spells\"",
+                    "used_count": 200,
+                    "value": "\"'Level4Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"Level5Spells\"",
+                    "used_count": 65,
+                    "value": "\"'Level5Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"Level3Spells\"",
+                    "used_count": 223,
+                    "value": "\"'Level3Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"Level2Spells\"",
+                    "used_count": 176,
+                    "value": "\"'Level2Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"Level7Spells\"",
+                    "used_count": 10,
+                    "value": "\"'Level7Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"Level6Spells\"",
+                    "used_count": 7,
+                    "value": "\"'Level6Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"61NheeroResearchStatus\"",
+                    "used_count": 3,
+                    "value": "\"'61NheeroResearchStatus'\"",
+                    "first_occurence": "AR6101.61NHEERO.Nheero"
+                },
+                {
+                    "src": "\"61NUMPRISONERSSENTTORAKSHASA\"",
+                    "used_count": 5,
+                    "value": "\"'61NUMPRISONERSSENTTORAKSHASA'\"",
+                    "first_occurence": "AR6101.61PRISTR.05_TrollPrisoner"
+                },
+                {
+                    "src": "\"WizardSpell\"",
+                    "used_count": 14,
+                    "value": "\"'WizardSpell'\"",
+                    "first_occurence": "AR6101.61PRISI1.05_WizardPrisoner"
+                },
+                {
+                    "src": "\"STUNNING_BLOWS\"",
+                    "used_count": 1,
+                    "value": "\"'STUNNING_BLOWS'\"",
+                    "first_occurence": "AR6101.61PRISF2.04_FemalePrisoner_07"
+                },
+                {
+                    "src": "\"Flee\"",
+                    "used_count": 26,
+                    "value": "\"'Flee'\"",
+                    "first_occurence": "AR6101.61YPBLAD.07_PurebloodThief_05"
+                },
+                {
+                    "src": "\"EncounterChance\"",
+                    "used_count": 4,
+                    "value": "\"'EncounterChance'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"YuantiCallForHelp\"",
+                    "used_count": 48,
+                    "value": "\"'YuantiCallForHelp'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"61HalfbreedDied\"",
+                    "used_count": 15,
+                    "value": "\"'61HalfbreedDied'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"61AbominationDied\"",
+                    "used_count": 1,
+                    "value": "\"'61AbominationDied'\"",
+                    "first_occurence": "AR6103.None.None"
+                },
+                {
+                    "src": "\"TEAM_SA_5\"",
+                    "used_count": 40,
+                    "value": "\"'TEAM_SA_5'\"",
+                    "first_occurence": "AR6103.61MUSJEL.05_MustardJelly_01"
+                },
+                {
+                    "src": "\"TEAM_SA_2\"",
+                    "used_count": 8,
+                    "value": "\"'TEAM_SA_2'\"",
+                    "first_occurence": "AR6103.61HISTAC.Histachii_09"
+                },
+                {
+                    "src": "\"61CurrentDay\"",
+                    "used_count": 1,
+                    "value": "\"'61CurrentDay'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61VolcanoStatus\"",
+                    "used_count": 8,
+                    "value": "\"'61VolcanoStatus'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"PlayersVisible\"",
+                    "used_count": 6,
+                    "value": "\"'PlayersVisible'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BreathCount\"",
+                    "used_count": 9,
+                    "value": "\"'BreathCount'\"",
+                    "first_occurence": "AR6104.61MEPLAV.04_LavaMephit_02"
+                },
+                {
+                    "src": "\"IzbelahCastSpell\"",
+                    "used_count": 27,
+                    "value": "\"'IzbelahCastSpell'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "\"Level9Spells\"",
+                    "used_count": 12,
+                    "value": "\"'Level9Spells'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "\"SH_3WayDialog\"",
+                    "used_count": 9,
+                    "value": "\"'SH_3WayDialog'\"",
+                    "first_occurence": "AR6303.63YXBU.Yxbudurzmutkimdu"
+                },
+                {
+                    "src": "\"Action_Spell\"",
+                    "used_count": 3,
+                    "value": "\"'Action_Spell'\"",
+                    "first_occurence": "AR6303.63PFIN.Pfinikmillillin"
+                },
+                {
+                    "src": "\"2\"",
+                    "used_count": 6,
+                    "value": "\"'2'\"",
+                    "first_occurence": "AR6501.65HTMST2.Hatemaster"
+                },
+                {
+                    "src": "\"6502_SeeParty_Time\"",
+                    "used_count": 1,
+                    "value": "\"'6502_SeeParty_Time'\"",
+                    "first_occurence": "AR6502.65RUCOL.RuinlordMayzomCol"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Area",
+                "arg_ids": "",
+                "arg_line": "S:Area*"
+            },
+            "values": [
+                {
+                    "src": "\"LOCALS\"",
+                    "used_count": 1450,
+                    "value": "\"'LOCALS'\"",
+                    "first_occurence": "AR1003.10BLACK.Black_Geoffrey"
+                },
+                {
+                    "src": "\"GLOBAL\"",
+                    "used_count": 845,
+                    "value": "\"'GLOBAL'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"MYAREA\"",
+                    "used_count": 349,
+                    "value": "\"'MYAREA'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "",
+                "arg_line": "I:Value*"
+            },
+            "values": [
+                {
+                    "src": "1",
+                    "used_count": 687,
+                    "value": "1",
+                    "first_occurence": "AR1003.10BLACK.Black_Geoffrey"
+                },
+                {
+                    "src": "-1",
+                    "used_count": 1064,
+                    "value": "-1",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-2",
+                    "used_count": 51,
+                    "value": "-2",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-4",
+                    "used_count": 51,
+                    "value": "-4",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-8",
+                    "used_count": 50,
+                    "value": "-8",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-256",
+                    "used_count": 50,
+                    "value": "-256",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-16",
+                    "used_count": 50,
+                    "value": "-16",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-512",
+                    "used_count": 50,
+                    "value": "-512",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-32",
+                    "used_count": 50,
+                    "value": "-32",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-1024",
+                    "used_count": 50,
+                    "value": "-1024",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-64",
+                    "used_count": 50,
+                    "value": "-64",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-2048",
+                    "used_count": 50,
+                    "value": "-2048",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-128",
+                    "used_count": 50,
+                    "value": "-128",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-4096",
+                    "used_count": 50,
+                    "value": "-4096",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "2",
+                    "used_count": 22,
+                    "value": "2",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "4",
+                    "used_count": 32,
+                    "value": "4",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "8",
+                    "used_count": 30,
+                    "value": "8",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "16",
+                    "used_count": 30,
+                    "value": "16",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "32",
+                    "used_count": 30,
+                    "value": "32",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "64",
+                    "used_count": 29,
+                    "value": "64",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "128",
+                    "used_count": 19,
+                    "value": "128",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "256",
+                    "used_count": 19,
+                    "value": "256",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "512",
+                    "used_count": 17,
+                    "value": "512",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "1024",
+                    "used_count": 17,
+                    "value": "1024",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "2048",
+                    "used_count": 17,
+                    "value": "2048",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "4096",
+                    "used_count": 5,
+                    "value": "4096",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "-3",
+                    "used_count": 6,
+                    "value": "-3",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "3",
+                    "used_count": 7,
+                    "value": "3",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "6",
+                    "used_count": 1,
+                    "value": "6",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "9",
+                    "used_count": 1,
+                    "value": "9",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "12",
+                    "used_count": 1,
+                    "value": "12",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "15",
+                    "used_count": 1,
+                    "value": "15",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "18",
+                    "used_count": 1,
+                    "value": "18",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "21",
+                    "used_count": 1,
+                    "value": "21",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "24",
+                    "used_count": 1,
+                    "value": "24",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "27",
+                    "used_count": 1,
+                    "value": "27",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "30",
+                    "used_count": 1,
+                    "value": "30",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "20",
+                    "used_count": 2,
+                    "value": "20",
+                    "first_occurence": "AR6102.None.None"
+                }
+            ]
+        }
+    ]
+}

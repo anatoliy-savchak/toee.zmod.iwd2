@@ -1,0 +1,21 @@
+{
+    "func_name": "Weather",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Weather",
+                "arg_ids": "Weather",
+                "arg_line": "I:Weather*Weather"
+            },
+            "values": [
+                {
+                    "src": "NOWEATHER",
+                    "used_count": 1,
+                    "value": "\"NOWEATHER\"",
+                    "first_occurence": "AR4100.None.None"
+                }
+            ]
+        }
+    ]
+}

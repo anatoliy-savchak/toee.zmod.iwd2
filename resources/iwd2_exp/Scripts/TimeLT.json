@@ -1,0 +1,21 @@
+{
+    "func_name": "TimeLT",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Time",
+                "arg_ids": "Time",
+                "arg_line": "I:Time*Time"
+            },
+            "values": [
+                {
+                    "src": "DAWN_END",
+                    "used_count": 1,
+                    "value": "\"DAWN_END\"",
+                    "first_occurence": "AR1105.None.None"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "func_name": "LastSeenBy",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 3351,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "LastHeardBy",
+                    "used_count": 38,
+                    "value": "self.iLastHeardBy(\"Myself\")",
+                    "first_occurence": "AR4102.41GOLEIC.Champion_04"
+                }
+            ]
+        }
+    ]
+}

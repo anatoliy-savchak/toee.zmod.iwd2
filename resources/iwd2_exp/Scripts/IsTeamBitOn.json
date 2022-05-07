@@ -1,0 +1,135 @@
+{
+    "func_name": "IsTeamBitOn",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "TeamFlag",
+                "arg_ids": "TeamBit",
+                "arg_line": "I:TeamFlag*TeamBit"
+            },
+            "values": [
+                {
+                    "src": "TEAM_1_BIT",
+                    "used_count": 512,
+                    "value": "\"TEAM_1_BIT\"",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "TEAM_2_BIT",
+                    "used_count": 409,
+                    "value": "\"TEAM_2_BIT\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "TEAM_3_BIT",
+                    "used_count": 234,
+                    "value": "\"TEAM_3_BIT\"",
+                    "first_occurence": "AR1000.10GOB.1000_Goblin_01"
+                },
+                {
+                    "src": "TEAM_4_BIT",
+                    "used_count": 244,
+                    "value": "\"TEAM_4_BIT\"",
+                    "first_occurence": "AR1000.10GOB.1000_Goblin_02"
+                },
+                {
+                    "src": "TEAM_5_BIT",
+                    "used_count": 172,
+                    "value": "\"TEAM_5_BIT\"",
+                    "first_occurence": "AR1000.10GOB.1000_Goblin_04"
+                },
+                {
+                    "src": "TEAM_6_BIT",
+                    "used_count": 110,
+                    "value": "\"TEAM_6_BIT\"",
+                    "first_occurence": "AR1000.10GOB.1000_Goblin_06"
+                },
+                {
+                    "src": "TEAM_7_BIT",
+                    "used_count": 92,
+                    "value": "\"TEAM_7_BIT\"",
+                    "first_occurence": "AR1000.10GOB.1000_Goblin_14"
+                },
+                {
+                    "src": "TEAM_8_BIT",
+                    "used_count": 113,
+                    "value": "\"TEAM_8_BIT\"",
+                    "first_occurence": "AR1000.10GOB.1000_Goblin_16"
+                },
+                {
+                    "src": "TEAM_10_BIT",
+                    "used_count": 44,
+                    "value": "\"TEAM_10_BIT\"",
+                    "first_occurence": "AR2000.20ORCACH.T5_Arch_1"
+                },
+                {
+                    "src": "TEAM_9_BIT",
+                    "used_count": 94,
+                    "value": "\"TEAM_9_BIT\"",
+                    "first_occurence": "AR2000.20ORCACH.T9_Archer_1"
+                },
+                {
+                    "src": "TEAM_15_BIT",
+                    "used_count": 31,
+                    "value": "\"TEAM_15_BIT\"",
+                    "first_occurence": "AR3000.00ORCAR.15_OrcAr_01"
+                },
+                {
+                    "src": "TEAM_16_BIT",
+                    "used_count": 26,
+                    "value": "\"TEAM_16_BIT\"",
+                    "first_occurence": "AR3000.00ORCARE.15_OrcArE_03"
+                },
+                {
+                    "src": "TEAM_17_BIT",
+                    "used_count": 28,
+                    "value": "\"TEAM_17_BIT\"",
+                    "first_occurence": "AR3000.30OGRGAR.17_OgrGar"
+                },
+                {
+                    "src": "TEAM_20_BIT",
+                    "used_count": 2,
+                    "value": "\"TEAM_20_BIT\"",
+                    "first_occurence": "AR3000.30WWLF.20_Winter_Wolf_1"
+                },
+                {
+                    "src": "TEAM_19_BIT",
+                    "used_count": 10,
+                    "value": "\"TEAM_19_BIT\"",
+                    "first_occurence": "AR3000.30GOBHO.Half-Goblin Hordling"
+                },
+                {
+                    "src": "TEAM_18_BIT",
+                    "used_count": 6,
+                    "value": "\"TEAM_18_BIT\"",
+                    "first_occurence": "AR3000.30HAGOB.Half-Goblin"
+                },
+                {
+                    "src": "TEAM_13_BIT",
+                    "used_count": 40,
+                    "value": "\"TEAM_13_BIT\"",
+                    "first_occurence": "AR3001.30GOBPON.Pondmuk"
+                },
+                {
+                    "src": "TEAM_12_BIT",
+                    "used_count": 39,
+                    "value": "\"TEAM_12_BIT\"",
+                    "first_occurence": "AR3001.00OROBLA.12_Oro_01"
+                },
+                {
+                    "src": "TEAM_11_BIT",
+                    "used_count": 59,
+                    "value": "\"TEAM_11_BIT\"",
+                    "first_occurence": "AR4101.41CATHIN.Cathin"
+                },
+                {
+                    "src": "TEAM_14_BIT",
+                    "used_count": 25,
+                    "value": "\"TEAM_14_BIT\"",
+                    "first_occurence": "AR4101.40WOLFWI.14_Wolf_01"
+                }
+            ]
+        }
+    ]
+}

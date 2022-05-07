@@ -1,0 +1,1213 @@
+{
+    "func_name": "HideCreature",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"BLACK_GEOFFREY\"",
+                    "used_count": 1,
+                    "value": "\"'BLACK_GEOFFREY'\"",
+                    "first_occurence": "AR1003.None.None"
+                },
+                {
+                    "src": "\"BLANCHARD\"",
+                    "used_count": 1,
+                    "value": "\"'BLANCHARD'\"",
+                    "first_occurence": "AR1003.None.None"
+                },
+                {
+                    "src": "\"KICKSHAW\"",
+                    "used_count": 1,
+                    "value": "\"'KICKSHAW'\"",
+                    "first_occurence": "AR1003.None.None"
+                },
+                {
+                    "src": "\"Doppelganger\"",
+                    "used_count": 1,
+                    "value": "\"'Doppelganger'\"",
+                    "first_occurence": "AR1103.11GARRAD.Garradun"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 446,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR1103.11GARRAD.Garradun"
+                },
+                {
+                    "src": "\"Braston\"",
+                    "used_count": 2,
+                    "value": "\"'Braston'\"",
+                    "first_occurence": "AR3000.None.None"
+                },
+                {
+                    "src": "Player1",
+                    "used_count": 5,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "Player2",
+                    "used_count": 5,
+                    "value": "\"Player2\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "Player3",
+                    "used_count": 5,
+                    "value": "\"Player3\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "Player4",
+                    "used_count": 5,
+                    "value": "\"Player4\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "Player5",
+                    "used_count": 5,
+                    "value": "\"Player5\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "Player6",
+                    "used_count": 5,
+                    "value": "\"Player6\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "\"Rengar\"",
+                    "used_count": 1,
+                    "value": "\"'Rengar'\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "\"41Zack\"",
+                    "used_count": 1,
+                    "value": "\"'41Zack'\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "\"OriaEssence\"",
+                    "used_count": 3,
+                    "value": "\"'OriaEssence'\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "\"06_Postulant_01\"",
+                    "used_count": 1,
+                    "value": "\"'06_Postulant_01'\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "\"06_Frosttouch_02\"",
+                    "used_count": 1,
+                    "value": "\"'06_Frosttouch_02'\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "\"06_Stormsister_03\"",
+                    "used_count": 1,
+                    "value": "\"'06_Stormsister_03'\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "\"06_Wolf_04\"",
+                    "used_count": 1,
+                    "value": "\"'06_Wolf_04'\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "\"06_Bear_05\"",
+                    "used_count": 1,
+                    "value": "\"'06_Bear_05'\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "\"06_Barbarian_Warrior_06\"",
+                    "used_count": 1,
+                    "value": "\"'06_Barbarian_Warrior_06'\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "\"01_50GHOAR_01\"",
+                    "used_count": 1,
+                    "value": "\"'01_50GHOAR_01'\"",
+                    "first_occurence": "AR5010.None.None"
+                },
+                {
+                    "src": "\"01_50GHOAR_02\"",
+                    "used_count": 1,
+                    "value": "\"'01_50GHOAR_02'\"",
+                    "first_occurence": "AR5010.None.None"
+                },
+                {
+                    "src": "\"01_50GHOAR_03\"",
+                    "used_count": 1,
+                    "value": "\"'01_50GHOAR_03'\"",
+                    "first_occurence": "AR5010.None.None"
+                },
+                {
+                    "src": "\"01_50GHOAR_04\"",
+                    "used_count": 1,
+                    "value": "\"'01_50GHOAR_04'\"",
+                    "first_occurence": "AR5010.None.None"
+                },
+                {
+                    "src": "\"01_50GHOAR_05\"",
+                    "used_count": 1,
+                    "value": "\"'01_50GHOAR_05'\"",
+                    "first_occurence": "AR5010.None.None"
+                },
+                {
+                    "src": "\"01_50GHOAR_06\"",
+                    "used_count": 1,
+                    "value": "\"'01_50GHOAR_06'\"",
+                    "first_occurence": "AR5010.None.None"
+                },
+                {
+                    "src": "\"01_50GHOAR_07\"",
+                    "used_count": 1,
+                    "value": "\"'01_50GHOAR_07'\"",
+                    "first_occurence": "AR5010.None.None"
+                },
+                {
+                    "src": "\"01_50GHOAR_08\"",
+                    "used_count": 1,
+                    "value": "\"'01_50GHOAR_08'\"",
+                    "first_occurence": "AR5010.None.None"
+                },
+                {
+                    "src": "\"01_50GHOAR_09\"",
+                    "used_count": 1,
+                    "value": "\"'01_50GHOAR_09'\"",
+                    "first_occurence": "AR5010.None.None"
+                },
+                {
+                    "src": "\"Dark_Treant\"",
+                    "used_count": 1,
+                    "value": "\"'Dark_Treant'\"",
+                    "first_occurence": "AR5010.None.None"
+                },
+                {
+                    "src": "\"TRAP_WISP\"",
+                    "used_count": 20,
+                    "value": "\"'TRAP_WISP'\"",
+                    "first_occurence": "AR5011.None.None"
+                },
+                {
+                    "src": "\"01_50RDEAR_01\"",
+                    "used_count": 1,
+                    "value": "\"'01_50RDEAR_01'\"",
+                    "first_occurence": "AR5016.None.None"
+                },
+                {
+                    "src": "\"01_50RDEAR_02\"",
+                    "used_count": 1,
+                    "value": "\"'01_50RDEAR_02'\"",
+                    "first_occurence": "AR5016.None.None"
+                },
+                {
+                    "src": "\"01_50RDEAR_03\"",
+                    "used_count": 1,
+                    "value": "\"'01_50RDEAR_03'\"",
+                    "first_occurence": "AR5016.None.None"
+                },
+                {
+                    "src": "\"01_50RDEAR_04\"",
+                    "used_count": 1,
+                    "value": "\"'01_50RDEAR_04'\"",
+                    "first_occurence": "AR5016.None.None"
+                },
+                {
+                    "src": "\"01_50RDEAR_05\"",
+                    "used_count": 1,
+                    "value": "\"'01_50RDEAR_05'\"",
+                    "first_occurence": "AR5016.None.None"
+                },
+                {
+                    "src": "\"Katchmat\"",
+                    "used_count": 1,
+                    "value": "\"'Katchmat'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Sashkta\"",
+                    "used_count": 1,
+                    "value": "\"'Sashkta'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Mezro_Warrior1\"",
+                    "used_count": 1,
+                    "value": "\"'Mezro_Warrior1'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Mezro_Warrior2\"",
+                    "used_count": 1,
+                    "value": "\"'Mezro_Warrior2'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Mezro_Warrior3\"",
+                    "used_count": 1,
+                    "value": "\"'Mezro_Warrior3'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Mezro_Warrior4\"",
+                    "used_count": 1,
+                    "value": "\"'Mezro_Warrior4'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Mezro_Warrior5\"",
+                    "used_count": 1,
+                    "value": "\"'Mezro_Warrior5'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Mezro_Warrior6\"",
+                    "used_count": 1,
+                    "value": "\"'Mezro_Warrior6'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Mezro_Warrior7\"",
+                    "used_count": 1,
+                    "value": "\"'Mezro_Warrior7'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Yuan-Ti_Elite1\"",
+                    "used_count": 1,
+                    "value": "\"'Yuan-Ti_Elite1'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Yuan-Ti_Elite2\"",
+                    "used_count": 1,
+                    "value": "\"'Yuan-Ti_Elite2'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Yuan-Ti_Elite3\"",
+                    "used_count": 1,
+                    "value": "\"'Yuan-Ti_Elite3'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Yuan-Ti_Elite4\"",
+                    "used_count": 1,
+                    "value": "\"'Yuan-Ti_Elite4'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Yuan-Ti_Elite5\"",
+                    "used_count": 1,
+                    "value": "\"'Yuan-Ti_Elite5'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Yuan-Ti_Elite6\"",
+                    "used_count": 1,
+                    "value": "\"'Yuan-Ti_Elite6'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Yuan-Ti_Elite7\"",
+                    "used_count": 1,
+                    "value": "\"'Yuan-Ti_Elite7'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Yuan-Ti_Elite8\"",
+                    "used_count": 1,
+                    "value": "\"'Yuan-Ti_Elite8'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Yuan-Ti_Elite9\"",
+                    "used_count": 1,
+                    "value": "\"'Yuan-Ti_Elite9'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Yuan-Ti_Priest1\"",
+                    "used_count": 1,
+                    "value": "\"'Yuan-Ti_Priest1'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Yuan-Ti_Priest2\"",
+                    "used_count": 1,
+                    "value": "\"'Yuan-Ti_Priest2'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Pureblood_Sorcerer1\"",
+                    "used_count": 1,
+                    "value": "\"'Pureblood_Sorcerer1'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Pureblood_Sorcerer2\"",
+                    "used_count": 1,
+                    "value": "\"'Pureblood_Sorcerer2'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Initiate1\"",
+                    "used_count": 1,
+                    "value": "\"'Initiate1'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Initiate2\"",
+                    "used_count": 1,
+                    "value": "\"'Initiate2'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Initiate3\"",
+                    "used_count": 1,
+                    "value": "\"'Initiate3'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Initiate4\"",
+                    "used_count": 1,
+                    "value": "\"'Initiate4'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Initiate5\"",
+                    "used_count": 1,
+                    "value": "\"'Initiate5'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Initiate6\"",
+                    "used_count": 1,
+                    "value": "\"'Initiate6'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Initiate7\"",
+                    "used_count": 1,
+                    "value": "\"'Initiate7'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Initiate8\"",
+                    "used_count": 1,
+                    "value": "\"'Initiate8'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"05_TrollPrisoner\"",
+                    "used_count": 1,
+                    "value": "\"'05_TrollPrisoner'\"",
+                    "first_occurence": "AR6101.None.None"
+                },
+                {
+                    "src": "\"DeadMandal\"",
+                    "used_count": 1,
+                    "value": "\"'DeadMandal'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"Mandal\"",
+                    "used_count": 1,
+                    "value": "\"'Mandal'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"Alchemist\"",
+                    "used_count": 1,
+                    "value": "\"'Alchemist'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"05_Ettercap_01\"",
+                    "used_count": 1,
+                    "value": "\"'05_Ettercap_01'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"05_Ettercap_02\"",
+                    "used_count": 1,
+                    "value": "\"'05_Ettercap_02'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"05_Ettercap_03\"",
+                    "used_count": 1,
+                    "value": "\"'05_Ettercap_03'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"03_Jaguar_01\"",
+                    "used_count": 1,
+                    "value": "\"'03_Jaguar_01'\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"03_Jaguar_02\"",
+                    "used_count": 1,
+                    "value": "\"'03_Jaguar_02'\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"03_Jaguar_03\"",
+                    "used_count": 1,
+                    "value": "\"'03_Jaguar_03'\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"03_Jaguar_04\"",
+                    "used_count": 1,
+                    "value": "\"'03_Jaguar_04'\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"03_Jaguar_05\"",
+                    "used_count": 1,
+                    "value": "\"'03_Jaguar_05'\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"03_Jaguar_06\"",
+                    "used_count": 1,
+                    "value": "\"'03_Jaguar_06'\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"02_EliteGuard_09\"",
+                    "used_count": 1,
+                    "value": "\"'02_EliteGuard_09'\"",
+                    "first_occurence": "AR6103.None.None"
+                },
+                {
+                    "src": "\"02_EliteGuard_06\"",
+                    "used_count": 1,
+                    "value": "\"'02_EliteGuard_06'\"",
+                    "first_occurence": "AR6103.None.None"
+                },
+                {
+                    "src": "\"02_EliteGuard_07\"",
+                    "used_count": 1,
+                    "value": "\"'02_EliteGuard_07'\"",
+                    "first_occurence": "AR6103.None.None"
+                },
+                {
+                    "src": "\"02_EliteGuard_08\"",
+                    "used_count": 1,
+                    "value": "\"'02_EliteGuard_08'\"",
+                    "first_occurence": "AR6103.None.None"
+                },
+                {
+                    "src": "\"Ziltyor\"",
+                    "used_count": 2,
+                    "value": "\"'Ziltyor'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_Efreeti_01\"",
+                    "used_count": 2,
+                    "value": "\"'04_Efreeti_01'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_LavaMephit_02\"",
+                    "used_count": 2,
+                    "value": "\"'04_LavaMephit_02'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_LavaMephit_03\"",
+                    "used_count": 2,
+                    "value": "\"'04_LavaMephit_03'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_LavaMephit_04\"",
+                    "used_count": 2,
+                    "value": "\"'04_LavaMephit_04'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_LavaMephit_05\"",
+                    "used_count": 2,
+                    "value": "\"'04_LavaMephit_05'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_LavaMephit_06\"",
+                    "used_count": 2,
+                    "value": "\"'04_LavaMephit_06'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_LavaMephit_07\"",
+                    "used_count": 2,
+                    "value": "\"'04_LavaMephit_07'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_FireElemental_08\"",
+                    "used_count": 2,
+                    "value": "\"'04_FireElemental_08'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_FireElemental_09\"",
+                    "used_count": 2,
+                    "value": "\"'04_FireElemental_09'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_FireElemental_10\"",
+                    "used_count": 2,
+                    "value": "\"'04_FireElemental_10'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_FireElemental_11\"",
+                    "used_count": 2,
+                    "value": "\"'04_FireElemental_11'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_FireElemental_12\"",
+                    "used_count": 2,
+                    "value": "\"'04_FireElemental_12'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_FireElemental_13\"",
+                    "used_count": 2,
+                    "value": "\"'04_FireElemental_13'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_FireElemental_14\"",
+                    "used_count": 2,
+                    "value": "\"'04_FireElemental_14'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_FireElemental_15\"",
+                    "used_count": 2,
+                    "value": "\"'04_FireElemental_15'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_HellHound_20\"",
+                    "used_count": 2,
+                    "value": "\"'04_HellHound_20'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_HellHound_21\"",
+                    "used_count": 2,
+                    "value": "\"'04_HellHound_21'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_HellHound_22\"",
+                    "used_count": 2,
+                    "value": "\"'04_HellHound_22'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_HellHound_23\"",
+                    "used_count": 2,
+                    "value": "\"'04_HellHound_23'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_HellHound_24\"",
+                    "used_count": 2,
+                    "value": "\"'04_HellHound_24'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_HellHound_25\"",
+                    "used_count": 2,
+                    "value": "\"'04_HellHound_25'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_Troll_16\"",
+                    "used_count": 2,
+                    "value": "\"'04_Troll_16'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_Troll_17\"",
+                    "used_count": 2,
+                    "value": "\"'04_Troll_17'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_Troll_18\"",
+                    "used_count": 2,
+                    "value": "\"'04_Troll_18'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"04_Troll_19\"",
+                    "used_count": 2,
+                    "value": "\"'04_Troll_19'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Throne\"",
+                    "used_count": 8,
+                    "value": "\"'61Throne'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Amphitheatre\"",
+                    "used_count": 8,
+                    "value": "\"'61Amphitheatre'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Embassy\"",
+                    "used_count": 9,
+                    "value": "\"'61Embassy'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Palace\"",
+                    "used_count": 8,
+                    "value": "\"'61Palace'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Citadel\"",
+                    "used_count": 8,
+                    "value": "\"'61Citadel'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Bridge\"",
+                    "used_count": 4,
+                    "value": "\"'61Bridge'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_AbominationPriest_01\"",
+                    "used_count": 2,
+                    "value": "\"'05_AbominationPriest_01'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_AbominationArcher_02\"",
+                    "used_count": 2,
+                    "value": "\"'05_AbominationArcher_02'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_AbominationArcher_03\"",
+                    "used_count": 2,
+                    "value": "\"'05_AbominationArcher_03'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_AbominationChampion_04\"",
+                    "used_count": 2,
+                    "value": "\"'05_AbominationChampion_04'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_AbominationChampion_05\"",
+                    "used_count": 2,
+                    "value": "\"'05_AbominationChampion_05'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_ArmoredSkeleton_06\"",
+                    "used_count": 2,
+                    "value": "\"'05_ArmoredSkeleton_06'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_ArmoredSkeleton_07\"",
+                    "used_count": 2,
+                    "value": "\"'05_ArmoredSkeleton_07'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_IronGolem_08\"",
+                    "used_count": 2,
+                    "value": "\"'05_IronGolem_08'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_HalfBreedPriestess_09\"",
+                    "used_count": 2,
+                    "value": "\"'05_HalfBreedPriestess_09'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_HalfBreedPriestess_10\"",
+                    "used_count": 2,
+                    "value": "\"'05_HalfBreedPriestess_10'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_HalfBreedSorceress_11\"",
+                    "used_count": 2,
+                    "value": "\"'05_HalfBreedSorceress_11'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_HalfBreedSorceress_12\"",
+                    "used_count": 2,
+                    "value": "\"'05_HalfBreedSorceress_12'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_EliteLizardman_13\"",
+                    "used_count": 2,
+                    "value": "\"'05_EliteLizardman_13'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_LizardShaman_14\"",
+                    "used_count": 2,
+                    "value": "\"'05_LizardShaman_14'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_LizardMan_15\"",
+                    "used_count": 2,
+                    "value": "\"'05_LizardMan_15'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_Wyvern_16\"",
+                    "used_count": 2,
+                    "value": "\"'05_Wyvern_16'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_PurebloodWarrior_17\"",
+                    "used_count": 2,
+                    "value": "\"'05_PurebloodWarrior_17'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_PurebloodWarrior_18\"",
+                    "used_count": 2,
+                    "value": "\"'05_PurebloodWarrior_18'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_PurebloodThief_19\"",
+                    "used_count": 2,
+                    "value": "\"'05_PurebloodThief_19'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_PurebloodThief_20\"",
+                    "used_count": 2,
+                    "value": "\"'05_PurebloodThief_20'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"05_FrostSalamander_21\"",
+                    "used_count": 2,
+                    "value": "\"'05_FrostSalamander_21'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"DeadPyros\"",
+                    "used_count": 1,
+                    "value": "\"'DeadPyros'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"DeadLothar\"",
+                    "used_count": 1,
+                    "value": "\"'DeadLothar'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_01\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_01'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_02\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_02'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_03\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_03'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_04\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_04'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_05\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_05'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_06\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_06'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_07\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_07'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_08\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_08'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_09\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_09'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_10\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_10'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_11\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_11'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_12\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_12'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_13\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_13'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_14\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_14'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_15\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_15'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_16\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_16'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_17\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_17'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_18\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_18'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_19\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_19'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_20\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_20'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_21\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_21'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_22\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_22'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_23\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_23'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_24\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_24'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_25\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_25'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_26\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_26'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_27\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_27'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_28\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_28'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_29\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_29'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Dead_30\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_30'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Lothar4\"",
+                    "used_count": 1,
+                    "value": "\"'Lothar4'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Jasper4\"",
+                    "used_count": 1,
+                    "value": "\"'Jasper4'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Venomin3\"",
+                    "used_count": 1,
+                    "value": "\"'Venomin3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Pyros3\"",
+                    "used_count": 1,
+                    "value": "\"'Pyros3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Lothar3\"",
+                    "used_count": 1,
+                    "value": "\"'Lothar3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Jasper3\"",
+                    "used_count": 1,
+                    "value": "\"'Jasper3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Izbelah3\"",
+                    "used_count": 1,
+                    "value": "\"'Izbelah3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Venomin2\"",
+                    "used_count": 1,
+                    "value": "\"'Venomin2'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Pyros2\"",
+                    "used_count": 1,
+                    "value": "\"'Pyros2'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Lothar2\"",
+                    "used_count": 1,
+                    "value": "\"'Lothar2'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Izbelah2\"",
+                    "used_count": 1,
+                    "value": "\"'Izbelah2'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Pyros1\"",
+                    "used_count": 1,
+                    "value": "\"'Pyros1'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Lothar1\"",
+                    "used_count": 1,
+                    "value": "\"'Lothar1'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Izbelah1\"",
+                    "used_count": 1,
+                    "value": "\"'Izbelah1'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Venomin4\"",
+                    "used_count": 1,
+                    "value": "\"'Venomin4'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"Pyros4\"",
+                    "used_count": 1,
+                    "value": "\"'Pyros4'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"Glaberazu_1\"",
+                    "used_count": 1,
+                    "value": "\"'Glaberazu_1'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Glaberazu_2\"",
+                    "used_count": 1,
+                    "value": "\"'Glaberazu_2'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Isair\"",
+                    "used_count": 1,
+                    "value": "\"'Isair'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Madae\"",
+                    "used_count": 1,
+                    "value": "\"'Madae'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Serak\"",
+                    "used_count": 1,
+                    "value": "\"'Serak'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Mourn\"",
+                    "used_count": 1,
+                    "value": "\"'Mourn'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Zilvar\"",
+                    "used_count": 1,
+                    "value": "\"'Zilvar'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Tilzen\"",
+                    "used_count": 1,
+                    "value": "\"'Tilzen'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Phaen\"",
+                    "used_count": 1,
+                    "value": "\"'Phaen'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Chimera\"",
+                    "used_count": 1,
+                    "value": "\"'Chimera'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Buvai_deNaly\"",
+                    "used_count": 1,
+                    "value": "\"'Buvai_deNaly'\"",
+                    "first_occurence": "AR6305.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "State",
+                "arg_ids": "Boolean",
+                "arg_line": "I:State*Boolean"
+            },
+            "values": [
+                {
+                    "src": "TRUE",
+                    "used_count": 438,
+                    "value": "True",
+                    "first_occurence": "AR1003.None.None"
+                },
+                {
+                    "src": "FALSE",
+                    "used_count": 335,
+                    "value": "False",
+                    "first_occurence": "AR1103.11GARRAD.Garradun"
+                }
+            ]
+        }
+    ]
+}

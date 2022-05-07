@@ -1,0 +1,37 @@
+{
+    "func_name": "LevelGT",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 56,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR5201.52SALISA.01_52Salisa_01"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Level",
+                "arg_ids": "",
+                "arg_line": "I:Level*"
+            },
+            "values": [
+                {
+                    "src": "30",
+                    "used_count": 56,
+                    "value": "30",
+                    "first_occurence": "AR5201.52SALISA.01_52Salisa_01"
+                }
+            ]
+        }
+    ]
+}

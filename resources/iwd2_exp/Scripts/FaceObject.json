@@ -1,0 +1,273 @@
+{
+    "func_name": "FaceObject",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 257,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 399,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR1003.10GOHAR.Gohar Tavernkeep"
+                },
+                {
+                    "src": "\"[PC]\"",
+                    "used_count": 2,
+                    "value": "\"[PC]\"",
+                    "first_occurence": "AR1102.11DEIRD.Deirde_Gallaway"
+                },
+                {
+                    "src": "\"LOMAN\"",
+                    "used_count": 1,
+                    "value": "\"'LOMAN'\"",
+                    "first_occurence": "AR1102.11DEIRD.Deirde_Gallaway"
+                },
+                {
+                    "src": "\"JEMELIAH\"",
+                    "used_count": 1,
+                    "value": "\"'JEMELIAH'\"",
+                    "first_occurence": "AR1102.11DEIRD.Deirde_Gallaway"
+                },
+                {
+                    "src": "\"RECRUIT_1_E\"",
+                    "used_count": 2,
+                    "value": "\"'RECRUIT_1_E'\"",
+                    "first_occurence": "AR1200.12DRILL.Drill_Sergeant_West"
+                },
+                {
+                    "src": "\"RECRUIT_1_W\"",
+                    "used_count": 2,
+                    "value": "\"'RECRUIT_1_W'\"",
+                    "first_occurence": "AR1200.12DRILL.Drill_Sergeant_West"
+                },
+                {
+                    "src": "\"TRAINEE_1_S\"",
+                    "used_count": 1,
+                    "value": "\"'TRAINEE_1_S'\"",
+                    "first_occurence": "AR1200.12WEAPON.Weapon_Instructor"
+                },
+                {
+                    "src": "\"12KegArc\"",
+                    "used_count": 2,
+                    "value": "\"'12KegArc'\"",
+                    "first_occurence": "AR1200.12GABLE.Gable"
+                },
+                {
+                    "src": "NearestEnemyOf",
+                    "used_count": 7,
+                    "value": "self.iNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR3001.30GOBMOK.02_GobMok"
+                },
+                {
+                    "src": "\"[ENEMY.0.GOBLIN]\"",
+                    "used_count": 1,
+                    "value": "\"[ENEMY.0.GOBLIN]\"",
+                    "first_occurence": "AR3002.30OROPUS.01_OroPus"
+                },
+                {
+                    "src": "\"[ENEMY]\"",
+                    "used_count": 1,
+                    "value": "\"[ENEMY]\"",
+                    "first_occurence": "AR3002.30OGRCH.07_OgrCh"
+                },
+                {
+                    "src": "\"Yurst\"",
+                    "used_count": 3,
+                    "value": "\"'Yurst'\"",
+                    "first_occurence": "AR4000.40GIAFOM.03_Fomorian_01"
+                },
+                {
+                    "src": "\"LEFTLEVER\"",
+                    "used_count": 4,
+                    "value": "\"'LEFTLEVER'\"",
+                    "first_occurence": "AR4100.41CLERIF.02_Frosttouch_03"
+                },
+                {
+                    "src": "\"RIGHTLEVER\"",
+                    "used_count": 3,
+                    "value": "\"'RIGHTLEVER'\"",
+                    "first_occurence": "AR4100.41SHAMAF.02_Stormsister_05"
+                },
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 1,
+                    "value": "self.iLastAttackerOf(\"Myself\")",
+                    "first_occurence": "AR4100.41REMHZQ.Remorhaz_Queen"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 55,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                },
+                {
+                    "src": "\"05_50Leevi_06\"",
+                    "used_count": 1,
+                    "value": "\"'05_50Leevi_06'\"",
+                    "first_occurence": "AR5000.50CARITA.05_50Carita_05"
+                },
+                {
+                    "src": "\"05_50Carita_05\"",
+                    "used_count": 1,
+                    "value": "\"'05_50Carita_05'\"",
+                    "first_occurence": "AR5000.50LEEVI.05_50Leevi_06"
+                },
+                {
+                    "src": "\"01_50LIMHA_01\"",
+                    "used_count": 1,
+                    "value": "\"'01_50LIMHA_01'\"",
+                    "first_occurence": "AR5002.50AGOG.01_50Agog_02"
+                },
+                {
+                    "src": "NearestPC",
+                    "used_count": 7,
+                    "value": "\"NearestPC\"",
+                    "first_occurence": "AR5100.51DRAWY.02_51DRAWY_01"
+                },
+                {
+                    "src": "\"13_51Zama_01\"",
+                    "used_count": 6,
+                    "value": "\"'13_51Zama_01'\"",
+                    "first_occurence": "AR5101.51DUECL.13_51DUECL_02"
+                },
+                {
+                    "src": "\"06_52Dolon_02\"",
+                    "used_count": 2,
+                    "value": "\"'06_52Dolon_02'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"06_52Aruma_01\"",
+                    "used_count": 3,
+                    "value": "\"'06_52Aruma_01'\"",
+                    "first_occurence": "AR5201.52DOLON.06_52Dolon_02"
+                },
+                {
+                    "src": "\"Ritual_Yuan-Ti_Priest_03\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Yuan-Ti_Priest_03'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Yuan-Ti_Priest_02\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Yuan-Ti_Priest_02'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Initiate_02\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Initiate_02'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Initiate_01\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Initiate_01'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Initiate_04\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Initiate_04'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Initiate_03\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Initiate_03'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Pureblood_Fighter_02\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Pureblood_Fighter_02'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Pureblood_Fighter_01\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Pureblood_Fighter_01'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Pureblood_Sorcerer_02\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Pureblood_Sorcerer_02'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Pureblood_Sorcerer_01\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Pureblood_Sorcerer_01'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Yuan-Ti_06\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Yuan-Ti_06'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Yuan-Ti_05\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Yuan-Ti_05'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Yuan-Ti_08\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Yuan-Ti_08'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Yuan-Ti_07\"",
+                    "used_count": 2,
+                    "value": "\"'Ritual_Yuan-Ti_07'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "MyTarget",
+                    "used_count": 178,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"05_TrollPrisoner\"",
+                    "used_count": 1,
+                    "value": "\"'05_TrollPrisoner'\"",
+                    "first_occurence": "AR6101.61PRISI1.05_WizardPrisoner"
+                },
+                {
+                    "src": "\"Lothar3\"",
+                    "used_count": 3,
+                    "value": "\"'Lothar3'\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "\"Pyros2\"",
+                    "used_count": 3,
+                    "value": "\"'Pyros2'\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "\"Isair\"",
+                    "used_count": 1,
+                    "value": "\"'Isair'\"",
+                    "first_occurence": "AR6305.None.None"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "func_name": "CheckAreaDiffLevel",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Level",
+                "arg_ids": "",
+                "arg_line": "I:Level*"
+            },
+            "values": [
+                {
+                    "src": "2",
+                    "used_count": 20,
+                    "value": "2",
+                    "first_occurence": "AR1200.12OLAP.Olap_Soothammer"
+                },
+                {
+                    "src": "3",
+                    "used_count": 33,
+                    "value": "3",
+                    "first_occurence": "AR1200.12OLAP.Olap_Soothammer"
+                },
+                {
+                    "src": "1",
+                    "used_count": 13,
+                    "value": "1",
+                    "first_occurence": "AR3000.None.None"
+                }
+            ]
+        }
+    ]
+}

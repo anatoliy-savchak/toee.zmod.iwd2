@@ -1,0 +1,39 @@
+{
+    "func_name": "AttackOneRound",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 3380,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 42,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR2000.20ORCFIR.T3_Firestarter_1"
+                },
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 37,
+                    "value": "self.iLastAttackerOf(\"Myself\")",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "\"61Embassy\"",
+                    "used_count": 4,
+                    "value": "\"'61Embassy'\"",
+                    "first_occurence": "AR6104.61LOTHAR.Lothar4"
+                }
+            ]
+        }
+    ]
+}

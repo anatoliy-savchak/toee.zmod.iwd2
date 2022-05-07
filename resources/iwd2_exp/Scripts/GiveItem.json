@@ -1,0 +1,121 @@
+{
+    "func_name": "GiveItem",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "S:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"00Gem02\"",
+                    "used_count": 4,
+                    "value": "\"'00Gem02'\"",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
+                    "src": "\"00Leat01\"",
+                    "used_count": 2,
+                    "value": "\"'00Leat01'\"",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "\"00Dagg01\"",
+                    "used_count": 2,
+                    "value": "\"'00Dagg01'\"",
+                    "first_occurence": "AR1000.10JON.None"
+                },
+                {
+                    "src": "\"00Misc38\"",
+                    "used_count": 2,
+                    "value": "\"'00Misc38'\"",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "\"00Gem05\"",
+                    "used_count": 1,
+                    "value": "\"'00Gem05'\"",
+                    "first_occurence": "AR1103.11VALIN.None"
+                },
+                {
+                    "src": "\"00Gem07\"",
+                    "used_count": 1,
+                    "value": "\"'00Gem07'\"",
+                    "first_occurence": "AR1103.11VALIN.None"
+                },
+                {
+                    "src": "\"11GenGLe\"",
+                    "used_count": 2,
+                    "value": "\"'11GenGLe'\"",
+                    "first_occurence": "AR1103.11GARRAD.None"
+                },
+                {
+                    "src": "\"00Gem03\"",
+                    "used_count": 2,
+                    "value": "\"'00Gem03'\"",
+                    "first_occurence": "AR1104.11CAHLHY.None"
+                },
+                {
+                    "src": "\"00Gem04\"",
+                    "used_count": 2,
+                    "value": "\"'00Gem04'\"",
+                    "first_occurence": "AR1104.11CAHLHY.None"
+                },
+                {
+                    "src": "\"00BowL01\"",
+                    "used_count": 1,
+                    "value": "\"'00BowL01'\"",
+                    "first_occurence": "AR1200.12GABLE.None"
+                },
+                {
+                    "src": "\"00swdL02\"",
+                    "used_count": 1,
+                    "value": "\"'00swdL02'\"",
+                    "first_occurence": "AR3000.30ENNELI.Ennelia"
+                },
+                {
+                    "src": "\"52KeyRT\"",
+                    "used_count": 1,
+                    "value": "\"'52KeyRT'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"62KeyBC\"",
+                    "used_count": 1,
+                    "value": "\"'62KeyBC'\"",
+                    "first_occurence": "AR6200.62KRATU.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "Protagonist",
+                    "used_count": 20,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
+                    "src": "\"Braston\"",
+                    "used_count": 1,
+                    "value": "\"'Braston'\"",
+                    "first_occurence": "AR3000.30ENNELI.Ennelia"
+                },
+                {
+                    "src": "\"01_52Salisa_01\"",
+                    "used_count": 1,
+                    "value": "\"'01_52Salisa_01'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                }
+            ]
+        }
+    ]
+}

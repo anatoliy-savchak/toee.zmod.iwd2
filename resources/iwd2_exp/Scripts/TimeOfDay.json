@@ -1,0 +1,21 @@
+{
+    "func_name": "TimeOfDay",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Time Of Day",
+                "arg_ids": "TimeODay",
+                "arg_line": "I:Time Of Day*TimeODay"
+            },
+            "values": [
+                {
+                    "src": "DAY",
+                    "used_count": 75,
+                    "value": "\"DAY\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "func_name": "MoveViewPoint",
+    "args": [
+        {
+            "def": {
+                "arg_type": "P",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "P:Target*"
+            },
+            "values": [
+                {
+                    "src": "\"[880.2240]\"",
+                    "used_count": 3,
+                    "value": "\"[880.2240]\"",
+                    "first_occurence": "AR4000.40ILIUM.Illium"
+                },
+                {
+                    "src": "\"[0.0]\"",
+                    "used_count": 1,
+                    "value": "\"[0.0]\"",
+                    "first_occurence": "AR4103.None.None"
+                },
+                {
+                    "src": "\"[1100.440]\"",
+                    "used_count": 1,
+                    "value": "\"[1100.440]\"",
+                    "first_occurence": "AR4103.None.None"
+                },
+                {
+                    "src": "\"[730.1440]\"",
+                    "used_count": 2,
+                    "value": "\"[730.1440]\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"[1600.1216]\"",
+                    "used_count": 2,
+                    "value": "\"[1600.1216]\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"[2080.800]\"",
+                    "used_count": 2,
+                    "value": "\"[2080.800]\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"[1310.2210]\"",
+                    "used_count": 2,
+                    "value": "\"[1310.2210]\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"[1942.2085]\"",
+                    "used_count": 2,
+                    "value": "\"[1942.2085]\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"[2720.2170]\"",
+                    "used_count": 2,
+                    "value": "\"[2720.2170]\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"[2240.1860]\"",
+                    "used_count": 2,
+                    "value": "\"[2240.1860]\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"[2590.1310]\"",
+                    "used_count": 2,
+                    "value": "\"[2590.1310]\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "ScrollSpeed",
+                "arg_ids": "Scroll",
+                "arg_line": "I:ScrollSpeed*Scroll"
+            },
+            "values": [
+                {
+                    "src": "INSTANT",
+                    "used_count": 21,
+                    "value": "\"INSTANT\"",
+                    "first_occurence": "AR4000.40ILIUM.Illium"
+                }
+            ]
+        }
+    ]
+}

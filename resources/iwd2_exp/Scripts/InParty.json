@@ -1,0 +1,33 @@
+{
+    "func_name": "InParty",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 34,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 1,
+                    "value": "self.iLastAttackerOf(\"'B_S_C'\")",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "LastTargetedBy",
+                    "used_count": 1,
+                    "value": "self.iLastTargetedBy(\"'B_S_C'\")",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                }
+            ]
+        }
+    ]
+}

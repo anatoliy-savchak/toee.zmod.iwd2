@@ -1,0 +1,21 @@
+{
+    "func_name": "StartMovie",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "ResRef",
+                "arg_ids": "",
+                "arg_line": "S:ResRef*"
+            },
+            "values": [
+                {
+                    "src": "\"MIDDLE\"",
+                    "used_count": 1,
+                    "value": "\"'MIDDLE'\"",
+                    "first_occurence": "AR4001.None.None"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "func_name": "AddFeat",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 3,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "Feats",
+                "arg_line": "I:Value*Feats"
+            },
+            "values": [
+                {
+                    "src": "DASH",
+                    "used_count": 3,
+                    "value": "\"DASH\"",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                }
+            ]
+        }
+    ]
+}

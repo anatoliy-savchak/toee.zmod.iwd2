@@ -1,0 +1,37 @@
+{
+    "func_name": "MoraleSet",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 6,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR3000.30GOBSH1.07_GobRu"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Morale",
+                "arg_ids": "",
+                "arg_line": "I:Morale*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 6,
+                    "value": "0",
+                    "first_occurence": "AR3000.30GOBSH1.07_GobRu"
+                }
+            ]
+        }
+    ]
+}

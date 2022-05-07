@@ -1,0 +1,43 @@
+{
+    "func_name": "HP",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 40,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Hit Points",
+                "arg_ids": "",
+                "arg_line": "I:Hit Points*"
+            },
+            "values": [
+                {
+                    "src": "1",
+                    "used_count": 38,
+                    "value": "1",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "10",
+                    "used_count": 2,
+                    "value": "10",
+                    "first_occurence": "AR6010.60GERBAS.Gerbash"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "func_name": "GLOBAL",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Name",
+                "arg_ids": "",
+                "arg_line": "S:Name*"
+            },
+            "values": [
+                {
+                    "src": "\"60ASHRA\"",
+                    "used_count": 2,
+                    "value": "\"'60ASHRA'\"",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                },
+                {
+                    "src": "\"60DUEL_VFA\"",
+                    "used_count": 5,
+                    "value": "\"'60DUEL_VFA'\"",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                },
+                {
+                    "src": "\"60DUEL_CCS\"",
+                    "used_count": 4,
+                    "value": "\"'60DUEL_CCS'\"",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                },
+                {
+                    "src": "\"60INHATR\"",
+                    "used_count": 1,
+                    "value": "\"'60INHATR'\"",
+                    "first_occurence": "AR6051.60INHATR.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Area",
+                "arg_ids": "",
+                "arg_line": "S:Area*"
+            },
+            "values": [
+                {
+                    "src": "\"GLOBAL\"",
+                    "used_count": 12,
+                    "value": "\"'GLOBAL'\"",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "",
+                "arg_line": "I:Value*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 3,
+                    "value": "0",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                },
+                {
+                    "src": "3",
+                    "used_count": 1,
+                    "value": "3",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                },
+                {
+                    "src": "1",
+                    "used_count": 4,
+                    "value": "1",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                },
+                {
+                    "src": "4",
+                    "used_count": 2,
+                    "value": "4",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                },
+                {
+                    "src": "2",
+                    "used_count": 2,
+                    "value": "2",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                }
+            ]
+        }
+    ]
+}

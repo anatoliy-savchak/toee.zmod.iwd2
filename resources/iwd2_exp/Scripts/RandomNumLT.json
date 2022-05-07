@@ -1,0 +1,55 @@
+{
+    "func_name": "RandomNumLT",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Range",
+                "arg_ids": "",
+                "arg_line": "I:Range*"
+            },
+            "values": [
+                {
+                    "src": "3",
+                    "used_count": 2,
+                    "value": "3",
+                    "first_occurence": "AR5101.51ORCSS.None"
+                },
+                {
+                    "src": "99",
+                    "used_count": 15,
+                    "value": "99",
+                    "first_occurence": "AR5300.53NADAL.Nadal"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "",
+                "arg_line": "I:Value*"
+            },
+            "values": [
+                {
+                    "src": "4",
+                    "used_count": 2,
+                    "value": "4",
+                    "first_occurence": "AR5101.51ORCSS.None"
+                },
+                {
+                    "src": "20",
+                    "used_count": 14,
+                    "value": "20",
+                    "first_occurence": "AR5300.53NADAL.Nadal"
+                },
+                {
+                    "src": "10",
+                    "used_count": 1,
+                    "value": "10",
+                    "first_occurence": "AR5301.53SPITDR.Spithdrider"
+                }
+            ]
+        }
+    ]
+}

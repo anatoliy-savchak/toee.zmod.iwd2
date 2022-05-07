@@ -1,0 +1,279 @@
+{
+    "func_name": "SpellHitEffectPoint",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Source",
+                "arg_ids": "",
+                "arg_line": "O:Source*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 651,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                },
+                {
+                    "src": "\"INVISIBLE\"",
+                    "used_count": 15,
+                    "value": "\"'INVISIBLE'\"",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "P",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "P:Target*"
+            },
+            "values": [
+                {
+                    "src": "\"[3072.1408]\"",
+                    "used_count": 2,
+                    "value": "\"[3072.1408]\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                },
+                {
+                    "src": "\"[3167.1439]\"",
+                    "used_count": 2,
+                    "value": "\"[3167.1439]\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                },
+                {
+                    "src": "\"[3232.1472]\"",
+                    "used_count": 2,
+                    "value": "\"[3232.1472]\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                },
+                {
+                    "src": "\"[2180.2580]\"",
+                    "used_count": 150,
+                    "value": "\"[2180.2580]\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"[2040.2600]\"",
+                    "used_count": 60,
+                    "value": "\"[2040.2600]\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"[2090.2540]\"",
+                    "used_count": 60,
+                    "value": "\"[2090.2540]\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"[2150.2480]\"",
+                    "used_count": 60,
+                    "value": "\"[2150.2480]\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"[2120.2640]\"",
+                    "used_count": 60,
+                    "value": "\"[2120.2640]\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"[2230.2520]\"",
+                    "used_count": 60,
+                    "value": "\"[2230.2520]\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"[2210.2680]\"",
+                    "used_count": 60,
+                    "value": "\"[2210.2680]\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"[2260.2610]\"",
+                    "used_count": 60,
+                    "value": "\"[2260.2610]\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"[2320.2550]\"",
+                    "used_count": 60,
+                    "value": "\"[2320.2550]\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"[766.1640]\"",
+                    "used_count": 1,
+                    "value": "\"[766.1640]\"",
+                    "first_occurence": "AR5302.53DESATH.De_Savant_Thrall3"
+                },
+                {
+                    "src": "\"[160.1312]\"",
+                    "used_count": 1,
+                    "value": "\"[160.1312]\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"[256.1088]\"",
+                    "used_count": 1,
+                    "value": "\"[256.1088]\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"[352.1248]\"",
+                    "used_count": 1,
+                    "value": "\"[352.1248]\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"[352.1504]\"",
+                    "used_count": 1,
+                    "value": "\"[352.1504]\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"[512.1152]\"",
+                    "used_count": 1,
+                    "value": "\"[512.1152]\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"[1920.1310]\"",
+                    "used_count": 2,
+                    "value": "\"[1920.1310]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1088.1375]\"",
+                    "used_count": 1,
+                    "value": "\"[1088.1375]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[2975.1440]\"",
+                    "used_count": 5,
+                    "value": "\"[2975.1440]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1920.1570]\"",
+                    "used_count": 4,
+                    "value": "\"[1920.1570]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[1630.1800]\"",
+                    "used_count": 1,
+                    "value": "\"[1630.1800]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[2110.1660]\"",
+                    "used_count": 2,
+                    "value": "\"[2110.1660]\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"[2400.2464]\"",
+                    "used_count": 3,
+                    "value": "\"[2400.2464]\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "\"[2750.735]\"",
+                    "used_count": 3,
+                    "value": "\"[2750.735]\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "\"[1600.960]\"",
+                    "used_count": 3,
+                    "value": "\"[1600.960]\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Effect",
+                "arg_ids": "sheffect",
+                "arg_line": "I:Effect*sheffect"
+            },
+            "values": [
+                {
+                    "src": "DISINTEGRATE",
+                    "used_count": 3,
+                    "value": "\"DISINTEGRATE\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                },
+                {
+                    "src": "CLOUDBURST",
+                    "used_count": 3,
+                    "value": "\"CLOUDBURST\"",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                },
+                {
+                    "src": "MONSTER_SUMMONING_CIRCLE",
+                    "used_count": 30,
+                    "value": "\"MONSTER_SUMMONING_CIRCLE\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "CONE_OF_COLD",
+                    "used_count": 540,
+                    "value": "\"CONE_OF_COLD\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "FLAME_STRIKE",
+                    "used_count": 60,
+                    "value": "\"FLAME_STRIKE\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "RECITATION",
+                    "used_count": 1,
+                    "value": "\"RECITATION\"",
+                    "first_occurence": "AR5302.53DESATH.De_Savant_Thrall3"
+                },
+                {
+                    "src": "ILLUSION",
+                    "used_count": 5,
+                    "value": "\"ILLUSION\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "ALTERATION",
+                    "used_count": 15,
+                    "value": "\"ALTERATION\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "DIMENSION_DOOR_DESTINATION",
+                    "used_count": 9,
+                    "value": "\"DIMENSION_DOOR_DESTINATION\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Height",
+                "arg_ids": "",
+                "arg_line": "I:Height*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 666,
+                    "value": "0",
+                    "first_occurence": "AR4101.41PAINT.Painting"
+                }
+            ]
+        }
+    ]
+}

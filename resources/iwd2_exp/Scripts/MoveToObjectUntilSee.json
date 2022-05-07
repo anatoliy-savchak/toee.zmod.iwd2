@@ -1,0 +1,81 @@
+{
+    "func_name": "MoveToObjectUntilSee",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "MyTarget",
+                    "used_count": 3,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR2000.20ORCFIR.T9_Firestarter_1"
+                },
+                {
+                    "src": "\"[ENEMY.MONSTER.KEG.0.200]\"",
+                    "used_count": 3,
+                    "value": "\"[ENEMY.MONSTER.KEG.0.200]\"",
+                    "first_occurence": "AR2000.20ORCFIR.T9_Firestarter_1"
+                },
+                {
+                    "src": "LastHeardBy",
+                    "used_count": 37,
+                    "value": "self.iLastHeardBy(\"Myself\")",
+                    "first_occurence": "AR3002.30FBEET.Fire_Beetle_1"
+                },
+                {
+                    "src": "\"41Zack\"",
+                    "used_count": 1,
+                    "value": "\"'41Zack'\"",
+                    "first_occurence": "AR4100.41AOCHA.Aocha"
+                },
+                {
+                    "src": "NearestPC",
+                    "used_count": 37,
+                    "value": "\"NearestPC\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 32,
+                    "value": "self.iLastSeenBy(self.iLastHeardBy(\"Myself\"))",
+                    "first_occurence": "AR4102.41GOLEIC.Champion_04"
+                },
+                {
+                    "src": "\"[GOODCUTOFF.0.0.0.150][0.0.10000.10000]\"",
+                    "used_count": 1,
+                    "value": "\"[GOODCUTOFF.0.0.0.150][0.0.10000.10000]\"",
+                    "first_occurence": "AR5101.51HARHOR.13_51Harhor_05"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 33,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR5102.51HNTMN.01_51HNTMN_04"
+                },
+                {
+                    "src": "\"Izbelah3\"",
+                    "used_count": 3,
+                    "value": "\"'Izbelah3'\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 14,
+                    "value": "self.iLastAttackerOf(self.iLastHeardBy(\"Myself\"))",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah1"
+                },
+                {
+                    "src": "\"Summoner\"",
+                    "used_count": 14,
+                    "value": "\"'Summoner'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah1"
+                }
+            ]
+        }
+    ]
+}

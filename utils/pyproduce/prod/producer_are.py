@@ -57,6 +57,28 @@ class ProducerOfAre(producer_base.Producer):
         self.daemon.save()
         return
 
+    def scan(self):
+        area_script = self.src["AreaScript"]
+        if area_script and area_script != "None":
+            bcs_prod = produce_bcs_manager.ProduceBCSFileAuto(self.doc, area_script, self.are_name, self.script_id + 5, False)
+            bcs_prod.scan()
+            del bcs_prod
+
+        cres_to_scan = list()
+        for actor in self.daemon.get_eligible_actor_recs():
+            actor_name = actor['Name']
+            actor_cre_name = actor['CREFile']
+            if not actor_cre_name in cres_to_scan:
+                cres_to_scan.append(actor_cre_name)
+            self.scan_actor_bcses(actor)
+        for cre_name in cres_to_scan:
+            src_path = self.doc.get_path_cre(cre_name)
+            cre = common.read_file_json(src_path)
+            dialog_name = cre["DialogFile"]
+            dialog_name = dialog_name.strip()
+            producer_ctrl_auto.ProducerOfCtrlAuto.scan_dialog(self.doc, dialog_name, self.are_name, cre_name)
+        return
+
     def produce_start(self):
         producer_ctrl_auto.ProducerOfCtrlAuto.overwrite_by_template(self.doc, are_name=self.are_name, script_id=self.script_id+1)
         producer_ctrl_inst_auto.ProducerOfCtrlInstAuto.overwrite_by_template(self.doc, are_name=self.are_name, script_id=self.script_id+3)
@@ -172,4 +194,34 @@ class ProducerOfAre(producer_base.Producer):
                 ctrl_name, file_name = bcs_prod_manual.get_ctrl_tuple()
                 self.doc.bcsManager.set_bc(bcs_prod_manual.bcs_name, file_name, ctrl_name)
                 del bcs_prod_manual
+        return
+
+    def scan_actor_bcses(self, actor_dict: dict):
+        actor_name = actor_dict["Name"]
+        cre_name = actor_dict["CREFile"]
+        
+        if bcs_name := actor_dict["ScriptGeneral"]:
+            self.scan_bcs(actor_name, bcs_name, 'script_general_auto', cre_name, "ScriptGeneral (Special 3)")
+        
+        if bcs_name := actor_dict["ScriptClass"]:
+            self.scan_bcs(actor_name, bcs_name, 'script_class_auto', cre_name, "ScriptClass (Special 2)")
+        
+        if bcs_name := actor_dict["ScriptRace"]:
+            self.scan_bcs(actor_name, bcs_name, 'script_combat_auto', cre_name, "ScriptRace (Combat Script)")
+        
+        if bcs_name := actor_dict["ScriptDefault"]:
+            self.scan_bcs(actor_name, bcs_name, 'script_movement_auto', cre_name, "ScriptDefault (Movement Script)")
+        
+        if bcs_name := actor_dict["ScriptSpecific"]:
+            self.scan_bcs(actor_name, bcs_name, 'script_team_auto', cre_name, "ScriptSpecific (Team Script)")
+        
+        if bcs_name := actor_dict["ScriptSpecial1"]:
+            self.scan_bcs(actor_name, bcs_name, 'script_special_one_auto', cre_name, "ScriptSpecial1 (Special1)")
+        return
+
+    def scan_bcs(self, actor_name: str, bcs_name: str, def_name: str, cre_name: str, script_code: str):
+        if not self.doc.bcsManager.get_bc(bcs_name + '_AUTO'):
+            bcs_prod = produce_bcs_manager.ProduceBCSFileAuto(self.doc, bcs_name, self.are_name, self.script_id + 5, False)
+            bcs_prod.scan(cre_name, actor_name)
+            del bcs_prod
         return

@@ -1,0 +1,27 @@
+{
+    "func_name": "NumTimesTalkedTo",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Num",
+                "arg_ids": "",
+                "arg_line": "I:Num*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 258,
+                    "value": "0",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "1",
+                    "used_count": 3,
+                    "value": "1",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                }
+            ]
+        }
+    ]
+}

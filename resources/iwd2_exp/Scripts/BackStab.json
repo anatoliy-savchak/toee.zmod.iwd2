@@ -1,0 +1,21 @@
+{
+    "func_name": "BackStab",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 10,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR6051.60VIFANG.Viper_Fang1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "func_name": "TargetUnreachable",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 228,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR2000.20DERETH.Dereth"
+                },
+                {
+                    "src": "LastHeardBy",
+                    "used_count": 96,
+                    "value": "\"LastHeardBy\"",
+                    "first_occurence": "AR3001.30GOBSH1.04_GobSh"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 13,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR3002.30OTY.03_Oty_01"
+                },
+                {
+                    "src": "MyTarget",
+                    "used_count": 1,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR4101.41ONDABO.Ondabo"
+                },
+                {
+                    "src": "\"OriaSafeSpot\"",
+                    "used_count": 3,
+                    "value": "\"'OriaSafeSpot'\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                }
+            ]
+        }
+    ]
+}

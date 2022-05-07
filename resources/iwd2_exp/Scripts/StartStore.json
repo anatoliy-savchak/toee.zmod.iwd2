@@ -1,0 +1,181 @@
+{
+    "func_name": "StartStore",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Store",
+                "arg_ids": "",
+                "arg_line": "S:Store*"
+            },
+            "values": [
+                {
+                    "src": "\"10Gohar\"",
+                    "used_count": 14,
+                    "value": "\"'10Gohar'\"",
+                    "first_occurence": "AR1003.10GOHAR.None"
+                },
+                {
+                    "src": "\"10Guthe\"",
+                    "used_count": 21,
+                    "value": "\"'10Guthe'\"",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "\"11Oswald\"",
+                    "used_count": 210,
+                    "value": "\"'11Oswald'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"11Elytha\"",
+                    "used_count": 40,
+                    "value": "\"'11Elytha'\"",
+                    "first_occurence": "AR1101.11ELYTHA.None"
+                },
+                {
+                    "src": "\"11Deird\"",
+                    "used_count": 15,
+                    "value": "\"'11Deird'\"",
+                    "first_occurence": "AR1102.11DEIRD.None"
+                },
+                {
+                    "src": "\"11RagniB\"",
+                    "used_count": 25,
+                    "value": "\"'11RagniB'\"",
+                    "first_occurence": "AR1103.11RAGNIB.None"
+                },
+                {
+                    "src": "\"11CahlHy\"",
+                    "used_count": 19,
+                    "value": "\"'11CahlHy'\"",
+                    "first_occurence": "AR1104.11CAHLHY.None"
+                },
+                {
+                    "src": "\"41Zack3\"",
+                    "used_count": 2,
+                    "value": "\"'41Zack3'\"",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "\"41Zack2\"",
+                    "used_count": 2,
+                    "value": "\"'41Zack2'\"",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "\"41Zack1\"",
+                    "used_count": 2,
+                    "value": "\"'41Zack1'\"",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "\"50Suoma\"",
+                    "used_count": 8,
+                    "value": "\"'50Suoma'\"",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "\"50Venla\"",
+                    "used_count": 1,
+                    "value": "\"'50Venla'\"",
+                    "first_occurence": "AR5000.50VENLA.None"
+                },
+                {
+                    "src": "\"50Venlaa\"",
+                    "used_count": 1,
+                    "value": "\"'50Venlaa'\"",
+                    "first_occurence": "AR5000.50VENLA.None"
+                },
+                {
+                    "src": "\"50Venla2\"",
+                    "used_count": 1,
+                    "value": "\"'50Venla2'\"",
+                    "first_occurence": "AR5000.50VENLA.None"
+                },
+                {
+                    "src": "\"50Venl2a\"",
+                    "used_count": 1,
+                    "value": "\"'50Venl2a'\"",
+                    "first_occurence": "AR5000.50VENLA.None"
+                },
+                {
+                    "src": "\"50Tahvo\"",
+                    "used_count": 13,
+                    "value": "\"'50Tahvo'\"",
+                    "first_occurence": "AR5000.50TAHVO.None"
+                },
+                {
+                    "src": "\"50Nym\"",
+                    "used_count": 4,
+                    "value": "\"'50Nym'\"",
+                    "first_occurence": "AR5000.50NYM.None"
+                },
+                {
+                    "src": "\"50Nym2\"",
+                    "used_count": 4,
+                    "value": "\"'50Nym2'\"",
+                    "first_occurence": "AR5000.50NYM.None"
+                },
+                {
+                    "src": "\"50Limha\"",
+                    "used_count": 7,
+                    "value": "\"'50Limha'\"",
+                    "first_occurence": "AR5002.50LIMHA.None"
+                },
+                {
+                    "src": "\"51Zama\"",
+                    "used_count": 9,
+                    "value": "\"'51Zama'\"",
+                    "first_occurence": "AR5101.51ZAMA.None"
+                },
+                {
+                    "src": "\"51Dragu\"",
+                    "used_count": 5,
+                    "value": "\"'51Dragu'\"",
+                    "first_occurence": "AR5101.51DRAGU.None"
+                },
+                {
+                    "src": "\"51Dragu2\"",
+                    "used_count": 1,
+                    "value": "\"'51Dragu2'\"",
+                    "first_occurence": "AR5101.51DRAGU.None"
+                },
+                {
+                    "src": "\"52Bered\"",
+                    "used_count": 10,
+                    "value": "\"'52Bered'\"",
+                    "first_occurence": "AR5201.52BERED.None"
+                },
+                {
+                    "src": "\"52Nonin\"",
+                    "used_count": 11,
+                    "value": "\"'52Nonin'\"",
+                    "first_occurence": "AR5201.52NONIN.None"
+                },
+                {
+                    "src": "\"52Sersa\"",
+                    "used_count": 6,
+                    "value": "\"'52Sersa'\"",
+                    "first_occurence": "AR5201.52SERSA.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "Protagonist",
+                    "used_count": 432,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR1003.10GOHAR.None"
+                }
+            ]
+        }
+    ]
+}

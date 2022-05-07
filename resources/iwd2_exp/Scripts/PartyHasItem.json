@@ -1,0 +1,21 @@
+{
+    "func_name": "PartyHasItem",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Item",
+                "arg_ids": "",
+                "arg_line": "S:Item*"
+            },
+            "values": [
+                {
+                    "src": "\"63GenDP\"",
+                    "used_count": 2,
+                    "value": "\"'63GenDP'\"",
+                    "first_occurence": "AR6304.63GRDFP.PatrollingGuard1"
+                }
+            ]
+        }
+    ]
+}

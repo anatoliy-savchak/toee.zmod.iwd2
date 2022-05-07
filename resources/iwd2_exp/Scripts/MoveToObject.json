@@ -1,0 +1,183 @@
+{
+    "func_name": "MoveToObject",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "NearestPC",
+                    "used_count": 2200,
+                    "value": "\"NearestPC\"",
+                    "first_occurence": "AR1000.10HEDRON.Hedron"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 6,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 210,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR2000.20DERETH.Dereth"
+                },
+                {
+                    "src": "\"Braston_Watcher\"",
+                    "used_count": 2,
+                    "value": "\"'Braston_Watcher'\"",
+                    "first_occurence": "AR3000.30ENNELI.Ennelia"
+                },
+                {
+                    "src": "\"Braston\"",
+                    "used_count": 1,
+                    "value": "\"'Braston'\"",
+                    "first_occurence": "AR3000.30ENNELI.Ennelia"
+                },
+                {
+                    "src": "\"DRUM_2\"",
+                    "used_count": 1,
+                    "value": "\"'DRUM_2'\"",
+                    "first_occurence": "AR3000.30GOBSH1.07_GobRu"
+                },
+                {
+                    "src": "\"DRUM_3\"",
+                    "used_count": 1,
+                    "value": "\"'DRUM_3'\"",
+                    "first_occurence": "AR3000.30ORCWD.15_OrcRu"
+                },
+                {
+                    "src": "\"DRUM_1\"",
+                    "used_count": 1,
+                    "value": "\"'DRUM_1'\"",
+                    "first_occurence": "AR3000.30ORCSH1.02_OrcRu"
+                },
+                {
+                    "src": "\"10_GobVun\"",
+                    "used_count": 1,
+                    "value": "\"'10_GobVun'\"",
+                    "first_occurence": "AR3001.30HOBDGU.09_HobDGu"
+                },
+                {
+                    "src": "\"DRUM_4\"",
+                    "used_count": 1,
+                    "value": "\"'DRUM_4'\"",
+                    "first_occurence": "AR3001.30HOBDGU.09_HobDGu"
+                },
+                {
+                    "src": "LastHeardBy",
+                    "used_count": 2,
+                    "value": "self.iLastHeardBy(\"Myself\")",
+                    "first_occurence": "AR3002.30OTY.03_Oty_01"
+                },
+                {
+                    "src": "\"DRUM_5\"",
+                    "used_count": 1,
+                    "value": "\"'DRUM_5'\"",
+                    "first_occurence": "AR3002.30ORCRU2.02_OrcRu"
+                },
+                {
+                    "src": "\"DRUM_6\"",
+                    "used_count": 1,
+                    "value": "\"'DRUM_6'\"",
+                    "first_occurence": "AR3002.30ORCRU.08_OrcRu"
+                },
+                {
+                    "src": "\"BEACON_1\"",
+                    "used_count": 24,
+                    "value": "\"'BEACON_1'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"BEACON_2\"",
+                    "used_count": 36,
+                    "value": "\"'BEACON_2'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"BEACON_3\"",
+                    "used_count": 24,
+                    "value": "\"'BEACON_3'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "Player1",
+                    "used_count": 4,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player2",
+                    "used_count": 4,
+                    "value": "\"Player2\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player3",
+                    "used_count": 4,
+                    "value": "\"Player3\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player4",
+                    "used_count": 4,
+                    "value": "\"Player4\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player5",
+                    "used_count": 4,
+                    "value": "\"Player5\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player6",
+                    "used_count": 4,
+                    "value": "\"Player6\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 3,
+                    "value": "self.iLastAttackerOf(\"Myself\")",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "MyTarget",
+                    "used_count": 13,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR4101.41ONDABO.Ondabo"
+                },
+                {
+                    "src": "\"OriaSafeSpot\"",
+                    "used_count": 3,
+                    "value": "\"'OriaSafeSpot'\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "\"B_S_C\"",
+                    "used_count": 1,
+                    "value": "\"'B_S_C'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41Zack\"",
+                    "used_count": 6,
+                    "value": "\"'41Zack'\"",
+                    "first_occurence": "AR4102.41PRIESF.06_Postulant_01"
+                },
+                {
+                    "src": "\"[PC]\"",
+                    "used_count": 3,
+                    "value": "\"[PC]\"",
+                    "first_occurence": "AR6302.63DMNCON.Demonic_Construct1"
+                }
+            ]
+        }
+    ]
+}

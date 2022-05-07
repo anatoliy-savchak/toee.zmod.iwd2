@@ -1,0 +1,61 @@
+{
+    "func_name": "IsAnimationID",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 205,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "\"Nickademus\"",
+                    "used_count": 2,
+                    "value": "\"'Nickademus'\"",
+                    "first_occurence": "AR4103.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "AnimID",
+                "arg_ids": "Animate",
+                "arg_line": "I:AnimID*Animate"
+            },
+            "values": [
+                {
+                    "src": "Werewolf",
+                    "used_count": 30,
+                    "value": "\"Werewolf\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "MAGE_MALE_HUMAN",
+                    "used_count": 2,
+                    "value": "\"MAGE_MALE_HUMAN\"",
+                    "first_occurence": "AR4103.None.None"
+                },
+                {
+                    "src": "Snake",
+                    "used_count": 54,
+                    "value": "\"Snake\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"\"\"Mummy, Histachii\"",
+                    "used_count": 121,
+                    "value": "\"'\"\"Mummy, Histachii'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                }
+            ]
+        }
+    ]
+}

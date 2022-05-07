@@ -1,0 +1,45 @@
+{
+    "func_name": "PlaySound",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Sound",
+                "arg_ids": "",
+                "arg_line": "S:Sound*"
+            },
+            "values": [
+                {
+                    "src": "\"EFF_P103\"",
+                    "used_count": 3,
+                    "value": "\"'EFF_P103'\"",
+                    "first_occurence": "AR3000.30DRUM1.DRUM_1"
+                },
+                {
+                    "src": "\"AM4100e\"",
+                    "used_count": 1,
+                    "value": "\"'AM4100e'\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "\"am5202k\"",
+                    "used_count": 4,
+                    "value": "\"'am5202k'\"",
+                    "first_occurence": "AR5203.52GOLIR.01_52GOLIR_01"
+                },
+                {
+                    "src": "\"AM5301c1\"",
+                    "used_count": 338,
+                    "value": "\"'AM5301c1'\"",
+                    "first_occurence": "AR5301.53POD.Pod1"
+                },
+                {
+                    "src": "\"AM6103F\"",
+                    "used_count": 4,
+                    "value": "\"'AM6103F'\"",
+                    "first_occurence": "AR6104.61LOTHAR.Lothar4"
+                }
+            ]
+        }
+    ]
+}

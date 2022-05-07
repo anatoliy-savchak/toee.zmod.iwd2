@@ -1,0 +1,135 @@
+{
+    "func_name": "SpellCastEffect",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Source",
+                "arg_ids": "",
+                "arg_line": "O:Source*"
+            },
+            "values": [
+                {
+                    "src": "\"Malavon_Despana\"",
+                    "used_count": 1,
+                    "value": "\"'Malavon_Despana'\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 26,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR5300.53OINCHA.Oinchack'olp"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Voice",
+                "arg_ids": "",
+                "arg_line": "S:Voice*"
+            },
+            "values": [
+                {
+                    "src": "\"\"",
+                    "used_count": 27,
+                    "value": "\"''\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Sound1",
+                "arg_ids": "",
+                "arg_line": "S:Sound1*"
+            },
+            "values": [
+                {
+                    "src": "\"\"",
+                    "used_count": 27,
+                    "value": "\"''\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Sound2",
+                "arg_ids": "",
+                "arg_line": "S:Sound2*"
+            },
+            "values": [
+                {
+                    "src": "\"Cas_100\"",
+                    "used_count": 1,
+                    "value": "\"'Cas_100'\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "\"\"",
+                    "used_count": 26,
+                    "value": "\"''\"",
+                    "first_occurence": "AR5300.53OINCHA.Oinchack'olp"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Animation",
+                "arg_ids": "sceffect",
+                "arg_line": "I:Animation*sceffect"
+            },
+            "values": [
+                {
+                    "src": "GLOW_ALTERATION",
+                    "used_count": 26,
+                    "value": "\"GLOW_ALTERATION\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "GLOW_ENCHANTMENT",
+                    "used_count": 1,
+                    "value": "\"GLOW_ENCHANTMENT\"",
+                    "first_occurence": "AR5302.53DESATH.De_Savant_Thrall3"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Speed",
+                "arg_ids": "",
+                "arg_line": "I:Speed*"
+            },
+            "values": [
+                {
+                    "src": "1",
+                    "used_count": 27,
+                    "value": "1",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Sequence",
+                "arg_ids": "Sequence",
+                "arg_line": "I:Sequence*Sequence"
+            },
+            "values": [
+                {
+                    "src": "ATTACK",
+                    "used_count": 27,
+                    "value": "\"ATTACK\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                }
+            ]
+        }
+    ]
+}

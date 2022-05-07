@@ -1,0 +1,187 @@
+{
+    "func_name": "SetCriticalPathObject",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"Reig\"",
+                    "used_count": 1,
+                    "value": "\"'Reig'\"",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 28,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR1200.12OLAP.Olap_Soothammer"
+                },
+                {
+                    "src": "\"Isherwood\"",
+                    "used_count": 1,
+                    "value": "\"'Isherwood'\"",
+                    "first_occurence": "AR1200.12ISHER.None"
+                },
+                {
+                    "src": "\"Nickademus\"",
+                    "used_count": 1,
+                    "value": "\"'Nickademus'\"",
+                    "first_occurence": "AR4103.None.None"
+                },
+                {
+                    "src": "\"Mandal\"",
+                    "used_count": 1,
+                    "value": "\"'Mandal'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"Jasper5\"",
+                    "used_count": 6,
+                    "value": "\"'Jasper5'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Lothar4\"",
+                    "used_count": 6,
+                    "value": "\"'Lothar4'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Jasper4\"",
+                    "used_count": 6,
+                    "value": "\"'Jasper4'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Venomin4\"",
+                    "used_count": 6,
+                    "value": "\"'Venomin4'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Flamewalker_02\"",
+                    "used_count": 1,
+                    "value": "\"'Flamewalker_02'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Flamewalker_03\"",
+                    "used_count": 1,
+                    "value": "\"'Flamewalker_03'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Flamewalker_04\"",
+                    "used_count": 1,
+                    "value": "\"'Flamewalker_04'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Flamewalker_05\"",
+                    "used_count": 1,
+                    "value": "\"'Flamewalker_05'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Flamewalker_06\"",
+                    "used_count": 1,
+                    "value": "\"'Flamewalker_06'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Flamewalker_07\"",
+                    "used_count": 1,
+                    "value": "\"'Flamewalker_07'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Lothar3\"",
+                    "used_count": 6,
+                    "value": "\"'Lothar3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Jasper3\"",
+                    "used_count": 6,
+                    "value": "\"'Jasper3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Venomin3\"",
+                    "used_count": 6,
+                    "value": "\"'Venomin3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Pyros3\"",
+                    "used_count": 6,
+                    "value": "\"'Pyros3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Izbelah3\"",
+                    "used_count": 1,
+                    "value": "\"'Izbelah3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Lothar2\"",
+                    "used_count": 6,
+                    "value": "\"'Lothar2'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Venomin2\"",
+                    "used_count": 6,
+                    "value": "\"'Venomin2'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Pyros2\"",
+                    "used_count": 6,
+                    "value": "\"'Pyros2'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Izbelah2\"",
+                    "used_count": 6,
+                    "value": "\"'Izbelah2'\"",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Critical",
+                "arg_ids": "Boolean",
+                "arg_line": "I:Critical*Boolean"
+            },
+            "values": [
+                {
+                    "src": "FALSE",
+                    "used_count": 90,
+                    "value": "False",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "OFF",
+                    "used_count": 1,
+                    "value": "\"OFF\"",
+                    "first_occurence": "AR1200.12ISHER.None"
+                },
+                {
+                    "src": "TRUE",
+                    "used_count": 20,
+                    "value": "True",
+                    "first_occurence": "AR6102.None.None"
+                }
+            ]
+        }
+    ]
+}

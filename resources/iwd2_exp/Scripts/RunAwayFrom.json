@@ -1,0 +1,91 @@
+{
+    "func_name": "RunAwayFrom",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Creature",
+                "arg_ids": "",
+                "arg_line": "O:Creature*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 249,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 13,
+                    "value": "\"LastSeenBy\"",
+                    "first_occurence": "AR1004.10FIRTH.Firtha"
+                },
+                {
+                    "src": "NearestPC",
+                    "used_count": 6,
+                    "value": "\"NearestPC\"",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                },
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 25,
+                    "value": "self.iLastAttackerOf(\"Myself\")",
+                    "first_occurence": "AR3002.30OTY.03_Oty_01"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 6,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "MyTarget",
+                    "used_count": 6,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "LastTargetedBy",
+                    "used_count": 14,
+                    "value": "self.iLastTargetedBy(self.iLastHeardBy(\"Myself\"))",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah1"
+                },
+                {
+                    "src": "LastHeardBy",
+                    "used_count": 14,
+                    "value": "self.iLastHeardBy(\"Myself\")",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah1"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Time",
+                "arg_ids": "",
+                "arg_line": "I:Time*"
+            },
+            "values": [
+                {
+                    "src": "45",
+                    "used_count": 315,
+                    "value": "45",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "90",
+                    "used_count": 7,
+                    "value": "90",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                },
+                {
+                    "src": "105",
+                    "used_count": 11,
+                    "value": "105",
+                    "first_occurence": "AR3002.30OTY.03_Oty_01"
+                }
+            ]
+        }
+    ]
+}

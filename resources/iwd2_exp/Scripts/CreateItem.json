@@ -1,0 +1,81 @@
+{
+    "func_name": "CreateItem",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "ResRef",
+                "arg_ids": "",
+                "arg_line": "S:ResRef*"
+            },
+            "values": [
+                {
+                    "src": "\"00CIKEG3\"",
+                    "used_count": 8,
+                    "value": "\"'00CIKEG3'\"",
+                    "first_occurence": "AR2000.DYNOKEG.T3_Dynokeg_1"
+                },
+                {
+                    "src": "\"00CIKEG2\"",
+                    "used_count": 8,
+                    "value": "\"'00CIKEG2'\"",
+                    "first_occurence": "AR2000.DYNOKEG.T3_Dynokeg_1"
+                },
+                {
+                    "src": "\"00CIKEG1\"",
+                    "used_count": 8,
+                    "value": "\"'00CIKEG1'\"",
+                    "first_occurence": "AR2000.DYNOKEG.T3_Dynokeg_1"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Usage1",
+                "arg_ids": "",
+                "arg_line": "I:Usage1*"
+            },
+            "values": [
+                {
+                    "src": "1",
+                    "used_count": 24,
+                    "value": "1",
+                    "first_occurence": "AR2000.DYNOKEG.T3_Dynokeg_1"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Usage2",
+                "arg_ids": "",
+                "arg_line": "I:Usage2*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 24,
+                    "value": "0",
+                    "first_occurence": "AR2000.DYNOKEG.T3_Dynokeg_1"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Usage3",
+                "arg_ids": "",
+                "arg_line": "I:Usage3*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 24,
+                    "value": "0",
+                    "first_occurence": "AR2000.DYNOKEG.T3_Dynokeg_1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "func_name": "Wait",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Time",
+                "arg_ids": "",
+                "arg_line": "I:Time*"
+            },
+            "values": [
+                {
+                    "src": "1",
+                    "used_count": 328,
+                    "value": "1",
+                    "first_occurence": "AR1003.10BLACK.Black_Geoffrey"
+                },
+                {
+                    "src": "3",
+                    "used_count": 69,
+                    "value": "3",
+                    "first_occurence": "AR1003.10GOHAR.None"
+                },
+                {
+                    "src": "2",
+                    "used_count": 102,
+                    "value": "2",
+                    "first_occurence": "AR1107.11KOLUHM.Koluhm"
+                },
+                {
+                    "src": "0",
+                    "used_count": 1,
+                    "value": "0",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "5",
+                    "used_count": 2,
+                    "value": "5",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "7",
+                    "used_count": 1,
+                    "value": "7",
+                    "first_occurence": "AR6302.63VYLU.Vylu_Prehv"
+                }
+            ]
+        }
+    ]
+}

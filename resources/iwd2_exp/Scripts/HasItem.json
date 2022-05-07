@@ -1,0 +1,421 @@
+{
+    "func_name": "HasItem",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "ResRef",
+                "arg_ids": "",
+                "arg_line": "S:ResRef*"
+            },
+            "values": [
+                {
+                    "src": "\"SGrasp\"",
+                    "used_count": 25,
+                    "value": "\"'SGrasp'\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                },
+                {
+                    "src": "\"SGrasp1\"",
+                    "used_count": 25,
+                    "value": "\"'SGrasp1'\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                },
+                {
+                    "src": "\"SGrasp2\"",
+                    "used_count": 25,
+                    "value": "\"'SGrasp2'\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                },
+                {
+                    "src": "\"SGrasp3\"",
+                    "used_count": 25,
+                    "value": "\"'SGrasp3'\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                },
+                {
+                    "src": "\"SGrasp4\"",
+                    "used_count": 25,
+                    "value": "\"'SGrasp4'\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                },
+                {
+                    "src": "\"SGrasp5\"",
+                    "used_count": 25,
+                    "value": "\"'SGrasp5'\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                },
+                {
+                    "src": "\"11ScrlPS\"",
+                    "used_count": 1,
+                    "value": "\"'11ScrlPS'\"",
+                    "first_occurence": "AR1106.11PHAEN.Phaen_of_the_Rags"
+                },
+                {
+                    "src": "\"SPPR208z\"",
+                    "used_count": 1,
+                    "value": "\"'SPPR208z'\"",
+                    "first_occurence": "AR1107.11KOLUHM.Koluhm"
+                },
+                {
+                    "src": "\"00swdL09\"",
+                    "used_count": 1,
+                    "value": "\"'00swdL09'\"",
+                    "first_occurence": "AR2002.20VREK.Vrek Vileclaw"
+                },
+                {
+                    "src": "\"BClaw\"",
+                    "used_count": 34,
+                    "value": "\"'BClaw'\"",
+                    "first_occurence": "AR2101.20MALARA.Malarite"
+                },
+                {
+                    "src": "\"00CWBER1\"",
+                    "used_count": 11,
+                    "value": "\"'00CWBER1'\"",
+                    "first_occurence": "AR2101.20MALARH.Malarite High Priest"
+                },
+                {
+                    "src": "\"CTouch\"",
+                    "used_count": 3,
+                    "value": "\"'CTouch'\"",
+                    "first_occurence": "AR2102.21ELFMGE.GTH02_14"
+                },
+                {
+                    "src": "\"00swdL02\"",
+                    "used_count": 2,
+                    "value": "\"'00swdL02'\"",
+                    "first_occurence": "AR3000.30ENNELI.Ennelia"
+                },
+                {
+                    "src": "\"00potn04\"",
+                    "used_count": 122,
+                    "value": "\"'00potn04'\"",
+                    "first_occurence": "AR3000.30ORCTRU.16_OrcTru"
+                },
+                {
+                    "src": "\"00potn05\"",
+                    "used_count": 140,
+                    "value": "\"'00potn05'\"",
+                    "first_occurence": "AR3000.30ORCTRU.16_OrcTru"
+                },
+                {
+                    "src": "\"0POTN03\"",
+                    "used_count": 40,
+                    "value": "\"'0POTN03'\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "\"0potn05\"",
+                    "used_count": 9,
+                    "value": "\"'0potn05'\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "\"0potn04\"",
+                    "used_count": 9,
+                    "value": "\"'0potn04'\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "\"IBlade\"",
+                    "used_count": 56,
+                    "value": "\"'IBlade'\"",
+                    "first_occurence": "AR4000.40DRUIDM.02_Male_Druid_25"
+                },
+                {
+                    "src": "\"VTouch5\"",
+                    "used_count": 20,
+                    "value": "\"'VTouch5'\"",
+                    "first_occurence": "AR4100.41NECROM.03_Cultist_02"
+                },
+                {
+                    "src": "\"41AmulHS\"",
+                    "used_count": 32,
+                    "value": "\"'41AmulHS'\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "\"CMDamag\"",
+                    "used_count": 54,
+                    "value": "\"'CMDamag'\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                },
+                {
+                    "src": "\"SHammr\"",
+                    "used_count": 47,
+                    "value": "\"'SHammr'\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                },
+                {
+                    "src": "\"SHamme1\"",
+                    "used_count": 47,
+                    "value": "\"'SHamme1'\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                },
+                {
+                    "src": "\"SHamme2\"",
+                    "used_count": 47,
+                    "value": "\"'SHamme2'\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                },
+                {
+                    "src": "\"SHamme3\"",
+                    "used_count": 47,
+                    "value": "\"'SHamme3'\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                },
+                {
+                    "src": "\"00WAND23\"",
+                    "used_count": 6,
+                    "value": "\"'00WAND23'\"",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "\"00Potn52\"",
+                    "used_count": 6,
+                    "value": "\"'00Potn52'\"",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "\"00POTN79\"",
+                    "used_count": 3,
+                    "value": "\"'00POTN79'\"",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "\"00potn07\"",
+                    "used_count": 8,
+                    "value": "\"'00potn07'\"",
+                    "first_occurence": "AR4100.41BARSHA.02_Barbarian_Shaman_04"
+                },
+                {
+                    "src": "\"00POTN03\"",
+                    "used_count": 4,
+                    "value": "\"'00POTN03'\"",
+                    "first_occurence": "AR4102.41BISHOP.02_Bishop_02"
+                },
+                {
+                    "src": "\"CDiseas\"",
+                    "used_count": 3,
+                    "value": "\"'CDiseas'\"",
+                    "first_occurence": "AR4102.41BISHOP.02_Bishop_02"
+                },
+                {
+                    "src": "\"FBlade\"",
+                    "used_count": 1,
+                    "value": "\"'FBlade'\"",
+                    "first_occurence": "AR4102.41BISHOP.02_Bishop_02"
+                },
+                {
+                    "src": "\"00POTN36\"",
+                    "used_count": 3,
+                    "value": "\"'00POTN36'\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "\"00POTN19\"",
+                    "used_count": 3,
+                    "value": "\"'00POTN19'\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "\"SLiving\"",
+                    "used_count": 26,
+                    "value": "\"'SLiving'\"",
+                    "first_occurence": "AR5000.50BARSH.01_50BARSH_08"
+                },
+                {
+                    "src": "\"CLDamag\"",
+                    "used_count": 7,
+                    "value": "\"'CLDamag'\"",
+                    "first_occurence": "AR5101.51BARUD.13_51Barud_04"
+                },
+                {
+                    "src": "\"00Misc40\"",
+                    "used_count": 30,
+                    "value": "\"'00Misc40'\"",
+                    "first_occurence": "AR5200.52WYRWH.01_WYRWH_01"
+                },
+                {
+                    "src": "\"52KeyRT\"",
+                    "used_count": 1,
+                    "value": "\"'52KeyRT'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"00ring69\"",
+                    "used_count": 1,
+                    "value": "\"'00ring69'\"",
+                    "first_occurence": "AR5201.52DOLON.06_52Dolon_02"
+                },
+                {
+                    "src": "\"CSDamag\"",
+                    "used_count": 2,
+                    "value": "\"'CSDamag'\"",
+                    "first_occurence": "AR5300.53VIIZRA.Viizra_Arabani"
+                },
+                {
+                    "src": "\"53MiscIV\"",
+                    "used_count": 1,
+                    "value": "\"'53MiscIV'\"",
+                    "first_occurence": "AR5301.53VICISC.Viciscamera"
+                },
+                {
+                    "src": "\"Destruc\"",
+                    "used_count": 2,
+                    "value": "\"'Destruc'\"",
+                    "first_occurence": "AR6001.60ISELOR.Iselore"
+                },
+                {
+                    "src": "\"MoonBla\"",
+                    "used_count": 1,
+                    "value": "\"'MoonBla'\"",
+                    "first_occurence": "AR6008.60NATE.Nathaniel"
+                },
+                {
+                    "src": "\"MMMeteo\"",
+                    "used_count": 1,
+                    "value": "\"'MMMeteo'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"00POTN74\"",
+                    "used_count": 26,
+                    "value": "\"'00POTN74'\"",
+                    "first_occurence": "AR6101.61YPBLAD.07_PurebloodThief_05"
+                },
+                {
+                    "src": "\"PBlade\"",
+                    "used_count": 1,
+                    "value": "\"'PBlade'\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"00SCRL16\"",
+                    "used_count": 3,
+                    "value": "\"'00SCRL16'\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "\"0potn07\"",
+                    "used_count": 3,
+                    "value": "\"'0potn07'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "\"00WAND36\"",
+                    "used_count": 3,
+                    "value": "\"'00WAND36'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "\"MSword\"",
+                    "used_count": 3,
+                    "value": "\"'MSword'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "\"DoBone\"",
+                    "used_count": 3,
+                    "value": "\"'DoBone'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "\"LTouch\"",
+                    "used_count": 3,
+                    "value": "\"'LTouch'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "\"SnakeBi\"",
+                    "used_count": 1,
+                    "value": "\"'SnakeBi'\"",
+                    "first_occurence": "AR6104.61YAPRIE.05_AbominationPriest_01"
+                },
+                {
+                    "src": "\"Harm\"",
+                    "used_count": 2,
+                    "value": "\"'Harm'\"",
+                    "first_occurence": "AR6302.65GARUK.Ruinlord_Garuk_Katah"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 966,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                },
+                {
+                    "src": "\"Container_1\"",
+                    "used_count": 1,
+                    "value": "\"'Container_1'\"",
+                    "first_occurence": "AR2002.20VREK.Vrek Vileclaw"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 8,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player1",
+                    "used_count": 4,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player2",
+                    "used_count": 4,
+                    "value": "\"Player2\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player3",
+                    "used_count": 4,
+                    "value": "\"Player3\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player4",
+                    "used_count": 4,
+                    "value": "\"Player4\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player5",
+                    "used_count": 4,
+                    "value": "\"Player5\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "Player6",
+                    "used_count": 4,
+                    "value": "\"Player6\"",
+                    "first_occurence": "AR4100.41VRASSI.Vrassillus"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 30,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR5200.52WYRWH.01_WYRWH_01"
+                },
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 1,
+                    "value": "self.iLastAttackerOf(\"Myself\")",
+                    "first_occurence": "AR5301.53VICISC.Viciscamera"
+                }
+            ]
+        }
+    ]
+}

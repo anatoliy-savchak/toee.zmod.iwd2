@@ -1,0 +1,79 @@
+{
+    "func_name": "IsRotation",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 8,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR6103.61GRISHU.SsethEye"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Direction",
+                "arg_ids": "DIR",
+                "arg_line": "I:Direction*DIR"
+            },
+            "values": [
+                {
+                    "src": "NE",
+                    "used_count": 1,
+                    "value": "\"NE\"",
+                    "first_occurence": "AR6103.61GRISHU.SsethEye"
+                },
+                {
+                    "src": "E",
+                    "used_count": 1,
+                    "value": "\"E\"",
+                    "first_occurence": "AR6103.61GRISHU.SsethEye"
+                },
+                {
+                    "src": "SE",
+                    "used_count": 1,
+                    "value": "\"SE\"",
+                    "first_occurence": "AR6103.61GRISHU.SsethEye"
+                },
+                {
+                    "src": "S",
+                    "used_count": 1,
+                    "value": "\"S\"",
+                    "first_occurence": "AR6103.61GRISHU.SsethEye"
+                },
+                {
+                    "src": "SW",
+                    "used_count": 1,
+                    "value": "\"SW\"",
+                    "first_occurence": "AR6103.61GRISHU.SsethEye"
+                },
+                {
+                    "src": "W",
+                    "used_count": 1,
+                    "value": "\"W\"",
+                    "first_occurence": "AR6103.61GRISHU.SsethEye"
+                },
+                {
+                    "src": "NW",
+                    "used_count": 1,
+                    "value": "\"NW\"",
+                    "first_occurence": "AR6103.61GRISHU.SsethEye"
+                },
+                {
+                    "src": "N",
+                    "used_count": 1,
+                    "value": "\"N\"",
+                    "first_occurence": "AR6103.61GRISHU.SsethEye"
+                }
+            ]
+        }
+    ]
+}

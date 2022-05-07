@@ -1,0 +1,55 @@
+{
+    "func_name": "SetBestWeapon",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 523,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR1000.10GOBAR.1000_Goblin_Archer_01"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 37,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4100.41PRIESM.05_Postulant_07"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Range",
+                "arg_ids": "",
+                "arg_line": "I:Range*"
+            },
+            "values": [
+                {
+                    "src": "3",
+                    "used_count": 522,
+                    "value": "3",
+                    "first_occurence": "AR1000.10GOBAR.1000_Goblin_Archer_01"
+                },
+                {
+                    "src": "1",
+                    "used_count": 37,
+                    "value": "1",
+                    "first_occurence": "AR4100.41PRIESM.05_Postulant_07"
+                },
+                {
+                    "src": "5",
+                    "used_count": 1,
+                    "value": "5",
+                    "first_occurence": "AR6102.61AWYVER.AncientWyvern"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "func_name": "ChangeAIScript",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "ScriptFile",
+                "arg_ids": "",
+                "arg_line": "S:ScriptFile*"
+            },
+            "values": [
+                {
+                    "src": "\"\"",
+                    "used_count": 22,
+                    "value": "\"''\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"NONE\"",
+                    "used_count": 1,
+                    "value": "\"'NONE'\"",
+                    "first_occurence": "AR5016.None.None"
+                },
+                {
+                    "src": "\"00aDmE\"",
+                    "used_count": 32,
+                    "value": "\"'00aDmE'\"",
+                    "first_occurence": "AR6051.60HEDEAD.Heartless_Dead1"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Level",
+                "arg_ids": "Scrlev",
+                "arg_line": "I:Level*Scrlev"
+            },
+            "values": [
+                {
+                    "src": "OVERRIDE",
+                    "used_count": 4,
+                    "value": "\"OVERRIDE\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "SPECIAL_1",
+                    "used_count": 35,
+                    "value": "\"SPECIAL_1\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "TEAM",
+                    "used_count": 3,
+                    "value": "\"TEAM\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "3",
+                    "used_count": 3,
+                    "value": "3",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "SPECIAL_2",
+                    "used_count": 4,
+                    "value": "\"SPECIAL_2\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "COMBAT",
+                    "used_count": 3,
+                    "value": "\"COMBAT\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "SPECIAL_3",
+                    "used_count": 3,
+                    "value": "\"SPECIAL_3\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                }
+            ]
+        }
+    ]
+}

@@ -106,12 +106,18 @@ class ProduceNPCDialog:
         self.response_actions = dict()
         self.phrases = dict()
         self.responses = dict()
+
+        self.current_are_name = None
+        self.current_cre_name = None
         return
 
     def _add_line(self, line):
         return self.parent.writeline(line)
 
-    def produce(self):
+    def produce(self, are_name: str, cre_name: str):
+        self.current_are_name = are_name
+        self.current_cre_name = cre_name
+
         phrases, responses, triggersPhrase, triggersResponse = self.dialog.get("Phrases"), self.dialog.get("Responses"), self.dialog.get("TriggersPhrase"), self.dialog.get("TriggersResponse")
         actions = self.dialog.get("Actions")
         if not phrases: return
@@ -262,7 +268,7 @@ class ProduceNPCDialog:
 
     def calc_trigger(self, trigger: str):
         trigger_lines = produce_scripts.condition_split(trigger)
-        out_lines = self.parent.doc.producerOfScripts.transate_trigger_lines(trigger_lines)
+        out_lines = self.parent.doc.producerOfScripts.transate_trigger_lines(trigger_lines, are_name=self.current_are_name, cre_name=self.current_cre_name)
         return trigger_lines, out_lines
 
     def calc_actions(self, action: str):
@@ -371,3 +377,19 @@ class ProduceNPCDialog:
     def translate_dialog_const(self, line: str):
         line = line.replace("<CHARNAME>", "@pcname@ ")
         return line
+
+    @classmethod
+    def scan(cls, doc, dialog: dict, are_name: str, cre_name: str):
+        phrases, responses, triggersPhrase, triggersResponse = dialog.get("Phrases"), dialog.get("Responses"), dialog.get("TriggersPhrase"), dialog.get("TriggersResponse")
+        for phrase in phrases:
+            triggerIndex = int(phrase["TriggerIndex"])
+            if triggerIndex == -1: continue
+
+            trigger = triggersPhrase[triggerIndex]
+            trigger_lines = produce_scripts.condition_split(trigger)
+            out_lines = doc.producerOfScripts.transate_trigger_lines(trigger_lines, are_name=are_name, cre_name=cre_name)
+
+        for action in dialog.get("Actions"):
+            action_lines = produce_scripts.condition_split(action)
+            doc.producerOfScripts.transate_action_lines(action_lines, are_name=are_name, cre_name=cre_name)
+        return

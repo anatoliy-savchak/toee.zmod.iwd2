@@ -1,0 +1,39 @@
+{
+    "func_name": "Debug",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Message",
+                "arg_ids": "",
+                "arg_line": "S:Message*"
+            },
+            "values": [
+                {
+                    "src": "\"CBN_SetFlag_Destroy_Shaengarne_Bridge\"",
+                    "used_count": 1,
+                    "value": "\"'CBN_SetFlag_Destroy_Shaengarne_Bridge'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"53UHOM_Hiding_Oswald_Maralie\"",
+                    "used_count": 2,
+                    "value": "\"'53UHOM_Hiding_Oswald_Maralie'\"",
+                    "first_occurence": "AR5303.53MARALI.Maralie"
+                },
+                {
+                    "src": "\"DisableResting\"",
+                    "used_count": 1,
+                    "value": "\"'DisableResting'\"",
+                    "first_occurence": "AR6101.None.None"
+                },
+                {
+                    "src": "\"EnableResting\"",
+                    "used_count": 1,
+                    "value": "\"'EnableResting'\"",
+                    "first_occurence": "AR6101.None.None"
+                }
+            ]
+        }
+    ]
+}

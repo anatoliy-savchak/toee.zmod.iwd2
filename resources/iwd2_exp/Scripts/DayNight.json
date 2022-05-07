@@ -1,0 +1,21 @@
+{
+    "func_name": "DayNight",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "TimeOfDay",
+                "arg_ids": "Time",
+                "arg_line": "I:TimeOfDay*Time"
+            },
+            "values": [
+                {
+                    "src": "DAWN_START",
+                    "used_count": 1,
+                    "value": "\"DAWN_START\"",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        }
+    ]
+}

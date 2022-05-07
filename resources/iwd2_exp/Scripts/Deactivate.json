@@ -1,0 +1,237 @@
+{
+    "func_name": "Deactivate",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"Horn_Blow\"",
+                    "used_count": 2,
+                    "value": "\"'Horn_Blow'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"cat_singles_exterior\"",
+                    "used_count": 1,
+                    "value": "\"'cat_singles_exterior'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"Cat_Singles\"",
+                    "used_count": 1,
+                    "value": "\"'Cat_Singles'\"",
+                    "first_occurence": "AR1004.None.None"
+                },
+                {
+                    "src": "\"Goblins\"",
+                    "used_count": 1,
+                    "value": "\"'Goblins'\"",
+                    "first_occurence": "AR1007.None.None"
+                },
+                {
+                    "src": "\"walla_moans\"",
+                    "used_count": 1,
+                    "value": "\"'walla_moans'\"",
+                    "first_occurence": "AR1103.None.None"
+                },
+                {
+                    "src": "\"Veira_Cry\"",
+                    "used_count": 1,
+                    "value": "\"'Veira_Cry'\"",
+                    "first_occurence": "AR1105.None.None"
+                },
+                {
+                    "src": "\"cows\"",
+                    "used_count": 1,
+                    "value": "\"'cows'\"",
+                    "first_occurence": "AR3002.None.None"
+                },
+                {
+                    "src": "\"chickens\"",
+                    "used_count": 1,
+                    "value": "\"'chickens'\"",
+                    "first_occurence": "AR3002.None.None"
+                },
+                {
+                    "src": "\"animals\"",
+                    "used_count": 1,
+                    "value": "\"'animals'\"",
+                    "first_occurence": "AR3002.None.None"
+                },
+                {
+                    "src": "\"GameIcon0\"",
+                    "used_count": 2,
+                    "value": "\"'GameIcon0'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"GameIcon1\"",
+                    "used_count": 2,
+                    "value": "\"'GameIcon1'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"GameIcon2\"",
+                    "used_count": 2,
+                    "value": "\"'GameIcon2'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"GameIcon3\"",
+                    "used_count": 2,
+                    "value": "\"'GameIcon3'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"GameIcon4\"",
+                    "used_count": 2,
+                    "value": "\"'GameIcon4'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"GameIcon5\"",
+                    "used_count": 2,
+                    "value": "\"'GameIcon5'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"GameIcon6\"",
+                    "used_count": 2,
+                    "value": "\"'GameIcon6'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"GameIcon7\"",
+                    "used_count": 2,
+                    "value": "\"'GameIcon7'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"GameIcon8\"",
+                    "used_count": 2,
+                    "value": "\"'GameIcon8'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"spider_maker_thing1\"",
+                    "used_count": 1,
+                    "value": "\"'spider_maker_thing1'\"",
+                    "first_occurence": "AR5301.None.None"
+                },
+                {
+                    "src": "\"jungleoasis\"",
+                    "used_count": 1,
+                    "value": "\"'jungleoasis'\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                },
+                {
+                    "src": "\"creatures_in_theatre\"",
+                    "used_count": 2,
+                    "value": "\"'creatures_in_theatre'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"BoatEntrance1\"",
+                    "used_count": 2,
+                    "value": "\"'BoatEntrance1'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatEntrance2\"",
+                    "used_count": 2,
+                    "value": "\"'BoatEntrance2'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatPost1\"",
+                    "used_count": 2,
+                    "value": "\"'BoatPost1'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatPost2\"",
+                    "used_count": 2,
+                    "value": "\"'BoatPost2'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatExit1\"",
+                    "used_count": 2,
+                    "value": "\"'BoatExit1'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatExit2\"",
+                    "used_count": 2,
+                    "value": "\"'BoatExit2'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatCitadel1\"",
+                    "used_count": 2,
+                    "value": "\"'BoatCitadel1'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatCitadel2\"",
+                    "used_count": 2,
+                    "value": "\"'BoatCitadel2'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatPalace1\"",
+                    "used_count": 2,
+                    "value": "\"'BoatPalace1'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatPalace2\"",
+                    "used_count": 2,
+                    "value": "\"'BoatPalace2'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatEmbassy1\"",
+                    "used_count": 2,
+                    "value": "\"'BoatEmbassy1'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatEmbassy2\"",
+                    "used_count": 2,
+                    "value": "\"'BoatEmbassy2'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatStash1\"",
+                    "used_count": 2,
+                    "value": "\"'BoatStash1'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatStash2\"",
+                    "used_count": 2,
+                    "value": "\"'BoatStash2'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatAmphitheatre1\"",
+                    "used_count": 2,
+                    "value": "\"'BoatAmphitheatre1'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BoatAmphitheatre2\"",
+                    "used_count": 2,
+                    "value": "\"'BoatAmphitheatre2'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                }
+            ]
+        }
+    ]
+}

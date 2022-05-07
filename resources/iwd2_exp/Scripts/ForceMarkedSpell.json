@@ -1,0 +1,21 @@
+{
+    "func_name": "ForceMarkedSpell",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Spell",
+                "arg_ids": "Spell",
+                "arg_line": "I:Spell*Spell"
+            },
+            "values": [
+                {
+                    "src": "MARKED_SPELL",
+                    "used_count": 1583,
+                    "value": "\"MARKED_SPELL\"",
+                    "first_occurence": "AR1100.11OSWALD.Oswald"
+                }
+            ]
+        }
+    ]
+}

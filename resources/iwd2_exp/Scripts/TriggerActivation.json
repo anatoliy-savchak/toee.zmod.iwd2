@@ -1,0 +1,373 @@
+{
+    "func_name": "TriggerActivation",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"BeetleNestInfo\"",
+                    "used_count": 1,
+                    "value": "\"'BeetleNestInfo'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"To4001\"",
+                    "used_count": 1,
+                    "value": "\"'To4001'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"ShipWarp\"",
+                    "used_count": 1,
+                    "value": "\"'ShipWarp'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"To4101a\"",
+                    "used_count": 3,
+                    "value": "\"'To4101a'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"To4101b\"",
+                    "used_count": 3,
+                    "value": "\"'To4101b'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"GameGrid0\"",
+                    "used_count": 3,
+                    "value": "\"'GameGrid0'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameGrid1\"",
+                    "used_count": 3,
+                    "value": "\"'GameGrid1'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameGrid2\"",
+                    "used_count": 3,
+                    "value": "\"'GameGrid2'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameGrid3\"",
+                    "used_count": 3,
+                    "value": "\"'GameGrid3'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameGrid4\"",
+                    "used_count": 3,
+                    "value": "\"'GameGrid4'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameGrid5\"",
+                    "used_count": 3,
+                    "value": "\"'GameGrid5'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameGrid6\"",
+                    "used_count": 3,
+                    "value": "\"'GameGrid6'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameGrid7\"",
+                    "used_count": 3,
+                    "value": "\"'GameGrid7'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameGrid8\"",
+                    "used_count": 3,
+                    "value": "\"'GameGrid8'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameRoomTrap1\"",
+                    "used_count": 1,
+                    "value": "\"'GameRoomTrap1'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameRoomTrap2\"",
+                    "used_count": 1,
+                    "value": "\"'GameRoomTrap2'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameRoomTrap3\"",
+                    "used_count": 1,
+                    "value": "\"'GameRoomTrap3'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameRoomTrap4\"",
+                    "used_count": 1,
+                    "value": "\"'GameRoomTrap4'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameRoomTrap5\"",
+                    "used_count": 1,
+                    "value": "\"'GameRoomTrap5'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GameRoomTrap6\"",
+                    "used_count": 1,
+                    "value": "\"'GameRoomTrap6'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"Altar\"",
+                    "used_count": 1,
+                    "value": "\"'Altar'\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "\"ShadowTrap\"",
+                    "used_count": 2,
+                    "value": "\"'ShadowTrap'\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "\"To6200\"",
+                    "used_count": 3,
+                    "value": "\"'To6200'\"",
+                    "first_occurence": "AR4103.None.None"
+                },
+                {
+                    "src": "\"TO5015\"",
+                    "used_count": 1,
+                    "value": "\"'TO5015'\"",
+                    "first_occurence": "AR5011.None.None"
+                },
+                {
+                    "src": "\"TO5010\"",
+                    "used_count": 1,
+                    "value": "\"'TO5010'\"",
+                    "first_occurence": "AR5011.None.None"
+                },
+                {
+                    "src": "\"TO5012\"",
+                    "used_count": 1,
+                    "value": "\"'TO5012'\"",
+                    "first_occurence": "AR5011.None.None"
+                },
+                {
+                    "src": "\"To5004\"",
+                    "used_count": 1,
+                    "value": "\"'To5004'\"",
+                    "first_occurence": "AR5015.None.None"
+                },
+                {
+                    "src": "\"TO5020\"",
+                    "used_count": 1,
+                    "value": "\"'TO5020'\"",
+                    "first_occurence": "AR5016.None.None"
+                },
+                {
+                    "src": "\"TO5025\"",
+                    "used_count": 1,
+                    "value": "\"'TO5025'\"",
+                    "first_occurence": "AR5016.None.None"
+                },
+                {
+                    "src": "\"TO5026\"",
+                    "used_count": 1,
+                    "value": "\"'TO5026'\"",
+                    "first_occurence": "AR5016.None.None"
+                },
+                {
+                    "src": "\"To6001\"",
+                    "used_count": 3,
+                    "value": "\"'To6001'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"To6101\"",
+                    "used_count": 3,
+                    "value": "\"'To6101'\"",
+                    "first_occurence": "AR6100.None.None"
+                },
+                {
+                    "src": "\"FalloutTrap1\"",
+                    "used_count": 1,
+                    "value": "\"'FalloutTrap1'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"FalloutTrap2\"",
+                    "used_count": 1,
+                    "value": "\"'FalloutTrap2'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"FalloutTrap3\"",
+                    "used_count": 1,
+                    "value": "\"'FalloutTrap3'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"FalloutTrap4\"",
+                    "used_count": 1,
+                    "value": "\"'FalloutTrap4'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"FalloutTrap5\"",
+                    "used_count": 1,
+                    "value": "\"'FalloutTrap5'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"To4102\"",
+                    "used_count": 2,
+                    "value": "\"'To4102'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoBridgeDamaged\"",
+                    "used_count": 6,
+                    "value": "\"'InfoBridgeDamaged'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoBridgeUnsafe\"",
+                    "used_count": 6,
+                    "value": "\"'InfoBridgeUnsafe'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoBridgeFixed\"",
+                    "used_count": 6,
+                    "value": "\"'InfoBridgeFixed'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"BridgeRepair\"",
+                    "used_count": 6,
+                    "value": "\"'BridgeRepair'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoThroneDamaged\"",
+                    "used_count": 7,
+                    "value": "\"'InfoThroneDamaged'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoThroneFixed\"",
+                    "used_count": 7,
+                    "value": "\"'InfoThroneFixed'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoAmphitheatreDamaged\"",
+                    "used_count": 7,
+                    "value": "\"'InfoAmphitheatreDamaged'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoAmphitheatreFixed\"",
+                    "used_count": 7,
+                    "value": "\"'InfoAmphitheatreFixed'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoEmbassyDamaged\"",
+                    "used_count": 7,
+                    "value": "\"'InfoEmbassyDamaged'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoEmbassyFixed\"",
+                    "used_count": 7,
+                    "value": "\"'InfoEmbassyFixed'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoPalaceDamaged\"",
+                    "used_count": 7,
+                    "value": "\"'InfoPalaceDamaged'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoPalaceFixed\"",
+                    "used_count": 7,
+                    "value": "\"'InfoPalaceFixed'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoCitadelDamaged\"",
+                    "used_count": 7,
+                    "value": "\"'InfoCitadelDamaged'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoCitadelFixed\"",
+                    "used_count": 7,
+                    "value": "\"'InfoCitadelFixed'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"Avalanche\"",
+                    "used_count": 2,
+                    "value": "\"'Avalanche'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"To6200False\"",
+                    "used_count": 9,
+                    "value": "\"'To6200False'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoCageOpen\"",
+                    "used_count": 3,
+                    "value": "\"'InfoCageOpen'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"InfoCageClosed\"",
+                    "used_count": 3,
+                    "value": "\"'InfoCageClosed'\"",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "State",
+                "arg_ids": "Boolean",
+                "arg_line": "I:State*Boolean"
+            },
+            "values": [
+                {
+                    "src": "FALSE",
+                    "used_count": 90,
+                    "value": "False",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "TRUE",
+                    "used_count": 89,
+                    "value": "True",
+                    "first_occurence": "AR4102.None.None"
+                }
+            ]
+        }
+    ]
+}

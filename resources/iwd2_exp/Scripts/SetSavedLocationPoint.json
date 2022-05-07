@@ -1,0 +1,599 @@
+{
+    "func_name": "SetSavedLocationPoint",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "X",
+                "arg_ids": "",
+                "arg_line": "I:X*"
+            },
+            "values": [
+                {
+                    "src": "1217",
+                    "used_count": 1,
+                    "value": "1217",
+                    "first_occurence": "AR1200.12SWIFT.Swift_Thomas"
+                },
+                {
+                    "src": "2714",
+                    "used_count": 1,
+                    "value": "2714",
+                    "first_occurence": "AR1200.12OLAP.Olap_Soothammer"
+                },
+                {
+                    "src": "3365",
+                    "used_count": 1,
+                    "value": "3365",
+                    "first_occurence": "AR1200.12KADENC.Kadence"
+                },
+                {
+                    "src": "3251",
+                    "used_count": 1,
+                    "value": "3251",
+                    "first_occurence": "AR1200.12ANSON.Anson"
+                },
+                {
+                    "src": "1588",
+                    "used_count": 1,
+                    "value": "1588",
+                    "first_occurence": "AR1200.12TABARD.Tabard_Mooncalf"
+                },
+                {
+                    "src": "3050",
+                    "used_count": 1,
+                    "value": "3050",
+                    "first_occurence": "AR1200.12NILES.Niles"
+                },
+                {
+                    "src": "562",
+                    "used_count": 12,
+                    "value": "562",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "812",
+                    "used_count": 12,
+                    "value": "812",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "1015",
+                    "used_count": 12,
+                    "value": "1015",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "357",
+                    "used_count": 12,
+                    "value": "357",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "792",
+                    "used_count": 12,
+                    "value": "792",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "454",
+                    "used_count": 12,
+                    "value": "454",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "742",
+                    "used_count": 12,
+                    "value": "742",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "991",
+                    "used_count": 12,
+                    "value": "991",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "298",
+                    "used_count": 12,
+                    "value": "298",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "954",
+                    "used_count": 12,
+                    "value": "954",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "268",
+                    "used_count": 12,
+                    "value": "268",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "616",
+                    "used_count": 12,
+                    "value": "616",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "392",
+                    "used_count": 12,
+                    "value": "392",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "510",
+                    "used_count": 12,
+                    "value": "510",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "420",
+                    "used_count": 12,
+                    "value": "420",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "470",
+                    "used_count": 12,
+                    "value": "470",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "610",
+                    "used_count": 12,
+                    "value": "610",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "590",
+                    "used_count": 24,
+                    "value": "590",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "550",
+                    "used_count": 12,
+                    "value": "550",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "500",
+                    "used_count": 12,
+                    "value": "500",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "450",
+                    "used_count": 12,
+                    "value": "450",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "400",
+                    "used_count": 12,
+                    "value": "400",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "352",
+                    "used_count": 12,
+                    "value": "352",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "1933",
+                    "used_count": 3,
+                    "value": "1933",
+                    "first_occurence": "AR4000.40ILIUM.Illium"
+                },
+                {
+                    "src": "2195",
+                    "used_count": 2,
+                    "value": "2195",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "2590",
+                    "used_count": 3,
+                    "value": "2590",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "800",
+                    "used_count": 3,
+                    "value": "800",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "3456",
+                    "used_count": 3,
+                    "value": "3456",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "1536",
+                    "used_count": 3,
+                    "value": "1536",
+                    "first_occurence": "AR6101.61NHEERO.Nheero"
+                },
+                {
+                    "src": "704",
+                    "used_count": 3,
+                    "value": "704",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "1500",
+                    "used_count": 2,
+                    "value": "1500",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "2100",
+                    "used_count": 2,
+                    "value": "2100",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "1080",
+                    "used_count": 2,
+                    "value": "1080",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "1950",
+                    "used_count": 2,
+                    "value": "1950",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "2560",
+                    "used_count": 2,
+                    "value": "2560",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "2120",
+                    "used_count": 2,
+                    "value": "2120",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "2650",
+                    "used_count": 2,
+                    "value": "2650",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "2720",
+                    "used_count": 1,
+                    "value": "2720",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Y",
+                "arg_ids": "",
+                "arg_line": "I:Y*"
+            },
+            "values": [
+                {
+                    "src": "859",
+                    "used_count": 1,
+                    "value": "859",
+                    "first_occurence": "AR1200.12SWIFT.Swift_Thomas"
+                },
+                {
+                    "src": "922",
+                    "used_count": 1,
+                    "value": "922",
+                    "first_occurence": "AR1200.12OLAP.Olap_Soothammer"
+                },
+                {
+                    "src": "1015",
+                    "used_count": 13,
+                    "value": "1015",
+                    "first_occurence": "AR1200.12KADENC.Kadence"
+                },
+                {
+                    "src": "1194",
+                    "used_count": 1,
+                    "value": "1194",
+                    "first_occurence": "AR1200.12ANSON.Anson"
+                },
+                {
+                    "src": "1172",
+                    "used_count": 1,
+                    "value": "1172",
+                    "first_occurence": "AR1200.12TABARD.Tabard_Mooncalf"
+                },
+                {
+                    "src": "1647",
+                    "used_count": 1,
+                    "value": "1647",
+                    "first_occurence": "AR1200.12NILES.Niles"
+                },
+                {
+                    "src": "845",
+                    "used_count": 12,
+                    "value": "845",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "1145",
+                    "used_count": 12,
+                    "value": "1145",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "744",
+                    "used_count": 12,
+                    "value": "744",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "797",
+                    "used_count": 12,
+                    "value": "797",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "1152",
+                    "used_count": 12,
+                    "value": "1152",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "1144",
+                    "used_count": 12,
+                    "value": "1144",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "866",
+                    "used_count": 12,
+                    "value": "866",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "620",
+                    "used_count": 12,
+                    "value": "620",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "867",
+                    "used_count": 12,
+                    "value": "867",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "643",
+                    "used_count": 12,
+                    "value": "643",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "991",
+                    "used_count": 12,
+                    "value": "991",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "650",
+                    "used_count": 12,
+                    "value": "650",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "690",
+                    "used_count": 12,
+                    "value": "690",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "692",
+                    "used_count": 12,
+                    "value": "692",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "710",
+                    "used_count": 12,
+                    "value": "710",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "580",
+                    "used_count": 12,
+                    "value": "580",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "520",
+                    "used_count": 12,
+                    "value": "520",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "500",
+                    "used_count": 36,
+                    "value": "500",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "516",
+                    "used_count": 12,
+                    "value": "516",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "592",
+                    "used_count": 12,
+                    "value": "592",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "640",
+                    "used_count": 12,
+                    "value": "640",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "323",
+                    "used_count": 3,
+                    "value": "323",
+                    "first_occurence": "AR4000.40ILIUM.Illium"
+                },
+                {
+                    "src": "2510",
+                    "used_count": 2,
+                    "value": "2510",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "800",
+                    "used_count": 3,
+                    "value": "800",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "2655",
+                    "used_count": 3,
+                    "value": "2655",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "863",
+                    "used_count": 3,
+                    "value": "863",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "2624",
+                    "used_count": 3,
+                    "value": "2624",
+                    "first_occurence": "AR6101.61NHEERO.Nheero"
+                },
+                {
+                    "src": "1344",
+                    "used_count": 3,
+                    "value": "1344",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "1250",
+                    "used_count": 2,
+                    "value": "1250",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "820",
+                    "used_count": 2,
+                    "value": "820",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "2200",
+                    "used_count": 2,
+                    "value": "2200",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "2210",
+                    "used_count": 2,
+                    "value": "2210",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "2270",
+                    "used_count": 2,
+                    "value": "2270",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "1820",
+                    "used_count": 2,
+                    "value": "1820",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "1310",
+                    "used_count": 2,
+                    "value": "1310",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "2180",
+                    "used_count": 1,
+                    "value": "2180",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Direction",
+                "arg_ids": "Dir",
+                "arg_line": "I:Direction*Dir"
+            },
+            "values": [
+                {
+                    "src": "SE",
+                    "used_count": 148,
+                    "value": "\"SE\"",
+                    "first_occurence": "AR1200.12SWIFT.Swift_Thomas"
+                },
+                {
+                    "src": "SW",
+                    "used_count": 4,
+                    "value": "\"SW\"",
+                    "first_occurence": "AR1200.12OLAP.Olap_Soothammer"
+                },
+                {
+                    "src": "NW",
+                    "used_count": 2,
+                    "value": "\"NW\"",
+                    "first_occurence": "AR1200.12KADENC.Kadence"
+                },
+                {
+                    "src": "NE",
+                    "used_count": 19,
+                    "value": "\"NE\"",
+                    "first_occurence": "AR1200.12ANSON.Anson"
+                },
+                {
+                    "src": "E",
+                    "used_count": 3,
+                    "value": "\"E\"",
+                    "first_occurence": "AR1200.12TABARD.Tabard_Mooncalf"
+                },
+                {
+                    "src": "S",
+                    "used_count": 147,
+                    "value": "\"S\"",
+                    "first_occurence": "AR2001.20PESF1.Peasant_1"
+                },
+                {
+                    "src": "SSW",
+                    "used_count": 3,
+                    "value": "\"SSW\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "W",
+                    "used_count": 3,
+                    "value": "\"W\"",
+                    "first_occurence": "AR6101.61NHEERO.Nheero"
+                }
+            ]
+        }
+    ]
+}

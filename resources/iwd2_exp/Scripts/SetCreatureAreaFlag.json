@@ -1,0 +1,263 @@
+{
+    "func_name": "SetCreatureAreaFlag",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"Black_Geoffrey\"",
+                    "used_count": 5,
+                    "value": "\"'Black_Geoffrey'\"",
+                    "first_occurence": "AR1003.10BLACK.None"
+                },
+                {
+                    "src": "\"Blanchard\"",
+                    "used_count": 5,
+                    "value": "\"'Blanchard'\"",
+                    "first_occurence": "AR1003.10BLACK.None"
+                },
+                {
+                    "src": "\"Kickshaw\"",
+                    "used_count": 5,
+                    "value": "\"'Kickshaw'\"",
+                    "first_occurence": "AR1003.10BLACK.None"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 316,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR1106.11PHAEN.Phaen_of_the_Rags"
+                },
+                {
+                    "src": "\"02_Assassin_01\"",
+                    "used_count": 1,
+                    "value": "\"'02_Assassin_01'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Bishop_02\"",
+                    "used_count": 1,
+                    "value": "\"'02_Bishop_02'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Mystic_03\"",
+                    "used_count": 1,
+                    "value": "\"'02_Mystic_03'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Warrior_04\"",
+                    "used_count": 1,
+                    "value": "\"'02_Warrior_04'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_05\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_05'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_06\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_06'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_07\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_07'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_08\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_08'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_09\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_09'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_10\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_10'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_11\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_11'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_12\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_12'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"02_Henchman_13\"",
+                    "used_count": 1,
+                    "value": "\"'02_Henchman_13'\"",
+                    "first_occurence": "AR4102.None.None"
+                },
+                {
+                    "src": "\"OriaEssence\"",
+                    "used_count": 3,
+                    "value": "\"'OriaEssence'\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "\"Izbelah\"",
+                    "used_count": 1,
+                    "value": "\"'Izbelah'\"",
+                    "first_occurence": "AR6100.None.None"
+                },
+                {
+                    "src": "\"Isair\"",
+                    "used_count": 1,
+                    "value": "\"'Isair'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Madae\"",
+                    "used_count": 1,
+                    "value": "\"'Madae'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Isair2\"",
+                    "used_count": 1,
+                    "value": "\"'Isair2'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Madae2\"",
+                    "used_count": 1,
+                    "value": "\"'Madae2'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Serak\"",
+                    "used_count": 1,
+                    "value": "\"'Serak'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Mourn\"",
+                    "used_count": 1,
+                    "value": "\"'Mourn'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Zilvar\"",
+                    "used_count": 1,
+                    "value": "\"'Zilvar'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Tilzen\"",
+                    "used_count": 1,
+                    "value": "\"'Tilzen'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Phaen\"",
+                    "used_count": 1,
+                    "value": "\"'Phaen'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Chimera\"",
+                    "used_count": 1,
+                    "value": "\"'Chimera'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"Buvai_deNaly\"",
+                    "used_count": 1,
+                    "value": "\"'Buvai_deNaly'\"",
+                    "first_occurence": "AR6305.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Flag",
+                "arg_ids": "CREAREFL",
+                "arg_line": "I:Flag*CREAREFL"
+            },
+            "values": [
+                {
+                    "src": "NO_TALK",
+                    "used_count": 33,
+                    "value": "\"NO_TALK\"",
+                    "first_occurence": "AR1003.10BLACK.None"
+                },
+                {
+                    "src": "IGNORE_AI_INHIBIT",
+                    "used_count": 72,
+                    "value": "\"IGNORE_AI_INHIBIT\"",
+                    "first_occurence": "AR1106.11PHAEN.Phaen_of_the_Rags"
+                },
+                {
+                    "src": "NON_THREATING_ENEMY",
+                    "used_count": 32,
+                    "value": "\"NON_THREATING_ENEMY\"",
+                    "first_occurence": "AR2000.DYNOKEG.T3_Dynokeg_1"
+                },
+                {
+                    "src": "IGNORE_RETURN_TO_START_POS",
+                    "used_count": 166,
+                    "value": "\"IGNORE_RETURN_TO_START_POS\"",
+                    "first_occurence": "AR3000.30ENNELI.Ennelia"
+                },
+                {
+                    "src": "INVULNERABLE",
+                    "used_count": 55,
+                    "value": "\"INVULNERABLE\"",
+                    "first_occurence": "AR4000.40DRUIDF.02_Female_Druid_29"
+                },
+                {
+                    "src": "HAS_SEEN_PARTY",
+                    "used_count": 1,
+                    "value": "\"HAS_SEEN_PARTY\"",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "BOOLEAN",
+                "arg_line": "I:Value*BOOLEAN"
+            },
+            "values": [
+                {
+                    "src": "TRUE",
+                    "used_count": 309,
+                    "value": "True",
+                    "first_occurence": "AR1003.10BLACK.None"
+                },
+                {
+                    "src": "FALSE",
+                    "used_count": 50,
+                    "value": "False",
+                    "first_occurence": "AR2000.DYNOKEG.T3_Dynokeg_1"
+                }
+            ]
+        }
+    ]
+}

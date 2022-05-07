@@ -1,0 +1,81 @@
+{
+    "func_name": "MarkObject",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 9,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "TenthNearestEnemyOf",
+                    "used_count": 1,
+                    "value": "self.iTenthNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                },
+                {
+                    "src": "NinthNearestEnemyOf",
+                    "used_count": 1,
+                    "value": "self.iNinthNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                },
+                {
+                    "src": "EigthNearestEnemyOf",
+                    "used_count": 1,
+                    "value": "self.iEigthNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                },
+                {
+                    "src": "SeventhNearestEnemyOf",
+                    "used_count": 1,
+                    "value": "self.iSeventhNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                },
+                {
+                    "src": "SixthNearestEnemyOf",
+                    "used_count": 1,
+                    "value": "self.iSixthNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                },
+                {
+                    "src": "FifthNearestEnemyOf",
+                    "used_count": 1,
+                    "value": "self.iFifthNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                },
+                {
+                    "src": "FourthNearestEnemyOf",
+                    "used_count": 1,
+                    "value": "self.iFourthNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                },
+                {
+                    "src": "ThirdNearestEnemyOf",
+                    "used_count": 1,
+                    "value": "self.iThirdNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                },
+                {
+                    "src": "SecondNearestEnemyOf",
+                    "used_count": 1,
+                    "value": "self.iSecondNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                },
+                {
+                    "src": "NearestEnemyOf",
+                    "used_count": 1,
+                    "value": "self.iNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR6500.65YQUOG.Yquog"
+                }
+            ]
+        }
+    ]
+}

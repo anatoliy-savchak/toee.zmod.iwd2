@@ -774,7 +774,17 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         fn = os.path.join(self.doc.exp_dir, 'Dialogs', dialog_name + '.json')
         dialog_dict = common.read_file_json(fn)
         self.dialog = produce_dialog.ProduceNPCDialog(dialog_name, self, dialog_dict, self.dialog_file)
-        self.dialog.produce()
+        self.dialog.produce(self.are_name, self.cre_name)
+        return
+
+    @classmethod
+    def scan_dialog(cls, doc, dialog_name: str, are_name: str, cre_name: str):
+        if not dialog_name or dialog_name == "None":
+            return
+        fn = os.path.join(doc.exp_dir, 'Dialogs', dialog_name + '.json')
+        if os.path.exists(fn):
+            dialog_dict = common.read_file_json(fn)
+            produce_dialog.ProduceNPCDialog.scan(doc, dialog_dict, are_name, cre_name)
         return
 
     def save(self):

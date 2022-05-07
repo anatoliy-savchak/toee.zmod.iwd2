@@ -1,0 +1,159 @@
+{
+    "func_name": "ChangeStat",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 33,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "Player1",
+                    "used_count": 3,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR6050.60MEZWAR.Spell_FX"
+                },
+                {
+                    "src": "Player2",
+                    "used_count": 3,
+                    "value": "\"Player2\"",
+                    "first_occurence": "AR6050.60MEZWAR.Spell_FX"
+                },
+                {
+                    "src": "Player3",
+                    "used_count": 3,
+                    "value": "\"Player3\"",
+                    "first_occurence": "AR6050.60MEZWAR.Spell_FX"
+                },
+                {
+                    "src": "Player4",
+                    "used_count": 3,
+                    "value": "\"Player4\"",
+                    "first_occurence": "AR6050.60MEZWAR.Spell_FX"
+                },
+                {
+                    "src": "Player5",
+                    "used_count": 3,
+                    "value": "\"Player5\"",
+                    "first_occurence": "AR6050.60MEZWAR.Spell_FX"
+                },
+                {
+                    "src": "Player6",
+                    "used_count": 3,
+                    "value": "\"Player6\"",
+                    "first_occurence": "AR6050.60MEZWAR.Spell_FX"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Stat",
+                "arg_ids": "Stats",
+                "arg_line": "I:Stat*Stats"
+            },
+            "values": [
+                {
+                    "src": "XP",
+                    "used_count": 12,
+                    "value": "\"XP\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "STR",
+                    "used_count": 21,
+                    "value": "\"STR\"",
+                    "first_occurence": "AR5300.53OINCHA.Oinchack'olp"
+                },
+                {
+                    "src": "MAXHITPOINTS",
+                    "used_count": 6,
+                    "value": "\"MAXHITPOINTS\"",
+                    "first_occurence": "AR6050.60MEZWAR.Spell_FX"
+                },
+                {
+                    "src": "RESISTACID",
+                    "used_count": 6,
+                    "value": "\"RESISTACID\"",
+                    "first_occurence": "AR6050.60MEZWAR.Spell_FX"
+                },
+                {
+                    "src": "RESISTPOISON",
+                    "used_count": 6,
+                    "value": "\"RESISTPOISON\"",
+                    "first_occurence": "AR6050.60MEZWAR.Spell_FX"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "",
+                "arg_line": "I:Value*"
+            },
+            "values": [
+                {
+                    "src": "3",
+                    "used_count": 12,
+                    "value": "3",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "10",
+                    "used_count": 14,
+                    "value": "10",
+                    "first_occurence": "AR5300.53OINCHA.Oinchack'olp"
+                },
+                {
+                    "src": "20",
+                    "used_count": 7,
+                    "value": "20",
+                    "first_occurence": "AR5300.53OINCHA.Oinchack'olp"
+                },
+                {
+                    "src": "12",
+                    "used_count": 6,
+                    "value": "12",
+                    "first_occurence": "AR6050.60MEZWAR.Spell_FX"
+                },
+                {
+                    "src": "5",
+                    "used_count": 12,
+                    "value": "5",
+                    "first_occurence": "AR6050.60MEZWAR.Spell_FX"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Modifier",
+                "arg_ids": "StatMod",
+                "arg_line": "I:Modifier*StatMod"
+            },
+            "values": [
+                {
+                    "src": "SET",
+                    "used_count": 33,
+                    "value": "\"SET\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "ADD",
+                    "used_count": 18,
+                    "value": "\"ADD\"",
+                    "first_occurence": "AR6050.60MEZWAR.Spell_FX"
+                }
+            ]
+        }
+    ]
+}

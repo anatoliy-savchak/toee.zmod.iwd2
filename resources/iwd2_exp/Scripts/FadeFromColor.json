@@ -1,0 +1,37 @@
+{
+    "func_name": "FadeFromColor",
+    "args": [
+        {
+            "def": {
+                "arg_type": "P",
+                "arg_name": "Point",
+                "arg_ids": "",
+                "arg_line": "P:Point*"
+            },
+            "values": [
+                {
+                    "src": "\"[0.0]\"",
+                    "used_count": 93,
+                    "value": "\"[0.0]\"",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Blue",
+                "arg_ids": "",
+                "arg_line": "I:Blue*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 93,
+                    "value": "0",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                }
+            ]
+        }
+    ]
+}

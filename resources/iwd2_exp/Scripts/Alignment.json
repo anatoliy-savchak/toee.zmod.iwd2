@@ -1,0 +1,37 @@
+{
+    "func_name": "Alignment",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 3,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Alignment",
+                "arg_ids": "ALIGNMNT",
+                "arg_line": "I:Alignment*ALIGNMNT"
+            },
+            "values": [
+                {
+                    "src": "MASK_EVIL",
+                    "used_count": 3,
+                    "value": "\"MASK_EVIL\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,755 @@
+{
+    "func_name": "SetGlobalTimer",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Name",
+                "arg_ids": "",
+                "arg_line": "S:Name*"
+            },
+            "values": [
+                {
+                    "src": "\"AR1001_Goblin\"",
+                    "used_count": 2,
+                    "value": "\"'AR1001_Goblin'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"OswaldPlateMail\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldPlateMail'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"OswaldFieldPlate\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldFieldPlate'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"OswaldFullPlate\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldFullPlate'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"OswaldWolfBoots\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldWolfBoots'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"OswaldWolfCloak\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldWolfCloak'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"OswaldWolfScarf\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldWolfScarf'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"OswaldWolfHat\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldWolfHat'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"OswaldWolfGloves\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldWolfGloves'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"OswaldYetiBoots\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldYetiBoots'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"OswaldYetiCloak\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldYetiCloak'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"OswaldYetiScarf\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldYetiScarf'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"OswaldYetiHat\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldYetiHat'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"OswaldYetiGloves\"",
+                    "used_count": 5,
+                    "value": "\"'OswaldYetiGloves'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"GARRADUN_CHANGED_TIMER\"",
+                    "used_count": 4,
+                    "value": "\"'GARRADUN_CHANGED_TIMER'\"",
+                    "first_occurence": "AR1103.None.None"
+                },
+                {
+                    "src": "\"Rage\"",
+                    "used_count": 79,
+                    "value": "\"'Rage'\"",
+                    "first_occurence": "AR2000.20ORCW3.T1_Orc_4"
+                },
+                {
+                    "src": "\"Captains_Team1_Timer\"",
+                    "used_count": 3,
+                    "value": "\"'Captains_Team1_Timer'\"",
+                    "first_occurence": "AR2102.21BUGCPT.Bugbear_Captain_1"
+                },
+                {
+                    "src": "\"Captains_Team2_Timer\"",
+                    "used_count": 3,
+                    "value": "\"'Captains_Team2_Timer'\"",
+                    "first_occurence": "AR2102.21BUGCPT.Bugbear_Captain_2"
+                },
+                {
+                    "src": "\"Captains_Team3_Timer\"",
+                    "used_count": 3,
+                    "value": "\"'Captains_Team3_Timer'\"",
+                    "first_occurence": "AR2102.21BUGCPT.Bugbear_Captain_3"
+                },
+                {
+                    "src": "\"Captains_Team4_Timer\"",
+                    "used_count": 3,
+                    "value": "\"'Captains_Team4_Timer'\"",
+                    "first_occurence": "AR2102.21BUGCPT.Bugbear_Captain_4"
+                },
+                {
+                    "src": "\"Captains_Team5_Timer\"",
+                    "used_count": 3,
+                    "value": "\"'Captains_Team5_Timer'\"",
+                    "first_occurence": "AR2102.21BUGCPT.Bugbear_Captain_5"
+                },
+                {
+                    "src": "\"WOLF_BREATH\"",
+                    "used_count": 52,
+                    "value": "\"'WOLF_BREATH'\"",
+                    "first_occurence": "AR3000.30WWLF.20_Winter_Wolf_1"
+                },
+                {
+                    "src": "\"40WerewolfTimer\"",
+                    "used_count": 60,
+                    "value": "\"'40WerewolfTimer'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"BuffTimer\"",
+                    "used_count": 18,
+                    "value": "\"'BuffTimer'\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "\"ReturnTimer\"",
+                    "used_count": 30,
+                    "value": "\"'ReturnTimer'\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "\"ZackFloatTimer\"",
+                    "used_count": 1,
+                    "value": "\"'ZackFloatTimer'\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "\"FearAura\"",
+                    "used_count": 3,
+                    "value": "\"'FearAura'\"",
+                    "first_occurence": "AR4100.41SHERI.Sherincal"
+                },
+                {
+                    "src": "\"BreathTimer\"",
+                    "used_count": 11,
+                    "value": "\"'BreathTimer'\"",
+                    "first_occurence": "AR4100.41REMHZQ.Remorhaz_Queen"
+                },
+                {
+                    "src": "\"41BelladonnaTimer\"",
+                    "used_count": 12,
+                    "value": "\"'41BelladonnaTimer'\"",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "\"RestTimer\"",
+                    "used_count": 2,
+                    "value": "\"'RestTimer'\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "\"AbishaiTimer\"",
+                    "used_count": 3,
+                    "value": "\"'AbishaiTimer'\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "\"SacrificeTimer1\"",
+                    "used_count": 2,
+                    "value": "\"'SacrificeTimer1'\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "\"SacrificeTimer2\"",
+                    "used_count": 2,
+                    "value": "\"'SacrificeTimer2'\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "\"SacrificeTimer3\"",
+                    "used_count": 2,
+                    "value": "\"'SacrificeTimer3'\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "\"SacrificeTimer4\"",
+                    "used_count": 2,
+                    "value": "\"'SacrificeTimer4'\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "\"SacrificeTimer5\"",
+                    "used_count": 2,
+                    "value": "\"'SacrificeTimer5'\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "\"CalmTimer\"",
+                    "used_count": 10,
+                    "value": "\"'CalmTimer'\"",
+                    "first_occurence": "AR4101.41ABISHW.02_White_Abishai_01"
+                },
+                {
+                    "src": "\"WalkTimer\"",
+                    "used_count": 21,
+                    "value": "\"'WalkTimer'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"DamageTimer\"",
+                    "used_count": 37,
+                    "value": "\"'DamageTimer'\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "\"BattleTimer\"",
+                    "used_count": 1,
+                    "value": "\"'BattleTimer'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"BattleWarningTimer\"",
+                    "used_count": 7,
+                    "value": "\"'BattleWarningTimer'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"DRAGON_BREATH\"",
+                    "used_count": 1,
+                    "value": "\"'DRAGON_BREATH'\"",
+                    "first_occurence": "AR5100.51DRAWY.02_51DRAWY_01"
+                },
+                {
+                    "src": "\"ARUMA_DOLON_TIMER\"",
+                    "used_count": 5,
+                    "value": "\"'ARUMA_DOLON_TIMER'\"",
+                    "first_occurence": "AR5201.52ARUMA.06_52Aruma_01"
+                },
+                {
+                    "src": "\"Vic_Fog\"",
+                    "used_count": 1,
+                    "value": "\"'Vic_Fog'\"",
+                    "first_occurence": "AR5301.53VICISC.Viciscamera"
+                },
+                {
+                    "src": "\"Mind_Fog_Timer\"",
+                    "used_count": 8,
+                    "value": "\"'Mind_Fog_Timer'\"",
+                    "first_occurence": "AR5302.53MGOLEM.MindGolem1"
+                },
+                {
+                    "src": "\"TimerPortalClose\"",
+                    "used_count": 5,
+                    "value": "\"'TimerPortalClose'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"Ritual_Pause_Timer\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Pause_Timer'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_00\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_00'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_01\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_01'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_02\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_02'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_03\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_03'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_04\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_04'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_05\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_05'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_06\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_06'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_07\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_07'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_08\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_08'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_09\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_09'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_10\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_10'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_11\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_11'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_12\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_12'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_13\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_13'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Ritual_Delay_14\"",
+                    "used_count": 1,
+                    "value": "\"'Ritual_Delay_14'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"CloudkillTimer\"",
+                    "used_count": 6,
+                    "value": "\"'CloudkillTimer'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"StinkingCloudTimer\"",
+                    "used_count": 6,
+                    "value": "\"'StinkingCloudTimer'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"WebTimer\"",
+                    "used_count": 6,
+                    "value": "\"'WebTimer'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"GreaseTimer\"",
+                    "used_count": 6,
+                    "value": "\"'GreaseTimer'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"PetrificationProtectionTimer\"",
+                    "used_count": 6,
+                    "value": "\"'PetrificationProtectionTimer'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"LocalEruptionTimer\"",
+                    "used_count": 13,
+                    "value": "\"'LocalEruptionTimer'\"",
+                    "first_occurence": "AR6101.None.None"
+                },
+                {
+                    "src": "\"TransformTimer\"",
+                    "used_count": 3,
+                    "value": "\"'TransformTimer'\"",
+                    "first_occurence": "AR6101.61NHEERO.Nheero"
+                },
+                {
+                    "src": "\"ResearchTimer\"",
+                    "used_count": 6,
+                    "value": "\"'ResearchTimer'\"",
+                    "first_occurence": "AR6101.61NHEERO.Nheero"
+                },
+                {
+                    "src": "\"CheckCureTimer\"",
+                    "used_count": 1,
+                    "value": "\"'CheckCureTimer'\"",
+                    "first_occurence": "AR6101.61PRISI2.04_SmartPrisoner_04"
+                },
+                {
+                    "src": "\"CheckDeadTimer\"",
+                    "used_count": 1,
+                    "value": "\"'CheckDeadTimer'\"",
+                    "first_occurence": "AR6101.61PRISI2.04_SmartPrisoner_04"
+                },
+                {
+                    "src": "\"HideTimer\"",
+                    "used_count": 26,
+                    "value": "\"'HideTimer'\"",
+                    "first_occurence": "AR6101.61YPBLAD.07_PurebloodThief_05"
+                },
+                {
+                    "src": "\"SummonerTimer\"",
+                    "used_count": 1,
+                    "value": "\"'SummonerTimer'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"EruptionTimer\"",
+                    "used_count": 1,
+                    "value": "\"'EruptionTimer'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"SpellShieldTimer\"",
+                    "used_count": 6,
+                    "value": "\"'SpellShieldTimer'\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "\"AttackTimer\"",
+                    "used_count": 8,
+                    "value": "\"'AttackTimer'\"",
+                    "first_occurence": "AR6104.61LOTHAR.Lothar4"
+                },
+                {
+                    "src": "\"SpellWaitTimer\"",
+                    "used_count": 15,
+                    "value": "\"'SpellWaitTimer'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "\"64FLEEDD_HIDE\"",
+                    "used_count": 5,
+                    "value": "\"'64FLEEDD_HIDE'\"",
+                    "first_occurence": "AR6401.64WEENA.Weenagoo"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Area",
+                "arg_ids": "",
+                "arg_line": "S:Area*"
+            },
+            "values": [
+                {
+                    "src": "\"GLOBAL\"",
+                    "used_count": 20,
+                    "value": "\"'GLOBAL'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"LOCALS\"",
+                    "used_count": 476,
+                    "value": "\"'LOCALS'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"MYAREA\"",
+                    "used_count": 99,
+                    "value": "\"'MYAREA'\"",
+                    "first_occurence": "AR1103.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Time",
+                "arg_ids": "GTimes",
+                "arg_line": "I:Time*GTimes"
+            },
+            "values": [
+                {
+                    "src": "15",
+                    "used_count": 5,
+                    "value": "15",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "7200",
+                    "used_count": 11,
+                    "value": "7200",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "14400",
+                    "used_count": 5,
+                    "value": "14400",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "21600",
+                    "used_count": 5,
+                    "value": "21600",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "3600",
+                    "used_count": 31,
+                    "value": "3600",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "2400",
+                    "used_count": 32,
+                    "value": "2400",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "1",
+                    "used_count": 10,
+                    "value": "1",
+                    "first_occurence": "AR1103.None.None"
+                },
+                {
+                    "src": "36",
+                    "used_count": 79,
+                    "value": "36",
+                    "first_occurence": "AR2000.20ORCW3.T1_Orc_4"
+                },
+                {
+                    "src": "35",
+                    "used_count": 21,
+                    "value": "35",
+                    "first_occurence": "AR2102.21BUGCPT.Bugbear_Captain_1"
+                },
+                {
+                    "src": "70",
+                    "used_count": 52,
+                    "value": "70",
+                    "first_occurence": "AR3000.30WWLF.20_Winter_Wolf_1"
+                },
+                {
+                    "src": "300",
+                    "used_count": 64,
+                    "value": "300",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "7",
+                    "used_count": 128,
+                    "value": "7",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "10",
+                    "used_count": 12,
+                    "value": "10",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "5",
+                    "used_count": 47,
+                    "value": "5",
+                    "first_occurence": "AR4100.41REMHZQ.Remorhaz_Queen"
+                },
+                {
+                    "src": "3",
+                    "used_count": 9,
+                    "value": "3",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "ONE_DAY",
+                    "used_count": 5,
+                    "value": "\"ONE_DAY\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "TWO_DAYS",
+                    "used_count": 1,
+                    "value": "\"TWO_DAYS\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "THREE_DAYS",
+                    "used_count": 1,
+                    "value": "\"THREE_DAYS\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "FOUR_DAYS",
+                    "used_count": 1,
+                    "value": "\"FOUR_DAYS\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "FIVE_DAYS",
+                    "used_count": 1,
+                    "value": "\"FIVE_DAYS\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "10800",
+                    "used_count": 1,
+                    "value": "10800",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "18000",
+                    "used_count": 1,
+                    "value": "18000",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "25200",
+                    "used_count": 1,
+                    "value": "25200",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "32400",
+                    "used_count": 1,
+                    "value": "32400",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "30",
+                    "used_count": 13,
+                    "value": "30",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "60",
+                    "used_count": 4,
+                    "value": "60",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "40",
+                    "used_count": 1,
+                    "value": "40",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "20",
+                    "used_count": 2,
+                    "value": "20",
+                    "first_occurence": "AR5100.51DRAWY.02_51DRAWY_01"
+                },
+                {
+                    "src": "105",
+                    "used_count": 1,
+                    "value": "105",
+                    "first_occurence": "AR5301.53VICISC.Viciscamera"
+                },
+                {
+                    "src": "360",
+                    "used_count": 1,
+                    "value": "360",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "2",
+                    "used_count": 1,
+                    "value": "2",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "66",
+                    "used_count": 18,
+                    "value": "66",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "100",
+                    "used_count": 6,
+                    "value": "100",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "168",
+                    "used_count": 6,
+                    "value": "168",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "1200",
+                    "used_count": 3,
+                    "value": "1200",
+                    "first_occurence": "AR6101.61NHEERO.Nheero"
+                },
+                {
+                    "src": "21",
+                    "used_count": 9,
+                    "value": "21",
+                    "first_occurence": "AR6104.61MEPLAV.04_LavaMephit_02"
+                },
+                {
+                    "src": "45",
+                    "used_count": 3,
+                    "value": "45",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "0",
+                    "used_count": 3,
+                    "value": "0",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                }
+            ]
+        }
+    ]
+}

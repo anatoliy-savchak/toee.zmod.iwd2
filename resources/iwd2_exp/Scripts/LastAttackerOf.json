@@ -1,0 +1,39 @@
+{
+    "func_name": "LastAttackerOf",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 247,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR2000.20DERETH.Dereth"
+                },
+                {
+                    "src": "\"B_S_C\"",
+                    "used_count": 3,
+                    "value": "\"'B_S_C'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"Wode_the_Guileful\"",
+                    "used_count": 1,
+                    "value": "\"'Wode_the_Guileful'\"",
+                    "first_occurence": "AR5300.53VALAS.Valas_Rrostarr"
+                },
+                {
+                    "src": "LastHeardBy",
+                    "used_count": 14,
+                    "value": "self.iLastHeardBy(\"Myself\")",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah1"
+                }
+            ]
+        }
+    ]
+}

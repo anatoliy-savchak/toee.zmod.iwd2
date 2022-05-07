@@ -1,0 +1,55 @@
+{
+    "func_name": "TakePartyItemNum",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Item",
+                "arg_ids": "",
+                "arg_line": "S:Item*"
+            },
+            "values": [
+                {
+                    "src": "\"00Potn04\"",
+                    "used_count": 3,
+                    "value": "\"'00Potn04'\"",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "\"00Potn55\"",
+                    "used_count": 3,
+                    "value": "\"'00Potn55'\"",
+                    "first_occurence": "AR1103.11VALIN.None"
+                },
+                {
+                    "src": "\"00Arow01\"",
+                    "used_count": 2,
+                    "value": "\"'00Arow01'\"",
+                    "first_occurence": "AR1200.12ISHER.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Num",
+                "arg_ids": null,
+                "arg_line": "I:Num"
+            },
+            "values": [
+                {
+                    "src": "1",
+                    "used_count": 6,
+                    "value": "1",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "300",
+                    "used_count": 2,
+                    "value": "300",
+                    "first_occurence": "AR1200.12ISHER.None"
+                }
+            ]
+        }
+    ]
+}

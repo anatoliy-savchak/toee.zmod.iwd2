@@ -1,0 +1,43 @@
+{
+    "func_name": "Gender",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Protagonist",
+                    "used_count": 14,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR1003.10GOHAR.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Sex",
+                "arg_ids": "Gender",
+                "arg_line": "I:Sex*Gender"
+            },
+            "values": [
+                {
+                    "src": "Female",
+                    "used_count": 6,
+                    "value": "\"Female\"",
+                    "first_occurence": "AR1003.10GOHAR.None"
+                },
+                {
+                    "src": "Male",
+                    "used_count": 8,
+                    "value": "\"Male\"",
+                    "first_occurence": "AR1003.10BLACK.None"
+                }
+            ]
+        }
+    ]
+}

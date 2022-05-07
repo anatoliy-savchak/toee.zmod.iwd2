@@ -1,0 +1,139 @@
+{
+    "func_name": "AttackedBy",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"[ENEMY.0.GOBLIN]\"",
+                    "used_count": 14,
+                    "value": "\"[ENEMY.0.GOBLIN]\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "\"[GOODCUTOFF]\"",
+                    "used_count": 3395,
+                    "value": "\"[GOODCUTOFF]\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                },
+                {
+                    "src": "NearestEnemyOf",
+                    "used_count": 13,
+                    "value": "self.iNearestEnemyOf(\"Myself\")",
+                    "first_occurence": "AR1004.10FIRTH.Firtha"
+                },
+                {
+                    "src": "\"[ENEMY]\"",
+                    "used_count": 39,
+                    "value": "\"[ENEMY]\"",
+                    "first_occurence": "AR1200.12NILES.Niles"
+                },
+                {
+                    "src": "\"[ANYONE]\"",
+                    "used_count": 105,
+                    "value": "\"[ANYONE]\"",
+                    "first_occurence": "AR2000.20ORCRUN.T9_Runner_1"
+                },
+                {
+                    "src": "\"[PC]\"",
+                    "used_count": 28,
+                    "value": "\"[PC]\"",
+                    "first_occurence": "AR3000.00HOB.02_Hob"
+                },
+                {
+                    "src": "\"[0.0.SPIDER]\"",
+                    "used_count": 90,
+                    "value": "\"[0.0.SPIDER]\"",
+                    "first_occurence": "AR3001.30GOBMOK.02_GobMok"
+                },
+                {
+                    "src": "\"[0.0.BUGBEAR]\"",
+                    "used_count": 6,
+                    "value": "\"[0.0.BUGBEAR]\"",
+                    "first_occurence": "AR3001.30SPIWO.05_SpiWo_01"
+                },
+                {
+                    "src": "\"[0.0.GOBLIN]\"",
+                    "used_count": 6,
+                    "value": "\"[0.0.GOBLIN]\"",
+                    "first_occurence": "AR3001.30SPIWO.05_SpiWo_01"
+                },
+                {
+                    "src": "\"[0.0.WOLF]\"",
+                    "used_count": 6,
+                    "value": "\"[0.0.WOLF]\"",
+                    "first_occurence": "AR3001.30SPIWO.05_SpiWo_01"
+                },
+                {
+                    "src": "\"[0.0.ORC]\"",
+                    "used_count": 6,
+                    "value": "\"[0.0.ORC]\"",
+                    "first_occurence": "AR3001.30SPIWO.05_SpiWo_01"
+                },
+                {
+                    "src": "\"03_Oty_01\"",
+                    "used_count": 93,
+                    "value": "\"'03_Oty_01'\"",
+                    "first_occurence": "AR3002.30OROPUS.01_OroPus"
+                },
+                {
+                    "src": "\"03_Oty_02\"",
+                    "used_count": 93,
+                    "value": "\"'03_Oty_02'\"",
+                    "first_occurence": "AR3002.30OROPUS.01_OroPus"
+                },
+                {
+                    "src": "\"[ENEMY.0.BEETLE]\"",
+                    "used_count": 93,
+                    "value": "\"[ENEMY.0.BEETLE]\"",
+                    "first_occurence": "AR3002.30OROPUS.01_OroPus"
+                },
+                {
+                    "src": "\"[ANYTHING]\"",
+                    "used_count": 15,
+                    "value": "\"[ANYTHING]\"",
+                    "first_occurence": "AR4101.41NATE.Nathaniel"
+                },
+                {
+                    "src": "\"12_51SPE_01\"",
+                    "used_count": 66,
+                    "value": "\"'12_51SPE_01'\"",
+                    "first_occurence": "AR5101.51DARGAB.11_51Dargab_01"
+                },
+                {
+                    "src": "\"[GOODCUTOFF.0.0.0.150]\"",
+                    "used_count": 2,
+                    "value": "\"[GOODCUTOFF.0.0.0.150]\"",
+                    "first_occurence": "AR5201.52DOLON.06_52Dolon_02"
+                },
+                {
+                    "src": "\"[0.0.YUANTI]\"",
+                    "used_count": 14,
+                    "value": "\"[0.0.YUANTI]\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah1"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Style",
+                "arg_ids": "ATTSTYLE",
+                "arg_line": "I:Style*ATTSTYLE"
+            },
+            "values": [
+                {
+                    "src": "DEFAULT",
+                    "used_count": 4084,
+                    "value": "\"DEFAULT\"",
+                    "first_occurence": "AR1000.10REIG.Reig"
+                }
+            ]
+        }
+    ]
+}

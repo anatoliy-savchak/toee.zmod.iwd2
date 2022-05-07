@@ -1,0 +1,49 @@
+{
+    "func_name": "AttackReevaluate",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 533,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR1000.10GOBAR.1000_Goblin_Archer_01"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "ReevaluationPeriod",
+                "arg_ids": "",
+                "arg_line": "I:ReevaluationPeriod*"
+            },
+            "values": [
+                {
+                    "src": "45",
+                    "used_count": 527,
+                    "value": "45",
+                    "first_occurence": "AR1000.10GOBAR.1000_Goblin_Archer_01"
+                },
+                {
+                    "src": "210",
+                    "used_count": 1,
+                    "value": "210",
+                    "first_occurence": "AR5000.50GNTFO.01_50GNTFO_01"
+                },
+                {
+                    "src": "180",
+                    "used_count": 5,
+                    "value": "180",
+                    "first_occurence": "AR5030.50WIL.01_50WIL_01"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "func_name": "WaitRandom",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "MinTime",
+                "arg_ids": "",
+                "arg_line": "I:MinTime*"
+            },
+            "values": [
+                {
+                    "src": "3",
+                    "used_count": 14,
+                    "value": "3",
+                    "first_occurence": "AR1200.12TRAINE.Trainee_1_S"
+                },
+                {
+                    "src": "1",
+                    "used_count": 78,
+                    "value": "1",
+                    "first_occurence": "AR3002.30OTY.03_Oty_01"
+                },
+                {
+                    "src": "2",
+                    "used_count": 27,
+                    "value": "2",
+                    "first_occurence": "AR6301.63MW3.Worker03"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "MaxTime",
+                "arg_ids": "",
+                "arg_line": "I:MaxTime*"
+            },
+            "values": [
+                {
+                    "src": "5",
+                    "used_count": 34,
+                    "value": "5",
+                    "first_occurence": "AR1200.12TRAINE.Trainee_1_S"
+                },
+                {
+                    "src": "3",
+                    "used_count": 11,
+                    "value": "3",
+                    "first_occurence": "AR3002.30OTY.03_Oty_01"
+                },
+                {
+                    "src": "2",
+                    "used_count": 30,
+                    "value": "2",
+                    "first_occurence": "AR3002.30ORCWA.04_OrcWa_01"
+                },
+                {
+                    "src": "30",
+                    "used_count": 36,
+                    "value": "30",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "10",
+                    "used_count": 1,
+                    "value": "10",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "6",
+                    "used_count": 7,
+                    "value": "6",
+                    "first_occurence": "AR6051.60CCABAL.Coiled_Cabal1"
+                }
+            ]
+        }
+    ]
+}

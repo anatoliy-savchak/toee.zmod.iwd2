@@ -1,0 +1,77 @@
+{
+    "func_name": "LevelInClassGT",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 235,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Level",
+                "arg_ids": null,
+                "arg_line": "I:Level"
+            },
+            "values": [
+                {
+                    "src": "3",
+                    "used_count": 235,
+                    "value": "3",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Class",
+                "arg_ids": "Class",
+                "arg_line": "I:Class*Class"
+            },
+            "values": [
+                {
+                    "src": "BARD",
+                    "used_count": 47,
+                    "value": "\"BARD\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                },
+                {
+                    "src": "CLERIC",
+                    "used_count": 47,
+                    "value": "\"CLERIC\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                },
+                {
+                    "src": "DRUID",
+                    "used_count": 47,
+                    "value": "\"DRUID\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                },
+                {
+                    "src": "SORCERER",
+                    "used_count": 47,
+                    "value": "\"SORCERER\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                },
+                {
+                    "src": "MAGE",
+                    "used_count": 47,
+                    "value": "\"MAGE\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                }
+            ]
+        }
+    ]
+}

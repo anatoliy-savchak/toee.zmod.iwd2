@@ -1,0 +1,85 @@
+{
+    "func_name": "MoveViewObject",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 1,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4001.40OSWALD.Oswald"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 1,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4001.40OSWALD.Oswald"
+                },
+                {
+                    "src": "Player1",
+                    "used_count": 1,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR5202.52MOROHE.01_52Morohe_01"
+                },
+                {
+                    "src": "Player2",
+                    "used_count": 1,
+                    "value": "\"Player2\"",
+                    "first_occurence": "AR5202.52MOROHE.01_52Morohe_01"
+                },
+                {
+                    "src": "Player3",
+                    "used_count": 1,
+                    "value": "\"Player3\"",
+                    "first_occurence": "AR5202.52MOROHE.01_52Morohe_01"
+                },
+                {
+                    "src": "Player4",
+                    "used_count": 1,
+                    "value": "\"Player4\"",
+                    "first_occurence": "AR5202.52MOROHE.01_52Morohe_01"
+                },
+                {
+                    "src": "Player5",
+                    "used_count": 1,
+                    "value": "\"Player5\"",
+                    "first_occurence": "AR5202.52MOROHE.01_52Morohe_01"
+                },
+                {
+                    "src": "Player6",
+                    "used_count": 1,
+                    "value": "\"Player6\"",
+                    "first_occurence": "AR5202.52MOROHE.01_52Morohe_01"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "ScrollSpeed",
+                "arg_ids": "Scroll",
+                "arg_line": "I:ScrollSpeed*Scroll"
+            },
+            "values": [
+                {
+                    "src": "FASTEST",
+                    "used_count": 2,
+                    "value": "\"FASTEST\"",
+                    "first_occurence": "AR4001.40OSWALD.Oswald"
+                },
+                {
+                    "src": "INSTANT",
+                    "used_count": 6,
+                    "value": "\"INSTANT\"",
+                    "first_occurence": "AR5202.52MOROHE.01_52Morohe_01"
+                }
+            ]
+        }
+    ]
+}

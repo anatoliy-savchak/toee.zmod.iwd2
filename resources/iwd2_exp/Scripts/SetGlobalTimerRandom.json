@@ -1,0 +1,231 @@
+{
+    "func_name": "SetGlobalTimerRandom",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Name",
+                "arg_ids": "",
+                "arg_line": "S:Name*"
+            },
+            "values": [
+                {
+                    "src": "\"WORG_SPAWN_TIMER\"",
+                    "used_count": 3,
+                    "value": "\"'WORG_SPAWN_TIMER'\"",
+                    "first_occurence": "AR3000.None.None"
+                },
+                {
+                    "src": "\"TEAM_SLEEP_1_SNORE\"",
+                    "used_count": 15,
+                    "value": "\"'TEAM_SLEEP_1_SNORE'\"",
+                    "first_occurence": "AR3001.30GOBS.02_SGob_02"
+                },
+                {
+                    "src": "\"TEAM_SLEEP_2_SNORE\"",
+                    "used_count": 2,
+                    "value": "\"'TEAM_SLEEP_2_SNORE'\"",
+                    "first_occurence": "AR3001.30ORCARS.03_SOrcAr_03"
+                },
+                {
+                    "src": "\"TEAM_SLEEP_3_SNORE\"",
+                    "used_count": 3,
+                    "value": "\"'TEAM_SLEEP_3_SNORE'\"",
+                    "first_occurence": "AR3001.30WOLWOS.04_SWolWor_01"
+                },
+                {
+                    "src": "\"TEAM_SLEEP_4_SNORE\"",
+                    "used_count": 3,
+                    "value": "\"'TEAM_SLEEP_4_SNORE'\"",
+                    "first_occurence": "AR3002.30ORCARS.01_SOrcAr_01"
+                },
+                {
+                    "src": "\"TEAM_SLEEP_5_SNORE\"",
+                    "used_count": 6,
+                    "value": "\"'TEAM_SLEEP_5_SNORE'\"",
+                    "first_occurence": "AR3002.30OROBLS.02_SOro_01"
+                },
+                {
+                    "src": "\"TEAM_SLEEP_6_SNORE\"",
+                    "used_count": 2,
+                    "value": "\"'TEAM_SLEEP_6_SNORE'\"",
+                    "first_occurence": "AR3002.30OGRS.07_SOgr_01"
+                },
+                {
+                    "src": "\"41BeetleTimer\"",
+                    "used_count": 1,
+                    "value": "\"'41BeetleTimer'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"CastTimer\"",
+                    "used_count": 29,
+                    "value": "\"'CastTimer'\"",
+                    "first_occurence": "AR4101.41XHAAN.Xhaan"
+                },
+                {
+                    "src": "\"CARITA_LEEVI_TIMER\"",
+                    "used_count": 2,
+                    "value": "\"'CARITA_LEEVI_TIMER'\"",
+                    "first_occurence": "AR5000.50CARITA.05_50Carita_05"
+                },
+                {
+                    "src": "\"DUERGAR_BEEP\"",
+                    "used_count": 66,
+                    "value": "\"'DUERGAR_BEEP'\"",
+                    "first_occurence": "AR5101.51DARGAB.11_51Dargab_01"
+                },
+                {
+                    "src": "\"BANISH_TIMER\"",
+                    "used_count": 1,
+                    "value": "\"'BANISH_TIMER'\"",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
+                    "src": "\"Screenshake\"",
+                    "used_count": 1,
+                    "value": "\"'Screenshake'\"",
+                    "first_occurence": "AR6305.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Area",
+                "arg_ids": "",
+                "arg_line": "S:Area*"
+            },
+            "values": [
+                {
+                    "src": "\"MYAREA\"",
+                    "used_count": 104,
+                    "value": "\"'MYAREA'\"",
+                    "first_occurence": "AR3000.None.None"
+                },
+                {
+                    "src": "\"LOCALS\"",
+                    "used_count": 30,
+                    "value": "\"'LOCALS'\"",
+                    "first_occurence": "AR4101.41XHAAN.Xhaan"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Min",
+                "arg_ids": "",
+                "arg_line": "I:Min*"
+            },
+            "values": [
+                {
+                    "src": "45",
+                    "used_count": 3,
+                    "value": "45",
+                    "first_occurence": "AR3000.None.None"
+                },
+                {
+                    "src": "2",
+                    "used_count": 31,
+                    "value": "2",
+                    "first_occurence": "AR3001.30GOBS.02_SGob_02"
+                },
+                {
+                    "src": "10",
+                    "used_count": 1,
+                    "value": "10",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "7",
+                    "used_count": 18,
+                    "value": "7",
+                    "first_occurence": "AR4101.41XHAAN.Xhaan"
+                },
+                {
+                    "src": "1",
+                    "used_count": 77,
+                    "value": "1",
+                    "first_occurence": "AR4101.41XHAAN.Xhaan"
+                },
+                {
+                    "src": "15",
+                    "used_count": 2,
+                    "value": "15",
+                    "first_occurence": "AR5000.50CARITA.05_50Carita_05"
+                },
+                {
+                    "src": "6",
+                    "used_count": 1,
+                    "value": "6",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
+                    "src": "5",
+                    "used_count": 1,
+                    "value": "5",
+                    "first_occurence": "AR6305.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Max",
+                "arg_ids": "",
+                "arg_line": "I:Max*"
+            },
+            "values": [
+                {
+                    "src": "60",
+                    "used_count": 3,
+                    "value": "60",
+                    "first_occurence": "AR3000.None.None"
+                },
+                {
+                    "src": "7",
+                    "used_count": 31,
+                    "value": "7",
+                    "first_occurence": "AR3001.30GOBS.02_SGob_02"
+                },
+                {
+                    "src": "30",
+                    "used_count": 1,
+                    "value": "30",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "21",
+                    "used_count": 18,
+                    "value": "21",
+                    "first_occurence": "AR4101.41XHAAN.Xhaan"
+                },
+                {
+                    "src": "20",
+                    "used_count": 13,
+                    "value": "20",
+                    "first_occurence": "AR4101.41XHAAN.Xhaan"
+                },
+                {
+                    "src": "5",
+                    "used_count": 66,
+                    "value": "5",
+                    "first_occurence": "AR5101.51DARGAB.11_51Dargab_01"
+                },
+                {
+                    "src": "18",
+                    "used_count": 1,
+                    "value": "18",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
+                    "src": "10",
+                    "used_count": 1,
+                    "value": "10",
+                    "first_occurence": "AR6305.None.None"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "func_name": "HPLost",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 15,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4101.41ABISHW.02_White_Abishai_01"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Hit Points",
+                "arg_ids": "",
+                "arg_line": "I:Hit Points*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 15,
+                    "value": "0",
+                    "first_occurence": "AR4101.41ABISHW.02_White_Abishai_01"
+                }
+            ]
+        }
+    ]
+}

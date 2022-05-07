@@ -1,0 +1,57 @@
+{
+    "func_name": "Polymorph",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "AnimationType",
+                "arg_ids": "Animate",
+                "arg_line": "I:AnimationType*Animate"
+            },
+            "values": [
+                {
+                    "src": "\"\"\"Werewolf, Greater\"",
+                    "used_count": 1,
+                    "value": "\"'\"\"Werewolf, Greater'\"",
+                    "first_occurence": "AR4000.40BDAWN.Beodaewn"
+                },
+                {
+                    "src": "MAGE_MALE_HUMAN",
+                    "used_count": 20,
+                    "value": "\"MAGE_MALE_HUMAN\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "CLERIC_FEMALE_ELF",
+                    "used_count": 3,
+                    "value": "\"CLERIC_FEMALE_ELF\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "CLERIC_MALE_HALFLING",
+                    "used_count": 1,
+                    "value": "\"CLERIC_MALE_HALFLING\"",
+                    "first_occurence": "AR4001.40OSWALD.Oswald"
+                },
+                {
+                    "src": "\"\"\"Mummy, Histachii\"",
+                    "used_count": 3,
+                    "value": "\"'\"\"Mummy, Histachii'\"",
+                    "first_occurence": "AR6101.61NHEERO.Nheero"
+                },
+                {
+                    "src": "\"\"\"Skeleton, Tattered\"",
+                    "used_count": 1,
+                    "value": "\"'\"\"Skeleton, Tattered'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "Rakshasa",
+                    "used_count": 1,
+                    "value": "\"Rakshasa\"",
+                    "first_occurence": "AR6102.61RAKSHA.Rakshasa"
+                }
+            ]
+        }
+    ]
+}

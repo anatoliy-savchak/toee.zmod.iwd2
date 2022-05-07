@@ -1,4 +1,4 @@
-from types import SimpleNamespace
+import common
 
 class InfCommands:
     def __init__(self):
@@ -31,10 +31,10 @@ class InfCommands:
                 for arg_line in sline.split(","):
                     arg_type, rest = arg_line.split(":", 1)
                     arg_name, arg_ids = rest.split("*", 1) if "*" in rest else (rest, None)
-                    arg_info = SimpleNamespace(arg_type = arg_type, arg_name = arg_name, arg_ids = arg_ids, arg_line = arg_line)
+                    arg_info = common.tDict(arg_type = arg_type, arg_name = arg_name, arg_ids = arg_ids, arg_line = arg_line)
                     args.append(arg_info)
 
-            info = SimpleNamespace(func_name = func_name, args = args, line = line)
+            info = common.tDict(func_name = func_name, args = args, line = line)
             result.append(info)
         return result
 

@@ -1,0 +1,83 @@
+{
+    "func_name": "CheckStat",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 303,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "",
+                "arg_line": "I:Value*"
+            },
+            "values": [
+                {
+                    "src": "1",
+                    "used_count": 72,
+                    "value": "1",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "3",
+                    "used_count": 12,
+                    "value": "3",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "0",
+                    "used_count": 204,
+                    "value": "0",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "20",
+                    "used_count": 15,
+                    "value": "20",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "StatNum",
+                "arg_ids": "Stats",
+                "arg_line": "I:StatNum*Stats"
+            },
+            "values": [
+                {
+                    "src": "XP",
+                    "used_count": 276,
+                    "value": "\"XP\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "SEEINVISIBLE",
+                    "used_count": 12,
+                    "value": "\"SEEINVISIBLE\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "CLASSLEVELSUM",
+                    "used_count": 15,
+                    "value": "\"CLASSLEVELSUM\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                }
+            ]
+        }
+    ]
+}

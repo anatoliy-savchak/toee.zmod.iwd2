@@ -1,0 +1,113 @@
+{
+    "func_name": "CheckStatGT",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 255,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "Protagonist",
+                    "used_count": 3,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR5000.50PAIRI.None"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 2,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Value",
+                "arg_ids": "",
+                "arg_line": "I:Value*"
+            },
+            "values": [
+                {
+                    "src": "3",
+                    "used_count": 85,
+                    "value": "3",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "7",
+                    "used_count": 85,
+                    "value": "7",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "11",
+                    "used_count": 85,
+                    "value": "11",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "15",
+                    "used_count": 3,
+                    "value": "15",
+                    "first_occurence": "AR5000.50PAIRI.None"
+                },
+                {
+                    "src": "22",
+                    "used_count": 1,
+                    "value": "22",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "1",
+                    "used_count": 1,
+                    "value": "1",
+                    "first_occurence": "AR6103.61GRISHU.SsethEye"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "StatNum",
+                "arg_ids": "Stats",
+                "arg_line": "I:StatNum*Stats"
+            },
+            "values": [
+                {
+                    "src": "CLASSLEVELSUM",
+                    "used_count": 255,
+                    "value": "\"CLASSLEVELSUM\"",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "CHR",
+                    "used_count": 3,
+                    "value": "\"CHR\"",
+                    "first_occurence": "AR5000.50PAIRI.None"
+                },
+                {
+                    "src": "RESISTMAGIC",
+                    "used_count": 1,
+                    "value": "\"RESISTMAGIC\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "ENCUMBERANCE",
+                    "used_count": 1,
+                    "value": "\"ENCUMBERANCE\"",
+                    "first_occurence": "AR6103.61GRISHU.SsethEye"
+                }
+            ]
+        }
+    ]
+}

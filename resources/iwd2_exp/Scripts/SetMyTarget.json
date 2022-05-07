@@ -1,0 +1,153 @@
+{
+    "func_name": "SetMyTarget",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 227,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR2000.20ORCFIR.T9_Firestarter_1"
+                },
+                {
+                    "src": "LastHeardBy",
+                    "used_count": 96,
+                    "value": "\"LastHeardBy\"",
+                    "first_occurence": "AR3001.30GOBSH1.04_GobSh"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 113,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 15,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "\"Cathin\"",
+                    "used_count": 1,
+                    "value": "\"'Cathin'\"",
+                    "first_occurence": "AR4101.41ONDABO.Ondabo"
+                },
+                {
+                    "src": "\"Lysara\"",
+                    "used_count": 1,
+                    "value": "\"'Lysara'\"",
+                    "first_occurence": "AR4101.41ONDABO.Ondabo"
+                },
+                {
+                    "src": "\"01_Barbarian_Shaman_13\"",
+                    "used_count": 1,
+                    "value": "\"'01_Barbarian_Shaman_13'\"",
+                    "first_occurence": "AR4101.41ONDABO.Ondabo"
+                },
+                {
+                    "src": "\"04_Prisoner_01\"",
+                    "used_count": 3,
+                    "value": "\"'04_Prisoner_01'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"04_Prisoner_02\"",
+                    "used_count": 3,
+                    "value": "\"'04_Prisoner_02'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"04_Prisoner_03\"",
+                    "used_count": 3,
+                    "value": "\"'04_Prisoner_03'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"04_Prisoner_04\"",
+                    "used_count": 3,
+                    "value": "\"'04_Prisoner_04'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"04_Prisoner_05\"",
+                    "used_count": 3,
+                    "value": "\"'04_Prisoner_05'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"Nathaniel\"",
+                    "used_count": 3,
+                    "value": "\"'Nathaniel'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"04_Prisoner_06\"",
+                    "used_count": 3,
+                    "value": "\"'04_Prisoner_06'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "NearestPC",
+                    "used_count": 1,
+                    "value": "\"NearestPC\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "Player1",
+                    "used_count": 2,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "Player2",
+                    "used_count": 2,
+                    "value": "\"Player2\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "Player3",
+                    "used_count": 2,
+                    "value": "\"Player3\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "Player4",
+                    "used_count": 2,
+                    "value": "\"Player4\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "Player5",
+                    "used_count": 2,
+                    "value": "\"Player5\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "Player6",
+                    "used_count": 2,
+                    "value": "\"Player6\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 12,
+                    "value": "self.iLastAttackerOf(\"Myself\")",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "Protagonist",
+                    "used_count": 1,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                }
+            ]
+        }
+    ]
+}

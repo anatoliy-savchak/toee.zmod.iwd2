@@ -1,0 +1,21 @@
+{
+    "func_name": "IncrementChapter",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "RESREF",
+                "arg_ids": "",
+                "arg_line": "S:RESREF*"
+            },
+            "values": [
+                {
+                    "src": "\"\"",
+                    "used_count": 2,
+                    "value": "\"''\"",
+                    "first_occurence": "AR1000.None.None"
+                }
+            ]
+        }
+    ]
+}

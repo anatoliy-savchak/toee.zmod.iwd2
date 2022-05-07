@@ -1,0 +1,247 @@
+{
+    "func_name": "ReallyForceSpell",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": null,
+                "arg_line": "O:Target"
+            },
+            "values": [
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 1,
+                    "value": "self.iLastAttackerOf(\"Myself\")",
+                    "first_occurence": "AR4100.41REMHZQ.Remorhaz_Queen"
+                },
+                {
+                    "src": "LastMarkedObject",
+                    "used_count": 42,
+                    "value": "\"LastMarkedObject\"",
+                    "first_occurence": "AR4100.41REMHZQ.Remorhaz_Queen"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 71,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "Protagonist",
+                    "used_count": 1,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "LastSeenBy",
+                    "used_count": 6,
+                    "value": "self.iLastSeenBy(\"Myself\")",
+                    "first_occurence": "AR5302.53LIGGEN.Lightning_Gens1"
+                },
+                {
+                    "src": "\"Jasper5\"",
+                    "used_count": 1,
+                    "value": "\"'Jasper5'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"EmbassyShelf\"",
+                    "used_count": 1,
+                    "value": "\"'EmbassyShelf'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"61Embassy\"",
+                    "used_count": 2,
+                    "value": "\"'61Embassy'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Spell",
+                "arg_ids": "Spell",
+                "arg_line": "I:Spell*Spell"
+            },
+            "values": [
+                {
+                    "src": "CLERIC_SOLS_SEARING_ORB",
+                    "used_count": 2,
+                    "value": "\"CLERIC_SOLS_SEARING_ORB\"",
+                    "first_occurence": "AR4100.41REMHZQ.Remorhaz_Queen"
+                },
+                {
+                    "src": "2091",
+                    "used_count": 3,
+                    "value": "2091",
+                    "first_occurence": "AR4102.41ORIA.Oria"
+                },
+                {
+                    "src": "WIZARD_CHAIN_LIGHTNING",
+                    "used_count": 1,
+                    "value": "\"WIZARD_CHAIN_LIGHTNING\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "CLERIC_WHIRLWIND",
+                    "used_count": 1,
+                    "value": "\"CLERIC_WHIRLWIND\"",
+                    "first_occurence": "AR4102.41ALTAR.CagedFury"
+                },
+                {
+                    "src": "INNATE_DRIDER_WEB",
+                    "used_count": 15,
+                    "value": "\"INNATE_DRIDER_WEB\"",
+                    "first_occurence": "AR5300.53NADAL.Nadal"
+                },
+                {
+                    "src": "WIZARD_ACID_FOG",
+                    "used_count": 1,
+                    "value": "\"WIZARD_ACID_FOG\"",
+                    "first_occurence": "AR5301.53VICISC.Viciscamera"
+                },
+                {
+                    "src": "INNATE_MIND_FOG",
+                    "used_count": 4,
+                    "value": "\"INNATE_MIND_FOG\"",
+                    "first_occurence": "AR5302.53MGOLEM.MindGolem1"
+                },
+                {
+                    "src": "WIZARD_LIGHTNING_BOLT",
+                    "used_count": 6,
+                    "value": "\"WIZARD_LIGHTNING_BOLT\"",
+                    "first_occurence": "AR5302.53LIGGEN.Lightning_Gens1"
+                },
+                {
+                    "src": "INNATE_HARPY_WAIL",
+                    "used_count": 11,
+                    "value": "\"INNATE_HARPY_WAIL\"",
+                    "first_occurence": "AR5303.53HARPY.Harpy1"
+                },
+                {
+                    "src": "INNATE_ANIMAL_AFFINITY",
+                    "used_count": 2,
+                    "value": "\"INNATE_ANIMAL_AFFINITY\"",
+                    "first_occurence": "AR6051.60PBFIGT.Ritual_Pureblood_Fighter_01"
+                },
+                {
+                    "src": "INNATE_CHAMELEON_POWER",
+                    "used_count": 2,
+                    "value": "\"INNATE_CHAMELEON_POWER\"",
+                    "first_occurence": "AR6051.60PBFIGT.Ritual_Pureblood_Fighter_01"
+                },
+                {
+                    "src": "INNATE_COAT_WEAPON_WITH_POISON",
+                    "used_count": 10,
+                    "value": "\"INNATE_COAT_WEAPON_WITH_POISON\"",
+                    "first_occurence": "AR6051.60VIFANG.Viper_Fang1"
+                },
+                {
+                    "src": "INNATE_SALAMANDER_AURA_FROST",
+                    "used_count": 19,
+                    "value": "\"INNATE_SALAMANDER_AURA_FROST\"",
+                    "first_occurence": "AR6100.61SALFRO.Frost_Salamander_01"
+                },
+                {
+                    "src": "INNATE_STUNNING_BLOW",
+                    "used_count": 1,
+                    "value": "\"INNATE_STUNNING_BLOW\"",
+                    "first_occurence": "AR6101.61PRISF2.04_FemalePrisoner_07"
+                },
+                {
+                    "src": "INNATE_QUIVERING_PALM",
+                    "used_count": 1,
+                    "value": "\"INNATE_QUIVERING_PALM\"",
+                    "first_occurence": "AR6101.61PRISF2.04_FemalePrisoner_07"
+                },
+                {
+                    "src": "WIZARD_SUMMON_MONSTER_IX",
+                    "used_count": 1,
+                    "value": "\"WIZARD_SUMMON_MONSTER_IX\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "WIZARD_ANIMATE_DEAD",
+                    "used_count": 3,
+                    "value": "\"WIZARD_ANIMATE_DEAD\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "2089",
+                    "used_count": 9,
+                    "value": "2089",
+                    "first_occurence": "AR6104.61MEPLAV.04_LavaMephit_02"
+                },
+                {
+                    "src": "WIZARD_BLINDNESS",
+                    "used_count": 9,
+                    "value": "\"WIZARD_BLINDNESS\"",
+                    "first_occurence": "AR6104.61MEPLAV.04_LavaMephit_02"
+                },
+                {
+                    "src": "WIZARD_FIREBALL",
+                    "used_count": 8,
+                    "value": "\"WIZARD_FIREBALL\"",
+                    "first_occurence": "AR6104.61LOTHAR.Lothar4"
+                },
+                {
+                    "src": "INNATE_ZOMBIE_LORD_AURA",
+                    "used_count": 4,
+                    "value": "\"INNATE_ZOMBIE_LORD_AURA\"",
+                    "first_occurence": "AR6200.62FDND2.FesteringDrownedDe02"
+                },
+                {
+                    "src": "WIZARD_AEGIS",
+                    "used_count": 1,
+                    "value": "\"WIZARD_AEGIS\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "WIZARD_SEVEN_EYES",
+                    "used_count": 1,
+                    "value": "\"WIZARD_SEVEN_EYES\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "WIZARD_FIRESHIELD_BLUE",
+                    "used_count": 1,
+                    "value": "\"WIZARD_FIRESHIELD_BLUE\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "CLERIC_DIVINE_SHELL",
+                    "used_count": 1,
+                    "value": "\"CLERIC_DIVINE_SHELL\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "CLERIC_IRON_SKINS",
+                    "used_count": 1,
+                    "value": "\"CLERIC_IRON_SKINS\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "CLERIC_CLOAK_OF_FEAR",
+                    "used_count": 1,
+                    "value": "\"CLERIC_CLOAK_OF_FEAR\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "WIZARD_ELEMENTAL_BARRIER",
+                    "used_count": 1,
+                    "value": "\"WIZARD_ELEMENTAL_BARRIER\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "WIZARD_DIMENSION_DOOR",
+                    "used_count": 5,
+                    "value": "\"WIZARD_DIMENSION_DOOR\"",
+                    "first_occurence": "AR6401.64WEENA.Weenagoo"
+                }
+            ]
+        }
+    ]
+}

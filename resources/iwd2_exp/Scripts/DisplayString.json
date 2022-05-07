@@ -1,0 +1,109 @@
+{
+    "func_name": "DisplayString",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"Yurst\"",
+                    "used_count": 1,
+                    "value": "\"'Yurst'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"Malavon_Despana\"",
+                    "used_count": 1,
+                    "value": "\"'Malavon_Despana'\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "Myself",
+                    "used_count": 52,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR6101.61YPBLAD.07_PurebloodThief_05"
+                },
+                {
+                    "src": "\"61Embassy\"",
+                    "used_count": 6,
+                    "value": "\"'61Embassy'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Palace\"",
+                    "used_count": 6,
+                    "value": "\"'61Palace'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Citadel\"",
+                    "used_count": 6,
+                    "value": "\"'61Citadel'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Amphitheatre\"",
+                    "used_count": 6,
+                    "value": "\"'61Amphitheatre'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Throne\"",
+                    "used_count": 6,
+                    "value": "\"'61Throne'\"",
+                    "first_occurence": "AR6104.None.None"
+                },
+                {
+                    "src": "\"61Bridge\"",
+                    "used_count": 2,
+                    "value": "\"'61Bridge'\"",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "StrRef",
+                "arg_ids": "",
+                "arg_line": "I:StrRef*"
+            },
+            "values": [
+                {
+                    "src": "34108",
+                    "used_count": 1,
+                    "value": "34108",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "33980",
+                    "used_count": 1,
+                    "value": "33980",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "4188",
+                    "used_count": 26,
+                    "value": "4188",
+                    "first_occurence": "AR6101.61YPBLAD.07_PurebloodThief_05"
+                },
+                {
+                    "src": "19944",
+                    "used_count": 26,
+                    "value": "19944",
+                    "first_occurence": "AR6101.61YPBLAD.07_PurebloodThief_05"
+                },
+                {
+                    "src": "37293",
+                    "used_count": 32,
+                    "value": "37293",
+                    "first_occurence": "AR6104.None.None"
+                }
+            ]
+        }
+    ]
+}

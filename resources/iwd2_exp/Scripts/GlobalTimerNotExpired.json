@@ -1,0 +1,49 @@
+{
+    "func_name": "GlobalTimerNotExpired",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Name",
+                "arg_ids": "",
+                "arg_line": "S:Name*"
+            },
+            "values": [
+                {
+                    "src": "\"PUKE_TIMER\"",
+                    "used_count": 1,
+                    "value": "\"'PUKE_TIMER'\"",
+                    "first_occurence": "AR1003.10GUTHE.Guthewulfe Henghelm"
+                },
+                {
+                    "src": "\"41BelladonnaTimer\"",
+                    "used_count": 3,
+                    "value": "\"'41BelladonnaTimer'\"",
+                    "first_occurence": "AR4000.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Area",
+                "arg_ids": "",
+                "arg_line": "S:Area*"
+            },
+            "values": [
+                {
+                    "src": "\"MYAREA\"",
+                    "used_count": 1,
+                    "value": "\"'MYAREA'\"",
+                    "first_occurence": "AR1003.10GUTHE.Guthewulfe Henghelm"
+                },
+                {
+                    "src": "\"GLOBAL\"",
+                    "used_count": 3,
+                    "value": "\"'GLOBAL'\"",
+                    "first_occurence": "AR4000.None.None"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "func_name": "ClearSpriteEffects",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 40,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR4000.40BDAWN.Beodaewn"
+                },
+                {
+                    "src": "\"DeadHenchman\"",
+                    "used_count": 1,
+                    "value": "\"'DeadHenchman'\"",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "\"07_50Caryna_01\"",
+                    "used_count": 1,
+                    "value": "\"'07_50Caryna_01'\"",
+                    "first_occurence": "AR5016.None.None"
+                }
+            ]
+        }
+    ]
+}

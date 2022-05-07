@@ -1,0 +1,37 @@
+{
+    "func_name": "SendTrigger",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "\"AR4102_SWITCH1\"",
+                    "used_count": 88,
+                    "value": "\"'AR4102_SWITCH1'\"",
+                    "first_occurence": "AR4102.41ASSASS.02_Assassin_01"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "TriggerNum",
+                "arg_ids": "",
+                "arg_line": "I:TriggerNum*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 88,
+                    "value": "0",
+                    "first_occurence": "AR4102.41ASSASS.02_Assassin_01"
+                }
+            ]
+        }
+    ]
+}

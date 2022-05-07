@@ -1,0 +1,27 @@
+{
+    "func_name": "IsCreatureHiddenInShadows",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 3,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR5000.50NYM.06_50Nym_01"
+                },
+                {
+                    "src": "LastAttackerOf",
+                    "used_count": 1,
+                    "value": "self.iLastAttackerOf(\"Myself\")",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                }
+            ]
+        }
+    ]
+}

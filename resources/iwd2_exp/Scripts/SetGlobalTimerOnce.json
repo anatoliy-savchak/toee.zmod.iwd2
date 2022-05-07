@@ -1,0 +1,53 @@
+{
+    "func_name": "SetGlobalTimerOnce",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Name",
+                "arg_ids": "",
+                "arg_line": "S:Name*"
+            },
+            "values": [
+                {
+                    "src": "\"EntangleTimer\"",
+                    "used_count": 6,
+                    "value": "\"'EntangleTimer'\"",
+                    "first_occurence": "AR4000.40DRUIDM.02_Male_Druid_25"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Area",
+                "arg_ids": "",
+                "arg_line": "S:Area*"
+            },
+            "values": [
+                {
+                    "src": "\"MYAREA\"",
+                    "used_count": 6,
+                    "value": "\"'MYAREA'\"",
+                    "first_occurence": "AR4000.40DRUIDM.02_Male_Druid_25"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Time",
+                "arg_ids": "GTimes",
+                "arg_line": "I:Time*GTimes"
+            },
+            "values": [
+                {
+                    "src": "70",
+                    "used_count": 6,
+                    "value": "70",
+                    "first_occurence": "AR4000.40DRUIDM.02_Male_Druid_25"
+                }
+            ]
+        }
+    ]
+}

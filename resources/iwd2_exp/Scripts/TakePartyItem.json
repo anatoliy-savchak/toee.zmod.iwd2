@@ -1,0 +1,105 @@
+{
+    "func_name": "TakePartyItem",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Item",
+                "arg_ids": "",
+                "arg_line": "S:Item*"
+            },
+            "values": [
+                {
+                    "src": "\"00Misc39\"",
+                    "used_count": 15,
+                    "value": "\"'00Misc39'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"00Misc25\"",
+                    "used_count": 28,
+                    "value": "\"'00Misc25'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"00Misc26\"",
+                    "used_count": 25,
+                    "value": "\"'00Misc26'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"10genVBo\"",
+                    "used_count": 9,
+                    "value": "\"'10genVBo'\"",
+                    "first_occurence": "AR1101.11ELYTHA.None"
+                },
+                {
+                    "src": "\"11GenGLe \"",
+                    "used_count": 2,
+                    "value": "\"'11GenGLe '\"",
+                    "first_occurence": "AR1103.11DENHAM.None"
+                },
+                {
+                    "src": "\"11GenVS \"",
+                    "used_count": 4,
+                    "value": "\"'11GenVS '\"",
+                    "first_occurence": "AR1103.11VALIN.None"
+                },
+                {
+                    "src": "\"00Misc08\"",
+                    "used_count": 6,
+                    "value": "\"'00Misc08'\"",
+                    "first_occurence": "AR1200.12NILES.None"
+                },
+                {
+                    "src": "\"00Misc17\"",
+                    "used_count": 6,
+                    "value": "\"'00Misc17'\"",
+                    "first_occurence": "AR1200.12NILES.None"
+                },
+                {
+                    "src": "\"41GenZB\"",
+                    "used_count": 1,
+                    "value": "\"'41GenZB'\"",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "\"50GenDH\"",
+                    "used_count": 3,
+                    "value": "\"'50GenDH'\"",
+                    "first_occurence": "AR5000.50WITBA.None"
+                },
+                {
+                    "src": "\"50GenFro\"",
+                    "used_count": 5,
+                    "value": "\"'50GenFro'\"",
+                    "first_occurence": "AR5000.50VENLA.None"
+                },
+                {
+                    "src": "\"52RingNo\"",
+                    "used_count": 2,
+                    "value": "\"'52RingNo'\"",
+                    "first_occurence": "AR5201.52NONIN.None"
+                },
+                {
+                    "src": "\"52GenDol\"",
+                    "used_count": 1,
+                    "value": "\"'52GenDol'\"",
+                    "first_occurence": "AR5201.52DOLON.None"
+                },
+                {
+                    "src": "\"53MiscIV\"",
+                    "used_count": 1,
+                    "value": "\"'53MiscIV'\"",
+                    "first_occurence": "AR5301.53VICISC.None"
+                },
+                {
+                    "src": "\"53MiscIG\"",
+                    "used_count": 1,
+                    "value": "\"'53MiscIG'\"",
+                    "first_occurence": "AR5301.53GOLIMX.None"
+                }
+            ]
+        }
+    ]
+}

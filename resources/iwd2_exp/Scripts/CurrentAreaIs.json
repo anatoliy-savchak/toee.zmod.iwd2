@@ -1,0 +1,109 @@
+{
+    "func_name": "CurrentAreaIs",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "Myself",
+                    "used_count": 77,
+                    "value": "\"Myself\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "AreaNum",
+                "arg_ids": "",
+                "arg_line": "I:AreaNum*"
+            },
+            "values": [
+                {
+                    "src": "1100",
+                    "used_count": 15,
+                    "value": "1100",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "4001",
+                    "used_count": 15,
+                    "value": "4001",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "5303",
+                    "used_count": 10,
+                    "value": "5303",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "6000",
+                    "used_count": 5,
+                    "value": "6000",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "4100",
+                    "used_count": 2,
+                    "value": "4100",
+                    "first_occurence": "AR4100.41WYVERN.None"
+                },
+                {
+                    "src": "4101",
+                    "used_count": 2,
+                    "value": "4101",
+                    "first_occurence": "AR4101.41NATE.Nathaniel"
+                },
+                {
+                    "src": "5200",
+                    "used_count": 2,
+                    "value": "5200",
+                    "first_occurence": "AR5201.52SALISA.None"
+                },
+                {
+                    "src": "6001",
+                    "used_count": 3,
+                    "value": "6001",
+                    "first_occurence": "AR6010.60GERBAS.Gerbash"
+                },
+                {
+                    "src": "6010",
+                    "used_count": 1,
+                    "value": "6010",
+                    "first_occurence": "AR6010.60GERBAS.Gerbash"
+                },
+                {
+                    "src": "6102",
+                    "used_count": 9,
+                    "value": "6102",
+                    "first_occurence": "AR6101.61NHEERO.Nheero"
+                },
+                {
+                    "src": "6103",
+                    "used_count": 3,
+                    "value": "6103",
+                    "first_occurence": "AR6101.61NHEERO.Nheero"
+                },
+                {
+                    "src": "6101",
+                    "used_count": 3,
+                    "value": "6101",
+                    "first_occurence": "AR6101.61NHEERO.Nheero"
+                },
+                {
+                    "src": "6201",
+                    "used_count": 7,
+                    "value": "6201",
+                    "first_occurence": "AR6200.62NEOORC.NeoOrogShaman"
+                }
+            ]
+        }
+    ]
+}

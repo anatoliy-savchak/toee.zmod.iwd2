@@ -1,0 +1,91 @@
+{
+    "func_name": "SetRestEncounterChance",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "DayProb",
+                "arg_ids": "",
+                "arg_line": "I:DayProb*"
+            },
+            "values": [
+                {
+                    "src": "60",
+                    "used_count": 4,
+                    "value": "60",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "40",
+                    "used_count": 4,
+                    "value": "40",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "20",
+                    "used_count": 4,
+                    "value": "20",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "0",
+                    "used_count": 4,
+                    "value": "0",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "80",
+                    "used_count": 2,
+                    "value": "80",
+                    "first_occurence": "AR6102.None.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "NightProb",
+                "arg_ids": "",
+                "arg_line": "I:NightProb*"
+            },
+            "values": [
+                {
+                    "src": "80",
+                    "used_count": 4,
+                    "value": "80",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "60",
+                    "used_count": 4,
+                    "value": "60",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "40",
+                    "used_count": 4,
+                    "value": "40",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "20",
+                    "used_count": 2,
+                    "value": "20",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "0",
+                    "used_count": 2,
+                    "value": "0",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "100",
+                    "used_count": 2,
+                    "value": "100",
+                    "first_occurence": "AR6102.None.None"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "func_name": "JumpToObject",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Target",
+                "arg_ids": "",
+                "arg_line": "O:Target*"
+            },
+            "values": [
+                {
+                    "src": "\"Remorhaz_Zack\"",
+                    "used_count": 1,
+                    "value": "\"'Remorhaz_Zack'\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "NearestPC",
+                    "used_count": 5,
+                    "value": "\"NearestPC\"",
+                    "first_occurence": "AR5030.50WIL.01_50WIL_01"
+                },
+                {
+                    "src": "Player1",
+                    "used_count": 6,
+                    "value": "\"Player1\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "MyTarget",
+                    "used_count": 10,
+                    "value": "\"MyTarget\"",
+                    "first_occurence": "AR6301.63GLABS1.63GlabS1"
+                }
+            ]
+        }
+    ]
+}

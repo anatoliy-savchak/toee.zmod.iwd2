@@ -1,0 +1,21 @@
+{
+    "func_name": "TakePartyItemAll",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Item",
+                "arg_ids": "",
+                "arg_line": "S:Item*"
+            },
+            "values": [
+                {
+                    "src": "\"50GenFWR\"",
+                    "used_count": 8,
+                    "value": "\"'50GenFWR'\"",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                }
+            ]
+        }
+    ]
+}

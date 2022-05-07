@@ -1,0 +1,43 @@
+{
+    "func_name": "DropItem",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "S:Object*"
+            },
+            "values": [
+                {
+                    "src": "\"SPWI711Z\"",
+                    "used_count": 1,
+                    "value": "\"'SPWI711Z'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"00GEM01\"",
+                    "used_count": 1,
+                    "value": "\"'00GEM01'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "P",
+                "arg_name": "Location",
+                "arg_ids": "",
+                "arg_line": "P:Location*"
+            },
+            "values": [
+                {
+                    "src": "\"[-1.-1]\"",
+                    "used_count": 2,
+                    "value": "\"[-1.-1]\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                }
+            ]
+        }
+    ]
+}

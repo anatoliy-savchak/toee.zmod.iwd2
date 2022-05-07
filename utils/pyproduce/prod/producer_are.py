@@ -7,11 +7,12 @@ import producer_ctrl_manual
 import produce_bcs_manager
 import producer_ctrl_inst_auto
 import producer_ctrl_inst_manual
+import common
 
 class ProducerOfAre(producer_base.Producer):
     def __init__(self, doc, are_name: str, script_id: int, make_new: bool):
-        src_path = os.path.join(doc.exp_dir, 'Areas', are_name, are_name + '_sec.json')
-        self.src_sec_path = os.path.join(doc.exp_dir, 'Areas', are_name, are_name + '.json')
+        self.src_sec_path = os.path.join(doc.exp_dir, 'Areas', are_name, are_name + '_sec.json')
+        src_path = os.path.join(doc.exp_dir, 'Areas', are_name, are_name + '.json')
 
         super().__init__(doc, src_path=src_path)
 
@@ -19,12 +20,17 @@ class ProducerOfAre(producer_base.Producer):
         self.are_name = are_name
         self.script_id = script_id
         self.bcs_counter_auto = 0
+        self.src_sec = None
+        if os.path.exists(self.src_sec_path):
+            self.src_sec = common.read_file_json(self.src_sec_path)
 
         self.daemon = producer_daemon.ProducerOfDaemon(self.doc
             , self.are_name
             , self.script_id
             , self.make_new
-            , self.src)
+            , self.src
+            , self.src_sec
+            )
         self.dialog = produce_dialog.DialogFile(self.doc.get_path_out_npcs_dialog_file(self.are_name, self.script_id + 1))
         return
 

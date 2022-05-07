@@ -7,6 +7,7 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
         , script_id: int
         , make_new: bool
         , src: dict
+        , src_sec: dict
     ):
         template_path = doc.get_path_template_daemon_file()
         out_path = doc.get_path_out_daemon_file(are_name, script_id)
@@ -14,6 +15,7 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
 
         self.are_name = are_name
         self.script_id = script_id
+        self.src_sec = src_sec
 
         self.used_imports = list()
         return
@@ -42,10 +44,10 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
             ori = int(actor["ActorOrientation"])
             direction = self.translate_orientation(ori)
             actor_sec = actor
-            # if self.ar_sec:
-            #     acts = [act for act in self.ar_sec["actors"] if act["Name"] == name]
-            #     if acts:
-            #         actor_sec = acts[0]
+            if self.src_sec:
+                acts = [act for act in self.src_sec["actors"] if act["Name"] == name]
+                if acts:
+                    actor_sec = acts[0]
                 
 
             x = float(actor_sec["CurrentXCoordinateSec"])

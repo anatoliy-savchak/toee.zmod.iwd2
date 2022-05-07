@@ -187,3 +187,12 @@ class ProducerDoc(object):
         if not result:
             result = producer_are.ProducerOfAre(self, are_name, self.are_name_to_script_id(are_name), self.make_new)
         return result
+
+    def produce_all_ares(self):
+        dir = os.path.join(self.exp_dir, 'Areas')
+        for dn in os.listdir(dir):
+            if not os.path.isdir(os.path.join(dir, dn)): continue
+            are_name = dn
+            prod = self.acquire_are_producer(are_name)
+            prod.produce()
+        return

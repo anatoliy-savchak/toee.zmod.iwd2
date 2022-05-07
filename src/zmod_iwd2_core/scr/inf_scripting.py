@@ -38,11 +38,27 @@ def dump_args(func):
 		return r
 	return echo_func
 
+def strip_quotes(s, notify = False):
+	if s and (s[0] == "'" or s[0] == '"'):
+		r = s.strip()
+		r = r[1:-1]
+		if notify:
+			return r, s[0]
+		else:
+			return r
+	else:
+		if notify:
+			return s, None
+		else:
+			return s
+	return
+
 class InfScriptSupport:
 	def _gnpc(self):
 		return toee.PyObjHandle()
 
 	def _get_globals(self, area):
+		area = strip_quotes(area)
 		if area.lower() == "global":
 			return get_globals()
 
@@ -50,6 +66,7 @@ class InfScriptSupport:
 		return dict()
 
 	def _ensure_global(self, name, area):
+		name = strip_quotes(name)
 		g = self._get_globals(area)
 		v = g.get(name)
 		assert isinstance(v, int)
@@ -59,6 +76,7 @@ class InfScriptSupport:
 		return v
 
 	def _set_global(self, name, area, value):
+		name = strip_quotes(name)
 		g = self._get_globals(area)
 		g[name] = value
 		return
@@ -157,7 +175,8 @@ class InfScriptSupport:
 		return self.iRace(obj_name, race_name)
 
 	@dump_args
-	def iSubrace(self, obj_name, subrace_names): return self.iSubRace(obj_name, subrace_names)
+	def iSubrace(self, obj_name, subrace_names): 
+		return self.iSubRace(obj_name, subrace_names)
 
 	@dump_args
 	def iRace(self, obj_name, race_names):

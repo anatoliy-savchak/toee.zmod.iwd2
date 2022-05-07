@@ -29,6 +29,7 @@ def main():
     doc.init(from_scratch=False)
     are_prod = doc.acquire_are_producer('AR1000')
     are_prod.produce()
+    #doc.produce_all_ares()
 
     return 0
 

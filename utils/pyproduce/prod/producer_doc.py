@@ -142,12 +142,39 @@ class ProducerDoc(object):
         name = f"py{script_id:05d}_{are_name.lower()}_npc_classes.py"
         return os.path.join(self.core_dir, "scr", name)
 
-    def get_path_template_are_bcs_file(self):
+    def get_path_template_npcs_class_inst_auto_file(self):
+        return 'data/py06616_template.py'
+
+    def get_path_out_npcs_class_inst_auto_file(self, are_name: str, script_id: int = None):
+        if script_id is None:
+            script_id = self.are_name_to_script_id(are_name) + 3
+        name = f"py{script_id:05d}_{are_name.lower()}_npc_inst_classes_auto.py"
+        return os.path.join(self.core_dir, "scr", name)
+
+    def get_path_template_npcs_class_inst_manual_file(self):
+        return 'data/py06616_template.py'
+
+    def get_path_out_npcs_class_inst_manual_file(self, are_name: str, script_id: int = None):
+        if script_id is None:
+            script_id = self.are_name_to_script_id(are_name) + 4
+        name = f"py{script_id:05d}_{are_name.lower()}_npc_inst_classes.py"
+        return os.path.join(self.core_dir, "scr", name)
+
+    def get_path_template_are_bcs_auto_file(self):
         return 'data/bcs_template.py'
 
-    def get_path_out_are_bcs_file(self, are_name: str, script_id: int = None):
+    def get_path_out_are_bcs_auto_file(self, are_name: str, script_id: int = None):
         if script_id is None:
             script_id = self.are_name_to_script_id(are_name) + 5
+        name = f"py{script_id:05d}_{are_name.lower()}_scripts_auto.py"
+        return os.path.join(self.core_dir, "scr", name)
+
+    def get_path_template_are_bcs_manual_file(self):
+        return 'data/bcs_template.py'
+
+    def get_path_out_are_bcs_manual_file(self, are_name: str, script_id: int = None):
+        if script_id is None:
+            script_id = self.are_name_to_script_id(are_name) + 6
         name = f"py{script_id:05d}_{are_name.lower()}_scripts.py"
         return os.path.join(self.core_dir, "scr", name)
         

@@ -29,7 +29,10 @@ def transate_trigger_lines(trigger_lines: list, doc):
             or_left = int(trigger_linea.split('(', 2)[1].split(')', 2)[0].strip())
             or_count_max = or_left
             line = '('
-            line = "\t and " + line
+            if i == 0:
+                line = "if " + line + ' False'
+            else:
+                line = "\t and " + line + ' False'
         else:
             line = ScriptTran.translate_script_line(trigger_linea, doc)
 
@@ -37,7 +40,7 @@ def transate_trigger_lines(trigger_lines: list, doc):
                 line = "if " + line
             elif or_left:
                 if or_left == or_count_max:
-                    line = "\t\t" + line
+                    line = "\t\tor " + line
                 elif or_left == 1:
                     line = "\t\tor " + line + ' )'
                 else:

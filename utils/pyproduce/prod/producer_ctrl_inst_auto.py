@@ -12,8 +12,8 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         , actor_name: str
         , actor_dict: dict
     ):
-        template_path = doc.get_path_template_npcs_class_manual_file()
-        out_path = doc.get_path_out_npcs_class_manual_file(are_name, script_id)
+        template_path = doc.get_path_template_npcs_class_inst_auto_file()
+        out_path = doc.get_path_out_npcs_class_inst_auto_file(are_name, script_id)
         src_path = doc.get_path_cre(cre_name)
         super().__init__(doc, out_path=out_path, template_path=template_path, make_new=make_new, src_path=src_path)
 
@@ -23,7 +23,7 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         self.base_class = base_class
         self.actor_name = actor_name
         self.actor_dict = actor_dict
-        self.ctrl_name = f'Ctrl_{self.cre_name}_{self.are_name}_{self.actor_name}'
+        self.ctrl_name = f'Ctrl_{self.cre_name}_{self.are_name}_{self.actor_name}_Auto'
         return
 
     def produce(self):
@@ -31,22 +31,57 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         if next((line for line in self.lines if line1 in line), None):
             return
 
+        imports = list()
+        imports.append(self.base_class["file_name"])
+
         line2 = f'{self.base_class["file_name"]}.{self.base_class["class_name"]}): # {self.cre_name} ' # leave trailing whitespace here
         self.writeline(line1 + line2)
         self.indent()
-        self.writeline('pass')
+        self.writeline('def setup_bcs(self):')
+
+        def write_script(bcs_attribute: str, script_name: str):
+            bcs_name = self.actor_dict[bcs_attribute]
+            if bcs_name:
+                d = self.doc.bcsManager.get_bc(bcs_name)
+                #file_name, ctrl_name = d["file_name"], d["ctrl_name"]
+                file_name, ctrl_name = d[0], d[1]
+                if not file_name in imports: 
+                    imports.append(file_name)
+
+                self.writeline(f'self.vars["{script_name}"] = {file_name}.{ctrl_name}')
+
+            return
+        self.indent()
+        write_script("ScriptGeneral", 'bcs_general')
+        write_script("ScriptClass", 'bcs_class')
+        write_script("ScriptRace", 'bcs_combat')
+        write_script("ScriptDefault", 'bcs_movement')
+        write_script("ScriptSpecific", 'bcs_team')
+        write_script("ScriptSpecial1", 'bcs_special_one')
+        self.indent(False)
+        self.writeline('return')
         self.indent(False)
         self.writeline('')
 
-        import_line = 'import ' + self.base_class["file_name"]
-        if not next((line for line in self.lines if line == import_line or line == import_line + '\n'), None):
-            #line_id = common.lines_after_before_cutoff(self.lines, '#### IMPORT ####', '#### IMPORT END ####')
-            line_id = common.lines_find(self.lines, '#### IMPORT ####')
-            if line_id:
-                self.current_line_id = line_id+1
-                self.writeline(import_line)
-                self.current_line_id = -1
+        for imp in imports:
+            import_line = 'import ' + imp
+            if not next((line for line in self.lines if line == import_line or line == import_line + '\n'), None):
+                #line_id = common.lines_after_before_cutoff(self.lines, '#### IMPORT ####', '#### IMPORT END ####')
+                line_id = common.lines_find(self.lines, '#### IMPORT ####')
+                if line_id:
+                    self.current_line_id = line_id+1
+                    self.writeline(import_line)
+                    self.current_line_id = -1
 
         return
 
     def get_ctrl_tuple(self): return (self.ctrl_name, os.path.basename(self.out_path).replace('.py', ''))
+
+    @classmethod
+    def overwrite_by_template(cls, doc, are_name, script_id):
+        template_path = doc.get_path_template_npcs_class_inst_auto_file()
+        out_path = doc.get_path_out_npcs_class_inst_auto_file(are_name, script_id)
+        with open(template_path, 'r') as fs:
+            with open(out_path, 'w') as fo:
+                fo.writelines(fs.readlines())
+        return

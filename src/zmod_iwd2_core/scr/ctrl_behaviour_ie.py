@@ -93,3 +93,17 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		assert isinstance(triggerer, toee.PyObjHandle)
 		# DEBUG!!
 		return toee.SKIP_DEFAULT
+
+	def setup_bcs(self):
+		self.vars["bcs_general"] = None
+		self.vars["bcs_class"] = None
+		self.vars["bcs_combat"] = None
+		self.vars["bcs_movement"] = None
+		self.vars["bcs_team"] = None
+		self.vars["bcs_special_one"] = None
+		return
+
+	def setup(self, npc):
+		self.setup_bcs()
+		super(CtrlBehaviourIE, self).setup(npc)
+		return

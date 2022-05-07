@@ -4,7 +4,7 @@ import inf_scripting
 #### IMPORT END ####
 
 #### BCS ####
-class Script_00T01M(object):
+class Script_00T01M_Auto(object):
 	# AR1000 10HEDRON Hedron ScriptGeneral (Special 3)
 	def script_general_auto(self):
 		while True:
@@ -21,7 +21,7 @@ class Script_00T01M(object):
 			break # while
 		return
 		
-class Script_00AATGN(object):
+class Script_00AATGN_Auto(object):
 	# AR1000 10HEDRON Hedron ScriptClass (Special 2)
 	def script_class_auto(self):
 		while True:
@@ -36,7 +36,7 @@ class Script_00AATGN(object):
 			break # while
 		return
 		
-class Script_10ONBOAT(object):
+class Script_10ONBOAT_Auto(object):
 	# AR1000 10HEDRON Hedron ScriptRace (Combat Script)
 	def script_combat_auto(self):
 		while True:
@@ -87,7 +87,7 @@ class Script_10ONBOAT(object):
 			break # while
 		return
 		
-class Script_00AMVR(object):
+class Script_00AMVR_Auto(object):
 	# AR1000 10HEDRON Hedron ScriptDefault (Movement Script)
 	def script_movement_auto(self):
 		while True:
@@ -114,7 +114,7 @@ class Script_00AMVR(object):
 			break # while
 		return
 		
-class Script_00T00DET(object):
+class Script_00T00DET_Auto(object):
 	# AR1000 10HEDRON Hedron ScriptSpecific (Team Script)
 	def script_team_auto(self):
 		while True:
@@ -123,8 +123,8 @@ class Script_00T00DET(object):
 			# HitBy([GOODCUTOFF],CRUSHING)
 			# PickPocketFailed([PC])
 			if not self.iGlobal("'TEAM_0'", "'MYAREA'", 1) \
-				 and ( \
-					self.iHitBy("[GOODCUTOFF]", "CRUSHING") \
+				 and ( False \
+					or self.iHitBy("[GOODCUTOFF]", "CRUSHING") \
 					or self.iPickPocketFailed("[PC]") ):
 				# SetGlobal("TEAM_0","MYAREA",1)
 				# Continue()
@@ -156,7 +156,7 @@ class Script_00T00DET(object):
 			break # while
 		return
 		
-class Script_10HEDRO0(object):
+class Script_10HEDRO0_Auto(object):
 	# AR1000 10HEDRON Hedron ScriptSpecial1 (Special1)
 	def script_special_one_auto(self):
 		while True:
@@ -193,7 +193,7 @@ class Script_10HEDRO0(object):
 			break # while
 		return
 		
-class Script_10ELDGUM(object):
+class Script_10ELDGUM_Auto(object):
 	# AR1000 10ELDGUL Eldgull ScriptDefault (Movement Script)
 	def script_movement_auto(self):
 		while True:
@@ -309,7 +309,7 @@ class Script_10ELDGUM(object):
 			break # while
 		return
 		
-class Script_10SCREEM(object):
+class Script_10SCREEM_Auto(object):
 	# AR1000 10SCREED Screed ScriptDefault (Movement Script)
 	def script_movement_auto(self):
 		while True:
@@ -425,7 +425,7 @@ class Script_10SCREEM(object):
 			break # while
 		return
 		
-class Script_10REIG0(object):
+class Script_10REIG0_Auto(object):
 	# AR1000 10REIG Reig ScriptGeneral (Special 3)
 	def script_general_auto(self):
 		while True:
@@ -448,8 +448,8 @@ class Script_10REIG0(object):
 			if self.iNumTimesTalkedTo(0) \
 				 and not self.iAllegiance("Myself", "ENEMY") \
 				 and not self.iDead("Myself") \
-				 and ( \
-					self.iSee("Protagonist", 0) \
+				 and ( False \
+					or self.iSee("Protagonist", 0) \
 					or self.iSee("[PC]", 0) ) \
 				 and self.iRange(self.iLastSeenBy("Myself"), 18, "LESS_THAN"):
 				# StartCutSceneMode()
@@ -515,7 +515,7 @@ class Script_10REIG0(object):
 			break # while
 		return
 		
-class Script_10AGOBC0(object):
+class Script_10AGOBC0_Auto(object):
 	# AR1000 10REIG Reig ScriptRace (Combat Script)
 	def script_combat_auto(self):
 		while True:
@@ -834,7 +834,7 @@ class Script_10AGOBC0(object):
 			break # while
 		return
 		
-class Script_00T02M(object):
+class Script_00T02M_Auto(object):
 	# AR1000 10REIG Reig ScriptDefault (Movement Script)
 	def script_movement_auto(self):
 		while True:
@@ -851,7 +851,7 @@ class Script_00T02M(object):
 			break # while
 		return
 		
-class Script_00T02ET(object):
+class Script_00T02ET_Auto(object):
 	# AR1000 10REIG Reig ScriptSpecific (Team Script)
 	def script_team_auto(self):
 		while True:
@@ -860,8 +860,8 @@ class Script_00T02ET(object):
 			# AttackedBy([GOODCUTOFF],DEFAULT)
 			# PickPocketFailed([PC])
 			if not self.iGlobal("'TEAM_2'", "'MYAREA'", 1) \
-				 and ( \
-					self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
+				 and ( False \
+					or self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
 					or self.iPickPocketFailed("[PC]") ):
 				# SetGlobal("TEAM_2","MYAREA",1)
 				# Continue()
@@ -900,7 +900,7 @@ class Script_00T02ET(object):
 			break # while
 		return
 		
-class Script_00TOWNID(object):
+class Script_00TOWNID_Auto(object):
 	# AR1000 10REIG Reig ScriptSpecial1 (Special1)
 	def script_special_one_auto(self):
 		while True:
@@ -936,11 +936,11 @@ class Script_00TOWNID(object):
 			# HitBy([GOODCUTOFF],MAGICCOLD)
 			# PickPocketFailed([PC])
 			if not self.iAllegiance("Myself", "ENEMY") \
-				 and ( \
-					self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
+				 and ( False \
+					or self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
 					or self.iPickPocketFailed("[PC]") ) \
-				 and ( \
-					self.iHitBy("[GOODCUTOFF]", "SLASHING") \
+				 and ( False \
+					or self.iHitBy("[GOODCUTOFF]", "SLASHING") \
 					or self.iHitBy("[GOODCUTOFF]", "CRUSHING") \
 					or self.iHitBy("[GOODCUTOFF]", "PIERCING") \
 					or self.iHitBy("[GOODCUTOFF]", "MISSILE") \
@@ -993,7 +993,7 @@ class Script_00TOWNID(object):
 			break # while
 		return
 		
-class Script_10JON0(object):
+class Script_10JON0_Auto(object):
 	# AR1000 10JON Jon ScriptDefault (Movement Script)
 	def script_movement_auto(self):
 		while True:
@@ -1032,7 +1032,7 @@ class Script_10JON0(object):
 			break # while
 		return
 		
-class Script_10BROGA0(object):
+class Script_10BROGA0_Auto(object):
 	# AR1000 10BROGAN Brogan ScriptGeneral (Special 3)
 	def script_general_auto(self):
 		while True:
@@ -1265,7 +1265,7 @@ class Script_10BROGA0(object):
 			break # while
 		return
 		
-class Script_10JORUN0(object):
+class Script_10JORUN0_Auto(object):
 	# AR1000 10JORUN Jorun ScriptGeneral (Special 3)
 	def script_general_auto(self):
 		while True:
@@ -1300,7 +1300,7 @@ class Script_10JORUN0(object):
 			break # while
 		return
 		
-class Script_00T03M(object):
+class Script_00T03M_Auto(object):
 	# AR1000 10GOB 1000_Goblin_01 ScriptGeneral (Special 3)
 	def script_general_auto(self):
 		while True:
@@ -1317,7 +1317,7 @@ class Script_00T03M(object):
 			break # while
 		return
 		
-class Script_10GOBF0(object):
+class Script_10GOBF0_Auto(object):
 	# AR1000 10GOB 1000_Goblin_01 ScriptClass (Special 2)
 	def script_class_auto(self):
 		while True:
@@ -1335,7 +1335,7 @@ class Script_10GOBF0(object):
 			break # while
 		return
 		
-class Script_10GOBM0(object):
+class Script_10GOBM0_Auto(object):
 	# AR1000 10GOB 1000_Goblin_01 ScriptRace (Combat Script)
 	def script_combat_auto(self):
 		while True:
@@ -1353,8 +1353,8 @@ class Script_10GOBM0(object):
 			# See([PC.0.DWARF],0)
 			# See([0.0.DWARF],0)
 			if self.iGlobal("'I_LIKE_DWARVES'", "'LOCALS'", 1) \
-				 and ( \
-					self.iSee("[PC.0.DWARF]", 0) \
+				 and ( False \
+					or self.iSee("[PC.0.DWARF]", 0) \
 					or self.iSee("[0.0.DWARF]", 0) ):
 				# EquipWeapon()
 				# AttackOneRound(LastMarkedObject)
@@ -1372,8 +1372,8 @@ class Script_10GOBM0(object):
 			# See("SCREED",0)
 			# See("ELDGULL",0)
 			# See("HEDRON",0)
-				 and ( \
-					self.iSee(self.iNearestEnemyOf("Myself"), 0) \
+			if ( False \
+					or self.iSee(self.iNearestEnemyOf("Myself"), 0) \
 					or self.iSee("'JORUN'", 0) \
 					or self.iSee("'CRANDALL'", 0) \
 					or self.iSee("'BROGAN'", 0) \
@@ -1391,7 +1391,7 @@ class Script_10GOBM0(object):
 			break # while
 		return
 		
-class Script_00AMVW05(object):
+class Script_00AMVW05_Auto(object):
 	# AR1000 10GOB 1000_Goblin_01 ScriptDefault (Movement Script)
 	def script_movement_auto(self):
 		while True:
@@ -1437,7 +1437,7 @@ class Script_00AMVW05(object):
 			break # while
 		return
 		
-class Script_00T03T(object):
+class Script_00T03T_Auto(object):
 	# AR1000 10GOB 1000_Goblin_01 ScriptSpecific (Team Script)
 	def script_team_auto(self):
 		while True:
@@ -1446,8 +1446,8 @@ class Script_00T03T(object):
 			# AttackedBy([GOODCUTOFF],DEFAULT)
 			# PickPocketFailed([PC])
 			if not self.iGlobal("'TEAM_3'", "'MYAREA'", 1) \
-				 and ( \
-					self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
+				 and ( False \
+					or self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
 					or self.iPickPocketFailed("[PC]") ):
 				# SetGlobal("TEAM_3","MYAREA",1)
 				# Continue()
@@ -1477,7 +1477,7 @@ class Script_00T03T(object):
 			break # while
 		return
 		
-class Script_00T04M(object):
+class Script_00T04M_Auto(object):
 	# AR1000 10GOB 1000_Goblin_02 ScriptGeneral (Special 3)
 	def script_general_auto(self):
 		while True:
@@ -1494,7 +1494,7 @@ class Script_00T04M(object):
 			break # while
 		return
 		
-class Script_00T04T(object):
+class Script_00T04T_Auto(object):
 	# AR1000 10GOB 1000_Goblin_02 ScriptSpecific (Team Script)
 	def script_team_auto(self):
 		while True:
@@ -1503,8 +1503,8 @@ class Script_00T04T(object):
 			# AttackedBy([GOODCUTOFF],DEFAULT)
 			# PickPocketFailed([PC])
 			if not self.iGlobal("'TEAM_4'", "'MYAREA'", 1) \
-				 and ( \
-					self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
+				 and ( False \
+					or self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
 					or self.iPickPocketFailed("[PC]") ):
 				# SetGlobal("TEAM_4","MYAREA",1)
 				# Continue()
@@ -1534,7 +1534,7 @@ class Script_00T04T(object):
 			break # while
 		return
 		
-class Script_00T05M(object):
+class Script_00T05M_Auto(object):
 	# AR1000 10GOB 1000_Goblin_04 ScriptGeneral (Special 3)
 	def script_general_auto(self):
 		while True:
@@ -1551,7 +1551,7 @@ class Script_00T05M(object):
 			break # while
 		return
 		
-class Script_00T05T(object):
+class Script_00T05T_Auto(object):
 	# AR1000 10GOB 1000_Goblin_04 ScriptSpecific (Team Script)
 	def script_team_auto(self):
 		while True:
@@ -1560,8 +1560,8 @@ class Script_00T05T(object):
 			# AttackedBy([GOODCUTOFF],DEFAULT)
 			# PickPocketFailed([PC])
 			if not self.iGlobal("'TEAM_5'", "'MYAREA'", 1) \
-				 and ( \
-					self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
+				 and ( False \
+					or self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
 					or self.iPickPocketFailed("[PC]") ):
 				# SetGlobal("TEAM_5","MYAREA",1)
 				# Continue()
@@ -1591,7 +1591,7 @@ class Script_00T05T(object):
 			break # while
 		return
 		
-class Script_00T06M(object):
+class Script_00T06M_Auto(object):
 	# AR1000 10GOB 1000_Goblin_06 ScriptGeneral (Special 3)
 	def script_general_auto(self):
 		while True:
@@ -1608,7 +1608,7 @@ class Script_00T06M(object):
 			break # while
 		return
 		
-class Script_00T06T(object):
+class Script_00T06T_Auto(object):
 	# AR1000 10GOB 1000_Goblin_06 ScriptSpecific (Team Script)
 	def script_team_auto(self):
 		while True:
@@ -1617,8 +1617,8 @@ class Script_00T06T(object):
 			# AttackedBy([GOODCUTOFF],DEFAULT)
 			# PickPocketFailed([PC])
 			if not self.iGlobal("'TEAM_6'", "'MYAREA'", 1) \
-				 and ( \
-					self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
+				 and ( False \
+					or self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
 					or self.iPickPocketFailed("[PC]") ):
 				# SetGlobal("TEAM_6","MYAREA",1)
 				# Continue()
@@ -1648,7 +1648,7 @@ class Script_00T06T(object):
 			break # while
 		return
 		
-class Script_10GOBR0(object):
+class Script_10GOBR0_Auto(object):
 	# AR1000 10GOBAR 1000_Goblin_Archer_01 ScriptRace (Combat Script)
 	def script_combat_auto(self):
 		while True:
@@ -1666,8 +1666,8 @@ class Script_10GOBR0(object):
 			# See([PC.0.DWARF],0)
 			# See([0.0.DWARF],0)
 			if self.iGlobal("'I_LIKE_DWARVES'", "'LOCALS'", 1) \
-				 and ( \
-					self.iSee("[PC.0.DWARF]", 0) \
+				 and ( False \
+					or self.iSee("[PC.0.DWARF]", 0) \
 					or self.iSee("[0.0.DWARF]", 0) ):
 				# SetBestWeapon(LastMarkedObject,3)
 				# AttackReevaluate(LastMarkedObject,45)
@@ -1685,8 +1685,8 @@ class Script_10GOBR0(object):
 			# See("REIG",0)
 			# See("SCREED",0)
 			# See("ELDGULL",0)
-				 and ( \
-					self.iSee(self.iNearestEnemyOf("Myself"), 0) \
+			if ( False \
+					or self.iSee(self.iNearestEnemyOf("Myself"), 0) \
 					or self.iSee("'HEDRON'", 0) \
 					or self.iSee("'JORUN'", 0) \
 					or self.iSee("'CRANDALL'", 0) \
@@ -1704,7 +1704,7 @@ class Script_10GOBR0(object):
 			break # while
 		return
 		
-class Script_00T07M(object):
+class Script_00T07M_Auto(object):
 	# AR1000 10GOB 1000_Goblin_14 ScriptGeneral (Special 3)
 	def script_general_auto(self):
 		while True:
@@ -1721,7 +1721,7 @@ class Script_00T07M(object):
 			break # while
 		return
 		
-class Script_00T07T(object):
+class Script_00T07T_Auto(object):
 	# AR1000 10GOB 1000_Goblin_14 ScriptSpecific (Team Script)
 	def script_team_auto(self):
 		while True:
@@ -1730,8 +1730,8 @@ class Script_00T07T(object):
 			# AttackedBy([GOODCUTOFF],DEFAULT)
 			# PickPocketFailed([PC])
 			if not self.iGlobal("'TEAM_7'", "'MYAREA'", 1) \
-				 and ( \
-					self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
+				 and ( False \
+					or self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
 					or self.iPickPocketFailed("[PC]") ):
 				# SetGlobal("TEAM_7","MYAREA",1)
 				# Continue()
@@ -1761,7 +1761,7 @@ class Script_00T07T(object):
 			break # while
 		return
 		
-class Script_00T08M(object):
+class Script_00T08M_Auto(object):
 	# AR1000 10GOB 1000_Goblin_16 ScriptGeneral (Special 3)
 	def script_general_auto(self):
 		while True:
@@ -1778,7 +1778,7 @@ class Script_00T08M(object):
 			break # while
 		return
 		
-class Script_00T08T(object):
+class Script_00T08T_Auto(object):
 	# AR1000 10GOB 1000_Goblin_16 ScriptSpecific (Team Script)
 	def script_team_auto(self):
 		while True:
@@ -1787,8 +1787,8 @@ class Script_00T08T(object):
 			# AttackedBy([GOODCUTOFF],DEFAULT)
 			# PickPocketFailed([PC])
 			if not self.iGlobal("'TEAM_8'", "'MYAREA'", 1) \
-				 and ( \
-					self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
+				 and ( False \
+					or self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
 					or self.iPickPocketFailed("[PC]") ):
 				# SetGlobal("TEAM_8","MYAREA",1)
 				# Continue()
@@ -1818,7 +1818,7 @@ class Script_00T08T(object):
 			break # while
 		return
 		
-class Script_10CRAND0(object):
+class Script_10CRAND0_Auto(object):
 	# AR1000 10CRANDA Crandall ScriptDefault (Movement Script)
 	def script_movement_auto(self):
 		while True:

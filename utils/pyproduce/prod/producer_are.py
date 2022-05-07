@@ -5,6 +5,8 @@ import producer_ctrl_auto
 import produce_dialog
 import producer_ctrl_manual
 import produce_bcs_manager
+import producer_ctrl_inst_auto
+import producer_ctrl_inst_manual
 
 class ProducerOfAre(producer_base.Producer):
     def __init__(self, doc, are_name: str, script_id: int, make_new: bool):
@@ -16,7 +18,7 @@ class ProducerOfAre(producer_base.Producer):
         self.make_new = make_new
         self.are_name = are_name
         self.script_id = script_id
-        self.bcs_counter = 0
+        self.bcs_counter_auto = 0
 
         self.daemon = producer_daemon.ProducerOfDaemon(self.doc
             , self.are_name
@@ -39,10 +41,10 @@ class ProducerOfAre(producer_base.Producer):
             if not self.doc.classesRegistry.get_class_tup('class_manual', actor_cre_name):
                 self.produce_cre_class_manual(actor_cre_name)
 
-            if not self.doc.classesRegistry.get_class_tup('class_inst_auto', self.are_name + '_' + actor_name):
-                self.produce_cre_class_inst_auto(actor_name, actor_cre_name)
+            if not self.doc.classesRegistry.get_class_tup('class_inst_auto', f'{self.are_name}.{actor_cre_name}.{actor_name}'):
+                self.produce_cre_class_inst_auto(actor_name, actor_cre_name, actor)
 
-            if not self.doc.classesRegistry.get_class_tup('class_inst_manual', self.are_name + '_' + actor_name):
+            if not self.doc.classesRegistry.get_class_tup('class_inst_manual', f'{self.are_name}.{actor_cre_name}.{actor_name}'):
                 self.produce_cre_class_inst_manual(actor_name, actor_cre_name)
 
         self.daemon.produce()
@@ -50,6 +52,7 @@ class ProducerOfAre(producer_base.Producer):
 
     def produce_start(self):
         producer_ctrl_auto.ProducerOfCtrlAuto.overwrite_by_template(self.doc, are_name=self.are_name, script_id=self.script_id+1)
+        producer_ctrl_inst_auto.ProducerOfCtrlInstAuto.overwrite_by_template(self.doc, are_name=self.are_name, script_id=self.script_id+3)
         return
 
     def produce_cre_class_auto(self, cre_name: str):
@@ -81,10 +84,39 @@ class ProducerOfAre(producer_base.Producer):
         self.doc.classesRegistry.set_class_tup('class_manual', cre_name, ctrl_file_name, ctrl_name)
         return
 
-    def produce_cre_class_inst_auto(self, actor_name: str, cre_name: str):
+    def produce_cre_class_inst_auto(self, actor_name: str, cre_name: str, actor_dict: dict):
+        class_manual = self.doc.classesRegistry.get_class_tup('class_manual', cre_name)
+        prod = producer_ctrl_inst_auto.ProducerOfCtrlInstAuto(self.doc
+            , cre_name=cre_name
+            , are_name=self.are_name
+            , script_id=self.script_id + 3
+            , make_new=False
+            , base_class=class_manual
+            , actor_name = actor_name
+            , actor_dict = actor_dict
+        )
+        prod.produce()
+        prod.save()
+        ctrl_name, ctrl_file_name = prod.get_ctrl_tuple()
+        reg_name = f'{self.are_name}.{cre_name}.{actor_name}'
+        self.doc.classesRegistry.set_class_tup('class_inst_auto', reg_name, ctrl_file_name, ctrl_name)
         return
 
     def produce_cre_class_inst_manual(self, actor_name: str, cre_name: str):
+        reg_name = f'{self.are_name}.{cre_name}.{actor_name}'
+        class_auto = self.doc.classesRegistry.get_class_tup('class_inst_auto', reg_name)
+        prod = producer_ctrl_inst_manual.ProducerOfCtrlInstManual(self.doc
+            , cre_name=cre_name
+            , are_name=self.are_name
+            , script_id=self.script_id + 4
+            , make_new=False
+            , base_class=class_auto
+            , actor_name = actor_name
+        )
+        prod.produce()
+        prod.save()
+        ctrl_name, ctrl_file_name = prod.get_ctrl_tuple()
+        self.doc.classesRegistry.set_class_tup('class_inst_manual', reg_name, ctrl_file_name, ctrl_name)
         return                
 
     def ensure_actor_bcses(self, actor_dict: dict):
@@ -111,17 +143,26 @@ class ProducerOfAre(producer_base.Producer):
         return
 
     def ensure_bcs(self, actor_name: str, bcs_name: str, def_name: str, cre_name: str, script_code: str):
-        if not self.doc.bcsManager.get_bc(bcs_name):
+        if not self.doc.bcsManager.get_bc(bcs_name + '_AUTO'):
             #file_path_out = self.doc.get_path_out_are_bcs_file(self.are_name)
             #self.doc.bcsManager.produce_bcs(bcs_name, file_path_out)
             make_new_bcs = False
-            if self.bcs_counter == 0:
+            if self.bcs_counter_auto == 0:
                 make_new_bcs = True
-            bcs_prod = produce_bcs_manager.ProduceBCSFile(self.doc, bcs_name, self.are_name, self.script_id + 5, make_new_bcs)
+            bcs_prod = produce_bcs_manager.ProduceBCSFileAuto(self.doc, bcs_name, self.are_name, self.script_id + 5, make_new_bcs)
             bcs_prod.produce(def_name, cre_name, actor_name, script_code)
             bcs_prod.save()
-            t = bcs_prod.get_ctrl_tuple()
-            self.doc.bcsManager.set_bc(bcs_prod.bcs_name, t[1], t[0])
-            self.bcs_counter += 1
+            ctrl_name, file_name = bcs_prod.get_ctrl_tuple()
+            self.doc.bcsManager.set_bc(bcs_prod.bcs_name + '_AUTO', file_name, ctrl_name)
+            self.bcs_counter_auto += 1
             del bcs_prod
+
+            if not self.doc.bcsManager.get_bc(bcs_name):
+                bcs_prod_manual = produce_bcs_manager.ProduceBCSFileManual(self.doc
+                    , bcs_name, self.are_name, self.script_id + 6, file_name, ctrl_name, False)
+                if bcs_prod_manual.produce(def_name, cre_name, actor_name, script_code):
+                    bcs_prod_manual.save()
+                ctrl_name, file_name = bcs_prod_manual.get_ctrl_tuple()
+                self.doc.bcsManager.set_bc(bcs_prod_manual.bcs_name, file_name, ctrl_name)
+                del bcs_prod_manual
         return

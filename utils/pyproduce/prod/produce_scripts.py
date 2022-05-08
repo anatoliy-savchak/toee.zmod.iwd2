@@ -185,6 +185,57 @@ class ProducerOfScripts(producer_base.Producer):
                 json.dump(self.index_file, f, indent=4)
         return
 
+    def produce_func_defs(self, out_file_path: str = None):
+        if not out_file_path:
+            out_file_path = os.path.join(self.doc.core_dir, "scr/inf_scripting_auto.py")
+        template_path = 'data/inf_scripting_auto.py'
+        prod = producer_base.ProducerOfFile(self.doc, out_file_path, template_path, True)
+        prod.indent()
+
+        def produce_funcs(commands, label: str):
+            nonlocal prod
+            prod.writeline(f'########## {label} ##########')
+            for rec in commands:
+                func_name = rec["func_name"]
+                args = rec["args"]
+                args_orig_defs = list()
+                args_defs = list()
+                args_defs.append('self')
+                for arg in args:
+                    arg_line = arg["def"]["arg_line"]
+                    args_orig_defs.append(arg_line)
+                    arg_name = arg["def"]["arg_name"]
+                    param_name = arg_name.lower().replace(' ', '_')
+                    if param_name == 'object': param_name = 'obj'
+                    if param_name == 'class': param_name = 'class_'
+                    if param_name == 'with': param_name = 'with_'
+                    args_defs.append(param_name)
+
+                orig_def = f'{func_name}({", ".join(args_orig_defs)})'
+                func_def = f'{func_name}({", ".join(args_defs)})'
+                prod.writeline('@dump_args')
+                prod.writeline(f'def {func_def}:')
+                prod.indent()
+                prod.writeline('"""')
+                prod.writeline(f'{orig_def}')
+                prod.writeline('"""')
+                prod.writeline(f'raise Exception("Not implemented function: {func_name}!")')
+                prod.writeline('return')
+                prod.indent(False)
+                prod.writeline()
+            return
+
+        funcs = sorted(self.index_file["statistics"]["funcs"].items())
+        
+        triggers = (rec for n, rec in funcs if rec["kind"] == 'trigger')
+        produce_funcs(triggers, 'TRIGGERS')
+        actions = (rec for n, rec in funcs if rec["kind"] == 'action')
+        produce_funcs(actions, 'ACTIONS')
+        identifiers = (rec for n, rec in funcs if rec["kind"] == 'identifier')
+        produce_funcs(identifiers, 'IDENTIFIERS')
+        prod.save()
+        return
+
 
 def condition_split(cond: str):
     result = cond.splitlines(False)

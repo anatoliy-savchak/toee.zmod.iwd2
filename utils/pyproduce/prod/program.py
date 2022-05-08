@@ -30,9 +30,10 @@ def main():
     #are_prod = doc.acquire_are_producer('AR1000')
     #are_prod.produce()
 
-    doc.producerOfScripts.log_usage = True
-    doc.scan_all_ares()
-    doc.producerOfScripts._save_index()
+    #doc.producerOfScripts.log_usage = True
+    #doc.scan_all_ares()
+    doc.producerOfScripts.produce_func_defs()
+    #doc.producerOfScripts._save_index()
     for e in doc.producerOfScripts.error_messages:
         print(e)
 

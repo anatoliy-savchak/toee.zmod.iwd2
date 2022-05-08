@@ -220,12 +220,6 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		return
 
 	def debug_script_exec(self):
-		hedron_npc, hedron = self._get_ie_object("'Hedron'")
-		assert isinstance(hedron, inf_scripting.InfScriptSupportNPC)
-		hedron.iSetNumTimesTalkedTo(1)
-		hedron.iSetGlobal("'Reig_Quest'", "'GLOBAL'", 1)
-		hedron.iSetGlobal("'Hedron_Know_Attack'","'GLOBAL'", 2)
-		hedron.iSetGlobal("'Hedron_Quest'", "'GLOBAL'", 2)
-		hedron.iSetGlobal("'Dock_Goblin_Quest'","'GLOBAL'", 1)
+		py10004_ar1000_npc_inst_classes.Ctrl_10HEDRON_AR1000_Hedron.test_Hedron_Quest_4_max_diplomacy(self)
 
 		return

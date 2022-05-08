@@ -106,10 +106,10 @@
 {262}{It is likely the goblin attack merely frightened her.  Any harsh words she spoke probably stemmed from fear, not anger.}{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{270}{} # resp: 10HEDRON 56
 {263}{She's certainly got a tongue on her, no doubt.}{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{280}{ctrl(npc).dialog_action(npc, pc, 11)} # resp: 10HEDRON 57
 {264}{She's certainly got a tongue on her, no doubt.}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{280}{ctrl(npc).dialog_action(npc, pc, 12)} # resp: 10HEDRON 58
-{265}{She's certainly got a tongue on her, no doubt.}{}{1}{ctrl(npc).dialog_test(npc, pc, 17)}{280}{ctrl(npc).dialog_action(npc, pc, 13)} # resp: 10HEDRON 59
+{265}{She's certainly got a tongue on her, no doubt.}{}{1}{ctrl(npc).dialog_test(npc, pc, 17)# skill_diplomacy}{280}{ctrl(npc).dialog_action(npc, pc, 13)} # resp: 10HEDRON 59
 {266}{She was somewhat sparse with her gratitude, Hedron.  Perhaps you could remedy that.}{}{1}{ctrl(npc).dialog_test(npc, pc, 18)}{270}{ctrl(npc).dialog_action(npc, pc, 14)} # resp: 10HEDRON 60
 {267}{She was somewhat sparse with her gratitude, Hedron.  Perhaps you could remedy that.}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{270}{ctrl(npc).dialog_action(npc, pc, 15)} # resp: 10HEDRON 61
-{268}{She was somewhat sparse with her gratitude, Hedron.  Perhaps you could remedy that.}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{270}{ctrl(npc).dialog_action(npc, pc, 16)} # resp: 10HEDRON 62
+{268}{She was somewhat sparse with her gratitude, Hedron.  Perhaps you could remedy that.}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)# skill_diplomacy}{270}{ctrl(npc).dialog_action(npc, pc, 16)} # resp: 10HEDRON 62
 
 {270}{Here, take this - it's the least thanks I can give ye for lending a swordarm in her defense... especially for all her spit and fire.}{Here, take this - it's the least thanks I can give ye for lending a swordarm in her defense... especially for all her spit and fire.}{}{}{}{} # phrase: 10HEDRON 29
 {271}{The tenets of my faith preclude me from accepting this much wealth.  We were pleased to help you, and let us leave it at that.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 25)}{0}{} # resp: 10HEDRON 67

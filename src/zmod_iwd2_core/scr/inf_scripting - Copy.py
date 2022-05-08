@@ -288,36 +288,6 @@ class InfScriptSupportNPC(InfScriptSupport):
 
 		return super(InfScriptSupportNPC, self)._get_globals(area)
 
-	@dump_args
-	def iGiveItem(self, item_name, target_obj_name):
-		""" 
-		15 GiveItem(S:Object*,O:Target*)
-		This action instructs the active creature to give the specified item (parameter 1) to the specified 
-		target (parameter 2). The active creature must possess the item to pass it. 
-		"""
-		target, ctrl = self._get_ie_object(target_obj_name)
-		if target:
-			npc = self._gnpc()
-			proto = self._get_proto(item_name)
-			item = npc.item_find_by_proto(proto)
-			if item:
-				target.item_get(item)
-		return
-
-	@dump_args
-	def iDestroyItem(self, item_name):
-		""" 
-		169 DestroyItem(S:ResRef*)
-		This action removes a single instance of the specified item from the active creature, unless the item exists in a stack, 
-		in which case the entire stack is removed. The example script is from ar1000.bcs.
-		"""
-		npc = self._gnpc()
-		proto = self._get_proto(item_name)
-		item = npc.item_find_by_proto(proto)
-		if item:
-			item.destroy()
-		return
-
 class InfScriptSupportDaemon(InfScriptSupport):
 	def _get_globals(self, area):
 		if area.lower() == "area":

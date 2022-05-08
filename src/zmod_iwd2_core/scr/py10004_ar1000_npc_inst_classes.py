@@ -22,4 +22,18 @@ def ctrl(npc): return ctrl_behaviour.get_ctrl(npc.id)
 def cs(): return ctrl_daemon.gdc()
 #### NPCS ####
 class Ctrl_10HEDRON_AR1000_Hedron(py10003_ar1000_npc_inst_classes_auto.Ctrl_10HEDRON_AR1000_Hedron_Auto): # 10HEDRON 
-	pass
+	@classmethod
+	def test_Hedron_Quest_4_max_diplomacy(cls, self):
+		hedron_npc, hedron = self._get_ie_object("'Hedron'")
+		assert isinstance(hedron, inf_scripting.InfScriptSupportNPC)
+
+		hedron.iSetNumTimesTalkedTo(1) # to get to 33: You're back - any word of me Ma?
+		hedron.iSetGlobal("Reig_Quest", "GLOBAL", 1) # to get to 33: You're back - any word of me Ma?
+		hedron.iSetGlobal("Hedron_Know_Attack","GLOBAL", 2) # to get to 33: You're back - any word of me Ma?
+		hedron.iSetGlobal("Hedron_Quest", "GLOBAL", 2) # to get to 33: You're back - any word of me Ma?
+		hedron.iSetGlobal("Dock_Goblin_Quest","GLOBAL", 1) # to get to 33: You're back - any word of me Ma?
+
+		toee.game.leader.stat_base_set(toee.stat_charisma, 16) # to get to resp 62: You're back - any word of me Ma?
+		print('toee.game.leader.stat_base_set(toee.stat_charisma, 16) => {}'.format(toee.game.leader.stat_base_get(toee.stat_charisma)))
+
+		return

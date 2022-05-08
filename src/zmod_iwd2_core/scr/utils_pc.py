@@ -47,14 +47,30 @@ def pc_party_set_starting_gold_as_raw(roll = None):
 		 toee.game.party[0].money_adj(diff)
 	return diff
 
-def pc_party_receive_money_and_print(value):
+def pc_party_receive_money_and_print(value, float = True):
 	#prev_wealth_copper = toee.game.leader.money_get()
 	toee.game.leader.money_adj(value)
 	new_wealth_copper = toee.game.leader.money_get()
 	value_gp = value // const_toee.gp
 	net_gp = new_wealth_copper // const_toee.gp
-	text = "\nParty received money: {} gp (net: {} gp).\n".format(value_gp, net_gp)
+	text_fly = "Party received money: {} gp".format(value_gp)
+	text = "\n{} (net: {} gp).\n".format(text_fly, net_gp)
+	print(text)
 	toee.game.create_history_freeform(text)
+	if float:
+		toee.game.leader.float_text_line(text_fly, toee.tf_yellow)
+	return
+
+def pc_receive_item_print(pc, item, float):
+	assert isinstance(pc, toee.PyObjHandle)
+	assert isinstance(item, toee.PyObjHandle)
+
+	text_fly = "{} received : {}!".format(pc.description, item.description)
+	text = "\n{}\n".format(text_fly)
+	print(text_fly)
+	toee.game.create_history_freeform(text)
+	if float:
+		pc.float_text_line(text_fly, toee.tf_green)
 	return
 
 def pc_award_experience_each(xp_awarded_each, do_print = 0):

@@ -2,6 +2,7 @@ import json
 import os
 import re
 import produce_scripts
+import common
 #import pydub does not work
 
 def text_strip_directions(text: str):
@@ -24,8 +25,8 @@ class DialogFile:
         speech_id_str = str(speech_id) if not speech_id is None else ""
         line = f"{{{line_id}}}{{{text}}}{{{text}}}{{}}{{{speech_id_str}}}{{}}{{{str(effect_code or '')}}} # phrase: {self.current_cre_name} {phrase_id}"
         if self.last_num:
-            self.line_tups.append((None, ""))
-        self.line_tups.append((line_id, line))
+            self.line_tups.append((None, "", None))
+        self.line_tups.append((line_id, line, None))
 
         self.last_num = line_id
         self.last_num_phrase = line_id
@@ -39,7 +40,7 @@ class DialogFile:
         if answer_id == 0:
             answer_id_str = 0
         line = f"{{{line_id}}}{{{text}}}{{}}{{1}}{{{str(test_field or '')}}}{{{answer_id_str}}}{{{str(effect_code or '')}}} # resp: {self.current_cre_name} {resp_id}"
-        self.line_tups.append((line_id, line))
+        self.line_tups.append((line_id, line, common.tDict(resp_id=resp_id, text=text, test_field=test_field, answer_id=answer_id, effect_code=effect_code)))
 
         self.last_num = line_id
         return line_id
@@ -53,13 +54,26 @@ class DialogFile:
         
         answer_id_str = str(answer_id) if not answer_id is None else ""
         line = f"{{{line_id}}}{{{text}}}{{}}{{1}}{{{str(test_field or '')}}}{{{answer_id_str}}}{{{str(effect_code or '')}}} # resp: {self.current_cre_name} {resp_id}"
-        self.line_tups[index] = ((line_id, line))
+        self.line_tups[index] = ((line_id, line, common.tDict(resp_id=resp_id, text=text, test_field=test_field, answer_id=answer_id, effect_code=effect_code, answer_id_str=answer_id_str)))
 
         return line_id
 
+    def update_response_test_field_append(self, line_id: int, add_test_field_part: str):
+        index = next((i for i, tup in enumerate(self.line_tups) if tup[0] == line_id), None)
+        if index is None:
+            raise Exception(f'update_response line_id: {line_id} not found!')
+        tup = self.line_tups[index]
+        d = tup[2]
+        if not d['test_field']:
+            d['test_field'] = f'True {add_test_field_part}'
+        else: d['test_field'] = f"{d['test_field']}{add_test_field_part}"
+        line = f"{{{line_id}}}{{{d['text']}}}{{}}{{1}}{{{str(d['test_field'] or '')}}}{{{d['answer_id_str']}}}{{{str(d['effect_code'] or '')}}} # resp: {self.current_cre_name} {d['resp_id']}"
+        self.line_tups[index] = ((tup[0], line, d))
+        return
+
     def save(self):
         with open(self.file_name, 'w') as f:
-            for num, line in self.line_tups:
+            for num, line, d in self.line_tups:
                 #aline = line
                 f.write(line + ("\n" if not "\n" in line else ""))
         self.save_sound_map()
@@ -109,6 +123,7 @@ class ProduceNPCDialog:
 
         self.current_are_name = None
         self.current_cre_name = None
+        self.trigger_index_skills = dict()
         return
 
     def _add_line(self, line):
@@ -224,6 +239,9 @@ class ProduceNPCDialog:
             self.parent.indent(True)
             response_text, resp_line_id = self.response_triggers[triggerIndex]
             self._add_line(f'return True # {resp_line_id}: {response_text}')
+            skill_name = self.scan_for_skills(out_lines, triggerIndex)
+            if skill_name:
+                self.dialog_file.update_response_test_field_append(resp_line_id, f'# {skill_name}')
             self.parent.indent(False)
             self._add_line("")
             self.parent.indent(False)
@@ -392,4 +410,32 @@ class ProduceNPCDialog:
         for action in dialog.get("Actions"):
             action_lines = produce_scripts.condition_split(action)
             doc.producerOfScripts.transate_action_lines(action_lines, are_name=are_name, cre_name=cre_name)
+        return
+
+    def scan_for_skills(self, out_lines: list, trigger_index: int):
+        def get_val(line: str, arg_index: int):
+            funct_name, func_args = produce_scripts.ScriptTran._parse_func(line, None)
+            if func_args and len(func_args) > arg_index + 1:
+                val = func_args[arg_index].value
+                return val
+            return
+        skill_name = None
+        for line in out_lines:
+            lline = line.lower()
+            if 'icheckstatgt(' in lline:
+                if '"chr"' in lline:
+                    if get_val(line.replace('self.', '').replace('if', '').replace('\\', '').strip(), 1) >= 15:
+                        skill_name = 'skill_diplomacy'
+                        break
+            if 'checkskillgt(' in lline:
+                if 'diplomacy' in lline:
+                        skill_name = 'skill_diplomacy'
+                        break
+                if 'bluff' in lline:
+                        skill_name = 'skill_bluff'
+                        break
+
+        if not skill_name is None:
+            self.trigger_index_skills[trigger_index] = skill_name
+            return skill_name
         return

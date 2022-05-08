@@ -57,7 +57,10 @@ def strip_quotes(s, notify = False):
 
 class InfScriptSupport:
 	def _gnpc(self):
-		return toee.PyObjHandle()
+		return toee.OBJ_HANDLE_NULL
+
+	def _gtriggerer(self):
+		return toee.OBJ_HANDLE_NULL
 
 	def _get_globals(self, area):
 		area = strip_quotes(area)
@@ -99,12 +102,25 @@ class InfScriptSupport:
 				ctrl = self
 				break
 
-			if _name == "protagonist": # not sure, maybe either a leader or first PC TODO
+			if _name == "protagonist": 
 				npc = self._gnpc()
 				ctrl = self
+				if npc.type == toee.obj_t_pc:
+					break
+
+				# opposite dude
+				npc = self._gtriggerer()
+				ctrl = None
+				if npc.type == toee.obj_t_pc:
+					break
+
+				if False:
+					# need to seek an error to determine
+					npc = toee.game.leader
+					ctrl = None
 				break
 
-			if q:
+			if True: #q:
 				storage = utils_storage.obj_storage_by_alias(name)
 				if storage:
 					ctrl = ctrl_behaviour.get_ctrl_from_storage(storage)
@@ -269,7 +285,7 @@ class InfScriptSupport:
 		Class(O:Object*, I:Class*Class)
 		Returns true only if the Class of the specified object matches that in the second parameter.
 		"""
-		toee_class = utils_inf.iwd2_classname_to_class(classname)
+		toee_class = utils_inf.iwd2_classname_to_class(class_)
 		npc, ctrl = self._get_ie_object(obj)
 		if npc:
 			cc = npc.get_character_classes()
@@ -291,7 +307,7 @@ class InfScriptSupport:
 		CLERIC
 		DRUID
 		"""
-		toee_class = utils_inf.iwd2_classname_to_class(classname)
+		toee_class = utils_inf.iwd2_classname_to_class(class_)
 		npc, ctrl = self._get_ie_object(obj)
 		if npc:
 			cc = npc.get_character_classes()
@@ -1228,7 +1244,7 @@ class InfScriptSupport:
 		"""
 		DestroyItem(S:ResRef*)
 		"""
-		raise Exception("Not implemented function: DestroyItem!")
+		raise Exception("Not implemented here function: DestroyItem!")
 		return
 	
 	@dump_args
@@ -1462,11 +1478,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def GiveItem(self, obj, target):
+	def iGiveItem(self, obj, target):
 		"""
 		GiveItem(S:Object*, O:Target*)
 		"""
-		raise Exception("Not implemented function: GiveItem!")
+		raise Exception("Not implemented here function: GiveItem!")
 		return
 	
 	@dump_args
@@ -2207,11 +2223,32 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def TakePartyItemNum(self, item, num):
+	def iTakePartyItemNum(self, item, num):
 		"""
 		TakePartyItemNum(S:Item*, I:Num)
+
+		This action will remove a number of instances (specified by the Num parameter) of the specified item from the party. 
+		The items will be removed from players in order, for example; Player1 has 3 instances of “MYITEM” in their inventory, 
+		Player2 has 2 instance of “MYITEM,” and Player3 has 1 instance. If the action TakePartyItemNum(“MYITEM”, 4) is run, 
+		all 3 instances of “MYITEM” will be taken from Player1, and 1 instance will be taken from Player2. 
+		This leaves Player2 and Player3 each with one instance of “MYITEM.” If the last item of an item type stored in a container 
+		STO file is removed by this action, the amount becomes zero. Items with zero quantities cannot be seen in-game, 
+		cannot be removed by TakePartyItem, and will not count toward a container’s current item load. 
+		If the item to be taken is in a stack, and the stack is in a quickslot, the item will be removed, and the remaining stack will be placed in the inventory. 
+		If the inventory is full, the stack item will be dropped on the ground.
 		"""
-		raise Exception("Not implemented function: TakePartyItemNum!")
+
+		proto = self._get_proto(item)
+		if not proto is None:
+			for pc in toee.game.party:
+				while num:
+					item = pc.item_find_by_proto(proto)
+					if item:
+						item.destroy()
+						# TODO - decrease if stack
+						num = num - 1
+				if not num:
+					break
 		return
 	
 	@dump_args
@@ -2592,8 +2629,6 @@ class InfScriptSupport:
 		return
 	
 class InfScriptSupportNPC(InfScriptSupport):
-	def _gtriggerer(self):
-		return toee.PyObjHandle()
 
 	def _get_globals(self, area):
 		if area.lower() == "locals":
@@ -2658,13 +2693,48 @@ class InfScriptSupportNPC(InfScriptSupport):
 		return result < value
 	
 	@dump_args
-	def iCheckStatGT(self, obj_name, value, statname):
+	def iCheckStatGT(self, obj, value, statnum):
 		""" 
 		0x4045 CheckStatGT(O:Object*,I:Value*,I:StatNum*Stats)
 		Returns true only if the specified object has the statistic in the 3rd parameter greater than the value of the 2nd parameter.
 		"""
 		result = self._get_stat_value(obj, statnum)
-		return result < value
+		print('stat_value: {}'.format(result))
+		return result > value
+
+	
+	@dump_args
+	def iDestroyItem(self, resref):
+		"""
+		DestroyItem(S:ResRef*)
+		This action removes a single instance of the specified item from the active creature, unless the item exists in a stack, 
+		in which case the entire stack is removed. The example script is from ar1000.bcs.
+		"""
+		npc = self._gnpc()
+		proto = self._get_proto(resref)
+		item = npc.item_find_by_proto(proto)
+		if item:
+			# TODO - decrease if stack
+			item.destroy()
+		return
+
+	@dump_args
+	def iGiveItem(self, obj, target):
+		"""
+		GiveItem(S:Object*, O:Target*)
+		This action instructs the active creature to give the specified item (parameter 1) to the specified 
+		target (parameter 2). The active creature must possess the item to pass it. 
+		"""
+		target, ctrl = self._get_ie_object(target)
+		if target:
+			npc = self._gnpc()
+			proto = self._get_proto(obj)
+			item = npc.item_find_by_proto(proto)
+			if item:
+				target.item_get(item)
+				if target.type == toee.obj_t_pc:
+					utils_pc.pc_receive_item_print(target, item, True)
+		return
 
 	@dump_args
 	def iHP(self, obj, hit_points):

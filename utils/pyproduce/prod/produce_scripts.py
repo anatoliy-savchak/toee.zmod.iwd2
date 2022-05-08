@@ -347,7 +347,8 @@ class ScriptTran:
         try:
             tree = ast.parse(line)
         except SyntaxError as e:
-            producer.log_error(error_message=e.msg + ' ' + line)
+            if producer:
+                producer.log_error(error_message=e.msg + ' ' + line)
             return None, None
 
         f = tree.body[0].value.func

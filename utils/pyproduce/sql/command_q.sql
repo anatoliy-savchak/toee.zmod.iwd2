@@ -23,5 +23,5 @@
 )
 select * from s
 --select distinct s.src from s
-where s.FileName in ('AddXpVar')
-	--and s.def_arg_line = 'I:StatNum*Stats'
+where s.FileName in ('CheckStatGT', 'CheckStatLT', 'CheckStat')
+	and s.def_arg_line = 'I:StatNum*Stats'

@@ -523,12 +523,13 @@ class ScriptTranFuncsItem(ScriptTranFuncs):
     def do_process_item(self, func_name: str, args: list, func_info, index_with_item: int, make_create: bool, make_proto: bool):
         item_file_name = self.do_translate_param(args[index_with_item], index_with_item, func_info["args"][index_with_item])
         item_file_name = item_file_name.replace('"', '').strip()
+        item_file_name = item_file_name.replace("'", '').strip()
         if item_file_name == "00Leat01":
             print("")
         item_cls = produce_items.ItemBase.find_item_class(item_file_name)
         if item_cls:
             if make_create:
-                line = item_cls.give_item_create_line(item_file_name, self.do_translate_param(args[2], 2, func_info.args[2]) if len(args) > 2 else 0)
+                line = item_cls.give_item_create_line(item_file_name, self.do_translate_param(args[2], 2, func_info["args"][2]) if len(args) > 2 else 0)
                 if not line is None:
                     return line
 
@@ -540,7 +541,7 @@ class ScriptTranFuncsItem(ScriptTranFuncs):
                         if i == 0:
                             args2.append(f'{proto_const}')
                         else:
-                            args2.append(self.do_translate_param(a, i, func_info.args[i]))
+                            args2.append(self.do_translate_param(a, i, func_info["args"][i]))
                     line = f'self.i{func_name}({", ".join([str(v or "") for v in args2])})' 
                     return line
         print(f"Not supported func {func_name} param: {item_file_name} => {self.line}")

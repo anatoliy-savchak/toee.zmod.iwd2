@@ -126,37 +126,6 @@ class InfScriptSupport:
 	############# TRIGGERS
 
 	@dump_args
-	def iGlobalGT(self, name, area, value):
-		""" 
-		0x4034 GlobalGT(S:Name*,S:Area*,I:Value*)
-		See Global(S:Name*,S:Area*,I:Value*) except the variable must be greater than the value specified to be true.
-		"""
-		global_value = self._ensure_global(name, area)
-		return global_value > value
-
-	@dump_args
-	def iGlobalLT(self, name, area, value):
-		""" 
-		0x4035 GlobalLT(S:Name*,S:Area*,I:Value*)
-		As above except for less than.
-		"""
-		global_value = self._ensure_global(name, area)
-		return global_value < value
-
-	@dump_args
-	def iSetGlobal(self, name, area, value):
-		""" 
-		30 SetGlobal(S:Name*,S:Area*,I:Value*)
-		This action sets a variable (specified by name) in the scope (specified by area) to the value (specified by value).
-		"""
-		print("setting {} {} = {}".format(area, name, value))
-		self._set_global(name, area, value)
-		g = self._get_globals(area)
-		print("got {} {} = {}".format(area, name, g[name]))
-		return
-
-
-	@dump_args
 	def iSubRace(self, obj_name, subrace_names):
 		""" 
 		0x40CD SubRace(O:Object*,I:SubRace*SubRace)
@@ -184,71 +153,6 @@ class InfScriptSupport:
 				return race_id == orace
 		return False
 	
-	@dump_args
-	def iHP(self, obj_name, hp):
-		""" 
-		0x4010 HP(O:Object*,I:Hit Points*)
-		Returns true only if the current hitpoints of the specified object are equal to the 2nd parameter.
-		"""
-		return self._hp(obj_name) == hp
-	
-	@dump_args
-	def iHPGT(self, obj_name, hp):
-		""" 
-		00x4011 HPGT(O:Object*,I:Hit Points*)
-		Returns true only if the current hitpoints of the specified object are greater than the 2nd parameter.
-		"""
-		return self._hp(obj_name) > hp
-	
-	@dump_args
-	def iHPLT(self, obj_name, hp):
-		""" 
-		0x4012 HPLT(O:Object*,I:Hit Points*)
-		Returns true only if the current hitpoints of the specified object are less than the 2nd parameter.
-		"""
-		return self._hp(obj_name) < hp
-	
-	@dump_args
-	def iClassEx(self, obj_name, classname):
-		""" 
-		0x4098 ClassEx(O:Object*,I:Class*class*)
-		As Class(), except ClassEx() also returns true if the specified object is multi-classed.
-		"""
-		toee_class = utils_inf.iwd2_classname_to_class(classname)
-		npc, ctrl = self._get_ie_object(obj_name)
-		if npc:
-			cc = npc.get_character_classes()
-			if toee_class in cc:
-				return True
-		return False
-	
-	@dump_args
-	def iCheckStatLT(self, obj_name, value, statname):
-		""" 
-		0x4046 CheckStatLT(O:Object*,I:Value*,I:StatNum*Stats)
-		Returns true only if the specified object has the statistic in the 3rd parameter less than the value of the 2nd parameter.
-		"""
-		tup = utils_inf.iwd2_stat_convert(statname)
-		if tup:
-			npc, ctrl = self._get_ie_object(obj_name)
-			if npc:
-				level = npc.stat_level_get(tup[0])
-				return level < value
-		return False
-	
-	@dump_args
-	def iCheckStatGT(self, obj_name, value, statname):
-		""" 
-		0x4045 CheckStatGT(O:Object*,I:Value*,I:StatNum*Stats)
-		Returns true only if the specified object has the statistic in the 3rd parameter greater than the value of the 2nd parameter.
-		"""
-		tup = utils_inf.iwd2_stat_convert(statname)
-		if tup:
-			npc, ctrl = self._get_ie_object(obj_name)
-			if npc:
-				level = npc.stat_level_get(tup[0])
-				return level > value
-		return False
 
 	@dump_args
 	def iCheckSkill(self, obj_name, value, statname):
@@ -332,63 +236,6 @@ class InfScriptSupport:
 	############# ACTIONS
 
 	@dump_args
-	def iFadeToColor(self, point_str, value):
-		""" 
-		202 FadeToColor(P:Point*,I:Blue*) Variants: [BG1/BG2/BGEE/IWD1/IWD2] [PST]
-		This action will fade the screen. The point parameter is given in [x.y] format with the x coordinate specifying the number of AI 
-		updates (which default to 15 per second) to take to complete the fade action.
-		"""
-		# do nothing
-		return
-
-	@dump_args
-	def iFadeFromColor(self, point_str, value):
-		""" 
-		203 FadeFromColor(P:Point*,I:Blue*) Variants: [BG1/BG2/BGEE/IWD1/IWD2] [PST]
-		This action will unfade the screen. The point parameter is given in [x.y] format with the x coordinate specifying 
-		the number of AI updates (which default to 15 per second) to take to complete the fade action.
-		"""
-		# do nothing
-		return
-
-	@dump_args
-	def iAddXpVar(self, difficulty_str, value):
-		""" 
-		238 AddXPVar(S:VarTableEntry*,I:Strref*) Variants: [IWD1/IWD2] 
-		"""
-		utils_pc.pc_award_experience_party(value, 1) # TODO verify that it's per party
-		return
-
-	@dump_args
-	def iRestUntilHealed(self):
-		""" 
-		258 RestUntilHealed() Variants: [IWD1/IWD2] [BG1/BG2/BGEE/PST]
-		This action rests the party until all PCs are fully healed. Healing Spells are cast by the party at the start of each rest period except the first.
-		"""
-		# TODO TEMPLE+
-		return
-
-	@dump_args
-	def iGiveItemCreate(self, item_name, obj_name, usage1 = 0, usage2 = 0, usage3 = 0):
-		""" 
-		140 GiveItemCreate(S:ResRef*,O:Object*,I:Usage1*,I:Usage2*,I:Usage3*)
-		This action creates the item specified by the resref parameter on the creature specified by the object parameter, with quantity/charges controlled by the usage parameters. 
-		"""
-		npc, ctrl = self._get_ie_object(obj_name)
-		if npc:
-			proto = self._get_proto(item_name)
-			#if isinstance(proto, str):
-			#	if proto == "Misc07": # gold
-			#		utils_pc.pc_party_receive_money_and_print(usage1 * const_toee.gp)
-			if not proto is None:
-				item_obj = utils_item.item_create_in_inventory2(proto, npc, 0, None)
-			#else:
-			#	item = utils_item.item_create_in_inventory2(proto, target, 0, None)
-
-		# TODO
-		return
-
-	@dump_args
 	def iSetCriticalPathObject(self, obj_name, value):
 		""" 
 		283 SetCriticalPathObject(O:Object*,I:Critical*Boolean) Variants: [IWD2] [BG1/BG2/BGEE/IWD1/PST]
@@ -440,44 +287,6 @@ class InfScriptSupportNPC(InfScriptSupport):
 			return result
 
 		return super(InfScriptSupportNPC, self)._get_globals(area)
-
-	@dump_args
-	def iNumTimesTalkedTo(self, num):
-		""" 
-		0x4039 NumTimesTalkedTo(I:Num*)
-
-		Returns true only if the player's party has spoken to the active CRE the exact number of times specified.
-		NB. NumTimesTalkedTo seems to increment when a PC initiates conversion with an NPC, or an NPC initiates conversation with a PC.
-		NumTimesTalkedTo does not seem to increment for force-talks, interactions, interjections and self-talking.
-		"""
-		#npc = self._gnpc()
-		#triggerer = self._gtriggerer()
-		#result = npc.has_met(triggerer)
-		result = self.has_met()
-		if num:
-			if num > 1: 
-				print("{} ({}) -- num is greater than 1, not supported!".format(inspect.stack()[0][3]), num)
-				debug.breakp("")
-			result = not result
-		return result == num
-
-	@dump_args
-	def iNumTimesTalkedToGT(self, num):
-		""" 
-		0x403A NumTimesTalkedToGT(I:Num*)
-		Returns true only if the player's party has spoken to the active CRE more than the number of times specified.
-		"""
-		#npc = self._gnpc()
-		#triggerer = self._gtriggerer()
-		#result = npc.has_met(triggerer)
-		result = self.has_met()
-		#print("has_met = {} for {} to {}".format(result, npc, triggerer))
-		if num:
-			if num > 1: 
-				print("{} ({}) -- num is greater than 1, not supported!".format(inspect.stack()[0][3]), num)
-				debug.breakp("")
-		result = int(result) > num
-		return result
 
 	@dump_args
 	def iGiveItem(self, item_name, target_obj_name):

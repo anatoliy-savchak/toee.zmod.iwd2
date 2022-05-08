@@ -27,9 +27,10 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
                 yield rec
         return
 
-    def produce(self):
+    def produce(self, skip_bcs: bool = False):
         self.produce_npcs('place_npcs')
-        self.produce_bcs('place_bcs')
+        if not skip_bcs:
+            self.produce_bcs('place_bcs')
         return
 
     def produce_npcs(self, def_name: str):
@@ -58,6 +59,8 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
             hidden = bool(actor["DefaultHiddenCalc"])
             reg_name = f'{self.are_name}.{cre_file}.{name}'
             d = self.doc.classesRegistry.get_class_tup('class_inst_manual', reg_name)
+            if not d:
+                continue
             class_file, ctrl_class = d["file_name"], d["class_name"]
             if class_file and not class_file in self.used_imports:
                 self.used_imports.append(class_file)

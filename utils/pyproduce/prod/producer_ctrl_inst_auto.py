@@ -43,12 +43,12 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
             bcs_name = self.actor_dict[bcs_attribute]
             if bcs_name:
                 d = self.doc.bcsManager.get_bc(bcs_name)
-                #file_name, ctrl_name = d["file_name"], d["ctrl_name"]
-                file_name, ctrl_name = d[0], d[1]
-                if not file_name in imports: 
-                    imports.append(file_name)
+                if d:
+                    file_name, ctrl_name = d[0], d[1]
+                    if not file_name in imports: 
+                        imports.append(file_name)
 
-                self.writeline(f'self.vars["{script_name}"] = {file_name}.{ctrl_name}')
+                    self.writeline(f'self.vars["{script_name}"] = {file_name}.{ctrl_name}')
 
             return
         self.indent()
@@ -58,8 +58,8 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         write_script("ScriptDefault", 'bcs_movement')
         write_script("ScriptSpecific", 'bcs_team')
         write_script("ScriptSpecial1", 'bcs_special_one')
-        self.indent(False)
         self.writeline('return')
+        self.indent(False)
         self.indent(False)
         self.writeline('')
 

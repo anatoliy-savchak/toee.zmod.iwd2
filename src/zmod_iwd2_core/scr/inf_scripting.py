@@ -4,8 +4,10 @@ import inspect, itertools
 import utils_storage
 import utils_inf
 import utils_pc
+import utils_npc
 import utils_item
 import const_toee
+import ctrl_behaviour
 
 __metaclass__ = type
 
@@ -84,6 +86,9 @@ class InfScriptSupport:
 	def _get_ie_object(self, name):
 		# returns (npc, ctrl) if known
 		# see object.ids
+		if isinstance(name, toee.PyObjHandle):
+			return (name, ctrl_behaviour.get_ctrl(name.id))
+
 		_name = name.lower()
 		npc = None
 		ctrl = None
@@ -221,44 +226,64 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def CheckStat(self, obj, value, statnum):
+	def iCheckStat(self, obj, value, statnum):
 		"""
 		CheckStat(O:Object*, I:Value*, I:StatNum*Stats)
 		"""
-		raise Exception("Not implemented function: CheckStat!")
+		raise Exception("Not implemented here function: CheckStat!")
 		return
 	
 	@dump_args
-	def CheckStatGT(self, obj, value, statnum):
+	def iCheckStatGT(self, obj, value, statnum):
 		"""
 		CheckStatGT(O:Object*, I:Value*, I:StatNum*Stats)
 		"""
-		raise Exception("Not implemented function: CheckStatGT!")
+		raise Exception("Not implemented here function: CheckStatGT!")
 		return
 	
 	@dump_args
-	def CheckStatLT(self, obj, value, statnum):
+	def iCheckStatLT(self, obj, value, statnum):
 		"""
 		CheckStatLT(O:Object*, I:Value*, I:StatNum*Stats)
 		"""
-		raise Exception("Not implemented function: CheckStatLT!")
+		raise Exception("Not implemented here function: CheckStatLT!")
 		return
 	
 	@dump_args
-	def Class(self, obj, class_):
+	def iClass(self, obj, class_):
 		"""
 		Class(O:Object*, I:Class*Class)
+		Returns true only if the Class of the specified object matches that in the second parameter.
 		"""
-		raise Exception("Not implemented function: Class!")
-		return
+		toee_class = utils_inf.iwd2_classname_to_class(classname)
+		npc, ctrl = self._get_ie_object(obj)
+		if npc:
+			cc = npc.get_character_classes()
+			if toee_class in cc:
+				return True
+		return False
 	
 	@dump_args
-	def ClassEx(self, obj, class_):
+	def iClassEx(self, obj, class_):
 		"""
 		ClassEx(O:Object*, I:Class*Class)
 		"""
-		raise Exception("Not implemented function: ClassEx!")
-		return
+		"""
+		Actually I see only these values in IWD2:
+		FIGHTER
+		BARD
+		MAGE
+		SORCERER
+		CLERIC
+		DRUID
+		"""
+		toee_class = utils_inf.iwd2_classname_to_class(classname)
+		npc, ctrl = self._get_ie_object(obj)
+		if npc:
+			cc = npc.get_character_classes()
+			if toee_class in cc:
+				return True
+		return False
 	
 	@dump_args
 	def CreatureHidden(self, obj):
@@ -301,12 +326,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def EntirePartyOnMap(self):
+	def iEntirePartyOnMap(self):
 		"""
 		EntirePartyOnMap()
 		"""
-		raise Exception("Not implemented function: EntirePartyOnMap!")
-		return
+		return True
 	
 	@dump_args
 	def Exists(self, obj):
@@ -317,20 +341,31 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def GLOBAL(self, name, area, value):
+	def iGlobal(self, name, area, value):
 		"""
-		GLOBAL(S:Name*, S:Area*, I:Value*)
+		Global(S:Name*, S:Area*, I:Value*)
+		Returns true only if the variable with name 1st parameter of type 2nd parameter has value 3rd parameter.
 		"""
-		raise Exception("Not implemented function: GLOBAL!")
-		return
+		global_value = self._ensure_global(name, area)
+		return global_value == value
 	
 	@dump_args
-	def GLOBALGT(self, name, area, value):
+	def iGlobalGT(self, name, area, value):
 		"""
-		GLOBALGT(S:Name*, S:Area*, I:Value*)
+		GlobalGT(S:Name*, S:Area*, I:Value*)
+		As above except for less than.
 		"""
-		raise Exception("Not implemented function: GLOBALGT!")
-		return
+		global_value = self._ensure_global(name, area)
+		return global_value > value
+
+	@dump_args
+	def iGlobalLT(self, name, area, value):
+		""" 
+		GlobalLT(S:Name*, S:Area*, I:Value*)
+		As above except for less than.
+		"""
+		global_value = self._ensure_global(name, area)
+		return global_value < value
 	
 	@dump_args
 	def Gender(self, obj, sex):
@@ -346,30 +381,6 @@ class InfScriptSupport:
 		General(O:Object*, I:General*General)
 		"""
 		raise Exception("Not implemented function: General!")
-		return
-	
-	@dump_args
-	def Global(self, name, area, value):
-		"""
-		Global(S:Name*, S:Area*, I:Value*)
-		"""
-		raise Exception("Not implemented function: Global!")
-		return
-	
-	@dump_args
-	def GlobalGT(self, name, area, value):
-		"""
-		GlobalGT(S:Name*, S:Area*, I:Value*)
-		"""
-		raise Exception("Not implemented function: GlobalGT!")
-		return
-	
-	@dump_args
-	def GlobalLT(self, name, area, value):
-		"""
-		GlobalLT(S:Name*, S:Area*, I:Value*)
-		"""
-		raise Exception("Not implemented function: GlobalLT!")
 		return
 	
 	@dump_args
@@ -389,27 +400,27 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def HP(self, obj, hit_points):
+	def iHP(self, obj, hit_points):
 		"""
 		HP(O:Object*, I:Hit Points*)
 		"""
-		raise Exception("Not implemented function: HP!")
+		raise Exception("Not implemented here function: HP!")
 		return
 	
 	@dump_args
-	def HPGT(self, obj, hit_points):
+	def iHPGT(self, obj, hit_points):
 		"""
 		HPGT(O:Object*, I:Hit Points*)
 		"""
-		raise Exception("Not implemented function: HPGT!")
+		raise Exception("Not implemented here function: HPGT!")
 		return
 	
 	@dump_args
-	def HPLT(self, obj, hit_points):
+	def iHPLT(self, obj, hit_points):
 		"""
 		HPLT(O:Object*, I:Hit Points*)
 		"""
-		raise Exception("Not implemented function: HPLT!")
+		raise Exception("Not implemented here function: HPLT!")
 		return
 	
 	@dump_args
@@ -493,12 +504,13 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def InCutsceneMode(self):
+	def iInCutsceneMode(self):
 		"""
 		InCutsceneMode()
 		"""
-		raise Exception("Not implemented function: InCutsceneMode!")
-		return
+		#raise Exception("Not implemented function: InCutsceneMode!")
+		# TODO!
+		return False
 	
 	@dump_args
 	def InParty(self, obj):
@@ -733,35 +745,35 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def NumTimesTalkedTo(self, num):
+	def iNumTimesTalkedTo(self, num):
 		"""
 		NumTimesTalkedTo(I:Num*)
 		"""
-		raise Exception("Not implemented function: NumTimesTalkedTo!")
+		raise Exception("Not implemented here function: NumTimesTalkedTo!")
 		return
 	
 	@dump_args
-	def NumTimesTalkedToGT(self, num):
+	def iNumTimesTalkedToGT(self, num):
 		"""
 		NumTimesTalkedToGT(I:Num*)
 		"""
-		raise Exception("Not implemented function: NumTimesTalkedToGT!")
+		raise Exception("Not implemented here function: NumTimesTalkedToGT!")
 		return
 	
 	@dump_args
-	def NumTimesTalkedToLT(self, num):
+	def iNumTimesTalkedToLT(self, num):
 		"""
 		NumTimesTalkedToLT(I:Num*)
 		"""
-		raise Exception("Not implemented function: NumTimesTalkedToLT!")
+		raise Exception("Not implemented here function: NumTimesTalkedToLT!")
 		return
 	
 	@dump_args
-	def OnCreation(self):
+	def iOnCreation(self):
 		"""
 		OnCreation()
 		"""
-		raise Exception("Not implemented function: OnCreation!")
+		raise Exception("Not implemented here function: OnCreation!")
 		return
 	
 	@dump_args
@@ -990,19 +1002,23 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def AddXPVar(self, vartableentry, strref):
+	def iAddXPVar(self, vartableentry, strref):
 		"""
 		AddXPVar(S:VarTableEntry*, I:Strref*)
 		"""
-		raise Exception("Not implemented function: AddXPVar!")
+		xp = utils_inf.iwd2_xp_var(vartableentry)
+		utils_pc.pc_award_experience_party(xp, 1)
+		if strref:
+			toee.game.leader.float_mesfile_line('mes\\floats.mes', strref, toee.tf_green)
+		# core->PlaySound(DS_GOTXP, SFX_CHAN_ACTIONS);
 		return
 	
-	@dump_args
-	def AddXpVar(self, vartableentry, strref):
+	#@dump_args
+	def iAddXpVar(self, vartableentry, strref):
 		"""
 		AddXpVar(S:VarTableEntry*, I:Strref*)
 		"""
-		raise Exception("Not implemented function: AddXpVar!")
+		self.AddXPVar(vartableentry, strref)
 		return
 	
 	@dump_args
@@ -1366,19 +1382,19 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def FadeFromColor(self, point, blue):
+	def iFadeFromColor(self, point, blue):
 		"""
 		FadeFromColor(P:Point*, I:Blue*)
 		"""
-		raise Exception("Not implemented function: FadeFromColor!")
+		# do nothing
 		return
 	
 	@dump_args
-	def FadeToColor(self, point, blue):
+	def iFadeToColor(self, point, blue):
 		"""
 		FadeToColor(P:Point*, I:Blue*)
 		"""
-		raise Exception("Not implemented function: FadeToColor!")
+		# do nothing
 		return
 	
 	@dump_args
@@ -1430,11 +1446,23 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def GiveItemCreate(self, resref, obj, usage1, usage2, usage3):
+	def iGiveItemCreate(self, resref, obj, usage1, usage2, usage3):
 		"""
 		GiveItemCreate(S:ResRef*, O:Object*, I:Usage1*, I:Usage2*, I:Usage3*)
+		This action creates the item specified by the resref parameter on the creature specified by the object parameter, with quantity/charges controlled by the usage parameters. 
 		"""
-		raise Exception("Not implemented function: GiveItemCreate!")
+		npc, ctrl = self._get_ie_object(obj)
+		if npc:
+			proto = self._get_proto(resref)
+			#if isinstance(proto, str):
+			#	if proto == "Misc07": # gold
+			#		utils_pc.pc_party_receive_money_and_print(usage1 * const_toee.gp)
+			if not proto is None:
+				item_obj = utils_item.item_create_in_inventory2(proto, npc, 0, None)
+			#else:
+			#	item = utils_item.item_create_in_inventory2(proto, target, 0, None)
+
+		# TODO
 		return
 	
 	@dump_args
@@ -1606,11 +1634,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def MultiPlayerSync(self):
+	def iMultiPlayerSync(self):
 		"""
 		MultiPlayerSync()
 		"""
-		raise Exception("Not implemented function: MultiPlayerSync!")
+		# do nothing
 		return
 	
 	@dump_args
@@ -1618,7 +1646,7 @@ class InfScriptSupport:
 		"""
 		NoAction()
 		"""
-		raise Exception("Not implemented function: NoAction!")
+		# do nothing
 		return
 	
 	@dump_args
@@ -1702,11 +1730,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def ResetJoinRequests(self):
+	def iResetJoinRequests(self):
 		"""
 		ResetJoinRequests()
 		"""
-		raise Exception("Not implemented function: ResetJoinRequests!")
+		# do nothing
 		return
 	
 	@dump_args
@@ -1726,11 +1754,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def RestUntilHealed(self):
+	def iRestUntilHealed(self):
 		"""
 		RestUntilHealed()
 		"""
-		raise Exception("Not implemented function: RestUntilHealed!")
+		# do nothing, perhaps Temple todo
 		return
 	
 	@dump_args
@@ -1758,11 +1786,12 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def SaveGame(self, strref):
+	def iSaveGame(self, strref):
 		"""
 		SaveGame(I:STRREF*)
 		"""
-		raise Exception("Not implemented function: SaveGame!")
+		# do nothing
+		# TODO!
 		return
 	
 	@dump_args
@@ -1846,12 +1875,14 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def SetGlobal(self, name, area, value):
+	def iSetGlobal(self, name, area, value):
 		"""
 		SetGlobal(S:Name*, S:Area*, I:Value*)
+		This action sets a variable (specified by name) in the scope (specified by area) to the value (specified by value).
 		"""
-		raise Exception("Not implemented function: SetGlobal!")
-		return
+		self._set_global(name, area, value)
+		g = self._ensure_global(area)
+		return g
 	
 	@dump_args
 	def SetGlobalRandom(self, name, area, min, max):
@@ -1886,11 +1917,13 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def SetHP(self, target, hp):
+	def iSetHP(self, target, hp):
 		"""
 		SetHP(O:Target, I:HP*)
 		"""
-		raise Exception("Not implemented function: SetHP!")
+		npc, ctrl = self._get_ie_object(target)
+		if npc:
+			utils_npc.ensure_hp(npc, hp)
 		return
 	
 	@dump_args
@@ -1934,11 +1967,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def SetNumTimesTalkedTo(self, num):
+	def iSetNumTimesTalkedTo(self, num):
 		"""
 		SetNumTimesTalkedTo(I:Num*)
 		"""
-		raise Exception("Not implemented function: SetNumTimesTalkedTo!")
+		raise Exception("Not implemented hre function: SetNumTimesTalkedTo!")
 		return
 	
 	@dump_args
@@ -2548,6 +2581,140 @@ class InfScriptSupportNPC(InfScriptSupport):
 
 		return super(InfScriptSupportNPC, self)._get_globals(area)
 
+	def _get_stat_value(self, obj, statnum):
+		npc, ctrl = self._get_ie_object(obj)
+		if not npc: 
+			return
+
+		"""
+		ENCUMBERANCE
+		CHR
+		XP
+		RESISTFIRE
+		RESISTELECTRICITY
+		RESISTMAGIC
+		CLASSLEVELSUM
+		SEEINVISIBLE
+		"""
+
+		statnumu = statnum.upper()
+		if statnumu == 'ENCUMBERANCE':
+			return npc.d20_query(toee.Q_Critter_Is_Encumbered_Medium)
+		elif statnumu == 'CHR':
+			return npc.stat_level_get(toee.stat_charisma)
+		elif statnumu == 'CLASSLEVELSUM':
+			return npc.stat_level_get(toee.stat_level)
+		elif statnumu == 'RESISTFIRE':
+			# TODO IMPROVE
+			return npc.d20_query_has_condition("Monster Energy Resistance")
+		elif statnumu == 'RESISTELECTRICITY':
+			# TODO IMPROVE
+			return npc.d20_query_has_condition("Monster Energy Resistance")
+		elif statnumu == 'RESISTMAGIC':
+			return npc.d20_query_has_condition("Spell Resistance")
+		elif statnumu == 'SEEINVISIBLE':
+			return npc.d20_query_has_condition("sp-See Invisibility")
+		return
+
+	@dump_args
+	def iCheckStat(self, obj, value, statnum):
+		"""
+		CheckStatGT(O:Object*, I:Value*, I:StatNum*Stats)
+		"""
+		result = self._get_stat_value(obj, statnum)
+		return result == value
+
+	@dump_args
+	def iCheckStatLT(self, obj, value, statnum):
+		""" 
+		0x4046 CheckStatLT(O:Object*,I:Value*,I:StatNum*Stats)
+		Returns true only if the specified object has the statistic in the 3rd parameter less than the value of the 2nd parameter.
+		"""
+		result = self._get_stat_value(obj, statnum)
+		return result < value
+	
+	@dump_args
+	def iCheckStatGT(self, obj_name, value, statname):
+		""" 
+		0x4045 CheckStatGT(O:Object*,I:Value*,I:StatNum*Stats)
+		Returns true only if the specified object has the statistic in the 3rd parameter greater than the value of the 2nd parameter.
+		"""
+		result = self._get_stat_value(obj, statnum)
+		return result < value
+
+	@dump_args
+	def iHP(self, obj, hit_points):
+		""" 
+		0x4010 HP(O:Object*,I:Hit Points*)
+		Returns true only if the current hitpoints of the specified object are equal to the 2nd parameter.
+		"""
+		return self._hp(obj) == hit_points
+	
+	@dump_args
+	def iHPGT(self, obj, hit_points):
+		""" 
+		00x4011 HPGT(O:Object*,I:Hit Points*)
+		Returns true only if the current hitpoints of the specified object are greater than the 2nd parameter.
+		"""
+		return self._hp(obj) > hit_points
+	
+	@dump_args
+	def iHPLT(self, obj, hit_points):
+		""" 
+		0x4012 HPLT(O:Object*,I:Hit Points*)
+		Returns true only if the current hitpoints of the specified object are less than the 2nd parameter.
+		"""
+		return self._hp(obj) < hit_points
+
+	@dump_args
+	def iNumTimesTalkedTo(self, num):
+		""" 
+		0x4039 NumTimesTalkedTo(I:Num*)
+
+		Returns true only if the player's party has spoken to the active CRE the exact number of times specified.
+		NB. NumTimesTalkedTo seems to increment when a PC initiates conversion with an NPC, or an NPC initiates conversation with a PC.
+		NumTimesTalkedTo does not seem to increment for force-talks, interactions, interjections and self-talking.
+		"""
+		result = self.has_met()
+		return result == num
+
+	@dump_args
+	def iNumTimesTalkedToGT(self, num):
+		""" 
+		0x403A NumTimesTalkedToGT(I:Num*)
+		Returns true only if the player's party has spoken to the active CRE more than the number of times specified.
+		"""
+		result = self.has_met()
+		return result > num
+	
+	@dump_args
+	def iNumTimesTalkedToLT(self, num):
+		"""
+		NumTimesTalkedToLT(I:Num*)
+		Returns true only if the player's party has spoken to the active CRE less than the number of times specified.
+		"""
+		result = self.has_met()
+		return result < num
+
+	@dump_args
+	def iOnCreation(self):
+		"""
+		OnCreation()
+		"""
+		is_on_creation = self.vars.get('is_on_creation')
+		# TODO
+		return is_on_creation == 1
+
+	########## ACTIONS ##########
+
+	@dump_args
+	def iSetNumTimesTalkedTo(self, num):
+		"""
+		SetNumTimesTalkedTo(I:Num*)
+		"""
+		self.has_met_set(num)
+		return
+
 class InfScriptSupportDaemon(InfScriptSupport):
 	def _get_globals(self, area):
 		if area.lower() == "area":
@@ -2558,6 +2725,15 @@ class InfScriptSupportDaemon(InfScriptSupport):
 			return result
 
 		return super(InfScriptSupportDaemon, self)._get_globals(area)
+
+	@dump_args
+	def iOnCreation(self):
+		"""
+		OnCreation()
+		"""
+		is_on_creation = self.vars.get('is_on_creation')
+		# TODO
+		return is_on_creation == 1
 
 class ScriptBase(object):
 	@classmethod

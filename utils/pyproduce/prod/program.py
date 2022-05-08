@@ -16,6 +16,9 @@ protos_paths = fr'D:\Temple\Temple of Elemental Evil.template\data\rules\protos.
 temple_src_path = r'../../../TemplePlus'
 
 def main():
+    for i in range(1, 20): print("")
+    print("################### START")
+
     doc = producer_doc.ProducerDoc(exp_dir=exp_dir
         , core_dir=core_dir
         , wav_dir = wav_dir
@@ -27,12 +30,20 @@ def main():
         , temple_src_path = temple_src_path
     )
     doc.init(from_scratch=False)
-    #are_prod = doc.acquire_are_producer('AR1000')
-    #are_prod.produce()
+    are_prod = doc.acquire_are_producer('AR1000')
+    are_prod.skip_script_general = True
+    are_prod.skip_script_class = True
+    are_prod.skip_script_race = True
+    are_prod.skip_script_default = True
+    are_prod.skip_script_specific = True
+    are_prod.skip_script_special1 = True
+    are_prod.produce_start()
+    are_prod.produce_actor("Hedron")
+    are_prod.produce_daemon(True)
 
     #doc.producerOfScripts.log_usage = True
     #doc.scan_all_ares()
-    doc.producerOfScripts.produce_func_defs()
+    #doc.producerOfScripts.produce_func_defs()
     #doc.producerOfScripts._save_index()
     for e in doc.producerOfScripts.error_messages:
         print(e)

@@ -32,8 +32,9 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 			self.vars["attachee"] = attachee
 			self.vars["triggerer"] = triggerer
 			
-			self.script_dialog(attachee, triggerer)
-			print("debug after self.script_dialog(attachee, triggerer)")
+			line_id = self.script_dialog(attachee, triggerer)
+			if not line_id is None and line_id >= 0:
+				self.has_met_inc()
 		finally:
 			self.vars["attachee"] = None
 			self.vars["triggerer"] = None
@@ -87,6 +88,18 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 			result = 0
 			self.vars["has_met"] = result
 		return result
+
+	def has_met_inc(self):
+		result = self.vars.get("has_met")
+		if result is None:
+			result = 0
+		result += 1
+		self.vars["has_met"] = result
+		return result
+
+	def has_met_set(self, value):
+		self.vars["has_met"] = value
+		return
 
 	def heartbeat(self, attachee, triggerer):
 		assert isinstance(attachee, toee.PyObjHandle)

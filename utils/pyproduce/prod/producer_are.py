@@ -32,13 +32,31 @@ class ProducerOfAre(producer_base.Producer):
             , self.src_sec
             )
         self.dialog = produce_dialog.DialogFile(self.doc.get_path_out_npcs_dialog_file(self.are_name, self.script_id + 1))
+
+        self.skip_script_general = False
+        self.skip_script_class = False
+        self.skip_script_race = False
+        self.skip_script_default = False
+        self.skip_script_specific = False
+        self.skip_script_special1 = False
         return
 
     def produce(self):
         self.produce_start()
         for actor in self.daemon.get_eligible_actor_recs():
             actor_name = actor['Name']
+            self.produce_actor(actor_name)
+
+        self.produce_daemon()
+        return
+
+    def produce_actor(self, actor_name: str = None):
+        for actor in self.daemon.get_eligible_actor_recs():
+            actor_name = actor['Name']
+            if actor_name.lower() != actor_name.lower():
+                continue
             actor_cre_name = actor['CREFile']
+
             self.ensure_actor_bcses(actor)
 
             if not self.doc.classesRegistry.get_class_tup('class_auto', actor_cre_name):
@@ -53,7 +71,11 @@ class ProducerOfAre(producer_base.Producer):
             if not self.doc.classesRegistry.get_class_tup('class_inst_manual', f'{self.are_name}.{actor_cre_name}.{actor_name}'):
                 self.produce_cre_class_inst_manual(actor_name, actor_cre_name)
 
-        self.daemon.produce()
+            break
+        return
+
+    def produce_daemon(self, skip_bcs: bool = False):
+        self.daemon.produce(skip_bcs)
         self.daemon.save()
         return
 
@@ -152,22 +174,22 @@ class ProducerOfAre(producer_base.Producer):
         actor_name = actor_dict["Name"]
         cre_name = actor_dict["CREFile"]
         
-        if bcs_name := actor_dict["ScriptGeneral"]:
+        if (bcs_name := actor_dict["ScriptGeneral"]) and not self.skip_script_general:
             self.ensure_bcs(actor_name, bcs_name, cre_name, "ScriptGeneral (Special 3)")
         
-        if bcs_name := actor_dict["ScriptClass"]:
+        if (bcs_name := actor_dict["ScriptClass"]) and not self.skip_script_class:
             self.ensure_bcs(actor_name, bcs_name, cre_name, "ScriptClass (Special 2)")
         
-        if bcs_name := actor_dict["ScriptRace"]:
+        if (bcs_name := actor_dict["ScriptRace"]) and not self.skip_script_race:
             self.ensure_bcs(actor_name, bcs_name, cre_name, "ScriptRace (Combat Script)")
         
-        if bcs_name := actor_dict["ScriptDefault"]:
+        if (bcs_name := actor_dict["ScriptDefault"]) and not self.skip_script_default:
             self.ensure_bcs(actor_name, bcs_name, cre_name, "ScriptDefault (Movement Script)")
         
-        if bcs_name := actor_dict["ScriptSpecific"]:
+        if (bcs_name := actor_dict["ScriptSpecific"]) and not self.skip_script_specific:
             self.ensure_bcs(actor_name, bcs_name, cre_name, "ScriptSpecific (Team Script)")
         
-        if bcs_name := actor_dict["ScriptSpecial1"]:
+        if (bcs_name := actor_dict["ScriptSpecial1"]) and not self.skip_script_special1:
             self.ensure_bcs(actor_name, bcs_name, cre_name, "ScriptSpecial1 (Special1)")
         return
 

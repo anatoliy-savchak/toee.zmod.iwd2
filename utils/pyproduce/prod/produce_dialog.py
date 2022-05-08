@@ -195,7 +195,7 @@ class ProduceNPCDialog:
         self._add_line('if line_id >= 0:')
         self._add_line(f'\ttriggerer.begin_dialog(attachee, line_id)')
         self._add_line("")
-        self._add_line("return # script_dialog")
+        self._add_line("return line_id # script_dialog")
         self.parent.indent(False)
         self._add_line("")
 

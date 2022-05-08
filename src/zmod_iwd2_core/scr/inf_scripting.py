@@ -528,3 +528,17 @@ class InfScriptSupportDaemon(InfScriptSupport):
 			return result
 
 		return super(InfScriptSupportDaemon, self)._get_globals(area)
+
+class ScriptBase(object):
+	@classmethod
+	def execute(cls, self):
+		assert isinstance(self, InfScriptSupport)
+
+		cls.do_execute(self)
+		return
+
+	@classmethod
+	def do_execute(cls, self):
+		assert isinstance(self, InfScriptSupport)
+
+		return

@@ -3,6 +3,7 @@ import ctrl_behaviour, py06122_cormyr_prompter, factions_zmod, utils_npc, utils_
 import monster_info, module_quests, module_consts, module_globals
 import ctrl_daemon_ie, ctrl_ambients
 #### NPCS IMPORT ####
+import py10006_ar1000_scripts
 import py10004_ar1000_npc_inst_classes
 #### NPCS IMPORT END ####
 
@@ -415,4 +416,8 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		self.ambients.append(amb)
 		
 		self.ambs_timer_start()
+		return
+
+	def place_bcs(self):
+		self.vars["script_area"] = py10006_ar1000_scripts.Script_AR1000
 		return

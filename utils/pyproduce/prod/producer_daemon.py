@@ -1,5 +1,6 @@
 import producer_base
 import common
+import produce_bcs_manager
 
 class ProducerOfDaemon(producer_base.ProducerOfFile):
     def __init__(self, doc
@@ -28,6 +29,7 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
 
     def produce(self):
         self.produce_npcs('place_npcs')
+        self.produce_bcs('place_bcs')
         return
 
     def produce_npcs(self, def_name: str):
@@ -103,3 +105,44 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
         elif ori == 14: return "const_toee.ROT05" # SE
         elif ori == 15: return "const_toee.ROT05" # SSE
         return "const_toee.ROT06"
+
+    def produce_bcs(self, def_name: str):
+        subline = f"def {def_name}("
+        self.current_line_id = common.lines_after_before_cutoff(self.lines, subline, '\t\treturn')
+        self.indent()
+        if not self.current_line_id:
+            self.writeline(f"def {def_name}(self):")
+        self.indent()
+
+        file_name = None
+
+        area_script = self.src["AreaScript"]
+        if area_script and area_script != "None":
+            bcs_prod = produce_bcs_manager.ProduceBCSFileAuto(self.doc, area_script, self.are_name, self.script_id + 5, False)
+            bcs_prod.produce()
+            bcs_prod.save()
+            ctrl_name_auto, file_name_auto = bcs_prod.get_ctrl_tuple()
+            del bcs_prod
+
+            bcs_prod = produce_bcs_manager.ProduceBCSFileManual(self.doc, area_script, self.are_name, self.script_id + 6, file_name_auto, ctrl_name_auto, False)
+            bcs_prod.produce()
+            bcs_prod.save()
+            ctrl_name, file_name = bcs_prod.get_ctrl_tuple()
+            del bcs_prod
+            self.writeline(f'self.vars["script_area"] = {file_name}.{ctrl_name}')
+
+        if not self.current_line_id:
+            self.writeline(f"return")
+        self.current_line_id = -1
+        self.indent(False)
+        self.indent(False)
+
+        if file_name:
+            import_line = 'import ' + file_name
+            if not next((line for line in self.lines if line == import_line or line == import_line + '\n'), None):
+                line_id = common.lines_find(self.lines, '#### NPCS IMPORT ####')
+                if line_id:
+                    self.current_line_id = line_id+1
+                    self.writeline(import_line)
+                    self.current_line_id = -1
+        return

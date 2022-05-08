@@ -5,9 +5,10 @@ class InfCommands:
         self.actions = list()
         self.triggers = list()
         self.commands = list()
+        self.identifiers = list()
         return
 
-    def _parse_file(self, file_path: str):
+    def _parse_file(self, file_path: str, kind: str):
         result = list()
         with open(file_path, 'r') as f:
             lines = f.readlines()
@@ -34,16 +35,21 @@ class InfCommands:
                     arg_info = common.tDict(arg_type = arg_type, arg_name = arg_name, arg_ids = arg_ids, arg_line = arg_line)
                     args.append(arg_info)
 
-            info = common.tDict(func_name = func_name, args = args, line = line)
+            info = common.tDict(func_name = func_name, args = args, line = line, kind = kind)
             result.append(info)
         return result
 
     def parse_file_actions(self, file_path: str):
-        self.actions = self._parse_file(file_path)
+        self.actions = self._parse_file(file_path, 'action')
         self.commands.extend(self.actions)
         return
 
     def parse_file_triggers(self, file_path: str):
-        self.triggers = self._parse_file(file_path)
+        self.triggers = self._parse_file(file_path, 'trigger')
         self.commands.extend(self.triggers)
+        return
+
+    def parse_file_identifiers(self, file_path: str):
+        self.identifiers = self._parse_file(file_path, 'identifier')
+        self.commands.extend(self.identifiers)
         return

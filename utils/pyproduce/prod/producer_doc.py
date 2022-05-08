@@ -55,7 +55,7 @@ class ProducerDoc(object):
         if self.commands:
             self.commands.parse_file_actions(self.get_path_actions())
             self.commands.parse_file_triggers(self.get_path_triggers())
-            self.commands.parse_file_triggers(self.get_path_identifiers())
+            self.commands.parse_file_identifiers(self.get_path_identifiers())
 
         self.producerSound = producer_sound.ProducerSound(self.get_path_sounds_index()
             , file_path_sound_scheme = self.get_path_sound_scheme()

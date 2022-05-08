@@ -22,6 +22,7 @@ class ProduceBCSFileAuto(producer_base.ProducerOfFile):
         , are_name: str
         , script_id: int
         , make_new: bool
+        , ancestor_class: str = None
     ):
         template_path = doc.get_path_template_are_bcs_auto_file()
         out_path = doc.get_path_out_are_bcs_auto_file(are_name, script_id)
@@ -30,6 +31,8 @@ class ProduceBCSFileAuto(producer_base.ProducerOfFile):
         self.bcs_name = bcs_name
         self.are_name = are_name
         self.ctrl_name = f'Script_{self.bcs_name}_Auto'
+        if not ancestor_class: ancestor_class = 'inf_scripting.ScriptBase'
+        self.ancestor_class = ancestor_class
 
         fn = bcs_name + '.BAF'
         fn = os.path.join(self.doc.baf_dir, fn)
@@ -41,13 +44,16 @@ class ProduceBCSFileAuto(producer_base.ProducerOfFile):
             self.script_lines = list()
         return
 
-    def produce(self, def_name: str, cre_name: str = None, actor_name: str = None, script_code: str = None):
+    def produce(self, cre_name: str = None, actor_name: str = None, script_code: str = None):
         blocks = self._parse_blocks()
-        self.writeline(f'class {self.ctrl_name}(object):')
+        self.writeline(f'class {self.ctrl_name}({self.ancestor_class}):')
         self.indent()
         self.writeline(f'# {self.are_name}{str((" "+cre_name) if cre_name else "")}{str((" "+actor_name) if actor_name else "")}{str((" "+script_code) if script_code else "")}')
-        self.writeline(f'def {def_name}(self):')
+        self.writeline()
+        self.writeline('@classmethod')
+        self.writeline('def do_execute(cls, self):')
         self.indent()
+        self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
 
         self.writeline('while True:')
         self.indent()
@@ -189,7 +195,7 @@ class ProduceBCSFileManual(producer_base.ProducerOfFile):
         self.ctrl_name = f'Script_{self.bcs_name}'
         return
 
-    def produce(self, def_name: str, cre_name: str = None, actor_name: str = None, script_code: str = None):
+    def produce(self, cre_name: str = None, actor_name: str = None, script_code: str = None):
         line1 = f'class {self.ctrl_name}('
         if next((line for line in self.lines if line1 in line), None):
             return False

@@ -31,6 +31,7 @@ class ProducerOfScripts(producer_base.Producer):
         self.current_cre_name = None
         self.current_actor_name = None
         self.error_messages = list()
+        self.log_usage = False
         return
 
     def transate_trigger_lines(self, trigger_lines: list, are_name: str, cre_name: str, actor_name: str = None):
@@ -40,7 +41,8 @@ class ProducerOfScripts(producer_base.Producer):
 
         trigger_lines2 = list()
         for i, action_line in enumerate(trigger_lines):
-            action_linea = action_line.strip()
+            action_linea = self.remove_comment(action_line)
+            if not action_linea: continue
             trigger_lines2.extend(condition_split(action_linea))
 
         lines = list()
@@ -49,6 +51,7 @@ class ProducerOfScripts(producer_base.Producer):
         for i, trigger_line in enumerate(trigger_lines2):
             #line = transate_trigger_line(trigger_line)
             trigger_linea = trigger_line.strip()
+            if not trigger_linea: continue
             #print(f'Translating {trigger_linea}')
             if str(trigger_linea).lower().startswith('or('):
                 or_left = int(trigger_linea.split('(', 2)[1].split(')', 2)[0].strip())
@@ -93,12 +96,14 @@ class ProducerOfScripts(producer_base.Producer):
         lines = list()
         action_lines2 = list()
         for i, action_line in enumerate(action_lines):
-            action_linea = action_line.strip()
+            action_linea = self.remove_comment(action_line)
+            if not action_linea: continue
             action_lines2.extend(condition_split(action_linea))
         
         for i, action_line in enumerate(action_lines2):
             #line = transate_trigger_line(action_line)
             action_linea = action_line.strip()
+            if not action_linea: continue
             action_linea = action_linea.replace('#', '"')
             line = ScriptTran.translate_script_line(action_linea, self)
             if line is None:
@@ -106,6 +111,16 @@ class ProducerOfScripts(producer_base.Producer):
             lines.append(line)
 
         return lines
+
+    def remove_comment(self, line):
+        if '//' in line:
+            pos = line.index('//')
+            if pos > 0:
+                line = line[:pos]
+                line = line.strip()
+            elif(pos == 0):
+                return ''
+        return line
 
     def check_func_implemented(self, func_name: str):
         if not self.inf_scripting_lines:
@@ -115,7 +130,6 @@ class ProducerOfScripts(producer_base.Producer):
         return result
 
     def log_func(self, line: str, func_name: str, args_src: list, args: list, func_info: dict):
-        log_usage = True
         if not line is None:
             if not next((rec for rec in self.index_file["statistics"]["funcs_log"] if line.lower() == rec["line"].lower()), None):
                 log_rec = {
@@ -127,7 +141,7 @@ class ProducerOfScripts(producer_base.Producer):
 
         usage_rec = self.index_file["statistics"]["funcs"].get(func_name)
         if usage_rec is None:
-            usage_rec = {"func_name": func_name, "args": list()}
+            usage_rec = {"func_name": func_name, "kind": func_info["kind"], "args": list()}
 
         for index, arg_value in enumerate(args):
             arg_rec = dict()
@@ -149,7 +163,7 @@ class ProducerOfScripts(producer_base.Producer):
                 }
                 arg_rec["values"].append(value_rec)
             else:
-                if log_usage:
+                if self.log_usage:
                     value_rec["used_count"] += 1
 
         self.index_file["statistics"]["funcs"][func_name] = usage_rec

@@ -137,3 +137,7 @@ class Script_10CRAND0(py10005_ar1000_scripts_auto.Script_10CRAND0_Auto):
 	# AR1000 10CRANDA Crandall ScriptDefault (Movement Script)
 	pass
 
+class Script_AR1000(py10005_ar1000_scripts_auto.Script_AR1000_Auto): 
+	# AR1000
+	pass
+

@@ -39,6 +39,7 @@ class ProducerDoc(object):
         self.make_new = False
         self.bcsManager = None
         self.producerOfScripts = None
+        self.producerOfFloats = None
 
         self.copy_speaches = list()
         return
@@ -202,11 +203,15 @@ class ProducerDoc(object):
             prod.produce()
         return
 
-    def scan_all_ares(self):
+    def scan_all_ares(self, max_count: int = None):
         dir = os.path.join(self.exp_dir, 'Areas')
         for dn in os.listdir(dir):
             if not os.path.isdir(os.path.join(dir, dn)): continue
             are_name = dn
             prod = self.acquire_are_producer(are_name)
             prod.scan()
+            if not max_count is None:
+                max_count += -1
+                if max_count <=0:
+                    break
         return

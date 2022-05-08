@@ -1,5 +1,6 @@
 import sys
 import producer_doc
+import producer_strref
 
 npc_template_file = 'data/py06616_template.py'
 out_npcs_file = '../../src/zmod_iwd2_core/scr/py01001_targos_docks_encounters.py'
@@ -30,23 +31,28 @@ def main():
         , temple_src_path = temple_src_path
     )
     doc.init(from_scratch=False)
-    are_prod = doc.acquire_are_producer('AR1000')
-    are_prod.skip_script_general = True
-    are_prod.skip_script_class = True
-    are_prod.skip_script_race = True
-    are_prod.skip_script_default = True
-    are_prod.skip_script_specific = True
-    are_prod.skip_script_special1 = True
-    are_prod.produce_start()
-    are_prod.produce_actor("Hedron")
-    are_prod.produce_daemon(True)
+    if False:
+        are_prod = doc.acquire_are_producer('AR1000')
+        are_prod.skip_script_general = True
+        are_prod.skip_script_class = True
+        are_prod.skip_script_race = True
+        are_prod.skip_script_default = True
+        are_prod.skip_script_specific = True
+        are_prod.skip_script_special1 = True
+        are_prod.produce_start()
+        are_prod.produce_actor("Hedron")
+        are_prod.produce_daemon(True)
 
-    #doc.producerOfScripts.log_usage = True
-    #doc.scan_all_ares()
-    #doc.producerOfScripts.produce_func_defs()
-    #doc.producerOfScripts._save_index()
-    for e in doc.producerOfScripts.error_messages:
-        print(e)
+    if True:
+        doc.producerOfScripts.log_usage = False
+        doc.producerOfScripts.log_strrefs = True
+        doc.producerOfFloats = producer_strref.ProducerOfFloats(doc, True)
+        doc.scan_all_ares()
+        #doc.producerOfScripts.produce_func_defs()
+        #doc.producerOfScripts._save_index()
+        doc.producerOfFloats.save()
+        for e in doc.producerOfScripts.error_messages:
+            print(e)
 
     return 0
 

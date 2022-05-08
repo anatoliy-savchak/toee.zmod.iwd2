@@ -6,8 +6,13 @@ def get_ctrl(id):
 	assert isinstance(id, str)
 	ctrl = None
 	storage = utils_storage.obj_storage_by_id(id)
-	if (storage):
-		print(storage.data)
+	if storage:
+		ctrl = get_ctrl_from_storage(storage)
+	return ctrl
+
+def get_ctrl_from_storage(storage):
+	ctrl = None
+	if storage:
 		for t in storage.data.iteritems():
 			if (issubclass(type(t[1]), CtrlBehaviour)):
 				ctrl = t[1]

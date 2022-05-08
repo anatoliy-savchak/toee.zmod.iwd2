@@ -72,3 +72,18 @@ def text_of_strrefs(d: dict, name1: str, name2: str = None):
             if text := el.get("Text"):
                 return text
     return text
+    
+def strip_quotes(s, notify = False):
+	if s and (s[0] == "'" or s[0] == '"'):
+		r = s.strip()
+		r = r[1:-1]
+		if notify:
+			return r, s[0]
+		else:
+			return r
+	else:
+		if notify:
+			return s, None
+		else:
+			return s
+	return

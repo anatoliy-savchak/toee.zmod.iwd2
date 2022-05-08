@@ -32,6 +32,8 @@ class ProducerOfScripts(producer_base.Producer):
         self.current_actor_name = None
         self.error_messages = list()
         self.log_usage = False
+        self.log_strrefs = False
+        self.log_statistics = False
         return
 
     def transate_trigger_lines(self, trigger_lines: list, are_name: str, cre_name: str, actor_name: str = None):
@@ -130,43 +132,53 @@ class ProducerOfScripts(producer_base.Producer):
         return result
 
     def log_func(self, line: str, func_name: str, args_src: list, args: list, func_info: dict):
-        if not line is None:
-            if not next((rec for rec in self.index_file["statistics"]["funcs_log"] if line.lower() == rec["line"].lower()), None):
-                log_rec = {
-                    "line": line,
-                    "func_name": func_name,
-                    "args": args,
-                }
-                self.index_file["statistics"]["funcs_log"].append(log_rec)
+        if self.log_statistics:
+            if not line is None:
+                if not next((rec for rec in self.index_file["statistics"]["funcs_log"] if line.lower() == rec["line"].lower()), None):
+                    log_rec = {
+                        "line": line,
+                        "func_name": func_name,
+                        "args": args,
+                    }
+                    self.index_file["statistics"]["funcs_log"].append(log_rec)
 
-        usage_rec = self.index_file["statistics"]["funcs"].get(func_name)
-        if usage_rec is None:
-            usage_rec = {"func_name": func_name, "kind": func_info["kind"], "args": list()}
+            usage_rec = self.index_file["statistics"]["funcs"].get(func_name)
+            if usage_rec is None:
+                usage_rec = {"func_name": func_name, "kind": func_info["kind"], "args": list()}
 
-        for index, arg_value in enumerate(args):
-            arg_rec = dict()
-            arg_value_src = args_src[index]
-            if len(usage_rec["args"]) > index:
-                arg_rec = usage_rec["args"][index]
-            else:
-                arg_info = func_info["args"][index]
-                arg_rec["def"] = arg_info
-                arg_rec["values"] = list()
-                usage_rec["args"].append(arg_rec)
+            for index, arg_value in enumerate(args):
+                arg_rec = dict()
+                arg_value_src = args_src[index]
+                if len(usage_rec["args"]) > index:
+                    arg_rec = usage_rec["args"][index]
+                else:
+                    arg_info = func_info["args"][index]
+                    arg_rec["def"] = arg_info
+                    arg_rec["values"] = list()
+                    usage_rec["args"].append(arg_rec)
 
-            value_rec = next((rec for rec in arg_rec["values"] if arg_value_src.lower() == rec["src"].lower()), None)
-            if value_rec is None:
-                value_rec = {"src": arg_value_src
-                    , "used_count": 1
-                    , "value": arg_value
-                    , "first_occurence": f'{self.current_are_name}.{self.current_cre_name}.{self.current_actor_name}'
-                }
-                arg_rec["values"].append(value_rec)
-            else:
-                if self.log_usage:
-                    value_rec["used_count"] += 1
+                value_rec = next((rec for rec in arg_rec["values"] if arg_value_src.lower() == rec["src"].lower()), None)
+                if value_rec is None:
+                    value_rec = {"src": arg_value_src
+                        , "used_count": 1
+                        , "value": arg_value
+                        , "first_occurence": f'{self.current_are_name}.{self.current_cre_name}.{self.current_actor_name}'
+                    }
+                    arg_rec["values"].append(value_rec)
+                else:
+                    if self.log_usage:
+                        value_rec["used_count"] += 1
 
-        self.index_file["statistics"]["funcs"][func_name] = usage_rec
+            self.index_file["statistics"]["funcs"][func_name] = usage_rec
+
+        if self.log_strrefs and self.doc.producerOfFloats:
+            func_name_lo = func_name.lower()
+            if func_name_lo == 'floatmessage':
+                self.doc.producerOfFloats.ensure_str_ref(int(args_src[1]))
+            elif func_name_lo == 'addxpvar':
+                self.doc.producerOfFloats.ensure_str_ref(int(args_src[1]))
+            elif func_name_lo == 'savegame':
+                self.doc.producerOfFloats.ensure_str_ref(int(args_src[0]))
         return
 
     def log_error(self, error_message: str):

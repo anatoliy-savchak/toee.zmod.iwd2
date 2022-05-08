@@ -1,7 +1,7 @@
 import toee, debug, utils_toee, utils_storage, utils_obj, utils_item, const_toee, ctrl_daemon, ctrl_daemon2
 import ctrl_behaviour, py06122_cormyr_prompter, factions_zmod, utils_npc, utils_locks, const_proto_items, const_proto_scrolls, const_proto_rings
 import monster_info, module_quests, module_consts, module_globals
-import ctrl_daemon_ie, ctrl_ambients
+import ctrl_daemon_ie, ctrl_ambients, inf_scripting
 #### NPCS IMPORT ####
 import py10006_ar1000_scripts
 import py10004_ar1000_npc_inst_classes
@@ -54,6 +54,7 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		self.place_npcs()
 
 		self.debug_glob_npcs()
+		self.debug_script_exec()
 		return
 
 	def place_encounters_next(self):
@@ -216,4 +217,15 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 
 	def place_bcs(self):
 		self.vars["script_area"] = py10006_ar1000_scripts.Script_AR1000
+		return
+
+	def debug_script_exec(self):
+		hedron_npc, hedron = self._get_ie_object("'Hedron'")
+		assert isinstance(hedron, inf_scripting.InfScriptSupportNPC)
+		hedron.iSetNumTimesTalkedTo(1)
+		hedron.iSetGlobal("'Reig_Quest'", "'GLOBAL'", 1)
+		hedron.iSetGlobal("'Hedron_Know_Attack'","'GLOBAL'", 2)
+		hedron.iSetGlobal("'Hedron_Quest'", "'GLOBAL'", 2)
+		hedron.iSetGlobal("'Dock_Goblin_Quest'","'GLOBAL'", 1)
+
 		return

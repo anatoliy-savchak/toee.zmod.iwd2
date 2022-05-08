@@ -99,7 +99,7 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 
 	def has_met_set(self, value):
 		self.vars["has_met"] = value
-		return
+		return self.vars["has_met"]
 
 	def heartbeat(self, attachee, triggerer):
 		assert isinstance(attachee, toee.PyObjHandle)

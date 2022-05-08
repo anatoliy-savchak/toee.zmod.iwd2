@@ -89,19 +89,33 @@ class InfScriptSupport:
 		if isinstance(name, toee.PyObjHandle):
 			return (name, ctrl_behaviour.get_ctrl(name.id))
 
+		name, q = strip_quotes(name, True)
 		_name = name.lower()
 		npc = None
 		ctrl = None
-		if _name == "myself":
-			npc = self._gnpc()
-			ctrl = self
-		elif _name == "protagonist": # not sure, maybe either a leader or first PC TODO
-			npc = self._gnpc()
-			ctrl = self
-		else:
+		while True:
+			if _name == "myself":
+				npc = self._gnpc()
+				ctrl = self
+				break
+
+			if _name == "protagonist": # not sure, maybe either a leader or first PC TODO
+				npc = self._gnpc()
+				ctrl = self
+				break
+
+			if q:
+				storage = utils_storage.obj_storage_by_alias(name)
+				if storage:
+					ctrl = ctrl_behaviour.get_ctrl_from_storage(storage)
+					if ctrl:
+						npc = toee.game.get_obj_by_id(ctrl.id)
+						break
+
 			err = "Unknown objname: {}".format(name)
 			print(err)
 			debug.breakp("_get_ie_object")
+			break
 		return (npc, ctrl)
 
 	def _hp(self, obj_name):
@@ -1006,10 +1020,14 @@ class InfScriptSupport:
 		"""
 		AddXPVar(S:VarTableEntry*, I:Strref*)
 		"""
+		vartableentry = strip_quotes(vartableentry)
 		xp = utils_inf.iwd2_xp_var(vartableentry)
 		utils_pc.pc_award_experience_party(xp, 1)
 		if strref:
-			toee.game.leader.float_mesfile_line('mes\\floats.mes', strref, toee.tf_green)
+			line = toee.game.get_mesline('mes\\floats.mes', strref)
+			if line:
+				toee.game.create_history_freeform(line)
+				toee.game.leader.float_mesfile_line('mes\\floats.mes', strref, toee.tf_green)
 		# core->PlaySound(DS_GOTXP, SFX_CHAN_ACTIONS);
 		return
 	
@@ -1018,7 +1036,7 @@ class InfScriptSupport:
 		"""
 		AddXpVar(S:VarTableEntry*, I:Strref*)
 		"""
-		self.AddXPVar(vartableentry, strref)
+		self.iAddXPVar(vartableentry, strref)
 		return
 	
 	@dump_args
@@ -1398,11 +1416,17 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def FloatMessage(self, obj, strref):
+	def iFloatMessage(self, obj, strref):
 		"""
 		FloatMessage(O:Object*, I:STRREF*)
 		"""
-		raise Exception("Not implemented function: FloatMessage!")
+		npc, ctrl = self._get_ie_object(obj)
+		if npc:
+			line = toee.game.get_mesline('mes\\floats.mes', strref)
+			if line:
+				toee.game.create_history_freeform(line)
+				npc.float_mesfile_line('mes\\floats.mes', strref, toee.tf_white)
+
 		return
 	
 	@dump_args
@@ -2712,8 +2736,8 @@ class InfScriptSupportNPC(InfScriptSupport):
 		"""
 		SetNumTimesTalkedTo(I:Num*)
 		"""
-		self.has_met_set(num)
-		return
+		result = self.has_met_set(num)
+		return result
 
 class InfScriptSupportDaemon(InfScriptSupport):
 	def _get_globals(self, area):

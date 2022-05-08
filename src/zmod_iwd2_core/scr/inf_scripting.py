@@ -1881,7 +1881,7 @@ class InfScriptSupport:
 		This action sets a variable (specified by name) in the scope (specified by area) to the value (specified by value).
 		"""
 		self._set_global(name, area, value)
-		g = self._ensure_global(area)
+		g = self._ensure_global(name, area)
 		return g
 	
 	@dump_args

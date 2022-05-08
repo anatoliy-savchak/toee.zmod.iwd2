@@ -41,6 +41,11 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         return
 
     def produce(self):
+        self.current_line_id = common.lines_after_before_cutoff(self.lines, '#### GVARS ####', '#### GVARS END ####')
+        if self.current_line_id and self.current_line_id > 0:
+            self.writeline(f'MODULE_SCRIPT_ID = {self.script_id}')
+            self.current_line_id = -1
+
         self.ctrl_name = f'Ctrl_{self.cre_name}_Auto'
         self.writeline(f"class {self.ctrl_name}({self.base_class}): # {self.cre_name} ") # leave trailing whitespace here
         self.indent(True)
@@ -87,7 +92,7 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
     def produce_npc_script_hooks(self):
         self.writeline("def setup_scripts(self, npc):")
         self.indent(True)
-        self.writeline(f'base(self, {self.ctrl_name}).setup_scripts(npc)')
+        self.writeline(f'super({self.ctrl_name}, self).setup_scripts(npc)')
         if (dialog_name := self.cre["DialogFile"]) and (dialog_name != "None"):
             self.writeline("npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID")
         #self.writeline("npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID")

@@ -429,4 +429,7 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		py10004_ar1000_npc_inst_classes.Ctrl_10HEDRON_AR1000_Hedron.test_Hedron_identifiers_test_auto(self)
 		py10004_ar1000_npc_inst_classes.Ctrl_10SCREED_AR1000_Screed.test_identifiers_auto(self)
 
+		hedron_npc, hedron = self._get_ie_object("'Hedron'")
+		hedron.test_dialog_triggers()
+
 		return

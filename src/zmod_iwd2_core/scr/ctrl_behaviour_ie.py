@@ -4,8 +4,26 @@ import ctrl_behaviour, inf_scripting, ctrl_daemon, utils_storage
 __metaclass__ = type
 
 class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSupportNPC):
+	def __repr__(self):
+		repr = self.vars.get("alias")
+		if not repr:
+			repr = self.id
+		if not repr:
+			repr = id(self)
+		return '{}({})'.format(self.__class__.__name__, repr)
+
+	def __str__(self):
+		repr = self.vars.get("alias")
+		if not repr:
+			repr = self.id
+		if not repr:
+			repr = id(self)
+		return '{}({})'.format(self.__class__.__name__, repr)
+
 	def _gnpc(self):
-		attachee = self.vars["attachee"]
+		attachee = self.vars.get("attachee")
+		if attachee is None:
+			attachee = self.npc_get()
 		assert isinstance(attachee, toee.PyObjHandle)
 		return attachee
 
@@ -50,6 +68,7 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		
 		return toee.SKIP_DEFAULT
 
+	@inf_scripting.dump_args
 	def dialog_test(self, npc, pc, index):
 		assert isinstance(npc, toee.PyObjHandle)
 		assert isinstance(pc, toee.PyObjHandle)
@@ -129,3 +148,20 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		self.setup_bcs()
 		super(CtrlBehaviourIE, self).setup(npc)
 		return
+
+	def get_dialog_trigger_max_index(self): return None
+
+	def test_dialog_triggers(self, pc = None, specific_trigger_id_else_all = None):
+		max_index = self.get_dialog_trigger_max_index()
+		if not max_index:
+			return 0
+
+		npc = self.npc_get()
+		if not specific_trigger_id_else_all is None:
+			result = self.dialog_test(npc, toee.game.leader, specific_trigger_id_else_all)
+			return 1
+
+		for i in range(1, max_index+1):
+			result = self.dialog_test(npc, toee.game.leader, i)
+
+		return max_index

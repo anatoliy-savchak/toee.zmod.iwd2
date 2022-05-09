@@ -1,5 +1,5 @@
 import toee
-import debug
+import debug, debugg
 import inspect, itertools
 import utils_storage
 import utils_inf
@@ -32,11 +32,16 @@ def dump_args(func):
 
 	def echo_func(*args,**kwargs):
 		r = "error!"
+		call_line = '{}({})'.format(fname, ', '.join('%s=%r' % entry for entry in zip(argnames,args) + kwargs.items()), r)
+		if debugg.DEBUG_DUMP_ARGS_START_END:
+			print("START {}".format(call_line))
 		try:
 			r = func(*args, **kwargs)
 		finally:
-			line = '{}({})={}'.format(fname, ', '.join('%s=%r' % entry for entry in zip(argnames,args) + kwargs.items()), r)
-			print(line)
+			if debugg.DEBUG_DUMP_ARGS_START_END:
+				print("END {}={}".format(call_line, r))
+			else:
+				print('{}={}'.format(call_line, r))
 		return r
 	return echo_func
 
@@ -192,7 +197,30 @@ class InfScriptSupport:
 		debug.breakp("_get_proto")
 		return None
 
-	def _check_race():
+	def _check_race(self, npc, race):
+		"""
+		Values exists for Race:
+			Human
+			Half_Elf
+			Halforc
+			Gnome
+			Halfing
+			YUANTI - TODO
+			Elf
+			KEG - TODO
+			Dwarf
+		Values exists for SubRace:
+			PURERACE - TODO
+			ELF_DROW
+			Human_Aasimar - TODO
+			Human_Tiefling - TODO
+		"""
+		assert isinstance(npc, toee.PyObjHandle)
+		race_id = utils_inf.iwd2_race_convert(race)
+		if not race_id is None:
+			critter_race = obj.obj_get_int(toee.obj_f_critter_race)
+			print('Comparing race: {} ({}) to race {} for {}'.format(race, race_id, critter_race, npc))
+			return race_id == orace
 		return
 
 	########## TRIGGERS ##########
@@ -884,7 +912,7 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def Race(self, obj, race):
+	def iRace(self, obj, race):
 		"""
 		Race(O:Object*, I:Race*Race)
 		Returns true only if the Race of the specified object is the same as that specified by the 2nd parameter.
@@ -965,20 +993,15 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def SubRace(self, obj, subrace):
+	def iSubRace(self, obj, subrace):
 		"""
 		SubRace(O:Object*, I:SubRace*SubRace)
 		"""
-		raise Exception("Not implemented function: SubRace!")
-		return
+		npc, ctrl = self._get_ie_object(obj)
+		return self._check_race(npc, race)
 	
-	@dump_args
-	def Subrace(self, obj, subrace):
-		"""
-		Subrace(O:Object*, I:SubRace*SubRace)
-		"""
-		raise Exception("Not implemented function: Subrace!")
-		return
+	def iSubrace(self, obj, subrace):
+		return self.SubRace(obj, subrace)
 	
 	@dump_args
 	def TargetUnreachable(self, obj):

@@ -126,35 +126,6 @@ class InfScriptSupport:
 	############# TRIGGERS
 
 	@dump_args
-	def iSubRace(self, obj_name, subrace_names):
-		""" 
-		0x40CD SubRace(O:Object*,I:SubRace*SubRace)
-		"""
-		# IMPROVE
-		race_name = subrace_names.split("_", 1)[0]
-		return self.iRace(obj_name, race_name)
-
-	@dump_args
-	def iSubrace(self, obj_name, subrace_names): 
-		return self.iSubRace(obj_name, subrace_names)
-
-	@dump_args
-	def iRace(self, obj_name, race_names):
-		""" 
-		0x4017 Race(O:Object*,I:Race*Race)
-		Returns true only if the Race of the specified object is the same as that specified by the 2nd parameter.
-		"""
-		# IMPROVE
-		race_id = utils_inf.iwd2_race_convert(race_names)
-		if not race_id is None:
-			obj, ctrl = self._get_ie_object(obj_name)
-			if obj:
-				orace = obj.obj_get_int(toee.obj_f_critter_race)
-				return race_id == orace
-		return False
-	
-
-	@dump_args
 	def iCheckSkill(self, obj_name, value, statname):
 		""" 
 		0x40E6 CheckSkill(O:Object*,I:Value*,I:SkillNum*Skills)

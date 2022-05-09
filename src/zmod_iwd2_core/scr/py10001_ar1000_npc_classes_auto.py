@@ -792,6 +792,8 @@ class Ctrl_10HEDRON_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 			
 		return # dialog_action_do
 		
+	def get_dialog_trigger_max_index(self): return 50
+	
 class Ctrl_10ELDGUL_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
@@ -928,6 +930,8 @@ class Ctrl_10ELDGUL_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		
 		return # dialog_action_do
 		
+	def get_dialog_trigger_max_index(self): return 0
+	
 class Ctrl_10SCREED_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
@@ -1064,6 +1068,8 @@ class Ctrl_10SCREED_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		
 		return # dialog_action_do
 		
+	def get_dialog_trigger_max_index(self): return 0
+	
 class Ctrl_10REIG_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
@@ -1616,6 +1622,8 @@ class Ctrl_10REIG_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			
 		return # dialog_action_do
 		
+	def get_dialog_trigger_max_index(self): return 44
+	
 class Ctrl_10JON_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
@@ -1825,6 +1833,8 @@ class Ctrl_10JON_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 			
 		return # dialog_action_do
 		
+	def get_dialog_trigger_max_index(self): return 3
+	
 class Ctrl_10BROGAN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
@@ -2383,6 +2393,8 @@ class Ctrl_10BROGAN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 			
 		return # dialog_action_do
 		
+	def get_dialog_trigger_max_index(self): return 41
+	
 class Ctrl_10JORUN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_DWARF_MAN
@@ -2930,6 +2942,8 @@ class Ctrl_10JORUN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 			
 		return # dialog_action_do
 		
+	def get_dialog_trigger_max_index(self): return 32
+	
 class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GOBLIN
@@ -3730,3 +3744,5 @@ class Ctrl_10CRANDA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA
 			
 		return # dialog_action_do
 		
+	def get_dialog_trigger_max_index(self): return 16
+	

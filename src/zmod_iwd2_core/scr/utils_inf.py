@@ -109,11 +109,13 @@ def iwd2_race_convert(race_name):
 	rn = race_name.upper()
 	if rn == "NO_RACE": return None
 	elif rn == "DWARF": return toee.race_dwarf
-	elif rn == "ELF": return toee.race_dwarf
-	elif rn == "GNOME": return toee.race_dwarf
-	elif rn == "HUMAN": return toee.race_dwarf
-	elif rn == "HALF_ELF": return toee.race_dwarf
-	elif rn == "HALFLING": return toee.race_dwarf
+	elif rn == "ELF": return toee.race_elf
+	elif rn == "GNOME": return toee.race_gnome
+	elif rn == "HUMAN": return toee.race_human
+	elif rn == "HALF_ELF": return toee.race_half_elf
+	elif rn == "HALFLING": return toee.race_halfling
+	elif rn == "HALFORC": return toee.race_half_orc
+	elif rn == "ELF_DROW": return toee.race_drow
 	else:
 		err = "Unknown iwd2_race_convert: {}".format(race_name)
 		print(err)

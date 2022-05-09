@@ -124,6 +124,7 @@ class ProduceNPCDialog:
         self.current_are_name = None
         self.current_cre_name = None
         self.trigger_index_skills = dict()
+        self.trigger_max_index = 0
         return
 
     def _add_line(self, line):
@@ -226,6 +227,8 @@ class ProduceNPCDialog:
         _iff = "if"
         for triggerIndex in sorted(self.response_triggers.keys()):
             self._add_line(f'{_iff} index == {triggerIndex}:')
+            if self.trigger_max_index < (triggerIndex ):
+                self.trigger_max_index = triggerIndex
             _iff = "elif"
             self.parent.indent(True)
             
@@ -282,6 +285,11 @@ class ProduceNPCDialog:
         
         self._add_line("return # dialog_action_do")
         self._add_line("")
+
+        self.parent.indent(False)
+        self._add_line(f"def get_dialog_trigger_max_index(self): return {self.trigger_max_index}")
+        self._add_line("")
+        self.parent.indent(True)
         return
 
     def calc_trigger(self, trigger: str):

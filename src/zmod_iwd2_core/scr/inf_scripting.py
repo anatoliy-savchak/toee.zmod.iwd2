@@ -313,6 +313,14 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
+	def CheckSkillLT(self, obj, value, skillnum):
+		"""
+		CheckSkillLT(O:Object*, I:Value*, I:SkillNum*Skills)
+		"""
+		raise Exception("Not implemented function: CheckSkillLT!")
+		return
+	
+	@dump_args
 	def CheckSpellState(self, obj, state):
 		"""
 		CheckSpellState(O:Object*, I:State*splstate)
@@ -436,33 +444,6 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iGlobal(self, name, area, value):
-		"""
-		Global(S:Name*, S:Area*, I:Value*)
-		Returns true only if the variable with name 1st parameter of type 2nd parameter has value 3rd parameter.
-		"""
-		global_value = self._ensure_global(name, area)
-		return global_value == value
-	
-	@dump_args
-	def iGlobalGT(self, name, area, value):
-		"""
-		GlobalGT(S:Name*, S:Area*, I:Value*)
-		As above except for less than.
-		"""
-		global_value = self._ensure_global(name, area)
-		return global_value > value
-
-	@dump_args
-	def iGlobalLT(self, name, area, value):
-		""" 
-		GlobalLT(S:Name*, S:Area*, I:Value*)
-		As above except for less than.
-		"""
-		global_value = self._ensure_global(name, area)
-		return global_value < value
-	
-	@dump_args
 	def Gender(self, obj, sex):
 		"""
 		Gender(O:Object*, I:Sex*Gender)
@@ -479,6 +460,33 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
+	ddef iGlobal(self, name, area, value):
+		"""
+		Global(S:Name*, S:Area*, I:Value*)
+		Returns true only if the variable with name 1st parameter of type 2nd parameter has value 3rd parameter.
+		"""
+		global_value = self._ensure_global(name, area)
+		return global_value == value
+	
+	@dump_args
+	def iGlobalGT(self, name, area, value):
+		"""
+		GlobalGT(S:Name*, S:Area*, I:Value*)
+		As above except for less than.
+		"""
+		global_value = self._ensure_global(name, area)
+		return global_value > value
+	
+	@dump_args
+	def iGlobalLT(self, name, area, value):
+		""" 
+		GlobalLT(S:Name*, S:Area*, I:Value*)
+		As above except for less than.
+		"""
+		global_value = self._ensure_global(name, area)
+		return global_value < value
+	
+	@dump_args
 	def GlobalTimerExpired(self, name, area):
 		"""
 		GlobalTimerExpired(S:Name*, S:Area*)
@@ -492,70 +500,6 @@ class InfScriptSupport:
 		GlobalTimerNotExpired(S:Name*, S:Area*)
 		"""
 		raise Exception("Not implemented function: GlobalTimerNotExpired!")
-		return
-	
-	@dump_args
-	def iHP(self, obj, hit_points):
-		"""
-		HP(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented here function: HP!")
-		return
-	
-	@dump_args
-	def iHPGT(self, obj, hit_points):
-		"""
-		HPGT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented here function: HPGT!")
-		return
-	
-	@dump_args
-	def iHPLT(self, obj, hit_points):
-		"""
-		HPLT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented here function: HPLT!")
-		return
-	
-	@dump_args
-	def HPLost(self, obj, hit_points):
-		"""
-		HPLost(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPLost!")
-		return
-	
-	@dump_args
-	def HPLostGT(self, obj, hit_points):
-		"""
-		HPLostGT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPLostGT!")
-		return
-	
-	@dump_args
-	def HPPercent(self, obj, hit_points):
-		"""
-		HPPercent(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPPercent!")
-		return
-	
-	@dump_args
-	def HPPercentGT(self, obj, hit_points):
-		"""
-		HPPercentGT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPPercentGT!")
-		return
-	
-	@dump_args
-	def HPPercentLT(self, obj, hit_points):
-		"""
-		HPPercentLT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPPercentLT!")
 		return
 	
 	@dump_args
@@ -596,6 +540,70 @@ class InfScriptSupport:
 		HitBy(O:Object*, I:DameType*Damages)
 		"""
 		raise Exception("Not implemented function: HitBy!")
+		return
+	
+	@dump_args
+	def HP(self, obj, hit_points):
+		"""
+		HP(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HP!")
+		return
+	
+	@dump_args
+	def HPGT(self, obj, hit_points):
+		"""
+		HPGT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPGT!")
+		return
+	
+	@dump_args
+	def HPLost(self, obj, hit_points):
+		"""
+		HPLost(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPLost!")
+		return
+	
+	@dump_args
+	def HPLostGT(self, obj, hit_points):
+		"""
+		HPLostGT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPLostGT!")
+		return
+	
+	@dump_args
+	def HPLT(self, obj, hit_points):
+		"""
+		HPLT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPLT!")
+		return
+	
+	@dump_args
+	def HPPercent(self, obj, hit_points):
+		"""
+		HPPercent(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPPercent!")
+		return
+	
+	@dump_args
+	def HPPercentGT(self, obj, hit_points):
+		"""
+		HPPercentGT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPPercentGT!")
+		return
+	
+	@dump_args
+	def HPPercentLT(self, obj, hit_points):
+		"""
+		HPPercentLT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPPercentLT!")
 		return
 	
 	@dump_args
@@ -704,6 +712,14 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
+	def IsPlayerNumber(self, obj, number):
+		"""
+		IsPlayerNumber(O:Object*, I:Number*)
+		"""
+		raise Exception("Not implemented function: IsPlayerNumber!")
+		return
+	
+	@dump_args
 	def IsRotation(self, obj, direction):
 		"""
 		IsRotation(O:Object*, I:Direction*DIR)
@@ -760,14 +776,6 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def LOS(self, obj, range):
-		"""
-		LOS(O:Object*, I:Range*)
-		"""
-		raise Exception("Not implemented function: LOS!")
-		return
-	
-	@dump_args
 	def Level(self, obj, level):
 		"""
 		Level(O:Object*, I:Level*)
@@ -797,6 +805,14 @@ class InfScriptSupport:
 		LevelInClassGT(O:Object*, I:Level, I:Class*Class)
 		"""
 		raise Exception("Not implemented function: LevelInClassGT!")
+		return
+	
+	@dump_args
+	def LOS(self, obj, range):
+		"""
+		LOS(O:Object*, I:Range*)
+		"""
+		raise Exception("Not implemented function: LOS!")
 		return
 	
 	@dump_args
@@ -837,6 +853,14 @@ class InfScriptSupport:
 		NumInPartyLT(I:Num*)
 		"""
 		raise Exception("Not implemented function: NumInPartyLT!")
+		return
+	
+	@dump_args
+	def NumItemsPartyGT(self, resref, num):
+		"""
+		NumItemsPartyGT(S:ResRef*, I:Num*)
+		"""
+		raise Exception("Not implemented function: NumItemsPartyGT!")
 		return
 	
 	@dump_args
@@ -885,6 +909,22 @@ class InfScriptSupport:
 		OutOfAmmo()
 		"""
 		raise Exception("Not implemented function: OutOfAmmo!")
+		return
+	
+	@dump_args
+	def PartyGoldGT(self, amount):
+		"""
+		PartyGoldGT(I:Amount*)
+		"""
+		raise Exception("Not implemented function: PartyGoldGT!")
+		return
+	
+	@dump_args
+	def PartyGoldLT(self, amount):
+		"""
+		PartyGoldLT(I:Amount*)
+		"""
+		raise Exception("Not implemented function: PartyGoldLT!")
 		return
 	
 	@dump_args
@@ -1049,6 +1089,14 @@ class InfScriptSupport:
 		TimerExpired(I:ID*)
 		"""
 		raise Exception("Not implemented function: TimerExpired!")
+		return
+	
+	@dump_args
+	def TotalItemCnt(self, obj, number):
+		"""
+		TotalItemCnt(O:Object*, I:Number*)
+		"""
+		raise Exception("Not implemented function: TotalItemCnt!")
 		return
 	
 	########## ACTIONS ##########
@@ -1305,7 +1353,7 @@ class InfScriptSupport:
 		"""
 		DestroyItem(S:ResRef*)
 		"""
-		raise Exception("Not implemented here function: DestroyItem!")
+		raise Exception("Not implemented function: DestroyItem!")
 		return
 	
 	@dump_args
@@ -1477,33 +1525,27 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iFadeFromColor(self, point, blue):
+	def FadeFromColor(self, point, blue):
 		"""
 		FadeFromColor(P:Point*, I:Blue*)
 		"""
-		# do nothing
+		raise Exception("Not implemented function: FadeFromColor!")
 		return
 	
 	@dump_args
-	def iFadeToColor(self, point, blue):
+	def FadeToColor(self, point, blue):
 		"""
 		FadeToColor(P:Point*, I:Blue*)
 		"""
-		# do nothing
+		raise Exception("Not implemented function: FadeToColor!")
 		return
 	
 	@dump_args
-	def iFloatMessage(self, obj, strref):
+	def FloatMessage(self, obj, strref):
 		"""
 		FloatMessage(O:Object*, I:STRREF*)
 		"""
-		npc, ctrl = self._get_ie_object(obj)
-		if npc:
-			line = toee.game.get_mesline('mes\\floats.mes', strref)
-			if line:
-				toee.game.create_history_freeform(line)
-				npc.float_mesfile_line('mes\\floats.mes', strref, toee.tf_white)
-
+		raise Exception("Not implemented function: FloatMessage!")
 		return
 	
 	@dump_args
@@ -1539,31 +1581,19 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iGiveItem(self, obj, target):
+	def GiveItem(self, obj, target):
 		"""
 		GiveItem(S:Object*, O:Target*)
 		"""
-		raise Exception("Not implemented here function: GiveItem!")
+		raise Exception("Not implemented function: GiveItem!")
 		return
 	
 	@dump_args
-	def iGiveItemCreate(self, resref, obj, usage1, usage2, usage3):
+	def GiveItemCreate(self, resref, obj, usage1, usage2, usage3):
 		"""
 		GiveItemCreate(S:ResRef*, O:Object*, I:Usage1*, I:Usage2*, I:Usage3*)
-		This action creates the item specified by the resref parameter on the creature specified by the object parameter, with quantity/charges controlled by the usage parameters. 
 		"""
-		npc, ctrl = self._get_ie_object(obj)
-		if npc:
-			proto = self._get_proto(resref)
-			#if isinstance(proto, str):
-			#	if proto == "Misc07": # gold
-			#		utils_pc.pc_party_receive_money_and_print(usage1 * const_toee.gp)
-			if not proto is None:
-				item_obj = utils_item.item_create_in_inventory2(proto, npc, 0, None)
-			#else:
-			#	item = utils_item.item_create_in_inventory2(proto, target, 0, None)
-
-		# TODO
+		raise Exception("Not implemented function: GiveItemCreate!")
 		return
 	
 	@dump_args
@@ -1735,11 +1765,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iMultiPlayerSync(self):
+	def MultiPlayerSync(self):
 		"""
 		MultiPlayerSync()
 		"""
-		# do nothing
+		raise Exception("Not implemented function: MultiPlayerSync!")
 		return
 	
 	@dump_args
@@ -1747,7 +1777,7 @@ class InfScriptSupport:
 		"""
 		NoAction()
 		"""
-		# do nothing
+		raise Exception("Not implemented function: NoAction!")
 		return
 	
 	@dump_args
@@ -1831,11 +1861,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iResetJoinRequests(self):
+	def ResetJoinRequests(self):
 		"""
 		ResetJoinRequests()
 		"""
-		# do nothing
+		raise Exception("Not implemented function: ResetJoinRequests!")
 		return
 	
 	@dump_args
@@ -1855,11 +1885,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iRestUntilHealed(self):
+	def RestUntilHealed(self):
 		"""
 		RestUntilHealed()
 		"""
-		# do nothing, perhaps Temple todo
+		raise Exception("Not implemented function: RestUntilHealed!")
 		return
 	
 	@dump_args
@@ -1887,12 +1917,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iSaveGame(self, strref):
+	def SaveGame(self, strref):
 		"""
 		SaveGame(I:STRREF*)
 		"""
-		# do nothing
-		# TODO!
+		raise Exception("Not implemented function: SaveGame!")
 		return
 	
 	@dump_args
@@ -1976,14 +2005,12 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iSetGlobal(self, name, area, value):
+	def SetGlobal(self, name, area, value):
 		"""
 		SetGlobal(S:Name*, S:Area*, I:Value*)
-		This action sets a variable (specified by name) in the scope (specified by area) to the value (specified by value).
 		"""
-		self._set_global(name, area, value)
-		g = self._ensure_global(name, area)
-		return g
+		raise Exception("Not implemented function: SetGlobal!")
+		return
 	
 	@dump_args
 	def SetGlobalRandom(self, name, area, min, max):
@@ -2018,13 +2045,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iSetHP(self, target, hp):
+	def SetHP(self, target, hp):
 		"""
 		SetHP(O:Target, I:HP*)
 		"""
-		npc, ctrl = self._get_ie_object(target)
-		if npc:
-			utils_npc.ensure_hp(npc, hp)
+		raise Exception("Not implemented function: SetHP!")
 		return
 	
 	@dump_args
@@ -2068,11 +2093,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iSetNumTimesTalkedTo(self, num):
+	def SetNumTimesTalkedTo(self, num):
 		"""
 		SetNumTimesTalkedTo(I:Num*)
 		"""
-		raise Exception("Not implemented hre function: SetNumTimesTalkedTo!")
+		raise Exception("Not implemented function: SetNumTimesTalkedTo!")
 		return
 	
 	@dump_args
@@ -2204,22 +2229,6 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def StartCutscene(self, cutscene):
-		"""
-		StartCutscene(S:CutScene*)
-		"""
-		raise Exception("Not implemented function: StartCutscene!")
-		return
-	
-	@dump_args
-	def StartCutsceneMode(self):
-		"""
-		StartCutsceneMode()
-		"""
-		raise Exception("Not implemented function: StartCutsceneMode!")
-		return
-	
-	@dump_args
 	def StartMovie(self, resref):
 		"""
 		StartMovie(S:ResRef*)
@@ -2284,32 +2293,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iTakePartyItemNum(self, item, num):
+	def TakePartyItemNum(self, item, num):
 		"""
 		TakePartyItemNum(S:Item*, I:Num)
-
-		This action will remove a number of instances (specified by the Num parameter) of the specified item from the party. 
-		The items will be removed from players in order, for example; Player1 has 3 instances of “MYITEM” in their inventory, 
-		Player2 has 2 instance of “MYITEM,” and Player3 has 1 instance. If the action TakePartyItemNum(“MYITEM”, 4) is run, 
-		all 3 instances of “MYITEM” will be taken from Player1, and 1 instance will be taken from Player2. 
-		This leaves Player2 and Player3 each with one instance of “MYITEM.” If the last item of an item type stored in a container 
-		STO file is removed by this action, the amount becomes zero. Items with zero quantities cannot be seen in-game, 
-		cannot be removed by TakePartyItem, and will not count toward a container’s current item load. 
-		If the item to be taken is in a stack, and the stack is in a quickslot, the item will be removed, and the remaining stack will be placed in the inventory. 
-		If the inventory is full, the stack item will be dropped on the ground.
 		"""
-
-		proto = self._get_proto(item)
-		if not proto is None:
-			for pc in toee.game.party:
-				while num:
-					item = pc.item_find_by_proto(proto)
-					if item:
-						item.destroy()
-						# TODO - decrease if stack
-						num = num - 1
-				if not num:
-					break
+		raise Exception("Not implemented function: TakePartyItemNum!")
 		return
 	
 	@dump_args
@@ -2688,7 +2676,7 @@ class InfScriptSupport:
 		"""
 		raise Exception("Not implemented function: ThirdNearestEnemyOf!")
 		return
-	
+
 class InfScriptSupportNPC(InfScriptSupport):
 
 	def _get_globals(self, area):

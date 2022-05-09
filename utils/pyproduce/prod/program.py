@@ -45,7 +45,7 @@ def main():
         #are_prod.produce_daemon(True)
         are_prod.produce()
 
-    if False:
+    if True:
         doc.producerOfScripts.log_usage = True
         doc.producerOfScripts.log_statistics = True
         doc.producerOfScripts.log_strrefs = False

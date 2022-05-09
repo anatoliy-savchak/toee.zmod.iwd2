@@ -152,9 +152,14 @@ class ProducerOfScripts(producer_base.Producer):
                     }
                     self.index_file["statistics"]["funcs_log"].append(log_rec)
 
-            usage_rec = self.index_file["statistics"]["funcs"].get(func_name.lower())
+            func_name_correct = func_info["func_name"]
+            usage_rec = self.index_file["statistics"]["funcs"].get(func_name_correct)
             if usage_rec is None:
-                usage_rec = {"func_name": func_name, "kind": func_info["kind"], "args": list()}
+                usage_rec = {"func_name": func_name_correct, "kind": func_info["kind"], "args": list(), "func_name_spellings": [func_name]}
+            else:
+                if not func_name in usage_rec["func_name_spellings"]:
+                    usage_rec["func_name_spellings"].append(func_name)
+
 
             for index, arg_value in enumerate(args):
                 arg_rec = dict()
@@ -179,7 +184,7 @@ class ProducerOfScripts(producer_base.Producer):
                     if self.log_usage:
                         value_rec["used_count"] += 1
 
-            self.index_file["statistics"]["funcs"][func_name.lower()] = usage_rec
+            self.index_file["statistics"]["funcs"][func_name_correct] = usage_rec
 
         if self.log_strrefs and self.doc.producerOfFloats:
             func_name_lo = func_name.lower()

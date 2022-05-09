@@ -1,5 +1,5 @@
 {
-    "func_name": "TimeofDay",
+    "func_name": "TimeOfDay",
     "kind": "trigger",
     "args": [
         {
@@ -24,5 +24,9 @@
                 }
             ]
         }
+    ],
+    "func_name_spellings": [
+        "TimeofDay",
+        "TimeOfDay"
     ]
 }

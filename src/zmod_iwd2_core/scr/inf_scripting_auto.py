@@ -256,6 +256,70 @@
 		return
 	
 	@dump_args
+	def HP(self, obj, hit_points):
+		"""
+		HP(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HP!")
+		return
+	
+	@dump_args
+	def HPGT(self, obj, hit_points):
+		"""
+		HPGT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPGT!")
+		return
+	
+	@dump_args
+	def HPLT(self, obj, hit_points):
+		"""
+		HPLT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPLT!")
+		return
+	
+	@dump_args
+	def HPLost(self, obj, hit_points):
+		"""
+		HPLost(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPLost!")
+		return
+	
+	@dump_args
+	def HPLostGT(self, obj, hit_points):
+		"""
+		HPLostGT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPLostGT!")
+		return
+	
+	@dump_args
+	def HPPercent(self, obj, hit_points):
+		"""
+		HPPercent(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPPercent!")
+		return
+	
+	@dump_args
+	def HPPercentGT(self, obj, hit_points):
+		"""
+		HPPercentGT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPPercentGT!")
+		return
+	
+	@dump_args
+	def HPPercentLT(self, obj, hit_points):
+		"""
+		HPPercentLT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPPercentLT!")
+		return
+	
+	@dump_args
 	def HasItem(self, resref, obj):
 		"""
 		HasItem(S:ResRef*, O:Object*)
@@ -293,70 +357,6 @@
 		HitBy(O:Object*, I:DameType*Damages)
 		"""
 		raise Exception("Not implemented function: HitBy!")
-		return
-	
-	@dump_args
-	def HP(self, obj, hit_points):
-		"""
-		HP(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HP!")
-		return
-	
-	@dump_args
-	def HPGT(self, obj, hit_points):
-		"""
-		HPGT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPGT!")
-		return
-	
-	@dump_args
-	def HPLost(self, obj, hit_points):
-		"""
-		HPLost(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPLost!")
-		return
-	
-	@dump_args
-	def HPLostGT(self, obj, hit_points):
-		"""
-		HPLostGT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPLostGT!")
-		return
-	
-	@dump_args
-	def HPLT(self, obj, hit_points):
-		"""
-		HPLT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPLT!")
-		return
-	
-	@dump_args
-	def HPPercent(self, obj, hit_points):
-		"""
-		HPPercent(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPPercent!")
-		return
-	
-	@dump_args
-	def HPPercentGT(self, obj, hit_points):
-		"""
-		HPPercentGT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPPercentGT!")
-		return
-	
-	@dump_args
-	def HPPercentLT(self, obj, hit_points):
-		"""
-		HPPercentLT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPPercentLT!")
 		return
 	
 	@dump_args
@@ -528,6 +528,14 @@
 		return
 	
 	@dump_args
+	def LOS(self, obj, range):
+		"""
+		LOS(O:Object*, I:Range*)
+		"""
+		raise Exception("Not implemented function: LOS!")
+		return
+	
+	@dump_args
 	def Level(self, obj, level):
 		"""
 		Level(O:Object*, I:Level*)
@@ -557,14 +565,6 @@
 		LevelInClassGT(O:Object*, I:Level, I:Class*Class)
 		"""
 		raise Exception("Not implemented function: LevelInClassGT!")
-		return
-	
-	@dump_args
-	def LOS(self, obj, range):
-		"""
-		LOS(O:Object*, I:Range*)
-		"""
-		raise Exception("Not implemented function: LOS!")
 		return
 	
 	@dump_args
@@ -816,11 +816,11 @@
 		return
 	
 	@dump_args
-	def TimeofDay(self, time_of_day):
+	def TimeOfDay(self, time_of_day):
 		"""
-		TimeofDay(I:Time Of Day*TimeODay)
+		TimeOfDay(I:Time Of Day*TimeODay)
 		"""
-		raise Exception("Not implemented function: TimeofDay!")
+		raise Exception("Not implemented function: TimeOfDay!")
 		return
 	
 	@dump_args

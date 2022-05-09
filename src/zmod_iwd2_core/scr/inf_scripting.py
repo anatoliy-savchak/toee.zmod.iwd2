@@ -1190,8 +1190,9 @@ class InfScriptSupport:
 		if strref:
 			line = toee.game.get_mesline('mes\\floats.mes', strref)
 			if line:
-				toee.game.create_history_freeform(line)
 				toee.game.leader.float_mesfile_line('mes\\floats.mes', strref, toee.tf_green)
+				line = '\n' + line + '\n'
+				toee.game.create_history_freeform(line)
 		# core->PlaySound(DS_GOTXP, SFX_CHAN_ACTIONS);
 		return
 
@@ -2390,7 +2391,7 @@ class InfScriptSupport:
 				while num:
 					item = pc.item_find_by_proto(proto)
 					if item:
-						item_description = item_obj.description
+						item_description = item.description
 						item.destroy()
 						num = num - 1
 						# TODO - decrease if stack
@@ -2891,7 +2892,13 @@ class InfScriptSupportNPC(InfScriptSupport):
 		item = npc.item_find_by_proto(proto)
 		if item:
 			# TODO - decrease if stack
+			item_description = item.description
 			item.destroy()
+			if npc.type == toee.obj_t_pc:
+				text = '{} lost {}'.format(pc.description, item_description)
+				pc.float_text_line(text, toee.tf_yellow)
+				text = '\n{}\n'.format(text)
+				toee.game.create_history_freeform(text)
 		return
 
 	@dump_args

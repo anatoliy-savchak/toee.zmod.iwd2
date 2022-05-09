@@ -633,7 +633,7 @@ class ScriptTranFuncsItem_GiveItemEval(ScriptTranFuncsItem):
         return super().do_translate_func(func_name, args, func_info)
 
     @classmethod
-    def supports_func(cls): return ("PartyHasItem", "TakePartyItemNum", "HasItem")
+    def supports_func(cls): return ("PartyHasItem", "TakePartyItemNum", "HasItem", "TakePartyItemNum", "DestroyItem")
 
 class ScriptTranFuncsItem_Debug(ScriptTranFuncs):
     @classmethod

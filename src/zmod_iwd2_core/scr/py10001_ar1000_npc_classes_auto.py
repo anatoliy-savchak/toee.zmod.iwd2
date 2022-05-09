@@ -1609,7 +1609,7 @@ class Ctrl_10REIG_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			# TakePartyItemNum("00Potn04", 1)
 			self.iTakePartyItemNum(const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS, 1)
 			# DestroyItem("00Potn04")
-			self.iDestroyItem("'00Potn04'")
+			self.iDestroyItem(const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS)
 			# SetGlobal("Reig_Quest", "GLOBAL", 2)
 			self.iSetGlobal("'Reig_Quest'", "'GLOBAL'", 2)
 			# 792: I already found a healing potion.  It should help - drink it down.
@@ -1620,7 +1620,7 @@ class Ctrl_10REIG_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			# TakePartyItemNum("00Potn04", 1)
 			self.iTakePartyItemNum(const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS, 1)
 			# DestroyItem("00Potn04")
-			self.iDestroyItem("'00Potn04'")
+			self.iDestroyItem(const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS)
 			# SetGlobal("Reig_Quest", "GLOBAL", 2)
 			self.iSetGlobal("'Reig_Quest'", "'GLOBAL'", 2)
 			# 612: Here's the healing potion.  It should help - drink it down.
@@ -1643,7 +1643,7 @@ class Ctrl_10REIG_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			# TakePartyItemNum("00Potn04", 1)
 			self.iTakePartyItemNum(const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS, 1)
 			# DestroyItem("00Potn04")
-			self.iDestroyItem("'00Potn04'")
+			self.iDestroyItem(const_proto_potions.PROTO_POTION_OF_CURE_LIGHT_WOUNDS)
 			# SetGlobal("Reig_Quest", "GLOBAL", 2)
 			self.iSetGlobal("'Reig_Quest'", "'GLOBAL'", 2)
 			# 681: Here's the healing potion.  It should help - drink it down.

@@ -98,40 +98,74 @@ class InfScriptSupport:
 		ctrl = None
 		while True:
 			if _name == "myself":
-				npc = self._gnpc()
-				ctrl = self
+				npc, ctrl = self._get_ie_object_myself(name)
 				break
 
 			if _name == "protagonist": 
-				npc = self._gnpc()
-				ctrl = self
-				if npc.type == toee.obj_t_pc:
-					break
+				npc, ctrl = self._get_ie_object_protagonist(name)
+				break
 
-				# opposite dude
-				npc = self._gtriggerer()
-				ctrl = None
-				if npc.type == toee.obj_t_pc:
-					break
+			if _name == "nearest": 
+				npc, ctrl = self._get_ie_object_nearest()
+				break
 
-				if False:
-					# need to seek an error to determine
-					npc = toee.game.leader
-					ctrl = None
+			if _name == "nearestpc": 
+				npc, ctrl = self._get_ie_object_nearest_pc()
 				break
 
 			if True: #q:
-				storage = utils_storage.obj_storage_by_alias(name)
-				if storage:
-					ctrl = ctrl_behaviour.get_ctrl_from_storage(storage)
-					if ctrl:
-						npc = toee.game.get_obj_by_id(ctrl.id)
-						break
+				npc, ctrl = self._get_ie_object_by_name(name)
+				break
 
 			err = "Unknown objname: {}".format(name)
 			print(err)
 			debug.breakp("_get_ie_object")
 			break
+		return (npc, ctrl)
+
+	def _get_ie_object_myself(self, name):
+		npc = self._gnpc()
+		ctrl = self
+		return (npc, ctrl)
+
+	def _get_ie_object_protagonist(self, name):
+		npc = toee.OBJ_HANDLE_NULL
+		ctrl = None
+		while True:
+			npc = self._gnpc()
+			ctrl = self
+			if npc and npc.type == toee.obj_t_pc:
+				break
+
+			# opposite dude
+			npc = self._gtriggerer()
+			ctrl = None
+			if npc and npc.type == toee.obj_t_pc:
+				break
+
+			# Protagonist : Synonymous with Player1. https://gibberlings3.github.io/iesdp/files/ids/bgee/object.htm#Player1
+			npc = toee.game.leader # toee.game.party[0]
+			ctrl = None
+			break
+		return (npc, ctrl)
+
+	def _get_ie_object_by_name(self, name):
+		npc = toee.OBJ_HANDLE_NULL
+		ctrl = None
+		storage = utils_storage.obj_storage_by_alias(name)
+		if storage:
+			ctrl = ctrl_behaviour.get_ctrl_from_storage(storage)
+			if ctrl:
+				npc = toee.game.get_obj_by_id(ctrl.id)
+		return (npc, ctrl)
+
+	def _get_ie_object_nearest_pc(self):
+		raise Exception("Not implemented here function: _get_ie_object_nearest_pc!")
+		return (None, None)
+
+	def _get_ie_object_myself(self, name):
+		npc = self._gnpc()
+		ctrl = self
 		return (npc, ctrl)
 
 	def _hp(self, obj_name):
@@ -157,6 +191,9 @@ class InfScriptSupport:
 		print(err)
 		debug.breakp("_get_proto")
 		return None
+
+	def _check_race():
+		return
 
 	########## TRIGGERS ##########
 	@dump_args
@@ -850,9 +887,10 @@ class InfScriptSupport:
 	def Race(self, obj, race):
 		"""
 		Race(O:Object*, I:Race*Race)
+		Returns true only if the Race of the specified object is the same as that specified by the 2nd parameter.
 		"""
-		raise Exception("Not implemented function: Race!")
-		return
+		npc, ctrl = self._get_ie_object(obj)
+		return self._check_race(npc, race)
 	
 	@dump_args
 	def RandomNum(self, range, value):
@@ -2640,6 +2678,28 @@ class InfScriptSupportNPC(InfScriptSupport):
 
 		return super(InfScriptSupportNPC, self)._get_globals(area)
 
+	def _get_nearest_obj(self, this_npc, obj_list_flags = toee.OLC_CRITTERS):
+		assert isinstance(this_npc, toee.PyObjHandle)
+		nearest = None
+		nearest_dist = -1
+		for obj in toee.game.obj_list_vicinity(this_npc.location, obj_list_flags):
+			assert isinstance(obj, toee.PyObjHandle)
+			if obj == this_npc: continue
+			if obj.d20_query(toee.Q_Critter_Is_Invisible): continue
+			dist = this_npc.distance_to(obj)
+			if nearest_dist == -1 or dist < nearest_dist:
+				nearest_dist = dist
+				nearest = obj
+		return nearest
+
+	def _get_ie_object_nearest(self):
+		npc = self._get_nearest_obj(self._gnpc(), toee.OLC_CRITTERS)
+		return (npc, None)
+
+	def _get_ie_object_nearest_pc(self):
+		npc = self._get_nearest_obj(self._gnpc(), toee.OLC_PC)
+		return (npc, None)
+
 	def _get_stat_value(self, obj, statnum):
 		npc, ctrl = self._get_ie_object(obj)
 		if not npc: 
@@ -2674,6 +2734,8 @@ class InfScriptSupportNPC(InfScriptSupport):
 		elif statnumu == 'SEEINVISIBLE':
 			return npc.d20_query_has_condition("sp-See Invisibility")
 		return
+
+	########## TRIGGERS ##########
 
 	@dump_args
 	def iCheckStat(self, obj, value, statnum):

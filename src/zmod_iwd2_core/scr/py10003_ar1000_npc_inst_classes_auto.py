@@ -27,3 +27,207 @@ class Ctrl_10HEDRON_AR1000_Hedron_Auto(py10002_ar1000_npc_classes.Ctrl_10HEDRON)
 	def setup_bcs(self):
 		return
 
+class Ctrl_10ELDGUL_AR1000_Eldgull_Auto(py10002_ar1000_npc_classes.Ctrl_10ELDGUL): # 10ELDGUL 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10SCREED_AR1000_Screed_Auto(py10002_ar1000_npc_classes.Ctrl_10SCREED): # 10SCREED 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10REIG_AR1000_Reig_Auto(py10002_ar1000_npc_classes.Ctrl_10REIG): # 10REIG 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10JON_AR1000_Jon_Auto(py10002_ar1000_npc_classes.Ctrl_10JON): # 10JON 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10BROGAN_AR1000_Brogan_Auto(py10002_ar1000_npc_classes.Ctrl_10BROGAN): # 10BROGAN 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10JORUN_AR1000_Jorun_Auto(py10002_ar1000_npc_classes.Ctrl_10JORUN): # 10JORUN 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_01_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBD_AR1000_Dead_Goblin_0_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBD): # 10GOBD 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10MALED_AR1000_Dead_Townsperson_0_Auto(py10002_ar1000_npc_classes.Ctrl_10MALED): # 10MALED 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10SOLDRD_AR1000_Brohn_Dead_Auto(py10002_ar1000_npc_classes.Ctrl_10SOLDRD): # 10SOLDRD 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBD_AR1000_Dead_Goblin_1_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBD): # 10GOBD 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBD_AR1000_Dead_Goblin_2_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBD): # 10GOBD 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBD_AR1000_Dead_Goblin_3_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBD): # 10GOBD 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10SOLDRD_AR1000_Dead_Soldier_0_Auto(py10002_ar1000_npc_classes.Ctrl_10SOLDRD): # 10SOLDRD 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBD_AR1000_Dead_Goblin_J1_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBD): # 10GOBD 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBD_AR1000_Dead_Goblin_J2_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBD): # 10GOBD 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBD_AR1000_Dead_Goblin_6_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBD): # 10GOBD 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_02_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_03_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10MALED_AR1000_Dead_Townsperson_1_Auto(py10002_ar1000_npc_classes.Ctrl_10MALED): # 10MALED 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBARD_AR1000_Dead_Goblin_7_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBARD): # 10GOBARD 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10SOLDRD_AR1000_Dead_Soldier_1_Auto(py10002_ar1000_npc_classes.Ctrl_10SOLDRD): # 10SOLDRD 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10SAILRD_AR1000_Dead_Sailor_Auto(py10002_ar1000_npc_classes.Ctrl_10SAILRD): # 10SAILRD 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_04_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_05_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_06_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBAR_AR1000_1000_Goblin_Archer_01_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBAR): # 10GOBAR 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_07_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_19_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBAR_AR1000_1000_Goblin_Archer_02_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBAR): # 10GOBAR 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_08_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBAR_AR1000_1000_Goblin_Archer_03_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBAR): # 10GOBAR 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_09_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_10_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBAR_AR1000_1000_Goblin_Archer_04_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBAR): # 10GOBAR 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_11_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_12_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBAR_AR1000_1000_Goblin_Archer_05_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBAR): # 10GOBAR 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBAR_AR1000_1000_Goblin_Archer_06_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBAR): # 10GOBAR 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBAR_AR1000_1000_Goblin_Archer_07_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBAR): # 10GOBAR 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBAR_AR1000_1000_Goblin_Archer_08_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBAR): # 10GOBAR 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_13_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_14_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_15_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBAR_AR1000_1000_Goblin_Archer_09_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBAR): # 10GOBAR 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_16_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_17_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOB_AR1000_1000_Goblin_18_Auto(py10002_ar1000_npc_classes.Ctrl_10GOB): # 10GOB 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10GOBAR_AR1000_1000_Goblin_Archer_10_Auto(py10002_ar1000_npc_classes.Ctrl_10GOBAR): # 10GOBAR 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10CRANDA_AR1000_Crandall_Auto(py10002_ar1000_npc_classes.Ctrl_10CRANDA): # 10CRANDA 
+	def setup_bcs(self):
+		return
+
+class Ctrl_10MALED_AR1000_Dead_Townsperson_2_Auto(py10002_ar1000_npc_classes.Ctrl_10MALED): # 10MALED 
+	def setup_bcs(self):
+		return
+

@@ -39,9 +39,11 @@ def main():
         are_prod.skip_script_default = True
         are_prod.skip_script_specific = True
         are_prod.skip_script_special1 = True
-        are_prod.produce_start()
-        are_prod.produce_actor("Hedron")
-        are_prod.produce_daemon(True)
+        are_prod.skip_script_daemon = True
+        #are_prod.produce_start()
+        #are_prod.produce_actor("Hedron")
+        #are_prod.produce_daemon(True)
+        are_prod.produce()
 
     if False:
         doc.producerOfScripts.log_usage = False

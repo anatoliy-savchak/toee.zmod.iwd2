@@ -19,9 +19,20 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 			return ctrl_daemon.CtrlDaemon.get_current_daemon()._get_globals(area)
 		return super(CtrlBehaviourIE, self)._get_globals(area)
 
-	def _debug_setup_dialog(self, clear = False):
-		self.vars["attachee"] = self.npc_get() if not clear else None
-		self.vars["triggerer"] = toee.game.leader if not clear else None
+	def _prepare_scripting(self, attachee = None, triggerer = None):
+		assert isinstance(attachee, toee.PyObjHandle)
+		assert isinstance(triggerer, toee.PyObjHandle)
+
+		if attachee is None:
+			attachee = self.npc_get()
+
+		self.vars["attachee"] = attachee
+		self.vars["triggerer"] = triggerer
+		return
+
+	def _unprepare_scripting(self):
+		self.vars["attachee"] = None
+		self.vars["triggerer"] = None
 		return
 
 	def dialog(self, attachee, triggerer):
@@ -29,15 +40,13 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		assert isinstance(triggerer, toee.PyObjHandle)
 		
 		try:
-			self.vars["attachee"] = attachee
-			self.vars["triggerer"] = triggerer
+			self._prepare_scripting(attachee, triggerer)
 			
 			line_id = self.script_dialog(attachee, triggerer)
 			if not line_id is None and line_id >= 0:
 				self.has_met_inc()
 		finally:
-			self.vars["attachee"] = None
-			self.vars["triggerer"] = None
+			self._unprepare_scripting()
 		
 		return toee.SKIP_DEFAULT
 

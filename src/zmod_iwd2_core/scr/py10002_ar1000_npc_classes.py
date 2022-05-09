@@ -23,3 +23,45 @@ def cs(): return ctrl_daemon.gdc()
 #### NPCS ####
 class Ctrl_10HEDRON(py10001_ar1000_npc_classes_auto.Ctrl_10HEDRON_Auto): # 10HEDRON 
 	pass
+class Ctrl_10ELDGUL(py10001_ar1000_npc_classes_auto.Ctrl_10ELDGUL_Auto): # 10ELDGUL 
+	pass
+
+class Ctrl_10SCREED(py10001_ar1000_npc_classes_auto.Ctrl_10SCREED_Auto): # 10SCREED 
+	pass
+
+class Ctrl_10REIG(py10001_ar1000_npc_classes_auto.Ctrl_10REIG_Auto): # 10REIG 
+	pass
+
+class Ctrl_10JON(py10001_ar1000_npc_classes_auto.Ctrl_10JON_Auto): # 10JON 
+	pass
+
+class Ctrl_10BROGAN(py10001_ar1000_npc_classes_auto.Ctrl_10BROGAN_Auto): # 10BROGAN 
+	pass
+
+class Ctrl_10JORUN(py10001_ar1000_npc_classes_auto.Ctrl_10JORUN_Auto): # 10JORUN 
+	pass
+
+class Ctrl_10GOB(py10001_ar1000_npc_classes_auto.Ctrl_10GOB_Auto): # 10GOB 
+	pass
+
+class Ctrl_10GOBD(py10001_ar1000_npc_classes_auto.Ctrl_10GOBD_Auto): # 10GOBD 
+	pass
+
+class Ctrl_10MALED(py10001_ar1000_npc_classes_auto.Ctrl_10MALED_Auto): # 10MALED 
+	pass
+
+class Ctrl_10SOLDRD(py10001_ar1000_npc_classes_auto.Ctrl_10SOLDRD_Auto): # 10SOLDRD 
+	pass
+
+class Ctrl_10GOBARD(py10001_ar1000_npc_classes_auto.Ctrl_10GOBARD_Auto): # 10GOBARD 
+	pass
+
+class Ctrl_10SAILRD(py10001_ar1000_npc_classes_auto.Ctrl_10SAILRD_Auto): # 10SAILRD 
+	pass
+
+class Ctrl_10GOBAR(py10001_ar1000_npc_classes_auto.Ctrl_10GOBAR_Auto): # 10GOBAR 
+	pass
+
+class Ctrl_10CRANDA(py10001_ar1000_npc_classes_auto.Ctrl_10CRANDA_Auto): # 10CRANDA 
+	pass
+

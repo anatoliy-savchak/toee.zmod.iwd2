@@ -39,6 +39,7 @@ class ProducerOfAre(producer_base.Producer):
         self.skip_script_default = False
         self.skip_script_specific = False
         self.skip_script_special1 = False
+        self.skip_script_daemon = False
         return
 
     def produce(self):
@@ -47,13 +48,13 @@ class ProducerOfAre(producer_base.Producer):
             actor_name = actor['Name']
             self.produce_actor(actor_name)
 
-        self.produce_daemon()
+        self.produce_daemon(self.skip_script_daemon)
         return
 
-    def produce_actor(self, actor_name: str = None):
+    def produce_actor(self, actor_name_: str = None):
         for actor in self.daemon.get_eligible_actor_recs():
             actor_name = actor['Name']
-            if actor_name.lower() != actor_name.lower():
+            if actor_name.lower() != actor_name_.lower():
                 continue
             actor_cre_name = actor['CREFile']
 

@@ -167,9 +167,11 @@ class Storage(object):
 	def getObjectStorageByAlias(alias):
 		ss = Storage()
 		oo = ss.objs
+		alias_lo = alias.lower()
 		for o in oo.itervalues():
 			if ("alias" in dir(o)):
-				if (o.alias == alias): return o
+				if (o.alias and o.alias.lower() == alias_lo): 
+					return o
 		return
 
 	@staticmethod

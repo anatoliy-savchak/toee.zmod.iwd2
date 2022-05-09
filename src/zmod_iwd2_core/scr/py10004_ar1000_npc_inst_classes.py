@@ -141,26 +141,23 @@ class Ctrl_10JORUN_AR1000_Jorun(py10003_ar1000_npc_inst_classes_auto.Ctrl_10JORU
 	@inf_scripting.dump_args
 	def test_race_auto(self):
 		try:
-			self._prepare_scripting(this_npc)
+			self._prepare_scripting()
 
 			if True:
-				obj, ctrl = self.iRace("'Jorun'", '')
-				if not obj:
-					raise Exception('Test Failed: Object NearestPC not found!')
-
-				if obj.type != toee.obj_t_pc:
-					raise Exception('Test Failed: Object NearestPC not correct PC!')
+				result = self.iRace("'Jorun'", 'human')
+				if result:
+					raise Exception('Test Failed: result should be False!')
 				else:
-					print('Test: {} Object NearestPC passed: {}'.format(name, obj))
+					print('Test Succ: result should be False')
 
 			if True:
-				obj, ctrl = this_ctrl._get_ie_object("Nearest")
-				if not obj:
-					raise Exception('Test Failed: Object Nearest not found!')
+				result = self.iRace("'Jorun'", 'dwarf')
+				if not result:
+					raise Exception('Test Failed: result should be True!')
 				else:
-					print('Test: {} Object Nearest passed: {}'.format(name, obj))
+					print('Test Succ: result should be True')
 		finally:
-			this_ctrl._unprepare_scripting()
+			self._unprepare_scripting()
 		return
 
 class Ctrl_10GOB_AR1000_1000_Goblin_01(py10003_ar1000_npc_inst_classes_auto.Ctrl_10GOB_AR1000_1000_Goblin_01_Auto): # 10GOB 

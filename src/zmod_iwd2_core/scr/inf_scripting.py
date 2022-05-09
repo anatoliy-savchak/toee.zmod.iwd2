@@ -200,27 +200,31 @@ class InfScriptSupport:
 	def _check_race(self, npc, race):
 		"""
 		Values exists for Race:
-			Human
-			Half_Elf
-			Halforc
-			Gnome
-			Halfing
-			YUANTI - TODO
-			Elf
-			KEG - TODO
 			Dwarf
+			Elf
+			Gnome
+			Half_Elf
+			Halfing
+			Halfling
+			Halforc
+			Human
+			KEG - TODO
+			YUANTI - TODO
 		Values exists for SubRace:
-			PURERACE - TODO
+			DWARF_GOLD
+			Dwarf_Gray
 			ELF_DROW
+			Gnome_Deep
 			Human_Aasimar - TODO
 			Human_Tiefling - TODO
+			PURERACE - TODO
 		"""
 		assert isinstance(npc, toee.PyObjHandle)
-		race_id = utils_inf.iwd2_race_convert(race)
-		if not race_id is None:
-			critter_race = obj.obj_get_int(toee.obj_f_critter_race)
-			print('Comparing race: {} ({}) to race {} for {}'.format(race, race_id, critter_race, npc))
-			return race_id == orace
+		race_ids = utils_inf.iwd2_race_convert_list(race)
+		if not race_ids is None:
+			critter_race = npc.obj_get_int(toee.obj_f_critter_race)
+			print('Comparing race: {} ({}) to race {} for {}'.format(race, race_ids, critter_race, npc))
+			return critter_race in race_ids
 		return
 
 	########## TRIGGERS ##########

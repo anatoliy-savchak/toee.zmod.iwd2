@@ -1,5 +1,6 @@
 import toee
 import debug
+import const_toee
 
 DEITY_NONE = 0
 DEITY_WAUKEEN = 1
@@ -116,11 +117,51 @@ def iwd2_race_convert(race_name):
 	elif rn == "HALFLING": return toee.race_halfling
 	elif rn == "HALFORC": return toee.race_half_orc
 	elif rn == "ELF_DROW": return toee.race_drow
+	elif rn == "DWARF_GOLD": return const_toee.race_dwarf_gold
+	elif rn == "DWARF_GRAY": return const_toee.race_dwarf_gold # TODO!
 	else:
 		err = "Unknown iwd2_race_convert: {}".format(race_name)
 		print(err)
 		debug.breakp("iwd2_race_convert")
 	return
+
+def iwd2_race_convert_list(race_name):
+	result = list()
+	rn = race_name.upper()
+	if rn == "NO_RACE": pass
+	elif rn == "DWARF": 
+		result.append(toee.race_dwarf)
+		result.append(toee.race_deep_dwarf)
+		result.append(toee.race_mountain_dwarf)
+		result.append(const_toee.race_dwarf_gold)
+	elif rn == "ELF": 
+		result.append(toee.race_elf)
+		result.append(toee.race_halfelf)
+		result.append(toee.race_gray_elf)
+		result.append(toee.race_wild_elf)
+		result.append(toee.race_wood_elf)
+		result.append(toee.race_drow)
+		result.append(toee.race_aquatic_elf)
+		
+	elif rn == "GNOME": 
+		result.append(toee.race_gnome)
+		result.append(toee.race_forest_gnome)
+
+	elif rn == "HUMAN": 
+		result.append(toee.race_human)
+	elif rn == "HALF_ELF": result.append(toee.race_half_elf)
+	elif rn == "HALFLING": 
+		result.append(toee.race_halfling)
+		result.append(toee.race_deep_halfling)
+	elif rn == "HALFORC": result.append(toee.race_half_orc)
+	elif rn == "ELF_DROW": result.append(toee.race_drow)
+	elif rn == "DWARF_GOLD": result.append(const_toee.race_dwarf_gold)
+	elif rn == "DWARF_GRAY": result.append(const_toee.race_dwarf_gold) # TODO!
+	else:
+		err = "Unknown iwd2_race_convert: {}".format(race_name)
+		print(err)
+		debug.breakp("iwd2_race_convert")
+	return result
 
 def iwd2_skill_convert(name):
 	n = name.lower()

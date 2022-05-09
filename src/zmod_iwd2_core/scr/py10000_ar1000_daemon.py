@@ -434,6 +434,7 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 
 		this_npc, this_ctrl = self._get_ie_object("'Jorun'")
 		if this_ctrl:
-			this_ctrl.test_dialog_triggers()
+			#this_ctrl.test_dialog_triggers()
+			this_ctrl.test_race_auto()
 
 		return

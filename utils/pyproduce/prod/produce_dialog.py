@@ -1,6 +1,7 @@
 import json
 import os
 import re
+from signal import raise_signal
 import produce_scripts
 import common
 #import pydub does not work
@@ -94,16 +95,30 @@ class DialogFile:
         else:
             if overwrite:
                 os.system(f'del "{dest_dir}\\*.mp3" /Q')
+
         ffmpeg_path = "venv\\Library\\bin\\ffmpeg.exe"
+
+        files_to_copy = list()
+        count_differ = 0
         for line_id, sound_file_name in self.sound_map.items():
             sf = os.path.join(source_dir, sound_file_name + ".WAV")
             tf = os.path.join(dest_dir, f"v{line_id}_m.mp3")
-            if not overwrite and os.path.exists(tf):
-                continue
-            #os.system(f'copy "{sf}" "{tf}"')
-            command = f'{ffmpeg_path} -i "{sf}" -acodec libmp3lame "{tf}" -y'
-            print(command)
-            os.system(command)
+            
+            files_to_copy.append((sf, tf))
+            if overwrite or not os.path.exists(tf):
+                count_differ += 1
+
+
+        if count_differ > 0:
+            # if at least one differ...
+            os.system(f'del "{dest_dir}\\*.mp3" /Q')
+            for sf, tf in files_to_copy:
+                if not overwrite and os.path.exists(tf):
+                    continue
+                #os.system(f'copy "{sf}" "{tf}"')
+                command = f'{ffmpeg_path} -i "{sf}" -acodec libmp3lame "{tf}" -hide_banner -loglevel error -y'
+                print(command)
+                os.system(command)
         return
 
 class ProduceNPCDialog:
@@ -125,6 +140,7 @@ class ProduceNPCDialog:
         self.current_cre_name = None
         self.trigger_index_skills = dict()
         self.trigger_max_index = 0
+        self.phrases_not_processed = list()
         return
 
     def _add_line(self, line):
@@ -140,9 +156,6 @@ class ProduceNPCDialog:
 
         self.dialog_file.current_cre_name = self.dialog_name
 
-
-        if self.dialog_name == "10JORUN": # debug!
-            print("")
 
         #self.parent.current_indent = "\t"
         # self.parent.indent(False)
@@ -180,6 +193,11 @@ class ProduceNPCDialog:
         self._add_line("while True:")
         self.parent.indent(True)
 
+        
+        for phrase in phrases:
+            phase_index = phrase["Index"]
+            self.phrases_not_processed.append(phase_index)
+
         for phrase in phrases:
             triggerIndex = int(phrase["TriggerIndex"])
             if triggerIndex == -1: continue
@@ -203,6 +221,14 @@ class ProduceNPCDialog:
             self._add_line('break')
             self.parent.indent(False)
             self._add_line("")
+
+        # we need to process leftovers for cross dialogs
+        phrases_not_processed = self.phrases_not_processed.copy()
+        for phase_index in phrases_not_processed:
+            phrase = next((phrase for phrase in phrases if phrase["Index"] == phase_index), None)
+            if phrase is None:
+                raise Exception("Smth wrong")
+            self.process_phrase_dialog(phrase, False)
 
         self._add_line("break # while")
         self._add_line("")
@@ -290,6 +316,16 @@ class ProduceNPCDialog:
         self._add_line(f"def get_dialog_trigger_max_index(self): return {self.trigger_max_index}")
         self._add_line("")
         self.parent.indent(True)
+
+        self.parent.indent(False)
+        self._add_line("def get_state_to_line(self, state):")
+        self.parent.indent(True)
+        for key, value in sorted(self.phrases.items()):
+            self._add_line(f"if state=={key}: return {value}")
+        self._add_line("return")
+        self.parent.indent(False)
+        self._add_line("")
+        self.parent.indent(True)
         return
 
     def calc_trigger(self, trigger: str):
@@ -304,6 +340,8 @@ class ProduceNPCDialog:
 
     def process_phrase_dialog(self, phrase: dict, check_trigger: bool):
         phrase_id = phrase["Index"]
+        if phrase_id in self.phrases_not_processed:
+            self.phrases_not_processed.remove(phrase_id)
 
         line_id = self.phrases.get(phrase_id)
         if not line_id is None:
@@ -369,6 +407,17 @@ class ProduceNPCDialog:
                     effect_code = effect_code.strip()
                 effect_code = (effect_code + "; " if effect_code else "") + f'uj.journal_add({journalIndex}, {rums})'
 
+            nextPhraseIndex = response["NextPhraseIndex"]
+            nextScriptDialog = response["NextScriptDialog"]
+            actor_switching = False
+            if nextPhraseIndex>=0 and nextScriptDialog and nextScriptDialog.lower() != self.dialog_name.lower():
+                next_actor_name = self.parent.doc.find_actor_name_by_dialog_script(nextScriptDialog, self.current_are_name)
+                if next_actor_name:
+                    if effect_code: effect_code += '; '
+                    effect_code += f'cs().switch_dialog(pc, "{next_actor_name}", {nextPhraseIndex})'
+                phrase_line_id = 0 # exit
+                actor_switching = True
+
             resp_line_id = self.dialog_file.add_response(response_index, response_text, answer_id=phrase_line_id, test_field=test_field, effect_code=effect_code)
 
             if "HasTrigger" in response_flags:
@@ -376,8 +425,8 @@ class ProduceNPCDialog:
             if "HasAction" in response_flags:
                 self.response_actions[actionIndex] = (response_text, resp_line_id)
 
-            nextPhraseIndex = response["NextPhraseIndex"]
-            if not "HasNextDialog" in response_flags and nextPhraseIndex >=0:
+            
+            if not "HasNextDialog" in response_flags and nextPhraseIndex >=0 and not actor_switching:
                 #phrase_next = phrases[nextPhraseIndex]
                 next_steps.append((nextPhraseIndex, resp_line_id, response_index, response_text, phrase_line_id, test_field, effect_code))
                 #phrase_line_id, phrase_text = self.process_phrase_dialog(phrase_next, True)
@@ -409,9 +458,6 @@ class ProduceNPCDialog:
         phrases, responses, triggersPhrase, triggersResponse = dialog.get("Phrases"), dialog.get("Responses"), dialog.get("TriggersPhrase"), dialog.get("TriggersResponse")
         for trigger in triggersPhrase:
             trigger_lines = produce_scripts.condition_split(trigger)
-            if cre_name == '10JORUN':
-                if 'Dwarf_Gray' in trigger:
-                    print()
             out_lines = doc.producerOfScripts.transate_trigger_lines(trigger_lines, are_name=are_name, cre_name=cre_name)
 
         for trigger in triggersResponse:

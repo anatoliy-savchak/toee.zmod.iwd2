@@ -165,3 +165,16 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 			result = self.dialog_test(npc, toee.game.leader, i)
 
 		return max_index
+
+	def get_state_to_line(self, state): return
+
+	def start_dialog_at_state(self, npc, pc, state):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+
+		line_id = self.get_state_to_line(state)
+		if line_id:
+			pc.begin_dialog(npc, line_id)
+		else:
+			raise Exception('State {} not found as line!'.format(state))
+		return

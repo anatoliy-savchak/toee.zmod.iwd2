@@ -126,27 +126,6 @@ class InfScriptSupport:
 	############# TRIGGERS
 
 	@dump_args
-	def iCheckSkill(self, obj_name, value, statname):
-		""" 
-		0x40E6 CheckSkill(O:Object*,I:Value*,I:SkillNum*Skills)
-		"""
-		return self._skill(obj_name, statname) == value
-
-	@dump_args
-	def iCheckSkillGT(self, obj_name, value, statname):
-		""" 
-		0x40E7 CheckSkillGT(O:Object*,I:Value*,I:SkillNum*Skills)
-		"""
-		return self._skill(obj_name, statname) > value
-
-	@dump_args
-	def iCheckSkillLT(self, obj_name, value, statname):
-		""" 
-		0x40E8 CheckSkillLT(O:Object*,I:Value*,I:SkillNum*Skills)
-		"""
-		return self._skill(obj_name, statname) < value
-
-	@dump_args
 	def iKit(self, obj_name, statname):
 		""" 
 		0x40BB Kit(O:Object*,I:Kit*KIT)
@@ -163,59 +142,7 @@ class InfScriptSupport:
 			result = utils_inf.iwd2_kit_has(statname, npc)
 		return result
 
-	@dump_args
-	def iAlignment(self, obj_name, statname, value):
-		""" 
-		0x400A Alignment(O:Object*,I:Alignment*Align)
-		Returns true only if the alignment of the specified object matches that in the second parameter.
-		"""
-
-		result = False
-		npc, ctrl = self._get_ie_object(obj_name)
-		if npc:
-			v = npc.obj_get_int(toee.obj_f_critter_alignment)
-			result = utils_inf.iwd2_alignment_equals(statname, npc)
-		return result
-
-	@dump_args
-	def iPartyHasItem(self, item_name):
-		""" 
-		0x4042 PartyHasItem(S:Item*)
-		Returns true if any of the party members have the specified item in their inventory. This trigger also checks with container items (e.g. Bags of Holding).
-		"""
-
-		result = False
-		proto = self._get_proto(item_name)
-		if not proto is None:
-			result = toee.anyone(toee.game.party, "item_find_by_proto", proto)
-		return result
-
-	@dump_args
-	def iHasItem(self, item_name, obj_name):
-		""" 
-		0x4061 HasItem(S:ResRef*,O:Object*)
-		Returns true only if the specified object has the specified item in its inventory. This trigger also checks with container items (e.g. Bags of Holding).
-		"""
-		npc, ctrl = self._get_ie_object(obj_name)
-		if npc:
-			npc = self._gnpc()
-			proto = self._get_proto(item_name)
-			item = npc.item_find_by_proto(proto)
-			return item != None
-		return
-
 	############# ACTIONS
-
-	@dump_args
-	def iSetCriticalPathObject(self, obj_name, value):
-		""" 
-		283 SetCriticalPathObject(O:Object*,I:Critical*Boolean) Variants: [IWD2] [BG1/BG2/BGEE/IWD1/PST]
-		This action sets the Critical Path flag on the specified objects to the specified value. The game ends if a creature with the Critical Path flag set is killed.
-		"""
-		npc, ctrl = self._get_ie_object(obj_name)
-		if ctrl:
-			ctrl.vars["critical_path"] = value
-		return
 
 	@dump_args
 	def iTakePartyItemNum(self, item_name, num):

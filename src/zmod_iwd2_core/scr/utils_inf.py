@@ -244,7 +244,7 @@ def iwd2_kit_has(name, npc):
 	return
 
 def iwd2_alignment_equals(name, a):
-	n = name.lower()
+	n = str(name).lower()
 	if n == "LAWFUL_GOOD" or n=="1": return a == toee.ALIGNMENT_LAWFUL_GOOD
 	if n == "LAWFUL_NEUTRAL" or n=="2": return a == toee.ALIGNMENT_LAWFUL_NEUTRAL
 	if n == "LAWFUL_EVIL" or n=="3": return a == toee.ALIGNMENT_LAWFUL_EVIL

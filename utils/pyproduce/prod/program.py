@@ -32,7 +32,7 @@ def main():
         , temple_src_path = temple_src_path
     )
     doc.init(from_scratch=False)
-    if False:
+    if True:
         are_prod = doc.acquire_are_producer('AR1000')
         are_prod.skip_script_general = True
         are_prod.skip_script_class = True
@@ -46,7 +46,7 @@ def main():
         #are_prod.produce_daemon(True)
         are_prod.produce()
 
-    if True:
+    if False:
         doc.producerOfScripts.log_usage = True
         doc.producerOfScripts.log_statistics = True
         doc.producerOfScripts.log_strrefs = False

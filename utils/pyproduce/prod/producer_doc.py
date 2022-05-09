@@ -7,6 +7,7 @@ import producer_are
 import classes_registry
 import produce_bcs_manager
 import produce_scripts
+import common
 
 class ProducerDoc(object):
     def __init__(self
@@ -40,6 +41,7 @@ class ProducerDoc(object):
         self.bcsManager = None
         self.producerOfScripts = None
         self.producerOfFloats = None
+        self.current_are_producer = None
 
         self.copy_speaches = list()
         return
@@ -192,6 +194,7 @@ class ProducerDoc(object):
         result = self.producers_are.get(are_name)
         if not result:
             result = producer_are.ProducerOfAre(self, are_name, self.are_name_to_script_id(are_name), self.make_new)
+        self.current_are_producer = result
         return result
 
     def produce_all_ares(self):
@@ -214,4 +217,18 @@ class ProducerDoc(object):
                 max_count += -1
                 if max_count <=0:
                     break
+        return
+
+    def find_actor_name_by_dialog_script(self, dialog_name: str, are_name: str):
+        actors = self.current_are_producer.src["actors"]
+        for actor in actors:
+            cre_name = actor["CREFile"].strip()
+            if not cre_name: continue
+            fn = os.path.join(self.exp_dir, 'Creatures', cre_name + '.json')
+            if not os.path.exists(fn): continue
+            cre_file = common.read_file_json(fn)
+            dialog_file = cre_file["DialogFile"]
+            if dialog_file and dialog_file.lower() == 'none': dialog_file = None
+            if dialog_file.lower() == dialog_name.lower():
+                return actor["Name"]
         return

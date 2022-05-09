@@ -185,529 +185,550 @@
 {394}{How come you haven't left yet?}{}{1}{}{340}{} # resp: 10HEDRON 106
 {395}{Nothing today, thanks.  Farewell.}{}{1}{}{0}{} # resp: 10HEDRON 107
 
-{400}{Can't stop t'bandy words with ye; Hedron be findin' *more* work for me after I finish this bit.  Fare thee well.}{Can't stop t'bandy words with ye; Hedron be findin' *more* work for me after I finish this bit.  Fare thee well.}{}{}{}{} # phrase: 10ELDGUL 0
-{401}{You know, you could step off this creaky wreck and join me in Targos.  There's bound to be better jobs with better pay.}{}{1}{}{410}{} # resp: 10ELDGUL 0
-{402}{Farewell.}{}{1}{}{0}{} # resp: 10ELDGUL 1
-
-{410}{Nay, my place is here - wouldn't know what to do with myself if I got work on land.  'Sides, what I hear 'bout Targos' troubles makes me worry.}{Nay, my place is here - wouldn't know what to do with myself if I got work on land.  'Sides, what I hear 'bout Targos' troubles makes me worry.}{}{}{}{} # phrase: 10ELDGUL 1
-{411}{Continue}{}{1}{}{420}{} # resp: 10ELDGUL 2
-
-{420}{But don't let me words be weighing ye down - may yer arrows fly straighter and truer than those o' the goblins, hear?}{But don't let me words be weighing ye down - may yer arrows fly straighter and truer than those o' the goblins, hear?}{}{}{}{} # phrase: 10ELDGUL 2
-{421}{Thanks.  Farewell.}{}{1}{}{0}{} # resp: 10ELDGUL 3
-
-{430}{Is it true?  I hear th'town's bein' attacked by the goblins!}{Is it true?  I hear th'town's bein' attacked by the goblins!}{}{}{}{} # phrase: 10ELDGUL 3
-{431}{That's what I hear, too.  That's why I'm, uh, here by the docks, making sure you're ready to set sail.}{}{1}{}{440}{} # resp: 10ELDGUL 4
-{432}{Yes, I'm on my way to the Palisade now.}{}{1}{}{0}{} # resp: 10ELDGUL 5
-
-{440}{Well.., aye, but we're to stay in port in case the battle turns against Targos an' they need to escape th'city.  Can't leave until Hedron gives th' word, in any event.}{Well.., aye, but we're to stay in port in case the battle turns against Targos an' they need to escape th'city.  Can't leave until Hedron gives th' word, in any event.}{}{}{}{} # phrase: 10ELDGUL 4
-{441}{Maybe I'll speak to him, then.  Farewell.}{}{1}{}{0}{} # resp: 10ELDGUL 6
-
-{450}{Caught word 'bout the battle - looks like ye pulled through - good for ye.}{Caught word 'bout the battle - looks like ye pulled through - good for ye.}{}{}{}{} # phrase: 10ELDGUL 5
-{451}{The attack was sudden, but we drove off them off... for now.  Farewell.}{}{1}{}{0}{} # resp: 10ELDGUL 7
-
-{460}{Was good havin' ye with us, even for only a short time.  Hope fortune's wind fills yer sails, friend.}{Was good havin' ye with us, even for only a short time.  Hope fortune's wind fills yer sails, friend.}{}{}{}{} # phrase: 10SCREED 0
-{461}{And yours as well.  Farewell.}{}{1}{}{0}{} # resp: 10SCREED 0
-{462}{Well, I'd rather it be fortune's wind than *your* wind, Screed.  I had quite enough of THAT on board the ship.}{}{1}{}{470}{} # resp: 10SCREED 1
-
-{470}{Ha!  Aye, it's that damned knucklehead trout - doesn't pass easily.  Ye'd think I'd be finding fish swimmin' in my stool.}{Ha!  Aye, it's that damned knucklehead trout - doesn't pass easily.  Ye'd think I'd be finding fish swimmin' in my stool.}{}{}{}{} # phrase: 10SCREED 1
-{471}{Continue}{}{1}{}{480}{} # resp: 10SCREED 2
-
-{480}{Any event, fare ye well in Targos, friend, whatever the wind may bring.}{Any event, fare ye well in Targos, friend, whatever the wind may bring.}{}{}{}{} # phrase: 10SCREED 2
-{481}{You as well.  Pleasant sailing.}{}{1}{}{0}{} # resp: 10SCREED 3
-
-{490}{I hear the town's being attacked again - the Wicked Wench's all ready to set sail if ye need to fall back.}{I hear the town's being attacked again - the Wicked Wench's all ready to set sail if ye need to fall back.}{}{}{}{} # phrase: 10SCREED 3
-{491}{We'll see how the battle goes.  Farewell.}{}{1}{}{0}{} # resp: 10SCREED 4
-
-{500}{Heard th' fightin' up along the docks was fierce - drove those goblins back, did ye?}{Heard th' fightin' up along the docks was fierce - drove those goblins back, did ye?}{}{}{}{} # phrase: 10SCREED 4
-{501}{Yes... this time.  They may be back, so be on your guard.  Farewell.}{}{1}{}{0}{} # resp: 10SCREED 5
-
-{510}{Halt!  Who goes there?  Step forward and identify yourself!}{Halt!  Who goes there?  Step forward and identify yourself!}{}{}{}{} # phrase: 10REIG 0
-{511}{I'm @pcname@ .  What happened here?}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{520}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 10REIG 0
-{512}{Calm down - what's wrong with your arm?}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{540}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 10REIG 1
-{513}{I'm @pcname@ .  What happened here?}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{580}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 10REIG 2
-{514}{Calm down - what's wrong with your arm?}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{580}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 10REIG 3
-
-{520}{What happened?  Goblin raiders in town is what happened - now get back to your ship; we've tracked down most of the little bastards, but there's still a band northeast of the docks and there may be others about.}{What happened?  Goblin raiders in town is what happened - now get back to your ship; we've tracked down most of the little bastards, but there's still a band northeast of the docks and there may be others about.}{}{}{}{} # phrase: 10REIG 1
-{521}{We've come from Luskan to aid Targos.  Perhaps we can help you stop these raiders.}{}{1}{}{530}{} # resp: 10REIG 4
-{522}{Goblins?  How did they get into town?}{}{1}{}{550}{} # resp: 10REIG 5
-{523}{What's wrong with your arm?}{}{1}{}{570}{} # resp: 10REIG 6
-
-{530}{You?!  Look, just get *back* to your ship, we don't need any more blood spilt th-}{You?!  Look, just get *back* to your ship, we don't need any more blood spilt th-}{}{}{}{} # phrase: 10REIG 4
-{531}{Continue}{}{1}{}{540}{ctrl(npc).dialog_action(npc, pc, 8)} # resp: 10REIG 11
-
-{540}{I let a damned goblin get too close and paid the price - now get back to your ship before the same happens to you!  There's still a band northeast of the docks and there may be others about.}{I let a damned goblin get too close and paid the price - now get back to your ship before the same happens to you!  There's still a band northeast of the docks and there may be others about.}{}{}{}{} # phrase: 10REIG 2
-{541}{We've come from Luskan to aid Targos.  Perhaps we can help you stop these raiders.}{}{1}{}{530}{ctrl(npc).dialog_action(npc, pc, 4)} # resp: 10REIG 7
-{542}{Goblins?  How did they get into town?}{}{1}{}{550}{ctrl(npc).dialog_action(npc, pc, 5)} # resp: 10REIG 8
-
-{550}{Do you think I know?  There were no warning horns from the Palisade, that's for sure.  At first, we thought worg riders had leapt the walls, but we haven't seen any of them, thank Tymora.}{Do you think I know?  There were no warning horns from the Palisade, that's for sure.  At first, we thought worg riders had leapt the walls, but we haven't seen any of them, thank Tymora.}{}{}{}{} # phrase: 10REIG 9
-{551}{Continue}{}{1}{}{560}{} # resp: 10REIG 20
-
-{560}{However they got in, we need to stop them.  If they set fire to the docks, Targos is done for.}{However they got in, we need to stop them.  If they set fire to the docks, Targos is done for.}{}{}{}{} # phrase: 10REIG 10
-{561}{We've come from Luskan to aid Targos.  Perhaps we can help you stop these raiders.}{}{1}{}{530}{ctrl(npc).dialog_action(npc, pc, 12)} # resp: 10REIG 21
-
-{570}{I let a goblin get too close and my arm paid the price - now enough of your damned questions!  Get back to your ship and stay there!}{I let a goblin get too close and my arm paid the price - now enough of your damned questions!  Get back to your ship and stay there!}{}{}{}{} # phrase: 10REIG 3
-{571}{We've come from Luskan to aid Targos.  Perhaps we can help you stop these raiders.}{}{1}{}{530}{ctrl(npc).dialog_action(npc, pc, 6)} # resp: 10REIG 9
-{572}{Goblins?  How did they get into town?}{}{1}{}{550}{ctrl(npc).dialog_action(npc, pc, 7)} # resp: 10REIG 10
-
-{580}{Damn it all!  All right - we need all the swords we can get.}{Damn it all!  All right - we need all the swords we can get.}{}{}{}{} # phrase: 10REIG 5
-{581}{Continue}{}{1}{}{590}{ctrl(npc).dialog_action(npc, pc, 9)} # resp: 10REIG 12
-
-{590}{But by the hells, drop those pieces of firewood and grab some *real* weapons before you commit yourselves - there's plenty of goblin axes and shields scattered about - and here's a blade I can spare.  Take it - I can't use it, my arm the way it is.}{But by the hells, drop those pieces of firewood and grab some *real* weapons before you commit yourselves - there's plenty of goblin axes and shields scattered about - and here's a blade I can spare.  Take it - I can't use it, my arm the way it is.}{}{}{}{} # phrase: 10REIG 6
-{591}{Thanks for the blade - but we could also use some armor if we're going to be hunting goblins.}{}{1}{ctrl(npc).dialog_test(npc, pc, 4)# skill_diplomacy}{600}{ctrl(npc).dialog_action(npc, pc, 10)} # resp: 10REIG 13
-{592}{Thanks for the blade - but we could also use some armor if we're going to be hunting goblins.}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{600}{ctrl(npc).dialog_action(npc, pc, 11)} # resp: 10REIG 14
-{593}{Very well.  How did the goblins get into town?}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{630}{} # resp: 10REIG 15
-{594}{What's wrong with your arm?}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{650}{} # resp: 10REIG 16
-{595}{Your arm looks in pretty bad shape - your bandages are almost soaked through.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{660}{} # resp: 10REIG 17
-
-{600}{You're right - here, take my leather jerkin - it probably won't stop a goblin's axe, but it may turn aside a knife or arrow.}{You're right - here, take my leather jerkin - it probably won't stop a goblin's axe, but it may turn aside a knife or arrow.}{}{}{}{} # phrase: 10REIG 22
-{601}{Also, your dead friend here, Brohn, shouldn't be needing his equipment any longer, so pass that along as well.}{}{1}{ctrl(npc).dialog_test(npc, pc, 41)}{610}{} # resp: 10REIG 64
-{602}{Also, your dead friend here, Brohn, shouldn't be needing his equipment any longer, so pass that along as well.}{}{1}{ctrl(npc).dialog_test(npc, pc, 42)}{610}{} # resp: 10REIG 65
-{603}{I mean no disrespect to your fellow soldier, but we could also use any of the equipment your fallen comrade Brohn had, if any.}{}{1}{ctrl(npc).dialog_test(npc, pc, 43)# skill_diplomacy}{620}{ctrl(npc).dialog_action(npc, pc, 19)} # resp: 10REIG 66
-{604}{I mean no disrespect to your fallen friend, but we could also use any of the equipment your fallen comrade Brohn had, if any.}{}{1}{ctrl(npc).dialog_test(npc, pc, 44)}{620}{ctrl(npc).dialog_action(npc, pc, 20)} # resp: 10REIG 67
-{605}{Thank you.  Do you know how these goblins got into town?}{}{1}{}{630}{} # resp: 10REIG 68
-{606}{I hope so - what's wrong with your arm?}{}{1}{}{650}{} # resp: 10REIG 69
-
-{610}{What in the h-?!  You watch your tongue!  Brohn was a good soldier, not some filthy goblin corpse you can loot!}{What in the h-?!  You watch your tongue!  Brohn was a good soldier, not some filthy goblin corpse you can loot!}{}{}{}{} # phrase: 10REIG 23
-{611}{Without arms and armor, both our corpses will lie next to his soon enough.  Brohn's equipment may give us the... edge... we need to drive the goblins back, so make your choice.}{}{1}{}{620}{ctrl(npc).dialog_action(npc, pc, 21)} # resp: 10REIG 70
-
-{620}{You... you're right again.  Here you are then - take them.  Brohn'll get no more use of them anyway.}{You... you're right again.  Here you are then - take them.  Brohn'll get no more use of them anyway.}{}{}{}{} # phrase: 10REIG 24
-{621}{Very well.  Do you know how these goblins got into town?}{}{1}{}{630}{} # resp: 10REIG 71
-{622}{All right - now, what's wrong with your arm?}{}{1}{}{650}{} # resp: 10REIG 72
-
-{630}{Do you think I know?  There were no warning horns from the Palisade, that's for sure.  At first, we thought worg riders had leapt the walls, but we haven't seen any of them, thank Tymora.}{Do you think I know?  There were no warning horns from the Palisade, that's for sure.  At first, we thought worg riders had leapt the walls, but we haven't seen any of them, thank Tymora.}{}{}{}{} # phrase: 10REIG 7
-{631}{Continue}{}{1}{}{640}{} # resp: 10REIG 18
-
-{640}{However they got in, they need to be hunted down before they can do any more harm.  If they set fire to the docks, Targos is done for.}{However they got in, they need to be hunted down before they can do any more harm.  If they set fire to the docks, Targos is done for.}{}{}{}{} # phrase: 10REIG 8
-{641}{What's wrong with your arm?}{}{1}{}{650}{} # resp: 10REIG 19
-
-{650}{Goblin axe took a bite out of it - but I'm better off than Brohn here, poor bastard took a goblin arrow in the neck.}{Goblin axe took a bite out of it - but I'm better off than Brohn here, poor bastard took a goblin arrow in the neck.}{}{}{}{} # phrase: 10REIG 11
-{651}{Your arm looks in pretty bad shape - your bandages are almost soaked through.}{}{1}{}{660}{uj.journal_add(1476, (7, 8, 9, ))} # resp: 10REIG 22
-
-{660}{Well, Jon here wrapped up my arm, but you're right, it's bleeding bad.  If you can find the harbor master, Magdar, he might have a supply of healing draughts stored in the warehouse north of here.}{Well, Jon here wrapped up my arm, but you're right, it's bleeding bad.  If you can find the harbor master, Magdar, he might have a supply of healing draughts stored in the warehouse north of here.}{}{}{}{} # phrase: 10REIG 12
-{661}{I'm an Ilmatari, a Painbearer of Ilmater.  My healing magic may be able to draw the pain from your wound and end your suffering.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{680}{} # resp: 10REIG 23
-{662}{Come the dawn, all things may be healed, Lathander teaches us.  I can aid you with my healing magic, if you wish. }{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{680}{} # resp: 10REIG 24
-{663}{Let Selune's light fall upon you, guardsman, and her healing magic shall seal your wound.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{680}{} # resp: 10REIG 25
-{664}{Wounds are the price of a strong defense, guardsman, so the teachings of Helm tell us.  Let a Watcher's healing magic aid you. }{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{680}{} # resp: 10REIG 26
-{665}{Much blood is shed in the pursuit of knowledge, Oghma teaches us.  As a Lorekeeper, I may call upon his healing magic to aid you, if you wish. }{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{680}{} # resp: 10REIG 27
-{666}{Wounds are the price of battle - and an inspiration to others.  Let a Battleguard call upon Tempus' magics to seal your wound. }{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{680}{} # resp: 10REIG 28
-{667}{Dreadmasters know much of the ways of pain.  Perhaps I could return strength to your arm... if it is Bane's will that you live.  }{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{680}{} # resp: 10REIG 29
-{668}{Ah, a supply of healing draughts may be found close by, you say?  Hmm... first, let a Demarch of Mask attend to your wound. }{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{680}{} # resp: 10REIG 30
-{669}{A rain of blood follows the storms, so teaches Talos.  We Stormlords know much of pain... and how to end it.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 17)}{680}{} # resp: 10REIG 31
-{670}{I'm a druid.  I may be able to call upon nature's power to heal your arm.}{}{1}{ctrl(npc).dialog_test(npc, pc, 18)}{680}{} # resp: 10REIG 32
-{671}{I'm a paladin.  I may be able to use my healing magics to help your arm.}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{680}{} # resp: 10REIG 33
-{672}{I already found a healing potion.  It should help - drink it down.}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{690}{ctrl(npc).dialog_action(npc, pc, 13); uj.journal_add(1477, (10, 11, ))} # resp: 10REIG 34
-{673}{I'll go see if I can find Magdar, then.  Farewell.}{}{1}{}{730}{} # resp: 10REIG 35
-
-{680}{You're a healer?  Looks like Tymora's taking pity on us at last - if you have any magic that would help, I'd be grateful.}{You're a healer?  Looks like Tymora's taking pity on us at last - if you have any magic that would help, I'd be grateful.}{}{}{}{} # phrase: 10REIG 14
-{681}{Let me see what I can do.}{}{1}{ctrl(npc).dialog_test(npc, pc, 21)}{0}{} # resp: 10REIG 37
-{682}{I wouldn't call myself a healer...  but let me see what I can do.}{}{1}{ctrl(npc).dialog_test(npc, pc, 22)}{0}{} # resp: 10REIG 38
-
-{690}{Thanks - down the hatch... Echkk!  Pah!  You'd think those damn alchemists could learn to make potions that taste like dwarven stout instead of gutter runoff.}{Thanks - down the hatch... Echkk!  Pah!  You'd think those damn alchemists could learn to make potions that taste like dwarven stout instead of gutter runoff.}{}{}{}{} # phrase: 10REIG 18
-{691}{Continue}{}{1}{}{700}{} # resp: 10REIG 58
-
-{700}{Looks like you sailed into Targos at the right time.  If you can help us hunt down any of those goblins, we'd welcome your help.}{Looks like you sailed into Targos at the right time.  If you can help us hunt down any of those goblins, we'd welcome your help.}{}{}{}{} # phrase: 10REIG 19
-{701}{We need to rest.  Can you watch over us while we catch our second wind?}{}{1}{ctrl(npc).dialog_test(npc, pc, 38)}{710}{} # resp: 10REIG 59
-{702}{I'll see what I can do.}{}{1}{ctrl(npc).dialog_test(npc, pc, 39)}{0}{} # resp: 10REIG 60
-{703}{We've wiped out the last of the goblins along the docks.}{}{1}{ctrl(npc).dialog_test(npc, pc, 40)}{720}{ctrl(npc).dialog_action(npc, pc, 18); uj.journal_add(1479, (14, 15, ))} # resp: 10REIG 61
-
-{710}{Resting out here isn't safe - I'd head back to your ship and take refuge there, or, if you're feeling brave, see if you can hole up in one of the homes or warehouses along the shore - provided you kill any goblins inside first.}{Resting out here isn't safe - I'd head back to your ship and take refuge there, or, if you're feeling brave, see if you can hole up in one of the homes or warehouses along the shore - provided you kill any goblins inside first.}{}{}{}{} # phrase: 10REIG 27
-{711}{Very well.  We'll go see if we can find some shelter, then.}{}{1}{}{0}{} # resp: 10REIG 76
-
-{720}{Excellent - that's the first good news we've had all day.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.}{Excellent - that's the first good news we've had all day.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.}{}{}{}{} # phrase: 10REIG 20
-{721}{I'll go see him, then.  Farewell.}{}{1}{}{0}{} # resp: 10REIG 62
-
-{730}{Be careful.  We spotted a nest of goblins off to the northeast - a group of our men went after them, but we haven't seen them since.}{Be careful.  We spotted a nest of goblins off to the northeast - a group of our men went after them, but we haven't seen them since.}{}{}{}{} # phrase: 10REIG 13
-{731}{I'll be careful.  Farewell.}{}{1}{}{0}{} # resp: 10REIG 36
-
-{740}{Did you find Magdar?  My damned arm's getting worse, and I need that potion he's got.}{Did you find Magdar?  My damned arm's getting worse, and I need that potion he's got.}{}{}{}{} # phrase: 10REIG 15
-{741}{I'm an Ilmatari, a Painbearer of Ilmater.  My healing magic may be able to draw the pain from your wound and end your suffering.}{}{1}{ctrl(npc).dialog_test(npc, pc, 23)}{680}{} # resp: 10REIG 39
-{742}{Come the dawn, all things may be healed, Lathander teaches us.  I can aid you with my healing magic, if you wish. }{}{1}{ctrl(npc).dialog_test(npc, pc, 24)}{680}{} # resp: 10REIG 40
-{743}{Let Selune's light fall upon you, guardsman, and her healing magic shall seal your wound.}{}{1}{ctrl(npc).dialog_test(npc, pc, 25)}{680}{} # resp: 10REIG 41
-{744}{Wounds are the price of a strong defense, guardsman, so the teachings of Helm tell us.  Let a Watcher's healing magic aid you. }{}{1}{ctrl(npc).dialog_test(npc, pc, 26)}{680}{} # resp: 10REIG 42
-{745}{Much blood is shed in the pursuit of knowledge, Oghma teaches us.  As a Lorekeeper, I may call upon his healing magic to aid you, if you wish. }{}{1}{ctrl(npc).dialog_test(npc, pc, 27)}{680}{} # resp: 10REIG 43
-{746}{Wounds are the price of battle - and an inspiration to others.  Let a Battleguard call upon Tempus' magics to seal your wound. }{}{1}{ctrl(npc).dialog_test(npc, pc, 28)}{680}{} # resp: 10REIG 44
-{747}{Dreadmasters know much of the ways of pain.  Perhaps I could return strength to your arm... if it is Bane's will that you live.  }{}{1}{ctrl(npc).dialog_test(npc, pc, 29)}{680}{} # resp: 10REIG 45
-{748}{Ah, a supply of healing draughts may be found close by, you say?  Hmm... first, let a Demarch of Mask attend to your wound. }{}{1}{ctrl(npc).dialog_test(npc, pc, 30)}{680}{} # resp: 10REIG 46
-{749}{A rain of blood follows the storms, so teaches Talos.  We Stormlords know much of pain... and how to end it.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 31)}{680}{} # resp: 10REIG 47
-{750}{I'm a druid.  I may be able to call upon nature's power to heal you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 32)}{680}{} # resp: 10REIG 48
-{751}{I'm a paladin.  I may be able to use my healing magics to help your arm.}{}{1}{ctrl(npc).dialog_test(npc, pc, 33)}{680}{} # resp: 10REIG 49
-{752}{Here's the healing potion.  It should help - drink it down.}{}{1}{ctrl(npc).dialog_test(npc, pc, 34)}{690}{ctrl(npc).dialog_action(npc, pc, 14); uj.journal_add(1477, (10, 11, ))} # resp: 10REIG 50
-{753}{We need to rest.  Can you watch over us while we catch our second wind?}{}{1}{}{710}{} # resp: 10REIG 51
-{754}{Not yet.  I'll return when I've found him.}{}{1}{}{0}{} # resp: 10REIG 52
-
-{760}{My arm's better, thanks for your help.  Looks like you're praying to the right gods.}{My arm's better, thanks for your help.  Looks like you're praying to the right gods.}{}{}{}{} # phrase: 10REIG 16
-{761}{The wound's closed, but there may be more damage.  You still don't look too good.}{}{1}{ctrl(npc).dialog_test(npc, pc, 35)}{770}{ctrl(npc).dialog_action(npc, pc, 15); uj.journal_add(1478, (12, 13, ))} # resp: 10REIG 53
-{762}{The wound's closed, but there may be more damage.  You still don't look too good.}{}{1}{ctrl(npc).dialog_test(npc, pc, 36)}{770}{ctrl(npc).dialog_action(npc, pc, 16); uj.journal_add(1478, (12, 13, ))} # resp: 10REIG 54
-
-{770}{I could still use that healing draught from Magdar if you can find him.  Hope the goblins haven't got him yet.}{I could still use that healing draught from Magdar if you can find him.  Hope the goblins haven't got him yet.}{}{}{}{} # phrase: 10REIG 17
-{771}{Here's the healing potion.  It should help - drink it down.}{}{1}{ctrl(npc).dialog_test(npc, pc, 37)}{690}{ctrl(npc).dialog_action(npc, pc, 17); uj.journal_add(1477, (10, 11, ))} # resp: 10REIG 55
-{772}{We need to rest.  Can you watch over us while we catch our second wind?}{}{1}{}{710}{} # resp: 10REIG 56
-{773}{Let me see what I can do.}{}{1}{}{0}{} # resp: 10REIG 57
-
-{780}{Now that the raiders have been taken care of, we should be all right.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.}{Now that the raiders have been taken care of, we should be all right.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.}{}{}{}{} # phrase: 10REIG 21
-{781}{I'll go see him, then.  Farewell.}{}{1}{}{0}{} # resp: 10REIG 63
-
-{790}{No idea where those goblins came from - one moment we're stepping out of the Salty Dog, and suddenly there's a mess of them running through town.  We sounded the alarm, but...}{No idea where those goblins came from - one moment we're stepping out of the Salty Dog, and suddenly there's a mess of them running through town.  We sounded the alarm, but...}{}{}{}{} # phrase: 10JON 0
-{791}{Continue}{}{1}{}{800}{} # resp: 10JON 0
-
-{800}{One of them nearly felled Reig with an axe, but poor Brohn here wasn't as lucky... arrow went right through his neck.  He didn't even have a chance.}{One of them nearly felled Reig with an axe, but poor Brohn here wasn't as lucky... arrow went right through his neck.  He didn't even have a chance.}{}{}{}{} # phrase: 10JON 1
-{801}{We'll see what we can do.  In the meantime, do you have an extra blade you can spare?}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)# skill_diplomacy}{810}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 10JON 1
-{802}{We'll see what we can do.  In the meantime, do you have an extra blade you can spare?}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{810}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 10JON 2
-{803}{We'll see what we can do.  In the meantime, do you have an extra blade you can spare?}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)# skill_diplomacy}{840}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 10JON 3
-{804}{We'll see what we can do.  In the meantime, do you have an extra blade you can spare?}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{840}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 10JON 4
-{805}{We need to rest.  Can you watch over us while we catch our second wind?}{}{1}{}{820}{} # resp: 10JON 5
-{806}{I'll keep an eye out for any more goblins - you stay here.}{}{1}{}{0}{} # resp: 10JON 6
-
-{810}{I have a spare dagger I can part with, but that's about it.  Take it - you're bound to come across the goblins sooner than I.}{I have a spare dagger I can part with, but that's about it.  Take it - you're bound to come across the goblins sooner than I.}{}{}{}{} # phrase: 10JON 3
-{811}{It'll do.  Can you watch over us while we catch our second wind?}{}{1}{}{820}{} # resp: 10JON 8
-{812}{Thanks.  I'll keep an eye out for any more goblins - you stay here.}{}{1}{}{0}{} # resp: 10JON 9
-
-{820}{It wouldn't be a good idea to rest out here with the goblins about - I'd suggest heading back to the ship you came in on and asking the captain.}{It wouldn't be a good idea to rest out here with the goblins about - I'd suggest heading back to the ship you came in on and asking the captain.}{}{}{}{} # phrase: 10JON 6
-{821}{Is there any place in town to rest?}{}{1}{}{830}{} # resp: 10JON 13
-{822}{All right, then.  Farewell.}{}{1}{}{0}{} # resp: 10JON 14
-
-{830}{If you feeling like testing your luck, you can try to hole up in one of the warehouses or homes along the docks - provided you drive any goblins inside of them out first.  It'd be safer than trying to rest out here.}{If you feeling like testing your luck, you can try to hole up in one of the warehouses or homes along the docks - provided you drive any goblins inside of them out first.  It'd be safer than trying to rest out here.}{}{}{}{} # phrase: 10JON 7
-{831}{Understood.  Farewell.}{}{1}{}{0}{} # resp: 10JON 15
-
-{840}{I used to have a dagger on me, but I may have dropped it in the attack - I can't seem to find it.  If I didn't know better, I'd say some thief pickpocketed me back at the Salty Dog.}{I used to have a dagger on me, but I may have dropped it in the attack - I can't seem to find it.  If I didn't know better, I'd say some thief pickpocketed me back at the Salty Dog.}{}{}{}{} # phrase: 10JON 4
-{841}{Hmm... yeah, thieves tend to be everywhere nowadays.  Can you watch over us while we catch our second wind?}{}{1}{}{820}{} # resp: 10JON 10
-{842}{Uh, never mind, then.  I'll keep an eye out for any more goblins - you stay here.}{}{1}{}{0}{} # resp: 10JON 11
-
-{850}{Tymora must have been smiling on us when you sailed into town.  Without you to drive back the goblins, the docks might have been burning now, and Targos overrun.}{Tymora must have been smiling on us when you sailed into town.  Without you to drive back the goblins, the docks might have been burning now, and Targos overrun.}{}{}{}{} # phrase: 10JON 8
-{851}{I'm glad we arrived in time to help.  To be honest, I was expecting a lot of running around, talking to simple townsfolk, and playing fetch and go rather than actually stepping right off the ship onto a battlefield.}{}{1}{}{860}{} # resp: 10JON 16
-{852}{I hope Lord Ulbrec is as grateful.  I'm looking to serve in the Targos Guard.}{}{1}{}{870}{} # resp: 10JON 17
-
-{860}{Yes, playing fetch and go is generally what the other mercenary companies had to do when they arrived.  After a few days of that, they were happy to get stationed on the Palisade.}{Yes, playing fetch and go is generally what the other mercenary companies had to do when they arrived.  After a few days of that, they were happy to get stationed on the Palisade.}{}{}{}{} # phrase: 10JON 9
-{861}{I'll bet.}{}{1}{}{870}{} # resp: 10JON 18
-
-{870}{You know, if you hadn't already planned to, you should go see Lord Ulbrec in the town above - it'd be an honor to stand beside you on the Targos walls.}{You know, if you hadn't already planned to, you should go see Lord Ulbrec in the town above - it'd be an honor to stand beside you on the Targos walls.}{}{}{}{} # phrase: 10JON 10
-{871}{We'll go see him, then.  Farewell.}{}{1}{}{0}{} # resp: 10JON 19
-
-{880}{Halt!  Identify yourself!}{Halt!  Identify yourself!}{}{}{}{} # phrase: 10BROGAN 0
-{881}{We're adventurers from Luskan.  What's going on here?}{}{1}{}{890}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 10BROGAN 0
-{882}{Calm yourself - what's the problem?}{}{1}{}{890}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 10BROGAN 1
-
-{890}{Stay back - there's a band of goblin raiders cornered inside this warehouse... I was awaiting the sell-swords in the Salty Dog before rushing in.}{Stay back - there's a band of goblin raiders cornered inside this warehouse... I was awaiting the sell-swords in the Salty Dog before rushing in.}{}{}{}{} # phrase: 10BROGAN 1
-{891}{Continue}{}{1}{}{900}{uj.journal_add(27682, (16, 17, 18, 19, ))} # resp: 10BROGAN 2
-
-{900}{Time's short, though - if those raiders start a fire within the warehouse, they could set the dock and the ships ablaze.}{Time's short, though - if those raiders start a fire within the warehouse, they could set the dock and the ships ablaze.}{}{}{}{} # phrase: 10BROGAN 2
-{901}{Uh, the sell-swords from the Salty Dog?}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{910}{} # resp: 10BROGAN 3
-{902}{The sell-swords from the Salty Dog?}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{910}{} # resp: 10BROGAN 4
-{903}{Uh, the sell-swords from the Salty Dog?  You mean the Iron Collar mercenaries?}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{910}{} # resp: 10BROGAN 5
-{904}{The sell-swords from the Salty Dog?  You mean the Iron Collar mercenaries?}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{910}{} # resp: 10BROGAN 6
-{905}{If you're waiting for the Iron Collar mercenaries, I wouldn't bet on them showing up any time soon... at least until the kegs in the Salty Dog are empty.}{}{1}{ctrl(npc).dialog_test(npc, pc, 4)}{920}{} # resp: 10BROGAN 7
-
-{910}{Yes, last word was the Iron Collar adventuring company was drinking at the Salty Dog tavern - Ulbrec is paying them good coin, and we need their swords here.}{Yes, last word was the Iron Collar adventuring company was drinking at the Salty Dog tavern - Ulbrec is paying them good coin, and we need their swords here.}{}{}{}{} # phrase: 10BROGAN 3
-{911}{Continue}{}{1}{}{920}{} # resp: 10BROGAN 8
-
-{920}{They *must* have heard the alarms... but I fear those drunkards may be sleeping at the bottom of a wine cask right now.}{They *must* have heard the alarms... but I fear those drunkards may be sleeping at the bottom of a wine cask right now.}{}{}{}{} # phrase: 10BROGAN 4
-{921}{There was an altercation at the Salty Dog, and the Iron Collar Mercenaries refused to back down - they won't be coming.  We can take out those goblins for you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{930}{} # resp: 10BROGAN 9
-{922}{Actually, uh, I think the goblins may have already killed them.  It might be best if you let us go in and take out those goblins ourselves.}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{930}{} # resp: 10BROGAN 10
-{923}{Look, there's no reason to wait for those mercenaries.  Let me go in and take those goblins out for you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{970}{} # resp: 10BROGAN 11
-{924}{Where's the Salty Dog Tavern?  I could go find those sell-swords you're waiting for and bring them here.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{980}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 10BROGAN 12
-{925}{I'll go grab the Iron Collar company from the Salty Dog, and perhaps between the three groups of us we can dispatch these goblins.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{0}{ctrl(npc).dialog_action(npc, pc, 3); uj.journal_add(27686, (20, 21, ))} # resp: 10BROGAN 13
-
-{930}{All right then, maybe Tymora will grace your blades - and time is against us.  But the goblins have locked the door from the inside... you'll need to break it down.}{All right then, maybe Tymora will grace your blades - and time is against us.  But the goblins have locked the door from the inside... you'll need to break it down.}{}{}{}{} # phrase: 10BROGAN 8
-{931}{Hmmm. I might be able to pick the lock as well. Stand back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 21)}{0}{ctrl(npc).dialog_action(npc, pc, 12)} # resp: 10BROGAN 27
-{932}{Don't you have a key?}{}{1}{}{940}{} # resp: 10BROGAN 28
-
-{940}{No, you'll need to bash down the door with your weapons...  unless you have Luskan thief blood running through your veins, in which case you might be able to jig the lock.}{No, you'll need to bash down the door with your weapons...  unless you have Luskan thief blood running through your veins, in which case you might be able to jig the lock.}{}{}{}{} # phrase: 10BROGAN 9
-{941}{How many do you figure are in the warehouse?}{}{1}{}{950}{ctrl(npc).dialog_action(npc, pc, 13)} # resp: 10BROGAN 29
-{942}{All right, then.  Stand back.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 14)} # resp: 10BROGAN 30
-
-{950}{No telling for sure - but judging from the arrows that whizzed past my ear when I chased them here, there's at least one archer in their number.  I'd try to take out any archers first, if you can - preferably with missile weapons of your own.}{No telling for sure - but judging from the arrows that whizzed past my ear when I chased them here, there's at least one archer in their number.  I'd try to take out any archers first, if you can - preferably with missile weapons of your own.}{}{}{}{} # phrase: 10BROGAN 21
-{951}{Continue}{}{1}{}{960}{} # resp: 10BROGAN 56
-
-{960}{You might want to keep wounded members of your party - or, uh, wizards - outside the warehouse while the rest of your band storms the place.  One arrow can drop a man before he even knows the archer is there.  Sometimes it's to your benefit to divide your forces.}{You might want to keep wounded members of your party - or, uh, wizards - outside the warehouse while the rest of your band storms the place.  One arrow can drop a man before he even knows the archer is there.  Sometimes it's to your benefit to divide your forces.}{}{}{}{} # phrase: 10BROGAN 22
-{961}{Hmm.  Sound advice.  Still, we wizards are a lot stronger than we appear.  We'll see about getting this door open.}{}{1}{ctrl(npc).dialog_test(npc, pc, 39)}{0}{} # resp: 10BROGAN 57
-{962}{Watch it.  We sorcerers are a lot stronger than we appear - but perhaps we'll heed your advice this time.  We'll see about getting this door open, then.}{}{1}{ctrl(npc).dialog_test(npc, pc, 40)}{0}{} # resp: 10BROGAN 58
-{963}{All right, then - we'll see about getting this door open.  Stand back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 41)}{0}{} # resp: 10BROGAN 59
-
-{970}{You?  Have you ever *seen* battle?  We need seasoned warriors here, not pups playing at being soldiers.}{You?  Have you ever *seen* battle?  We need seasoned warriors here, not pups playing at being soldiers.}{}{}{}{} # phrase: 10BROGAN 7
-{971}{Let me in that warehouse, and you'll see how good we play at being soldiers.}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{930}{ctrl(npc).dialog_action(npc, pc, 6); uj.journal_add(27684, (24, 25, 26, ))} # resp: 10BROGAN 21
-{972}{Where's the Salty Dog Tavern?  I could go find those sell-swords you're waiting for and bring them here.}{}{1}{ctrl(npc).dialog_test(npc, pc, 17)}{980}{ctrl(npc).dialog_action(npc, pc, 7)} # resp: 10BROGAN 22
-{973}{Where's the Salty Dog Tavern again?  I could go find those sell-swords you're waiting for and bring them here.}{}{1}{ctrl(npc).dialog_test(npc, pc, 18)}{980}{ctrl(npc).dialog_action(npc, pc, 8)} # resp: 10BROGAN 23
-{974}{I'll go grab the Iron Collar company from the Salty Dog, and perhaps between the three groups of us we can dispatch these goblins.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 9); uj.journal_add(27686, (20, 21, ))} # resp: 10BROGAN 24
-{975}{But the Iron Collar mercenaries might not be able to get here in time.}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{930}{ctrl(npc).dialog_action(npc, pc, 10); uj.journal_add(27684, (24, 25, 26, ))} # resp: 10BROGAN 25
-{976}{If you want soldiers, then you shouldn't be waiting for those Iron Collar drunks - if you want those goblins dead, then talk to *me.*}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{930}{ctrl(npc).dialog_action(npc, pc, 11); uj.journal_add(27684, (24, 25, 26, ))} # resp: 10BROGAN 26
-
-{980}{The Salty Dog lies along the south side of the docks, near the shoreline - make haste!}{The Salty Dog lies along the south side of the docks, near the shoreline - make haste!}{}{}{}{} # phrase: 10BROGAN 5
-{981}{Very well.  Watch yourself... I will return shortly.}{}{1}{}{0}{uj.journal_add(27686, (20, 21, ))} # resp: 10BROGAN 14
-
-{990}{You're back!  Did you bring the Iron Collar Band with you?}{You're back!  Did you bring the Iron Collar Band with you?}{}{}{}{} # phrase: 10BROGAN 6
-{991}{There was an altercation at the Salty Dog, and the Iron Collar Mercenaries refused to back down - they won't be coming.  We can take out those goblins for you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{930}{} # resp: 10BROGAN 15
-{992}{Actually, uh, I think the goblins may have already killed them.  It might be best if you let us go in and take out those goblins ourselves.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{930}{} # resp: 10BROGAN 16
-{993}{They're not coming.  They've too many kegs to slaughter in the Salty Dog to come to Targos' aid.  Let us handle the goblins.}{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{930}{ctrl(npc).dialog_action(npc, pc, 4); uj.journal_add(27683, (22, 23, ))} # resp: 10BROGAN 17
-{994}{The Iron Collar mercenaries will not be coming.  It's just us.}{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{930}{ctrl(npc).dialog_action(npc, pc, 5); uj.journal_add(27683, (22, 23, ))} # resp: 10BROGAN 18
-{995}{Forget the Iron Collar - let me go in and take out those goblins for you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{970}{} # resp: 10BROGAN 19
-{996}{No, I haven't found them yet.  I'll return when I do.}{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{0}{} # resp: 10BROGAN 20
-
-{1000}{Did you take out those goblins yet?  Time's running short.}{Did you take out those goblins yet?  Time's running short.}{}{}{}{} # phrase: 10BROGAN 10
-{1001}{Not yet - we're about ready to storm the warehouse, though.  Stand back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 22)}{0}{} # resp: 10BROGAN 31
-{1002}{Not yet - there's still some left in the warehouse.  We're going back in shortly to take care of the rest.}{}{1}{ctrl(npc).dialog_test(npc, pc, 23)}{0}{} # resp: 10BROGAN 32
-{1003}{We wiped out the ones inside, but there seems to be a passage leading below the warehouse - it looks like that's how they got into town in the first place.}{}{1}{ctrl(npc).dialog_test(npc, pc, 24)}{1010}{} # resp: 10BROGAN 33
-
-{1010}{Then there could be more - I need you to go down into that passage and flush them out... they may have gone for reinforcements.}{Then there could be more - I need you to go down into that passage and flush them out... they may have gone for reinforcements.}{}{}{}{} # phrase: 10BROGAN 11
-{1011}{There's no way in the nine hells I'm serving as a tunnel worm for you or for Targos... without some coin to show for my trouble.}{}{1}{ctrl(npc).dialog_test(npc, pc, 25)}{1020}{} # resp: 10BROGAN 34
-{1012}{Give me a moment to rest up, then we'll head down there and take them out.}{}{1}{}{0}{} # resp: 10BROGAN 35
-
-{1020}{I'm sure Lord Ulbrec will reward you for your efforts - now, please, you must wipe out the rest of those goblins.}{I'm sure Lord Ulbrec will reward you for your efforts - now, please, you must wipe out the rest of those goblins.}{}{}{}{} # phrase: 10BROGAN 12
-{1021}{Give me a moment to rest up, then we'll head down there and take them out.}{}{1}{}{0}{} # resp: 10BROGAN 36
-
-{1030}{Where in Tempus' name have you *been?*  I heard the fighting, and then everything went silent.  Thought you were dead.}{Where in Tempus' name have you *been?*  I heard the fighting, and then everything went silent.  Thought you were dead.}{}{}{}{} # phrase: 10BROGAN 13
-{1031}{We found a passage running beneath the warehouse - it led into some caves in the cliff.  It looks like goblin sappers tunneled through there to get into Targos.}{}{1}{ctrl(npc).dialog_test(npc, pc, 26)}{1040}{} # resp: 10BROGAN 37
-{1032}{We found a passage running beneath the warehouse - found more goblins down there, but I haven't taken them all out yet.  When they're taken care of, I'll be back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 27)}{0}{} # resp: 10BROGAN 38
-{1033}{Well, it's good you came to check on us, then.  As it stands, there are still some more goblins down below; we'll return when they're dead.}{}{1}{ctrl(npc).dialog_test(npc, pc, 28)}{0}{} # resp: 10BROGAN 39
-
-{1040}{Caves in the cliff...?  Hmmm.  Could be old pirate caves - there were quite a number of buccaneers preying along Maer Dualdon in the days before Targos became... civilized.  Where do they lead?}{Caves in the cliff...?  Hmmm.  Could be old pirate caves - there were quite a number of buccaneers preying along Maer Dualdon in the days before Targos became... civilized.  Where do they lead?}{}{}{}{} # phrase: 10BROGAN 14
-{1041}{Well, there were some collapsed passages - could be the goblins accidentally sealed themselves in.}{}{1}{ctrl(npc).dialog_test(npc, pc, 29)}{1050}{} # resp: 10BROGAN 40
-{1042}{Well, there were some collapsed passages - could be the goblins accidentally sealed themselves in.  Found this scroll on one of the goblins, however, and it looks magical... or was, at least.}{}{1}{ctrl(npc).dialog_test(npc, pc, 30)}{1080}{} # resp: 10BROGAN 41
-
-{1050}{Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.}{Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.}{}{}{}{} # phrase: 10BROGAN 15
-{1051}{Continue}{}{1}{}{1060}{ctrl(npc).dialog_action(npc, pc, 15); uj.journal_add(27685, (27, 28, ))} # resp: 10BROGAN 42
-
-{1060}{In any event, I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.}{In any event, I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.}{}{}{}{} # phrase: 10BROGAN 16
-{1061}{I hope so.  Where can I find him?}{}{1}{}{1070}{ctrl(npc).dialog_action(npc, pc, 16)} # resp: 10BROGAN 43
-{1062}{No reward is necessary... as long as Targos is safe, that is enough.  I would speak to Lord Ulbrec about employment, however.}{}{1}{}{1070}{ctrl(npc).dialog_action(npc, pc, 17)} # resp: 10BROGAN 44
-
-{1070}{You can find him in the town above.  Simply take the western path up the cliff face, and you can find Ulbrec at the Targos Town Hall.}{You can find him in the town above.  Simply take the western path up the cliff face, and you can find Ulbrec at the Targos Town Hall.}{}{}{}{} # phrase: 10BROGAN 17
-{1071}{I will seek him out, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 18)} # resp: 10BROGAN 45
-
-{1080}{Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.  Still, you might want to take that scroll to Ulbrec's wife, she knows something of magic and might be able to identify it.}{Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.  Still, you might want to take that scroll to Ulbrec's wife, she knows something of magic and might be able to identify it.}{}{}{}{} # phrase: 10BROGAN 23
-{1081}{Continue}{}{1}{}{1060}{ctrl(npc).dialog_action(npc, pc, 23); uj.journal_add(27685, (27, 28, ))} # resp: 10BROGAN 60
-
-{1090}{Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!}{Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!}{}{}{}{} # phrase: 10BROGAN 18
-{1091}{Swift action was called for.  There are still some goblins in the warehouse.  We're going back in shortly to take care of them.}{}{1}{ctrl(npc).dialog_test(npc, pc, 31)}{0}{} # resp: 10BROGAN 46
-{1092}{Swift action was called for.  We wiped out the ones in the warehouse, but there seems to be a passage leading below the warehouse - it looks like that's how they got into town in the first place.}{}{1}{ctrl(npc).dialog_test(npc, pc, 32)}{1010}{} # resp: 10BROGAN 47
-{1093}{Swift action was called for.  We found a passage running beneath the warehouse - there were more goblins down there, but we haven't taken them all out yet.  When we've driven them out, we'll be back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 33)}{0}{} # resp: 10BROGAN 48
-{1094}{Swift action was called for.  We found a passage running beneath the warehouse - it led into some caves in the cliff.  It looks like goblin sappers tunneled through there to get into Targos.}{}{1}{ctrl(npc).dialog_test(npc, pc, 34)}{1040}{} # resp: 10BROGAN 49
-
-{1100}{I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.}{I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.}{}{}{}{} # phrase: 10BROGAN 19
-{1101}{I hope so.  Where can I find him?}{}{1}{}{1070}{} # resp: 10BROGAN 50
-{1102}{No reward is necessary... as long as Targos is safe, that is enough.  I would speak to Lord Ulbrec about employment, however.}{}{1}{}{0}{} # resp: 10BROGAN 51
-
-{1110}{Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!}{Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!}{}{}{}{} # phrase: 10BROGAN 20
-{1111}{We couldn't wait for the Iron Collar mercenaries - plus, there's still some goblins left in the warehouse.  We're going back in shortly to take care of them.}{}{1}{ctrl(npc).dialog_test(npc, pc, 35)}{0}{ctrl(npc).dialog_action(npc, pc, 19)} # resp: 10BROGAN 52
-{1112}{We couldn't wait for the Iron Collar mercenaries  and swift action was called for.  We wiped out the goblins in the warehouse, but there seems to be a passage leading below the warehouse - it looks like that's how they got into town in the first place.}{}{1}{ctrl(npc).dialog_test(npc, pc, 36)}{1010}{ctrl(npc).dialog_action(npc, pc, 20)} # resp: 10BROGAN 53
-{1113}{Swift action was called for.  We found a passage running beneath the warehouse - there were more goblins down there, but we haven't taken them all out yet.  When they're taken care of, we'll be back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 37)}{0}{ctrl(npc).dialog_action(npc, pc, 21)} # resp: 10BROGAN 54
-{1114}{Swift action was called for.  We found a passage running beneath the warehouse - it led into some caves in the cliff.  It looks like goblin sappers tunneled through there to get into Targos.}{}{1}{ctrl(npc).dialog_test(npc, pc, 38)}{1040}{ctrl(npc).dialog_action(npc, pc, 22)} # resp: 10BROGAN 55
-
-{1120}{Damnable goblins... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye stand with Targos?}{Damnable goblins... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye stand with Targos?}{}{}{}{} # phrase: 10JORUN 0
-{1121}{We're adventurers from Luskan.  We just came in on the Wicked Wench and found Targos being attacked.}{}{1}{}{1130}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 10JORUN 0
-
-{1130}{Looks like ye got here just in time, then - Targos is short of good blades.  Careful now, there's more of these rock-crawlers about, so be on yer guard.}{Looks like ye got here just in time, then - Targos is short of good blades.  Careful now, there's more of these rock-crawlers about, so be on yer guard.}{}{}{}{} # phrase: 10JORUN 1
-{1131}{Did you kill all these goblins yourself?}{}{1}{}{1140}{} # resp: 10JORUN 1
-
-{1140}{Aye, I still have some rock and fire in me yet.  When I caught them trying to set fire to me *ship,* me eyes filled with blood - I've spent too long carving her hull to let it be touched by goblin filth.}{Aye, I still have some rock and fire in me yet.  When I caught them trying to set fire to me *ship,* me eyes filled with blood - I've spent too long carving her hull to let it be touched by goblin filth.}{}{}{}{} # phrase: 10JORUN 2
-{1141}{Who are you?}{}{1}{}{1150}{} # resp: 10JORUN 2
-{1142}{So you're a shipbuilder?}{}{1}{}{1150}{} # resp: 10JORUN 3
-{1143}{Any idea how they got into town?}{}{1}{}{1230}{} # resp: 10JORUN 4
-
-{1150}{The name's Jorun Tamewater, and we can swap lifestories another time.  For now, there's goblin graves needin' to be filled.}{The name's Jorun Tamewater, and we can swap lifestories another time.  For now, there's goblin graves needin' to be filled.}{}{}{}{} # phrase: 10JORUN 3
-{1151}{Do you know of any place we can rest?}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{1160}{} # resp: 10JORUN 5
-{1152}{Any idea how they got into town?}{}{1}{}{1230}{} # resp: 10JORUN 6
-{1153}{Agreed.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{1190}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 10JORUN 7
-{1154}{Agreed.  Farewell, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{0}{} # resp: 10JORUN 8
-
-{1160}{If ye need a place to hole up that's free o' the goblins, me house is to the south and west of here - ye can catch yer breath and bind your wounds there.  It should be safe - if any of those damned goblins tried to break in, they'll wish they hadn't.}{If ye need a place to hole up that's free o' the goblins, me house is to the south and west of here - ye can catch yer breath and bind your wounds there.  It should be safe - if any of those damned goblins tried to break in, they'll wish they hadn't.}{}{}{}{} # phrase: 10JORUN 25
-{1161}{Why is that?}{}{1}{}{1170}{ctrl(npc).dialog_action(npc, pc, 10); uj.journal_add(15164, (35, 36, 37, ))} # resp: 10JORUN 48
-
-{1170}{Rigged a mean little trap on one of me chests that'll gas any fool goblin that tries to break it open.  Turn their stomachs inside out, it will - that'd be something to see.}{Rigged a mean little trap on one of me chests that'll gas any fool goblin that tries to break it open.  Turn their stomachs inside out, it will - that'd be something to see.}{}{}{}{} # phrase: 10JORUN 26
-{1171}{We already opened your chest - do you mind if we put your equipment to use?}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{1180}{} # resp: 10JORUN 49
-{1172}{Uh, the goblins may have looted it already.  That would be terrible. What's in this chest of yours?}{}{1}{ctrl(npc).dialog_test(npc, pc, 17)}{1200}{} # resp: 10JORUN 50
-{1173}{What's in the chest?}{}{1}{ctrl(npc).dialog_test(npc, pc, 18)}{1200}{} # resp: 10JORUN 51
-
-{1180}{Ye did?  Oh, aye, I see ye have me helm - nay, take the weapons and put 'em to use killin' goblins, and that's good enough fer me.  That's what they were made for.}{Ye did?  Oh, aye, I see ye have me helm - nay, take the weapons and put 'em to use killin' goblins, and that's good enough fer me.  That's what they were made for.}{}{}{}{} # phrase: 10JORUN 27
-{1181}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{1190}{ctrl(npc).dialog_action(npc, pc, 11)} # resp: 10JORUN 52
-{1182}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{0}{} # resp: 10JORUN 53
-
-{1190}{I will - ye watch yerself as well.  If ye find any goblins and they're too many for ye, just lead them back this way and I can lend me iron to yours.  Between us, we'll drive them back into their holes.}{I will - ye watch yerself as well.  If ye find any goblins and they're too many for ye, just lead them back this way and I can lend me iron to yours.  Between us, we'll drive them back into their holes.}{}{}{}{} # phrase: 10JORUN 24
-{1191}{Sounds good to me.  Farewell, Jorun.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 9)} # resp: 10JORUN 47
-
-{1200}{Some old equipment from me younger days - didn't have time to disarm the trap and arm myself properly when the goblins attacked.  Had to make haste - the filthy rock-crawlers'll breed faster than ye can kill 'em.}{Some old equipment from me younger days - didn't have time to disarm the trap and arm myself properly when the goblins attacked.  Had to make haste - the filthy rock-crawlers'll breed faster than ye can kill 'em.}{}{}{}{} # phrase: 10JORUN 28
-{1201}{If we could get your chest open, would you mind if we used your equipment?}{}{1}{ctrl(npc).dialog_test(npc, pc, 21)}{1210}{} # resp: 10JORUN 54
-{1202}{Uh, if we could, say, get your chest open, would you mind if we used your equipment?}{}{1}{ctrl(npc).dialog_test(npc, pc, 22)}{1210}{} # resp: 10JORUN 55
-{1203}{If someone were to, say, pick the lock, would the trap go off?}{}{1}{ctrl(npc).dialog_test(npc, pc, 23)}{1320}{} # resp: 10JORUN 56
-
-{1210}{Nay, take the weapons and put 'em to use killin' goblins, and that's good enough fer me.  That's what they were made for.  Just be careful with the trap on the chest - it won't kill ye, just make ye wish it had.}{Nay, take the weapons and put 'em to use killin' goblins, and that's good enough fer me.  That's what they were made for.  Just be careful with the trap on the chest - it won't kill ye, just make ye wish it had.}{}{}{}{} # phrase: 10JORUN 29
-{1211}{Will the trap go off if someone picks the lock?}{}{1}{ctrl(npc).dialog_test(npc, pc, 24)}{1220}{} # resp: 10JORUN 57
-{1212}{Do you have any idea how the goblins got into town?}{}{1}{}{1230}{} # resp: 10JORUN 58
-{1213}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 25)}{1190}{ctrl(npc).dialog_action(npc, pc, 12)} # resp: 10JORUN 59
-{1214}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 26)}{0}{} # resp: 10JORUN 60
-
-{1220}{Shouldn't, as long as ye try disarm the trap before picking the lock.  One of those famous Luskan thieves should be able to do it.  And, eh, make sure everyone else stays far away in case they botch the job, aye?}{Shouldn't, as long as ye try disarm the trap before picking the lock.  One of those famous Luskan thieves should be able to do it.  And, eh, make sure everyone else stays far away in case they botch the job, aye?}{}{}{}{} # phrase: 10JORUN 30
-{1221}{Do you have any idea how the goblins got into town?}{}{1}{}{1230}{} # resp: 10JORUN 61
-{1222}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 27)}{1190}{ctrl(npc).dialog_action(npc, pc, 13)} # resp: 10JORUN 62
-{1223}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 28)}{0}{} # resp: 10JORUN 63
-
-{1230}{No telling - but I didn't hear a warning horn from the Palisade.  What worries me is they *didn't* jump the town wall.}{No telling - but I didn't hear a warning horn from the Palisade.  What worries me is they *didn't* jump the town wall.}{}{}{}{} # phrase: 10JORUN 4
-{1231}{It looks like they tunneled into some old caves in the Targos cliffs and used them to get to the docks.}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{1240}{} # resp: 10JORUN 9
-{1232}{What do you mean?}{}{1}{}{1280}{uj.journal_add(15154, (29, 30, 31, 32, ))} # resp: 10JORUN 10
-
-{1240}{Shouldn't surprise me - these cliffs are thick with tunnels, but last word was the Targos Guard had collapsed most o' em.}{Shouldn't surprise me - these cliffs are thick with tunnels, but last word was the Targos Guard had collapsed most o' em.}{}{}{}{} # phrase: 10JORUN 9
-{1241}{Continue}{}{1}{}{1250}{} # resp: 10JORUN 20
-
-{1250}{Most of those tunnels were used by smugglers along the Dualdon years ago... looks like the goblins found one of them that led to the docks from outside the Palisade.}{Most of those tunnels were used by smugglers along the Dualdon years ago... looks like the goblins found one of them that led to the docks from outside the Palisade.}{}{}{}{} # phrase: 10JORUN 10
-{1251}{Continue}{}{1}{}{1260}{} # resp: 10JORUN 21
-
-{1260}{If you haven't already, you should tell Ulbrec what you've found - he's the spokesman of Targos, and he should know these goblins aren't just raiders.}{If you haven't already, you should tell Ulbrec what you've found - he's the spokesman of Targos, and he should know these goblins aren't just raiders.}{}{}{}{} # phrase: 10JORUN 11
-{1261}{What do you mean?}{}{1}{}{1270}{} # resp: 10JORUN 22
-
-{1270}{These goblins were carrying pick axes and hammers - which means they were sappers, and sapping means time and planning.  Someone thought this through... some time ago.}{These goblins were carrying pick axes and hammers - which means they were sappers, and sapping means time and planning.  Someone thought this through... some time ago.}{}{}{}{} # phrase: 10JORUN 12
-{1271}{Do you know of any place we can rest?}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{1160}{} # resp: 10JORUN 23
-{1272}{Hmm.  Good point.  We'll see what we can find out - watch yourself.}{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{1190}{ctrl(npc).dialog_action(npc, pc, 6)} # resp: 10JORUN 24
-{1273}{Hmm.  Good point.  Farewell, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{0}{} # resp: 10JORUN 25
-
-{1280}{These goblins were carrying pick axes - tells me they were sappers.  The ankle-biters may have broken through into some of the old caves beneath Targos and used them to get to the docks.  Not good.}{These goblins were carrying pick axes - tells me they were sappers.  The ankle-biters may have broken through into some of the old caves beneath Targos and used them to get to the docks.  Not good.}{}{}{}{} # phrase: 10JORUN 5
-{1281}{Do you know of any place we can rest?}{}{1}{ctrl(npc).dialog_test(npc, pc, 4)}{1160}{} # resp: 10JORUN 11
-{1282}{What old caves?}{}{1}{}{1290}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 10JORUN 12
-{1283}{Any idea where their tunnel is?}{}{1}{}{1310}{} # resp: 10JORUN 13
-
-{1290}{These cliffs are thick with tunnels, but last word was the Targos Guard had collapsed most o' em.}{These cliffs are thick with tunnels, but last word was the Targos Guard had collapsed most o' em.}{}{}{}{} # phrase: 10JORUN 6
-{1291}{Continue}{}{1}{}{1300}{} # resp: 10JORUN 14
-
-{1300}{The tunnels were used by smugglers along the Dualdon years ago... the goblins may've broke into one o' 'em and crawled beneath the Palisade.}{The tunnels were used by smugglers along the Dualdon years ago... the goblins may've broke into one o' 'em and crawled beneath the Palisade.}{}{}{}{} # phrase: 10JORUN 7
-{1301}{Any idea which one the goblins came out of?}{}{1}{}{1310}{} # resp: 10JORUN 15
-
-{1310}{Not sure... my guess?  Somewhere to the northeast, since that's where the fighting was thickest.  If ye head up there, make sure ye've got some trusty iron in your hand.  Could be a whole mess o' em crawling below.}{Not sure... my guess?  Somewhere to the northeast, since that's where the fighting was thickest.  If ye head up there, make sure ye've got some trusty iron in your hand.  Could be a whole mess o' em crawling below.}{}{}{}{} # phrase: 10JORUN 8
-{1311}{Do you know of any place we can rest?}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{1160}{} # resp: 10JORUN 16
-{1312}{Where did these caves come from?}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{1290}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 10JORUN 17
-{1313}{We'll be on our guard.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{1190}{ctrl(npc).dialog_action(npc, pc, 4)} # resp: 10JORUN 18
-{1314}{All right - we'll be on our guard.  Farewell, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{0}{ctrl(npc).dialog_action(npc, pc, 5)} # resp: 10JORUN 19
-
-{1320}{Aye, if the fool picking the lock doesn't try to disarm the trap first.  Don't need to worry about many thieves out here having the skill to do that, though.}{Aye, if the fool picking the lock doesn't try to disarm the trap first.  Don't need to worry about many thieves out here having the skill to do that, though.}{}{}{}{} # phrase: 10JORUN 36
-{1321}{Do you have any idea how the goblins got into town?}{}{1}{}{1230}{} # resp: 10JORUN 72
-{1322}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 29)}{1190}{ctrl(npc).dialog_action(npc, pc, 17)} # resp: 10JORUN 73
-{1323}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 30)}{0}{} # resp: 10JORUN 74
-
-{1330}{Have ye spilled any more goblin blood?  Ye better not be greedy - make ye sure ye save a handful for me.}{Have ye spilled any more goblin blood?  Ye better not be greedy - make ye sure ye save a handful for me.}{}{}{}{} # phrase: 10JORUN 13
-{1331}{Do you know of any place we can rest?}{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{1160}{} # resp: 10JORUN 26
-{1332}{Any idea how these goblins got into town?}{}{1}{}{1230}{} # resp: 10JORUN 27
-{1333}{I will.  Be careful, Jorun.  Farewell.}{}{1}{}{0}{} # resp: 10JORUN 28
-
-{1340}{Well, now, something I can help ye with?  I'm not doing business with the attacks an' all, and there's not much call for building ships as much as taking them down.}{Well, now, something I can help ye with?  I'm not doing business with the attacks an' all, and there's not much call for building ships as much as taking them down.}{}{}{}{} # phrase: 10JORUN 14
-{1341}{My name is @pcname@ .  Who are you?}{}{1}{}{1350}{ctrl(npc).dialog_action(npc, pc, 7)} # resp: 10JORUN 29
-
-{1350}{Jorun Tamewater, shipbuilder, occasional fisherman.  Ye look like one of those sell-swords to me - no secret why ye're in Targos.  Lookin' to spill some goblin blood, are ye?}{Jorun Tamewater, shipbuilder, occasional fisherman.  Ye look like one of those sell-swords to me - no secret why ye're in Targos.  Lookin' to spill some goblin blood, are ye?}{}{}{}{} # phrase: 10JORUN 15
-{1351}{Jorun Tamewater?  I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.}{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{1360}{} # resp: 10JORUN 30
-{1352}{Yes, and earn a few coins for our trouble.  We've spilled enough goblin blood so far, though the coin wasn't exactly what we were expecting.}{}{1}{}{1390}{} # resp: 10JORUN 31
-{1353}{I must take my leave.  Farewell.}{}{1}{}{0}{} # resp: 10JORUN 32
-
-{1360}{Oh, now, did that fat fool Lumbar sit on it?  Damn that idiot!  I told him how much weight the thing could stand, but there's nothing to get past his fool ears when he's wailing like a babe!}{Oh, now, did that fat fool Lumbar sit on it?  Damn that idiot!  I told him how much weight the thing could stand, but there's nothing to get past his fool ears when he's wailing like a babe!}{}{}{}{} # phrase: 10JORUN 21
-{1361}{Can you fix it?}{}{1}{}{1370}{} # resp: 10JORUN 44
-
-{1370}{Aye, if someone had bothered to tell me the problem sooner, I could have had it fixed right quick.  In fact - ye could even do it.}{Aye, if someone had bothered to tell me the problem sooner, I could have had it fixed right quick.  In fact - ye could even do it.}{}{}{}{} # phrase: 10JORUN 22
-{1371}{How?}{}{1}{}{1380}{ctrl(npc).dialog_action(npc, pc, 8); uj.journal_add(15159, (33, 34, ))} # resp: 10JORUN 45
-
-{1380}{I keep spares, especially when the shipping season is in full swing.  Take this crane wheel, and just set it into the crane, should be ready to go without a hitch.}{I keep spares, especially when the shipping season is in full swing.  Take this crane wheel, and just set it into the crane, should be ready to go without a hitch.}{}{}{}{} # phrase: 10JORUN 23
-{1381}{All right.  We'll see about fixing the crane.  Thanks, Jorun.}{}{1}{}{0}{} # resp: 10JORUN 46
-
-{1390}{Well, that should clear itself up soon enough - gold seems to rain from the skies in some corners of Faerun, and I doubt Targos will prove any different.}{Well, that should clear itself up soon enough - gold seems to rain from the skies in some corners of Faerun, and I doubt Targos will prove any different.}{}{}{}{} # phrase: 10JORUN 16
-{1391}{You said you were a shipbuilder?}{}{1}{}{1400}{} # resp: 10JORUN 33
-{1392}{I must take my leave.  Farewell.}{}{1}{}{0}{} # resp: 10JORUN 34
-
-{1400}{Aye.  Why, that surprise ye?}{Aye.  Why, that surprise ye?}{}{}{}{} # phrase: 10JORUN 17
-{1401}{Well... yes.}{}{1}{}{1410}{} # resp: 10JORUN 35
-{1402}{Not really.}{}{1}{}{1410}{} # resp: 10JORUN 36
-{1403}{Oh, rest assured, nothing surprises me anymore.}{}{1}{}{1410}{} # resp: 10JORUN 37
-
-{1410}{Wood's as challenging to shape as iron or stone - or even ice, if those legends about that fool Tiernon are true.  Hmph.}{Wood's as challenging to shape as iron or stone - or even ice, if those legends about that fool Tiernon are true.  Hmph.}{}{}{}{} # phrase: 10JORUN 18
-{1411}{Continue}{}{1}{}{1420}{} # resp: 10JORUN 38
-
-{1420}{Well, no matter - look, if ye not be needin' anything, I'd best go back to seein' what weapons I can turn my skills to for the defenders at the Palisade.}{Well, no matter - look, if ye not be needin' anything, I'd best go back to seein' what weapons I can turn my skills to for the defenders at the Palisade.}{}{}{}{} # phrase: 10JORUN 19
-{1421}{I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.}{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{1360}{} # resp: 10JORUN 39
-{1422}{I will take my leave then.  Farewell.}{}{1}{}{0}{} # resp: 10JORUN 40
-
-{1430}{More than once ye've crossed my path; if ye plan on makin' a habit of it, the least ye could do is bring a winecask with ye... or two. Somethin' I can do for ye?}{More than once ye've crossed my path; if ye plan on makin' a habit of it, the least ye could do is bring a winecask with ye... or two. Somethin' I can do for ye?}{}{}{}{} # phrase: 10JORUN 20
-{1431}{I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.}{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{1360}{} # resp: 10JORUN 41
-{1432}{You said you were a shipbuilder?}{}{1}{}{1400}{} # resp: 10JORUN 42
-{1433}{Just stopping by to check on you, Jorun.}{}{1}{}{0}{} # resp: 10JORUN 43
-
-{1440}{Eh?!  A duergar in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.}{Eh?!  A duergar in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.}{}{}{}{} # phrase: 10JORUN 31
-{1441}{We are not in league with these goblins, cousin, we are here to help.}{}{1}{}{1450}{} # resp: 10JORUN 64
-{1442}{We've come to aid Targos, dog - put down your weapon.}{}{1}{}{1450}{} # resp: 10JORUN 65
-
-{1450}{Do ye take me for a fool?!  What proof do I have that ye've come to help us?}{Do ye take me for a fool?!  What proof do I have that ye've come to help us?}{}{}{}{} # phrase: 10JORUN 33
-{1451}{What gain would there be in me even talking to you?  If I were with the goblins, I would be attacking you right now.}{}{1}{}{1460}{ctrl(npc).dialog_action(npc, pc, 14)} # resp: 10JORUN 68
-{1452}{We sailed in on the Wicked Wench, you idiot!  We're from Luskan - either you trust us or you don't.  I have no more time to waste talking to you.}{}{1}{}{1460}{ctrl(npc).dialog_action(npc, pc, 15)} # resp: 10JORUN 69
-
-{1460}{Hrmm.  I don't know why, but I believe ye - but that don't mean ye have me *trust,* it doesn't.  Still, Targos needs good blades with these filthy rock-crawlers about.}{Hrmm.  I don't know why, but I believe ye - but that don't mean ye have me *trust,* it doesn't.  Still, Targos needs good blades with these filthy rock-crawlers about.}{}{}{}{} # phrase: 10JORUN 34
-{1461}{Did you kill all these goblins yourself?}{}{1}{}{1140}{} # resp: 10JORUN 70
-
-{1470}{Eh?!  A drow in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.}{Eh?!  A drow in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.}{}{}{}{} # phrase: 10JORUN 32
-{1471}{We are not in league with these goblins, we are here to help.}{}{1}{}{1450}{} # resp: 10JORUN 66
-{1472}{We've come to aid Targos, dog - put down your weapon.}{}{1}{}{1450}{} # resp: 10JORUN 67
-
-{1480}{Damn me eyes... are ye a deep gnome?  What in the hells are ye doing in Targos?}{Damn me eyes... are ye a deep gnome?  What in the hells are ye doing in Targos?}{}{}{}{} # phrase: 10JORUN 35
-{1481}{We're adventurers from Luskan.  We just came in on the Wicked Wench and found Targos being attacked.}{}{1}{}{1130}{ctrl(npc).dialog_action(npc, pc, 16)} # resp: 10JORUN 71
-
-{1490}{I heard talk of a duergar around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?}{I heard talk of a duergar around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?}{}{}{}{} # phrase: 10JORUN 37
-{1491}{Are you Jorun Tamewater?  I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.}{}{1}{ctrl(npc).dialog_test(npc, pc, 31)}{1360}{ctrl(npc).dialog_action(npc, pc, 18)} # resp: 10JORUN 75
-{1492}{We're looking to spill some goblin blood... and earn a few coins for our trouble, but the coinage so far has been somewhat light. }{}{1}{}{1390}{ctrl(npc).dialog_action(npc, pc, 19)} # resp: 10JORUN 76
-
-{1500}{I heard talk of a drow around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?}{I heard talk of a drow around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?}{}{}{}{} # phrase: 10JORUN 38
-{1501}{Are you Jorun Tamewater?  I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.}{}{1}{ctrl(npc).dialog_test(npc, pc, 32)}{1360}{ctrl(npc).dialog_action(npc, pc, 20)} # resp: 10JORUN 77
-{1502}{We're looking to spill some goblin blood... and earn a few coins for our trouble, but the coinage so far has been somewhat light. }{}{1}{}{1390}{ctrl(npc).dialog_action(npc, pc, 21)} # resp: 10JORUN 78
-
-{1510}{Damn me eyes... ye're the deep gnome everyone's going on about.  I was hoping ye might be crossing me path - something this ol' shipbuilder can help ye with? }{Damn me eyes... ye're the deep gnome everyone's going on about.  I was hoping ye might be crossing me path - something this ol' shipbuilder can help ye with? }{}{}{}{} # phrase: 10JORUN 39
-{1511}{My name is @pcname@ .  Who are you?}{}{1}{}{1350}{ctrl(npc).dialog_action(npc, pc, 22)} # resp: 10JORUN 79
-
-{1520}{It's good to see another dwarf on the shore of Maer Dualdon especially with these damnable goblins about... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye come to add yer axe and hammer to Targos? }{It's good to see another dwarf on the shore of Maer Dualdon especially with these damnable goblins about... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye come to add yer axe and hammer to Targos? }{}{}{}{} # phrase: 10JORUN 40
-{1521}{We're adventurers from Luskan.  We just came in on the Wicked Wench and found Targos being attacked. }{}{1}{}{1130}{ctrl(npc).dialog_action(npc, pc, 23)} # resp: 10JORUN 80
-
-{1530}{Well, now, a dwarf is a sight for sore eyes in these windswept lands... especially one who can cleave goblins as well as ye can.  Something this ol' shipbuilder can help ye with?  }{Well, now, a dwarf is a sight for sore eyes in these windswept lands... especially one who can cleave goblins as well as ye can.  Something this ol' shipbuilder can help ye with?  }{}{}{}{} # phrase: 10JORUN 41
-{1531}{My name is @pcname@ .  Who are you?}{}{1}{}{1350}{ctrl(npc).dialog_action(npc, pc, 24)} # resp: 10JORUN 81
-
-{1540}{Hold!  Do you stand with Targos or against her?}{Hold!  Do you stand with Targos or against her?}{}{}{}{} # phrase: 10CRANDA 0
-{1541}{We stand with Targos.  We just sailed in on the Wicked Wench.}{}{1}{}{1550}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 10CRANDA 0
-{1542}{Put down your damned weapon, boy, or we'll cleave it from your wrist.  It's plain we're not goblins.}{}{1}{}{1630}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 10CRANDA 1
-
-{1550}{Then keep your blades close - goblins are prowling the town, and we have no word of their strength or how they breeched the wall.  It was possible that they had help... from someone inside the town.}{Then keep your blades close - goblins are prowling the town, and we have no word of their strength or how they breeched the wall.  It was possible that they had help... from someone inside the town.}{}{}{}{} # phrase: 10CRANDA 1
-{1551}{Continue}{}{1}{}{1560}{} # resp: 10CRANDA 2
-
-{1560}{I was assigned to protect the dock to Dualdon's Wake and to keep it from the goblins.  Unless reinforcements come soon, however, I fear a band of goblins will chance upon me first.}{I was assigned to protect the dock to Dualdon's Wake and to keep it from the goblins.  Unless reinforcements come soon, however, I fear a band of goblins will chance upon me first.}{}{}{}{} # phrase: 10CRANDA 2
-{1561}{Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{1570}{} # resp: 10CRANDA 3
-{1562}{Have no fear of that.  We've dispatched the goblin attackers - the docks belong to Targos again.}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{1610}{} # resp: 10CRANDA 4
-{1563}{Have you seen any goblins?}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{1580}{} # resp: 10CRANDA 5
-{1564}{Stay here and watch the docks - we'll see about taking care of the goblins in the town.}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{0}{} # resp: 10CRANDA 6
-
-{1570}{Magdar?  Magdar is the harbor master.  If he's still alive, he'd most likely be at one of the warehouses on the northern end of the docks.}{Magdar?  Magdar is the harbor master.  If he's still alive, he'd most likely be at one of the warehouses on the northern end of the docks.}{}{}{}{} # phrase: 10CRANDA 4
-{1571}{Have you seen any goblins in the area?}{}{1}{}{1580}{} # resp: 10CRANDA 8
-{1572}{Thanks - stay here and watch the docks.  We'll return.}{}{1}{}{0}{} # resp: 10CRANDA 9
-
-{1580}{I've heard the sounds of fighting at the dock to the north and to the southeast - if you head in either direction, take care.  We don't know how many are in the town.}{I've heard the sounds of fighting at the dock to the north and to the southeast - if you head in either direction, take care.  We don't know how many are in the town.}{}{}{}{} # phrase: 10CRANDA 5
-{1581}{Continue}{}{1}{}{1590}{} # resp: 10CRANDA 10
-
-{1590}{If your band numbers someone who has skill in hiding in shadows, they might be able to scout the town for goblins without being detected.  Once you know where the goblins are, wiping them out should prove easier, especially if the scout takes them unawares.}{If your band numbers someone who has skill in hiding in shadows, they might be able to scout the town for goblins without being detected.  Once you know where the goblins are, wiping them out should prove easier, especially if the scout takes them unawares.}{}{}{}{} # phrase: 10CRANDA 10
-{1591}{What do you mean?}{}{1}{}{1600}{} # resp: 10CRANDA 20
-{1592}{Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{1570}{} # resp: 10CRANDA 21
-{1593}{Not a bad idea.  Maybe a little hide in shadows and scouting could prove useful.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{0}{} # resp: 10CRANDA 22
-{1594}{Indeed.  Scouting Targos unseen could prove useful to us - and detrimental to our foes.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{0}{} # resp: 10CRANDA 23
-{1595}{Not a bad idea.  Maybe a little scouting could prove useful.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{0}{} # resp: 10CRANDA 24
-{1596}{Thanks for the advice - stay here and watch the docks.  We'll return.}{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{0}{} # resp: 10CRANDA 25
-
-{1600}{This may not hold true for every profession, but I've seen rogues in Luskan drop a man twice their size just by striking from the shadows and taking them by surprise.  The victims just hit the ground like logs.  Not a proud tactic, but a successful one. }{This may not hold true for every profession, but I've seen rogues in Luskan drop a man twice their size just by striking from the shadows and taking them by surprise.  The victims just hit the ground like logs.  Not a proud tactic, but a successful one. }{}{}{}{} # phrase: 10CRANDA 11
-{1601}{Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.}{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{1570}{} # resp: 10CRANDA 26
-{1602}{Hells, a sneak attack's worked for *me* on more than one occasion.  No reason not to use it now.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{0}{} # resp: 10CRANDA 27
-{1603}{A backstab is a thieves' trick - a monk has no need of such things.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{0}{} # resp: 10CRANDA 28
-{1604}{Thanks for the advice - stay here and watch the docks.  We'll return.}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{0}{} # resp: 10CRANDA 29
-
-{1610}{That is welcome news!  You should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.}{That is welcome news!  You should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.}{}{}{}{} # phrase: 10CRANDA 6
-{1611}{Lord Ulbrec?  Where can I find him?}{}{1}{}{1620}{} # resp: 10CRANDA 11
-{1612}{I will speak to him, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 10CRANDA 12
-
-{1620}{You can find him in Targos in the cliffs above, in the Town Hall.  If you are searching for a contract with the Targos Guard, then he will no doubt sign you on.}{You can find him in Targos in the cliffs above, in the Town Hall.  If you are searching for a contract with the Targos Guard, then he will no doubt sign you on.}{}{}{}{} # phrase: 10CRANDA 7
-{1621}{I will speak to him, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 10CRANDA 13
-
-{1630}{That's plain enough, but I had to be sure - goblins are prowling the town, and we have no word of their strength or how they breeched the wall.  It was possible that they had help... from someone inside the town.}{That's plain enough, but I had to be sure - goblins are prowling the town, and we have no word of their strength or how they breeched the wall.  It was possible that they had help... from someone inside the town.}{}{}{}{} # phrase: 10CRANDA 3
-{1631}{Continue}{}{1}{}{1560}{} # resp: 10CRANDA 7
-
-{1640}{Any word of goblins or the guard?}{Any word of goblins or the guard?}{}{}{}{} # phrase: 10CRANDA 8
-{1641}{Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.}{}{1}{ctrl(npc).dialog_test(npc, pc, 4)}{1570}{} # resp: 10CRANDA 14
-{1642}{Have you seen any goblins in the area?}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{1580}{} # resp: 10CRANDA 15
-{1643}{Have no fear of goblins.  We've dispatched them - the docks belong to Targos again.}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{1610}{} # resp: 10CRANDA 16
-{1644}{No word yet - keep to your post.  If we hear of anything, we will summon you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{0}{} # resp: 10CRANDA 17
-
-{1650}{If you haven't already, you should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.}{If you haven't already, you should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.}{}{}{}{} # phrase: 10CRANDA 9
-{1651}{Lord Ulbrec?  Where can I find him?}{}{1}{}{1620}{} # resp: 10CRANDA 18
-{1652}{I will speak to him, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 4)} # resp: 10CRANDA 19
+{400}{Well, ye've never met my Ma, so we'll leave it at that.}{Well, ye've never met my Ma, so we'll leave it at that.}{}{}{}{} # phrase: 10HEDRON 12
+{401}{You named your ship after your *mother?*}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{200}{} # resp: 10HEDRON 26
+{402}{Do you know where I can go to sign on with the Targos guard?}{}{1}{}{110}{} # resp: 10HEDRON 27
+
+{410}{Words are fine, but I'll be takin' my thanks in coin.  Lord Ulbrec's promised me a little gold for every sell-sword I bring to Targos, whether they sign on or not, so that's thanks enough.}{Words are fine, but I'll be takin' my thanks in coin.  Lord Ulbrec's promised me a little gold for every sell-sword I bring to Targos, whether they sign on or not, so that's thanks enough.}{}{}{}{} # phrase: 10HEDRON 16
+{411}{Do you know where I can go to sign on with the Targos guard?}{}{1}{}{110}{} # resp: 10HEDRON 34
+{412}{Very well.  Thanks again, Hedron.}{}{1}{}{130}{} # resp: 10HEDRON 35
+
+{420}{Can't stop t'bandy words with ye; Hedron be findin' *more* work for me after I finish this bit.  Fare thee well.}{Can't stop t'bandy words with ye; Hedron be findin' *more* work for me after I finish this bit.  Fare thee well.}{}{}{}{} # phrase: 10ELDGUL 0
+{421}{You know, you could step off this creaky wreck and join me in Targos.  There's bound to be better jobs with better pay.}{}{1}{}{430}{} # resp: 10ELDGUL 0
+{422}{Farewell.}{}{1}{}{0}{} # resp: 10ELDGUL 1
+
+{430}{Nay, my place is here - wouldn't know what to do with myself if I got work on land.  'Sides, what I hear 'bout Targos' troubles makes me worry.}{Nay, my place is here - wouldn't know what to do with myself if I got work on land.  'Sides, what I hear 'bout Targos' troubles makes me worry.}{}{}{}{} # phrase: 10ELDGUL 1
+{431}{Continue}{}{1}{}{440}{} # resp: 10ELDGUL 2
+
+{440}{But don't let me words be weighing ye down - may yer arrows fly straighter and truer than those o' the goblins, hear?}{But don't let me words be weighing ye down - may yer arrows fly straighter and truer than those o' the goblins, hear?}{}{}{}{} # phrase: 10ELDGUL 2
+{441}{Thanks.  Farewell.}{}{1}{}{0}{} # resp: 10ELDGUL 3
+
+{450}{Is it true?  I hear th'town's bein' attacked by the goblins!}{Is it true?  I hear th'town's bein' attacked by the goblins!}{}{}{}{} # phrase: 10ELDGUL 3
+{451}{That's what I hear, too.  That's why I'm, uh, here by the docks, making sure you're ready to set sail.}{}{1}{}{460}{} # resp: 10ELDGUL 4
+{452}{Yes, I'm on my way to the Palisade now.}{}{1}{}{0}{} # resp: 10ELDGUL 5
+
+{460}{Well.., aye, but we're to stay in port in case the battle turns against Targos an' they need to escape th'city.  Can't leave until Hedron gives th' word, in any event.}{Well.., aye, but we're to stay in port in case the battle turns against Targos an' they need to escape th'city.  Can't leave until Hedron gives th' word, in any event.}{}{}{}{} # phrase: 10ELDGUL 4
+{461}{Maybe I'll speak to him, then.  Farewell.}{}{1}{}{0}{} # resp: 10ELDGUL 6
+
+{470}{Caught word 'bout the battle - looks like ye pulled through - good for ye.}{Caught word 'bout the battle - looks like ye pulled through - good for ye.}{}{}{}{} # phrase: 10ELDGUL 5
+{471}{The attack was sudden, but we drove off them off... for now.  Farewell.}{}{1}{}{0}{} # resp: 10ELDGUL 7
+
+{480}{Was good havin' ye with us, even for only a short time.  Hope fortune's wind fills yer sails, friend.}{Was good havin' ye with us, even for only a short time.  Hope fortune's wind fills yer sails, friend.}{}{}{}{} # phrase: 10SCREED 0
+{481}{And yours as well.  Farewell.}{}{1}{}{0}{} # resp: 10SCREED 0
+{482}{Well, I'd rather it be fortune's wind than *your* wind, Screed.  I had quite enough of THAT on board the ship.}{}{1}{}{490}{} # resp: 10SCREED 1
+
+{490}{Ha!  Aye, it's that damned knucklehead trout - doesn't pass easily.  Ye'd think I'd be finding fish swimmin' in my stool.}{Ha!  Aye, it's that damned knucklehead trout - doesn't pass easily.  Ye'd think I'd be finding fish swimmin' in my stool.}{}{}{}{} # phrase: 10SCREED 1
+{491}{Continue}{}{1}{}{500}{} # resp: 10SCREED 2
+
+{500}{Any event, fare ye well in Targos, friend, whatever the wind may bring.}{Any event, fare ye well in Targos, friend, whatever the wind may bring.}{}{}{}{} # phrase: 10SCREED 2
+{501}{You as well.  Pleasant sailing.}{}{1}{}{0}{} # resp: 10SCREED 3
+
+{510}{I hear the town's being attacked again - the Wicked Wench's all ready to set sail if ye need to fall back.}{I hear the town's being attacked again - the Wicked Wench's all ready to set sail if ye need to fall back.}{}{}{}{} # phrase: 10SCREED 3
+{511}{We'll see how the battle goes.  Farewell.}{}{1}{}{0}{} # resp: 10SCREED 4
+
+{520}{Heard th' fightin' up along the docks was fierce - drove those goblins back, did ye?}{Heard th' fightin' up along the docks was fierce - drove those goblins back, did ye?}{}{}{}{} # phrase: 10SCREED 4
+{521}{Yes... this time.  They may be back, so be on your guard.  Farewell.}{}{1}{}{0}{} # resp: 10SCREED 5
+
+{530}{Halt!  Who goes there?  Step forward and identify yourself!}{Halt!  Who goes there?  Step forward and identify yourself!}{}{}{}{} # phrase: 10REIG 0
+{531}{I'm @pcname@ .  What happened here?}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{540}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 10REIG 0
+{532}{Calm down - what's wrong with your arm?}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{590}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 10REIG 1
+{533}{I'm @pcname@ .  What happened here?}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{0}{ctrl(npc).dialog_action(npc, pc, 2); cs().switch_dialog(pc, "Jon", 5)} # resp: 10REIG 2
+{534}{Calm down - what's wrong with your arm?}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{0}{ctrl(npc).dialog_action(npc, pc, 3); cs().switch_dialog(pc, "Jon", 5)} # resp: 10REIG 3
+
+{540}{What happened?  Goblin raiders in town is what happened - now get back to your ship; we've tracked down most of the little bastards, but there's still a band northeast of the docks and there may be others about.}{What happened?  Goblin raiders in town is what happened - now get back to your ship; we've tracked down most of the little bastards, but there's still a band northeast of the docks and there may be others about.}{}{}{}{} # phrase: 10REIG 1
+{541}{We've come from Luskan to aid Targos.  Perhaps we can help you stop these raiders.}{}{1}{}{550}{} # resp: 10REIG 4
+{542}{Goblins?  How did they get into town?}{}{1}{}{560}{} # resp: 10REIG 5
+{543}{What's wrong with your arm?}{}{1}{}{580}{} # resp: 10REIG 6
+
+{550}{You?!  Look, just get *back* to your ship, we don't need any more blood spilt th-}{You?!  Look, just get *back* to your ship, we don't need any more blood spilt th-}{}{}{}{} # phrase: 10REIG 4
+{551}{Continue}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 8); cs().switch_dialog(pc, "Jon", 2)} # resp: 10REIG 11
+
+{560}{Do you think I know?  There were no warning horns from the Palisade, that's for sure.  At first, we thought worg riders had leapt the walls, but we haven't seen any of them, thank Tymora.}{Do you think I know?  There were no warning horns from the Palisade, that's for sure.  At first, we thought worg riders had leapt the walls, but we haven't seen any of them, thank Tymora.}{}{}{}{} # phrase: 10REIG 9
+{561}{Continue}{}{1}{}{570}{} # resp: 10REIG 20
+
+{570}{However they got in, we need to stop them.  If they set fire to the docks, Targos is done for.}{However they got in, we need to stop them.  If they set fire to the docks, Targos is done for.}{}{}{}{} # phrase: 10REIG 10
+{571}{We've come from Luskan to aid Targos.  Perhaps we can help you stop these raiders.}{}{1}{}{550}{ctrl(npc).dialog_action(npc, pc, 12)} # resp: 10REIG 21
+
+{580}{I let a goblin get too close and my arm paid the price - now enough of your damned questions!  Get back to your ship and stay there!}{I let a goblin get too close and my arm paid the price - now enough of your damned questions!  Get back to your ship and stay there!}{}{}{}{} # phrase: 10REIG 3
+{581}{We've come from Luskan to aid Targos.  Perhaps we can help you stop these raiders.}{}{1}{}{550}{ctrl(npc).dialog_action(npc, pc, 6)} # resp: 10REIG 9
+{582}{Goblins?  How did they get into town?}{}{1}{}{560}{ctrl(npc).dialog_action(npc, pc, 7)} # resp: 10REIG 10
+
+{590}{I let a damned goblin get too close and paid the price - now get back to your ship before the same happens to you!  There's still a band northeast of the docks and there may be others about.}{I let a damned goblin get too close and paid the price - now get back to your ship before the same happens to you!  There's still a band northeast of the docks and there may be others about.}{}{}{}{} # phrase: 10REIG 2
+{591}{We've come from Luskan to aid Targos.  Perhaps we can help you stop these raiders.}{}{1}{}{550}{ctrl(npc).dialog_action(npc, pc, 4)} # resp: 10REIG 7
+{592}{Goblins?  How did they get into town?}{}{1}{}{560}{ctrl(npc).dialog_action(npc, pc, 5)} # resp: 10REIG 8
+
+{600}{Did you find Magdar?  My damned arm's getting worse, and I need that potion he's got.}{Did you find Magdar?  My damned arm's getting worse, and I need that potion he's got.}{}{}{}{} # phrase: 10REIG 15
+{601}{I'm an Ilmatari, a Painbearer of Ilmater.  My healing magic may be able to draw the pain from your wound and end your suffering.}{}{1}{ctrl(npc).dialog_test(npc, pc, 23)}{620}{} # resp: 10REIG 39
+{602}{Come the dawn, all things may be healed, Lathander teaches us.  I can aid you with my healing magic, if you wish. }{}{1}{ctrl(npc).dialog_test(npc, pc, 24)}{620}{} # resp: 10REIG 40
+{603}{Let Selune's light fall upon you, guardsman, and her healing magic shall seal your wound.}{}{1}{ctrl(npc).dialog_test(npc, pc, 25)}{620}{} # resp: 10REIG 41
+{604}{Wounds are the price of a strong defense, guardsman, so the teachings of Helm tell us.  Let a Watcher's healing magic aid you. }{}{1}{ctrl(npc).dialog_test(npc, pc, 26)}{620}{} # resp: 10REIG 42
+{605}{Much blood is shed in the pursuit of knowledge, Oghma teaches us.  As a Lorekeeper, I may call upon his healing magic to aid you, if you wish. }{}{1}{ctrl(npc).dialog_test(npc, pc, 27)}{620}{} # resp: 10REIG 43
+{606}{Wounds are the price of battle - and an inspiration to others.  Let a Battleguard call upon Tempus' magics to seal your wound. }{}{1}{ctrl(npc).dialog_test(npc, pc, 28)}{620}{} # resp: 10REIG 44
+{607}{Dreadmasters know much of the ways of pain.  Perhaps I could return strength to your arm... if it is Bane's will that you live.  }{}{1}{ctrl(npc).dialog_test(npc, pc, 29)}{620}{} # resp: 10REIG 45
+{608}{Ah, a supply of healing draughts may be found close by, you say?  Hmm... first, let a Demarch of Mask attend to your wound. }{}{1}{ctrl(npc).dialog_test(npc, pc, 30)}{620}{} # resp: 10REIG 46
+{609}{A rain of blood follows the storms, so teaches Talos.  We Stormlords know much of pain... and how to end it.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 31)}{620}{} # resp: 10REIG 47
+{610}{I'm a druid.  I may be able to call upon nature's power to heal you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 32)}{620}{} # resp: 10REIG 48
+{611}{I'm a paladin.  I may be able to use my healing magics to help your arm.}{}{1}{ctrl(npc).dialog_test(npc, pc, 33)}{620}{} # resp: 10REIG 49
+{612}{Here's the healing potion.  It should help - drink it down.}{}{1}{ctrl(npc).dialog_test(npc, pc, 34)}{630}{ctrl(npc).dialog_action(npc, pc, 14); uj.journal_add(1477, (10, 11, ))} # resp: 10REIG 50
+{613}{We need to rest.  Can you watch over us while we catch our second wind?}{}{1}{}{650}{} # resp: 10REIG 51
+{614}{Not yet.  I'll return when I've found him.}{}{1}{}{0}{} # resp: 10REIG 52
+
+{620}{You're a healer?  Looks like Tymora's taking pity on us at last - if you have any magic that would help, I'd be grateful.}{You're a healer?  Looks like Tymora's taking pity on us at last - if you have any magic that would help, I'd be grateful.}{}{}{}{} # phrase: 10REIG 14
+{621}{Let me see what I can do.}{}{1}{ctrl(npc).dialog_test(npc, pc, 21)}{0}{} # resp: 10REIG 37
+{622}{I wouldn't call myself a healer...  but let me see what I can do.}{}{1}{ctrl(npc).dialog_test(npc, pc, 22)}{0}{} # resp: 10REIG 38
+
+{630}{Thanks - down the hatch... Echkk!  Pah!  You'd think those damn alchemists could learn to make potions that taste like dwarven stout instead of gutter runoff.}{Thanks - down the hatch... Echkk!  Pah!  You'd think those damn alchemists could learn to make potions that taste like dwarven stout instead of gutter runoff.}{}{}{}{} # phrase: 10REIG 18
+{631}{Continue}{}{1}{}{640}{} # resp: 10REIG 58
+
+{640}{Looks like you sailed into Targos at the right time.  If you can help us hunt down any of those goblins, we'd welcome your help.}{Looks like you sailed into Targos at the right time.  If you can help us hunt down any of those goblins, we'd welcome your help.}{}{}{}{} # phrase: 10REIG 19
+{641}{We need to rest.  Can you watch over us while we catch our second wind?}{}{1}{ctrl(npc).dialog_test(npc, pc, 38)}{650}{} # resp: 10REIG 59
+{642}{I'll see what I can do.}{}{1}{ctrl(npc).dialog_test(npc, pc, 39)}{0}{} # resp: 10REIG 60
+{643}{We've wiped out the last of the goblins along the docks.}{}{1}{ctrl(npc).dialog_test(npc, pc, 40)}{660}{ctrl(npc).dialog_action(npc, pc, 18); uj.journal_add(1479, (14, 15, ))} # resp: 10REIG 61
+
+{650}{Resting out here isn't safe - I'd head back to your ship and take refuge there, or, if you're feeling brave, see if you can hole up in one of the homes or warehouses along the shore - provided you kill any goblins inside first.}{Resting out here isn't safe - I'd head back to your ship and take refuge there, or, if you're feeling brave, see if you can hole up in one of the homes or warehouses along the shore - provided you kill any goblins inside first.}{}{}{}{} # phrase: 10REIG 27
+{651}{Very well.  We'll go see if we can find some shelter, then.}{}{1}{}{0}{} # resp: 10REIG 76
+
+{660}{Excellent - that's the first good news we've had all day.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.}{Excellent - that's the first good news we've had all day.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.}{}{}{}{} # phrase: 10REIG 20
+{661}{I'll go see him, then.  Farewell.}{}{1}{}{0}{} # resp: 10REIG 62
+
+{670}{My arm's better, thanks for your help.  Looks like you're praying to the right gods.}{My arm's better, thanks for your help.  Looks like you're praying to the right gods.}{}{}{}{} # phrase: 10REIG 16
+{671}{The wound's closed, but there may be more damage.  You still don't look too good.}{}{1}{ctrl(npc).dialog_test(npc, pc, 35)}{680}{ctrl(npc).dialog_action(npc, pc, 15); uj.journal_add(1478, (12, 13, ))} # resp: 10REIG 53
+{672}{The wound's closed, but there may be more damage.  You still don't look too good.}{}{1}{ctrl(npc).dialog_test(npc, pc, 36)}{680}{ctrl(npc).dialog_action(npc, pc, 16); uj.journal_add(1478, (12, 13, ))} # resp: 10REIG 54
+
+{680}{I could still use that healing draught from Magdar if you can find him.  Hope the goblins haven't got him yet.}{I could still use that healing draught from Magdar if you can find him.  Hope the goblins haven't got him yet.}{}{}{}{} # phrase: 10REIG 17
+{681}{Here's the healing potion.  It should help - drink it down.}{}{1}{ctrl(npc).dialog_test(npc, pc, 37)}{630}{ctrl(npc).dialog_action(npc, pc, 17); uj.journal_add(1477, (10, 11, ))} # resp: 10REIG 55
+{682}{We need to rest.  Can you watch over us while we catch our second wind?}{}{1}{}{650}{} # resp: 10REIG 56
+{683}{Let me see what I can do.}{}{1}{}{0}{} # resp: 10REIG 57
+
+{690}{Now that the raiders have been taken care of, we should be all right.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.}{Now that the raiders have been taken care of, we should be all right.  You should report to Lord Ulbrec up in the main town - he'll be glad to know we have reinforcements.}{}{}{}{} # phrase: 10REIG 21
+{691}{I'll go see him, then.  Farewell.}{}{1}{}{0}{} # resp: 10REIG 63
+
+{700}{Damn it all!  All right - we need all the swords we can get.}{Damn it all!  All right - we need all the swords we can get.}{}{}{}{} # phrase: 10REIG 5
+{701}{Continue}{}{1}{}{710}{ctrl(npc).dialog_action(npc, pc, 9)} # resp: 10REIG 12
+
+{710}{But by the hells, drop those pieces of firewood and grab some *real* weapons before you commit yourselves - there's plenty of goblin axes and shields scattered about - and here's a blade I can spare.  Take it - I can't use it, my arm the way it is.}{But by the hells, drop those pieces of firewood and grab some *real* weapons before you commit yourselves - there's plenty of goblin axes and shields scattered about - and here's a blade I can spare.  Take it - I can't use it, my arm the way it is.}{}{}{}{} # phrase: 10REIG 6
+{711}{Thanks for the blade - but we could also use some armor if we're going to be hunting goblins.}{}{1}{ctrl(npc).dialog_test(npc, pc, 4)# skill_diplomacy}{720}{ctrl(npc).dialog_action(npc, pc, 10)} # resp: 10REIG 13
+{712}{Thanks for the blade - but we could also use some armor if we're going to be hunting goblins.}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{720}{ctrl(npc).dialog_action(npc, pc, 11)} # resp: 10REIG 14
+{713}{Very well.  How did the goblins get into town?}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{750}{} # resp: 10REIG 15
+{714}{What's wrong with your arm?}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{770}{} # resp: 10REIG 16
+{715}{Your arm looks in pretty bad shape - your bandages are almost soaked through.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{780}{} # resp: 10REIG 17
+
+{720}{You're right - here, take my leather jerkin - it probably won't stop a goblin's axe, but it may turn aside a knife or arrow.}{You're right - here, take my leather jerkin - it probably won't stop a goblin's axe, but it may turn aside a knife or arrow.}{}{}{}{} # phrase: 10REIG 22
+{721}{Also, your dead friend here, Brohn, shouldn't be needing his equipment any longer, so pass that along as well.}{}{1}{ctrl(npc).dialog_test(npc, pc, 41)}{730}{} # resp: 10REIG 64
+{722}{Also, your dead friend here, Brohn, shouldn't be needing his equipment any longer, so pass that along as well.}{}{1}{ctrl(npc).dialog_test(npc, pc, 42)}{730}{} # resp: 10REIG 65
+{723}{I mean no disrespect to your fellow soldier, but we could also use any of the equipment your fallen comrade Brohn had, if any.}{}{1}{ctrl(npc).dialog_test(npc, pc, 43)# skill_diplomacy}{740}{ctrl(npc).dialog_action(npc, pc, 19)} # resp: 10REIG 66
+{724}{I mean no disrespect to your fallen friend, but we could also use any of the equipment your fallen comrade Brohn had, if any.}{}{1}{ctrl(npc).dialog_test(npc, pc, 44)}{740}{ctrl(npc).dialog_action(npc, pc, 20)} # resp: 10REIG 67
+{725}{Thank you.  Do you know how these goblins got into town?}{}{1}{}{750}{} # resp: 10REIG 68
+{726}{I hope so - what's wrong with your arm?}{}{1}{}{770}{} # resp: 10REIG 69
+
+{730}{What in the h-?!  You watch your tongue!  Brohn was a good soldier, not some filthy goblin corpse you can loot!}{What in the h-?!  You watch your tongue!  Brohn was a good soldier, not some filthy goblin corpse you can loot!}{}{}{}{} # phrase: 10REIG 23
+{731}{Without arms and armor, both our corpses will lie next to his soon enough.  Brohn's equipment may give us the... edge... we need to drive the goblins back, so make your choice.}{}{1}{}{740}{ctrl(npc).dialog_action(npc, pc, 21)} # resp: 10REIG 70
+
+{740}{You... you're right again.  Here you are then - take them.  Brohn'll get no more use of them anyway.}{You... you're right again.  Here you are then - take them.  Brohn'll get no more use of them anyway.}{}{}{}{} # phrase: 10REIG 24
+{741}{Very well.  Do you know how these goblins got into town?}{}{1}{}{750}{} # resp: 10REIG 71
+{742}{All right - now, what's wrong with your arm?}{}{1}{}{770}{} # resp: 10REIG 72
+
+{750}{Do you think I know?  There were no warning horns from the Palisade, that's for sure.  At first, we thought worg riders had leapt the walls, but we haven't seen any of them, thank Tymora.}{Do you think I know?  There were no warning horns from the Palisade, that's for sure.  At first, we thought worg riders had leapt the walls, but we haven't seen any of them, thank Tymora.}{}{}{}{} # phrase: 10REIG 7
+{751}{Continue}{}{1}{}{760}{} # resp: 10REIG 18
+
+{760}{However they got in, they need to be hunted down before they can do any more harm.  If they set fire to the docks, Targos is done for.}{However they got in, they need to be hunted down before they can do any more harm.  If they set fire to the docks, Targos is done for.}{}{}{}{} # phrase: 10REIG 8
+{761}{What's wrong with your arm?}{}{1}{}{770}{} # resp: 10REIG 19
+
+{770}{Goblin axe took a bite out of it - but I'm better off than Brohn here, poor bastard took a goblin arrow in the neck.}{Goblin axe took a bite out of it - but I'm better off than Brohn here, poor bastard took a goblin arrow in the neck.}{}{}{}{} # phrase: 10REIG 11
+{771}{Your arm looks in pretty bad shape - your bandages are almost soaked through.}{}{1}{}{780}{uj.journal_add(1476, (7, 8, 9, ))} # resp: 10REIG 22
+
+{780}{Well, Jon here wrapped up my arm, but you're right, it's bleeding bad.  If you can find the harbor master, Magdar, he might have a supply of healing draughts stored in the warehouse north of here.}{Well, Jon here wrapped up my arm, but you're right, it's bleeding bad.  If you can find the harbor master, Magdar, he might have a supply of healing draughts stored in the warehouse north of here.}{}{}{}{} # phrase: 10REIG 12
+{781}{I'm an Ilmatari, a Painbearer of Ilmater.  My healing magic may be able to draw the pain from your wound and end your suffering.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{620}{} # resp: 10REIG 23
+{782}{Come the dawn, all things may be healed, Lathander teaches us.  I can aid you with my healing magic, if you wish. }{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{620}{} # resp: 10REIG 24
+{783}{Let Selune's light fall upon you, guardsman, and her healing magic shall seal your wound.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{620}{} # resp: 10REIG 25
+{784}{Wounds are the price of a strong defense, guardsman, so the teachings of Helm tell us.  Let a Watcher's healing magic aid you. }{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{620}{} # resp: 10REIG 26
+{785}{Much blood is shed in the pursuit of knowledge, Oghma teaches us.  As a Lorekeeper, I may call upon his healing magic to aid you, if you wish. }{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{620}{} # resp: 10REIG 27
+{786}{Wounds are the price of battle - and an inspiration to others.  Let a Battleguard call upon Tempus' magics to seal your wound. }{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{620}{} # resp: 10REIG 28
+{787}{Dreadmasters know much of the ways of pain.  Perhaps I could return strength to your arm... if it is Bane's will that you live.  }{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{620}{} # resp: 10REIG 29
+{788}{Ah, a supply of healing draughts may be found close by, you say?  Hmm... first, let a Demarch of Mask attend to your wound. }{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{620}{} # resp: 10REIG 30
+{789}{A rain of blood follows the storms, so teaches Talos.  We Stormlords know much of pain... and how to end it.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 17)}{620}{} # resp: 10REIG 31
+{790}{I'm a druid.  I may be able to call upon nature's power to heal your arm.}{}{1}{ctrl(npc).dialog_test(npc, pc, 18)}{620}{} # resp: 10REIG 32
+{791}{I'm a paladin.  I may be able to use my healing magics to help your arm.}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{620}{} # resp: 10REIG 33
+{792}{I already found a healing potion.  It should help - drink it down.}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{630}{ctrl(npc).dialog_action(npc, pc, 13); uj.journal_add(1477, (10, 11, ))} # resp: 10REIG 34
+{793}{I'll go see if I can find Magdar, then.  Farewell.}{}{1}{}{800}{} # resp: 10REIG 35
+
+{800}{Be careful.  We spotted a nest of goblins off to the northeast - a group of our men went after them, but we haven't seen them since.}{Be careful.  We spotted a nest of goblins off to the northeast - a group of our men went after them, but we haven't seen them since.}{}{}{}{} # phrase: 10REIG 13
+{801}{I'll be careful.  Farewell.}{}{1}{}{0}{} # resp: 10REIG 36
+
+{810}{I can *see* that, Jon, dammit!  Did you think the goblins took my eyes?!}{I can *see* that, Jon, dammit!  Did you think the goblins took my eyes?!}{}{}{}{} # phrase: 10REIG 25
+{811}{Continue}{}{1}{}{820}{} # resp: 10REIG 73
+
+{820}{You, dark elf, are you in league with these goblins?  If so, then you'll die with them, I promise you that!}{You, dark elf, are you in league with these goblins?  If so, then you'll die with them, I promise you that!}{}{}{}{} # phrase: 10REIG 26
+{821}{I've come to aid Targos, not attack it.  What happened here?}{}{1}{}{540}{} # resp: 10REIG 74
+{822}{Be *careful* with your promises, lest you anger one who has come to help you.  Now... how did you come to be wounded?}{}{1}{}{590}{} # resp: 10REIG 75
+
+{830}{No idea where those goblins came from - one moment we're stepping out of the Salty Dog, and suddenly there's a mess of them running through town.  We sounded the alarm, but...}{No idea where those goblins came from - one moment we're stepping out of the Salty Dog, and suddenly there's a mess of them running through town.  We sounded the alarm, but...}{}{}{}{} # phrase: 10JON 0
+{831}{Continue}{}{1}{}{840}{} # resp: 10JON 0
+
+{840}{One of them nearly felled Reig with an axe, but poor Brohn here wasn't as lucky... arrow went right through his neck.  He didn't even have a chance.}{One of them nearly felled Reig with an axe, but poor Brohn here wasn't as lucky... arrow went right through his neck.  He didn't even have a chance.}{}{}{}{} # phrase: 10JON 1
+{841}{We'll see what we can do.  In the meantime, do you have an extra blade you can spare?}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)# skill_diplomacy}{850}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 10JON 1
+{842}{We'll see what we can do.  In the meantime, do you have an extra blade you can spare?}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{850}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 10JON 2
+{843}{We'll see what we can do.  In the meantime, do you have an extra blade you can spare?}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)# skill_diplomacy}{880}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 10JON 3
+{844}{We'll see what we can do.  In the meantime, do you have an extra blade you can spare?}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{880}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 10JON 4
+{845}{We need to rest.  Can you watch over us while we catch our second wind?}{}{1}{}{860}{} # resp: 10JON 5
+{846}{I'll keep an eye out for any more goblins - you stay here.}{}{1}{}{0}{} # resp: 10JON 6
+
+{850}{I have a spare dagger I can part with, but that's about it.  Take it - you're bound to come across the goblins sooner than I.}{I have a spare dagger I can part with, but that's about it.  Take it - you're bound to come across the goblins sooner than I.}{}{}{}{} # phrase: 10JON 3
+{851}{It'll do.  Can you watch over us while we catch our second wind?}{}{1}{}{860}{} # resp: 10JON 8
+{852}{Thanks.  I'll keep an eye out for any more goblins - you stay here.}{}{1}{}{0}{} # resp: 10JON 9
+
+{860}{It wouldn't be a good idea to rest out here with the goblins about - I'd suggest heading back to the ship you came in on and asking the captain.}{It wouldn't be a good idea to rest out here with the goblins about - I'd suggest heading back to the ship you came in on and asking the captain.}{}{}{}{} # phrase: 10JON 6
+{861}{Is there any place in town to rest?}{}{1}{}{870}{} # resp: 10JON 13
+{862}{All right, then.  Farewell.}{}{1}{}{0}{} # resp: 10JON 14
+
+{870}{If you feeling like testing your luck, you can try to hole up in one of the warehouses or homes along the docks - provided you drive any goblins inside of them out first.  It'd be safer than trying to rest out here.}{If you feeling like testing your luck, you can try to hole up in one of the warehouses or homes along the docks - provided you drive any goblins inside of them out first.  It'd be safer than trying to rest out here.}{}{}{}{} # phrase: 10JON 7
+{871}{Understood.  Farewell.}{}{1}{}{0}{} # resp: 10JON 15
+
+{880}{I used to have a dagger on me, but I may have dropped it in the attack - I can't seem to find it.  If I didn't know better, I'd say some thief pickpocketed me back at the Salty Dog.}{I used to have a dagger on me, but I may have dropped it in the attack - I can't seem to find it.  If I didn't know better, I'd say some thief pickpocketed me back at the Salty Dog.}{}{}{}{} # phrase: 10JON 4
+{881}{Hmm... yeah, thieves tend to be everywhere nowadays.  Can you watch over us while we catch our second wind?}{}{1}{}{860}{} # resp: 10JON 10
+{882}{Uh, never mind, then.  I'll keep an eye out for any more goblins - you stay here.}{}{1}{}{0}{} # resp: 10JON 11
+
+{890}{Tymora must have been smiling on us when you sailed into town.  Without you to drive back the goblins, the docks might have been burning now, and Targos overrun.}{Tymora must have been smiling on us when you sailed into town.  Without you to drive back the goblins, the docks might have been burning now, and Targos overrun.}{}{}{}{} # phrase: 10JON 8
+{891}{I'm glad we arrived in time to help.  To be honest, I was expecting a lot of running around, talking to simple townsfolk, and playing fetch and go rather than actually stepping right off the ship onto a battlefield.}{}{1}{}{900}{} # resp: 10JON 16
+{892}{I hope Lord Ulbrec is as grateful.  I'm looking to serve in the Targos Guard.}{}{1}{}{910}{} # resp: 10JON 17
+
+{900}{Yes, playing fetch and go is generally what the other mercenary companies had to do when they arrived.  After a few days of that, they were happy to get stationed on the Palisade.}{Yes, playing fetch and go is generally what the other mercenary companies had to do when they arrived.  After a few days of that, they were happy to get stationed on the Palisade.}{}{}{}{} # phrase: 10JON 9
+{901}{I'll bet.}{}{1}{}{910}{} # resp: 10JON 18
+
+{910}{You know, if you hadn't already planned to, you should go see Lord Ulbrec in the town above - it'd be an honor to stand beside you on the Targos walls.}{You know, if you hadn't already planned to, you should go see Lord Ulbrec in the town above - it'd be an honor to stand beside you on the Targos walls.}{}{}{}{} # phrase: 10JON 10
+{911}{We'll go see him, then.  Farewell.}{}{1}{}{0}{} # resp: 10JON 19
+
+{920}{But Reig, we need help - Brohn's dead, you're hurt, and we haven't even heard from the other soldiers.  We don't even know how many goblins made it inside the wa-  }{But Reig, we need help - Brohn's dead, you're hurt, and we haven't even heard from the other soldiers.  We don't even know how many goblins made it inside the wa-  }{}{}{}{} # phrase: 10JON 2
+{921}{Continue}{}{1}{}{0}{cs().switch_dialog(pc, "Reig", 5)} # resp: 10JON 7
+
+{930}{By the gods, Reig - it's a dark elf!}{By the gods, Reig - it's a dark elf!}{}{}{}{} # phrase: 10JON 5
+{931}{Continue}{}{1}{}{0}{cs().switch_dialog(pc, "Reig", 25)} # resp: 10JON 12
+
+{940}{Halt!  Identify yourself!}{Halt!  Identify yourself!}{}{}{}{} # phrase: 10BROGAN 0
+{941}{We're adventurers from Luskan.  What's going on here?}{}{1}{}{950}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 10BROGAN 0
+{942}{Calm yourself - what's the problem?}{}{1}{}{950}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 10BROGAN 1
+
+{950}{Stay back - there's a band of goblin raiders cornered inside this warehouse... I was awaiting the sell-swords in the Salty Dog before rushing in.}{Stay back - there's a band of goblin raiders cornered inside this warehouse... I was awaiting the sell-swords in the Salty Dog before rushing in.}{}{}{}{} # phrase: 10BROGAN 1
+{951}{Continue}{}{1}{}{960}{uj.journal_add(27682, (16, 17, 18, 19, ))} # resp: 10BROGAN 2
+
+{960}{Time's short, though - if those raiders start a fire within the warehouse, they could set the dock and the ships ablaze.}{Time's short, though - if those raiders start a fire within the warehouse, they could set the dock and the ships ablaze.}{}{}{}{} # phrase: 10BROGAN 2
+{961}{Uh, the sell-swords from the Salty Dog?}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{970}{} # resp: 10BROGAN 3
+{962}{The sell-swords from the Salty Dog?}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{970}{} # resp: 10BROGAN 4
+{963}{Uh, the sell-swords from the Salty Dog?  You mean the Iron Collar mercenaries?}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{970}{} # resp: 10BROGAN 5
+{964}{The sell-swords from the Salty Dog?  You mean the Iron Collar mercenaries?}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{970}{} # resp: 10BROGAN 6
+{965}{If you're waiting for the Iron Collar mercenaries, I wouldn't bet on them showing up any time soon... at least until the kegs in the Salty Dog are empty.}{}{1}{ctrl(npc).dialog_test(npc, pc, 4)}{980}{} # resp: 10BROGAN 7
+
+{970}{Yes, last word was the Iron Collar adventuring company was drinking at the Salty Dog tavern - Ulbrec is paying them good coin, and we need their swords here.}{Yes, last word was the Iron Collar adventuring company was drinking at the Salty Dog tavern - Ulbrec is paying them good coin, and we need their swords here.}{}{}{}{} # phrase: 10BROGAN 3
+{971}{Continue}{}{1}{}{980}{} # resp: 10BROGAN 8
+
+{980}{They *must* have heard the alarms... but I fear those drunkards may be sleeping at the bottom of a wine cask right now.}{They *must* have heard the alarms... but I fear those drunkards may be sleeping at the bottom of a wine cask right now.}{}{}{}{} # phrase: 10BROGAN 4
+{981}{There was an altercation at the Salty Dog, and the Iron Collar Mercenaries refused to back down - they won't be coming.  We can take out those goblins for you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{990}{} # resp: 10BROGAN 9
+{982}{Actually, uh, I think the goblins may have already killed them.  It might be best if you let us go in and take out those goblins ourselves.}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{990}{} # resp: 10BROGAN 10
+{983}{Look, there's no reason to wait for those mercenaries.  Let me go in and take those goblins out for you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{1030}{} # resp: 10BROGAN 11
+{984}{Where's the Salty Dog Tavern?  I could go find those sell-swords you're waiting for and bring them here.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{1040}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 10BROGAN 12
+{985}{I'll go grab the Iron Collar company from the Salty Dog, and perhaps between the three groups of us we can dispatch these goblins.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{0}{ctrl(npc).dialog_action(npc, pc, 3); uj.journal_add(27686, (20, 21, ))} # resp: 10BROGAN 13
+
+{990}{All right then, maybe Tymora will grace your blades - and time is against us.  But the goblins have locked the door from the inside... you'll need to break it down.}{All right then, maybe Tymora will grace your blades - and time is against us.  But the goblins have locked the door from the inside... you'll need to break it down.}{}{}{}{} # phrase: 10BROGAN 8
+{991}{Hmmm. I might be able to pick the lock as well. Stand back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 21)}{0}{ctrl(npc).dialog_action(npc, pc, 12)} # resp: 10BROGAN 27
+{992}{Don't you have a key?}{}{1}{}{1000}{} # resp: 10BROGAN 28
+
+{1000}{No, you'll need to bash down the door with your weapons...  unless you have Luskan thief blood running through your veins, in which case you might be able to jig the lock.}{No, you'll need to bash down the door with your weapons...  unless you have Luskan thief blood running through your veins, in which case you might be able to jig the lock.}{}{}{}{} # phrase: 10BROGAN 9
+{1001}{How many do you figure are in the warehouse?}{}{1}{}{1010}{ctrl(npc).dialog_action(npc, pc, 13)} # resp: 10BROGAN 29
+{1002}{All right, then.  Stand back.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 14)} # resp: 10BROGAN 30
+
+{1010}{No telling for sure - but judging from the arrows that whizzed past my ear when I chased them here, there's at least one archer in their number.  I'd try to take out any archers first, if you can - preferably with missile weapons of your own.}{No telling for sure - but judging from the arrows that whizzed past my ear when I chased them here, there's at least one archer in their number.  I'd try to take out any archers first, if you can - preferably with missile weapons of your own.}{}{}{}{} # phrase: 10BROGAN 21
+{1011}{Continue}{}{1}{}{1020}{} # resp: 10BROGAN 56
+
+{1020}{You might want to keep wounded members of your party - or, uh, wizards - outside the warehouse while the rest of your band storms the place.  One arrow can drop a man before he even knows the archer is there.  Sometimes it's to your benefit to divide your forces.}{You might want to keep wounded members of your party - or, uh, wizards - outside the warehouse while the rest of your band storms the place.  One arrow can drop a man before he even knows the archer is there.  Sometimes it's to your benefit to divide your forces.}{}{}{}{} # phrase: 10BROGAN 22
+{1021}{Hmm.  Sound advice.  Still, we wizards are a lot stronger than we appear.  We'll see about getting this door open.}{}{1}{ctrl(npc).dialog_test(npc, pc, 39)}{0}{} # resp: 10BROGAN 57
+{1022}{Watch it.  We sorcerers are a lot stronger than we appear - but perhaps we'll heed your advice this time.  We'll see about getting this door open, then.}{}{1}{ctrl(npc).dialog_test(npc, pc, 40)}{0}{} # resp: 10BROGAN 58
+{1023}{All right, then - we'll see about getting this door open.  Stand back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 41)}{0}{} # resp: 10BROGAN 59
+
+{1030}{You?  Have you ever *seen* battle?  We need seasoned warriors here, not pups playing at being soldiers.}{You?  Have you ever *seen* battle?  We need seasoned warriors here, not pups playing at being soldiers.}{}{}{}{} # phrase: 10BROGAN 7
+{1031}{Let me in that warehouse, and you'll see how good we play at being soldiers.}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{990}{ctrl(npc).dialog_action(npc, pc, 6); uj.journal_add(27684, (24, 25, 26, ))} # resp: 10BROGAN 21
+{1032}{Where's the Salty Dog Tavern?  I could go find those sell-swords you're waiting for and bring them here.}{}{1}{ctrl(npc).dialog_test(npc, pc, 17)}{1040}{ctrl(npc).dialog_action(npc, pc, 7)} # resp: 10BROGAN 22
+{1033}{Where's the Salty Dog Tavern again?  I could go find those sell-swords you're waiting for and bring them here.}{}{1}{ctrl(npc).dialog_test(npc, pc, 18)}{1040}{ctrl(npc).dialog_action(npc, pc, 8)} # resp: 10BROGAN 23
+{1034}{I'll go grab the Iron Collar company from the Salty Dog, and perhaps between the three groups of us we can dispatch these goblins.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 9); uj.journal_add(27686, (20, 21, ))} # resp: 10BROGAN 24
+{1035}{But the Iron Collar mercenaries might not be able to get here in time.}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{990}{ctrl(npc).dialog_action(npc, pc, 10); uj.journal_add(27684, (24, 25, 26, ))} # resp: 10BROGAN 25
+{1036}{If you want soldiers, then you shouldn't be waiting for those Iron Collar drunks - if you want those goblins dead, then talk to *me.*}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{990}{ctrl(npc).dialog_action(npc, pc, 11); uj.journal_add(27684, (24, 25, 26, ))} # resp: 10BROGAN 26
+
+{1040}{The Salty Dog lies along the south side of the docks, near the shoreline - make haste!}{The Salty Dog lies along the south side of the docks, near the shoreline - make haste!}{}{}{}{} # phrase: 10BROGAN 5
+{1041}{Very well.  Watch yourself... I will return shortly.}{}{1}{}{0}{uj.journal_add(27686, (20, 21, ))} # resp: 10BROGAN 14
+
+{1050}{You're back!  Did you bring the Iron Collar Band with you?}{You're back!  Did you bring the Iron Collar Band with you?}{}{}{}{} # phrase: 10BROGAN 6
+{1051}{There was an altercation at the Salty Dog, and the Iron Collar Mercenaries refused to back down - they won't be coming.  We can take out those goblins for you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{990}{} # resp: 10BROGAN 15
+{1052}{Actually, uh, I think the goblins may have already killed them.  It might be best if you let us go in and take out those goblins ourselves.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{990}{} # resp: 10BROGAN 16
+{1053}{They're not coming.  They've too many kegs to slaughter in the Salty Dog to come to Targos' aid.  Let us handle the goblins.}{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{990}{ctrl(npc).dialog_action(npc, pc, 4); uj.journal_add(27683, (22, 23, ))} # resp: 10BROGAN 17
+{1054}{The Iron Collar mercenaries will not be coming.  It's just us.}{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{990}{ctrl(npc).dialog_action(npc, pc, 5); uj.journal_add(27683, (22, 23, ))} # resp: 10BROGAN 18
+{1055}{Forget the Iron Collar - let me go in and take out those goblins for you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{1030}{} # resp: 10BROGAN 19
+{1056}{No, I haven't found them yet.  I'll return when I do.}{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{0}{} # resp: 10BROGAN 20
+
+{1060}{Did you take out those goblins yet?  Time's running short.}{Did you take out those goblins yet?  Time's running short.}{}{}{}{} # phrase: 10BROGAN 10
+{1061}{Not yet - we're about ready to storm the warehouse, though.  Stand back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 22)}{0}{} # resp: 10BROGAN 31
+{1062}{Not yet - there's still some left in the warehouse.  We're going back in shortly to take care of the rest.}{}{1}{ctrl(npc).dialog_test(npc, pc, 23)}{0}{} # resp: 10BROGAN 32
+{1063}{We wiped out the ones inside, but there seems to be a passage leading below the warehouse - it looks like that's how they got into town in the first place.}{}{1}{ctrl(npc).dialog_test(npc, pc, 24)}{1070}{} # resp: 10BROGAN 33
+
+{1070}{Then there could be more - I need you to go down into that passage and flush them out... they may have gone for reinforcements.}{Then there could be more - I need you to go down into that passage and flush them out... they may have gone for reinforcements.}{}{}{}{} # phrase: 10BROGAN 11
+{1071}{There's no way in the nine hells I'm serving as a tunnel worm for you or for Targos... without some coin to show for my trouble.}{}{1}{ctrl(npc).dialog_test(npc, pc, 25)}{1080}{} # resp: 10BROGAN 34
+{1072}{Give me a moment to rest up, then we'll head down there and take them out.}{}{1}{}{0}{} # resp: 10BROGAN 35
+
+{1080}{I'm sure Lord Ulbrec will reward you for your efforts - now, please, you must wipe out the rest of those goblins.}{I'm sure Lord Ulbrec will reward you for your efforts - now, please, you must wipe out the rest of those goblins.}{}{}{}{} # phrase: 10BROGAN 12
+{1081}{Give me a moment to rest up, then we'll head down there and take them out.}{}{1}{}{0}{} # resp: 10BROGAN 36
+
+{1090}{Where in Tempus' name have you *been?*  I heard the fighting, and then everything went silent.  Thought you were dead.}{Where in Tempus' name have you *been?*  I heard the fighting, and then everything went silent.  Thought you were dead.}{}{}{}{} # phrase: 10BROGAN 13
+{1091}{We found a passage running beneath the warehouse - it led into some caves in the cliff.  It looks like goblin sappers tunneled through there to get into Targos.}{}{1}{ctrl(npc).dialog_test(npc, pc, 26)}{1100}{} # resp: 10BROGAN 37
+{1092}{We found a passage running beneath the warehouse - found more goblins down there, but I haven't taken them all out yet.  When they're taken care of, I'll be back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 27)}{0}{} # resp: 10BROGAN 38
+{1093}{Well, it's good you came to check on us, then.  As it stands, there are still some more goblins down below; we'll return when they're dead.}{}{1}{ctrl(npc).dialog_test(npc, pc, 28)}{0}{} # resp: 10BROGAN 39
+
+{1100}{Caves in the cliff...?  Hmmm.  Could be old pirate caves - there were quite a number of buccaneers preying along Maer Dualdon in the days before Targos became... civilized.  Where do they lead?}{Caves in the cliff...?  Hmmm.  Could be old pirate caves - there were quite a number of buccaneers preying along Maer Dualdon in the days before Targos became... civilized.  Where do they lead?}{}{}{}{} # phrase: 10BROGAN 14
+{1101}{Well, there were some collapsed passages - could be the goblins accidentally sealed themselves in.}{}{1}{ctrl(npc).dialog_test(npc, pc, 29)}{1110}{} # resp: 10BROGAN 40
+{1102}{Well, there were some collapsed passages - could be the goblins accidentally sealed themselves in.  Found this scroll on one of the goblins, however, and it looks magical... or was, at least.}{}{1}{ctrl(npc).dialog_test(npc, pc, 30)}{1140}{} # resp: 10BROGAN 41
+
+{1110}{Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.}{Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.}{}{}{}{} # phrase: 10BROGAN 15
+{1111}{Continue}{}{1}{}{1120}{ctrl(npc).dialog_action(npc, pc, 15); uj.journal_add(27685, (27, 28, ))} # resp: 10BROGAN 42
+
+{1120}{In any event, I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.}{In any event, I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.}{}{}{}{} # phrase: 10BROGAN 16
+{1121}{I hope so.  Where can I find him?}{}{1}{}{1130}{ctrl(npc).dialog_action(npc, pc, 16)} # resp: 10BROGAN 43
+{1122}{No reward is necessary... as long as Targos is safe, that is enough.  I would speak to Lord Ulbrec about employment, however.}{}{1}{}{1130}{ctrl(npc).dialog_action(npc, pc, 17)} # resp: 10BROGAN 44
+
+{1130}{You can find him in the town above.  Simply take the western path up the cliff face, and you can find Ulbrec at the Targos Town Hall.}{You can find him in the town above.  Simply take the western path up the cliff face, and you can find Ulbrec at the Targos Town Hall.}{}{}{}{} # phrase: 10BROGAN 17
+{1131}{I will seek him out, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 18)} # resp: 10BROGAN 45
+
+{1140}{Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.  Still, you might want to take that scroll to Ulbrec's wife, she knows something of magic and might be able to identify it.}{Wouldn't surprise me if the tunnels had collapsed on them - goblins aren't too bright; goblin sappers even dimmer.  Still, you might want to take that scroll to Ulbrec's wife, she knows something of magic and might be able to identify it.}{}{}{}{} # phrase: 10BROGAN 23
+{1141}{Continue}{}{1}{}{1120}{ctrl(npc).dialog_action(npc, pc, 23); uj.journal_add(27685, (27, 28, ))} # resp: 10BROGAN 60
+
+{1150}{Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!}{Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!}{}{}{}{} # phrase: 10BROGAN 18
+{1151}{Swift action was called for.  There are still some goblins in the warehouse.  We're going back in shortly to take care of them.}{}{1}{ctrl(npc).dialog_test(npc, pc, 31)}{0}{} # resp: 10BROGAN 46
+{1152}{Swift action was called for.  We wiped out the ones in the warehouse, but there seems to be a passage leading below the warehouse - it looks like that's how they got into town in the first place.}{}{1}{ctrl(npc).dialog_test(npc, pc, 32)}{1070}{} # resp: 10BROGAN 47
+{1153}{Swift action was called for.  We found a passage running beneath the warehouse - there were more goblins down there, but we haven't taken them all out yet.  When we've driven them out, we'll be back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 33)}{0}{} # resp: 10BROGAN 48
+{1154}{Swift action was called for.  We found a passage running beneath the warehouse - it led into some caves in the cliff.  It looks like goblin sappers tunneled through there to get into Targos.}{}{1}{ctrl(npc).dialog_test(npc, pc, 34)}{1100}{} # resp: 10BROGAN 49
+
+{1160}{I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.}{I respect your courage.  If you tell of your deeds to Lord Ulbrec, he is sure to reward you.}{}{}{}{} # phrase: 10BROGAN 19
+{1161}{I hope so.  Where can I find him?}{}{1}{}{1130}{} # resp: 10BROGAN 50
+{1162}{No reward is necessary... as long as Targos is safe, that is enough.  I would speak to Lord Ulbrec about employment, however.}{}{1}{}{0}{} # resp: 10BROGAN 51
+
+{1170}{Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!}{Are you mad?  That was a foolish thing for you to do - breaking into that warehouse!  You could have been killed!}{}{}{}{} # phrase: 10BROGAN 20
+{1171}{We couldn't wait for the Iron Collar mercenaries - plus, there's still some goblins left in the warehouse.  We're going back in shortly to take care of them.}{}{1}{ctrl(npc).dialog_test(npc, pc, 35)}{0}{ctrl(npc).dialog_action(npc, pc, 19)} # resp: 10BROGAN 52
+{1172}{We couldn't wait for the Iron Collar mercenaries  and swift action was called for.  We wiped out the goblins in the warehouse, but there seems to be a passage leading below the warehouse - it looks like that's how they got into town in the first place.}{}{1}{ctrl(npc).dialog_test(npc, pc, 36)}{1070}{ctrl(npc).dialog_action(npc, pc, 20)} # resp: 10BROGAN 53
+{1173}{Swift action was called for.  We found a passage running beneath the warehouse - there were more goblins down there, but we haven't taken them all out yet.  When they're taken care of, we'll be back.}{}{1}{ctrl(npc).dialog_test(npc, pc, 37)}{0}{ctrl(npc).dialog_action(npc, pc, 21)} # resp: 10BROGAN 54
+{1174}{Swift action was called for.  We found a passage running beneath the warehouse - it led into some caves in the cliff.  It looks like goblin sappers tunneled through there to get into Targos.}{}{1}{ctrl(npc).dialog_test(npc, pc, 38)}{1100}{ctrl(npc).dialog_action(npc, pc, 22)} # resp: 10BROGAN 55
+
+{1180}{Damnable goblins... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye stand with Targos?}{Damnable goblins... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye stand with Targos?}{}{}{}{} # phrase: 10JORUN 0
+{1181}{We're adventurers from Luskan.  We just came in on the Wicked Wench and found Targos being attacked.}{}{1}{}{1190}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 10JORUN 0
+
+{1190}{Looks like ye got here just in time, then - Targos is short of good blades.  Careful now, there's more of these rock-crawlers about, so be on yer guard.}{Looks like ye got here just in time, then - Targos is short of good blades.  Careful now, there's more of these rock-crawlers about, so be on yer guard.}{}{}{}{} # phrase: 10JORUN 1
+{1191}{Did you kill all these goblins yourself?}{}{1}{}{1200}{} # resp: 10JORUN 1
+
+{1200}{Aye, I still have some rock and fire in me yet.  When I caught them trying to set fire to me *ship,* me eyes filled with blood - I've spent too long carving her hull to let it be touched by goblin filth.}{Aye, I still have some rock and fire in me yet.  When I caught them trying to set fire to me *ship,* me eyes filled with blood - I've spent too long carving her hull to let it be touched by goblin filth.}{}{}{}{} # phrase: 10JORUN 2
+{1201}{Who are you?}{}{1}{}{1210}{} # resp: 10JORUN 2
+{1202}{So you're a shipbuilder?}{}{1}{}{1210}{} # resp: 10JORUN 3
+{1203}{Any idea how they got into town?}{}{1}{}{1290}{} # resp: 10JORUN 4
+
+{1210}{The name's Jorun Tamewater, and we can swap lifestories another time.  For now, there's goblin graves needin' to be filled.}{The name's Jorun Tamewater, and we can swap lifestories another time.  For now, there's goblin graves needin' to be filled.}{}{}{}{} # phrase: 10JORUN 3
+{1211}{Do you know of any place we can rest?}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{1220}{} # resp: 10JORUN 5
+{1212}{Any idea how they got into town?}{}{1}{}{1290}{} # resp: 10JORUN 6
+{1213}{Agreed.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{1250}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 10JORUN 7
+{1214}{Agreed.  Farewell, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{0}{} # resp: 10JORUN 8
+
+{1220}{If ye need a place to hole up that's free o' the goblins, me house is to the south and west of here - ye can catch yer breath and bind your wounds there.  It should be safe - if any of those damned goblins tried to break in, they'll wish they hadn't.}{If ye need a place to hole up that's free o' the goblins, me house is to the south and west of here - ye can catch yer breath and bind your wounds there.  It should be safe - if any of those damned goblins tried to break in, they'll wish they hadn't.}{}{}{}{} # phrase: 10JORUN 25
+{1221}{Why is that?}{}{1}{}{1230}{ctrl(npc).dialog_action(npc, pc, 10); uj.journal_add(15164, (35, 36, 37, ))} # resp: 10JORUN 48
+
+{1230}{Rigged a mean little trap on one of me chests that'll gas any fool goblin that tries to break it open.  Turn their stomachs inside out, it will - that'd be something to see.}{Rigged a mean little trap on one of me chests that'll gas any fool goblin that tries to break it open.  Turn their stomachs inside out, it will - that'd be something to see.}{}{}{}{} # phrase: 10JORUN 26
+{1231}{We already opened your chest - do you mind if we put your equipment to use?}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{1240}{} # resp: 10JORUN 49
+{1232}{Uh, the goblins may have looted it already.  That would be terrible. What's in this chest of yours?}{}{1}{ctrl(npc).dialog_test(npc, pc, 17)}{1260}{} # resp: 10JORUN 50
+{1233}{What's in the chest?}{}{1}{ctrl(npc).dialog_test(npc, pc, 18)}{1260}{} # resp: 10JORUN 51
+
+{1240}{Ye did?  Oh, aye, I see ye have me helm - nay, take the weapons and put 'em to use killin' goblins, and that's good enough fer me.  That's what they were made for.}{Ye did?  Oh, aye, I see ye have me helm - nay, take the weapons and put 'em to use killin' goblins, and that's good enough fer me.  That's what they were made for.}{}{}{}{} # phrase: 10JORUN 27
+{1241}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{1250}{ctrl(npc).dialog_action(npc, pc, 11)} # resp: 10JORUN 52
+{1242}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{0}{} # resp: 10JORUN 53
+
+{1250}{I will - ye watch yerself as well.  If ye find any goblins and they're too many for ye, just lead them back this way and I can lend me iron to yours.  Between us, we'll drive them back into their holes.}{I will - ye watch yerself as well.  If ye find any goblins and they're too many for ye, just lead them back this way and I can lend me iron to yours.  Between us, we'll drive them back into their holes.}{}{}{}{} # phrase: 10JORUN 24
+{1251}{Sounds good to me.  Farewell, Jorun.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 9)} # resp: 10JORUN 47
+
+{1260}{Some old equipment from me younger days - didn't have time to disarm the trap and arm myself properly when the goblins attacked.  Had to make haste - the filthy rock-crawlers'll breed faster than ye can kill 'em.}{Some old equipment from me younger days - didn't have time to disarm the trap and arm myself properly when the goblins attacked.  Had to make haste - the filthy rock-crawlers'll breed faster than ye can kill 'em.}{}{}{}{} # phrase: 10JORUN 28
+{1261}{If we could get your chest open, would you mind if we used your equipment?}{}{1}{ctrl(npc).dialog_test(npc, pc, 21)}{1270}{} # resp: 10JORUN 54
+{1262}{Uh, if we could, say, get your chest open, would you mind if we used your equipment?}{}{1}{ctrl(npc).dialog_test(npc, pc, 22)}{1270}{} # resp: 10JORUN 55
+{1263}{If someone were to, say, pick the lock, would the trap go off?}{}{1}{ctrl(npc).dialog_test(npc, pc, 23)}{1380}{} # resp: 10JORUN 56
+
+{1270}{Nay, take the weapons and put 'em to use killin' goblins, and that's good enough fer me.  That's what they were made for.  Just be careful with the trap on the chest - it won't kill ye, just make ye wish it had.}{Nay, take the weapons and put 'em to use killin' goblins, and that's good enough fer me.  That's what they were made for.  Just be careful with the trap on the chest - it won't kill ye, just make ye wish it had.}{}{}{}{} # phrase: 10JORUN 29
+{1271}{Will the trap go off if someone picks the lock?}{}{1}{ctrl(npc).dialog_test(npc, pc, 24)}{1280}{} # resp: 10JORUN 57
+{1272}{Do you have any idea how the goblins got into town?}{}{1}{}{1290}{} # resp: 10JORUN 58
+{1273}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 25)}{1250}{ctrl(npc).dialog_action(npc, pc, 12)} # resp: 10JORUN 59
+{1274}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 26)}{0}{} # resp: 10JORUN 60
+
+{1280}{Shouldn't, as long as ye try disarm the trap before picking the lock.  One of those famous Luskan thieves should be able to do it.  And, eh, make sure everyone else stays far away in case they botch the job, aye?}{Shouldn't, as long as ye try disarm the trap before picking the lock.  One of those famous Luskan thieves should be able to do it.  And, eh, make sure everyone else stays far away in case they botch the job, aye?}{}{}{}{} # phrase: 10JORUN 30
+{1281}{Do you have any idea how the goblins got into town?}{}{1}{}{1290}{} # resp: 10JORUN 61
+{1282}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 27)}{1250}{ctrl(npc).dialog_action(npc, pc, 13)} # resp: 10JORUN 62
+{1283}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 28)}{0}{} # resp: 10JORUN 63
+
+{1290}{No telling - but I didn't hear a warning horn from the Palisade.  What worries me is they *didn't* jump the town wall.}{No telling - but I didn't hear a warning horn from the Palisade.  What worries me is they *didn't* jump the town wall.}{}{}{}{} # phrase: 10JORUN 4
+{1291}{It looks like they tunneled into some old caves in the Targos cliffs and used them to get to the docks.}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{1300}{} # resp: 10JORUN 9
+{1292}{What do you mean?}{}{1}{}{1340}{uj.journal_add(15154, (29, 30, 31, 32, ))} # resp: 10JORUN 10
+
+{1300}{Shouldn't surprise me - these cliffs are thick with tunnels, but last word was the Targos Guard had collapsed most o' em.}{Shouldn't surprise me - these cliffs are thick with tunnels, but last word was the Targos Guard had collapsed most o' em.}{}{}{}{} # phrase: 10JORUN 9
+{1301}{Continue}{}{1}{}{1310}{} # resp: 10JORUN 20
+
+{1310}{Most of those tunnels were used by smugglers along the Dualdon years ago... looks like the goblins found one of them that led to the docks from outside the Palisade.}{Most of those tunnels were used by smugglers along the Dualdon years ago... looks like the goblins found one of them that led to the docks from outside the Palisade.}{}{}{}{} # phrase: 10JORUN 10
+{1311}{Continue}{}{1}{}{1320}{} # resp: 10JORUN 21
+
+{1320}{If you haven't already, you should tell Ulbrec what you've found - he's the spokesman of Targos, and he should know these goblins aren't just raiders.}{If you haven't already, you should tell Ulbrec what you've found - he's the spokesman of Targos, and he should know these goblins aren't just raiders.}{}{}{}{} # phrase: 10JORUN 11
+{1321}{What do you mean?}{}{1}{}{1330}{} # resp: 10JORUN 22
+
+{1330}{These goblins were carrying pick axes and hammers - which means they were sappers, and sapping means time and planning.  Someone thought this through... some time ago.}{These goblins were carrying pick axes and hammers - which means they were sappers, and sapping means time and planning.  Someone thought this through... some time ago.}{}{}{}{} # phrase: 10JORUN 12
+{1331}{Do you know of any place we can rest?}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{1220}{} # resp: 10JORUN 23
+{1332}{Hmm.  Good point.  We'll see what we can find out - watch yourself.}{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{1250}{ctrl(npc).dialog_action(npc, pc, 6)} # resp: 10JORUN 24
+{1333}{Hmm.  Good point.  Farewell, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{0}{} # resp: 10JORUN 25
+
+{1340}{These goblins were carrying pick axes - tells me they were sappers.  The ankle-biters may have broken through into some of the old caves beneath Targos and used them to get to the docks.  Not good.}{These goblins were carrying pick axes - tells me they were sappers.  The ankle-biters may have broken through into some of the old caves beneath Targos and used them to get to the docks.  Not good.}{}{}{}{} # phrase: 10JORUN 5
+{1341}{Do you know of any place we can rest?}{}{1}{ctrl(npc).dialog_test(npc, pc, 4)}{1220}{} # resp: 10JORUN 11
+{1342}{What old caves?}{}{1}{}{1350}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 10JORUN 12
+{1343}{Any idea where their tunnel is?}{}{1}{}{1370}{} # resp: 10JORUN 13
+
+{1350}{These cliffs are thick with tunnels, but last word was the Targos Guard had collapsed most o' em.}{These cliffs are thick with tunnels, but last word was the Targos Guard had collapsed most o' em.}{}{}{}{} # phrase: 10JORUN 6
+{1351}{Continue}{}{1}{}{1360}{} # resp: 10JORUN 14
+
+{1360}{The tunnels were used by smugglers along the Dualdon years ago... the goblins may've broke into one o' 'em and crawled beneath the Palisade.}{The tunnels were used by smugglers along the Dualdon years ago... the goblins may've broke into one o' 'em and crawled beneath the Palisade.}{}{}{}{} # phrase: 10JORUN 7
+{1361}{Any idea which one the goblins came out of?}{}{1}{}{1370}{} # resp: 10JORUN 15
+
+{1370}{Not sure... my guess?  Somewhere to the northeast, since that's where the fighting was thickest.  If ye head up there, make sure ye've got some trusty iron in your hand.  Could be a whole mess o' em crawling below.}{Not sure... my guess?  Somewhere to the northeast, since that's where the fighting was thickest.  If ye head up there, make sure ye've got some trusty iron in your hand.  Could be a whole mess o' em crawling below.}{}{}{}{} # phrase: 10JORUN 8
+{1371}{Do you know of any place we can rest?}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{1220}{} # resp: 10JORUN 16
+{1372}{Where did these caves come from?}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{1350}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 10JORUN 17
+{1373}{We'll be on our guard.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{1250}{ctrl(npc).dialog_action(npc, pc, 4)} # resp: 10JORUN 18
+{1374}{All right - we'll be on our guard.  Farewell, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{0}{ctrl(npc).dialog_action(npc, pc, 5)} # resp: 10JORUN 19
+
+{1380}{Aye, if the fool picking the lock doesn't try to disarm the trap first.  Don't need to worry about many thieves out here having the skill to do that, though.}{Aye, if the fool picking the lock doesn't try to disarm the trap first.  Don't need to worry about many thieves out here having the skill to do that, though.}{}{}{}{} # phrase: 10JORUN 36
+{1381}{Do you have any idea how the goblins got into town?}{}{1}{}{1290}{} # resp: 10JORUN 72
+{1382}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 29)}{1250}{ctrl(npc).dialog_action(npc, pc, 17)} # resp: 10JORUN 73
+{1383}{All right, then.  Watch yourself, Jorun.}{}{1}{ctrl(npc).dialog_test(npc, pc, 30)}{0}{} # resp: 10JORUN 74
+
+{1390}{Have ye spilled any more goblin blood?  Ye better not be greedy - make ye sure ye save a handful for me.}{Have ye spilled any more goblin blood?  Ye better not be greedy - make ye sure ye save a handful for me.}{}{}{}{} # phrase: 10JORUN 13
+{1391}{Do you know of any place we can rest?}{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{1220}{} # resp: 10JORUN 26
+{1392}{Any idea how these goblins got into town?}{}{1}{}{1290}{} # resp: 10JORUN 27
+{1393}{I will.  Be careful, Jorun.  Farewell.}{}{1}{}{0}{} # resp: 10JORUN 28
+
+{1400}{Well, now, something I can help ye with?  I'm not doing business with the attacks an' all, and there's not much call for building ships as much as taking them down.}{Well, now, something I can help ye with?  I'm not doing business with the attacks an' all, and there's not much call for building ships as much as taking them down.}{}{}{}{} # phrase: 10JORUN 14
+{1401}{My name is @pcname@ .  Who are you?}{}{1}{}{1410}{ctrl(npc).dialog_action(npc, pc, 7)} # resp: 10JORUN 29
+
+{1410}{Jorun Tamewater, shipbuilder, occasional fisherman.  Ye look like one of those sell-swords to me - no secret why ye're in Targos.  Lookin' to spill some goblin blood, are ye?}{Jorun Tamewater, shipbuilder, occasional fisherman.  Ye look like one of those sell-swords to me - no secret why ye're in Targos.  Lookin' to spill some goblin blood, are ye?}{}{}{}{} # phrase: 10JORUN 15
+{1411}{Jorun Tamewater?  I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.}{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{1420}{} # resp: 10JORUN 30
+{1412}{Yes, and earn a few coins for our trouble.  We've spilled enough goblin blood so far, though the coin wasn't exactly what we were expecting.}{}{1}{}{1450}{} # resp: 10JORUN 31
+{1413}{I must take my leave.  Farewell.}{}{1}{}{0}{} # resp: 10JORUN 32
+
+{1420}{Oh, now, did that fat fool Lumbar sit on it?  Damn that idiot!  I told him how much weight the thing could stand, but there's nothing to get past his fool ears when he's wailing like a babe!}{Oh, now, did that fat fool Lumbar sit on it?  Damn that idiot!  I told him how much weight the thing could stand, but there's nothing to get past his fool ears when he's wailing like a babe!}{}{}{}{} # phrase: 10JORUN 21
+{1421}{Can you fix it?}{}{1}{}{1430}{} # resp: 10JORUN 44
+
+{1430}{Aye, if someone had bothered to tell me the problem sooner, I could have had it fixed right quick.  In fact - ye could even do it.}{Aye, if someone had bothered to tell me the problem sooner, I could have had it fixed right quick.  In fact - ye could even do it.}{}{}{}{} # phrase: 10JORUN 22
+{1431}{How?}{}{1}{}{1440}{ctrl(npc).dialog_action(npc, pc, 8); uj.journal_add(15159, (33, 34, ))} # resp: 10JORUN 45
+
+{1440}{I keep spares, especially when the shipping season is in full swing.  Take this crane wheel, and just set it into the crane, should be ready to go without a hitch.}{I keep spares, especially when the shipping season is in full swing.  Take this crane wheel, and just set it into the crane, should be ready to go without a hitch.}{}{}{}{} # phrase: 10JORUN 23
+{1441}{All right.  We'll see about fixing the crane.  Thanks, Jorun.}{}{1}{}{0}{} # resp: 10JORUN 46
+
+{1450}{Well, that should clear itself up soon enough - gold seems to rain from the skies in some corners of Faerun, and I doubt Targos will prove any different.}{Well, that should clear itself up soon enough - gold seems to rain from the skies in some corners of Faerun, and I doubt Targos will prove any different.}{}{}{}{} # phrase: 10JORUN 16
+{1451}{You said you were a shipbuilder?}{}{1}{}{1460}{} # resp: 10JORUN 33
+{1452}{I must take my leave.  Farewell.}{}{1}{}{0}{} # resp: 10JORUN 34
+
+{1460}{Aye.  Why, that surprise ye?}{Aye.  Why, that surprise ye?}{}{}{}{} # phrase: 10JORUN 17
+{1461}{Well... yes.}{}{1}{}{1470}{} # resp: 10JORUN 35
+{1462}{Not really.}{}{1}{}{1470}{} # resp: 10JORUN 36
+{1463}{Oh, rest assured, nothing surprises me anymore.}{}{1}{}{1470}{} # resp: 10JORUN 37
+
+{1470}{Wood's as challenging to shape as iron or stone - or even ice, if those legends about that fool Tiernon are true.  Hmph.}{Wood's as challenging to shape as iron or stone - or even ice, if those legends about that fool Tiernon are true.  Hmph.}{}{}{}{} # phrase: 10JORUN 18
+{1471}{Continue}{}{1}{}{1480}{} # resp: 10JORUN 38
+
+{1480}{Well, no matter - look, if ye not be needin' anything, I'd best go back to seein' what weapons I can turn my skills to for the defenders at the Palisade.}{Well, no matter - look, if ye not be needin' anything, I'd best go back to seein' what weapons I can turn my skills to for the defenders at the Palisade.}{}{}{}{} # phrase: 10JORUN 19
+{1481}{I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.}{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{1420}{} # resp: 10JORUN 39
+{1482}{I will take my leave then.  Farewell.}{}{1}{}{0}{} # resp: 10JORUN 40
+
+{1490}{More than once ye've crossed my path; if ye plan on makin' a habit of it, the least ye could do is bring a winecask with ye... or two. Somethin' I can do for ye?}{More than once ye've crossed my path; if ye plan on makin' a habit of it, the least ye could do is bring a winecask with ye... or two. Somethin' I can do for ye?}{}{}{}{} # phrase: 10JORUN 20
+{1491}{I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.}{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{1420}{} # resp: 10JORUN 41
+{1492}{You said you were a shipbuilder?}{}{1}{}{1460}{} # resp: 10JORUN 42
+{1493}{Just stopping by to check on you, Jorun.}{}{1}{}{0}{} # resp: 10JORUN 43
+
+{1500}{Eh?!  A duergar in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.}{Eh?!  A duergar in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.}{}{}{}{} # phrase: 10JORUN 31
+{1501}{We are not in league with these goblins, cousin, we are here to help.}{}{1}{}{1510}{} # resp: 10JORUN 64
+{1502}{We've come to aid Targos, dog - put down your weapon.}{}{1}{}{1510}{} # resp: 10JORUN 65
+
+{1510}{Do ye take me for a fool?!  What proof do I have that ye've come to help us?}{Do ye take me for a fool?!  What proof do I have that ye've come to help us?}{}{}{}{} # phrase: 10JORUN 33
+{1511}{What gain would there be in me even talking to you?  If I were with the goblins, I would be attacking you right now.}{}{1}{}{1520}{ctrl(npc).dialog_action(npc, pc, 14)} # resp: 10JORUN 68
+{1512}{We sailed in on the Wicked Wench, you idiot!  We're from Luskan - either you trust us or you don't.  I have no more time to waste talking to you.}{}{1}{}{1520}{ctrl(npc).dialog_action(npc, pc, 15)} # resp: 10JORUN 69
+
+{1520}{Hrmm.  I don't know why, but I believe ye - but that don't mean ye have me *trust,* it doesn't.  Still, Targos needs good blades with these filthy rock-crawlers about.}{Hrmm.  I don't know why, but I believe ye - but that don't mean ye have me *trust,* it doesn't.  Still, Targos needs good blades with these filthy rock-crawlers about.}{}{}{}{} # phrase: 10JORUN 34
+{1521}{Did you kill all these goblins yourself?}{}{1}{}{1200}{} # resp: 10JORUN 70
+
+{1530}{Eh?!  A drow in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.}{Eh?!  A drow in Targos?  Ye were the last beast I expected to see in league with these goblins, but it'll give me pleasure to bury yer black heart alongside them.}{}{}{}{} # phrase: 10JORUN 32
+{1531}{We are not in league with these goblins, we are here to help.}{}{1}{}{1510}{} # resp: 10JORUN 66
+{1532}{We've come to aid Targos, dog - put down your weapon.}{}{1}{}{1510}{} # resp: 10JORUN 67
+
+{1540}{Damn me eyes... are ye a deep gnome?  What in the hells are ye doing in Targos?}{Damn me eyes... are ye a deep gnome?  What in the hells are ye doing in Targos?}{}{}{}{} # phrase: 10JORUN 35
+{1541}{We're adventurers from Luskan.  We just came in on the Wicked Wench and found Targos being attacked.}{}{1}{}{1190}{ctrl(npc).dialog_action(npc, pc, 16)} # resp: 10JORUN 71
+
+{1550}{I heard talk of a duergar around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?}{I heard talk of a duergar around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?}{}{}{}{} # phrase: 10JORUN 37
+{1551}{Are you Jorun Tamewater?  I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.}{}{1}{ctrl(npc).dialog_test(npc, pc, 31)}{1420}{ctrl(npc).dialog_action(npc, pc, 18)} # resp: 10JORUN 75
+{1552}{We're looking to spill some goblin blood... and earn a few coins for our trouble, but the coinage so far has been somewhat light. }{}{1}{}{1450}{ctrl(npc).dialog_action(npc, pc, 19)} # resp: 10JORUN 76
+
+{1560}{I heard talk of a drow around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?}{I heard talk of a drow around town... didn't put much stock in it 'til now.  I hear ye done a good job splitting goblins in half, but ye've still got a long way to go to earning my trust... and Targos' trust.  Now what did ye want with this ol' shipbuilder?}{}{}{}{} # phrase: 10JORUN 38
+{1561}{Are you Jorun Tamewater?  I spoke with your son, Olap, at the Palisade.  It seems the crane broke, and it needs to be fixed.}{}{1}{ctrl(npc).dialog_test(npc, pc, 32)}{1420}{ctrl(npc).dialog_action(npc, pc, 20)} # resp: 10JORUN 77
+{1562}{We're looking to spill some goblin blood... and earn a few coins for our trouble, but the coinage so far has been somewhat light. }{}{1}{}{1450}{ctrl(npc).dialog_action(npc, pc, 21)} # resp: 10JORUN 78
+
+{1570}{Damn me eyes... ye're the deep gnome everyone's going on about.  I was hoping ye might be crossing me path - something this ol' shipbuilder can help ye with? }{Damn me eyes... ye're the deep gnome everyone's going on about.  I was hoping ye might be crossing me path - something this ol' shipbuilder can help ye with? }{}{}{}{} # phrase: 10JORUN 39
+{1571}{My name is @pcname@ .  Who are you?}{}{1}{}{1410}{ctrl(npc).dialog_action(npc, pc, 22)} # resp: 10JORUN 79
+
+{1580}{It's good to see another dwarf on the shore of Maer Dualdon especially with these damnable goblins about... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye come to add yer axe and hammer to Targos? }{It's good to see another dwarf on the shore of Maer Dualdon especially with these damnable goblins about... it seems no matter what corners o' the world y'go, they're always there.  Who are ye?  Do ye come to add yer axe and hammer to Targos? }{}{}{}{} # phrase: 10JORUN 40
+{1581}{We're adventurers from Luskan.  We just came in on the Wicked Wench and found Targos being attacked. }{}{1}{}{1190}{ctrl(npc).dialog_action(npc, pc, 23)} # resp: 10JORUN 80
+
+{1590}{Well, now, a dwarf is a sight for sore eyes in these windswept lands... especially one who can cleave goblins as well as ye can.  Something this ol' shipbuilder can help ye with?  }{Well, now, a dwarf is a sight for sore eyes in these windswept lands... especially one who can cleave goblins as well as ye can.  Something this ol' shipbuilder can help ye with?  }{}{}{}{} # phrase: 10JORUN 41
+{1591}{My name is @pcname@ .  Who are you?}{}{1}{}{1410}{ctrl(npc).dialog_action(npc, pc, 24)} # resp: 10JORUN 81
+
+{1600}{Hold!  Do you stand with Targos or against her?}{Hold!  Do you stand with Targos or against her?}{}{}{}{} # phrase: 10CRANDA 0
+{1601}{We stand with Targos.  We just sailed in on the Wicked Wench.}{}{1}{}{1610}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 10CRANDA 0
+{1602}{Put down your damned weapon, boy, or we'll cleave it from your wrist.  It's plain we're not goblins.}{}{1}{}{1690}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 10CRANDA 1
+
+{1610}{Then keep your blades close - goblins are prowling the town, and we have no word of their strength or how they breeched the wall.  It was possible that they had help... from someone inside the town.}{Then keep your blades close - goblins are prowling the town, and we have no word of their strength or how they breeched the wall.  It was possible that they had help... from someone inside the town.}{}{}{}{} # phrase: 10CRANDA 1
+{1611}{Continue}{}{1}{}{1620}{} # resp: 10CRANDA 2
+
+{1620}{I was assigned to protect the dock to Dualdon's Wake and to keep it from the goblins.  Unless reinforcements come soon, however, I fear a band of goblins will chance upon me first.}{I was assigned to protect the dock to Dualdon's Wake and to keep it from the goblins.  Unless reinforcements come soon, however, I fear a band of goblins will chance upon me first.}{}{}{}{} # phrase: 10CRANDA 2
+{1621}{Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{1630}{} # resp: 10CRANDA 3
+{1622}{Have no fear of that.  We've dispatched the goblin attackers - the docks belong to Targos again.}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{1670}{} # resp: 10CRANDA 4
+{1623}{Have you seen any goblins?}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{1640}{} # resp: 10CRANDA 5
+{1624}{Stay here and watch the docks - we'll see about taking care of the goblins in the town.}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{0}{} # resp: 10CRANDA 6
+
+{1630}{Magdar?  Magdar is the harbor master.  If he's still alive, he'd most likely be at one of the warehouses on the northern end of the docks.}{Magdar?  Magdar is the harbor master.  If he's still alive, he'd most likely be at one of the warehouses on the northern end of the docks.}{}{}{}{} # phrase: 10CRANDA 4
+{1631}{Have you seen any goblins in the area?}{}{1}{}{1640}{} # resp: 10CRANDA 8
+{1632}{Thanks - stay here and watch the docks.  We'll return.}{}{1}{}{0}{} # resp: 10CRANDA 9
+
+{1640}{I've heard the sounds of fighting at the dock to the north and to the southeast - if you head in either direction, take care.  We don't know how many are in the town.}{I've heard the sounds of fighting at the dock to the north and to the southeast - if you head in either direction, take care.  We don't know how many are in the town.}{}{}{}{} # phrase: 10CRANDA 5
+{1641}{Continue}{}{1}{}{1650}{} # resp: 10CRANDA 10
+
+{1650}{If your band numbers someone who has skill in hiding in shadows, they might be able to scout the town for goblins without being detected.  Once you know where the goblins are, wiping them out should prove easier, especially if the scout takes them unawares.}{If your band numbers someone who has skill in hiding in shadows, they might be able to scout the town for goblins without being detected.  Once you know where the goblins are, wiping them out should prove easier, especially if the scout takes them unawares.}{}{}{}{} # phrase: 10CRANDA 10
+{1651}{What do you mean?}{}{1}{}{1660}{} # resp: 10CRANDA 20
+{1652}{Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{1630}{} # resp: 10CRANDA 21
+{1653}{Not a bad idea.  Maybe a little hide in shadows and scouting could prove useful.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{0}{} # resp: 10CRANDA 22
+{1654}{Indeed.  Scouting Targos unseen could prove useful to us - and detrimental to our foes.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{0}{} # resp: 10CRANDA 23
+{1655}{Not a bad idea.  Maybe a little scouting could prove useful.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{0}{} # resp: 10CRANDA 24
+{1656}{Thanks for the advice - stay here and watch the docks.  We'll return.}{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{0}{} # resp: 10CRANDA 25
+
+{1660}{This may not hold true for every profession, but I've seen rogues in Luskan drop a man twice their size just by striking from the shadows and taking them by surprise.  The victims just hit the ground like logs.  Not a proud tactic, but a successful one. }{This may not hold true for every profession, but I've seen rogues in Luskan drop a man twice their size just by striking from the shadows and taking them by surprise.  The victims just hit the ground like logs.  Not a proud tactic, but a successful one. }{}{}{}{} # phrase: 10CRANDA 11
+{1661}{Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.}{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{1630}{} # resp: 10CRANDA 26
+{1662}{Hells, a sneak attack's worked for *me* on more than one occasion.  No reason not to use it now.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{0}{} # resp: 10CRANDA 27
+{1663}{A backstab is a thieves' trick - a monk has no need of such things.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{0}{} # resp: 10CRANDA 28
+{1664}{Thanks for the advice - stay here and watch the docks.  We'll return.}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{0}{} # resp: 10CRANDA 29
+
+{1670}{That is welcome news!  You should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.}{That is welcome news!  You should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.}{}{}{}{} # phrase: 10CRANDA 6
+{1671}{Lord Ulbrec?  Where can I find him?}{}{1}{}{1680}{} # resp: 10CRANDA 11
+{1672}{I will speak to him, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 10CRANDA 12
+
+{1680}{You can find him in Targos in the cliffs above, in the Town Hall.  If you are searching for a contract with the Targos Guard, then he will no doubt sign you on.}{You can find him in Targos in the cliffs above, in the Town Hall.  If you are searching for a contract with the Targos Guard, then he will no doubt sign you on.}{}{}{}{} # phrase: 10CRANDA 7
+{1681}{I will speak to him, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 10CRANDA 13
+
+{1690}{That's plain enough, but I had to be sure - goblins are prowling the town, and we have no word of their strength or how they breeched the wall.  It was possible that they had help... from someone inside the town.}{That's plain enough, but I had to be sure - goblins are prowling the town, and we have no word of their strength or how they breeched the wall.  It was possible that they had help... from someone inside the town.}{}{}{}{} # phrase: 10CRANDA 3
+{1691}{Continue}{}{1}{}{1620}{} # resp: 10CRANDA 7
+
+{1700}{Any word of goblins or the guard?}{Any word of goblins or the guard?}{}{}{}{} # phrase: 10CRANDA 8
+{1701}{Do you know where I can find a man named Magdar Shenlen?  One of the soldiers by the docks has been wounded and is in need of a potion that Magdar is said to have.}{}{1}{ctrl(npc).dialog_test(npc, pc, 4)}{1630}{} # resp: 10CRANDA 14
+{1702}{Have you seen any goblins in the area?}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{1640}{} # resp: 10CRANDA 15
+{1703}{Have no fear of goblins.  We've dispatched them - the docks belong to Targos again.}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{1670}{} # resp: 10CRANDA 16
+{1704}{No word yet - keep to your post.  If we hear of anything, we will summon you.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{0}{} # resp: 10CRANDA 17
+
+{1710}{If you haven't already, you should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.}{If you haven't already, you should tell of your efforts to our Lord Ulbrec - we are in dire need of blades such as yours in the days to come.}{}{}{}{} # phrase: 10CRANDA 9
+{1711}{Lord Ulbrec?  Where can I find him?}{}{1}{}{1680}{} # resp: 10CRANDA 18
+{1712}{I will speak to him, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 4)} # resp: 10CRANDA 19

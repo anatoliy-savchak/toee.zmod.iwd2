@@ -41,7 +41,8 @@ class ItemBase(object):
         #      if item_file_name in c.get_item_codes():
         #          cls = c
         #          break
-        cls = next((cls for cls in category_classes if item_file_name in cls.get_item_codes()), None)
+        item_file_name_lo = item_file_name.lower()
+        cls = next((cls for cls in category_classes for item_code in cls.get_item_codes() if item_code and item_file_name_lo == item_code.lower()), None)
         if not cls:
             cls = next((cls for cls in category_classes if cls.is_default()), None)
         if not cls:

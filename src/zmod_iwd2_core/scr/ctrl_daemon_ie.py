@@ -100,3 +100,11 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 		self.timer_context = str(uuid.uuid4())
 		self.ambs_timer_start()
 		return
+
+	def switch_dialog(self, pc, actor_name, state):
+		npc, ctrl = self._get_ie_object("'{}'".format(actor_name))
+		if npc and ctrl:
+			ctrl.start_dialog_at_state(npc, pc, state)
+		else:
+			raise Exception('Actor {} not found!'.format(actor_name))
+		return

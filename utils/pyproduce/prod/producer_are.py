@@ -49,6 +49,7 @@ class ProducerOfAre(producer_base.Producer):
             self.produce_actor(actor_name)
 
         self.produce_daemon(self.skip_script_daemon)
+        self.produce_speech()
         return
 
     def produce_actor(self, actor_name_: str = None):
@@ -247,4 +248,10 @@ class ProducerOfAre(producer_base.Producer):
             bcs_prod = produce_bcs_manager.ProduceBCSFileAuto(self.doc, bcs_name, self.are_name, self.script_id + 5, False)
             bcs_prod.scan(cre_name, actor_name)
             del bcs_prod
+        return
+
+    def produce_speech(self):
+        speech_script_id = self.script_id + 1
+        dest_speech_path = os.path.join(self.doc.get_path_sound(), "speech", f"{speech_script_id:05d}")
+        self.dialog.copy_sound_files(self.doc.wav_dir, dest_speech_path, self.make_new)
         return

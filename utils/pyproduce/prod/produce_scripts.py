@@ -377,7 +377,7 @@ class ScriptTran:
         func_name_lo = func_name.lower()
         if func_name_lo == "giveitemcreate":
             func_name_lo = func_name_lo
-        cls = next((cls for cls in func_classes if func_name_lo in cls.supports_func()), None)
+        cls = next((cls for cls in func_classes for ffunc in cls.supports_func() if ffunc and func_name_lo == ffunc.lower()), None)
         if cls:
             o = cls(aline, producer)
             result = o.translate_func(func_name, args)
@@ -593,8 +593,6 @@ class ScriptTranFuncsItem(ScriptTranFuncs):
         item_file_name = self.do_translate_param(args[index_with_item], index_with_item, func_info["args"][index_with_item])
         item_file_name = item_file_name.replace('"', '').strip()
         item_file_name = item_file_name.replace("'", '').strip()
-        if item_file_name == "00Leat01":
-            print("")
         item_cls = produce_items.ItemBase.find_item_class(item_file_name)
         if item_cls:
             if make_create:
@@ -621,7 +619,7 @@ class ScriptTranFuncsItem_GiveItemCreate(ScriptTranFuncsItem):
     def params_to_itemize(cls): return (0, )
 
     @classmethod
-    def supports_func(cls): return ("GiveItemCreate".lower(), "GiveItem".lower())
+    def supports_func(cls): return ("GiveItemCreate", "GiveItem")
 
 class ScriptTranFuncsItem_GiveItemEval(ScriptTranFuncsItem):
     @classmethod
@@ -635,7 +633,7 @@ class ScriptTranFuncsItem_GiveItemEval(ScriptTranFuncsItem):
         return super().do_translate_func(func_name, args, func_info)
 
     @classmethod
-    def supports_func(cls): return ("PartyHasItem".lower(), "TakePartyItemNum".lower())
+    def supports_func(cls): return ("PartyHasItem", "TakePartyItemNum", "HasItem")
 
 class ScriptTranFuncsItem_Debug(ScriptTranFuncs):
     @classmethod

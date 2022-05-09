@@ -87,8 +87,15 @@ class InfScriptSupport:
 
 	def _set_global(self, name, area, value):
 		name = strip_quotes(name)
+		area = strip_quotes(area)
 		g = self._get_globals(area)
+		value_before = None if not debugg.DEBUG_PRINT_GLOBAL_SET_INTO_HISTORY else g.get(name)
 		g[name] = value
+
+		if debugg.DEBUG_PRINT_GLOBAL_SET_INTO_HISTORY:
+			text = '' if area.lower() == 'global' else ' ({})'.format(area[0].upper())
+			text = '\n{}{} = {} <= {}\n'.format(name, text, value, value_before)
+			toee.game.create_history_freeform(text)
 		return
 
 	def _get_ie_object(self, name):
@@ -237,12 +244,17 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def Alignment(self, obj, alignment):
+	def iAlignment(self, obj, alignment):
 		"""
 		Alignment(O:Object*, I:Alignment*ALIGNMNT)
+		Returns true only if the alignment of the specified object matches that in the second parameter.
 		"""
-		raise Exception("Not implemented function: Alignment!")
-		return
+		result = False
+		npc, ctrl = self._get_ie_object(obj)
+		if npc:
+			v = npc.obj_get_int(toee.obj_f_critter_alignment)
+			result = utils_inf.iwd2_alignment_equals(alignment, npc)
+		return result
 	
 	@dump_args
 	def Allegiance(self, obj, allegience):
@@ -309,20 +321,18 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def CheckSkillGT(self, obj, value, skillnum):
+	def iCheckSkillGT(self, obj, value, skillnum):
 		"""
 		CheckSkillGT(O:Object*, I:Value*, I:SkillNum*Skills)
 		"""
-		raise Exception("Not implemented function: CheckSkillGT!")
-		return
+		return self._skill(obj, skillnum) > value
 	
 	@dump_args
-	def CheckSkillLT(self, obj, value, skillnum):
+	def iCheckSkillLT(self, obj, value, skillnum):
 		"""
 		CheckSkillLT(O:Object*, I:Value*, I:SkillNum*Skills)
 		"""
-		raise Exception("Not implemented function: CheckSkillLT!")
-		return
+		return self._skill(obj, skillnum) < value
 	
 	@dump_args
 	def CheckSpellState(self, obj, state):
@@ -575,11 +585,17 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def HasItem(self, resref, obj):
+	def iHasItem(self, resref, obj):
 		"""
 		HasItem(S:ResRef*, O:Object*)
+		Returns true only if the specified object has the specified item in its inventory. This trigger also checks with container items (e.g. Bags of Holding).
 		"""
-		raise Exception("Not implemented function: HasItem!")
+		npc, ctrl = self._get_ie_object(obj)
+		if npc:
+			proto = self._get_proto(resref)
+			if proto:
+				item = npc.item_find_by_proto(proto)
+				return item != None
 		return
 	
 	@dump_args
@@ -776,12 +792,21 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def Kit(self, obj, kit):
+	def iKit(self, obj, kit):
 		"""
 		Kit(O:Object*, I:Kit*Kit)
+		NT Returns true only if the specified object is of the kit specified.
+		NB. A creature's assigned kit is stored as a dword, however the Kit() trigger only checks the upper word. 
+		This, in conjunction with various incorrect values in the game cre files, and an incorrect kits.ids file, 
+		means the Kit() trigger can often fail. For optimal usage, the default kit.ids file should be replaced 
+		with the updated one listed in the BG2: ToB ids page.
 		"""
-		raise Exception("Not implemented function: Kit!")
-		return
+
+		result = False
+		npc, ctrl = self._get_ie_object(obj)
+		if npc:
+			result = utils_inf.iwd2_kit_has(kit, npc)
+		return result
 	
 	@dump_args
 	def LOS(self, obj, range):
@@ -936,12 +961,17 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def PartyHasItem(self, item):
+	def iPartyHasItem(self, item):
 		"""
 		PartyHasItem(S:Item*)
+		Returns true if any of the party members have the specified item in their inventory. This trigger also checks with container items (e.g. Bags of Holding).
 		"""
-		raise Exception("Not implemented function: PartyHasItem!")
-		return
+
+		result = False
+		proto = self._get_proto(item)
+		if not proto is None:
+			result = toee.anyone(toee.game.party, "item_find_by_proto", proto)
+		return result
 	
 	@dump_args
 	def PickLockFailed(self, obj):
@@ -1046,9 +1076,9 @@ class InfScriptSupport:
 		SubRace(O:Object*, I:SubRace*SubRace)
 		"""
 		npc, ctrl = self._get_ie_object(obj)
-		return self._check_race(npc, race)
+		return self._check_race(npc, subrace)
 
-	def Subrace(self, obj, subrace): self.SubRace(obj=obj, subrace=subrace)
+	def iSubrace(self, obj, subrace): self.iSubRace(obj=obj, subrace=subrace)
 	
 	@dump_args
 	def TargetUnreachable(self, obj):
@@ -1618,6 +1648,12 @@ class InfScriptSupport:
 			#		utils_pc.pc_party_receive_money_and_print(usage1 * const_toee.gp)
 			if not proto is None:
 				item_obj = utils_item.item_create_in_inventory2(proto, npc, 0, None)
+				if npc.type == toee.obj_t_pc:
+					text = '{} received {}'.format(npc.description, item_obj.description)
+					npc.float_text_line(text, toee.tf_green)
+					text = '\n{}\n'.format(text)
+					toee.game.create_history_freeform(text)
+
 			#else:
 			#	item = utils_item.item_create_in_inventory2(proto, target, 0, None)
 
@@ -1994,11 +2030,14 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def SetCriticalPathObject(self, obj, critical):
+	def iSetCriticalPathObject(self, obj, critical):
 		"""
 		SetCriticalPathObject(O:Object*, I:Critical*Boolean)
+		This action sets the Critical Path flag on the specified objects to the specified value. The game ends if a creature with the Critical Path flag set is killed.
 		"""
-		raise Exception("Not implemented function: SetCriticalPathObject!")
+		npc, ctrl = self._get_ie_object(obj)
+		if ctrl:
+			ctrl.vars["critical_path"] = critical
 		return
 	
 	@dump_args
@@ -2335,12 +2374,12 @@ class InfScriptSupport:
 		TakePartyItemNum(S:Item*, I:Num)
 
 		This action will remove a number of instances (specified by the Num parameter) of the specified item from the party. 
-		The items will be removed from players in order, for example; Player1 has 3 instances of вЂњMYITEMвЂќ in their inventory, 
-		Player2 has 2 instance of вЂњMYITEM,вЂќ and Player3 has 1 instance. If the action TakePartyItemNum(вЂњMYITEMвЂќ, 4) is run, 
-		all 3 instances of вЂњMYITEMвЂќ will be taken from Player1, and 1 instance will be taken from Player2. 
-		This leaves Player2 and Player3 each with one instance of вЂњMYITEM.вЂќ If the last item of an item type stored in a container 
+		The items will be removed from players in order, for example; Player1 has 3 instances of MYITEM in their inventory, 
+		Player2 has 2 instance of MYITEM and Player3 has 1 instance. If the action TakePartyItemNum(MYITEM, 4) is run, 
+		all 3 instances of MYITEM will be taken from Player1, and 1 instance will be taken from Player2. 
+		This leaves Player2 and Player3 each with one instance of MYITEM If the last item of an item type stored in a container 
 		STO file is removed by this action, the amount becomes zero. Items with zero quantities cannot be seen in-game, 
-		cannot be removed by TakePartyItem, and will not count toward a containerвЂ™s current item load. 
+		cannot be removed by TakePartyItem, and will not count toward a container's current item load. 
 		If the item to be taken is in a stack, and the stack is in a quickslot, the item will be removed, and the remaining stack will be placed in the inventory. 
 		If the inventory is full, the stack item will be dropped on the ground.
 		"""
@@ -2351,9 +2390,15 @@ class InfScriptSupport:
 				while num:
 					item = pc.item_find_by_proto(proto)
 					if item:
+						item_description = item_obj.description
 						item.destroy()
-						# TODO - decrease if stack
 						num = num - 1
+						# TODO - decrease if stack
+						if pc.type == toee.obj_t_pc:
+							text = '{} lost {}'.format(pc.description, item_description)
+							pc.float_text_line(text, toee.tf_yellow)
+							text = '\n{}\n'.format(text)
+							toee.game.create_history_freeform(text)
 				if not num:
 					break
 		return
@@ -2865,6 +2910,12 @@ class InfScriptSupportNPC(InfScriptSupport):
 				target.item_get(item)
 				if target.type == toee.obj_t_pc:
 					utils_pc.pc_receive_item_print(target, item, True)
+				elif npc.type == toee.obj_t_pc:
+					text = '{} lost {}'.format(npc.description, item_obj.description)
+					npc.float_text_line(text, toee.tf_yellow)
+					text = '\n{}\n'.format(text)
+					toee.game.create_history_freeform(text)
+
 		return
 
 	@dump_args

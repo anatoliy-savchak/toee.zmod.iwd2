@@ -138,7 +138,30 @@ class Ctrl_10BROGAN_AR1000_Brogan(py10003_ar1000_npc_inst_classes_auto.Ctrl_10BR
 	pass
 
 class Ctrl_10JORUN_AR1000_Jorun(py10003_ar1000_npc_inst_classes_auto.Ctrl_10JORUN_AR1000_Jorun_Auto): # 10JORUN 
-	pass
+	@inf_scripting.dump_args
+	def test_race_auto(self):
+		try:
+			self._prepare_scripting(this_npc)
+
+			if True:
+				obj, ctrl = self.iRace("'Jorun'", '')
+				if not obj:
+					raise Exception('Test Failed: Object NearestPC not found!')
+
+				if obj.type != toee.obj_t_pc:
+					raise Exception('Test Failed: Object NearestPC not correct PC!')
+				else:
+					print('Test: {} Object NearestPC passed: {}'.format(name, obj))
+
+			if True:
+				obj, ctrl = this_ctrl._get_ie_object("Nearest")
+				if not obj:
+					raise Exception('Test Failed: Object Nearest not found!')
+				else:
+					print('Test: {} Object Nearest passed: {}'.format(name, obj))
+		finally:
+			this_ctrl._unprepare_scripting()
+		return
 
 class Ctrl_10GOB_AR1000_1000_Goblin_01(py10003_ar1000_npc_inst_classes_auto.Ctrl_10GOB_AR1000_1000_Goblin_01_Auto): # 10GOB 
 	pass

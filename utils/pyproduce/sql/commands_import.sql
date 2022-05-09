@@ -1,3 +1,6 @@
+truncate table iwd2.scripts;
+go
+
 insert into iwd2.scripts(FilePath, FileName, Content) select 'D:\Dev.Home\GitHub\anatoliy-savchak\toee.zmod.iwd2\resources\iwd2_exp\Scripts\ActionListEmpty.json', 'ActionListEmpty', BulkColumn from openrowset(bulk 'D:\Dev.Home\GitHub\anatoliy-savchak\toee.zmod.iwd2\resources\iwd2_exp\Scripts\ActionListEmpty.json', single_clob) as Contents;
 go
 insert into iwd2.scripts(FilePath, FileName, Content) select 'D:\Dev.Home\GitHub\anatoliy-savchak\toee.zmod.iwd2\resources\iwd2_exp\Scripts\ActionOverride.json', 'ActionOverride', BulkColumn from openrowset(bulk 'D:\Dev.Home\GitHub\anatoliy-savchak\toee.zmod.iwd2\resources\iwd2_exp\Scripts\ActionOverride.json', single_clob) as Contents;

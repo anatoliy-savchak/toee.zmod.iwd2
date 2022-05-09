@@ -407,11 +407,7 @@ class ProduceNPCDialog:
     @classmethod
     def scan(cls, doc, dialog: dict, are_name: str, cre_name: str):
         phrases, responses, triggersPhrase, triggersResponse = dialog.get("Phrases"), dialog.get("Responses"), dialog.get("TriggersPhrase"), dialog.get("TriggersResponse")
-        for phrase in phrases:
-            triggerIndex = int(phrase["TriggerIndex"])
-            if triggerIndex == -1: continue
-
-            trigger = triggersPhrase[triggerIndex]
+        for trigger in triggersPhrase:
             trigger_lines = produce_scripts.condition_split(trigger)
             out_lines = doc.producerOfScripts.transate_trigger_lines(trigger_lines, are_name=are_name, cre_name=cre_name)
 

@@ -31,7 +31,7 @@ def main():
         , temple_src_path = temple_src_path
     )
     doc.init(from_scratch=False)
-    if True:
+    if False:
         are_prod = doc.acquire_are_producer('AR1000')
         are_prod.skip_script_general = True
         are_prod.skip_script_class = True
@@ -44,6 +44,16 @@ def main():
         #are_prod.produce_actor("Hedron")
         #are_prod.produce_daemon(True)
         are_prod.produce()
+
+    if True:
+        doc.producerOfScripts.log_usage = True
+        doc.producerOfScripts.log_statistics = True
+        doc.producerOfScripts.log_strrefs = False
+        doc.scan_all_ares()
+        doc.producerOfScripts.produce_func_defs()
+        doc.producerOfScripts._save_index()
+        for e in doc.producerOfScripts.error_messages:
+            print(e)
 
     if False:
         doc.producerOfScripts.log_usage = False

@@ -1,5 +1,5 @@
 {
-    "func_name": "TimeOfDay",
+    "func_name": "TimeofDay",
     "kind": "trigger",
     "args": [
         {
@@ -10,6 +10,12 @@
                 "arg_line": "I:Time Of Day*TimeODay"
             },
             "values": [
+                {
+                    "src": "2",
+                    "used_count": 8,
+                    "value": "2",
+                    "first_occurence": "AR1104.11CAHLHY.None"
+                },
                 {
                     "src": "DAY",
                     "used_count": 75,

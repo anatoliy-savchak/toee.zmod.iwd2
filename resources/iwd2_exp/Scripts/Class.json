@@ -11,6 +11,12 @@
             },
             "values": [
                 {
+                    "src": "Protagonist",
+                    "used_count": 78,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR1000.10BROGAN.None"
+                },
+                {
                     "src": "TenthNearestEnemyOf",
                     "used_count": 4,
                     "value": "self.iTenthNearestEnemyOf(\"Myself\")",
@@ -81,15 +87,33 @@
             },
             "values": [
                 {
+                    "src": "SORCERER",
+                    "used_count": 57,
+                    "value": "\"SORCERER\"",
+                    "first_occurence": "AR1000.10BROGAN.None"
+                },
+                {
+                    "src": "Monk",
+                    "used_count": 20,
+                    "value": "\"Monk\"",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "Bard",
+                    "used_count": 4,
+                    "value": "\"Bard\"",
+                    "first_occurence": "AR5004.50HADBRU.None"
+                },
+                {
+                    "src": "Paladin",
+                    "used_count": 7,
+                    "value": "\"Paladin\"",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                },
+                {
                     "src": "MAGE",
                     "used_count": 10,
                     "value": "\"MAGE\"",
-                    "first_occurence": "AR6500.65YQUOG.Yquog"
-                },
-                {
-                    "src": "SORCERER",
-                    "used_count": 10,
-                    "value": "\"SORCERER\"",
                     "first_occurence": "AR6500.65YQUOG.Yquog"
                 },
                 {

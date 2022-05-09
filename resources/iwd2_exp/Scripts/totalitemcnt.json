@@ -1,0 +1,44 @@
+{
+    "func_name": "TotalItemCnt",
+    "kind": "trigger",
+    "args": [
+        {
+            "def": {
+                "arg_type": "O",
+                "arg_name": "Object",
+                "arg_ids": "",
+                "arg_line": "O:Object*"
+            },
+            "values": [
+                {
+                    "src": "LastTalkedToBy",
+                    "used_count": 14,
+                    "value": "\"LastTalkedToBy\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "Protagonist",
+                    "used_count": 42,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Number",
+                "arg_ids": "",
+                "arg_line": "I:Number*"
+            },
+            "values": [
+                {
+                    "src": "0",
+                    "used_count": 56,
+                    "value": "0",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                }
+            ]
+        }
+    ]
+}

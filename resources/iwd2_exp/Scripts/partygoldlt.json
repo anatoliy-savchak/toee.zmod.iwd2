@@ -1,0 +1,40 @@
+{
+    "func_name": "PartyGoldLT",
+    "kind": "trigger",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Amount",
+                "arg_ids": "",
+                "arg_line": "I:Amount*"
+            },
+            "values": [
+                {
+                    "src": "30",
+                    "used_count": 2,
+                    "value": "30",
+                    "first_occurence": "AR1003.10GOHAR.None"
+                },
+                {
+                    "src": "3",
+                    "used_count": 3,
+                    "value": "3",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "5",
+                    "used_count": 4,
+                    "value": "5",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "51",
+                    "used_count": 6,
+                    "value": "51",
+                    "first_occurence": "AR1102.11DEIRD.None"
+                }
+            ]
+        }
+    ]
+}

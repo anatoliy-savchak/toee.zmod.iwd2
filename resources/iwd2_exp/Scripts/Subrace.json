@@ -11,16 +11,16 @@
             },
             "values": [
                 {
+                    "src": "Protagonist",
+                    "used_count": 44,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
                     "src": "LastSeenBy",
                     "used_count": 3,
                     "value": "self.iLastSeenBy(\"Myself\")",
                     "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
-                },
-                {
-                    "src": "Protagonist",
-                    "used_count": 11,
-                    "value": "\"Protagonist\"",
-                    "first_occurence": "AR6200.62TSOL.None"
                 }
             ]
         },
@@ -33,16 +33,34 @@
             },
             "values": [
                 {
+                    "src": "ELF_DROW",
+                    "used_count": 13,
+                    "value": "\"ELF_DROW\"",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "Dwarf_Gray",
+                    "used_count": 14,
+                    "value": "\"Dwarf_Gray\"",
+                    "first_occurence": "AR1000.10JORUN.None"
+                },
+                {
+                    "src": "Gnome_Deep",
+                    "used_count": 5,
+                    "value": "\"Gnome_Deep\"",
+                    "first_occurence": "AR1000.10JORUN.None"
+                },
+                {
+                    "src": "DWARF_GOLD",
+                    "used_count": 2,
+                    "value": "\"DWARF_GOLD\"",
+                    "first_occurence": "AR5000.50NYM.None"
+                },
+                {
                     "src": "PURERACE",
                     "used_count": 3,
                     "value": "\"PURERACE\"",
                     "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
-                },
-                {
-                    "src": "ELF_DROW",
-                    "used_count": 1,
-                    "value": "\"ELF_DROW\"",
-                    "first_occurence": "AR6200.62TSOL.None"
                 },
                 {
                     "src": "Human_Aasimar",

@@ -88,6 +88,14 @@
 		return
 	
 	@dump_args
+	def CheckSkillLT(self, obj, value, skillnum):
+		"""
+		CheckSkillLT(O:Object*, I:Value*, I:SkillNum*Skills)
+		"""
+		raise Exception("Not implemented function: CheckSkillLT!")
+		return
+	
+	@dump_args
 	def CheckSpellState(self, obj, state):
 		"""
 		CheckSpellState(O:Object*, I:State*splstate)
@@ -192,22 +200,6 @@
 		return
 	
 	@dump_args
-	def GLOBAL(self, name, area, value):
-		"""
-		GLOBAL(S:Name*, S:Area*, I:Value*)
-		"""
-		raise Exception("Not implemented function: GLOBAL!")
-		return
-	
-	@dump_args
-	def GLOBALGT(self, name, area, value):
-		"""
-		GLOBALGT(S:Name*, S:Area*, I:Value*)
-		"""
-		raise Exception("Not implemented function: GLOBALGT!")
-		return
-	
-	@dump_args
 	def Gender(self, obj, sex):
 		"""
 		Gender(O:Object*, I:Sex*Gender)
@@ -264,70 +256,6 @@
 		return
 	
 	@dump_args
-	def HP(self, obj, hit_points):
-		"""
-		HP(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HP!")
-		return
-	
-	@dump_args
-	def HPGT(self, obj, hit_points):
-		"""
-		HPGT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPGT!")
-		return
-	
-	@dump_args
-	def HPLT(self, obj, hit_points):
-		"""
-		HPLT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPLT!")
-		return
-	
-	@dump_args
-	def HPLost(self, obj, hit_points):
-		"""
-		HPLost(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPLost!")
-		return
-	
-	@dump_args
-	def HPLostGT(self, obj, hit_points):
-		"""
-		HPLostGT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPLostGT!")
-		return
-	
-	@dump_args
-	def HPPercent(self, obj, hit_points):
-		"""
-		HPPercent(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPPercent!")
-		return
-	
-	@dump_args
-	def HPPercentGT(self, obj, hit_points):
-		"""
-		HPPercentGT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPPercentGT!")
-		return
-	
-	@dump_args
-	def HPPercentLT(self, obj, hit_points):
-		"""
-		HPPercentLT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented function: HPPercentLT!")
-		return
-	
-	@dump_args
 	def HasItem(self, resref, obj):
 		"""
 		HasItem(S:ResRef*, O:Object*)
@@ -365,6 +293,70 @@
 		HitBy(O:Object*, I:DameType*Damages)
 		"""
 		raise Exception("Not implemented function: HitBy!")
+		return
+	
+	@dump_args
+	def HP(self, obj, hit_points):
+		"""
+		HP(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HP!")
+		return
+	
+	@dump_args
+	def HPGT(self, obj, hit_points):
+		"""
+		HPGT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPGT!")
+		return
+	
+	@dump_args
+	def HPLost(self, obj, hit_points):
+		"""
+		HPLost(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPLost!")
+		return
+	
+	@dump_args
+	def HPLostGT(self, obj, hit_points):
+		"""
+		HPLostGT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPLostGT!")
+		return
+	
+	@dump_args
+	def HPLT(self, obj, hit_points):
+		"""
+		HPLT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPLT!")
+		return
+	
+	@dump_args
+	def HPPercent(self, obj, hit_points):
+		"""
+		HPPercent(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPPercent!")
+		return
+	
+	@dump_args
+	def HPPercentGT(self, obj, hit_points):
+		"""
+		HPPercentGT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPPercentGT!")
+		return
+	
+	@dump_args
+	def HPPercentLT(self, obj, hit_points):
+		"""
+		HPPercentLT(O:Object*, I:Hit Points*)
+		"""
+		raise Exception("Not implemented function: HPPercentLT!")
 		return
 	
 	@dump_args
@@ -472,6 +464,14 @@
 		return
 	
 	@dump_args
+	def IsPlayerNumber(self, obj, number):
+		"""
+		IsPlayerNumber(O:Object*, I:Number*)
+		"""
+		raise Exception("Not implemented function: IsPlayerNumber!")
+		return
+	
+	@dump_args
 	def IsRotation(self, obj, direction):
 		"""
 		IsRotation(O:Object*, I:Direction*DIR)
@@ -528,14 +528,6 @@
 		return
 	
 	@dump_args
-	def LOS(self, obj, range):
-		"""
-		LOS(O:Object*, I:Range*)
-		"""
-		raise Exception("Not implemented function: LOS!")
-		return
-	
-	@dump_args
 	def Level(self, obj, level):
 		"""
 		Level(O:Object*, I:Level*)
@@ -565,6 +557,14 @@
 		LevelInClassGT(O:Object*, I:Level, I:Class*Class)
 		"""
 		raise Exception("Not implemented function: LevelInClassGT!")
+		return
+	
+	@dump_args
+	def LOS(self, obj, range):
+		"""
+		LOS(O:Object*, I:Range*)
+		"""
+		raise Exception("Not implemented function: LOS!")
 		return
 	
 	@dump_args
@@ -605,6 +605,14 @@
 		NumInPartyLT(I:Num*)
 		"""
 		raise Exception("Not implemented function: NumInPartyLT!")
+		return
+	
+	@dump_args
+	def NumItemsPartyGT(self, resref, num):
+		"""
+		NumItemsPartyGT(S:ResRef*, I:Num*)
+		"""
+		raise Exception("Not implemented function: NumItemsPartyGT!")
 		return
 	
 	@dump_args
@@ -653,6 +661,22 @@
 		OutOfAmmo()
 		"""
 		raise Exception("Not implemented function: OutOfAmmo!")
+		return
+	
+	@dump_args
+	def PartyGoldGT(self, amount):
+		"""
+		PartyGoldGT(I:Amount*)
+		"""
+		raise Exception("Not implemented function: PartyGoldGT!")
+		return
+	
+	@dump_args
+	def PartyGoldLT(self, amount):
+		"""
+		PartyGoldLT(I:Amount*)
+		"""
+		raise Exception("Not implemented function: PartyGoldLT!")
 		return
 	
 	@dump_args
@@ -768,14 +792,6 @@
 		return
 	
 	@dump_args
-	def Subrace(self, obj, subrace):
-		"""
-		Subrace(O:Object*, I:SubRace*SubRace)
-		"""
-		raise Exception("Not implemented function: Subrace!")
-		return
-	
-	@dump_args
 	def TargetUnreachable(self, obj):
 		"""
 		TargetUnreachable(O:Object*)
@@ -800,11 +816,11 @@
 		return
 	
 	@dump_args
-	def TimeOfDay(self, time_of_day):
+	def TimeofDay(self, time_of_day):
 		"""
-		TimeOfDay(I:Time Of Day*TimeODay)
+		TimeofDay(I:Time Of Day*TimeODay)
 		"""
-		raise Exception("Not implemented function: TimeOfDay!")
+		raise Exception("Not implemented function: TimeofDay!")
 		return
 	
 	@dump_args
@@ -821,6 +837,14 @@
 		TimerExpired(I:ID*)
 		"""
 		raise Exception("Not implemented function: TimerExpired!")
+		return
+	
+	@dump_args
+	def TotalItemCnt(self, obj, number):
+		"""
+		TotalItemCnt(O:Object*, I:Number*)
+		"""
+		raise Exception("Not implemented function: TotalItemCnt!")
 		return
 	
 	########## ACTIONS ##########
@@ -870,14 +894,6 @@
 		AddXPVar(S:VarTableEntry*, I:Strref*)
 		"""
 		raise Exception("Not implemented function: AddXPVar!")
-		return
-	
-	@dump_args
-	def AddXpVar(self, vartableentry, strref):
-		"""
-		AddXpVar(S:VarTableEntry*, I:Strref*)
-		"""
-		raise Exception("Not implemented function: AddXpVar!")
 		return
 	
 	@dump_args
@@ -1942,22 +1958,6 @@
 		StartCutSceneMode()
 		"""
 		raise Exception("Not implemented function: StartCutSceneMode!")
-		return
-	
-	@dump_args
-	def StartCutscene(self, cutscene):
-		"""
-		StartCutscene(S:CutScene*)
-		"""
-		raise Exception("Not implemented function: StartCutscene!")
-		return
-	
-	@dump_args
-	def StartCutsceneMode(self):
-		"""
-		StartCutsceneMode()
-		"""
-		raise Exception("Not implemented function: StartCutsceneMode!")
 		return
 	
 	@dump_args

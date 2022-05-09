@@ -11,6 +11,12 @@
             },
             "values": [
                 {
+                    "src": "\"40OswaldRequest\"",
+                    "used_count": 1365,
+                    "value": "\"'40OswaldRequest'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
                     "src": "\"WerewolfReturnSpot\"",
                     "used_count": 144,
                     "value": "\"'WerewolfReturnSpot'\"",
@@ -111,16 +117,16 @@
             },
             "values": [
                 {
+                    "src": "\"GLOBAL\"",
+                    "used_count": 1415,
+                    "value": "\"'GLOBAL'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
                     "src": "\"MYAREA\"",
                     "used_count": 256,
                     "value": "\"'MYAREA'\"",
                     "first_occurence": "AR4000.40BDCULT.01_Cult_01"
-                },
-                {
-                    "src": "\"GLOBAL\"",
-                    "used_count": 50,
-                    "value": "\"'GLOBAL'\"",
-                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
                 },
                 {
                     "src": "\"LOCALS\"",
@@ -140,75 +146,81 @@
             "values": [
                 {
                     "src": "1",
-                    "used_count": 27,
+                    "used_count": 132,
                     "value": "1",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                    "first_occurence": "AR1100.11OSWALD.None"
                 },
                 {
                     "src": "2",
-                    "used_count": 24,
+                    "used_count": 129,
                     "value": "2",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                    "first_occurence": "AR1100.11OSWALD.None"
                 },
                 {
                     "src": "4",
-                    "used_count": 37,
+                    "used_count": 142,
                     "value": "4",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                    "first_occurence": "AR1100.11OSWALD.None"
                 },
                 {
                     "src": "8",
-                    "used_count": 34,
+                    "used_count": 139,
                     "value": "8",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
-                },
-                {
-                    "src": "16",
-                    "used_count": 39,
-                    "value": "16",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
-                },
-                {
-                    "src": "32",
-                    "used_count": 33,
-                    "value": "32",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
-                },
-                {
-                    "src": "64",
-                    "used_count": 35,
-                    "value": "64",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
-                },
-                {
-                    "src": "128",
-                    "used_count": 22,
-                    "value": "128",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                    "first_occurence": "AR1100.11OSWALD.None"
                 },
                 {
                     "src": "256",
-                    "used_count": 25,
+                    "used_count": 130,
                     "value": "256",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "16",
+                    "used_count": 144,
+                    "value": "16",
+                    "first_occurence": "AR1100.11OSWALD.None"
                 },
                 {
                     "src": "512",
-                    "used_count": 12,
+                    "used_count": 117,
                     "value": "512",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "32",
+                    "used_count": 138,
+                    "value": "32",
+                    "first_occurence": "AR1100.11OSWALD.None"
                 },
                 {
                     "src": "1024",
-                    "used_count": 12,
+                    "used_count": 117,
                     "value": "1024",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "64",
+                    "used_count": 140,
+                    "value": "64",
+                    "first_occurence": "AR1100.11OSWALD.None"
                 },
                 {
                     "src": "2048",
-                    "used_count": 12,
+                    "used_count": 117,
                     "value": "2048",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "128",
+                    "used_count": 127,
+                    "value": "128",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "4096",
+                    "used_count": 105,
+                    "value": "4096",
+                    "first_occurence": "AR1100.11OSWALD.None"
                 }
             ]
         },
@@ -222,9 +234,9 @@
             "values": [
                 {
                     "src": "AND",
-                    "used_count": 312,
+                    "used_count": 1677,
                     "value": "\"AND\"",
-                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                    "first_occurence": "AR1100.11OSWALD.None"
                 }
             ]
         }

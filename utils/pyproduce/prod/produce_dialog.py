@@ -409,6 +409,13 @@ class ProduceNPCDialog:
         phrases, responses, triggersPhrase, triggersResponse = dialog.get("Phrases"), dialog.get("Responses"), dialog.get("TriggersPhrase"), dialog.get("TriggersResponse")
         for trigger in triggersPhrase:
             trigger_lines = produce_scripts.condition_split(trigger)
+            if cre_name == '10JORUN':
+                if 'Dwarf_Gray' in trigger:
+                    print()
+            out_lines = doc.producerOfScripts.transate_trigger_lines(trigger_lines, are_name=are_name, cre_name=cre_name)
+
+        for trigger in triggersResponse:
+            trigger_lines = produce_scripts.condition_split(trigger)
             out_lines = doc.producerOfScripts.transate_trigger_lines(trigger_lines, are_name=are_name, cre_name=cre_name)
 
         for action in dialog.get("Actions"):

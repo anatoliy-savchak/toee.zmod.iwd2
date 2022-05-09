@@ -11,16 +11,16 @@
             },
             "values": [
                 {
+                    "src": "Protagonist",
+                    "used_count": 91,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
                     "src": "Myself",
                     "used_count": 255,
                     "value": "\"Myself\"",
                     "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
-                },
-                {
-                    "src": "Protagonist",
-                    "used_count": 3,
-                    "value": "\"Protagonist\"",
-                    "first_occurence": "AR5000.50PAIRI.None"
                 },
                 {
                     "src": "LastMarkedObject",
@@ -39,6 +39,48 @@
             },
             "values": [
                 {
+                    "src": "11",
+                    "used_count": 89,
+                    "value": "11",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
+                    "src": "15",
+                    "used_count": 25,
+                    "value": "15",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
+                    "src": "14",
+                    "used_count": 15,
+                    "value": "14",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "12",
+                    "used_count": 8,
+                    "value": "12",
+                    "first_occurence": "AR1000.10JON.None"
+                },
+                {
+                    "src": "9",
+                    "used_count": 16,
+                    "value": "9",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "13",
+                    "used_count": 13,
+                    "value": "13",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "17",
+                    "used_count": 3,
+                    "value": "17",
+                    "first_occurence": "AR1003.10KICKSH.None"
+                },
+                {
                     "src": "3",
                     "used_count": 85,
                     "value": "3",
@@ -51,16 +93,22 @@
                     "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
                 },
                 {
-                    "src": "11",
-                    "used_count": 85,
-                    "value": "11",
-                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                    "src": "8",
+                    "used_count": 1,
+                    "value": "8",
+                    "first_occurence": "AR5000.50PAIRI.None"
                 },
                 {
-                    "src": "15",
-                    "used_count": 3,
-                    "value": "15",
-                    "first_occurence": "AR5000.50PAIRI.None"
+                    "src": "16",
+                    "used_count": 4,
+                    "value": "16",
+                    "first_occurence": "AR5101.51DRAGU.None"
+                },
+                {
+                    "src": "0",
+                    "used_count": 2,
+                    "value": "0",
+                    "first_occurence": "AR5201.52SERSA.None"
                 },
                 {
                     "src": "22",
@@ -85,16 +133,52 @@
             },
             "values": [
                 {
+                    "src": "CHR",
+                    "used_count": 34,
+                    "value": "\"CHR\"",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
+                    "src": "INT",
+                    "used_count": 36,
+                    "value": "\"INT\"",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "CON",
+                    "used_count": 5,
+                    "value": "\"CON\"",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "STR",
+                    "used_count": 1,
+                    "value": "\"STR\"",
+                    "first_occurence": "AR1003.10KICKSH.None"
+                },
+                {
+                    "src": "WIS",
+                    "used_count": 9,
+                    "value": "\"WIS\"",
+                    "first_occurence": "AR1004.10FIRTH.None"
+                },
+                {
                     "src": "CLASSLEVELSUM",
                     "used_count": 255,
                     "value": "\"CLASSLEVELSUM\"",
                     "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
                 },
                 {
-                    "src": "CHR",
-                    "used_count": 3,
-                    "value": "\"CHR\"",
+                    "src": "CLASSLEVELSORCERER",
+                    "used_count": 1,
+                    "value": "\"CLASSLEVELSORCERER\"",
                     "first_occurence": "AR5000.50PAIRI.None"
+                },
+                {
+                    "src": "CLASSLEVELMONK",
+                    "used_count": 5,
+                    "value": "\"CLASSLEVELMONK\"",
+                    "first_occurence": "AR5201.52SERSA.None"
                 },
                 {
                     "src": "RESISTMAGIC",

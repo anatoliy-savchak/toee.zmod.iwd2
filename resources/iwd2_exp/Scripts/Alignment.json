@@ -11,6 +11,12 @@
             },
             "values": [
                 {
+                    "src": "Protagonist",
+                    "used_count": 74,
+                    "value": "\"Protagonist\"",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
                     "src": "LastMarkedObject",
                     "used_count": 3,
                     "value": "\"LastMarkedObject\"",
@@ -27,10 +33,64 @@
             },
             "values": [
                 {
-                    "src": "MASK_EVIL",
+                    "src": "3",
+                    "used_count": 45,
+                    "value": "3",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "1",
+                    "used_count": 7,
+                    "value": "1",
+                    "first_occurence": "AR1000.10REIG.None"
+                },
+                {
+                    "src": "MASK_CHAOTIC",
                     "used_count": 3,
+                    "value": "\"MASK_CHAOTIC\"",
+                    "first_occurence": "AR1200.12TABARD.None"
+                },
+                {
+                    "src": "MASK_EVIL",
+                    "used_count": 11,
                     "value": "\"MASK_EVIL\"",
                     "first_occurence": "AR4000.40ODEA.Odea"
+                },
+                {
+                    "src": "Mask_Lawful",
+                    "used_count": 1,
+                    "value": "\"Mask_Lawful\"",
+                    "first_occurence": "AR5000.50THVARA.None"
+                },
+                {
+                    "src": "LAWFUL_GOOD",
+                    "used_count": 4,
+                    "value": "\"LAWFUL_GOOD\"",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "Mask_Good",
+                    "used_count": 3,
+                    "value": "\"Mask_Good\"",
+                    "first_occurence": "AR5000.50VENLA.None"
+                },
+                {
+                    "src": "Lawful_Neutral",
+                    "used_count": 1,
+                    "value": "\"Lawful_Neutral\"",
+                    "first_occurence": "AR5203.52GOLIR.None"
+                },
+                {
+                    "src": "Neutral_Good",
+                    "used_count": 1,
+                    "value": "\"Neutral_Good\"",
+                    "first_occurence": "AR5203.52GOLIR.None"
+                },
+                {
+                    "src": "Neutral",
+                    "used_count": 1,
+                    "value": "\"Neutral\"",
+                    "first_occurence": "AR5203.52GOLIR.None"
                 }
             ]
         }

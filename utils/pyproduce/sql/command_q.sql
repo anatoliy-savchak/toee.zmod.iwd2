@@ -23,5 +23,5 @@
 )
 select * from s
 --select distinct s.src from s
-where s.FileName in ('CheckSkillGT')
+where s.FileName in ('Subrace')
 	--and s.def_arg_line = 'I:Race*Race'

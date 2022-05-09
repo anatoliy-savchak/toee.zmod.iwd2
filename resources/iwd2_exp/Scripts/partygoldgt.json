@@ -1,0 +1,70 @@
+{
+    "func_name": "PartyGoldGT",
+    "kind": "trigger",
+    "args": [
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Amount",
+                "arg_ids": "",
+                "arg_line": "I:Amount*"
+            },
+            "values": [
+                {
+                    "src": "29",
+                    "used_count": 5,
+                    "value": "29",
+                    "first_occurence": "AR1003.10GOHAR.None"
+                },
+                {
+                    "src": "2",
+                    "used_count": 6,
+                    "value": "2",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "4",
+                    "used_count": 9,
+                    "value": "4",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "599",
+                    "used_count": 100,
+                    "value": "599",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "1199",
+                    "used_count": 100,
+                    "value": "1199",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "1799",
+                    "used_count": 100,
+                    "value": "1799",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "999",
+                    "used_count": 500,
+                    "value": "999",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "699",
+                    "used_count": 500,
+                    "value": "699",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "49",
+                    "used_count": 2,
+                    "value": "49",
+                    "first_occurence": "AR1102.11DEIRD.None"
+                }
+            ]
+        }
+    ]
+}

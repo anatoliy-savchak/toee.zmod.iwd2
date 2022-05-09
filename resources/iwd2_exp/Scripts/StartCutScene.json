@@ -1,5 +1,5 @@
 {
-    "func_name": "StartCutscene",
+    "func_name": "StartCutScene",
     "kind": "action",
     "args": [
         {
@@ -11,16 +11,622 @@
             },
             "values": [
                 {
+                    "src": "\"10cHedr0\"",
+                    "used_count": 1,
+                    "value": "\"'10cHedr0'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"10cBarf1\"",
+                    "used_count": 1,
+                    "value": "\"'10cBarf1'\"",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "\"10cBarf2\"",
+                    "used_count": 2,
+                    "value": "\"'10cBarf2'\"",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "\"O_4001a\"",
+                    "used_count": 5,
+                    "value": "\"'O_4001a'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
                     "src": "\"53cKulda\"",
                     "used_count": 5,
                     "value": "\"'53cKulda'\"",
                     "first_occurence": "AR1100.11OSWALD.None"
                 },
                 {
+                    "src": "\"60c6000a\"",
+                    "used_count": 40,
+                    "value": "\"'60c6000a'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"ST_1000a\"",
+                    "used_count": 9,
+                    "value": "\"'ST_1000a'\"",
+                    "first_occurence": "AR1200.12SWIFT.None"
+                },
+                {
+                    "src": "\"ST_1100a\"",
+                    "used_count": 9,
+                    "value": "\"'ST_1100a'\"",
+                    "first_occurence": "AR1200.12SWIFT.None"
+                },
+                {
+                    "src": "\"ST_1200a\"",
+                    "used_count": 9,
+                    "value": "\"'ST_1200a'\"",
+                    "first_occurence": "AR1200.12SWIFT.None"
+                },
+                {
+                    "src": "\"ST_1200b\"",
+                    "used_count": 9,
+                    "value": "\"'ST_1200b'\"",
+                    "first_occurence": "AR1200.12SWIFT.None"
+                },
+                {
+                    "src": "\"12cWar2\"",
+                    "used_count": 2,
+                    "value": "\"'12cWar2'\"",
+                    "first_occurence": "AR1201.12SHAWFO.None"
+                },
+                {
+                    "src": "\"12cWar0\"",
+                    "used_count": 2,
+                    "value": "\"'12cWar0'\"",
+                    "first_occurence": "AR1201.12SHAWFO.None"
+                },
+                {
+                    "src": "\"30cDrum2\"",
+                    "used_count": 1,
+                    "value": "\"'30cDrum2'\"",
+                    "first_occurence": "AR3000.30GOBSH1.07_GobRu"
+                },
+                {
+                    "src": "\"30cDrum3\"",
+                    "used_count": 1,
+                    "value": "\"'30cDrum3'\"",
+                    "first_occurence": "AR3000.30ORCWD.15_OrcRu"
+                },
+                {
+                    "src": "\"30cDrum1\"",
+                    "used_count": 1,
+                    "value": "\"'30cDrum1'\"",
+                    "first_occurence": "AR3000.30ORCSH1.02_OrcRu"
+                },
+                {
+                    "src": "\"30cDrum4\"",
+                    "used_count": 1,
+                    "value": "\"'30cDrum4'\"",
+                    "first_occurence": "AR3001.30HOBDGU.09_HobDGu"
+                },
+                {
+                    "src": "\"30cDrum5\"",
+                    "used_count": 1,
+                    "value": "\"'30cDrum5'\"",
+                    "first_occurence": "AR3002.30ORCRU2.02_OrcRu"
+                },
+                {
+                    "src": "\"30cDrum6\"",
+                    "used_count": 1,
+                    "value": "\"'30cDrum6'\"",
+                    "first_occurence": "AR3002.30ORCRU.08_OrcRu"
+                },
+                {
+                    "src": "\"41cMOLo0\"",
+                    "used_count": 1,
+                    "value": "\"'41cMOLo0'\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "\"41cNateW\"",
+                    "used_count": 1,
+                    "value": "\"'41cNateW'\"",
+                    "first_occurence": "AR4100.41NATE.Nathaniel"
+                },
+                {
+                    "src": "\"41cFavor\"",
+                    "used_count": 1,
+                    "value": "\"'41cFavor'\"",
+                    "first_occurence": "AR4103.None.None"
+                },
+                {
+                    "src": "\"50cTwin0\"",
+                    "used_count": 1,
+                    "value": "\"'50cTwin0'\"",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "\"50cLimh0\"",
+                    "used_count": 1,
+                    "value": "\"'50cLimh0'\"",
+                    "first_occurence": "AR5002.50LIMHA.01_50Limha_01"
+                },
+                {
+                    "src": "\"50cHann0\"",
+                    "used_count": 3,
+                    "value": "\"'50cHann0'\"",
+                    "first_occurence": "AR5002.50LIMHA.None"
+                },
+                {
+                    "src": "\"50cDTDed\"",
+                    "used_count": 1,
+                    "value": "\"'50cDTDed'\"",
+                    "first_occurence": "AR5015.None.None"
+                },
+                {
+                    "src": "\"00OJDiv1\"",
+                    "used_count": 3,
+                    "value": "\"'00OJDiv1'\"",
+                    "first_occurence": "AR5101.51OCH.09_51OCH_01"
+                },
+                {
+                    "src": "\"52cBaru1\"",
+                    "used_count": 3,
+                    "value": "\"'52cBaru1'\"",
+                    "first_occurence": "AR5101.51BARUD.None"
+                },
+                {
+                    "src": "\"51cHDlg\"",
+                    "used_count": 19,
+                    "value": "\"'51cHDlg'\"",
+                    "first_occurence": "AR5102.51HARSHO.01_51Harsho_01"
+                },
+                {
                     "src": "\"PC_5200a\"",
                     "used_count": 1,
                     "value": "\"'PC_5200a'\"",
                     "first_occurence": "AR5201.52ARUMA.None"
+                },
+                {
+                    "src": "\"52cC1r\"",
+                    "used_count": 6,
+                    "value": "\"'52cC1r'\"",
+                    "first_occurence": "AR5202.52MOROHE.01_52Morohe_01"
+                },
+                {
+                    "src": "\"52cC1P1\"",
+                    "used_count": 1,
+                    "value": "\"'52cC1P1'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC1P2\"",
+                    "used_count": 1,
+                    "value": "\"'52cC1P2'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC1P3\"",
+                    "used_count": 1,
+                    "value": "\"'52cC1P3'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC1P4\"",
+                    "used_count": 1,
+                    "value": "\"'52cC1P4'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC1P5\"",
+                    "used_count": 1,
+                    "value": "\"'52cC1P5'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC1P6\"",
+                    "used_count": 1,
+                    "value": "\"'52cC1P6'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC2P1\"",
+                    "used_count": 1,
+                    "value": "\"'52cC2P1'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC2P2\"",
+                    "used_count": 1,
+                    "value": "\"'52cC2P2'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC2P3\"",
+                    "used_count": 1,
+                    "value": "\"'52cC2P3'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC2P4\"",
+                    "used_count": 1,
+                    "value": "\"'52cC2P4'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC2P5\"",
+                    "used_count": 1,
+                    "value": "\"'52cC2P5'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC2P6\"",
+                    "used_count": 1,
+                    "value": "\"'52cC2P6'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC3P1\"",
+                    "used_count": 1,
+                    "value": "\"'52cC3P1'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC3P2\"",
+                    "used_count": 1,
+                    "value": "\"'52cC3P2'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC3P3\"",
+                    "used_count": 1,
+                    "value": "\"'52cC3P3'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC3P4\"",
+                    "used_count": 1,
+                    "value": "\"'52cC3P4'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC3P5\"",
+                    "used_count": 1,
+                    "value": "\"'52cC3P5'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC3P6\"",
+                    "used_count": 1,
+                    "value": "\"'52cC3P6'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC4P1\"",
+                    "used_count": 1,
+                    "value": "\"'52cC4P1'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC4P2\"",
+                    "used_count": 1,
+                    "value": "\"'52cC4P2'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC4P3\"",
+                    "used_count": 1,
+                    "value": "\"'52cC4P3'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC4P4\"",
+                    "used_count": 1,
+                    "value": "\"'52cC4P4'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC4P5\"",
+                    "used_count": 1,
+                    "value": "\"'52cC4P5'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC4P6\"",
+                    "used_count": 1,
+                    "value": "\"'52cC4P6'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC5P1\"",
+                    "used_count": 1,
+                    "value": "\"'52cC5P1'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC5P2\"",
+                    "used_count": 1,
+                    "value": "\"'52cC5P2'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC5P3\"",
+                    "used_count": 1,
+                    "value": "\"'52cC5P3'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC5P4\"",
+                    "used_count": 1,
+                    "value": "\"'52cC5P4'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC5P5\"",
+                    "used_count": 1,
+                    "value": "\"'52cC5P5'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC5P6\"",
+                    "used_count": 1,
+                    "value": "\"'52cC5P6'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC6P1\"",
+                    "used_count": 1,
+                    "value": "\"'52cC6P1'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC6P2\"",
+                    "used_count": 1,
+                    "value": "\"'52cC6P2'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC6P3\"",
+                    "used_count": 1,
+                    "value": "\"'52cC6P3'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC6P4\"",
+                    "used_count": 1,
+                    "value": "\"'52cC6P4'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC6P5\"",
+                    "used_count": 1,
+                    "value": "\"'52cC6P5'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC6P6\"",
+                    "used_count": 1,
+                    "value": "\"'52cC6P6'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC7P1\"",
+                    "used_count": 1,
+                    "value": "\"'52cC7P1'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC7P2\"",
+                    "used_count": 1,
+                    "value": "\"'52cC7P2'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC7P3\"",
+                    "used_count": 1,
+                    "value": "\"'52cC7P3'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC7P4\"",
+                    "used_count": 1,
+                    "value": "\"'52cC7P4'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC7P5\"",
+                    "used_count": 1,
+                    "value": "\"'52cC7P5'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC7P6\"",
+                    "used_count": 1,
+                    "value": "\"'52cC7P6'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC8P1\"",
+                    "used_count": 1,
+                    "value": "\"'52cC8P1'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC8P2\"",
+                    "used_count": 1,
+                    "value": "\"'52cC8P2'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC8P3\"",
+                    "used_count": 1,
+                    "value": "\"'52cC8P3'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC8P4\"",
+                    "used_count": 1,
+                    "value": "\"'52cC8P4'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC8P5\"",
+                    "used_count": 1,
+                    "value": "\"'52cC8P5'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cC8P6\"",
+                    "used_count": 1,
+                    "value": "\"'52cC8P6'\"",
+                    "first_occurence": "AR5202.52MOROHE.None"
+                },
+                {
+                    "src": "\"52cBaru0\"",
+                    "used_count": 1,
+                    "value": "\"'52cBaru0'\"",
+                    "first_occurence": "AR5203.52DUELE.None"
+                },
+                {
+                    "src": "\"53cNadal\"",
+                    "used_count": 2,
+                    "value": "\"'53cNadal'\"",
+                    "first_occurence": "AR5300.53SORN.Sorn"
+                },
+                {
+                    "src": "\"60cSGrd0\"",
+                    "used_count": 1,
+                    "value": "\"'60cSGrd0'\"",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "\"60cDuelV\"",
+                    "used_count": 1,
+                    "value": "\"'60cDuelV'\"",
+                    "first_occurence": "AR6051.60ASHRA.None"
+                },
+                {
+                    "src": "\"60cDuelC\"",
+                    "used_count": 1,
+                    "value": "\"'60cDuelC'\"",
+                    "first_occurence": "AR6051.60INHATR.None"
+                },
+                {
+                    "src": "\"61cPyMur\"",
+                    "used_count": 1,
+                    "value": "\"'61cPyMur'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"61cEfSum\"",
+                    "used_count": 4,
+                    "value": "\"'61cEfSum'\"",
+                    "first_occurence": "AR6104.61LOTHAR.Lothar4"
+                },
+                {
+                    "src": "\"61cIzSpe\"",
+                    "used_count": 3,
+                    "value": "\"'61cIzSpe'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "\"61cVeSui\"",
+                    "used_count": 1,
+                    "value": "\"'61cVeSui'\"",
+                    "first_occurence": "AR6104.61VENOMI.None"
+                },
+                {
+                    "src": "\"61cVSui2\"",
+                    "used_count": 1,
+                    "value": "\"'61cVSui2'\"",
+                    "first_occurence": "AR6104.61VENOMI.None"
+                },
+                {
+                    "src": "\"61cEmDes\"",
+                    "used_count": 1,
+                    "value": "\"'61cEmDes'\"",
+                    "first_occurence": "AR6104.61JASPER.None"
+                },
+                {
+                    "src": "\"61cIzDea\"",
+                    "used_count": 1,
+                    "value": "\"'61cIzDea'\"",
+                    "first_occurence": "AR6104.61FIRPEO.None"
+                },
+                {
+                    "src": "\"61cVeSol\"",
+                    "used_count": 1,
+                    "value": "\"'61cVeSol'\"",
+                    "first_occurence": "AR6104.61LOTHAR.None"
+                },
+                {
+                    "src": "\"62cPuuk\"",
+                    "used_count": 1,
+                    "value": "\"'62cPuuk'\"",
+                    "first_occurence": "AR6200.62PUUK.None"
+                },
+                {
+                    "src": "\"62cTsol\"",
+                    "used_count": 3,
+                    "value": "\"'62cTsol'\"",
+                    "first_occurence": "AR6200.62TSOL.None"
+                },
+                {
+                    "src": "\"62cSabtl\"",
+                    "used_count": 14,
+                    "value": "\"'62cSabtl'\"",
+                    "first_occurence": "AR6200.62SAABL1.None"
+                },
+                {
+                    "src": "\"62cHlyWr\"",
+                    "used_count": 1,
+                    "value": "\"'62cHlyWr'\"",
+                    "first_occurence": "AR6200.62MDARF.None"
+                },
+                {
+                    "src": "\"62cHlyW1\"",
+                    "used_count": 4,
+                    "value": "\"'62cHlyW1'\"",
+                    "first_occurence": "AR6200.62MDARF.None"
+                },
+                {
+                    "src": "\"63cGMeet\"",
+                    "used_count": 16,
+                    "value": "\"'63cGMeet'\"",
+                    "first_occurence": "AR6301.63GRDLW1.Guard01"
+                },
+                {
+                    "src": "\"63cAnatL\"",
+                    "used_count": 1,
+                    "value": "\"'63cAnatL'\"",
+                    "first_occurence": "AR6304.63INSTRC.AL_Instructor"
+                },
+                {
+                    "src": "\"63cFB05\"",
+                    "used_count": 1,
+                    "value": "\"'63cFB05'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"63cFB01\"",
+                    "used_count": 1,
+                    "value": "\"'63cFB01'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"63cFB03\"",
+                    "used_count": 1,
+                    "value": "\"'63cFB03'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"63cFB04\"",
+                    "used_count": 1,
+                    "value": "\"'63cFB04'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"67cPuddy \"",
+                    "used_count": 1,
+                    "value": "\"'67cPuddy '\"",
+                    "first_occurence": "AR6700.67PUDDY.None"
                 }
             ]
         }

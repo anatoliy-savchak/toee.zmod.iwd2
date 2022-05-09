@@ -1,5 +1,5 @@
 {
-    "func_name": "AddXpVar",
+    "func_name": "AddXPVar",
     "kind": "action",
     "args": [
         {
@@ -10,6 +10,12 @@
                 "arg_line": "S:VarTableEntry*"
             },
             "values": [
+                {
+                    "src": "\"Level_2_Very_Hard\"",
+                    "used_count": 6,
+                    "value": "\"'Level_2_Very_Hard'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
                 {
                     "src": "\"Level_1_Easy\"",
                     "used_count": 47,
@@ -36,7 +42,7 @@
                 },
                 {
                     "src": "\"Level_7_Average\"",
-                    "used_count": 5,
+                    "used_count": 8,
                     "value": "\"'Level_7_Average'\"",
                     "first_occurence": "AR1100.11OSWALD.None"
                 },
@@ -83,20 +89,44 @@
                     "first_occurence": "AR1107.11KOLUHM.None"
                 },
                 {
+                    "src": "\"Level_5_Very_Hard\"",
+                    "used_count": 1,
+                    "value": "\"'Level_5_Very_Hard'\"",
+                    "first_occurence": "AR3002.None.None"
+                },
+                {
+                    "src": "\"Level_5_Hard\"",
+                    "used_count": 1,
+                    "value": "\"'Level_5_Hard'\"",
+                    "first_occurence": "AR3002.None.None"
+                },
+                {
+                    "src": "\"Level_5_Average\"",
+                    "used_count": 1,
+                    "value": "\"'Level_5_Average'\"",
+                    "first_occurence": "AR3002.None.None"
+                },
+                {
+                    "src": "\"Level_5_Easy\"",
+                    "used_count": 1,
+                    "value": "\"'Level_5_Easy'\"",
+                    "first_occurence": "AR3002.None.None"
+                },
+                {
                     "src": "\"Level_8_Hard\"",
-                    "used_count": 9,
+                    "used_count": 10,
                     "value": "\"'Level_8_Hard'\"",
-                    "first_occurence": "AR4100.41ZACK.None"
+                    "first_occurence": "AR4100.None.None"
                 },
                 {
                     "src": "\"Level_8_Very_Hard\"",
-                    "used_count": 3,
+                    "used_count": 4,
                     "value": "\"'Level_8_Very_Hard'\"",
-                    "first_occurence": "AR4100.41ZACK.None"
+                    "first_occurence": "AR4100.None.None"
                 },
                 {
                     "src": "\"Level_8_Easy\"",
-                    "used_count": 2,
+                    "used_count": 7,
                     "value": "\"'Level_8_Easy'\"",
                     "first_occurence": "AR4100.41ZACK.None"
                 },
@@ -107,6 +137,12 @@
                     "first_occurence": "AR4100.41ZACK.None"
                 },
                 {
+                    "src": "\"Level_15_Very_Hard\"",
+                    "used_count": 60,
+                    "value": "\"'Level_15_Very_Hard'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
                     "src": "\"Level_Nine_Easy\"",
                     "used_count": 4,
                     "value": "\"'Level_Nine_Easy'\"",
@@ -114,19 +150,19 @@
                 },
                 {
                     "src": "\"Level_9_Easy\"",
-                    "used_count": 19,
+                    "used_count": 20,
                     "value": "\"'Level_9_Easy'\"",
                     "first_occurence": "AR5000.50SUOMA.None"
                 },
                 {
                     "src": "\"Level_9_Hard\"",
-                    "used_count": 2,
+                    "used_count": 3,
                     "value": "\"'Level_9_Hard'\"",
                     "first_occurence": "AR5000.50SUOMA.None"
                 },
                 {
                     "src": "\"Level_9_Average\"",
-                    "used_count": 13,
+                    "used_count": 14,
                     "value": "\"'Level_9_Average'\"",
                     "first_occurence": "AR5000.50VENLA.None"
                 },
@@ -138,7 +174,7 @@
                 },
                 {
                     "src": "\"Level_10_Average\"",
-                    "used_count": 4,
+                    "used_count": 10,
                     "value": "\"'Level_10_Average'\"",
                     "first_occurence": "AR5101.51BARUD.None"
                 },
@@ -156,9 +192,15 @@
                 },
                 {
                     "src": "\"Level_12_Easy\"",
-                    "used_count": 8,
+                    "used_count": 9,
                     "value": "\"'Level_12_Easy'\"",
-                    "first_occurence": "AR6051.60VIFANG.None"
+                    "first_occurence": "AR6010.60GERBAS.Gerbash"
+                },
+                {
+                    "src": "\"LEVEL_12_AVERAGE\"",
+                    "used_count": 2,
+                    "value": "\"'LEVEL_12_AVERAGE'\"",
+                    "first_occurence": "AR6050.None.None"
                 },
                 {
                     "src": "\"Level_13_Hard\"",
@@ -206,6 +248,12 @@
                 "arg_line": "I:Strref*"
             },
             "values": [
+                {
+                    "src": "26671",
+                    "used_count": 6,
+                    "value": "26671",
+                    "first_occurence": "AR1000.None.None"
+                },
                 {
                     "src": "2578",
                     "used_count": 4,
@@ -489,6 +537,42 @@
                     "first_occurence": "AR1201.12SHAWFO.None"
                 },
                 {
+                    "src": "30742",
+                    "used_count": 1,
+                    "value": "30742",
+                    "first_occurence": "AR3002.None.None"
+                },
+                {
+                    "src": "30743",
+                    "used_count": 1,
+                    "value": "30743",
+                    "first_occurence": "AR3002.None.None"
+                },
+                {
+                    "src": "30744",
+                    "used_count": 1,
+                    "value": "30744",
+                    "first_occurence": "AR3002.None.None"
+                },
+                {
+                    "src": "30745",
+                    "used_count": 1,
+                    "value": "30745",
+                    "first_occurence": "AR3002.None.None"
+                },
+                {
+                    "src": "18866",
+                    "used_count": 3,
+                    "value": "18866",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "22973",
+                    "used_count": 2,
+                    "value": "22973",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
                     "src": "32202",
                     "used_count": 4,
                     "value": "32202",
@@ -523,6 +607,18 @@
                     "used_count": 1,
                     "value": "32231",
                     "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "23491",
+                    "used_count": 5,
+                    "value": "23491",
+                    "first_occurence": "AR4101.None.None"
+                },
+                {
+                    "src": "-1",
+                    "used_count": 60,
+                    "value": "-1",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
                 },
                 {
                     "src": "5667",
@@ -591,6 +687,12 @@
                     "first_occurence": "AR5010.50HGHOST.None"
                 },
                 {
+                    "src": "39279",
+                    "used_count": 3,
+                    "value": "39279",
+                    "first_occurence": "AR5011.None.None"
+                },
+                {
                     "src": "9221",
                     "used_count": 4,
                     "value": "9221",
@@ -643,6 +745,30 @@
                     "used_count": 2,
                     "value": "10749",
                     "first_occurence": "AR5201.52ARUMA.None"
+                },
+                {
+                    "src": "34470",
+                    "used_count": 6,
+                    "value": "34470",
+                    "first_occurence": "AR5202.52MOROHE.01_52Morohe_01"
+                },
+                {
+                    "src": "38785",
+                    "used_count": 1,
+                    "value": "38785",
+                    "first_occurence": "AR6010.60GERBAS.Gerbash"
+                },
+                {
+                    "src": "33398",
+                    "used_count": 1,
+                    "value": "33398",
+                    "first_occurence": "AR6050.None.None"
+                },
+                {
+                    "src": "33397",
+                    "used_count": 1,
+                    "value": "33397",
+                    "first_occurence": "AR6050.None.None"
                 },
                 {
                     "src": "31316",

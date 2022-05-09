@@ -1,0 +1,38 @@
+{
+    "func_name": "NumItemsPartyGT",
+    "kind": "trigger",
+    "args": [
+        {
+            "def": {
+                "arg_type": "S",
+                "arg_name": "ResRef",
+                "arg_ids": "",
+                "arg_line": "S:ResRef*"
+            },
+            "values": [
+                {
+                    "src": "\"00Arow01\"",
+                    "used_count": 3,
+                    "value": "\"'00Arow01'\"",
+                    "first_occurence": "AR1200.12ISHER.None"
+                }
+            ]
+        },
+        {
+            "def": {
+                "arg_type": "I",
+                "arg_name": "Num",
+                "arg_ids": "",
+                "arg_line": "I:Num*"
+            },
+            "values": [
+                {
+                    "src": "299",
+                    "used_count": 3,
+                    "value": "299",
+                    "first_occurence": "AR1200.12ISHER.None"
+                }
+            ]
+        }
+    ]
+}

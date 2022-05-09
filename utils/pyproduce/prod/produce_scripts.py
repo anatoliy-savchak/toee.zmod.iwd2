@@ -40,6 +40,10 @@ class ProducerOfScripts(producer_base.Producer):
         self.current_are_name = are_name
         self.current_cre_name = cre_name
         self.current_actor_name = actor_name
+        if actor_name == 'Jorun':
+            print('J')
+            if next((line for line in trigger_lines if 'Dwarf_Gray' in line), None):
+                print('Dwarf_Gray')
 
         trigger_lines2 = list()
         for i, action_line in enumerate(trigger_lines):
@@ -95,6 +99,12 @@ class ProducerOfScripts(producer_base.Producer):
     def transate_action_lines(self, action_lines: list, are_name: str = None, cre_name: str = None):
         self.current_are_name = are_name
         self.current_cre_name = cre_name
+
+        if cre_name == '10JORUN':
+            print('J')
+            if next((line for line in action_lines if 'Dwarf_Gray' in line), None):
+                print('Dwarf_Gray')
+
         lines = list()
         action_lines2 = list()
         for i, action_line in enumerate(action_lines):
@@ -142,7 +152,7 @@ class ProducerOfScripts(producer_base.Producer):
                     }
                     self.index_file["statistics"]["funcs_log"].append(log_rec)
 
-            usage_rec = self.index_file["statistics"]["funcs"].get(func_name)
+            usage_rec = self.index_file["statistics"]["funcs"].get(func_name.lower())
             if usage_rec is None:
                 usage_rec = {"func_name": func_name, "kind": func_info["kind"], "args": list()}
 
@@ -169,7 +179,7 @@ class ProducerOfScripts(producer_base.Producer):
                     if self.log_usage:
                         value_rec["used_count"] += 1
 
-            self.index_file["statistics"]["funcs"][func_name] = usage_rec
+            self.index_file["statistics"]["funcs"][func_name.lower()] = usage_rec
 
         if self.log_strrefs and self.doc.producerOfFloats:
             func_name_lo = func_name.lower()
@@ -291,11 +301,13 @@ class ScriptTran:
 
     @staticmethod
     def translate_script_line(aline: str, producer):
+        if aline == 'SubRace(LastSeenBy(Myself),PURERACE)':
+            print()
         result = None
         prefix = ""
         if aline and aline[0] == "!":
             prefix = "not "
-            aline = aline.removeprefix("!")
+            aline = aline.removeprefix("!").strip()
 
         while True:
             lline = aline.lower()
@@ -306,6 +318,7 @@ class ScriptTran:
                 result = whole_class(aline, producer).do_translate_script_line(aline)
                 break
 
+            aline = aline.replace('#', '"')
             func_name, args = ScriptTran._parse_func(aline, producer)
             if func_name is None:
                 return None

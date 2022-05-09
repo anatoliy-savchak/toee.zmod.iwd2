@@ -1,5 +1,5 @@
 {
-    "func_name": "GLOBALGT",
+    "func_name": "GlobalGT",
     "kind": "trigger",
     "args": [
         {
@@ -11,10 +11,814 @@
             },
             "values": [
                 {
+                    "src": "\"Palisade_Iron_Collar_Quest\"",
+                    "used_count": 5,
+                    "value": "\"'Palisade_Iron_Collar_Quest'\"",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"Hedron_Know_Attack\"",
+                    "used_count": 1,
+                    "value": "\"'Hedron_Know_Attack'\"",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
+                    "src": "\"Hedron_Quest\"",
+                    "used_count": 12,
+                    "value": "\"'Hedron_Quest'\"",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
+                    "src": "\"Reig_Quest\"",
+                    "used_count": 15,
+                    "value": "\"'Reig_Quest'\"",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
+                    "src": "\"Know_Hedron\"",
+                    "used_count": 1,
+                    "value": "\"'Know_Hedron'\"",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
+                    "src": "\"Iron_Collar_Quest\"",
+                    "used_count": 2,
+                    "value": "\"'Iron_Collar_Quest'\"",
+                    "first_occurence": "AR1000.10BROGAN.None"
+                },
+                {
+                    "src": "\"Dock_Goblin_Quest\"",
+                    "used_count": 23,
+                    "value": "\"'Dock_Goblin_Quest'\"",
+                    "first_occurence": "AR1003.10GOHAR.None"
+                },
+                {
+                    "src": "\"Guthewulfe_Game\"",
+                    "used_count": 1,
+                    "value": "\"'Guthewulfe_Game'\"",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "\"Goblin_Palisade_Quest\"",
+                    "used_count": 56,
+                    "value": "\"'Goblin_Palisade_Quest'\"",
+                    "first_occurence": "AR1003.10GUTHE.None"
+                },
+                {
+                    "src": "\"Phaen_Loses_It\"",
+                    "used_count": 4,
+                    "value": "\"'Phaen_Loses_It'\"",
+                    "first_occurence": "AR1003.10BLACK.None"
+                },
+                {
+                    "src": "\"Know_Firtha\"",
+                    "used_count": 2,
+                    "value": "\"'Know_Firtha'\"",
+                    "first_occurence": "AR1004.10FIRTH.None"
+                },
+                {
+                    "src": "\"Firtha_Bones\"",
+                    "used_count": 2,
+                    "value": "\"'Firtha_Bones'\"",
+                    "first_occurence": "AR1004.10FIRTH.None"
+                },
+                {
+                    "src": "\"Shaengarne_Quest\"",
+                    "used_count": 23,
+                    "value": "\"'Shaengarne_Quest'\"",
+                    "first_occurence": "AR1100.11GHILLE.Ghille-Laider"
+                },
+                {
+                    "src": "\"Fortress_Quest\"",
+                    "used_count": 122,
+                    "value": "\"'Fortress_Quest'\"",
+                    "first_occurence": "AR1100.11GHILLE.Ghille-Laider"
+                },
+                {
+                    "src": "\"Crane_Wheel\"",
+                    "used_count": 3,
+                    "value": "\"'Crane_Wheel'\"",
+                    "first_occurence": "AR1100.11LUMBAR.None"
+                },
+                {
+                    "src": "\"Lumber_Quest_Aborted\"",
+                    "used_count": 1,
+                    "value": "\"'Lumber_Quest_Aborted'\"",
+                    "first_occurence": "AR1100.11LUMBAR.None"
+                },
+                {
+                    "src": "\"53Talked_to_Oswald\"",
+                    "used_count": 5,
+                    "value": "\"'53Talked_to_Oswald'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"60Talked_to_Oswald\"",
+                    "used_count": 10,
+                    "value": "\"'60Talked_to_Oswald'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"Crossroads_Quest\"",
+                    "used_count": 7,
+                    "value": "\"'Crossroads_Quest'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"40YellCount\"",
+                    "used_count": 30,
+                    "value": "\"'40YellCount'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"40MendingSpell\"",
+                    "used_count": 20,
+                    "value": "\"'40MendingSpell'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"40SpellComponents\"",
+                    "used_count": 5,
+                    "value": "\"'40SpellComponents'\"",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "\"Know_Oswald\"",
+                    "used_count": 2,
+                    "value": "\"'Know_Oswald'\"",
+                    "first_occurence": "AR1101.11ULBREC.None"
+                },
+                {
+                    "src": "\"Know_Ennelia\"",
+                    "used_count": 1,
+                    "value": "\"'Know_Ennelia'\"",
+                    "first_occurence": "AR1101.11ULBREC.None"
+                },
+                {
+                    "src": "\"Valin_Quest\"",
+                    "used_count": 10,
+                    "value": "\"'Valin_Quest'\"",
+                    "first_occurence": "AR1101.11ELYTHA.None"
+                },
+                {
+                    "src": "\"Valin_Saved\"",
+                    "used_count": 3,
+                    "value": "\"'Valin_Saved'\"",
+                    "first_occurence": "AR1101.11ELYTHA.None"
+                },
+                {
+                    "src": "\"Know_Veira\"",
+                    "used_count": 4,
+                    "value": "\"'Know_Veira'\"",
+                    "first_occurence": "AR1101.11ELYTHA.None"
+                },
+                {
+                    "src": "\"Know_Veira_Room\"",
+                    "used_count": 6,
+                    "value": "\"'Know_Veira_Room'\"",
+                    "first_occurence": "AR1101.11ELYTHA.None"
+                },
+                {
+                    "src": "\"Expose_Phaen_Quest\"",
+                    "used_count": 2,
+                    "value": "\"'Expose_Phaen_Quest'\"",
+                    "first_occurence": "AR1101.11ELYTHA.None"
+                },
+                {
+                    "src": "\"Garradun_Quest\"",
+                    "used_count": 4,
+                    "value": "\"'Garradun_Quest'\"",
+                    "first_occurence": "AR1101.11ELYTHA.None"
+                },
+                {
+                    "src": "\"Know_Deirdre\"",
+                    "used_count": 7,
+                    "value": "\"'Know_Deirdre'\"",
+                    "first_occurence": "AR1102.11DEIRD.None"
+                },
+                {
+                    "src": "\"Goblins_Attack_Palisade\"",
+                    "used_count": 2,
+                    "value": "\"'Goblins_Attack_Palisade'\"",
+                    "first_occurence": "AR1103.11RAGNIB.None"
+                },
+                {
+                    "src": "\"Know_Deagle\"",
+                    "used_count": 1,
+                    "value": "\"'Know_Deagle'\"",
+                    "first_occurence": "AR1103.11DEAGLE.None"
+                },
+                {
+                    "src": "\"Veira_Quest\"",
+                    "used_count": 2,
+                    "value": "\"'Veira_Quest'\"",
+                    "first_occurence": "AR1104.11CAHLHY.None"
+                },
+                {
+                    "src": "\"Know_Bottle_Tears\"",
+                    "used_count": 4,
+                    "value": "\"'Know_Bottle_Tears'\"",
+                    "first_occurence": "AR1104.11CAHLHY.None"
+                },
+                {
+                    "src": "\"SCROLL_11SCRLPS_STATE\"",
+                    "used_count": 1,
+                    "value": "\"'SCROLL_11SCRLPS_STATE'\"",
+                    "first_occurence": "AR1106.11PHAEN.Phaen_of_the_Rags"
+                },
+                {
+                    "src": "\"Know_Phaen\"",
+                    "used_count": 5,
+                    "value": "\"'Know_Phaen'\"",
+                    "first_occurence": "AR1107.11KOLUHM.None"
+                },
+                {
+                    "src": "\"Lumber_Quest\"",
+                    "used_count": 15,
+                    "value": "\"'Lumber_Quest'\"",
+                    "first_occurence": "AR1200.12OLAP.Olap_Soothammer"
+                },
+                {
+                    "src": "\"Arrow_Quest\"",
+                    "used_count": 2,
+                    "value": "\"'Arrow_Quest'\"",
+                    "first_occurence": "AR1200.12ISHER.Isherwood"
+                },
+                {
+                    "src": "\"Catapult_Quest\"",
+                    "used_count": 3,
+                    "value": "\"'Catapult_Quest'\"",
+                    "first_occurence": "AR1200.12CAULDE.Caulder"
+                },
+                {
+                    "src": "\"Niles_Quest\"",
+                    "used_count": 5,
+                    "value": "\"'Niles_Quest'\"",
+                    "first_occurence": "AR1200.12NILES.Niles"
+                },
+                {
+                    "src": "\"Stop_Weapon\"",
+                    "used_count": 1,
+                    "value": "\"'Stop_Weapon'\"",
+                    "first_occurence": "AR1200.12WEAPON.None"
+                },
+                {
+                    "src": "\"Gable_Quest\"",
+                    "used_count": 4,
+                    "value": "\"'Gable_Quest'\"",
+                    "first_occurence": "AR1200.12GABLE.None"
+                },
+                {
+                    "src": "\"Know_Anson\"",
+                    "used_count": 1,
+                    "value": "\"'Know_Anson'\"",
+                    "first_occurence": "AR1200.12TARRAN.None"
+                },
+                {
+                    "src": "\"Dead_Goblin_Quest\"",
+                    "used_count": 1,
+                    "value": "\"'Dead_Goblin_Quest'\"",
+                    "first_occurence": "AR1201.12SHAWFO.None"
+                },
+                {
+                    "src": "\"Know_Koluhm\"",
+                    "used_count": 1,
+                    "value": "\"'Know_Koluhm'\"",
+                    "first_occurence": "AR1201.12SHAWFO.None"
+                },
+                {
+                    "src": "\"30BRASTO_ESCAPE\"",
+                    "used_count": 1,
+                    "value": "\"'30BRASTO_ESCAPE'\"",
+                    "first_occurence": "AR3101.31BRASTO.Braston"
+                },
+                {
+                    "src": "\"40BeetleDied\"",
+                    "used_count": 4,
+                    "value": "\"'40BeetleDied'\"",
+                    "first_occurence": "AR4000.None.None"
+                },
+                {
+                    "src": "\"Initialized\"",
+                    "used_count": 12,
+                    "value": "\"'Initialized'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "\"40BeetleSpawnRequests\"",
+                    "used_count": 1,
+                    "value": "\"'40BeetleSpawnRequests'\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "\"40SpiderSpawnRequests\"",
+                    "used_count": 2,
+                    "value": "\"'40SpiderSpawnRequests'\"",
+                    "first_occurence": "AR4001.None.None"
+                },
+                {
+                    "src": "\"40OswaldAwake\"",
+                    "used_count": 1,
+                    "value": "\"'40OswaldAwake'\"",
+                    "first_occurence": "AR4001.40OSWALD.Oswald"
+                },
+                {
+                    "src": "\"41NateDestroySourceQuest\"",
+                    "used_count": 1,
+                    "value": "\"'41NateDestroySourceQuest'\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "\"Remorhaz_Queen_dead\"",
+                    "used_count": 1,
+                    "value": "\"'Remorhaz_Queen_dead'\"",
+                    "first_occurence": "AR4100.None.None"
+                },
+                {
+                    "src": "\"BARB_RAGE\"",
+                    "used_count": 85,
+                    "value": "\"'BARB_RAGE'\"",
+                    "first_occurence": "AR4100.41BARWAR.05_Warrior_01"
+                },
+                {
+                    "src": "\"41PrismFire\"",
+                    "used_count": 94,
+                    "value": "\"'41PrismFire'\"",
+                    "first_occurence": "AR4100.41CLERIF.01_Frosttouch_04"
+                },
+                {
+                    "src": "\"41ZackTempleInfo\"",
+                    "used_count": 3,
+                    "value": "\"'41ZackTempleInfo'\"",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "\"41RescueQuest\"",
+                    "used_count": 1,
+                    "value": "\"'41RescueQuest'\"",
+                    "first_occurence": "AR4100.41ZACK.None"
+                },
+                {
+                    "src": "\"Moving\"",
+                    "used_count": 4,
+                    "value": "\"'Moving'\"",
+                    "first_occurence": "AR4101.41ONDABO.Ondabo"
+                },
+                {
+                    "src": "\"CurrentSacrifice\"",
+                    "used_count": 3,
+                    "value": "\"'CurrentSacrifice'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"Move\"",
+                    "used_count": 6,
+                    "value": "\"'Move'\"",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "\"NathanielTalk\"",
+                    "used_count": 1,
+                    "value": "\"'NathanielTalk'\"",
+                    "first_occurence": "AR4101.41NATE.Nathaniel"
+                },
+                {
+                    "src": "\"BattleSquareLevel\"",
+                    "used_count": 1,
+                    "value": "\"'BattleSquareLevel'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"GiveRankLevelAward\"",
+                    "used_count": 5,
+                    "value": "\"'GiveRankLevelAward'\"",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "\"41NumFiendsKilled\"",
+                    "used_count": 1,
+                    "value": "\"'41NumFiendsKilled'\"",
+                    "first_occurence": "AR4103.None.None"
+                },
+                {
+                    "src": "\"50Suoma_Help\"",
+                    "used_count": 8,
+                    "value": "\"'50Suoma_Help'\"",
+                    "first_occurence": "AR5000.50SUOMA.05_50Suoma_01"
+                },
+                {
+                    "src": "\"50Kyosti\"",
+                    "used_count": 2,
+                    "value": "\"'50Kyosti'\"",
+                    "first_occurence": "AR5000.50CARITA.05_50Carita_05"
+                },
+                {
+                    "src": "\"50Wight_Horn\"",
+                    "used_count": 1,
+                    "value": "\"'50Wight_Horn'\"",
+                    "first_occurence": "AR5000.50WITBA.None"
+                },
+                {
+                    "src": "\"50WITB_Dead\"",
+                    "used_count": 1,
+                    "value": "\"'50WITB_Dead'\"",
+                    "first_occurence": "AR5000.50WITBA.None"
+                },
+                {
+                    "src": "\"50Twins_Attack\"",
+                    "used_count": 6,
+                    "value": "\"'50Twins_Attack'\"",
+                    "first_occurence": "AR5000.50HNT.None"
+                },
+                {
+                    "src": "\"50Suoma\"",
+                    "used_count": 18,
+                    "value": "\"'50Suoma'\"",
+                    "first_occurence": "AR5000.50HNT.None"
+                },
+                {
+                    "src": "\"50Nym\"",
+                    "used_count": 6,
+                    "value": "\"'50Nym'\"",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "\"AR5010_Visited\"",
+                    "used_count": 13,
+                    "value": "\"'AR5010_Visited'\"",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "\"50Venla_Children\"",
+                    "used_count": 8,
+                    "value": "\"'50Venla_Children'\"",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "\"50Tahvo_Wight\"",
+                    "used_count": 8,
+                    "value": "\"'50Tahvo_Wight'\"",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "\"50Kurttu_Ghost\"",
+                    "used_count": 2,
+                    "value": "\"'50Kurttu_Ghost'\"",
+                    "first_occurence": "AR5000.50SUOMA.None"
+                },
+                {
+                    "src": "\"AR5002_Visited\"",
+                    "used_count": 15,
+                    "value": "\"'AR5002_Visited'\"",
+                    "first_occurence": "AR5000.50VENLA.None"
+                },
+                {
+                    "src": "\"50Leevi\"",
+                    "used_count": 7,
+                    "value": "\"'50Leevi'\"",
+                    "first_occurence": "AR5000.50KURTTU.None"
+                },
+                {
+                    "src": "\"50Jari_Gift\"",
+                    "used_count": 1,
+                    "value": "\"'50Jari_Gift'\"",
+                    "first_occurence": "AR5000.50JARI.None"
+                },
+                {
+                    "src": "\"50Hunter_Know\"",
+                    "used_count": 13,
+                    "value": "\"'50Hunter_Know'\"",
+                    "first_occurence": "AR5000.50PAIRI.None"
+                },
+                {
+                    "src": "\"50Sorcery\"",
+                    "used_count": 13,
+                    "value": "\"'50Sorcery'\"",
+                    "first_occurence": "AR5000.50PAIRI.None"
+                },
+                {
+                    "src": "\"50Barbarians_Leave\"",
+                    "used_count": 8,
+                    "value": "\"'50Barbarians_Leave'\"",
+                    "first_occurence": "AR5001.50BARLD.02_50BARLD_01"
+                },
+                {
+                    "src": "\"AR5003_Visited\"",
+                    "used_count": 4,
+                    "value": "\"'AR5003_Visited'\"",
+                    "first_occurence": "AR5002.50LIMHA.None"
+                },
+                {
+                    "src": "\"50WIL_Dead\"",
+                    "used_count": 1,
+                    "value": "\"'50WIL_Dead'\"",
+                    "first_occurence": "AR5010.50HGHOST.None"
+                },
+                {
+                    "src": "\"50DUERGAR_DESTROY\"",
+                    "used_count": 66,
+                    "value": "\"'50DUERGAR_DESTROY'\"",
+                    "first_occurence": "AR5101.51DARGAB.11_51Dargab_01"
+                },
+                {
+                    "src": "\"51Barud_Caves\"",
+                    "used_count": 2,
+                    "value": "\"'51Barud_Caves'\"",
+                    "first_occurence": "AR5101.51ZAMA.None"
+                },
+                {
+                    "src": "\"52Barud_Backstab\"",
+                    "used_count": 1,
+                    "value": "\"'52Barud_Backstab'\"",
+                    "first_occurence": "AR5101.51BARUD.None"
+                },
+                {
+                    "src": "\"51Barud_Offer\"",
+                    "used_count": 3,
+                    "value": "\"'51Barud_Offer'\"",
+                    "first_occurence": "AR5101.51BARUD.None"
+                },
+                {
+                    "src": "\"51Dragu\"",
+                    "used_count": 2,
+                    "value": "\"'51Dragu'\"",
+                    "first_occurence": "AR5101.51DRAGU.None"
+                },
+                {
+                    "src": "\"52EXILE\"",
+                    "used_count": 27,
+                    "value": "\"'52EXILE'\"",
+                    "first_occurence": "AR5201.52SALISA.01_52Salisa_01"
+                },
+                {
+                    "src": "\"52Aruma_Gone\"",
+                    "used_count": 41,
+                    "value": "\"'52Aruma_Gone'\"",
+                    "first_occurence": "AR5201.52SALISA.01_52Salisa_01"
+                },
+                {
+                    "src": "\"52Monks_Leave\"",
+                    "used_count": 3,
+                    "value": "\"'52Monks_Leave'\"",
+                    "first_occurence": "AR5201.52SALISA.None"
+                },
+                {
+                    "src": "\"52Ven_Loot\"",
+                    "used_count": 12,
+                    "value": "\"'52Ven_Loot'\"",
+                    "first_occurence": "AR5201.52SALISA.None"
+                },
+                {
+                    "src": "\"52Salisam_Offer\"",
+                    "used_count": 36,
+                    "value": "\"'52Salisam_Offer'\"",
+                    "first_occurence": "AR5201.52MNKML.None"
+                },
+                {
+                    "src": "\"52Nonin_Ring\"",
+                    "used_count": 6,
+                    "value": "\"'52Nonin_Ring'\"",
+                    "first_occurence": "AR5201.52NONIN.None"
+                },
+                {
+                    "src": "\"52Morohem_Master\"",
+                    "used_count": 5,
+                    "value": "\"'52Morohem_Master'\"",
+                    "first_occurence": "AR5202.52MOROHE.01_52Morohe_01"
+                },
+                {
+                    "src": "\"CHAMBER_1_LEVER\"",
+                    "used_count": 6,
+                    "value": "\"'CHAMBER_1_LEVER'\"",
+                    "first_occurence": "AR5202.52MOROHE.01_52Morohe_01"
+                },
+                {
+                    "src": "\"53SorApp_Dead\"",
+                    "used_count": 1,
+                    "value": "\"'53SorApp_Dead'\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "\"53DespuGu_Dead\"",
+                    "used_count": 1,
+                    "value": "\"'53DespuGu_Dead'\"",
+                    "first_occurence": "AR5300.53MALAVO.Malavon_Despana"
+                },
+                {
+                    "src": "\"Use_Obj_List\"",
+                    "used_count": 2,
+                    "value": "\"'Use_Obj_List'\"",
+                    "first_occurence": "AR5300.53HEGGR.Heggr_Splitsteel"
+                },
+                {
+                    "src": "\"Viciscamera_Quest\"",
+                    "used_count": 9,
+                    "value": "\"'Viciscamera_Quest'\"",
+                    "first_occurence": "AR5300.53BEELTH.Beelthot"
+                },
+                {
+                    "src": "\"Buffed_Brain\"",
+                    "used_count": 1,
+                    "value": "\"'Buffed_Brain'\"",
+                    "first_occurence": "AR5302.53ECKTAR.Ecktarrilsenularr"
+                },
+                {
+                    "src": "\"Ojaiha_Manual_Dialog_Timer\"",
+                    "used_count": 1,
+                    "value": "\"'Ojaiha_Manual_Dialog_Timer'\"",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "\"Buff_Count\"",
+                    "used_count": 1,
+                    "value": "\"'Buff_Count'\"",
+                    "first_occurence": "AR6051.60INHATR.Inhatri"
+                },
+                {
                     "src": "\"60DUEL_CCS\"",
                     "used_count": 1,
                     "value": "\"'60DUEL_CCS'\"",
                     "first_occurence": "AR6051.60ASHRA.None"
+                },
+                {
+                    "src": "\"Level1Spells\"",
+                    "used_count": 108,
+                    "value": "\"'Level1Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"Level4Spells\"",
+                    "used_count": 199,
+                    "value": "\"'Level4Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"Level5Spells\"",
+                    "used_count": 64,
+                    "value": "\"'Level5Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"Level3Spells\"",
+                    "used_count": 223,
+                    "value": "\"'Level3Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"Level2Spells\"",
+                    "used_count": 168,
+                    "value": "\"'Level2Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"Level6Spells\"",
+                    "used_count": 7,
+                    "value": "\"'Level6Spells'\"",
+                    "first_occurence": "AR6100.61IZBEL2.Izbelah"
+                },
+                {
+                    "src": "\"61VolcanoStatus\"",
+                    "used_count": 57,
+                    "value": "\"'61VolcanoStatus'\"",
+                    "first_occurence": "AR6101.None.None"
+                },
+                {
+                    "src": "\"CheckCure\"",
+                    "used_count": 1,
+                    "value": "\"'CheckCure'\"",
+                    "first_occurence": "AR6101.61PRISI2.04_SmartPrisoner_04"
+                },
+                {
+                    "src": "\"CheckDead\"",
+                    "used_count": 2,
+                    "value": "\"'CheckDead'\"",
+                    "first_occurence": "AR6101.61PRISI2.04_SmartPrisoner_04"
+                },
+                {
+                    "src": "\"STUNNING_BLOWS\"",
+                    "used_count": 1,
+                    "value": "\"'STUNNING_BLOWS'\"",
+                    "first_occurence": "AR6101.61PRISF2.04_FemalePrisoner_07"
+                },
+                {
+                    "src": "\"Flee\"",
+                    "used_count": 26,
+                    "value": "\"'Flee'\"",
+                    "first_occurence": "AR6101.61YPBLAD.07_PurebloodThief_05"
+                },
+                {
+                    "src": "\"61NheeroFindQuest\"",
+                    "used_count": 1,
+                    "value": "\"'61NheeroFindQuest'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"61NheeroMissionQuest\"",
+                    "used_count": 2,
+                    "value": "\"'61NheeroMissionQuest'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"61HalfbreedDied\"",
+                    "used_count": 13,
+                    "value": "\"'61HalfbreedDied'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"YuantiCallForHelp\"",
+                    "used_count": 6,
+                    "value": "\"'YuantiCallForHelp'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"EncounterChance\"",
+                    "used_count": 7,
+                    "value": "\"'EncounterChance'\"",
+                    "first_occurence": "AR6102.None.None"
+                },
+                {
+                    "src": "\"61AbominationDied\"",
+                    "used_count": 7,
+                    "value": "\"'61AbominationDied'\"",
+                    "first_occurence": "AR6103.None.None"
+                },
+                {
+                    "src": "\"DestinationRequest\"",
+                    "used_count": 1,
+                    "value": "\"'DestinationRequest'\"",
+                    "first_occurence": "AR6104.61ARCHON.Archon"
+                },
+                {
+                    "src": "\"BreathCount\"",
+                    "used_count": 9,
+                    "value": "\"'BreathCount'\"",
+                    "first_occurence": "AR6104.61MEPLAV.04_LavaMephit_02"
+                },
+                {
+                    "src": "\"JasperGiveFloat\"",
+                    "used_count": 3,
+                    "value": "\"'JasperGiveFloat'\"",
+                    "first_occurence": "AR6104.61VENOMI.Venomin4"
+                },
+                {
+                    "src": "\"Level7Spells\"",
+                    "used_count": 6,
+                    "value": "\"'Level7Spells'\"",
+                    "first_occurence": "AR6104.61IZBELA.Izbelah3"
+                },
+                {
+                    "src": "\"RopeCount\"",
+                    "used_count": 4,
+                    "value": "\"'RopeCount'\"",
+                    "first_occurence": "AR6104.61BRIDGE.61Bridge"
+                },
+                {
+                    "src": "\"61CurrentDay\"",
+                    "used_count": 1,
+                    "value": "\"'61CurrentDay'\"",
+                    "first_occurence": "AR6104.61VENOMI.None"
+                },
+                {
+                    "src": "\"LotharDestroyEmbassy\"",
+                    "used_count": 1,
+                    "value": "\"'LotharDestroyEmbassy'\"",
+                    "first_occurence": "AR6104.61LOTHAR.None"
+                },
+                {
+                    "src": "\"Action\"",
+                    "used_count": 11,
+                    "value": "\"'Action'\"",
+                    "first_occurence": "AR6200.62NEOORC.NeoOrogShaman"
+                },
+                {
+                    "src": "\"Num_Dread_Warrior_Dead\"",
+                    "used_count": 1,
+                    "value": "\"'Num_Dread_Warrior_Dead'\"",
+                    "first_occurence": "AR6200.62MDARF.Mdarfein"
+                },
+                {
+                    "src": "\"Kratuuk_Team_Dead\"",
+                    "used_count": 3,
+                    "value": "\"'Kratuuk_Team_Dead'\"",
+                    "first_occurence": "AR6200.62TSOL.None"
+                },
+                {
+                    "src": "\"SH_Perform_Illmater_Ritual\"",
+                    "used_count": 1,
+                    "value": "\"'SH_Perform_Illmater_Ritual'\"",
+                    "first_occurence": "AR6302.63DMNGEM.Globe_of_Essence"
+                },
+                {
+                    "src": "\"StartCutscene_63cFB02\"",
+                    "used_count": 1,
+                    "value": "\"'StartCutscene_63cFB02'\"",
+                    "first_occurence": "AR6305.None.None"
+                },
+                {
+                    "src": "\"6502_SeeParty_Time\"",
+                    "used_count": 1,
+                    "value": "\"'6502_SeeParty_Time'\"",
+                    "first_occurence": "AR6502.65RUCOL.RuinlordMayzomCol"
                 }
             ]
         },
@@ -28,9 +832,21 @@
             "values": [
                 {
                     "src": "\"GLOBAL\"",
-                    "used_count": 1,
+                    "used_count": 889,
                     "value": "\"'GLOBAL'\"",
-                    "first_occurence": "AR6051.60ASHRA.None"
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "\"MYAREA\"",
+                    "used_count": 129,
+                    "value": "\"'MYAREA'\"",
+                    "first_occurence": "AR1106.11PHAEN.Phaen_of_the_Rags"
+                },
+                {
+                    "src": "\"LOCALS\"",
+                    "used_count": 943,
+                    "value": "\"'LOCALS'\"",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
                 }
             ]
         },
@@ -43,10 +859,64 @@
             },
             "values": [
                 {
+                    "src": "1",
+                    "used_count": 156,
+                    "value": "1",
+                    "first_occurence": "AR1000.None.None"
+                },
+                {
+                    "src": "0",
+                    "used_count": 1712,
+                    "value": "0",
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
                     "src": "3",
-                    "used_count": 1,
+                    "used_count": 25,
                     "value": "3",
-                    "first_occurence": "AR6051.60ASHRA.None"
+                    "first_occurence": "AR1000.10HEDRON.None"
+                },
+                {
+                    "src": "2",
+                    "used_count": 23,
+                    "value": "2",
+                    "first_occurence": "AR1004.10FIRTH.None"
+                },
+                {
+                    "src": "4",
+                    "used_count": 17,
+                    "value": "4",
+                    "first_occurence": "AR1100.11OSWALD.None"
+                },
+                {
+                    "src": "9",
+                    "used_count": 15,
+                    "value": "9",
+                    "first_occurence": "AR4000.40BDCULT.01_Cult_01"
+                },
+                {
+                    "src": "6",
+                    "used_count": 7,
+                    "value": "6",
+                    "first_occurence": "AR4101.41LYSARA.Lysara"
+                },
+                {
+                    "src": "30",
+                    "used_count": 2,
+                    "value": "30",
+                    "first_occurence": "AR4102.41GOLEIC.GameMaster"
+                },
+                {
+                    "src": "120",
+                    "used_count": 1,
+                    "value": "120",
+                    "first_occurence": "AR6051.60OJAIHA.Ojaiha"
+                },
+                {
+                    "src": "-1",
+                    "used_count": 3,
+                    "value": "-1",
+                    "first_occurence": "AR6101.61PRISI2.04_SmartPrisoner_04"
                 }
             ]
         }

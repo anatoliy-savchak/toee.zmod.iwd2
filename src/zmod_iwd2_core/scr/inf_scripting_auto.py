@@ -104,45 +104,65 @@
 		return
 	
 	@dump_args
-	def CheckStat(self, obj, value, statnum):
+	def iCheckStat(self, obj, value, statnum):
 		"""
 		CheckStat(O:Object*, I:Value*, I:StatNum*Stats)
 		"""
-		raise Exception("Not implemented function: CheckStat!")
+		raise Exception("Not implemented here function: CheckStat!")
 		return
-	
+
 	@dump_args
-	def CheckStatGT(self, obj, value, statnum):
+	def iCheckStatGT(self, obj, value, statnum):
 		"""
 		CheckStatGT(O:Object*, I:Value*, I:StatNum*Stats)
 		"""
-		raise Exception("Not implemented function: CheckStatGT!")
+		raise Exception("Not implemented here function: CheckStatGT!")
 		return
-	
+
 	@dump_args
-	def CheckStatLT(self, obj, value, statnum):
+	def iCheckStatLT(self, obj, value, statnum):
 		"""
 		CheckStatLT(O:Object*, I:Value*, I:StatNum*Stats)
 		"""
-		raise Exception("Not implemented function: CheckStatLT!")
+		raise Exception("Not implemented here function: CheckStatLT!")
 		return
-	
+
 	@dump_args
-	def Class(self, obj, class_):
+	def iClass(self, obj, class_):
 		"""
 		Class(O:Object*, I:Class*Class)
+		Returns true only if the Class of the specified object matches that in the second parameter.
 		"""
-		raise Exception("Not implemented function: Class!")
-		return
-	
+		toee_class = utils_inf.iwd2_classname_to_class(class_)
+		npc, ctrl = self._get_ie_object(obj)
+		if npc:
+			cc = npc.get_character_classes()
+			if toee_class in cc:
+				return True
+		return False
+
 	@dump_args
-	def ClassEx(self, obj, class_):
+	def iClassEx(self, obj, class_):
 		"""
 		ClassEx(O:Object*, I:Class*Class)
 		"""
-		raise Exception("Not implemented function: ClassEx!")
-		return
-	
+		"""
+		Actually I see only these values in IWD2:
+		FIGHTER
+		BARD
+		MAGE
+		SORCERER
+		CLERIC
+		DRUID
+		"""
+		toee_class = utils_inf.iwd2_classname_to_class(class_)
+		npc, ctrl = self._get_ie_object(obj)
+		if npc:
+			cc = npc.get_character_classes()
+			if toee_class in cc:
+				return True
+		return False
+
 	@dump_args
 	def CreatureHidden(self, obj):
 		"""
@@ -184,13 +204,12 @@
 		return
 	
 	@dump_args
-	def EntirePartyOnMap(self):
+	def iEntirePartyOnMap(self):
 		"""
 		EntirePartyOnMap()
 		"""
-		raise Exception("Not implemented function: EntirePartyOnMap!")
-		return
-	
+		return True
+
 	@dump_args
 	def Exists(self, obj):
 		"""
@@ -216,29 +235,36 @@
 		return
 	
 	@dump_args
-	def Global(self, name, area, value):
+	def iGlobal(self, name, area, value):
 		"""
 		Global(S:Name*, S:Area*, I:Value*)
+		Returns true only if the variable with name 1st parameter of type 2nd parameter has value 3rd parameter.
 		"""
-		raise Exception("Not implemented function: Global!")
-		return
+		global_value = self._ensure_global(name, area)
+		return global_value == value
+
+	def GLOBAL(self, name, area, value): self.Global(name=name, area=area, value=value)
 	
 	@dump_args
-	def GlobalGT(self, name, area, value):
+	def iGlobalGT(self, name, area, value):
 		"""
 		GlobalGT(S:Name*, S:Area*, I:Value*)
+		As above except for less than.
 		"""
-		raise Exception("Not implemented function: GlobalGT!")
-		return
+		global_value = self._ensure_global(name, area)
+		return global_value > value
+
+	def GLOBALGT(self, name, area, value): self.GlobalGT(name=name, area=area, value=value)
 	
 	@dump_args
-	def GlobalLT(self, name, area, value):
-		"""
+	def iGlobalLT(self, name, area, value):
+		""" 
 		GlobalLT(S:Name*, S:Area*, I:Value*)
+		As above except for less than.
 		"""
-		raise Exception("Not implemented function: GlobalLT!")
-		return
-	
+		global_value = self._ensure_global(name, area)
+		return global_value < value
+
 	@dump_args
 	def GlobalTimerExpired(self, name, area):
 		"""
@@ -256,29 +282,29 @@
 		return
 	
 	@dump_args
-	def HP(self, obj, hit_points):
+	def iHP(self, obj, hit_points):
 		"""
 		HP(O:Object*, I:Hit Points*)
 		"""
-		raise Exception("Not implemented function: HP!")
+		raise Exception("Not implemented here function: HP!")
 		return
-	
+
 	@dump_args
-	def HPGT(self, obj, hit_points):
+	def iHPGT(self, obj, hit_points):
 		"""
 		HPGT(O:Object*, I:Hit Points*)
 		"""
-		raise Exception("Not implemented function: HPGT!")
+		raise Exception("Not implemented here function: HPGT!")
 		return
-	
+
 	@dump_args
-	def HPLT(self, obj, hit_points):
+	def iHPLT(self, obj, hit_points):
 		"""
 		HPLT(O:Object*, I:Hit Points*)
 		"""
-		raise Exception("Not implemented function: HPLT!")
+		raise Exception("Not implemented here function: HPLT!")
 		return
-	
+
 	@dump_args
 	def HPLost(self, obj, hit_points):
 		"""
@@ -360,13 +386,14 @@
 		return
 	
 	@dump_args
-	def InCutsceneMode(self):
+	def iInCutsceneMode(self):
 		"""
 		InCutsceneMode()
 		"""
-		raise Exception("Not implemented function: InCutsceneMode!")
-		return
-	
+		#raise Exception("Not implemented function: InCutsceneMode!")
+		# TODO!
+		return False
+
 	@dump_args
 	def InParty(self, obj):
 		"""
@@ -616,37 +643,37 @@
 		return
 	
 	@dump_args
-	def NumTimesTalkedTo(self, num):
+	def iNumTimesTalkedTo(self, num):
 		"""
 		NumTimesTalkedTo(I:Num*)
 		"""
-		raise Exception("Not implemented function: NumTimesTalkedTo!")
+		raise Exception("Not implemented here function: NumTimesTalkedTo!")
 		return
-	
+
 	@dump_args
-	def NumTimesTalkedToGT(self, num):
+	def iNumTimesTalkedToGT(self, num):
 		"""
 		NumTimesTalkedToGT(I:Num*)
 		"""
-		raise Exception("Not implemented function: NumTimesTalkedToGT!")
+		raise Exception("Not implemented here function: NumTimesTalkedToGT!")
 		return
-	
+
 	@dump_args
-	def NumTimesTalkedToLT(self, num):
+	def iNumTimesTalkedToLT(self, num):
 		"""
 		NumTimesTalkedToLT(I:Num*)
 		"""
-		raise Exception("Not implemented function: NumTimesTalkedToLT!")
+		raise Exception("Not implemented here function: NumTimesTalkedToLT!")
 		return
-	
+
 	@dump_args
-	def OnCreation(self):
+	def iOnCreation(self):
 		"""
 		OnCreation()
 		"""
-		raise Exception("Not implemented function: OnCreation!")
+		raise Exception("Not implemented here function: OnCreation!")
 		return
-	
+
 	@dump_args
 	def OpenState(self, obj, open):
 		"""
@@ -704,13 +731,14 @@
 		return
 	
 	@dump_args
-	def Race(self, obj, race):
+	def iRace(self, obj, race):
 		"""
 		Race(O:Object*, I:Race*Race)
+		Returns true only if the Race of the specified object is the same as that specified by the 2nd parameter.
 		"""
-		raise Exception("Not implemented function: Race!")
-		return
-	
+		npc, ctrl = self._get_ie_object(obj)
+		return self._check_race(npc, race)
+
 	@dump_args
 	def RandomNum(self, range, value):
 		"""
@@ -784,12 +812,14 @@
 		return
 	
 	@dump_args
-	def SubRace(self, obj, subrace):
+	def iSubRace(self, obj, subrace):
 		"""
 		SubRace(O:Object*, I:SubRace*SubRace)
 		"""
-		raise Exception("Not implemented function: SubRace!")
-		return
+		npc, ctrl = self._get_ie_object(obj)
+		return self._check_race(npc, race)
+
+	def Subrace(self, obj, subrace): self.SubRace(obj=obj, subrace=subrace)
 	
 	@dump_args
 	def TargetUnreachable(self, obj):
@@ -822,6 +852,8 @@
 		"""
 		raise Exception("Not implemented function: TimeOfDay!")
 		return
+	
+	def TimeofDay(self, time_of_day): self.TimeOfDay(time_of_day=time_of_day)
 	
 	@dump_args
 	def TimerActive(self, timerid):
@@ -889,12 +921,22 @@
 		return
 	
 	@dump_args
-	def AddXPVar(self, vartableentry, strref):
+	def iAddXPVar(self, vartableentry, strref):
 		"""
 		AddXPVar(S:VarTableEntry*, I:Strref*)
 		"""
-		raise Exception("Not implemented function: AddXPVar!")
+		vartableentry = strip_quotes(vartableentry)
+		xp = utils_inf.iwd2_xp_var(vartableentry)
+		utils_pc.pc_award_experience_party(xp, 1)
+		if strref:
+			line = toee.game.get_mesline('mes\\floats.mes', strref)
+			if line:
+				toee.game.create_history_freeform(line)
+				toee.game.leader.float_mesfile_line('mes\\floats.mes', strref, toee.tf_green)
+		# core->PlaySound(DS_GOTXP, SFX_CHAN_ACTIONS);
 		return
+
+	def AddXpVar(self, vartableentry, strref): self.AddXPVar(vartableentry=vartableentry, strref=strref)
 	
 	@dump_args
 	def AllowAreaResting(self, trueorfalse):
@@ -1081,13 +1123,20 @@
 		return
 	
 	@dump_args
-	def DestroyItem(self, resref):
+	def iDestroyItem(self, resref):
 		"""
 		DestroyItem(S:ResRef*)
+		This action removes a single instance of the specified item from the active creature, unless the item exists in a stack, 
+		in which case the entire stack is removed. The example script is from ar1000.bcs.
 		"""
-		raise Exception("Not implemented function: DestroyItem!")
+		npc = self._gnpc()
+		proto = self._get_proto(resref)
+		item = npc.item_find_by_proto(proto)
+		if item:
+			# TODO - decrease if stack
+			item.destroy()
 		return
-	
+
 	@dump_args
 	def DestroySelf(self):
 		"""
@@ -1257,29 +1306,35 @@
 		return
 	
 	@dump_args
-	def FadeFromColor(self, point, blue):
+	def iFadeFromColor(self, point, blue):
 		"""
 		FadeFromColor(P:Point*, I:Blue*)
 		"""
-		raise Exception("Not implemented function: FadeFromColor!")
+		# do nothing
 		return
-	
+
 	@dump_args
-	def FadeToColor(self, point, blue):
+	def iFadeToColor(self, point, blue):
 		"""
 		FadeToColor(P:Point*, I:Blue*)
 		"""
-		raise Exception("Not implemented function: FadeToColor!")
+		# do nothing
 		return
-	
+
 	@dump_args
-	def FloatMessage(self, obj, strref):
+	def iFloatMessage(self, obj, strref):
 		"""
 		FloatMessage(O:Object*, I:STRREF*)
 		"""
-		raise Exception("Not implemented function: FloatMessage!")
+		npc, ctrl = self._get_ie_object(obj)
+		if npc:
+			line = toee.game.get_mesline('mes\\floats.mes', strref)
+			if line:
+				toee.game.create_history_freeform(line)
+				npc.float_mesfile_line('mes\\floats.mes', strref, toee.tf_white)
+
 		return
-	
+
 	@dump_args
 	def ForceHide(self, target):
 		"""
@@ -1313,21 +1368,33 @@
 		return
 	
 	@dump_args
-	def GiveItem(self, obj, target):
+	def iGiveItem(self, obj, target):
 		"""
 		GiveItem(S:Object*, O:Target*)
 		"""
-		raise Exception("Not implemented function: GiveItem!")
+		raise Exception("Not implemented here function: GiveItem!")
 		return
-	
+
 	@dump_args
-	def GiveItemCreate(self, resref, obj, usage1, usage2, usage3):
+	def iGiveItemCreate(self, resref, obj, usage1, usage2, usage3):
 		"""
 		GiveItemCreate(S:ResRef*, O:Object*, I:Usage1*, I:Usage2*, I:Usage3*)
+		This action creates the item specified by the resref parameter on the creature specified by the object parameter, with quantity/charges controlled by the usage parameters. 
 		"""
-		raise Exception("Not implemented function: GiveItemCreate!")
+		npc, ctrl = self._get_ie_object(obj)
+		if npc:
+			proto = self._get_proto(resref)
+			#if isinstance(proto, str):
+			#	if proto == "Misc07": # gold
+			#		utils_pc.pc_party_receive_money_and_print(usage1 * const_toee.gp)
+			if not proto is None:
+				item_obj = utils_item.item_create_in_inventory2(proto, npc, 0, None)
+			#else:
+			#	item = utils_item.item_create_in_inventory2(proto, target, 0, None)
+
+		# TODO
 		return
-	
+
 	@dump_args
 	def Help(self, obj):
 		"""
@@ -1497,13 +1564,13 @@
 		return
 	
 	@dump_args
-	def MultiPlayerSync(self):
+	def iMultiPlayerSync(self):
 		"""
 		MultiPlayerSync()
 		"""
-		raise Exception("Not implemented function: MultiPlayerSync!")
+		# do nothing
 		return
-	
+
 	@dump_args
 	def NoAction(self):
 		"""
@@ -1593,13 +1660,13 @@
 		return
 	
 	@dump_args
-	def ResetJoinRequests(self):
+	def iResetJoinRequests(self):
 		"""
 		ResetJoinRequests()
 		"""
-		raise Exception("Not implemented function: ResetJoinRequests!")
+		# do nothing
 		return
-	
+
 	@dump_args
 	def Rest(self):
 		"""
@@ -1617,13 +1684,13 @@
 		return
 	
 	@dump_args
-	def RestUntilHealed(self):
+	def iRestUntilHealed(self):
 		"""
 		RestUntilHealed()
 		"""
-		raise Exception("Not implemented function: RestUntilHealed!")
+		# do nothing, perhaps Temple todo
 		return
-	
+
 	@dump_args
 	def ReturnToSavedLocation(self, tollerance):
 		"""
@@ -1649,13 +1716,14 @@
 		return
 	
 	@dump_args
-	def SaveGame(self, strref):
+	def iSaveGame(self, strref):
 		"""
 		SaveGame(I:STRREF*)
 		"""
-		raise Exception("Not implemented function: SaveGame!")
+		# do nothing
+		# TODO!
 		return
-	
+
 	@dump_args
 	def ScreenShake(self, duration, magx, magy):
 		"""
@@ -1737,13 +1805,15 @@
 		return
 	
 	@dump_args
-	def SetGlobal(self, name, area, value):
+	def iSetGlobal(self, name, area, value):
 		"""
 		SetGlobal(S:Name*, S:Area*, I:Value*)
+		This action sets a variable (specified by name) in the scope (specified by area) to the value (specified by value).
 		"""
-		raise Exception("Not implemented function: SetGlobal!")
-		return
-	
+		self._set_global(name, area, value)
+		g = self._ensure_global(name, area)
+		return g
+
 	@dump_args
 	def SetGlobalRandom(self, name, area, min, max):
 		"""
@@ -1777,13 +1847,15 @@
 		return
 	
 	@dump_args
-	def SetHP(self, target, hp):
+	def iSetHP(self, target, hp):
 		"""
 		SetHP(O:Target, I:HP*)
 		"""
-		raise Exception("Not implemented function: SetHP!")
+		npc, ctrl = self._get_ie_object(target)
+		if npc:
+			utils_npc.ensure_hp(npc, hp)
 		return
-	
+
 	@dump_args
 	def SetHPPercent(self, obj, percent, flags):
 		"""
@@ -1825,13 +1897,13 @@
 		return
 	
 	@dump_args
-	def SetNumTimesTalkedTo(self, num):
+	def iSetNumTimesTalkedTo(self, num):
 		"""
 		SetNumTimesTalkedTo(I:Num*)
 		"""
-		raise Exception("Not implemented function: SetNumTimesTalkedTo!")
+		raise Exception("Not implemented hre function: SetNumTimesTalkedTo!")
 		return
-	
+
 	@dump_args
 	def SetRegularNameSTRREF(self, obj, strref):
 		"""
@@ -1952,6 +2024,8 @@
 		raise Exception("Not implemented function: StartCutScene!")
 		return
 	
+	def StartCutscene(self, cutscene): self.StartCutScene(cutscene=cutscene)
+	
 	@dump_args
 	def StartCutSceneMode(self):
 		"""
@@ -1959,6 +2033,8 @@
 		"""
 		raise Exception("Not implemented function: StartCutSceneMode!")
 		return
+	
+	def StartCutsceneMode(self): self.StartCutSceneMode()
 	
 	@dump_args
 	def StartMovie(self, resref):
@@ -2025,13 +2101,34 @@
 		return
 	
 	@dump_args
-	def TakePartyItemNum(self, item, num):
+	def iTakePartyItemNum(self, item, num):
 		"""
 		TakePartyItemNum(S:Item*, I:Num)
+
+		This action will remove a number of instances (specified by the Num parameter) of the specified item from the party. 
+		The items will be removed from players in order, for example; Player1 has 3 instances of “MYITEM” in their inventory, 
+		Player2 has 2 instance of “MYITEM,” and Player3 has 1 instance. If the action TakePartyItemNum(“MYITEM”, 4) is run, 
+		all 3 instances of “MYITEM” will be taken from Player1, and 1 instance will be taken from Player2. 
+		This leaves Player2 and Player3 each with one instance of “MYITEM.” If the last item of an item type stored in a container 
+		STO file is removed by this action, the amount becomes zero. Items with zero quantities cannot be seen in-game, 
+		cannot be removed by TakePartyItem, and will not count toward a container’s current item load. 
+		If the item to be taken is in a stack, and the stack is in a quickslot, the item will be removed, and the remaining stack will be placed in the inventory. 
+		If the inventory is full, the stack item will be dropped on the ground.
 		"""
-		raise Exception("Not implemented function: TakePartyItemNum!")
+
+		proto = self._get_proto(item)
+		if not proto is None:
+			for pc in toee.game.party:
+				while num:
+					item = pc.item_find_by_proto(proto)
+					if item:
+						item.destroy()
+						# TODO - decrease if stack
+						num = num - 1
+				if not num:
+					break
 		return
-	
+
 	@dump_args
 	def TransferInventory(self, source, target):
 		"""

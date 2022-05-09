@@ -1,4 +1,5 @@
 import sys
+import os
 import producer_doc
 import producer_strref
 
@@ -49,9 +50,10 @@ def main():
         doc.producerOfScripts.log_usage = True
         doc.producerOfScripts.log_statistics = True
         doc.producerOfScripts.log_strrefs = False
-        doc.scan_all_ares()
-        doc.producerOfScripts.produce_func_defs()
-        doc.producerOfScripts._save_index()
+        #doc.scan_all_ares()
+        merge_from_path = os.path.join(doc.core_dir, 'scr/inf_scripting_copy2.py')
+        doc.producerOfScripts.produce_func_defs(merge_from_path=merge_from_path)
+        #doc.producerOfScripts._save_index()
         for e in doc.producerOfScripts.error_messages:
             print(e)
 

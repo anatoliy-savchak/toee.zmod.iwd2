@@ -7,6 +7,7 @@ import ast
 import produce_items
 import producer_base
 import json
+import common
 #import pyproduce
 
 class ProducerOfScripts(producer_base.Producer):
@@ -212,10 +213,15 @@ class ProducerOfScripts(producer_base.Producer):
                 json.dump(self.index_file, f, indent=4)
         return
 
-    def produce_func_defs(self, out_file_path: str = None):
+    def produce_func_defs(self, out_file_path: str = None, merge_from_path: str = None):
         if not out_file_path:
             out_file_path = os.path.join(self.doc.core_dir, "scr/inf_scripting_auto.py")
         template_path = 'data/inf_scripting_auto.py'
+        merge_from_lines = None
+        if merge_from_path:
+            with open(merge_from_path, 'r') as f:
+                merge_from_lines = f.readlines()
+
         prod = producer_base.ProducerOfFile(self.doc, out_file_path, template_path, True)
         prod.indent()
 
@@ -224,6 +230,24 @@ class ProducerOfScripts(producer_base.Producer):
             prod.writeline(f'########## {label} ##########')
             for rec in commands:
                 func_name = rec["func_name"]
+                func_merged = False
+                if merge_from_lines:
+                    func_name_lo = func_name.lower()
+                    func_def_find = f'i{func_name_lo}('
+                    func_line_id = common.lines_find_lower(merge_from_lines, func_def_find)
+                    if func_line_id:
+                        func_line_id += -1
+                        func_merged = True
+                        while func_line_id < len(merge_from_lines):
+                            line = merge_from_lines[func_line_id]
+                            if line[:8] == '\t\treturn':
+                                prod.lines.append(line)
+                                prod.lines.append('')
+                                break
+                            prod.lines.append(line)
+                            func_line_id += 1
+                        #continue
+
                 args = rec["args"]
                 args_orig_defs = list()
                 args_defs = list()
@@ -240,16 +264,30 @@ class ProducerOfScripts(producer_base.Producer):
 
                 orig_def = f'{func_name}({", ".join(args_orig_defs)})'
                 func_def = f'{func_name}({", ".join(args_defs)})'
-                prod.writeline('@dump_args')
-                prod.writeline(f'def {func_def}:')
-                prod.indent()
-                prod.writeline('"""')
-                prod.writeline(f'{orig_def}')
-                prod.writeline('"""')
-                prod.writeline(f'raise Exception("Not implemented function: {func_name}!")')
-                prod.writeline('return')
-                prod.indent(False)
-                prod.writeline()
+
+                if not func_merged:
+                    prod.writeline('@dump_args')
+                    prod.writeline(f'def {func_def}:')
+                    prod.indent()
+                    prod.writeline('"""')
+                    prod.writeline(f'{orig_def}')
+                    prod.writeline('"""')
+                    prod.writeline(f'raise Exception("Not implemented function: {func_name}!")')
+                    prod.writeline('return')
+                    prod.indent(False)
+                    prod.writeline()
+                
+                args_defs_noself_joned = ""
+                for o in args_defs:
+                    if o != 'self':
+                        if args_defs_noself_joned: args_defs_noself_joned +=", "
+                        args_defs_noself_joned += f'{o}={o}'
+
+                for func_spell in rec["func_name_spellings"]:
+                    if func_spell == func_name: continue
+                    func_def = f'{func_spell}({", ".join(args_defs)})'
+                    prod.writeline(f'def {func_def}: self.{func_name}({args_defs_noself_joned})')
+                    prod.writeline()
             return
 
         funcs = sorted(self.index_file["statistics"]["funcs"].items())

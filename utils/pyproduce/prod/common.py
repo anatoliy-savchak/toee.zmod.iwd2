@@ -11,6 +11,9 @@ def tDict(**kwargs):
 def lines_find(lines: list, after: str, after_line_id: int = None):
     return next((index for index, line in enumerate(lines) if (after_line_id is None or index > after_line_id) and after in line), None)
 
+def lines_find_lower(lines: list, after: str, after_line_id: int = None):
+    return next((index for index, line in enumerate(lines) if (after_line_id is None or index > after_line_id) and after in line.lower()), None)
+
 def lines_after_cutoff(lines: list, after: str, add_more_line_count: int = 0):
     index = lines_find(lines, after)
     if not index is None:

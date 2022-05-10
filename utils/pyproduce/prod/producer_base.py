@@ -1,6 +1,7 @@
 import os
 import json
 import producer_doc
+import common
 
 class Producer(object):
     def __init__(self
@@ -60,6 +61,7 @@ class ProducerOfFile(Producer):
         self.current_line_id = -1
         self.current_indent = ''
 
+        self.imports = dict() # file_name=package or ''
         self.lines = list()
         self._preload_lines()
         return
@@ -91,4 +93,29 @@ class ProducerOfFile(Producer):
             self.current_indent = self.current_indent[:-1]
         else:
             self.current_indent += "\t"
+        return
+
+    def add_import(self, file_name: str, package: str = None):
+        if file_name in self.imports.keys():
+            return
+        self.imports[file_name] = str(package or '')
+        return
+
+    def produce_imports(self, clear: bool = False, start_line_code: str = None, end_line_code: str = None):
+        if not start_line_code:
+            start_line_code = '#### IMPORTS ####'
+        if not end_line_code:
+            end_line_code = '#### END IMPORTS ####'
+
+        if clear:
+            common.lines_after_before_cutoff(self.lines, start_line_code, end_line_code)
+        for file_name, pkg in self.imports.items():
+            import_line = f'import {file_name}' if not pkg else f'from {pkg} import {file_name}'
+
+            if not next((line for line in self.lines if line == import_line or line == import_line + '\n'), None):
+                line_id = common.lines_find(self.lines, end_line_code)
+                if line_id:
+                    self.current_line_id = line_id
+                    self.writeline(import_line)
+                    self.current_line_id = -1
         return

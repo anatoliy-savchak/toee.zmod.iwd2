@@ -4,8 +4,8 @@ import const_proto_items, const_proto_rings, const_proto_cloth, const_proto_wond
 import py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, module_consts, rumor_control, utils_pc
 import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2, ctrl_daemon
 import utils_journal as uj, inf_scripting
-#### IMPORT ####
-#### IMPORT END ####
+#### IMPORTS ####
+#### END IMPORTS ####
 
 #### GVARS ####
 MODULE_SCRIPT_ID = 10001

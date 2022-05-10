@@ -2,10 +2,10 @@ import toee, debug, utils_toee, utils_storage, utils_obj, utils_item, const_toee
 import ctrl_behaviour, py06122_cormyr_prompter, factions_zmod, utils_npc, utils_locks, const_proto_items, const_proto_scrolls, const_proto_rings
 import monster_info, module_quests, module_consts, module_globals
 import ctrl_daemon_ie, ctrl_ambients, inf_scripting
-#### NPCS IMPORT ####
-import py10006_ar1000_scripts
+#### IMPORTS ####
+from bcs import scr_ar1000
 import py10004_ar1000_npc_inst_classes
-#### NPCS IMPORT END ####
+#### END IMPORTS ####
 
 DAEMON_SCRIPT_ID = 10000
 DAEMON_MAP_ID = module_consts.MAP_ID_TARGOS_DOCKS
@@ -420,7 +420,7 @@ class CtrlTargosDocks(ctrl_daemon_ie.CtrlDaemonIE):
 		return
 
 	def place_bcs(self):
-		self.vars["script_area"] = py10006_ar1000_scripts.Script_AR1000
+		self.vars["script_area"] = scr_ar1000.Script_AR1000
 		return
 
 	def debug_script_exec(self):

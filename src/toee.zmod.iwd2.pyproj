@@ -9,7 +9,7 @@
     <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <StartupFile>
     </StartupFile>
-    <SearchPath>zmod_iwd2_core\scr.builtin</SearchPath>
+    <SearchPath>zmod_iwd2_core\scr.builtin;zmod_iwd2_core\scr</SearchPath>
     <WorkingDirectory>zmod_iwd2_core/scr</WorkingDirectory>
     <LaunchProvider>Web launcher</LaunchProvider>
     <WebBrowserUrl>http://localhost</WebBrowserUrl>
@@ -42,6 +42,7 @@
     <Folder Include="zmod_iwd2_core\scr.builtin\" />
     <Folder Include="zmod_iwd2_core\scr.builtin\templeplus\" />
     <Folder Include="zmod_iwd2_core\scr\" />
+    <Folder Include="zmod_iwd2_core\scr\bcs\" />
     <Folder Include="zmod_iwd2_core\scr\tpModifiers\" />
     <Folder Include="zmod_iwd2_core\rules\" />
     <Folder Include="zmod_iwd2_core\rules\d20_actions\" />
@@ -84,6 +85,9 @@
     <Compile Include="zmod_iwd2_core\scr.builtin\toee.py" />
     <Compile Include="zmod_iwd2_core\scr.builtin\tpactions.py" />
     <Compile Include="zmod_iwd2_core\scr.builtin\tpdp.py" />
+    <Compile Include="zmod_iwd2_core\scr\bcs\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="zmod_iwd2_core\scr\const_proto_armor_iwd2.py" />
     <Compile Include="zmod_iwd2_core\scr\const_proto_items_iwd2.py" />
     <Compile Include="zmod_iwd2_core\scr\const_proto_list_potions.py" />
@@ -150,7 +154,7 @@
     <Compile Include="zmod_iwd2_core\scr\py10002_ar1000_npc_classes.py" />
     <Compile Include="zmod_iwd2_core\scr\py10003_ar1000_npc_inst_classes_auto.py" />
     <Compile Include="zmod_iwd2_core\scr\py10004_ar1000_npc_inst_classes.py" />
-    <Compile Include="zmod_iwd2_core\scr\py10005_ar1000_scripts_auto.py" />
+    <Compile Include="zmod_iwd2_core\scr\bcs\py10005_ar1000_scripts_auto.py" />
     <Compile Include="zmod_iwd2_core\scr\py10006_ar1000_scripts.py" />
     <Compile Include="zmod_iwd2_core\scr\random_encounter.py" />
     <Compile Include="zmod_iwd2_core\scr\Spell076 - Contagion.py" />

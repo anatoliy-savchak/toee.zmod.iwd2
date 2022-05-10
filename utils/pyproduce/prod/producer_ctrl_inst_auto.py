@@ -24,6 +24,7 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         self.actor_name = actor_name
         self.actor_dict = actor_dict
         self.ctrl_name = f'Ctrl_{self.cre_name}_{self.are_name}_{self.actor_name}_Auto'
+        self.produce_imports(clear=make_new)
         return
 
     def produce(self):
@@ -31,8 +32,7 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         if next((line for line in self.lines if line1 in line), None):
             return
 
-        imports = list()
-        imports.append(self.base_class["file_name"])
+        self.add_import(self.base_class["file_name"])
 
         line2 = f'{self.base_class["file_name"]}.{self.base_class["class_name"]}): # {self.cre_name} ' # leave trailing whitespace here
         self.writeline(line1 + line2)
@@ -42,13 +42,16 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         def write_script(bcs_attribute: str, script_name: str):
             bcs_name = self.actor_dict[bcs_attribute]
             if bcs_name:
-                d = self.doc.bcsManager.get_bc(bcs_name)
-                if d:
-                    file_name, ctrl_name = d[0], d[1]
-                    if not file_name in imports: 
-                        imports.append(file_name)
+                ctrl_name, file_name, pkg_name = self.doc.bcsManager.ensure_bcs(
+                    bcs_name=bcs_name
+                    , hint_are_name=self.are_name
+                    , hint_cre_name=self.cre_name
+                    , hint_actor_name=self.actor_name
+                    , hint_script_code=bcs_attribute
+                )
+                self.add_import(file_name, pkg_name)
 
-                    self.writeline(f'self.vars["{script_name}"] = {file_name}.{ctrl_name}')
+                self.writeline(f'self.vars["{script_name}"] = {file_name}.{ctrl_name}')
 
             return
         self.indent()
@@ -63,16 +66,7 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         self.indent(False)
         self.writeline('')
 
-        for imp in imports:
-            import_line = 'import ' + imp
-            if not next((line for line in self.lines if line == import_line or line == import_line + '\n'), None):
-                #line_id = common.lines_after_before_cutoff(self.lines, '#### IMPORT ####', '#### IMPORT END ####')
-                line_id = common.lines_find(self.lines, '#### IMPORT ####')
-                if line_id:
-                    self.current_line_id = line_id+1
-                    self.writeline(import_line)
-                    self.current_line_id = -1
-
+        self.produce_imports()
         return
 
     def get_ctrl_tuple(self): return (self.ctrl_name, os.path.basename(self.out_path).replace('.py', ''))

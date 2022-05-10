@@ -171,21 +171,17 @@ class ProducerDoc(object):
     def get_path_template_are_bcs_auto_file(self):
         return 'data/bcs_template.py'
 
-    def get_path_out_are_bcs_auto_file(self, are_name: str, script_id: int = None):
-        if script_id is None:
-            script_id = self.are_name_to_script_id(are_name) + 5
-        name = f"py{script_id:05d}_{are_name.lower()}_scripts_auto.py"
-        return os.path.join(self.core_dir, "scr", name)
+    def get_path_out_are_bcs_auto_file(self, bcs_name: str):
+        name = f"scr_{bcs_name.lower()}_auto.py"
+        return os.path.join(self.core_dir, "scr", 'bcs', name)
 
     def get_path_template_are_bcs_manual_file(self):
         return 'data/bcs_template.py'
 
-    def get_path_out_are_bcs_manual_file(self, are_name: str, script_id: int = None):
-        if script_id is None:
-            script_id = self.are_name_to_script_id(are_name) + 6
-        name = f"py{script_id:05d}_{are_name.lower()}_scripts.py"
-        return os.path.join(self.core_dir, "scr", name)
-        
+    def get_path_out_are_bcs_manual_file(self, bcs_name: str):
+        name = f"scr_{bcs_name.lower()}.py"
+        return os.path.join(self.core_dir, "scr", 'bcs', name)
+
     @staticmethod
     def are_name_to_script_id(are_name: str):
         return int(are_name.lower().replace("ar", ""))*10

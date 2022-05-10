@@ -1,0 +1,49 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("05_Postulant_07")
+		MoveToObjectUntilSee(NearestPC)
+		SetVisualRange(0)
+		ClearActions("MasterOfLocks")
+		SetGlobal("AllowIceLance","MYAREA",1)
+		AddJournalEntry(39794)  // We met a man named the Master of Locks in one of the glacier's crevices.  He was escaping from a prison in the ice temple, and said someone named Nathaniel, who was being held there, knew us and was hoping we would rescue him.
+		SetVisualRange(0)
+		ClearActions("05_Warrior_03")
+		ClearActions("05_Warrior_06")
+		Dialogue(NearestPC)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("05_Warrior_03")
+		Enemy()
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("05_Warrior_06")
+		Enemy()
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("05_Postulant_08")
+		HideCreature(Myself,FALSE)
+		MoveToObjectUntilSee(NearestPC)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Wandering_Postulant_01")
+		HideCreature(Myself,FALSE)
+END
+

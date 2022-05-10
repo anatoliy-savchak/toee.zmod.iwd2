@@ -1,0 +1,480 @@
+IF
+	!TimerActive(101)
+	LevelInClass(Myself,10,SORCERER)
+THEN
+	RESPONSE #100
+		SetGlobal("Level1Spells","LOCALS",7)
+		SetGlobal("Level2Spells","LOCALS",7)
+		SetGlobal("Level3Spells","LOCALS",7)
+		SetGlobal("Level4Spells","LOCALS",7)
+		SetGlobal("Level5Spells","LOCALS",6)
+		SetGlobal("Level6Spells","LOCALS",4)
+		Continue()
+END
+
+IF
+	!TimerActive(101)
+	Or(2)
+		LevelInClass(Myself,9,CLERIC)
+		LevelInClass(Myself,10,CLERIC)
+THEN
+	RESPONSE #100
+		SetGlobal("Level1Spells","LOCALS",5)
+		SetGlobal("Level2Spells","LOCALS",5)
+		SetGlobal("Level3Spells","LOCALS",4)
+		SetGlobal("Level4Spells","LOCALS",4)
+		SetGlobal("Level5Spells","LOCALS",2)
+		Continue()
+END
+
+IF
+	!TimerActive(101)
+	CheckStat(Myself,20,CLASSLEVELSUM)
+THEN
+	RESPONSE #100
+		SetGlobal("Level1Spells","LOCALS",7)
+		SetGlobal("Level2Spells","LOCALS",7)
+		SetGlobal("Level3Spells","LOCALS",7)
+		SetGlobal("Level4Spells","LOCALS",7)
+		SetGlobal("Level5Spells","LOCALS",6)
+		SetGlobal("Level6Spells","LOCALS",6)
+		SetGlobal("Level7Spells","LOCALS",6)
+		SetGlobal("Level8Spells","LOCALS",6)
+		SetGlobal("Level9Spells","LOCALS",6)
+		Continue()
+END
+
+IF
+	!TimerActive(101)
+THEN
+	RESPONSE #100
+		Rest()
+		StartTimer(101,2400)
+END
+
+IF
+	NumTimesTalkedTo(0)
+	See([PC],0)
+THEN
+	RESPONSE #100
+		SetCreatureAreaFlag(Myself,INVULNERABLE,FALSE)
+		SetDialogueRange(300)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(LastMarkedObject,WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinking Cloud)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		Dialogue(LastMarkedObject)
+		Enemy()
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level7Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_SEVEN_EYES)  // SPWI710.SPL (Seven Eyes)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	IsCreatureAreaFlag(Myself,INVULNERABLE)
+	Global("TimeToLeave","LOCALS",0)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	!NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Global("TimeToLeave","LOCALS",0)
+	HPPercentLT(Myself,70)
+THEN
+	RESPONSE #100
+		SetCreatureAreaFlag(Myself,INVULNERABLE,TRUE)
+		SetGlobal("TimeToLeave","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("TimeToLeave","LOCALS",0)
+	GlobalLT("Level1Spells","LOCALS",1)
+	GlobalLT("Level2Spells","LOCALS",1)
+	GlobalLT("Level3Spells","LOCALS",1)
+	GlobalLT("Level4Spells","LOCALS",1)
+	GlobalLT("Level5Spells","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetCreatureAreaFlag(Myself,INVULNERABLE,TRUE)
+		SetGlobal("TimeToLeave","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("TimeToLeave","LOCALS",1)
+	See([PC],0)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		SetDialogueRange(300)
+		Dialogue(LastMarkedObject)
+		DropItem("SPWI711Z",[-1.-1])  // Suffocate
+		DropItem("00GEM01",[-1.-1])  // Fire Agate Gem
+		SpellHitEffectSprite(Myself,Myself,DIMENSION_DOOR_ORIGIN,0)
+		TriggerActivation("To6101",TRUE)
+		HideCreature(Myself,TRUE)
+		StartTimer(99,10)
+		SetGlobal("TimeToLeave","LOCALS",2)
+END
+
+IF
+	Global("TimeToLeave","LOCALS",2)
+	!TimerActive(99)
+THEN
+	RESPONSE #100
+		DestroySelf()
+		ChangeCurrentScript("")
+END
+
+IF
+	Global("TimeToLeave","LOCALS",2)
+	TimerActive(99)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	HaveSpell(WIZARD_GLOBE_OF_INVULNERABILITY)  // SPWI608.SPL (Globe of Invulnerability)
+	HitBy([ANYONE],MAGIC)
+	IsSpellTargetValid(Myself,WIZARD_MINOR_GLOBE_OF_INVULNERABILITY,SPELLCAST_IGNORE_RANGE_CHECK)  // SPWI406.SPL (Minor Globe of Invulnerability)
+	GlobalGT("Level6Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level6Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)  // SPWI608.SPL (Globe of Invulnerability)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)  // SPWI406.SPL (Minor Globe of Invulnerability)
+	HitBy([ANYONE],MAGIC)
+	IsSpellTargetValid(Myself,WIZARD_MINOR_GLOBE_OF_INVULNERABILITY,SPELLCAST_IGNORE_RANGE_CHECK)  // SPWI406.SPL (Minor Globe of Invulnerability)
+	GlobalGT("Level4Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)  // SPWI406.SPL (Minor Globe of Invulnerability)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(WIZARD_PROTECTION_FROM_NORMAL_MISSILES)  // SPWI311.SPL (Protection From Arrows)
+	HitBy([ANYONE],MISSILE)
+	IsSpellTargetValid(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES,SPELLCAST_IGNORE_RANGE_CHECK)  // SPWI311.SPL (Protection From Arrows)
+	GlobalGT("Level3Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)  // SPWI311.SPL (Protection From Arrows)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	See([PC],0)
+	!CheckSpellState(LastMarkedObject,HELD)
+	RandomNum(4,1)
+	ChargeCount("00WAND36",Myself,0,0,GREATER_THAN)  // Hold Person Wand
+THEN
+	RESPONSE #100
+		UseItem("00WAND36",LastSeenBy(Myself))  // Hold Person Wand
+END
+
+IF
+	Global("INITIALIZED_61IZBELA","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_PROTECTION_FROM_PETRIFICATION)  // SPWI108.SPL (Protection from Petrification)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_STONESKIN)  // SPWI408.SPL (Stoneskin)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_SEE_INVISIBILITY)  // SPWI203.SPL (See Invisibility)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(Myself,CLERIC_PROTECTION_FROM_EVIL)  // SPPR107.SPL (Protection From Evil)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		SetGlobal("INITIALIZED_61IZBELA","LOCALS",1)
+		Continue()
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	!Global("OBJ_SP_61IZBELA_0","LOCALS",-1)
+	Allegiance(Myself,ENEMY)
+	NumInPartyGT(1)
+	See([GOODCUTOFF.HUMANOID],0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("210425092417",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_CHARM_PERSON, WIZARD_CHAOS, WIZARD_BELTYNS_BURNING_BLOOD]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	!Global("OBJ_SP_61IZBELA_0","LOCALS",-1)
+	!HaveSpell(WIZARD_CHARM_PERSON)  // SPWI104.SPL (Charm Person)
+	!HaveSpell(WIZARD_CHAOS)  // SPWI509.SPL (Chaos)
+	!HaveSpell(WIZARD_BELTYNS_BURNING_BLOOD)  // SPWI417.SPL (Beltyn's Burning Blood)
+THEN
+	RESPONSE #100
+		SetGlobal("OBJ_SP_61IZBELA_0","LOCALS",-1)
+		Continue()
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	!Global("OBJ_SP_61IZBELA_1","LOCALS",-1)
+	Allegiance(Myself,ENEMY)
+	See([GOODCUTOFF],0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("221722112112262825142705",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_AGANNAZAR_SCORCHER, WIZARD_MELFS_ACID_ARROW, WIZARD_MAGIC_MISSILE, WIZARD_CONJURE_EARTH_ELEMENTAL, WIZARD_CONJURE_LESSER_FIRE_ELEMENTAL, WIZARD_POWER_WORD_STUN]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	!Global("OBJ_SP_61IZBELA_1","LOCALS",-1)
+	!HaveSpell(WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (Aganazzar's Scorcher)
+	!HaveSpell(WIZARD_MELFS_ACID_ARROW)  // SPWI211.SPL (Melf's Acid Arrow)
+	!HaveSpell(WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magic Missile)
+	!HaveSpell(WIZARD_CONJURE_EARTH_ELEMENTAL)  // SPWI628.SPL (Planar Binding: Earth Elemental)
+	!HaveSpell(WIZARD_CONJURE_LESSER_FIRE_ELEMENTAL)  // SPWI514.SPL (Lesser Planar Binding: Fire Elemental)
+	!HaveSpell(WIZARD_POWER_WORD_STUN)  // SPWI705.SPL (Power Word, Stun)
+THEN
+	RESPONSE #100
+		SetGlobal("OBJ_SP_61IZBELA_1","LOCALS",-1)
+		Continue()
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	!Global("OBJ_SP_61IZBELA_2","LOCALS",-1)
+	Allegiance(Myself,ENEMY)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("221223052201",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_MIRROR_IMAGE, WIZARD_HASTE, WIZARD_BLUR]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	!Global("OBJ_SP_61IZBELA_2","LOCALS",-1)
+	!HaveSpell(WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Mirror Image)
+	!HaveSpell(WIZARD_HASTE)  // SPWI305.SPL (Haste)
+	!HaveSpell(WIZARD_BLUR)  // SPWI201.SPL (Blur)
+THEN
+	RESPONSE #100
+		SetGlobal("OBJ_SP_61IZBELA_2","LOCALS",-1)
+		Continue()
+END
+
+IF
+	HaveSpell(WIZARD_SLEEP)  // SPWI116.SPL (Sleep)
+	See([GOODCUTOFF.HUMANOID],0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_SLEEP,0)  // SPWI116.SPL (Sleep)
+	Allegiance(Myself,ENEMY)
+	CheckStatLT(LastMarkedObject,5,CLASSLEVELSUM)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_SLEEP)  // SPWI116.SPL (Sleep)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HasItem("MMMeteo",Myself)  // Melf's Minute Meteors
+	See([GOODCUTOFF],0)
+	Allegiance(Myself,ENEMY)
+	Range(LastMarkedObject,9,GREATER_THAN)
+	!See([ENEMY.MONSTER.SALAMANDER],0)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastMarkedObject)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	!Global("OBJ_SP_61IZBELA_4","LOCALS",-1)
+	See([GOODCUTOFF],0)
+	Allegiance(Myself,ENEMY)
+	Range(LastMarkedObject,9,GREATER_THAN)
+	!See([ENEMY.MONSTER.SALAMANDER],0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("230425032605",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_FIREBALL, WIZARD_CLOUDKILL, WIZARD_ACID_FOG]
+		MarkSpellAndObject("2322",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_MELFS_MINUTE_METEORS]
+		Continue()
+	RESPONSE #100
+		MarkSpellAndObject("2322",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_MELFS_MINUTE_METEORS]
+		MarkSpellAndObject("230425032605",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_FIREBALL, WIZARD_CLOUDKILL, WIZARD_ACID_FOG]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	!Global("OBJ_SP_61IZBELA_4","LOCALS",-1)
+	!HaveSpell(WIZARD_FIREBALL)  // SPWI304.SPL (Fireball)
+	!HaveSpell(WIZARD_MELFS_MINUTE_METEORS)  // SPWI322.SPL (Melf's Minute Meteors)
+	!HaveSpell(WIZARD_CLOUDKILL)  // SPWI503.SPL (Cloudkill)
+	!HaveSpell(WIZARD_ACID_FOG)  // SPWI605.SPL (Acid Fog)
+THEN
+	RESPONSE #100
+		SetGlobal("OBJ_SP_61IZBELA_4","LOCALS",-1)
+		Continue()
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	!Global("OBJ_SP_61IZBELA_5","LOCALS",-1)
+	See([GOODCUTOFF],0)
+	Allegiance(Myself,ENEMY)
+	Range(LastMarkedObject,6,LESS_THAN)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("242325192103",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_SHOUT, WIZARD_SUNFIRE, WIZARD_BURNING_HANDS]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	!Global("OBJ_SP_61IZBELA_5","LOCALS",-1)
+	!HaveSpell(WIZARD_SHOUT)  // SPWI423.SPL (Shout)
+	!HaveSpell(WIZARD_SUNFIRE)  // SPWI519.SPL (Sunfire)
+	!HaveSpell(WIZARD_BURNING_HANDS)  // SPWI103.SPL (Burning Hands)
+THEN
+	RESPONSE #100
+		SetGlobal("OBJ_SP_61IZBELA_5","LOCALS",-1)
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	CheckStatGT(LastMarkedObject,22,RESISTMAGIC)
+	HaveSpell(WIZARD_LOWER_RESISTANCE)  // SPWI518.SPL (Lower Resistance)
+	See([GOODCUTOFF],0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_LOWER_RESISTANCE,0)  // SPWI518.SPL (Lower Resistance)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_LOWER_RESISTANCE)  // SPWI518.SPL (Lower Resistance)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	!TimerActive(22)
+	!NearSavedLocation(1)
+	Global("TimeToLeave","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReturnToSavedLocation(0)
+		StartRandomTimer(22,1,10)
+END
+
+IF
+	!TimerActive(22)
+	NearSavedLocation(1)
+	Global("TimeToLeave","LOCALS",0)
+THEN
+	RESPONSE #100
+		FaceSavedLocation(Myself)
+		StartRandomTimer(22,1,10)
+END
+

@@ -1,0 +1,127 @@
+IF
+	Global("ToOjaiha","LOCALS",0)
+	!Global("TEAM_7","MYAREA",0)
+	!See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		SetGlobal("ToOjaiha","LOCALS",1)
+		Enemy()
+		Spell(Myself,WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)  // SPWI406.SPL (Minor Globe of Invulnerability)
+		WaitRandom(3,6)
+		ForceSpellPoint([2990.370],WIZARD_DIMENSION_DOOR)  // SPWI402.SPL (Dimension Door)
+		SpellWait(WIZARD_DIMENSION_DOOR)  // SPWI402.SPL (Dimension Door)
+	RESPONSE #100
+		SetGlobal("ToOjaiha","LOCALS",1)
+		Enemy()
+		Spell(Myself,WIZARD_BLINK)  // SPWI323.SPL (Blink)
+		WaitRandom(2,6)
+		ForceSpellPoint([2990.370],WIZARD_DIMENSION_DOOR)  // SPWI402.SPL (Dimension Door)
+		SpellWait(WIZARD_DIMENSION_DOOR)  // SPWI402.SPL (Dimension Door)
+END
+
+IF
+	CreatureHidden(Myself)
+	!Global("TEAM_7","MYAREA",0)
+THEN
+	RESPONSE #100
+		HideCreature(Myself,FALSE)
+		Continue()
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	!Global("OBJ_SP_60CCABAC_0","LOCALS",-1)
+	Allegiance(Myself,ENEMY)
+	Range(NearestEnemyOf(Myself),25,LESS_THAN)
+	SetLastMarkedObject(Myself)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("24062323",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_MINOR_GLOBE_OF_INVULNERABILITY, WIZARD_BLINK]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+		SetGlobal("OBJ_SP_60CCABAC_0","LOCALS",-1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Range(NearestEnemyOf(Myself),25,LESS_THAN)
+	HaveSpell(WIZARD_SPIRIT_ARMOR)  // SPWI414.SPL (Spirit Armor)
+	SetLastMarkedObject(Myself)
+	IsSpellTargetValid(Myself,WIZARD_SPIRIT_ARMOR,0)  // SPWI414.SPL (Spirit Armor)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_SPIRIT_ARMOR)  // SPWI414.SPL (Spirit Armor)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(WIZARD_DISMISSAL)  // SPWI524.SPL (Dismissal)
+	See(NearestEnemySummoned(Myself),0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_DISMISSAL,0)  // SPWI524.SPL (Dismissal)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_DISMISSAL)  // SPWI524.SPL (Dismissal)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("25132418231223192303222522262217",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_SUMMON_SHADOW, WIZARD_SHADOW_CONJURATION, WIZARD_SLOW, WIZARD_LANCE_OF_DISRUPTION, WIZARD_FLAME_ARROW, WIZARD_POWER_WORD_SLEEP, WIZARD_RAY_OF_ENFEEBLEMENT, WIZARD_AGANNAZAR_SCORCHER]
+		MarkSpellAndObject("21122112212221222101",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_MAGIC_MISSILE, WIZARD_MAGIC_MISSILE, WIZARD_ICE_DAGGER, WIZARD_ICE_DAGGER, WIZARD_GREASE]
+		Continue()
+	RESPONSE #100
+		MarkSpellAndObject("21122112212221222101",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_MAGIC_MISSILE, WIZARD_MAGIC_MISSILE, WIZARD_ICE_DAGGER, WIZARD_ICE_DAGGER, WIZARD_GREASE]
+		MarkSpellAndObject("25132418231223192303222522262217",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_SUMMON_SHADOW, WIZARD_SHADOW_CONJURATION, WIZARD_SLOW, WIZARD_LANCE_OF_DISRUPTION, WIZARD_FLAME_ARROW, WIZARD_POWER_WORD_SLEEP, WIZARD_RAY_OF_ENFEEBLEMENT, WIZARD_AGANNAZAR_SCORCHER]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	HaveSpell(WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Mirror Image)
+	See(NearestEnemyOf(Myself),0)
+	IsSpellTargetValid(Myself,WIZARD_MIRROR_IMAGE,0)  // SPWI212.SPL (Mirror Image)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Mirror Image)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		EquipWeapon()
+		AttackOneRound(LastMarkedObject)
+END
+

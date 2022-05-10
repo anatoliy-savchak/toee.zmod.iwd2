@@ -1,0 +1,173 @@
+IF
+	!IsCreatureAreaFlag(Myself,IGNORE_AI_INHIBIT)
+THEN
+	RESPONSE #100
+		SetCreatureAreaFlag(Myself,IGNORE_AI_INHIBIT,TRUE)
+		Continue()
+END
+
+IF
+	Global("SAID_ATTACK","LOCALS",0)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		SetGlobal("SAID_ATTACK","LOCALS",1)
+		FloatMessage(Myself,29428)  // "Get them!  Wipe them out!"
+		Continue()
+END
+
+IF
+	HaveSpell(WIZARD_BLINK)  // SPWI323.SPL (Blink)
+	!HaveSpell(WIZARD_DIRE_CHARM)  // SPWI316.SPL (Dire Charm)
+	IsSpellTargetValid(Myself,WIZARD_BLINK,0)  // SPWI323.SPL (Blink)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_BLINK)  // SPWI323.SPL (Blink)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(WIZARD_SLEEP)  // SPWI116.SPL (Sleep)
+	See([PC],0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_SLEEP,0)  // SPWI116.SPL (Sleep)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_SLEEP)  // SPWI116.SPL (Sleep)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(WIZARD_BLUR)  // SPWI201.SPL (Blur)
+	See(NearestEnemyOf(Myself),0)
+	IsSpellTargetValid(Myself,WIZARD_BLUR,0)  // SPWI201.SPL (Blur)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_BLUR)  // SPWI201.SPL (Blur)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("BURNING_HANDS","LOCALS",0)
+	HaveSpell(WIZARD_BURNING_HANDS)  // SPWI103.SPL (Burning Hands)
+	Or(11)
+		See(NearestEnemyOf(Myself),0)
+		See("Soldier_1_Gate",0)
+		See("Soldier_2_Gate",0)
+		See("Trainee_3_S",0)
+		See("Weapon_Instructor",0)
+		See("Olap_Soothammer",0)
+		See("Anson",0)
+		See("Kadence",0)
+		See("09_Black_Geoffrey",0)
+		See("09_Blanchard",0)
+		See("Niles",0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_BURNING_HANDS,0)  // SPWI103.SPL (Burning Hands)
+THEN
+	RESPONSE #100
+		SetGlobal("BURNING_HANDS","LOCALS",1)
+		Spell(LastMarkedObject,WIZARD_BURNING_HANDS)  // SPWI103.SPL (Burning Hands)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(WIZARD_COLOR_SPRAY)  // SPWI105.SPL (Color Spray)
+	Or(11)
+		See(NearestEnemyOf(Myself),0)
+		See("Soldier_1_Gate",0)
+		See("Soldier_2_Gate",0)
+		See("Trainee_3_S",0)
+		See("Weapon_Instructor",0)
+		See("Olap_Soothammer",0)
+		See("Anson",0)
+		See("Kadence",0)
+		See("09_Black_Geoffrey",0)
+		See("09_Blanchard",0)
+		See("Niles",0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_COLOR_SPRAY,0)  // SPWI105.SPL (Color Spray)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_COLOR_SPRAY)  // SPWI105.SPL (Color Spray)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(WIZARD_RAY_OF_ENFEEBLEMENT)  // SPWI226.SPL (Ray of Enfeeblement)
+	Or(2)
+		See([PC.0.0.0.0.0.0.0.0.CLASSMASK_GROUP_WARRIORS],0)
+		See([PC],0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_RAY_OF_ENFEEBLEMENT,0)  // SPWI226.SPL (Ray of Enfeeblement)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_RAY_OF_ENFEEBLEMENT)  // SPWI226.SPL (Ray of Enfeeblement)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	!Global("BURNING_HANDS","LOCALS",0)
+	HaveSpell(WIZARD_BURNING_HANDS)  // SPWI103.SPL (Burning Hands)
+	Or(11)
+		See(NearestEnemyOf(Myself),0)
+		See("Soldier_1_Gate",0)
+		See("Soldier_2_Gate",0)
+		See("Trainee_3_S",0)
+		See("Weapon_Instructor",0)
+		See("Olap_Soothammer",0)
+		See("Anson",0)
+		See("Kadence",0)
+		See("09_Black_Geoffrey",0)
+		See("09_Blanchard",0)
+		See("Niles",0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_BURNING_HANDS,0)  // SPWI103.SPL (Burning Hands)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_BURNING_HANDS)  // SPWI103.SPL (Burning Hands)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(WIZARD_DIRE_CHARM)  // SPWI316.SPL (Dire Charm)
+	Or(2)
+		See([PC.0.0.0.0.0.0.0.0.CLASSMASK_GROUP_WARRIORS],0)
+		See([PC],0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_DIRE_CHARM,0)  // SPWI316.SPL (Dire Charm)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_DIRE_CHARM)  // SPWI316.SPL (Dire Charm)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	!TimerActive(21)
+	!Allegiance(Myself,ENEMY)
+	See([PC],0)
+THEN
+	RESPONSE #100
+		FloatMessage(Myself,8640)  // "Can I *help* you?"
+		StartRandomTimer(21,25,30)
+		Continue()
+	RESPONSE #100
+		FloatMessage(Myself,8641)  // "What are you doing in here?"
+		StartRandomTimer(21,25,30)
+		Continue()
+	RESPONSE #100
+		FloatMessage(Myself,8642)  // "Leave, before I summon the Guard to throw you out."
+		StartRandomTimer(21,25,30)
+		Continue()
+END
+

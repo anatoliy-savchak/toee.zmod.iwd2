@@ -1,0 +1,9 @@
+IF
+	!CreatureHidden(Myself)
+	LOS([PC],25)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,INNATE_ZOMBIE_LORD_AURA)  // SPIN992.SPL (No such index)
+		ChangeCurrentScript("")
+END
+

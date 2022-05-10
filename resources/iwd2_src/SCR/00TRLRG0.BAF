@@ -1,0 +1,32 @@
+IF
+	HPLT(Myself,5)
+	!Dead(Myself)
+THEN
+	RESPONSE #100
+		XEquipItem("00Troll2",Myself,SLOT_RING_RIGHT,TRUE)  // No such index
+		XEquipItem("00Troll1",Myself,SLOT_RING_LEFT,FALSE)  // No such index
+		PlayDead(600)
+		SetHPPercent(Myself,75,MAX_HP)
+	RESPONSE #100
+		XEquipItem("00Troll2",Myself,SLOT_RING_RIGHT,TRUE)  // No such index
+		XEquipItem("00Troll1",Myself,SLOT_RING_LEFT,FALSE)  // No such index
+		PlayDead(500)
+		SetHPPercent(Myself,65,MAX_HP)
+	RESPONSE #100
+		XEquipItem("00Troll2",Myself,SLOT_RING_RIGHT,TRUE)  // No such index
+		XEquipItem("00Troll1",Myself,SLOT_RING_LEFT,FALSE)  // No such index
+		PlayDead(400)
+		SetHPPercent(Myself,50,MAX_HP)
+END
+
+IF
+	Or(2)
+		!HasItemInSlot("00Troll1",Myself,SLOT_RING_LEFT)  // No such index
+		HasItemInSlot("00Troll2",Myself,SLOT_RING_RIGHT)  // No such index
+THEN
+	RESPONSE #100
+		XEquipItem("00Troll1",Myself,SLOT_RING_LEFT,TRUE)  // No such index
+		XEquipItem("00Troll2",Myself,SLOT_RING_RIGHT,FALSE)  // No such index
+		Continue()
+END
+

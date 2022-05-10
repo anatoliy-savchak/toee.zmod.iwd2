@@ -1,0 +1,12 @@
+IF
+	HaveSpell(WIZARD_CHARM_PERSON)  // SPWI104.SPL (Charm Person)
+	See(NearestEnemyOf(Myself),0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_CHARM_PERSON,0)  // SPWI104.SPL (Charm Person)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_CHARM_PERSON)  // SPWI104.SPL (Charm Person)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+

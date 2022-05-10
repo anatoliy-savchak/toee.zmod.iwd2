@@ -1,0 +1,10 @@
+IF
+	GlobalTimerExpired("FearAura","LOCALS")
+	Range(NearestPC,15,LESS_THAN)
+THEN
+	RESPONSE #100
+		ApplySpell(LastMarkedObject,2085)  // SPWI085.SPL (Fear)
+		SetGlobalTimer("FearAura","LOCALS",7)
+		Continue()
+END
+

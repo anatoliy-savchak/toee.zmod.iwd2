@@ -1,0 +1,34 @@
+IF
+	Or(2)
+		Opened([PC])
+		Entered([PC])
+THEN
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastTrigger,WIZARD_SNILLOCS_SNOWBALL_SWARM)  // SPWI220.SPL (Snilloc's Snowball Swarm)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastTrigger,WIZARD_EMOTION_FEAR)  // SPWI420.SPL (Emotion: Fear)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastTrigger,WIZARD_ICE_DAGGER)  // SPWI122.SPL (Ice Dagger)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastTrigger,WIZARD_ICE_STORM)  // SPWI404.SPL (Ice Storm)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastTrigger,CLERIC_UNHOLY_BLIGHT)  // SPPR325.SPL (Unholy Blight)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastTrigger,CLERIC_CHARM_PERSON_OR_MAMMAL)  // SPPR204.SPL (Charm Person or Animal)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastTrigger,CLERIC_DISPEL_MAGIC)  // SPPR303.SPL (Dispel Magic)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastTrigger,CLERIC_FROST_FINGERS)  // SPPR117.SPL (Frost Fingers)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastTrigger,CLERIC_SILENCE_15_RADIUS)  // SPPR211.SPL (Silence)
+END
+

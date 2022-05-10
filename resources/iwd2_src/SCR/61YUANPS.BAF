@@ -1,0 +1,96 @@
+IF
+	!TimerActive(100)
+	StateCheck(Myself,STATE_POISONED)
+THEN
+	RESPONSE #100
+		StartTimer(100,7200)
+		FaceObject(Myself)
+		ForceSpell(Myself,CLERIC_NEUTRALIZE_POISON)  // SPPR404.SPL (Neutralize Poison)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	!TimerActive(100)
+	See([0.0.YUANTI],0)
+	StateCheck(LastMarkedObject,STATE_POISONED)
+THEN
+	RESPONSE #100
+		StartTimer(100,7200)
+		FaceObject(LastMarkedObject)
+		ForceSpell(LastMarkedObject,CLERIC_NEUTRALIZE_POISON)  // SPPR404.SPL (Neutralize Poison)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	!TimerActive(100)
+	RandomNum(4,1)
+	See([GOODCUTOFF.ANIMAL],0)
+	IsAnimationID(LastMarkedObject,Snake)
+THEN
+	RESPONSE #100
+		StartTimer(100,7200)
+		FaceObject(LastMarkedObject)
+		ForceSpell(LastMarkedObject,CLERIC_CHARM_PERSON_OR_MAMMAL)  // SPPR204.SPL (Charm Person or Animal)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	!TimerActive(100)
+	RandomNum(4,1)
+	See(NearestEnemyOf(Myself),0)
+	!IsAnimationID(LastMarkedObject,"""""Mummy, Histachii""""")
+THEN
+	RESPONSE #100
+		SetMyTarget(LastMarkedObject)
+		SetGlobal("UsePsionics","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("UsePsionics","LOCALS",1)
+	IsSpellTargetValid(MyTarget,INNATE_BEHOLDER_FEAR,0)  // SPIN172.SPL (Fear)
+THEN
+	RESPONSE #100
+		SetGlobal("UsePsionics","LOCALS",0)
+		StartTimer(100,7200)
+		FaceObject(MyTarget)
+		ForceSpell(MyTarget,INNATE_BEHOLDER_FEAR)  // SPIN172.SPL (Fear)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("UsePsionics","LOCALS",1)
+	IsSpellTargetValid(MyTarget,CLERIC_COMMAND,0)  // SPPR102.SPL (Command)
+THEN
+	RESPONSE #100
+		SetGlobal("UsePsionics","LOCALS",0)
+		StartTimer(100,7200)
+		FaceObject(MyTarget)
+		ForceSpell(MyTarget,CLERIC_COMMAND)  // SPPR102.SPL (Command)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("UsePsionics","LOCALS",1)
+	IsSpellTargetValid(MyTarget,CLERIC_SYMBOL_OF_PAIN,0)  // SPPR714.SPL (Symbol of Pain)
+THEN
+	RESPONSE #100
+		SetGlobal("UsePsionics","LOCALS",0)
+		StartTimer(100,7200)
+		FaceObject(MyTarget)
+		ForceSpell(MyTarget,CLERIC_SYMBOL_OF_PAIN)  // SPPR714.SPL (Symbol of Pain)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+

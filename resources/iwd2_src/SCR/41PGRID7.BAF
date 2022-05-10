@@ -1,0 +1,79 @@
+IF
+	Clicked(Player1)
+	Global("BattleSquarePlayer","MYAREA",1)
+	Global("BattleSquareState","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BattleSquareSelected","MYAREA",7)
+		SetGlobal("BattleSquareLevel","MYAREA",0)
+		SetGlobal("BattleSquareState","MYAREA",2)
+		TriggerActivation(Myself,FALSE)
+END
+
+IF
+	Clicked(Player2)
+	Global("BattleSquarePlayer","MYAREA",2)
+	Global("BattleSquareState","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BattleSquareSelected","MYAREA",7)
+		SetGlobal("BattleSquareLevel","MYAREA",0)
+		SetGlobal("BattleSquareState","MYAREA",2)
+		TriggerActivation(Myself,FALSE)
+END
+
+IF
+	Clicked(Player3)
+	Global("BattleSquarePlayer","MYAREA",3)
+	Global("BattleSquareState","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BattleSquareSelected","MYAREA",7)
+		SetGlobal("BattleSquareLevel","MYAREA",0)
+		SetGlobal("BattleSquareState","MYAREA",2)
+		TriggerActivation(Myself,FALSE)
+END
+
+IF
+	Clicked(Player4)
+	Global("BattleSquarePlayer","MYAREA",4)
+	Global("BattleSquareState","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BattleSquareSelected","MYAREA",7)
+		SetGlobal("BattleSquareLevel","MYAREA",0)
+		SetGlobal("BattleSquareState","MYAREA",2)
+		TriggerActivation(Myself,FALSE)
+END
+
+IF
+	Clicked(Player5)
+	Global("BattleSquarePlayer","MYAREA",5)
+	Global("BattleSquareState","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BattleSquareSelected","MYAREA",7)
+		SetGlobal("BattleSquareLevel","MYAREA",0)
+		SetGlobal("BattleSquareState","MYAREA",2)
+		TriggerActivation(Myself,FALSE)
+END
+
+IF
+	Clicked(Player6)
+	Global("BattleSquarePlayer","MYAREA",6)
+	Global("BattleSquareState","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetGlobal("BattleSquareSelected","MYAREA",7)
+		SetGlobal("BattleSquareLevel","MYAREA",0)
+		SetGlobal("BattleSquareState","MYAREA",2)
+		TriggerActivation(Myself,FALSE)
+END
+
+IF
+	Clicked([PC])
+THEN
+	RESPONSE #100
+		NoAction()
+END
+

@@ -1,0 +1,53 @@
+IF
+	!Global("61CurrentDay","GLOBAL",4)
+THEN
+	RESPONSE #100
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+END
+
+IF
+	See([GOODCUTOFF],0)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,CLERIC_WHIRLWIND)  // SPPR613.SPL (Whirlwind)
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_DELAYED_BLAST_FIREBALL)  // SPWI714.SPL (Delayed Blast Fireball)
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_CLOUDKILL)  // SPWI503.SPL (Cloudkill)
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_ACID_FOG)  // SPWI605.SPL (Acid Fog)
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+	RESPONSE #100
+		ForceSpell(Myself,CLERIC_CLOUD_OF_PESTILENCE)  // SPPR417.SPL (Cloud of Pestilence)
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_GREASE)  // SPWI101.SPL (Grease)
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+	RESPONSE #100
+		ForceSpell(Myself,CLERIC_INSECT_PLAGUE)  // SPPR510.SPL (Insect Plague)
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+	RESPONSE #100
+		ForceSpell(Myself,CLERIC_SPIKE_STONES)  // SPPR512.SPL (Spike Stones)
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinking Cloud)
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_WEB)  // SPWI215.SPL (Web)
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+END
+

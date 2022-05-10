@@ -108,3 +108,10 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 		else:
 			raise Exception('Actor {} not found!'.format(actor_name))
 		return
+
+	def delete_obsolate_controls(self):
+		# this is forbidden in IWD2 game!
+		return
+
+	def run_daemon_script(self, on_creation = False):
+		return

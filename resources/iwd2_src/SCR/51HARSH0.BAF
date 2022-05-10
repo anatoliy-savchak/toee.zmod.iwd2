@@ -1,0 +1,248 @@
+IF
+	!HaveSpell(WIZARD_HASTE)  // SPWI305.SPL (Haste)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_POLYMORPH_SELF)
+		SpellWait(WIZARD_POLYMORPH_SELF)
+		ChangeCurrentScript("00aAtBN")
+END
+
+IF
+	HaveSpell(WIZARD_EMOTION_HOPELESSNESS)  // SPWI411.SPL (Emotion: Despair)
+	HaveSpell(WIZARD_DISINTEGRATE)  // SPWI607.SPL (Disintegrate)
+	Allegiance(Myself,ENEMY)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		Spell(LastAttackerOf(Myself),WIZARD_EMOTION_HOPELESSNESS)  // SPWI411.SPL (Emotion: Despair)
+		SpellWait(WIZARD_EMOTION_HOPELESSNESS)  // SPWI411.SPL (Emotion: Despair)
+	RESPONSE #100
+		Spell(LastAttackerOf(Myself),WIZARD_DISINTEGRATE)  // SPWI607.SPL (Disintegrate)
+		SpellWait(WIZARD_DISINTEGRATE)  // SPWI607.SPL (Disintegrate)
+END
+
+IF
+	HaveSpell(WIZARD_EMOTION_HOPELESSNESS)  // SPWI411.SPL (Emotion: Despair)
+	Allegiance(Myself,ENEMY)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		Spell(LastAttackerOf(Myself),WIZARD_EMOTION_HOPELESSNESS)  // SPWI411.SPL (Emotion: Despair)
+		SpellWait(WIZARD_EMOTION_HOPELESSNESS)  // SPWI411.SPL (Emotion: Despair)
+END
+
+IF
+	HaveSpell(WIZARD_DISINTEGRATE)  // SPWI607.SPL (Disintegrate)
+	Allegiance(Myself,ENEMY)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		Spell(LastAttackerOf(Myself),WIZARD_DISINTEGRATE)  // SPWI607.SPL (Disintegrate)
+		SpellWait(WIZARD_DISINTEGRATE)  // SPWI607.SPL (Disintegrate)
+END
+
+IF
+	HaveSpell(WIZARD_BANISHMENT)  // SPWI718.SPL (Banishment)
+	GlobalTimerExpired("BANISH_TIMER","LOCALS")
+	Allegiance(Myself,ENEMY)
+	See(NearestEnemySummoned(Myself),0)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_BANISHMENT)  // SPWI718.SPL (Banishment)
+		SpellWait(WIZARD_BANISHMENT)  // SPWI718.SPL (Banishment)
+		SetGlobalTimerRandom("BANISH_TIMER","LOCALS",6,18)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("231124062212",Myself,SPELLCAST_IGNORE_SEE)  // [WIZARD_PROTECTION_FROM_NORMAL_MISSILES, WIZARD_MINOR_GLOBE_OF_INVULNERABILITY, WIZARD_MIRROR_IMAGE]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	HaveSpell(WIZARD_STONESKIN)  // SPWI408.SPL (Stoneskin)
+	Allegiance(Myself,ENEMY)
+	IsSpellTargetValid(Myself,WIZARD_MIRROR_IMAGE,0)  // SPWI212.SPL (Mirror Image)
+	IsSpellTargetValid(Myself,WIZARD_STONESKIN,0)  // SPWI408.SPL (Stoneskin)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_STONESKIN)  // SPWI408.SPL (Stoneskin)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("2223","01_51HNTMN_04",0)  // [WIZARD_CATS_GRACE]
+		MarkSpellAndObject("2223","01_51HNTMN_05",0)  // [WIZARD_CATS_GRACE]
+		MarkSpellAndObject("2223","01_51HNTMN_06",0)  // [WIZARD_CATS_GRACE]
+		MarkSpellAndObject("2223","01_51HNTMN_07",0)  // [WIZARD_CATS_GRACE]
+		MarkSpellAndObject("2223","01_51HNTMN_13",0)  // [WIZARD_CATS_GRACE]
+		MarkSpellAndObject("2223","01_51HNTMN_17",0)  // [WIZARD_CATS_GRACE]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("2623","01_51BEAWA_08",0)  // [WIZARD_IMPROVED_HASTE]
+		MarkSpellAndObject("2623","01_51BEAWA_09",0)  // [WIZARD_IMPROVED_HASTE]
+		MarkSpellAndObject("2623","01_51BEAWA_10",0)  // [WIZARD_IMPROVED_HASTE]
+		MarkSpellAndObject("2623","01_51BEAWA_11",0)  // [WIZARD_IMPROVED_HASTE]
+		MarkSpellAndObject("2623","01_51BEAWA_19",0)  // [WIZARD_IMPROVED_HASTE]
+		MarkSpellAndObject("2623","01_51CATBA_14",0)  // [WIZARD_IMPROVED_HASTE]
+		MarkSpellAndObject("2623","01_51CATBA_15",0)  // [WIZARD_IMPROVED_HASTE]
+		MarkSpellAndObject("2623","01_51CATBA_18",0)  // [WIZARD_IMPROVED_HASTE]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	Allegiance(Myself,ENEMY)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("23162104",[PC.0.0.0.0.0.0.0.0.CLASSMASK_GROUP_WARRIORS],SPELLCAST_RANDOM)  // [WIZARD_DIRE_CHARM, WIZARD_CHARM_PERSON]
+		MarkSpellAndObject("21042316",[ENEMY],SPELLCAST_RANDOM)  // [WIZARD_CHARM_PERSON, WIZARD_DIRE_CHARM]
+		Continue()
+	RESPONSE #100
+		MarkSpellAndObject("21042316",[ENEMY],SPELLCAST_RANDOM)  // [WIZARD_CHARM_PERSON, WIZARD_DIRE_CHARM]
+		MarkSpellAndObject("23162104",[PC.0.0.0.0.0.0.0.0.CLASSMASK_GROUP_WARRIORS],SPELLCAST_RANDOM)  // [WIZARD_DIRE_CHARM, WIZARD_CHARM_PERSON]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	Allegiance(Myself,ENEMY)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("23162104",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_DIRE_CHARM, WIZARD_CHARM_PERSON]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	Allegiance(Myself,ENEMY)
+	Or(2)
+		See([GOODCUTOFF.0.0.0.150],0)
+		See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("2226",[PC.0.0.0.0.0.0.0.0.CLASSMASK_GROUP_WARRIORS],SPELLCAST_RANDOM)  // [WIZARD_RAY_OF_ENFEEBLEMENT]
+		MarkSpellAndObject("2226231223062711",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_RAY_OF_ENFEEBLEMENT, WIZARD_SLOW, WIZARD_HOLD_PERSON, WIZARD_SUFFOCATE]
+		Continue()
+	RESPONSE #100
+		MarkSpellAndObject("2226231223062711",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_RAY_OF_ENFEEBLEMENT, WIZARD_SLOW, WIZARD_HOLD_PERSON, WIZARD_SUFFOCATE]
+		MarkSpellAndObject("2226",[PC.0.0.0.0.0.0.0.0.CLASSMASK_GROUP_WARRIORS],SPELLCAST_RANDOM)  // [WIZARD_RAY_OF_ENFEEBLEMENT]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	Allegiance(Myself,ENEMY)
+	Or(2)
+		See([GOODCUTOFF.0.0.0.150],0)
+		See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("2113",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET)  // [WIZARD_PROTECTION_FROM_EVIL]
+		MarkSpellAndObject("28092713",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET)  // [WIZARD_SUMMON_FIEND, WIZARD_CACOFIEND]
+		MarkSpellAndObject("2305",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET)  // [WIZARD_HASTE]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+

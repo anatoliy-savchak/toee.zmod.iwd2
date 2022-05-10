@@ -1,0 +1,103 @@
+IF
+	CreatureHidden(Myself)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	Global("Summon","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	!CreatureHidden(Myself)
+	IsHeartOfFuryModeOn()
+THEN
+	RESPONSE #100
+		SetGlobal("Summon","LOCALS",4)
+END
+
+IF
+	Global("Summon","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	!CreatureHidden(Myself)
+	CheckAreaDiffLevel(1)
+THEN
+	RESPONSE #100
+		SetGlobal("Summon","LOCALS",1)
+END
+
+IF
+	Global("Summon","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	!CreatureHidden(Myself)
+	CheckAreaDiffLevel(2)
+THEN
+	RESPONSE #100
+		SetGlobal("Summon","LOCALS",2)
+END
+
+IF
+	Global("Summon","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	!CreatureHidden(Myself)
+	CheckAreaDiffLevel(3)
+THEN
+	RESPONSE #100
+		SetGlobal("Summon","LOCALS",3)
+END
+
+IF
+	Global("Summon","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Summon","LOCALS",-1)
+		ForceSpellPoint([1180.767],WIZARD_CACOFIEND)  // SPWI713.SPL (Cacofiend)
+		SpellWait(WIZARD_CACOFIEND)  // SPWI713.SPL (Cacofiend)
+		ReallyForceSpell(Myself,WIZARD_LUTZAENS_FREQUENT_JAUNT)  // SPWI526.SPL (Lutzaen's Frequent Jaunt)
+		ChangeCurrentScript("63Mour1C")
+END
+
+IF
+	Global("Summon","LOCALS",2)
+THEN
+	RESPONSE #100
+		SetGlobal("Summon","LOCALS",-1)
+		ForceSpellPoint([1180.767],WIZARD_SUMMON_FIEND)  // SPWI809.SPL (Summon Fiend)
+		SpellWait(WIZARD_SUMMON_FIEND)  // SPWI809.SPL (Summon Fiend)
+		ReallyForceSpell(Myself,WIZARD_LUTZAENS_FREQUENT_JAUNT)  // SPWI526.SPL (Lutzaen's Frequent Jaunt)
+		ChangeCurrentScript("63Mour2C")
+END
+
+IF
+	Global("Summon","LOCALS",3)
+THEN
+	RESPONSE #100
+		SetGlobal("Summon","LOCALS",-1)
+		ForceSpellPoint([1180.767],WIZARD_GATE)  // SPWI905.SPL (Gate)
+		SpellWait(WIZARD_GATE)  // SPWI905.SPL (Gate)
+		ReallyForceSpell(Myself,WIZARD_LUTZAENS_FREQUENT_JAUNT)  // SPWI526.SPL (Lutzaen's Frequent Jaunt)
+		ChangeCurrentScript("63Mour3C")
+END
+
+IF
+	Global("Summon","LOCALS",4)
+THEN
+	RESPONSE #100
+		SetGlobal("Summon","LOCALS",-1)
+		ForceSpellPoint([1180.767],WIZARD_CACOFIEND)  // SPWI713.SPL (Cacofiend)
+		SpellWait(WIZARD_CACOFIEND)  // SPWI713.SPL (Cacofiend)
+		ForceSpellPoint([1180.767],WIZARD_SUMMON_FIEND)  // SPWI809.SPL (Summon Fiend)
+		SpellWait(WIZARD_SUMMON_FIEND)  // SPWI809.SPL (Summon Fiend)
+		ForceSpellPoint([1180.767],WIZARD_GATE)  // SPWI905.SPL (Gate)
+		SpellWait(WIZARD_GATE)  // SPWI905.SPL (Gate)
+		ReallyForceSpell(Myself,WIZARD_LUTZAENS_FREQUENT_JAUNT)  // SPWI526.SPL (Lutzaen's Frequent Jaunt)
+		ChangeCurrentScript("63Mour3C")
+END
+
+IF
+	HasItem("00potn05",Myself)  // Potion of Extra Healing
+	HPPercentLT(Myself,50)
+THEN
+	RESPONSE #100
+		UseItem("00potn05",Myself)  // Potion of Extra Healing
+END
+

@@ -1,0 +1,10 @@
+IF
+	Or(2)
+		Opened([PC])
+		Entered([PC])
+THEN
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastTrigger,WIZARD_STINKING_CLOUD_HALF_DURATION)  // SPWI229.SPL (Stinking Cloud)
+END
+

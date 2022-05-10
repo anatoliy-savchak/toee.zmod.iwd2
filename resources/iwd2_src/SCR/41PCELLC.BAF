@@ -1,0 +1,16 @@
+IF
+	OpenState(Myself,TRUE)
+	CheckStatGT(LastTrigger,9,INT)
+THEN
+	RESPONSE #100
+		AddJournalEntry(33609)  // Opening our prison cell's door after surrendering, a collection of newly formed ice fell to the floor and we noticed a message carved into the door's frame.  The message read as follows:  "No prisoners left... My time draws near... Turn Lysara's dais right to the north then left to the northwest... How foolish of them to imprison the Master of Locks... Vengeance is ours!"
+		Continue()
+END
+
+IF
+	OpenState(Myself,TRUE)
+THEN
+	RESPONSE #100
+		ChangeCurrentScript("")
+END
+

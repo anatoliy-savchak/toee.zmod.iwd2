@@ -1,0 +1,11 @@
+IF
+	Global("61PlayerFoundMandalSword","GLOBAL",0)
+	See([PC],0)
+THEN
+	RESPONSE #100
+		AddJournalEntry(35758)  // South of the entrance to Dragon's Eye's third level was a circular room protected by sharp, retractable fangs.  The room showed signs of a recent battle, and on its floor laid a sword with the word "Mandal" stitched into its scabbard.
+		TriggerActivation(Myself,FALSE)
+		ChangeCurrentScript("")
+		SetGlobal("61PlayerFoundMandalSword","GLOBAL",1)
+END
+

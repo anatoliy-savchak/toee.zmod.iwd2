@@ -1,0 +1,11 @@
+IF
+	!Global("TEAM_1","MYAREA",1)
+	Or(2)
+		AttackedBy([GOODCUTOFF],DEFAULT)
+		PickPocketFailed([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("TEAM_1","MYAREA",1)
+		Continue()
+END
+

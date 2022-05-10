@@ -455,21 +455,25 @@ class CtrlDaemon(object):
 		print("storage_data_loaded_all map: {}".format(toee.game.leader.map))
 
 		if (toee.game.leader.map == self.get_map_default()):
-			to_del = list()
-			objs = utils_storage.Storage().objs
-			assert isinstance(objs, dict)
-			for o in objs.itervalues():
-				assert isinstance(o, utils_storage.ObjectStorage)
-				if (o.name.startswith("G_") and o.origin == self.get_map_default()):
-					npc = toee.game.get_obj_by_id(o.name)
-					#if (npc):print("npc hp: {}, npc: {}".format(utils_npc.npc_hp_current(npc), npc))
-					if (not npc or (npc.object_flags_get() & toee.OF_DESTROYED) or utils_npc.npc_hp_current(npc) <= -10):
-						to_del.append(o)
-			print("drop objects, count: {}".format(len(to_del)))
-			for o in to_del:
-				del objs[o.name]
-			self.validate_minfo()
+			self.delete_obsolate_controls()
 			self.check_sleep_status_update(1)
+		return
+
+	def delete_obsolate_controls(self):
+		to_del = list()
+		objs = utils_storage.Storage().objs
+		assert isinstance(objs, dict)
+		for o in objs.itervalues():
+			assert isinstance(o, utils_storage.ObjectStorage)
+			if (o.name.startswith("G_") and o.origin == self.get_map_default()):
+				npc = toee.game.get_obj_by_id(o.name)
+				#if (npc):print("npc hp: {}, npc: {}".format(utils_npc.npc_hp_current(npc), npc))
+				if (not npc or (npc.object_flags_get() & toee.OF_DESTROYED) or utils_npc.npc_hp_current(npc) <= -10):
+					to_del.append(o)
+		print("drop objects, count: {}".format(len(to_del)))
+		for o in to_del:
+			del objs[o.name]
+		self.validate_minfo()
 		return
 
 	def factions_existance_refresh(self):

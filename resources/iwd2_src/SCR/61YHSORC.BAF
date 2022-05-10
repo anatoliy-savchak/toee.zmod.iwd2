@@ -1,0 +1,1387 @@
+IF
+	Or(2)
+		Global("LastShout","LOCALS",110)
+		Heard([0.0.YUANTI],110)
+	IsSpellTargetValid(Myself,CLERIC_PROTECTION_FROM_EVIL,0)  // SPPR107.SPL (Protection From Evil)
+	GlobalGT("Level1Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("LastHeard","LOCALS",110)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(Myself,CLERIC_PROTECTION_FROM_EVIL)  // SPPR107.SPL (Protection From Evil)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Or(2)
+		Global("LastShout","LOCALS",100)
+		Heard([0.0.YUANTI],100)
+	IsSpellTargetValid(Myself,WIZARD_FIRESHIELD_BLUE,0)  // SPWI426.SPL (Fire Shield (Blue))
+	RandomNum(4,1)
+	GlobalGT("Level4Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("LastHeard","LOCALS",100)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_FIRESHIELD_BLUE)  // SPWI426.SPL (Fire Shield (Blue))
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Or(2)
+		Global("LastShout","LOCALS",101)
+		Heard([0.0.YUANTI],101)
+	IsSpellTargetValid(Myself,WIZARD_FIRESHIELD_RED,0)  // SPWI427.SPL (Fire Shield (Red))
+	RandomNum(4,1)
+	GlobalGT("Level4Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("LastHeard","LOCALS",101)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_FIRESHIELD_RED)  // SPWI427.SPL (Fire Shield (Red))
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Or(2)
+		Global("LastShout","LOCALS",102)
+		Heard([0.0.YUANTI],102)
+	IsSpellTargetValid(Myself,WIZARD_PROTECTION_FROM_ELECTRICITY,0)  // SPWI523.SPL (Protection from Electricity)
+	RandomNum(2,1)
+	GlobalGT("Level5Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("LastHeard","LOCALS",102)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_PROTECTION_FROM_ELECTRICITY)  // SPWI523.SPL (Protection from Electricity)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Or(2)
+		Global("LastShout","LOCALS",103)
+		Heard([0.0.YUANTI],103)
+	IsSpellTargetValid(Myself,WIZARD_PROTECTION_FROM_ACID,0)  // SPWI522.SPL (Protection from Acid)
+	RandomNum(2,1)
+	GlobalGT("Level5Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("LastHeard","LOCALS",103)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_PROTECTION_FROM_ACID)  // SPWI522.SPL (Protection from Acid)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Or(2)
+		Global("LastShout","LOCALS",104)
+		Heard([0.0.YUANTI],104)
+	IsSpellTargetValid(Myself,WIZARD_MINOR_GLOBE_OF_INVULNERABILITY,0)  // SPWI406.SPL (Minor Globe of Invulnerability)
+	RandomNum(2,1)
+	GlobalGT("Level4Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("LastHeard","LOCALS",104)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_MINOR_GLOBE_OF_INVULNERABILITY)  // SPWI406.SPL (Minor Globe of Invulnerability)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Or(2)
+		Global("LastShout","LOCALS",105)
+		Heard([0.0.YUANTI],105)
+	IsSpellTargetValid(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES,0)  // SPWI311.SPL (Protection From Arrows)
+	RandomNum(2,1)
+	GlobalGT("Level3Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("LastHeard","LOCALS",105)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)  // SPWI311.SPL (Protection From Arrows)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Or(3)
+		HitBy([ANYONE],SLASHING)
+		HitBy([ANYONE],PIERCING)
+		HitBy([ANYONE],CRUSHING)
+	IsSpellTargetValid(Myself,WIZARD_STONESKIN,0)  // SPWI408.SPL (Stoneskin)
+	RandomNum(2,1)
+	GlobalGT("Level4Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_STONESKIN)  // SPWI408.SPL (Stoneskin)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Or(2)
+		AttackedBy([GOODCUTOFF],DEFAULT)
+		Global("LastShout","LOCALS",109)
+	RandomNum(2,1)
+	!See(LastAttackerOf(Myself),0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (Dispel Magic)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_FIREBALL)  // SPWI304.SPL (Fireball)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_MELFS_MINUTE_METEORS)  // SPWI322.SPL (Melf's Minute Meteors)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_SKULL_TRAP)  // SPWI313.SPL (Skull Trap)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("LastShout","LOCALS",106)
+	IsSpellTargetValid(Myself,WIZARD_OTILUKES_RESILIENT_SPHERE,0)  // SPWI413.SPL (Otiluke's Resilient Sphere)
+	RandomNum(10,1)
+	GlobalGT("Level4Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_OTILUKES_RESILIENT_SPHERE)  // SPWI413.SPL (Otiluke's Resilient Sphere)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Or(3)
+		Global("LastShout","LOCALS",109)
+		Global("LastHeard","LOCALS",109)
+		Heard([ANYTHING],109)
+	CheckStat(Myself,0,SEEINVISIBLE)
+	IsSpellTargetValid(Myself,WIZARD_SEE_INVISIBILITY,0)  // SPWI203.SPL (See Invisibility)
+	RandomNum(2,1)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_SEE_INVISIBILITY)  // SPWI203.SPL (See Invisibility)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Heard([ANYTHING],109)
+	RandomNum(2,1)
+	GlobalGT("Level3Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(LastHeardBy(Myself),WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (Dispel Magic)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(LastHeardBy(Myself),WIZARD_FIREBALL)  // SPWI304.SPL (Fireball)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(LastHeardBy(Myself),WIZARD_MELFS_MINUTE_METEORS)  // SPWI322.SPL (Melf's Minute Meteors)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(LastHeardBy(Myself),WIZARD_SKULL_TRAP)  // SPWI313.SPL (Skull Trap)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Or(4)
+		Global("LastShout","LOCALS",104)
+		Global("LastShout","LOCALS",105)
+		Heard([0.0.YUANTI],104)
+		Heard([0.0.YUANTI],105)
+	IsSpellTargetValid(Myself,WIZARD_SHIELD,0)  // SPWI114.SPL (Shield)
+	RandomNum(2,1)
+	GlobalGT("Level1Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_SHIELD)  // SPWI114.SPL (Shield)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Or(2)
+		StateCheck(Myself,STATE_INVISIBLE)
+		StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	IsSpellTargetValid(Myself,WIZARD_NON_DETECTION,0)  // SPWI310.SPL (Nondetection)
+	RandomNum(2,1)
+	GlobalGT("Level3Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_NON_DETECTION)  // SPWI310.SPL (Nondetection)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	StateCheck(Myself,STATE_SILENCED)
+	Or(4)
+		GlobalGT("Level1Spells","LOCALS",0)
+		GlobalGT("Level3Spells","LOCALS",0)
+		GlobalGT("Level4Spells","LOCALS",0)
+		GlobalGT("Level5Spells","LOCALS",0)
+	IsSpellTargetValid(Myself,WIZARD_VOCALIZE,0)  // SPWI219.SPL (Vocalize)
+	RandomNum(2,1)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_VOCALIZE)  // SPWI219.SPL (Vocalize)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	RandomNum(5,1)
+THEN
+	RESPONSE #100
+		SetMyTarget(LastAttackerOf(Myself))
+		SetGlobal("CurrentTarget","LOCALS",2)
+		Continue()
+END
+
+IF
+	Global("CurrentTarget","LOCALS",0)
+	RandomNum(5,2)
+	See(FarthestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		SetMyTarget(LastMarkedObject)
+		SetGlobal("CurrentTarget","LOCALS",2)
+		Continue()
+END
+
+IF
+	Global("CurrentTarget","LOCALS",0)
+	RandomNum(5,3)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		SetMyTarget(LastMarkedObject)
+		SetGlobal("CurrentTarget","LOCALS",2)
+		Continue()
+END
+
+IF
+	Global("CurrentTarget","LOCALS",0)
+	RandomNum(5,4)
+	See([0.0.YUANTI],0)
+THEN
+	RESPONSE #100
+		SetMyTarget(LastMarkedObject)
+		SetGlobal("CurrentTarget","LOCALS",3)
+		Continue()
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	Or(2)
+		Sequence(MyTarget,CONJURE)
+		Sequence(MyTarget,CAST)
+	!CheckSpellState(MyTarget,MINOR_GLOBE_OF_INVULNERABILITY)
+	!CheckSpellState(MyTarget,GLOBE_OF_INVULNERABILITY)
+	RandomNum(2,1)
+	GlobalGT("Level1Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_BURNING_HANDS)  // SPWI103.SPL (Burning Hands)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_CHROMATIC_ORB)  // SPWI118.SPL (Chromatic Orb)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_COLOR_SPRAY)  // SPWI105.SPL (Color Spray)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_ICE_DAGGER)  // SPWI122.SPL (Ice Dagger)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_LARLOCHS_MINOR_DRAIN)  // SPWI119.SPL (Larloch's Minor Drain)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magic Missile)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	RandomNum(41,1)
+	GlobalGT("Level5Spells","LOCALS",0)
+	GlobalTimerExpired("CloudkillTimer","MYAREA")
+	Range(MyTarget,9,GREATER_THAN)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("CloudkillTimer","MYAREA",66)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_CLOUDKILL)  // SPWI503.SPL (Cloudkill)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	RandomNum(41,2)
+	GlobalGT("Level5Spells","LOCALS",0)
+	Range(MyTarget,9,GREATER_THAN)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_SUNFIRE)  // SPWI519.SPL (Sunfire)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_SHROUD_OF_FLAME)  // SPWI511.SPL (Shroud of Flame)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_CONE_OF_COLD)  // SPWI504.SPL (Cone of Cold)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	RandomNum(41,3)
+	GlobalGT("Level4Spells","LOCALS",0)
+	Range(MyTarget,9,GREATER_THAN)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_ICE_STORM)  // SPWI404.SPL (Ice Storm)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	RandomNum(41,4)
+	GlobalGT("Level3Spells","LOCALS",0)
+	Range(MyTarget,9,GREATER_THAN)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (Dispel Magic)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_FIREBALL)  // SPWI304.SPL (Fireball)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_MELFS_MINUTE_METEORS)  // SPWI322.SPL (Melf's Minute Meteors)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_SKULL_TRAP)  // SPWI313.SPL (Skull Trap)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	RandomNum(41,5)
+	GlobalGT("Level2Spells","LOCALS",0)
+	Range(MyTarget,9,GREATER_THAN)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_SNILLOCS_SNOWBALL_SWARM)  // SPWI220.SPL (Snilloc's Snowball Swarm)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	RandomNum(41,6)
+	GlobalGT("Level2Spells","LOCALS",0)
+	GlobalTimerExpired("StinkingCloudTimer","MYAREA")
+	Range(MyTarget,9,GREATER_THAN)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("StinkingCloudTimer","MYAREA",66)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinking Cloud)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	RandomNum(41,7)
+	GlobalGT("Level2Spells","LOCALS",0)
+	GlobalTimerExpired("WebTimer","MYAREA")
+	Range(MyTarget,9,GREATER_THAN)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("WebTimer","MYAREA",100)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_WEB)  // SPWI215.SPL (Web)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	RandomNum(41,8)
+	GlobalGT("Level1Spells","LOCALS",0)
+	GlobalTimerExpired("GreaseTimer","MYAREA")
+	Range(MyTarget,9,GREATER_THAN)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("GreaseTimer","MYAREA",66)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_GREASE)  // SPWI101.SPL (Grease)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	!CheckSpellState(MyTarget,HELD)
+	RandomNum(41,9)
+	GlobalGT("Level5Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_HOLD_MONSTER)  // SPWI508.SPL (Hold Monster)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	General(MyTarget,HUMANOID)
+	RandomNum(41,10)
+	GlobalGT("Level5Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_CHAOS)  // SPWI509.SPL (Chaos)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_DOMINATE_PERSON)  // SPWI507.SPL (Dominate Person)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_FEEBLEMIND)  // SPWI510.SPL (Feeblemind)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	RandomNum(41,11)
+	GlobalGT("Level5Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_ANIMATE_DEAD)  // SPWI501.SPL (Animate Dead)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_BALL_LIGHTNING)  // SPWI525.SPL (Ball Lightning)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_CONJURE_LESSER_AIR_ELEMENTAL)  // SPWI520.SPL (Lesser Planar Binding: Air Elemental)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_CONJURE_LESSER_EARTH_ELEMENTAL)  // SPWI515.SPL (Lesser Planar Binding: Earth Elemental)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_CONJURE_LESSER_FIRE_ELEMENTAL)  // SPWI514.SPL (Lesser Planar Binding: Fire Elemental)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_CONJURE_LESSER_WATER_ELEMENTAL)  // SPWI516.SPL (Lesser Planar Binding: Water Elemental)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_GREATER_SHADOW_CONJURATION)  // SPWI512.SPL (Greater Shadow Conjuration)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_LUTZAENS_FREQUENT_JAUNT)  // SPWI526.SPL (Lutzaen's Frequent Jaunt)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_SUMMON_MONSTER_V)  // SPWI505.SPL (Summon Monster V)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_SUMMON_SHADOW)  // SPWI513.SPL (Summon Shadow)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_PHANTOM_BLADE,0)  // SPWI521.SPL (Phantom Blade)
+	RandomNum(41,12)
+	GlobalGT("Level5Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level5Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_PHANTOM_BLADE)  // SPWI521.SPL (Phantom Blade)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	Global("LastShout","LOCALS",106)
+	IsSpellTargetValid(MyTarget,WIZARD_OTILUKES_RESILIENT_SPHERE,0)  // SPWI413.SPL (Otiluke's Resilient Sphere)
+	RandomNum(41,13)
+	GlobalGT("Level4Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_OTILUKES_RESILIENT_SPHERE)  // SPWI413.SPL (Otiluke's Resilient Sphere)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	General(MyTarget,HUMANOID)
+	!CheckSpellState(MyTarget,GLOBE_OF_INVULNERABILITY)
+	RandomNum(41,14)
+	GlobalGT("Level4Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_BELTYNS_BURNING_BLOOD)  // SPWI417.SPL (Beltyn's Burning Blood)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_CONFUSION)  // SPWI401.SPL (Confusion)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_EMOTION_FEAR)  // SPWI420.SPL (Emotion: Fear)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_EMOTION_HOPELESSNESS)  // SPWI411.SPL (Emotion: Despair)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	!CheckSpellState(MyTarget,GLOBE_OF_INVULNERABILITY)
+	RandomNum(41,15)
+	GlobalGT("Level4Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_DIMENSION_DOOR)  // SPWI402.SPL (Dimension Door)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_MALISON)  // SPWI412.SPL (Malison)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_MORDENKAINENS_FORCE_MISSILES)  // SPWI422.SPL (Mordenkainen's Force Missiles)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_OTILUKES_RESILIENT_SPHERE)  // SPWI413.SPL (Otiluke's Resilient Sphere)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_SHADOW_CONJURATION)  // SPWI418.SPL (Shadow Conjuration)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_SHOUT)  // SPWI423.SPL (Shout)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_SPIDER_SPAWN)  // SPWI428.SPL (Spider Spawn)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_VITRIOLIC_SPHERE)  // SPWI424.SPL (Vitriolic Sphere)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_EMOTION_HOPE,0)  // SPWI421.SPL (Emotion: Hope)
+	RandomNum(41,16)
+	GlobalGT("Level4Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_EMOTION_HOPE)  // SPWI421.SPL (Emotion: Hope)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_IMPROVED_INVISIBILITY,0)  // SPWI405.SPL (Improved Invisibility)
+	Or(2)
+		Global("LastShout","LOCALS",106)
+		RandomNum(41,17)
+	GlobalGT("Level4Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level4Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_IMPROVED_INVISIBILITY)  // SPWI405.SPL (Improved Invisibility)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(MyTarget,WIZARD_DIRE_CHARM,0)  // SPWI316.SPL (Dire Charm)
+	RandomNum(41,18)
+	GlobalGT("Level3Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_DIRE_CHARM)  // SPWI316.SPL (Dire Charm)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(MyTarget,WIZARD_HOLD_PERSON,0)  // SPWI306.SPL (Hold Person)
+	RandomNum(41,19)
+	GlobalGT("Level3Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_HOLD_PERSON)  // SPWI306.SPL (Hold Person)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(MyTarget,WIZARD_SLOW,0)  // SPWI312.SPL (Slow)
+	RandomNum(41,20)
+	GlobalGT("Level3Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_SLOW)  // SPWI312.SPL (Slow)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	!CheckSpellState(MyTarget,MINOR_GLOBE_OF_INVULNERABILITY)
+	!CheckSpellState(MyTarget,GLOBE_OF_INVULNERABILITY)
+	RandomNum(41,21)
+	GlobalGT("Level3Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_FLAME_ARROW)  // SPWI303.SPL (Flame Arrow)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_ICELANCE)  // SPWI318.SPL (Icelance)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_LANCE_OF_DISRUPTION)  // SPWI319.SPL (Lance of Disruption)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Lightning Bolt)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_BLINK,0)  // SPWI323.SPL (Blink)
+	RandomNum(41,22)
+	GlobalGT("Level3Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_BLINK)  // SPWI323.SPL (Blink)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_HASTE,0)  // SPWI305.SPL (Haste)
+	RandomNum(41,23)
+	GlobalGT("Level3Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_HASTE)  // SPWI305.SPL (Haste)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_INVISIBILITY_10_RADIUS,0)  // SPWI321.SPL (Invisibility Sphere)
+	Or(2)
+		Global("LastShout","LOCALS",106)
+		RandomNum(41,24)
+	GlobalGT("Level3Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_INVISIBILITY_10_RADIUS)  // SPWI321.SPL (Invisibility Sphere)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_VAMPIRIC_TOUCH,0)  // SPWI314.SPL (Vampiric Touch)
+	RandomNum(41,25)
+	GlobalGT("Level3Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_VAMPIRIC_TOUCH)  // SPWI314.SPL (Vampiric Touch)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	RandomNum(41,26)
+	GlobalGT("Level3Spells","LOCALS",0)
+	!StateCheck(MyTarget,STATE_DISEASED)
+	Range(MyTarget,9,GREATER_THAN)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level3Spells","LOCALS",-1)
+		Spell(MyTarget,MARKED_SPELL)
+		Shout(111)
+		SetGlobal("LastShout","LOCALS",111)
+		FloatMessage(Myself,35594)  // "Loeh ni erif het!["Fire in the hole!" reordered and scrambled]"
+		StartTimer(102,7)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	Or(5)
+		ClassEx(MyTarget,MAGE)
+		ClassEx(MyTarget,CLERIC)
+		ClassEx(MyTarget,DRUID)
+		ClassEx(MyTarget,BARD)
+		ClassEx(MyTarget,SORCERER)
+	IsSpellTargetValid(MyTarget,WIZARD_DEAFNESS,0)  // SPWI224.SPL (Deafness)
+	RandomNum(41,27)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_DEAFNESS)  // SPWI224.SPL (Deafness)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(MyTarget,WIZARD_HORROR,0)  // SPWI205.SPL (Horror)
+	RandomNum(41,28)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_HORROR)  // SPWI205.SPL (Horror)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(MyTarget,WIZARD_POWER_WORD_SLEEP,0)  // SPWI225.SPL (Power Word Sleep)
+	RandomNum(41,29)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_POWER_WORD_SLEEP)  // SPWI225.SPL (Power Word Sleep)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(MyTarget,WIZARD_RAY_OF_ENFEEBLEMENT,0)  // SPWI226.SPL (Ray of Enfeeblement)
+	RandomNum(41,30)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_RAY_OF_ENFEEBLEMENT)  // SPWI226.SPL (Ray of Enfeeblement)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	!CheckSpellState(MyTarget,MINOR_GLOBE_OF_INVULNERABILITY)
+	!CheckSpellState(MyTarget,GLOBE_OF_INVULNERABILITY)
+	RandomNum(41,31)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (Aganazzar's Scorcher)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		FaceObject(MyTarget)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_GEDLEES_ELECTRIC_LOOP)  // SPWI227.SPL (Gedlee's Electric Loop)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_MELFS_ACID_ARROW)  // SPWI211.SPL (Melf's Acid Arrow)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_BLUR,0)  // SPWI201.SPL (Blur)
+	RandomNum(41,32)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_BLUR)  // SPWI201.SPL (Blur)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_CATS_GRACE,0)  // SPWI223.SPL (Cat's Grace)
+	RandomNum(41,33)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_CATS_GRACE)  // SPWI223.SPL (Cat's Grace)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_DEATH_ARMOR,0)  // SPWI228.SPL (Death Armor)
+	RandomNum(41,34)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_DEATH_ARMOR)  // SPWI228.SPL (Death Armor)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_INVISIBILITY,0)  // SPWI206.SPL (Invisibility)
+	Or(2)
+		Global("LastShout","LOCALS",106)
+		RandomNum(41,35)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_INVISIBILITY)  // SPWI206.SPL (Invisibility)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_LUCK,0)  // SPWI209.SPL (Luck)
+	RandomNum(41,36)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_LUCK)  // SPWI209.SPL (Luck)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_MIRROR_IMAGE,0)  // SPWI212.SPL (Mirror Image)
+	RandomNum(41,37)
+	GlobalGT("Level2Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level2Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Mirror Image)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	RandomNum(41,38)
+	!CheckSpellState(MyTarget,MINOR_GLOBE_OF_INVULNERABILITY)
+	!CheckSpellState(MyTarget,GLOBE_OF_INVULNERABILITY)
+	GlobalGT("Level1Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_BURNING_HANDS)  // SPWI103.SPL (Burning Hands)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_CHROMATIC_ORB)  // SPWI118.SPL (Chromatic Orb)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_COLOR_SPRAY)  // SPWI105.SPL (Color Spray)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_ICE_DAGGER)  // SPWI122.SPL (Ice Dagger)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_LARLOCHS_MINOR_DRAIN)  // SPWI119.SPL (Larloch's Minor Drain)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magic Missile)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(MyTarget,WIZARD_CHARM_PERSON,0)  // SPWI104.SPL (Charm Person)
+	RandomNum(41,39)
+	GlobalGT("Level1Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(MyTarget,WIZARD_CHARM_PERSON)  // SPWI104.SPL (Charm Person)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",2)
+	IsSpellTargetValid(Myself,WIZARD_MINOR_MIRROR_IMAGE,0)  // SPWI120.SPL (Minor Mirror Image)
+	RandomNum(41,40)
+	GlobalGT("Level1Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_MINOR_MIRROR_IMAGE)  // SPWI120.SPL (Minor Mirror Image)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	Global("CurrentTarget","LOCALS",3)
+	CheckSpellState(MyTarget,HELD)
+	IsSpellTargetValid(Myself,WIZARD_PROTECTION_FROM_PETRIFICATION,0)  // SPWI108.SPL (Protection from Petrification)
+	GlobalTimerExpired("PetrificationProtectionTimer","LOCALS")
+	RandomNum(41,41)
+	GlobalGT("Level1Spells","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("CurrentTarget","LOCALS",0)
+		SetGlobalTimer("PetrificationProtectionTimer","LOCALS",168)
+		SetGlobal("CurrentTarget","LOCALS",0)
+		IncrementGlobal("Level1Spells","LOCALS",-1)
+		Spell(Myself,WIZARD_PROTECTION_FROM_PETRIFICATION)  // SPWI108.SPL (Protection from Petrification)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+

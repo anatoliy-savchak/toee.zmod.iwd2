@@ -1,0 +1,25 @@
+IF
+	Or(3)
+		Allegiance(Myself,ENEMY)
+		AttackedBy([GOODCUTOFF],DEFAULT)
+		NumTimesTalkedToGT(0)
+THEN
+	RESPONSE #100
+		JumpToSavedLocation()
+		SpellHitEffectSprite(Myself,Myself,DIMENSION_DOOR_ORIGIN,0)
+		ChangeCurrentScript("")
+END
+
+IF
+	NumTimesTalkedTo(0)
+	Or(3)
+		OpenState("AR4101_Door13",TRUE)
+		OpenState("AR4101_Door14",TRUE)
+		OpenState("AR4101_Door15",TRUE)
+	See([ENEMY],0)
+	Specifics(LastMarkedObject,254)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+

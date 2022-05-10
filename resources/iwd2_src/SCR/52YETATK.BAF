@@ -1,0 +1,14 @@
+IF
+	Or(6)
+		See([0.0.WYVERN],0)
+		See("01_52WYRWH_01",0)
+		See("01_52WYRWH_02",0)
+		See("01_52WYRWH_03",0)
+		See("01_52WYRWH_04",0)
+		See("01_52WYRWH_05",0)
+THEN
+	RESPONSE #100
+		EquipWeapon()
+		AttackOneRound(LastMarkedObject)
+END
+

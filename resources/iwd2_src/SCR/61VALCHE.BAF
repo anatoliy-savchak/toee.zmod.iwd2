@@ -1,0 +1,8 @@
+IF
+	See([PC],0)
+THEN
+	RESPONSE #100
+		AddJournalEntry(35469)  // On Dragon's Eye's second level we encountered a yuan-ti priest named D'hey-jazerrion so wrapped up in his own thoughts that he didn't even notice us.  We've a feeling we'll be able to avoid him entirely if we keep our distance.
+		ChangeCurrentScript("")
+END
+

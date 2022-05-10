@@ -1,0 +1,8 @@
+IF
+	See([PC],0)
+THEN
+	RESPONSE #100
+		AddJournalEntry(18852)  // It seems a large tree broke the airship's fall when we crashed, unearthing a boring beetle nest in the process.  With the beetles living so close to the ship, they'll never let us safely rest inside or repair it.  We should either destroy the beetles in the nest, or the nest itself.
+		ChangeCurrentScript("")
+END
+

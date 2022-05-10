@@ -1,0 +1,12 @@
+IF
+	HaveSpell(CLERIC_CURE_MODERATE_WOUNDS)  // SPPR214.SPL (Cure Moderate Wounds)
+	HPLostGT(Myself,18)
+	IsSpellTargetValid(Myself,CLERIC_CURE_MODERATE_WOUNDS,0)  // SPPR214.SPL (Cure Moderate Wounds)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CURE_MODERATE_WOUNDS)  // SPPR214.SPL (Cure Moderate Wounds)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+

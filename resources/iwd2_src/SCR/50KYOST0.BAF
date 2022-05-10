@@ -1,0 +1,9 @@
+IF
+	Global("50Kyosti","GLOBAL",2)
+THEN
+	RESPONSE #100
+		UseItem("11Veira2",Myself)  // No such index
+		Wait(1)
+		DestroySelf()
+END
+

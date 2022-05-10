@@ -1,0 +1,34 @@
+IF
+	Entered([PC])
+THEN
+	RESPONSE #100
+		ForceSpell(LastTrigger,WIZARD_CONE_OF_COLD)  // SPWI504.SPL (Cone of Cold)
+		DisplayMessage(14381)  // Trap Sprung
+		Continue()
+END
+
+IF
+	Or(2)
+		Entered([PC])
+		Disarmed([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("TEAM_2","MYAREA",1)
+		AddJournalEntry(34231)  // We disabled a magical barrier covering the archway to a place called Andora.  It appears safe to pass through now.
+		Continue()
+END
+
+IF
+	Or(3)
+		Entered([PC])
+		Disarmed([PC])
+		Trigger(0)
+THEN
+	RESPONSE #100
+		PlaySound("am4000j")
+		Deactivate("AndoraArchwayTrap")
+		Deactivate("forcefield")
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+END
+

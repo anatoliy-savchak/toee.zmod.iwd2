@@ -1,0 +1,10 @@
+IF
+	Or(2)
+		See("BRASTON",0)
+		See("ENNELIA",0)
+THEN
+	RESPONSE #100
+		EquipWeapon()
+		AttackOneRound(LastMarkedObject)
+END
+

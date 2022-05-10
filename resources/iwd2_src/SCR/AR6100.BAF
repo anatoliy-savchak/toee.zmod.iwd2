@@ -1,0 +1,27 @@
+IF
+	Global("6100Visited","MYAREA",0)
+THEN
+	RESPONSE #100
+		SetCreatureAreaFlag("Izbelah",INVULNERABLE,TRUE)
+		TriggerActivation("To6101",FALSE)
+		SetGlobal("6100Visited","MYAREA",1)
+		Continue()
+END
+
+IF
+	Global("Izbelah_dead","GLOBAL",1)
+	!IsActive("To6101")
+THEN
+	RESPONSE #100
+		TriggerActivation("To6101",TRUE)
+		SetGlobal("Izbelah_dead","GLOBAL",0)
+END
+
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		NoAction()
+		Continue()
+END
+

@@ -1,0 +1,265 @@
+IF
+	HaveSpell(CLERIC_PROTECTION_FROM_LIGHTNING)  // SPPR407.SPL (Protection from Lightning)
+	Or(2)
+		HitBy([ANYONE],ELECTRICITY)
+		RandomNum(20,1)
+	IsSpellTargetValid(Myself,CLERIC_PROTECTION_FROM_LIGHTNING,0)  // SPPR407.SPL (Protection from Lightning)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_PROTECTION_FROM_LIGHTNING)  // SPPR407.SPL (Protection from Lightning)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HasItem("00POTN36",Myself)  // Potion of Absorption
+	Or(2)
+		HitBy([ANYONE],ELECTRICITY)
+		RandomNum(20,1)
+THEN
+	RESPONSE #100
+		UseItem("00POTN36",Myself)  // Potion of Absorption
+END
+
+IF
+	HasItem("00POTN19",Myself)  // Potion of Freedom
+	!CheckSpellState(Myself,FREE_ACTION)
+	Or(6)
+		CheckSpellState(Myself,HELD)
+		CheckSpellState(Myself,ENTANGLE)
+		CheckSpellState(Myself,WEB)
+		CheckSpellState(Myself,GREASE)
+		StateCheck(Myself,STATE_STUNNED)
+		StateCheck(Myself,STATE_SLOWED)
+THEN
+	RESPONSE #100
+		UseItem("00POTN19",Myself)  // Potion of Freedom
+END
+
+IF
+	HaveSpell(CLERIC_FREE_ACTION)  // SPPR403.SPL (Freedom of Movement)
+	!CheckSpellState(Myself,FREE_ACTION)
+	Or(6)
+		CheckSpellState(Myself,HELD)
+		CheckSpellState(Myself,ENTANGLE)
+		CheckSpellState(Myself,WEB)
+		CheckSpellState(Myself,GREASE)
+		StateCheck(Myself,STATE_STUNNED)
+		StateCheck(Myself,STATE_SLOWED)
+	IsSpellTargetValid(Myself,CLERIC_FREE_ACTION,0)  // SPPR403.SPL (Freedom of Movement)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_FREE_ACTION)  // SPPR403.SPL (Freedom of Movement)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	HPPercentLT(Myself,95)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("11091201",Myself,SPELLCAST_IGNORE_SEE)  // [CLERIC_SANCTUARY, CLERIC_AID]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	!Global("OBJ_SP_41BORIA_0","LOCALS",-1)
+	!Global("OBJ_SP_41BORIA_0","LOCALS",-1)
+	RandomNum(2,1)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("2305111512152317",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_HASTE, CLERIC_ARMOR_OF_FAITH, CLERIC_DRAW_UPON_HOLY_MIGHT, WIZARD_GHOST_ARMOR]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	!Global("OBJ_SP_41BORIA_0","LOCALS",-1)
+	!HaveSpell(WIZARD_HASTE)  // SPWI305.SPL (Haste)
+	!HaveSpell(CLERIC_ARMOR_OF_FAITH)  // SPPR115.SPL (Armor of Faith)
+	!HaveSpell(CLERIC_DRAW_UPON_HOLY_MIGHT)  // SPPR215.SPL (Draw Upon Holy Might)
+	!HaveSpell(WIZARD_GHOST_ARMOR)  // SPWI317.SPL (Ghost Armor)
+THEN
+	RESPONSE #100
+		SetGlobal("OBJ_SP_41BORIA_0","LOCALS",-1)
+		Continue()
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	!Global("OBJ_SP_41BORIA_1","LOCALS",-1)
+	!Global("OBJ_SP_41BORIA_1","LOCALS",-1)
+	RandomNum(2,1)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("11021111111423061325210422202122",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_COMMAND, CLERIC_BANE, CLERIC_DOOM, WIZARD_HOLD_PERSON, CLERIC_UNHOLY_BLIGHT, WIZARD_CHARM_PERSON, WIZARD_SNILLOCS_SNOWBALL_SWARM, WIZARD_ICE_DAGGER]
+		MarkSpellAndObject("23182401240425042112",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_ICELANCE, WIZARD_CONFUSION, WIZARD_ICE_STORM, WIZARD_CONE_OF_COLD, WIZARD_MAGIC_MISSILE]
+		MarkSpellAndObject("1409",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_CLOAK_OF_FEAR]
+		Continue()
+	RESPONSE #100
+		MarkSpellAndObject("23182401240425042112",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_ICELANCE, WIZARD_CONFUSION, WIZARD_ICE_STORM, WIZARD_CONE_OF_COLD, WIZARD_MAGIC_MISSILE]
+		MarkSpellAndObject("1409",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_CLOAK_OF_FEAR]
+		MarkSpellAndObject("11021111111423061325210422202122",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_COMMAND, CLERIC_BANE, CLERIC_DOOM, WIZARD_HOLD_PERSON, CLERIC_UNHOLY_BLIGHT, WIZARD_CHARM_PERSON, WIZARD_SNILLOCS_SNOWBALL_SWARM, WIZARD_ICE_DAGGER]
+		Continue()
+	RESPONSE #100
+		MarkSpellAndObject("1409",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_CLOAK_OF_FEAR]
+		MarkSpellAndObject("11021111111423061325210422202122",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_COMMAND, CLERIC_BANE, CLERIC_DOOM, WIZARD_HOLD_PERSON, CLERIC_UNHOLY_BLIGHT, WIZARD_CHARM_PERSON, WIZARD_SNILLOCS_SNOWBALL_SWARM, WIZARD_ICE_DAGGER]
+		MarkSpellAndObject("23182401240425042112",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [WIZARD_ICELANCE, WIZARD_CONFUSION, WIZARD_ICE_STORM, WIZARD_CONE_OF_COLD, WIZARD_MAGIC_MISSILE]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	!Global("OBJ_SP_41BORIA_1","LOCALS",-1)
+	!HaveSpell(CLERIC_COMMAND)  // SPPR102.SPL (Command)
+	!HaveSpell(CLERIC_BANE)  // SPPR111.SPL (Bane)
+	!HaveSpell(CLERIC_DOOM)  // SPPR114.SPL (Doom)
+	!HaveSpell(WIZARD_HOLD_PERSON)  // SPWI306.SPL (Hold Person)
+	!HaveSpell(CLERIC_UNHOLY_BLIGHT)  // SPPR325.SPL (Unholy Blight)
+	!HaveSpell(WIZARD_CHARM_PERSON)  // SPWI104.SPL (Charm Person)
+	!HaveSpell(WIZARD_SNILLOCS_SNOWBALL_SWARM)  // SPWI220.SPL (Snilloc's Snowball Swarm)
+	!HaveSpell(WIZARD_ICE_DAGGER)  // SPWI122.SPL (Ice Dagger)
+	!HaveSpell(WIZARD_ICELANCE)  // SPWI318.SPL (Icelance)
+	!HaveSpell(WIZARD_CONFUSION)  // SPWI401.SPL (Confusion)
+	!HaveSpell(WIZARD_ICE_STORM)  // SPWI404.SPL (Ice Storm)
+	!HaveSpell(WIZARD_CONE_OF_COLD)  // SPWI504.SPL (Cone of Cold)
+	!HaveSpell(CLERIC_CLOAK_OF_FEAR)  // SPPR409.SPL (Cloak of Fear)
+	!HaveSpell(WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magic Missile)
+THEN
+	RESPONSE #100
+		SetGlobal("OBJ_SP_41BORIA_1","LOCALS",-1)
+		Continue()
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	!Global("OBJ_SP_41BORIA_2","LOCALS",-1)
+	See([PC],0)
+	!Global("OBJ_SP_41BORIA_2","LOCALS",-1)
+	Range(LastMarkedObject,9,GREATER_THAN)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12111510",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET)  // [CLERIC_SILENCE_15_RADIUS, CLERIC_INSECT_PLAGUE]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	!Global("OBJ_SP_41BORIA_2","LOCALS",-1)
+	!HaveSpell(CLERIC_SILENCE_15_RADIUS)  // SPPR211.SPL (Silence)
+	!HaveSpell(CLERIC_INSECT_PLAGUE)  // SPPR510.SPL (Insect Plague)
+THEN
+	RESPONSE #100
+		SetGlobal("OBJ_SP_41BORIA_2","LOCALS",-1)
+		Continue()
+END
+
+IF
+	Or(6)
+		HasItem("SGrasp",Myself)  // Shocking Grasp
+		HasItem("SGrasp1",Myself)  // Shocking Grasp
+		HasItem("SGrasp2",Myself)  // Shocking Grasp
+		HasItem("SGrasp3",Myself)  // Shocking Grasp
+		HasItem("SGrasp4",Myself)  // Shocking Grasp
+		HasItem("SGrasp5",Myself)  // Shocking Grasp
+	!Global("OBJ_SP_41BORIA_3","LOCALS",-1)
+	RandomNum(2,1)
+	Range(LastMarkedObject,5,LESS_THAN)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastMarkedObject)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	!Global("OBJ_SP_41BORIA_3","LOCALS",-1)
+	!Global("OBJ_SP_41BORIA_3","LOCALS",-1)
+	RandomNum(2,1)
+	Range(LastMarkedObject,5,LESS_THAN)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("13192115",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_CIRCLE_OF_BONES, WIZARD_SHOCKING_GRASP]
+		MarkSpellAndObject("1117",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_FROST_FINGERS]
+		Continue()
+	RESPONSE #100
+		MarkSpellAndObject("1117",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_FROST_FINGERS]
+		MarkSpellAndObject("13192115",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_CIRCLE_OF_BONES, WIZARD_SHOCKING_GRASP]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	!Global("OBJ_SP_41BORIA_3","LOCALS",-1)
+	!HaveSpell(CLERIC_CIRCLE_OF_BONES)  // SPPR319.SPL (Circle of Bones)
+	!HaveSpell(CLERIC_FROST_FINGERS)  // SPPR117.SPL (Frost Fingers)
+	!HaveSpell(WIZARD_SHOCKING_GRASP)  // SPWI115.SPL (Shocking Grasp)
+THEN
+	RESPONSE #100
+		SetGlobal("OBJ_SP_41BORIA_3","LOCALS",-1)
+		Continue()
+END
+

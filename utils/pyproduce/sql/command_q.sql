@@ -21,8 +21,8 @@
 		value nvarchar(max)
 	) as tvalue
 )
---select * from s
-select distinct s.src from s
-where s.FileName in ('Subrace')
-	and s.def_arg_line = 'I:SubRace*SubRace'
+select * from s
+--select distinct s.src from s
+where s.FileName in ('CheckSkillGT')
+	--and s.def_arg_line = 'I:Race*Race'
 order by 1

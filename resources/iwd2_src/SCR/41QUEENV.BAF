@@ -1,0 +1,19 @@
+IF
+	OpenState("AR4100_Rockwall",TRUE)
+THEN
+	RESPONSE #100
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+END
+
+IF
+	OpenState("AR4100_Rockwall",FALSE)
+	See([PC],0)
+THEN
+	RESPONSE #100
+		SetGlobal("41DestroyBlockade","MYAREA",1)
+		AddJournalEntry(22968)  // Advancing further into the glacier our progress was halted by a blockade of ice and hard snow that was guarded by a queen remorhaz and her Aurilite masters.  We should find a way to get through that blockade.
+		ChangeCurrentScript("")
+		TriggerActivation(Myself,FALSE)
+END
+

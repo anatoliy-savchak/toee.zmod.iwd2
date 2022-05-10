@@ -1,0 +1,176 @@
+IF
+	Global("Move","LOCALS",1)
+	NearLocation(Myself,1600,2416,5)
+THEN
+	RESPONSE #100
+		SetGlobal("Move","LOCALS",0)
+		Continue()
+END
+
+IF
+	Global("Move","LOCALS",0)
+	Range("HeartstoneGem",19,GREATER_THAN)
+THEN
+	RESPONSE #100
+		SetGlobal("Move","LOCALS",1)
+		MoveToPoint([1600.2416])
+END
+
+IF
+	Global("6001_Fight","GLOBAL",1)
+	Global("Buff","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Buff","LOCALS",1)
+		ForceSpell(Myself,CLERIC_DIVINE_SHELL)  // SPPR609.SPL (Divine Shell)
+		SpellWait(CLERIC_DIVINE_SHELL)  // SPPR609.SPL (Divine Shell)
+		ForceSpell(Myself,CLERIC_IMPERVIOUS_SANCTITY_OF_MIND)  // SPPR716.SPL (Impervious Sanctity of Mind)
+		SpellWait(CLERIC_IMPERVIOUS_SANCTITY_OF_MIND)  // SPPR716.SPL (Impervious Sanctity of Mind)
+		ForceSpell(Myself,CLERIC_AURA_OF_VITALITY)  // SPPR729.SPL (Aura of Vitality)
+		SpellWait(CLERIC_AURA_OF_VITALITY)  // SPPR729.SPL (Aura of Vitality)
+END
+
+IF
+	See(Player1,0)
+	IsSpellTargetValid(LastMarkedObject,CLERIC_HEAL,SPELLCAST_IGNORE_HAS_CHECK)  // SPPR607.SPL (Heal)
+	Global("6001_Fight","GLOBAL",1)
+	HPPercentLT(LastSeenBy,51)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ForceSpell(LastMarkedObject,CLERIC_HEAL)  // SPPR607.SPL (Heal)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	See(Player2,0)
+	IsSpellTargetValid(LastMarkedObject,CLERIC_HEAL,SPELLCAST_IGNORE_HAS_CHECK)  // SPPR607.SPL (Heal)
+	Global("6001_Fight","GLOBAL",1)
+	HPPercentLT(LastSeenBy,51)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ForceSpell(LastMarkedObject,CLERIC_HEAL)  // SPPR607.SPL (Heal)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	See(Player3,0)
+	IsSpellTargetValid(LastMarkedObject,CLERIC_HEAL,SPELLCAST_IGNORE_HAS_CHECK)  // SPPR607.SPL (Heal)
+	Global("6001_Fight","GLOBAL",1)
+	HPPercentLT(LastSeenBy,51)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ForceSpell(LastMarkedObject,CLERIC_HEAL)  // SPPR607.SPL (Heal)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	See(Player4,0)
+	IsSpellTargetValid(LastMarkedObject,CLERIC_HEAL,SPELLCAST_IGNORE_HAS_CHECK)  // SPPR607.SPL (Heal)
+	Global("6001_Fight","GLOBAL",1)
+	HPPercentLT(LastSeenBy,51)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ForceSpell(LastMarkedObject,CLERIC_HEAL)  // SPPR607.SPL (Heal)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	See(Player5,0)
+	IsSpellTargetValid(LastMarkedObject,CLERIC_HEAL,SPELLCAST_IGNORE_HAS_CHECK)  // SPPR607.SPL (Heal)
+	Global("6001_Fight","GLOBAL",1)
+	HPPercentLT(LastSeenBy,51)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ForceSpell(LastMarkedObject,CLERIC_HEAL)  // SPPR607.SPL (Heal)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	See(Player6,0)
+	IsSpellTargetValid(LastMarkedObject,CLERIC_HEAL,SPELLCAST_IGNORE_HAS_CHECK)  // SPPR607.SPL (Heal)
+	Global("6001_Fight","GLOBAL",1)
+	HPPercentLT(LastSeenBy,51)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ForceSpell(LastMarkedObject,CLERIC_HEAL)  // SPPR607.SPL (Heal)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	Allegiance(Myself,ENEMY)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("1901161613221608",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM | SPELLCAST_IGNORE_HAS_CHECK)  // [CLERIC_ELEMENTAL_LEGION, CLERIC_DOLOROUS_DECAY, CLERIC_MOLD_TOUCH, CLERIC_SOLS_SEARING_ORB]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		ForceSpell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	HasItem("Destruc",Myself)  // Destruction
+	Or(2)
+		See([ENEMY],0)
+		See([0.0.YUANTI],0)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastMarkedObject)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	Or(2)
+		See([ENEMY],0)
+		See([0.0.YUANTI],0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("1717",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM | SPELLCAST_IGNORE_HAS_CHECK)  // [CLERIC_DESTRUCTION]
+		MarkSpellAndObject("161613221608",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM | SPELLCAST_IGNORE_HAS_CHECK)  // [CLERIC_DOLOROUS_DECAY, CLERIC_MOLD_TOUCH, CLERIC_SOLS_SEARING_ORB]
+		Continue()
+	RESPONSE #100
+		MarkSpellAndObject("161613221608",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM | SPELLCAST_IGNORE_HAS_CHECK)  // [CLERIC_DOLOROUS_DECAY, CLERIC_MOLD_TOUCH, CLERIC_SOLS_SEARING_ORB]
+		MarkSpellAndObject("1717",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM | SPELLCAST_IGNORE_HAS_CHECK)  // [CLERIC_DESTRUCTION]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		ForceSpell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+

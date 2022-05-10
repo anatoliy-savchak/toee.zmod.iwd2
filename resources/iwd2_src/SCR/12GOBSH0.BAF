@@ -1,0 +1,107 @@
+IF
+	HaveSpell(CLERIC_CURE_MODERATE_WOUNDS)  // SPPR214.SPL (Cure Moderate Wounds)
+	See("06_Caballus",0)
+	HPLostGT(LastSeenBy(Myself),18)
+	IsSpellTargetValid(LastSeenBy(Myself),CLERIC_CURE_MODERATE_WOUNDS,0)  // SPPR214.SPL (Cure Moderate Wounds)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_CURE_MODERATE_WOUNDS)  // SPPR214.SPL (Cure Moderate Wounds)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)  // SPPR103.SPL (Cure Light Wounds)
+	See("06_Caballus",0)
+	HPLostGT(LastSeenBy(Myself),8)
+	IsSpellTargetValid(LastSeenBy(Myself),CLERIC_CURE_LIGHT_WOUNDS,0)  // SPPR103.SPL (Cure Light Wounds)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_CURE_LIGHT_WOUNDS)  // SPPR103.SPL (Cure Light Wounds)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(CLERIC_CURE_MODERATE_WOUNDS)  // SPPR214.SPL (Cure Moderate Wounds)
+	HPLostGT(Myself,18)
+	IsSpellTargetValid(Myself,CLERIC_CURE_MODERATE_WOUNDS,0)  // SPPR214.SPL (Cure Moderate Wounds)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CURE_MODERATE_WOUNDS)  // SPPR214.SPL (Cure Moderate Wounds)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)  // SPPR103.SPL (Cure Light Wounds)
+	HPLostGT(Myself,8)
+	IsSpellTargetValid(Myself,CLERIC_CURE_LIGHT_WOUNDS,0)  // SPPR103.SPL (Cure Light Wounds)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CURE_LIGHT_WOUNDS)  // SPPR103.SPL (Cure Light Wounds)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(CLERIC_BLESS)  // SPPR101.SPL (Bless)
+	IsSpellTargetValid(Myself,CLERIC_BLESS,0)  // SPPR101.SPL (Bless)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_BLESS)  // SPPR101.SPL (Bless)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	Or(11)
+		See(NearestEnemyOf(Myself),0)
+		See("Soldier_1_Gate",0)
+		See("Soldier_2_Gate",0)
+		See("Trainee_3_S",0)
+		See("Weapon_Instructor",0)
+		See("Olap_Soothammer",0)
+		See("Anson",0)
+		See("Kadence",0)
+		See("09_Black_Geoffrey",0)
+		See("09_Blanchard",0)
+		See("Niles",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("11021111",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_COMMAND, CLERIC_BANE]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	HaveSpell(WIZARD_HOLD_PERSON)  // SPWI306.SPL (Hold Person)
+	Or(2)
+		See([PC],0)
+		See([PC],0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_HOLD_PERSON,0)  // SPWI306.SPL (Hold Person)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_HOLD_PERSON)  // SPWI306.SPL (Hold Person)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+

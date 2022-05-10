@@ -1,0 +1,185 @@
+IF
+	HaveSpell(CLERIC_ARMOR_OF_FAITH)  // SPPR115.SPL (Armor of Faith)
+	Allegiance(Myself,ENEMY)
+	IsSpellTargetValid(Myself,CLERIC_ARMOR_OF_FAITH,0)  // SPPR115.SPL (Armor of Faith)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_ARMOR_OF_FAITH)  // SPPR115.SPL (Armor of Faith)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	HPPercentLT("02_52DUELE_01",25)
+	See("02_52DUELE_01",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12141103",LastSeenBy(Myself),SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS, CLERIC_CURE_LIGHT_WOUNDS]
+		Continue()
+END
+
+IF
+	IsMarkedSpell(MARKED_SPELL)
+	HPPercentLT(Myself,25)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12141103",Myself,SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS, CLERIC_CURE_LIGHT_WOUNDS]
+		Continue()
+END
+
+IF
+	IsMarkedSpell(MARKED_SPELL)
+	HPPercentLT("02_51DUECL_10",25)
+	See("02_51DUECL_10",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12141103",LastSeenBy(Myself),SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS, CLERIC_CURE_LIGHT_WOUNDS]
+		Continue()
+END
+
+IF
+	IsMarkedSpell(MARKED_SPELL)
+	HPPercentLT("02_51DUECL_11",25)
+	See("02_51DUECL_11",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12141103",LastSeenBy(Myself),SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS, CLERIC_CURE_LIGHT_WOUNDS]
+		Continue()
+END
+
+IF
+	IsMarkedSpell(MARKED_SPELL)
+	HPPercentLT("02_51DUEWA_02",25)
+	See("02_51DUEWA_02",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12141103",LastSeenBy(Myself),SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS, CLERIC_CURE_LIGHT_WOUNDS]
+		Continue()
+END
+
+IF
+	IsMarkedSpell(MARKED_SPELL)
+	HPPercentLT("02_51DUEWA_03",25)
+	See("02_51DUEWA_03",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12141103",LastSeenBy(Myself),SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS, CLERIC_CURE_LIGHT_WOUNDS]
+		Continue()
+END
+
+IF
+	IsMarkedSpell(MARKED_SPELL)
+	HPPercentLT("02_51DUEWA_04",25)
+	See("02_51DUEWA_04",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12141103",LastSeenBy(Myself),SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS, CLERIC_CURE_LIGHT_WOUNDS]
+		Continue()
+END
+
+IF
+	IsMarkedSpell(MARKED_SPELL)
+	HPPercentLT("02_51DUEWA_05",25)
+	See("02_51DUEWA_05",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12141103",LastSeenBy(Myself),SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS, CLERIC_CURE_LIGHT_WOUNDS]
+		Continue()
+END
+
+IF
+	IsMarkedSpell(MARKED_SPELL)
+	HPPercentLT("02_51DUEWA_06",25)
+	See("02_51DUEWA_06",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12141103",LastSeenBy(Myself),SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS, CLERIC_CURE_LIGHT_WOUNDS]
+		Continue()
+END
+
+IF
+	IsMarkedSpell(MARKED_SPELL)
+	HPPercentLT("02_51DUEBO_07",25)
+	See("02_51DUEBO_07",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12141103",LastSeenBy(Myself),SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS, CLERIC_CURE_LIGHT_WOUNDS]
+		Continue()
+END
+
+IF
+	IsMarkedSpell(MARKED_SPELL)
+	HPPercentLT("02_51DUEBO_08",25)
+	See("02_51DUEBO_08",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12141103",LastSeenBy(Myself),SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS, CLERIC_CURE_LIGHT_WOUNDS]
+		Continue()
+END
+
+IF
+	IsMarkedSpell(MARKED_SPELL)
+	HPPercentLT("02_51DUEBO_09",25)
+	See("02_51DUEBO_09",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("12141103",LastSeenBy(Myself),SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS, CLERIC_CURE_LIGHT_WOUNDS]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	HasItem("00potn04",Myself)  // Potion of Healing
+	HPPercentLT(Myself,25)
+THEN
+	RESPONSE #100
+		UseItem("00potn04",Myself)  // Potion of Healing
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	HaveSpell(CLERIC_SILENCE_15_RADIUS)  // SPPR211.SPL (Silence)
+	See([PC],0)
+	IsSpellTargetValid(LastMarkedObject,CLERIC_SILENCE_15_RADIUS,0)  // SPPR211.SPL (Silence)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,CLERIC_SILENCE_15_RADIUS)  // SPPR211.SPL (Silence)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("23061322",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET)  // [WIZARD_HOLD_PERSON, CLERIC_MOLD_TOUCH]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+

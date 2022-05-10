@@ -1,0 +1,38 @@
+IF
+	HaveSpell(WIZARD_HOLD_PERSON)  // SPWI306.SPL (Hold Person)
+	See(NearestEnemyOf(Myself),0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_HOLD_PERSON,0)  // SPWI306.SPL (Hold Person)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_HOLD_PERSON)  // SPWI306.SPL (Hold Person)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(CLERIC_UNHOLY_BLIGHT)  // SPPR325.SPL (Unholy Blight)
+	See([PC],0)
+	IsSpellTargetValid(LastMarkedObject,CLERIC_UNHOLY_BLIGHT,0)  // SPPR325.SPL (Unholy Blight)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,CLERIC_UNHOLY_BLIGHT)  // SPPR325.SPL (Unholy Blight)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(CLERIC_COMMAND)  // SPPR102.SPL (Command)
+	Or(2)
+		See([PC],0)
+		See([PC],0)
+	IsSpellTargetValid(LastMarkedObject,CLERIC_COMMAND,0)  // SPPR102.SPL (Command)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,CLERIC_COMMAND)  // SPPR102.SPL (Command)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+

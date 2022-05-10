@@ -1,0 +1,67 @@
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		Continue()
+END
+
+IF
+	Range(NearestEnemyOf(Myself),2,GREATER_THAN)
+	!OutOfAmmo()
+THEN
+	RESPONSE #100
+		EquipRanged()
+		Continue()
+END
+
+IF
+	IsScriptName("Katchmat",Myself)
+	NumTimesTalkedTo(0)
+	Global("Katchmat_Talked","GLOBAL",0)
+	See([PC],0)
+THEN
+	RESPONSE #100
+		SetDialogueRange(300)
+		Dialogue(LastMarkedObject)
+END
+
+IF
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		EquipWeapon()
+		AttackOneRound(LastMarkedObject)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	See([ENEMY],0)
+THEN
+	RESPONSE #100
+		EquipWeapon()
+		AttackOneRound(LastMarkedObject)
+END
+
+IF
+	!TimerActive(22)
+	!NearSavedLocation(4)
+	!Allegiance(Myself,ENEMY)
+	!See([ENEMY],0)
+THEN
+	RESPONSE #100
+		ReturnToSavedLocation(0)
+		StartTimer(22,10)
+END
+
+IF
+	!TimerActive(23)
+	!IsFacingSavedRotation(Myself)
+	!Allegiance(Myself,ENEMY)
+	!See([ENEMY],0)
+THEN
+	RESPONSE #100
+		FaceSavedLocation(Myself)
+		StartTimer(23,10)
+END
+

@@ -1,0 +1,23 @@
+IF
+	Clicked([PC])
+THEN
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastMarkedObject,TRAP_ARROW_ACID)  // SPWI007.SPL (No such index)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastMarkedObject,TRAP_ARROW_BITING)  // SPWI008.SPL (No such index)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastMarkedObject,TRAP_DISEASE_DARTS)  // SPWI014.SPL (No such index)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastMarkedObject,TRAP_POISON_CONFUSION_DARTS)  // SPWI017.SPL (No such index)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastMarkedObject,TRAP_POISON_DAMAGE_DARTS)  // SPWI015.SPL (No such index)
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastMarkedObject,TRAP_POISON_PARALYZATION_DARTS)  // SPWI016.SPL (No such index)
+END
+

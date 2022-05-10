@@ -1,0 +1,191 @@
+IF
+	!TimerActive(98)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		StartTimer(98,7)
+		ReallyForceSpell(Myself,INNATE_GUARDIAN_INNATE_FEAR)  // SPIN226.SPL (No such index)
+		Wait(1)
+END
+
+IF
+	GlobalTimerExpired("Acid","LOCALS")
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #40
+		Continue()
+	RESPONSE #60
+		SetGlobalTimer("Acid","LOCALS",21)
+		ReallyForceSpell(LastSeenBy(Myself),INNATE_GUARDIAN_ACID_BREATH)  // SPIN225.SPL (Breathes Acid)
+		Wait(1)
+END
+
+IF
+	!Global("60GUARDC_MCSE","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("60GUARDC_MCSE","LOCALS",0)
+		Continue()
+END
+
+IF
+	Global("60GUARDC_MCSE","LOCALS",0)
+	See(NearestEnemyOf(Myself),0)
+	!CheckSpellState(LastSeenBy(Myself),OTILUKES_RESILIENT_SPHERE)
+THEN
+	RESPONSE #100
+		SetGlobal("60GUARDC_MCSE","LOCALS",1)
+		SetMyTarget(LastSeenBy(Myself))
+		Continue()
+END
+
+IF
+	Global("60GUARDC_MCSE","LOCALS",0)
+	See(SecondNearestEnemyOf(Myself),0)
+	!CheckSpellState(LastSeenBy(Myself),OTILUKES_RESILIENT_SPHERE)
+THEN
+	RESPONSE #100
+		SetGlobal("60GUARDC_MCSE","LOCALS",1)
+		SetMyTarget(LastSeenBy(Myself))
+		Continue()
+END
+
+IF
+	Global("60GUARDC_MCSE","LOCALS",0)
+	See(ThirdNearestEnemyOf(Myself),0)
+	!CheckSpellState(LastSeenBy(Myself),OTILUKES_RESILIENT_SPHERE)
+THEN
+	RESPONSE #100
+		SetGlobal("60GUARDC_MCSE","LOCALS",1)
+		SetMyTarget(LastSeenBy(Myself))
+		Continue()
+END
+
+IF
+	Global("60GUARDC_MCSE","LOCALS",0)
+	See(FourthNearestEnemyOf(Myself),0)
+	!CheckSpellState(LastSeenBy(Myself),OTILUKES_RESILIENT_SPHERE)
+THEN
+	RESPONSE #100
+		SetGlobal("60GUARDC_MCSE","LOCALS",1)
+		SetMyTarget(LastSeenBy(Myself))
+		Continue()
+END
+
+IF
+	Global("60GUARDC_MCSE","LOCALS",0)
+	See(FifthNearestEnemyOf(Myself),0)
+	!CheckSpellState(LastSeenBy(Myself),OTILUKES_RESILIENT_SPHERE)
+THEN
+	RESPONSE #100
+		SetGlobal("60GUARDC_MCSE","LOCALS",1)
+		SetMyTarget(LastSeenBy(Myself))
+		Continue()
+END
+
+IF
+	Global("60GUARDC_MCSE","LOCALS",0)
+	See(SixthNearestEnemyOf(Myself),0)
+	!CheckSpellState(LastSeenBy(Myself),OTILUKES_RESILIENT_SPHERE)
+THEN
+	RESPONSE #100
+		SetGlobal("60GUARDC_MCSE","LOCALS",1)
+		SetMyTarget(LastSeenBy(Myself))
+		Continue()
+END
+
+IF
+	Global("60GUARDC_MCSE","LOCALS",0)
+	See(SeventhNearestEnemyOf(Myself),0)
+	!CheckSpellState(LastSeenBy(Myself),OTILUKES_RESILIENT_SPHERE)
+THEN
+	RESPONSE #100
+		SetGlobal("60GUARDC_MCSE","LOCALS",1)
+		SetMyTarget(LastSeenBy(Myself))
+		Continue()
+END
+
+IF
+	Global("60GUARDC_MCSE","LOCALS",0)
+	See(EigthNearestEnemyOf(Myself),0)
+	!CheckSpellState(LastSeenBy(Myself),OTILUKES_RESILIENT_SPHERE)
+THEN
+	RESPONSE #100
+		SetGlobal("60GUARDC_MCSE","LOCALS",1)
+		SetMyTarget(LastSeenBy(Myself))
+		Continue()
+END
+
+IF
+	Global("60GUARDC_MCSE","LOCALS",0)
+	See(NinthNearestEnemyOf(Myself),0)
+	!CheckSpellState(LastSeenBy(Myself),OTILUKES_RESILIENT_SPHERE)
+THEN
+	RESPONSE #100
+		SetGlobal("60GUARDC_MCSE","LOCALS",1)
+		SetMyTarget(LastSeenBy(Myself))
+		Continue()
+END
+
+IF
+	Global("60GUARDC_MCSE","LOCALS",0)
+	See(TenthNearestEnemyOf(Myself),0)
+	!CheckSpellState(LastSeenBy(Myself),OTILUKES_RESILIENT_SPHERE)
+THEN
+	RESPONSE #100
+		SetGlobal("60GUARDC_MCSE","LOCALS",1)
+		SetMyTarget(LastSeenBy(Myself))
+		Continue()
+END
+
+IF
+	Global("60GUARDC_MCSE","LOCALS",0)
+	See(LastAttackerOf(Myself),0)
+	!CheckSpellState(LastSeenBy(Myself),OTILUKES_RESILIENT_SPHERE)
+THEN
+	RESPONSE #100
+		SetGlobal("60GUARDC_MCSE","LOCALS",1)
+		SetMyTarget(LastSeenBy(Myself))
+		Continue()
+END
+
+IF
+	!Global("60GUARDC_MCSE","LOCALS",0)
+	Or(2)
+		TargetUnreachable(MyTarget)
+		Range(MyTarget,10,GREATER_THAN)
+THEN
+	RESPONSE #40
+		SpellHitEffectSprite(Myself,Myself,DIMENSION_DOOR_ORIGIN,0)
+		HideCreature(Myself,TRUE)
+		FloatMessage(Myself,38707)  // .:Casts Teleport Without Error:.
+		JumpToObject(MyTarget)
+		FaceObject(MyTarget)
+		SpellHitEffectSprite(Myself,Myself,DIMENSION_DOOR_DESTINATION,0)
+		HideCreature(Myself,FALSE)
+		Continue()
+END
+
+IF
+	See(MyTarget,0)
+THEN
+	RESPONSE #100
+		EquipWeapon()
+		AttackOneRound(LastMarkedObject)
+END
+
+IF
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		EquipWeapon()
+		AttackOneRound(LastMarkedObject)
+END
+
+IF
+	Range(NearestPC,28,GREATER_THAN)
+THEN
+	RESPONSE #100
+		MoveToObjectUntilSee(NearestPC)
+END
+

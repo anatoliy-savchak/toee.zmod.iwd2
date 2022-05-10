@@ -1,0 +1,69 @@
+IF
+	HaveSpell(CLERIC_AID)  // SPPR201.SPL (Aid)
+	HPLostGT(Myself,7)
+	IsSpellTargetValid(Myself,CLERIC_AID,0)  // SPPR201.SPL (Aid)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_AID)  // SPPR201.SPL (Aid)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(CLERIC_SILENCE_15_RADIUS)  // SPPR211.SPL (Silence)
+	See([PC],0)
+	IsSpellTargetValid(LastMarkedObject,CLERIC_SILENCE_15_RADIUS,0)  // SPPR211.SPL (Silence)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,CLERIC_SILENCE_15_RADIUS)  // SPPR211.SPL (Silence)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(CLERIC_CIRCLE_OF_BONES)  // SPPR319.SPL (Circle of Bones)
+	See(NearestEnemyOf(Myself),0)
+	IsSpellTargetValid(Myself,CLERIC_CIRCLE_OF_BONES,0)  // SPPR319.SPL (Circle of Bones)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CIRCLE_OF_BONES)  // SPPR319.SPL (Circle of Bones)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	See(NearestEnemyOf(Myself),0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("1101",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_BLESS]
+		MarkSpellAndObject("11141111",[PC],SPELLCAST_RANDOM)  // [CLERIC_DOOM, CLERIC_BANE]
+		MarkSpellAndObject("1102",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_COMMAND]
+		Continue()
+	RESPONSE #100
+		MarkSpellAndObject("11141111",[PC],SPELLCAST_RANDOM)  // [CLERIC_DOOM, CLERIC_BANE]
+		MarkSpellAndObject("1102",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_COMMAND]
+		MarkSpellAndObject("1101",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_BLESS]
+		Continue()
+	RESPONSE #100
+		MarkSpellAndObject("1102",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_COMMAND]
+		MarkSpellAndObject("1101",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_BLESS]
+		MarkSpellAndObject("11141111",[PC],SPELLCAST_RANDOM)  // [CLERIC_DOOM, CLERIC_BANE]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+

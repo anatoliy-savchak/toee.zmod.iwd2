@@ -1,0 +1,8 @@
+IF
+	Entered([PC])
+THEN
+	RESPONSE #100
+		DisplayMessage(14381)  // Trap Sprung
+		ReallyForceSpell(LastTrigger,INNATE_DRIDER_WEB)  // SPIN281.SPL (Web)
+END
+

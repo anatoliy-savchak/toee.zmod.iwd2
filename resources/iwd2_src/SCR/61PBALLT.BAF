@@ -1,0 +1,10 @@
+IF
+	Entered([PC])
+THEN
+	RESPONSE #100
+		MultiPlayerSync()
+		ForceSpellPoint([3550.1700],2088)  // SPWI088.SPL (No such index)
+		ScreenShake(5,30,30)
+		ChangeCurrentScript("")
+END
+

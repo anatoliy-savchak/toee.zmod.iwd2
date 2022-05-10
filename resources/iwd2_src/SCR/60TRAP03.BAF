@@ -1,0 +1,21 @@
+IF
+	!TimerActive(50)
+	OpenState("AR6051_Crusher",TRUE)
+THEN
+	RESPONSE #100
+		CloseDoor("AR6051_Crusher")
+		StartTimer(50,3)
+END
+
+IF
+	!TimerActive(50)
+	Entered([PC])
+THEN
+	RESPONSE #100
+		OpenDoor("AR6051_Crusher")
+		ForceSpell(LastTrigger,TRAP_SSETHS_EMBRACE)  // SPIN251.SPL (Sseth's Embrace)
+		DisplayMessage(14381)  // Trap Sprung
+		ScreenShake(5,15,15)
+		StartTimer(50,3)
+END
+

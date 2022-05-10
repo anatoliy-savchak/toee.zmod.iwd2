@@ -1,0 +1,13 @@
+IF
+	GlobalTimerExpired("WOLF_BREATH","LOCALS")
+	See(NearestEnemyOf(Myself),0)
+	IsSpellTargetValid(LastMarkedObject,INNATE_WINTER_WOLF_BREATH,SPELLCAST_IGNORE_HAS_CHECK)  // SPIN971.SPL (No such index)
+THEN
+	RESPONSE #100
+		ForceSpell(LastMarkedObject,INNATE_WINTER_WOLF_BREATH)  // SPIN971.SPL (No such index)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		SetGlobalTimerRandom("WOLF_BREATH","LOCALS",6,9)
+END
+

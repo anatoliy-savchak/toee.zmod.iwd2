@@ -1,0 +1,106 @@
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	HPPercentLT(Myself,75)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("231121022212",Myself,SPELLCAST_IGNORE_SEE)  // [WIZARD_PROTECTION_FROM_NORMAL_MISSILES, WIZARD_ARMOR, WIZARD_MIRROR_IMAGE]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	ForceMarkedSpell(MARKED_SPELL)
+	SetSpellTarget(Nothing)
+	Or(28)
+		See(NearestEnemyOf(Myself),0)
+		See("Soldier_2_NW_Catapult",0)
+		See("Soldier_3_Gate",0)
+		See("Merc_1_Gate",0)
+		See("Merc_3_Gate",0)
+		See("Soldier_2_N_Catapult",0)
+		See("Soldier_1_N_Palisade",0)
+		See("Soldier_2_N_Palisade",0)
+		See("Soldier_1_NE_Palisade",0)
+		See("Archer_2_W_Wall",0)
+		See("Recruit_5_W",0)
+		See("Trainee_2_S",0)
+		See("Drill_Sergeant_E",0)
+		See("Recruit_1_W",0)
+		See("Recruit_1_E",0)
+		See("Trainee_1_S",0)
+		See("Recruit_2_E",0)
+		See("Recruit_2_W",0)
+		See("Recruit_3_E",0)
+		See("Trainee_3_S",0)
+		See("Recruit_4_E",0)
+		See("Recruit_3_W",0)
+		See("Recruit_5_E",0)
+		See("Weapon_Instructor",0)
+		See("Niles",0)
+		See("Recruit_4_W",0)
+		See("Archer_1_W_Wall",0)
+		See("Drill_Sergeant_West",0)
+THEN
+	RESPONSE #100
+		MarkSpellAndObject("2105211821192222",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET)  // [WIZARD_COLOR_SPRAY, WIZARD_CHROMATIC_ORB, WIZARD_LARLOCHS_MINOR_DRAIN, WIZARD_BLINDNESS]
+		Continue()
+END
+
+IF
+	!IsMarkedSpell(MARKED_SPELL)
+THEN
+	RESPONSE #100
+		Spell(SpellTarget,MARKED_SPELL)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+		ForceMarkedSpell(MARKED_SPELL)
+END
+
+IF
+	HaveSpell(WIZARD_HORROR)  // SPWI205.SPL (Horror)
+	See([PC],0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_HORROR,0)  // SPWI205.SPL (Horror)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_HORROR)  // SPWI205.SPL (Horror)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(WIZARD_RAY_OF_ENFEEBLEMENT)  // SPWI226.SPL (Ray of Enfeeblement)
+	See([PC.0.0.0.0.0.0.0.0.CLASSMASK_GROUP_WARRIORS],0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_RAY_OF_ENFEEBLEMENT,0)  // SPWI226.SPL (Ray of Enfeeblement)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_RAY_OF_ENFEEBLEMENT)  // SPWI226.SPL (Ray of Enfeeblement)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+
+IF
+	HaveSpell(WIZARD_HOLD_PERSON)  // SPWI306.SPL (Hold Person)
+	See([PC],0)
+	IsSpellTargetValid(LastMarkedObject,WIZARD_HOLD_PERSON,0)  // SPWI306.SPL (Hold Person)
+THEN
+	RESPONSE #100
+		Spell(LastMarkedObject,WIZARD_HOLD_PERSON)  // SPWI306.SPL (Hold Person)
+		WaitAnimation(Myself,WALK)
+		WaitAnimation(Myself,CONJURE)
+		WaitAnimation(Myself,CAST)
+END
+

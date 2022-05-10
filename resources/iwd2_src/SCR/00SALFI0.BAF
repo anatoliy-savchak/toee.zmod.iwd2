@@ -1,0 +1,9 @@
+IF
+	!CreatureHidden(Myself)
+	LOS([PC],35)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,INNATE_SALAMANDER_AURA_FIRE)  // SPIN996.SPL (No such index)
+		ChangeCurrentScript("")
+END
+

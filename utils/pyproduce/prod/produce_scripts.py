@@ -124,7 +124,42 @@ class ProducerOfScripts(producer_base.Producer):
             if not action_linea: continue
 
             self.current_action_line_index = i
-            action_linea = action_linea.replace('#', '"')
+            scripted_lines = ScriptTran.translate_script_line_ex(action_linea, self)
+            line = None
+            if isinstance(scripted_lines, str):
+                line = scripted_lines
+            if line is None:
+                line = 'pass'
+            lines.append(line)
+
+        self.current_action_lines = None
+        self.current_action_line_index = None
+
+        return lines
+
+    def transate_action_lines_complex(self, action_lines: list, are_name: str = None, cre_name: str = None, bcs_name: str = None, script_code: str = None, actor_name: str = None, parent_producer = None):
+        self.current_are_name = are_name
+        self.current_cre_name = cre_name
+        self.current_bcs_name = bcs_name
+        self.current_actor_name = actor_name
+        self.current_script_code = script_code
+        self.current_parent_producer = parent_producer
+
+        lines = list()
+        action_lines2 = list()
+        for i, action_line in enumerate(action_lines):
+            action_linea = self.remove_comment(action_line)
+            if not action_linea: continue
+            action_lines2.extend(condition_split(action_linea))
+        
+        self.current_action_lines = action_lines2
+        self.current_action_line_index = None
+
+        for i, action_line in enumerate(action_lines2):
+            action_linea = action_line.strip()
+            if not action_linea: continue
+
+            self.current_action_line_index = i
             scripted_lines = ScriptTran.translate_script_line_ex(action_linea, self)
             line = None
             if isinstance(scripted_lines, str):
@@ -370,6 +405,7 @@ class ScriptTran:
 
     @staticmethod
     def translate_script_line_ex(aline: str, producer):
+        aline = aline.replace('#', '"')
         result = None
 
         while True:

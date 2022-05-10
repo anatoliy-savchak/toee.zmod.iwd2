@@ -92,23 +92,22 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
         self.writeline('def do_execute(cls, self):')
         self.indent()
         self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
+        self.writeline('is_cutscene_execution = self.is_cutscene_mode()')
 
         self.writeline('while True:')
         self.indent()
-        for block in blocks:
+        for index, block in enumerate(blocks):
             if block.get("unreachable"): 
                 continue
 
+            block_index = index + 1
+            block["index"] = block_index
             if_lines = self.script_lines[block["if"]["start_index"]:int(block["if"]["last_index"])+1]
+            block["if_lines"] = if_lines
             if_lines_translated = self.doc.producerOfScripts.transate_trigger_lines(if_lines, are_name = self.are_name, cre_name = cre_name, actor_name = actor_name)
-            for line in if_lines:
-                self.writeline(f'# {line.strip()}')
-
-            for line in if_lines_translated:
-                self.writeline(f'{line}')
-            self.indent()
-
+            block["if_lines_translated"] = if_lines_translated
             resp_lines = self.script_lines[block["then"][0]["start_index"]:int(block["then"][0]["end_index"])+1]
+            block["resp_lines"] = resp_lines
             is_continue = False
             resp_lines_stripped = list()
             for line in resp_lines:
@@ -116,8 +115,46 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
                     is_continue = True
                     continue
                 resp_lines_stripped.append(line)
-            resp_lines_translated = self.doc.producerOfScripts.transate_action_lines(resp_lines_stripped
+            block["resp_lines_stripped"] = resp_lines_stripped
+            block["is_continue"] = is_continue
+
+            resp_lines_translated = self.doc.producerOfScripts.transate_action_lines_complex(resp_lines_stripped
                 , cre_name=cre_name, actor_name=actor_name, script_code=script_code, bcs_name=self.bcs_name, are_name=self.are_name, parent_producer = parent_producer)
+            block["resp_lines_translated"] = resp_lines
+            block_name = f'do_execute_block_{block_index:02d}'
+            block["block_name"] = block_name
+
+            self.writeline(f'break_ = cls.{block_name}()')
+            self.writeline('if break_ and not is_cutscene_execution: break')
+            self.writeline()
+            # self.writeline('')
+        self.writeline('break # while')
+        self.indent(False)
+        self.writeline('return')
+        self.writeline('')
+        self.indent(False)
+
+        for index, block in enumerate(blocks):
+            block_index = block.get("index")
+            if not block_index:
+                continue
+            block_name = block["block_name"]
+            if_lines = block["if_lines"]
+            resp_lines = block["resp_lines"]
+            resp_lines_stripped = block["resp_lines_stripped"]
+            resp_lines = block["resp_lines_translated"]
+            is_continue = block["is_continue"]
+
+            self.writeline('@classmethod')
+            self.writeline(f'def {block_name}(cls, self):')
+            self.indent()
+            self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
+            for line in if_lines:
+                self.writeline(f'# {line.strip()}')
+
+            for line in if_lines_translated:
+                self.writeline(f'{line}')
+            self.indent()
 
             for line in resp_lines:
                 self.writeline(f'# {line.strip()}')
@@ -126,15 +163,15 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
                 self.writeline(f'{line}')
 
             if not is_continue:
-                self.writeline('break')
+                self.writeline('return True # break further blocks')
             else:
-                self.writeline('pass # continue() - let it pass below')
+                self.writeline('return False # continue() - pass further blocks')
             self.indent(False)
+
+            self.writeline('return False')
             self.writeline('')
-        self.writeline('break # while')
-        self.indent(False)
-        self.writeline('return')
-        self.writeline('')
+            self.indent(False)
+
         return
 
     def scan(self, cre_name: str = None, actor_name: str = None):

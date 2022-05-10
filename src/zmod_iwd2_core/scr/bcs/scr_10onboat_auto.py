@@ -10,51 +10,86 @@ class Script_10ONBOAT_Auto(inf_scripting.ScriptBase):
 	@classmethod
 	def do_execute(cls, self):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		is_cutscene_execution = self.is_cutscene_mode()
 		while True:
-			# Allegiance(Myself,ENEMY)
-			if self.iAllegiance("Myself", "ENEMY"):
-				# ChangeCurrentScript("10aGobG0")
-				self.iChangeCurrentScript("'10aGobG0'")
-				break
+			break_ = cls.do_execute_block_01()
+			if break_ and not is_cutscene_execution: break
 			
-			# !IsTeamBitOn(TEAM_1_BIT)
-			if not self.iIsTeamBitOn("TEAM_1_BIT"):
-				# SetTeamBit(TEAM_1_BIT,TRUE)
-				# Continue()
-				self.iSetTeamBit("TEAM_1_BIT", True)
-				pass # continue() - let it pass below
+			break_ = cls.do_execute_block_02()
+			if break_ and not is_cutscene_execution: break
 			
-			# !Global("TEAM_1","MYAREA",1)
-			# Allegiance(Myself,ENEMY)
-			# !CreatureHidden(Myself)
-			# See(NearestEnemyOf(Myself),0)
-			if not self.iGlobal("'TEAM_1'", "'MYAREA'", 1) \
-				 and self.iAllegiance("Myself", "ENEMY") \
-				 and not self.iCreatureHidden("Myself") \
-				 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
-				# SetGlobal("TEAM_1","MYAREA",1)
-				# Continue()
-				self.iSetGlobal("'TEAM_1'", "'MYAREA'", 1)
-				pass # continue() - let it pass below
+			break_ = cls.do_execute_block_03()
+			if break_ and not is_cutscene_execution: break
 			
-			# !Allegiance(Myself,ENEMY)
-			# See([ENEMY][1887.703.2801.1043],0)
-			if not self.iAllegiance("Myself", "ENEMY") \
-				 and self.iSee("[ENEMY][1887.703.2801.1043]", 0):
-				# EquipWeapon()
-				# AttackOneRound(LastMarkedObject)
-				self.iEquipWeapon()
-				self.iAttackOneRound("LastMarkedObject")
-				break
+			break_ = cls.do_execute_block_04()
+			if break_ and not is_cutscene_execution: break
 			
-			# See([ENEMY.0.GOBLIN][1887.703.2801.1043],0)
-			if self.iSee("[ENEMY.0.GOBLIN][1887.703.2801.1043]", 0):
-				# EquipWeapon()
-				# AttackOneRound(LastMarkedObject)
-				self.iEquipWeapon()
-				self.iAttackOneRound("LastMarkedObject")
-				break
+			break_ = cls.do_execute_block_05()
+			if break_ and not is_cutscene_execution: break
 			
 			break # while
 		return
+		
+	@classmethod
+	def do_execute_block_01(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# Allegiance(Myself,ENEMY)
+		if self.iSee("[ENEMY.0.GOBLIN][1887.703.2801.1043]", 0):
+			# ChangeCurrentScript("10aGobG0")
+			self.iEquipWeapon()
+			self.iAttackOneRound("LastMarkedObject")
+			return True # break further blocks
+		return False
+		
+	@classmethod
+	def do_execute_block_02(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# !IsTeamBitOn(TEAM_1_BIT)
+		if self.iSee("[ENEMY.0.GOBLIN][1887.703.2801.1043]", 0):
+			# SetTeamBit(TEAM_1_BIT,TRUE)
+			# Continue()
+			self.iEquipWeapon()
+			self.iAttackOneRound("LastMarkedObject")
+			return False # continue() - pass further blocks
+		return False
+		
+	@classmethod
+	def do_execute_block_03(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# !Global("TEAM_1","MYAREA",1)
+		# Allegiance(Myself,ENEMY)
+		# !CreatureHidden(Myself)
+		# See(NearestEnemyOf(Myself),0)
+		if self.iSee("[ENEMY.0.GOBLIN][1887.703.2801.1043]", 0):
+			# SetGlobal("TEAM_1","MYAREA",1)
+			# Continue()
+			self.iEquipWeapon()
+			self.iAttackOneRound("LastMarkedObject")
+			return False # continue() - pass further blocks
+		return False
+		
+	@classmethod
+	def do_execute_block_04(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# !Allegiance(Myself,ENEMY)
+		# See([ENEMY][1887.703.2801.1043],0)
+		if self.iSee("[ENEMY.0.GOBLIN][1887.703.2801.1043]", 0):
+			# EquipWeapon()
+			# AttackOneRound(LastMarkedObject)
+			self.iEquipWeapon()
+			self.iAttackOneRound("LastMarkedObject")
+			return True # break further blocks
+		return False
+		
+	@classmethod
+	def do_execute_block_05(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# See([ENEMY.0.GOBLIN][1887.703.2801.1043],0)
+		if self.iSee("[ENEMY.0.GOBLIN][1887.703.2801.1043]", 0):
+			# EquipWeapon()
+			# AttackOneRound(LastMarkedObject)
+			self.iEquipWeapon()
+			self.iAttackOneRound("LastMarkedObject")
+			return True # break further blocks
+		return False
 		

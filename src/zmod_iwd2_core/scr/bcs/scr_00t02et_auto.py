@@ -10,49 +10,83 @@ class Script_00T02ET_Auto(inf_scripting.ScriptBase):
 	@classmethod
 	def do_execute(cls, self):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		is_cutscene_execution = self.is_cutscene_mode()
 		while True:
-			# !Global("TEAM_2","MYAREA",1)
-			# Or(2)
-			# AttackedBy([GOODCUTOFF],DEFAULT)
-			# PickPocketFailed([PC])
-			if not self.iGlobal("'TEAM_2'", "'MYAREA'", 1) \
-				 and ( False \
-					or self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
-					or self.iPickPocketFailed("[PC]") ):
-				# SetGlobal("TEAM_2","MYAREA",1)
-				# Continue()
-				self.iSetGlobal("'TEAM_2'", "'MYAREA'", 1)
-				pass # continue() - let it pass below
+			break_ = cls.do_execute_block_01()
+			if break_ and not is_cutscene_execution: break
 			
-			# !Allegiance(Myself,ENEMY)
-			# !Global("TEAM_2","MYAREA",0)
-			if not self.iAllegiance("Myself", "ENEMY") \
-				 and not self.iGlobal("'TEAM_2'", "'MYAREA'", 0):
-				# Enemy()
-				# Continue()
-				self.iEnemy()
-				pass # continue() - let it pass below
+			break_ = cls.do_execute_block_02()
+			if break_ and not is_cutscene_execution: break
 			
-			# !IsTeamBitOn(TEAM_2_BIT)
-			if not self.iIsTeamBitOn("TEAM_2_BIT"):
-				# SetTeamBit(TEAM_2_BIT,TRUE)
-				# Continue()
-				self.iSetTeamBit("TEAM_2_BIT", True)
-				pass # continue() - let it pass below
+			break_ = cls.do_execute_block_03()
+			if break_ and not is_cutscene_execution: break
 			
-			# !Global("TEAM_2","MYAREA",1)
-			# Allegiance(Myself,ENEMY)
-			# !CreatureHidden(Myself)
-			# See(NearestEnemyOf(Myself),0)
-			if not self.iGlobal("'TEAM_2'", "'MYAREA'", 1) \
-				 and self.iAllegiance("Myself", "ENEMY") \
-				 and not self.iCreatureHidden("Myself") \
-				 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
-				# SetGlobal("TEAM_2","MYAREA",1)
-				# Continue()
-				self.iSetGlobal("'TEAM_2'", "'MYAREA'", 1)
-				pass # continue() - let it pass below
+			break_ = cls.do_execute_block_04()
+			if break_ and not is_cutscene_execution: break
 			
 			break # while
 		return
+		
+	@classmethod
+	def do_execute_block_01(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# !Global("TEAM_2","MYAREA",1)
+		# Or(2)
+		# AttackedBy([GOODCUTOFF],DEFAULT)
+		# PickPocketFailed([PC])
+		if not self.iGlobal("'TEAM_2'", "'MYAREA'", 1) \
+			 and self.iAllegiance("Myself", "ENEMY") \
+			 and not self.iCreatureHidden("Myself") \
+			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
+			# SetGlobal("TEAM_2","MYAREA",1)
+			# Continue()
+			self.iSetGlobal("'TEAM_2'", "'MYAREA'", 1)
+			return False # continue() - pass further blocks
+		return False
+		
+	@classmethod
+	def do_execute_block_02(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# !Allegiance(Myself,ENEMY)
+		# !Global("TEAM_2","MYAREA",0)
+		if not self.iGlobal("'TEAM_2'", "'MYAREA'", 1) \
+			 and self.iAllegiance("Myself", "ENEMY") \
+			 and not self.iCreatureHidden("Myself") \
+			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
+			# Enemy()
+			# Continue()
+			self.iSetGlobal("'TEAM_2'", "'MYAREA'", 1)
+			return False # continue() - pass further blocks
+		return False
+		
+	@classmethod
+	def do_execute_block_03(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# !IsTeamBitOn(TEAM_2_BIT)
+		if not self.iGlobal("'TEAM_2'", "'MYAREA'", 1) \
+			 and self.iAllegiance("Myself", "ENEMY") \
+			 and not self.iCreatureHidden("Myself") \
+			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
+			# SetTeamBit(TEAM_2_BIT,TRUE)
+			# Continue()
+			self.iSetGlobal("'TEAM_2'", "'MYAREA'", 1)
+			return False # continue() - pass further blocks
+		return False
+		
+	@classmethod
+	def do_execute_block_04(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# !Global("TEAM_2","MYAREA",1)
+		# Allegiance(Myself,ENEMY)
+		# !CreatureHidden(Myself)
+		# See(NearestEnemyOf(Myself),0)
+		if not self.iGlobal("'TEAM_2'", "'MYAREA'", 1) \
+			 and self.iAllegiance("Myself", "ENEMY") \
+			 and not self.iCreatureHidden("Myself") \
+			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
+			# SetGlobal("TEAM_2","MYAREA",1)
+			# Continue()
+			self.iSetGlobal("'TEAM_2'", "'MYAREA'", 1)
+			return False # continue() - pass further blocks
+		return False
 		

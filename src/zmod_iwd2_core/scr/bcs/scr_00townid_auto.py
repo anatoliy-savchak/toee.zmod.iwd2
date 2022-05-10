@@ -10,93 +10,122 @@ class Script_00TOWNID_Auto(inf_scripting.ScriptBase):
 	@classmethod
 	def do_execute(cls, self):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		is_cutscene_execution = self.is_cutscene_mode()
 		while True:
-			# Global("TEAM_0","MYAREA",0)
-			# !TimerActive(2)
-			# Allegiance(Myself,ENEMY)
-			# See(NearestEnemyOf(Myself),0)
-			if self.iGlobal("'TEAM_0'", "'MYAREA'", 0) \
-				 and not self.iTimerActive(2) \
-				 and self.iAllegiance("Myself", "ENEMY") \
-				 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
-				# StartTimer(2,6)
-				# Continue()
-				self.iStartTimer(2, 6)
-				pass # continue() - let it pass below
+			break_ = cls.do_execute_block_01()
+			if break_ and not is_cutscene_execution: break
 			
-			# !Allegiance(Myself,ENEMY)
-			# Or(2)
-			# AttackedBy([GOODCUTOFF],DEFAULT)
-			# PickPocketFailed([PC])
-			# Or(13)
-			# HitBy([GOODCUTOFF],SLASHING)
-			# HitBy([GOODCUTOFF],CRUSHING)
-			# HitBy([GOODCUTOFF],PIERCING)
-			# HitBy([GOODCUTOFF],MISSILE)
-			# HitBy([GOODCUTOFF],FIRE)
-			# HitBy([GOODCUTOFF],ELECTRICITY)
-			# HitBy([GOODCUTOFF],POISON)
-			# HitBy([GOODCUTOFF],MAGIC)
-			# HitBy([GOODCUTOFF],COLD)
-			# HitBy([GOODCUTOFF],ACID)
-			# HitBy([GOODCUTOFF],MAGICFIRE)
-			# HitBy([GOODCUTOFF],MAGICCOLD)
-			# PickPocketFailed([PC])
-			if not self.iAllegiance("Myself", "ENEMY") \
-				 and ( False \
-					or self.iAttackedBy("[GOODCUTOFF]", "DEFAULT") \
-					or self.iPickPocketFailed("[PC]") ) \
-				 and ( False \
-					or self.iHitBy("[GOODCUTOFF]", "SLASHING") \
-					or self.iHitBy("[GOODCUTOFF]", "CRUSHING") \
-					or self.iHitBy("[GOODCUTOFF]", "PIERCING") \
-					or self.iHitBy("[GOODCUTOFF]", "MISSILE") \
-					or self.iHitBy("[GOODCUTOFF]", "FIRE") \
-					or self.iHitBy("[GOODCUTOFF]", "ELECTRICITY") \
-					or self.iHitBy("[GOODCUTOFF]", "POISON") \
-					or self.iHitBy("[GOODCUTOFF]", "MAGIC") \
-					or self.iHitBy("[GOODCUTOFF]", "COLD") \
-					or self.iHitBy("[GOODCUTOFF]", "ACID") \
-					or self.iHitBy("[GOODCUTOFF]", "MAGICFIRE") \
-					or self.iHitBy("[GOODCUTOFF]", "MAGICCOLD") \
-					or self.iPickPocketFailed("[PC]") ):
-				# Enemy()
-				# SetGlobal("TOWNIE_HOSTILE","MYAREA",1)
-				# Help()
-				self.iEnemy()
-				self.iSetGlobal("'TOWNIE_HOSTILE'", "'MYAREA'", 1)
-				self.iHelp()
-				break
+			break_ = cls.do_execute_block_02()
+			if break_ and not is_cutscene_execution: break
 			
-			# !Allegiance(Myself,ENEMY)
-			# !Global("TEAM_0","MYAREA",0)
-			if not self.iAllegiance("Myself", "ENEMY") \
-				 and not self.iGlobal("'TEAM_0'", "'MYAREA'", 0):
-				# Enemy()
-				# Continue()
-				self.iEnemy()
-				pass # continue() - let it pass below
+			break_ = cls.do_execute_block_03()
+			if break_ and not is_cutscene_execution: break
 			
-			# Dead(Myself)
-			if self.iDead("Myself"):
-				# ChangeCurrentScript("")
-				self.iChangeCurrentScript("''")
-				break
+			break_ = cls.do_execute_block_04()
+			if break_ and not is_cutscene_execution: break
 			
-			# Global("TEAM_0","MYAREA",0)
-			# !Global("TOWNIE_HOSTILE","MYAREA",0)
-			# !CreatureHidden(Myself)
-			# Help([ANYTHING])
-			if self.iGlobal("'TEAM_0'", "'MYAREA'", 0) \
-				 and not self.iGlobal("'TOWNIE_HOSTILE'", "'MYAREA'", 0) \
-				 and not self.iCreatureHidden("Myself") \
-				 and self.iHelp("[ANYTHING]"):
-				# SetGlobal("TEAM_0","MYAREA",1)
-				# Enemy()
-				self.iSetGlobal("'TEAM_0'", "'MYAREA'", 1)
-				self.iEnemy()
-				break
+			break_ = cls.do_execute_block_05()
+			if break_ and not is_cutscene_execution: break
 			
 			break # while
 		return
+		
+	@classmethod
+	def do_execute_block_01(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# Global("TEAM_0","MYAREA",0)
+		# !TimerActive(2)
+		# Allegiance(Myself,ENEMY)
+		# See(NearestEnemyOf(Myself),0)
+		if self.iGlobal("'TEAM_0'", "'MYAREA'", 0) \
+			 and not self.iGlobal("'TOWNIE_HOSTILE'", "'MYAREA'", 0) \
+			 and not self.iCreatureHidden("Myself") \
+			 and self.iHelp("[ANYTHING]"):
+			# StartTimer(2,6)
+			# Continue()
+			self.iSetGlobal("'TEAM_0'", "'MYAREA'", 1)
+			self.iEnemy()
+			return False # continue() - pass further blocks
+		return False
+		
+	@classmethod
+	def do_execute_block_02(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# !Allegiance(Myself,ENEMY)
+		# Or(2)
+		# AttackedBy([GOODCUTOFF],DEFAULT)
+		# PickPocketFailed([PC])
+		# Or(13)
+		# HitBy([GOODCUTOFF],SLASHING)
+		# HitBy([GOODCUTOFF],CRUSHING)
+		# HitBy([GOODCUTOFF],PIERCING)
+		# HitBy([GOODCUTOFF],MISSILE)
+		# HitBy([GOODCUTOFF],FIRE)
+		# HitBy([GOODCUTOFF],ELECTRICITY)
+		# HitBy([GOODCUTOFF],POISON)
+		# HitBy([GOODCUTOFF],MAGIC)
+		# HitBy([GOODCUTOFF],COLD)
+		# HitBy([GOODCUTOFF],ACID)
+		# HitBy([GOODCUTOFF],MAGICFIRE)
+		# HitBy([GOODCUTOFF],MAGICCOLD)
+		# PickPocketFailed([PC])
+		if self.iGlobal("'TEAM_0'", "'MYAREA'", 0) \
+			 and not self.iGlobal("'TOWNIE_HOSTILE'", "'MYAREA'", 0) \
+			 and not self.iCreatureHidden("Myself") \
+			 and self.iHelp("[ANYTHING]"):
+			# Enemy()
+			# SetGlobal("TOWNIE_HOSTILE","MYAREA",1)
+			# Help()
+			self.iSetGlobal("'TEAM_0'", "'MYAREA'", 1)
+			self.iEnemy()
+			return True # break further blocks
+		return False
+		
+	@classmethod
+	def do_execute_block_03(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# !Allegiance(Myself,ENEMY)
+		# !Global("TEAM_0","MYAREA",0)
+		if self.iGlobal("'TEAM_0'", "'MYAREA'", 0) \
+			 and not self.iGlobal("'TOWNIE_HOSTILE'", "'MYAREA'", 0) \
+			 and not self.iCreatureHidden("Myself") \
+			 and self.iHelp("[ANYTHING]"):
+			# Enemy()
+			# Continue()
+			self.iSetGlobal("'TEAM_0'", "'MYAREA'", 1)
+			self.iEnemy()
+			return False # continue() - pass further blocks
+		return False
+		
+	@classmethod
+	def do_execute_block_04(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# Dead(Myself)
+		if self.iGlobal("'TEAM_0'", "'MYAREA'", 0) \
+			 and not self.iGlobal("'TOWNIE_HOSTILE'", "'MYAREA'", 0) \
+			 and not self.iCreatureHidden("Myself") \
+			 and self.iHelp("[ANYTHING]"):
+			# ChangeCurrentScript("")
+			self.iSetGlobal("'TEAM_0'", "'MYAREA'", 1)
+			self.iEnemy()
+			return True # break further blocks
+		return False
+		
+	@classmethod
+	def do_execute_block_05(cls, self):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		# Global("TEAM_0","MYAREA",0)
+		# !Global("TOWNIE_HOSTILE","MYAREA",0)
+		# !CreatureHidden(Myself)
+		# Help([ANYTHING])
+		if self.iGlobal("'TEAM_0'", "'MYAREA'", 0) \
+			 and not self.iGlobal("'TOWNIE_HOSTILE'", "'MYAREA'", 0) \
+			 and not self.iCreatureHidden("Myself") \
+			 and self.iHelp("[ANYTHING]"):
+			# SetGlobal("TEAM_0","MYAREA",1)
+			# Enemy()
+			self.iSetGlobal("'TEAM_0'", "'MYAREA'", 1)
+			self.iEnemy()
+			return True # break further blocks
+		return False
 		

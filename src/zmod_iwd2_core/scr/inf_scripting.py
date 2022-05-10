@@ -61,6 +61,12 @@ def strip_quotes(s, notify = False):
 	return
 
 class InfScriptSupport:
+	def get_native_context(self):
+		return self
+
+	def get_context(self):
+		return self.get_native_context()
+
 	def _gnpc(self):
 		return toee.OBJ_HANDLE_NULL
 
@@ -77,7 +83,7 @@ class InfScriptSupport:
 
 	def _ensure_global(self, name, area):
 		name = strip_quotes(name)
-		g = self._get_globals(area)
+		g = self.get_context()._get_globals(area)
 		v = g.get(name)
 		assert isinstance(v, int)
 		if v is None:
@@ -88,7 +94,7 @@ class InfScriptSupport:
 	def _set_global(self, name, area, value):
 		name = strip_quotes(name)
 		area = strip_quotes(area)
-		g = self._get_globals(area)
+		g = self.get_context()._get_globals(area)
 		value_before = None if not debugg.DEBUG_PRINT_GLOBAL_SET_INTO_HISTORY else g.get(name)
 		g[name] = value
 
@@ -110,23 +116,23 @@ class InfScriptSupport:
 		ctrl = None
 		while True:
 			if _name == "myself":
-				npc, ctrl = self._get_ie_object_myself(name)
+				npc, ctrl = self.get_context()._get_ie_object_myself(name)
 				break
 
 			if _name == "protagonist": 
-				npc, ctrl = self._get_ie_object_protagonist(name)
+				npc, ctrl = self.get_context()._get_ie_object_protagonist(name)
 				break
 
 			if _name == "nearest": 
-				npc, ctrl = self._get_ie_object_nearest()
+				npc, ctrl = self.get_context()._get_ie_object_nearest()
 				break
 
 			if _name == "nearestpc": 
-				npc, ctrl = self._get_ie_object_nearest_pc()
+				npc, ctrl = self.get_context()._get_ie_object_nearest_pc()
 				break
 
 			if True: #q:
-				npc, ctrl = self._get_ie_object_by_name(name)
+				npc, ctrl = self.get_context()._get_ie_object_by_name(name)
 				break
 
 			err = "Unknown objname: {}".format(name)
@@ -136,7 +142,7 @@ class InfScriptSupport:
 		return (npc, ctrl)
 
 	def _get_ie_object_myself(self, name):
-		npc = self._gnpc()
+		npc = self.get_context()._gnpc()
 		ctrl = self
 		return (npc, ctrl)
 
@@ -144,13 +150,13 @@ class InfScriptSupport:
 		npc = toee.OBJ_HANDLE_NULL
 		ctrl = None
 		while True:
-			npc = self._gnpc()
+			npc = self.get_context()._gnpc()
 			ctrl = self
 			if npc and npc.type == toee.obj_t_pc:
 				break
 
 			# opposite dude
-			npc = self._gtriggerer()
+			npc = self.get_context()._gtriggerer()
 			ctrl = None
 			if npc and npc.type == toee.obj_t_pc:
 				break
@@ -176,19 +182,19 @@ class InfScriptSupport:
 		return (None, None)
 
 	def _get_ie_object_myself(self, name):
-		npc = self._gnpc()
+		npc = self.get_context()._gnpc()
 		ctrl = self
 		return (npc, ctrl)
 
 	def _hp(self, obj_name):
-		obj, ctrl = self._get_ie_object(obj_name)
+		obj, ctrl = self.get_context()._get_ie_object(obj_name)
 		result = 0
 		if obj:
 			result = obj.stat_level_get(toee.stat_hp_current)
 		return result
 
 	def _skill(self, obj_name, skill_name):
-		obj, ctrl = self._get_ie_object(obj_name)
+		obj, ctrl = self.get_context()._get_ie_object(obj_name)
 		result = 0
 		if obj:
 			stat = utils_inf.iwd2_skill_convert(skill_name)
@@ -250,7 +256,7 @@ class InfScriptSupport:
 		Returns true only if the alignment of the specified object matches that in the second parameter.
 		"""
 		result = False
-		npc, ctrl = self._get_ie_object(obj)
+		npc, ctrl = self.get_context()._get_ie_object(obj)
 		if npc:
 			v = npc.obj_get_int(toee.obj_f_critter_alignment)
 			result = utils_inf.iwd2_alignment_equals(alignment, npc)
@@ -325,14 +331,14 @@ class InfScriptSupport:
 		"""
 		CheckSkillGT(O:Object*, I:Value*, I:SkillNum*Skills)
 		"""
-		return self._skill(obj, skillnum) > value
+		return self.get_context()._skill(obj, skillnum) > value
 	
 	@dump_args
 	def iCheckSkillLT(self, obj, value, skillnum):
 		"""
 		CheckSkillLT(O:Object*, I:Value*, I:SkillNum*Skills)
 		"""
-		return self._skill(obj, skillnum) < value
+		return self.get_context()._skill(obj, skillnum) < value
 	
 	@dump_args
 	def CheckSpellState(self, obj, state):
@@ -373,7 +379,7 @@ class InfScriptSupport:
 		Returns true only if the Class of the specified object matches that in the second parameter.
 		"""
 		toee_class = utils_inf.iwd2_classname_to_class(class_)
-		npc, ctrl = self._get_ie_object(obj)
+		npc, ctrl = self.get_context()._get_ie_object(obj)
 		if npc:
 			cc = npc.get_character_classes()
 			if toee_class in cc:
@@ -395,7 +401,7 @@ class InfScriptSupport:
 		DRUID
 		"""
 		toee_class = utils_inf.iwd2_classname_to_class(class_)
-		npc, ctrl = self._get_ie_object(obj)
+		npc, ctrl = self.get_context()._get_ie_object(obj)
 		if npc:
 			cc = npc.get_character_classes()
 			if toee_class in cc:
@@ -479,7 +485,7 @@ class InfScriptSupport:
 		Global(S:Name*, S:Area*, I:Value*)
 		Returns true only if the variable with name 1st parameter of type 2nd parameter has value 3rd parameter.
 		"""
-		global_value = self._ensure_global(name, area)
+		global_value = self.get_context()._ensure_global(name, area)
 		return global_value == value
 
 	def GLOBAL(self, name, area, value): self.Global(name=name, area=area, value=value)
@@ -490,7 +496,7 @@ class InfScriptSupport:
 		GlobalGT(S:Name*, S:Area*, I:Value*)
 		As above except for less than.
 		"""
-		global_value = self._ensure_global(name, area)
+		global_value = self.get_context()._ensure_global(name, area)
 		return global_value > value
 
 	def GLOBALGT(self, name, area, value): self.GlobalGT(name=name, area=area, value=value)
@@ -501,7 +507,7 @@ class InfScriptSupport:
 		GlobalLT(S:Name*, S:Area*, I:Value*)
 		As above except for less than.
 		"""
-		global_value = self._ensure_global(name, area)
+		global_value = self.get_context()._ensure_global(name, area)
 		return global_value < value
 
 	@dump_args
@@ -590,9 +596,9 @@ class InfScriptSupport:
 		HasItem(S:ResRef*, O:Object*)
 		Returns true only if the specified object has the specified item in its inventory. This trigger also checks with container items (e.g. Bags of Holding).
 		"""
-		npc, ctrl = self._get_ie_object(obj)
+		npc, ctrl = self.get_context()._get_ie_object(obj)
 		if npc:
-			proto = self._get_proto(resref)
+			proto = self.get_context()._get_proto(resref)
 			if proto:
 				item = npc.item_find_by_proto(proto)
 				return item != None
@@ -803,7 +809,7 @@ class InfScriptSupport:
 		"""
 
 		result = False
-		npc, ctrl = self._get_ie_object(obj)
+		npc, ctrl = self.get_context()._get_ie_object(obj)
 		if npc:
 			result = utils_inf.iwd2_kit_has(kit, npc)
 		return result
@@ -968,7 +974,7 @@ class InfScriptSupport:
 		"""
 
 		result = False
-		proto = self._get_proto(item)
+		proto = self.get_context()._get_proto(item)
 		if not proto is None:
 			result = toee.anyone(toee.game.party, "item_find_by_proto", proto)
 		return result
@@ -995,8 +1001,8 @@ class InfScriptSupport:
 		Race(O:Object*, I:Race*Race)
 		Returns true only if the Race of the specified object is the same as that specified by the 2nd parameter.
 		"""
-		npc, ctrl = self._get_ie_object(obj)
-		return self._check_race(npc, race)
+		npc, ctrl = self.get_context()._get_ie_object(obj)
+		return self.get_context()._check_race(npc, race)
 
 	@dump_args
 	def RandomNum(self, range, value):
@@ -1075,8 +1081,8 @@ class InfScriptSupport:
 		"""
 		SubRace(O:Object*, I:SubRace*SubRace)
 		"""
-		npc, ctrl = self._get_ie_object(obj)
-		return self._check_race(npc, subrace)
+		npc, ctrl = self.get_context()._get_ie_object(obj)
+		return self.get_context()._check_race(npc, subrace)
 
 	def iSubrace(self, obj, subrace): self.iSubRace(obj=obj, subrace=subrace)
 	
@@ -1389,8 +1395,8 @@ class InfScriptSupport:
 		This action removes a single instance of the specified item from the active creature, unless the item exists in a stack, 
 		in which case the entire stack is removed. The example script is from ar1000.bcs.
 		"""
-		npc = self._gnpc()
-		proto = self._get_proto(resref)
+		npc = self.get_context()._gnpc()
+		proto = self.get_context()._get_proto(resref)
 		item = npc.item_find_by_proto(proto)
 		if item:
 			# TODO - decrease if stack
@@ -1586,7 +1592,7 @@ class InfScriptSupport:
 		"""
 		FloatMessage(O:Object*, I:STRREF*)
 		"""
-		npc, ctrl = self._get_ie_object(obj)
+		npc, ctrl = self.get_context()._get_ie_object(obj)
 		if npc:
 			line = toee.game.get_mesline('mes\\floats.mes', strref)
 			if line:
@@ -1641,9 +1647,9 @@ class InfScriptSupport:
 		GiveItemCreate(S:ResRef*, O:Object*, I:Usage1*, I:Usage2*, I:Usage3*)
 		This action creates the item specified by the resref parameter on the creature specified by the object parameter, with quantity/charges controlled by the usage parameters. 
 		"""
-		npc, ctrl = self._get_ie_object(obj)
+		npc, ctrl = self.get_context()._get_ie_object(obj)
 		if npc:
-			proto = self._get_proto(resref)
+			proto = self.get_context()._get_proto(resref)
 			#if isinstance(proto, str):
 			#	if proto == "Misc07": # gold
 			#		utils_pc.pc_party_receive_money_and_print(usage1 * const_toee.gp)
@@ -2036,7 +2042,7 @@ class InfScriptSupport:
 		SetCriticalPathObject(O:Object*, I:Critical*Boolean)
 		This action sets the Critical Path flag on the specified objects to the specified value. The game ends if a creature with the Critical Path flag set is killed.
 		"""
-		npc, ctrl = self._get_ie_object(obj)
+		npc, ctrl = self.get_context()._get_ie_object(obj)
 		if ctrl:
 			ctrl.vars["critical_path"] = critical
 		return
@@ -2079,8 +2085,8 @@ class InfScriptSupport:
 		SetGlobal(S:Name*, S:Area*, I:Value*)
 		This action sets a variable (specified by name) in the scope (specified by area) to the value (specified by value).
 		"""
-		self._set_global(name, area, value)
-		g = self._ensure_global(name, area)
+		self.get_context()._set_global(name, area, value)
+		g = self.get_context()._ensure_global(name, area)
 		return g
 
 	@dump_args
@@ -2120,7 +2126,7 @@ class InfScriptSupport:
 		"""
 		SetHP(O:Target, I:HP*)
 		"""
-		npc, ctrl = self._get_ie_object(target)
+		npc, ctrl = self.get_context()._get_ie_object(target)
 		if npc:
 			utils_npc.ensure_hp(npc, hp)
 		return
@@ -2385,7 +2391,7 @@ class InfScriptSupport:
 		If the inventory is full, the stack item will be dropped on the ground.
 		"""
 
-		proto = self._get_proto(item)
+		proto = self.get_context()._get_proto(item)
 		if not proto is None:
 			for pc in toee.game.party:
 				while num:
@@ -2785,10 +2791,10 @@ class InfScriptSupportNPC(InfScriptSupport):
 
 	def _get_globals(self, area):
 		if area.lower() == "locals":
-			result = self.vars.get("locals")
+			result = self.get_context().script_vars.get("locals")
 			if result is None:
 				result = dict()
-				self.vars["locals"] = result
+				self.get_context().script_vars["locals"] = result
 			return result
 
 		return super(InfScriptSupportNPC, self)._get_globals(area)
@@ -2808,17 +2814,27 @@ class InfScriptSupportNPC(InfScriptSupport):
 		return nearest
 
 	def _get_ie_object_nearest(self):
-		npc = self._get_nearest_obj(self._gnpc(), toee.OLC_CRITTERS)
+		npc = self.get_context()._get_nearest_obj(self.get_context()._gnpc(), toee.OLC_CRITTERS)
 		return (npc, None)
 
 	def _get_ie_object_nearest_pc(self):
-		npc = self._get_nearest_obj(self._gnpc(), toee.OLC_PC)
+		npc = self.get_context()._get_nearest_obj(self.get_context()._gnpc(), toee.OLC_PC)
 		return (npc, None)
 
 	def _get_stat_value(self, obj, statnum):
-		npc, ctrl = self._get_ie_object(obj)
+		npc, ctrl = self.get_context()._get_ie_object(obj)
 		if not npc: 
 			return
+
+	def get_native_context(self):
+		return self
+
+	def get_context(self):
+		context_override = self.get_native_context().script_vars.get('context_override')
+		if context_override:
+			return context_override.get_context()
+		return self.get_native_context()
+
 
 		"""
 		ENCUMBERANCE
@@ -2857,7 +2873,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 		"""
 		CheckStatGT(O:Object*, I:Value*, I:StatNum*Stats)
 		"""
-		result = self._get_stat_value(obj, statnum)
+		result = self.get_context()._get_stat_value(obj, statnum)
 		return result == value
 
 	@dump_args
@@ -2866,7 +2882,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 		0x4046 CheckStatLT(O:Object*,I:Value*,I:StatNum*Stats)
 		Returns true only if the specified object has the statistic in the 3rd parameter less than the value of the 2nd parameter.
 		"""
-		result = self._get_stat_value(obj, statnum)
+		result = self.get_context()._get_stat_value(obj, statnum)
 		return result < value
 	
 	@dump_args
@@ -2875,7 +2891,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 		0x4045 CheckStatGT(O:Object*,I:Value*,I:StatNum*Stats)
 		Returns true only if the specified object has the statistic in the 3rd parameter greater than the value of the 2nd parameter.
 		"""
-		result = self._get_stat_value(obj, statnum)
+		result = self.get_context()._get_stat_value(obj, statnum)
 		print('stat_value: {}'.format(result))
 		return result > value
 
@@ -2887,8 +2903,8 @@ class InfScriptSupportNPC(InfScriptSupport):
 		This action removes a single instance of the specified item from the active creature, unless the item exists in a stack, 
 		in which case the entire stack is removed. The example script is from ar1000.bcs.
 		"""
-		npc = self._gnpc()
-		proto = self._get_proto(resref)
+		npc = self.get_context()._gnpc()
+		proto = self.get_context()._get_proto(resref)
 		item = npc.item_find_by_proto(proto)
 		if item:
 			# TODO - decrease if stack
@@ -2908,10 +2924,10 @@ class InfScriptSupportNPC(InfScriptSupport):
 		This action instructs the active creature to give the specified item (parameter 1) to the specified 
 		target (parameter 2). The active creature must possess the item to pass it. 
 		"""
-		target, ctrl = self._get_ie_object(target)
+		target, ctrl = self.get_context()._get_ie_object(target)
 		if target:
-			npc = self._gnpc()
-			proto = self._get_proto(obj)
+			npc = self.get_context()._gnpc()
+			proto = self.get_context()._get_proto(obj)
 			item = npc.item_find_by_proto(proto)
 			if item:
 				target.item_get(item)
@@ -2931,7 +2947,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 		0x4010 HP(O:Object*,I:Hit Points*)
 		Returns true only if the current hitpoints of the specified object are equal to the 2nd parameter.
 		"""
-		return self._hp(obj) == hit_points
+		return self.get_context()._hp(obj) == hit_points
 	
 	@dump_args
 	def iHPGT(self, obj, hit_points):
@@ -2939,7 +2955,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 		00x4011 HPGT(O:Object*,I:Hit Points*)
 		Returns true only if the current hitpoints of the specified object are greater than the 2nd parameter.
 		"""
-		return self._hp(obj) > hit_points
+		return self.get_context()._hp(obj) > hit_points
 	
 	@dump_args
 	def iHPLT(self, obj, hit_points):
@@ -2947,7 +2963,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 		0x4012 HPLT(O:Object*,I:Hit Points*)
 		Returns true only if the current hitpoints of the specified object are less than the 2nd parameter.
 		"""
-		return self._hp(obj) < hit_points
+		return self.get_context()._hp(obj) < hit_points
 
 	@dump_args
 	def iNumTimesTalkedTo(self, num):
@@ -2958,7 +2974,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 		NB. NumTimesTalkedTo seems to increment when a PC initiates conversion with an NPC, or an NPC initiates conversation with a PC.
 		NumTimesTalkedTo does not seem to increment for force-talks, interactions, interjections and self-talking.
 		"""
-		result = self.has_met()
+		result = self.get_context().has_met()
 		return result == num
 
 	@dump_args
@@ -2967,7 +2983,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 		0x403A NumTimesTalkedToGT(I:Num*)
 		Returns true only if the player's party has spoken to the active CRE more than the number of times specified.
 		"""
-		result = self.has_met()
+		result = self.get_context().has_met()
 		return result > num
 	
 	@dump_args
@@ -2976,7 +2992,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 		NumTimesTalkedToLT(I:Num*)
 		Returns true only if the player's party has spoken to the active CRE less than the number of times specified.
 		"""
-		result = self.has_met()
+		result = self.get_context().has_met()
 		return result < num
 
 	@dump_args
@@ -2984,7 +3000,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 		"""
 		OnCreation()
 		"""
-		is_on_creation = self.vars.get('is_on_creation')
+		is_on_creation = self.get_context().script_vars.get('is_on_creation')
 		# TODO
 		return is_on_creation == 1
 
@@ -2995,26 +3011,35 @@ class InfScriptSupportNPC(InfScriptSupport):
 		"""
 		SetNumTimesTalkedTo(I:Num*)
 		"""
-		result = self.has_met_set(num)
+		result = self.get_context().has_met_set(num)
 		return result
 
 class InfScriptSupportDaemon(InfScriptSupport):
 	def _get_globals(self, area):
 		if area.lower() == "area":
-			result = self.vars.get("area_globals")
+			result = self.get_context().script_vars.get("area_globals")
 			if result is None:
 				result = dict()
-				self.vars["area_globals"] = result
+				self.get_context().script_vars["area_globals"] = result
 			return result
 
 		return super(InfScriptSupportDaemon, self)._get_globals(area)
+
+	def get_native_context(self):
+		return self
+
+	def get_context(self):
+		context_override = self.get_native_context().script_vars.get('context_override')
+		if context_override:
+			return context_override.get_context()
+		return self.get_native_context()
 
 	@dump_args
 	def iOnCreation(self):
 		"""
 		OnCreation()
 		"""
-		is_on_creation = self.vars.get('is_on_creation')
+		is_on_creation = self.get_context().script_vars.get('is_on_creation')
 		# TODO
 		return is_on_creation == 1
 

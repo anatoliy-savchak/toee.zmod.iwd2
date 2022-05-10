@@ -4,6 +4,12 @@ import ctrl_behaviour, inf_scripting, ctrl_daemon, utils_storage
 __metaclass__ = type
 
 class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSupportNPC):
+	def __init__(self):
+		super(CtrlBehaviourIE, self).__init__()
+
+		self.script_vars = dict()
+		return
+
 	def __repr__(self):
 		repr = self.vars.get("alias")
 		if not repr:

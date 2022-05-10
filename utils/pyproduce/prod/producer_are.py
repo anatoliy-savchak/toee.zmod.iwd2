@@ -177,48 +177,24 @@ class ProducerOfAre(producer_base.Producer):
         cre_name = actor_dict["CREFile"]
         
         if (bcs_name := actor_dict["ScriptGeneral"]) and not self.skip_script_general:
-            self.ensure_bcs(actor_name, bcs_name, cre_name, "ScriptGeneral (Special 3)")
+            self.doc.bcsManager.ensure_bcs(bcs_name, self.are_name, cre_name, actor_name, "ScriptGeneral (Special 3)")
         
         if (bcs_name := actor_dict["ScriptClass"]) and not self.skip_script_class:
-            self.ensure_bcs(actor_name, bcs_name, cre_name, "ScriptClass (Special 2)")
+            self.doc.bcsManager.ensure_bcs(bcs_name, self.are_name, cre_name, actor_name, "ScriptClass (Special 2)")
         
         if (bcs_name := actor_dict["ScriptRace"]) and not self.skip_script_race:
-            self.ensure_bcs(actor_name, bcs_name, cre_name, "ScriptRace (Combat Script)")
+            self.doc.bcsManager.ensure_bcs(bcs_name, self.are_name, cre_name, actor_name, "ScriptRace (Combat Script)")
         
         if (bcs_name := actor_dict["ScriptDefault"]) and not self.skip_script_default:
-            self.ensure_bcs(actor_name, bcs_name, cre_name, "ScriptDefault (Movement Script)")
+            self.doc.bcsManager.ensure_bcs(bcs_name, self.are_name, cre_name, actor_name, "ScriptDefault (Movement Script)")
         
         if (bcs_name := actor_dict["ScriptSpecific"]) and not self.skip_script_specific:
-            self.ensure_bcs(actor_name, bcs_name, cre_name, "ScriptSpecific (Team Script)")
+            self.doc.bcsManager.ensure_bcs(bcs_name, self.are_name, cre_name, actor_name, "ScriptSpecific (Team Script)")
         
         if (bcs_name := actor_dict["ScriptSpecial1"]) and not self.skip_script_special1:
-            self.ensure_bcs(actor_name, bcs_name, cre_name, "ScriptSpecial1 (Special1)")
+            self.doc.bcsManager.ensure_bcs(bcs_name, self.are_name, cre_name, actor_name, "ScriptSpecial1 (Special1)")
         return
 
-    def ensure_bcs(self, actor_name: str, bcs_name: str, cre_name: str, script_code: str):
-        if not self.doc.bcsManager.get_bc(bcs_name + '_AUTO'):
-            #file_path_out = self.doc.get_path_out_are_bcs_file(self.are_name)
-            #self.doc.bcsManager.produce_bcs(bcs_name, file_path_out)
-            make_new_bcs = False
-            if self.bcs_counter_auto == 0:
-                make_new_bcs = True
-            bcs_prod = produce_bcs_manager.ProduceBCSFileAuto(self.doc, bcs_name, self.are_name, self.script_id + 5, make_new_bcs)
-            bcs_prod.produce(cre_name, actor_name, script_code)
-            bcs_prod.save()
-            ctrl_name, file_name = bcs_prod.get_ctrl_tuple()
-            self.doc.bcsManager.set_bc(bcs_prod.bcs_name + '_AUTO', file_name, ctrl_name)
-            self.bcs_counter_auto += 1
-            del bcs_prod
-
-            if not self.doc.bcsManager.get_bc(bcs_name):
-                bcs_prod_manual = produce_bcs_manager.ProduceBCSFileManual(self.doc
-                    , bcs_name, self.are_name, self.script_id + 6, file_name, ctrl_name, False)
-                if bcs_prod_manual.produce(cre_name, actor_name, script_code):
-                    bcs_prod_manual.save()
-                ctrl_name, file_name = bcs_prod_manual.get_ctrl_tuple()
-                self.doc.bcsManager.set_bc(bcs_prod_manual.bcs_name, file_name, ctrl_name)
-                del bcs_prod_manual
-        return
 
     def scan_actor_bcses(self, actor_dict: dict):
         actor_name = actor_dict["Name"]
@@ -244,6 +220,7 @@ class ProducerOfAre(producer_base.Producer):
         return
 
     def scan_bcs(self, actor_name: str, bcs_name: str, def_name: str, cre_name: str, script_code: str):
+        # TODO...
         if not self.doc.bcsManager.get_bc(bcs_name + '_AUTO'):
             bcs_prod = produce_bcs_manager.ProduceBCSFileAuto(self.doc, bcs_name, self.are_name, self.script_id + 5, False)
             bcs_prod.scan(cre_name, actor_name)

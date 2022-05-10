@@ -31,6 +31,11 @@ class ProducerOfScripts(producer_base.Producer):
         self.current_are_name = None
         self.current_cre_name = None
         self.current_actor_name = None
+        self.current_bcs_name = None
+        self.current_script_code = None
+        self.current_action_lines = None
+        self.current_action_line_index = None
+        self.current_parent_producer = None
         self.error_messages = list()
         self.log_usage = False
         self.log_strrefs = False
@@ -41,10 +46,9 @@ class ProducerOfScripts(producer_base.Producer):
         self.current_are_name = are_name
         self.current_cre_name = cre_name
         self.current_actor_name = actor_name
-        if actor_name == 'Jorun':
-            print('J')
-            if next((line for line in trigger_lines if 'Dwarf_Gray' in line), None):
-                print('Dwarf_Gray')
+        self.current_bcs_name = None
+        self.current_script_code = None
+        self.current_parent_producer = None
 
         trigger_lines2 = list()
         for i, action_line in enumerate(trigger_lines):
@@ -97,14 +101,13 @@ class ProducerOfScripts(producer_base.Producer):
 
         return lines
 
-    def transate_action_lines(self, action_lines: list, are_name: str = None, cre_name: str = None):
+    def transate_action_lines(self, action_lines: list, are_name: str = None, cre_name: str = None, bcs_name: str = None, script_code: str = None, actor_name: str = None, parent_producer = None):
         self.current_are_name = are_name
         self.current_cre_name = cre_name
-
-        if cre_name == '10JORUN':
-            print('J')
-            if next((line for line in action_lines if 'Dwarf_Gray' in line), None):
-                print('Dwarf_Gray')
+        self.current_bcs_name = bcs_name
+        self.current_actor_name = actor_name
+        self.current_script_code = script_code
+        self.current_parent_producer = parent_producer
 
         lines = list()
         action_lines2 = list()
@@ -113,15 +116,25 @@ class ProducerOfScripts(producer_base.Producer):
             if not action_linea: continue
             action_lines2.extend(condition_split(action_linea))
         
+        self.current_action_lines = action_lines2
+        self.current_action_line_index = None
+
         for i, action_line in enumerate(action_lines2):
-            #line = transate_trigger_line(action_line)
             action_linea = action_line.strip()
             if not action_linea: continue
+
+            self.current_action_line_index = i
             action_linea = action_linea.replace('#', '"')
-            line = ScriptTran.translate_script_line(action_linea, self)
+            scripted_lines = ScriptTran.translate_script_line_ex(action_linea, self)
+            line = None
+            if isinstance(scripted_lines, str):
+                line = scripted_lines
             if line is None:
                 line = 'pass'
             lines.append(line)
+
+        self.current_action_lines = None
+        self.current_action_line_index = None
 
         return lines
 
@@ -344,13 +357,20 @@ class ScriptTran:
 
     @staticmethod
     def translate_script_line(aline: str, producer):
-        if aline == 'SubRace(LastSeenBy(Myself),PURERACE)':
-            print()
         result = None
         prefix = ""
         if aline and aline[0] == "!":
             prefix = "not "
             aline = aline.removeprefix("!").strip()
+
+        result = ScriptTran.translate_script_line_ex(aline, producer)
+        if result is None:
+            raise Exception("No line support!")
+        return prefix + result
+
+    @staticmethod
+    def translate_script_line_ex(aline: str, producer):
+        result = None
 
         while True:
             lline = aline.lower()
@@ -369,14 +389,12 @@ class ScriptTran:
             break
         if result is None:
             raise Exception("No line support!")
-        return prefix + result
+        return result
 
     @staticmethod
     def _process_func(aline, func_name, args, producer):
         func_classes = [cls for name, cls in inspect.getmembers(sys.modules[__name__], inspect.isclass) if issubclass(cls, ScriptTran) and cls.is_func_liner()]
         func_name_lo = func_name.lower()
-        if func_name_lo == "giveitemcreate":
-            func_name_lo = func_name_lo
         cls = next((cls for cls in func_classes for ffunc in cls.supports_func() if ffunc and func_name_lo == ffunc.lower()), None)
         if cls:
             o = cls(aline, producer)
@@ -637,8 +655,23 @@ class ScriptTranFuncsItem_GiveItemEval(ScriptTranFuncsItem):
 
 class ScriptTranFuncsItem_Debug(ScriptTranFuncs):
     @classmethod
-    def supports_func(cls): return ("SetCriticalPathObject".lower(), )
+    def supports_func(cls): return ("SetCriticalPathObject", )
 
-    #def do_translate_func(self, func_name: str, args: list, func_info): return super().do_translate_func(func_name, args, func_info)
+class ScriptTranFuncCallScript(ScriptTranFuncs):
+    @classmethod
+    def supports_func(cls): return ("StartCutScene", )
 
-    #def do_translate_param(self, arg, index: int, arg_info): return super().do_translate_param(arg, index, arg_info)
+    def do_translate_func(self, func_name: str, args: list, func_info): 
+        script_name = self.do_get_param(args[0], 0, func_info['args'][0])
+        script_name = common.strip_quotes(script_name)
+
+        class_name, file_name, pkg_name = self.producer.doc.bcsManager.ensure_bcs(
+            bcs_name=script_name
+            , hint_are_name = self.producer.current_are_name
+            , hint_cre_name=self.producer.current_cre_name
+            , hint_actor_name=self.producer.current_actor_name
+            , hint_script_code=self.producer.current_script_code
+            )
+        line = f'self.iStartCutScene({file_name}.{class_name})'
+
+        return line

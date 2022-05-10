@@ -17,8 +17,6 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
         self.are_name = are_name
         self.script_id = script_id
         self.src_sec = src_sec
-
-        self.used_imports = list()
         return
 
     def get_eligible_actor_recs(self):
@@ -62,8 +60,7 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
             if not d:
                 continue
             class_file, ctrl_class = d["file_name"], d["class_name"]
-            if class_file and not class_file in self.used_imports:
-                self.used_imports.append(class_file)
+            self.add_import(class_file)
 
             self.writeline(f'# {name}: {cre_file} ({x:.1f}, {y:.1f}) {direction} ctrl: {class_file}.{ctrl_class} {"hidden" if hidden else ""}')
             if not hidden:
@@ -78,15 +75,7 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
         self.current_line_id = -1
         self.indent(False)
 
-        for imp in self.used_imports:
-            import_line = 'import ' + imp
-            if not next((line for line in self.lines if line == import_line or line == import_line + '\n'), None):
-                line_id = common.lines_after_before_cutoff(self.lines, '#### NPCS IMPORT ####', '#### NPCS IMPORT END ####')
-                if line_id:
-                    self.current_line_id = line_id
-                    self.writeline(import_line)
-                    self.current_line_id = -1
-
+        self.produce_imports()
         return
 
     def translate_orientation(self, ori: int):
@@ -121,17 +110,11 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
 
         area_script = self.src["AreaScript"]
         if area_script and area_script != "None":
-            bcs_prod = produce_bcs_manager.ProduceBCSFileAuto(self.doc, area_script, self.are_name, self.script_id + 5, False)
-            bcs_prod.produce()
-            bcs_prod.save()
-            ctrl_name_auto, file_name_auto = bcs_prod.get_ctrl_tuple()
-            del bcs_prod
-
-            bcs_prod = produce_bcs_manager.ProduceBCSFileManual(self.doc, area_script, self.are_name, self.script_id + 6, file_name_auto, ctrl_name_auto, False)
-            bcs_prod.produce()
-            bcs_prod.save()
-            ctrl_name, file_name = bcs_prod.get_ctrl_tuple()
-            del bcs_prod
+            ctrl_name, file_name, pkg_name = self.doc.bcsManager.ensure_bcs(
+                bcs_name=area_script
+                , hint_are_name=self.are_name
+                , hint_script_code='script_area'
+            )
             self.writeline(f'self.vars["script_area"] = {file_name}.{ctrl_name}')
 
         if not self.current_line_id:
@@ -141,11 +124,6 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
         self.indent(False)
 
         if file_name:
-            import_line = 'import ' + file_name
-            if not next((line for line in self.lines if line == import_line or line == import_line + '\n'), None):
-                line_id = common.lines_find(self.lines, '#### NPCS IMPORT ####')
-                if line_id:
-                    self.current_line_id = line_id+1
-                    self.writeline(import_line)
-                    self.current_line_id = -1
+            self.add_import(file_name, pkg_name)
+            self.produce_imports()
         return

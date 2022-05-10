@@ -48,6 +48,7 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 
 		self.ambients = list()
 		self.timer_context = str(uuid.uuid4())
+		self.script_vars = dict()
 		return
 
 	def create_npc_at(self, npc_loc, ctrl_class, rot, code_name, no_draw = 1, no_kos = 1, no_move = 0):
@@ -110,6 +111,10 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 		return
 
 	def delete_obsolate_controls(self):
+		# this is forbidden in IWD2 game!
+		return
+
+	def validate_minfo(self):
 		# this is forbidden in IWD2 game!
 		return
 

@@ -1,37 +1,36 @@
 import toee
 import inf_scripting
-#### IMPORT ####
-#### IMPORT END ####
+#### IMPORTS ####
+#### END IMPORTS ####
 
 #### BCS ####
-class Script_12cWar1_Auto(inf_scripting.ScriptBase):
+class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 	# None
 	
 	@classmethod
-	def do_execute(cls, self):
+	def do_execute(cls, self, continuous):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		is_cutscene_execution = self.is_cutscene_mode()
 		while True:
 			break_ = cls.do_execute_block_01()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_02()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_03()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_04()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_05()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_06()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_07()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break # while
 		return
@@ -59,9 +58,24 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase):
 			# JumpToPoint([496.268])
 			# Face(S)
 			# EndCutSceneMode()
-			self.iCutSceneId("Player6")
-			self.iSmallWaitRandom(1, 3)
-			self.iFaceObject("'Shawford_Crale'")
+			self.iCutSceneId("'Shawford_Crale'")
+			self.iFloatMessage("Myself", 16360)
+			self.iWait(4)
+			self.iFaceObject(self.iLastTalkedToBy("Myself"))
+			self.iWait(1)
+			self.iFloatMessage("Myself", 16821)
+			self.iWait(11)
+			self.iFloatMessage("Myself", 16822)
+			self.iWait(2)
+			self.iMoveViewPoint("[219.417]", "VERY_FAST")
+			self.iMoveToPoint("[219.417]")
+			self.iHideCreature("Myself", True)
+			self.iMultiPlayerSync()
+			self.iUnhideGUI()
+			self.iMoveViewObject("Protagonist", "VERY_FAST")
+			self.iJumpToPoint("[496.268]")
+			self.iFace("S")
+			self.iEndCutSceneMode()
 			return True # break further blocks
 		return False
 		
@@ -73,7 +87,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase):
 			# CutSceneId(Player1)
 			# SmallWaitRandom(1,3)
 			# FaceObject("Shawford_Crale")
-			self.iCutSceneId("Player6")
+			self.iCutSceneId("Player1")
 			self.iSmallWaitRandom(1, 3)
 			self.iFaceObject("'Shawford_Crale'")
 			return True # break further blocks
@@ -87,7 +101,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase):
 			# CutSceneId(Player2)
 			# SmallWaitRandom(1,3)
 			# FaceObject("Shawford_Crale")
-			self.iCutSceneId("Player6")
+			self.iCutSceneId("Player2")
 			self.iSmallWaitRandom(1, 3)
 			self.iFaceObject("'Shawford_Crale'")
 			return True # break further blocks
@@ -101,7 +115,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase):
 			# CutSceneId(Player3)
 			# SmallWaitRandom(1,3)
 			# FaceObject("Shawford_Crale")
-			self.iCutSceneId("Player6")
+			self.iCutSceneId("Player3")
 			self.iSmallWaitRandom(1, 3)
 			self.iFaceObject("'Shawford_Crale'")
 			return True # break further blocks
@@ -115,7 +129,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase):
 			# CutSceneId(Player4)
 			# SmallWaitRandom(1,3)
 			# FaceObject("Shawford_Crale")
-			self.iCutSceneId("Player6")
+			self.iCutSceneId("Player4")
 			self.iSmallWaitRandom(1, 3)
 			self.iFaceObject("'Shawford_Crale'")
 			return True # break further blocks
@@ -129,7 +143,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase):
 			# CutSceneId(Player5)
 			# SmallWaitRandom(1,3)
 			# FaceObject("Shawford_Crale")
-			self.iCutSceneId("Player6")
+			self.iCutSceneId("Player5")
 			self.iSmallWaitRandom(1, 3)
 			self.iFaceObject("'Shawford_Crale'")
 			return True # break further blocks

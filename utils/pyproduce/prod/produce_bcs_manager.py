@@ -85,15 +85,14 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
 
     def produce(self, cre_name: str = None, actor_name: str = None, script_code: str = None, parent_producer = None):
         blocks = self._parse_blocks()
-        self.writeline(f'class {self.ctrl_name}({self.ancestor_class}):')
+        self.writeline(f'class {self.ctrl_name}({self.ancestor_class}): # {self.bcs_name}')
         self.indent()
         self.writeline(f'# {self.are_name}{str((" "+cre_name) if cre_name else "")}{str((" "+actor_name) if actor_name else "")}{str((" "+script_code) if script_code else "")}')
         self.writeline()
         self.writeline('@classmethod')
-        self.writeline('def do_execute(cls, self):')
+        self.writeline('def do_execute(cls, self, continuous):')
         self.indent()
         self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
-        self.writeline('is_cutscene_execution = self.is_cutscene_mode()')
 
         self.writeline('while True:')
         self.indent()
@@ -121,13 +120,13 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             block["is_continue"] = is_continue
 
             resp_lines_translated = self.doc.producerOfScripts.transate_action_lines_complex(resp_lines_stripped
-                , cre_name=cre_name, actor_name=actor_name, script_code=script_code, bcs_name=self.bcs_name, are_name=self.are_name, parent_producer = parent_producer)
-            block["resp_lines_translated"] = resp_lines
+                , cre_name=cre_name, actor_name=actor_name, script_code=script_code, bcs_name=self.bcs_name, are_name=self.are_name, file_producer = self)
+            block["resp_lines_translated"] = resp_lines_translated
             block_name = f'do_execute_block_{block_index:02d}'
             block["block_name"] = block_name
 
             self.writeline(f'break_ = cls.{block_name}()')
-            self.writeline('if break_ and not is_cutscene_execution: break')
+            self.writeline('if break_ and not continuous: break')
             self.writeline()
             # self.writeline('')
         self.writeline('break # while')
@@ -144,7 +143,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             if_lines = block["if_lines"]
             resp_lines = block["resp_lines"]
             resp_lines_stripped = block["resp_lines_stripped"]
-            resp_lines = block["resp_lines_translated"]
+            resp_lines_translated = block["resp_lines_translated"]
             is_continue = block["is_continue"]
 
             self.writeline('@classmethod')
@@ -173,6 +172,8 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             self.writeline('return False')
             self.writeline('')
             self.indent(False)
+
+        self.produce_imports()
 
         return
 

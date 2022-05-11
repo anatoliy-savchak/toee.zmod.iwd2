@@ -1,19 +1,18 @@
 import toee
 import inf_scripting
-#### IMPORT ####
-#### IMPORT END ####
+#### IMPORTS ####
+#### END IMPORTS ####
 
 #### BCS ####
-class Script_00AATGN_Auto(inf_scripting.ScriptBase):
-	# AR1000 10HEDRON Hedron ScriptClass (Special 2)
+class Script_00AATGN_Auto(inf_scripting.ScriptBase): # 00AATGN
+	# AR1201 12SHAWFO Shawford_Crale ScriptRace (Combat Script)
 	
 	@classmethod
-	def do_execute(cls, self):
+	def do_execute(cls, self, continuous):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		is_cutscene_execution = self.is_cutscene_mode()
 		while True:
 			break_ = cls.do_execute_block_01()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break # while
 		return

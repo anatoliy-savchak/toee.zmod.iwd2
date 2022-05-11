@@ -5,15 +5,15 @@ def obj_storage(obj):
 	return Storage.getObjectStorage(obj)
 
 def obj_storage_by_id(id):
-	assert isinstance(obj, toee.PyObjHandle)
+	assert isinstance(id, str)
 	return Storage.getObjectStorageByName(id)
 
 def obj_storage_by_alias(alias):
-	assert isinstance(obj, toee.PyObjHandle)
+	assert isinstance(alias, str)
 	return Storage.getObjectStorageByAlias(alias)
 
 def ca(alias):
-	assert isinstance(obj, toee.PyObjHandle)
+	assert isinstance(alias, str)
 	o = Storage.getObjectStorageByAlias(alias)
 	if (o):
 		for c in o.data.itervalues():

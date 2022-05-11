@@ -1,40 +1,40 @@
 import toee
 import inf_scripting
-#### IMPORT ####
-#### IMPORT END ####
+#### IMPORTS ####
+from bcs import scr_12cwar1
+#### END IMPORTS ####
 
 #### BCS ####
-class Script_12cWar2_Auto(inf_scripting.ScriptBase):
+class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 	# None
 	
 	@classmethod
-	def do_execute(cls, self):
+	def do_execute(cls, self, continuous):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		is_cutscene_execution = self.is_cutscene_mode()
 		while True:
 			break_ = cls.do_execute_block_01()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_02()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_03()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_04()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_05()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_06()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_07()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break_ = cls.do_execute_block_08()
-			if break_ and not is_cutscene_execution: break
+			if break_ and not continuous: break
 			
 			break # while
 		return
@@ -63,13 +63,25 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase):
 			# SmallWait(4)
 			# MoveToPoint([219.417])
 			# DestroySelf()
-			self.iCutSceneId("Player6")
-			self.iSmallWaitRandom(1, 3)
-			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
+			self.iCutSceneId("'SWIFT_THOMAS_HIDDEN'")
+			self.iHideGUI()
+			self.iMultiPlayerSync()
+			self.iMoveViewObject("Myself", "INSTANT")
 			self.iWait(1)
-			self.iSmallWait(5)
-			self.iMoveToPoint("[602.388]")
-			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
+			self.iHideCreature("Myself", False)
+			self.iSmallWait(12)
+			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
+			self.iMoveViewObject("'Shawford_Crale'", "VERY_FAST")
+			self.iMoveToPoint("[448.295]")
+			self.iFaceObject("'Shawford_Crale'")
+			self.iFloatMessage("Myself", 16357)
+			self.iWait(3)
+			self.iStartCutScene(scr_12cwar1.Script_12cWar1)
+			self.iWait(2)
+			self.iFloatMessage("Myself", 16820)
+			self.iSmallWait(4)
+			self.iMoveToPoint("[219.417]")
+			self.iDestroySelf()
 			return True # break further blocks
 		return False
 		
@@ -80,12 +92,7 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase):
 		if True:
 			# CutSceneId("Shawford_Crale")
 			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			self.iCutSceneId("Player6")
-			self.iSmallWaitRandom(1, 3)
-			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-			self.iWait(1)
-			self.iSmallWait(5)
-			self.iMoveToPoint("[602.388]")
+			self.iCutSceneId("'Shawford_Crale'")
 			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 			return True # break further blocks
 		return False
@@ -102,12 +109,12 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase):
 			# SmallWait(5)
 			# MoveToPoint([582.302])
 			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			self.iCutSceneId("Player6")
+			self.iCutSceneId("Player1")
 			self.iSmallWaitRandom(1, 3)
 			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 			self.iWait(1)
 			self.iSmallWait(5)
-			self.iMoveToPoint("[602.388]")
+			self.iMoveToPoint("[582.302]")
 			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 			return True # break further blocks
 		return False
@@ -124,12 +131,12 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase):
 			# SmallWait(5)
 			# MoveToPoint([566.351])
 			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			self.iCutSceneId("Player6")
+			self.iCutSceneId("Player2")
 			self.iSmallWaitRandom(1, 3)
 			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 			self.iWait(1)
 			self.iSmallWait(5)
-			self.iMoveToPoint("[602.388]")
+			self.iMoveToPoint("[566.351]")
 			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 			return True # break further blocks
 		return False
@@ -146,12 +153,12 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase):
 			# SmallWait(5)
 			# MoveToPoint([519.360])
 			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			self.iCutSceneId("Player6")
+			self.iCutSceneId("Player3")
 			self.iSmallWaitRandom(1, 3)
 			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 			self.iWait(1)
 			self.iSmallWait(5)
-			self.iMoveToPoint("[602.388]")
+			self.iMoveToPoint("[519.360]")
 			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 			return True # break further blocks
 		return False
@@ -168,12 +175,12 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase):
 			# SmallWait(5)
 			# MoveToPoint([480.407])
 			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			self.iCutSceneId("Player6")
+			self.iCutSceneId("Player4")
 			self.iSmallWaitRandom(1, 3)
 			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 			self.iWait(1)
 			self.iSmallWait(5)
-			self.iMoveToPoint("[602.388]")
+			self.iMoveToPoint("[480.407]")
 			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 			return True # break further blocks
 		return False
@@ -190,12 +197,12 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase):
 			# SmallWait(5)
 			# MoveToPoint([542.419])
 			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			self.iCutSceneId("Player6")
+			self.iCutSceneId("Player5")
 			self.iSmallWaitRandom(1, 3)
 			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 			self.iWait(1)
 			self.iSmallWait(5)
-			self.iMoveToPoint("[602.388]")
+			self.iMoveToPoint("[542.419]")
 			self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 			return True # break further blocks
 		return False

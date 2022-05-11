@@ -111,6 +111,7 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
         self.current_line_id = common.lines_after_before_cutoff(self.lines, subline, '\t\treturn')
         self.indent()
         if not self.current_line_id:
+            self.writeline()
             self.writeline(f"def {def_name}(self):")
         self.indent()
 

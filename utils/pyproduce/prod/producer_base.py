@@ -102,6 +102,8 @@ class ProducerOfFile(Producer):
         return
 
     def produce_imports(self, clear: bool = False, start_line_code: str = None, end_line_code: str = None):
+        current_indent = self.current_indent
+        self.current_indent = ''
         if not start_line_code:
             start_line_code = '#### IMPORTS ####'
         if not end_line_code:
@@ -118,4 +120,6 @@ class ProducerOfFile(Producer):
                     self.current_line_id = line_id
                     self.writeline(import_line)
                     self.current_line_id = -1
+
+        self.current_indent = current_indent
         return

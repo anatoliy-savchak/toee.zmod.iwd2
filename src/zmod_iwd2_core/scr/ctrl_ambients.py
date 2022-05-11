@@ -7,7 +7,7 @@ class CtrlAmbient(ctrl_behaviour.CtrlBehaviour):
 	def get_proto_id(cls): return 2068
 
 	def setup_simple(self, npc, sound_value):
-		npc.obj_set_int[obj_f_sound_effect] = sound_value
+		npc.obj_set_int[toee.obj_f_sound_effect] = sound_value
 		return
 
 	def setup(self, name, flags, frequency, frequency_variation, radius, x, y, schedule):

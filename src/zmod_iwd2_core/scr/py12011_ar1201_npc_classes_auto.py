@@ -5,6 +5,8 @@ import py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, modu
 import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2, ctrl_daemon
 import utils_journal as uj, inf_scripting
 #### IMPORTS ####
+from bcs import scr_12cwar2
+from bcs import scr_12cwar0
 #### END IMPORTS ####
 
 #### GVARS ####
@@ -1072,83 +1074,5 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 		if state==44: return 470
 		if state==45: return 280
 		if state==46: return 50
-		return
-	
-class Ctrl_12NOLAN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12NOLAN 
-	@classmethod
-	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
-	
-	def setup_scripts(self, npc):
-		super(Ctrl_12NOLAN_Auto, self).setup_scripts(npc)
-		return
-	
-	def setup_appearance(self, npc):
-		utils_npc.npc_description_set_new(npc, "Nolan the Healer")
-		
-		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
-		
-		hairStyle = utils_npc.HairStyle.from_npc(npc)
-		hairStyle.style = const_toee.hair_style_shorthair
-		hairStyle.color = const_toee.hair_color_blonde # HairColourIndex: 3
-		hairStyle.update_npc(npc)
-		return
-	
-	def setup_char(self, npc):
-		utils_npc.npc_abilities_set(npc, [12, 10, 10, 8, 12, 10])
-		
-		# class levels: 2
-		# stat_level_cleric: 2
-		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_cleric)
-		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 1, toee.stat_level_cleric)
-		
-		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 0) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 1) # CR: 3 TODO!!!
-		
-		# feats
-		
-		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
-		
-		# saves
-		utils_npc.ensure_saves_natural(npc, 3, 0, 3) # SaveVsDeath: 3, SaveVsWands: 0, SaveVsPolymorph: 3
-		
-		# HP
-		utils_npc.ensure_hp(npc, 11) # MaximumHP: 11
-		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 11
-		
-		# skills
-		# SkillAlchemy: 0
-		# SkillAnimalEmpathy: 0
-		# SkillBluff: 0
-		# SkillConcentration: 0
-		# SkillDiplomacy: 0
-		# SkillDisableDevice: 0
-		# SkillHide: 0
-		# SkillIntimidate: 0
-		# SkillKnowledgeArcana: 0
-		# SkillMoveSilently: 0
-		# SkillOpenLock: 0
-		# SkillPickPocket: 0
-		# SkillSearch: 0
-		# SkillSpellcraft: 0
-		# SkillUseMagicDevice: 0
-		# SkillWildernessLaw: 0
-		return
-	
-	def setup_gear(self, npc):
-		# SLOT_ARMOR: Chainmail Armor(ChainMail) from 00CHAN01
-		# Not found! TODO ITEM
-		
-		# SLOT_WEAPON1: Warhammer(Hammers) from 00HAMM01
-		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_WARHAMMER, npc, no_loot = False, wear_on = toee.item_wear_weapon_primary) # Warhammer (00HAMM01) at SLOT_WEAPON1 OK
-		
-		# SLOT_SELECTED_WEAPON: None(None) from None
-		# Not found! TODO ITEM
-		
-		# SLOT_SELECTED_WEAPON_ABILITY: None(None) from None
-		# Not found! TODO ITEM
-		
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	

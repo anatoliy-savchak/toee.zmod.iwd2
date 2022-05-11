@@ -44,11 +44,8 @@ class CtrlAR1201(ctrl_daemon_ie.CtrlDaemonIE):
 		ctrl_class, loc = py12014_ar1201_npc_inst_classes.Ctrl_12SHAWFO_AR1201_Shawford_Crale,  utils_obj.sec2loc(477, 478)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "Shawford_Crale", 0, 1)
 		
-		# Nolan: 12NOLAN (471.1, 477.3) const_toee.ROT08 ctrl: py12014_ar1201_npc_inst_classes.Ctrl_12NOLAN_AR1201_Nolan 
-		ctrl_class, loc = py12014_ar1201_npc_inst_classes.Ctrl_12NOLAN_AR1201_Nolan,  utils_obj.sec2loc(471, 477)
-		self.create_npc_at(loc, ctrl_class, const_toee.ROT08, "Nolan", 0, 1)
-		
 		return
+	
 	def place_bcs_auto(self):
 		return
 

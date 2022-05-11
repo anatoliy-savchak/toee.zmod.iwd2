@@ -44,7 +44,7 @@ def pc_party_set_starting_gold_as_raw(roll = None):
 	diff = total - currentcp
 	print("Supposed totalgp: {}, current: {}, diff: {}".format(totalgp, currentcp // 100, diff))
 	if (diff > 0):
-		 toee.game.party[0].money_adj(diff)
+		toee.game.party[0].money_adj(diff)
 	return diff
 
 def pc_party_receive_money_and_print(value, float = True):

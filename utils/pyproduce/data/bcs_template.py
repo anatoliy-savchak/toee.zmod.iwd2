@@ -1,6 +1,6 @@
 import toee
 import inf_scripting
-#### IMPORT ####
-#### IMPORT END ####
+#### IMPORTS ####
+#### END IMPORTS ####
 
 #### BCS ####

@@ -335,7 +335,7 @@ class ProduceNPCDialog:
 
     def calc_actions(self, action: str):
         action_lines = produce_scripts.condition_split(action)
-        out_lines = self.parent.doc.producerOfScripts.transate_action_lines(action_lines)
+        out_lines = self.parent.doc.producerOfScripts.transate_action_lines(action_lines, file_producer=self.parent)
         return action_lines, out_lines
 
     def process_phrase_dialog(self, phrase: dict, check_trigger: bool):
@@ -447,6 +447,11 @@ class ProduceNPCDialog:
 
     def save(self):
         self.dialog_file.save()
+        return
+
+    def add_import(self, file_name: str, package: str = None):
+        if self.parent:
+            self.parent.add_import(file_name, package)
         return
 
     def translate_dialog_const(self, line: str):

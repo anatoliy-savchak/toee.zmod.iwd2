@@ -1,3 +1,4 @@
+from math import fabs
 import sys
 import os
 import producer_doc
@@ -48,19 +49,18 @@ def main():
 
     if True:
         are_prod = doc.acquire_are_producer('AR1201', True)
-        are_prod.skip_script_general = True
-        are_prod.skip_script_class = True
-        are_prod.skip_script_race = True
+        are_prod.skip_script_general = False
+        are_prod.skip_script_class = False
+        are_prod.skip_script_race = False
         are_prod.skip_script_default = True
         are_prod.skip_script_specific = True
         are_prod.skip_script_special1 = True
         are_prod.skip_script_daemon = False
-        are_prod.produce()
-        #are_prod.produce_start()
-        #are_prod.produce_actor("Hedron")
-        #are_prod.daemon.produce(True)
-        #are_prod.daemon.save()
         #are_prod.produce()
+        are_prod.produce_start()
+        are_prod.produce_actor("Shawford_Crale")
+        are_prod.daemon.produce(False)
+        are_prod.daemon.save()
 
     if False:
         doc.producerOfScripts.log_usage = True

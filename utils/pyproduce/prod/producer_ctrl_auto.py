@@ -56,6 +56,7 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.produce_npc_char()
         self.setup_gear()
         self.produce_dialog()
+        self.produce_imports()
         return
 
     def get_ctrl_tuple(self): return (self.ctrl_name, os.path.basename(self.out_path).replace('.py', ''))

@@ -28,14 +28,6 @@ class ProducerOfScripts(producer_base.Producer):
         if self.index_file["statistics"].get("funcs_log") is None:
             self.index_file["statistics"]["funcs_log"] = list()
 
-        self.current_are_name = None
-        self.current_cre_name = None
-        self.current_actor_name = None
-        self.current_bcs_name = None
-        self.current_script_code = None
-        self.current_action_lines = None
-        self.current_action_line_index = None
-        self.current_parent_producer = None
         self.error_messages = list()
         self.log_usage = False
         self.log_strrefs = False
@@ -43,12 +35,7 @@ class ProducerOfScripts(producer_base.Producer):
         return
 
     def transate_trigger_lines(self, trigger_lines: list, are_name: str, cre_name: str, actor_name: str = None):
-        self.current_are_name = are_name
-        self.current_cre_name = cre_name
-        self.current_actor_name = actor_name
-        self.current_bcs_name = None
-        self.current_script_code = None
-        self.current_parent_producer = None
+        context={"producer": self, "are_name": are_name, "cre_name": cre_name, "actor_name": actor_name, "bcs_name": None, "script_code": None, "file_producer": None}
 
         trigger_lines2 = list()
         for i, action_line in enumerate(trigger_lines):
@@ -75,7 +62,7 @@ class ProducerOfScripts(producer_base.Producer):
                 else:
                     line = "\t and " + line + ' False'
             else:
-                line = ScriptTran.translate_script_line(trigger_linea, self)
+                line = ScriptTran.translate_script_line(trigger_linea, context)
                 if line is None:
                     line = ''
                     continue
@@ -103,13 +90,8 @@ class ProducerOfScripts(producer_base.Producer):
 
         return lines
 
-    def transate_action_lines(self, action_lines: list, are_name: str = None, cre_name: str = None, bcs_name: str = None, script_code: str = None, actor_name: str = None, parent_producer = None):
-        self.current_are_name = are_name
-        self.current_cre_name = cre_name
-        self.current_bcs_name = bcs_name
-        self.current_actor_name = actor_name
-        self.current_script_code = script_code
-        self.current_parent_producer = parent_producer
+    def transate_action_lines(self, action_lines: list, are_name: str = None, cre_name: str = None, bcs_name: str = None, script_code: str = None, actor_name: str = None, file_producer = None):
+        context={"producer": self, "are_name": are_name, "cre_name": cre_name, "actor_name": actor_name, "bcs_name": bcs_name, "script_code": script_code, "file_producer": file_producer}
 
         lines = list()
         action_lines2 = list()
@@ -126,7 +108,7 @@ class ProducerOfScripts(producer_base.Producer):
             if not action_linea: continue
 
             self.current_action_line_index = i
-            scripted_lines = ScriptTran.translate_script_line_ex(action_linea, self)
+            scripted_lines = ScriptTran.translate_script_line_ex(action_linea, context)
             line = None
             if isinstance(scripted_lines, str):
                 line = scripted_lines
@@ -139,13 +121,8 @@ class ProducerOfScripts(producer_base.Producer):
 
         return lines
 
-    def transate_action_lines_complex(self, action_lines: list, are_name: str = None, cre_name: str = None, bcs_name: str = None, script_code: str = None, actor_name: str = None, parent_producer = None):
-        self.current_are_name = are_name
-        self.current_cre_name = cre_name
-        self.current_bcs_name = bcs_name
-        self.current_actor_name = actor_name
-        self.current_script_code = script_code
-        self.current_parent_producer = parent_producer
+    def transate_action_lines_complex(self, action_lines: list, are_name: str = None, cre_name: str = None, bcs_name: str = None, script_code: str = None, actor_name: str = None, file_producer = None):
+        context={"producer": self, "are_name": are_name, "cre_name": cre_name, "actor_name": actor_name, "bcs_name": bcs_name, "script_code": script_code, "file_producer": file_producer}
 
         lines = list()
         action_lines2 = list()
@@ -162,7 +139,7 @@ class ProducerOfScripts(producer_base.Producer):
             if not action_linea: continue
 
             self.current_action_line_index = i
-            scripted_lines = ScriptTran.translate_script_line_ex(action_linea, self)
+            scripted_lines = ScriptTran.translate_script_line_ex(action_linea, context)
             line = None
             if isinstance(scripted_lines, str):
                 line = scripted_lines
@@ -387,26 +364,26 @@ def condition_split(cond: str):
 
 
 class ScriptTran:
-    def __init__(self, line: str, producer):
+    def __init__(self, line: str, context: dict):
         self.line = line
-        self.producer = producer
+        self.context = context
         return
 
     @staticmethod
-    def translate_script_line(aline: str, producer):
+    def translate_script_line(aline: str, context):
         result = None
         prefix = ""
         if aline and aline[0] == "!":
             prefix = "not "
             aline = aline.removeprefix("!").strip()
 
-        result = ScriptTran.translate_script_line_ex(aline, producer)
+        result = ScriptTran.translate_script_line_ex(aline, context)
         if result is None:
             raise Exception("No line support!")
         return prefix + result
 
     @staticmethod
-    def translate_script_line_ex(aline: str, producer):
+    def translate_script_line_ex(aline: str, context):
         aline = aline.replace('#', '"')
         result = None
 
@@ -416,37 +393,37 @@ class ScriptTran:
             whole_class = next((cls for name, cls in inspect.getmembers(sys.modules[__name__], inspect.isclass) if issubclass(cls, ScriptTran) 
                 and cls.is_whole_liner() and lline in cls.whole_lines()), None)
             if whole_class:
-                result = whole_class(aline, producer).do_translate_script_line(aline)
+                result = whole_class(aline, context).do_translate_script_line(aline)
                 break
 
             aline = aline.replace('#', '"')
-            func_name, args = ScriptTran._parse_func(aline, producer)
+            func_name, args = ScriptTran._parse_func(aline, context)
             if func_name is None:
                 return None
-            result = ScriptTran._process_func(aline, func_name, args, producer)
+            result = ScriptTran._process_func(aline, func_name, args, context)
             break
         if result is None:
             raise Exception("No line support!")
         return result
 
     @staticmethod
-    def _process_func(aline, func_name, args, producer):
+    def _process_func(aline, func_name, args, context):
         func_classes = [cls for name, cls in inspect.getmembers(sys.modules[__name__], inspect.isclass) if issubclass(cls, ScriptTran) and cls.is_func_liner()]
         func_name_lo = func_name.lower()
         cls = next((cls for cls in func_classes for ffunc in cls.supports_func() if ffunc and func_name_lo == ffunc.lower()), None)
         if cls:
-            o = cls(aline, producer)
+            o = cls(aline, context)
             result = o.translate_func(func_name, args)
             return result
         cls = next((cls for cls in func_classes if cls.supports_funcs_default()), None)
         if cls:
-            o = cls(aline, producer)
+            o = cls(aline, context)
             result = o.translate_func(func_name, args)
             return result
         return None
 
     @staticmethod
-    def _parse_func(line: str, producer):
+    def _parse_func(line: str, context):
         line = line.replace("[", '"[').replace("]", ']"')
         if '//' in line:
             pos = line.index('//')
@@ -459,8 +436,8 @@ class ScriptTran:
         try:
             tree = ast.parse(line)
         except SyntaxError as e:
-            if producer:
-                producer.log_error(error_message=e.msg + ' ' + line)
+            if context:
+                context["producer"].log_error(error_message=e.msg + ' ' + line)
             return None, None
 
         f = tree.body[0].value.func
@@ -505,8 +482,8 @@ class ScriptTran_True(ScriptTran):
     def do_translate_script_line(self, aline: str): return "True"
 
 class ScriptTranFuncs(ScriptTran):
-    def __init__(self, line: str, producer):
-        super().__init__(line, producer)
+    def __init__(self, line: str, context: dict):
+        super().__init__(line, context)
         self.args = None
         return
 
@@ -514,10 +491,10 @@ class ScriptTranFuncs(ScriptTran):
     def is_func_liner(cls): return True
 
     def translate_func(self, func_name: str, args: list): 
-        func_info = next((func_info for func_info in self.producer.doc.commands.commands if func_info["func_name"].lower() == func_name.lower()), None)
+        func_info = next((func_info for func_info in self.context["producer"].doc.commands.commands if func_info["func_name"].lower() == func_name.lower()), None)
         if not func_info:
             print(f"No info for func {func_name}, line: {self.line}")
-            self.producer.log_error(f"No info for func {func_name}, line: {self.line}")
+            self.context["producer"].log_error(f"No info for func {func_name}, line: {self.line}")
             #raise Exception(f"No info for func {func_name}, line: {self.line}")
             return None
         return self.do_translate_func(func_name, args, func_info)
@@ -535,9 +512,9 @@ class ScriptTranFuncs(ScriptTran):
             strargs.append(s)
             strargs_src.append(src)
         result = "self.i" + func_name + "(" + ", ".join(strargs) + ")"
-        self.producer.log_func(self.line, func_name, strargs_src, strargs, func_info)
+        self.context["producer"].log_func(self.line, func_name, strargs_src, strargs, func_info)
 
-        if not self.producer.check_func_implemented("i" + func_name):
+        if not self.context["producer"].check_func_implemented("i" + func_name):
             print(f"Func not implemented: {func_name} => {self.line}")
 
         return result
@@ -550,7 +527,7 @@ class ScriptTranFuncs(ScriptTran):
         elif isinstance(arg, ast.Call):
             #c = ast.Call(arg)
             c = arg
-            s = ScriptTran._process_func(self.line, c.func.id, c.args, self.producer)
+            s = ScriptTran._process_func(self.line, c.func.id, c.args, self.context)
         elif isinstance(arg, ast.UnaryOp):
             # ex: -2
             #c = ast.UnaryOp(arg)
@@ -703,13 +680,15 @@ class ScriptTranFuncCallScript(ScriptTranFuncs):
         script_name = self.do_get_param(args[0], 0, func_info['args'][0])
         script_name = common.strip_quotes(script_name)
 
-        class_name, file_name, pkg_name = self.producer.doc.bcsManager.ensure_bcs(
+        class_name, file_name, pkg_name = self.context["producer"].doc.bcsManager.ensure_bcs(
             bcs_name=script_name
-            , hint_are_name = self.producer.current_are_name
-            , hint_cre_name=self.producer.current_cre_name
-            , hint_actor_name=self.producer.current_actor_name
-            , hint_script_code=self.producer.current_script_code
+            , hint_are_name = self.context["are_name"]
+            , hint_cre_name=self.context["cre_name"]
+            , hint_actor_name=self.context["actor_name"]
+            , hint_script_code=self.context["script_code"]
             )
+        #pkg_name_ = (pkg_name + '.') if pkg_name else ''
         line = f'self.iStartCutScene({file_name}.{class_name})'
+        self.context["file_producer"].add_import(file_name, pkg_name)
 
         return line

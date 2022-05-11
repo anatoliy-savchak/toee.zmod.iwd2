@@ -5,7 +5,7 @@ import py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, modu
 import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2, ctrl_daemon
 import utils_journal as uj, inf_scripting
 #### IMPORTS ####
-import py10002_ar1000_npc_classes
+import py12011_ar1201_npc_classes_auto
 #### END IMPORTS ####
 
 #### GVARS ####
@@ -23,7 +23,9 @@ def san_wield_off(attachee, triggerer): return ctrl_behaviour.san_wield_off(atta
 def ctrl(npc): return ctrl_behaviour.get_ctrl(npc.id)
 def cs(): return ctrl_daemon.gdc()
 #### NPCS ####
-class Ctrl_10HEDRON_AR1000_Hedron_Auto(py10002_ar1000_npc_classes.Ctrl_10HEDRON): # 10HEDRON 
-	def setup_bcs(self):
-		return
+class Ctrl_12SHAWFO(py12011_ar1201_npc_classes_auto.Ctrl_12SHAWFO_Auto): # 12SHAWFO 
+	pass
+
+class Ctrl_12NOLAN(py12011_ar1201_npc_classes_auto.Ctrl_12NOLAN_Auto): # 12NOLAN 
+	pass
 

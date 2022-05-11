@@ -5,7 +5,7 @@ import inf_scripting
 
 #### BCS ####
 class Script_00AMVR_Auto(inf_scripting.ScriptBase):
-	# AR1000 10HEDRON Hedron ScriptDefault
+	# AR1000 10HEDRON Hedron ScriptDefault (Movement Script)
 	
 	@classmethod
 	def do_execute(cls, self):

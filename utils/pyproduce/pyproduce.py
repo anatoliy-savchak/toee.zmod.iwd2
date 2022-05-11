@@ -278,8 +278,8 @@ class ProducerApp:
         fn = self.get_path_out_daemon_file(are_name)
         fnt = self.get_path_template_npcs_file
         daemon.load_template(fn)
-        daemon.produce_npcs("place_npcs")
-        #daemon.produce_ambients("setup_ambients")
+        daemon.produce_npcs("place_npcs_auto")
+        daemon.produce_ambients("setup_ambients_auto")
         daemon.save(fn)
         return
 

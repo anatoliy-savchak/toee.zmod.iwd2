@@ -186,10 +186,10 @@ class ProducerDoc(object):
     def are_name_to_script_id(are_name: str):
         return int(are_name.lower().replace("ar", ""))*10
 
-    def acquire_are_producer(self, are_name: str):
+    def acquire_are_producer(self, are_name: str, make_new: bool = False):
         result = self.producers_are.get(are_name)
         if not result:
-            result = producer_are.ProducerOfAre(self, are_name, self.are_name_to_script_id(are_name), self.make_new)
+            result = producer_are.ProducerOfAre(self, are_name, self.are_name_to_script_id(are_name), self.make_new or make_new)
         self.current_are_producer = result
         return result
 

@@ -40,9 +40,10 @@ def lines_method(lines: list, method_line: str):
 
     found_defs = [index for index, line in enumerate(lines) if subline in line ]
     if not found_defs:
-        lines.append(method_line)
-        lines.append("\t"+"return")
         lines.append("")
+        lines.append(method_line)
+        lines.append("\t\t"+"return")
+        found_def_return = len(lines) - 1
     else:
         found_def = found_defs[0]
         subline = "\t\treturn"

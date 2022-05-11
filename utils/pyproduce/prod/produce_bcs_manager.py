@@ -1,3 +1,4 @@
+from asyncore import write
 import os
 import producer_base
 import produce_scripts
@@ -97,7 +98,8 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
         self.writeline('while True:')
         self.indent()
         for index, block in enumerate(blocks):
-            if block.get("unreachable"): 
+            if block.get("unreachable"):
+                print("unreachable")
                 continue
 
             block_index = index + 1

@@ -54,6 +54,8 @@ class ProducerOfScripts(producer_base.Producer):
         for i, action_line in enumerate(trigger_lines):
             action_linea = self.remove_comment(action_line)
             if not action_linea: continue
+            if 'Global("Shaengarne_Bridge_Cleared", "GLOBAL", 1)Global("31bugGut_Dead", "GLOBAL", 0)' in action_linea:
+                print('')
             trigger_lines2.extend(condition_split(action_linea))
 
         lines = list()
@@ -93,7 +95,7 @@ class ProducerOfScripts(producer_base.Producer):
                 else:
                     line = "\t and " + line
 
-            if i == len(trigger_lines) - 1: # last
+            if i == len(trigger_lines2) - 1: # last
                 line = line + ":"
             else:
                 line = line + " \\"

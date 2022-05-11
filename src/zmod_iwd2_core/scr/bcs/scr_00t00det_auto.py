@@ -5,7 +5,7 @@ import inf_scripting
 
 #### BCS ####
 class Script_00T00DET_Auto(inf_scripting.ScriptBase):
-	# AR1000 10HEDRON Hedron ScriptSpecific
+	# AR1000 10HEDRON Hedron ScriptSpecific (Team Script)
 	
 	@classmethod
 	def do_execute(cls, self):

@@ -30,6 +30,7 @@ class ProducerOfAre(producer_base.Producer):
             , self.make_new
             , self.src
             , self.src_sec
+            , self.src_path
             )
         self.dialog = produce_dialog.DialogFile(self.doc.get_path_out_npcs_dialog_file(self.are_name, self.script_id + 1))
 
@@ -148,6 +149,12 @@ class ProducerOfAre(producer_base.Producer):
             , actor_name = actor_name
             , actor_dict = actor_dict
         )
+        prod.skip_script_general = self.skip_script_general
+        prod.skip_script_class = self.skip_script_class
+        prod.skip_script_race = self.skip_script_race
+        prod.skip_script_default = self.skip_script_default
+        prod.skip_script_specific = self.skip_script_specific
+        prod.skip_script_special1 = self.skip_script_special1
         prod.produce()
         prod.save()
         ctrl_name, ctrl_file_name = prod.get_ctrl_tuple()

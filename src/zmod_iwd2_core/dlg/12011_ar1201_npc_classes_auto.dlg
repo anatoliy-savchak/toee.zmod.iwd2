@@ -1,0 +1,197 @@
+{10}{Ah, you must be the company from Luskan Ulbrec spoke of - I heard of your actions on the Docks, quite impressive.  Never again will I say nothing good ever comes from Luskan.}{Ah, you must be the company from Luskan Ulbrec spoke of - I heard of your actions on the Docks, quite impressive.  Never again will I say nothing good ever comes from Luskan.}{}{}{}{} # phrase: 12SHAWFO 0
+{11}{Lord Ulbrec told us to report to you for our assignment.}{}{1}{}{20}{} # resp: 12SHAWFO 0
+{12}{We were told that you were the watch commander... and the paymaster.}{}{1}{}{30}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 12SHAWFO 1
+
+{20}{Of course, you have come to serve in the Targos Guard - let me inform you of your duties... and your keep.}{Of course, you have come to serve in the Targos Guard - let me inform you of your duties... and your keep.}{}{}{}{} # phrase: 12SHAWFO 1
+{21}{Continue}{}{1}{}{30}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 12SHAWFO 2
+
+{30}{Pay is one gold coin a tenday, payable in a month advance, and for your actions upon the docks, Ulbrec has authorized me to reward you with an additional sum.}{Pay is one gold coin a tenday, payable in a month advance, and for your actions upon the docks, Ulbrec has authorized me to reward you with an additional sum.}{}{}{}{} # phrase: 12SHAWFO 2
+{31}{Continue}{}{1}{}{40}{} # resp: 12SHAWFO 3
+
+{40}{If you do not have equipment, then you will need to visit the Gallaway Trading Depot in town and purchase what you need.}{If you do not have equipment, then you will need to visit the Gallaway Trading Depot in town and purchase what you need.}{}{}{}{} # phrase: 12SHAWFO 4
+{41}{Continue}{}{1}{}{50}{} # resp: 12SHAWFO 6
+
+{50}{If you are wounded while serving in the Guard, report here, and Nolan, in the corner there, will tend to your wounds. }{If you are wounded while serving in the Guard, report here, and Nolan, in the corner there, will tend to your wounds. }{}{}{}{} # phrase: 12SHAWFO 46
+{51}{Continue}{}{1}{}{60}{} # resp: 12SHAWFO 103
+
+{60}{If you do not have lodgings, then we will make arrangements for you to be lodged here on the grounds, or have one of the abandoned buildings in town.}{If you do not have lodgings, then we will make arrangements for you to be lodged here on the grounds, or have one of the abandoned buildings in town.}{}{}{}{} # phrase: 12SHAWFO 5
+{61}{We can make our own arrangements.  Where is our post?}{}{1}{}{70}{} # resp: 12SHAWFO 7
+
+{70}{Each company serves a rotation on the Palisade - of late, most of our efforts have been focused on constructing the Palisade rather than manning it... and that will be your first assignment.}{Each company serves a rotation on the Palisade - of late, most of our efforts have been focused on constructing the Palisade rather than manning it... and that will be your first assignment.}{}{}{}{} # phrase: 12SHAWFO 6
+{71}{Continue}{}{1}{}{80}{} # resp: 12SHAWFO 8
+
+{80}{There is a breach in one of the outer Palisade walls from the last attack.  Our engineer, Olap Tamewater, has told me he is in need of wood to repair it, but there seems to be some trouble in getting it from the docks.}{There is a breach in one of the outer Palisade walls from the last attack.  Our engineer, Olap Tamewater, has told me he is in need of wood to repair it, but there seems to be some trouble in getting it from the docks.}{}{}{}{} # phrase: 12SHAWFO 7
+{81}{Continue}{}{1}{}{90}{uj.journal_add(800, (250, 251, ))} # resp: 12SHAWFO 9
+
+{90}{I do not have time to attend to the matter myself -  seek Olap out and find out what he needs.  You should be able to find him at the northeast Palisade.  Now make haste - the goblins could attack us at any time.}{I do not have time to attend to the matter myself -  seek Olap out and find out what he needs.  You should be able to find him at the northeast Palisade.  Now make haste - the goblins could attack us at any time.}{}{}{}{} # phrase: 12SHAWFO 8
+{91}{Very well.  We will go find Olap, then.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 4)} # resp: 12SHAWFO 10
+
+{100}{Have you spoken to Olap yet?}{Have you spoken to Olap yet?}{}{}{}{} # phrase: 12SHAWFO 9
+{101}{Yes.  We settled the matter of the wood shortage.}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{110}{ctrl(npc).dialog_action(npc, pc, 5); uj.journal_add(802, (252, 253, 254, ))} # resp: 12SHAWFO 11
+{102}{The problem cannot be solved.  The only one who could fix the crane to get the lumber to the Palisade is dead.}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{150}{ctrl(npc).dialog_action(npc, pc, 6); uj.journal_add(10779, (255, 256, 257, ))} # resp: 12SHAWFO 12
+{103}{Where can he be found again?}{}{1}{ctrl(npc).dialog_test(npc, pc, 4)}{160}{} # resp: 12SHAWFO 13
+{104}{We're still working on the matter.  We shall return.}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{0}{} # resp: 12SHAWFO 14
+
+{110}{Excellent - and just in time.  Another matter has cropped up that I need your assistance with.}{Excellent - and just in time.  Another matter has cropped up that I need your assistance with.}{}{}{}{} # phrase: 12SHAWFO 12
+{111}{Continue}{}{1}{}{120}{} # resp: 12SHAWFO 17
+
+{120}{One of the archery captains stationed at the western wall, Isherwood, has requested more arrows for his men - unfortunately, arrows are in short supply.}{One of the archery captains stationed at the western wall, Isherwood, has requested more arrows for his men - unfortunately, arrows are in short supply.}{}{}{}{} # phrase: 12SHAWFO 13
+{121}{Continue}{}{1}{}{130}{ctrl(npc).dialog_action(npc, pc, 7)} # resp: 12SHAWFO 18
+
+{130}{Find him, see how many arrows he needs, then proceed to the Gallaway Trade Depot.  Return here when you've gotten Isherwood what he needs.}{Find him, see how many arrows he needs, then proceed to the Gallaway Trade Depot.  Return here when you've gotten Isherwood what he needs.}{}{}{}{} # phrase: 12SHAWFO 14
+{131}{Where can I find Isherwood again?}{}{1}{}{140}{} # resp: 12SHAWFO 19
+{132}{We will go find him and see what can be done.  Farewell.}{}{1}{}{0}{} # resp: 12SHAWFO 20
+
+{140}{You should find him and his men along the western wall.  Now make haste - the more arrows we can place into goblin skulls before they hit the walls, the better.}{You should find him and his men along the western wall.  Now make haste - the more arrows we can place into goblin skulls before they hit the walls, the better.}{}{}{}{} # phrase: 12SHAWFO 15
+{141}{We will go find Isherwood and see what can be done, then.}{}{1}{}{0}{} # resp: 12SHAWFO 21
+
+{150}{Unfortunate...  but we cannot afford to dwell on it.  I will speak to Olap about what can be done, but in the meantime, another matter has cropped up that I need your assistance with.}{Unfortunate...  but we cannot afford to dwell on it.  I will speak to Olap about what can be done, but in the meantime, another matter has cropped up that I need your assistance with.}{}{}{}{} # phrase: 12SHAWFO 11
+{151}{Continue}{}{1}{}{120}{} # resp: 12SHAWFO 16
+
+{160}{You can find him at the northeast section of the Palisade.  Now make haste - the goblins could choose to attack us at any time.}{You can find him at the northeast section of the Palisade.  Now make haste - the goblins could choose to attack us at any time.}{}{}{}{} # phrase: 12SHAWFO 10
+{161}{Very well.  We will go find Olap, then.}{}{1}{}{0}{} # resp: 12SHAWFO 15
+
+{170}{Were you able to get Isherwood the arrows he needed?}{Were you able to get Isherwood the arrows he needed?}{}{}{}{} # phrase: 12SHAWFO 16
+{171}{Not yet.  Where can I find Isherwood again?}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{140}{} # resp: 12SHAWFO 22
+{172}{Yes, we came to an... arrangement with Deirdre Gallaway.  Isherwood has the arrows he needs.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{180}{ctrl(npc).dialog_action(npc, pc, 8); uj.journal_add(10780, (258, 259, 260, ))} # resp: 12SHAWFO 23
+{173}{We got Isherwood the arrows he needed - and made some room in our backpack in the process.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{180}{ctrl(npc).dialog_action(npc, pc, 9); uj.journal_add(10780, (258, 259, 260, ))} # resp: 12SHAWFO 24
+{174}{We're still working on it - we'll return when it's done.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{0}{} # resp: 12SHAWFO 25
+
+{180}{Excellent!  I am in dire need of level-headed soldiers with initiative and solutions, and you are proving to be just that.  I see Ulbrec's trust is not unfounded.}{Excellent!  I am in dire need of level-headed soldiers with initiative and solutions, and you are proving to be just that.  I see Ulbrec's trust is not unfounded.}{}{}{}{} # phrase: 12SHAWFO 17
+{181}{Continue}{}{1}{}{190}{} # resp: 12SHAWFO 26
+
+{190}{The next task might be somewhat distasteful.  We have a... priest of Myrkul within the walls, and Ulbrec has charged him with speaking to one of the goblins that fell during the last attack.}{The next task might be somewhat distasteful.  We have a... priest of Myrkul within the walls, and Ulbrec has charged him with speaking to one of the goblins that fell during the last attack.}{}{}{}{} # phrase: 12SHAWFO 18
+{191}{He speaks to the dead?}{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{200}{ctrl(npc).dialog_action(npc, pc, 10)} # resp: 12SHAWFO 27
+{192}{Koluhm?  I know of him.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{200}{ctrl(npc).dialog_action(npc, pc, 11)} # resp: 12SHAWFO 28
+{193}{Oh, Koluhm?  Yeah, that priest accidentally fell on my... er, someone's weapon and died.}{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{230}{ctrl(npc).dialog_action(npc, pc, 12); uj.journal_add(10781, (261, 262, 263, 264, ))} # resp: 12SHAWFO 29
+{194}{Uh, I think Koluhm had an accident, at least that's what the rumors say.  Probably caught some fast-catching graverot or something.}{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{230}{ctrl(npc).dialog_action(npc, pc, 13); uj.journal_add(10781, (261, 262, 263, 264, ))} # resp: 12SHAWFO 30
+
+{200}{Yes, it was hoped he could question the creature's spirit and find out what it knows of the goblin troops in the region.  If we could learn how many remain in the wilderness, or better yet, where their fortress can be found, it would prove invaluable.}{Yes, it was hoped he could question the creature's spirit and find out what it knows of the goblin troops in the region.  If we could learn how many remain in the wilderness, or better yet, where their fortress can be found, it would prove invaluable.}{}{}{}{} # phrase: 12SHAWFO 19
+{201}{Continue}{}{1}{}{210}{uj.journal_add(10780, (258, 259, 260, ))} # resp: 12SHAWFO 31
+
+{210}{In any event, I need you to speak to Koluhm and see what he has gleaned from the goblin - the other men will not approach him.}{In any event, I need you to speak to Koluhm and see what he has gleaned from the goblin - the other men will not approach him.}{}{}{}{} # phrase: 12SHAWFO 20
+{211}{Very well.  Where can I find him?}{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{220}{} # resp: 12SHAWFO 32
+{212}{I'll go hunt down Koluhm, then.}{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{0}{} # resp: 12SHAWFO 33
+
+{220}{He has set up a... morgue... in one of the abandoned buildings in the main town, just north of the Weeping Widow Inn.  You can find him there.}{He has set up a... morgue... in one of the abandoned buildings in the main town, just north of the Weeping Widow Inn.  You can find him there.}{}{}{}{} # phrase: 12SHAWFO 21
+{221}{Very well.  I will go speak to him, then.  Farewell.}{}{1}{}{0}{} # resp: 12SHAWFO 34
+
+{230}{He's dead?  But - hmmm.  The attack on the Targos Docks must have struck further into the town than I thought.  Still, Koluhm was loyal to gold, not to Targos, so perhaps it is not a loss.  Very well... are you familiar with Koluhm's band?  The Iron Collar mercenaries?}{He's dead?  But - hmmm.  The attack on the Targos Docks must have struck further into the town than I thought.  Still, Koluhm was loyal to gold, not to Targos, so perhaps it is not a loss.  Very well... are you familiar with Koluhm's band?  The Iron Collar mercenaries?}{}{}{}{} # phrase: 12SHAWFO 26
+{231}{No, I haven't heard of them.}{}{1}{ctrl(npc).dialog_test(npc, pc, 31)}{240}{} # resp: 12SHAWFO 51
+{232}{I've... met them, yes.  They were deep into their cups in the Salty Dog.}{}{1}{ctrl(npc).dialog_test(npc, pc, 32)}{250}{} # resp: 12SHAWFO 52
+{233}{Actually, I think Black Geoffrey died in the goblin attacks on the docks... the same attack that claimed poor Koluhm's life.}{}{1}{ctrl(npc).dialog_test(npc, pc, 33)}{290}{ctrl(npc).dialog_action(npc, pc, 22)} # resp: 12SHAWFO 53
+{234}{Actually, I heard Black Geoffrey died in the goblin attacks on the docks... but I'm just guessing.}{}{1}{ctrl(npc).dialog_test(npc, pc, 34)}{290}{ctrl(npc).dialog_action(npc, pc, 23)} # resp: 12SHAWFO 54
+
+{240}{Well, consider yourself blessed.  In a fight, they're capable enough, I suppose... if they were backed into a corner or if someone was trying to take their keg away, but they mostly waste Targos' coin.}{Well, consider yourself blessed.  In a fight, they're capable enough, I suppose... if they were backed into a corner or if someone was trying to take their keg away, but they mostly waste Targos' coin.}{}{}{}{} # phrase: 12SHAWFO 27
+{241}{Continue}{}{1}{}{250}{} # resp: 12SHAWFO 55
+
+{250}{I want you to bring the Iron Collar Mercenary Band here to the Palisade.  I've been told they've failed to show up for their rotation on the wall, and action needs to be taken.  If nothing else, an example needs to be made to keep discipline.}{I want you to bring the Iron Collar Mercenary Band here to the Palisade.  I've been told they've failed to show up for their rotation on the wall, and action needs to be taken.  If nothing else, an example needs to be made to keep discipline.}{}{}{}{} # phrase: 12SHAWFO 28
+{251}{It will be my pleasure; I've been looking to crack a few skulls since I arrived.}{}{1}{}{260}{} # resp: 12SHAWFO 56
+{252}{What if things turn violent?}{}{1}{}{260}{} # resp: 12SHAWFO 57
+
+{260}{I would prefer they serve on the walls with the other companies, but if they prove troublesome, you may deal with them as you see fit.  In truth, they are leeches on Targos, and we may be better off without them.}{I would prefer they serve on the walls with the other companies, but if they prove troublesome, you may deal with them as you see fit.  In truth, they are leeches on Targos, and we may be better off without them.}{}{}{}{} # phrase: 12SHAWFO 29
+{261}{Where can I find them?}{}{1}{}{270}{ctrl(npc).dialog_action(npc, pc, 24)} # resp: 12SHAWFO 58
+{262}{I'm on it.  I'll return with them... or without them... shortly.}{}{1}{}{280}{ctrl(npc).dialog_action(npc, pc, 25)} # resp: 12SHAWFO 59
+
+{270}{Last word was that they were draining the last of Gohar's kegs in the Salty Dog Tavern by the docks.  You can most likely find them there.}{Last word was that they were draining the last of Gohar's kegs in the Salty Dog Tavern by the docks.  You can most likely find them there.}{}{}{}{} # phrase: 12SHAWFO 30
+{271}{I'm on it.  I'll return with them... or without them... shortly.}{}{1}{}{280}{} # resp: 12SHAWFO 60
+
+{280}{Please make haste - there have been sightings of goblins near the Palisade, and I fear they will attack before you return.  }{Please make haste - there have been sightings of goblins near the Palisade, and I fear they will attack before you return.  }{}{}{}{} # phrase: 12SHAWFO 45
+{281}{Continue}{}{1}{}{0}{} # resp: 12SHAWFO 102
+
+{290}{Seems death has made a home in Targos of late.  Very well, then we'll need to adjust th-}{Seems death has made a home in Targos of late.  Very well, then we'll need to adjust th-}{}{}{}{} # phrase: 12SHAWFO 31
+{291}{Did you hear that?}{}{1}{ctrl(npc).dialog_test(npc, pc, 35)}{0}{ctrl(npc).dialog_action(npc, pc, 26)} # resp: 12SHAWFO 61
+{292}{Did you hear that?}{}{1}{ctrl(npc).dialog_test(npc, pc, 36)}{0}{ctrl(npc).dialog_action(npc, pc, 27)} # resp: 12SHAWFO 62
+
+{300}{Did you speak to Koluhm?}{Did you speak to Koluhm?}{}{}{}{} # phrase: 12SHAWFO 22
+{301}{Oh, Koluhm?  He accidentally fell on my... er, someone's weapon and died.}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{230}{uj.journal_add(10781, (261, 262, 263, 264, ))} # resp: 12SHAWFO 35
+{302}{Uh, I think Koluhm had an accident, at least that's what the rumors say.  Probably caught some fast-catching graverot or something.}{}{1}{ctrl(npc).dialog_test(npc, pc, 17)}{230}{uj.journal_add(10781, (261, 262, 263, 264, ))} # resp: 12SHAWFO 36
+{303}{Yes, he can't speak goblin, so he's sending a scroll with the goblin's "answers" up to the Palisade.  You should expect it soon.}{}{1}{ctrl(npc).dialog_test(npc, pc, 18)}{310}{ctrl(npc).dialog_action(npc, pc, 14); uj.journal_add(10782, (265, 266, ))} # resp: 12SHAWFO 37
+{304}{Yes, we spoke to him and were able to translate some of the goblin's speech.  Apparently the tribe that attacked Targos is only *one* of the tribes in the region.  They're led by someone named "Caballus," which sounds like some goblin sorcerer.  I'd tell your archers to aim for any goblin sorcerer they can see.}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{320}{ctrl(npc).dialog_action(npc, pc, 15); uj.journal_add(10782, (265, 266, ))} # resp: 12SHAWFO 38
+{305}{Yes, we spoke to him and were able to translate some of the goblin's speech.  Apparently the tribe that attacked Targos is only *one* of the tribes in the region.  They seem to be led by three different leaders, one of them named "Caballus," which sounds like a goblin sorcerer.}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{320}{ctrl(npc).dialog_action(npc, pc, 16); uj.journal_add(10782, (265, 266, ))} # resp: 12SHAWFO 39
+{306}{I'm glad the Palisade is still standing - we spoke to Koluhm and were able to translate the goblin's speech.  It sounds like they intended to do a simultaneous attack on the Palisade and the Docks, which means that we could be attacked at any time.}{}{1}{ctrl(npc).dialog_test(npc, pc, 21)}{330}{} # resp: 12SHAWFO 40
+{307}{Not yet.  We'll go speak to him soon.}{}{1}{ctrl(npc).dialog_test(npc, pc, 22)}{0}{} # resp: 12SHAWFO 41
+
+{310}{Excellent; we'll wait for it then and see if one of the dwarves can make any sense of it.  Now, your next assignment may prove more difficult.  Do you know Koluhm's band?  The Iron Collar mercenaries?}{Excellent; we'll wait for it then and see if one of the dwarves can make any sense of it.  Now, your next assignment may prove more difficult.  Do you know Koluhm's band?  The Iron Collar mercenaries?}{}{}{}{} # phrase: 12SHAWFO 25
+{311}{No, I haven't heard of them.}{}{1}{ctrl(npc).dialog_test(npc, pc, 27)}{240}{} # resp: 12SHAWFO 47
+{312}{I've... met them, yes.  They were deep into their cups in the Salty Dog.}{}{1}{ctrl(npc).dialog_test(npc, pc, 28)}{250}{} # resp: 12SHAWFO 48
+{313}{Actually, I think Black Geoffrey died in the goblin attacks on the docks... the same attack that claimed poor Koluhm's life.}{}{1}{ctrl(npc).dialog_test(npc, pc, 29)}{290}{ctrl(npc).dialog_action(npc, pc, 20)} # resp: 12SHAWFO 49
+{314}{Actually, I heard Black Geoffrey died in the goblin attacks on the docks... but I'm just guessing.}{}{1}{ctrl(npc).dialog_test(npc, pc, 30)}{290}{ctrl(npc).dialog_action(npc, pc, 21)} # resp: 12SHAWFO 50
+
+{320}{That sounds as if we should be expecting an attack soon, then.  We'll need every man on the walls - even the mercenaries that traveled here with Koluhm.  Are you familiar with Koluhm's band?  The Iron Collar mercenaries?}{That sounds as if we should be expecting an attack soon, then.  We'll need every man on the walls - even the mercenaries that traveled here with Koluhm.  Are you familiar with Koluhm's band?  The Iron Collar mercenaries?}{}{}{}{} # phrase: 12SHAWFO 24
+{321}{No, I haven't heard of them.}{}{1}{ctrl(npc).dialog_test(npc, pc, 23)}{240}{} # resp: 12SHAWFO 43
+{322}{I've... met them, yes.  They were deep into their cups in the Salty Dog.}{}{1}{ctrl(npc).dialog_test(npc, pc, 24)}{250}{} # resp: 12SHAWFO 44
+{323}{Actually, I think Black Geoffrey died in the goblin attacks on the docks... the same attack that claimed poor Koluhm's life.}{}{1}{ctrl(npc).dialog_test(npc, pc, 25)}{290}{ctrl(npc).dialog_action(npc, pc, 18)} # resp: 12SHAWFO 45
+{324}{Actually, I heard Black Geoffrey died in the goblin attacks on the docks... but I'm just guessing.}{}{1}{ctrl(npc).dialog_test(npc, pc, 26)}{290}{ctrl(npc).dialog_action(npc, pc, 19)} # resp: 12SHAWFO 46
+
+{330}{That is grim news - I'll warn the troops to be ready.}{That is grim news - I'll warn the troops to be ready.}{}{}{}{} # phrase: 12SHAWFO 23
+{331}{That's not all.  They should expect a three-pronged assault, one from a sorcerer named "Caballus," and two others - uh, "Ghotrag" and "Vgh..." er, "Houndstooth," or something.}{}{1}{}{320}{ctrl(npc).dialog_action(npc, pc, 17); uj.journal_add(10782, (265, 266, ))} # resp: 12SHAWFO 42
+
+{340}{Any luck on bringing the Iron Collar to the Palisade?}{Any luck on bringing the Iron Collar to the Palisade?}{}{}{}{} # phrase: 12SHAWFO 32
+{341}{No, they were too deep in their cups to listen to reason, so I was forced to deal with them.  }{}{1}{ctrl(npc).dialog_test(npc, pc, 37)}{290}{ctrl(npc).dialog_action(npc, pc, 28); uj.journal_add(10783, (267, 268, 269, 270, ))} # resp: 12SHAWFO 63
+{342}{Well, at first it seemed as if they would be coming along peacefully, but then I heard one of them say something... I can't quite remember what... and so we were forced to kill them all.  I'm sure it was all just a misunderstanding.}{}{1}{ctrl(npc).dialog_test(npc, pc, 38)}{290}{ctrl(npc).dialog_action(npc, pc, 29); uj.journal_add(10783, (267, 268, 269, 270, ))} # resp: 12SHAWFO 64
+{343}{Yes - though they proved to be a stubborn bunch.  I don't know how well they'll serve, but they may stop a few goblin axes. }{}{1}{ctrl(npc).dialog_test(npc, pc, 39)}{350}{ctrl(npc).dialog_action(npc, pc, 30); uj.journal_add(10784, (271, 272, 273, ))} # resp: 12SHAWFO 65
+{344}{Where can they be found again?}{}{1}{ctrl(npc).dialog_test(npc, pc, 40)}{270}{} # resp: 12SHAWFO 66
+{345}{Not yet.  We're still working on it.  We'll return when we've dealt with them.}{}{1}{ctrl(npc).dialog_test(npc, pc, 41)}{280}{} # resp: 12SHAWFO 67
+
+{350}{You surprise me - well done... well done, indeed.  Now that they're accounted for, we'll need to adjust th-}{You surprise me - well done... well done, indeed.  Now that they're accounted for, we'll need to adjust th-}{}{}{}{} # phrase: 12SHAWFO 3
+{351}{Did you hear that?}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{0}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 12SHAWFO 4
+{352}{Did you hear that?}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{0}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 12SHAWFO 5
+
+{360}{The goblins have been driven back - for the time being.  You've done well, and I have sent one of our runners to tell Lord Ulbrec of our victory... and your part in it.}{The goblins have been driven back - for the time being.  You've done well, and I have sent one of our runners to tell Lord Ulbrec of our victory... and your part in it.}{}{}{}{} # phrase: 12SHAWFO 33
+{361}{Continue}{}{1}{}{370}{} # resp: 12SHAWFO 68
+
+{370}{If you haven't already, you should report to Lord Ulbrec at your earliest convenience - I am sure he will want to congratulate you personally.}{If you haven't already, you should report to Lord Ulbrec at your earliest convenience - I am sure he will want to congratulate you personally.}{}{}{}{} # phrase: 12SHAWFO 34
+{371}{Actually, we came for our payment.  We're not here for our health, Shawford, we're here to earn some coin. }{}{1}{ctrl(npc).dialog_test(npc, pc, 42)}{380}{ctrl(npc).dialog_action(npc, pc, 31)} # resp: 12SHAWFO 69
+{372}{We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle. }{}{1}{ctrl(npc).dialog_test(npc, pc, 43)}{380}{ctrl(npc).dialog_action(npc, pc, 32)} # resp: 12SHAWFO 70
+{373}{I will seek him out, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 33)} # resp: 12SHAWFO 71
+
+{380}{Indeed.  Very well, I am authorized to pay you a bonus sum for your efforts.  There are times I forget that you are mercenaries.  Here you are.}{Indeed.  Very well, I am authorized to pay you a bonus sum for your efforts.  There are times I forget that you are mercenaries.  Here you are.}{}{}{}{} # phrase: 12SHAWFO 37
+{381}{Good.  And watch that tone of yours - we didn't travel here from Luskan and past Bremen in flames just to defend your town - we're risking our *lives* here, and the payment should reflect it. }{}{1}{ctrl(npc).dialog_test(npc, pc, 48)}{390}{ctrl(npc).dialog_action(npc, pc, 38)} # resp: 12SHAWFO 78
+{382}{Good.  And watch that tone of yours - we didn't travel here from Luskan and past Bremen in flames just to defend your town - we're risking our *lives* here, and the payment should reflect it. }{}{1}{ctrl(npc).dialog_test(npc, pc, 49)}{0}{} # resp: 12SHAWFO 79
+{383}{This'll do, then.  Farewell. }{}{1}{ctrl(npc).dialog_test(npc, pc, 50)}{390}{ctrl(npc).dialog_action(npc, pc, 39)} # resp: 12SHAWFO 80
+{384}{This'll do, then.  Farewell. }{}{1}{ctrl(npc).dialog_test(npc, pc, 51)}{0}{} # resp: 12SHAWFO 81
+
+{390}{Before you go, however, I feel I must say something - the mercenary's life is not one unknown to me.  }{Before you go, however, I feel I must say something - the mercenary's life is not one unknown to me.  }{}{}{}{} # phrase: 12SHAWFO 38
+{391}{Continue}{}{1}{}{400}{} # resp: 12SHAWFO 82
+
+{400}{I have served in many companies, and in many conflicts throughout Neverwinter and the Realms, and all the coin I earned was a shallow reward until the day I made my home in Targos - and its people were placed under my protection.  }{I have served in many companies, and in many conflicts throughout Neverwinter and the Realms, and all the coin I earned was a shallow reward until the day I made my home in Targos - and its people were placed under my protection.  }{}{}{}{} # phrase: 12SHAWFO 39
+{401}{Continue}{}{1}{}{410}{} # resp: 12SHAWFO 83
+
+{410}{There are greater goals to strive for in this world than wealth, and simply finding one's purpose in the world is worth more than any amount of gold one can earn from swordplay alone. }{There are greater goals to strive for in this world than wealth, and simply finding one's purpose in the world is worth more than any amount of gold one can earn from swordplay alone. }{}{}{}{} # phrase: 12SHAWFO 40
+{411}{Continue}{}{1}{}{420}{} # resp: 12SHAWFO 84
+
+{420}{I heard of your fight at the Palisade, and my men say you fought like devils - and took down all *three* of the goblin leaders.  I can't believe you risked so much just for gold.   }{I heard of your fight at the Palisade, and my men say you fought like devils - and took down all *three* of the goblin leaders.  I can't believe you risked so much just for gold.   }{}{}{}{} # phrase: 12SHAWFO 41
+{421}{You're wrong, Shawford.  Nice speech, but I've got the future to think about, and I'm not going to leave Targos penniless. }{}{1}{}{430}{} # resp: 12SHAWFO 85
+{422}{If those goblins had taken Targos and the docks, we'd be trapped here under the shadow of the horde.  We were fighting for Targos, but also for our lives. }{}{1}{}{430}{} # resp: 12SHAWFO 86
+{423}{Perhaps not... when those goblins stormed the wall, we simply acted.  When it was over, and we were still alive, I don't remember why we did it, we just - did.}{}{1}{}{430}{} # resp: 12SHAWFO 87
+{424}{No town deserves the evil the horde will bring if it takes Targos.  Let's just say it's the principle of the thing. }{}{1}{}{430}{} # resp: 12SHAWFO 88
+
+{430}{Very well - that will have to do.  I wish you luck in your future here in the North.  I believe that with you by our side, the horde will be turned back, and Targos saved. }{Very well - that will have to do.  I wish you luck in your future here in the North.  I believe that with you by our side, the horde will be turned back, and Targos saved. }{}{}{}{} # phrase: 12SHAWFO 42
+{431}{Perhaps so.  Farewell, Shawford. }{}{1}{}{0}{} # resp: 12SHAWFO 89
+
+{440}{Welcome back - no sign of any more goblins yet, but we're keeping a close eye out for them.  If you haven't already, you should check with Lord Ulbrec to see if he has any assignments for you.}{Welcome back - no sign of any more goblins yet, but we're keeping a close eye out for them.  If you haven't already, you should check with Lord Ulbrec to see if he has any assignments for you.}{}{}{}{} # phrase: 12SHAWFO 35
+{441}{Actually, we came for our payment.  We're not here for our health, Shawford, we're here to earn some coin. }{}{1}{ctrl(npc).dialog_test(npc, pc, 44)}{380}{ctrl(npc).dialog_action(npc, pc, 34)} # resp: 12SHAWFO 72
+{442}{We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle. }{}{1}{ctrl(npc).dialog_test(npc, pc, 45)}{380}{ctrl(npc).dialog_action(npc, pc, 35)} # resp: 12SHAWFO 73
+{443}{I will seek him out, then.  Farewell.}{}{1}{}{0}{} # resp: 12SHAWFO 74
+
+{450}{I heard about your march upon the Shaengarne.  I wish you luck, and I pray the gods watch over you. }{I heard about your march upon the Shaengarne.  I wish you luck, and I pray the gods watch over you. }{}{}{}{} # phrase: 12SHAWFO 36
+{451}{Actually, we came more for payment than prayer.  We're not here for our health, Shawford, we're here to earn some coin. }{}{1}{ctrl(npc).dialog_test(npc, pc, 46)}{380}{ctrl(npc).dialog_action(npc, pc, 36)} # resp: 12SHAWFO 75
+{452}{We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle. }{}{1}{ctrl(npc).dialog_test(npc, pc, 47)}{380}{ctrl(npc).dialog_action(npc, pc, 37)} # resp: 12SHAWFO 76
+{453}{Thanks, Shawford.  Farewell. }{}{1}{}{0}{} # resp: 12SHAWFO 77
+
+{460}{I heard about your battle at the Shaengarne - it seems that Ulbrec and Oswald's plans proved true; a small force was more effective than all the Targos Guard.  A heroic feat, indeed.  }{I heard about your battle at the Shaengarne - it seems that Ulbrec and Oswald's plans proved true; a small force was more effective than all the Targos Guard.  A heroic feat, indeed.  }{}{}{}{} # phrase: 12SHAWFO 43
+{461}{It was a suicide mission, and we expect to be rewarded accordingly.  We're here for gold, Shawford, not compliments. }{}{1}{ctrl(npc).dialog_test(npc, pc, 52)}{380}{ctrl(npc).dialog_action(npc, pc, 40)} # resp: 12SHAWFO 90
+{462}{It was a suicide mission, and we expect to be rewarded accordingly, both for Shaengarne and the Palisade battle.  We're here for gold, Shawford, not compliments. }{}{1}{ctrl(npc).dialog_test(npc, pc, 53)}{380}{ctrl(npc).dialog_action(npc, pc, 41)} # resp: 12SHAWFO 91
+{463}{We came for payment for our battle at the Shaengarne, Shawford.  }{}{1}{ctrl(npc).dialog_test(npc, pc, 54)}{380}{ctrl(npc).dialog_action(npc, pc, 42)} # resp: 12SHAWFO 92
+{464}{We came for payment for our battle at the Shaengarne, Shawford... and for our battle at the Palisade.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 55)}{380}{ctrl(npc).dialog_action(npc, pc, 43)} # resp: 12SHAWFO 93
+{465}{Thanks, Shawford.  Farewell. }{}{1}{}{0}{} # resp: 12SHAWFO 94
+
+{470}{I heard about your battle at the fortress - your coming to Targos has truly been our salvation.  To think, you have carried the battle from Targos' walls to the walls of the horde itself, then slayed their leader within his own fortress.  Now *that* is a tale that won't be long forgotten.  }{I heard about your battle at the fortress - your coming to Targos has truly been our salvation.  To think, you have carried the battle from Targos' walls to the walls of the horde itself, then slayed their leader within his own fortress.  Now *that* is a tale that won't be long forgotten.  }{}{}{}{} # phrase: 12SHAWFO 44
+{471}{I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words. }{}{1}{ctrl(npc).dialog_test(npc, pc, 56)}{380}{ctrl(npc).dialog_action(npc, pc, 44)} # resp: 12SHAWFO 95
+{472}{I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words. }{}{1}{ctrl(npc).dialog_test(npc, pc, 57)}{380}{ctrl(npc).dialog_action(npc, pc, 45)} # resp: 12SHAWFO 96
+{473}{I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words. }{}{1}{ctrl(npc).dialog_test(npc, pc, 58)}{380}{ctrl(npc).dialog_action(npc, pc, 46)} # resp: 12SHAWFO 97
+{474}{We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 59)}{380}{ctrl(npc).dialog_action(npc, pc, 47)} # resp: 12SHAWFO 98
+{475}{We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 60)}{380}{ctrl(npc).dialog_action(npc, pc, 48)} # resp: 12SHAWFO 99
+{476}{We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 61)}{380}{ctrl(npc).dialog_action(npc, pc, 49)} # resp: 12SHAWFO 100
+{477}{Thanks, Shawford.  Farewell. }{}{1}{}{0}{} # resp: 12SHAWFO 101

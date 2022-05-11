@@ -190,7 +190,9 @@ class AnimHumanFighter(AnimHumanoid):
 
 class AnimHumanFighterMale(AnimHumanFighter):
     @classmethod
-    def get_codes(cls): return ("FIGHTER_MALE_HUMAN", )
+    def get_codes(cls): 
+        return ("FIGHTER_MALE_HUMAN"
+            , "CLERIC_MALE_HUMAN_LOW") # IMPROVE CLERIC_MALE_HUMAN_LOW
 
 class AnimHumanFighterFemale(AnimHumanFighter):
     @classmethod

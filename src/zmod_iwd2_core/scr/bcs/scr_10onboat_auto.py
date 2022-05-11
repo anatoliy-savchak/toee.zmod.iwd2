@@ -5,7 +5,7 @@ import inf_scripting
 
 #### BCS ####
 class Script_10ONBOAT_Auto(inf_scripting.ScriptBase):
-	# AR1000 10HEDRON Hedron ScriptRace
+	# AR1000 10HEDRON Hedron ScriptRace (Combat Script)
 	
 	@classmethod
 	def do_execute(cls, self):

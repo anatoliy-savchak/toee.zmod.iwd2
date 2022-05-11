@@ -104,7 +104,7 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
     def produce_npc_appearance(self):
         self.anim = produce_anim.AnimBase.process(self.cre, self)
         if not self.anim:
-            raise Exception("No anim object!!")
+            raise Exception(f'No anim object for {self.cre["AnimationNameCalc"]}!!')
             
         self.writeline("def setup_appearance(self, npc):")
         self.indent()
@@ -271,7 +271,9 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.indent()
         items = self.cre["Items"]
         for item in items:
-            item_file_name = item["Item"]["Filename"]
+            item_file_name = None
+            if (item_item := item["Item"]):
+                item_file_name = item_item["Filename"]
             item_type = item["ItemTypeEval"]
             slot_name = item["SlotCode"]
             item_name = item["ItemNameEval"]
@@ -333,6 +335,8 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
             return
 
         def feat_pro_add_weapon(value_name: str, levels: list, weapons: list):
+            if not levels:
+                return
             value = self.cre[value_name]
             splitter_added = False
             for weapon in weapons:
@@ -437,7 +441,7 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         )
 
         # FeatToughness TODO
-        feat_pro_add_weapon("FeatToughness", ("")
+        feat_pro_add_weapon("FeatToughness", None
             , ["feat_toughness"]
         )
 

@@ -120,3 +120,35 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 
 	def run_daemon_script(self, on_creation = False):
 		return
+
+	# Sleep interface
+	def can_sleep(self):
+		return toee.SLEEP_IMPOSSIBLE
+
+	def place_encounters_initial(self):
+		self.setup_ambients()
+		self.place_npcs()
+		return
+
+	def setup_ambients(self):
+		self.setup_ambients_auto()
+		return
+
+	def setup_ambients_auto(self):
+		return
+
+	def place_npcs(self):
+		self.place_npcs_auto()
+		return
+
+	def place_npcs_auto(self):
+		return
+
+	def ambients_tick(self):
+		for handler in self.ambients:
+			handler.tick()
+		return
+
+	def heartbeat(self, npc):
+		#print("CtrlTargosDocks heartbeat")
+		return

@@ -25,6 +25,12 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         self.actor_dict = actor_dict
         self.ctrl_name = f'Ctrl_{self.cre_name}_{self.are_name}_{self.actor_name}_Auto'
         self.produce_imports(clear=make_new)
+        self.skip_script_general = False
+        self.skip_script_class = False
+        self.skip_script_race = False
+        self.skip_script_default = False
+        self.skip_script_specific = False
+        self.skip_script_special1 = False
         return
 
     def produce(self):
@@ -55,12 +61,18 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
 
             return
         self.indent()
-        write_script("ScriptGeneral", 'bcs_general')
-        write_script("ScriptClass", 'bcs_class')
-        write_script("ScriptRace", 'bcs_combat')
-        write_script("ScriptDefault", 'bcs_movement')
-        write_script("ScriptSpecific", 'bcs_team')
-        write_script("ScriptSpecial1", 'bcs_special_one')
+        if not self.skip_script_general:
+            write_script("ScriptGeneral", 'bcs_general')
+        if not self.skip_script_class:
+            write_script("ScriptClass", 'bcs_class')
+        if not self.skip_script_race:
+            write_script("ScriptRace", 'bcs_combat')
+        if not self.skip_script_default:
+            write_script("ScriptDefault", 'bcs_movement')
+        if not self.skip_script_specific:
+            write_script("ScriptSpecific", 'bcs_team')
+        if not self.skip_script_special1:
+            write_script("ScriptSpecial1", 'bcs_special_one')
         self.writeline('return')
         self.indent(False)
         self.indent(False)

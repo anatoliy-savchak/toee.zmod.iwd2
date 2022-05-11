@@ -32,7 +32,7 @@ def main():
         , temple_src_path = temple_src_path
     )
     doc.init(from_scratch=False)
-    if True:
+    if False:
         are_prod = doc.acquire_are_producer('AR1000')
         are_prod.skip_script_general = True
         are_prod.skip_script_class = True
@@ -44,6 +44,22 @@ def main():
         are_prod.produce_start()
         are_prod.produce_actor("Hedron")
         are_prod.produce_daemon(True)
+        #are_prod.produce()
+
+    if True:
+        are_prod = doc.acquire_are_producer('AR1201', True)
+        are_prod.skip_script_general = True
+        are_prod.skip_script_class = True
+        are_prod.skip_script_race = True
+        are_prod.skip_script_default = True
+        are_prod.skip_script_specific = True
+        are_prod.skip_script_special1 = True
+        are_prod.skip_script_daemon = False
+        are_prod.produce()
+        #are_prod.produce_start()
+        #are_prod.produce_actor("Hedron")
+        #are_prod.daemon.produce(True)
+        #are_prod.daemon.save()
         #are_prod.produce()
 
     if False:

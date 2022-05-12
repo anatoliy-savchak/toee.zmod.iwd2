@@ -94,6 +94,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
         self.writeline('def do_execute(cls, self, continuous = False, block_from = None, code_from = None):')
         self.indent()
         self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
+        self.writeline("debug.breakp('')")
 
         self.writeline('while True:')
         self.indent()
@@ -128,7 +129,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
 
             self.writeline(f'if not block_from or block_from >= {block_index}:')
             self.indent()
-            self.writeline(f'break_ = cls.{block_name}(self, code_from if code_from and block_from == {block_index} else None)')
+            self.writeline(f'break_ = cls.{block_name}(self, continuous=continuous, code_from=code_from if code_from and block_from == {block_index} else None)')
             self.writeline('if (break_ > 1) or (not continuous and break_): break')
             self.indent(False)
             self.writeline()
@@ -155,15 +156,29 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             self.writeline(f'def {block_name}(cls, self, code_from = None):')
             self.indent()
             self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
+            self.writeline('d = {"check": None}')
+            self.writeline('def do_check():')
+            self.indent()
+            self.writeline('if d["check"] is None:')
+            self.indent()
             for line in if_lines:
                 self.writeline(f'# {line.strip()}')
 
             for line in if_lines_translated:
                 self.writeline(f'{line}')
             self.indent()
+            self.writeline('d["check"] = 1')
+            self.indent(False)
+            self.writeline('else: d["check"] = 0')
+            self.indent(False)
+            self.writeline('return d["check"]')
+            self.indent(False)
+            self.writeline()
 
             for line in resp_lines:
                 self.writeline(f'# {line.strip()}')
+
+            self.writeline()
 
             #block["subs"] = list()
             sub_index = 1
@@ -179,31 +194,44 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
                     if breaks_after:
                         subs.append(sub)
                         sub_index +=1
-                        sub = {"name": f'{block_name}_code_{sub_index:02d}', "lines_translated": list()}
+                        sub = {"name": f'{block_name}_code_{sub_index:02d}', "lines_translated": list(), "sub_index": sub_index}
                 #self.writeline(f'{line}')
 
             if sub:
                 subs.append(sub)
 
             for sub in subs:
-                self.writeline(f'cls.{sub["name"]}(self)')
+                sub_index = sub["sub_index"]
+                self.writeline(f'if (code_from is None and do_check()) or (code_from <= {sub_index}):')
+                self.indent()
+                self.writeline(f'cls.{sub["name"]}(self, continuous=continuous)')
+                self.indent(False)
+                self.writeline()
 
             if not is_continue:
-                self.writeline('return 1 # break further blocks')
+                self.writeline('result = 1 # break further blocks')
             else:
-                self.writeline('return 0 # continue() - pass further blocks')
+                self.writeline('result = 0 # continue() - pass further blocks')
+            self.writeline('if not code_from is None:')
+            self.indent()
+            self.writeline('result = 1')
             self.indent(False)
-
-            self.writeline('return False')
-            self.writeline('')
+            self.writeline('elif d["check"]:')
+            self.indent()
+            self.writeline('result = 1')
+            self.indent(False)
+            self.writeline('return result')
+            self.indent(False)
+            self.writeline()
             self.indent(False)
 
             for sub in subs:
+                sub_result = 0
                 self.writeline('@classmethod')
-                self.writeline(f'def {sub["name"]}(cls, self):')
+                self.writeline(f'def {sub["name"]}(cls, self, continuous = False):')
                 self.indent()
                 self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
-                self.writeline('')
+                self.writeline()
                 lines_translated = sub["lines_translated"]
                 for line in lines_translated:
                     if isinstance(line, dict):
@@ -211,6 +239,9 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
                 self.writeline()
 
                 for line in lines_translated:
+                    is_post_code = line.get("is_post_code")
+                    if is_post_code:
+                        sub_result = 2
                     for sline in line["instructions"]:
                         self.writeline(f'{sline["line"]}')
                 self.writeline('return')

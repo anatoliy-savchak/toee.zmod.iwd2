@@ -728,7 +728,7 @@ class ScriptTranFuncWait(ScriptTranFuncs):
         if not is_complex:
             line = f'self.i{func_name}({amount})'
         else:
-            line = f'self.i{func_name}(time={amount}, locus=self.locus_make_block_code(script_class=cls, block=1, code=1, continuous=continuous))'
+            line = f'self.i{func_name}(time={amount}, locus=locus)'
             instructions = list()
             instructions.append({"line": line})
             line = {"instructions": instructions, "context": self.context, "breaks_after": 1, "is_post_code": 1}

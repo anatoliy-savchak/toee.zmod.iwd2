@@ -94,7 +94,8 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
         self.writeline('def do_execute(cls, self, continuous = False, block_from = None, code_from = None):')
         self.indent()
         self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
-        self.writeline("debug.breakp('')")
+        self.writeline('locus = self.locus_make()')
+        self.writeline('locus.update({"script_class": cls, "continuous": continuous})')
 
         self.writeline('while True:')
         self.indent()
@@ -129,7 +130,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
 
             self.writeline(f'if not block_from or block_from >= {block_index}:')
             self.indent()
-            self.writeline(f'break_ = cls.{block_name}(self, continuous=continuous, code_from=code_from if code_from and block_from == {block_index} else None)')
+            self.writeline(f'break_ = cls.{block_name}(self, locus, code_from=code_from if code_from and block_from == {block_index} else None)')
             self.writeline('if (break_ > 1) or (not continuous and break_): break')
             self.indent(False)
             self.writeline()
@@ -153,9 +154,10 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             is_continue = block["is_continue"]
 
             self.writeline('@classmethod')
-            self.writeline(f'def {block_name}(cls, self, code_from = None):')
+            self.writeline(f'def {block_name}(cls, self, locus, code_from = None):')
             self.indent()
             self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
+            self.writeline(f'locus["block"] = {block_index}')
             self.writeline('d = {"check": None}')
             self.writeline('def do_check():')
             self.indent()
@@ -182,7 +184,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
 
             #block["subs"] = list()
             sub_index = 1
-            sub = {"name": f'{block_name}_code_{sub_index:02d}', "lines_translated": list()}
+            sub = {"name": f'{block_name}_code_{sub_index:02d}', "lines_translated": list(), "sub_index": sub_index}
             for line in resp_lines_translated:
                 if isinstance(line, str):
                     sub["lines_translated"].append(line)
@@ -204,7 +206,8 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
                 sub_index = sub["sub_index"]
                 self.writeline(f'if (code_from is None and do_check()) or (code_from <= {sub_index}):')
                 self.indent()
-                self.writeline(f'cls.{sub["name"]}(self, continuous=continuous)')
+                self.writeline(f'break_ = cls.{sub["name"]}(self, locus)')
+                self.writeline('if break_ == 2: return break_')
                 self.indent(False)
                 self.writeline()
 
@@ -223,14 +226,15 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             self.writeline('return result')
             self.indent(False)
             self.writeline()
-            self.indent(False)
 
             for sub in subs:
+                sub_index = sub["sub_index"]
                 sub_result = 0
                 self.writeline('@classmethod')
-                self.writeline(f'def {sub["name"]}(cls, self, continuous = False):')
+                self.writeline(f'def {sub["name"]}(cls, self, locus):')
                 self.indent()
                 self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
+                self.writeline(f'locus["code"] = {sub_index}')
                 self.writeline()
                 lines_translated = sub["lines_translated"]
                 for line in lines_translated:
@@ -244,7 +248,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
                         sub_result = 2
                     for sline in line["instructions"]:
                         self.writeline(f'{sline["line"]}')
-                self.writeline('return')
+                self.writeline(f'return {sub_result}')
                 self.writeline()
                 self.indent(False)
 

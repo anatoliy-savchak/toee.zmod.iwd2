@@ -11,79 +11,116 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 	@classmethod
 	def do_execute(cls, self, continuous = False, block_from = None, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus = self.locus_make()
+		locus.update({"script_class": cls, "continuous": continuous})
 		while True:
 			if not block_from or block_from >= 1:
-				break_ = cls.do_execute_block_01(self, code_from if code_from and block_from == 1 else None)
+				break_ = cls.do_execute_block_01(self, locus, code_from=code_from if code_from and block_from == 1 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
 			if not block_from or block_from >= 2:
-				break_ = cls.do_execute_block_02(self, code_from if code_from and block_from == 2 else None)
+				break_ = cls.do_execute_block_02(self, locus, code_from=code_from if code_from and block_from == 2 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
 			if not block_from or block_from >= 3:
-				break_ = cls.do_execute_block_03(self, code_from if code_from and block_from == 3 else None)
+				break_ = cls.do_execute_block_03(self, locus, code_from=code_from if code_from and block_from == 3 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
 			if not block_from or block_from >= 4:
-				break_ = cls.do_execute_block_04(self, code_from if code_from and block_from == 4 else None)
+				break_ = cls.do_execute_block_04(self, locus, code_from=code_from if code_from and block_from == 4 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
 			if not block_from or block_from >= 5:
-				break_ = cls.do_execute_block_05(self, code_from if code_from and block_from == 5 else None)
+				break_ = cls.do_execute_block_05(self, locus, code_from=code_from if code_from and block_from == 5 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
 			if not block_from or block_from >= 6:
-				break_ = cls.do_execute_block_06(self, code_from if code_from and block_from == 6 else None)
+				break_ = cls.do_execute_block_06(self, locus, code_from=code_from if code_from and block_from == 6 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
 			if not block_from or block_from >= 7:
-				break_ = cls.do_execute_block_07(self, code_from if code_from and block_from == 7 else None)
+				break_ = cls.do_execute_block_07(self, locus, code_from=code_from if code_from and block_from == 7 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
 			if not block_from or block_from >= 8:
-				break_ = cls.do_execute_block_08(self, code_from if code_from and block_from == 8 else None)
+				break_ = cls.do_execute_block_08(self, locus, code_from=code_from if code_from and block_from == 8 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
 			break # while
 		return
 		
 	@classmethod
-	def do_execute_block_01(cls, self, code_from = None):
+	def do_execute_block_01(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		# True()
-		if True:
-			# CutSceneId("SWIFT_THOMAS_HIDDEN")
-			# HideGUI()
-			# MultiPlayerSync()
-			# MoveViewObject(Myself,INSTANT)
-			# Wait(1)
-			# HideCreature(Myself,FALSE)
-			# SmallWait(12)
-			# SetGlobal("Goblins_Attack_Palisade","GLOBAL",1)
-			# MoveViewObject("Shawford_Crale",VERY_FAST)
-			# MoveToPoint([448.295])
-			# FaceObject("Shawford_Crale")
-			# FloatMessage(Myself,16357)  // "Sir!  The goblins are at the Palisade!"
-			# Wait(3)
-			# StartCutScene("12cWar1")
-			# Wait(2)
-			# FloatMessage(Myself,16820)  // "Yes, sir!"
-			# SmallWait(4)
-			# MoveToPoint([219.417])
-			# DestroySelf()
-			cls.do_execute_block_01_code_01(self)
-			cls.do_execute_block_01_code_02(self)
-			cls.do_execute_block_01_code_03(self)
-			cls.do_execute_block_01_code_04(self)
-			cls.do_execute_block_01_code_05(self)
-			cls.do_execute_block_01_code_06(self)
-			cls.do_execute_block_01_code_07(self)
-			return 1 # break further blocks
-		return False
+		locus["block"] = 1
+		d = {"check": None}
+		def do_check():
+			if d["check"] is None:
+				# True()
+				if True:
+					d["check"] = 1
+				else: d["check"] = 0
+			return d["check"]
 		
+		# CutSceneId("SWIFT_THOMAS_HIDDEN")
+		# HideGUI()
+		# MultiPlayerSync()
+		# MoveViewObject(Myself,INSTANT)
+		# Wait(1)
+		# HideCreature(Myself,FALSE)
+		# SmallWait(12)
+		# SetGlobal("Goblins_Attack_Palisade","GLOBAL",1)
+		# MoveViewObject("Shawford_Crale",VERY_FAST)
+		# MoveToPoint([448.295])
+		# FaceObject("Shawford_Crale")
+		# FloatMessage(Myself,16357)  // "Sir!  The goblins are at the Palisade!"
+		# Wait(3)
+		# StartCutScene("12cWar1")
+		# Wait(2)
+		# FloatMessage(Myself,16820)  // "Yes, sir!"
+		# SmallWait(4)
+		# MoveToPoint([219.417])
+		# DestroySelf()
+		
+		if (code_from is None and do_check()) or (code_from <= 1):
+			break_ = cls.do_execute_block_01_code_01(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_01_code_02(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 3):
+			break_ = cls.do_execute_block_01_code_03(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 4):
+			break_ = cls.do_execute_block_01_code_04(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 5):
+			break_ = cls.do_execute_block_01_code_05(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 6):
+			break_ = cls.do_execute_block_01_code_06(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 7):
+			break_ = cls.do_execute_block_01_code_07(self, locus)
+			if break_ == 2: return break_
+		
+		result = 1 # break further blocks
+		if not code_from is None:
+			result = 1
+		elif d["check"]:
+			result = 1
+		return result
+	
 	@classmethod
-	def do_execute_block_01_code_01(cls, self):
+	def do_execute_block_01_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 1
 		
 		# CutSceneId("SWIFT_THOMAS_HIDDEN")
 		# HideGUI()
@@ -95,23 +132,25 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		self.iHideGUI()
 		self.iMultiPlayerSync()
 		self.iMoveViewObject("Myself", "INSTANT")
-		self.iWait(1)
-		return
+		self.iWait(time=1, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_01_code_02(cls, self):
+	def do_execute_block_01_code_02(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
 		
 		# HideCreature(Myself,FALSE)
 		# SmallWait(12)
 		
 		self.iHideCreature("Myself", False)
-		self.iSmallWait(12)
-		return
+		self.iSmallWait(time=12, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_01_code_03(cls, self):
+	def do_execute_block_01_code_03(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 3
 		
 		# SetGlobal("Goblins_Attack_Palisade","GLOBAL",1)
 		# MoveViewObject("Shawford_Crale",VERY_FAST)
@@ -125,92 +164,136 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		self.iMoveToPoint("[448.295]")
 		self.iFaceObject("'Shawford_Crale'")
 		self.iFloatMessage("Myself", 16357)
-		self.iWait(3)
-		return
+		self.iWait(time=3, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_01_code_04(cls, self):
+	def do_execute_block_01_code_04(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 4
 		
 		# StartCutScene("12cWar1")
 		
 		self.iStartCutScene(scr_12cwar1.Script_12cWar1)
-		return
+		return 0
 		
 	@classmethod
-	def do_execute_block_01_code_05(cls, self):
+	def do_execute_block_01_code_05(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 5
 		
 		# Wait(2)
 		
-		self.iWait(2)
-		return
+		self.iWait(time=2, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_01_code_06(cls, self):
+	def do_execute_block_01_code_06(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 6
 		
 		# FloatMessage(Myself,16820)  // "Yes, sir!"
 		# SmallWait(4)
 		
 		self.iFloatMessage("Myself", 16820)
-		self.iSmallWait(4)
-		return
+		self.iSmallWait(time=4, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_01_code_07(cls, self):
+	def do_execute_block_01_code_07(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 7
 		
 		# MoveToPoint([219.417])
 		# DestroySelf()
 		
 		self.iMoveToPoint("[219.417]")
 		self.iDestroySelf()
-		return
+		return 0
 		
 	@classmethod
-	def do_execute_block_02(cls, self, code_from = None):
+	def do_execute_block_02(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		# True()
-		if True:
-			# CutSceneId("Shawford_Crale")
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			cls.do_execute_block_02_code_01(self)
-			return 1 # break further blocks
-		return False
+		locus["block"] = 2
+		d = {"check": None}
+		def do_check():
+			if d["check"] is None:
+				# True()
+				if True:
+					d["check"] = 1
+				else: d["check"] = 0
+			return d["check"]
 		
+		# CutSceneId("Shawford_Crale")
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		
+		if (code_from is None and do_check()) or (code_from <= 1):
+			break_ = cls.do_execute_block_02_code_01(self, locus)
+			if break_ == 2: return break_
+		
+		result = 1 # break further blocks
+		if not code_from is None:
+			result = 1
+		elif d["check"]:
+			result = 1
+		return result
+	
 	@classmethod
-	def do_execute_block_02_code_01(cls, self):
+	def do_execute_block_02_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 1
 		
 		# CutSceneId("Shawford_Crale")
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
 		self.iCutSceneId("'Shawford_Crale'")
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		return
+		return 0
 		
 	@classmethod
-	def do_execute_block_03(cls, self, code_from = None):
+	def do_execute_block_03(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		# True()
-		if True:
-			# CutSceneId(Player1)
-			# SmallWaitRandom(1,3)
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			# Wait(1)
-			# SmallWait(5)
-			# MoveToPoint([582.302])
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			cls.do_execute_block_03_code_01(self)
-			cls.do_execute_block_03_code_02(self)
-			cls.do_execute_block_03_code_03(self)
-			return 1 # break further blocks
-		return False
+		locus["block"] = 3
+		d = {"check": None}
+		def do_check():
+			if d["check"] is None:
+				# True()
+				if True:
+					d["check"] = 1
+				else: d["check"] = 0
+			return d["check"]
 		
+		# CutSceneId(Player1)
+		# SmallWaitRandom(1,3)
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		# Wait(1)
+		# SmallWait(5)
+		# MoveToPoint([582.302])
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		
+		if (code_from is None and do_check()) or (code_from <= 1):
+			break_ = cls.do_execute_block_03_code_01(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_03_code_02(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 3):
+			break_ = cls.do_execute_block_03_code_03(self, locus)
+			if break_ == 2: return break_
+		
+		result = 1 # break further blocks
+		if not code_from is None:
+			result = 1
+		elif d["check"]:
+			result = 1
+		return result
+	
 	@classmethod
-	def do_execute_block_03_code_01(cls, self):
+	def do_execute_block_03_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 1
 		
 		# CutSceneId(Player1)
 		# SmallWaitRandom(1,3)
@@ -220,50 +303,75 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		self.iCutSceneId("Player1")
 		self.iSmallWaitRandom(1, 3)
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		self.iWait(1)
-		return
+		self.iWait(time=1, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_03_code_02(cls, self):
+	def do_execute_block_03_code_02(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
 		
 		# SmallWait(5)
 		
-		self.iSmallWait(5)
-		return
+		self.iSmallWait(time=5, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_03_code_03(cls, self):
+	def do_execute_block_03_code_03(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 3
 		
 		# MoveToPoint([582.302])
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
 		self.iMoveToPoint("[582.302]")
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		return
+		return 0
 		
 	@classmethod
-	def do_execute_block_04(cls, self, code_from = None):
+	def do_execute_block_04(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		# True()
-		if True:
-			# CutSceneId(Player2)
-			# SmallWaitRandom(1,3)
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			# Wait(1)
-			# SmallWait(5)
-			# MoveToPoint([566.351])
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			cls.do_execute_block_04_code_01(self)
-			cls.do_execute_block_04_code_02(self)
-			cls.do_execute_block_04_code_03(self)
-			return 1 # break further blocks
-		return False
+		locus["block"] = 4
+		d = {"check": None}
+		def do_check():
+			if d["check"] is None:
+				# True()
+				if True:
+					d["check"] = 1
+				else: d["check"] = 0
+			return d["check"]
 		
+		# CutSceneId(Player2)
+		# SmallWaitRandom(1,3)
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		# Wait(1)
+		# SmallWait(5)
+		# MoveToPoint([566.351])
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		
+		if (code_from is None and do_check()) or (code_from <= 1):
+			break_ = cls.do_execute_block_04_code_01(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_04_code_02(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 3):
+			break_ = cls.do_execute_block_04_code_03(self, locus)
+			if break_ == 2: return break_
+		
+		result = 1 # break further blocks
+		if not code_from is None:
+			result = 1
+		elif d["check"]:
+			result = 1
+		return result
+	
 	@classmethod
-	def do_execute_block_04_code_01(cls, self):
+	def do_execute_block_04_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 1
 		
 		# CutSceneId(Player2)
 		# SmallWaitRandom(1,3)
@@ -273,50 +381,75 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		self.iCutSceneId("Player2")
 		self.iSmallWaitRandom(1, 3)
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		self.iWait(1)
-		return
+		self.iWait(time=1, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_04_code_02(cls, self):
+	def do_execute_block_04_code_02(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
 		
 		# SmallWait(5)
 		
-		self.iSmallWait(5)
-		return
+		self.iSmallWait(time=5, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_04_code_03(cls, self):
+	def do_execute_block_04_code_03(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 3
 		
 		# MoveToPoint([566.351])
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
 		self.iMoveToPoint("[566.351]")
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		return
+		return 0
 		
 	@classmethod
-	def do_execute_block_05(cls, self, code_from = None):
+	def do_execute_block_05(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		# True()
-		if True:
-			# CutSceneId(Player3)
-			# SmallWaitRandom(1,3)
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			# Wait(1)
-			# SmallWait(5)
-			# MoveToPoint([519.360])
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			cls.do_execute_block_05_code_01(self)
-			cls.do_execute_block_05_code_02(self)
-			cls.do_execute_block_05_code_03(self)
-			return 1 # break further blocks
-		return False
+		locus["block"] = 5
+		d = {"check": None}
+		def do_check():
+			if d["check"] is None:
+				# True()
+				if True:
+					d["check"] = 1
+				else: d["check"] = 0
+			return d["check"]
 		
+		# CutSceneId(Player3)
+		# SmallWaitRandom(1,3)
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		# Wait(1)
+		# SmallWait(5)
+		# MoveToPoint([519.360])
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		
+		if (code_from is None and do_check()) or (code_from <= 1):
+			break_ = cls.do_execute_block_05_code_01(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_05_code_02(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 3):
+			break_ = cls.do_execute_block_05_code_03(self, locus)
+			if break_ == 2: return break_
+		
+		result = 1 # break further blocks
+		if not code_from is None:
+			result = 1
+		elif d["check"]:
+			result = 1
+		return result
+	
 	@classmethod
-	def do_execute_block_05_code_01(cls, self):
+	def do_execute_block_05_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 1
 		
 		# CutSceneId(Player3)
 		# SmallWaitRandom(1,3)
@@ -326,50 +459,75 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		self.iCutSceneId("Player3")
 		self.iSmallWaitRandom(1, 3)
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		self.iWait(1)
-		return
+		self.iWait(time=1, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_05_code_02(cls, self):
+	def do_execute_block_05_code_02(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
 		
 		# SmallWait(5)
 		
-		self.iSmallWait(5)
-		return
+		self.iSmallWait(time=5, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_05_code_03(cls, self):
+	def do_execute_block_05_code_03(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 3
 		
 		# MoveToPoint([519.360])
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
 		self.iMoveToPoint("[519.360]")
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		return
+		return 0
 		
 	@classmethod
-	def do_execute_block_06(cls, self, code_from = None):
+	def do_execute_block_06(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		# True()
-		if True:
-			# CutSceneId(Player4)
-			# SmallWaitRandom(1,3)
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			# Wait(1)
-			# SmallWait(5)
-			# MoveToPoint([480.407])
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			cls.do_execute_block_06_code_01(self)
-			cls.do_execute_block_06_code_02(self)
-			cls.do_execute_block_06_code_03(self)
-			return 1 # break further blocks
-		return False
+		locus["block"] = 6
+		d = {"check": None}
+		def do_check():
+			if d["check"] is None:
+				# True()
+				if True:
+					d["check"] = 1
+				else: d["check"] = 0
+			return d["check"]
 		
+		# CutSceneId(Player4)
+		# SmallWaitRandom(1,3)
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		# Wait(1)
+		# SmallWait(5)
+		# MoveToPoint([480.407])
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		
+		if (code_from is None and do_check()) or (code_from <= 1):
+			break_ = cls.do_execute_block_06_code_01(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_06_code_02(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 3):
+			break_ = cls.do_execute_block_06_code_03(self, locus)
+			if break_ == 2: return break_
+		
+		result = 1 # break further blocks
+		if not code_from is None:
+			result = 1
+		elif d["check"]:
+			result = 1
+		return result
+	
 	@classmethod
-	def do_execute_block_06_code_01(cls, self):
+	def do_execute_block_06_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 1
 		
 		# CutSceneId(Player4)
 		# SmallWaitRandom(1,3)
@@ -379,50 +537,75 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		self.iCutSceneId("Player4")
 		self.iSmallWaitRandom(1, 3)
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		self.iWait(1)
-		return
+		self.iWait(time=1, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_06_code_02(cls, self):
+	def do_execute_block_06_code_02(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
 		
 		# SmallWait(5)
 		
-		self.iSmallWait(5)
-		return
+		self.iSmallWait(time=5, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_06_code_03(cls, self):
+	def do_execute_block_06_code_03(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 3
 		
 		# MoveToPoint([480.407])
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
 		self.iMoveToPoint("[480.407]")
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		return
+		return 0
 		
 	@classmethod
-	def do_execute_block_07(cls, self, code_from = None):
+	def do_execute_block_07(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		# True()
-		if True:
-			# CutSceneId(Player5)
-			# SmallWaitRandom(1,3)
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			# Wait(1)
-			# SmallWait(5)
-			# MoveToPoint([542.419])
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			cls.do_execute_block_07_code_01(self)
-			cls.do_execute_block_07_code_02(self)
-			cls.do_execute_block_07_code_03(self)
-			return 1 # break further blocks
-		return False
+		locus["block"] = 7
+		d = {"check": None}
+		def do_check():
+			if d["check"] is None:
+				# True()
+				if True:
+					d["check"] = 1
+				else: d["check"] = 0
+			return d["check"]
 		
+		# CutSceneId(Player5)
+		# SmallWaitRandom(1,3)
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		# Wait(1)
+		# SmallWait(5)
+		# MoveToPoint([542.419])
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		
+		if (code_from is None and do_check()) or (code_from <= 1):
+			break_ = cls.do_execute_block_07_code_01(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_07_code_02(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 3):
+			break_ = cls.do_execute_block_07_code_03(self, locus)
+			if break_ == 2: return break_
+		
+		result = 1 # break further blocks
+		if not code_from is None:
+			result = 1
+		elif d["check"]:
+			result = 1
+		return result
+	
 	@classmethod
-	def do_execute_block_07_code_01(cls, self):
+	def do_execute_block_07_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 1
 		
 		# CutSceneId(Player5)
 		# SmallWaitRandom(1,3)
@@ -432,50 +615,75 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		self.iCutSceneId("Player5")
 		self.iSmallWaitRandom(1, 3)
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		self.iWait(1)
-		return
+		self.iWait(time=1, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_07_code_02(cls, self):
+	def do_execute_block_07_code_02(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
 		
 		# SmallWait(5)
 		
-		self.iSmallWait(5)
-		return
+		self.iSmallWait(time=5, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_07_code_03(cls, self):
+	def do_execute_block_07_code_03(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 3
 		
 		# MoveToPoint([542.419])
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
 		self.iMoveToPoint("[542.419]")
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		return
+		return 0
 		
 	@classmethod
-	def do_execute_block_08(cls, self, code_from = None):
+	def do_execute_block_08(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		# True()
-		if True:
-			# CutSceneId(Player6)
-			# SmallWaitRandom(1,3)
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			# Wait(1)
-			# SmallWait(5)
-			# MoveToPoint([602.388])
-			# FaceObject("SWIFT_THOMAS_HIDDEN")
-			cls.do_execute_block_08_code_01(self)
-			cls.do_execute_block_08_code_02(self)
-			cls.do_execute_block_08_code_03(self)
-			return 1 # break further blocks
-		return False
+		locus["block"] = 8
+		d = {"check": None}
+		def do_check():
+			if d["check"] is None:
+				# True()
+				if True:
+					d["check"] = 1
+				else: d["check"] = 0
+			return d["check"]
 		
+		# CutSceneId(Player6)
+		# SmallWaitRandom(1,3)
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		# Wait(1)
+		# SmallWait(5)
+		# MoveToPoint([602.388])
+		# FaceObject("SWIFT_THOMAS_HIDDEN")
+		
+		if (code_from is None and do_check()) or (code_from <= 1):
+			break_ = cls.do_execute_block_08_code_01(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_08_code_02(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 3):
+			break_ = cls.do_execute_block_08_code_03(self, locus)
+			if break_ == 2: return break_
+		
+		result = 1 # break further blocks
+		if not code_from is None:
+			result = 1
+		elif d["check"]:
+			result = 1
+		return result
+	
 	@classmethod
-	def do_execute_block_08_code_01(cls, self):
+	def do_execute_block_08_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 1
 		
 		# CutSceneId(Player6)
 		# SmallWaitRandom(1,3)
@@ -485,26 +693,28 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		self.iCutSceneId("Player6")
 		self.iSmallWaitRandom(1, 3)
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		self.iWait(1)
-		return
+		self.iWait(time=1, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_08_code_02(cls, self):
+	def do_execute_block_08_code_02(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
 		
 		# SmallWait(5)
 		
-		self.iSmallWait(5)
-		return
+		self.iSmallWait(time=5, locus=locus)
+		return 2
 		
 	@classmethod
-	def do_execute_block_08_code_03(cls, self):
+	def do_execute_block_08_code_03(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 3
 		
 		# MoveToPoint([602.388])
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
 		self.iMoveToPoint("[602.388]")
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
-		return
+		return 0
 		

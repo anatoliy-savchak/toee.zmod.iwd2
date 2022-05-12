@@ -64,8 +64,8 @@ def strip_quotes(s, notify = False):
 			return s
 	return
 
-def _locus_timed_wait(timed_wait_id, locus_str):
-	locus = json.loads(locus_str)
+def _locus_timed_wait(timed_wait_id, locus):
+	#locus = json.loads(locus_str)
 	inf = InfScriptSupport.locus_get_inf(locus, timed_wait_id)
 	if inf:
 		inf.locus_run(locus)
@@ -259,8 +259,16 @@ class InfScriptSupport:
 			return critter_race in race_ids
 		return
 
-	def make_locus(): 
-		return dict()
+	def locus_make(self):
+		return {}
+
+	def locus_make_block_code(self, script_class, block, code, continuous):
+		locus = self.locus_make()
+		locus["script_class"] = script_class
+		locus["block"] = block
+		locus["code"] = code
+		locus["continuous"] = continuous
+		return locus
 
 	@classmethod
 	def locus_get_inf(cls, locus, timed_wait_id):
@@ -268,18 +276,31 @@ class InfScriptSupport:
 		assert isinstance(daemon, InfScriptSupportDaemon)
 		return daemon
 
+	@dump_args
 	def locus_run(self, locus):
 		assert isinstance(locus, dict)
+		self.get_script_vars()["timed_wait"] = None
+
 		script_class = locus["script_class"]
 		assert isinstance(script_class, ScriptBase)
-		script_class.do_execute()
+
+		block = locus["block"]
+		code = locus["code"]
+		continuous = locus["continuous"]
+		code_from = code + 1
+		script_class.do_execute(self, continuous=continuous, block_from=block, code_from=code_from)
 		return
 
+	@dump_args
 	def do_wait(self, time_ms, locus):
-		locus_str = json.dumps(locus)
+		#locus_str = json.dumps(locus)
+		print('locus: {}'.format(locus))
+		locus_copy = dict()
+		for key, value in locus.iteritems():
+			locus_copy[key] = value
 		timed_wait_id = str(uuid.uuid4())
 		self.get_script_vars()["timed_wait"] = timed_wait_id
-		toee.game.timevent_add(_locus_timed_wait, (timed_wait_id, locus_str), time_ms, 1)
+		toee.game.timevent_add(_locus_timed_wait, (timed_wait_id, locus_copy), time_ms, 1)
 		return
 
 	########## TRIGGERS ##########
@@ -2297,12 +2318,12 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iSmallWait(self, time):
+	def iSmallWait(self, time, locus):
 		"""
 		SmallWait(I:Time*)
 		This action is similar to Wait(), it causes a delay in script processing. The time is measured in AI updates (which default to 15 per second)
 		"""
-		self.get_context().do_wait(1000*time // 15)
+		self.get_context().do_wait(1000*time // 15, locus)
 		return
 	
 	@dump_args
@@ -2523,11 +2544,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iWait(self, time):
+	def iWait(self, time, locus):
 		"""
 		Wait(I:Time*)
 		"""
-		self.get_context().do_wait(time)
+		self.get_context().do_wait(time * 1000, locus)
 		return
 	
 	@dump_args

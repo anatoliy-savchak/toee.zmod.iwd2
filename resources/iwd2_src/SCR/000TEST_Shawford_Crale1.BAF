@@ -1,0 +1,11 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		StartCutSceneMode()
+		CutSceneId("Shawford_Crale")
+		FloatMessage(Myself,16360)  // "Order the gate into town sealed!  Sound the alarm!"
+		Wait(5)
+		FloatMessage(Myself,16822)  // "Everyone!  To arms!  To arms!"
+		EndCutSceneMode()
+END

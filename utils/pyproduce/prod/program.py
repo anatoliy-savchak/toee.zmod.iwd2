@@ -13,7 +13,7 @@ src_dir = '../../resources/iwd2_src'
 core_dir = '../../src/zmod_iwd2_core'
 module_dir = '../../src/zmod_iwd2'
 wav_dir = r'D:\IE\Resources\IWD2\WAV'
-baf_dir = r'D:\IE\Resources\IWD2\SCR'
+baf_dir = rf'{src_dir}/SCR'
 bam_dir = r'D:\IE\Resources\IWD2\BAM'
 protos_paths = fr'D:\Temple\Temple of Elemental Evil.template\data\rules\protos.tab;D:\Dev.Home\GitHub\anatoliy-savchak\TemplePlus\tpdatasrc\tpgamefiles\rules\protos;{core_dir}/rules/protos'
 temple_src_path = r'../../../TemplePlus'
@@ -48,10 +48,10 @@ def main():
         #are_prod.produce()
 
     if True:
-        are_prod = doc.acquire_are_producer('AR1201', True)
-        are_prod.skip_script_general = False
-        are_prod.skip_script_class = False
-        are_prod.skip_script_race = False
+        are_prod = doc.acquire_are_producer('AR1201', False)
+        are_prod.skip_script_general = True
+        are_prod.skip_script_class = True
+        are_prod.skip_script_race = True
         are_prod.skip_script_default = True
         are_prod.skip_script_specific = True
         are_prod.skip_script_special1 = True
@@ -59,7 +59,7 @@ def main():
         #are_prod.produce()
         are_prod.produce_start()
         are_prod.produce_actor("Shawford_Crale")
-        are_prod.daemon.produce(False)
+        are_prod.daemon.produce(False, '000TEST_Shawford_Crale1')
         are_prod.daemon.save()
 
     if False:

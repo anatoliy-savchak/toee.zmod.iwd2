@@ -708,7 +708,7 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			# StartCutSceneMode()
 			self.iStartCutSceneMode()
 			# StartCutScene("12cWar2")
-			self.iStartCutScene(scr_12cwar2.Script_12cWar2)
+			self.iStartCutScenePost(scr_12cwar2.Script_12cWar2)
 			# 351: Did you hear that?
 			
 		elif index == 3:
@@ -717,7 +717,7 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			# StartCutSceneMode()
 			self.iStartCutSceneMode()
 			# StartCutScene("12cWar0")
-			self.iStartCutScene(scr_12cwar0.Script_12cWar0)
+			self.iStartCutScenePost(scr_12cwar0.Script_12cWar0)
 			# 352: Did you hear that?
 			
 		elif index == 4:
@@ -844,7 +844,7 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			# StartCutSceneMode()
 			self.iStartCutSceneMode()
 			# StartCutScene("12cWar2")
-			self.iStartCutScene(scr_12cwar2.Script_12cWar2)
+			self.iStartCutScenePost(scr_12cwar2.Script_12cWar2)
 			# 291: Did you hear that?
 			
 		elif index == 27:
@@ -853,7 +853,7 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			# StartCutSceneMode()
 			self.iStartCutSceneMode()
 			# StartCutScene("12cWar0")
-			self.iStartCutScene(scr_12cwar0.Script_12cWar0)
+			self.iStartCutScenePost(scr_12cwar0.Script_12cWar0)
 			# 292: Did you hear that?
 			
 		elif index == 28:

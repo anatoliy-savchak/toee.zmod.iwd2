@@ -6,7 +6,6 @@ import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2, ctrl_d
 import utils_journal as uj, inf_scripting
 #### IMPORTS ####
 import py12012_ar1201_npc_classes
-from bcs import scr_00aatgn
 #### END IMPORTS ####
 
 #### GVARS ####
@@ -26,6 +25,5 @@ def cs(): return ctrl_daemon.gdc()
 #### NPCS ####
 class Ctrl_12SHAWFO_AR1201_Shawford_Crale_Auto(py12012_ar1201_npc_classes.Ctrl_12SHAWFO): # 12SHAWFO 
 	def setup_bcs(self):
-		self.vars["bcs_combat"] = scr_00aatgn.Script_00AATGN
 		return
 

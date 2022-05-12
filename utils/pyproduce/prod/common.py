@@ -91,3 +91,17 @@ def strip_quotes(s, notify = False):
 		else:
 			return s
 	return
+
+def parse_mes_lines(lines: list, make_key_int: bool = False) -> dict:
+    result = dict()
+    for line in lines:
+        line = str(line)
+        if not line.startswith('{'): continue
+        line = line.replace('\n', '')
+        _, code_, value_ = line.split('{', 2)
+        code, _ = code_.split('}', 2)
+        value, _ = value_.split('}', 2)
+        if make_key_int:
+            code = int(code)
+        result[code] = value
+    return result

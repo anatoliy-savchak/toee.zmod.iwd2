@@ -9,7 +9,7 @@ class ProducerOfFloats(producer_base.ProducerOfFile):
         src_path = os.path.join(doc.exp_dir, 'Text', 'strrefs_all.json')
         super().__init__(doc, out_path, template_path, make_new, src_path)
 
-        self.strrefs = dict()
+        self.strrefs = common.parse_mes_lines(self.lines, True)
         return
 
     def ensure_str_ref(self, strref: int):
@@ -24,6 +24,7 @@ class ProducerOfFloats(producer_base.ProducerOfFile):
                 print(sound)
                 pass
             self.strrefs[strref] = text
+            self.save()
         #self.writeline(f'{{{strref}}}{{{text}}}')
         return
 

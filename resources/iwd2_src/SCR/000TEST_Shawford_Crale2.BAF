@@ -1,0 +1,23 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		StartCutSceneMode()
+		CutSceneId("Shawford_Crale")
+		FloatMessage(Myself,16360)  // "Order the gate into town sealed!  Sound the alarm!"
+		Wait(4)
+		FaceObject(Player1)
+		Wait(1)
+		FloatMessage(Myself,16821)  // "I must warn Ulbrec and gather the town forces... I need you to report to the Palisade and drive those damned goblins back.  If Tempus grants us victory, then meet me back here after the battle."
+		Wait(11)
+		FloatMessage(Myself,16822)  // "Everyone!  To arms!  To arms!"
+		Wait(2)
+		MoveViewPoint([219.417],VERY_FAST)
+		MoveToPoint([219.417])
+		HideCreature(Myself,TRUE)
+		MultiPlayerSync()
+		UnhideGUI()
+		MoveViewObject(Protagonist,VERY_FAST)
+		JumpToPoint([496.268])
+		Face(S)
+		EndCutSceneMode()

@@ -1,4 +1,5 @@
 from asyncore import write
+from math import fabs
 import os
 import producer_base
 import produce_scripts
@@ -33,7 +34,7 @@ class ProduceBCSManager(producer_base.Producer):
         ctrl_name_auto, file_name_auto, pkg_name_auto = prod_auto.get_ctrl_tuple()
         self.set_bc(bcs_name, ctrl_name_auto, file_name_auto, pkg_name_auto)
         
-        prod_manual = ProduceBCSFileManual(doc=self.doc, bcs_name = bcs_name, are_name = hint_are_name, base_file_name=file_name_auto, base_name=ctrl_name_auto, make_new=False)
+        prod_manual = ProduceBCSFileManual(doc=self.doc, bcs_name = bcs_name, are_name = hint_are_name, base_file_name=file_name_auto, base_name=ctrl_name_auto, make_new=False, base_package_name=pkg_name_auto)
         prod_manual.produce(cre_name=hint_cre_name, actor_name=hint_actor_name, script_code=hint_script_code)
         prod_manual.save()
         ctrl_name, file_name, pkg_name = prod_manual.get_ctrl_tuple()
@@ -90,7 +91,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
         self.writeline(f'# {self.are_name}{str((" "+cre_name) if cre_name else "")}{str((" "+actor_name) if actor_name else "")}{str((" "+script_code) if script_code else "")}')
         self.writeline()
         self.writeline('@classmethod')
-        self.writeline('def do_execute(cls, self, continuous):')
+        self.writeline('def do_execute(cls, self, continuous = False, block_from = None, code_from = None):')
         self.indent()
         self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
 
@@ -125,8 +126,11 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             block_name = f'do_execute_block_{block_index:02d}'
             block["block_name"] = block_name
 
-            self.writeline(f'break_ = cls.{block_name}()')
-            self.writeline('if break_ and not continuous: break')
+            self.writeline(f'if not block_from or block_from >= {block_index}:')
+            self.indent()
+            self.writeline(f'break_ = cls.{block_name}(self, code_from if code_from and block_from == {block_index} else None)')
+            self.writeline('if (break_ > 1) or (not continuous and break_): break')
+            self.indent(False)
             self.writeline()
             # self.writeline('')
         self.writeline('break # while')
@@ -139,6 +143,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             block_index = block.get("index")
             if not block_index:
                 continue
+            subs = list()
             block_name = block["block_name"]
             if_lines = block["if_lines"]
             resp_lines = block["resp_lines"]
@@ -147,7 +152,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             is_continue = block["is_continue"]
 
             self.writeline('@classmethod')
-            self.writeline(f'def {block_name}(cls, self):')
+            self.writeline(f'def {block_name}(cls, self, code_from = None):')
             self.indent()
             self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
             for line in if_lines:
@@ -160,18 +165,57 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             for line in resp_lines:
                 self.writeline(f'# {line.strip()}')
 
+            #block["subs"] = list()
+            sub_index = 1
+            sub = {"name": f'{block_name}_code_{sub_index:02d}', "lines_translated": list()}
             for line in resp_lines_translated:
-                self.writeline(f'{line}')
+                if isinstance(line, str):
+                    sub["lines_translated"].append(line)
+                elif isinstance(line, dict):
+                    breaks_after = line.get("breaks_after")
+                    sub["lines_translated"].append(line)
+                    #for subline in line["instructions"]:
+                    #    sub["lines_translated"].append(subline["line"])
+                    if breaks_after:
+                        subs.append(sub)
+                        sub_index +=1
+                        sub = {"name": f'{block_name}_code_{sub_index:02d}', "lines_translated": list()}
+                #self.writeline(f'{line}')
+
+            if sub:
+                subs.append(sub)
+
+            for sub in subs:
+                self.writeline(f'cls.{sub["name"]}(self)')
 
             if not is_continue:
-                self.writeline('return True # break further blocks')
+                self.writeline('return 1 # break further blocks')
             else:
-                self.writeline('return False # continue() - pass further blocks')
+                self.writeline('return 0 # continue() - pass further blocks')
             self.indent(False)
 
             self.writeline('return False')
             self.writeline('')
             self.indent(False)
+
+            for sub in subs:
+                self.writeline('@classmethod')
+                self.writeline(f'def {sub["name"]}(cls, self):')
+                self.indent()
+                self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
+                self.writeline('')
+                lines_translated = sub["lines_translated"]
+                for line in lines_translated:
+                    if isinstance(line, dict):
+                        self.writeline(f'# {line["orig"].strip()}')
+                self.writeline()
+
+                for line in lines_translated:
+                    for sline in line["instructions"]:
+                        self.writeline(f'{sline["line"]}')
+                self.writeline('return')
+                self.writeline()
+                self.indent(False)
 
         self.produce_imports()
 
@@ -272,6 +316,7 @@ class ProduceBCSFileManual(ProduceBCSFileBase):
         , are_name: str
         , base_file_name: str
         , base_name: str
+        , base_package_name: str
         , make_new: bool
     ):
         template_path = doc.get_path_template_are_bcs_manual_file()
@@ -283,6 +328,7 @@ class ProduceBCSFileManual(ProduceBCSFileBase):
         self.are_name = are_name
         self.base_file_name = base_file_name
         self.base_name = base_name
+        self.base_package_name = base_package_name
         self.ctrl_name = self.calc_ctrl_name(self.bcs_name)
         return
 
@@ -309,13 +355,6 @@ class ProduceBCSFileManual(ProduceBCSFileBase):
         self.indent(False)
         self.writeline()
 
-        import_line = 'import ' + self.base_file_name
-        if not next((line for line in self.lines if line == import_line or line == import_line + '\n'), None):
-            #line_id = common.lines_after_before_cutoff(self.lines, '#### IMPORT ####', '#### IMPORT END ####')
-            line_id = common.lines_find(self.lines, '#### IMPORT ####')
-            if line_id:
-                self.current_line_id = line_id+1
-                self.writeline(import_line)
-                self.current_line_id = -1
-
+        self.add_import(self.base_file_name, self.base_package_name)
+        self.produce_imports()
         return True

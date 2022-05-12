@@ -25,7 +25,3 @@ def cs(): return ctrl_daemon.gdc()
 #### NPCS ####
 class Ctrl_12SHAWFO_AR1201_Shawford_Crale(py12013_ar1201_npc_inst_classes_auto.Ctrl_12SHAWFO_AR1201_Shawford_Crale_Auto): # 12SHAWFO 
 	pass
-
-class Ctrl_12NOLAN_AR1201_Nolan(py12013_ar1201_npc_inst_classes_auto.Ctrl_12NOLAN_AR1201_Nolan_Auto): # 12NOLAN 
-	pass
-

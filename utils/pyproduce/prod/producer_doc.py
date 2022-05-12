@@ -8,6 +8,7 @@ import classes_registry
 import produce_bcs_manager
 import produce_scripts
 import common
+import producer_strref
 
 class ProducerDoc(object):
     def __init__(self
@@ -82,6 +83,7 @@ class ProducerDoc(object):
 
         path_inf_scripting = os.path.join(self.core_dir, "scr/inf_scripting.py")
         self.producerOfScripts = produce_scripts.ProducerOfScripts(self, path_inf_scripting = path_inf_scripting)
+        self.producerOfFloats = producer_strref.ProducerOfFloats(self, False)
         return
 
     def get_path_map_rumors_file(self):

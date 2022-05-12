@@ -30,12 +30,12 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
                 yield rec
         return
 
-    def produce(self, skip_bcs: bool = False):
+    def produce(self, skip_bcs: bool = False, bcs_script_override: str = None):
         if self.make_new:
             self.produce_new()
         self.produce_npcs('place_npcs_auto')
         if not skip_bcs:
-            self.produce_bcs('place_bcs_auto')
+            self.produce_bcs('place_bcs_auto', bcs_script_override)
         self.produce_ambients('setup_ambients_auto')
         return
 
@@ -106,7 +106,7 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
         elif ori == 15: return "const_toee.ROT05" # SSE
         return "const_toee.ROT06"
 
-    def produce_bcs(self, def_name: str):
+    def produce_bcs(self, def_name: str, bcs_script_override: str = None):
         subline = f"def {def_name}("
         self.current_line_id = common.lines_after_before_cutoff(self.lines, subline, '\t\treturn')
         self.indent()
@@ -118,6 +118,9 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
         file_name = None
 
         area_script = self.src["AreaScript"]
+        if bcs_script_override:
+            area_script = bcs_script_override
+            
         if area_script and area_script != "None":
             ctrl_name, file_name, pkg_name = self.doc.bcsManager.ensure_bcs(
                 bcs_name=area_script

@@ -8,6 +8,10 @@ import utils_npc
 import utils_item
 import const_toee
 import ctrl_behaviour
+import uuid
+import ctrl_daemon
+import json
+import inf_engine
 
 __metaclass__ = type
 
@@ -60,12 +64,27 @@ def strip_quotes(s, notify = False):
 			return s
 	return
 
+def _locus_timed_wait(timed_wait_id, locus_str):
+	locus = json.loads(locus_str)
+	inf = InfScriptSupport.locus_get_inf(locus, timed_wait_id)
+	if inf:
+		inf.locus_run(locus)
+	return
+
 class InfScriptSupport:
 	def get_native_context(self):
 		return self
 
 	def get_context(self):
+		context_override = inf_engine.inf_engine().vars.get('context_override')
+		if context_override:
+			return context_override
 		return self.get_native_context()
+
+	def get_script_vars(self):
+		result = self.get_context().script_vars
+		assert isinstance(result, dict)
+		return result
 
 	def _gnpc(self):
 		return toee.OBJ_HANDLE_NULL
@@ -238,6 +257,29 @@ class InfScriptSupport:
 			critter_race = npc.obj_get_int(toee.obj_f_critter_race)
 			print('Comparing race: {} ({}) to race {} for {}'.format(race, race_ids, critter_race, npc))
 			return critter_race in race_ids
+		return
+
+	def make_locus(): 
+		return dict()
+
+	@classmethod
+	def locus_get_inf(cls, locus, timed_wait_id):
+		daemon = ctrl_daemon.gdc()
+		assert isinstance(daemon, InfScriptSupportDaemon)
+		return daemon
+
+	def locus_run(self, locus):
+		assert isinstance(locus, dict)
+		script_class = locus["script_class"]
+		assert isinstance(script_class, ScriptBase)
+		script_class.do_execute()
+		return
+
+	def do_wait(self, time_ms, locus):
+		locus_str = json.dumps(locus)
+		timed_wait_id = str(uuid.uuid4())
+		self.get_script_vars()["timed_wait"] = timed_wait_id
+		toee.game.timevent_add(_locus_timed_wait, (timed_wait_id, locus_str), time_ms, 1)
 		return
 
 	########## TRIGGERS ##########
@@ -641,9 +683,7 @@ class InfScriptSupport:
 		"""
 		InCutsceneMode()
 		"""
-		#raise Exception("Not implemented function: InCutsceneMode!")
-		# TODO!
-		return False
+		return inf_engine.inf_engine().vars.get("cutscene_mode", 0)
 
 	@dump_args
 	def InParty(self, obj):
@@ -1365,6 +1405,23 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
+	def iCutSceneId(self, obj):
+		"""
+		CutSceneId(O:Object*)
+		This action is used internally in a cutscene to make 
+		the object with the specified death variable perform actions. The action appears to only work from a creature script.
+		"""
+		if not inf_engine.inf_engine().vars.get("cutscene_mode", 0):
+			message = "Cannot set iCutSceneId as cutscene_mode is 0!"
+			print(message)
+			raise Exception(message)
+			return
+		npc, ctrl = self.get_context()._get_ie_object(obj)
+		inf_engine.inf_engine().vars["context_override"] = ctrl
+		return
+	
+	
+	@dump_args
 	def DayNight(self, timeofday):
 		"""
 		DayNight(I:TimeOfDay*Time)
@@ -1468,11 +1525,15 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def EndCutSceneMode(self):
+	def iEndCutSceneMode(self):
 		"""
 		EndCutSceneMode()
 		"""
-		raise Exception("Not implemented function: EndCutSceneMode!")
+		inf_engine.inf_engine().vars["context_override"] = None
+		cutscene_mode = inf_engine.inf_engine().vars.get("cutscene_mode", 0)
+		if cutscene_mode > 0: 
+			cutscene_mode += -1
+		inf_engine.inf_engine().vars["context_override"] = cutscene_mode
 		return
 	
 	@dump_args
@@ -2236,11 +2297,12 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def SmallWait(self, time):
+	def iSmallWait(self, time):
 		"""
 		SmallWait(I:Time*)
+		This action is similar to Wait(), it causes a delay in script processing. The time is measured in AI updates (which default to 15 per second)
 		"""
-		raise Exception("Not implemented function: SmallWait!")
+		self.get_context().do_wait(1000*time // 15)
 		return
 	
 	@dump_args
@@ -2302,14 +2364,16 @@ class InfScriptSupport:
 	def StartCutscene(self, cutscene): self.StartCutScene(cutscene=cutscene)
 	
 	@dump_args
-	def StartCutSceneMode(self):
+	def iStartCutSceneMode(self):
 		"""
 		StartCutSceneMode()
 		"""
-		raise Exception("Not implemented function: StartCutSceneMode!")
+		cutscene_mode = inf_engine.inf_engine().vars.get("cutscene_mode", 0)
+		cutscene_mode += 1
+		inf_engine.inf_engine().vars["cutscene_mode"]= cutscene_mode
 		return
 	
-	def StartCutsceneMode(self): self.StartCutSceneMode()
+	def iStartCutsceneMode(self): self.StartCutSceneMode()
 	
 	@dump_args
 	def StartMovie(self, resref):
@@ -2459,11 +2523,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def Wait(self, time):
+	def iWait(self, time):
 		"""
 		Wait(I:Time*)
 		"""
-		raise Exception("Not implemented function: Wait!")
+		self.get_context().do_wait(time)
 		return
 	
 	@dump_args
@@ -2821,21 +2885,13 @@ class InfScriptSupportNPC(InfScriptSupport):
 		npc = self.get_context()._get_nearest_obj(self.get_context()._gnpc(), toee.OLC_PC)
 		return (npc, None)
 
+	def get_native_context(self):
+		return self
+
 	def _get_stat_value(self, obj, statnum):
 		npc, ctrl = self.get_context()._get_ie_object(obj)
 		if not npc: 
 			return
-
-	def get_native_context(self):
-		return self
-
-	def get_context(self):
-		context_override = self.get_native_context().script_vars.get('context_override')
-		if context_override:
-			return context_override.get_context()
-		return self.get_native_context()
-
-
 		"""
 		ENCUMBERANCE
 		CHR
@@ -3028,12 +3084,6 @@ class InfScriptSupportDaemon(InfScriptSupport):
 	def get_native_context(self):
 		return self
 
-	def get_context(self):
-		context_override = self.get_native_context().script_vars.get('context_override')
-		if context_override:
-			return context_override.get_context()
-		return self.get_native_context()
-
 	@dump_args
 	def iOnCreation(self):
 		"""
@@ -3052,6 +3102,6 @@ class ScriptBase(object):
 		return
 
 	@classmethod
-	def do_execute(cls, self):
+	def do_execute(cls, self, continuous = False, block_from = None, code_from = None):
 		assert isinstance(self, InfScriptSupport)
 		return

@@ -8,6 +8,7 @@ import produce_items
 import producer_base
 import json
 import common
+import copy
 #import pyproduce
 
 class ProducerOfScripts(producer_base.Producer):
@@ -30,7 +31,7 @@ class ProducerOfScripts(producer_base.Producer):
 
         self.error_messages = list()
         self.log_usage = False
-        self.log_strrefs = False
+        self.log_strrefs = True
         self.log_statistics = False
         return
 
@@ -40,16 +41,21 @@ class ProducerOfScripts(producer_base.Producer):
         trigger_lines2 = list()
         for i, action_line in enumerate(trigger_lines):
             action_linea = self.remove_comment(action_line)
-            if not action_linea: continue
-            if 'Global("Shaengarne_Bridge_Cleared", "GLOBAL", 1)Global("31bugGut_Dead", "GLOBAL", 0)' in action_linea:
-                print('')
-            trigger_lines2.extend(condition_split(action_linea))
+            sub = None
+            if action_linea: 
+                for line in condition_split(action_linea):
+                    sub = [i, action_line, line]
+                    trigger_lines2.append(sub)
+            else:
+                sub = [i, action_line, action_linea]
+                trigger_lines2.append(sub)
 
         lines = list()
         or_left = 0
         or_count_max = 0
-        for i, trigger_line in enumerate(trigger_lines2):
+        for i, trigger_line_sub in enumerate(trigger_lines2):
             #line = transate_trigger_line(trigger_line)
+            trigger_line = trigger_line_sub[2]
             trigger_linea = trigger_line.strip()
             if not trigger_linea: continue
             #print(f'Translating {trigger_linea}')
@@ -122,30 +128,40 @@ class ProducerOfScripts(producer_base.Producer):
         return lines
 
     def transate_action_lines_complex(self, action_lines: list, are_name: str = None, cre_name: str = None, bcs_name: str = None, script_code: str = None, actor_name: str = None, file_producer = None):
-        context={"producer": self, "are_name": are_name, "cre_name": cre_name, "actor_name": actor_name, "bcs_name": bcs_name, "script_code": script_code, "file_producer": file_producer}
+        context={"producer": self, "are_name": are_name, "cre_name": cre_name, "actor_name": actor_name, "bcs_name": bcs_name, "script_code": script_code, "file_producer": file_producer, "is_complex": True}
 
         lines = list()
         action_lines2 = list()
         for i, action_line in enumerate(action_lines):
             action_linea = self.remove_comment(action_line)
-            if not action_linea: continue
-            action_lines2.extend(condition_split(action_linea))
+            if action_linea: 
+                for line in condition_split(action_linea):
+                    sub = [i, action_line, line]
+                    action_lines2.append(sub)
+            else:
+                sub = [i, action_line, action_linea]
+                action_lines2.append(sub)
+
         
         self.current_action_lines = action_lines2
         self.current_action_line_index = None
 
-        for i, action_line in enumerate(action_lines2):
+        for i, action_line_sub in enumerate(action_lines2):
+            action_line = action_line_sub[2]
             action_linea = action_line.strip()
-            if not action_linea: continue
-
-            self.current_action_line_index = i
-            scripted_lines = ScriptTran.translate_script_line_ex(action_linea, context)
-            line = None
-            if isinstance(scripted_lines, str):
+            if action_linea:
+                self.current_action_line_index = i
+                con = dict()
+                for key, value in context.items():
+                    con[key] = value
+                con["line_index"] = i
+                scripted_lines = ScriptTran.translate_script_line_ex(action_linea, con)
                 line = scripted_lines
-            if line is None:
-                line = 'pass'
-            lines.append(line)
+                if not isinstance(scripted_lines, dict):
+                    line = {"instructions": [{"line": line}], "context": con, "breaks_after": 0}
+                line["orig"] = action_line_sub[1]
+
+                lines.append(line)
 
         self.current_action_lines = None
         self.current_action_line_index = None
@@ -688,7 +704,33 @@ class ScriptTranFuncCallScript(ScriptTranFuncs):
             , hint_script_code=self.context["script_code"]
             )
         #pkg_name_ = (pkg_name + '.') if pkg_name else ''
-        line = f'self.iStartCutScene({file_name}.{class_name})'
         self.context["file_producer"].add_import(file_name, pkg_name)
+
+        is_complex = self.context.get("is_complex")
+        if not is_complex:
+            line = f'self.iStartCutScenePost({file_name}.{class_name})'
+        else:
+            line = f'self.iStartCutScene({file_name}.{class_name})'
+            instructions = list()
+            instructions.append({"line": line})
+            line = {"instructions": instructions, "context": self.context, "breaks_after": 1}
+
+        return line
+
+class ScriptTranFuncWait(ScriptTranFuncs):
+    @classmethod
+    def supports_func(cls): return ("Wait", "SmallWait")
+
+    def do_translate_func(self, func_name: str, args: list, func_info): 
+        amount = self.do_get_param(args[0], 0, func_info['args'][0])
+
+        is_complex = self.context.get("is_complex")
+        if not is_complex:
+            line = f'self.i{func_name}({amount})'
+        else:
+            line = f'self.i{func_name}({amount})'
+            instructions = list()
+            instructions.append({"line": line})
+            line = {"instructions": instructions, "context": self.context, "breaks_after": 1}
 
         return line

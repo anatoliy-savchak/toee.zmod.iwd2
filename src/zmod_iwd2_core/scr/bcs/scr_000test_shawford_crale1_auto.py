@@ -10,7 +10,6 @@ class Script_000TEST_Shawford_Crale1_Auto(inf_scripting.ScriptBase): # 000TEST_S
 	@classmethod
 	@inf_scripting.dump_args
 	def do_execute(cls, self, continuous = False, block_from = None, code_from = None):
-		#print('Script_000TEST_Shawford_Crale1_Auto.do_execute()')
 		debug.breakp('')
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		while True:
@@ -25,8 +24,6 @@ class Script_000TEST_Shawford_Crale1_Auto(inf_scripting.ScriptBase): # 000TEST_S
 	@inf_scripting.dump_args
 	def do_execute_block_01(cls, self, continuous = False, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		code_fr = int(code_from) if not code_from is None else 0
-		print('code_from: {}, code_fr: {}'.format(code_from, code_fr))
 		d = {"check": None}
 		def do_check():
 			#nonlocal d
@@ -42,10 +39,10 @@ class Script_000TEST_Shawford_Crale1_Auto(inf_scripting.ScriptBase): # 000TEST_S
 		# Wait(5)
 		# FloatMessage(Myself,16822)  // "Everyone!  To arms!  To arms!"
 		# EndCutSceneMode()
-		if (code_from is None and do_check()) or (code_fr <= 1):
+		if (code_from is None and do_check()) or (code_from <= 1):
 			break_ = cls.do_execute_block_01_code_01(self, continuous=continuous)
 			if break_ == 2: return break_
-		if (code_from is None and do_check()) or (code_fr <= 2):
+		if (code_from is None and do_check()) or (code_from <= 2):
 			break_ = cls.do_execute_block_01_code_02(self, continuous=continuous)
 			if break_ == 2: return break_
 		

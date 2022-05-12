@@ -12,6 +12,7 @@ import uuid
 import ctrl_daemon
 import json
 import inf_engine
+import utils_obj
 
 __metaclass__ = type
 
@@ -130,7 +131,7 @@ class InfScriptSupport:
 			return (name, ctrl_behaviour.get_ctrl(name.id))
 
 		name, q = strip_quotes(name, True)
-		_name = name.lower()
+		_name = str(name).lower()
 		npc = None
 		ctrl = None
 		while True:
@@ -150,9 +151,14 @@ class InfScriptSupport:
 				npc, ctrl = self.get_context()._get_ie_object_nearest_pc()
 				break
 
+			if _name.startswith("player"): 
+				npc, ctrl = self.get_context()._get_ie_object_player(_name)
+				break
+
 			if True: #q:
 				npc, ctrl = self.get_context()._get_ie_object_by_name(name)
-				break
+				if ctrl:
+					break
 
 			err = "Unknown objname: {}".format(name)
 			print(err)
@@ -198,6 +204,14 @@ class InfScriptSupport:
 
 	def _get_ie_object_nearest_pc(self):
 		raise Exception("Not implemented here function: _get_ie_object_nearest_pc!")
+		return (None, None)
+
+	def _get_ie_object_player(self, name_lower):
+		_, num_str = name_lower.split('player', 2)
+		num = int(num_str)
+		party = toee.game.party
+		if -1 < num < len(party):
+			return (party[num], None)
 		return (None, None)
 
 	def _get_ie_object_myself(self, name):
@@ -1630,19 +1644,26 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def Face(self, direction):
+	def iFace(self, direction):
 		"""
 		Face(I:Direction*dir)
 		"""
-		raise Exception("Not implemented function: Face!")
+		rotation = utils_inf.translate_orientation()
+		npc = self.get_context()._gnpc()
+		if npc:
+			npc.rotation = rotation # IMPROVE
 		return
 	
 	@dump_args
-	def FaceObject(self, obj):
+	def iFaceObject(self, obj):
 		"""
 		FaceObject(O:Object*)
+		This action instructs the active creature to face the target object.
 		"""
-		raise Exception("Not implemented function: FaceObject!")
+		self_npc = self.get_context()._gnpc()
+		npc, ctrl = self.get_context()._get_ie_object(obj)
+		if self_npc and npc:
+			self_npc.turn_towards(npc)
 		return
 	
 	@dump_args
@@ -1770,7 +1791,9 @@ class InfScriptSupport:
 		"""
 		HideCreature(O:Object*, I:State*Boolean)
 		"""
-		raise Exception("Not implemented function: HideCreature!")
+		npc, ctrl = self.get_context()._get_ie_object(obj)
+		if ctrl:
+			ctrl.hide_creature(npc, state)
 		return
 	
 	@dump_args
@@ -1806,11 +1829,22 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def JumpToPoint(self, target):
+	def iJumpToPoint(self, target):
 		"""
 		JumpToPoint(P:Target*)
 		"""
-		raise Exception("Not implemented function: JumpToPoint!")
+		x = None
+		y = None
+		if isinstance(target, tuple):
+			x = target[0]
+			y = target[1]
+		else:
+			raise Exception("Unknown point {}".format(target))
+
+		if x and y:
+			npc, ctrl = self.get_context()._gnpc()
+			if npc:
+				utils_npc.npc_move()
 		return
 	
 	@dump_args
@@ -1894,27 +1928,56 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def MoveToPoint(self, point):
+	def iMoveToPoint(self, point):
 		"""
 		MoveToPoint(P:Point*)
+		This action causes the active creature to move to the specified coordinates. 
+		The action will update the position of creatures as stored in ARE files (first by 
+		setting the coordinates of the destination point, then by setting the coordinates 
+		of the current point once the destination is reached).
 		"""
-		raise Exception("Not implemented function: MoveToPoint!")
+		x = None
+		y = None
+		if isinstance(point, tuple):
+			x = point[0]
+			y = point[1]
+		else:
+			raise Exception("Unknown point {}".format(point))
+
+		if x and y:
+			npc, ctrl = self.get_context()._gnpc()
+			if npc:
+				utils_npc.npc_goto(npc, x, y)
 		return
 	
 	@dump_args
-	def MoveViewObject(self, target, scrollspeed):
+	def iMoveViewObject(self, target, scrollspeed):
 		"""
 		MoveViewObject(O:Target*, I:ScrollSpeed*Scroll)
 		"""
-		raise Exception("Not implemented function: MoveViewObject!")
+		self.iMoveViewPoint(target, scrollspeed)
 		return
 	
 	@dump_args
-	def MoveViewPoint(self, target, scrollspeed):
+	def iMoveViewPoint(self, target, scrollspeed):
 		"""
 		MoveViewPoint(P:Target*, I:ScrollSpeed*Scroll)
+		This action scrolls the view point (i.e. the area of the current map being displayed onscreen) 
+		to the target point ([x.y] at the specified speed. Speeds are taken from scroll.ids 
+		(VERY_FAST is equivalent to normal walking speed).
 		"""
-		raise Exception("Not implemented function: MoveViewPoint!")
+		x = None
+		y = None
+		loc_or_obj = None
+		if isinstance(target, tuple):
+			x = target[0]
+			y = target[1]
+			loc_or_obj = utils_obj.sec2loc(x, y)
+		else:
+			loc_or_obj, ctrl = self.get_context()._get_ie_object(target)
+
+		if loc_or_obj:
+			toee.game.scroll_to(loc_or_obj)
 		return
 	
 	@dump_args
@@ -2517,6 +2580,15 @@ class InfScriptSupport:
 		Turn()
 		"""
 		raise Exception("Not implemented function: Turn!")
+		return
+	
+	@dump_args
+	def iUnhideGUI(self):
+		"""
+		UnhideGUI()
+		This action restores the docking borders, menus etc. to the sides of the screen.
+		"""
+		# do nothing TODO Temple
 		return
 	
 	@dump_args

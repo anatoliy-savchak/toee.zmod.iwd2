@@ -161,7 +161,7 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		
 		self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
 		self.iMoveViewObject("'Shawford_Crale'", "VERY_FAST")
-		self.iMoveToPoint("[448.295]")
+		self.iMoveToPoint((479, 478))
 		self.iFaceObject("'Shawford_Crale'")
 		self.iFloatMessage("Myself", 16357)
 		self.iWait(time=3, locus=locus)
@@ -207,7 +207,7 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		# MoveToPoint([219.417])
 		# DestroySelf()
 		
-		self.iMoveToPoint("[219.417]")
+		self.iMoveToPoint((489, 477))
 		self.iDestroySelf()
 		return 0
 		
@@ -324,7 +324,7 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		# MoveToPoint([582.302])
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
-		self.iMoveToPoint("[582.302]")
+		self.iMoveToPoint((476, 482))
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 		return 0
 		
@@ -402,7 +402,7 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		# MoveToPoint([566.351])
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
-		self.iMoveToPoint("[566.351]")
+		self.iMoveToPoint((478, 483))
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 		return 0
 		
@@ -480,7 +480,7 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		# MoveToPoint([519.360])
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
-		self.iMoveToPoint("[519.360]")
+		self.iMoveToPoint((480, 482))
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 		return 0
 		
@@ -558,7 +558,7 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		# MoveToPoint([480.407])
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
-		self.iMoveToPoint("[480.407]")
+		self.iMoveToPoint((482, 483))
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 		return 0
 		
@@ -636,7 +636,7 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		# MoveToPoint([542.419])
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
-		self.iMoveToPoint("[542.419]")
+		self.iMoveToPoint((481, 485))
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 		return 0
 		
@@ -714,7 +714,7 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		# MoveToPoint([602.388])
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
-		self.iMoveToPoint("[602.388]")
+		self.iMoveToPoint((479, 485))
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 		return 0
 		

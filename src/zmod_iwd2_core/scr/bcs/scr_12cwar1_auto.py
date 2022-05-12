@@ -168,13 +168,13 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		# Face(S)
 		# EndCutSceneMode()
 		
-		self.iMoveViewPoint("[219.417]", "VERY_FAST")
-		self.iMoveToPoint("[219.417]")
+		self.iMoveViewPoint((489, 477), "VERY_FAST")
+		self.iMoveToPoint((489, 477))
 		self.iHideCreature("Myself", True)
 		self.iMultiPlayerSync()
 		self.iUnhideGUI()
 		self.iMoveViewObject("Protagonist", "VERY_FAST")
-		self.iJumpToPoint("[496.268]")
+		self.iJumpToPoint((477, 478))
 		self.iFace("S")
 		self.iEndCutSceneMode()
 		return 0

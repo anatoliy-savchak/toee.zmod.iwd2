@@ -184,6 +184,17 @@ class ProducerDoc(object):
         name = f"scr_{bcs_name.lower()}.py"
         return os.path.join(self.core_dir, "scr", 'bcs', name)
 
+    def get_path_out_are_coords_file(self, are_name: str):
+        name = f"coords.json"
+        return os.path.join(self.exp_dir, "Areas", are_name, name)
+
+    def get_path_out_are_coords_todo_file(self, are_name: str):
+        name = f"coords_todo.json"
+        return os.path.join(self.exp_dir, "Areas", are_name, name)
+
+    def get_path_empty_json(self):
+        return 'data/empty.json'
+
     @staticmethod
     def are_name_to_script_id(are_name: str):
         return int(are_name.lower().replace("ar", ""))*10

@@ -184,3 +184,13 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		else:
 			raise Exception('State {} not found as line!'.format(state))
 		return
+
+	def hide_creature(self, npc, hidden):
+		assert isinstance(npc, toee.PyObjHandle)
+		self.vars["hidden"] = hidden
+		if npc:
+			if hidden:
+				npc.object_flag_set(toee.OF_DONTDRAW)
+			else:
+				npc.object_flag_unset(toee.OF_DONTDRAW)
+		return

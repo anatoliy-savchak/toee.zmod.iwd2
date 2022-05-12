@@ -8,6 +8,7 @@ import produce_bcs_manager
 import producer_ctrl_inst_auto
 import producer_ctrl_inst_manual
 import common
+import producer_coords
 
 class ProducerOfAre(producer_base.Producer):
     def __init__(self, doc, are_name: str, script_id: int, make_new: bool):
@@ -41,6 +42,8 @@ class ProducerOfAre(producer_base.Producer):
         self.skip_script_specific = False
         self.skip_script_special1 = False
         self.skip_script_daemon = False
+
+        self.producerOfCoords = producer_coords.ProducerOfCoords(self.doc, self.are_name)
         return
 
     def produce(self):

@@ -51,8 +51,9 @@ class ProducerOfFile(Producer):
         , make_new: bool
         , src_path: str = None
         , src: dict = None
+        , index_path: str = None
     ):
-        super().__init__(doc, src_path, src)
+        super().__init__(doc, src_path, src, index_path)
 
         self.out_path = out_path
         self.template_path = template_path
@@ -67,6 +68,8 @@ class ProducerOfFile(Producer):
         return
 
     def _preload_lines(self):
+        if self.out_path is None and self.template_path is None: return
+        
         fn = self.out_path
         if self.make_new or not os.path.exists(self.out_path):
             fn = self.template_path

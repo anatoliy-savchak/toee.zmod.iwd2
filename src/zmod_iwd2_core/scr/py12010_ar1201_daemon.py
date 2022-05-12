@@ -5,6 +5,7 @@ from bcs import scr_000test_shawford_crale1_auto
 #### IMPORTS ####
 import py12014_ar1201_npc_inst_classes
 from bcs import scr_000test_shawford_crale1
+from bcs import scr_000test_shawford_crale2
 #### END IMPORTS ####
 DAEMON_SCRIPT_ID = 12010
 DAEMON_MAP_ID = module_consts.MAP_ID_AR1201
@@ -50,7 +51,7 @@ class CtrlAR1201(ctrl_daemon_ie.CtrlDaemonIE):
 		return
 	
 	def place_bcs_auto(self):
-		self.vars["script_area"] = scr_000test_shawford_crale1.Script_000TEST_Shawford_Crale1
+		self.vars["script_area"] = scr_000test_shawford_crale2.Script_000TEST_Shawford_Crale2
 		return
 
 	def setup_ambients_auto(self):

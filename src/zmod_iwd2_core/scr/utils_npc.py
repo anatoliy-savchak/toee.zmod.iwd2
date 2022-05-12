@@ -774,6 +774,24 @@ def npc_goto_loc(npc, loc):
 	assert isinstance(loc, int)
 	return npc_goto_loc_full(npc, loc, 0, 0)
 
+def npc_move(npc, x, y):
+	assert isinstance(npc, toee.PyObjHandle)
+	assert isinstance(x, int)
+	assert isinstance(y, int)
+	loc = utils_obj.sec2loc(x, y)
+	return npc_move_loc_full(npc, loc, 0, 0)
+
+def npc_move_loc_full(npc, loc, off_x, off_y):
+	assert isinstance(npc, toee.PyObjHandle)
+	assert isinstance(loc, int)
+	x, y = utils_obj.loc2sec(loc)
+	print("move {}, {} ({}, {}) of {}".format(x, y, off_x, off_y, npc))
+	if False:
+		toee.game.obj_create(2071, loc, off_x, off_y)
+	npc.standpoint_set(toee.STANDPOINT_DAY, -1, loc, 0, off_x, off_y)
+	npc.standpoint_set(toee.STANDPOINT_NIGHT, -1, loc, 0, off_x, off_y)
+	return loc
+
 def npc_loc_near_random(npc):
 	assert isinstance(npc, toee.PyObjHandle)
 	x, y = utils_obj.loc2sec(npc.location)

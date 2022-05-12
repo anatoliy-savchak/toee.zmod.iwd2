@@ -335,3 +335,28 @@ def iwd2_xp_var(xp_var):
 	xp_var_lo = xp_var.lower()
 	result = next((value for name, value in XP_VAR.iteritems() if name.lower() == xp_var_lo), None)
 	return result
+
+def translate_orientation(self, direction):
+	# TODO
+	ori = -1
+	if isinstance(direction, int):
+		ori = int(direction)
+	else:
+		direction = str(direction).lower()
+	if direction=='s' or ori == 0: return const_toee.ROT06 # South
+	elif ori == 1: return const_toee.ROT07 # SSW
+	elif ori == 2: return const_toee.ROT08 # SW
+	elif ori == 3: return const_toee.ROT08 # WSW
+	elif ori == 4: return const_toee.ROT09 # West
+	elif ori == 5: return const_toee.ROT10 # WNW
+	elif ori == 6: return const_toee.ROT11 # NW
+	elif ori == 7: return const_toee.ROT11 # NNW
+	elif ori == 8: return const_toee.ROT00 # North
+	elif ori == 9: return const_toee.ROT01 # NNE
+	elif ori == 10: return const_toee.ROT02 # NE
+	elif ori == 11: return const_toee.ROT02 # ENE
+	elif ori == 12: return const_toee.ROT03 # East
+	elif ori == 13: return const_toee.ROT04 # ESE
+	elif ori == 14: return const_toee.ROT05 # SE
+	elif ori == 15: return const_toee.ROT05 # SSE
+	return const_toee.ROT06

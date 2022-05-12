@@ -734,3 +734,23 @@ class ScriptTranFuncWait(ScriptTranFuncs):
             line = {"instructions": instructions, "context": self.context, "breaks_after": 1, "is_post_code": 1}
 
         return line
+
+
+class ScriptTranFuncParamCoords(ScriptTranFuncs):
+    @classmethod
+    def supports_func(cls): return ("MoveViewPoint", "MoveToPoint", "JumpToPoint")
+
+    @classmethod
+    def params_to_coordinate(cls): return (0, ) # not sure
+
+    def do_translate_param(self, arg, index: int, arg_info: dict):
+        orig_value = self.do_get_param(arg, index, arg_info)
+        orig_value = str(orig_value)
+        if orig_value.startswith('[') or orig_value.startswith('"['):
+            pair = orig_value.replace('[', '').replace(']', '').replace('"', '').replace('.', ',')
+            if index in self.params_to_coordinate():
+                if self.context["producer"].doc.current_are_producer:
+                    result = self.context["producer"].doc.current_are_producer.producerOfCoords.translate_coords(pair)
+                    return result
+
+        return super().do_translate_param(arg, index, arg_info)

@@ -738,7 +738,7 @@ class ScriptTranFuncWait(ScriptTranFuncs):
 
 class ScriptTranFuncParamCoords(ScriptTranFuncs):
     @classmethod
-    def supports_func(cls): return ("MoveViewPoint", "MoveToPoint", "JumpToPoint")
+    def supports_func(cls): return ("MoveViewPoint", "JumpToPoint")
 
     @classmethod
     def params_to_coordinate(cls): return (0, ) # not sure
@@ -754,3 +754,24 @@ class ScriptTranFuncParamCoords(ScriptTranFuncs):
                     return result
 
         return super().do_translate_param(arg, index, arg_info)
+
+class ScriptTranFuncParamCoordsMoveToPoint(ScriptTranFuncParamCoords):
+    @classmethod
+    def supports_func(cls): return ("MoveToPoint", )
+
+    @classmethod
+    def params_to_coordinate(cls): return (0, ) # not sure
+
+    def do_translate_func(self, func_name: str, args: list, func_info): 
+        coords = self.do_translate_param(args[0], 0, func_info['args'][0])
+
+        is_complex = self.context.get("is_complex")
+        if not is_complex:
+            line = f'self.i{func_name}({coords})'
+        else:
+            line = f'self.i{func_name}Post({coords}, locus=locus)'
+            instructions = list()
+            instructions.append({"line": line})
+            line = {"instructions": instructions, "context": self.context, "breaks_after": 1, "is_post_code": 1}
+
+        return line

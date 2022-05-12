@@ -336,7 +336,7 @@ def iwd2_xp_var(xp_var):
 	result = next((value for name, value in XP_VAR.iteritems() if name.lower() == xp_var_lo), None)
 	return result
 
-def translate_orientation(self, direction):
+def translate_orientation(direction):
 	# TODO
 	ori = -1
 	if isinstance(direction, int):

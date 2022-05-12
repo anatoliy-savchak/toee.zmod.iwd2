@@ -96,6 +96,10 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 			break_ = cls.do_execute_block_01_code_05(self, locus)
 			if break_ == 2: return break_
 		
+		if (code_from is None and do_check()) or (code_from <= 6):
+			break_ = cls.do_execute_block_01_code_06(self, locus)
+			if break_ == 2: return break_
+		
 		result = 1 # break further blocks
 		if not code_from is None:
 			result = 1
@@ -160,6 +164,16 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		
 		# MoveViewPoint([219.417],VERY_FAST)
 		# MoveToPoint([219.417])
+		
+		self.iMoveViewPoint((489, 477), "VERY_FAST")
+		self.iMoveToPointPost((489, 477), locus=locus)
+		return 2
+		
+	@classmethod
+	def do_execute_block_01_code_06(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 6
+		
 		# HideCreature(Myself,TRUE)
 		# MultiPlayerSync()
 		# UnhideGUI()
@@ -168,8 +182,6 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		# Face(S)
 		# EndCutSceneMode()
 		
-		self.iMoveViewPoint((489, 477), "VERY_FAST")
-		self.iMoveToPoint((489, 477))
 		self.iHideCreature("Myself", True)
 		self.iMultiPlayerSync()
 		self.iUnhideGUI()

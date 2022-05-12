@@ -34,7 +34,7 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		return attachee
 
 	def _gtriggerer(self):
-		triggerer = self.vars["triggerer"]
+		triggerer = self.vars.get("triggerer")
 		assert isinstance(triggerer, toee.PyObjHandle)
 		return triggerer
 

@@ -110,6 +110,14 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 			break_ = cls.do_execute_block_01_code_07(self, locus)
 			if break_ == 2: return break_
 		
+		if (code_from is None and do_check()) or (code_from <= 8):
+			break_ = cls.do_execute_block_01_code_08(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 9):
+			break_ = cls.do_execute_block_01_code_09(self, locus)
+			if break_ == 2: return break_
+		
 		result = 1 # break further blocks
 		if not code_from is None:
 			result = 1
@@ -155,16 +163,10 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		# SetGlobal("Goblins_Attack_Palisade","GLOBAL",1)
 		# MoveViewObject("Shawford_Crale",VERY_FAST)
 		# MoveToPoint([448.295])
-		# FaceObject("Shawford_Crale")
-		# FloatMessage(Myself,16357)  // "Sir!  The goblins are at the Palisade!"
-		# Wait(3)
 		
 		self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
 		self.iMoveViewObject("'Shawford_Crale'", "VERY_FAST")
-		self.iMoveToPoint((479, 478))
-		self.iFaceObject("'Shawford_Crale'")
-		self.iFloatMessage("Myself", 16357)
-		self.iWait(time=3, locus=locus)
+		self.iMoveToPointPost((479, 478), locus=locus)
 		return 2
 		
 	@classmethod
@@ -172,15 +174,29 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 4
 		
+		# FaceObject("Shawford_Crale")
+		# FloatMessage(Myself,16357)  // "Sir!  The goblins are at the Palisade!"
+		# Wait(3)
+		
+		self.iFaceObject("'Shawford_Crale'")
+		self.iFloatMessage("Myself", 16357)
+		self.iWait(time=3, locus=locus)
+		return 2
+		
+	@classmethod
+	def do_execute_block_01_code_05(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 5
+		
 		# StartCutScene("12cWar1")
 		
 		self.iStartCutScene(scr_12cwar1.Script_12cWar1)
 		return 0
 		
 	@classmethod
-	def do_execute_block_01_code_05(cls, self, locus):
+	def do_execute_block_01_code_06(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		locus["code"] = 5
+		locus["code"] = 6
 		
 		# Wait(2)
 		
@@ -188,9 +204,9 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		return 2
 		
 	@classmethod
-	def do_execute_block_01_code_06(cls, self, locus):
+	def do_execute_block_01_code_07(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		locus["code"] = 6
+		locus["code"] = 7
 		
 		# FloatMessage(Myself,16820)  // "Yes, sir!"
 		# SmallWait(4)
@@ -200,14 +216,22 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		return 2
 		
 	@classmethod
-	def do_execute_block_01_code_07(cls, self, locus):
+	def do_execute_block_01_code_08(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		locus["code"] = 7
+		locus["code"] = 8
 		
 		# MoveToPoint([219.417])
+		
+		self.iMoveToPointPost((489, 477), locus=locus)
+		return 2
+		
+	@classmethod
+	def do_execute_block_01_code_09(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 9
+		
 		# DestroySelf()
 		
-		self.iMoveToPoint((489, 477))
 		self.iDestroySelf()
 		return 0
 		
@@ -283,6 +307,10 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 			break_ = cls.do_execute_block_03_code_03(self, locus)
 			if break_ == 2: return break_
 		
+		if (code_from is None and do_check()) or (code_from <= 4):
+			break_ = cls.do_execute_block_03_code_04(self, locus)
+			if break_ == 2: return break_
+		
 		result = 1 # break further blocks
 		if not code_from is None:
 			result = 1
@@ -322,9 +350,17 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		locus["code"] = 3
 		
 		# MoveToPoint([582.302])
+		
+		self.iMoveToPointPost((476, 482), locus=locus)
+		return 2
+		
+	@classmethod
+	def do_execute_block_03_code_04(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 4
+		
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
-		self.iMoveToPoint((476, 482))
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 		return 0
 		
@@ -359,6 +395,10 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		
 		if (code_from is None and do_check()) or (code_from <= 3):
 			break_ = cls.do_execute_block_04_code_03(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 4):
+			break_ = cls.do_execute_block_04_code_04(self, locus)
 			if break_ == 2: return break_
 		
 		result = 1 # break further blocks
@@ -400,9 +440,17 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		locus["code"] = 3
 		
 		# MoveToPoint([566.351])
+		
+		self.iMoveToPointPost((478, 483), locus=locus)
+		return 2
+		
+	@classmethod
+	def do_execute_block_04_code_04(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 4
+		
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
-		self.iMoveToPoint((478, 483))
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 		return 0
 		
@@ -437,6 +485,10 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		
 		if (code_from is None and do_check()) or (code_from <= 3):
 			break_ = cls.do_execute_block_05_code_03(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 4):
+			break_ = cls.do_execute_block_05_code_04(self, locus)
 			if break_ == 2: return break_
 		
 		result = 1 # break further blocks
@@ -478,9 +530,17 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		locus["code"] = 3
 		
 		# MoveToPoint([519.360])
+		
+		self.iMoveToPointPost((480, 482), locus=locus)
+		return 2
+		
+	@classmethod
+	def do_execute_block_05_code_04(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 4
+		
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
-		self.iMoveToPoint((480, 482))
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 		return 0
 		
@@ -515,6 +575,10 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		
 		if (code_from is None and do_check()) or (code_from <= 3):
 			break_ = cls.do_execute_block_06_code_03(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 4):
+			break_ = cls.do_execute_block_06_code_04(self, locus)
 			if break_ == 2: return break_
 		
 		result = 1 # break further blocks
@@ -556,9 +620,17 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		locus["code"] = 3
 		
 		# MoveToPoint([480.407])
+		
+		self.iMoveToPointPost((482, 483), locus=locus)
+		return 2
+		
+	@classmethod
+	def do_execute_block_06_code_04(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 4
+		
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
-		self.iMoveToPoint((482, 483))
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 		return 0
 		
@@ -593,6 +665,10 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		
 		if (code_from is None and do_check()) or (code_from <= 3):
 			break_ = cls.do_execute_block_07_code_03(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 4):
+			break_ = cls.do_execute_block_07_code_04(self, locus)
 			if break_ == 2: return break_
 		
 		result = 1 # break further blocks
@@ -634,9 +710,17 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		locus["code"] = 3
 		
 		# MoveToPoint([542.419])
+		
+		self.iMoveToPointPost((481, 485), locus=locus)
+		return 2
+		
+	@classmethod
+	def do_execute_block_07_code_04(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 4
+		
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
-		self.iMoveToPoint((481, 485))
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 		return 0
 		
@@ -671,6 +755,10 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		
 		if (code_from is None and do_check()) or (code_from <= 3):
 			break_ = cls.do_execute_block_08_code_03(self, locus)
+			if break_ == 2: return break_
+		
+		if (code_from is None and do_check()) or (code_from <= 4):
+			break_ = cls.do_execute_block_08_code_04(self, locus)
 			if break_ == 2: return break_
 		
 		result = 1 # break further blocks
@@ -712,9 +800,17 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		locus["code"] = 3
 		
 		# MoveToPoint([602.388])
+		
+		self.iMoveToPointPost((479, 485), locus=locus)
+		return 2
+		
+	@classmethod
+	def do_execute_block_08_code_04(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 4
+		
 		# FaceObject("SWIFT_THOMAS_HIDDEN")
 		
-		self.iMoveToPoint((479, 485))
 		self.iFaceObject("'SWIFT_THOMAS_HIDDEN'")
 		return 0
 		

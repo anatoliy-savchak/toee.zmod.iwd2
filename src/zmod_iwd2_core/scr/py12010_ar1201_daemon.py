@@ -40,7 +40,8 @@ class CtrlAR1201(ctrl_daemon_ie.CtrlDaemonIE):
 	
 	def place_encounters_initial(self):
 		super(CtrlAR1201, self).place_encounters_initial()
-		scr_000test_shawford_crale1_auto.Script_000TEST_Shawford_Crale1_Auto.do_execute(self, continuous=True)
+		#scr_000test_shawford_crale1_auto.Script_000TEST_Shawford_Crale1_Auto.do_execute(self, continuous=True)
+		scr_000test_shawford_crale2.Script_000TEST_Shawford_Crale2.do_execute(self, continuous=True)
 		return
 	
 	def place_npcs_auto(self):

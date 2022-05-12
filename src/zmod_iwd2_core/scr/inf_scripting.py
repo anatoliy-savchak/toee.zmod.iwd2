@@ -1648,7 +1648,7 @@ class InfScriptSupport:
 		"""
 		Face(I:Direction*dir)
 		"""
-		rotation = utils_inf.translate_orientation()
+		rotation = utils_inf.translate_orientation(direction)
 		npc = self.get_context()._gnpc()
 		if npc:
 			npc.rotation = rotation # IMPROVE
@@ -1787,7 +1787,7 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def HideCreature(self, obj, state):
+	def iHideCreature(self, obj, state):
 		"""
 		HideCreature(O:Object*, I:State*Boolean)
 		"""
@@ -1842,9 +1842,9 @@ class InfScriptSupport:
 			raise Exception("Unknown point {}".format(target))
 
 		if x and y:
-			npc, ctrl = self.get_context()._gnpc()
+			npc = self.get_context()._gnpc()
 			if npc:
-				utils_npc.npc_move()
+				utils_npc.npc_move(npc, x, y)
 		return
 	
 	@dump_args
@@ -1945,11 +1945,20 @@ class InfScriptSupport:
 			raise Exception("Unknown point {}".format(point))
 
 		if x and y:
-			npc, ctrl = self.get_context()._gnpc()
+			npc = self.get_context()._gnpc()
 			if npc:
 				utils_npc.npc_goto(npc, x, y)
+				return True
 		return
 	
+	@dump_args
+	def iMoveToPointPost(self, point, locus, time=None):
+		succ = self.iMoveToPoint(point)
+		if not time:
+			time = 8
+		self.do_wait(1000*time, locus=locus)
+		return
+
 	@dump_args
 	def iMoveViewObject(self, target, scrollspeed):
 		"""

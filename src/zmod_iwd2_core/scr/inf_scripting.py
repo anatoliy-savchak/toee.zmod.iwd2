@@ -124,7 +124,7 @@ class InfScriptSupport:
 			toee.game.create_history_freeform(text)
 		return
 
-	def _get_ie_object(self, name):
+	def _get_ie_object(self, name, do_error = False):
 		# returns (npc, ctrl) if known
 		# see object.ids
 		if isinstance(name, toee.PyObjHandle):
@@ -160,10 +160,13 @@ class InfScriptSupport:
 				if ctrl:
 					break
 
+			break
+		if do_error and not npc and not ctrl:
 			err = "Unknown objname: {}".format(name)
 			print(err)
 			debug.breakp("_get_ie_object")
-			break
+			raise Exception(err)
+
 		return (npc, ctrl)
 
 	def _get_ie_object_myself(self, name):
@@ -276,13 +279,73 @@ class InfScriptSupport:
 	def locus_make(self):
 		return {}
 
-	def locus_make_block_code(self, script_class, block, code, continuous):
-		locus = self.locus_make()
-		locus["script_class"] = script_class
-		locus["block"] = block
-		locus["code"] = code
-		locus["continuous"] = continuous
-		return locus
+	def _get_nearest_obj(self, this_npc, obj_list_flags = toee.OLC_CRITTERS):
+		assert isinstance(this_npc, toee.PyObjHandle)
+		nearest = None
+		nearest_dist = -1
+		for obj in toee.game.obj_list_vicinity(this_npc.location, obj_list_flags):
+			assert isinstance(obj, toee.PyObjHandle)
+			if obj == this_npc: continue
+			if obj.d20_query(toee.Q_Critter_Is_Invisible): continue
+			dist = this_npc.distance_to(obj)
+			if nearest_dist == -1 or dist < nearest_dist:
+				nearest_dist = dist
+				nearest = obj
+		return nearest
+
+	def _get_ie_object_nearest(self):
+		npc = self.get_context()._get_nearest_obj(self.get_context()._gnpc(), toee.OLC_CRITTERS)
+		return (npc, None)
+
+	def _get_ie_object_nearest_pc(self):
+		npc = self.get_context()._get_nearest_obj(self.get_context()._gnpc(), toee.OLC_PC)
+		return (npc, None)
+
+	def get_native_context(self):
+		return self
+
+	def _get_stat_value(self, obj, statnum):
+		npc, ctrl = self.get_context()._get_ie_object(obj)
+		if not npc: 
+			return
+		"""
+		ENCUMBERANCE
+		CHR
+		XP
+		RESISTFIRE
+		RESISTELECTRICITY
+		RESISTMAGIC
+		CLASSLEVELSUM
+		SEEINVISIBLE
+		"""
+
+		statnumu = statnum.upper()
+		if statnumu == 'ENCUMBERANCE':
+			return npc.d20_query(toee.Q_Critter_Is_Encumbered_Medium)
+		elif statnumu == 'CHR':
+			return npc.stat_level_get(toee.stat_charisma)
+		elif statnumu == 'CLASSLEVELSUM':
+			return npc.stat_level_get(toee.stat_level)
+		elif statnumu == 'RESISTFIRE':
+			# TODO IMPROVE
+			return npc.d20_query_has_condition("Monster Energy Resistance")
+		elif statnumu == 'RESISTELECTRICITY':
+			# TODO IMPROVE
+			return npc.d20_query_has_condition("Monster Energy Resistance")
+		elif statnumu == 'RESISTMAGIC':
+			return npc.d20_query_has_condition("Spell Resistance")
+		elif statnumu == 'SEEINVISIBLE':
+			return npc.d20_query_has_condition("sp-See Invisibility")
+		return
+
+	def do_destroy_self(self):
+		destroyed = self.vars.get('DESTROYED', 0)
+		if not destroyed:
+			self.vars['DESTROYED'] = 1
+			npc = self._gnpc()
+			if npc:
+				npc.destroy()
+		return
 
 	@classmethod
 	def locus_get_inf(cls, locus, timed_wait_id):
@@ -428,26 +491,29 @@ class InfScriptSupport:
 	@dump_args
 	def iCheckStat(self, obj, value, statnum):
 		"""
-		CheckStat(O:Object*, I:Value*, I:StatNum*Stats)
-		"""
-		raise Exception("Not implemented here function: CheckStat!")
-		return
-
-	@dump_args
-	def iCheckStatGT(self, obj, value, statnum):
-		"""
 		CheckStatGT(O:Object*, I:Value*, I:StatNum*Stats)
 		"""
-		raise Exception("Not implemented here function: CheckStatGT!")
-		return
+		result = self.get_context()._get_stat_value(obj, statnum)
+		return result == value
 
 	@dump_args
 	def iCheckStatLT(self, obj, value, statnum):
+		""" 
+		0x4046 CheckStatLT(O:Object*,I:Value*,I:StatNum*Stats)
+		Returns true only if the specified object has the statistic in the 3rd parameter less than the value of the 2nd parameter.
 		"""
-		CheckStatLT(O:Object*, I:Value*, I:StatNum*Stats)
+		result = self.get_context()._get_stat_value(obj, statnum)
+		return result < value
+	
+	@dump_args
+	def iCheckStatGT(self, obj, value, statnum):
+		""" 
+		0x4045 CheckStatGT(O:Object*,I:Value*,I:StatNum*Stats)
+		Returns true only if the specified object has the statistic in the 3rd parameter greater than the value of the 2nd parameter.
 		"""
-		raise Exception("Not implemented here function: CheckStatLT!")
-		return
+		result = self.get_context()._get_stat_value(obj, statnum)
+		print('stat_value: {}'.format(result))
+		return result > value
 
 	@dump_args
 	def iClass(self, obj, class_):
@@ -605,27 +671,27 @@ class InfScriptSupport:
 	
 	@dump_args
 	def iHP(self, obj, hit_points):
+		""" 
+		0x4010 HP(O:Object*,I:Hit Points*)
+		Returns true only if the current hitpoints of the specified object are equal to the 2nd parameter.
 		"""
-		HP(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented here function: HP!")
-		return
-
+		return self.get_context()._hp(obj) == hit_points
+	
 	@dump_args
 	def iHPGT(self, obj, hit_points):
+		""" 
+		00x4011 HPGT(O:Object*,I:Hit Points*)
+		Returns true only if the current hitpoints of the specified object are greater than the 2nd parameter.
 		"""
-		HPGT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented here function: HPGT!")
-		return
-
+		return self.get_context()._hp(obj) > hit_points
+	
 	@dump_args
 	def iHPLT(self, obj, hit_points):
+		""" 
+		0x4012 HPLT(O:Object*,I:Hit Points*)
+		Returns true only if the current hitpoints of the specified object are less than the 2nd parameter.
 		"""
-		HPLT(O:Object*, I:Hit Points*)
-		"""
-		raise Exception("Not implemented here function: HPLT!")
-		return
+		return self.get_context()._hp(obj) < hit_points
 
 	@dump_args
 	def HPLost(self, obj, hit_points):
@@ -979,27 +1045,33 @@ class InfScriptSupport:
 	
 	@dump_args
 	def iNumTimesTalkedTo(self, num):
+		""" 
+		0x4039 NumTimesTalkedTo(I:Num*)
+
+		Returns true only if the player's party has spoken to the active CRE the exact number of times specified.
+		NB. NumTimesTalkedTo seems to increment when a PC initiates conversion with an NPC, or an NPC initiates conversation with a PC.
+		NumTimesTalkedTo does not seem to increment for force-talks, interactions, interjections and self-talking.
 		"""
-		NumTimesTalkedTo(I:Num*)
-		"""
-		raise Exception("Not implemented here function: NumTimesTalkedTo!")
-		return
+		result = self.get_context().has_met()
+		return result == num
 
 	@dump_args
 	def iNumTimesTalkedToGT(self, num):
+		""" 
+		0x403A NumTimesTalkedToGT(I:Num*)
+		Returns true only if the player's party has spoken to the active CRE more than the number of times specified.
 		"""
-		NumTimesTalkedToGT(I:Num*)
-		"""
-		raise Exception("Not implemented here function: NumTimesTalkedToGT!")
-		return
-
+		result = self.get_context().has_met()
+		return result > num
+	
 	@dump_args
 	def iNumTimesTalkedToLT(self, num):
 		"""
 		NumTimesTalkedToLT(I:Num*)
+		Returns true only if the player's party has spoken to the active CRE less than the number of times specified.
 		"""
-		raise Exception("Not implemented here function: NumTimesTalkedToLT!")
-		return
+		result = self.get_context().has_met()
+		return result < num
 
 	@dump_args
 	def iOnCreation(self):
@@ -1143,6 +1215,15 @@ class InfScriptSupport:
 		raise Exception("Not implemented function: Specifics!")
 		return
 	
+	@dump_args
+	def iSmallWaitRandom(self, time_min, time_max, locus):
+		"""
+		SmallWaitRandom(I:Min*,I:Max*)
+		"""
+		time = toee.game.random_range(time_min, time_max)
+		self.get_context().do_wait(1000*time // 15, locus)
+		return
+
 	@dump_args
 	def StateCheck(self, obj, state):
 		"""
@@ -1451,7 +1532,7 @@ class InfScriptSupport:
 			print(message)
 			raise Exception(message)
 			return
-		npc, ctrl = self.get_context()._get_ie_object(obj)
+		npc, ctrl = self.get_context()._get_ie_object(obj, True)
 		inf_engine.inf_engine().vars["context_override"] = ctrl
 		return
 	
@@ -1492,15 +1573,21 @@ class InfScriptSupport:
 		item = npc.item_find_by_proto(proto)
 		if item:
 			# TODO - decrease if stack
+			item_description = item.description
 			item.destroy()
+			if npc.type == toee.obj_t_pc:
+				text = '{} lost {}'.format(npc.description, item_description)
+				npc.float_text_line(text, toee.tf_yellow)
+				text = '\n{}\n'.format(text)
+				toee.game.create_history_freeform(text)
 		return
 
 	@dump_args
-	def DestroySelf(self):
+	def iDestroySelf(self):
 		"""
 		DestroySelf()
 		"""
-		raise Exception("Not implemented function: DestroySelf!")
+		self.get_context().do_destroy_self()
 		return
 	
 	@dump_args
@@ -1760,8 +1847,24 @@ class InfScriptSupport:
 	def iGiveItem(self, obj, target):
 		"""
 		GiveItem(S:Object*, O:Target*)
+		This action instructs the active creature to give the specified item (parameter 1) to the specified 
+		target (parameter 2). The active creature must possess the item to pass it. 
 		"""
-		raise Exception("Not implemented here function: GiveItem!")
+		target, ctrl = self.get_context()._get_ie_object(target)
+		if target:
+			npc = self.get_context()._gnpc()
+			proto = self.get_context()._get_proto(obj)
+			item = npc.item_find_by_proto(proto)
+			if item:
+				target.item_get(item)
+				if target.type == toee.obj_t_pc:
+					utils_pc.pc_receive_item_print(target, item, True)
+				elif npc.type == toee.obj_t_pc:
+					text = '{} lost {}'.format(npc.description, item.description)
+					npc.float_text_line(text, toee.tf_yellow)
+					text = '\n{}\n'.format(text)
+					toee.game.create_history_freeform(text)
+
 		return
 
 	@dump_args
@@ -1816,6 +1919,15 @@ class InfScriptSupport:
 			ctrl.hide_creature(npc, state)
 		return
 	
+	@dump_args
+	def iHideGUI(self):
+		"""
+		HideGUI()
+		This action hides the docking borders, menus, etc. on the sides of the screen.
+		"""
+		# do nothing TODO Temple
+		return
+
 	@dump_args
 	def IncrementChapter(self, resref):
 		"""
@@ -2350,8 +2462,8 @@ class InfScriptSupport:
 		"""
 		SetNumTimesTalkedTo(I:Num*)
 		"""
-		raise Exception("Not implemented hre function: SetNumTimesTalkedTo!")
-		return
+		result = self.get_context().has_met_set(num)
+		return result
 
 	@dump_args
 	def SetRegularNameSTRREF(self, obj, strref):
@@ -2985,193 +3097,6 @@ class InfScriptSupportNPC(InfScriptSupport):
 
 		return super(InfScriptSupportNPC, self)._get_globals(area)
 
-	def _get_nearest_obj(self, this_npc, obj_list_flags = toee.OLC_CRITTERS):
-		assert isinstance(this_npc, toee.PyObjHandle)
-		nearest = None
-		nearest_dist = -1
-		for obj in toee.game.obj_list_vicinity(this_npc.location, obj_list_flags):
-			assert isinstance(obj, toee.PyObjHandle)
-			if obj == this_npc: continue
-			if obj.d20_query(toee.Q_Critter_Is_Invisible): continue
-			dist = this_npc.distance_to(obj)
-			if nearest_dist == -1 or dist < nearest_dist:
-				nearest_dist = dist
-				nearest = obj
-		return nearest
-
-	def _get_ie_object_nearest(self):
-		npc = self.get_context()._get_nearest_obj(self.get_context()._gnpc(), toee.OLC_CRITTERS)
-		return (npc, None)
-
-	def _get_ie_object_nearest_pc(self):
-		npc = self.get_context()._get_nearest_obj(self.get_context()._gnpc(), toee.OLC_PC)
-		return (npc, None)
-
-	def get_native_context(self):
-		return self
-
-	def _get_stat_value(self, obj, statnum):
-		npc, ctrl = self.get_context()._get_ie_object(obj)
-		if not npc: 
-			return
-		"""
-		ENCUMBERANCE
-		CHR
-		XP
-		RESISTFIRE
-		RESISTELECTRICITY
-		RESISTMAGIC
-		CLASSLEVELSUM
-		SEEINVISIBLE
-		"""
-
-		statnumu = statnum.upper()
-		if statnumu == 'ENCUMBERANCE':
-			return npc.d20_query(toee.Q_Critter_Is_Encumbered_Medium)
-		elif statnumu == 'CHR':
-			return npc.stat_level_get(toee.stat_charisma)
-		elif statnumu == 'CLASSLEVELSUM':
-			return npc.stat_level_get(toee.stat_level)
-		elif statnumu == 'RESISTFIRE':
-			# TODO IMPROVE
-			return npc.d20_query_has_condition("Monster Energy Resistance")
-		elif statnumu == 'RESISTELECTRICITY':
-			# TODO IMPROVE
-			return npc.d20_query_has_condition("Monster Energy Resistance")
-		elif statnumu == 'RESISTMAGIC':
-			return npc.d20_query_has_condition("Spell Resistance")
-		elif statnumu == 'SEEINVISIBLE':
-			return npc.d20_query_has_condition("sp-See Invisibility")
-		return
-
-	########## TRIGGERS ##########
-
-	@dump_args
-	def iCheckStat(self, obj, value, statnum):
-		"""
-		CheckStatGT(O:Object*, I:Value*, I:StatNum*Stats)
-		"""
-		result = self.get_context()._get_stat_value(obj, statnum)
-		return result == value
-
-	@dump_args
-	def iCheckStatLT(self, obj, value, statnum):
-		""" 
-		0x4046 CheckStatLT(O:Object*,I:Value*,I:StatNum*Stats)
-		Returns true only if the specified object has the statistic in the 3rd parameter less than the value of the 2nd parameter.
-		"""
-		result = self.get_context()._get_stat_value(obj, statnum)
-		return result < value
-	
-	@dump_args
-	def iCheckStatGT(self, obj, value, statnum):
-		""" 
-		0x4045 CheckStatGT(O:Object*,I:Value*,I:StatNum*Stats)
-		Returns true only if the specified object has the statistic in the 3rd parameter greater than the value of the 2nd parameter.
-		"""
-		result = self.get_context()._get_stat_value(obj, statnum)
-		print('stat_value: {}'.format(result))
-		return result > value
-
-	
-	@dump_args
-	def iDestroyItem(self, resref):
-		"""
-		DestroyItem(S:ResRef*)
-		This action removes a single instance of the specified item from the active creature, unless the item exists in a stack, 
-		in which case the entire stack is removed. The example script is from ar1000.bcs.
-		"""
-		npc = self.get_context()._gnpc()
-		proto = self.get_context()._get_proto(resref)
-		item = npc.item_find_by_proto(proto)
-		if item:
-			# TODO - decrease if stack
-			item_description = item.description
-			item.destroy()
-			if npc.type == toee.obj_t_pc:
-				text = '{} lost {}'.format(pc.description, item_description)
-				pc.float_text_line(text, toee.tf_yellow)
-				text = '\n{}\n'.format(text)
-				toee.game.create_history_freeform(text)
-		return
-
-	@dump_args
-	def iGiveItem(self, obj, target):
-		"""
-		GiveItem(S:Object*, O:Target*)
-		This action instructs the active creature to give the specified item (parameter 1) to the specified 
-		target (parameter 2). The active creature must possess the item to pass it. 
-		"""
-		target, ctrl = self.get_context()._get_ie_object(target)
-		if target:
-			npc = self.get_context()._gnpc()
-			proto = self.get_context()._get_proto(obj)
-			item = npc.item_find_by_proto(proto)
-			if item:
-				target.item_get(item)
-				if target.type == toee.obj_t_pc:
-					utils_pc.pc_receive_item_print(target, item, True)
-				elif npc.type == toee.obj_t_pc:
-					text = '{} lost {}'.format(npc.description, item_obj.description)
-					npc.float_text_line(text, toee.tf_yellow)
-					text = '\n{}\n'.format(text)
-					toee.game.create_history_freeform(text)
-
-		return
-
-	@dump_args
-	def iHP(self, obj, hit_points):
-		""" 
-		0x4010 HP(O:Object*,I:Hit Points*)
-		Returns true only if the current hitpoints of the specified object are equal to the 2nd parameter.
-		"""
-		return self.get_context()._hp(obj) == hit_points
-	
-	@dump_args
-	def iHPGT(self, obj, hit_points):
-		""" 
-		00x4011 HPGT(O:Object*,I:Hit Points*)
-		Returns true only if the current hitpoints of the specified object are greater than the 2nd parameter.
-		"""
-		return self.get_context()._hp(obj) > hit_points
-	
-	@dump_args
-	def iHPLT(self, obj, hit_points):
-		""" 
-		0x4012 HPLT(O:Object*,I:Hit Points*)
-		Returns true only if the current hitpoints of the specified object are less than the 2nd parameter.
-		"""
-		return self.get_context()._hp(obj) < hit_points
-
-	@dump_args
-	def iNumTimesTalkedTo(self, num):
-		""" 
-		0x4039 NumTimesTalkedTo(I:Num*)
-
-		Returns true only if the player's party has spoken to the active CRE the exact number of times specified.
-		NB. NumTimesTalkedTo seems to increment when a PC initiates conversion with an NPC, or an NPC initiates conversation with a PC.
-		NumTimesTalkedTo does not seem to increment for force-talks, interactions, interjections and self-talking.
-		"""
-		result = self.get_context().has_met()
-		return result == num
-
-	@dump_args
-	def iNumTimesTalkedToGT(self, num):
-		""" 
-		0x403A NumTimesTalkedToGT(I:Num*)
-		Returns true only if the player's party has spoken to the active CRE more than the number of times specified.
-		"""
-		result = self.get_context().has_met()
-		return result > num
-	
-	@dump_args
-	def iNumTimesTalkedToLT(self, num):
-		"""
-		NumTimesTalkedToLT(I:Num*)
-		Returns true only if the player's party has spoken to the active CRE less than the number of times specified.
-		"""
-		result = self.get_context().has_met()
-		return result < num
 
 	@dump_args
 	def iOnCreation(self):
@@ -3182,15 +3107,6 @@ class InfScriptSupportNPC(InfScriptSupport):
 		# TODO
 		return is_on_creation == 1
 
-	########## ACTIONS ##########
-
-	@dump_args
-	def iSetNumTimesTalkedTo(self, num):
-		"""
-		SetNumTimesTalkedTo(I:Num*)
-		"""
-		result = self.get_context().has_met_set(num)
-		return result
 
 class InfScriptSupportDaemon(InfScriptSupport):
 	def _get_globals(self, area):

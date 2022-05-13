@@ -49,6 +49,8 @@ class CtrlAR1201(ctrl_daemon_ie.CtrlDaemonIE):
 		ctrl_class, loc = py12014_ar1201_npc_inst_classes.Ctrl_12SHAWFO_AR1201_Shawford_Crale,  utils_obj.sec2loc(477, 478)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "Shawford_Crale", 0, 1)
 		
+		# Messenger_Hidden: 12MESS (489.5, 478.7) const_toee.ROT02 ctrl: py12014_ar1201_npc_inst_classes.Ctrl_12MESS_AR1201_Messenger_Hidden hidden
+		
 		return
 	
 	def place_bcs_auto(self):

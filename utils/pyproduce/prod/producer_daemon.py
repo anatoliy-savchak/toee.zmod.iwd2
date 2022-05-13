@@ -26,8 +26,10 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
 
     def get_eligible_actor_recs(self):
         for rec in self.src['actors']:
-            if not rec['DefaultHiddenCalc']:
-                yield rec
+            # Actually, hidden npcs are used, do not do it
+            # if not rec['DefaultHiddenCalc']:
+            #     yield rec
+            yield rec
         return
 
     def produce(self, skip_bcs: bool = False, bcs_script_override: str = None):

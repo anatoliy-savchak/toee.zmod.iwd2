@@ -1076,3 +1076,206 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 		if state==46: return 50
 		return
 	
+class Ctrl_12MESS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12MESS 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
+	
+	def setup_scripts(self, npc):
+		super(Ctrl_12MESS_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Targos Soldier")
+		
+		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
+		hairStyle = utils_npc.HairStyle.from_npc(npc)
+		hairStyle.style = const_toee.hair_style_shorthair
+		hairStyle.color = const_toee.hair_color_brown # HairColourIndex: 2
+		hairStyle.update_npc(npc)
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [12, 11, 12, 9, 9, 9])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
+		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 6) # MaximumHP: 6
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 6
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_HELMET: Helmet(HelmsHats) from 00HELM01
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, npc, no_loot = False, wear_on = toee.item_wear_helmet) # Helmet (00HELM01) at SLOT_HELMET OK
+		
+		# SLOT_ARMOR: Studded Leather Armor(StuddedLeatherArmor) from 00LEAT04
+		# Not found! TODO ITEM
+		
+		# SLOT_WEAPON1: Spear(Spears) from 00SPER01
+		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTSPEAR, npc, no_loot = False, wear_on = toee.item_wear_weapon_primary) # Spear (00SPER01) at SLOT_WEAPON1 OK
+		
+		# SLOT_QUICK1: Dagger(Daggers) from 00DAGG01
+		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_DAGGER, npc, no_loot = False, wear_on = None) # Dagger (00DAGG01) at SLOT_QUICK1 OK
+		
+		# SLOT_QUICK2: Gold(Gold) from MISC07
+		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
+		
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
+		return
+	
+	def script_dialog(self, attachee, triggerer):
+		print("script_dialog 12TARSOL")
+		assert isinstance(attachee, toee.PyObjHandle)
+		assert isinstance(triggerer, toee.PyObjHandle)
+		
+		attachee.turn_towards(triggerer)
+		
+		line_id = -1
+		while True:
+			print("STATE 0")
+			# RandomNum(7,1)
+			if self.iRandomNum(7, 1):
+				line_id = 480 # Been wonderin' when those goblins are gonna strike again.  Hope it's soon.
+				print("STATE 0: line_id = 480")
+				break
+			
+			print("STATE 1")
+			# RandomNum(7,2)
+			if self.iRandomNum(7, 2):
+				line_id = 490 # Last time, it was worg riders - come leaping over the wall and into the town, trying to burn us out of our homes.
+				print("STATE 1: line_id = 490")
+				break
+			
+			print("STATE 2")
+			# RandomNum(7,3)
+			if self.iRandomNum(7, 3):
+				line_id = 500 # I hear Bremen's fallen to the horde.  If the horde takes Targos, then they'll cut off the Shaengarne River.
+				print("STATE 2: line_id = 500")
+				break
+			
+			print("STATE 3")
+			# RandomNum(7,4)
+			if self.iRandomNum(7, 4):
+				line_id = 510 # Damn cold out here - I come to Targos to start a new life, and already there's goblins tryin' to take it away from me.
+				print("STATE 3: line_id = 510")
+				break
+			
+			print("STATE 4")
+			# RandomNum(7,5)
+			if self.iRandomNum(7, 5):
+				line_id = 520 # According to talk, there's been sightings of bugbears and worg riders scattered amongst the goblins - and even an ogre or two.
+				print("STATE 4: line_id = 520")
+				break
+			
+			print("STATE 5")
+			# RandomNum(7,6)
+			if self.iRandomNum(7, 6):
+				line_id = 530 # Hope those archers on the western wall got all the arrows they need.
+				print("STATE 5: line_id = 530")
+				break
+			
+			print("STATE 6")
+			# RandomNum(7,7)
+			if self.iRandomNum(7, 7):
+				line_id = 540 # I still can't believe we got this Palisade built in under four months.
+				print("STATE 6: line_id = 540")
+				break
+			
+			print("STATE 7")
+			# GlobalGT("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if self.iGlobalGT("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				line_id = 550 # Glad to see you made it through the battle - if those goblins had taken the Palisade, Targos would be in flames right now.
+				print("STATE 7: line_id = 550")
+				break
+			
+			print("STATE 8")
+			# Global("Goblin_Palisade_Quest", "GLOBAL", 0)
+			# Global("Goblins_Attack_Palisade", "GLOBAL", 1)
+			if self.iGlobal("'Goblin_Palisade_Quest'", "'GLOBAL'", 0) \
+				 and self.iGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1):
+				line_id = 560 # C'mon!  We need to keep the goblins from the town gate, or Targos is done for!
+				print("STATE 8: line_id = 560")
+				break
+			
+			break # while
+			
+		print("script_dialog line_id: {}".format(line_id))
+		if line_id >= 0:
+			triggerer.begin_dialog(attachee, line_id)
+		
+		return line_id # script_dialog
+	
+	def dialog_test_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		# 12TARSOL
+		
+		return False # dialog_test_do
+	
+	def dialog_action_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		
+		return # dialog_action_do
+		
+	def get_dialog_trigger_max_index(self): return 0
+	
+	def get_state_to_line(self, state):
+		if state==0: return 480
+		if state==1: return 490
+		if state==2: return 500
+		if state==3: return 510
+		if state==4: return 520
+		if state==5: return 530
+		if state==6: return 540
+		if state==7: return 550
+		if state==8: return 560
+		return
+	

@@ -736,6 +736,26 @@ class ScriptTranFuncWait(ScriptTranFuncs):
         return line
 
 
+class ScriptTranFuncSmallWaitRandom(ScriptTranFuncs):
+    @classmethod
+    def supports_func(cls): return ("SmallWaitRandom", )
+
+    def do_translate_func(self, func_name: str, args: list, func_info): 
+        time_from = self.do_get_param(args[0], 0, func_info['args'][0])
+        time_to = self.do_get_param(args[1], 1, func_info['args'][1])
+
+        is_complex = self.context.get("is_complex")
+        if not is_complex:
+            line = f'self.i{func_name}({time_from}, {time_to})'
+        else:
+            line = f'self.i{func_name}({time_from}, {time_to}, locus=locus)'
+            instructions = list()
+            instructions.append({"line": line})
+            line = {"instructions": instructions, "context": self.context, "breaks_after": 1, "is_post_code": 1}
+
+        return line
+
+
 class ScriptTranFuncParamCoords(ScriptTranFuncs):
     @classmethod
     def supports_func(cls): return ("MoveViewPoint", "JumpToPoint")

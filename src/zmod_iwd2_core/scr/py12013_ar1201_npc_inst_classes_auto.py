@@ -27,3 +27,7 @@ class Ctrl_12SHAWFO_AR1201_Shawford_Crale_Auto(py12012_ar1201_npc_classes.Ctrl_1
 	def setup_bcs(self):
 		return
 
+class Ctrl_12MESS_AR1201_Messenger_Hidden_Auto(py12012_ar1201_npc_classes.Ctrl_12MESS): # 12MESS 
+	def setup_bcs(self):
+		return
+

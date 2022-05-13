@@ -196,4 +196,29 @@
 {476}{We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 61)}{380}{ctrl(npc).dialog_action(npc, pc, 49)} # resp: 12SHAWFO 100
 {477}{Thanks, Shawford.  Farewell. }{}{1}{}{0}{} # resp: 12SHAWFO 101
 
-{16821}{I must warn Ulbrec and gather the town forces... I need you to report to the Palisade and drive those damned goblins back.  If Tempus grants us victory, then meet me back here after the battle.}{}{}{}{0}{}
+{480}{Been wonderin' when those goblins are gonna strike again.  Hope it's soon.}{Been wonderin' when those goblins are gonna strike again.  Hope it's soon.}{}{}{}{} # phrase: 12TARSOL 0
+{481}{Continue}{}{1}{}{0}{} # resp: 12TARSOL 0
+
+{490}{Last time, it was worg riders - come leaping over the wall and into the town, trying to burn us out of our homes.}{Last time, it was worg riders - come leaping over the wall and into the town, trying to burn us out of our homes.}{}{}{}{} # phrase: 12TARSOL 1
+{491}{Continue}{}{1}{}{0}{} # resp: 12TARSOL 1
+
+{500}{I hear Bremen's fallen to the horde.  If the horde takes Targos, then they'll cut off the Shaengarne River.}{I hear Bremen's fallen to the horde.  If the horde takes Targos, then they'll cut off the Shaengarne River.}{}{}{}{} # phrase: 12TARSOL 2
+{501}{Continue}{}{1}{}{0}{} # resp: 12TARSOL 2
+
+{510}{Damn cold out here - I come to Targos to start a new life, and already there's goblins tryin' to take it away from me.}{Damn cold out here - I come to Targos to start a new life, and already there's goblins tryin' to take it away from me.}{}{}{}{} # phrase: 12TARSOL 3
+{511}{Continue}{}{1}{}{0}{} # resp: 12TARSOL 3
+
+{520}{According to talk, there's been sightings of bugbears and worg riders scattered amongst the goblins - and even an ogre or two.}{According to talk, there's been sightings of bugbears and worg riders scattered amongst the goblins - and even an ogre or two.}{}{}{}{} # phrase: 12TARSOL 4
+{521}{Continue}{}{1}{}{0}{} # resp: 12TARSOL 4
+
+{530}{Hope those archers on the western wall got all the arrows they need.}{Hope those archers on the western wall got all the arrows they need.}{}{}{}{} # phrase: 12TARSOL 5
+{531}{Continue}{}{1}{}{0}{} # resp: 12TARSOL 5
+
+{540}{I still can't believe we got this Palisade built in under four months.}{I still can't believe we got this Palisade built in under four months.}{}{}{}{} # phrase: 12TARSOL 6
+{541}{Continue}{}{1}{}{0}{} # resp: 12TARSOL 6
+
+{550}{Glad to see you made it through the battle - if those goblins had taken the Palisade, Targos would be in flames right now.}{Glad to see you made it through the battle - if those goblins had taken the Palisade, Targos would be in flames right now.}{}{}{}{} # phrase: 12TARSOL 7
+{551}{Continue}{}{1}{}{0}{} # resp: 12TARSOL 7
+
+{560}{C'mon!  We need to keep the goblins from the town gate, or Targos is done for!}{C'mon!  We need to keep the goblins from the town gate, or Targos is done for!}{}{}{}{} # phrase: 12TARSOL 8
+{561}{We're right behind you.}{}{1}{}{0}{} # resp: 12TARSOL 8

@@ -360,3 +360,19 @@ def translate_orientation(direction):
 	elif ori == 14: return const_toee.ROT05 # SE
 	elif ori == 15: return const_toee.ROT05 # SSE
 	return const_toee.ROT06
+
+def split_line_max(text, max_chars = 50):
+	lines = list()
+	if len(text) > max_chars:
+		words = text.split(' ')
+		text = ""
+		for word in words:
+			if len(text + (" " if text else "") + word) > max_chars:
+				lines.append(text)
+				text = ''
+
+			text = text + (" " if text else "") + word
+	else:
+		lines.append(text)
+
+	return lines

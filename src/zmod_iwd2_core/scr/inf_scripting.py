@@ -1699,9 +1699,29 @@ class InfScriptSupport:
 		if npc:
 			line = toee.game.get_mesline('mes\\floats.mes', strref)
 			if line:
+				float_lines = utils_inf.split_line_max(line)
+				print(float_lines)
+				float_line = '\n'.join(float_lines)
+				npc.float_text_line(float_line, toee.tf_white)
+				line = '\n{}: {}\n'.format(npc.description, line)
 				toee.game.create_history_freeform(line)
-				npc.float_mesfile_line('mes\\floats.mes', strref, toee.tf_white)
 
+		return
+
+	@dump_args
+	def iFloatMessageDialog(self, obj, dialog_line_id):
+		"""
+		NEW
+		"""
+		npc, ctrl = self.get_context()._get_ie_object(obj)
+		if npc:
+			succ = False
+			try:
+				succ = npc.float_line(dialog_line_id, toee.game.leader)
+			except Exception as e:
+				print(e.__class__.__name__)
+				print(e)
+				debug.breakp('')
 		return
 
 	@dump_args

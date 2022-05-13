@@ -23,6 +23,22 @@ def cs(): return ctrl_daemon.gdc()
 #### NPCS ####
 class Ctrl_10HEDRON_AR1000_Hedron(py10003_ar1000_npc_inst_classes_auto.Ctrl_10HEDRON_AR1000_Hedron_Auto): # 10HEDRON 
 
+	def setup_appearance(self, npc):
+		super().setup_appearance(npc)
+		npc.obj_set_int(toee.obj_f_critter_portrait, 7140) # NPC_7142_s_Moneir
+		# phaen: NPC_7162_s_Falrinth
+		# some brute: NPC_7212_s_GisterNoshim
+		# serious dark: NPC_7322_s_Jinnerth
+		# funny fighter: NPC_7332_s_Deggum
+		# bald merchant: NPC_7392_s_MerchantPrisoner
+		# poor peasant: NPC_7412_s_Nybble
+		# beard: NPC_7442_s_HoltenKindlehopper
+		# one eyed: NPC_7452_s_Rentsch
+		# fat: NPC_7462_s_Ploceus
+		# zelenskyy: NPC_7782_s_EarthTempleLt
+		# cleric lite?: NPC_8482_s_Hextor_Acolyte
+		return 
+
 	@classmethod
 	def test_Hedron_Quest_4_max_diplomacy_manual(cls, self):
 		hedron_npc, hedron = self._get_ie_object("'Hedron'")
@@ -90,9 +106,19 @@ class Ctrl_10HEDRON_AR1000_Hedron(py10003_ar1000_npc_inst_classes_auto.Ctrl_10HE
 		return
 
 class Ctrl_10ELDGUL_AR1000_Eldgull(py10003_ar1000_npc_inst_classes_auto.Ctrl_10ELDGUL_AR1000_Eldgull_Auto): # 10ELDGUL 
-	pass
+
+	def setup_appearance(self, npc):
+		super().setup_appearance(npc)
+		npc.obj_set_int(toee.obj_f_critter_portrait, 6682) # NPC_6682_s_Morgan
+		return 
 
 class Ctrl_10SCREED_AR1000_Screed(py10003_ar1000_npc_inst_classes_auto.Ctrl_10SCREED_AR1000_Screed_Auto): # 10SCREED 
+
+	def setup_appearance(self, npc):
+		super().setup_appearance(npc)
+		npc.obj_set_int(toee.obj_f_critter_portrait, 6682) # NPC_6682_s_Morgan
+		return 
+
 	@classmethod
 	@inf_scripting.dump_args
 	def test_identifiers_auto(cls, self):
@@ -129,15 +155,33 @@ class Ctrl_10SCREED_AR1000_Screed(py10003_ar1000_npc_inst_classes_auto.Ctrl_10SC
 		return
 
 class Ctrl_10REIG_AR1000_Reig(py10003_ar1000_npc_inst_classes_auto.Ctrl_10REIG_AR1000_Reig_Auto): # 10REIG 
-	pass
+
+	def setup_appearance(self, npc):
+		super().setup_appearance(npc)
+		npc.obj_set_int(toee.obj_f_critter_portrait, 6670) # NPC_6672_s_Bertram
+		return 
 
 class Ctrl_10JON_AR1000_Jon(py10003_ar1000_npc_inst_classes_auto.Ctrl_10JON_AR1000_Jon_Auto): # 10JON 
-	pass
+
+	def setup_appearance(self, npc):
+		super().setup_appearance(npc)
+		npc.obj_set_int(toee.obj_f_critter_portrait, 7040) # NPC_7042_s_Valden
+		return 
 
 class Ctrl_10BROGAN_AR1000_Brogan(py10003_ar1000_npc_inst_classes_auto.Ctrl_10BROGAN_AR1000_Brogan_Auto): # 10BROGAN 
-	pass
+
+	def setup_appearance(self, npc):
+		super().setup_appearance(npc)
+		npc.obj_set_int(toee.obj_f_critter_portrait, 7050) # NPC_7052_s_Mytch
+		return 
 
 class Ctrl_10JORUN_AR1000_Jorun(py10003_ar1000_npc_inst_classes_auto.Ctrl_10JORUN_AR1000_Jorun_Auto): # 10JORUN 
+
+	def setup_appearance(self, npc):
+		super().setup_appearance(npc)
+		npc.obj_set_int(toee.obj_f_critter_portrait, 7170) # NPC_7172_s_Grank
+		return 
+
 	@inf_scripting.dump_args
 	def test_race_auto(self):
 		try:

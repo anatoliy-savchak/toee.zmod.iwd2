@@ -24,7 +24,15 @@ def ctrl(npc): return ctrl_behaviour.get_ctrl(npc.id)
 def cs(): return ctrl_daemon.gdc()
 #### NPCS ####
 class Ctrl_12SHAWFO_AR1201_Shawford_Crale(py12013_ar1201_npc_inst_classes_auto.Ctrl_12SHAWFO_AR1201_Shawford_Crale_Auto): # 12SHAWFO 
-	pass
-class Ctrl_12MESS_AR1201_Messenger_Hidden(py12013_ar1201_npc_inst_classes_auto.Ctrl_12MESS_AR1201_Messenger_Hidden_Auto): # 12MESS 
-	pass
 
+	def setup_appearance(self, npc):
+		super().setup_appearance(npc)
+		npc.obj_set_int(toee.obj_f_critter_portrait, 7470) # NPC_7472_s_Tarim, NPC_7132_s_RomagCommander, NPC_7062_s_JarvisHann
+		return 
+	
+class Ctrl_12MESS_AR1201_Messenger_Hidden(py12013_ar1201_npc_inst_classes_auto.Ctrl_12MESS_AR1201_Messenger_Hidden_Auto): # 12MESS 
+
+	def setup_appearance(self, npc):
+		super().setup_appearance(npc)
+		npc.obj_set_int(toee.obj_f_critter_portrait, 7770) # NPC_7772_s_Courier
+		return 

@@ -376,3 +376,12 @@ def split_line_max(text, max_chars = 50):
 		lines.append(text)
 
 	return lines
+
+def copy_dict(d):
+	cpy = {}
+	for key, value in d.iteritems():
+		val = value
+		if isinstance(value, dict):
+			val = copy_dict(value)
+		cpy[key] = val
+	return cpy

@@ -73,10 +73,9 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
             self.add_import(class_file)
 
             self.writeline(f'# {name}: {cre_file} ({x:.1f}, {y:.1f}) {direction} ctrl: {class_file}.{ctrl_class} {"hidden" if hidden else ""}')
-            if not hidden:
-                if ctrl_class:
-                    self.writeline(f'ctrl_class, loc = {class_file}.{ctrl_class},  utils_obj.sec2loc({int(x)}, {int(y)})')
-                    self.writeline(f'self.create_npc_at(loc, ctrl_class, {direction}, "{name}", 0, 1)')
+            if ctrl_class:
+                self.writeline(f'ctrl_class, loc = {class_file}.{ctrl_class},  utils_obj.sec2loc({int(x)}, {int(y)})')
+                self.writeline(f'self.create_npc_at(loc, ctrl_class, {direction}, "{name}", 0, 1)')
             self.writeline()
         #self.writeline()
         if not self.current_line_id:

@@ -58,6 +58,7 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 		assert isinstance(ctrl, ctrl_behaviour_ie.CtrlBehaviourIE)
 
 		ctrl.set_alias(code_name, npc)
+		ctrl.vars['dameon_id'] = self.id
 		return npc, ctrl
 
 	def debug_glob_npcs(self):
@@ -152,3 +153,6 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 	def heartbeat(self, npc):
 		#print("CtrlTargosDocks heartbeat")
 		return
+
+	def locus_make(self):
+		return {'dameon_id': self.id}

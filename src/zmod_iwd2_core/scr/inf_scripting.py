@@ -40,13 +40,13 @@ def dump_args(func):
 		call_line = '{}({})'.format(fname, ', '.join('%s=%r' % entry for entry in zip(argnames,args) + kwargs.items()), r)
 		if debugg.DEBUG_DUMP_ARGS_START_END:
 			print("START {}".format(call_line))
+		else: print(call_line)
 		try:
 			r = func(*args, **kwargs)
 		finally:
 			if debugg.DEBUG_DUMP_ARGS_START_END:
 				print("END {}={}".format(call_line, r))
-			else:
-				print('{}={}'.format(call_line, r))
+			#else: print('{}={}'.format(call_line, r))
 		return r
 	return echo_func
 
@@ -69,6 +69,7 @@ def _locus_timed_wait(timed_wait_id, locus):
 	#locus = json.loads(locus_str)
 	inf = InfScriptSupport.locus_get_inf(locus, timed_wait_id)
 	if inf:
+		inf.get_script_vars()["timed_wait"] = None
 		inf.locus_run(locus)
 	return
 
@@ -276,9 +277,6 @@ class InfScriptSupport:
 			return critter_race in race_ids
 		return
 
-	def locus_make(self):
-		return {}
-
 	def _get_nearest_obj(self, this_npc, obj_list_flags = toee.OLC_CRITTERS):
 		assert isinstance(this_npc, toee.PyObjHandle)
 		nearest = None
@@ -347,34 +345,56 @@ class InfScriptSupport:
 				npc.destroy()
 		return
 
+	def locus_make(self):
+		return {}
+
 	@classmethod
 	def locus_get_inf(cls, locus, timed_wait_id):
+		# TODO - handle calls when map changed
 		daemon = ctrl_daemon.gdc()
 		assert isinstance(daemon, InfScriptSupportDaemon)
+		npc_id = locus.get('npc_id')
+		if npc_id:
+			ctrl = ctrl_behaviour.get_ctrl(npc_id)
+			return ctrl
 		return daemon
 
 	@dump_args
 	def locus_run(self, locus):
 		assert isinstance(locus, dict)
-		self.get_script_vars()["timed_wait"] = None
+		#self.get_script_vars()["timed_wait"] = None
 
 		script_class = locus["script_class"]
 		assert isinstance(script_class, ScriptBase)
 
-		block = locus["block"]
-		code = locus["code"]
-		continuous = locus["continuous"]
-		code_from = code + 1
-		script_class.do_execute(self, continuous=continuous, block_from=block, code_from=code_from)
+		block = locus.get("block")
+		code = locus.get("code")
+		code_from = None
+		if not code is None:
+			code_from = code + 1
+		continuous = locus.get("continuous")
+		end_cutscene = locus.get("end_cutscene")
+		new_locus = self.locus_make()
+		if end_cutscene:
+			new_locus['end_cutscene'] = end_cutscene
+		parent_locus = locus.get('parent_locus')
+		if parent_locus:
+			new_locus["parent_locus"] = utils_inf.copy_dict(parent_locus)
+		if "revert_context_override_to" in locus.keys():
+			revert_context_override_to = locus.get("revert_context_override_to")
+			new_locus["revert_context_override_to"] = revert_context_override_to
+		#print('locus_run: locus: {}'.format(locus))
+		#print('locus_run: new_locus: {}'.format(new_locus))
+		#debug.breakp('locus_run continuous: {}, block_from: {}, code_from: {}'.format(continuous, block, code_from))
+		script_class.execute(self, new_locus, continuous=continuous, block_from=block, code_from=code_from)
 		return
 
 	@dump_args
 	def do_wait(self, time_ms, locus):
 		#locus_str = json.dumps(locus)
-		print('locus: {}'.format(locus))
-		locus_copy = dict()
-		for key, value in locus.iteritems():
-			locus_copy[key] = value
+		#print('do_wait locus: {}'.format(locus))
+		locus_copy = utils_inf.copy_dict(locus)
+		#print('do_wait locus_copy: {}'.format(locus))
 		timed_wait_id = str(uuid.uuid4())
 		self.get_script_vars()["timed_wait"] = timed_wait_id
 		toee.game.timevent_add(_locus_timed_wait, (timed_wait_id, locus_copy), time_ms, 1)
@@ -1152,20 +1172,22 @@ class InfScriptSupport:
 		return self.get_context()._check_race(npc, race)
 
 	@dump_args
-	def RandomNum(self, range, value):
+	def iRandomNum(self, range, value):
 		"""
 		RandomNum(I:Range*, I:Value*)
+		Generates a random number between 1 and Range. Returns true only if the random number equals the 2nd parameter.
 		"""
-		raise Exception("Not implemented function: RandomNum!")
-		return
+		val = toee.game.random_range(1, range)
+		return val == value
 	
 	@dump_args
-	def RandomNumLT(self, range, value):
+	def iRandomNumLT(self, range, value):
 		"""
 		RandomNumLT(I:Range*, I:Value*)
+		NT As above except returns true only if the random number is less than the 2nd parameter.
 		"""
-		raise Exception("Not implemented function: RandomNumLT!")
-		return
+		val = toee.game.random_range(1, range)
+		return val < value
 	
 	@dump_args
 	def Range(self, obj, range, diffmode):
@@ -1222,6 +1244,7 @@ class InfScriptSupport:
 		"""
 		time = toee.game.random_range(time_min, time_max)
 		self.get_context().do_wait(1000*time // 15, locus)
+		locus["is_wait_mode"] = 1
 		return
 
 	@dump_args
@@ -1533,6 +1556,12 @@ class InfScriptSupport:
 			raise Exception(message)
 			return
 		npc, ctrl = self.get_context()._get_ie_object(obj, True)
+		print('new context_override: {}'.format(ctrl))
+		if not isinstance(ctrl, ctrl_behaviour.CtrlBehaviour):
+			message = "Icorrect new context_override value {}!".format(ctrl)
+			print(message)
+			raise Exception(message)
+
 		inf_engine.inf_engine().vars["context_override"] = ctrl
 		return
 	
@@ -1651,11 +1680,13 @@ class InfScriptSupport:
 		"""
 		EndCutSceneMode()
 		"""
-		inf_engine.inf_engine().vars["context_override"] = None
+		
 		cutscene_mode = inf_engine.inf_engine().vars.get("cutscene_mode", 0)
 		if cutscene_mode > 0: 
 			cutscene_mode += -1
-		inf_engine.inf_engine().vars["context_override"] = cutscene_mode
+		else:
+			inf_engine.inf_engine().vars["context_override"] = None
+		inf_engine.inf_engine().vars["cutscene_mode"] = cutscene_mode
 		return
 	
 	@dump_args
@@ -1747,6 +1778,9 @@ class InfScriptSupport:
 		FaceObject(O:Object*)
 		This action instructs the active creature to face the target object.
 		"""
+		if obj is None:
+			# it's fine
+			return
 		self_npc = self.get_context()._gnpc()
 		npc, ctrl = self.get_context()._get_ie_object(obj)
 		if self_npc and npc:
@@ -2089,6 +2123,7 @@ class InfScriptSupport:
 		if not time:
 			time = 8
 		self.do_wait(1000*time, locus=locus)
+		locus["is_wait_mode"] = 1
 		return
 
 	@dump_args
@@ -2527,7 +2562,8 @@ class InfScriptSupport:
 		SmallWait(I:Time*)
 		This action is similar to Wait(), it causes a delay in script processing. The time is measured in AI updates (which default to 15 per second)
 		"""
-		self.get_context().do_wait(1000*time // 15, locus)
+		self.do_wait(1000*time // 15, locus)
+		locus["is_wait_mode"] = 1
 		return
 	
 	@dump_args
@@ -2579,15 +2615,42 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def StartCutScene(self, cutscene):
+	def iStartCutScene(self, cutscene_class, parent_locus = None):
 		"""
 		StartCutScene(S:CutScene*)
 		"""
-		raise Exception("Not implemented function: StartCutScene!")
+		self.iStartCutSceneMode()
+		script_class = cutscene_class
+		assert isinstance(script_class, ScriptBase)
+
+		new_locus = self.locus_make()
+		new_locus['end_cutscene'] = 1
+		new_locus['revert_context_override_to'] = inf_engine.inf_engine().vars.get("context_override")
+		new_locus["script_class"] = script_class
+		new_locus['continuous'] = True
+		if parent_locus:
+			parent_locus_cpy = utils_inf.copy_dict(parent_locus)
+			new_locus["parent_locus"] = parent_locus_cpy
+		self.do_wait(1, locus=new_locus)
+
 		return
 	
 	def StartCutscene(self, cutscene): self.StartCutScene(cutscene=cutscene)
 	
+	
+	@dump_args
+	def iStartCutScenePost(self, cutscene_class, locus):
+		"""
+		StartCutScene(S:CutScene*)
+		"""
+		self.iStartCutSceneMode()
+		locus['end_cutscene'] = True
+		self.do_wait(1, locus=locus)
+		locus["is_wait_mode"] = 1
+		return
+	
+	def StartCutscene(self, cutscene): self.StartCutScene(cutscene=cutscene)
+
 	@dump_args
 	def iStartCutSceneMode(self):
 		"""
@@ -2761,7 +2824,8 @@ class InfScriptSupport:
 		"""
 		Wait(I:Time*)
 		"""
-		self.get_context().do_wait(time * 1000, locus)
+		self.do_wait(time * 1000, locus)
+		locus["is_wait_mode"] = 1
 		return
 	
 	@dump_args
@@ -2886,11 +2950,14 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def LastTalkedToBy(self, obj):
+	def iLastTalkedToBy(self, obj):
 		"""
 		LastTalkedToBy(O:Object*)
 		"""
-		raise Exception("Not implemented function: LastTalkedToBy!")
+		last_talked_to_id = self.get_script_vars().get('last_talked_to_id')
+		if last_talked_to_id:
+			npc = toee.game.get_obj_by_id(last_talked_to_id)
+			return npc
 		return
 	
 	@dump_args
@@ -3133,13 +3200,38 @@ class InfScriptSupportDaemon(InfScriptSupport):
 
 class ScriptBase(object):
 	@classmethod
-	def execute(cls, self):
+	def execute(cls, self, locus, continuous = False, block_from = None, code_from = None):
 		assert isinstance(self, InfScriptSupport)
 
-		cls.do_execute(self)
+		try:
+			if not locus: 
+				print('making new locus')
+				locus = self.locus_make()
+			locus.update({"script_class": cls, "continuous": continuous})
+
+			cls.do_execute(self, locus, continuous, block_from, code_from)
+		finally:
+
+			locus["block"] = None
+			locus["code"] = None
+			is_wait_mode = locus.get("is_wait_mode", 0)
+			print(' END {}.execute is_wait_mode: {}'.format(cls, is_wait_mode))
+			if not is_wait_mode:
+				end_cutscene = locus.get("end_cutscene", 0)
+				if end_cutscene:
+					self.iEndCutSceneMode()
+					end_cutscene += -1
+					locus["end_cutscene"] = end_cutscene
+				revert_context_override_to = locus.get("revert_context_override_to")
+				inf_engine.inf_engine().vars["context_override"] = revert_context_override_to
+
+				parent_locus = locus.get("parent_locus")
+				if parent_locus:
+					print('execute finalize fun {}'.format(cls))
+					self.locus_run(parent_locus)
 		return
 
 	@classmethod
-	def do_execute(cls, self, continuous = False, block_from = None, code_from = None):
+	def do_execute(cls, self, locus, continuous = False, block_from = None, code_from = None):
 		assert isinstance(self, InfScriptSupport)
 		return

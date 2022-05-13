@@ -708,12 +708,12 @@ class ScriptTranFuncCallScript(ScriptTranFuncs):
 
         is_complex = self.context.get("is_complex")
         if not is_complex:
-            line = f'self.iStartCutScenePost({file_name}.{class_name})'
+            line = f'self.iStartCutScenePost({file_name}.{class_name}, self.locus_make())'
         else:
-            line = f'self.iStartCutScene({file_name}.{class_name})'
+            line = f'self.iStartCutScene({file_name}.{class_name}, locus)'
             instructions = list()
             instructions.append({"line": line})
-            line = {"instructions": instructions, "context": self.context, "breaks_after": 1}
+            line = {"instructions": instructions, "context": self.context, "breaks_after": 1, "is_post_code": 1}
 
         return line
 

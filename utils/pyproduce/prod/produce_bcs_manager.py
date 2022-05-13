@@ -34,7 +34,8 @@ class ProduceBCSManager(producer_base.Producer):
         ctrl_name_auto, file_name_auto, pkg_name_auto = prod_auto.get_ctrl_tuple()
         self.set_bc(bcs_name, ctrl_name_auto, file_name_auto, pkg_name_auto)
         
-        prod_manual = ProduceBCSFileManual(doc=self.doc, bcs_name = bcs_name, are_name = hint_are_name, base_file_name=file_name_auto, base_name=ctrl_name_auto, make_new=False, base_package_name=pkg_name_auto)
+        make_new_manual = True # TODO - change it back to False when needed
+        prod_manual = ProduceBCSFileManual(doc=self.doc, bcs_name = bcs_name, are_name = hint_are_name, base_file_name=file_name_auto, base_name=ctrl_name_auto, make_new=make_new_manual, base_package_name=pkg_name_auto)
         prod_manual.produce(cre_name=hint_cre_name, actor_name=hint_actor_name, script_code=hint_script_code)
         prod_manual.save()
         ctrl_name, file_name, pkg_name = prod_manual.get_ctrl_tuple()
@@ -91,11 +92,12 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
         self.writeline(f'# {self.are_name}{str((" "+cre_name) if cre_name else "")}{str((" "+actor_name) if actor_name else "")}{str((" "+script_code) if script_code else "")}')
         self.writeline()
         self.writeline('@classmethod')
-        self.writeline('def do_execute(cls, self, continuous = False, block_from = None, code_from = None):')
+        self.writeline('@inf_scripting.dump_args')
+        self.writeline('def do_execute(cls, self, locus, continuous = False, block_from = None, code_from = None):')
         self.indent()
         self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
-        self.writeline('locus = self.locus_make()')
-        self.writeline('locus.update({"script_class": cls, "continuous": continuous})')
+        #self.writeline('if not locus: locus = self.locus_make()')
+        #self.writeline('locus.update({"script_class": cls, "continuous": continuous})')
 
         self.writeline('while True:')
         self.indent()
@@ -137,6 +139,15 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             # self.writeline('')
         self.writeline('break # while')
         self.indent(False)
+        #self.writeline('locus["block"] = None')
+        #self.writeline('locus["code"] = None')
+        #self.writeline('end_cutscene = locus.get("end_cutscene", 0)')
+        #self.writeline('if end_cutscene:')
+        #self.indent()
+        #self.writeline('self.iEndCutSceneMode()')
+        #self.writeline('end_cutscene += -1')
+        #self.writeline('locus["end_cutscene"] = end_cutscene')
+        #self.indent(False)
         self.writeline('return')
         self.writeline('')
         self.indent(False)
@@ -154,6 +165,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             is_continue = block["is_continue"]
 
             self.writeline('@classmethod')
+            self.writeline('@inf_scripting.dump_args')
             self.writeline(f'def {block_name}(cls, self, locus, code_from = None):')
             self.indent()
             self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
@@ -231,6 +243,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
                 sub_index = sub["sub_index"]
                 sub_result = 0
                 self.writeline('@classmethod')
+                self.writeline('@inf_scripting.dump_args')
                 self.writeline(f'def {sub["name"]}(cls, self, locus):')
                 self.indent()
                 self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')

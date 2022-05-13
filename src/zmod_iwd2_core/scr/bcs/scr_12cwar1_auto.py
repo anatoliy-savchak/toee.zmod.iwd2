@@ -8,10 +8,9 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 	# None
 	
 	@classmethod
-	def do_execute(cls, self, continuous = False, block_from = None, code_from = None):
+	@inf_scripting.dump_args
+	def do_execute(cls, self, locus, continuous = False, block_from = None, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		locus = self.locus_make()
-		locus.update({"script_class": cls, "continuous": continuous})
 		while True:
 			if not block_from or block_from >= 1:
 				break_ = cls.do_execute_block_01(self, locus, code_from=code_from if code_from and block_from == 1 else None)
@@ -45,6 +44,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["block"] = 1
@@ -108,6 +108,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return result
 	
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 1
@@ -122,6 +123,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return 2
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01_code_02(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 2
@@ -134,6 +136,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return 2
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01_code_03(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 3
@@ -146,6 +149,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return 2
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01_code_04(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 4
@@ -158,6 +162,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return 2
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01_code_05(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 5
@@ -170,6 +175,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return 2
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01_code_06(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 6
@@ -192,6 +198,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return 0
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_02(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["block"] = 2
@@ -212,6 +219,10 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 			break_ = cls.do_execute_block_02_code_01(self, locus)
 			if break_ == 2: return break_
 		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_02_code_02(self, locus)
+			if break_ == 2: return break_
+		
 		result = 1 # break further blocks
 		if not code_from is None:
 			result = 1
@@ -220,20 +231,31 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return result
 	
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_02_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 1
 		
 		# CutSceneId(Player1)
 		# SmallWaitRandom(1,3)
-		# FaceObject("Shawford_Crale")
 		
 		self.iCutSceneId("Player1")
-		self.iSmallWaitRandom(1, 3)
+		self.iSmallWaitRandom(1, 3, locus=locus)
+		return 2
+		
+	@classmethod
+	@inf_scripting.dump_args
+	def do_execute_block_02_code_02(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
+		
+		# FaceObject("Shawford_Crale")
+		
 		self.iFaceObject("'Shawford_Crale'")
 		return 0
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_03(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["block"] = 3
@@ -254,6 +276,10 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 			break_ = cls.do_execute_block_03_code_01(self, locus)
 			if break_ == 2: return break_
 		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_03_code_02(self, locus)
+			if break_ == 2: return break_
+		
 		result = 1 # break further blocks
 		if not code_from is None:
 			result = 1
@@ -262,20 +288,31 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return result
 	
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_03_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 1
 		
 		# CutSceneId(Player2)
 		# SmallWaitRandom(1,3)
-		# FaceObject("Shawford_Crale")
 		
 		self.iCutSceneId("Player2")
-		self.iSmallWaitRandom(1, 3)
+		self.iSmallWaitRandom(1, 3, locus=locus)
+		return 2
+		
+	@classmethod
+	@inf_scripting.dump_args
+	def do_execute_block_03_code_02(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
+		
+		# FaceObject("Shawford_Crale")
+		
 		self.iFaceObject("'Shawford_Crale'")
 		return 0
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_04(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["block"] = 4
@@ -296,6 +333,10 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 			break_ = cls.do_execute_block_04_code_01(self, locus)
 			if break_ == 2: return break_
 		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_04_code_02(self, locus)
+			if break_ == 2: return break_
+		
 		result = 1 # break further blocks
 		if not code_from is None:
 			result = 1
@@ -304,20 +345,31 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return result
 	
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_04_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 1
 		
 		# CutSceneId(Player3)
 		# SmallWaitRandom(1,3)
-		# FaceObject("Shawford_Crale")
 		
 		self.iCutSceneId("Player3")
-		self.iSmallWaitRandom(1, 3)
+		self.iSmallWaitRandom(1, 3, locus=locus)
+		return 2
+		
+	@classmethod
+	@inf_scripting.dump_args
+	def do_execute_block_04_code_02(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
+		
+		# FaceObject("Shawford_Crale")
+		
 		self.iFaceObject("'Shawford_Crale'")
 		return 0
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_05(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["block"] = 5
@@ -338,6 +390,10 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 			break_ = cls.do_execute_block_05_code_01(self, locus)
 			if break_ == 2: return break_
 		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_05_code_02(self, locus)
+			if break_ == 2: return break_
+		
 		result = 1 # break further blocks
 		if not code_from is None:
 			result = 1
@@ -346,20 +402,31 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return result
 	
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_05_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 1
 		
 		# CutSceneId(Player4)
 		# SmallWaitRandom(1,3)
-		# FaceObject("Shawford_Crale")
 		
 		self.iCutSceneId("Player4")
-		self.iSmallWaitRandom(1, 3)
+		self.iSmallWaitRandom(1, 3, locus=locus)
+		return 2
+		
+	@classmethod
+	@inf_scripting.dump_args
+	def do_execute_block_05_code_02(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
+		
+		# FaceObject("Shawford_Crale")
+		
 		self.iFaceObject("'Shawford_Crale'")
 		return 0
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_06(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["block"] = 6
@@ -380,6 +447,10 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 			break_ = cls.do_execute_block_06_code_01(self, locus)
 			if break_ == 2: return break_
 		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_06_code_02(self, locus)
+			if break_ == 2: return break_
+		
 		result = 1 # break further blocks
 		if not code_from is None:
 			result = 1
@@ -388,20 +459,31 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return result
 	
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_06_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 1
 		
 		# CutSceneId(Player5)
 		# SmallWaitRandom(1,3)
-		# FaceObject("Shawford_Crale")
 		
 		self.iCutSceneId("Player5")
-		self.iSmallWaitRandom(1, 3)
+		self.iSmallWaitRandom(1, 3, locus=locus)
+		return 2
+		
+	@classmethod
+	@inf_scripting.dump_args
+	def do_execute_block_06_code_02(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
+		
+		# FaceObject("Shawford_Crale")
+		
 		self.iFaceObject("'Shawford_Crale'")
 		return 0
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_07(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["block"] = 7
@@ -422,6 +504,10 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 			break_ = cls.do_execute_block_07_code_01(self, locus)
 			if break_ == 2: return break_
 		
+		if (code_from is None and do_check()) or (code_from <= 2):
+			break_ = cls.do_execute_block_07_code_02(self, locus)
+			if break_ == 2: return break_
+		
 		result = 1 # break further blocks
 		if not code_from is None:
 			result = 1
@@ -430,16 +516,26 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		return result
 	
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_07_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 1
 		
 		# CutSceneId(Player6)
 		# SmallWaitRandom(1,3)
-		# FaceObject("Shawford_Crale")
 		
 		self.iCutSceneId("Player6")
-		self.iSmallWaitRandom(1, 3)
+		self.iSmallWaitRandom(1, 3, locus=locus)
+		return 2
+		
+	@classmethod
+	@inf_scripting.dump_args
+	def do_execute_block_07_code_02(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 2
+		
+		# FaceObject("Shawford_Crale")
+		
 		self.iFaceObject("'Shawford_Crale'")
 		return 0
 		

@@ -6,6 +6,7 @@ from bcs import scr_000test_shawford_crale1_auto
 import py12014_ar1201_npc_inst_classes
 from bcs import scr_000test_shawford_crale1
 from bcs import scr_000test_shawford_crale2
+from bcs import scr_12cwar0
 #### END IMPORTS ####
 DAEMON_SCRIPT_ID = 12010
 DAEMON_MAP_ID = module_consts.MAP_ID_AR1201
@@ -41,7 +42,8 @@ class CtrlAR1201(ctrl_daemon_ie.CtrlDaemonIE):
 	def place_encounters_initial(self):
 		super(CtrlAR1201, self).place_encounters_initial()
 		#scr_000test_shawford_crale1_auto.Script_000TEST_Shawford_Crale1_Auto.do_execute(self, continuous=True)
-		scr_000test_shawford_crale2.Script_000TEST_Shawford_Crale2.do_execute(self, continuous=True)
+		self.iStartCutScene(scr_12cwar0.Script_12cWar0)
+		#scr_12cwar0.Script_12cWar0.do_execute(self, continuous=True)
 		return
 	
 	def place_npcs_auto(self):
@@ -50,6 +52,8 @@ class CtrlAR1201(ctrl_daemon_ie.CtrlDaemonIE):
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "Shawford_Crale", 0, 1)
 		
 		# Messenger_Hidden: 12MESS (489.5, 478.7) const_toee.ROT02 ctrl: py12014_ar1201_npc_inst_classes.Ctrl_12MESS_AR1201_Messenger_Hidden hidden
+		ctrl_class, loc = py12014_ar1201_npc_inst_classes.Ctrl_12MESS_AR1201_Messenger_Hidden,  utils_obj.sec2loc(489, 478)
+		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "Messenger_Hidden", 0, 1)
 		
 		return
 	

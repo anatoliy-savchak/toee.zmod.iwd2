@@ -8,10 +8,9 @@ class Script_000TEST_Shawford_Crale2_Auto(inf_scripting.ScriptBase): # 000TEST_S
 	# AR1201 script_area
 	
 	@classmethod
-	def do_execute(cls, self, continuous = False, block_from = None, code_from = None):
+	@inf_scripting.dump_args
+	def do_execute(cls, self, locus, continuous = False, block_from = None, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		locus = self.locus_make()
-		locus.update({"script_class": cls, "continuous": continuous})
 		while True:
 			if not block_from or block_from >= 1:
 				break_ = cls.do_execute_block_01(self, locus, code_from=code_from if code_from and block_from == 1 else None)
@@ -21,6 +20,7 @@ class Script_000TEST_Shawford_Crale2_Auto(inf_scripting.ScriptBase): # 000TEST_S
 		return
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["block"] = 1
@@ -85,6 +85,7 @@ class Script_000TEST_Shawford_Crale2_Auto(inf_scripting.ScriptBase): # 000TEST_S
 		return result
 	
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01_code_01(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 1
@@ -101,6 +102,7 @@ class Script_000TEST_Shawford_Crale2_Auto(inf_scripting.ScriptBase): # 000TEST_S
 		return 2
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01_code_02(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 2
@@ -113,6 +115,7 @@ class Script_000TEST_Shawford_Crale2_Auto(inf_scripting.ScriptBase): # 000TEST_S
 		return 2
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01_code_03(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 3
@@ -125,6 +128,7 @@ class Script_000TEST_Shawford_Crale2_Auto(inf_scripting.ScriptBase): # 000TEST_S
 		return 2
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01_code_04(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 4
@@ -137,6 +141,7 @@ class Script_000TEST_Shawford_Crale2_Auto(inf_scripting.ScriptBase): # 000TEST_S
 		return 2
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01_code_05(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 5
@@ -149,6 +154,7 @@ class Script_000TEST_Shawford_Crale2_Auto(inf_scripting.ScriptBase): # 000TEST_S
 		return 2
 		
 	@classmethod
+	@inf_scripting.dump_args
 	def do_execute_block_01_code_06(cls, self, locus):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		locus["code"] = 6

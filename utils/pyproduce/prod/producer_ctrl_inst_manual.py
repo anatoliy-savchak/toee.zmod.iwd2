@@ -21,7 +21,7 @@ class ProducerOfCtrlInstManual(producer_base.ProducerOfFile):
         self.script_id = script_id
         self.base_class = base_class
         self.actor_name = actor_name
-        self.ctrl_name = f'Ctrl_{self.cre_name}_{self.are_name}_{self.actor_name}'
+        self.ctrl_name = f'Ctrl_{self.cre_name}_{self.are_name}_{common.str_to_name(self.actor_name)}'
         return
 
     def produce(self):

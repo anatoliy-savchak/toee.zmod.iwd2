@@ -109,14 +109,14 @@ class Ctrl_10ELDGUL_AR1000_Eldgull(py10003_ar1000_npc_inst_classes_auto.Ctrl_10E
 
 	def setup_appearance(self, npc):
 		super(Ctrl_10ELDGUL_AR1000_Eldgull, self).setup_appearance(npc)
-		npc.obj_set_int(toee.obj_f_critter_portrait, 6682) # NPC_6682_s_Morgan
+		npc.obj_set_int(toee.obj_f_critter_portrait, 6680) # NPC_6682_s_Morgan
 		return 
 
 class Ctrl_10SCREED_AR1000_Screed(py10003_ar1000_npc_inst_classes_auto.Ctrl_10SCREED_AR1000_Screed_Auto): # 10SCREED 
 
 	def setup_appearance(self, npc):
 		super(Ctrl_10SCREED_AR1000_Screed, self).setup_appearance(npc)
-		npc.obj_set_int(toee.obj_f_critter_portrait, 6682) # NPC_6682_s_Morgan
+		npc.obj_set_int(toee.obj_f_critter_portrait, 6680) # NPC_6682_s_Morgan
 		return 
 
 	@classmethod
@@ -337,5 +337,17 @@ class Ctrl_10CRANDA_AR1000_Crandall(py10003_ar1000_npc_inst_classes_auto.Ctrl_10
 	pass
 
 class Ctrl_10MALED_AR1000_Dead_Townsperson_2(py10003_ar1000_npc_inst_classes_auto.Ctrl_10MALED_AR1000_Dead_Townsperson_2_Auto): # 10MALED 
+	pass
+
+class Ctrl_10HINT_AR1000_Door_Hint_Text_00(py10003_ar1000_npc_inst_classes_auto.Ctrl_10HINT_AR1000_Door_Hint_Text_00_Auto): # 10HINT 
+	pass
+
+class Ctrl_10HINT_AR1000_Door_Hint_Text_01(py10003_ar1000_npc_inst_classes_auto.Ctrl_10HINT_AR1000_Door_Hint_Text_01_Auto): # 10HINT 
+	pass
+
+class Ctrl_12SWIFTH_AR1000_Swift_Thomas_Hidden(py10003_ar1000_npc_inst_classes_auto.Ctrl_12SWIFTH_AR1000_Swift_Thomas_Hidden_Auto): # 12SWIFTH 
+	pass
+
+class Ctrl_10FIRTHH_AR1000_Firtha_Kerdos(py10003_ar1000_npc_inst_classes_auto.Ctrl_10FIRTHH_AR1000_Firtha_Kerdos_Auto): # 10FIRTHH 
 	pass
 

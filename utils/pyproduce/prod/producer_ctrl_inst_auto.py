@@ -23,7 +23,7 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         self.base_class = base_class
         self.actor_name = actor_name
         self.actor_dict = actor_dict
-        self.ctrl_name = f'Ctrl_{self.cre_name}_{self.are_name}_{self.actor_name}_Auto'
+        self.ctrl_name = f'Ctrl_{self.cre_name}_{self.are_name}_{common.str_to_name(self.actor_name)}_Auto'
         self.produce_imports(clear=make_new)
         self.skip_script_general = False
         self.skip_script_class = False

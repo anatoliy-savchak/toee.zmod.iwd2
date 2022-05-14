@@ -188,6 +188,10 @@ class AnimPeasantFemale(AnimHuman):
 
     def get_hair_style_const(self): return "const_toee.hair_style_longhair"
 
+class AnimPeasantFatWoman(AnimPeasantFemale):
+    @classmethod
+    def get_codes(cls): return ("FAT_WOMAN", )
+
 class AnimPeasantBoy(AnimHuman):
     @classmethod
     def get_codes(cls): return ("BOY", )

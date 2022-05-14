@@ -22,6 +22,15 @@ class ProducerOfCtrlManual(producer_base.ProducerOfFile):
         self.ctrl_name = f'Ctrl_{self.cre_name}'
         return
 
+    @classmethod
+    def overwrite_by_template(cls, doc, are_name, script_id):
+        template_path = doc.get_path_template_npcs_class_manual_file()
+        out_path = doc.get_path_out_npcs_class_manual_file(are_name, script_id)
+        with open(template_path, 'r') as fs:
+            with open(out_path, 'w') as fo:
+                fo.writelines(fs.readlines())
+        return
+
     def produce(self):
         line1 = f'class {self.ctrl_name}('
         if next((line for line in self.lines if line1 in line), None):

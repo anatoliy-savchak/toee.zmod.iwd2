@@ -1,8 +1,8 @@
-import toee
+import toee, debug
 import inf_scripting
-#### IMPORT ####
-import scr_10chedr0_auto
-#### IMPORT END ####
+#### IMPORTS ####
+from bcs import scr_10chedr0_auto
+#### END IMPORTS ####
 
 #### BCS ####
 class Script_10cHedr0(scr_10chedr0_auto.Script_10cHedr0_Auto): 

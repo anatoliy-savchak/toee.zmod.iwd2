@@ -711,7 +711,7 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			# StartCutSceneMode()
 			# StartCutScene("12cWar2")
 			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_12cwar2.Script_12cWar2, self.locus_make())
 			# 351: Did you hear that?
 			
@@ -720,7 +720,7 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			# StartCutSceneMode()
 			# StartCutScene("12cWar0")
 			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_12cwar0.Script_12cWar0, self.locus_make())
 			# 352: Did you hear that?
 			
@@ -847,7 +847,7 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			# StartCutSceneMode()
 			# StartCutScene("12cWar2")
 			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_12cwar2.Script_12cWar2, self.locus_make())
 			# 291: Did you hear that?
 			
@@ -856,7 +856,7 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			# StartCutSceneMode()
 			# StartCutScene("12cWar0")
 			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_12cwar0.Script_12cWar0, self.locus_make())
 			# 292: Did you hear that?
 			
@@ -1767,7 +1767,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1000a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
 			# 591: Can you take us to the Docks?
 			
@@ -1776,7 +1776,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1100a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
 			# 592: We'd like to go into town.
 			
@@ -1785,7 +1785,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
 			# 593: To the Palisade.
 			
@@ -1794,7 +1794,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200b")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
 			# 594: To the Palisade.
 			
@@ -1811,7 +1811,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 		elif index == 13:
 			# StartCutSceneMode()
 			# StartCutScene("ST_1000a")
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
 			# 623: Not at the moment.  Can you take us to the Docks?
 			
@@ -1820,7 +1820,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1100a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
 			# 624: We'd like to go into town.
 			
@@ -1828,7 +1828,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# SetGlobal("Jump_Check", "GLOBAL", 2) StartCutSceneMode()
 			# StartCutScene("ST_1200a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
 			# 625: No, but we need to head to the Palisade.
 			
@@ -1837,7 +1837,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200b")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
 			# 626: No, but we need to head to the Palisade.
 			
@@ -1846,7 +1846,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1000a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
 			# 634: Can you take us to the Docks?
 			
@@ -1855,7 +1855,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1100a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
 			# 635: We'd like to go into town.
 			
@@ -1864,7 +1864,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
 			# 636: To the Palisade.
 			
@@ -1873,7 +1873,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200b")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
 			# 637: To the Palisade.
 			
@@ -1882,7 +1882,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1000a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
 			# 652: Can you take us to the Docks?
 			
@@ -1891,7 +1891,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1100a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
 			# 653: We'd like to go into town.
 			
@@ -1900,7 +1900,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
 			# 654: We need to head to the Palisade.
 			
@@ -1909,7 +1909,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200b")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
 			# 655: We need to head to the Palisade.
 			
@@ -1918,7 +1918,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1000a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
 			# 641: Uh, sure.  Take me to the Docks, then.
 			
@@ -1927,7 +1927,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1100a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
 			# 642: Well, prove it and take me into town, then.
 			
@@ -1936,7 +1936,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
 			# 643: To the Palisade, then, fleetfoot.
 			
@@ -1945,7 +1945,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200b")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
 			# 644: To the Palisade, then, fleetfoot.
 			
@@ -1954,7 +1954,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1000a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
 			# 662: Can you take us to the Docks?
 			
@@ -1963,7 +1963,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1100a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
 			# 663: We'd like to go into town.
 			
@@ -1972,7 +1972,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
 			# 664: We need to head to the Palisade.
 			
@@ -1981,7 +1981,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200b")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
 			# 665: We need to head to the Palisade.
 			
@@ -1990,7 +1990,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1000a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
 			# 671: Yeah, anyway, can you take us to the Docks?
 			
@@ -1999,7 +1999,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1100a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
 			# 672: Sure would.  Now can you take us into town?
 			
@@ -2008,7 +2008,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
 			# 673: Epic doesn't begin to cover it.  Can you take us to the Palisade?
 			
@@ -2017,7 +2017,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200b")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
 			# 674: Epic doesn't begin to cover it.  Can you take us to the Palisade?
 			
@@ -2026,7 +2026,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1000a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
 			# 683: Yeah, anyway, Thomas, can you take us to the Docks?
 			
@@ -2035,7 +2035,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1100a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
 			# 684: All in a day's work.  Now can you take us into town?
 			
@@ -2044,7 +2044,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
 			# 685: That's about right.  Can you take us to the Palisade?
 			
@@ -2053,7 +2053,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200b")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
 			# 686: That's about right.  Can you take us to the Palisade?
 			
@@ -2062,7 +2062,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1000a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
 			# 691: My feet are already singing a song.  Now can you take us to the Docks?
 			
@@ -2071,7 +2071,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1100a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
 			# 692: Can't wait to hear them.  For now, can you take me into town?
 			
@@ -2080,7 +2080,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200a")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
 			# 693: Sure they will.  Can you take us to the Palisade?
 			
@@ -2089,7 +2089,7 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 			# StartCutSceneMode()
 			# StartCutScene("ST_1200b")
 			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
-			self.iStartCutSceneMode()
+			self.iStartCutSceneMode(is_from_dialog=True)
 			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
 			# 694: Sure they will.  Can you take us to the Palisade?
 			

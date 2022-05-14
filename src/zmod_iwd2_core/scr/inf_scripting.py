@@ -155,6 +155,7 @@ class InfScriptSupport:
 				break
 
 			if _name.startswith("player"): 
+				print('_name.startswith("player")')
 				npc, ctrl = self.get_context()._get_ie_object_player(_name)
 				break
 
@@ -212,12 +213,27 @@ class InfScriptSupport:
 		raise Exception("Not implemented here function: _get_ie_object_nearest_pc!")
 		return (None, None)
 
+	def _ensure_player_ctrl(self, pc, name_lower):
+		sto = utils_storage.obj_storage(pc)
+		ctrl = ctrl_behaviour.get_ctrl_from_storage(sto)
+		if not ctrl:
+			ctrl = _create_pc_ctrl()
+			ctrl.created(pc)
+			sto.data["ctrl"] = ctrl
+			sto.alias = name_lower
+		return ctrl
+
 	def _get_ie_object_player(self, name_lower):
+		return (toee.game.leader, self._ensure_player_ctrl(toee.game.leader, 'player1'))
 		_, num_str = name_lower.split('player', 2)
+		print('_, num_str = {}, {}'.format(_, num_str ))
 		num = int(num_str)
+		print('num = {}'.format(num))
+		num = num - 1
 		party = toee.game.party
 		if -1 < num < len(party):
-			return (party[num], None)
+			pc = party[num]
+			return (pc, self._ensure_player_ctrl(pc, name_lower))
 		return (None, None)
 
 	def _get_ie_object_myself(self, name):
@@ -361,7 +377,7 @@ class InfScriptSupport:
 			return ctrl
 		return daemon
 
-	@dump_args
+	#@dump_args
 	def locus_run(self, locus):
 		assert isinstance(locus, dict)
 		#self.get_script_vars()["timed_wait"] = None
@@ -391,7 +407,7 @@ class InfScriptSupport:
 		script_class.execute(self, new_locus, continuous=continuous, block_from=block, code_from=code_from)
 		return
 
-	@dump_args
+	#@dump_args
 	def do_wait(self, time_ms, locus):
 		#locus_str = json.dumps(locus)
 		#print('do_wait locus: {}'.format(locus))
@@ -1556,7 +1572,9 @@ class InfScriptSupport:
 			print(message)
 			raise Exception(message)
 			return
-		npc, ctrl = self.get_context()._get_ie_object(obj, True)
+		npc, ctrl = self.get_context()._get_ie_object(obj, False)
+		if not ctrl:
+			return False
 		print('new context_override: {}'.format(ctrl))
 		if not isinstance(ctrl, ctrl_behaviour.CtrlBehaviour):
 			message = "Icorrect new context_override value {}!".format(ctrl)
@@ -1564,7 +1582,7 @@ class InfScriptSupport:
 			raise Exception(message)
 
 		inf_engine.inf_engine().vars["context_override"] = ctrl
-		return
+		return True
 	
 	
 	@dump_args
@@ -1681,11 +1699,14 @@ class InfScriptSupport:
 		"""
 		
 		cutscene_mode = inf_engine.inf_engine().vars.get("cutscene_mode", 0)
+		cutscene_mode_new = cutscene_mode
 		if cutscene_mode > 0: 
-			cutscene_mode += -1
+			cutscene_mode_new += -1
 		else:
 			inf_engine.inf_engine().vars["context_override"] = None
-		inf_engine.inf_engine().vars["cutscene_mode"] = cutscene_mode
+		inf_engine.inf_engine().vars["cutscene_mode"] = cutscene_mode_new
+		print('EndCutSceneMode {} -> {}'.format(cutscene_mode, cutscene_mode_new))
+		debug.breakp('EndCutSceneMode')
 		return
 	
 	@dump_args
@@ -1820,7 +1841,7 @@ class InfScriptSupport:
 			line = toee.game.get_mesline('mes\\floats.mes', strref)
 			if line:
 				float_lines = utils_inf.split_line_max(line)
-				print(float_lines)
+				#print(float_lines)
 				float_line = '\n'.join(float_lines)
 				inf_engine.inf_engine().texts.append(float_lines)
 				npc.float_text_line(float_line, toee.tf_white)
@@ -2110,7 +2131,13 @@ class InfScriptSupport:
 		if x and y:
 			npc = self.get_context()._gnpc()
 			if npc:
-				utils_npc.npc_goto(npc, x, y)
+				if npc.type == toee.obj_t_pc:
+					if 'anim_goal_push_walk_to_tile' in dir(npc):
+						npc.anim_goal_push_walk_to_tile(x, y, 0, 0)
+					else:
+						npc.move(x, y, 0, 0)
+				else:
+					utils_npc.npc_goto(npc, x, y)
 				return True
 		return
 	
@@ -2616,11 +2643,11 @@ class InfScriptSupport:
 		"""
 		StartCutScene(S:CutScene*)
 		"""
-		self.iStartCutSceneMode()
 		script_class = cutscene_class
 		assert isinstance(script_class, ScriptBase)
 
 		new_locus = self.locus_make()
+		self.iStartCutSceneMode()
 		new_locus['end_cutscene'] = 1
 		new_locus['revert_context_override_to'] = inf_engine.inf_engine().vars.get("context_override")
 		new_locus["script_class"] = script_class
@@ -2629,6 +2656,7 @@ class InfScriptSupport:
 			parent_locus_cpy = utils_inf.copy_dict(parent_locus)
 			new_locus["parent_locus"] = parent_locus_cpy
 		self.do_wait(1, locus=new_locus)
+		parent_locus["is_wait_mode"] = 1
 
 		return
 	
@@ -2651,13 +2679,22 @@ class InfScriptSupport:
 	def StartCutscene(self, cutscene): self.StartCutScene(cutscene=cutscene)
 
 	@dump_args
-	def iStartCutSceneMode(self):
+	def iStartCutSceneMode(self, is_from_dialog = False):
 		"""
 		StartCutSceneMode()
 		"""
 		cutscene_mode = inf_engine.inf_engine().vars.get("cutscene_mode", 0)
-		cutscene_mode += 1
-		inf_engine.inf_engine().vars["cutscene_mode"]= cutscene_mode
+		if is_from_dialog:
+			"""
+			There will be no code, which could close the cutscene mode. Perhaps to improve.
+			"""
+			print('StartCutSceneMode from dialog, skip. {} -> {}'.format(cutscene_mode, cutscene_mode))
+			return
+		cutscene_mode = inf_engine.inf_engine().vars.get("cutscene_mode", 0)
+		cutscene_mode_new = cutscene_mode + 1
+		inf_engine.inf_engine().vars["cutscene_mode"]= cutscene_mode_new
+		print('StartCutSceneMode {} -> {}'.format(cutscene_mode, cutscene_mode_new))
+		debug.breakp('iStartCutSceneMode')
 		return
 	
 	def iStartCutsceneMode(self): self.StartCutSceneMode()
@@ -3196,6 +3233,7 @@ class InfScriptSupportDaemon(InfScriptSupport):
 		# TODO
 		return is_on_creation == 1
 
+
 class ScriptBase(object):
 	@classmethod
 	def execute(cls, self, locus, continuous = False, block_from = None, code_from = None):
@@ -3226,6 +3264,7 @@ class ScriptBase(object):
 				parent_locus = locus.get("parent_locus")
 				if parent_locus:
 					print('execute finalize fun {}'.format(cls))
+					debug.breakp('finalize fun')
 					self.locus_run(parent_locus)
 		return
 
@@ -3233,3 +3272,9 @@ class ScriptBase(object):
 	def do_execute(cls, self, locus, continuous = False, block_from = None, code_from = None):
 		assert isinstance(self, InfScriptSupport)
 		return
+
+def _create_pc_ctrl():
+	#return None
+	import ctrl_behaviour_ie_pc
+	ctrl = ctrl_behaviour_ie_pc.CtrlBehaviourIE()
+	return ctrl

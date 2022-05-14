@@ -1,4 +1,4 @@
-import toee
+import toee, debug
 import inf_scripting
 #### IMPORTS ####
 #### END IMPORTS ####
@@ -12,31 +12,31 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 	def do_execute(cls, self, locus, continuous = False, block_from = None, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		while True:
-			if not block_from or block_from >= 1:
+			if not block_from or block_from <= 1:
 				break_ = cls.do_execute_block_01(self, locus, code_from=code_from if code_from and block_from == 1 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
-			if not block_from or block_from >= 2:
+			if not block_from or block_from <= 2:
 				break_ = cls.do_execute_block_02(self, locus, code_from=code_from if code_from and block_from == 2 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
-			if not block_from or block_from >= 3:
+			if not block_from or block_from <= 3:
 				break_ = cls.do_execute_block_03(self, locus, code_from=code_from if code_from and block_from == 3 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
-			if not block_from or block_from >= 4:
+			if not block_from or block_from <= 4:
 				break_ = cls.do_execute_block_04(self, locus, code_from=code_from if code_from and block_from == 4 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
-			if not block_from or block_from >= 5:
+			if not block_from or block_from <= 5:
 				break_ = cls.do_execute_block_05(self, locus, code_from=code_from if code_from and block_from == 5 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
-			if not block_from or block_from >= 6:
+			if not block_from or block_from <= 6:
 				break_ = cls.do_execute_block_06(self, locus, code_from=code_from if code_from and block_from == 6 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
-			if not block_from or block_from >= 7:
+			if not block_from or block_from <= 7:
 				break_ = cls.do_execute_block_07(self, locus, code_from=code_from if code_from and block_from == 7 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
@@ -63,7 +63,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		# FaceObject(LastTalkedToBy(Myself))
 		# Wait(1)
 		# FloatMessage(Myself,16821)  // "I must warn Ulbrec and gather the town forces... I need you to report to the Palisade and drive those damned goblins back.  If Tempus grants us victory, then meet me back here after the battle."
-		# Wait(11)
+		# Wait(2)
 		# FloatMessage(Myself,16822)  // "Everyone!  To arms!  To arms!"
 		# Wait(2)
 		# MoveViewPoint([219.417],VERY_FAST)
@@ -142,10 +142,10 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		locus["code"] = 3
 		
 		# FloatMessage(Myself,16821)  // "I must warn Ulbrec and gather the town forces... I need you to report to the Palisade and drive those damned goblins back.  If Tempus grants us victory, then meet me back here after the battle."
-		# Wait(11)
+		# Wait(2)
 		
 		self.iFloatMessage("Myself", 16821)
-		self.iWait(time=11, locus=locus)
+		self.iWait(time=2, locus=locus)
 		return 2
 		
 	@classmethod

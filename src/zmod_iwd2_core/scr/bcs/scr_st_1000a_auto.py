@@ -1,4 +1,4 @@
-import toee
+import toee, debug
 import inf_scripting
 #### IMPORTS ####
 from bcs import scr_lua1000a
@@ -13,7 +13,7 @@ class Script_ST_1000a_Auto(inf_scripting.ScriptBase): # ST_1000a
 	def do_execute(cls, self, locus, continuous = False, block_from = None, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		while True:
-			if not block_from or block_from >= 1:
+			if not block_from or block_from <= 1:
 				break_ = cls.do_execute_block_01(self, locus, code_from=code_from if code_from and block_from == 1 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			

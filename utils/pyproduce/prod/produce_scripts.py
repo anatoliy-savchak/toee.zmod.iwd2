@@ -790,7 +790,8 @@ class ScriptTranFuncParamCoordsMoveToPoint(ScriptTranFuncParamCoords):
         coords = self.do_translate_param(args[0], 0, func_info['args'][0])
 
         is_complex = self.context.get("is_complex")
-        if not is_complex:
+        is_player = 'player' in str(self.context.get("CutSceneId") or '').lower()
+        if not is_complex or is_player:
             line = f'self.i{func_name}({coords})'
         else:
             line = f'self.i{func_name}Post({coords}, locus=locus)'
@@ -825,4 +826,23 @@ class ScriptTranFuncsCutSceneId(ScriptTranFuncs):
         if name:
             name = common.strip_quotes(common.strip_quotes(name))
         self.context["CutSceneId"] = name
+
+        result = super().do_translate_func(func_name, args, func_info)
+        # is_complex = self.context.get("is_complex")
+        # if is_complex:
+        #     line = result
+        #     instructions = list()
+        #     instructions.append({"line": line})
+        #     result = {"instructions": instructions, "context": self.context, "is_conditional": 1}
+
+        return result
+
+class ScriptTranFuncsStartCutSceneMode(ScriptTranFuncs):
+    @classmethod
+    def supports_func(cls): return ("StartCutSceneMode", )
+
+    def do_translate_func(self, func_name: str, args: list, func_info: dict):
+        if not self.context.get("is_complex"):
+            return 'self.iStartCutSceneMode(is_from_dialog=True)'
+
         return super().do_translate_func(func_name, args, func_info)

@@ -1,4 +1,4 @@
-import toee
+import toee, debug
 import inf_scripting
 #### IMPORTS ####
 #### END IMPORTS ####
@@ -12,27 +12,27 @@ class Script_LUA1000a_Auto(inf_scripting.ScriptBase): # LUA1000a
 	def do_execute(cls, self, locus, continuous = False, block_from = None, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
 		while True:
-			if not block_from or block_from >= 1:
+			if not block_from or block_from <= 1:
 				break_ = cls.do_execute_block_01(self, locus, code_from=code_from if code_from and block_from == 1 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
-			if not block_from or block_from >= 2:
+			if not block_from or block_from <= 2:
 				break_ = cls.do_execute_block_02(self, locus, code_from=code_from if code_from and block_from == 2 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
-			if not block_from or block_from >= 3:
+			if not block_from or block_from <= 3:
 				break_ = cls.do_execute_block_03(self, locus, code_from=code_from if code_from and block_from == 3 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
-			if not block_from or block_from >= 4:
+			if not block_from or block_from <= 4:
 				break_ = cls.do_execute_block_04(self, locus, code_from=code_from if code_from and block_from == 4 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
-			if not block_from or block_from >= 5:
+			if not block_from or block_from <= 5:
 				break_ = cls.do_execute_block_05(self, locus, code_from=code_from if code_from and block_from == 5 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			
-			if not block_from or block_from >= 6:
+			if not block_from or block_from <= 6:
 				break_ = cls.do_execute_block_06(self, locus, code_from=code_from if code_from and block_from == 6 else None)
 				if (break_ > 1) or (not continuous and break_): break
 			

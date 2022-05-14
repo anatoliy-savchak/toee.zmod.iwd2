@@ -68,7 +68,11 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
 
         fn = bcs_name + '.BAF'
         fn = os.path.join(self.doc.baf_dir, fn)
-        if os.path.exists(fn):
+        fn_override = fn.replace('.BAF', '_override.BAF')
+        if os.path.exists(fn_override):
+            with open(fn_override, 'r') as f:
+                self.script_lines = f.readlines()
+        elif os.path.exists(fn):
             with open(fn, 'r') as f:
                 self.script_lines = f.readlines()
         else:
@@ -135,7 +139,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             block_name = f'do_execute_block_{block_index:02d}'
             block["block_name"] = block_name
 
-            self.writeline(f'if not block_from or block_from >= {block_index}:')
+            self.writeline(f'if not block_from or block_from <= {block_index}:')
             self.indent()
             self.writeline(f'break_ = cls.{block_name}(self, locus, code_from=code_from if code_from and block_from == {block_index} else None)')
             self.writeline('if (break_ > 1) or (not continuous and break_): break')
@@ -264,8 +268,13 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
                     is_post_code = line.get("is_post_code")
                     if is_post_code:
                         sub_result = 2
-                    for sline in line["instructions"]:
-                        self.writeline(f'{sline["line"]}')
+                    is_conditional = line.get("is_conditional")
+                    if is_conditional:
+                        for sline in line["instructions"]:
+                            self.writeline(f'if not {sline["line"]}: return 2')
+                    else:
+                        for sline in line["instructions"]:
+                            self.writeline(f'{sline["line"]}')
                 self.writeline(f'return {sub_result}')
                 self.writeline()
                 self.indent(False)

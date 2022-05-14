@@ -155,7 +155,6 @@ class InfScriptSupport:
 				break
 
 			if _name.startswith("player"): 
-				print('_name.startswith("player")')
 				npc, ctrl = self.get_context()._get_ie_object_player(_name)
 				break
 
@@ -214,6 +213,10 @@ class InfScriptSupport:
 		return (None, None)
 
 	def _ensure_player_ctrl(self, pc, name_lower):
+		if not pc:
+			ctrl = _create_pc_ctrl()
+			return ctrl
+
 		sto = utils_storage.obj_storage(pc)
 		ctrl = ctrl_behaviour.get_ctrl_from_storage(sto)
 		if not ctrl:
@@ -224,17 +227,15 @@ class InfScriptSupport:
 		return ctrl
 
 	def _get_ie_object_player(self, name_lower):
-		return (toee.game.leader, self._ensure_player_ctrl(toee.game.leader, 'player1'))
+		#return (toee.game.leader, self._ensure_player_ctrl(toee.game.leader, 'player1'))
 		_, num_str = name_lower.split('player', 2)
-		print('_, num_str = {}, {}'.format(_, num_str ))
 		num = int(num_str)
-		print('num = {}'.format(num))
 		num = num - 1
 		party = toee.game.party
 		if -1 < num < len(party):
 			pc = party[num]
 			return (pc, self._ensure_player_ctrl(pc, name_lower))
-		return (None, None)
+		return (None, self._ensure_player_ctrl(None, None))
 
 	def _get_ie_object_myself(self, name):
 		npc = self.get_context()._gnpc()
@@ -1567,11 +1568,12 @@ class InfScriptSupport:
 		This action is used internally in a cutscene to make 
 		the object with the specified death variable perform actions. The action appears to only work from a creature script.
 		"""
-		if not inf_engine.inf_engine().vars.get("cutscene_mode", 0):
-			message = "Cannot set iCutSceneId as cutscene_mode is 0!"
-			print(message)
-			raise Exception(message)
-			return
+		# apparantly that's not the case
+		# if not inf_engine.inf_engine().vars.get("cutscene_mode", 0):
+		# 	message = "Cannot set iCutSceneId as cutscene_mode is 0!"
+		# 	print(message)
+		# 	raise Exception(message)
+		# 	return
 		npc, ctrl = self.get_context()._get_ie_object(obj, False)
 		if not ctrl:
 			return False
@@ -1693,7 +1695,7 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def iEndCutSceneMode(self):
+	def iEndCutSceneMode(self, final = False):
 		"""
 		EndCutSceneMode()
 		"""
@@ -1701,12 +1703,16 @@ class InfScriptSupport:
 		cutscene_mode = inf_engine.inf_engine().vars.get("cutscene_mode", 0)
 		cutscene_mode_new = cutscene_mode
 		if cutscene_mode > 0: 
-			cutscene_mode_new += -1
-		else:
-			inf_engine.inf_engine().vars["context_override"] = None
+			if final:
+				cutscene_mode_new = 0
+			else:
+				cutscene_mode_new += -1
+		# else:
+		# 	inf_engine.inf_engine().vars["context_override"] = None
 		inf_engine.inf_engine().vars["cutscene_mode"] = cutscene_mode_new
-		print('EndCutSceneMode {} -> {}'.format(cutscene_mode, cutscene_mode_new))
-		debug.breakp('EndCutSceneMode')
+		finalstr = 'final' if final else ''
+		print('EndCutSceneMode {} {} -> {}'.format(finalstr, cutscene_mode, cutscene_mode_new))
+		#debug.breakp('EndCutSceneMode')
 		return
 	
 	@dump_args
@@ -2694,7 +2700,7 @@ class InfScriptSupport:
 		cutscene_mode_new = cutscene_mode + 1
 		inf_engine.inf_engine().vars["cutscene_mode"]= cutscene_mode_new
 		print('StartCutSceneMode {} -> {}'.format(cutscene_mode, cutscene_mode_new))
-		debug.breakp('iStartCutSceneMode')
+		#debug.breakp('iStartCutSceneMode')
 		return
 	
 	def iStartCutsceneMode(self): self.StartCutSceneMode()
@@ -3264,8 +3270,11 @@ class ScriptBase(object):
 				parent_locus = locus.get("parent_locus")
 				if parent_locus:
 					print('execute finalize fun {}'.format(cls))
-					debug.breakp('finalize fun')
+					#debug.breakp('finalize fun')
 					self.locus_run(parent_locus)
+				else:
+					inf_engine.inf_engine().vars["context_override"] = None
+					self.iEndCutSceneMode(final=True)
 		return
 
 	@classmethod

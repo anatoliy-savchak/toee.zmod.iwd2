@@ -41,6 +41,10 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         return
 
     def produce(self):
+        self.anim = produce_anim.AnimBase.process(self.cre, self)
+        if not self.anim:
+            raise Exception(f'No anim object for {self.cre["AnimationNameCalc"]}!!')
+            
         self.current_line_id = common.lines_after_before_cutoff(self.lines, '#### GVARS ####', '#### GVARS END ####')
         if self.current_line_id and self.current_line_id > 0:
             self.writeline(f'MODULE_SCRIPT_ID = {self.script_id}')
@@ -85,6 +89,9 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         else:
             raise Exception(f"Unknown race: {race_name}({race})")
 
+        if proto_override := self.anim.proto_override():
+            proto = proto_override
+
         self.writeline("@classmethod")
         self.writeline(f"def get_proto_id(cls): return {proto}")
         self.writeline("")
@@ -103,10 +110,6 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         return
 
     def produce_npc_appearance(self):
-        self.anim = produce_anim.AnimBase.process(self.cre, self)
-        if not self.anim:
-            raise Exception(f'No anim object for {self.cre["AnimationNameCalc"]}!!')
-            
         self.writeline("def setup_appearance(self, npc):")
         self.indent()
 
@@ -183,6 +186,10 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.produce_saves()
         self.produce_hp()
         self.produce_skills()
+
+        hidden = bool(self.cre["Hidden"])
+        if hidden:
+            self.writeline('self.hide_creature(npc, True)')
 
         self.writeline("return")
         self.indent(False)

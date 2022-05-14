@@ -15,7 +15,7 @@ class ProducerOfFloats(producer_base.ProducerOfFile):
     def ensure_str_ref(self, strref: int):
         if strref in self.strrefs.keys():
             return
-        text_rec = next((rec for rec in self.src["Strings"] if rec["Strref"] == strref), None)
+        text_rec = self.get_str_ref_rec(strref)
         if text_rec:
             text = text_rec["Text"]
             if text:
@@ -26,6 +26,21 @@ class ProducerOfFloats(producer_base.ProducerOfFile):
             self.strrefs[strref] = text
             self.save()
         #self.writeline(f'{{{strref}}}{{{text}}}')
+        return
+
+    def get_str_ref_rec(self, strref: int):
+        return next((rec for rec in self.src["Strings"] if rec["Strref"] == strref), None)
+
+    def get_str_ref(self, strref: int):
+        text_rec = self.get_str_ref_rec(strref)
+        if text_rec:
+            text = text_rec["Text"]
+            if text:
+                text = common.strip_quotes(text)
+            if (sound := text_rec["Sound"]) and sound.strip():
+                print(sound)
+                pass
+            return text
         return
 
     def save(self):

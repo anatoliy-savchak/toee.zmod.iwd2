@@ -119,3 +119,13 @@ def map_calc_limits(topLeft, bottomRight):
 def copy2clip(txt):
 	cmd='echo '+txt.strip()+'|clip'
 	return subprocess.check_call(cmd, shell=True)
+
+def create_history_freeform(text):
+	if text:
+		if text[0] != '\n':
+			text = '\n'+text
+		if text[len(text)-1] != '\n':
+			text = text + '\n'
+		#inf_engine.inf_engine().texts.append(text)
+		game.create_history_freeform(text)
+	return

@@ -41,13 +41,16 @@ class AnimBase(object):
         return
 
     def _portrait_print(self, portrait_id, portrait_comment_name):
-        self._add_line(f"npc.obj_set_int(toee.obj_f_critter_portrait, {portrait_id}) # {portrait_comment_name}")
+        self._add_line(f"# npc.obj_set_int(toee.obj_f_critter_portrait, {portrait_id}) # {portrait_comment_name}")
         self._add_line("")
         return
 
     def get_major_color_name(self):
         name = ""
         return
+
+    def proto_override(self):
+        return None
 
     @classmethod
     def disallow_weapon(cls): return False
@@ -87,11 +90,11 @@ class AnimHumanoid(AnimBase):
     def produce_cloth(self):
         worn_armor = self.parent.wears.get("toee.item_wear_armor")
         if not worn_armor:
-            armor_proto_const = self.get_armor_proto_const() #"const_proto_cloth.PROTO_CLOTH_ROBES_MONK_WHITE"
+            armor_proto_const, wear_on = self.get_armor_proto_const_and_wearon()
             if armor_proto_const:
                 aname = armor_proto_const if not isinstance(armor_proto_const, tuple) else armor_proto_const[0]
                 acomment = "" if not isinstance(armor_proto_const, tuple) else armor_proto_const[1]
-                self._add_line(f'utils_item.item_create_in_inventory2({aname}, npc, no_loot = True, wear_on = toee.item_wear_armor) # {acomment}')
+                self._add_line(f'utils_item.item_create_in_inventory2({aname}, npc, no_loot = True, wear_on = {wear_on}) # {acomment}')
         
         worn_boots = self.parent.wears.get("toee.item_wear_boots")
         if not worn_boots:
@@ -101,6 +104,9 @@ class AnimHumanoid(AnimBase):
         return
 
     def get_boots_proto_const(self): return "const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE"
+
+    def get_armor_proto_const_and_wearon(self): 
+        return (self.get_armor_proto_const(), 'toee.item_wear_armor')
 
     def get_armor_proto_const(self): 
         majorColourName = self.cre["MajorColourName"]
@@ -181,6 +187,16 @@ class AnimPeasantFemale(AnimHuman):
     def get_codes(cls): return ("PEASANT_WOMAN", )
 
     def get_hair_style_const(self): return "const_toee.hair_style_longhair"
+
+class AnimPeasantBoy(AnimHuman):
+    @classmethod
+    def get_codes(cls): return ("BOY", )
+
+    def proto_override(self):
+        return '14704'
+    
+    def get_armor_proto_const(self): "const_proto_cloth.PROTO_CLOTH_RAGGED_CLOTHES"
+    #def get_armor_proto_const_and_wearon(self): return ("const_proto_cloth.PROTO_CLOTH_COAT_LONG_RED", 'toee.item_wear_robes')
 
 class AFighter:
     def get_armor_proto_const(self): return "const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING"

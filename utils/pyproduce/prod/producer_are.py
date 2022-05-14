@@ -33,7 +33,7 @@ class ProducerOfAre(producer_base.Producer):
             , self.src_sec
             , self.src_path
             )
-        self.dialog = produce_dialog.DialogFile(self.doc.get_path_out_npcs_dialog_file(self.are_name, self.script_id + 1))
+        self.dialog = produce_dialog.DialogFile(self.doc, self.doc.get_path_out_npcs_dialog_file(self.are_name, self.script_id + 1))
 
         self.skip_script_general = False
         self.skip_script_class = False
@@ -53,7 +53,7 @@ class ProducerOfAre(producer_base.Producer):
             self.produce_actor(actor_name)
 
         self.produce_daemon(self.skip_script_daemon)
-        self.produce_speech()
+        self.produce_end()
         return
 
     def produce_actor(self, actor_name_: str = None):
@@ -110,6 +110,11 @@ class ProducerOfAre(producer_base.Producer):
     def produce_start(self):
         producer_ctrl_auto.ProducerOfCtrlAuto.overwrite_by_template(self.doc, are_name=self.are_name, script_id=self.script_id+1)
         producer_ctrl_inst_auto.ProducerOfCtrlInstAuto.overwrite_by_template(self.doc, are_name=self.are_name, script_id=self.script_id+3)
+        return
+
+    def produce_end(self):
+        self.dialog.save()
+        self.produce_speech()
         return
 
     def produce_cre_class_auto(self, cre_name: str):
@@ -241,4 +246,17 @@ class ProducerOfAre(producer_base.Producer):
         speech_script_id = self.script_id + 1
         dest_speech_path = os.path.join(self.doc.get_path_sound(), "speech", f"{speech_script_id:05d}")
         self.dialog.copy_sound_files(self.doc.wav_dir, dest_speech_path, self.make_new)
+        return
+
+    def get_actor_dict(self, actor_name: str):
+        actor_name_lo = actor_name.lower()
+        return next((actor for actor in self.src['actors'] if actor['Name'].lower() == actor_name_lo), None)
+
+    def add_actor_strref_line(self, actor_name, strref):
+        actor = self.get_actor_dict(actor_name)
+        if actor:
+            strref = int(strref)
+            if self.doc.producerOfFloats.get_str_ref_rec(strref):
+                self.dialog.add_strref(strref)
+                return True
         return

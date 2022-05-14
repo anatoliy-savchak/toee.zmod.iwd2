@@ -11,7 +11,7 @@
 {40}{If you do not have equipment, then you will need to visit the Gallaway Trading Depot in town and purchase what you need.}{If you do not have equipment, then you will need to visit the Gallaway Trading Depot in town and purchase what you need.}{}{}{}{} # phrase: 12SHAWFO 4
 {41}{Continue}{}{1}{}{50}{} # resp: 12SHAWFO 6
 
-{50}{If you are wounded while serving in the Guard, report here, and Nolan, in the corner there, will tend to your wounds. }{If you are wounded while serving in the Guard, report here, and Nolan, in the corner there, will tend to your wounds. }{}{}{}{} # phrase: 12SHAWFO 46
+{50}{If you are wounded while serving in the Guard, report here, and Nolan, in the corner there, will tend to your wounds.}{If you are wounded while serving in the Guard, report here, and Nolan, in the corner there, will tend to your wounds.}{}{}{}{} # phrase: 12SHAWFO 46
 {51}{Continue}{}{1}{}{60}{} # resp: 12SHAWFO 103
 
 {60}{If you do not have lodgings, then we will make arrangements for you to be lodged here on the grounds, or have one of the abandoned buildings in town.}{If you do not have lodgings, then we will make arrangements for you to be lodged here on the grounds, or have one of the abandoned buildings in town.}{}{}{}{} # phrase: 12SHAWFO 5
@@ -96,7 +96,7 @@
 {270}{Last word was that they were draining the last of Gohar's kegs in the Salty Dog Tavern by the docks.  You can most likely find them there.}{Last word was that they were draining the last of Gohar's kegs in the Salty Dog Tavern by the docks.  You can most likely find them there.}{}{}{}{} # phrase: 12SHAWFO 30
 {271}{I'm on it.  I'll return with them... or without them... shortly.}{}{1}{}{280}{} # resp: 12SHAWFO 60
 
-{280}{Please make haste - there have been sightings of goblins near the Palisade, and I fear they will attack before you return.  }{Please make haste - there have been sightings of goblins near the Palisade, and I fear they will attack before you return.  }{}{}{}{} # phrase: 12SHAWFO 45
+{280}{Please make haste - there have been sightings of goblins near the Palisade, and I fear they will attack before you return.}{Please make haste - there have been sightings of goblins near the Palisade, and I fear they will attack before you return.}{}{}{}{} # phrase: 12SHAWFO 45
 {281}{Continue}{}{1}{}{0}{} # resp: 12SHAWFO 102
 
 {290}{Seems death has made a home in Targos of late.  Very well, then we'll need to adjust th-}{Seems death has made a home in Targos of late.  Very well, then we'll need to adjust th-}{}{}{}{} # phrase: 12SHAWFO 31
@@ -128,9 +128,9 @@
 {331}{That's not all.  They should expect a three-pronged assault, one from a sorcerer named "Caballus," and two others - uh, "Ghotrag" and "Vgh..." er, "Houndstooth," or something.}{}{1}{}{320}{ctrl(npc).dialog_action(npc, pc, 17); uj.journal_add(10782, (265, 266, ))} # resp: 12SHAWFO 42
 
 {340}{Any luck on bringing the Iron Collar to the Palisade?}{Any luck on bringing the Iron Collar to the Palisade?}{}{}{}{} # phrase: 12SHAWFO 32
-{341}{No, they were too deep in their cups to listen to reason, so I was forced to deal with them.  }{}{1}{ctrl(npc).dialog_test(npc, pc, 37)}{290}{ctrl(npc).dialog_action(npc, pc, 28); uj.journal_add(10783, (267, 268, 269, 270, ))} # resp: 12SHAWFO 63
+{341}{No, they were too deep in their cups to listen to reason, so I was forced to deal with them.}{}{1}{ctrl(npc).dialog_test(npc, pc, 37)}{290}{ctrl(npc).dialog_action(npc, pc, 28); uj.journal_add(10783, (267, 268, 269, 270, ))} # resp: 12SHAWFO 63
 {342}{Well, at first it seemed as if they would be coming along peacefully, but then I heard one of them say something... I can't quite remember what... and so we were forced to kill them all.  I'm sure it was all just a misunderstanding.}{}{1}{ctrl(npc).dialog_test(npc, pc, 38)}{290}{ctrl(npc).dialog_action(npc, pc, 29); uj.journal_add(10783, (267, 268, 269, 270, ))} # resp: 12SHAWFO 64
-{343}{Yes - though they proved to be a stubborn bunch.  I don't know how well they'll serve, but they may stop a few goblin axes. }{}{1}{ctrl(npc).dialog_test(npc, pc, 39)}{350}{ctrl(npc).dialog_action(npc, pc, 30); uj.journal_add(10784, (271, 272, 273, ))} # resp: 12SHAWFO 65
+{343}{Yes - though they proved to be a stubborn bunch.  I don't know how well they'll serve, but they may stop a few goblin axes.}{}{1}{ctrl(npc).dialog_test(npc, pc, 39)}{350}{ctrl(npc).dialog_action(npc, pc, 30); uj.journal_add(10784, (271, 272, 273, ))} # resp: 12SHAWFO 65
 {344}{Where can they be found again?}{}{1}{ctrl(npc).dialog_test(npc, pc, 40)}{270}{} # resp: 12SHAWFO 66
 {345}{Not yet.  We're still working on it.  We'll return when we've dealt with them.}{}{1}{ctrl(npc).dialog_test(npc, pc, 41)}{280}{} # resp: 12SHAWFO 67
 
@@ -142,59 +142,59 @@
 {361}{Continue}{}{1}{}{370}{} # resp: 12SHAWFO 68
 
 {370}{If you haven't already, you should report to Lord Ulbrec at your earliest convenience - I am sure he will want to congratulate you personally.}{If you haven't already, you should report to Lord Ulbrec at your earliest convenience - I am sure he will want to congratulate you personally.}{}{}{}{} # phrase: 12SHAWFO 34
-{371}{Actually, we came for our payment.  We're not here for our health, Shawford, we're here to earn some coin. }{}{1}{ctrl(npc).dialog_test(npc, pc, 42)}{380}{ctrl(npc).dialog_action(npc, pc, 31)} # resp: 12SHAWFO 69
-{372}{We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle. }{}{1}{ctrl(npc).dialog_test(npc, pc, 43)}{380}{ctrl(npc).dialog_action(npc, pc, 32)} # resp: 12SHAWFO 70
+{371}{Actually, we came for our payment.  We're not here for our health, Shawford, we're here to earn some coin.}{}{1}{ctrl(npc).dialog_test(npc, pc, 42)}{380}{ctrl(npc).dialog_action(npc, pc, 31)} # resp: 12SHAWFO 69
+{372}{We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle.}{}{1}{ctrl(npc).dialog_test(npc, pc, 43)}{380}{ctrl(npc).dialog_action(npc, pc, 32)} # resp: 12SHAWFO 70
 {373}{I will seek him out, then.  Farewell.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 33)} # resp: 12SHAWFO 71
 
 {380}{Indeed.  Very well, I am authorized to pay you a bonus sum for your efforts.  There are times I forget that you are mercenaries.  Here you are.}{Indeed.  Very well, I am authorized to pay you a bonus sum for your efforts.  There are times I forget that you are mercenaries.  Here you are.}{}{}{}{} # phrase: 12SHAWFO 37
-{381}{Good.  And watch that tone of yours - we didn't travel here from Luskan and past Bremen in flames just to defend your town - we're risking our *lives* here, and the payment should reflect it. }{}{1}{ctrl(npc).dialog_test(npc, pc, 48)}{390}{ctrl(npc).dialog_action(npc, pc, 38)} # resp: 12SHAWFO 78
-{382}{Good.  And watch that tone of yours - we didn't travel here from Luskan and past Bremen in flames just to defend your town - we're risking our *lives* here, and the payment should reflect it. }{}{1}{ctrl(npc).dialog_test(npc, pc, 49)}{0}{} # resp: 12SHAWFO 79
-{383}{This'll do, then.  Farewell. }{}{1}{ctrl(npc).dialog_test(npc, pc, 50)}{390}{ctrl(npc).dialog_action(npc, pc, 39)} # resp: 12SHAWFO 80
-{384}{This'll do, then.  Farewell. }{}{1}{ctrl(npc).dialog_test(npc, pc, 51)}{0}{} # resp: 12SHAWFO 81
+{381}{Good.  And watch that tone of yours - we didn't travel here from Luskan and past Bremen in flames just to defend your town - we're risking our *lives* here, and the payment should reflect it.}{}{1}{ctrl(npc).dialog_test(npc, pc, 48)}{390}{ctrl(npc).dialog_action(npc, pc, 38)} # resp: 12SHAWFO 78
+{382}{Good.  And watch that tone of yours - we didn't travel here from Luskan and past Bremen in flames just to defend your town - we're risking our *lives* here, and the payment should reflect it.}{}{1}{ctrl(npc).dialog_test(npc, pc, 49)}{0}{} # resp: 12SHAWFO 79
+{383}{This'll do, then.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 50)}{390}{ctrl(npc).dialog_action(npc, pc, 39)} # resp: 12SHAWFO 80
+{384}{This'll do, then.  Farewell.}{}{1}{ctrl(npc).dialog_test(npc, pc, 51)}{0}{} # resp: 12SHAWFO 81
 
-{390}{Before you go, however, I feel I must say something - the mercenary's life is not one unknown to me.  }{Before you go, however, I feel I must say something - the mercenary's life is not one unknown to me.  }{}{}{}{} # phrase: 12SHAWFO 38
+{390}{Before you go, however, I feel I must say something - the mercenary's life is not one unknown to me.}{Before you go, however, I feel I must say something - the mercenary's life is not one unknown to me.}{}{}{}{} # phrase: 12SHAWFO 38
 {391}{Continue}{}{1}{}{400}{} # resp: 12SHAWFO 82
 
-{400}{I have served in many companies, and in many conflicts throughout Neverwinter and the Realms, and all the coin I earned was a shallow reward until the day I made my home in Targos - and its people were placed under my protection.  }{I have served in many companies, and in many conflicts throughout Neverwinter and the Realms, and all the coin I earned was a shallow reward until the day I made my home in Targos - and its people were placed under my protection.  }{}{}{}{} # phrase: 12SHAWFO 39
+{400}{I have served in many companies, and in many conflicts throughout Neverwinter and the Realms, and all the coin I earned was a shallow reward until the day I made my home in Targos - and its people were placed under my protection.}{I have served in many companies, and in many conflicts throughout Neverwinter and the Realms, and all the coin I earned was a shallow reward until the day I made my home in Targos - and its people were placed under my protection.}{}{}{}{} # phrase: 12SHAWFO 39
 {401}{Continue}{}{1}{}{410}{} # resp: 12SHAWFO 83
 
-{410}{There are greater goals to strive for in this world than wealth, and simply finding one's purpose in the world is worth more than any amount of gold one can earn from swordplay alone. }{There are greater goals to strive for in this world than wealth, and simply finding one's purpose in the world is worth more than any amount of gold one can earn from swordplay alone. }{}{}{}{} # phrase: 12SHAWFO 40
+{410}{There are greater goals to strive for in this world than wealth, and simply finding one's purpose in the world is worth more than any amount of gold one can earn from swordplay alone.}{There are greater goals to strive for in this world than wealth, and simply finding one's purpose in the world is worth more than any amount of gold one can earn from swordplay alone.}{}{}{}{} # phrase: 12SHAWFO 40
 {411}{Continue}{}{1}{}{420}{} # resp: 12SHAWFO 84
 
-{420}{I heard of your fight at the Palisade, and my men say you fought like devils - and took down all *three* of the goblin leaders.  I can't believe you risked so much just for gold.   }{I heard of your fight at the Palisade, and my men say you fought like devils - and took down all *three* of the goblin leaders.  I can't believe you risked so much just for gold.   }{}{}{}{} # phrase: 12SHAWFO 41
-{421}{You're wrong, Shawford.  Nice speech, but I've got the future to think about, and I'm not going to leave Targos penniless. }{}{1}{}{430}{} # resp: 12SHAWFO 85
-{422}{If those goblins had taken Targos and the docks, we'd be trapped here under the shadow of the horde.  We were fighting for Targos, but also for our lives. }{}{1}{}{430}{} # resp: 12SHAWFO 86
+{420}{I heard of your fight at the Palisade, and my men say you fought like devils - and took down all *three* of the goblin leaders.  I can't believe you risked so much just for gold.}{I heard of your fight at the Palisade, and my men say you fought like devils - and took down all *three* of the goblin leaders.  I can't believe you risked so much just for gold.}{}{}{}{} # phrase: 12SHAWFO 41
+{421}{You're wrong, Shawford.  Nice speech, but I've got the future to think about, and I'm not going to leave Targos penniless.}{}{1}{}{430}{} # resp: 12SHAWFO 85
+{422}{If those goblins had taken Targos and the docks, we'd be trapped here under the shadow of the horde.  We were fighting for Targos, but also for our lives.}{}{1}{}{430}{} # resp: 12SHAWFO 86
 {423}{Perhaps not... when those goblins stormed the wall, we simply acted.  When it was over, and we were still alive, I don't remember why we did it, we just - did.}{}{1}{}{430}{} # resp: 12SHAWFO 87
-{424}{No town deserves the evil the horde will bring if it takes Targos.  Let's just say it's the principle of the thing. }{}{1}{}{430}{} # resp: 12SHAWFO 88
+{424}{No town deserves the evil the horde will bring if it takes Targos.  Let's just say it's the principle of the thing.}{}{1}{}{430}{} # resp: 12SHAWFO 88
 
-{430}{Very well - that will have to do.  I wish you luck in your future here in the North.  I believe that with you by our side, the horde will be turned back, and Targos saved. }{Very well - that will have to do.  I wish you luck in your future here in the North.  I believe that with you by our side, the horde will be turned back, and Targos saved. }{}{}{}{} # phrase: 12SHAWFO 42
-{431}{Perhaps so.  Farewell, Shawford. }{}{1}{}{0}{} # resp: 12SHAWFO 89
+{430}{Very well - that will have to do.  I wish you luck in your future here in the North.  I believe that with you by our side, the horde will be turned back, and Targos saved.}{Very well - that will have to do.  I wish you luck in your future here in the North.  I believe that with you by our side, the horde will be turned back, and Targos saved.}{}{}{}{} # phrase: 12SHAWFO 42
+{431}{Perhaps so.  Farewell, Shawford.}{}{1}{}{0}{} # resp: 12SHAWFO 89
 
 {440}{Welcome back - no sign of any more goblins yet, but we're keeping a close eye out for them.  If you haven't already, you should check with Lord Ulbrec to see if he has any assignments for you.}{Welcome back - no sign of any more goblins yet, but we're keeping a close eye out for them.  If you haven't already, you should check with Lord Ulbrec to see if he has any assignments for you.}{}{}{}{} # phrase: 12SHAWFO 35
-{441}{Actually, we came for our payment.  We're not here for our health, Shawford, we're here to earn some coin. }{}{1}{ctrl(npc).dialog_test(npc, pc, 44)}{380}{ctrl(npc).dialog_action(npc, pc, 34)} # resp: 12SHAWFO 72
-{442}{We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle. }{}{1}{ctrl(npc).dialog_test(npc, pc, 45)}{380}{ctrl(npc).dialog_action(npc, pc, 35)} # resp: 12SHAWFO 73
+{441}{Actually, we came for our payment.  We're not here for our health, Shawford, we're here to earn some coin.}{}{1}{ctrl(npc).dialog_test(npc, pc, 44)}{380}{ctrl(npc).dialog_action(npc, pc, 34)} # resp: 12SHAWFO 72
+{442}{We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle.}{}{1}{ctrl(npc).dialog_test(npc, pc, 45)}{380}{ctrl(npc).dialog_action(npc, pc, 35)} # resp: 12SHAWFO 73
 {443}{I will seek him out, then.  Farewell.}{}{1}{}{0}{} # resp: 12SHAWFO 74
 
-{450}{I heard about your march upon the Shaengarne.  I wish you luck, and I pray the gods watch over you. }{I heard about your march upon the Shaengarne.  I wish you luck, and I pray the gods watch over you. }{}{}{}{} # phrase: 12SHAWFO 36
-{451}{Actually, we came more for payment than prayer.  We're not here for our health, Shawford, we're here to earn some coin. }{}{1}{ctrl(npc).dialog_test(npc, pc, 46)}{380}{ctrl(npc).dialog_action(npc, pc, 36)} # resp: 12SHAWFO 75
-{452}{We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle. }{}{1}{ctrl(npc).dialog_test(npc, pc, 47)}{380}{ctrl(npc).dialog_action(npc, pc, 37)} # resp: 12SHAWFO 76
-{453}{Thanks, Shawford.  Farewell. }{}{1}{}{0}{} # resp: 12SHAWFO 77
+{450}{I heard about your march upon the Shaengarne.  I wish you luck, and I pray the gods watch over you.}{I heard about your march upon the Shaengarne.  I wish you luck, and I pray the gods watch over you.}{}{}{}{} # phrase: 12SHAWFO 36
+{451}{Actually, we came more for payment than prayer.  We're not here for our health, Shawford, we're here to earn some coin.}{}{1}{ctrl(npc).dialog_test(npc, pc, 46)}{380}{ctrl(npc).dialog_action(npc, pc, 36)} # resp: 12SHAWFO 75
+{452}{We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle.}{}{1}{ctrl(npc).dialog_test(npc, pc, 47)}{380}{ctrl(npc).dialog_action(npc, pc, 37)} # resp: 12SHAWFO 76
+{453}{Thanks, Shawford.  Farewell.}{}{1}{}{0}{} # resp: 12SHAWFO 77
 
-{460}{I heard about your battle at the Shaengarne - it seems that Ulbrec and Oswald's plans proved true; a small force was more effective than all the Targos Guard.  A heroic feat, indeed.  }{I heard about your battle at the Shaengarne - it seems that Ulbrec and Oswald's plans proved true; a small force was more effective than all the Targos Guard.  A heroic feat, indeed.  }{}{}{}{} # phrase: 12SHAWFO 43
-{461}{It was a suicide mission, and we expect to be rewarded accordingly.  We're here for gold, Shawford, not compliments. }{}{1}{ctrl(npc).dialog_test(npc, pc, 52)}{380}{ctrl(npc).dialog_action(npc, pc, 40)} # resp: 12SHAWFO 90
-{462}{It was a suicide mission, and we expect to be rewarded accordingly, both for Shaengarne and the Palisade battle.  We're here for gold, Shawford, not compliments. }{}{1}{ctrl(npc).dialog_test(npc, pc, 53)}{380}{ctrl(npc).dialog_action(npc, pc, 41)} # resp: 12SHAWFO 91
-{463}{We came for payment for our battle at the Shaengarne, Shawford.  }{}{1}{ctrl(npc).dialog_test(npc, pc, 54)}{380}{ctrl(npc).dialog_action(npc, pc, 42)} # resp: 12SHAWFO 92
-{464}{We came for payment for our battle at the Shaengarne, Shawford... and for our battle at the Palisade.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 55)}{380}{ctrl(npc).dialog_action(npc, pc, 43)} # resp: 12SHAWFO 93
-{465}{Thanks, Shawford.  Farewell. }{}{1}{}{0}{} # resp: 12SHAWFO 94
+{460}{I heard about your battle at the Shaengarne - it seems that Ulbrec and Oswald's plans proved true; a small force was more effective than all the Targos Guard.  A heroic feat, indeed.}{I heard about your battle at the Shaengarne - it seems that Ulbrec and Oswald's plans proved true; a small force was more effective than all the Targos Guard.  A heroic feat, indeed.}{}{}{}{} # phrase: 12SHAWFO 43
+{461}{It was a suicide mission, and we expect to be rewarded accordingly.  We're here for gold, Shawford, not compliments.}{}{1}{ctrl(npc).dialog_test(npc, pc, 52)}{380}{ctrl(npc).dialog_action(npc, pc, 40)} # resp: 12SHAWFO 90
+{462}{It was a suicide mission, and we expect to be rewarded accordingly, both for Shaengarne and the Palisade battle.  We're here for gold, Shawford, not compliments.}{}{1}{ctrl(npc).dialog_test(npc, pc, 53)}{380}{ctrl(npc).dialog_action(npc, pc, 41)} # resp: 12SHAWFO 91
+{463}{We came for payment for our battle at the Shaengarne, Shawford.}{}{1}{ctrl(npc).dialog_test(npc, pc, 54)}{380}{ctrl(npc).dialog_action(npc, pc, 42)} # resp: 12SHAWFO 92
+{464}{We came for payment for our battle at the Shaengarne, Shawford... and for our battle at the Palisade.}{}{1}{ctrl(npc).dialog_test(npc, pc, 55)}{380}{ctrl(npc).dialog_action(npc, pc, 43)} # resp: 12SHAWFO 93
+{465}{Thanks, Shawford.  Farewell.}{}{1}{}{0}{} # resp: 12SHAWFO 94
 
-{470}{I heard about your battle at the fortress - your coming to Targos has truly been our salvation.  To think, you have carried the battle from Targos' walls to the walls of the horde itself, then slayed their leader within his own fortress.  Now *that* is a tale that won't be long forgotten.  }{I heard about your battle at the fortress - your coming to Targos has truly been our salvation.  To think, you have carried the battle from Targos' walls to the walls of the horde itself, then slayed their leader within his own fortress.  Now *that* is a tale that won't be long forgotten.  }{}{}{}{} # phrase: 12SHAWFO 44
-{471}{I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words. }{}{1}{ctrl(npc).dialog_test(npc, pc, 56)}{380}{ctrl(npc).dialog_action(npc, pc, 44)} # resp: 12SHAWFO 95
-{472}{I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words. }{}{1}{ctrl(npc).dialog_test(npc, pc, 57)}{380}{ctrl(npc).dialog_action(npc, pc, 45)} # resp: 12SHAWFO 96
-{473}{I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words. }{}{1}{ctrl(npc).dialog_test(npc, pc, 58)}{380}{ctrl(npc).dialog_action(npc, pc, 46)} # resp: 12SHAWFO 97
-{474}{We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 59)}{380}{ctrl(npc).dialog_action(npc, pc, 47)} # resp: 12SHAWFO 98
-{475}{We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 60)}{380}{ctrl(npc).dialog_action(npc, pc, 48)} # resp: 12SHAWFO 99
-{476}{We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   }{}{1}{ctrl(npc).dialog_test(npc, pc, 61)}{380}{ctrl(npc).dialog_action(npc, pc, 49)} # resp: 12SHAWFO 100
-{477}{Thanks, Shawford.  Farewell. }{}{1}{}{0}{} # resp: 12SHAWFO 101
+{470}{I heard about your battle at the fortress - your coming to Targos has truly been our salvation.  To think, you have carried the battle from Targos' walls to the walls of the horde itself, then slayed their leader within his own fortress.  Now *that* is a tale that won't be long forgotten.}{I heard about your battle at the fortress - your coming to Targos has truly been our salvation.  To think, you have carried the battle from Targos' walls to the walls of the horde itself, then slayed their leader within his own fortress.  Now *that* is a tale that won't be long forgotten.}{}{}{}{} # phrase: 12SHAWFO 44
+{471}{I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words.}{}{1}{ctrl(npc).dialog_test(npc, pc, 56)}{380}{ctrl(npc).dialog_action(npc, pc, 44)} # resp: 12SHAWFO 95
+{472}{I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words.}{}{1}{ctrl(npc).dialog_test(npc, pc, 57)}{380}{ctrl(npc).dialog_action(npc, pc, 45)} # resp: 12SHAWFO 96
+{473}{I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words.}{}{1}{ctrl(npc).dialog_test(npc, pc, 58)}{380}{ctrl(npc).dialog_action(npc, pc, 46)} # resp: 12SHAWFO 97
+{474}{We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.}{}{1}{ctrl(npc).dialog_test(npc, pc, 59)}{380}{ctrl(npc).dialog_action(npc, pc, 47)} # resp: 12SHAWFO 98
+{475}{We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.}{}{1}{ctrl(npc).dialog_test(npc, pc, 60)}{380}{ctrl(npc).dialog_action(npc, pc, 48)} # resp: 12SHAWFO 99
+{476}{We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.}{}{1}{ctrl(npc).dialog_test(npc, pc, 61)}{380}{ctrl(npc).dialog_action(npc, pc, 49)} # resp: 12SHAWFO 100
+{477}{Thanks, Shawford.  Farewell.}{}{1}{}{0}{} # resp: 12SHAWFO 101
 
 {480}{Been wonderin' when those goblins are gonna strike again.  Hope it's soon.}{Been wonderin' when those goblins are gonna strike again.  Hope it's soon.}{}{}{}{} # phrase: 12TARSOL 0
 {481}{Continue}{}{1}{}{0}{} # resp: 12TARSOL 0
@@ -222,3 +222,102 @@
 
 {560}{C'mon!  We need to keep the goblins from the town gate, or Targos is done for!}{C'mon!  We need to keep the goblins from the town gate, or Targos is done for!}{}{}{}{} # phrase: 12TARSOL 8
 {561}{We're right behind you.}{}{1}{}{0}{} # resp: 12TARSOL 8
+
+{570}{You're one of those mercenaries that slaughtered those goblins at the docks, aren't you?  I wish I could have been there!}{You're one of those mercenaries that slaughtered those goblins at the docks, aren't you?  I wish I could have been there!}{}{}{}{} # phrase: 12SWIFT 0
+{571}{Be glad you weren't there, child - one should never wish to be in battle, only wish to be kept far from it.}{}{1}{}{580}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 12SWIFT 0
+{572}{Well, let me tell you, we could have used a hand or two.  The Targos Guard were scattered like geese.}{}{1}{}{580}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 12SWIFT 1
+{573}{If you'd been there, you'd have died like the other soldiers and townsfolk, boy.}{}{1}{}{580}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 12SWIFT 2
+
+{580}{I still wish I could have seen it!  My name's Thomas.  I'm a fair shot with a bow, but they won't let me man the walls, so mostly they just ask me to run around every which way delivering this and that.  I've gotten pretty good at covering the town by foot, I have, it's why they call me Swift Thomas.}{I still wish I could have seen it!  My name's Thomas.  I'm a fair shot with a bow, but they won't let me man the walls, so mostly they just ask me to run around every which way delivering this and that.  I've gotten pretty good at covering the town by foot, I have, it's why they call me Swift Thomas.}{}{}{}{} # phrase: 12SWIFT 1
+{581}{Olap told us you could show us the fastest route through Targos.}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{590}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 12SWIFT 3
+{582}{Uh, Olap told us you could show us the fastest route through Targos.}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)# skill_bluff}{590}{ctrl(npc).dialog_action(npc, pc, 4)} # resp: 12SWIFT 4
+{583}{Can you show me around town?}{}{1}{}{600}{} # resp: 12SWIFT 5
+{584}{Well, everybody's got to serve somebody.  Do you know where I can find the Commander of the Guard?}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{610}{} # resp: 12SWIFT 6
+{585}{I see.  Watch yourself, Thomas.  Farewell.}{}{1}{}{0}{} # resp: 12SWIFT 7
+
+{590}{Okay, then!  Where do you want to go?}{Okay, then!  Where do you want to go?}{}{}{}{} # phrase: 12SWIFT 4
+{591}{Can you take us to the Docks?}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{0}{ctrl(npc).dialog_action(npc, pc, 7)} # resp: 12SWIFT 14
+{592}{We'd like to go into town.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{0}{ctrl(npc).dialog_action(npc, pc, 8)} # resp: 12SWIFT 15
+{593}{To the Palisade.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{0}{ctrl(npc).dialog_action(npc, pc, 9)} # resp: 12SWIFT 16
+{594}{To the Palisade.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{0}{ctrl(npc).dialog_action(npc, pc, 10)} # resp: 12SWIFT 17
+{595}{Nowhere at the moment.  We'll return later.}{}{1}{}{0}{} # resp: 12SWIFT 18
+
+{600}{I would, but Shawford told me not go running off - and I'm only supposed to do running when the Guard needs me.  I bet if you were doing a job for them, then I could show you around, easy.}{I would, but Shawford told me not go running off - and I'm only supposed to do running when the Guard needs me.  I bet if you were doing a job for them, then I could show you around, easy.}{}{}{}{} # phrase: 12SWIFT 2
+{601}{It so happens I am doing a job for the Guard.}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{590}{ctrl(npc).dialog_action(npc, pc, 5)} # resp: 12SWIFT 8
+{602}{Uh, well, it so happens I am doing a job for the Guard.  Very important.}{}{1}{ctrl(npc).dialog_test(npc, pc, 4)# skill_bluff}{590}{ctrl(npc).dialog_action(npc, pc, 6)} # resp: 12SWIFT 9
+{603}{Do you know where I can find the Commander of the Guard?}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{610}{} # resp: 12SWIFT 10
+{604}{Maybe we'll speak later, then.}{}{1}{}{0}{} # resp: 12SWIFT 11
+
+{610}{Yeah, he's in the building behind me.  He's pretty busy, so don't get too mad if he yells at you or threatens to feed you to the dogs or anything.}{Yeah, he's in the building behind me.  He's pretty busy, so don't get too mad if he yells at you or threatens to feed you to the dogs or anything.}{}{}{}{} # phrase: 12SWIFT 3
+{611}{After Ulbrec's welcome, I doubt anything could anger us now.  Farewell, Thomas.}{}{1}{}{0}{} # resp: 12SWIFT 12
+{612}{I'll speak with him, then.}{}{1}{}{0}{} # resp: 12SWIFT 13
+
+{620}{I *knew* I'd see you again - see any more goblins?}{I *knew* I'd see you again - see any more goblins?}{}{}{}{} # phrase: 12SWIFT 5
+{621}{Olap told us you could show us the fastest route through Targos.}{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{590}{ctrl(npc).dialog_action(npc, pc, 11)} # resp: 12SWIFT 19
+{622}{Uh, Olap told us you could show us the fastest route through Targos.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)# skill_bluff}{590}{ctrl(npc).dialog_action(npc, pc, 12)} # resp: 12SWIFT 20
+{623}{Not at the moment.  Can you take us to the Docks?}{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{0}{ctrl(npc).dialog_action(npc, pc, 13)} # resp: 12SWIFT 21
+{624}{We'd like to go into town.}{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{0}{ctrl(npc).dialog_action(npc, pc, 14)} # resp: 12SWIFT 22
+{625}{No, but we need to head to the Palisade.}{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{0}{ctrl(npc).dialog_action(npc, pc, 15)} # resp: 12SWIFT 23
+{626}{No, but we need to head to the Palisade.}{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{0}{ctrl(npc).dialog_action(npc, pc, 16)} # resp: 12SWIFT 24
+{627}{Not yet.  Watch yourself, Thomas.}{}{1}{}{0}{} # resp: 12SWIFT 25
+
+{630}{Take you somewhere?}{Take you somewhere?}{}{}{}{} # phrase: 12SWIFT 6
+{631}{Uh, when I last saw you, Thomas, you were at the Docks.}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{640}{} # resp: 12SWIFT 26
+{632}{Weren't you at the Palisade when I saw you last?}{}{1}{ctrl(npc).dialog_test(npc, pc, 17)}{640}{} # resp: 12SWIFT 27
+{633}{Uh, Thomas, weren't you in town when I saw you last?}{}{1}{ctrl(npc).dialog_test(npc, pc, 18)}{640}{} # resp: 12SWIFT 28
+{634}{Can you take us to the Docks?}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{0}{ctrl(npc).dialog_action(npc, pc, 17)} # resp: 12SWIFT 29
+{635}{We'd like to go into town.}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{0}{ctrl(npc).dialog_action(npc, pc, 18)} # resp: 12SWIFT 30
+{636}{To the Palisade.}{}{1}{ctrl(npc).dialog_test(npc, pc, 21)}{0}{ctrl(npc).dialog_action(npc, pc, 19)} # resp: 12SWIFT 31
+{637}{To the Palisade.}{}{1}{ctrl(npc).dialog_test(npc, pc, 22)}{0}{ctrl(npc).dialog_action(npc, pc, 20)} # resp: 12SWIFT 32
+{638}{Not yet.  Perhaps later.}{}{1}{}{0}{} # resp: 12SWIFT 33
+
+{640}{What, did you think I was going to stand there and wait for you?  I'm running all over Targos all the time for the Guard - and I can cover Targos in half the time *your* lead feet can!}{What, did you think I was going to stand there and wait for you?  I'm running all over Targos all the time for the Guard - and I can cover Targos in half the time *your* lead feet can!}{}{}{}{} # phrase: 12SWIFT 8
+{641}{Uh, sure.  Take me to the Docks, then.}{}{1}{ctrl(npc).dialog_test(npc, pc, 27)}{0}{ctrl(npc).dialog_action(npc, pc, 25)} # resp: 12SWIFT 40
+{642}{Well, prove it and take me into town, then.}{}{1}{ctrl(npc).dialog_test(npc, pc, 28)}{0}{ctrl(npc).dialog_action(npc, pc, 26)} # resp: 12SWIFT 41
+{643}{To the Palisade, then, fleetfoot.}{}{1}{ctrl(npc).dialog_test(npc, pc, 29)}{0}{ctrl(npc).dialog_action(npc, pc, 27)} # resp: 12SWIFT 42
+{644}{To the Palisade, then, fleetfoot.}{}{1}{ctrl(npc).dialog_test(npc, pc, 30)}{0}{ctrl(npc).dialog_action(npc, pc, 28)} # resp: 12SWIFT 43
+{645}{Well, just as long as you explained your strange ability to always be underfoot.  Farewell.}{}{1}{}{0}{} # resp: 12SWIFT 44
+
+{650}{Did you go to Shaengarne?!  I bet you did!  Did you see any boars?!  Hunh?}{Did you go to Shaengarne?!  I bet you did!  Did you see any boars?!  Hunh?}{}{}{}{} # phrase: 12SWIFT 7
+{651}{Oh, yeah, we saw boars all right.  Big white boars, with teeth like daggers and tusks as big as your arm.}{}{1}{}{660}{} # resp: 12SWIFT 34
+{652}{Can you take us to the Docks?}{}{1}{ctrl(npc).dialog_test(npc, pc, 23)}{0}{ctrl(npc).dialog_action(npc, pc, 21)} # resp: 12SWIFT 35
+{653}{We'd like to go into town.}{}{1}{ctrl(npc).dialog_test(npc, pc, 24)}{0}{ctrl(npc).dialog_action(npc, pc, 22)} # resp: 12SWIFT 36
+{654}{We need to head to the Palisade.}{}{1}{ctrl(npc).dialog_test(npc, pc, 25)}{0}{ctrl(npc).dialog_action(npc, pc, 23)} # resp: 12SWIFT 37
+{655}{We need to head to the Palisade.}{}{1}{ctrl(npc).dialog_test(npc, pc, 26)}{0}{ctrl(npc).dialog_action(npc, pc, 24)} # resp: 12SWIFT 38
+{656}{We'll tell the story another time, Thomas, not now.}{}{1}{}{0}{} # resp: 12SWIFT 39
+
+{660}{Really?!  Did you kill them?}{Really?!  Did you kill them?}{}{}{}{} # phrase: 12SWIFT 9
+{661}{Of course we killed them, Thomas.  We're *adventurers.*  Those boars may have swallowed a valuable scroll or a few pieces of gold.}{}{1}{}{670}{} # resp: 12SWIFT 45
+{662}{Can you take us to the Docks?}{}{1}{ctrl(npc).dialog_test(npc, pc, 31)}{0}{ctrl(npc).dialog_action(npc, pc, 29)} # resp: 12SWIFT 46
+{663}{We'd like to go into town.}{}{1}{ctrl(npc).dialog_test(npc, pc, 32)}{0}{ctrl(npc).dialog_action(npc, pc, 30)} # resp: 12SWIFT 47
+{664}{We need to head to the Palisade.}{}{1}{ctrl(npc).dialog_test(npc, pc, 33)}{0}{ctrl(npc).dialog_action(npc, pc, 31)} # resp: 12SWIFT 48
+{665}{We need to head to the Palisade.}{}{1}{ctrl(npc).dialog_test(npc, pc, 34)}{0}{ctrl(npc).dialog_action(npc, pc, 32)} # resp: 12SWIFT 49
+{666}{We'll tell the story another time, Thomas, not now.}{}{1}{}{0}{} # resp: 12SWIFT 50
+
+{670}{*I* want to be an adventurer one day so I can kill boars and take their gold.  That would be epic.}{*I* want to be an adventurer one day so I can kill boars and take their gold.  That would be epic.}{}{}{}{} # phrase: 12SWIFT 10
+{671}{Yeah, anyway, can you take us to the Docks?}{}{1}{ctrl(npc).dialog_test(npc, pc, 35)}{0}{ctrl(npc).dialog_action(npc, pc, 33)} # resp: 12SWIFT 51
+{672}{Sure would.  Now can you take us into town?}{}{1}{ctrl(npc).dialog_test(npc, pc, 36)}{0}{ctrl(npc).dialog_action(npc, pc, 34)} # resp: 12SWIFT 52
+{673}{Epic doesn't begin to cover it.  Can you take us to the Palisade?}{}{1}{ctrl(npc).dialog_test(npc, pc, 37)}{0}{ctrl(npc).dialog_action(npc, pc, 35)} # resp: 12SWIFT 53
+{674}{Epic doesn't begin to cover it.  Can you take us to the Palisade?}{}{1}{ctrl(npc).dialog_test(npc, pc, 38)}{0}{ctrl(npc).dialog_action(npc, pc, 36)} # resp: 12SWIFT 54
+{675}{Actually, Thomas, considering how fast you can run around town, you have a bright future as a monk.  Now farewell.}{}{1}{}{0}{} # resp: 12SWIFT 55
+
+{680}{Did you see any goblins?!  I heard you went out to their fortress to make a mountain out of their heads!}{Did you see any goblins?!  I heard you went out to their fortress to make a mountain out of their heads!}{}{}{}{} # phrase: 12SWIFT 11
+{681}{Oh, we saw goblins all right.  *Hordes* of them.  Nasty little bastards, too.  Barely escaped with our lives.}{}{1}{}{690}{} # resp: 12SWIFT 56
+{682}{Well, it was actually less glamorous than that.  It seems like wherever we step in the North, we're in danger of stepping on a goblin.}{}{1}{}{690}{} # resp: 12SWIFT 57
+{683}{Yeah, anyway, Thomas, can you take us to the Docks?}{}{1}{ctrl(npc).dialog_test(npc, pc, 39)}{0}{ctrl(npc).dialog_action(npc, pc, 37)} # resp: 12SWIFT 58
+{684}{All in a day's work.  Now can you take us into town?}{}{1}{ctrl(npc).dialog_test(npc, pc, 40)}{0}{ctrl(npc).dialog_action(npc, pc, 38)} # resp: 12SWIFT 59
+{685}{That's about right.  Can you take us to the Palisade?}{}{1}{ctrl(npc).dialog_test(npc, pc, 41)}{0}{ctrl(npc).dialog_action(npc, pc, 39)} # resp: 12SWIFT 60
+{686}{That's about right.  Can you take us to the Palisade?}{}{1}{ctrl(npc).dialog_test(npc, pc, 42)}{0}{ctrl(npc).dialog_action(npc, pc, 40)} # resp: 12SWIFT 61
+{687}{We'll tell the story another time, Thomas, not now.  Farewell.}{}{1}{}{0}{} # resp: 12SWIFT 62
+
+{690}{I bet you went through them like a snow storm, hunh?!  They're going to write a bunch of songs about you and your heroic deeds!}{I bet you went through them like a snow storm, hunh?!  They're going to write a bunch of songs about you and your heroic deeds!}{}{}{}{} # phrase: 12SWIFT 12
+{691}{My feet are already singing a song.  Now can you take us to the Docks?}{}{1}{ctrl(npc).dialog_test(npc, pc, 43)}{0}{ctrl(npc).dialog_action(npc, pc, 41)} # resp: 12SWIFT 63
+{692}{Can't wait to hear them.  For now, can you take me into town?}{}{1}{ctrl(npc).dialog_test(npc, pc, 44)}{0}{ctrl(npc).dialog_action(npc, pc, 42)} # resp: 12SWIFT 64
+{693}{Sure they will.  Can you take us to the Palisade?}{}{1}{ctrl(npc).dialog_test(npc, pc, 45)}{0}{ctrl(npc).dialog_action(npc, pc, 43)} # resp: 12SWIFT 65
+{694}{Sure they will.  Can you take us to the Palisade?}{}{1}{ctrl(npc).dialog_test(npc, pc, 46)}{0}{ctrl(npc).dialog_action(npc, pc, 44)} # resp: 12SWIFT 66
+{695}{Whatever you're drinking, Thomas, bring enough to share next time.  Farewell.}{}{1}{}{0}{} # resp: 12SWIFT 67
+{16357}{Sir!  The goblins are at the Palisade!}{}{}{}{} # strref: 16357
+{16360}{Order the gate into town sealed!  Sound the alarm!}{}{}{}{} # strref: 16360
+{16820}{Yes, sir!}{}{}{}{} # strref: 16820
+{16821}{I must warn Ulbrec and gather the town forces... I need you to report to the Palisade and drive those damned goblins back.  If Tempus grants us victory, then meet me back here after the battle.}{}{}{}{} # strref: 16821
+{16822}{Everyone!  To arms!  To arms!}{}{}{}{} # strref: 16822

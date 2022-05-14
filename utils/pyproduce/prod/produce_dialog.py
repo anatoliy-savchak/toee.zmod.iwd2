@@ -10,18 +10,21 @@ def text_strip_directions(text: str):
     return re.sub("[\[].*?[\]]", "", text)
 
 class DialogFile:
-    def __init__(self, file_name):
+    def __init__(self, doc, file_name):
+        self.doc = doc
         self.file_name = file_name
         self.line_tups = list()
         self.last_num = 0
         self.last_num_phrase = 0
         self.current_cre_name = ""
         self.sound_map = dict()
+        self.strrefs = list()
         return
 
     def add_phrase(self, phrase_id: int, text: str, speech_id: int = None, effect_code: str = None):
         # {line_id}{text}{text female}{min IQ}{test field|speech_id}{answer key}{effect python}
         line_id = ((self.last_num // 10) + 1)*10
+        text = text.strip()
         
         speech_id_str = str(speech_id) if not speech_id is None else ""
         line = f"{{{line_id}}}{{{text}}}{{{text}}}{{}}{{{speech_id_str}}}{{}}{{{str(effect_code or '')}}} # phrase: {self.current_cre_name} {phrase_id}"
@@ -36,6 +39,7 @@ class DialogFile:
     def add_response(self, resp_id: int, text: str, test_field: str = None, answer_id: int = None, effect_code: str = None):
         # {line_id}{text}{text female}{min IQ}{test field|speech_id}{answer key}{effect python}
         line_id = self.last_num + 1
+        text = text.strip()
         
         answer_id_str = str(answer_id) if not answer_id is None else ""
         if answer_id == 0:
@@ -47,6 +51,7 @@ class DialogFile:
         return line_id
 
     def update_response(self, line_id: int, resp_id: int, text: str, test_field: str = None, answer_id: int = None, effect_code: str = None):
+        text = text.strip()
         # {line_id}{text}{text female}{min IQ}{test field|speech_id}{answer key}{effect python}
         index = next((i for i, tup in enumerate(self.line_tups) if tup[0] == line_id), None)
         if index is None:
@@ -72,11 +77,21 @@ class DialogFile:
         self.line_tups[index] = ((tup[0], line, d))
         return
 
+    def add_strref(self, strref: int):
+        strref = int(strref)
+        if not strref in self.strrefs:
+            self.strrefs.append(strref)
+        return
+
     def save(self):
         with open(self.file_name, 'w') as f:
             for num, line, d in self.line_tups:
                 #aline = line
                 f.write(line + ("\n" if not "\n" in line else ""))
+
+            for strref in sorted(self.strrefs):
+                text = self.doc.producerOfFloats.get_str_ref(strref)
+                f.write(f'{{{strref}}}{{{text}}}{{}}{{}}{{}}{{}} # strref: {strref}\n')
         self.save_sound_map()
         return
 
@@ -298,10 +313,9 @@ class ProduceNPCDialog:
             #for trigger_line in trigger_lines:
             #    self._add_line(f"# {trigger_line}")
 
+            for i, l in enumerate(trigger_lines):
+                self._add_line(f'# {l}')
             for i, l in enumerate(out_lines):
-                #self._add_line(f'print("{l}") # {trigger_lines[i]}')
-                #self._add_line(f"print('{l}')")
-                self._add_line(f'# {trigger_lines[i]}')
                 self._add_line(l)
 
             response_text, resp_line_id = self.response_actions[actionIndex]
@@ -501,3 +515,4 @@ class ProduceNPCDialog:
             self.trigger_index_skills[trigger_index] = skill_name
             return skill_name
         return
+

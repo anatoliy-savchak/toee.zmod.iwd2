@@ -71,7 +71,7 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 				self.has_met_inc()
 		finally:
 			self._unprepare_scripting()
-			self.script_vars()['last_talked_to_id'] = attachee.id
+			self.script_vars['last_talked_to_id'] = attachee.id
 		
 		return toee.SKIP_DEFAULT
 

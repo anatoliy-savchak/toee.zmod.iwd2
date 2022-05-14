@@ -7,6 +7,10 @@ import utils_journal as uj, inf_scripting
 #### IMPORTS ####
 from bcs import scr_12cwar2
 from bcs import scr_12cwar0
+from bcs import scr_st_1000a
+from bcs import scr_st_1100a
+from bcs import scr_st_1200a
+from bcs import scr_st_1200b
 #### END IMPORTS ####
 
 #### GVARS ####
@@ -37,7 +41,7 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Shawford Crale")
 		
-		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		# npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
 		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
@@ -704,19 +708,19 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			
 		elif index == 2:
 			# SetGlobal("Goblins_Attack_Palisade", "GLOBAL", 1)
-			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
 			# StartCutSceneMode()
-			self.iStartCutSceneMode()
 			# StartCutScene("12cWar2")
+			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
+			self.iStartCutSceneMode()
 			self.iStartCutScenePost(scr_12cwar2.Script_12cWar2, self.locus_make())
 			# 351: Did you hear that?
 			
 		elif index == 3:
 			# SetGlobal("Goblins_Attack_Palisade", "GLOBAL", 1)
-			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
 			# StartCutSceneMode()
-			self.iStartCutSceneMode()
 			# StartCutScene("12cWar0")
+			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
+			self.iStartCutSceneMode()
 			self.iStartCutScenePost(scr_12cwar0.Script_12cWar0, self.locus_make())
 			# 352: Did you hear that?
 			
@@ -772,29 +776,29 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			
 		elif index == 14:
 			# AddXpVar("Level_2_Easy",10785)
-			self.iAddXpVar("'Level_2_Easy'", 10785)
 			# SetGlobal("Dead_Goblin_Quest", "GLOBAL", 6)
+			self.iAddXpVar("'Level_2_Easy'", 10785)
 			self.iSetGlobal("'Dead_Goblin_Quest'", "'GLOBAL'", 6)
 			# 303: Yes, he can't speak goblin, so he's sending a scroll with the goblin's "answers" up to the Palisade.  You should expect it soon.
 			
 		elif index == 15:
 			# AddXpVar("Level_2_Easy",10785)
-			self.iAddXpVar("'Level_2_Easy'", 10785)
 			# SetGlobal("Dead_Goblin_Quest", "GLOBAL", 6)
+			self.iAddXpVar("'Level_2_Easy'", 10785)
 			self.iSetGlobal("'Dead_Goblin_Quest'", "'GLOBAL'", 6)
 			# 304: Yes, we spoke to him and were able to translate some of the goblin's speech.  Apparently the tribe that attacked Targos is only *one* of the tribes in the region.  They're led by someone named "Caballus," which sounds like some goblin sorcerer.  I'd tell your archers to aim for any goblin sorcerer they can see.
 			
 		elif index == 16:
 			# AddXpVar("Level_2_Average",10785)
-			self.iAddXpVar("'Level_2_Average'", 10785)
 			# SetGlobal("Dead_Goblin_Quest", "GLOBAL", 6)
+			self.iAddXpVar("'Level_2_Average'", 10785)
 			self.iSetGlobal("'Dead_Goblin_Quest'", "'GLOBAL'", 6)
 			# 305: Yes, we spoke to him and were able to translate some of the goblin's speech.  Apparently the tribe that attacked Targos is only *one* of the tribes in the region.  They seem to be led by three different leaders, one of them named "Caballus," which sounds like a goblin sorcerer.
 			
 		elif index == 17:
 			# AddXpVar("Level_2_Hard",10795)
-			self.iAddXpVar("'Level_2_Hard'", 10795)
 			# SetGlobal("Dead_Goblin_Quest", "GLOBAL", 6)
+			self.iAddXpVar("'Level_2_Hard'", 10795)
 			self.iSetGlobal("'Dead_Goblin_Quest'", "'GLOBAL'", 6)
 			# 331: That's not all.  They should expect a three-pronged assault, one from a sorcerer named "Caballus," and two others - uh, "Ghotrag" and "Vgh..." er, "Houndstooth," or something.
 			
@@ -840,56 +844,56 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			
 		elif index == 26:
 			# SetGlobal("Goblins_Attack_Palisade", "GLOBAL", 1)
-			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
 			# StartCutSceneMode()
-			self.iStartCutSceneMode()
 			# StartCutScene("12cWar2")
+			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
+			self.iStartCutSceneMode()
 			self.iStartCutScenePost(scr_12cwar2.Script_12cWar2, self.locus_make())
 			# 291: Did you hear that?
 			
 		elif index == 27:
 			# SetGlobal("Goblins_Attack_Palisade", "GLOBAL", 1)
-			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
 			# StartCutSceneMode()
-			self.iStartCutSceneMode()
 			# StartCutScene("12cWar0")
+			self.iSetGlobal("'Goblins_Attack_Palisade'", "'GLOBAL'", 1)
+			self.iStartCutSceneMode()
 			self.iStartCutScenePost(scr_12cwar0.Script_12cWar0, self.locus_make())
 			# 292: Did you hear that?
 			
 		elif index == 28:
 			# AddXpVar("Level_2_Average",10785)
-			self.iAddXpVar("'Level_2_Average'", 10785)
 			# SetGlobal("Palisade_Iron_Collar_Quest", "GLOBAL", 4)
+			self.iAddXpVar("'Level_2_Average'", 10785)
 			self.iSetGlobal("'Palisade_Iron_Collar_Quest'", "'GLOBAL'", 4)
 			# 341: No, they were too deep in their cups to listen to reason, so I was forced to deal with them.  
 			
 		elif index == 29:
 			# AddXpVar("Level_2_Average",10785)
-			self.iAddXpVar("'Level_2_Average'", 10785)
 			# SetGlobal("Palisade_Iron_Collar_Quest", "GLOBAL", 3)
+			self.iAddXpVar("'Level_2_Average'", 10785)
 			self.iSetGlobal("'Palisade_Iron_Collar_Quest'", "'GLOBAL'", 3)
 			# 342: Well, at first it seemed as if they would be coming along peacefully, but then I heard one of them say something... I can't quite remember what... and so we were forced to kill them all.  I'm sure it was all just a misunderstanding.
 			
 		elif index == 30:
 			# AddXpVar("Level_2_Hard",10796)
-			self.iAddXpVar("'Level_2_Hard'", 10796)
 			# SetGlobal("Palisade_Iron_Collar_Quest", "GLOBAL", 3)
-			self.iSetGlobal("'Palisade_Iron_Collar_Quest'", "'GLOBAL'", 3)
 			# SetGlobal("IC_Good", "GLOBAL", 1)
+			self.iAddXpVar("'Level_2_Hard'", 10796)
+			self.iSetGlobal("'Palisade_Iron_Collar_Quest'", "'GLOBAL'", 3)
 			self.iSetGlobal("'IC_Good'", "'GLOBAL'", 1)
 			# 343: Yes - though they proved to be a stubborn bunch.  I don't know how well they'll serve, but they may stop a few goblin axes. 
 			
 		elif index == 31:
 			# SetGlobal("S_R_1", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 1000, 0, 0)
+			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(1000 * const_toee.gp)
 			# 371: Actually, we came for our payment.  We're not here for our health, Shawford, we're here to earn some coin. 
 			
 		elif index == 32:
 			# SetGlobal("S_R_1", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 1000, 0, 0)
+			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(1000 * const_toee.gp)
 			# 372: We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle. 
 			
@@ -900,29 +904,29 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			
 		elif index == 34:
 			# SetGlobal("S_R_1", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 1000, 0, 0)
+			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(1000 * const_toee.gp)
 			# 441: Actually, we came for our payment.  We're not here for our health, Shawford, we're here to earn some coin. 
 			
 		elif index == 35:
 			# SetGlobal("S_R_1", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 1000, 0, 0)
+			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(1000 * const_toee.gp)
 			# 442: We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle. 
 			
 		elif index == 36:
 			# SetGlobal("S_R_1", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 1000, 0, 0)
+			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(1000 * const_toee.gp)
 			# 451: Actually, we came more for payment than prayer.  We're not here for our health, Shawford, we're here to earn some coin. 
 			
 		elif index == 37:
 			# SetGlobal("S_R_1", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 1000, 0, 0)
+			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(1000 * const_toee.gp)
 			# 452: We came to receive payment for the fighting at the Palisade, Shawford.  It was not an easy battle. 
 			
@@ -938,87 +942,87 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 			
 		elif index == 40:
 			# SetGlobal("S_R_2", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 3000, 0, 0)
+			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(3000 * const_toee.gp)
 			# 461: It was a suicide mission, and we expect to be rewarded accordingly.  We're here for gold, Shawford, not compliments. 
 			
 		elif index == 41:
 			# SetGlobal("S_R_1", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			# SetGlobal("S_R_2", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 4000, 0, 0)
+			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
+			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(4000 * const_toee.gp)
 			# 462: It was a suicide mission, and we expect to be rewarded accordingly, both for Shaengarne and the Palisade battle.  We're here for gold, Shawford, not compliments. 
 			
 		elif index == 42:
 			# SetGlobal("S_R_2", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 3000, 0, 0)
+			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(3000 * const_toee.gp)
 			# 463: We came for payment for our battle at the Shaengarne, Shawford.  
 			
 		elif index == 43:
 			# SetGlobal("S_R_1", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			# SetGlobal("S_R_2", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 4000, 0, 0)
+			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
+			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(4000 * const_toee.gp)
 			# 464: We came for payment for our battle at the Shaengarne, Shawford... and for our battle at the Palisade.   
 			
 		elif index == 44:
 			# SetGlobal("S_R_1", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			#  SetGlobal("S_R_2", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
 			# SetGlobal("S_R_3", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_3'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 10000, 0, 0)
+			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
+			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
+			self.iSetGlobal("'S_R_3'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(10000 * const_toee.gp)
 			# 471: I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words. 
 			
 		elif index == 45:
 			# SetGlobal("S_R_2", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
 			# SetGlobal("S_R_3", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_3'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 9000, 0, 0)
+			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
+			self.iSetGlobal("'S_R_3'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(9000 * const_toee.gp)
 			# 472: I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words. 
 			
 		elif index == 46:
 			# SetGlobal("S_R_3", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_3'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 6000, 0, 0)
+			self.iSetGlobal("'S_R_3'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(6000 * const_toee.gp)
 			# 473: I consider it Ulbrec's attempt to keep from paying us our due.  We're here for all the gold owed us, Shawford, not words. 
 			
 		elif index == 47:
 			# SetGlobal("S_R_1", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
 			#  SetGlobal("S_R_2", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
 			# SetGlobal("S_R_3", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_3'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 10000, 0, 0)
+			self.iSetGlobal("'S_R_1'", "'GLOBAL'", 1)
+			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
+			self.iSetGlobal("'S_R_3'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(10000 * const_toee.gp)
 			# 474: We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   
 			
 		elif index == 48:
 			# SetGlobal("S_R_2", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
 			# SetGlobal("S_R_3", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_3'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 9000, 0, 0)
+			self.iSetGlobal("'S_R_2'", "'GLOBAL'", 1)
+			self.iSetGlobal("'S_R_3'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(9000 * const_toee.gp)
 			# 475: We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   
 			
 		elif index == 49:
 			# SetGlobal("S_R_3", "GLOBAL", 1)
-			self.iSetGlobal("'S_R_3'", "'GLOBAL'", 1)
 			# GiveItemCreate("Misc07", Protagonist, 6000, 0, 0)
+			self.iSetGlobal("'S_R_3'", "'GLOBAL'", 1)
 			utils_pc.pc_party_receive_money_and_print(6000 * const_toee.gp)
 			# 476: We came for payment for our battle at the fortress, Shawford... and any of the other missions you have yet to pay us for.   
 			
@@ -1088,7 +1092,7 @@ class Ctrl_12MESS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12MESS
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Targos Soldier")
 		
-		npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		# npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
 		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
@@ -1146,6 +1150,7 @@ class Ctrl_12MESS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12MESS
 		# SkillSpellcraft: 0
 		# SkillUseMagicDevice: 0
 		# SkillWildernessLaw: 0
+		self.hide_creature(npc, True)
 		return
 	
 	def setup_gear(self, npc):
@@ -1277,5 +1282,912 @@ class Ctrl_12MESS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12MESS
 		if state==6: return 540
 		if state==7: return 550
 		if state==8: return 560
+		return
+	
+class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH 
+	@classmethod
+	def get_proto_id(cls): return 14704
+	
+	def setup_scripts(self, npc):
+		super(Ctrl_12SWIFTH_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Swift Thomas")
+		
+		# npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
+		hairStyle = utils_npc.HairStyle.from_npc(npc)
+		hairStyle.style = const_toee.hair_style_shorthair
+		hairStyle.color = const_toee.hair_color_light_brown # HairColourIndex: 1
+		hairStyle.update_npc(npc)
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [8, 12, 8, 8, 8, 8])
+		
+		# class levels: 1
+		# stat_level_fighter: 1
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_CHAOTIC_NEUTRAL) # 0x32 CHAOTIC_NEUTRAL
+		npc.obj_set_int(toee.obj_f_critter_experience, 0) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, -1) # CR: 0 TODO!!!
+		
+		# feats
+		# shield proficiency:  => feat_shield_proficiency skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_light skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_medium skip for fighter
+		# FeatArmorPreficiency: 3 => feat_armor_proficiency_heavy skip for fighter
+		# FeatWeaponProAxe: 1 => feat_martial_weapon_proficiency_throwing_axe skip for fighter
+		# FeatWeaponProBow: 1 => feat_martial_weapon_proficiency_shortbow skip for fighter
+		# FeatWeaponProFlail: 1 => feat_martial_weapon_proficiency_light_flail skip for fighter
+		# FeatWeaponProGreatsword: 1 => feat_martial_weapon_proficiency_greatsword skip for fighter
+		# FeatWeaponProHammer: 1 => feat_martial_weapon_proficiency_light_hammer skip for fighter
+		# FeatWeaponProLargeSword: 1 => feat_martial_weapon_proficiency_longsword skip for fighter
+		# FeatWeaponProPolearm: 1 => feat_martial_weapon_proficiency_halberd skip for fighter
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 2, 0, 0) # SaveVsDeath: 2, SaveVsWands: 0, SaveVsPolymorph: 0
+		
+		# HP
+		utils_npc.ensure_hp(npc, 2) # MaximumHP: 2
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 2
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		self.hide_creature(npc, True)
+		return
+	
+	def setup_gear(self, npc):
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
+		return
+	
+	def script_dialog(self, attachee, triggerer):
+		print("script_dialog 12SWIFT")
+		assert isinstance(attachee, toee.PyObjHandle)
+		assert isinstance(triggerer, toee.PyObjHandle)
+		
+		attachee.turn_towards(triggerer)
+		
+		line_id = -1
+		while True:
+			print("STATE 0")
+			# NumTimesTalkedTo(0)
+			if self.iNumTimesTalkedTo(0):
+				line_id = 570 # You're one of those mercenaries that slaughtered those goblins at the docks, aren't you?  I wish I could have been there!
+				print("STATE 0: line_id = 570")
+				break
+			
+			print("STATE 5")
+			# NumTimesTalkedToGT(0)
+			if self.iNumTimesTalkedToGT(0):
+				line_id = 620 # I *knew* I'd see you again - see any more goblins?
+				print("STATE 5: line_id = 620")
+				break
+			
+			print("STATE 6")
+			# Global("Thomas_Permission", "GLOBAL", 2)
+			if self.iGlobal("'Thomas_Permission'", "'GLOBAL'", 2):
+				line_id = 630 # Take you somewhere?
+				print("STATE 6: line_id = 630")
+				break
+			
+			print("STATE 7")
+			# Global("AR2000_Visited", "GLOBAL", 1)
+			# Global("AR3000_Visited", "GLOBAL", 0)
+			if self.iGlobal("'AR2000_Visited'", "'GLOBAL'", 1) \
+				 and self.iGlobal("'AR3000_Visited'", "'GLOBAL'", 0):
+				line_id = 650 # Did you go to Shaengarne?!  I bet you did!  Did you see any boars?!  Hunh?
+				print("STATE 7: line_id = 650")
+				break
+			
+			print("STATE 11")
+			# Global("AR3000_Visited", "GLOBAL", 1)
+			if self.iGlobal("'AR3000_Visited'", "'GLOBAL'", 1):
+				line_id = 680 # Did you see any goblins?!  I heard you went out to their fortress to make a mountain out of their heads!
+				print("STATE 11: line_id = 680")
+				break
+			
+			break # while
+			
+		print("script_dialog line_id: {}".format(line_id))
+		if line_id >= 0:
+			triggerer.begin_dialog(attachee, line_id)
+		
+		return line_id # script_dialog
+	
+	def dialog_test_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		# 12SWIFT
+		
+		if index == 0:
+			# GlobalGT("Lumber_Quest", "GLOBAL", 1)
+			# Global("Thomas_Permission", "GLOBAL", 1)
+			if self.iGlobalGT("'Lumber_Quest'", "'GLOBAL'", 1) \
+				 and self.iGlobal("'Thomas_Permission'", "'GLOBAL'", 1):
+				return True # 581: Olap told us you could show us the fastest route through Targos.
+			
+		elif index == 1:
+			# CheckSkillGT(Protagonist, 0, Bluff)
+			# GlobalGT("Lumber_Quest", "GLOBAL", 1)
+			# Global("Thomas_Permission", "GLOBAL", 0)
+			if self.iCheckSkillGT("Protagonist", 0, "Bluff") \
+				 and self.iGlobalGT("'Lumber_Quest'", "'GLOBAL'", 1) \
+				 and self.iGlobal("'Thomas_Permission'", "'GLOBAL'", 0):
+				return True # 582: Uh, Olap told us you could show us the fastest route through Targos.
+			
+		elif index == 2:
+			# Global("Lumber_Quest", "GLOBAL", 0)
+			if self.iGlobal("'Lumber_Quest'", "'GLOBAL'", 0):
+				return True # 584: Well, everybody's got to serve somebody.  Do you know where I can find the Commander of the Guard?
+			
+		elif index == 3:
+			# GlobalGT("Lumber_Quest", "GLOBAL", 1)
+			# Global("Thomas_Permission", "GLOBAL", 1)
+			if self.iGlobalGT("'Lumber_Quest'", "'GLOBAL'", 1) \
+				 and self.iGlobal("'Thomas_Permission'", "'GLOBAL'", 1):
+				return True # 601: It so happens I am doing a job for the Guard.
+			
+		elif index == 4:
+			# CheckSkillGT(Protagonist, 0, Bluff)
+			# GlobalGT("Lumber_Quest", "GLOBAL", 1)
+			# Global("Thomas_Permission", "GLOBAL", 0)
+			if self.iCheckSkillGT("Protagonist", 0, "Bluff") \
+				 and self.iGlobalGT("'Lumber_Quest'", "'GLOBAL'", 1) \
+				 and self.iGlobal("'Thomas_Permission'", "'GLOBAL'", 0):
+				return True # 602: Uh, well, it so happens I am doing a job for the Guard.  Very important.
+			
+		elif index == 5:
+			# Global("Lumber_Quest", "GLOBAL", 0)
+			if self.iGlobal("'Lumber_Quest'", "'GLOBAL'", 0):
+				return True # 603: Do you know where I can find the Commander of the Guard?
+			
+		elif index == 6:
+			# !CurrentAreaIs(Protagonist,1000)
+			if not self.iCurrentAreaIs("Protagonist", 1000):
+				return True # 591: Can you take us to the Docks?
+			
+		elif index == 7:
+			# !CurrentAreaIs(Protagonist,1100)
+			if not self.iCurrentAreaIs("Protagonist", 1100):
+				return True # 592: We'd like to go into town.
+			
+		elif index == 8:
+			# !CurrentAreaIs(Protagonist,1200)
+			# Global("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobal("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 593: To the Palisade.
+			
+		elif index == 9:
+			# !CurrentAreaIs(Protagonist,1200)
+			# GlobalGT("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobalGT("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 594: To the Palisade.
+			
+		elif index == 10:
+			# GlobalGT("Lumber_Quest", "GLOBAL", 1)
+			# Global("Thomas_Permission", "GLOBAL", 1)
+			if self.iGlobalGT("'Lumber_Quest'", "'GLOBAL'", 1) \
+				 and self.iGlobal("'Thomas_Permission'", "'GLOBAL'", 1):
+				return True # 621: Olap told us you could show us the fastest route through Targos.
+			
+		elif index == 11:
+			# CheckSkillGT(Protagonist, 0, Bluff)
+			# GlobalGT("Lumber_Quest", "GLOBAL", 1)
+			# Global("Thomas_Permission", "GLOBAL", 0)
+			if self.iCheckSkillGT("Protagonist", 0, "Bluff") \
+				 and self.iGlobalGT("'Lumber_Quest'", "'GLOBAL'", 1) \
+				 and self.iGlobal("'Thomas_Permission'", "'GLOBAL'", 0):
+				return True # 622: Uh, Olap told us you could show us the fastest route through Targos.
+			
+		elif index == 12:
+			# !CurrentAreaIs(Protagonist,1000)
+			# Global("Thomas_Permission", "GLOBAL", 2)
+			if not self.iCurrentAreaIs("Protagonist", 1000) \
+				 and self.iGlobal("'Thomas_Permission'", "'GLOBAL'", 2):
+				return True # 623: Not at the moment.  Can you take us to the Docks?
+			
+		elif index == 13:
+			# !CurrentAreaIs(Protagonist,1100)
+			# Global("Thomas_Permission", "GLOBAL", 2)
+			if not self.iCurrentAreaIs("Protagonist", 1100) \
+				 and self.iGlobal("'Thomas_Permission'", "'GLOBAL'", 2):
+				return True # 624: We'd like to go into town.
+			
+		elif index == 14:
+			# !CurrentAreaIs(Protagonist,1200)
+			# Global("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobal("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 625: No, but we need to head to the Palisade.
+			
+		elif index == 15:
+			# !CurrentAreaIs(Protagonist,1200)
+			# GlobalGT("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobalGT("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 626: No, but we need to head to the Palisade.
+			
+		elif index == 16:
+			# Global("Jump_Check", "GLOBAL", 1)
+			# !CurrentAreaIs(Protagonist,1000)
+			if self.iGlobal("'Jump_Check'", "'GLOBAL'", 1) \
+				 and not self.iCurrentAreaIs("Protagonist", 1000):
+				return True # 631: Uh, when I last saw you, Thomas, you were at the Docks.
+			
+		elif index == 17:
+			# Global("Jump_Check", "GLOBAL", 2)
+			# !CurrentAreaIs(Protagonist,1200)
+			if self.iGlobal("'Jump_Check'", "'GLOBAL'", 2) \
+				 and not self.iCurrentAreaIs("Protagonist", 1200):
+				return True # 632: Weren't you at the Palisade when I saw you last?
+			
+		elif index == 18:
+			# Global("Jump_Check", "GLOBAL", 3)
+			# !CurrentAreaIs(Protagonist,1100)
+			if self.iGlobal("'Jump_Check'", "'GLOBAL'", 3) \
+				 and not self.iCurrentAreaIs("Protagonist", 1100):
+				return True # 633: Uh, Thomas, weren't you in town when I saw you last?
+			
+		elif index == 19:
+			# !CurrentAreaIs(Protagonist,1000)
+			if not self.iCurrentAreaIs("Protagonist", 1000):
+				return True # 634: Can you take us to the Docks?
+			
+		elif index == 20:
+			# !CurrentAreaIs(Protagonist,1100)
+			if not self.iCurrentAreaIs("Protagonist", 1100):
+				return True # 635: We'd like to go into town.
+			
+		elif index == 21:
+			# !CurrentAreaIs(Protagonist,1200)
+			# Global("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobal("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 636: To the Palisade.
+			
+		elif index == 22:
+			# !CurrentAreaIs(Protagonist,1200)
+			# GlobalGT("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobalGT("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 637: To the Palisade.
+			
+		elif index == 23:
+			# !CurrentAreaIs(Protagonist,1000)
+			if not self.iCurrentAreaIs("Protagonist", 1000):
+				return True # 652: Can you take us to the Docks?
+			
+		elif index == 24:
+			# !CurrentAreaIs(Protagonist,1100)
+			if not self.iCurrentAreaIs("Protagonist", 1100):
+				return True # 653: We'd like to go into town.
+			
+		elif index == 25:
+			# !CurrentAreaIs(Protagonist,1200)
+			# Global("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobal("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 654: We need to head to the Palisade.
+			
+		elif index == 26:
+			# !CurrentAreaIs(Protagonist,1200)
+			# GlobalGT("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobalGT("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 655: We need to head to the Palisade.
+			
+		elif index == 27:
+			# !CurrentAreaIs(Protagonist,1000)
+			if not self.iCurrentAreaIs("Protagonist", 1000):
+				return True # 641: Uh, sure.  Take me to the Docks, then.
+			
+		elif index == 28:
+			# !CurrentAreaIs(Protagonist,1100)
+			if not self.iCurrentAreaIs("Protagonist", 1100):
+				return True # 642: Well, prove it and take me into town, then.
+			
+		elif index == 29:
+			# !CurrentAreaIs(Protagonist,1200)
+			# Global("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobal("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 643: To the Palisade, then, fleetfoot.
+			
+		elif index == 30:
+			# !CurrentAreaIs(Protagonist,1200)
+			# GlobalGT("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobalGT("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 644: To the Palisade, then, fleetfoot.
+			
+		elif index == 31:
+			# !CurrentAreaIs(Protagonist,1000)
+			if not self.iCurrentAreaIs("Protagonist", 1000):
+				return True # 662: Can you take us to the Docks?
+			
+		elif index == 32:
+			# !CurrentAreaIs(Protagonist,1100)
+			if not self.iCurrentAreaIs("Protagonist", 1100):
+				return True # 663: We'd like to go into town.
+			
+		elif index == 33:
+			# !CurrentAreaIs(Protagonist,1200)
+			# Global("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobal("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 664: We need to head to the Palisade.
+			
+		elif index == 34:
+			# !CurrentAreaIs(Protagonist,1200)
+			# GlobalGT("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobalGT("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 665: We need to head to the Palisade.
+			
+		elif index == 35:
+			# !CurrentAreaIs(Protagonist,1000)
+			if not self.iCurrentAreaIs("Protagonist", 1000):
+				return True # 671: Yeah, anyway, can you take us to the Docks?
+			
+		elif index == 36:
+			# !CurrentAreaIs(Protagonist,1100)
+			if not self.iCurrentAreaIs("Protagonist", 1100):
+				return True # 672: Sure would.  Now can you take us into town?
+			
+		elif index == 37:
+			# !CurrentAreaIs(Protagonist,1200)
+			# Global("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobal("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 673: Epic doesn't begin to cover it.  Can you take us to the Palisade?
+			
+		elif index == 38:
+			# !CurrentAreaIs(Protagonist,1200)
+			# GlobalGT("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobalGT("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 674: Epic doesn't begin to cover it.  Can you take us to the Palisade?
+			
+		elif index == 39:
+			# !CurrentAreaIs(Protagonist,1000)
+			if not self.iCurrentAreaIs("Protagonist", 1000):
+				return True # 683: Yeah, anyway, Thomas, can you take us to the Docks?
+			
+		elif index == 40:
+			# !CurrentAreaIs(Protagonist,1100)
+			if not self.iCurrentAreaIs("Protagonist", 1100):
+				return True # 684: All in a day's work.  Now can you take us into town?
+			
+		elif index == 41:
+			# !CurrentAreaIs(Protagonist,1200)
+			# Global("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobal("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 685: That's about right.  Can you take us to the Palisade?
+			
+		elif index == 42:
+			# !CurrentAreaIs(Protagonist,1200)
+			# GlobalGT("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobalGT("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 686: That's about right.  Can you take us to the Palisade?
+			
+		elif index == 43:
+			# !CurrentAreaIs(Protagonist,1000)
+			if not self.iCurrentAreaIs("Protagonist", 1000):
+				return True # 691: My feet are already singing a song.  Now can you take us to the Docks?
+			
+		elif index == 44:
+			# !CurrentAreaIs(Protagonist,1100)
+			if not self.iCurrentAreaIs("Protagonist", 1100):
+				return True # 692: Can't wait to hear them.  For now, can you take me into town?
+			
+		elif index == 45:
+			# !CurrentAreaIs(Protagonist,1200)
+			# Global("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobal("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 693: Sure they will.  Can you take us to the Palisade?
+			
+		elif index == 46:
+			# !CurrentAreaIs(Protagonist,1200)
+			# GlobalGT("Goblin_Palisade_Quest", "GLOBAL", 0)
+			if not self.iCurrentAreaIs("Protagonist", 1200) \
+				 and self.iGlobalGT("'Goblin_Palisade_Quest'", "'GLOBAL'", 0):
+				return True # 694: Sure they will.  Can you take us to the Palisade?
+			
+		return False # dialog_test_do
+	
+	def dialog_action_do(self, npc, pc, index):
+		assert isinstance(npc, toee.PyObjHandle)
+		assert isinstance(pc, toee.PyObjHandle)
+		assert isinstance(index, int)
+		
+		if index == 0:
+			# SetGlobal("Know_Swift_Thomas", "GLOBAL", 1)
+			self.iSetGlobal("'Know_Swift_Thomas'", "'GLOBAL'", 1)
+			# 571: Be glad you weren't there, child - one should never wish to be in battle, only wish to be kept far from it.
+			
+		elif index == 1:
+			# SetGlobal("Know_Swift_Thomas", "GLOBAL", 1)
+			self.iSetGlobal("'Know_Swift_Thomas'", "'GLOBAL'", 1)
+			# 572: Well, let me tell you, we could have used a hand or two.  The Targos Guard were scattered like geese.
+			
+		elif index == 2:
+			# SetGlobal("Know_Swift_Thomas", "GLOBAL", 1)
+			self.iSetGlobal("'Know_Swift_Thomas'", "'GLOBAL'", 1)
+			# 573: If you'd been there, you'd have died like the other soldiers and townsfolk, boy.
+			
+		elif index == 3:
+			# SetGlobal("Thomas_Permission", "GLOBAL", 2)
+			self.iSetGlobal("'Thomas_Permission'", "'GLOBAL'", 2)
+			# 581: Olap told us you could show us the fastest route through Targos.
+			
+		elif index == 4:
+			# SetGlobal("Thomas_Permission", "GLOBAL", 2)
+			self.iSetGlobal("'Thomas_Permission'", "'GLOBAL'", 2)
+			# 582: Uh, Olap told us you could show us the fastest route through Targos.
+			
+		elif index == 5:
+			# SetGlobal("Thomas_Permission", "GLOBAL", 2)
+			self.iSetGlobal("'Thomas_Permission'", "'GLOBAL'", 2)
+			# 601: It so happens I am doing a job for the Guard.
+			
+		elif index == 6:
+			# SetGlobal("Thomas_Permission", "GLOBAL", 2)
+			self.iSetGlobal("'Thomas_Permission'", "'GLOBAL'", 2)
+			# 602: Uh, well, it so happens I am doing a job for the Guard.  Very important.
+			
+		elif index == 7:
+			# SetGlobal("Jump_Check", "GLOBAL", 1)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1000a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
+			# 591: Can you take us to the Docks?
+			
+		elif index == 8:
+			# SetGlobal("Jump_Check", "GLOBAL", 3)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1100a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
+			# 592: We'd like to go into town.
+			
+		elif index == 9:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
+			# 593: To the Palisade.
+			
+		elif index == 10:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200b")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
+			# 594: To the Palisade.
+			
+		elif index == 11:
+			# SetGlobal("Thomas_Permission", "GLOBAL", 2)
+			self.iSetGlobal("'Thomas_Permission'", "'GLOBAL'", 2)
+			# 621: Olap told us you could show us the fastest route through Targos.
+			
+		elif index == 12:
+			# SetGlobal("Thomas_Permission", "GLOBAL", 2)
+			self.iSetGlobal("'Thomas_Permission'", "'GLOBAL'", 2)
+			# 622: Uh, Olap told us you could show us the fastest route through Targos.
+			
+		elif index == 13:
+			# StartCutSceneMode()
+			# StartCutScene("ST_1000a")
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
+			# 623: Not at the moment.  Can you take us to the Docks?
+			
+		elif index == 14:
+			# SetGlobal("Jump_Check", "GLOBAL", 3)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1100a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
+			# 624: We'd like to go into town.
+			
+		elif index == 15:
+			# SetGlobal("Jump_Check", "GLOBAL", 2) StartCutSceneMode()
+			# StartCutScene("ST_1200a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
+			# 625: No, but we need to head to the Palisade.
+			
+		elif index == 16:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200b")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
+			# 626: No, but we need to head to the Palisade.
+			
+		elif index == 17:
+			# SetGlobal("Jump_Check", "GLOBAL", 1)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1000a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
+			# 634: Can you take us to the Docks?
+			
+		elif index == 18:
+			# SetGlobal("Jump_Check", "GLOBAL", 3)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1100a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
+			# 635: We'd like to go into town.
+			
+		elif index == 19:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
+			# 636: To the Palisade.
+			
+		elif index == 20:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200b")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
+			# 637: To the Palisade.
+			
+		elif index == 21:
+			# SetGlobal("Jump_Check", "GLOBAL", 1)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1000a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
+			# 652: Can you take us to the Docks?
+			
+		elif index == 22:
+			# SetGlobal("Jump_Check", "GLOBAL", 3)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1100a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
+			# 653: We'd like to go into town.
+			
+		elif index == 23:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
+			# 654: We need to head to the Palisade.
+			
+		elif index == 24:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200b")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
+			# 655: We need to head to the Palisade.
+			
+		elif index == 25:
+			# SetGlobal("Jump_Check", "GLOBAL", 1)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1000a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
+			# 641: Uh, sure.  Take me to the Docks, then.
+			
+		elif index == 26:
+			# SetGlobal("Jump_Check", "GLOBAL", 3)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1100a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
+			# 642: Well, prove it and take me into town, then.
+			
+		elif index == 27:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
+			# 643: To the Palisade, then, fleetfoot.
+			
+		elif index == 28:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200b")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
+			# 644: To the Palisade, then, fleetfoot.
+			
+		elif index == 29:
+			# SetGlobal("Jump_Check", "GLOBAL", 1)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1000a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
+			# 662: Can you take us to the Docks?
+			
+		elif index == 30:
+			# SetGlobal("Jump_Check", "GLOBAL", 3)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1100a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
+			# 663: We'd like to go into town.
+			
+		elif index == 31:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
+			# 664: We need to head to the Palisade.
+			
+		elif index == 32:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200b")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
+			# 665: We need to head to the Palisade.
+			
+		elif index == 33:
+			# SetGlobal("Jump_Check", "GLOBAL", 1)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1000a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
+			# 671: Yeah, anyway, can you take us to the Docks?
+			
+		elif index == 34:
+			# SetGlobal("Jump_Check", "GLOBAL", 3)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1100a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
+			# 672: Sure would.  Now can you take us into town?
+			
+		elif index == 35:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
+			# 673: Epic doesn't begin to cover it.  Can you take us to the Palisade?
+			
+		elif index == 36:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200b")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
+			# 674: Epic doesn't begin to cover it.  Can you take us to the Palisade?
+			
+		elif index == 37:
+			# SetGlobal("Jump_Check", "GLOBAL", 1)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1000a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
+			# 683: Yeah, anyway, Thomas, can you take us to the Docks?
+			
+		elif index == 38:
+			# SetGlobal("Jump_Check", "GLOBAL", 3)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1100a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
+			# 684: All in a day's work.  Now can you take us into town?
+			
+		elif index == 39:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
+			# 685: That's about right.  Can you take us to the Palisade?
+			
+		elif index == 40:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200b")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
+			# 686: That's about right.  Can you take us to the Palisade?
+			
+		elif index == 41:
+			# SetGlobal("Jump_Check", "GLOBAL", 1)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1000a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 1)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1000a.Script_ST_1000a, self.locus_make())
+			# 691: My feet are already singing a song.  Now can you take us to the Docks?
+			
+		elif index == 42:
+			# SetGlobal("Jump_Check", "GLOBAL", 3)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1100a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 3)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1100a.Script_ST_1100a, self.locus_make())
+			# 692: Can't wait to hear them.  For now, can you take me into town?
+			
+		elif index == 43:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200a")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200a.Script_ST_1200a, self.locus_make())
+			# 693: Sure they will.  Can you take us to the Palisade?
+			
+		elif index == 44:
+			# SetGlobal("Jump_Check", "GLOBAL", 2)
+			# StartCutSceneMode()
+			# StartCutScene("ST_1200b")
+			self.iSetGlobal("'Jump_Check'", "'GLOBAL'", 2)
+			self.iStartCutSceneMode()
+			self.iStartCutScenePost(scr_st_1200b.Script_ST_1200b, self.locus_make())
+			# 694: Sure they will.  Can you take us to the Palisade?
+			
+		return # dialog_action_do
+		
+	def get_dialog_trigger_max_index(self): return 46
+	
+	def get_state_to_line(self, state):
+		if state==0: return 570
+		if state==1: return 580
+		if state==2: return 600
+		if state==3: return 610
+		if state==4: return 590
+		if state==5: return 620
+		if state==6: return 630
+		if state==7: return 650
+		if state==8: return 640
+		if state==9: return 660
+		if state==10: return 670
+		if state==11: return 680
+		if state==12: return 690
+		return
+	
+class Ctrl_12NOLAN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12NOLAN 
+	@classmethod
+	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
+	
+	def setup_scripts(self, npc):
+		super(Ctrl_12NOLAN_Auto, self).setup_scripts(npc)
+		return
+	
+	def setup_appearance(self, npc):
+		utils_npc.npc_description_set_new(npc, "Nolan the Healer")
+		
+		# npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		
+		hairStyle = utils_npc.HairStyle.from_npc(npc)
+		hairStyle.style = const_toee.hair_style_shorthair
+		hairStyle.color = const_toee.hair_color_blonde # HairColourIndex: 3
+		hairStyle.update_npc(npc)
+		return
+	
+	def setup_char(self, npc):
+		utils_npc.npc_abilities_set(npc, [12, 10, 10, 8, 12, 10])
+		
+		# class levels: 2
+		# stat_level_cleric: 2
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_cleric)
+		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 1, toee.stat_level_cleric)
+		
+		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
+		npc.obj_set_int(toee.obj_f_critter_experience, 0) # XPReward TODO!!!
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 1) # CR: 3 TODO!!!
+		
+		# feats
+		
+		npc.feat_add(toee.feat_athletic, 1) # workaround for do_refresh_d20_status
+		
+		# saves
+		utils_npc.ensure_saves_natural(npc, 3, 0, 3) # SaveVsDeath: 3, SaveVsWands: 0, SaveVsPolymorph: 3
+		
+		# HP
+		utils_npc.ensure_hp(npc, 11) # MaximumHP: 11
+		npc.obj_set_int(toee.obj_f_hp_damage, 0) # CurrentHP: 11
+		
+		# skills
+		# SkillAlchemy: 0
+		# SkillAnimalEmpathy: 0
+		# SkillBluff: 0
+		# SkillConcentration: 0
+		# SkillDiplomacy: 0
+		# SkillDisableDevice: 0
+		# SkillHide: 0
+		# SkillIntimidate: 0
+		# SkillKnowledgeArcana: 0
+		# SkillMoveSilently: 0
+		# SkillOpenLock: 0
+		# SkillPickPocket: 0
+		# SkillSearch: 0
+		# SkillSpellcraft: 0
+		# SkillUseMagicDevice: 0
+		# SkillWildernessLaw: 0
+		return
+	
+	def setup_gear(self, npc):
+		# SLOT_ARMOR: Chainmail Armor(ChainMail) from 00CHAN01
+		# Not found! TODO ITEM
+		
+		# SLOT_WEAPON1: Warhammer(Hammers) from 00HAMM01
+		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_WARHAMMER, npc, no_loot = False, wear_on = toee.item_wear_weapon_primary) # Warhammer (00HAMM01) at SLOT_WEAPON1 OK
+		
+		# SLOT_SELECTED_WEAPON: None(None) from None
+		# Not found! TODO ITEM
+		
+		# SLOT_SELECTED_WEAPON_ABILITY: None(None) from None
+		# Not found! TODO ITEM
+		
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	

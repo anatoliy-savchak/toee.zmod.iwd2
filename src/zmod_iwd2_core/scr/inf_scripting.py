@@ -13,6 +13,7 @@ import ctrl_daemon
 import json
 import inf_engine
 import utils_obj
+import utils_toee
 
 __metaclass__ = type
 
@@ -121,8 +122,9 @@ class InfScriptSupport:
 
 		if debugg.DEBUG_PRINT_GLOBAL_SET_INTO_HISTORY:
 			text = '' if area.lower() == 'global' else ' ({})'.format(area[0].upper())
-			text = '\n{}{} = {} <= {}\n'.format(name, text, value, value_before)
-			toee.game.create_history_freeform(text)
+			text = '{}{} = {} <= {}'.format(name, text, value, value_before)
+			
+			utils_toee.create_history_freeform(text)
 		return
 
 	def _get_ie_object(self, name, do_error = False):
@@ -1376,8 +1378,7 @@ class InfScriptSupport:
 			line = toee.game.get_mesline('mes\\floats.mes', strref)
 			if line:
 				toee.game.leader.float_mesfile_line('mes\\floats.mes', strref, toee.tf_green)
-				line = '\n' + line + '\n'
-				toee.game.create_history_freeform(line)
+				utils_toee.create_history_freeform(line)
 		# core->PlaySound(DS_GOTXP, SFX_CHAN_ACTIONS);
 		return
 
@@ -1606,9 +1607,7 @@ class InfScriptSupport:
 			item.destroy()
 			if npc.type == toee.obj_t_pc:
 				text = '{} lost {}'.format(npc.description, item_description)
-				npc.float_text_line(text, toee.tf_yellow)
-				text = '\n{}\n'.format(text)
-				toee.game.create_history_freeform(text)
+				utils_toee.create_history_freeform(text)
 		return
 
 	@dump_args
@@ -1823,10 +1822,10 @@ class InfScriptSupport:
 				float_lines = utils_inf.split_line_max(line)
 				print(float_lines)
 				float_line = '\n'.join(float_lines)
+				inf_engine.inf_engine().texts.append(float_lines)
 				npc.float_text_line(float_line, toee.tf_white)
-				line = '\n{}: {}\n'.format(npc.description, line)
-				toee.game.create_history_freeform(line)
-
+				line = '{}: {}'.format(npc.description, line)
+				utils_toee.create_history_freeform(line)
 		return
 
 	@dump_args
@@ -1896,8 +1895,7 @@ class InfScriptSupport:
 				elif npc.type == toee.obj_t_pc:
 					text = '{} lost {}'.format(npc.description, item.description)
 					npc.float_text_line(text, toee.tf_yellow)
-					text = '\n{}\n'.format(text)
-					toee.game.create_history_freeform(text)
+					utils_toee.create_history_freeform(text)
 
 		return
 
@@ -1918,8 +1916,7 @@ class InfScriptSupport:
 				if npc.type == toee.obj_t_pc:
 					text = '{} received {}'.format(npc.description, item_obj.description)
 					npc.float_text_line(text, toee.tf_green)
-					text = '\n{}\n'.format(text)
-					toee.game.create_history_freeform(text)
+					utils_toee.create_history_freeform(text)
 
 			#else:
 			#	item = utils_item.item_create_in_inventory2(proto, target, 0, None)
@@ -2645,6 +2642,8 @@ class InfScriptSupport:
 		"""
 		self.iStartCutSceneMode()
 		locus['end_cutscene'] = True
+		locus["script_class"] = cutscene_class
+		locus['continuous'] = True
 		self.do_wait(1, locus=locus)
 		locus["is_wait_mode"] = 1
 		return
@@ -2756,8 +2755,7 @@ class InfScriptSupport:
 						if pc.type == toee.obj_t_pc:
 							text = '{} lost {}'.format(pc.description, item_description)
 							pc.float_text_line(text, toee.tf_yellow)
-							text = '\n{}\n'.format(text)
-							toee.game.create_history_freeform(text)
+							utils_toee.create_history_freeform(text)
 				if not num:
 					break
 		return

@@ -23,13 +23,14 @@ class ProduceBCSManager(producer_base.Producer):
         , hint_cre_name: str = None
         , hint_actor_name: str = None
         , hint_script_code: str = None
+        , hint_cuscene_mode: bool = None
     ):
         tup = self.get_bc(bcs_name)
         if tup:
             return tup
 
         prod_auto = ProduceBCSFileAuto(doc=self.doc, bcs_name = bcs_name, are_name = hint_are_name, make_new=True)
-        prod_auto.produce(cre_name=hint_cre_name, actor_name=hint_actor_name, script_code=hint_script_code)
+        prod_auto.produce(cre_name=hint_cre_name, actor_name=hint_actor_name, script_code=hint_script_code, hint_cuscene_mode=hint_cuscene_mode)
         prod_auto.save()
         ctrl_name_auto, file_name_auto, pkg_name_auto = prod_auto.get_ctrl_tuple()
         self.set_bc(bcs_name, ctrl_name_auto, file_name_auto, pkg_name_auto)
@@ -85,7 +86,12 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
         if full: return out_path
         return os.path.basename(out_path).replace('.py', '')
 
-    def produce(self, cre_name: str = None, actor_name: str = None, script_code: str = None, parent_producer = None):
+    def produce(self, cre_name: str = None, actor_name: str = None, script_code: str = None, parent_producer = None, hint_cuscene_mode = None):
+        context={"producer": self, "are_name": self.are_name, "cre_name": cre_name
+            , "actor_name": actor_name, "bcs_name": self.bcs_name, "script_code": script_code, "file_producer": self
+            , "cuscene_mode": hint_cuscene_mode
+            }
+
         blocks = self._parse_blocks()
         self.writeline(f'class {self.ctrl_name}({self.ancestor_class}): # {self.bcs_name}')
         self.indent()
@@ -124,8 +130,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             block["resp_lines_stripped"] = resp_lines_stripped
             block["is_continue"] = is_continue
 
-            resp_lines_translated = self.doc.producerOfScripts.transate_action_lines_complex(resp_lines_stripped
-                , cre_name=cre_name, actor_name=actor_name, script_code=script_code, bcs_name=self.bcs_name, are_name=self.are_name, file_producer = self)
+            resp_lines_translated = self.doc.producerOfScripts.transate_action_lines_complex(resp_lines_stripped, context)
             block["resp_lines_translated"] = resp_lines_translated
             block_name = f'do_execute_block_{block_index:02d}'
             block["block_name"] = block_name

@@ -28,3 +28,9 @@ class Ctrl_12SHAWFO(py12011_ar1201_npc_classes_auto.Ctrl_12SHAWFO_Auto): # 12SHA
 class Ctrl_12MESS(py12011_ar1201_npc_classes_auto.Ctrl_12MESS_Auto): # 12MESS 
 	pass
 
+class Ctrl_12SWIFTH(py12011_ar1201_npc_classes_auto.Ctrl_12SWIFTH_Auto): # 12SWIFTH 
+	pass
+
+class Ctrl_12NOLAN(py12011_ar1201_npc_classes_auto.Ctrl_12NOLAN_Auto): # 12NOLAN 
+	pass
+

@@ -42,7 +42,10 @@ class CtrlAR1201(ctrl_daemon_ie.CtrlDaemonIE):
 	def place_encounters_initial(self):
 		super(CtrlAR1201, self).place_encounters_initial()
 		#scr_000test_shawford_crale1_auto.Script_000TEST_Shawford_Crale1_Auto.do_execute(self, continuous=True)
-		self.iStartCutScene(scr_12cwar0.Script_12cWar0)
+		#self.iStartCutScene(scr_12cwar0.Script_12cWar0)
+		self.iSetGlobal("Palisade_Iron_Collar_Quest","GLOBAL", 2)
+		actor_npc, actor_ctrl = self._get_ie_object_by_name("Shawford_Crale")
+		actor_ctrl.iSetNumTimesTalkedTo(1)
 		#scr_12cwar0.Script_12cWar0.do_execute(self, continuous=True)
 		return
 	
@@ -55,10 +58,17 @@ class CtrlAR1201(ctrl_daemon_ie.CtrlDaemonIE):
 		ctrl_class, loc = py12014_ar1201_npc_inst_classes.Ctrl_12MESS_AR1201_Messenger_Hidden,  utils_obj.sec2loc(489, 478)
 		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "Messenger_Hidden", 0, 1)
 		
+		# Swift_Thomas_Hidden: 12SWIFTH (489.5, 476.9) const_toee.ROT02 ctrl: py12014_ar1201_npc_inst_classes.Ctrl_12SWIFTH_AR1201_Swift_Thomas_Hidden hidden
+		ctrl_class, loc = py12014_ar1201_npc_inst_classes.Ctrl_12SWIFTH_AR1201_Swift_Thomas_Hidden,  utils_obj.sec2loc(489, 476)
+		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "Swift_Thomas_Hidden", 0, 1)
+		
+		# Nolan: 12NOLAN (471.1, 477.3) const_toee.ROT08 ctrl: py12014_ar1201_npc_inst_classes.Ctrl_12NOLAN_AR1201_Nolan 
+		ctrl_class, loc = py12014_ar1201_npc_inst_classes.Ctrl_12NOLAN_AR1201_Nolan,  utils_obj.sec2loc(471, 477)
+		self.create_npc_at(loc, ctrl_class, const_toee.ROT08, "Nolan", 0, 1)
+		
 		return
 	
 	def place_bcs_auto(self):
-		self.vars["script_area"] = scr_000test_shawford_crale2.Script_000TEST_Shawford_Crale2
 		return
 
 	def setup_ambients_auto(self):

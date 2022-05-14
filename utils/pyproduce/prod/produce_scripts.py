@@ -127,8 +127,10 @@ class ProducerOfScripts(producer_base.Producer):
 
         return lines
 
-    def transate_action_lines_complex(self, action_lines: list, are_name: str = None, cre_name: str = None, bcs_name: str = None, script_code: str = None, actor_name: str = None, file_producer = None):
-        context={"producer": self, "are_name": are_name, "cre_name": cre_name, "actor_name": actor_name, "bcs_name": bcs_name, "script_code": script_code, "file_producer": file_producer, "is_complex": True}
+    def transate_action_lines_complex(self, action_lines: list, context: dict):
+        context["producer"] = self
+        context["is_complex"] = True
+        #context={"producer": self, "are_name": are_name, "cre_name": cre_name, "actor_name": actor_name, "bcs_name": bcs_name, "script_code": script_code, "file_producer": file_producer, "is_complex": True}
 
         lines = list()
         action_lines2 = list()
@@ -156,6 +158,8 @@ class ProducerOfScripts(producer_base.Producer):
                     con[key] = value
                 con["line_index"] = i
                 scripted_lines = ScriptTran.translate_script_line_ex(action_linea, con)
+                if "CutSceneId" in con.keys():
+                    context["CutSceneId"] = con.get("CutSceneId")
                 line = scripted_lines
                 if not isinstance(scripted_lines, dict):
                     line = {"instructions": [{"line": line}], "context": con, "breaks_after": 0}
@@ -795,3 +799,30 @@ class ScriptTranFuncParamCoordsMoveToPoint(ScriptTranFuncParamCoords):
             line = {"instructions": instructions, "context": self.context, "breaks_after": 1, "is_post_code": 1}
 
         return line
+
+class ScriptTranFuncsFloatMessage(ScriptTranFuncs):
+    @classmethod
+    def supports_func(cls): return ("FloatMessage", )
+
+    def do_translate_func(self, func_name: str, args: list, func_info: dict):
+        cutSceneId = self.context.get("CutSceneId")
+        if cutSceneId:
+            # maybe redo to bcs.used_strrefs
+            strref = self.do_translate_param(args[1], 1, func_info['args'][1])
+            if self.context["producer"].doc.current_are_producer.add_actor_strref_line(cutSceneId, strref):
+                # it does not work for some bizzare reason :(
+                # TODO
+                #func_name = 'FloatMessageDialog'
+                return super().do_translate_func(func_name, args, func_info)
+        return super().do_translate_func(func_name, args, func_info)
+
+class ScriptTranFuncsCutSceneId(ScriptTranFuncs):
+    @classmethod
+    def supports_func(cls): return ("CutSceneId", )
+
+    def do_translate_func(self, func_name: str, args: list, func_info: dict):
+        name = self.do_translate_param(args[0], 0, func_info['args'][0])
+        if name:
+            name = common.strip_quotes(common.strip_quotes(name))
+        self.context["CutSceneId"] = name
+        return super().do_translate_func(func_name, args, func_info)

@@ -31,3 +31,11 @@ class Ctrl_12MESS_AR1201_Messenger_Hidden_Auto(py12012_ar1201_npc_classes.Ctrl_1
 	def setup_bcs(self):
 		return
 
+class Ctrl_12SWIFTH_AR1201_Swift_Thomas_Hidden_Auto(py12012_ar1201_npc_classes.Ctrl_12SWIFTH): # 12SWIFTH 
+	def setup_bcs(self):
+		return
+
+class Ctrl_12NOLAN_AR1201_Nolan_Auto(py12012_ar1201_npc_classes.Ctrl_12NOLAN): # 12NOLAN 
+	def setup_bcs(self):
+		return
+

@@ -2,7 +2,7 @@ import toee, debug, tpdp, utils_storage, utils_npc_spells, const_toee, utils_tac
 import const_proto_potions, utils_obj, const_proto_food, utils_npc, utils_target_list, const_proto_wands, utils_sneak, const_deseases, utils_npc_spells, utils_npc, factions_zmod
 import const_proto_items, const_proto_rings, const_proto_cloth, const_proto_wondrous, utils_races, utils_npc_build, const_proto_npc, utils_toee, tpai, tpactions, utils_strategy
 import py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, module_consts, rumor_control, utils_pc
-import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2
+import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2, ctrl_daemon
 import utils_journal as uj, inf_scripting
 #### IMPORT ####
 import py10003_ar1000_npc_inst_classes_auto
@@ -24,7 +24,7 @@ def cs(): return ctrl_daemon.gdc()
 class Ctrl_10HEDRON_AR1000_Hedron(py10003_ar1000_npc_inst_classes_auto.Ctrl_10HEDRON_AR1000_Hedron_Auto): # 10HEDRON 
 
 	def setup_appearance(self, npc):
-		super().setup_appearance(npc)
+		super(Ctrl_10HEDRON_AR1000_Hedron, self).setup_appearance(npc)
 		npc.obj_set_int(toee.obj_f_critter_portrait, 7140) # NPC_7142_s_Moneir
 		# phaen: NPC_7162_s_Falrinth
 		# some brute: NPC_7212_s_GisterNoshim
@@ -108,14 +108,14 @@ class Ctrl_10HEDRON_AR1000_Hedron(py10003_ar1000_npc_inst_classes_auto.Ctrl_10HE
 class Ctrl_10ELDGUL_AR1000_Eldgull(py10003_ar1000_npc_inst_classes_auto.Ctrl_10ELDGUL_AR1000_Eldgull_Auto): # 10ELDGUL 
 
 	def setup_appearance(self, npc):
-		super().setup_appearance(npc)
+		super(Ctrl_10ELDGUL_AR1000_Eldgull, self).setup_appearance(npc)
 		npc.obj_set_int(toee.obj_f_critter_portrait, 6682) # NPC_6682_s_Morgan
 		return 
 
 class Ctrl_10SCREED_AR1000_Screed(py10003_ar1000_npc_inst_classes_auto.Ctrl_10SCREED_AR1000_Screed_Auto): # 10SCREED 
 
 	def setup_appearance(self, npc):
-		super().setup_appearance(npc)
+		super(Ctrl_10SCREED_AR1000_Screed, self).setup_appearance(npc)
 		npc.obj_set_int(toee.obj_f_critter_portrait, 6682) # NPC_6682_s_Morgan
 		return 
 
@@ -157,28 +157,28 @@ class Ctrl_10SCREED_AR1000_Screed(py10003_ar1000_npc_inst_classes_auto.Ctrl_10SC
 class Ctrl_10REIG_AR1000_Reig(py10003_ar1000_npc_inst_classes_auto.Ctrl_10REIG_AR1000_Reig_Auto): # 10REIG 
 
 	def setup_appearance(self, npc):
-		super().setup_appearance(npc)
+		super(Ctrl_10REIG_AR1000_Reig, self).setup_appearance(npc)
 		npc.obj_set_int(toee.obj_f_critter_portrait, 6670) # NPC_6672_s_Bertram
 		return 
 
 class Ctrl_10JON_AR1000_Jon(py10003_ar1000_npc_inst_classes_auto.Ctrl_10JON_AR1000_Jon_Auto): # 10JON 
 
 	def setup_appearance(self, npc):
-		super().setup_appearance(npc)
+		super(Ctrl_10JON_AR1000_Jon, self).setup_appearance(npc)
 		npc.obj_set_int(toee.obj_f_critter_portrait, 7040) # NPC_7042_s_Valden
 		return 
 
 class Ctrl_10BROGAN_AR1000_Brogan(py10003_ar1000_npc_inst_classes_auto.Ctrl_10BROGAN_AR1000_Brogan_Auto): # 10BROGAN 
 
 	def setup_appearance(self, npc):
-		super().setup_appearance(npc)
+		super(Ctrl_10BROGAN_AR1000_Brogan, self).setup_appearance(npc)
 		npc.obj_set_int(toee.obj_f_critter_portrait, 7050) # NPC_7052_s_Mytch
 		return 
 
 class Ctrl_10JORUN_AR1000_Jorun(py10003_ar1000_npc_inst_classes_auto.Ctrl_10JORUN_AR1000_Jorun_Auto): # 10JORUN 
 
 	def setup_appearance(self, npc):
-		super().setup_appearance(npc)
+		super(Ctrl_10JORUN_AR1000_Jorun, self).setup_appearance(npc)
 		npc.obj_set_int(toee.obj_f_critter_portrait, 7170) # NPC_7172_s_Grank
 		return 
 

@@ -56,13 +56,15 @@ def main():
         are_prod.skip_script_specific = True
         are_prod.skip_script_special1 = True
         are_prod.skip_script_daemon = False
-        #are_prod.produce()
-        are_prod.produce_start()
-        are_prod.produce_actor("Shawford_Crale")
-        are_prod.produce_actor("Messenger_Hidden")
-        
-        are_prod.daemon.produce(False, '000TEST_Shawford_Crale2')
-        are_prod.daemon.save()
+        are_prod.produce()
+        if False:
+            are_prod.produce_start()
+            are_prod.produce_actor("Shawford_Crale")
+            are_prod.produce_actor("Messenger_Hidden")
+            
+            are_prod.daemon.produce(False)
+            are_prod.daemon.save()
+            are_prod.produce_end()
 
     if False:
         doc.producerOfScripts.log_usage = True

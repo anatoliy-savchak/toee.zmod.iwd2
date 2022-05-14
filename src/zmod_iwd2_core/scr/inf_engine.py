@@ -11,4 +11,5 @@ def inf_engine():
 class InfEngine(object):
     def __init__(self):
         self.vars = dict()
+        self.texts = list()
         return

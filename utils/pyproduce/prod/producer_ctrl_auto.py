@@ -176,11 +176,21 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.writeline()
 
         self.produce_alignment()
-        self.writeline(f'npc.obj_set_int(toee.obj_f_critter_experience, {int(self.cre["XPReward"])}) # XPReward TODO!!!')
-        cr = int(self.cre["ChallangeRating"])
-        cr_adj = cr - levelsFromClasses
-        if cr_adj < -2: cr_adj = -2
-        self.writeline(f'npc.obj_set_int(toee.obj_f_npc_challenge_rating, {cr_adj}) # CR: {cr} TODO!!!')
+        #self.writeline(f'npc.obj_set_int(toee.obj_f_critter_experience, {int(self.cre["XPReward"])})
+        crnum_iwd2 = int(self.cre["ChallangeRating"])
+        cr = crnum_iwd2 - 2
+        if crnum_iwd2 == 1:
+            cr = crnum_iwd2 - 3 # IWD2 does no have entry for 1/3 cr
+        cr_str = f'{cr+2}'
+        if cr == -2:
+            cr_str = '1/4'
+        elif cr == -1:
+            cr_str = '1/3'
+        elif cr == 0:
+            cr_str = '1/2'
+        self.writeline(f'cr = {cr} # crnum_iwd2: {crnum_iwd2}, D&D CR: {cr_str}')
+        self.writeline('cr_bonus = cr - npc.stat_level_get(toee.stat_level)')
+        self.writeline('npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)')
         
         self.produce_feats()
         self.produce_saves()

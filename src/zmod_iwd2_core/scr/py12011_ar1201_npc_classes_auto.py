@@ -62,8 +62,9 @@ class Ctrl_12SHAWFO_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SHAWFO
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 5, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_GOOD) # 0x11 LAWFUL_GOOD
-		npc.obj_set_int(toee.obj_f_critter_experience, 270) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, -1) # CR: 5 TODO!!!
+		cr = 3 # crnum_iwd2: 5, D&D CR: 5
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		npc.feat_add(toee.feat_dodge) # Dodge
@@ -1108,8 +1109,9 @@ class Ctrl_12MESS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12MESS
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -1312,8 +1314,9 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_CHAOTIC_NEUTRAL) # 0x32 CHAOTIC_NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 0) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, -1) # CR: 0 TODO!!!
+		cr = -2 # crnum_iwd2: 0, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -2141,8 +2144,9 @@ class Ctrl_12NOLAN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12NOLAN
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 1, toee.stat_level_cleric)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 0) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 1) # CR: 3 TODO!!!
+		cr = 1 # crnum_iwd2: 3, D&D CR: 3
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		

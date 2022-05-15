@@ -91,12 +91,13 @@ class DialogFile:
                 f.write(line + ("\n" if not "\n" in line else ""))
                 last_line_was_blank = len(line) == 0
 
-            if not last_line_was_blank is None and not last_line_was_blank:
-                f.write('\n')
-            f.write('# STR REFS\n')
-            for strref in sorted(self.strrefs):
-                text = self.doc.producerOfFloats.get_str_ref(strref)
-                f.write(f'{{{strref}}}{{{text}}}{{}}{{}}{{}}{{}}{{}} # strref: {strref}\n')
+            if self.strrefs:
+                if not last_line_was_blank is None and not last_line_was_blank:
+                    f.write('\n')
+                f.write('# STR REFS\n')
+                for strref in sorted(self.strrefs):
+                    text = self.doc.producerOfFloats.get_str_ref(strref)
+                    f.write(f'{{{strref}}}{{{text}}}{{}}{{}}{{}}{{}}{{}} # strref: {strref}\n')
         self.save_sound_map()
         return
 

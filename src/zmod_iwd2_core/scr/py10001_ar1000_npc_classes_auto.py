@@ -60,8 +60,9 @@ class Ctrl_10HEDRON_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 5, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_CHAOTIC_GOOD) # 0x31 CHAOTIC_GOOD
-		npc.obj_set_int(toee.obj_f_critter_experience, 270) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, -1) # CR: 5 TODO!!!
+		cr = 3 # crnum_iwd2: 5, D&D CR: 5
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -875,8 +876,9 @@ class Ctrl_10ELDGUL_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_CHAOTIC_NEUTRAL) # 0x32 CHAOTIC_NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -1022,8 +1024,9 @@ class Ctrl_10SCREED_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -1168,8 +1171,9 @@ class Ctrl_10REIG_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -1753,8 +1757,9 @@ class Ctrl_10JON_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -1978,8 +1983,9 @@ class Ctrl_10BROGAN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -2567,8 +2573,9 @@ class Ctrl_10JORUN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 2, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_NEUTRAL) # 0x12 LAWFUL_NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 65) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, -1) # CR: 2 TODO!!!
+		cr = 0 # crnum_iwd2: 2, D&D CR: 1/2
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		npc.feat_add(toee.feat_iron_will) # Bullheaded
@@ -3152,8 +3159,9 @@ class Ctrl_10GOB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOB
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -3231,8 +3239,9 @@ class Ctrl_10GOBD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBD
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -3306,8 +3315,9 @@ class Ctrl_10MALED_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10MALED
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -3382,8 +3392,9 @@ class Ctrl_10SOLDRD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SOLDRD
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -3452,8 +3463,9 @@ class Ctrl_10GOBARD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBARD
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -3526,8 +3538,9 @@ class Ctrl_10SAILRD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SAILRD
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -3599,8 +3612,9 @@ class Ctrl_10GOBAR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10GOBAR
 		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_LAWFUL_EVIL) # 0x13 LAWFUL_EVIL
-		npc.obj_set_int(toee.obj_f_critter_experience, 25) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -3691,8 +3705,9 @@ class Ctrl_10CRANDA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_TRUE_NEUTRAL) # 0x22 NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 15) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -3976,8 +3991,9 @@ class Ctrl_12SWIFTH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 12SWIFTH
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_CHAOTIC_NEUTRAL) # 0x32 CHAOTIC_NEUTRAL
-		npc.obj_set_int(toee.obj_f_critter_experience, 0) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, -1) # CR: 0 TODO!!!
+		cr = -2 # crnum_iwd2: 0, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -4804,8 +4820,9 @@ class Ctrl_10HINT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HINT
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_NEUTRAL_GOOD) # 0x21 NEUTRAL_GOOD
-		npc.obj_set_int(toee.obj_f_critter_experience, 7) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter
@@ -4881,8 +4898,9 @@ class Ctrl_10FIRTHH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10FIRTHH
 		npc.obj_set_idx_int(toee.obj_f_critter_level_idx, 0, toee.stat_level_fighter)
 		
 		npc.obj_set_int(toee.obj_f_critter_alignment, toee.ALIGNMENT_NEUTRAL_GOOD) # 0x21 NEUTRAL_GOOD
-		npc.obj_set_int(toee.obj_f_critter_experience, 7) # XPReward TODO!!!
-		npc.obj_set_int(toee.obj_f_npc_challenge_rating, 0) # CR: 1 TODO!!!
+		cr = -2 # crnum_iwd2: 1, D&D CR: 1/4
+		cr_bonus = cr - npc.stat_level_get(toee.stat_level)
+		npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)
 		
 		# feats
 		# shield proficiency:  => feat_shield_proficiency skip for fighter

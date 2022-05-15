@@ -259,7 +259,7 @@ def iwd2_alignment_equals(name, a):
 	if n == "MASK_GENEUTRAL" or n=="11": return a == toee.ALIGNMENT_NEUTRAL_GOOD or a == toee.ALIGNMENT_NEUTRAL_EVIL or a == toee.ALIGNMENT_TRUE_NEUTRAL
 	if n == "MASK_EVIL" or n=="12": return a == toee.ALIGNMENT_LAWFUL_EVIL or a == toee.ALIGNMENT_NEUTRAL_EVIL or a == toee.ALIGNMENT_CHAOTIC_EVIL
 	if n == "MASK_LAWFUL" or n=="13": return a == toee.ALIGNMENT_LAWFUL_GOOD or a == toee.ALIGNMENT_LAWFUL_NEUTRAL or a == toee.ALIGNMENT_LAWFUL_EVIL
-	if n == "MASK_LCNEUTRAL" or n=="14": returna == toee.ALIGNMENT_LAWFUL_NEUTRAL or a == toee.ALIGNMENT_CHAOTIC_NEUTRAL or a == toee.ALIGNMENT_TRUE_NEUTRAL
+	if n == "MASK_LCNEUTRAL" or n=="14": return a == toee.ALIGNMENT_LAWFUL_NEUTRAL or a == toee.ALIGNMENT_CHAOTIC_NEUTRAL or a == toee.ALIGNMENT_TRUE_NEUTRAL
 	if n == "MASK_CHAOTIC" or n=="15": return a == toee.ALIGNMENT_CHAOTIC_GOOD or a == toee.ALIGNMENT_CHAOTIC_NEUTRAL or a == toee.ALIGNMENT_CHAOTIC_EVIL
 	else:
 		err = "Unknown iwd2_alignment_equals: {}".format(name)

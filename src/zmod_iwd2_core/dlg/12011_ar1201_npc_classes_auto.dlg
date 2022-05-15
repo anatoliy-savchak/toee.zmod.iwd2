@@ -316,8 +316,10 @@
 {693}{Sure they will.  Can you take us to the Palisade?}{}{1}{ctrl(npc).dialog_test(npc, pc, 45)}{0}{ctrl(npc).dialog_action(npc, pc, 43)} # resp: 12SWIFT 65
 {694}{Sure they will.  Can you take us to the Palisade?}{}{1}{ctrl(npc).dialog_test(npc, pc, 46)}{0}{ctrl(npc).dialog_action(npc, pc, 44)} # resp: 12SWIFT 66
 {695}{Whatever you're drinking, Thomas, bring enough to share next time.  Farewell.}{}{1}{}{0}{} # resp: 12SWIFT 67
-{16357}{Sir!  The goblins are at the Palisade!}{}{}{}{} # strref: 16357
-{16360}{Order the gate into town sealed!  Sound the alarm!}{}{}{}{} # strref: 16360
-{16820}{Yes, sir!}{}{}{}{} # strref: 16820
-{16821}{I must warn Ulbrec and gather the town forces... I need you to report to the Palisade and drive those damned goblins back.  If Tempus grants us victory, then meet me back here after the battle.}{}{}{}{} # strref: 16821
-{16822}{Everyone!  To arms!  To arms!}{}{}{}{} # strref: 16822
+
+# STR REFS
+{16357}{Sir!  The goblins are at the Palisade!}{}{}{}{}{} # strref: 16357
+{16360}{Order the gate into town sealed!  Sound the alarm!}{}{}{}{}{} # strref: 16360
+{16820}{Yes, sir!}{}{}{}{}{} # strref: 16820
+{16821}{I must warn Ulbrec and gather the town forces... I need you to report to the Palisade and drive those damned goblins back.  If Tempus grants us victory, then meet me back here after the battle.}{}{}{}{}{} # strref: 16821
+{16822}{Everyone!  To arms!  To arms!}{}{}{}{}{} # strref: 16822

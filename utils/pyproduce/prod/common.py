@@ -105,3 +105,6 @@ def parse_mes_lines(lines: list, make_key_int: bool = False) -> dict:
             code = int(code)
         result[code] = value
     return result
+
+def str_to_name(s: str):
+    return s.replace(' ', '_').replace('(', '').replace(')', '')

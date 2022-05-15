@@ -73,12 +73,14 @@ def pc_receive_item_print(pc, item, float):
 		pc.float_text_line(text_fly, toee.tf_green)
 	return
 
-def pc_award_experience_each(xp_awarded_each, do_print = 0):
+def pc_award_experience_each(xp_awarded_each, do_print = 0, first_bonus = 0):
 	print("pc_award_experience_each xp_awarded_party: {}, do_print: {}".format(xp_awarded_each, do_print))
 	# XXX gains 123 experience points.
 	template = "{} " + "{} {} {}".format(toee.game.get_mesline("mes\combat.mes", 145), xp_awarded_each, toee.game.get_mesline("mes\combat.mes", 146)) + "\n"if (do_print) else None 
 	print("template: {}".format(template))
 	for pc in toee.game.party:
+		xp_awarded_each += first_bonus
+		first_bonus = 0
 		pc.award_experience(xp_awarded_each)
 		if (do_print and template):
 			toee.game.create_history_freeform(template.format(pc.description))
@@ -88,7 +90,8 @@ def pc_award_experience_party(xp_awarded_party, do_print = 0):
 	print("pc_award_experience_party xp_awarded_party: {}, do_print: {}".format(xp_awarded_party, do_print))
 	count = len(toee.game.party)
 	xp_awarded_each = xp_awarded_party // count
-	pc_award_experience_each(xp_awarded_each, do_print)
+	delta = xp_awarded_party - xp_awarded_each*count
+	pc_award_experience_each(xp_awarded_each, do_print, delta)
 	return
 
 def pc_turn_all(rotation):

@@ -183,7 +183,7 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		# Wait(3)
 		
 		self.iFaceObject("'Shawford_Crale'")
-		self.iFloatMessage("Myself", 16357)
+		self.iFloatMessageDialog("Myself", 16357)
 		self.iWait(time=3, locus=locus)
 		return 2
 		
@@ -218,7 +218,7 @@ class Script_12cWar2_Auto(inf_scripting.ScriptBase): # 12cWar2
 		# FloatMessage(Myself,16820)  // "Yes, sir!"
 		# SmallWait(4)
 		
-		self.iFloatMessage("Myself", 16820)
+		self.iFloatMessageDialog("Myself", 16820)
 		self.iSmallWait(time=4, locus=locus)
 		return 2
 		

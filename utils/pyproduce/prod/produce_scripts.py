@@ -811,9 +811,7 @@ class ScriptTranFuncsFloatMessage(ScriptTranFuncs):
             # maybe redo to bcs.used_strrefs
             strref = self.do_translate_param(args[1], 1, func_info['args'][1])
             if self.context["producer"].doc.current_are_producer.add_actor_strref_line(cutSceneId, strref):
-                # it does not work for some bizzare reason :(
-                # TODO
-                #func_name = 'FloatMessageDialog'
+                func_name = 'FloatMessageDialog'
                 return super().do_translate_func(func_name, args, func_info)
         return super().do_translate_func(func_name, args, func_info)
 

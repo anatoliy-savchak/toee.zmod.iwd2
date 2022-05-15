@@ -118,7 +118,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		# Wait(4)
 		
 		self.iCutSceneId("'Shawford_Crale'")
-		self.iFloatMessage("Myself", 16360)
+		self.iFloatMessageDialog("Myself", 16360)
 		self.iWait(time=4, locus=locus)
 		return 2
 		
@@ -144,7 +144,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		# FloatMessage(Myself,16821)  // "I must warn Ulbrec and gather the town forces... I need you to report to the Palisade and drive those damned goblins back.  If Tempus grants us victory, then meet me back here after the battle."
 		# Wait(2)
 		
-		self.iFloatMessage("Myself", 16821)
+		self.iFloatMessageDialog("Myself", 16821)
 		self.iWait(time=2, locus=locus)
 		return 2
 		
@@ -157,7 +157,7 @@ class Script_12cWar1_Auto(inf_scripting.ScriptBase): # 12cWar1
 		# FloatMessage(Myself,16822)  // "Everyone!  To arms!  To arms!"
 		# Wait(2)
 		
-		self.iFloatMessage("Myself", 16822)
+		self.iFloatMessageDialog("Myself", 16822)
 		self.iWait(time=2, locus=locus)
 		return 2
 		

@@ -25,6 +25,7 @@ def cs(): return ctrl_daemon.gdc()
 #### NPCS ####
 class Ctrl_12SHAWFO(py12011_ar1201_npc_classes_auto.Ctrl_12SHAWFO_Auto): # 12SHAWFO 
 	pass
+
 class Ctrl_12MESS(py12011_ar1201_npc_classes_auto.Ctrl_12MESS_Auto): # 12MESS 
 	pass
 

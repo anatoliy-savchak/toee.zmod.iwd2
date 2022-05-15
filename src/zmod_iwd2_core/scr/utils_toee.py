@@ -122,8 +122,7 @@ def copy2clip(txt):
 
 def create_history_freeform(text):
 	if text:
-		if text[0] != '\n':
-			text = '\n'+text
+		#if text[0] != '\n': text = '\n'+text
 		if text[len(text)-1] != '\n':
 			text = text + '\n'
 		#inf_engine.inf_engine().texts.append(text)

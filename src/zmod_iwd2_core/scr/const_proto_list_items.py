@@ -21,6 +21,10 @@ PROTOS_TOOLS = [ \
 	, const_proto_items.PROTO_GENERIC_TOOLS_MERCHANTS_SCALE \
 ]
 
+PROTOS_TOOLS_STARTING_IWD2 = [ \
+	const_proto_items.PROTO_GENERIC_TOOLS_THIEVES ,
+]
+
 PROTOS_ALCHEMY = [ \
 	const_proto_items.PROTO_ALCHEMY_LOCKSLIP_GREASE \
 	, const_proto_items.PROTO_ALCHEMY_ANTITOXIN \

@@ -9,7 +9,7 @@ def zmod_conditions_apply_pc():
 		pc.condition_add("Smash_Object")
 		#pc.condition_add("Skill_Appraise_Bonus")
 		pc.condition_add("Inspect")
-		pc.condition_add('Rest_Full')
+		#pc.condition_add('Rest_Full')
 		#pc.condition_add("Debug_Location")
 		#pc.condition_add("Debug_Rotation")
 
@@ -22,8 +22,9 @@ def zmod_templeplus_config_apply():
 	# startup_zmod.zmod_templeplus_config_apply()
 	print("zmod_templeplus_config_apply")
 	if ("config_set_string" in dir(tpdp)):
-		tpdp.config_set_string("hpfornpchd", "average")
-		tpdp.config_set_string("hponlevelup", "average")
+		#tpdp.config_set_string("hpfornpchd", "average")
+		#tpdp.config_set_string("hponlevelup", "average")
+		pass
 
 	if ("config_set_bool" in dir(tpdp)):
 		tpdp.config_set_bool("preferuse5footstep", 1)

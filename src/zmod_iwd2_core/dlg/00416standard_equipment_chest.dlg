@@ -1,0 +1,32 @@
+{1}{[You open the chest. There is a package labeled "Standard Adventuring Gear" inside.]}{[You open the chest. There is a package labeled "Standard Adventuring Gear" inside.]}{}{}{}{game.sound( 4011 )}
+{2}{[Get default starting equipment.]}{}{1}{}{20}{give_default_starting_equipment(1)}
+{3}{[Auto-equip items.]}{}{1}{}{0}{defalt_equipment_autoequip()}
+{4}{[Close chest]}{}{1}{}{0}{game.sound( 4010 )}
+
+{20}{[You open the package and take the items inside.]}{[You open the package and take the items inside.]}{}{}{}{}
+{21}{[Auto-equip items.]}{}{1}{}{40}{defalt_equipment_autoequip()}
+{22}{[Set gold to default (500 GP).]}{}{1}{( pc.money_get() >= 50000 or (game.global_vars[455] & 2**5 == 0) )}{60}{pc.money_adj(50000 - pc.money_get() )}
+{23}{[Set gold to default (500 GP).]}{}{1}{pc.money_get() < 50000 and (game.global_vars[455] & 2**5 != 0) }{70}{}
+{24}{[Close chest]}{}{1}{}{0}{game.sound( 4010 )}
+
+
+{40}{[You suit up. It crosses your mind that perhaps you should examine the results.]}{[You suit up. It crosses your mind that perhaps you should examine the results.]}{}{}{}{}
+{41}{[Set gold to default (500 GP).]}{}{1}{(pc.money_get() >= 50000 or (game.global_vars[455] & 2**5 == 0) )}{60}{pc.money_adj(50000 - pc.money_get() )}
+{42}{[Set gold to default (500 GP).]}{}{1}{pc.money_get() < 50000 and (game.global_vars[455] & 2**5 != 0) }{70}{}
+{43}{[Close chest]}{}{1}{}{0}{game.sound( 4010 )}
+
+
+{60}{[It is done.]}{[It is done.]}{}{}{}{}
+{61}{[Auto-equip items.]}{}{1}{}{40}{defalt_equipment_autoequip()}
+{62}{[Close chest]}{}{1}{}{0}{game.sound( 4010 )}
+
+{70}{[No cheating.]}{[No cheating.]}{}{}{}{}
+{71}{[Auto-equip items.]}{}{1}{}{40}{defalt_equipment_autoequip()}
+{72}{[Close chest]}{}{1}{}{0}{game.sound( 4010 )}
+
+
+{100}{[You open the chest. It is empty.]}{[You open the chest. It is empty.]}{}{}{}{game.sound( 4011 )}
+{101}{[Auto-equip items.]}{}{1}{}{40}{defalt_equipment_autoequip()}
+{102}{[Set gold to default (500 GP).]}{}{1}{( pc.money_get() >= 50000 or (game.global_vars[455] & 2**5 == 0) )}{60}{pc.money_adj(50000 - pc.money_get() )}
+{103}{[Set gold to default (500 GP).]}{}{1}{pc.money_get() < 50000 and (game.global_vars[455] & 2**5 != 0) }{70}{}
+{104}{[Close chest]}{}{1}{}{0}{game.sound( 4010 )}

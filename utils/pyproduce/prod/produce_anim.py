@@ -203,7 +203,7 @@ class AnimPeasantBoy(AnimHuman):
     #def get_armor_proto_const_and_wearon(self): return ("const_proto_cloth.PROTO_CLOTH_COAT_LONG_RED", 'toee.item_wear_robes')
 
 class AFighter:
-    def get_armor_proto_const(self): return "const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING"
+    def get_armor_proto_const(self): return "const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING_LONG"
 
 class AnimHumanFighter(AnimHumanoid):
     def get_armor_proto_const(self): return AFighter.get_armor_proto_const(self)

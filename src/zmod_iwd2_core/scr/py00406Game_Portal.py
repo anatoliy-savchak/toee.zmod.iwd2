@@ -1,4 +1,4 @@
-import toee, const_toee, utils_storage, startup_zmod, utils_obj, const_proto_containers
+import toee, debug, const_toee, utils_storage, startup_zmod, utils_obj, const_proto_containers
 import debug, utils_pc, module_consts, const_proto_weapon, const_proto_list_cloth, const_proto_cloth, utils_item
 
 def san_dialog(attachee, triggerer):
@@ -6,10 +6,13 @@ def san_dialog(attachee, triggerer):
 	return toee.SKIP_DEFAULT
 
 def san_first_heartbeat(attachee, triggerer):
-	zmod_startup()
-	place_chests()
-	reset_money()
-	outfit_pcs()
+	assert isinstance(attachee, toee.PyObjHandle)
+	#attachee.critter_flag_set(toee.OCF_NO_FLEE)
+	if not attachee.critter_flags_get(toee.OCF_NO_FLEE):
+		zmod_startup()
+		place_chests()
+		reset_money()
+		outfit_pcs()
 	return toee.RUN_DEFAULT
 
 def zmod_startup():

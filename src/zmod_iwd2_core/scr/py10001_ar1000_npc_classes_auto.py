@@ -928,7 +928,7 @@ class Ctrl_10ELDGUL_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		# SLOT_QUICK2: Gold(Gold) from MISC07
 		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING_LONG, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	
@@ -1076,7 +1076,7 @@ class Ctrl_10SCREED_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		# SLOT_QUICK2: Gold(Gold) from MISC07
 		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING_LONG, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	
@@ -3438,7 +3438,7 @@ class Ctrl_10SOLDRD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SOLDRD
 		return
 	
 	def setup_gear(self, npc):
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING_LONG, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	
@@ -3584,7 +3584,7 @@ class Ctrl_10SAILRD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SAILRD
 		return
 	
 	def setup_gear(self, npc):
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING_LONG, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	

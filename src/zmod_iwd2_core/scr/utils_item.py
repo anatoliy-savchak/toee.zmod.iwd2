@@ -1,10 +1,12 @@
-import toee, debugg, const_proto_items, utils_obj, const_proto_containers, utils_const
+import toee, debugg, const_proto_items, utils_obj, const_proto_containers, utils_const, utils_obj
 
 def item_create_in_inventory(item_proto_num, npc, quantity = 1, is_loot = 1):
 	assert isinstance(item_proto_num, int)
 	assert isinstance(npc, toee.PyObjHandle)
 	assert isinstance(is_loot, int)
 	item = toee.game.obj_create(item_proto_num, npc.location)
+	if item:
+		utils_obj.obj_scripts_clear(item)
 	
 	is_loot = 0 # only for kots
 	if (npc.type == toee.obj_t_pc or not is_loot):

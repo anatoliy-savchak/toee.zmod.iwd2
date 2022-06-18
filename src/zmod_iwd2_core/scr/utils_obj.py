@@ -147,7 +147,7 @@ def obj_float_line_dialog(obj, method, lineId, npc):
 
 	if ((line is None) or (line == "")): return 0
 	#breakp("obj_float_line_dialog 4")
-	obj.float_text_line(lineshort, White)
+	obj.float_text_line(lineshort, toee.tf_white)
 	line = line + "\n\n"
 	toee.game.create_history_freeform(line)
 	return 1
@@ -169,6 +169,7 @@ def isnull(obj, obj_when_null):
 	return obj_when_null
 
 def get_sibling_door(door):
+	# utils_obj.get_sibling_door(game.leader).proto
 	assert isinstance(door, toee.PyObjHandle)
 	for sibling in toee.game.obj_list_range(door.location, 15, toee.OLC_PORTAL):
 		assert isinstance(sibling, toee.PyObjHandle)

@@ -107,7 +107,7 @@ class Ctrl_10HEDRON_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10HEDRON
 	
 	def setup_gear(self, npc):
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) from 00LEAT01
-		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
+		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = False, wear_on = toee.item_wear_boots) # boots for Leather Armor (00LEAT01) OK
 		
 		# SLOT_WEAPON1: Spear(Spears) from 00SPER01
@@ -928,7 +928,7 @@ class Ctrl_10ELDGUL_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10ELDGUL
 		# SLOT_QUICK2: Gold(Gold) from MISC07
 		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING_LONG, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	
@@ -1076,7 +1076,7 @@ class Ctrl_10SCREED_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SCREED
 		# SLOT_QUICK2: Gold(Gold) from MISC07
 		utils_item.item_money_create_in_inventory(npc, 0, 1, 2, 0) # Charges1: 1, Charges2: 2, Charges3: 0
 		
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING_LONG, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	
@@ -1218,7 +1218,7 @@ class Ctrl_10REIG_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 	
 	def setup_gear(self, npc):
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) from 00LEAT01
-		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
+		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = False, wear_on = toee.item_wear_boots) # boots for Leather Armor (00LEAT01) OK
 		
 		# SLOT_QUICK1: Dagger(Daggers) from 00DAGG01
@@ -1598,12 +1598,12 @@ class Ctrl_10REIG_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			
 		elif index == 10:
 			# GiveItem("00Leat01", Protagonist)
-			self.iGiveItem(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, "Protagonist")
+			self.iGiveItem(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, "Protagonist")
 			# 711: Thanks for the blade - but we could also use some armor if we're going to be hunting goblins.
 			
 		elif index == 11:
 			# GiveItem("00Leat01", Protagonist)
-			self.iGiveItem(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, "Protagonist")
+			self.iGiveItem(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, "Protagonist")
 			# 712: Thanks for the blade - but we could also use some armor if we're going to be hunting goblins.
 			
 		elif index == 12:
@@ -1666,7 +1666,7 @@ class Ctrl_10REIG_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			# GiveItemCreate("00Helm01", Protagonist, 0, 0, 0)
 			# GiveItemCreate("00Dagg01", Protagonist, 0, 0, 0)
 			# GiveItemCreate("00ax1h11", Protagonist, 0, 0, 0)
-			self.iGiveItemCreate(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, "Protagonist", 0, 0, 0)
 			self.iGiveItemCreate(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, "Protagonist", 0, 0, 0)
 			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_DAGGER, "Protagonist", 0, 0, 0)
 			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_HANDAXE, "Protagonist", 0, 0, 0)
@@ -1677,7 +1677,7 @@ class Ctrl_10REIG_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			# GiveItemCreate("00Helm01", Protagonist, 0, 0, 0)
 			# GiveItemCreate("00Dagg01", Protagonist, 0, 0, 0)
 			# GiveItemCreate("00ax1h11", Protagonist, 0, 0, 0)
-			self.iGiveItemCreate(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, "Protagonist", 0, 0, 0)
 			self.iGiveItemCreate(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, "Protagonist", 0, 0, 0)
 			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_DAGGER, "Protagonist", 0, 0, 0)
 			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_HANDAXE, "Protagonist", 0, 0, 0)
@@ -1688,7 +1688,7 @@ class Ctrl_10REIG_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10REIG
 			# GiveItemCreate("00Helm01", Protagonist, 0, 0, 0)
 			# GiveItemCreate("00Dagg01", Protagonist, 0, 0, 0)
 			# GiveItemCreate("00ax1h11", Protagonist, 0, 0, 0)
-			self.iGiveItemCreate(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, "Protagonist", 0, 0, 0)
+			self.iGiveItemCreate(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, "Protagonist", 0, 0, 0)
 			self.iGiveItemCreate(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, "Protagonist", 0, 0, 0)
 			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_DAGGER, "Protagonist", 0, 0, 0)
 			self.iGiveItemCreate(const_proto_weapon.PROTO_WEAPON_HANDAXE, "Protagonist", 0, 0, 0)
@@ -1807,7 +1807,7 @@ class Ctrl_10JON_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JON
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, npc, no_loot = False, wear_on = toee.item_wear_helmet) # Helmet (00HELM01) at SLOT_HELMET OK
 		
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) from 00LEAT01
-		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
+		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = False, wear_on = toee.item_wear_boots) # boots for Leather Armor (00LEAT01) OK
 		
 		# SLOT_WEAPON1: Spear(Spears) from 00SPER01
@@ -2033,7 +2033,7 @@ class Ctrl_10BROGAN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10BROGAN
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_HELM_DRUIDIC, npc, no_loot = False, wear_on = toee.item_wear_helmet) # Helmet (00HELM01) at SLOT_HELMET OK
 		
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) from 00LEAT01
-		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
+		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = False, wear_on = toee.item_wear_boots) # boots for Leather Armor (00LEAT01) OK
 		
 		# SLOT_WEAPON1: Battleaxe(Axes) from 00AX1H01
@@ -2621,7 +2621,7 @@ class Ctrl_10JORUN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10JORUN
 	
 	def setup_gear(self, npc):
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) from 00LEAT01
-		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
+		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = False, wear_on = toee.item_wear_boots) # boots for Leather Armor (00LEAT01) OK
 		
 		# SLOT_WEAPON1: Warhammer(Hammers) from 00HAMM01
@@ -3438,7 +3438,7 @@ class Ctrl_10SOLDRD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SOLDRD
 		return
 	
 	def setup_gear(self, npc):
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING_LONG, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	
@@ -3584,7 +3584,7 @@ class Ctrl_10SAILRD_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10SAILRD
 		return
 	
 	def setup_gear(self, npc):
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING_LONG, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	
@@ -3752,7 +3752,7 @@ class Ctrl_10CRANDA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 10CRANDA
 	
 	def setup_gear(self, npc):
 		# SLOT_ARMOR: Leather Armor(LeatherArmor) from 00LEAT01
-		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
+		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, npc, no_loot = False, wear_on = toee.item_wear_armor) # Leather Armor (00LEAT01) at SLOT_ARMOR OK
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = False, wear_on = toee.item_wear_boots) # boots for Leather Armor (00LEAT01) OK
 		
 		# SLOT_WEAPON1: Spear(Spears) from 00SPER01

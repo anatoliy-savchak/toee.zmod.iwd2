@@ -1,0 +1,113 @@
+IWD2 Locations and Quests
+
+AR1000 - Targos Docks
+
+Hedron Kerdos
+* Hedron_Quest
+:: Tell Hedron his mother is safe: 300 xp
+** 1 - mentioned
+** 2 - in-progress: We saved Hedron's mother from a small pack of goblins that had entered her home.  She was more hysterical than grateful for our efforts and accused us of being robbers - small thanks indeed for saving her life.
+** 3 - in-progress: It wasn't until we mentioned Hedron's ship, the Wicked Wench, by name that the old woman we saved ceased her howling and reluctantly admitted we might be telling the truth about us coming to help her.  She told us to go back to Hedron and tell him she was safe.  Oddly enough, Firtha mentioned that she was blind, which is strange, because she seemed to see us quite clearly.
+** 4 - achieved
+*** AddXpVar("Level_1_Easy",2578) // You told Hedron his mother was safe.
+** 5 - botched
+
+Reig Redwaters
+* Reig_Quest
+:: Fetch a Healing Potion for Reig: 400 xp
+** 1- mentioned
+** 2 - achieved
+*** AddXPVar("Level_1_Average",1484)  // You have brought the healing potion to Reig.
+
+* Reig_Heal_Priest
+:: Use your healing abilities to heal Reig: 300 xp
+** 1 - achieved
+*** AddXPVar("Level_1_Easy",1483)  // You have used your healing abilities to aid Reig.
+
+* Know_Goblin_Reig & Dock_Goblin_Quest
+:: Kill all the goblins in the Targos Docks area: 1350 xp
+** Know_Goblin_Reig = 1 - mentioned
+** Dock_Goblin_Quest = 2 - achieved
+*** AddXPVar("Level_2_Very_Hard",26671)  // You have cleared the Targos Docks of goblins. 
+
+Brogan
+* Iron_Collar_Quest
+:: Tell Brogan the Iron Collar mercenary band won't come to help: 300 xp :: Brogan needs Iron Collar mercenary help
+** 1 - received : We told Brogan we would go find the Iron Collar mercenaries... they're holed up in a tavern called the Salty Dog somewhere south along the docks.
+** 2 - in-progress : WE'LL COME WHEN WE'RE DAMNED WELL READY!
+** 3 - achieved : We returned to Brogan and told him the Iron Collar Mercenaries wouldn't be coming to help, and we offered our services.
+*** AddXPVar("Level_1_Easy",27693)  // You told Brogan that the Iron Collar Band would not be coming to help him.
+
+* Know_Iron_Collar
+:: Convince Brogan to let you clear the Warehouse of goblins: 300 xp
+** 1 - achieved : We convinced Brogan to let us drive the goblins out of the warehouse.  He told us they had locked themselves inside, and we'd need to break down the door to the warehouse with our weapons, or else we'd need to get a thief to pick the lock.
+
+Brogan_Quest
+:: Clear the Warehouse of goblins for Brogan: 400 xp
+** 1 - received
+** 2 - achieved : We cleaned out the goblins in the caves beneath the warehouse for Brogan.  He seemed impressed, and he told us we should seek out Lord Ulbrec in the town above to claim our reward.
+*** AddXPVar("Level_1_Average",27697)  // You cleared out the goblins in the caves beneath the warehouse for Brogan.
+
+
+AR1001 - Warehouse
+Magdar Shenlen
+
+AR1002 - Warehouse at Pier
+
+AR1003 - The Salty Dog Tavern
+Guthewulfe Henghelm
+* Guthewulfe_Game
+:: Win Guthewulfe's drinking game: 300 xp
+** 1 - mentioned: Guthewulfe, a hulking northerner in the Salty Dog Tavern, has a standing bet: if someone can stomach more "braehg" - wild boar's blood mixed with milk - than he can, he'll give the victor his silver wolf charm.  The catch is, the challenger pays for every round of braehg...
+** 2 - achieved
+*** AddXPVar("Level_1_Easy",7430)  // You have won Guthewulfe's wolf charm.
+
+Black Geoffrey
+#Palisade_Iron_Collar_Quest -- see ...
+* Palisade_Iron_Collar_Quest_Law - TODO
+:: Get Iron Collar mercenary band to report to duty for Shawford: 900 xp
+** ? - achieved, provoke fight: With a choice turn of phrase, we managed to provoke the Iron Collar mercenaries into letting us make an example of them.  I doubt Crawford will have any more problems with any other companies on the Palisade after they hear about what happened at the Salty Dog.
+*** AddXPVar("Level_2_Easy",11503)  // You are about to lay down the law in Targos.
+** ? - achieved, provoke fight2 : The Iron Collar mercenaries would not come peacefully, so we were forced to deal with them.  I doubt Shawford will have any more problems with any other companies on the Palisade after they hear about what happened at the Salty Dog.
+*** AddXPVar("Level_2_Easy",11503)  // You are about to lay down the law in Targos.
+** ? - achieved, diplomacy failed: With a choice turn of phrase, we managed to provoke the Iron Collar mercenaries into letting us make an example of them.  I doubt Crawford will have any more problems with any other companies on the Palisade after they hear about what happened at the Salty Dog.
+*** AddXPVar("Level_2_Easy",11503)  // You are about to lay down the law in Targos.
+** Palisade_Iron_Collar_Quest := 2 - achieved, diplomacy2: By keeping a level head, we managed to convince the Iron Collar mercenaries to report to the Palisade for duty.
+*** AddXPVar("Level_2_Easy",11503)  // You are about to lay down the law in Targos.
+
+AR1004 - Firtha Kerdos' House
+Firtha Kerdos
+* Firtha_Cat
+:: Take the dead cat, Loki, to Firtha and tell her how he died: 300 xp
+** 1 - achieved
+*** AddXPVar("Level_1_Easy",1352)  // You solved the mystery of fat ol' Loki's disappearance.
+
+AR1005 - House | House with Goblins
+AR1006 - Jorun Tamewater's House
+
+AR1007 - Targos Caves
+
+AR1100 - Targos Town
+AR1107 - Koluhm's House
+Koluhm Bonecutter
+* Dead_Goblin_Quest multiple
+:: Get goblin's information from Koluhm (untranslated note): 450 xp
+** Dead_Goblin_Quest==2: We spoke to Koluhm Bonecutter, and he couldn't give us a translation of what the dead goblin he was questioning said, so we asked him to write down what he could and have it sent to Shawford at the Palisade.  Hopefully, someone there can make some sense of it.
+*** AddXPVar("Level_2_Easy",9748)  // You have asked Koluhm to send the goblin's words to the Palisade.
+
+:: Translate a few of the rantings in the goblin's note: 450 xp
+** Dead_Goblin_Quest==5: We spoke to Koluhm Bonecutter, and he couldn't give us a translation of what the dead goblin he was questioning, so we asked him to tell us what it was saying, and we were able to translate some of it.  It sounds like the goblin tribe attacking Targos is only one of many tribes in the region - that's not good news.
+*** AddXPVar("Level_2_Easy",9747)  // You have translated a bit of the dead goblin's rantings.
+
+:: Translate some of the rantings in the goblin's note: 600 xp
+** Dead_Goblin_Quest == 4 - achieved: We spoke to Koluhm Bonecutter, and he couldn't give us a translation of what the dead goblin he was questioning, so we asked him to tell us what it was saying, and we were able to translate some of it.  It sounds like the goblin tribe attacking Targos is only one of many tribes in the region - that's not good news.
+*** AddXPVar("Level_2_Average",9745)  // You have translated some of the dead goblin's rantings.
+
+:: Translate all of the rantings in the goblin's note: 900 xp
+** Dead_Goblin_Quest == 3 - achieved: We spoke to Koluhm Bonecutter, and while he couldn't give tell us what the dead goblin he was questioning, we were able to translate for him, and we think we understood most of what it was saying.  It sounds like we should expect a three-pronged assault led by three different goblin leaders, and their attack was meant to coincide with the attack on the docks, so the Palisade could be in jeopardy right now.
+*** AddXPVar("Level_2_Hard",9737)  // You have translated the dead goblin's rantings.
+
+* Exposed_Bottle
+:: Expose Koluhm's attempts to cheat Cahl-Hyred: 450 xp
+** 1 - achieved: We confronted Koluhm on the real use of the ghost-touched bottle he gave to Cahl-Hyred.  It seems he didn't know it was ghost-touched, and he told us that we might make use of it by capturing the tears of the spirit in the Weeping Widow and taking them to the enchantress Elytharra, Lord Ulbrec's wife.
+*** AddXPVar("Level_2_Easy",9749)  // You have exposed Koluhm's attempt to cheat Cahl-Hyred... and revealed that Koluhm only cheated HIMSELF.  The irony!

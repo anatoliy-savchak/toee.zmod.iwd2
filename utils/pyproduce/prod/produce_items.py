@@ -319,7 +319,7 @@ class ItemLeatherArmorDefault(ItemLeatherArmors):
     def is_default(cls): return True
 
     @classmethod
-    def get_proto_const(cls): return "const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_LONG_BROWN"
+    def get_proto_const(cls): return "const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN"
 
 ########## ARMORS / HELMS HATS
 class ItemHelmets(ItemArmors):

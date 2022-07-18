@@ -50,3 +50,5 @@ DEBUG_STORAGE_USE_ALIAS = 1
 
 DEBUG_DUMP_ARGS_START_END = 0
 DEBUG_PRINT_GLOBAL_SET_INTO_HISTORY = 0 # buggy, do not do it
+
+DEBUG_NPC_NAMES = 1 # will override description into local name

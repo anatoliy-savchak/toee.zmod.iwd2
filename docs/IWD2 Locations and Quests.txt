@@ -87,7 +87,28 @@ AR1006 - Jorun Tamewater's House
 
 AR1007 - Targos Caves
 
+====================
 AR1100 - Targos Town
+
+AR1101 - Lord Ulbrec Dinnsmore's House
+Lord Ulbrec Dinnsmore
+
+Elytharra
+* Elytharra_Tear
+** Reward
+
+* Expose_Phaen_Quest
+** 2 - achieved
+*** AddXpVar("Level_1_Average",429)
+
+* Valin_Quest
+** 2 - achieved
+*** AddXPVar("Level_1_Easy",431)  // You have told Elytharra that Valin is cured.
+
+* Expose_Phaen_Quest
+** 2 - achieved
+*** AddXPVar("Level_1_Average",429)  // You have told Elytharra that Phaen was the traitor.
+
 AR1107 - Koluhm's House
 Koluhm Bonecutter
 * Dead_Goblin_Quest multiple
@@ -111,3 +132,35 @@ Koluhm Bonecutter
 :: Expose Koluhm's attempts to cheat Cahl-Hyred: 450 xp
 ** 1 - achieved: We confronted Koluhm on the real use of the ghost-touched bottle he gave to Cahl-Hyred.  It seems he didn't know it was ghost-touched, and he told us that we might make use of it by capturing the tears of the spirit in the Weeping Widow and taking them to the enchantress Elytharra, Lord Ulbrec's wife.
 *** AddXPVar("Level_2_Easy",9749)  // You have exposed Koluhm's attempt to cheat Cahl-Hyred... and revealed that Koluhm only cheated HIMSELF.  The irony!
+
+AR1102 - Gallaway Trading Depot
+
+AR1104 - Weeping Widow Inn
+Cahl-Hyred
+* Veira_Quest
+:: Tell Cahl-Hyred the Weeping Widow's ghost is gone: 600 xp
+*** AddXPVar("Level_1_Hard",7895)  // You have told Cahl-Hyred that you have set Veira's weeping to rest.
+* Potion_Quest
+** Potion_Quest>=2: Actually, we already went to a great deal of trouble to get it identified.  Some gold would make the trouble worthwhile.
+
+AR1105 - Weeping Widow Inn Upstairs
+
+AR1103 - Targos Pavilion
+Garradun Tanner
+* Garradun_Quest
+:: Confront Garrunder and expose him as a doppleganger spy: 300 xp
+** 1 - At the Targos Pavilion, a wounded scout named Garradun Tanner asked us to take a letter to Captain Mariner, the commander of the relief forces from Neverwinter.  Garradun seems pessimistic about his chances for survival, and wrote this love letter for his bride-to-be.
+** 3 - We confronted Garradun on his attempts to spy on Targos, and he dropped his façade and attacked us - unfortunately for him.
+*** AddXPVar("Level_1_Easy",28452)  // You have confronted Garradun and exposed him as a doppleganger.
+
+Valin
+* Valin_Braehg
+
+Phaen
+- Trick Phaen into revealing his master's name: Targos Town
+
+* Know_Phaen
+** 2 - Expose Phaen as the traitor in Targos: Targos Town
+*** AddXPVar("Level_1_Average",9631)  // You have baited Phaen into revealing who his master is.  What an idiot.
+
+### Curr XP: 2822

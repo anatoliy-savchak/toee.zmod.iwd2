@@ -43,6 +43,23 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         line2 = f'{self.base_class["file_name"]}.{self.base_class["class_name"]}): # {self.cre_name} ' # leave trailing whitespace here
         self.writeline(line1 + line2)
         self.indent()
+
+        self.writeline('@classmethod')
+        self.writeline('def get_difficulty_mask(cls):')
+        self.indent()
+        self.writeline(f'return {self.actor_dict["AreaDifficultyMask"]}')
+        self.indent(False)
+        self.writeline()
+
+        team_script_name = self.actor_dict["ScriptSpecific"]
+        self.writeline('@classmethod')
+        self.writeline('def get_team_number(cls):')
+        self.indent()
+        team_number, comment = self.extract_team_number(team_script_name)
+        self.writeline(f'return {team_number} # {comment}')
+        self.indent(False)
+        self.writeline()
+
         self.writeline('def setup_bcs(self):')
 
         def write_script(bcs_attribute: str, script_name: str):
@@ -91,3 +108,26 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
             with open(out_path, 'w') as fo:
                 fo.writelines(fs.readlines())
         return
+
+    def extract_team_number(self, script_name):
+        if not script_name: return 0, "no team script"
+        script_lines = None
+        fn = script_name + '.BAF'
+        fn = os.path.join(self.doc.baf_dir, fn)
+        fn_override = fn.replace('.BAF', '_override.BAF')
+        if os.path.exists(fn_override):
+            with open(fn_override, 'r') as f:
+                script_lines = f.readlines()
+        elif os.path.exists(fn):
+            with open(fn, 'r') as f:
+                script_lines = f.readlines()
+        else:
+            print(f'Script {fn} does not exists!')
+        
+        if script_lines: 
+            for i in range(21):
+                query_line = f'SetTeamBit(TEAM_{i}_BIT,TRUE)'.lower()
+                line = next((line for line in script_lines if query_line in line.lower()), None)
+                if line: return i, line.strip()
+
+        return 0, f"incorrect script: {script_name}"

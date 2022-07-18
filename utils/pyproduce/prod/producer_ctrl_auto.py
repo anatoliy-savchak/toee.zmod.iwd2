@@ -43,7 +43,9 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
     def produce(self):
         self.anim = produce_anim.AnimBase.process(self.cre, self)
         if not self.anim:
-            raise Exception(f'No anim object for {self.cre["AnimationNameCalc"]}!!')
+            s = f'No anim object for "{self.cre["AnimationNameCalc"]}"!!'
+            print(s)
+            raise Exception(s)
             
         self.current_line_id = common.lines_after_before_cutoff(self.lines, '#### GVARS ####', '#### GVARS END ####')
         if self.current_line_id and self.current_line_id > 0:
@@ -55,6 +57,7 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.indent(True)
         
         self.produce_npc_baseproto()
+        self.produce_allegience()
         self.produce_npc_script_hooks()
         self.produce_npc_appearance()
         self.produce_npc_char()
@@ -86,6 +89,11 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
                 proto = "const_proto_npc.PROTO_NPC_GOBLIN"
             else:
                 proto = "const_proto_npc.PROTO_NPC_GOBLIN"
+        elif race_name == "orc":
+            if gander:
+                proto = "const_proto_npc.PROTO_NPC_ORC"
+            else:
+                proto = "const_proto_npc.PROTO_NPC_ORC"
         else:
             raise Exception(f"Unknown race: {race_name}({race})")
 
@@ -272,15 +280,10 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.writeline(f'npc.obj_set_int(toee.obj_f_hp_damage, {damage}) # CurrentHP: {currentHP}{STATE_DEAD}')
         return
 
-    def produce_faction(self):
+    def produce_allegience(self):
         allegiance = int(self.cre["EnemyAlly"])
-        faction = "factions_zmod.FACTION_NEUTRAL_NPC"
-        if allegiance == 128:
-            faction = "factions_zmod.FACTION_NEUTRAL_NPC"
-        elif allegiance == 255:
-            faction = "factions_zmod.FACTION_ENEMY"
         self.writeline("@classmethod")
-        self.writeline(f"def get_class_faction(cls): return {faction} # allegiance: {allegiance}")
+        self.writeline(f"def get_allegiance(cls): return {allegiance}")
         self.writeline()
         return
     
@@ -305,6 +308,7 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
 
             if not res:
                 self.writeline("# Not found! TODO ITEM")
+                print(f"Not found! TODO ITEM: {item_file_name}, Slot: {slot_name}")
             self.writeline()
 
         self.anim.produce_cloth()

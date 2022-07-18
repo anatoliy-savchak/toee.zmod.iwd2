@@ -1,74 +1,161 @@
-import toee
+import toee, debug
 import inf_scripting
-#### IMPORT ####
-#### IMPORT END ####
+#### IMPORTS ####
+#### END IMPORTS ####
 
 #### BCS ####
-class Script_00T03T_Auto(inf_scripting.ScriptBase):
-	# AR1000 10GOB 1000_Goblin_01 ScriptSpecific
+class Script_00T03T_Auto(inf_scripting.ScriptBase): # 00T03T
+	# AR1007 10GOBC Goblin_6 ScriptSpecific (Team Script)
 	
 	@classmethod
-	def do_execute(cls, self):
+	@inf_scripting.dump_args
+	def do_execute(cls, self, locus, continuous = False, block_from = None, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		is_cutscene_execution = self.is_cutscene_mode()
 		while True:
-			break_ = cls.do_execute_block_01()
-			if break_ and not is_cutscene_execution: break
+			if not block_from or block_from <= 1:
+				break_ = cls.do_execute_block_01(self, locus, code_from=code_from if code_from and block_from == 1 else None)
+				if (break_ > 1) or (not continuous and break_): break
 			
-			break_ = cls.do_execute_block_02()
-			if break_ and not is_cutscene_execution: break
+			if not block_from or block_from <= 2:
+				break_ = cls.do_execute_block_02(self, locus, code_from=code_from if code_from and block_from == 2 else None)
+				if (break_ > 1) or (not continuous and break_): break
 			
-			break_ = cls.do_execute_block_03()
-			if break_ and not is_cutscene_execution: break
+			if not block_from or block_from <= 3:
+				break_ = cls.do_execute_block_03(self, locus, code_from=code_from if code_from and block_from == 3 else None)
+				if (break_ > 1) or (not continuous and break_): break
 			
 			break # while
 		return
 		
 	@classmethod
-	def do_execute_block_01(cls, self):
+	@inf_scripting.dump_args
+	def do_execute_block_01(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		# !Global("TEAM_3","MYAREA",1)
-		# Or(2)
-		# AttackedBy([GOODCUTOFF],DEFAULT)
-		# PickPocketFailed([PC])
-		if not self.iGlobal("'TEAM_3'", "'MYAREA'", 1) \
-			 and self.iAllegiance("Myself", "ENEMY") \
-			 and not self.iCreatureHidden("Myself") \
-			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
-			# SetGlobal("TEAM_3","MYAREA",1)
-			# Continue()
-			self.iSetGlobal("'TEAM_3'", "'MYAREA'", 1)
-			return False # continue() - pass further blocks
-		return False
+		locus["block"] = 1
+		d = {"check": None}
+		def do_check():
+			if d["check"] is None:
+				# !Global("TEAM_3","MYAREA",1)
+				# Or(2)
+				# AttackedBy([GOODCUTOFF],DEFAULT)
+				# PickPocketFailed([PC])
+				if not self.iGlobal("'TEAM_3'", "'MYAREA'", 1) \
+					 and self.iAllegiance("Myself", "ENEMY") \
+					 and not self.iCreatureHidden("Myself") \
+					 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
+					d["check"] = 1
+				else: d["check"] = 0
+			return d["check"]
+		
+		# SetGlobal("TEAM_3","MYAREA",1)
+		# Continue()
+		
+		if (code_from is None and do_check()) or (code_from <= 1):
+			break_ = cls.do_execute_block_01_code_01(self, locus)
+			if break_ == 2: return break_
+		
+		result = 0 # continue() - pass further blocks
+		if not code_from is None:
+			result = 1
+		elif d["check"]:
+			result = 1
+		return result
+	
+	@classmethod
+	@inf_scripting.dump_args
+	def do_execute_block_01_code_01(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 1
+		
+		# SetGlobal("TEAM_3","MYAREA",1)
+		
+		self.iSetGlobal("'TEAM_3'", "'MYAREA'", 1)
+		return 0
 		
 	@classmethod
-	def do_execute_block_02(cls, self):
+	@inf_scripting.dump_args
+	def do_execute_block_02(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		# !IsTeamBitOn(TEAM_3_BIT)
-		if not self.iGlobal("'TEAM_3'", "'MYAREA'", 1) \
-			 and self.iAllegiance("Myself", "ENEMY") \
-			 and not self.iCreatureHidden("Myself") \
-			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
-			# SetTeamBit(TEAM_3_BIT,TRUE)
-			# Continue()
-			self.iSetGlobal("'TEAM_3'", "'MYAREA'", 1)
-			return False # continue() - pass further blocks
-		return False
+		locus["block"] = 2
+		d = {"check": None}
+		def do_check():
+			if d["check"] is None:
+				# !IsTeamBitOn(TEAM_3_BIT)
+				if not self.iGlobal("'TEAM_3'", "'MYAREA'", 1) \
+					 and self.iAllegiance("Myself", "ENEMY") \
+					 and not self.iCreatureHidden("Myself") \
+					 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
+					d["check"] = 1
+				else: d["check"] = 0
+			return d["check"]
+		
+		# SetTeamBit(TEAM_3_BIT,TRUE)
+		# Continue()
+		
+		if (code_from is None and do_check()) or (code_from <= 1):
+			break_ = cls.do_execute_block_02_code_01(self, locus)
+			if break_ == 2: return break_
+		
+		result = 0 # continue() - pass further blocks
+		if not code_from is None:
+			result = 1
+		elif d["check"]:
+			result = 1
+		return result
+	
+	@classmethod
+	@inf_scripting.dump_args
+	def do_execute_block_02_code_01(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 1
+		
+		# SetTeamBit(TEAM_3_BIT,TRUE)
+		
+		self.iSetTeamBit("TEAM_3_BIT", True)
+		return 0
 		
 	@classmethod
-	def do_execute_block_03(cls, self):
+	@inf_scripting.dump_args
+	def do_execute_block_03(cls, self, locus, code_from = None):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		# !Global("TEAM_3","MYAREA",1)
-		# Allegiance(Myself,ENEMY)
-		# !CreatureHidden(Myself)
-		# See(NearestEnemyOf(Myself),0)
-		if not self.iGlobal("'TEAM_3'", "'MYAREA'", 1) \
-			 and self.iAllegiance("Myself", "ENEMY") \
-			 and not self.iCreatureHidden("Myself") \
-			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
-			# SetGlobal("TEAM_3","MYAREA",1)
-			# Continue()
-			self.iSetGlobal("'TEAM_3'", "'MYAREA'", 1)
-			return False # continue() - pass further blocks
-		return False
+		locus["block"] = 3
+		d = {"check": None}
+		def do_check():
+			if d["check"] is None:
+				# !Global("TEAM_3","MYAREA",1)
+				# Allegiance(Myself,ENEMY)
+				# !CreatureHidden(Myself)
+				# See(NearestEnemyOf(Myself),0)
+				if not self.iGlobal("'TEAM_3'", "'MYAREA'", 1) \
+					 and self.iAllegiance("Myself", "ENEMY") \
+					 and not self.iCreatureHidden("Myself") \
+					 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
+					d["check"] = 1
+				else: d["check"] = 0
+			return d["check"]
+		
+		# SetGlobal("TEAM_3","MYAREA",1)
+		# Continue()
+		
+		if (code_from is None and do_check()) or (code_from <= 1):
+			break_ = cls.do_execute_block_03_code_01(self, locus)
+			if break_ == 2: return break_
+		
+		result = 0 # continue() - pass further blocks
+		if not code_from is None:
+			result = 1
+		elif d["check"]:
+			result = 1
+		return result
+	
+	@classmethod
+	@inf_scripting.dump_args
+	def do_execute_block_03_code_01(cls, self, locus):
+		assert isinstance(self, inf_scripting.InfScriptSupport)
+		locus["code"] = 1
+		
+		# SetGlobal("TEAM_3","MYAREA",1)
+		
+		self.iSetGlobal("'TEAM_3'", "'MYAREA'", 1)
+		return 0
 		

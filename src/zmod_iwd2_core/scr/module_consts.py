@@ -123,3 +123,7 @@ MAP_ID_AR1000_ENTRY_01 = (525, 490) # near door
 MAP_ID_AR1000_ENTRY_01 = (532, 504) # south empty building
 
 MAP_ID_AR1201_ENTRY_01 = (486, 478) # initial
+
+MAP_ID_AR1007_ENTRY_01 = (461, 518) # initial
+
+MAP_ID_AR2000_ENTRY_01 = (539, 515) # initial

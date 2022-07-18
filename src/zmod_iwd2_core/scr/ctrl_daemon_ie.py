@@ -5,6 +5,9 @@ import ctrl_behaviour_ie
 import monster_info
 import sys
 import uuid
+import ctrl_behaviour
+import utils_npc
+import debugg
 
 class global_injector:
 	'''Inject into the *real global namespace*, i.e. "builtins" namespace or "__builtin__" for python2.
@@ -59,6 +62,8 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 
 		ctrl.set_alias(code_name, npc)
 		ctrl.vars['dameon_id'] = self.id
+		if debugg.DEBUG_NPC_NAMES:
+			utils_npc.npc_description_set_new(npc, code_name)
 		return npc, ctrl
 
 	def debug_glob_npcs(self):
@@ -67,7 +72,7 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 			assert isinstance(m, monster_info.MonsterInfo)
 			npc = m.get_npc()
 			if npc:
-				global_name = "npc_{}".format(m.name)
+				global_name = "npc_{}".format(m.name)# TODO: make actual globals, as names coincides between maps
 				gi.set_name(global_name, npc)
 				#exec_line = "global {}\n{} = toee.game.get_obj_by_id('{}')".format(global_name, global_name, m.id)
 				#print(exec_line)
@@ -140,6 +145,7 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 
 	def place_npcs(self):
 		self.place_npcs_auto()
+		self.make_teams()
 		return
 
 	def place_npcs_auto(self):
@@ -156,3 +162,39 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 
 	def locus_make(self):
 		return {'dameon_id': self.id}
+
+	def authorize_actor(self, ctrl):
+		current_difficulty = 2
+		diff_mask_allow = 1 << current_difficulty
+		diff_mask = ctrl.get_difficulty_mask()
+		result = diff_mask & diff_mask_allow
+		return result > 0
+
+	def make_teams(self):
+		teams = dict()
+		for key, info in self.monsters.items():
+			assert isinstance(info, monster_info.MonsterInfo)
+			ctrl = ctrl_behaviour.get_ctrl(info.id)
+			if not ctrl: continue
+			if not "get_team_number" in dir(ctrl): continue
+			team_number = ctrl.get_team_number()
+			if not team_number: continue
+			npc = info.get_npc()
+			if not npc: continue
+
+			# could be improved by making leader most tough one...
+
+			team_lead = teams.get(team_number, None)
+			if not team_lead:
+				teams[team_number] = npc
+			else:
+				npc.obj_set_obj(toee.obj_f_npc_leader, team_lead)
+				print("Set leader to {} as {}".format(npc, team_lead))
+		return
+
+	def actor_created(self, npc, ctrl):
+		# TODO: improve
+		if "get_allegiance" in dir(ctrl):
+			if ctrl.get_allegiance() == 255:
+				npc.npc_flag_set(toee.ONF_KOS)
+		return

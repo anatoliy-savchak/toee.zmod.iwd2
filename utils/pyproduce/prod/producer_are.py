@@ -50,6 +50,10 @@ class ProducerOfAre(producer_base.Producer):
         self.produce_start()
         for actor in self.daemon.get_eligible_actor_recs():
             actor_name = actor['Name']
+            print(f"Producing actor: {actor_name}")
+            if "keg" in actor_name.lower(): 
+                print("actor skipped.")
+                continue
             self.produce_actor(actor_name)
 
         self.produce_daemon(self.skip_script_daemon)

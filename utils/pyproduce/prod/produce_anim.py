@@ -212,13 +212,25 @@ class AnimHumanFighterMale(AnimHumanFighter):
     @classmethod
     def get_codes(cls): 
         return ("FIGHTER_MALE_HUMAN"
-            , "CLERIC_MALE_HUMAN_LOW") # IMPROVE CLERIC_MALE_HUMAN_LOW
+            , "CLERIC_MALE_HUMAN_LOW", "CLERIC_MALE_HUMAN") # IMPROVE CLERIC_MALE_HUMAN_LOW
 
 class AnimHumanFighterFemale(AnimHumanFighter):
     @classmethod
     def get_codes(cls): return ("FIGHTER_FEMALE_HUMAN", )
 
     def get_hair_style_const(self): return "const_toee.hair_style_ponytail"
+
+class AnimHumanClericMale(AnimHumanoid):
+    @classmethod
+    def get_codes(cls): 
+        return ("CLERIC_MALE_HUMAN_LOW", "CLERIC_MALE_HUMAN") # IMPROVE CLERIC_MALE_HUMAN_LOW
+
+class AnimHumanClericFemale(AnimHumanoid):
+    @classmethod
+    def get_codes(cls): 
+        return ("CLERIC_FEMALE_HUMAN", ) # IMPROVE CLERIC_MALE_HUMAN_LOW
+
+    def get_hair_style_const(self): return "const_toee.hair_style_medium"
 
 class AnimDwarf(AnimHumanoid):
     pass
@@ -264,3 +276,39 @@ class AnimGoblinWithBow(AnimGoblin):
         #self._add_line(f'utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: {self.anim_name}')
         #DEBUG self._add_line('npc.obj_set_int(toee.obj_f_hp_damage, 100)')
         return
+
+class AnimGoblinEliteWithAxe(AnimGoblin):
+    @classmethod
+    def get_codes(cls): return ("Goblin Elite w/ Axe", )
+
+    def produce_cloth(self):
+        self._add_line(f'utils_item.item_create_in_inventory2(const_proto_armor_iwd2.PROTO_SHIELD_SMALL_WOODEN_EMPTY, npc, no_loot = True, wear_on = toee.item_wear_shield) # anim: {self.anim_name}')
+        #DEBUG self._add_line('npc.obj_set_int(toee.obj_f_hp_damage, 100)')
+        return
+
+    def proto_override(self):
+        return '14192' # goblin leader
+
+class AnimOrc(AnimHumanoid):
+    def produce_hair(self): return
+
+class AnimOrcWithBow(AnimOrc):
+    @classmethod
+    def get_codes(cls): return ("Orc w/ Bow", )
+
+    def get_armor_proto_const(self): 
+        return "const_proto_armor.PROTO_ARMOR_STUDDED_LEATHER_ARMOR_MASTERWORK_BARBARIAN"
+
+class AnimOrcWithAxe(AnimOrc):
+    @classmethod
+    def get_codes(cls): return ("Orc w/ Axe", "Orc Elite w/ Axe")
+
+    def get_armor_proto_const(self): 
+        return "const_proto_armor.PROTO_ARMOR_STUDDED_LEATHER_ARMOR_MASTERWORK_BARBARIAN"
+
+class AnimOrcShaman(AnimOrc):
+    @classmethod
+    def get_codes(cls): return ("Orc Shaman", )
+
+    def get_armor_proto_const(self): 
+        return "const_proto_cloth.PROTO_CLOTH_ROBES_BROWN_TEMPLE_EARTH"

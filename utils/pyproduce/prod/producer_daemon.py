@@ -33,7 +33,7 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
         return
 
     def produce(self, skip_bcs: bool = False, bcs_script_override: str = None):
-        if self.make_new:
+        if self.make_new or not os.path.exists(self.out_path):
             self.produce_new()
         self.produce_npcs('place_npcs_auto')
         if not skip_bcs:
@@ -76,7 +76,11 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
             if ctrl_class:
                 self.writeline(f'print("Creating {class_file}.{ctrl_class}...")')
                 self.writeline(f'ctrl_class, loc = {class_file}.{ctrl_class},  utils_obj.sec2loc({int(x)}, {int(y)})')
-                self.writeline(f'self.create_npc_at(loc, ctrl_class, {direction}, "{name}", 0, 1)')
+                self.writeline(f'if self.authorize_actor(ctrl_class):')
+                self.indent()
+                self.writeline(f'npc, ctrl = self.create_npc_at(loc, ctrl_class, {direction}, "{name}", 0, 1)')
+                self.writeline('self.actor_created(npc, ctrl)')
+                self.indent(False)
             self.writeline()
         #self.writeline()
         if not self.current_line_id:
@@ -229,7 +233,7 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
                         if ambient_dict2:
                             x, y = int(ambient_dict2["XCoordinateSec"]), int(ambient_dict2["YCoordinateSec"])
                     if x <= 0 or y <= 0:
-                        print("Incorrect x, y!")
+                        print(f"Incorrect x, y for ambient {name}!")
                         continue
 
                 schedule = ambient_dict["AmbientAppearenceScheduleStr"]

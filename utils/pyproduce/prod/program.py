@@ -1,4 +1,5 @@
 from math import fabs
+from operator import truediv
 import sys
 import os
 import producer_doc
@@ -34,14 +35,14 @@ def main():
     )
     doc.init(from_scratch=False)
     if True:
-        are_prod = doc.acquire_are_producer('AR1000')
+        are_prod = doc.acquire_are_producer('AR2000')
         are_prod.skip_script_general = True
         are_prod.skip_script_class = True
         are_prod.skip_script_race = True
         are_prod.skip_script_default = True
         are_prod.skip_script_specific = True
         are_prod.skip_script_special1 = True
-        are_prod.skip_script_daemon = False
+        are_prod.skip_script_daemon = True
         if True:
             are_prod.produce()
         else:

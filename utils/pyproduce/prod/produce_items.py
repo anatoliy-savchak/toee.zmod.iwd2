@@ -69,8 +69,9 @@ class ItemBase(object):
         wear = None
         if self.slot_name == 'SLOT_WEAPON1':
             wear = "toee.item_wear_weapon_primary"
-        elif self.slot_name == 'SLOT_WEAPON2':
-            wear = "toee.item_wear_weapon_secondary"
+        # actually this is not secondary, but second option for combat
+        #elif self.slot_name == 'SLOT_WEAPON2':
+        #    wear = "toee.item_wear_weapon_secondary"
         elif self.slot_name == 'SLOT_HELMET':
             wear = "toee.item_wear_helmet"
         elif self.slot_name == 'SLOT_ARMOR':
@@ -199,6 +200,13 @@ class ItemBattleaxe(ItemAxes):
     @classmethod
     def get_proto_const(cls): return "const_proto_weapon.PROTO_BATTLEAXE"    
 
+class ItemBattleaxePlus1(ItemAxes):
+    @classmethod
+    def get_item_codes(cls): return ("00AX1H03", )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_BATTLEAXE_PLUS_1"
+
 class ItemGreataxe(ItemAxes):
     @classmethod
     def get_item_codes(cls): return ("00CWAXED", "00AX2H01")
@@ -253,6 +261,15 @@ class ItemGoblinsShortbow(ItemBows):
             self._add_line('weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d6-4").packed)')
         return result 
 
+class ItemLongbow(ItemBows):
+    @classmethod
+    def get_item_codes(cls): 
+        return ("00CWBOWG" # used by orcs
+            ,)
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_LONGBOW"    
+
 ########## WEAPONS / ARROWS
 class ItemArrows(ItemBase):
     @classmethod
@@ -277,6 +294,15 @@ class ItemQuiver1(ItemArrows):
                 self._add_line(f"quiver.obj_set_int(toee.obj_f_ammo_quantity, {q})")
 
         return result 
+
+class ItemQuiverOfFlame(ItemArrows):
+    @classmethod
+    def get_item_codes(cls): 
+        return ("00CWARWB" # used by Fire Orcs, TODO
+            ,)
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_AMMO_ARROW_QUIVER"
 
 ########## ARMORS
 class ItemArmors(ItemBase):
@@ -320,6 +346,20 @@ class ItemLeatherArmorDefault(ItemLeatherArmors):
 
     @classmethod
     def get_proto_const(cls): return "const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN"
+
+########## ARMORS / STUDDED LEATHER ARMORS
+class ItemLeatherStuddedArmors(ItemArmors):
+    @classmethod
+    def get_category(cls): return "StuddedLeatherArmor"
+
+    def get_boots_proto_const(cls): return "const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE"
+
+class ItemLeatherStuddedArmorPlus2(ItemLeatherStuddedArmors):
+    @classmethod
+    def get_item_codes(cls): return ('00LEAT07', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_armor.PROTO_ARMOR_STUDDED_LEATHER_ARMOR_PLUS_2"
 
 ########## ARMORS / HELMS HATS
 class ItemHelmets(ItemArmors):
@@ -380,6 +420,18 @@ class ItemShortsword(ItemShortswords):
     @classmethod
     def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_SHORTSWORD"
 
+########## LONGSWORDS
+class ItemLongswords(ItemBase):
+    @classmethod
+    def get_category(cls): return "LongsSwords"
+
+class ItemScimitar(ItemLongswords):
+    @classmethod
+    def get_item_codes(cls): return ('00SWDC01', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_SCIMITAR"
+
 ########## GOLD
 class ItemGold(ItemBase):
     @classmethod
@@ -390,8 +442,9 @@ class ItemGold(ItemBase):
 
     def process_item(self):
         Charges1, Charges2, Charges3 = int(self.item_entry["Item"]["Charges1"]), int(self.item_entry["Item"]["Charges2"]), int(self.item_entry["Item"]["Charges3"])
-        platinum, gold, silver, copper = 0, Charges1, Charges2, Charges3
-        self._add_line(f'utils_item.item_money_create_in_inventory(npc, {platinum}, {gold}, {silver}, {copper}) # Charges1: {Charges1}, Charges2: {Charges2}, Charges3: {Charges3}')
+        #platinum, gold, silver, copper = 0, Charges1, Charges2, Charges3
+        #self._add_line(f'utils_item.item_money_create_in_inventory(npc, {platinum}, {gold}, {silver}, {copper}) # Charges1: {Charges1}, Charges2: {Charges2}, Charges3: {Charges3}')
+        self._add_line(f'utils_item.item_money_create_in_inventory(npc, 0, toee.game.random_range({Charges1}, {Charges2})) # Charges1: {Charges1}, Charges2: {Charges2}, Charges3: {Charges3}')
         return True
 
     @classmethod
@@ -464,7 +517,7 @@ class ItemMiscJunk(ItemBase):
     def get_category(cls): return "Books"
 
     @classmethod
-    def get_item_codes(cls): return ('00RTGOB1', )
+    def get_item_codes(cls): return ('00RTGOB1', '00RTFIRE', '00RG05', 'RT01_M', 'RT02_M', 'RT02_R', 'RT02_L')
     
     def process_item(self):
         self._add_line("# junk, skip and forget")
@@ -483,6 +536,30 @@ class ItemMiscMeleeSlashing1d4(ItemMisc):
     @classmethod
     def get_item_codes(cls): return ('001D4S', )
 
+class ItemMiscMeleeSlashing1d6(ItemMisc):
+    # used by Goblins as axes
+
+    def process_item(self):
+        if not self.parent.anim.disallow_weapon():
+            wear = self.get_wear()
+            self._add_line(f'weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_HANDAXE, npc, no_loot = {self.no_loot}, wear_on = {wear}) # {self.item_name} ({self.item_file_name}) at {self.slot_name}')
+            # skip as already 1d6 # self._add_line('weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)')
+        return True
+
+    @classmethod
+    def get_item_codes(cls): return ('001D6S', )
+
+class ItemMiscMeleeSlashing1d8(ItemMisc):
+    # used by Goblins as axes
+
+    def process_item(self):
+        if not self.parent.anim.disallow_weapon():
+            wear = self.get_wear()
+            self._add_line(f'weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_BATTLEAXE, npc, no_loot = {self.no_loot}, wear_on = {wear}) # {self.item_name} ({self.item_file_name}) at {self.slot_name}')
+        return True
+
+    @classmethod
+    def get_item_codes(cls): return ('001D8S', )
 
 class ItemMiscMeleeNatural1d3(ItemMisc):
     # used by Goblin archers as melee
@@ -499,3 +576,15 @@ class ItemMiscMeleeNatural1d3(ItemMisc):
 
     @classmethod
     def get_item_codes(cls): return ('001D3P', )
+
+class ItemMiscStaff(ItemMisc):
+    # used by Orc Shaman as staffs
+
+    def process_item(self):
+        if not self.parent.anim.disallow_weapon():
+            wear = self.get_wear()
+            self._add_line(f'weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_QUARTERSTAFF, npc, no_loot = {self.no_loot}, wear_on = {wear}) # {self.item_name} ({self.item_file_name}) at {self.slot_name}')
+        return True
+
+    @classmethod
+    def get_item_codes(cls): return ('001D6C', )

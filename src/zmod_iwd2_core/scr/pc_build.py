@@ -396,3 +396,119 @@ def kots_k2():
 	return
 
 # game.leader.stat_base_set(stat_dexterity, 15)
+
+# import pc_build
+# pc_build.iwd2_caves_prep()
+def iwd2_caves_prep():
+	# 1: fighter dwarf greatsword
+	# 2: cleric female dwarf greatexe
+	# 3: cleric Lathander Mace
+	# 4: sorc
+	# 5: sorc
+	# 6: sorc
+
+	# fighter dmg
+	pc = toee.game.party[0]
+	if (pc):
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_WARHAMMER, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_ARMOR_STUDDED_LEATHER_ARMOR, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_SHIELD_SMALL_WOODEN, pc)
+		#utils_item.item_create_in_inventory(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_COMBAT pc)
+		#utils_item.item_clear_by_proto(pc, const_proto_cloth.PROTO_CLOTH_GARB_BROWN)
+		#pc.feat_add(toee.feat_combat_reflexes)
+		pc.item_wield_best_all()
+
+	pc = toee.game.party[1]
+	if (pc):
+		pc.feat_add(toee.feat_martial_weapon_proficiency_battleaxe, 1)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_BATTLEAXE, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_SHIELD_SMALL_WOODEN, pc)
+		pc.item_wield_best_all()
+
+	pc = toee.game.party[2]
+	if (pc):
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_MACE_LIGHT, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_ARMOR_LEATHER_ARMOR_BROWN, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_SHIELD_SMALL_WOODEN, pc)
+		pc.item_wield_best_all()
+
+	pc = toee.game.party[3]
+	if (pc):
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_SHORTBOW, pc)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_AMMO_ARROW_QUIVER, pc)
+		pc.item_wield_best_all()
+
+	# sorc
+	pc = toee.game.party[4]
+	if (pc):
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_CROSSBOW_HEAVY, pc)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_AMMO_BOLT_QUIVER, pc)
+		pc.item_wield_best_all()
+ 
+	# sorc
+	pc = toee.game.party[5]
+	if (pc):
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_CROSSBOW_LIGHT, pc)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_AMMO_BOLT_QUIVER, pc)
+		pc.item_wield_best_all()
+	return
+
+# import pc_build
+# pc_build.iwd2_ar2000_prep()
+def iwd2_ar2000_prep():
+	# 1: fighter dwarf greatsword
+	# 2: cleric female dwarf greataxe
+	# 3: cleric Lathander Mace
+	# 4: sorc
+	# 5: sorc
+	# 6: sorc
+
+	# fighter dmg
+	pc = toee.game.party[0]
+	if (pc):
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_LONGSWORD_MASTERWORK, pc)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_GREATSWORD_MASTERWORK, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_ARMOR_HALF_PLATE, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_SHIELD_LARGE_WOODEN, pc)
+		#utils_item.item_create_in_inventory(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_COMBAT pc)
+		#utils_item.item_clear_by_proto(pc, const_proto_cloth.PROTO_CLOTH_GARB_BROWN)
+		#pc.feat_add(toee.feat_combat_reflexes)
+		pc.item_wield_best_all()
+
+	pc = toee.game.party[1]
+	if (pc):
+		pc.feat_add(toee.feat_martial_weapon_proficiency_battleaxe, 1)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_BATTLEAXE_MASTERWORK, pc)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_GREATAXE_MASTERWORK, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_ARMOR_HALF_PLATE, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_SHIELD_LARGE_WOODEN_2, pc)
+		pc.item_wield_best_all()
+
+	pc = toee.game.party[2]
+	if (pc):
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_MORNINGSTAR_MASTERWORK, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_ARMOR_SPLINT_MAIL, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_SHIELD_SMALL_WOODEN, pc)
+		pc.item_wield_best_all()
+
+	pc = toee.game.party[3]
+	if (pc):
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_SHORTBOW, pc)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_AMMO_ARROW_QUIVER, pc).obj_set_int(toee.obj_f_ammo_quantity, 100)
+		pc.item_wield_best_all()
+
+	# sorc
+	pc = toee.game.party[4]
+	if (pc):
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_CROSSBOW_HEAVY, pc)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_AMMO_BOLT_QUIVER, pc).obj_set_int(toee.obj_f_ammo_quantity, 100)
+		pc.item_wield_best_all()
+ 
+	# sorc
+	pc = toee.game.party[5]
+	if (pc):
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_CROSSBOW_LIGHT, pc)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_AMMO_BOLT_QUIVER, pc).obj_set_int(toee.obj_f_ammo_quantity, 100)
+		pc.item_wield_best_all()
+	return

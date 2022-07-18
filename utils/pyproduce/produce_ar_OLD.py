@@ -110,8 +110,8 @@ class ProduceDaemon:
             if not hidden:
                 if ctrl_class:
                     add_line(i_code+f'ctrl_class, loc = {class_file}.{ctrl_class},  utils_obj.sec2loc({int(x)}, {int(y)})')
-                    add_line(i_code+f'self.create_npc_at(loc, ctrl_class, {direction}, "{name}", 0, 1)')
-                    #add_line(i_code+f'npc, ctrl = self.create_npc_at(loc, ctrl_class, {direction}, "{name}", 0, 1)')
+                    add_line(i_code+f'npc, ctrl = self.create_npc_at(loc, ctrl_class, {direction}, "{name}", 0, 1)')
+                    add_line(i_code+f'self.actor_created(npc, ctrl)')
                     #global_name = f"npc_{name}"
                     #add_line(i_code+f'Global.{global_name} = npc')
                     #add_line(i_code+f'Global["{global_name}"] = npc')

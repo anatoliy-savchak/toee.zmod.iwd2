@@ -31,6 +31,8 @@ class StatGenerator:
 				if cr < 1:
 					if cr == 0.5: crstr = "1/2"
 					elif cr == 0.3: crstr = "1/3"
+					elif cr == -2: crstr = "1/4"
+					elif cr == -1: crstr = "1/2"
 				line = "{}                              CR {}".format(line, inf(cr, score_mod, 0))
 			if (line):
 				lines.append(line)

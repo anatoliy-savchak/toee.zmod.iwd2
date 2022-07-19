@@ -165,7 +165,7 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 		return {'dameon_id': self.id}
 
 	def authorize_actor(self, ctrl):
-		current_difficulty = module_difficulty.IWD2_DIFFICULTY
+		current_difficulty = module_difficulty.get_iwd2_difficulty()
 		diff_mask_allow = 1 << (current_difficulty-1)
 		diff_mask = ctrl.get_difficulty_mask()
 		result = diff_mask & diff_mask_allow

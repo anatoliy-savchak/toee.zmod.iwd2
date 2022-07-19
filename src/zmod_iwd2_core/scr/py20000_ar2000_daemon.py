@@ -1214,3 +1214,24 @@ class CtrlAR2000(ctrl_daemon_ie.CtrlDaemonIE):
 		
 		self.ambs_timer_start()
 		return
+
+	def actor_created(self, npc, ctrl):
+		super(CtrlAR2000, self).actor_created(npc, ctrl)
+		team_number = ctrl.get_team_number()
+		if team_number == 3 or team_number == 4:
+			pass
+		else:
+			print('Destroying debug wise unnecessary {}'.format(npc))
+			key = next((key for key in self.monsters.iterkeys() if self.monsters[key] == ctrl), None)
+			print('Deleting key: {} from monsters for {}'.format(key, ctrl))
+			if key:
+				del self.monsters[key]
+
+			objs = utils_storage.Storage().objs
+			assert isinstance(objs, dict)
+			key = next((key for key in objs.iterkeys() for obj in objs[key].data.itervalues() if obj == ctrl), None)
+			print('Deleting key: {} from storage for {}'.format(key, ctrl))
+			if key:
+				del objs[key]
+			npc.destroy()
+		return

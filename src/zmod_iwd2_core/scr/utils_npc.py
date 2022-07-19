@@ -140,6 +140,9 @@ def npc_generate_hp_ext(npc, hd_first_is_full, method):
 
 	return (hp, lines)
 
+def npc_generate_hp_module(npc):
+	return npc_generate_hp_ext(npc, 2, NPC_GENERATE_HP_EXT_AVG)
+
 def npc_money_set(npc, copper):
 	assert isinstance(npc, toee.PyObjHandle)
 	assert isinstance(copper, int)

@@ -74,8 +74,8 @@ def consider_target(attacker, target, aiSearchingTgt=False):
 			return 0
 
 	if a_leader != OBJ_HANDLE_NULL:
-		if a_leader.distance_to(target) > 70:
-			if attacker.distance_to(target) > 70.0:
+		if a_leader.distance_to(target) > 125:
+			if attacker.distance_to(target) > 125.0:
 				if do_print: debug_print("consider tgt: too far from leader")
 				debug.breakp("too too far from leader")
 				return 0

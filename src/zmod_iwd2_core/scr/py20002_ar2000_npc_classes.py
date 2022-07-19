@@ -3,7 +3,7 @@ import const_proto_potions, utils_obj, const_proto_food, utils_npc, utils_target
 import const_proto_items, const_proto_rings, const_proto_cloth, const_proto_wondrous, utils_races, utils_npc_build, const_proto_npc, utils_toee, tpai, tpactions, utils_strategy
 import py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, module_consts, rumor_control, utils_pc
 import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2, ctrl_daemon
-import utils_journal as uj, inf_scripting
+import utils_journal as uj, inf_scripting, module_difficulty
 #### IMPORTS ####
 import py20001_ar2000_npc_classes_auto
 #### END IMPORTS ####
@@ -25,7 +25,11 @@ def ctrl(npc): return ctrl_behaviour.get_ctrl(npc.id)
 def cs(): return ctrl_daemon.gdc()
 #### NPCS ####
 class Ctrl_20ORCACH(py20001_ar2000_npc_classes_auto.Ctrl_20ORCACH_Auto): # 20ORCACH 
-	def setup_char1(self, npc):
+	def setup_char(self, npc):
+		if module_difficulty.get_difficulty() <= 1:
+			super(Ctrl_20ORCSHM, self).setup_char(npc)
+			return
+
 		#utils_npc.npc_abilities_set(npc, [10, 15, 11, 9, 8, 8])
 		utils_npc_build.NPCAbilitiesSetup(12, 15, utils_races.RACE_ABILITY_BONUSES_ORC).generate().focus_ranged().npc_setup_random(npc)
 
@@ -37,7 +41,8 @@ class Ctrl_20ORCACH(py20001_ar2000_npc_classes_auto.Ctrl_20ORCACH_Auto): # 20ORC
 
 		npc.feat_add(toee.feat_weapon_focus_longbow, 1)
 
-		utils_npc.ensure_hp(npc, 8) # MaximumHP: 8
+		#utils_npc.ensure_hp(npc, 8) # MaximumHP: 8
+		utils_npc.npc_generate_hp_module(npc)
 		return
 	pass
 
@@ -52,7 +57,11 @@ class Ctrl_20ORCSHM(py20001_ar2000_npc_classes_auto.Ctrl_20ORCSHM_Auto): # 20ORC
 		npc.obj_set_int(toee.obj_f_critter_portrait, 5420) # none
 		return
 
-	def setup_char1(self, npc):
+	def setup_char(self, npc):
+		if module_difficulty.get_difficulty() <= 1:
+			super(Ctrl_20ORCSHM, self).setup_char(npc)
+			return
+
 		#utils_npc.npc_abilities_set(npc, [10, 15, 11, 9, 8, 8])
 		utils_npc_build.NPCAbilitiesSetup(12, 15, utils_races.RACE_ABILITY_BONUSES_ORC).generate().focus_cleric().npc_setup_random(npc)
 
@@ -67,7 +76,8 @@ class Ctrl_20ORCSHM(py20001_ar2000_npc_classes_auto.Ctrl_20ORCSHM_Auto): # 20ORC
 
 		npc.skill_ranks_set(toee.skill_concentration, 3 + (npc.highest_divine_caster_level-1)*1)
 
-		utils_npc.ensure_hp(npc, 22) # MaximumHP: 22
+		#utils_npc.ensure_hp(npc, 22) # MaximumHP: 22
+		utils_npc.npc_generate_hp_module(npc)
 		return
 
 	def enter_combat(self, attachee, triggerer):
@@ -125,6 +135,9 @@ class Ctrl_20ORCSHM(py20001_ar2000_npc_classes_auto.Ctrl_20ORCSHM_Auto): # 20ORC
 class Ctrl_20ORCA3(py20001_ar2000_npc_classes_auto.Ctrl_20ORCA3_Auto): # 20ORCA3 
 
 	def setup_char(self, npc):
+		if module_difficulty.get_difficulty() <= 1:
+			super(Ctrl_20ORCA3, self).setup_char(npc)
+			return
 		#utils_npc.npc_abilities_set(npc, [10, 15, 11, 9, 8, 8])
 		utils_npc_build.NPCAbilitiesSetup(12, 15, utils_races.RACE_ABILITY_BONUSES_ORC).generate().focus_melee().npc_setup_random(npc)
 
@@ -137,7 +150,8 @@ class Ctrl_20ORCA3(py20001_ar2000_npc_classes_auto.Ctrl_20ORCA3_Auto): # 20ORCA3
 
 		npc.feat_add(toee.feat_weapon_focus_battleaxe, 1)
 
-		utils_npc.ensure_hp(npc, 18) # MaximumHP: 18
+		#utils_npc.ensure_hp(npc, 18) # MaximumHP: 18
+		utils_npc.npc_generate_hp_module(npc)
 		return
 	pass
 

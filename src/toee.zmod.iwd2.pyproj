@@ -236,6 +236,9 @@
     </Compile>
     <Compile Include="zmod_iwd2_core\scr\module_cheats.py" />
     <Compile Include="zmod_iwd2_core\scr\module_consts.py" />
+    <Compile Include="zmod_iwd2_core\scr\module_difficulty.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="zmod_iwd2_core\scr\module_globals.py" />
     <Compile Include="zmod_iwd2_core\scr\module_quests.py" />
     <Compile Include="zmod_iwd2_core\scr\module_world_travel.py" />

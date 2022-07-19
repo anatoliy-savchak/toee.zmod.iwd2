@@ -32,6 +32,8 @@ class Ctrl_20ORCACH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCACH
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCACH_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID
+		npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID
 		return
 	
 	def setup_appearance(self, npc):
@@ -121,6 +123,8 @@ class Ctrl_20ORCWAR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCWAR
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCWAR_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID
+		npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID
 		return
 	
 	def setup_appearance(self, npc):
@@ -203,6 +207,8 @@ class Ctrl_20ORCSHM_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCSHM
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCSHM_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID
+		npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID
 		return
 	
 	def setup_appearance(self, npc):
@@ -286,6 +292,8 @@ class Ctrl_20ORCA3_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCA3
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCA3_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID
+		npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID
 		return
 	
 	def setup_appearance(self, npc):
@@ -377,6 +385,8 @@ class Ctrl_20ORCW3_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCW3
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCW3_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID
+		npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID
 		return
 	
 	def setup_appearance(self, npc):
@@ -461,6 +471,8 @@ class Ctrl_20ORCA4_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCA4
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCA4_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID
+		npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID
 		return
 	
 	def setup_appearance(self, npc):
@@ -556,6 +568,8 @@ class Ctrl_20ORCW4_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCW4
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCW4_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID
+		npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID
 		return
 	
 	def setup_appearance(self, npc):
@@ -644,6 +658,8 @@ class Ctrl_20ORCFIR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCFIR
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCFIR_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID
+		npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID
 		return
 	
 	def setup_appearance(self, npc):
@@ -735,6 +751,8 @@ class Ctrl_20ORCRUN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCRUN
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCRUN_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID
+		npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID
 		return
 	
 	def setup_appearance(self, npc):
@@ -822,6 +840,8 @@ class Ctrl_20ORCCHF_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCCHF
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCCHF_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID
+		npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID
 		return
 	
 	def setup_appearance(self, npc):
@@ -917,6 +937,8 @@ class Ctrl_20DERETH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20DERETH
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20DERETH_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID
+		npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID
 		return
 	
 	def setup_appearance(self, npc):
@@ -1014,6 +1036,8 @@ class Ctrl_20SABRIN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20SABRIN
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20SABRIN_Auto, self).setup_scripts(npc)
+		npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID
+		npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID
 		return
 	
 	def setup_appearance(self, npc):

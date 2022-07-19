@@ -8,6 +8,7 @@ import uuid
 import ctrl_behaviour
 import utils_npc
 import debugg
+import module_difficulty
 
 class global_injector:
 	'''Inject into the *real global namespace*, i.e. "builtins" namespace or "__builtin__" for python2.
@@ -164,8 +165,8 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 		return {'dameon_id': self.id}
 
 	def authorize_actor(self, ctrl):
-		current_difficulty = 2
-		diff_mask_allow = 1 << current_difficulty
+		current_difficulty = module_difficulty.IWD2_DIFFICULTY
+		diff_mask_allow = 1 << (current_difficulty-1)
 		diff_mask = ctrl.get_difficulty_mask()
 		result = diff_mask & diff_mask_allow
 		return result > 0

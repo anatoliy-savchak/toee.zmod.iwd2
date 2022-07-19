@@ -82,16 +82,29 @@ class SpellTactic(object):
 	def _except_q(self):
 		return 0
 
+	def _except_spell_condition(self):
+		return 0
+
 	def _check_already(self):
 		q = self._except_q()
-		if (not q): return EDOT_OK
+		if q: 
+			obj = self._subject()
+			if (not obj): return EDOT_OK
 
-		obj = self._subject()
-		if (not obj): return EDOT_OK
+			if (obj.d20_query(q)):
+				return EDOT_CANNOT_BE_AFFECTED
 
-		if (obj.d20_query(q)):
-			return EDOT_CANNOT_BE_AFFECTED
+		q = self._except_spell_condition()
+		print('_except_spell_condition {} for {} of {}'.format(q, toee.game.get_spell_mesline(self._get_spell_num()), self.npc))
+		if q: 
+			obj = self._subject()
+			print('_except_spell_condition {} {} for {} subject:  of {}'.format(q, toee.game.get_spell_mesline(self._get_spell_num()), obj, self.npc))
+			if (not obj): return EDOT_OK
 
+			has = obj.d20_query_has_spell_condition(q)
+			print('has:{} _except_spell_condition {} {} for {} subject:  of {}'.format(has, q, toee.game.get_spell_mesline(self._get_spell_num()), obj, self.npc))
+			if has:
+				return EDOT_CANNOT_BE_AFFECTED
 		return EDOT_OK
 
 	def _check_uninhibited(self):
@@ -119,7 +132,7 @@ class SpellTactic(object):
 		self.target = target
 		return
 
-	def execute(self):
+	def execute(self, mode_blank = False):
 		print("{} ({}) execute by {} on {}".format(type(self).__name__, toee.game.get_spell_mesline(self._get_spell_num()), self.npc, self.target))
 		if (self.spells_left() == 0): 
 			print("{} EDOT_NO_SPELLS_LEFT for {} by {}".format(type(self).__name__, toee.game.get_spell_mesline(self._get_spell_num()), self.npc))
@@ -143,28 +156,32 @@ class SpellTactic(object):
 				if (result):
 					return result
 
-		if (self.options and self._skip_five_foot_step()):
-			pass
-		else:
-			if not is_personal and self._should_approach():
-				self.tacs.add_approach()
+		if not mode_blank:
+			if (self.options and self._skip_five_foot_step()):
+				pass
 			else:
-				self.tacs.add_five_foot_step()
+				if not is_personal and self._should_approach():
+					self.tacs.add_approach()
+				else:
+					self.tacs.add_five_foot_step()
 
-		if (self.options and self.options.get("add_halt_before")):
-			self.tacs.add_halt()
+			if (self.options and self.options.get("add_halt_before")):
+				self.tacs.add_halt()
 
-		if (is_personal is None): is_personal = self._is_personal()
-		if (is_personal):
-			self.tacs.add_target_self()
-		else:
-			self._check_target()
-			if (self.target):
-				self.tacs.add_target_obj(self.target.id)
+			if (is_personal is None): is_personal = self._is_personal()
+			if (is_personal):
+				self.tacs.add_target_self()
 			else:
-				self.tacs.add_target_closest()
+				self._check_target()
+				if (self.target):
+					self.tacs.add_target_obj(self.target.id)
+				else:
+					self.tacs.add_target_closest()
 		
-		result = self._add_spell_exec()
+			result = self._add_spell_exec()
+		else:
+			result = EDOT_OK
+
 		if (result): 
 			return result
 
@@ -177,6 +194,19 @@ class SpellTactic(object):
 	def _skip_five_foot_step(self):
 		return self.options.get("skip_five_foot_step")
 
+	def set_target_first(self, targets):
+		if not self.spells_left(): 
+			return
+		for t in targets:
+			self.set_target(t)
+			if not self.execute(True):
+				return t
+		self.set_target(None)
+		return
+
+	def set_target_first_self(self, targets):
+		self.find_target_first(targets)
+		return self
 
 class STDivineFavor(SpellTactic):
 	@staticmethod
@@ -196,6 +226,14 @@ class STCauseFear(SpellTactic):
 
 	def _is_personal(self): return 0 # bug currently 2021-10-04
 
+class STDoom(SpellTactic):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_doom
+
+	def _except_spell_condition(self): return toee.sp_Doom
+
+	def _is_personal(self): return 0 # bug currently 2021-10-04
+
 class STBlindnessDeafness(SpellTactic): #todo verify
 	@staticmethod
 	def _get_spell_num(): return toee.spell_blindness_deafness
@@ -207,6 +245,8 @@ class STBless(SpellTactic):
 	def _get_spell_num(): return toee.spell_bless
 
 	def _is_personal(self): return 1
+
+	def _except_spell_condition(self): return toee.sp_Bless
 
 class STBaneSelf(SpellTactic):
 	@staticmethod
@@ -239,7 +279,7 @@ class STTashasHideousLaughter(SpellTactic):
 
 	def _is_personal(self): return 0 # check
 
-	def _except_q(self): return self.npc.d20_query_has_spell_condition(toee.spell_tashas_hideous_laughter)
+	def _except_q(self): return self.npc.d20_query_has_spell_condition(toee.sp_Tashas_Hideous_Laughter)
 
 class STMirrorImage(SpellTactic):
 	@staticmethod

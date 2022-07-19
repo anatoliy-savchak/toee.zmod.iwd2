@@ -111,7 +111,8 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.writeline(f'super({self.ctrl_name}, self).setup_scripts(npc)')
         if (dialog_name := self.cre["DialogFile"]) and (dialog_name != "None"):
             self.writeline("npc.scripts[const_toee.sn_dialog] = MODULE_SCRIPT_ID")
-        #self.writeline("npc.scripts[const_toee.sn_heartbeat] = MODULE_SCRIPT_ID")
+        self.writeline("npc.scripts[const_toee.sn_start_combat] = MODULE_SCRIPT_ID")
+        self.writeline("npc.scripts[const_toee.sn_enter_combat] = MODULE_SCRIPT_ID")
         self.writeline("return")
         self.indent(False)
         self.writeline("")

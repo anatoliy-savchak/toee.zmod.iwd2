@@ -113,7 +113,7 @@ class ProducerOfAre(producer_base.Producer):
 
     def produce_start(self):
         producer_ctrl_auto.ProducerOfCtrlAuto.overwrite_by_template(self.doc, are_name=self.are_name, script_id=self.script_id+1)
-        producer_ctrl_manual.ProducerOfCtrlManual.overwrite_by_template(self.doc, are_name=self.are_name, script_id=self.script_id+2)
+        #producer_ctrl_manual.ProducerOfCtrlManual.overwrite_by_template(self.doc, are_name=self.are_name, script_id=self.script_id+2)
         producer_ctrl_inst_auto.ProducerOfCtrlInstAuto.overwrite_by_template(self.doc, are_name=self.are_name, script_id=self.script_id+3)
         return
 

@@ -45,6 +45,14 @@ class Ctrl_20ORCWAR_AR2000_T1_Orc_3(py20003_ar2000_npc_inst_classes_auto.Ctrl_20
 	pass
 
 class Ctrl_20ORCSHM_AR2000_T1_Shaman_1(py20003_ar2000_npc_inst_classes_auto.Ctrl_20ORCSHM_AR2000_T1_Shaman_1_Auto): # 20ORCSHM 
+	def setup_spells(self, npc, stat_class, caster_level):
+		# 1
+		self.spells.add_spell(toee.spell_bless, stat_class, caster_level)
+		self.spells.add_spell(toee.spell_cause_fear, stat_class, caster_level)
+
+		# 0
+		self.spells.add_spell(toee.spell_cure_minor_wounds, stat_class, caster_level)
+		return
 	pass
 
 class Ctrl_20ORCA3_AR2000_T1_Arch_5(py20003_ar2000_npc_inst_classes_auto.Ctrl_20ORCA3_AR2000_T1_Arch_5_Auto): # 20ORCA3 

@@ -266,6 +266,11 @@
     <Compile Include="zmod_iwd2_core\scr\py12010_ar1201_daemon.py" />
     <Compile Include="zmod_iwd2_core\scr\py12011_ar1201_npc_classes_auto.py" />
     <Compile Include="zmod_iwd2_core\scr\py12013_ar1201_npc_inst_classes_auto.py" />
+    <Compile Include="zmod_iwd2_core\scr\py20000_ar2000_daemon.py" />
+    <Compile Include="zmod_iwd2_core\scr\py20001_ar2000_npc_classes_auto.py" />
+    <Compile Include="zmod_iwd2_core\scr\py20002_ar2000_npc_classes.py" />
+    <Compile Include="zmod_iwd2_core\scr\py20003_ar2000_npc_inst_classes_auto.py" />
+    <Compile Include="zmod_iwd2_core\scr\py20004_ar2000_npc_inst_classes.py" />
     <Compile Include="zmod_iwd2_core\scr\random_encounter.py" />
     <Compile Include="zmod_iwd2_core\scr\Spell076 - Contagion.py" />
     <Compile Include="zmod_iwd2_core\scr\Spell090 - Cure Light Wounds.py" />
@@ -395,6 +400,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="zmod_iwd2_core\scr\utils_npc_spells.py" />
+    <Compile Include="zmod_iwd2_core\scr\utils_npc_spells_tactics.py" />
     <Compile Include="zmod_iwd2_core\scr\utils_obj.py" />
     <Compile Include="zmod_iwd2_core\scr\utils_pc.py">
       <SubType>Code</SubType>

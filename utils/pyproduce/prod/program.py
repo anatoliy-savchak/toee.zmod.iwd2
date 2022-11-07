@@ -35,7 +35,7 @@ def main():
     )
     doc.init(from_scratch=False)
     if True:
-        are_prod = doc.acquire_are_producer('AR2000')
+        are_prod = doc.acquire_are_producer('AR2100')
         are_prod.skip_script_general = True
         are_prod.skip_script_class = True
         are_prod.skip_script_race = True

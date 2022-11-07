@@ -128,3 +128,5 @@ MAP_ID_AR1007_ENTRY_01 = (461, 518) # initial
 
 MAP_ID_AR2000_ENTRY_01 = (539, 515) # initial
 MAP_ID_AR2000_ENTRY_01 = (491, 506) # Dereth and Sabrina's Home
+
+MAP_ID_AR2100_ENTRY_01 = (474, 519) # initial

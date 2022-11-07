@@ -192,7 +192,7 @@ class SpellTactic(object):
 		return
 
 	def _skip_five_foot_step(self):
-		return self.options.get("skip_five_foot_step")
+		return None if not self.options else self.options.get("skip_five_foot_step")
 
 	def set_target_first(self, targets):
 		if not self.spells_left(): 

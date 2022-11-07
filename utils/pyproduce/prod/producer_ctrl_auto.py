@@ -94,12 +94,13 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
                 proto = "const_proto_npc.PROTO_NPC_ORC"
             else:
                 proto = "const_proto_npc.PROTO_NPC_ORC"
-        else:
-            raise Exception(f"Unknown race: {race_name}({race})")
 
         if proto_override := self.anim.proto_override():
             proto = proto_override
 
+        if not proto:
+            raise Exception(f"Unknown race: {race_name}({race})")
+            
         self.writeline("@classmethod")
         self.writeline(f"def get_proto_id(cls): return {proto}")
         self.writeline("")

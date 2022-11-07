@@ -312,3 +312,79 @@ class AnimOrcShaman(AnimOrc):
 
     def get_armor_proto_const(self): 
         return "const_proto_cloth.PROTO_CLOTH_ROBES_BROWN_TEMPLE_EARTH"
+
+class AnimWererat(AnimBase):
+    @classmethod
+    def get_codes(cls): return ("Wererat", )
+    def proto_override(self): return 'const_proto_npc.PROTO_NPC_WERERAT'
+    def produce_portrait(self):
+        # resuse from proto
+        return
+
+class AnimWerebadger(AnimWererat):
+    @classmethod
+    def get_codes(cls): return ("Werebadger", )
+
+class AnimOgre(AnimBase):
+    @classmethod
+    def get_codes(cls): return ("Ogre", )
+
+    def produce_portrait(self):
+        # resuse from proto
+        return
+
+    def proto_override(self): return 'const_proto_npc.PROTO_NPC_OGRE'
+
+class AnimSpiderPhase(AnimBase):
+    @classmethod
+    def get_codes(cls): return ("Spider, Phase", )
+
+    def produce_portrait(self):
+        # resuse from proto
+        return
+
+    def proto_override(self): return 'const_proto_npc.PROTO_NPC_SPIDER_PHASE'
+
+class AnimSpiderSmall(AnimBase):
+    @classmethod
+    def get_codes(cls): return ("Spider, Small", )
+
+    def produce_portrait(self):
+        # resuse from proto
+        return
+
+    def proto_override(self): return 'const_proto_npc.PROTO_NPC_SPIDER_SMALL'
+
+class AnimSnake(AnimBase):
+    @classmethod
+    def get_codes(cls): return ("Snake", )
+
+    def produce_portrait(self):
+        # resuse from proto
+        return
+
+    def proto_override(self): return 'const_proto_npc.PROTO_NPC_SNAKE_GIANT'
+
+class AnimHarpy(AnimBase):
+    @classmethod
+    def get_codes(cls): return ("Harpy", )
+
+    def produce_portrait(self):
+        # resuse from proto
+        return
+
+    def proto_override(self): return 'const_proto_npc.PROTO_NPC_HARPY'
+
+class AnimGiantVerbeeg(AnimBase):
+    @classmethod
+    def get_codes(cls): return ("Giant, Verbeeg", )
+
+    def produce_portrait(self):
+        # resuse from proto
+        return
+
+    def proto_override(self): return 'const_proto_npc.PROTO_NPC_GIANT_VERBEEG'
+
+class AnimDoomGuard(AnimHumanoid):
+    @classmethod
+    def get_codes(cls): return ("Doom Guard", )

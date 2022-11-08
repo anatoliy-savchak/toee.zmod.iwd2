@@ -1,0 +1,535 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "G'day.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40979
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Evening.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40981
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Some mercenary group from Luskan's been makin' a mess of things from here to Targos.  In fact, all three sisters are restless.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40982
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Them's the ones!  According to the winds of gossip, they're gods or something - led by a hatched knave named <CHARNAME>.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40983
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Them's the ones!  According to the winds of gossip, they're gods or something - led by a three-legged wench named <CHARNAME>.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40984
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Naw - only six, from what I hear.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40985
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Naw - only five, from what I hear.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40986
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Naw - only four, from what I hear.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40987
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Naw - only three, from what I hear.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40988
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Naw - only two, from what I hear.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40989
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Naw - just the one...*one* I say!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40990
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "But get this - apparently, Lady Sherincal threw one of them off Andora's ledge, so maybe they're not so tough after all.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40991
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "There he is!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40992
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 12
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 3,
+      "Index": 2,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 4,
+      "Index": 3,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 4,
+      "Index": 4,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB1",
+      "NextPhraseIndex": 11,
+      "Index": 5,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 6,
+      "Index": 6,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB1",
+      "NextPhraseIndex": 11,
+      "Index": 7,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 6,
+      "Index": 8,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB1",
+      "NextPhraseIndex": 11,
+      "Index": 9,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 6,
+      "Index": 10,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB1",
+      "NextPhraseIndex": 11,
+      "Index": 11,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 6,
+      "Index": 12,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB1",
+      "NextPhraseIndex": 11,
+      "Index": 13,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 6,
+      "Index": 14,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB1",
+      "NextPhraseIndex": 11,
+      "Index": 15,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 6,
+      "Index": 16,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 5,
+      "Index": 17,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB2",
+      "NextPhraseIndex": 7,
+      "Index": 18,
+      "Flags": "None"
+    }
+  ],
+  "TriggersPhrase": [
+    "TimeOfDay(DAY)",
+    "!TimeOfDay(DAY)"
+  ],
+  "TriggersResponse": [
+    "Global(\"40SherincalAttack\",\"GLOBAL\",1)",
+    "Global(\"40SherincalAttack\",\"GLOBAL\",0)",
+    "Global(\"40SherincalAttack\",\"GLOBAL\",1)",
+    "Global(\"40SherincalAttack\",\"GLOBAL\",0)",
+    "Global(\"40SherincalAttack\",\"GLOBAL\",1)",
+    "Global(\"40SherincalAttack\",\"GLOBAL\",0)",
+    "Global(\"40SherincalAttack\",\"GLOBAL\",1)",
+    "Global(\"40SherincalAttack\",\"GLOBAL\",0)",
+    "Global(\"40SherincalAttack\",\"GLOBAL\",1)",
+    "Global(\"40SherincalAttack\",\"GLOBAL\",0)",
+    "Global(\"40SherincalAttack\",\"GLOBAL\",1)",
+    "Global(\"40SherincalAttack\",\"GLOBAL\",0)"
+  ],
+  "Actions": [],
+  "Checksum": null,
+  "Filename": "41CMOLB1.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 40979
+}

@@ -1,0 +1,608 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "No!  No more voices...  Enough!  Haunt me no more!  Begone!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29993
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 5,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Why do you persist in this torment?  Leave my mind!  Grant me peace...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29999
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "No...  No...  No...  Why is there no cessation of these voices?  What demon is it that torments my soul?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30000
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Roga...  No...  Another life...  Another place...  No more...  No more...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30002
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Stop... voices?  No more...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30004
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "What the...  Where...  Where am I?  What am I doing here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30006
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Yes...  For once my mind is clear.  Oh, but I have done some foolish things...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30008
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "The only way I could stop the voices was by giving the elementals something to focus on.  Deep inside, I guess I wanted to put an end to the construction... so I began to sabotage it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30010
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "I will let Roga know that I am well, but I will not return to that former life.  I will stay here with my kin.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30012
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "I am grateful for your help, friend.  Farewell to you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30014
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "No... not again...  Why can I not find rest...  Be gone!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30016
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 5,
+      "TriggerIndex": 2,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Thank you again for helping me; your kindness will not be forgotten.  Now, if you'll excuse me, there are things I must attend to.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36735
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 11
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29994
+      },
+      "JournalIndex": 39735,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What are you going on about?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29995
+      },
+      "JournalIndex": 39735,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Roga Thulc has sent me to speak with you, Vylu.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29996
+      },
+      "JournalIndex": 39735,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 3,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Vylu, I have brought you something that will halt the voices.  You must drink it.  Do you understand?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29997
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 4,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I think I had best leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29998
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What are you going on about?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29995
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 2,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I think I had best leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29998
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Roga Thulc has sent me to speak with you, Vylu.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29996
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 3,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Vylu, I have brought you something that will halt the voices.  You must drink it.  Do you understand?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29997
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 4,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I can stop the voices.  Prepare to die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30001
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I think I had best leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29998
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Vylu?  Do you understand me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30003
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 1,
+      "Index": 11,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Yes.  Drink this, Vylu.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30005
+      },
+      "JournalIndex": 29991,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 5,
+      "Index": 12,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "You have been... ill, Vylu.  Do you not remember?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30007
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 6,
+      "Index": 13,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Would you mind telling me why you did that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30009
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 7,
+      "Index": 14,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I see.  So what do you intend to do now?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30011
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 8,
+      "Index": 15,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Very well, I will leave you now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30013
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 9,
+      "Index": 16,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Vylu.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30015
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 17,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29994
+      },
+      "JournalIndex": 39735,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 1,
+      "Index": 18,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What are you going on about?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29995
+      },
+      "JournalIndex": 39735,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 2,
+      "Index": 19,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Roga Thulc has sent me to speak with you, Vylu.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29996
+      },
+      "JournalIndex": 29990,
+      "TriggerIndex": 5,
+      "ActionIndex": 4,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 3,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Vylu, I have brought you something that will halt the voices.  You must drink it.  Do you understand?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29997
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Vylu",
+      "NextPhraseIndex": 4,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I think I had best leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 29998
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Vylu.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36736
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 23,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "GlobalGT(\"SH_Help_Vylu\",\"GLOBAL\",3)",
+    "NumTimesTalkedTo(0)",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [
+    "Global(\"SH_Help_Vylu\",\"GLOBAL\",3)\r\nGlobal(\"SH_Vylu_Potion\",\"GLOBAL\",0)",
+    "PartyHasItem(\"63GenMC\")",
+    "Global(\"SH_Help_Vylu\",\"GLOBAL\",3)\r\nGlobal(\"SH_Vylu_Potion\",\"GLOBAL\",0)",
+    "PartyHasItem(\"63GenMC\")",
+    "!ClassEx(Protagonist, Paladin)",
+    "Global(\"SH_Help_Vylu\",\"GLOBAL\",3)\r\nGlobal(\"SH_Vylu_Potion\",\"GLOBAL\",0)",
+    "PartyHasItem(\"63GenMC\")"
+  ],
+  "Actions": [
+    "SetGlobal(\"SH_Vylu_Potion\",\"GLOBAL\",1)",
+    "SetGlobal(\"SH_Vylu_Potion\",\"GLOBAL\",1)",
+    "Enemy()",
+    "AddXpVar(\"Level_14_Average\",29992)\nTakePartyItem(\"63GenMC\")\nDestroyItem(\"63GenMC\")\nSetGlobal(\"SH_Help_Vylu\",\"GLOBAL\",4)",
+    "SetGlobal(\"SH_Vylu_Potion\",\"GLOBAL\",1)"
+  ],
+  "Checksum": null,
+  "Filename": "63VYLU.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 29993
+}

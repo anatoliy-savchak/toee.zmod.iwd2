@@ -1,0 +1,185 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "What you want?  Sprawg teach scrubs, now!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27552
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 4,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Sprawg teach basic battle tactics.  Sprawg would demonstrate on you, but you diplomat, you safe for now.  You must leave, though.  This no place for diplomats.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27557
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "RRAARRGH!  I no have time for this!  Class, attack foolish intruders and show Sprawg what you learned!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27560
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 2
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Teaching?  What are you teaching?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27553
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66OroC",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Teaching?  What are you teaching",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27554
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66OroC",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "So sorry, carry on.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27555
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You?  What are you teaching them, how to die effectively?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27556
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I see.  I will trouble you no longer.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27558
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I do not take orders from the likes of you!  I am a diplomat and demand respect!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27559
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66OroC",
+      "NextPhraseIndex": 2,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)  \n",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [
+    "PartyHasItem(\"63GenDP\")",
+    "!PartyHasItem(\"63GenDP\")",
+    "PartyHasItem(\"63GenDP\")"
+  ],
+  "Actions": [
+    "Enemy()",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "66OROC.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 27552
+}

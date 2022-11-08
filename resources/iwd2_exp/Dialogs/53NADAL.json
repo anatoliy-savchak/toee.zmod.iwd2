@@ -1,0 +1,204 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Hsssss!  Cliccccck!  Cliccck!  Hssss!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32748
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Hsss!  Ttthhh!  Two legs!  Only... two!  Hssssss!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32753
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Clicccck!  Hsss!  Mal-a-vonnnnn!  Hsss!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32754
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Hsssss!  Destroy... all humans!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32755
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "No!  Hsssss!  Legion survives!  We... hssss!  We survive!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32756
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "No farewell... hssss!  I hunger!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32757
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Sorn",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Sorn",
+      "NextPhraseIndex": 17,
+      "Index": 2,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Sorn",
+      "NextPhraseIndex": 15,
+      "Index": 3,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Sorn",
+      "NextPhraseIndex": 12,
+      "Index": 4,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Sorn",
+      "NextPhraseIndex": 23,
+      "Index": 5,
+      "Flags": "None"
+    }
+  ],
+  "TriggersPhrase": [
+    "True()"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "EndCutsceneMode()"
+  ],
+  "Checksum": null,
+  "Filename": "53NADAL.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 32748
+}

@@ -1,0 +1,143 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Greetings, sir.  Sergeant Dammel will answer any questions you may have.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32542
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Greetings, ma'am.  Sergeant Dammel will answer any questions you may have.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33535
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": 3,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "You're safe now, sir.  Have a nice day.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33536
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "You're safe now, ma'am.  Have a nice day.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33537
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 3
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Gender(Protagonist,MALE)\nGlobal(\"41Rahm\", \"GLOBAL\", 1)",
+    "!Gender(Protagonist,MALE)\nGlobal(\"41Rahm\", \"GLOBAL\", 1)",
+    "Gender(Protagonist,MALE)",
+    "True()"
+  ],
+  "TriggersResponse": [],
+  "Actions": [],
+  "Checksum": null,
+  "Filename": "41LUSOLD.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 32542
+}

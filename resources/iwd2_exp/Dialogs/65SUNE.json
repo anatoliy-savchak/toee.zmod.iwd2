@@ -1,0 +1,79 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "You look upon the horrific visage of Sune's statue turned away in terror from the statue of Iyachtu Xvim.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28529
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Sune now stands proudly before you.  ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28531
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 1
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "GlobalGT(\"SH_Perform_Illmater_Ritual\",\"GLOBAL\",3)",
+    "!Global(\"SH_Perform_Illmater_Ritual\",\"GLOBAL\",4)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [],
+  "Checksum": null,
+  "Filename": "65SUNE.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 28529
+}

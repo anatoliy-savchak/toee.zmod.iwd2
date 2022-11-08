@@ -1,0 +1,141 @@
+{10}{Look who stands before me, brethren!  It is the mighty adventurer of the logging village.  So, tell me.  Why are you here?}{Look who stands before me, brethren!  It is the mighty adventurer of the logging village.  So, tell me.  Why are you here?}{}{}{}{} # phrase: 21GAERNT 0
+{11}{Who are you?}{}{1}{}{20}{} # resp: 21GAERNT 0
+{12}{To remove you from the pass.}{}{1}{}{40}{} # resp: 21GAERNT 1
+{13}{I have no time for this.  Farewell.}{}{1}{}{50}{} # resp: 21GAERNT 2
+
+{20}{I am Gaernat Sharptooth.  I rule this pass, and all within it.  Bow to me, adventurer.}{I am Gaernat Sharptooth.  I rule this pass, and all within it.  Bow to me, adventurer.}{}{}{}{} # phrase: 21GAERNT 1
+{21}{You do not rule me, Gaernat.  I will not bow to you.}{}{1}{}{30}{} # resp: 21GAERNT 3
+{22}{I have come to remove you from the pass.  Not to bow to you.}{}{1}{}{40}{} # resp: 21GAERNT 4
+
+{30}{No?  Then perhaps I should cut your legs from beneath you and lay you at my feet.  Yes... a worthy alternative to bowing.  Do you not agree?}{No?  Then perhaps I should cut your legs from beneath you and lay you at my feet.  Yes... a worthy alternative to bowing.  Do you not agree?}{}{}{}{} # phrase: 21GAERNT 2
+{31}{If it is a battle you want, then you shall have it.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 21GAERNT 5
+
+{40}{Brazen fool, no one speaks to me thus.  You shall die by my hands!  To arms, brethren!}{Brazen fool, no one speaks to me thus.  You shall die by my hands!  To arms, brethren!}{}{}{}{} # phrase: 21GAERNT 3
+{41}{If it is a battle you want, then you shall have it.}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 21GAERNT 6
+
+{50}{You err, adventurer.  You have all the time in the world.  You may not leave here until you speak your purpose in coming.}{You err, adventurer.  You have all the time in the world.  You may not leave here until you speak your purpose in coming.}{}{}{}{} # phrase: 21GAERNT 4
+{51}{Who are you?}{}{1}{}{20}{} # resp: 21GAERNT 7
+{52}{To remove you from the pass.}{}{1}{}{40}{} # resp: 21GAERNT 8
+
+{60}{Well met, adventurer.  I am Emma Moonblade, priestess of Selune.  It seems I chose an interesting moment to arrive.}{Well met, adventurer.  I am Emma Moonblade, priestess of Selune.  It seems I chose an interesting moment to arrive.}{}{}{}{} # phrase: 20NEWEMM 0
+{61}{Indeed you did, priestess.}{}{1}{}{70}{} # resp: 20NEWEMM 0
+{62}{Do you always just appear out of nowhere like that?}{}{1}{}{280}{} # resp: 20NEWEMM 1
+
+{70}{Hmm.  There was a troll here, but I do not see its corpse among the dead.  Did you see it flee?}{Hmm.  There was a troll here, but I do not see its corpse among the dead.  Did you see it flee?}{}{}{}{} # phrase: 20NEWEMM 1
+{71}{No, but it had to flee east, priestess.  It did not pass by us and travel is blocked any other way.}{}{1}{}{80}{} # resp: 20NEWEMM 2
+{72}{I may have seen something.  What is it worth to you?}{}{1}{ctrl(npc).dialog_test(npc, pc, 0)}{270}{} # resp: 20NEWEMM 3
+
+{80}{Yes, you are correct.  Well, the beast has stolen my blade.  I must have it back.  I would ask that you recover it for me.}{Yes, you are correct.  Well, the beast has stolen my blade.  I must have it back.  I would ask that you recover it for me.}{}{}{}{} # phrase: 20NEWEMM 4
+{81}{It is only a sword, priestess.}{}{1}{ctrl(npc).dialog_test(npc, pc, 2)}{90}{} # resp: 20NEWEMM 7
+{82}{Why not recover the blade yourself?}{}{1}{ctrl(npc).dialog_test(npc, pc, 3)}{100}{} # resp: 20NEWEMM 8
+{83}{I could be convinced to recover it for you... for a price.}{}{1}{ctrl(npc).dialog_test(npc, pc, 4)}{140}{ctrl(npc).dialog_action(npc, pc, 1)} # resp: 20NEWEMM 9
+{84}{I could be convinced to recover if for you... if you were to continue healing me for but a gold.}{}{1}{ctrl(npc).dialog_test(npc, pc, 5)}{150}{ctrl(npc).dialog_action(npc, pc, 2)} # resp: 20NEWEMM 10
+{85}{You have my word, priestess.  I shall recover your blade from the creature!}{}{1}{ctrl(npc).dialog_test(npc, pc, 6)}{160}{ctrl(npc).dialog_action(npc, pc, 3)} # resp: 20NEWEMM 11
+{86}{I have already recovered your blade, priestess.}{}{1}{ctrl(npc).dialog_test(npc, pc, 7)}{180}{ctrl(npc).dialog_action(npc, pc, 4)} # resp: 20NEWEMM 12
+{87}{I have already recovered your blade, priestess.}{}{1}{ctrl(npc).dialog_test(npc, pc, 8)}{230}{ctrl(npc).dialog_action(npc, pc, 5)} # resp: 20NEWEMM 13
+{88}{I have already recovered your blade, priestess.}{}{1}{ctrl(npc).dialog_test(npc, pc, 9)}{250}{ctrl(npc).dialog_action(npc, pc, 6)} # resp: 20NEWEMM 14
+
+{90}{No, it is a Moonblade of Selune.  A precious gift given to me by the church.  I must have it back!}{No, it is a Moonblade of Selune.  A precious gift given to me by the church.  I must have it back!}{}{}{}{} # phrase: 20NEWEMM 5
+{91}{Why not recover the blade yourself?}{}{1}{}{100}{} # resp: 20NEWEMM 15
+
+{100}{I have used most of my power journeying here and fighting these orcs.  It could take days for me to recover.  I cannot do this on my own.  I need your aid in this matter.}{I have used most of my power journeying here and fighting these orcs.  It could take days for me to recover.  I cannot do this on my own.  I need your aid in this matter.}{}{}{}{} # phrase: 20NEWEMM 6
+{101}{Very well, I shall recover the blade.}{}{1}{}{110}{ctrl(npc).dialog_action(npc, pc, 7)} # resp: 20NEWEMM 16
+{102}{I could be convinced to recover it for you... for a price.}{}{1}{ctrl(npc).dialog_test(npc, pc, 10)}{140}{ctrl(npc).dialog_action(npc, pc, 8)} # resp: 20NEWEMM 17
+{103}{I could be convinced to recover if for you... if you were to continue healing me for but a gold.}{}{1}{ctrl(npc).dialog_test(npc, pc, 11)}{150}{ctrl(npc).dialog_action(npc, pc, 9)} # resp: 20NEWEMM 18
+{104}{You have my word, priestess.  I shall recover your blade from the creature!}{}{1}{ctrl(npc).dialog_test(npc, pc, 12)}{160}{ctrl(npc).dialog_action(npc, pc, 10)} # resp: 20NEWEMM 19
+{105}{Feeling a bit weak are we?  Seems to me I could slay you now, recover your blade at my leisure, and keep it for myself.}{}{1}{ctrl(npc).dialog_test(npc, pc, 13)}{170}{ctrl(npc).dialog_action(npc, pc, 11)} # resp: 20NEWEMM 20
+
+{110}{Hmm.  You look ill-equipped to fight a troll.  Here, take these flasks of oil.  They will douse the creature in flame and prevent it from regenerating.  Oh, and take heed that you are not caught in the blast as well.}{Hmm.  You look ill-equipped to fight a troll.  Here, take these flasks of oil.  They will douse the creature in flame and prevent it from regenerating.  Oh, and take heed that you are not caught in the blast as well.}{}{}{}{} # phrase: 20NEWEMM 11
+{111}{I shall do so.}{}{1}{}{120}{ctrl(npc).dialog_action(npc, pc, 14)} # resp: 20NEWEMM 25
+
+{120}{Now, would someone mind telling me what is going on here?}{Now, would someone mind telling me what is going on here?}{}{}{}{} # phrase: 20NEWEMM 12
+{121}{The river has been overrun by orcs, priestess.}{}{1}{}{130}{} # resp: 20NEWEMM 26
+
+{130}{So it seems...  Oh, my!  The village completely slipped my mind!  Shaengarne Woods lies east of here; they are most likely in need of aid!}{So it seems...  Oh, my!  The village completely slipped my mind!  Shaengarne Woods lies east of here; they are most likely in need of aid!}{}{}{}{} # phrase: 20NEWEMM 13
+{131}{I must take my leave of you.  Farewell.}{}{1}{}{0}{} # resp: 20NEWEMM 27
+
+{140}{I have little that I can give you, friend.  However, I can offer you healing for but a single gold...}{I have little that I can give you, friend.  However, I can offer you healing for but a single gold...}{}{}{}{} # phrase: 20NEWEMM 7
+{141}{Very well, I shall recover your blade for you.}{}{1}{}{110}{ctrl(npc).dialog_action(npc, pc, 12)} # resp: 20NEWEMM 21
+
+{150}{A reasonable request considering the risk involved.  Very well, I agree to your terms.}{A reasonable request considering the risk involved.  Very well, I agree to your terms.}{}{}{}{} # phrase: 20NEWEMM 8
+{151}{Then I shall recover your blade for you.}{}{1}{}{110}{} # resp: 20NEWEMM 22
+
+{160}{I am grateful, noble paladin.  My mind is already at ease, for now I know that my blade shall be returned.}{I am grateful, noble paladin.  My mind is already at ease, for now I know that my blade shall be returned.}{}{}{}{} # phrase: 20NEWEMM 9
+{161}{You are most kind, Priestess.}{}{1}{}{110}{} # resp: 20NEWEMM 23
+
+{170}{You filthy pig!  I curse you and the spawn of the abyss that pushed you from its womb!  We shall meet again dog, and settle the score between us then!}{You filthy pig!  I curse you and the spawn of the abyss that pushed you from its womb!  We shall meet again dog, and settle the score between us then!}{}{}{}{} # phrase: 20NEWEMM 10
+{171}{You will not escape me, priestess!}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 13)} # resp: 20NEWEMM 24
+
+{180}{Ah!  I am in your debt.  I must reward you for your efforts.}{Ah!  I am in your debt.  I must reward you for your efforts.}{}{}{}{} # phrase: 20NEWEMM 17
+{181}{I am grateful, priestess.}{}{1}{ctrl(npc).dialog_test(npc, pc, 21)}{190}{ctrl(npc).dialog_action(npc, pc, 25)} # resp: 20NEWEMM 39
+{182}{I am grateful, priestess, but I cannot accept a reward.  The tenets of my faith do not allow it.}{}{1}{ctrl(npc).dialog_test(npc, pc, 22)}{200}{ctrl(npc).dialog_action(npc, pc, 26)} # resp: 20NEWEMM 40
+{183}{I am grateful, priestess, but I cannot accept a reward.  The tenets of my faith do not allow it.}{}{1}{ctrl(npc).dialog_test(npc, pc, 23)}{200}{ctrl(npc).dialog_action(npc, pc, 27)} # resp: 20NEWEMM 41
+{184}{No reward is necessary, Priestess.  I am glad to have been of aid to those in need.}{}{1}{ctrl(npc).dialog_test(npc, pc, 24)}{210}{ctrl(npc).dialog_action(npc, pc, 28)} # resp: 20NEWEMM 42
+
+{190}{If I can be of aid to you, you need only ask.}{If I can be of aid to you, you need only ask.}{}{}{}{} # phrase: 20NEWEMM 18
+{191}{I am in need of healing.}{}{1}{ctrl(npc).dialog_test(npc, pc, 25)}{0}{ctrl(npc).dialog_action(npc, pc, 29)} # resp: 20NEWEMM 43
+{192}{I am in need of healing.}{}{1}{ctrl(npc).dialog_test(npc, pc, 26)}{0}{ctrl(npc).dialog_action(npc, pc, 30)} # resp: 20NEWEMM 44
+{193}{Would you mind if I rested here?}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 31)} # resp: 20NEWEMM 45
+{194}{I will take my leave of you now.  Farewell.}{}{1}{}{0}{} # resp: 20NEWEMM 46
+
+{200}{Well, you will at least leave here with my blessing.  I will also offer you healing for but a single gold.  If I can be of any other aid to you, you need only ask.}{Well, you will at least leave here with my blessing.  I will also offer you healing for but a single gold.  If I can be of any other aid to you, you need only ask.}{}{}{}{} # phrase: 20NEWEMM 19
+{201}{I am in need of healing.}{}{1}{ctrl(npc).dialog_test(npc, pc, 27)}{0}{ctrl(npc).dialog_action(npc, pc, 32)} # resp: 20NEWEMM 47
+{202}{Would you mind if I rested here?}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 33)} # resp: 20NEWEMM 48
+{203}{I will take my leave of you now.  Farewell}{}{1}{}{0}{} # resp: 20NEWEMM 49
+
+{210}{I have heard of your deeds while you were away.  You have shown unswerving dedication to the fight against evil.  My blade was intended for just such a cause.  I am grateful to you for returning it, but now it is my honor to give it to you to keep.  Use it well in your future battles.}{I have heard of your deeds while you were away.  You have shown unswerving dedication to the fight against evil.  My blade was intended for just such a cause.  I am grateful to you for returning it, but now it is my honor to give it to you to keep.  Use it well in your future battles.}{}{}{}{} # phrase: 20NEWEMM 20
+{211}{This is a precious gift, priestess.  I am most grateful.}{}{1}{}{220}{} # resp: 20NEWEMM 50
+
+{220}{It is a gift you have earned.  Go now with my blessing, friend.}{It is a gift you have earned.  Go now with my blessing, friend.}{}{}{}{} # phrase: 20NEWEMM 21
+{221}{Farewell.}{}{1}{}{0}{} # resp: 20NEWEMM 51
+
+{230}{So I see.  I will take the blade, if you please.}{So I see.  I will take the blade, if you please.}{}{}{}{} # phrase: 20NEWEMM 27
+{231}{Here it is.}{}{1}{}{240}{ctrl(npc).dialog_action(npc, pc, 39)} # resp: 20NEWEMM 57
+
+{240}{Now that I have the blade, I will say farewell to you, pig.  I saw you chase Kaitlin away.  I curse you and the spawn of the abyss that pushed you from its womb!  We shall meet again dog, and settle the score between us then!}{Now that I have the blade, I will say farewell to you, pig.  I saw you chase Kaitlin away.  I curse you and the spawn of the abyss that pushed you from its womb!  We shall meet again dog, and settle the score between us then!}{}{}{}{} # phrase: 20NEWEMM 28
+{241}{You will not escape me, priestess!}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 40)} # resp: 20NEWEMM 58
+
+{250}{So I see.  I will take the blade, if you please.}{So I see.  I will take the blade, if you please.}{}{}{}{} # phrase: 20NEWEMM 29
+{251}{Here it is.}{}{1}{}{260}{ctrl(npc).dialog_action(npc, pc, 41)} # resp: 20NEWEMM 59
+
+{260}{Now that I have the blade, I will say farewell to you, pig.  I saw you slay Kaitlin.  I curse you and the spawn of the abyss that pushed you from its womb!  We shall meet again dog, and settle the score between us then!}{Now that I have the blade, I will say farewell to you, pig.  I saw you slay Kaitlin.  I curse you and the spawn of the abyss that pushed you from its womb!  We shall meet again dog, and settle the score between us then!}{}{}{}{} # phrase: 20NEWEMM 30
+{261}{You will not escape me, priestess!}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 42)} # resp: 20NEWEMM 60
+
+{270}{I have little that I can give you, friend.  However, I can offer you healing for but a single gold...}{I have little that I can give you, friend.  However, I can offer you healing for but a single gold...}{}{}{}{} # phrase: 20NEWEMM 3
+{271}{Very well.  The troll had to flee east, priestess.  It did not pass by us and travel is blocked any other way.}{}{1}{}{80}{ctrl(npc).dialog_action(npc, pc, 0)} # resp: 20NEWEMM 6
+
+{280}{Yes, it is a convenient method of travel...  Forgive me for changing the subject.  There was a troll here, but I do not see its corpse among the dead.  Did you see it flee?}{Yes, it is a convenient method of travel...  Forgive me for changing the subject.  There was a troll here, but I do not see its corpse among the dead.  Did you see it flee?}{}{}{}{} # phrase: 20NEWEMM 2
+{281}{No, but it had to flee east, priestess.  It did not pass by us and travel is blocked any other way.}{}{1}{}{80}{} # resp: 20NEWEMM 4
+{282}{I may have seen something.  What is it worth to you?}{}{1}{ctrl(npc).dialog_test(npc, pc, 1)}{270}{} # resp: 20NEWEMM 5
+
+{290}{You have returned.  How may I aid you?}{You have returned.  How may I aid you?}{}{}{}{} # phrase: 20NEWEMM 14
+{291}{I have been to the village, priestess.}{}{1}{ctrl(npc).dialog_test(npc, pc, 14)}{300}{ctrl(npc).dialog_action(npc, pc, 15)} # resp: 20NEWEMM 28
+{292}{I have been to the village, priestess.}{}{1}{ctrl(npc).dialog_test(npc, pc, 15)}{310}{ctrl(npc).dialog_action(npc, pc, 16)} # resp: 20NEWEMM 29
+{293}{I have recovered your blade, priestess.}{}{1}{ctrl(npc).dialog_test(npc, pc, 16)}{180}{ctrl(npc).dialog_action(npc, pc, 17)} # resp: 20NEWEMM 30
+{294}{I have recovered your blade, priestess.}{}{1}{ctrl(npc).dialog_test(npc, pc, 17)}{230}{ctrl(npc).dialog_action(npc, pc, 18)} # resp: 20NEWEMM 31
+{295}{I have recovered your blade, priestess.}{}{1}{ctrl(npc).dialog_test(npc, pc, 18)}{250}{ctrl(npc).dialog_action(npc, pc, 19)} # resp: 20NEWEMM 32
+{296}{I am in need of healing.}{}{1}{ctrl(npc).dialog_test(npc, pc, 19)}{0}{ctrl(npc).dialog_action(npc, pc, 20)} # resp: 20NEWEMM 33
+{297}{I am in need of healing.}{}{1}{ctrl(npc).dialog_test(npc, pc, 20)}{0}{ctrl(npc).dialog_action(npc, pc, 21)} # resp: 20NEWEMM 34
+{298}{Would you mind if I rested here?}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 22)} # resp: 20NEWEMM 35
+{299}{You cannot, I will take my leave of you now.}{}{1}{}{0}{} # resp: 20NEWEMM 36
+
+{300}{Yes, you filthy pig.  I saw you chase Kaitlin away.  I curse you and the spawn of the abyss that pushed you from its womb!  We shall meet again dog, and settle the score between us then!}{Yes, you filthy pig.  I saw you chase Kaitlin away.  I curse you and the spawn of the abyss that pushed you from its womb!  We shall meet again dog, and settle the score between us then!}{}{}{}{} # phrase: 20NEWEMM 15
+{301}{You will not escape me, priestess!}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 23)} # resp: 20NEWEMM 37
+
+{310}{Yes, you filthy pig.  I saw you slay Kaitlin.  I curse you and the spawn of the abyss that pushed you from its womb!  We shall meet again dog, and settle the score between us then!}{Yes, you filthy pig.  I saw you slay Kaitlin.  I curse you and the spawn of the abyss that pushed you from its womb!  We shall meet again dog, and settle the score between us then!}{}{}{}{} # phrase: 20NEWEMM 16
+{311}{You will not escape me, priestess!}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 24)} # resp: 20NEWEMM 38
+
+{320}{Continue the battle!  Do not let them get the upper hand!}{Continue the battle!  Do not let them get the upper hand!}{}{}{}{} # phrase: 20NEWEMM 22
+{321}{Continue}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 34)} # resp: 20NEWEMM 52
+
+{330}{I warned you that we would meet again, pig.  Now you shall pay for your threats!}{I warned you that we would meet again, pig.  Now you shall pay for your threats!}{}{}{}{} # phrase: 20NEWEMM 23
+{331}{We shall see who pays, Emma!}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 35)} # resp: 20NEWEMM 53
+
+{340}{I warned you that we would meet again, pig.  Now you shall pay for what you did to Kaitlin!}{I warned you that we would meet again, pig.  Now you shall pay for what you did to Kaitlin!}{}{}{}{} # phrase: 20NEWEMM 24
+{341}{We shall see who pays, Emma!}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 36)} # resp: 20NEWEMM 54
+
+{350}{I warned you that we would meet again, pig.  Now you shall pay for slaying Kaitlin!}{I warned you that we would meet again, pig.  Now you shall pay for slaying Kaitlin!}{}{}{}{} # phrase: 20NEWEMM 25
+{351}{We shall see who pays, Emma!}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 37)} # resp: 20NEWEMM 55
+
+{360}{I warned you that we would meet again, pig.  Now you shall pay for attacking me!}{I warned you that we would meet again, pig.  Now you shall pay for attacking me!}{}{}{}{} # phrase: 20NEWEMM 26
+{361}{We shall see who pays, Emma!}{}{1}{}{0}{ctrl(npc).dialog_action(npc, pc, 38)} # resp: 20NEWEMM 56

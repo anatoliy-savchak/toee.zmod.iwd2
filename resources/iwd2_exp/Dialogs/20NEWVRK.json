@@ -1,0 +1,604 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Ah.  We meet.  I Vrek Vileclaw.  Vrek rule here.  You fear.  You bow to Vrek.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36265
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 8,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Then you fool!  You weapon no hurt troll.  I claw flesh and flesh grows back.  See?  Only one weapon hurt Vrek and Vrek take!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36274
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Vrek not fear you.  You weapon no hurt troll.  I claw flesh and flesh grows back.  See?  Only one weapon Vrek fear, and Vrek take!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36277
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Yes.  Moon healer sword.  Vrek take sword.  Now Vrek safe.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36278
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Ah...  Vrek have plan.  No one can hurt Vrek now.  Vrek rule here.  Have orc guard human.  Have human make more human.  Never ever need hunt for food again!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36280
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Vrek rule here!  Control orc, slime, zombie.  Control all.  No one stop Vrek...  You not make trouble.  Vrek have plenty males in herd.  Slay you if you make trouble!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36282
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Vrek rule here!  Control orc, slime, zombie.  Control all.  No one stop Vrek...  You not make trouble.  Slay you if you make trouble!  You go back to herd.  You breed.  You live!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36284
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Vrek tire of you and threats.  You die now!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36285
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "No.  You not leave.  You leave if Vrek let you leave.  Vrek rule here.  You fear.  You bow to Vrek!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36287
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 7,
+      "TriggerIndex": -1,
+      "Index": 8
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Fear you?  Bow to you?  I think not.  I'll slay you instead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36267
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 2,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Fear the shadows, troll.  For it is from there that I will strike you down.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36269
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You are one deluded troll.  I will be sure to say a prayer over your grave.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36270
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You are an abomination to nature, troll.  You would do well to fear a druid's wrath.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36271
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "There is no room for fear in a paladin's heart, troll.  Only the courage to rid the land of beasts such as you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36272
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 2,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You have an attitude problem.  I think a little wizardly fire will fix that.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36268
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 2,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I do not fear you, troll.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36266
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 1,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36273
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 8,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Ah, you must mean Emma Moonblade's sword.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 3,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I have weapons aplenty, troll.  I can and will hurt you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36276
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 7,
+      "Index": 9,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Ah, you must mean Emma Moonblade's sword.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 3,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I have weapons aplenty, troll.  I can and will hurt you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36276
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 7,
+      "Index": 11,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Tell me, Vrek.  Why are you doing this?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36279
+      },
+      "JournalIndex": 36263,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 4,
+      "Index": 12,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I have weapons aplenty, troll.  I can and will hurt you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36276
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 7,
+      "Index": 13,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Your plan stops here, Vrek.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36281
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 5,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Your plan stops here, Vrek.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36281
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 6,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You shall rule nothing, Vrek.  I will slay you and all who serve you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36283
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 7,
+      "Index": 16,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You shall rule nothing, Vrek.  I will slay you and all who serve you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36283
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 7,
+      "Index": 17,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We shall see about that!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36286
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Fear you?  Bow to you?  I think not.  I'll slay you instead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36267
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 2,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You have an attitude problem.  I think a little wizardly fire will fix that.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36268
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 2,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Fear the shadows, troll.  For it is from there that I will strike you down.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36269
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 2,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You are one deluded troll.  I will be sure to say a prayer over your grave.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36270
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 2,
+      "Index": 22,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You are an abomination to nature, troll.  You would do well to fear a druid's wrath.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36271
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 2,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "There is no room for fear in a paladin's heart, troll.  Only the courage to rid the land of beasts such as you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36272
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 2,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I do not fear you, troll.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36266
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "20NewVrk",
+      "NextPhraseIndex": 1,
+      "Index": 25,
+      "Flags": "HasText"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)"
+  ],
+  "TriggersResponse": [
+    "ClassEx(Protagonist, Fighter)",
+    "ClassEx(Protagonist, Rogue)",
+    "ClassEx(Protagonist, Cleric)",
+    "ClassEx(Protagonist, Druid)",
+    "ClassEx(Protagonist, Paladin)",
+    "ClassEx(Protagonist, Mage_All)",
+    "Global(\"SR_Recover_Blade\",\"GLOBAL\", 3)",
+    "Global(\"SR_Recover_Blade\",\"GLOBAL\", 3)",
+    "Gender(Protagonist,1)",
+    "Gender(Protagonist,2)",
+    "ClassEx(Protagonist, Fighter)",
+    "ClassEx(Protagonist, Mage_All)",
+    "ClassEx(Protagonist, Rogue)",
+    "ClassEx(Protagonist, Cleric)",
+    "ClassEx(Protagonist, Druid)",
+    "ClassEx(Protagonist, Paladin)"
+  ],
+  "Actions": [
+    "AddXpVar(\"Level_3_Easy\",36264)",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "20NEWVRK.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 36265
+}

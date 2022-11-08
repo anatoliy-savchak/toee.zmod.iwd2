@@ -1,5 +1,5 @@
 import toee, debug
-import ctrl_behaviour, inf_scripting, ctrl_daemon, utils_storage
+import ctrl_behaviour, inf_scripting, ctrl_daemon, utils_storage, utils_npc
 
 __metaclass__ = type
 
@@ -93,8 +93,8 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		return result
 
 	@inf_scripting.dump_args
-	def Enemy(self):
-		self.set_allegiance(255)
+	def iEnemy(self):
+		self.set_allegiance(self.npc_get(), 255)
 		return
 
 	def dialog_action(self, npc, pc, index):
@@ -207,8 +207,13 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 	def get_allegiance(self): 
 		return self.vars.get('allegiance', self.get_allegiance_default())
 
-	def set_allegiance(self, allegiance): 
+	def set_allegiance(self, npc, allegiance): 
 		self.vars['allegiance'] = allegiance
+		kos = allegiance == 255
+		if kos:
+			npc.npc_flag_set(toee.ONF_KOS)
+		else:
+			npc.npc_flag_unset(toee.ONF_KOS)
 		return
 
 	def allegiance_update(self, npc):
@@ -219,11 +224,18 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 			if lead_ctrl:
 				lead_allegiance = lead_ctrl.get_allegiance()
 				allegiance = lead_allegiance
-				self.set_allegiance(lead_allegiance)
-		
-		kos = allegiance == 255
-		if kos:
-			npc.npc_flag_set(toee.ONF_KOS)
-		else:
-			npc.npc_flag_unset(toee.ONF_KOS)
+		self.set_allegiance(npc, allegiance)
+		return
+
+	def enable_dialog(self, npc):
+		assert isinstance(npc, toee.PyObjHandle)
+		npc.critter_flag_unset(toee.OCF_MUTE)
+		return
+
+	def generic_heartbeat_dialog_start_when_in_range(self, npc, range):
+		pc = utils_npc.npc_find_nearest_pc_prefer_leader(npc, range, should_see = True)
+		if pc:
+			#pc.begin_dialog(npc)
+			self.script_dialog(npc, pc)
+			return True
 		return

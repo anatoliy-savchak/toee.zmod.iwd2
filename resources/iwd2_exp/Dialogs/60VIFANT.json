@@ -1,0 +1,281 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "I've only time for the words of Mistress Ashra - leave me be.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31336
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "I won't speak with you now.  Go, before Ashra notices your distracting me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31340
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 2,
+      "TriggerIndex": 2,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Silence!  Do not interrupt Mistress Ashra's lesson.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31341
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 2,
+      "TriggerIndex": 3,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "You must speak to Mistress Ashra of such things.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31344
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Then find another to give you answers.  Seek one of the Viper's Fangs in the chamber to the west of this room - they will have time for your questions. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31346
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Eh?  Intruders!  By Sseth's venom, you'll wish you'd never come here...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34335
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 5
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I had some questions...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31338
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "60ViFanT",
+      "NextPhraseIndex": 4,
+      "Index": 0,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31339
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I had some questions...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31338
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "60ViFanT",
+      "NextPhraseIndex": 4,
+      "Index": 2,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31339
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I had some questions...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31338
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "60ViFanT",
+      "NextPhraseIndex": 4,
+      "Index": 4,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31339
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I had some questions....",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31345
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60ViFanT",
+      "NextPhraseIndex": 4,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31339
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 31339
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "!Global(\"6051_Wearing_Robes\",\"GLOBAL\",6)",
+    "Global(\"60ViFanT\", \"GLOBAL\", 0)",
+    "Global(\"60ViFanT\", \"GLOBAL\", 1)",
+    "True()"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "SetGlobal(\"60ViFanT\", \"GLOBAL\", 1)",
+    "SetGlobal(\"60ViFanT\", \"GLOBAL\", 1)",
+    "SetGlobal(\"60ViFanT\", \"GLOBAL\", 2)",
+    "SetGlobal(\"60ViFanT\", \"GLOBAL\", 2)",
+    "SetGlobal(\"60ViFanT\", \"GLOBAL\", 0)",
+    "SetGlobal(\"60ViFanT\", \"GLOBAL\", 0)",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "60VIFANT.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 31336
+}

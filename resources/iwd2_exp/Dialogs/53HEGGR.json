@@ -1,0 +1,900 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Aye?  Do ye want to trade?  I have weapons.  That's what I deal in.  Some shields.  Other than that, not much.  If ye need anything else, talk to Myrvek or Wode.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22389
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 4,
+      "TriggerIndex": 2,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "I am Heggr Spli-- Heggr.  Just Heggr.  I'm a merchant and a priest of Abbathor.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22394
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "ABBATHOR DAMN YE, AND I HOPE CLANGEDDIN'S TWIN AXES CUT YER SOUL IN TWAIN!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22398
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Rrrg!  So, what do ye want, anyway?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22399
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "No!  No, ye have to understand... what I do, I do to protect my clan!  Trading with these dirty bastards is the only way we can keep ahead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22401
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "It gives my clan an edge in trading.  Simple business, that's all.  No reason to let ancient grudges stand in the way of good coin.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22405
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "I'll give ye a one coin off per ten cut off of my goods.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22407
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Hmm.  I think it's worth about two chops of my mace into ye fat head.  Come on, Myrvek!  This brat has to have some gold somewhere...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22411
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Hmm.  Well then, is there anything else I can do for ye?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22412
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "No.  Take it or leave it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22413
+      },
+      "ResponsesIndexFirst": 25,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "The only thing ye be leaving is a trail of guts to the canyon when we kick ye in it.  Come on, Myrvek!  This brat has to have some gold somewhere...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22416
+      },
+      "ResponsesIndexFirst": 27,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Back again.  What do ye want?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22417
+      },
+      "ResponsesIndexFirst": 28,
+      "ResponsesCount": 3,
+      "TriggerIndex": 1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "Seems like a reasonable plan to me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22418
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "Rrrr!  Fine.  Is there anything else I can do for ye?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30095
+      },
+      "ResponsesIndexFirst": 32,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "WHAT?!  But - Rrrrr... fine.  What else do ye want?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30096
+      },
+      "ResponsesIndexFirst": 34,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "What are these monsters doing here?  Get rid of them!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27284
+      },
+      "ResponsesIndexFirst": 36,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 15
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22390
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "You're a dwarf.  Why are you trading with drow and derro?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22391
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 5,
+      "Index": 1,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Let me see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22392
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22393
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Wode",
+      "NextPhraseIndex": 9,
+      "Index": 4,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Valas",
+      "NextPhraseIndex": 5,
+      "Index": 5,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Splitsteel?  I know dwarves from that clan.  I don't think they're fond of derro *or* drow...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22400
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 4,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You're a dwarf.  Why are you trading with drow and derro?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22391
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 5,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Let me see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22392
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22393
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'll let your clan head decide that if I ever see him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22402
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 6,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What is my silence worth to you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22403
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 5,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 7,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Don't fret, Heggr.  I don't care.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22404
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 8,
+      "Index": 12,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Let me see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22392
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22393
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I don't think the dwarves of your clan would appreciate your viewpoint.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22406
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 4,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Let me see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22392
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22393
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 17,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Ten percent?!  Try again, friend.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22408
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 9,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Ten percent off of your goods and a ten percent more on the goods you buy from me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22409
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": 8,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 13,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "You will give me *twenty* percent off of your goods.  Furthermore, you'll give me twenty percent *more* for the goods I sell you, or you'll regret it!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22410
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": 9,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 14,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Ten percent sounds fine to me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30094
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 8,
+      "Index": 21,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Let me see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22392
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 11,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 23,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22393
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "It sounds like fair enough deal, I suppose.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22414
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 12,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 8,
+      "Index": 25,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'll be \"leaving it\" all the way to your clan hall.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22415
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 13,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 10,
+      "Index": 26,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 27,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22390
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": 14,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 1,
+      "Index": 28,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Let me see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22392
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 15,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 29,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22393
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 30,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 11,
+      "Index": 31,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Let me see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22392
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 16,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 32,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 1487
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 33,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Let me see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30097
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 17,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 34,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28840
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 35,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 36,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "See([ENEMY], FALSE)",
+    "NumTimesTalkedToGT(0)",
+    "NumTimesTalkedTo(0)"
+  ],
+  "TriggersResponse": [
+    "Race(Protagonist,DWARF)",
+    "Global(\"Heggr_Trade\",\"GLOBAL\",0)",
+    "CheckStatGT(Protagonist, 12, CHR)",
+    "CheckStatLT(Protagonist, 13, CHR)",
+    "CheckStatGT(Protagonist, 12, INT)",
+    "CheckStatLT(Protagonist, 13, INT)",
+    "CheckStatGT(Protagonist, 12, INT)",
+    "CheckStatGT(Protagonist, 12, INT)\r\nCheckStatGT(Protagonist, 15, CHR)",
+    "!Global(\"Know_Heggr\",\"GLOBAL\",1)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Know_Heggr\",\"GLOBAL\",1)",
+    "SetGlobal(\"Heggr_Trade\",\"GLOBAL\",1)",
+    "StartStore(\"53Heggr\",Protagonist)",
+    "SetGlobal(\"Heggr_Trade\",\"GLOBAL\",1)",
+    "StartStore(\"53Heggr\",Protagonist)",
+    "Enemy()",
+    "StartStore(\"53Heggr\",Protagonist)",
+    "StartStore(\"53Heggr\",Protagonist)",
+    "ChangeStoreMarkup(\"53Heggr\",126,88,30)",
+    "ChangeStoreMarkup(\"53Heggr\",112,96,30)",
+    "ChangeStoreMarkup(\"53Heggr\",126,80,30)",
+    "StartStore(\"53Heggr\",Protagonist)",
+    "ChangeStoreMarkup(\"53Heggr\",126,80,30)",
+    "Enemy()",
+    "SetGlobal(\"Know_Heggr\",\"GLOBAL\",1)",
+    "StartStore(\"53Heggr\",Protagonist)",
+    "StartStore(\"53Heggr\",Protagonist)",
+    "StartStore(\"53Heggr\",Protagonist)"
+  ],
+  "Checksum": null,
+  "Filename": "53HEGGR.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 22389
+}

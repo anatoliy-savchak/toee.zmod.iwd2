@@ -72,6 +72,7 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.setup_char_cr()
         self.setup_char_saves()
         self.setup_gear()
+        self.setup_spells()
         self.produce_dialog()
         self.produce_imports()
         return
@@ -953,4 +954,33 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         super().save()
 
         self.dialog_file.save()
+        return
+
+    @staticmethod
+    def caster_class_to_class_toee(clas):
+        if clas == 'CLR': return 'toee.stat_level_cleric'
+        return
+
+    def setup_spells(self):
+        spell_root = self.cre["Spells"]
+        if not spell_root: return
+        assert isinstance(spell_root, dict)
+        self.writeline("def setup_spells(self, npc):")
+        self.indent()
+
+        for caster_clas, class_spells in spell_root.items():
+            caster_class = self.caster_class_to_class_toee(caster_clas)
+            if not caster_class: 
+                print(f'Spell Caster not supported!! {caster_clas}')
+                continue
+            self.writeline(f'stat_level = {caster_class} # {caster_clas}')
+            for spell_level, level_spells in class_spells.items():
+                self.writeline(f'#Level: {spell_level}')
+                for spell_rec in level_spells:
+                    self.writeline(f'utils_npc_spells_inf.ctrl_add_spell(self, "{spell_rec["SpellName"]}", {spell_rec["Memorized"]}, {spell_rec["Remaining"]}, stat_level)')
+                self.writeline()
+
+        self.writeline("return")
+        self.indent(False)
+        self.writeline()
         return

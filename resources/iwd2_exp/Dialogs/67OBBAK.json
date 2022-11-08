@@ -1,0 +1,264 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "WHAT?!  Oh, uh, Obbak sorry yell.  Guardin' towuh give Obbak duh creeps.  If'm yuz needs tuh knoh stuff, cuhm bak latuh an' talk ta Stubnok.  Him big boss guy, him knoh stuff.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32450
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 3,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "AAAHHHH!  Wut yuz tryin' ta do, gib Obbak a tikker attak?!  Stubnok no heer!  Cuhm bak latuh!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32453
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 3,
+      "TriggerIndex": 2,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "No!  I dun't knows wen Stubnok cuhm heer.  Obbak not Stubnok's keepuh!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32455
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "BAHHH!  Yuz?!  Looky, ovuh dere, da big guy...  Him Stubnok!  Yuz bothuh himz!  You want talk, yuz talk Stubnok!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32458
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "::Stares through you vacantly::",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35288
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 4
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Okay, we'll try to catch him later.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32451
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "By the gods, you scare easily.  Let's see if you die easily. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32452
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Okay, we'll try to catch him later.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32451
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Sorry, I thought he would be here by now.  Do you know when he'll get here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32454
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "67Obbak",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Not before I kill you first!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22283
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Fine, I'll try later.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32456
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "All right, I'll you kill, now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32457
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'll go talk to Stubnok.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32459
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "By the gods, you scare easily.  Let's see if you die easily. ",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32452
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"SH_Stub_Pissed\",\"Global\", 1)",
+    "Global(\"SH_Stop_Envoys\",\"GLOBAL\",1)",
+    "NumTimesTalkedToGT(0)",
+    "NumTimesTalkedTo(0)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "67OBBAK.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 32450
+}

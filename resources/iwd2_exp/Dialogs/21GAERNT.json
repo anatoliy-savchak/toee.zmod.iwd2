@@ -1,0 +1,242 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Look who stands before me, brethren!  It is the mighty adventurer of the logging village.  So, tell me.  Why are you here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2484
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 3,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "I am Gaernat Sharptooth.  I rule this pass, and all within it.  Bow to me, adventurer.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2488
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "No?  Then perhaps I should cut your legs from beneath you and lay you at my feet.  Yes... a worthy alternative to bowing.  Do you not agree?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2491
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Brazen fool, no one speaks to me thus.  You shall die by my hands!  To arms, brethren!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2493
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "You err, adventurer.  You have all the time in the world.  You may not leave here until you speak your purpose in coming.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2494
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 4
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2485
+      },
+      "JournalIndex": 2480,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "21Gaernt",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "To remove you from the pass.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2486
+      },
+      "JournalIndex": 2481,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "21Gaernt",
+      "NextPhraseIndex": 3,
+      "Index": 1,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I have no time for this.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2487
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "21Gaernt",
+      "NextPhraseIndex": 4,
+      "Index": 2,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You do not rule me, Gaernat.  I will not bow to you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2489
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "21Gaernt",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I have come to remove you from the pass.  Not to bow to you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2490
+      },
+      "JournalIndex": 2482,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "21Gaernt",
+      "NextPhraseIndex": 3,
+      "Index": 4,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "If it is a battle you want, then you shall have it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2492
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "If it is a battle you want, then you shall have it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2492
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2485
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "21Gaernt",
+      "NextPhraseIndex": 1,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "To remove you from the pass.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2486
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "21Gaernt",
+      "NextPhraseIndex": 3,
+      "Index": 8,
+      "Flags": "HasText"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "Enemy()",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "21GAERNT.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 2484
+}

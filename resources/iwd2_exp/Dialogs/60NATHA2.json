@@ -1,0 +1,3779 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "It seems my wishes for nature's guidance in your travels were answered.  I had hoped you would arrive in Kuldahar before me, but I suppose it wouldn't have made much difference.  Most of the villagers have been evacuated, thanks to Oswald.  Now we have other troubles, Black Bess' luck.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39080
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 12,
+      "TriggerIndex": 2,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Welcome back, <CHARNAME>.  I hope all is well with you.  What can I help you with?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39091
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 19,
+      "TriggerIndex": 3,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Of course.  What is it you wish to know?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39100
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 19,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "I feared that was the case.  Between the vassals of the Legion and the dozens of tombs, dungeons, and castles spread across the Spine of the World, it is a miracle that you made it at all!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39101
+      },
+      "ResponsesIndexFirst": 50,
+      "ResponsesCount": 19,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Dragon's Eye?  Why, no, I have never set foot in the place.  Whatever do you mean?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39102
+      },
+      "ResponsesIndexFirst": 69,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Jermsy's life has not been an easy one; his family was murdered by orcs invading the valley when he was young, and he was raised by members of your order.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39105
+      },
+      "ResponsesIndexFirst": 73,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Please do not take offense at this, but the Ilmater priests that raised Jermsy - suffice to say, their... devotion to suffering left little room for the love a child needs.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39107
+      },
+      "ResponsesIndexFirst": 75,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "I would ask you to be patient with him - he has a stubborn heart, but all hearts have the potential for change.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39108
+      },
+      "ResponsesIndexFirst": 76,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Jermsy's life has not been an easy one; his family was murdered by orcs invading the valley when he was young, and he was raised by the priests of Illmater.  Their... focus... on suffering sometimes leaves little room for the love a child needs.  I would ask you to be patient with him - he has a strong heart, and all hearts have the potential for change.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39111
+      },
+      "ResponsesIndexFirst": 80,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Of course, <CHARNAME>.  How long do you wish to rest for?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39112
+      },
+      "ResponsesIndexFirst": 84,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Aside from our problems in Kuldahar Pass, the yuan-ti and other vile abominations have been trying to lure Iselore away from the Heartstone Gem.  I fear he may need your help.  If you can reach him, you should be able to find him to the east beyond the Pass, beneath the great oak.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39117
+      },
+      "ResponsesIndexFirst": 89,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "There's not much to tell.  Those beasts have been infesting Dragon's Eye for hundreds of years.  Part man, part snake, they hate Kuldahar and everyone within it.  I suspect they've joined with the Legion of the Chimera against us.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39120
+      },
+      "ResponsesIndexFirst": 94,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "All of Kuldahar and its surroundings are kept warm by the great oak and the Heartstone Gem.  Aside from Kuldahar Pass, which comprises the western part of the valley, the main town lies in the eastern part of the valley, beneath the Great Oak.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39121
+      },
+      "ResponsesIndexFirst": 98,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "Iselore is my mentor and the archdruid of Kuldahar.  He came all the way from Highmoon to replace Arundel, the former druid of Kuldahar.  He knows much of nature and the Balance - but I fear even his powers cannot hold back the yuan-ti forever.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39122
+      },
+      "ResponsesIndexFirst": 102,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "That is good news indeed!  Tell Jermsy - I believe he should be equally grateful for your efforts on our behalf.  Perhaps it would cause him to have a change of heart toward you as well - my tales of your struggles in the Western Pass do not seem to have taken root with him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39123
+      },
+      "ResponsesIndexFirst": 107,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "Ah, Isair and Madae... that is a long story, my friend.  I know only the surface of it, Iselore knows its depths - if you wish to hear it, seek him in Kuldahar.  I *do* know the twins once lived in the Pass, in a small house to the west of the watchtower, before they were driven out.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39124
+      },
+      "ResponsesIndexFirst": 111,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "The house is a haunted place - I fear that the recent necromancy in the Pass has stirred up things best left undisturbed.  The spirit of Mother Egenia does not rest easily in that place, of that I am sure.  I have heard her calling for the twins at night, and her cries... pain me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39125
+      },
+      "ResponsesIndexFirst": 112,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "Mother Egenia was a priestess of Ilmater - and she was Isair and Madae's guardian after their true mother passed away.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39127
+      },
+      "ResponsesIndexFirst": 113,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "It is said the twins killed her, and they were attacked by the villagers in turn - but it is a twisted tale, and all its branches are not known to me.  Iselore would know the truth - as would Egenia, may her restless spirit finally know peace.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39128
+      },
+      "ResponsesIndexFirst": 114,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "Yes - and not for the first time.  This is a secret I have not shared with many, but I was the one who buried her many years ago, not long after the tragedy that claimed her life.  It has... sensitized me to her spirit, for better or worse.  With the recent raising of dead by the Banite, she has risen again as well.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39130
+      },
+      "ResponsesIndexFirst": 115,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "I know this is asking much, but if you could, I would ask you to find a way to put her soul to rest - she has suffered enough, both in the depths of Dragon's Eye and in the years following.  To die at the hands of her own wards was a sad capstone to a tragic life.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39131
+      },
+      "ResponsesIndexFirst": 116,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "I warn you - her spirit is an elusive thing, and she will be nothing more than a chill upon the skin unless one *knows* to look for her - now that you know that her spirit has risen, she can be found at her house at night.  You should be able to see her - and hear her cries.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39134
+      },
+      "ResponsesIndexFirst": 120,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "I warn you - her spirit is an elusive thing, and she will be nothing more than a chill upon the skin unless one *knows* to look for her.  With the rising of the undead and the other spirits filling the Kuldahar Pass, I fear she will be impossible to find.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39135
+      },
+      "ResponsesIndexFirst": 124,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "If you dispatch the priest of Bane and the other undead filling the valley, she will no doubt return to haunting her former home.  If you approach the ruin at night, you should be able to see her - and hear her cries.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39136
+      },
+      "ResponsesIndexFirst": 125,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 23
+    },
+    {
+      "Text": {
+        "Text": "I thank you, <CHARNAME>, both for the woman's sake  - and my own peace of mind.  Even as a priestess of Ilmater, the poor woman has suffered enough.  Please, accept these - the wand I fashioned from the oak of Kuldahar, and it is not much, but it may help you in your quest.  The other items may prove of more use.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39137
+      },
+      "ResponsesIndexFirst": 129,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 24
+    },
+    {
+      "Text": {
+        "Text": "Oh, no, no, <CHARNAME>.  I give these to you *for* Kuldahar's sake.   The people of Kuldahar who remain have more than enough magic at their disposal - I wish these items to go where they will do the North the greatest good, and that is with *you.*  Now, please, accept this - as your duty, not a reward.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39141
+      },
+      "ResponsesIndexFirst": 135,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 25
+    },
+    {
+      "Text": {
+        "Text": "Speak to Iselore, if you can.  He should know the story of Isair and Madae - and how their lives were bound to Egenia and their mother.  Perhaps there is something in his tale that will set her troubled soul to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39142
+      },
+      "ResponsesIndexFirst": 139,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 26
+    },
+    {
+      "Text": {
+        "Text": "Welcome back, <CHARNAME>!  You have my gratitude... and the gratitude of all Kuldahar - why, I thought your battle in the Western Pass nothing short of epic, but your efforts here in Kuldahar threaten to outshine even your past heroics.  If you keep this up, the bards shall be hard-pressed to put your deeds to verse!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39143
+      },
+      "ResponsesIndexFirst": 143,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 27
+    },
+    {
+      "Text": {
+        "Text": "Thanks to you, we are allowed to walk Kuldahar freely again - and I've convinced the others to join me, when I was sure it was you who approached the Valley.  Hopefully, it should prevent you from visiting each one in turn should you need supplies.  For us to meet you half way on your journeys is the least we can do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39145
+      },
+      "ResponsesIndexFirst": 144,
+      "ResponsesCount": 9,
+      "TriggerIndex": -1,
+      "Index": 28
+    },
+    {
+      "Text": {
+        "Text": "Well met again, <CHARNAME>.  How may I help you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39149
+      },
+      "ResponsesIndexFirst": 153,
+      "ResponsesCount": 9,
+      "TriggerIndex": 1,
+      "Index": 29
+    },
+    {
+      "Text": {
+        "Text": "Jermsy, please!  It is the truth - I recognize them!  <CHARNAME> saved my life within the Ice Temple!  Lower your bow - and save your arrows for your enemies.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39150
+      },
+      "ResponsesIndexFirst": 162,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 30
+    },
+    {
+      "Text": {
+        "Text": "Hold - friend, please, excuse my companion's harsh words.  He has found believing your deeds... difficult.  I assure you, you are among friends.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39151
+      },
+      "ResponsesIndexFirst": 165,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 31
+    },
+    {
+      "Text": {
+        "Text": "Jermsy, enough!  You were not at the Western Pass - you did not see them risk their lives for the Ten-Towns.  Now, if you have nothing else to add but insults, then *be silent!*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39152
+      },
+      "ResponsesIndexFirst": 166,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 32
+    },
+    {
+      "Text": {
+        "Text": "Please forgive your reception - we have been trapped in this tower for some time.  I believe it has frayed both our tempers and tried our patience.  There is a priest in Hrothgar's Glen who has been raising the dead of Kuldahar and sending them against us.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39153
+      },
+      "ResponsesIndexFirst": 167,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 33
+    },
+    {
+      "Text": {
+        "Text": "Jermsy wished to attack him, but I counseled him to await your arrival.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39154
+      },
+      "ResponsesIndexFirst": 168,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 34
+    },
+    {
+      "Text": {
+        "Text": "When I realized where he was striking from, I sealed the gate to the Glen, trapping him and some of his neo-orog troops inside.  I thought it would hold h-",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39155
+      },
+      "ResponsesIndexFirst": 169,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 35
+    },
+    {
+      "Text": {
+        "Text": "That did not escape me, Jermsy.  And lower your voice - we're all dealing with this situation as best we can.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39156
+      },
+      "ResponsesIndexFirst": 170,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 36
+    },
+    {
+      "Text": {
+        "Text": "I could open the gate - if you're sure you can handle him.  I do not doubt your capabilities, but I sense a great evil stirring within that Glen, and I am not sure it all stems from this Banite - there is some other agenda at work, but I know not what.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39160
+      },
+      "ResponsesIndexFirst": 173,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 37
+    },
+    {
+      "Text": {
+        "Text": "Very well, I shall alter the druidic ward on the gate - it will open for you, but not for that foul priest or his troops.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39161
+      },
+      "ResponsesIndexFirst": 174,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 38
+    },
+    {
+      "Text": {
+        "Text": "If you choose to challenge the Banite, you must wipe out all his troops as well - not only must we prevent the Legion of knowing of your arrival, but even a single wight or undead beast that remains alive will spawn more if not slain.  The Banite's defeat must be *complete.*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39162
+      },
+      "ResponsesIndexFirst": 175,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 39
+    },
+    {
+      "Text": {
+        "Text": "Very well - I understand.  Should you change your mind, however, I have altered the druidic ward on the door to the Glen - it shall remain sealed fast against Hiepherus and his troops, but if you wish to carry the battle to him, the gate will open for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39163
+      },
+      "ResponsesIndexFirst": 176,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 40
+    },
+    {
+      "Text": {
+        "Text": "Before entering the Glen, however, take care.  I worry about what other forces the Banite seeks to raise within the graveyard, and I fear some darker purpose behind his actions.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39164
+      },
+      "ResponsesIndexFirst": 177,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 41
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I think we could fill a history book with our journey - I think we've touched every corner of the North in order to get here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39081
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 3,
+      "Index": 0,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Nathaniel - weren't you in Dragon's Eye?  How did you get back here so fast?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39082
+      },
+      "JournalIndex": 39071,
+      "TriggerIndex": 0,
+      "ActionIndex": 1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 4,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I defeated Hiepherus and all his troops.  The Pass and Hrothgar's Glen should be clear now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39083
+      },
+      "JournalIndex": 39077,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 14,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We found Gerbash - and retrieved the watchtower key.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39084
+      },
+      "JournalIndex": 39078,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 14,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We spoke to Mother Egenia.  She is afraid to rest until she knows of what happened to her children here in Kuldahar after she passed away... but I don't know what to tell her.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39085
+      },
+      "JournalIndex": 39075,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 26,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 4,
+      "ActionIndex": 2,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 5,
+      "ActionIndex": 3,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 6,
+      "ActionIndex": 4,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What troubles?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39087
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 10,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 10,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39090
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Nathaniel - weren't you in Dragon's Eye?  How did you get back here so fast?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39082
+      },
+      "JournalIndex": 39071,
+      "TriggerIndex": 7,
+      "ActionIndex": 6,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 4,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I defeated Hiepherus and all his troops.  The Pass and Hrothgar's Glen should be clear now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39083
+      },
+      "JournalIndex": 39077,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 14,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We found Gerbash - and retrieved the watchtower key.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39084
+      },
+      "JournalIndex": 39078,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 14,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We spoke to Mother Egenia.  She is afraid to rest until she knows of what happened to her children here in Kuldahar after she passed away... but I don't know what to tell her.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39085
+      },
+      "JournalIndex": 39075,
+      "TriggerIndex": 10,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 26,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 11,
+      "ActionIndex": 7,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 12,
+      "ActionIndex": 8,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 13,
+      "ActionIndex": 9,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What's Jermsy's problem?  He almost shot us when we came in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39092
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 8,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's Jermsy's problem?  He almost shot us when we came in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39092
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 5,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's Jermsy's problem?  I thought we were going to have a fight on our hands when we came in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39093
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 8,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's Jermsy's problem?  I thought we were going to have a fight on our hands when we came in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39093
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 5,
+      "Index": 22,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What troubles have you had here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39094
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 10,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39095
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 12,
+      "Index": 24,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Tell me about the yuan-ti.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39096
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 11,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Do you know anything of Isair and Madae?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39097
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 20,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 15,
+      "Index": 26,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I would know more of Iselore.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39098
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 13,
+      "Index": 27,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 28,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 29,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Nothing at this time.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39099
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 30,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Nathaniel - weren't you in Dragon's Eye?  How did you get back here so fast?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39082
+      },
+      "JournalIndex": 39071,
+      "TriggerIndex": 21,
+      "ActionIndex": 11,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 4,
+      "Index": 31,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I defeated Hiepherus and all his troops.  The Pass and Hrothgar's Glen should be clear now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39083
+      },
+      "JournalIndex": 39077,
+      "TriggerIndex": 22,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 14,
+      "Index": 32,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We found Gerbash - and retrieved the watchtower key.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39084
+      },
+      "JournalIndex": 39078,
+      "TriggerIndex": 23,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 14,
+      "Index": 33,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We spoke to Mother Egenia.  She is afraid to rest until she knows of what happened to her children here in Kuldahar after she passed away... but I don't know what to tell her.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39085
+      },
+      "JournalIndex": 39075,
+      "TriggerIndex": 24,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 26,
+      "Index": 34,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 25,
+      "ActionIndex": 12,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 35,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 26,
+      "ActionIndex": 13,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 36,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 27,
+      "ActionIndex": 14,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 37,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What's Jermsy's problem?  He almost shot us when we came in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39092
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 8,
+      "Index": 38,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's Jermsy's problem?  He almost shot us when we came in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39092
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 29,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 5,
+      "Index": 39,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's Jermsy's problem?  I thought we were going to have a fight on our hands when we came in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39093
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 30,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 8,
+      "Index": 40,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's Jermsy's problem?  I thought we were going to have a fight on our hands when we came in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39093
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 31,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 5,
+      "Index": 41,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What troubles have you had here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39094
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 32,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 10,
+      "Index": 42,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39095
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 12,
+      "Index": 43,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Tell me about the yuan-ti.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39096
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 33,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 11,
+      "Index": 44,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Do you know anything of Isair and Madae?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39097
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 34,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 15,
+      "Index": 45,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I would know more of Iselore.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39098
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 35,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 13,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 15,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 47,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 48,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39090
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 49,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Nathaniel - weren't you in Dragon's Eye?  How did you get back here so fast?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39082
+      },
+      "JournalIndex": 39071,
+      "TriggerIndex": 36,
+      "ActionIndex": 16,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 4,
+      "Index": 50,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I defeated Hiepherus and all his troops.  The Pass and Hrothgar's Glen should be clear now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39083
+      },
+      "JournalIndex": 39077,
+      "TriggerIndex": 37,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 14,
+      "Index": 51,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We found Gerbash - and retrieved the watchtower key.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39084
+      },
+      "JournalIndex": 39078,
+      "TriggerIndex": 38,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 14,
+      "Index": 52,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We spoke to Mother Egenia.  She is afraid to rest until she knows of what happened to her children here in Kuldahar after she passed away... but I don't know what to tell her.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39085
+      },
+      "JournalIndex": 39075,
+      "TriggerIndex": 39,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 26,
+      "Index": 53,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 40,
+      "ActionIndex": 17,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 54,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 41,
+      "ActionIndex": 18,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 55,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 42,
+      "ActionIndex": 19,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 56,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What's Jermsy's problem?  He almost shot us when we came in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39092
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 43,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 8,
+      "Index": 57,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's Jermsy's problem?  He almost shot us when we came in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39092
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 44,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 5,
+      "Index": 58,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's Jermsy's problem?  I thought we were going to have a fight on our hands when we came in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39093
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 45,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 8,
+      "Index": 59,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What's Jermsy's problem?  I thought we were going to have a fight on our hands when we came in.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39093
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 46,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 5,
+      "Index": 60,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What troubles have you had here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39094
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 47,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 10,
+      "Index": 61,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39095
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 12,
+      "Index": 62,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Tell me about the yuan-ti.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39096
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 48,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 11,
+      "Index": 63,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Do you know anything of Isair and Madae?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39097
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 49,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 15,
+      "Index": 64,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I would know more of Iselore.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39098
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 50,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 13,
+      "Index": 65,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 20,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 66,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 67,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39090
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 68,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Hmm.  Never mind.  I had some other questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39103
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 69,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 21,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 70,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 71,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "No matter.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39104
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 72,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 51,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 6,
+      "Index": 73,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 52,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 8,
+      "Index": 74,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 7,
+      "Index": 75,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Hmm.  I see.  I had some other questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39109
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 76,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 22,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 77,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 78,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 79,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Hmm.  I see.  I had some other questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39109
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 80,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 23,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 81,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 82,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 83,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Eight hours should be enough.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39113
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 24,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 84,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We need to rest until we're healed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39114
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 25,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 85,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Actually, I had some questions for you before I rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39115
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 86,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me instead?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39116
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 26,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 87,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39090
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 88,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the yuan-ti?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39118
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 27,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 11,
+      "Index": 89,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I had some other questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39119
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 28,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 90,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 29,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 91,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 30,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 92,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 31,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 93,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I had some other questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39119
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 94,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 32,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 95,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 96,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 97,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I had some other questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39119
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 98,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 33,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 99,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 100,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 101,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Tell me about the yuan-ti.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39096
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 34,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 11,
+      "Index": 102,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I had some other questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39119
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 35,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 103,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 36,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 104,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 37,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 105,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 38,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 106,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I had some other questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39119
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 107,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 39,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 108,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 109,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 110,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 40,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 16,
+      "Index": 111,
+      "Flags": "HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Mother Egenia?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39126
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 17,
+      "Index": 112,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 18,
+      "Index": 113,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Wait... have you actually seen Egenia's spirit?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39129
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 19,
+      "Index": 114,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 20,
+      "Index": 115,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "I will see what I can do to aid her spirit - she is one of Ilmater's faithful, and I will not abandon her.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39132
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 53,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 21,
+      "Index": 116,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I will see what I can do to aid her spirit - she is one of Ilmater's faithful, and I will not abandon her.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39132
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 54,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 22,
+      "Index": 117,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "If we encounter her, I will see what we can do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39133
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 55,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 21,
+      "Index": 118,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "If we encounter her, I will see what we can do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39133
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 56,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 22,
+      "Index": 119,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I had some other questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39119
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 120,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 41,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 121,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 122,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 123,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 23,
+      "Index": 124,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "I had some other questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39119
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 125,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 42,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 126,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 127,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 128,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "The tenets of my faith prevent me from accepting this, Nathaniel - please, keep them for Kuldahar's sake.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39138
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 57,
+      "ActionIndex": 43,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 25,
+      "Index": 129,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I do not need these as proof of your gratitude, Nathaniel - please, keep them for Kuldahar's sake.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39139
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 58,
+      "ActionIndex": 44,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 25,
+      "Index": 130,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Thank you, Nathaniel.  I will put these to good use - but before I leave, I had some more questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39140
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 59,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 131,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 60,
+      "ActionIndex": 45,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 132,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 61,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 133,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 62,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 134,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Thank you, Nathaniel.  I will put these to good use - but before I leave, I had some more questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39140
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 135,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 46,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 136,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 137,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 138,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I had some other questions for you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39119
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 2,
+      "Index": 139,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 47,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 140,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you watch over us while we rest?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 141,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell, Nathaniel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 142,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What are you doing here, Nathaniel?  I thought you were in the watchtower.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39144
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 48,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 28,
+      "Index": 143,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Nathaniel - weren't you in Dragon's Eye?  How did you get back here so fast?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39082
+      },
+      "JournalIndex": 39071,
+      "TriggerIndex": 63,
+      "ActionIndex": 49,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 4,
+      "Index": 144,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We spoke to Mother Egenia.  She is afraid to rest until she knows of what happened to her children here in Kuldahar after she passed away... but I don't know what to tell her.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39085
+      },
+      "JournalIndex": 39075,
+      "TriggerIndex": 64,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 26,
+      "Index": 145,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 65,
+      "ActionIndex": 50,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 146,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 66,
+      "ActionIndex": 51,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 147,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 67,
+      "ActionIndex": 52,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 148,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything more of Isair and Madae?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39146
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 68,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 15,
+      "Index": 149,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 53,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 150,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We wish to rest - can you watch over us?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39147
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 151,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39148
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 152,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Nathaniel - weren't you in Dragon's Eye?  How did you get back here so fast?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39082
+      },
+      "JournalIndex": 39071,
+      "TriggerIndex": 69,
+      "ActionIndex": 54,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 4,
+      "Index": 153,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We spoke to Mother Egenia.  She is afraid to rest until she knows of what happened to her children here in Kuldahar after she passed away... but I don't know what to tell her.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39085
+      },
+      "JournalIndex": 39075,
+      "TriggerIndex": 70,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 21,
+      "Index": 154,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 71,
+      "ActionIndex": 55,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 155,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 72,
+      "ActionIndex": 56,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 156,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We were able to put Mother Egenia's spirit to rest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39086
+      },
+      "JournalIndex": 39076,
+      "TriggerIndex": 73,
+      "ActionIndex": 57,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 24,
+      "Index": 157,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me anything more of Isair and Madae?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39146
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 74,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 15,
+      "Index": 158,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Can you use your magic to heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 58,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 159,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We wish to rest - can you watch over us?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39147
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 9,
+      "Index": 160,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39148
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 161,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 75,
+      "ActionIndex": 59,
+      "NextScriptDialog": "60Jerms2",
+      "NextPhraseIndex": 4,
+      "Index": 162,
+      "Flags": "HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 76,
+      "ActionIndex": 60,
+      "NextScriptDialog": "60Jerms2",
+      "NextPhraseIndex": 3,
+      "Index": 163,
+      "Flags": "HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 77,
+      "ActionIndex": 61,
+      "NextScriptDialog": "60Jerms2",
+      "NextPhraseIndex": 5,
+      "Index": 164,
+      "Flags": "HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Jerms2",
+      "NextPhraseIndex": 11,
+      "Index": 165,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 33,
+      "Index": 166,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 34,
+      "Index": 167,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Jerms2",
+      "NextPhraseIndex": 16,
+      "Index": 168,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Jerms2",
+      "NextPhraseIndex": 20,
+      "Index": 169,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "If there is a way into the Glen, I will deal with this Banite priest.  He must answer for the harm he has done here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39157
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 78,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 37,
+      "Index": 170,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Is there anyway inside the Glen?  Perhaps I could stop him before he causes any further harm.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39158
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 79,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 37,
+      "Index": 171,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Well, the priest is your problem - I have greater concerns at the moment.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39159
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 80,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Jerms2",
+      "NextPhraseIndex": 22,
+      "Index": 172,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Jerms2",
+      "NextPhraseIndex": 21,
+      "Index": 173,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 39,
+      "Index": 174,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 41,
+      "Index": 175,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Natha2",
+      "NextPhraseIndex": 39,
+      "Index": 176,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 62,
+      "NextScriptDialog": "60Jerms2",
+      "NextPhraseIndex": 23,
+      "Index": 177,
+      "Flags": "HasAction"
+    }
+  ],
+  "TriggersPhrase": [
+    "!CurrentAreaIs(Myself, 6008)\nGlobal(\"60Met_Nathaniel_6001\", \"GLOBAL\", 0)",
+    "!CurrentAreaIs(Myself, 6008)",
+    "Global(\"60Spoke_Nate\", \"GLOBAL\", 0)",
+    "Global(\"60Spoke_Nate\", \"GLOBAL\", 1)"
+  ],
+  "TriggersResponse": [
+    "Global(\"61PlayerMetRakshasa\", \"GLOBAL\", 1)",
+    "Global(\"Kuldahar_Undead_Cleared\",\"GLOBAL\",1)!Global(\"60Hiepherus_Quest\",\"GLOBAL\",2)",
+    "Global(\"60Key_Quest\",\"GLOBAL\", 1)\nPartyHasItem(\"60Key\")",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Problem_Found\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 0)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\n!ClassEx(Protagonist, Monk)\r\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\nClassEx(Protagonist, Paladin)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\nClassEx(Protagonist, Monk)",
+    "Global(\"61PlayerMetRakshasa\", \"GLOBAL\", 1)",
+    "Global(\"Kuldahar_Undead_Cleared\",\"GLOBAL\",1)!Global(\"60Hiepherus_Quest\",\"GLOBAL\",2)",
+    "Global(\"60Key_Quest\",\"GLOBAL\", 1)\nPartyHasItem(\"60Key\")",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Problem_Found\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 0)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\n!ClassEx(Protagonist, Monk)\r\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\nClassEx(Protagonist, Paladin)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\nClassEx(Protagonist, Monk)",
+    "Global(\"Jermsy_Hostile\",\"GLOBAL\",0)\n!Kit(Protagonist, CLERIC_ILMATER)",
+    "Global(\"Jermsy_Hostile\",\"GLOBAL\",0)\nKit(Protagonist, CLERIC_ILMATER)",
+    "Global(\"Jermsy_Hostile\",\"GLOBAL\",1)\n!Kit(Protagonist, CLERIC_ILMATER)",
+    "Global(\"Jermsy_Hostile\",\"GLOBAL\",1)\nKit(Protagonist, CLERIC_ILMATER)",
+    "CurrentAreaIs(Myself, 6008)",
+    "Global(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 0)",
+    "Global(\"61PlayerMetRakshasa\", \"GLOBAL\", 1)",
+    "Global(\"Kuldahar_Undead_Cleared\",\"GLOBAL\",1)!Global(\"60Hiepherus_Quest\",\"GLOBAL\",2)",
+    "Global(\"60Key_Quest\",\"GLOBAL\", 1)\nPartyHasItem(\"60Key\")",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Problem_Found\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 0)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\n!ClassEx(Protagonist, Monk)\r\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\nClassEx(Protagonist, Paladin)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\nClassEx(Protagonist, Monk)",
+    "Global(\"Jermsy_Hostile\",\"GLOBAL\",0)\n!Kit(Protagonist, CLERIC_ILMATER)",
+    "Global(\"Jermsy_Hostile\",\"GLOBAL\",0)\nKit(Protagonist, CLERIC_ILMATER)",
+    "Global(\"Jermsy_Hostile\",\"GLOBAL\",1)\n!Kit(Protagonist, CLERIC_ILMATER)",
+    "Global(\"Jermsy_Hostile\",\"GLOBAL\",1)\nKit(Protagonist, CLERIC_ILMATER)",
+    "CurrentAreaIs(Myself, 6008)",
+    "Global(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 0)",
+    "CurrentAreaIs(Myself, 6008)",
+    "Global(\"61PlayerMetRakshasa\", \"GLOBAL\", 1)",
+    "Global(\"Kuldahar_Undead_Cleared\",\"GLOBAL\",1)!Global(\"60Hiepherus_Quest\",\"GLOBAL\",2)",
+    "Global(\"60Key_Quest\",\"GLOBAL\", 1)\nPartyHasItem(\"60Key\")",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Problem_Found\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 0)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\n!ClassEx(Protagonist, Monk)\r\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\nClassEx(Protagonist, Paladin)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\nClassEx(Protagonist, Monk)",
+    "Global(\"Jermsy_Hostile\",\"GLOBAL\",0)\n!Kit(Protagonist, CLERIC_ILMATER)",
+    "Global(\"Jermsy_Hostile\",\"GLOBAL\",0)\nKit(Protagonist, CLERIC_ILMATER)",
+    "Global(\"Jermsy_Hostile\",\"GLOBAL\",1)\n!Kit(Protagonist, CLERIC_ILMATER)",
+    "Global(\"Jermsy_Hostile\",\"GLOBAL\",1)\nKit(Protagonist, CLERIC_ILMATER)",
+    "CurrentAreaIs(Myself, 6008)",
+    "Global(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 0)",
+    "CurrentAreaIs(Myself, 6008)",
+    "Kit(Protagonist, CLERIC_ILMATER)",
+    "!Kit(Protagonist, CLERIC_ILMATER)",
+    "Kit(Protagonist, CLERIC_ILMATER)Global(\"Kuldahar_6003_UndeadKilled\",\"GLOBAL\",1)",
+    "Kit(Protagonist, CLERIC_ILMATER)!Global(\"Kuldahar_6003_UndeadKilled\",\"GLOBAL\",1)",
+    "Global(\"Kuldahar_6003_UndeadKilled\",\"GLOBAL\",1)",
+    "!Global(\"Kuldahar_6003_UndeadKilled\",\"GLOBAL\",1)",
+    "ClassEx(Protagonist, Monk)",
+    "ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Monk)\n!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Monk)\n!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Monk)\n!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Monk)\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"61PlayerMetRakshasa\", \"GLOBAL\", 1)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Problem_Found\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 0)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\n!ClassEx(Protagonist, Monk)\r\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\nClassEx(Protagonist, Paladin)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\nClassEx(Protagonist, Monk)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 0)",
+    "Global(\"61PlayerMetRakshasa\", \"GLOBAL\", 1)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Problem_Found\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 0)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\n!ClassEx(Protagonist, Monk)\r\n!ClassEx(Protagonist, Paladin)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\nClassEx(Protagonist, Paladin)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 1)\r\nGlobal(\"60Egenia_Gone\", \"GLOBAL\", 1)\r\nClassEx(Protagonist, Monk)",
+    "Global(\"60Egenia_Quest\", \"GLOBAL\", 0)",
+    "Subrace(Protagonist,ELF_DROW)",
+    "Race(Protagonist,HALFORC)",
+    "!Race(Protagonist,HALFORC)\n!Subrace(Protagonist,ELF_DROW)",
+    "ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)",
+    "!ClassEx(Protagonist, Paladin)"
+  ],
+  "Actions": [
+    "SetGlobal(\"60Know_Nate\", \"GLOBAL\", 1)\nSetGlobal(\"60Spoke_Nate\", \"GLOBAL\", 1)",
+    "SetGlobal(\"61PlayerMetRakshasa\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_12_Easy\",39079)\r\nSetGlobal(\"60Egenia_Quest\", \"GLOBAL\", 3)\r\nGiveItemCreate(\"00Ring91\", Protagonist, 1, 1, 1)\r\nGiveItemCreate(\"00Wand30\", Protagonist, 50, 0, 0)\r\nGiveItemCreate(\"SPPR707Z \", Protagonist, 1, 1, 1)",
+    "AddXpVar(\"Level_12_Easy\",39079)\n",
+    "AddXpVar(\"Level_12_Easy\",39079)\n",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "SetGlobal(\"61PlayerMetRakshasa\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_12_Easy\",39079)\r\nSetGlobal(\"60Egenia_Quest\", \"GLOBAL\", 3)\r\nGiveItemCreate(\"00Ring91\", Protagonist, 1, 1, 1)\r\nGiveItemCreate(\"00Wand30\", Protagonist, 50, 0, 0)\r\nGiveItemCreate(\"SPPR707Z \", Protagonist, 1, 1, 1)",
+    "AddXpVar(\"Level_12_Easy\",39079)\n",
+    "AddXpVar(\"Level_12_Easy\",39079)\n",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "SetGlobal(\"61PlayerMetRakshasa\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_12_Easy\",39079)\r\nSetGlobal(\"60Egenia_Quest\", \"GLOBAL\", 3)\r\nGiveItemCreate(\"00Ring91\", Protagonist, 1, 1, 1)\r\nGiveItemCreate(\"00Wand30\", Protagonist, 50, 0, 0)\r\nGiveItemCreate(\"SPPR707Z \", Protagonist, 1, 1, 1)",
+    "AddXpVar(\"Level_12_Easy\",39079)\n",
+    "AddXpVar(\"Level_12_Easy\",39079)\n",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "SetGlobal(\"61PlayerMetRakshasa\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_12_Easy\",39079)\r\nSetGlobal(\"60Egenia_Quest\", \"GLOBAL\", 3)\r\nGiveItemCreate(\"00Ring91\", Protagonist, 1, 1, 1)\r\nGiveItemCreate(\"00Wand30\", Protagonist, 50, 0, 0)\r\nGiveItemCreate(\"SPPR707Z \", Protagonist, 1, 1, 1)",
+    "AddXpVar(\"Level_12_Easy\",39079)\n",
+    "AddXpVar(\"Level_12_Easy\",39079)\n",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "FadeToColor([0.0],0)FadeFromColor([0.0],0)RestParty()",
+    "FadeToColor([0.0],0)FadeFromColor([0.0],0)RestUntilHealed()",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "SetGlobal(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)\r\nStartStore(\"60Nathan\", Protagonist)",
+    "SetGlobal(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "SetGlobal(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)\r\nStartStore(\"60Nathan\", Protagonist)",
+    "SetGlobal(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Know_About_Yuan_Ti\", \"GLOBAL\", 1)",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "SetGlobal(\"60Egenia_Quest\", \"GLOBAL\", 1)",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "SetGlobal(\"60Egenia_Quest\", \"GLOBAL\", 3)\r\nGiveItemCreate(\"00Ring91\", Protagonist, 1, 1, 1)\r\nGiveItemCreate(\"00Wand30\", Protagonist, 50, 0, 0)\r\nGiveItemCreate(\"SPPR707Z \", Protagonist, 1, 1, 1)",
+    "SetGlobal(\"60Egenia_Quest\", \"GLOBAL\", 3)\r\nGiveItemCreate(\"00Ring91\", Protagonist, 1, 1, 1)\r\nGiveItemCreate(\"00Wand30\", Protagonist, 50, 0, 0)\r\nGiveItemCreate(\"SPPR707Z \", Protagonist, 1, 1, 1)",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "SetGlobal(\"60Met_Nathaniel_6001\", \"GLOBAL\", 1)",
+    "SetGlobal(\"61PlayerMetRakshasa\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_12_Easy\",39079)\r\nSetGlobal(\"60Egenia_Quest\", \"GLOBAL\", 3)\r\nGiveItemCreate(\"00Ring91\", Protagonist, 1, 1, 1)\r\nGiveItemCreate(\"00Wand30\", Protagonist, 50, 0, 0)\r\nGiveItemCreate(\"SPPR707Z \", Protagonist, 1, 1, 1)",
+    "AddXpVar(\"Level_12_Easy\",39079)\n",
+    "AddXpVar(\"Level_12_Easy\",39079)\n",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "SetGlobal(\"61PlayerMetRakshasa\", \"GLOBAL\", 2)",
+    "AddXpVar(\"Level_12_Easy\",39079)\r\nSetGlobal(\"60Egenia_Quest\", \"GLOBAL\", 3)\r\nGiveItemCreate(\"00Ring91\", Protagonist, 1, 1, 1)\r\nGiveItemCreate(\"00Wand30\", Protagonist, 50, 0, 0)\r\nGiveItemCreate(\"SPPR707Z \", Protagonist, 1, 1, 1)",
+    "AddXpVar(\"Level_12_Easy\",39079)\n",
+    "AddXpVar(\"Level_12_Easy\",39079)\n",
+    "StartStore(\"60Nathan\", Protagonist)",
+    "SetGlobal(\"60Know_Nate\", \"GLOBAL\", 1)",
+    "SetGlobal(\"60Know_Nate\", \"GLOBAL\", 1)",
+    "SetGlobal(\"60Know_Nate\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Nathaniel_Opens_6002_Door\", \"GLOBAL\", 1)"
+  ],
+  "Checksum": null,
+  "Filename": "60NATHA2.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 39080
+}

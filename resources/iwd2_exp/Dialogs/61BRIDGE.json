@@ -1,0 +1,79 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "This bridge has been completely repaired and can be traversed safely.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38230
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "This bridge has been partially repaired with rope and is still somewhat unsafe to walk on, but it can be traversed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38232
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 1
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "HPPercent(Myself,100)",
+    "HPPercentLT(Myself,100)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [],
+  "Checksum": null,
+  "Filename": "61BRIDGE.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 38230
+}

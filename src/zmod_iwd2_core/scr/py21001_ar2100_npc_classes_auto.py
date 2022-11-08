@@ -2,7 +2,7 @@ import toee, debug, tpdp, utils_storage, utils_npc_spells, const_toee, utils_tac
 import const_proto_potions, utils_obj, const_proto_food, utils_npc, utils_target_list, const_proto_wands, utils_sneak, const_deseases, utils_npc_spells, utils_npc, factions_zmod
 import const_proto_items, const_proto_rings, const_proto_cloth, const_proto_wondrous, utils_races, utils_npc_build, const_proto_npc, utils_toee, tpai, tpactions, utils_strategy
 import py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, module_consts, rumor_control, utils_pc
-import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2, ctrl_daemon
+import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2, ctrl_daemon, const_iwd2, const_proto_weapon_iwd2, utils_npc_spells_inf
 import utils_journal as uj, inf_scripting, module_difficulty
 #### IMPORTS ####
 #### END IMPORTS ####
@@ -138,10 +138,10 @@ class Ctrl_21GAERNT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21GAERNT
 	
 	def setup_gear(self, npc):
 		# SLOT_WEAPON1: None(Books) from 001D6C
-		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_QUARTERSTAFF, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D6C) at SLOT_WEAPON1
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_MACE_LIGHT, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D6C) at SLOT_WEAPON1 by Wererat
 		
 		# SLOT_QUICK1: None(Books) from RT03_R
-		# Not found! TODO ITEM
+		# junk, skip and forget
 		
 		# SLOT_QUICK2: Gold(Gold) from MISC07
 		utils_item.item_money_create_in_inventory(npc, 0, toee.game.random_range(20, 40)) # Charges1: 20, Charges2: 40, Charges3: 0
@@ -263,7 +263,7 @@ class Ctrl_21WERRAT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERRAT
 	
 	def setup_gear(self, npc):
 		# SLOT_WEAPON1: None(Books) from 001D6C
-		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_QUARTERSTAFF, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D6C) at SLOT_WEAPON1
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_MACE_LIGHT, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D6C) at SLOT_WEAPON1 by Wererat
 		
 		# SLOT_QUICK2: Gold(Gold) from MISC07
 		utils_item.item_money_create_in_inventory(npc, 0, toee.game.random_range(20, 40)) # Charges1: 20, Charges2: 40, Charges3: 0
@@ -385,7 +385,7 @@ class Ctrl_21WERBGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERBGR
 	
 	def setup_gear(self, npc):
 		# SLOT_WEAPON1: None(Books) from 001D6C
-		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_QUARTERSTAFF, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D6C) at SLOT_WEAPON1
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_MACE_LIGHT, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D6C) at SLOT_WEAPON1 by Werebadger
 		
 		# SLOT_QUICK2: Gold(Gold) from MISC07
 		utils_item.item_money_create_in_inventory(npc, 0, toee.game.random_range(20, 40)) # Charges1: 20, Charges2: 40, Charges3: 0
@@ -514,6 +514,24 @@ class Ctrl_20ORCSHM_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCSHM
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_ROBES_BROWN_TEMPLE_EARTH, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_CIRCLET_HOODLESS, npc, no_loot = True, wear_on = toee.item_wear_helmet)
+		return
+	
+	def setup_spells(self, npc):
+		stat_level = toee.stat_level_cleric # CLR
+		#Level: 1
+		utils_npc_spells_inf.ctrl_add_spell(self, "Command", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Light Wounds", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Frost Fingers", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Magic Stone", 1, 1, stat_level)
+		
+		#Level: 2
+		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Moderate Wounds", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Hold Person", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Bull's Strength", 3, 3, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Aid", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Chant", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Summon Monster II", 1, 1, stat_level)
+		
 		return
 	
 class Ctrl_20ORCACH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCACH 
@@ -1383,7 +1401,7 @@ class Ctrl_21HRP_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HRP
 		# see natural
 		
 		# SLOT_QUICK1: None(Books) from RT03_L
-		# Not found! TODO ITEM
+		# junk, skip and forget
 		
 		# SLOT_QUICK2: Gold(Gold) from MISC07
 		utils_item.item_money_create_in_inventory(npc, 0, toee.game.random_range(10, 20)) # Charges1: 10, Charges2: 20, Charges3: 0
@@ -1507,7 +1525,7 @@ class Ctrl_21VERB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21VERB
 		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTSPEAR, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D6P) at SLOT_WEAPON1
 		
 		# SLOT_QUICK1: None(Books) from RT03_V
-		# Not found! TODO ITEM
+		# junk, skip and forget
 		
 		# SLOT_QUICK2: Gold(Gold) from MISC07
 		utils_item.item_money_create_in_inventory(npc, 0, toee.game.random_range(20, 40)) # Charges1: 20, Charges2: 40, Charges3: 0
@@ -1642,6 +1660,28 @@ class Ctrl_20EMMA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20EMMA
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	
+	def setup_spells(self, npc):
+		stat_level = toee.stat_level_cleric # CLR
+		#Level: 1
+		utils_npc_spells_inf.ctrl_add_spell(self, "Magic Stone", 1, 1, stat_level)
+		
+		#Level: 2
+		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Moderate Wounds", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Silence", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Hold Person", 1, 1, stat_level)
+		
+		#Level: 3
+		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Serious Wounds", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Dispel Magic", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Miscast Magic", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Contagion", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Circle of Bones", 1, 1, stat_level)
+		
+		#Level: 4
+		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Critical Wounds", 2, 2, stat_level)
+		
+		return
+	
 class Ctrl_20KRIS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KRIS 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
@@ -1767,13 +1807,12 @@ class Ctrl_20KRIS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KRIS
 	
 	def setup_gear(self, npc):
 		# SLOT_ARMOR: Half-plate Armor(HalfPlate) from 00PLAT01
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_HALF_PLATE, npc, no_loot = False, wear_on = toee.item_wear_armor) # Half-plate Armor (00PLAT01) at SLOT_ARMOR OK
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_SILVER_PLATE_BOOTS, npc, no_loot = False, wear_on = toee.item_wear_boots) # boots for Half-plate Armor (00PLAT01) OK
 		
 		# SLOT_WEAPON1: Bastard Sword +1(GreatSword) from 00CWSWDF
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SWORD_BASTARD_PLUS_1, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # Bastard Sword +1 (00CWSWDF) at SLOT_WEAPON1 OK
 		
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_LEATHER_CLOTHING, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	
 class Ctrl_20KNTVIR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KNTVIR 
@@ -1902,15 +1941,14 @@ class Ctrl_20KNTVIR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KNTVIR
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_HELM_BARBARIAN, npc, no_loot = False, wear_on = toee.item_wear_helmet) # Helmet (00HELM02) at SLOT_HELMET OK
 		
 		# SLOT_ARMOR: Chainmail Armor(ChainMail) from 00CHAN01
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_armor.PROTO_ARMOR_CHAINMAIL, npc, no_loot = False, wear_on = toee.item_wear_armor) # Chainmail Armor (00CHAN01) at SLOT_ARMOR OK
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_CHAINMAIL_BOOTS, npc, no_loot = False, wear_on = toee.item_wear_boots) # boots for Chainmail Armor (00CHAN01) OK
 		
 		# SLOT_WEAPON1: Masterwork Bastard Sword(GreatSword) from 00CWSWDE
-		# Not found! TODO ITEM
+		utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SWORD_BASTARD_MASTERWORK, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # Masterwork Bastard Sword (00CWSWDE) at SLOT_WEAPON1 OK
 		
 		# SLOT_SHIELD1: None(Books) from 00SHIELD
 		# Not found! TODO ITEM
 		
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_GARB_MYSTIC_BLUE, npc, no_loot = True, wear_on = toee.item_wear_armor) # CLOTH LT AQUA
-		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	

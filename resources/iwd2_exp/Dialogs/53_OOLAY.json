@@ -1,0 +1,174 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": " - What?!  Who let these humans in here?  They don't have thrall brands on them.  Abdoshanheth must have left the gates open for some reason. -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22816
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 3,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": " - Obviously.  Those two have failed, and now we have dirty humans running around.  They've probably infected the thralls with all manner of disease. -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22820
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": " - I've heard that, but I don't believe it.  Look at them.  They just hear a noise in their head and look around frantically.  They're no different from rothe.  Let us slaughter them and eat.  I hunger. -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22822
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": " - Silence your mindchatter and direct your attention towards the humans, Ilsensine zealot.  Kill them. -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22823
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I took care of hi-",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22817
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Zeph",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We're from the T-",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22818
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Zeph",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Die, mind fl-",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Zeph",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Ecktar",
+      "NextPhraseIndex": 1,
+      "Index": 3,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Galoom",
+      "NextPhraseIndex": 3,
+      "Index": 4,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [],
+  "Checksum": null,
+  "Filename": "53_OOLAY.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 22816
+}

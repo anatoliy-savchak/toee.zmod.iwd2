@@ -1,0 +1,1002 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Well met.  I am Eradru, High Priest of Iyachtu Xvim.  How may I serve you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27063
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 6,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "I do not recognize you... you must be a foreign delegate.  May I see your pass?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27070
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "I do not recognize you... you must be a foreign delegate.  May I see your pass?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27070
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "A delegate pass.  You are not allowed on this floor without one.  I suggest you return to the first floor and speak with Minister Xavier.  He can issue you a pass.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27073
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "No.  I can, however, summon the guard and see if they can somehow *aid* you.  Shall I do so?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27076
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "No.  I am afraid not.  I can, however, summon the guard and see if they can somehow *aid* you.  Shall I do so?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27082
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "He is the New Darkness, the Godson of Bane.  He delights in death and destruction, for they eliminate the weak and strengthen the worthy.  Under his guidance one either dies, or becomes stronger.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27083
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "No.  Had you a need to know, you would.  Ask about it no more.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27088
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Of course I am aware of it; I revel in it.  The slaves will either survive and become stronger, or die because they are weak and undeserving better.  Such is the will of Iyachtu Xvim!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27090
+      },
+      "ResponsesIndexFirst": 25,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "I see you have returned.  Is there something I can help you with?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27091
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 6,
+      "TriggerIndex": 1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Ailments of the mind require potent magic to cure.  I am not willing to waste such power on a mere slave...  However, I can give you a potion that may, or may not, cure her.  Here.  Take this and administer it to her.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27092
+      },
+      "ResponsesIndexFirst": 37,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Ah.  You must be a paladin.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37782
+      },
+      "ResponsesIndexFirst": 38,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "You see your service to the weak as a guiding force in their lives.  I see it as a crutch that they come to depend upon.  Take away that crutch, and the weakened limb falters; it cannot stand on its own because it did not develop the strength to do so.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37784
+      },
+      "ResponsesIndexFirst": 39,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "Neither of us is here to debate the philosophy of our faiths, paladin.  Let us move on.  Is there anything else you need of me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37786
+      },
+      "ResponsesIndexFirst": 40,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 13
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I am in need of healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27064
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Would you mind if I rested here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27065
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about Iyachtu Xvim?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27066
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 6,
+      "Index": 2,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am interested in the demon guard on the first floor.  Can you tell me about it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27067
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 7,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "One of the workers here is suffering from some sort of mental disorder.  Do you think you could aid her?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27068
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 10,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27069
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What pass?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27071
+      },
+      "JournalIndex": 27058,
+      "TriggerIndex": 2,
+      "ActionIndex": 0,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 3,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Certainly.  Here it is.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27072
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27069
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What pass?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27071
+      },
+      "JournalIndex": 27060,
+      "TriggerIndex": 4,
+      "ActionIndex": 2,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 3,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Certainly.  Here it is.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27072
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27069
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You cannot aid me without this pass?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27074
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 4,
+      "Index": 12,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am sorry, but Xavier is dead.  Is there anyone else who can issue a pass?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27075
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 5,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Certainly.  Bring them on.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27077
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27069
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Certainly.  Bring them on.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27077
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27069
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 17,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27064
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 1,
+      "Index": 18,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Would you mind if I rested here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27065
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 2,
+      "Index": 19,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am interested in the demon guard on the first floor.  Can you tell me about it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27067
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 7,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "One of the workers here is suffering from some sort of mental disorder.  Do you think you could aid her?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27068
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 10,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27069
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "The creature is being used to enslave people.  Are you aware of that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 8,
+      "Index": 23,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27069
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "It is the duty of the strong to protect the weak against such tyranny, Eradru.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37781
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 11,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27064
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 1,
+      "Index": 26,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Would you mind if I rested here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27065
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 2,
+      "Index": 27,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about Iyachtu Xvim?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27066
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 6,
+      "Index": 28,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "One of the workers here is suffering from some sort of mental disorder.  Do you think you could aid her?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27068
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 10,
+      "Index": 29,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27069
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 30,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27064
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 1,
+      "Index": 31,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Would you mind if I rested here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27065
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 2,
+      "Index": 32,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about Iyachtu Xvim?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27066
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 6,
+      "Index": 33,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am interested in the demon guard on the first floor.  Can you tell me about it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27067
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 7,
+      "Index": 34,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "One of the workers here is suffering from some sort of mental disorder.  Do you think you could aid her?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34319
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 10,
+      "Index": 35,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27069
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 36,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I am grateful.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27095
+      },
+      "JournalIndex": 27061,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 37,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Indeed I am.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37783
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 12,
+      "Index": 38,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I have heard such arguments before, Eradru.  They are nothing more than attempts at justifying the oppression of the weak.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37785
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 13,
+      "Index": 39,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2353
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 1,
+      "Index": 40,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Would you mind if I rested here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27065
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 2,
+      "Index": 41,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am interested in the demon guard on the first floor.  Can you tell me about it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27067
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 7,
+      "Index": 42,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "One of the workers here is suffering from some sort of mental disorder.  Do you think you could aid her?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27068
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Eradru",
+      "NextPhraseIndex": 10,
+      "Index": 43,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2155
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 44,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [
+    "Global(\"SH_Demon_Secret\",\"GLOBAL\",3)",
+    "Global(\"SH_Vylu_Potion\",\"GLOBAL\",2)",
+    "!PartyHasItem(\"63GenDP\")",
+    "PartyHasItem(\"63GenDP\")",
+    "!PartyHasItem(\"63GenDP\")",
+    "PartyHasItem(\"63GenDP\")",
+    "Global(\"SH_Xavier_Dead\",\"GLOBAL\",1)",
+    "Global(\"SH_Demon_Secret\",\"GLOBAL\",3)",
+    "Global(\"SH_Vylu_Potion\",\"GLOBAL\",2)",
+    "ClassEx(Protagonist, Paladin)",
+    "Global(\"SH_Vylu_Potion\",\"GLOBAL\",2)",
+    "Global(\"SH_Demon_Secret\",\"GLOBAL\",3)",
+    "Global(\"SH_Vylu_Potion\",\"GLOBAL\",2)",
+    "Global(\"SH_Demon_Secret\",\"GLOBAL\",3)",
+    "Global(\"SH_Vylu_Potion\",\"GLOBAL\",2)"
+  ],
+  "Actions": [
+    "SetGlobal(\"SH_Need_Pass\",\"GLOBAL\",1)",
+    "StartStore(\"63Eradru\", Protagonist)",
+    "SetGlobal(\"SH_Need_Pass\",\"GLOBAL\",1)",
+    "FadeToColor([0.0],0)\r\nRestParty()\r\nFadeFromColor([0.0],0)",
+    "Enemy()",
+    "Enemy()",
+    "AddXpVar(\"Level_14_Average\",27062)\r\nGiveItemCreate(\"63GenMC\",Protagonist,1,0,0)\r\nSetGlobal(\"SH_Vylu_Potion\",\"GLOBAL\",3)"
+  ],
+  "Checksum": null,
+  "Filename": "63ERADRU.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 27063
+}

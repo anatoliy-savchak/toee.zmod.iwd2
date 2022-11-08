@@ -1,0 +1,111 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "*Most* dissappointing, yesssss.  Perhapsss Cedra was wrong to leave the Passs to one sssuch as he?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38390
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "You ssspeak true - but first, let us feasst on these warmbloodssss.  The killingsss have ssslowed of late, and my arrowssss thirst for blood.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38392
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "And ruin our sssport?  Ssssss... no - *look* at them - thissss will be a ssssmall matter.   And it leavesss more of a feassst for us, yessss.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38393
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTGrd1",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTGrd1",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "True()"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "60YTGRD2.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 38390
+}

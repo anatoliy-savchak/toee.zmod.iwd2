@@ -1,0 +1,853 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "What see I before mine eyes but strange faces from across the void.  Seek ye trade?  I be Myrvek of Gracklstugh, derro merchant and savant of the Hakrett Clan.  I brook nay loitering fools on trading ground.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22683
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 5,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Me driftdisks carry plenty.  Weapons, armor, poisons, potions, scrolls, skulls.  Whatever ye need.  If ye have anything worth trading, me coffers be full to the brim with gold, silver, and gems the size of ye tiny head.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22689
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Look at me gigantic head, blind man!  See me blue skin?  The only way a dwarf gets to looking like this is if he gets a good crush on the brain from a hammer and stays out in the frost fer too long.  Downright mind flayer delicacy.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22692
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "It be trading ground because WE BE TRADERS!  We trade, right here.  Understand?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22693
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Aye.  That must be why I be the derro savant, not them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22697
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Hmm.  Well, I know that IT BE FER TRADIN'!  Get out of here if ye ain't got no business to do!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22700
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Bah, shut ye flapping maw if ye don't like it!  Do ye want to trade or nay?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22701
+      },
+      "ResponsesIndexFirst": 20,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "I not be lookin' fer one, but if ye think I be scared of the likes of ye, ye'd be in fer a big surprise.  Do ye want to trade or nay?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22702
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Eh?  What do ye need now?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22704
+      },
+      "ResponsesIndexFirst": 26,
+      "ResponsesCount": 4,
+      "TriggerIndex": 2,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Oh, would ye?  I dinno about that.  Ye look kind of frail and wounded right now.  Ye don't seem like ye have the uh... the...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22705
+      },
+      "ResponsesIndexFirst": 30,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "That's it.  Fortitude.  Ye have nay fortitude for this sort of environment.  I think we be taking ye gear now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22706
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Right.  Enough talk fer now...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22707
+      },
+      "ResponsesIndexFirst": 32,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "Oh, ho, ho!  Tell us how ye really feel, Wode.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22708
+      },
+      "ResponsesIndexFirst": 33,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "How many of those \"one hundred thousand\" be drow, and how many be slaves?  A mile wide?  Bah, quit ye exaggeration, Wode!  Before he be done, he'll try to sell ye the whole city!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22709
+      },
+      "ResponsesIndexFirst": 34,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "What are these monsters doing here?  Get rid of them!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27284
+      },
+      "ResponsesIndexFirst": 35,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 14
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "What do you have for sale?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22684
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You're a derro savant?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22685
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Why is this trading ground?  It looks no different from any other cave.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22686
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 3,
+      "Index": 2,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22687
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 5,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22688
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "There's no need to be insulting.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22690
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 6,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I would like to see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22691
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22687
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 5,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22688
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I would like to see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22691
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22687
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 5,
+      "Index": 10,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22688
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Wode",
+      "NextPhraseIndex": 7,
+      "Index": 12,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Are you looking for a fight?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22698
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 7,
+      "Index": 13,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Fine.  Let me see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22699
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22687
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 5,
+      "Index": 15,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22688
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Are you looking for a fight?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22698
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 7,
+      "Index": 17,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Fine.  Let me see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22699
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22688
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Are you looking for a fight?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22698
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 7,
+      "Index": 20,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Fine.  Let me see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22699
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 21,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22688
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Fine.  Let me see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22699
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 23,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I've had enough of your insults, bastard.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22703
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22688
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I would like to see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22691
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 26,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I would like to see your wares.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22691
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 9,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22687
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Myrvek",
+      "NextPhraseIndex": 5,
+      "Index": 28,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22688
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 29,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Wode",
+      "NextPhraseIndex": 8,
+      "Index": 30,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Heggr",
+      "NextPhraseIndex": 12,
+      "Index": 31,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 32,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Wode",
+      "NextPhraseIndex": 4,
+      "Index": 33,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Wode",
+      "NextPhraseIndex": 5,
+      "Index": 34,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 35,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "See([ENEMY], FALSE)",
+    "NumTimesTalkedTo(0)",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [
+    "HPPercentGT(Protagonist,49)",
+    "HPPercentLT(Protagonist,50)"
+  ],
+  "Actions": [
+    "StartStore(\"53Myrvek\",Protagonist)",
+    "StartStore(\"53Myrvek\",Protagonist)",
+    "StartStore(\"53Myrvek\",Protagonist)",
+    "StartStore(\"53Myrvek\",Protagonist)",
+    "StartStore(\"53Myrvek\",Protagonist)",
+    "StartStore(\"53Myrvek\",Protagonist)",
+    "Enemy()",
+    "StartStore(\"53Myrvek\",Protagonist)",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "53MYRVEK.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 22683
+}

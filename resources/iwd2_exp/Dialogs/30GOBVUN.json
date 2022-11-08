@@ -1,0 +1,599 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "What do you want, townie scum?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13930
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 4,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "This isn't my horde, but I have an obligation to be here.  As a matter of fact, I should probably be attacking you right now.  I guess you caught me in a moment of contemplation.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13934
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 3,
+      "TriggerIndex": 2,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Yes.   Don't look so surprised, just because I'm a goblin doesn't mean I don't think.  I have responsibility for my clan, the Vunarg Clan.  We must eat and hunt and war.  Here we have none of those things.  Well, none yet, we wait for now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13938
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Because I'm a goblin.  We go hording and killing things like you.  As a matter of fact, there's nothing I like more than killing bloated townie scum like yourself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13942
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "I'm upset about getting kicked around by the orcs and the bugbears.  We're not getting any food, and we haven't even gotten to see any fights yet.  Back home on the plains we at least got to hunt and war with the other clans.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13946
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "You think you're going to kill all those orcs and bugbears?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13950
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "I guess that means we're fighting.  At least you'll provide some entertainment for my clan.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13960
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Hmmm...  I've already been thinking about that.  My people would be happier, and we can probably take over all that hunting ground nearby.  I can burn down the Mokrul Clan village!  Ha-ha!  Fine, townie scum, you've convinced me.  To the hells with this lot, we've better things to do!  Farewell, townie scum!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13985
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "I don't even know why I'm talking to you.  Prepare to die.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28364
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Fine!  I will... but don't think for a moment that my leaving has anything to do with you.  My people would be happier, and we can probably take over all that hunting ground nearby.  I can burn down the Mokrul Clan village!  Ha-ha!  Farewell, townie scum!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37965
+      },
+      "ResponsesIndexFirst": 24,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I want you dead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13931
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "A better question is, \"what do you and your horde want?\"",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13932
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Uhhh... lay down your weapons and walk out of here now!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13933
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 8,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Sheath your weapons and walk out of here now!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37963
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 9,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Contemplate this - Die, scum!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13935
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "A moment of contemplation?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13936
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 2,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "So what you're trying to say is that you're goblin scum and a coward?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13937
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 8,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Interesting.  Die scum!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13939
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Why don't you leave?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13940
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 3,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Maybe that's because you're a poor leader?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13941
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 8,
+      "Index": 9,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Why don't you just try.  Die scum!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13943
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You're not killing me now...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13944
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 4,
+      "Index": 11,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "But you know that your own lack of ability and notably small stature prevent you from such a course of action?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13945
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 8,
+      "Index": 12,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I'll give you a war.  Die scum!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13947
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Well, you can stay here and die by my hand, or just leave.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13948
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 5,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Maybe if you weren't half as tall as orcs and bugbears you could get some more respect.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13949
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 8,
+      "Index": 15,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We'll see, but you're first.  Die scum!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13951
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Yes.  We're going to take this horde down.  You can leave or be part of the casualties.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13952
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 6,
+      "Index": 17,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Obviously you can't stand in my way, you poor cowardly little scumbag.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13953
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 8,
+      "Index": 18,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Die, scum!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13961
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Why don't you just take your clan back home?  You can hunt and war and all that stuff there.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13983
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 7,
+      "Index": 20,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "The only entertainment they'll have is getting to see their insides before they die.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13984
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30gobVun",
+      "NextPhraseIndex": 8,
+      "Index": 21,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, goblin scum.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 13987
+      },
+      "JournalIndex": 13925,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 23,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, goblin scum.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37967
+      },
+      "JournalIndex": 37968,
+      "TriggerIndex": -1,
+      "ActionIndex": 9,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    }
+  ],
+  "TriggersPhrase": [
+    "False()",
+    "NumTimesTalkedTo(0)",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [
+    "CheckSkillGT(Protagonist,6,Diplomacy)",
+    "CheckSkillLT(Protagonist,6,Intimidate)",
+    "CheckSkillGT(Protagonist,7,Intimidate)",
+    "CheckSkillGT(Protagonist,6,Diplomacy)"
+  ],
+  "Actions": [
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "AddXpVar(\"Level_5_Average\",13928)\r\nSetGlobal(\"30gobVun_leave\", \"GLOBAL\", 1)\r\nStartCutSceneMode() StartCutScene(\"30cVunLv\")",
+    "Enemy()",
+    "AddXpVar(\"Level_5_Hard\",13928)\r\nSetGlobal(\"30gobVun_leave\", \"GLOBAL\", 1)\r\nStartCutSceneMode() StartCutScene(\"30cVunLv\")"
+  ],
+  "Checksum": null,
+  "Filename": "30GOBVUN.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 13930
+}

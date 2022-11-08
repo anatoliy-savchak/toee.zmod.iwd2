@@ -1,0 +1,235 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "The mage does not acknowledge your presence.  She seems preoccupied.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30267
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "I think they did quite well for simulacrums, master.  I did not notice any large discrepancies between them and true demons.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30268
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Of course, master.  I will make note of that and look into the matter.  Is there anything else that caught your eye about their performance?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30270
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Then...  I passed?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30272
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Thank you, master!  Where shall we go?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30274
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "I see...  Well, I must admit it does sound like fun.  Let us be off...  But, what about these test subjects?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30276
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Very well, let us go.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34410
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Wait.  What are you talking about?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30269
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Fynne",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Could you take a minute to...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 523
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Fynne",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Passed what?  Is this some kind of test or something?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30273
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Fynne",
+      "NextPhraseIndex": 3,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You are not going anywhere until I know what just happened here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30275
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Fynne",
+      "NextPhraseIndex": 4,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Now just one minute...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30277
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Fynne",
+      "NextPhraseIndex": 5,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Uh...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34411
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "True()"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "StartCutScene(\"63cTasha\")"
+  ],
+  "Checksum": null,
+  "Filename": "63TASHA.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 30267
+}

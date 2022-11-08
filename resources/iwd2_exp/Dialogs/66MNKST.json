@@ -1,0 +1,79 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Hello stranger, do you know I hate you?  I'm afraid I don't have time to listen to your senseless banter, I must return to my meditations in hate.  May hate and loathing be with you and guide you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34016
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "You again?  Didn't I tell you I hated you?  I reaffirm my hatred towards you and the female thing that spawned you.  So, bad day to you, my friend, and may chaotic order flood your body and make you bleed from your ears.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34047
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 1
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [],
+  "Checksum": null,
+  "Filename": "66MNKST.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 34016
+}

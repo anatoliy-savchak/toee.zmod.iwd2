@@ -1,0 +1,2082 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Eh?  Who... who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22422
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 7,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "I am Imphraili Asserbai of Tyranturos.  I do research for the school of transmutation, as should be clear from the beasts in the cages.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22430
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "*Khas.*  If that is the case, please leave my laboratory.  Whatever mysterious reason you have to be down here, stay away from the Viciscamera or you'll regret it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22435
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Truly?  That's unfortunate, because I really don't care what you think.  The philosophy of transmutation magic revolves around change and experimentation.  I don't need your druidic circle's seal of approval.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22437
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Hah-hah-hah, you're a...  WHAT?!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22438
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Well, things are progressing very well.  The Viciscamera is able to transform captive drow with little difficulty.  There are only a few difficulties, which I already informed Saablic of.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22441
+      },
+      "ResponsesIndexFirst": 24,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "I thank you.  The location is less than ideal, but I have a level of freedom here I would never have enjoyed in Thay.  Many others have joined with my master, Saablic Tan, for such freedom to experiment.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22444
+      },
+      "ResponsesIndexFirst": 25,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Hm.  I have a feeling that you really aren't supposed to be down here.  I have a lot of work to do, so I'm not going to stand around and interrogate you.  Just... stay away from the Viciscamera.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22446
+      },
+      "ResponsesIndexFirst": 30,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Yes.  I am a wizard in the school of transmutation and a member of the Researcher political faction.  Many of the Thayans here are.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22448
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 7,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "The Viciscamera?  It's a magical creature that transforms drow into driders without the assistance of the yochlols, the so-called Handmaidens of Lolth.  I know everything about it - I created it with Saablic Tan.  Why?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22451
+      },
+      "ResponsesIndexFirst": 38,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Oh.  These are my latest experiments in alternate dridrae lifeforms.  The twitching one is a celeridrider.  His Viciscamera pod was modified to replicate a quickling's supernatural speed and metabolism.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22455
+      },
+      "ResponsesIndexFirst": 41,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "The other male is a spithdrider.  He isn't as strong as he should be because his exoskeleton is thinner.  He can cast webs from all of his legs, which is the point of the experiment.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22456
+      },
+      "ResponsesIndexFirst": 42,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "The bloated female shifting around in her cage is a cradoldrider.  She carries spiders with her in her abdomen.  I'm not sure how useful she would be.  She's so slow that she can't keep up with others, and she can't spin webs.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22457
+      },
+      "ResponsesIndexFirst": 43,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "It is a creature... well, a creature in a chamber.  The Viciscamera is really just a series of pods and a central body that transforms drow into driders without the assistance of the yochlols, the so-called Handmaidens of Lolth.  Saablic Tan assisted in its creation.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22458
+      },
+      "ResponsesIndexFirst": 49,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "That's... interesting.  Listen, paladin, I'm just here to do research.  I really don't care about Isair and Madae's political aspirations.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22460
+      },
+      "ResponsesIndexFirst": 54,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "In brief, the major problems are still with the creatures' system of nerves and muscles.  Our process has to transform their muscles back and forth through interaction with the Viciscamera pods - it leaves them particularly vulnerable to electricity.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22465
+      },
+      "ResponsesIndexFirst": 58,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "Fine.  Just be careful around the Viciscamera.  When the driders hatch, they are extremely hungry.  Now, if you'll excuse me, I have a great deal of work to do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22467
+      },
+      "ResponsesIndexFirst": 61,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "Hm?  Oh, Saablic is my master.  He's a Red Wizard of Thay, like me.  He's also a Researcher, which is why he left Thay so many years ago.  I'm lucky to have found him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22468
+      },
+      "ResponsesIndexFirst": 62,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "Well, myself included, there are several dozen.  Saablic has attracted many eager Red Wizard Researchers who are glad to be free of their Imperialist masters' scheming.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22470
+      },
+      "ResponsesIndexFirst": 68,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "It is one of the two major political groups in Thay.  The Researchers believe that the focus of the Red Wizards should remain primarily on research of magical theory and practice...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22471
+      },
+      "ResponsesIndexFirst": 74,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "The other group, the Imperialists, believe that we should hurl all of our resources at Aglarond and Rashemen in the hope that they will eventually give up or self-destruct.  Foolishness.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22472
+      },
+      "ResponsesIndexFirst": 75,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "Wh- WHAT?!  You idiot!  You complete fool, buffoon --  MORON!  Do you not have any idea about what the Viciscamera represents?  This has never before been accomplished on Faer�n!  GAH!  GO BACK TO RASHEMEN, STONEHEAD!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22474
+      },
+      "ResponsesIndexFirst": 81,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "Well, fine, just don't investigate it too closely.  The driders will attack on sight if you happen to be standing nearby when they hatch.  Now, if you'll excuse me, I have a great deal of work to do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22475
+      },
+      "ResponsesIndexFirst": 82,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "Yes?  It was lovely chatting with you before, but I am quite busy.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22478
+      },
+      "ResponsesIndexFirst": 83,
+      "ResponsesCount": 6,
+      "TriggerIndex": 1,
+      "Index": 23
+    },
+    {
+      "Text": {
+        "Text": "You!  Stop that!  Get away from my laboratory.  I can't have strangers muddling about with those reagents and fouling them with impurities.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35750
+      },
+      "ResponsesIndexFirst": 89,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 24
+    },
+    {
+      "Text": {
+        "Text": "Well... yes, thank you.  *Kas.*  Fine, use it as you will - just take great care with my materials.  And don't scatter my notes; they look muddled but are in fact quite organized.  Now, if you'll excuse me...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35752
+      },
+      "ResponsesIndexFirst": 92,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 25
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I'm <CHARNAME>.  Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22423
+      },
+      "JournalIndex": 22419,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Who I am is none of your concern.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22424
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am <CHARNAME>.  As a druid, the sight of whatever abominations you have created here sickens me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22425
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 3,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am <CHARNAME>, a paladin and agent of the Ten-Towns.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22426
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 4,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We are in the employ of Isair and Madae.  We've come to... check on your progress.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22427
+      },
+      "JournalIndex": 22420,
+      "TriggerIndex": 2,
+      "ActionIndex": 1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 5,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I am a fellow practitioner of the Art.  You have quite a laboratory here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22428
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 2,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 6,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "No one in particular... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22429
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 7,
+      "Index": 6,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Your tattoos... you are from Thay?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22431
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 8,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is Saablic Tan?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 4,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 17,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about a device that transforms drow into driders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22432
+      },
+      "JournalIndex": 22420,
+      "TriggerIndex": 5,
+      "ActionIndex": 5,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 9,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What *are* those things in the cages?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": 6,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 10,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": 7,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 7,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22440
+      },
+      "JournalIndex": 22419,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 1,
+      "Index": 13,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Who is Saablic Tan?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": 9,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 17,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What is the Viciscamera?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22436
+      },
+      "JournalIndex": 22420,
+      "TriggerIndex": 10,
+      "ActionIndex": 10,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 13,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about a device that transforms drow into driders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22432
+      },
+      "JournalIndex": 22420,
+      "TriggerIndex": 11,
+      "ActionIndex": 11,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 9,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What *are* those things in the cages?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": 12,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 10,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 13,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 7,
+      "Index": 18,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22440
+      },
+      "JournalIndex": 22419,
+      "TriggerIndex": -1,
+      "ActionIndex": 14,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 1,
+      "Index": 19,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about a device that transforms drow into driders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22432
+      },
+      "JournalIndex": 22420,
+      "TriggerIndex": 13,
+      "ActionIndex": 15,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 9,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What *are* those things in the cages?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": 16,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 10,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 17,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 7,
+      "Index": 22,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I'm a paladin and an agent of the Ten-Towns.  I'm on my way to the Severed Hand to deal with Isair and Madae.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22439
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 14,
+      "Index": 23,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We have not been informed of those difficulties.  Please tell us...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22442
+      },
+      "JournalIndex": 22421,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 15,
+      "Index": 24,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22440
+      },
+      "JournalIndex": 22419,
+      "TriggerIndex": -1,
+      "ActionIndex": 18,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 1,
+      "Index": 25,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Who is Saablic Tan?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 19,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 17,
+      "Index": 26,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about a device that transforms drow into driders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22432
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": 20,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 9,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What *are* those things in the cages?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": 21,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 10,
+      "Index": 28,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 22,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 7,
+      "Index": 29,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 30,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What is the Researcher faction?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22450
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 19,
+      "Index": 31,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Many?  How many are there?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22449
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 18,
+      "Index": 32,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is Saablic Tan?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": 23,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 17,
+      "Index": 33,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about a device that transforms drow into driders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22432
+      },
+      "JournalIndex": 22420,
+      "TriggerIndex": 18,
+      "ActionIndex": 24,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 9,
+      "Index": 34,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What *are* those things in the cages?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": 25,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 10,
+      "Index": 35,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 20,
+      "ActionIndex": 26,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 7,
+      "Index": 36,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 37,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I came here to destroy it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22452
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 27,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 21,
+      "Index": 38,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Professional curiosity.  I happened across the rumor and thought I would investigate.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22453
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 22,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 22,
+      "Index": 39,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I was merely curious.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22454
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 16,
+      "Index": 40,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 11,
+      "Index": 41,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 12,
+      "Index": 42,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22440
+      },
+      "JournalIndex": 22419,
+      "TriggerIndex": 24,
+      "ActionIndex": 28,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 1,
+      "Index": 43,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Your tattoos... you are from Thay?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22431
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 25,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 8,
+      "Index": 44,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Who is Saablic Tan?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": 29,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 17,
+      "Index": 45,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about a device that transforms drow into driders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22432
+      },
+      "JournalIndex": 22420,
+      "TriggerIndex": 27,
+      "ActionIndex": 30,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 9,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": 31,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 47,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 29,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 48,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "That's interesting.  I'd like to see it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22459
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 22,
+      "Index": 49,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22440
+      },
+      "JournalIndex": 22419,
+      "TriggerIndex": -1,
+      "ActionIndex": 32,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 50,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Who is Saablic Tan?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 30,
+      "ActionIndex": 33,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 17,
+      "Index": 51,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What *are* those things in the cages?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 31,
+      "ActionIndex": 34,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 10,
+      "Index": 52,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 35,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 7,
+      "Index": 53,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22440
+      },
+      "JournalIndex": 22419,
+      "TriggerIndex": -1,
+      "ActionIndex": 36,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 1,
+      "Index": 54,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about a device that transforms drow into driders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22432
+      },
+      "JournalIndex": 22420,
+      "TriggerIndex": 32,
+      "ActionIndex": 37,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 9,
+      "Index": 55,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What *are* those things in the cages?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 33,
+      "ActionIndex": 38,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 10,
+      "Index": 56,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 39,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 7,
+      "Index": 57,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22440
+      },
+      "JournalIndex": 22419,
+      "TriggerIndex": 34,
+      "ActionIndex": 40,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 1,
+      "Index": 58,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Who is Saablic Tan?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 41,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 17,
+      "Index": 59,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Interesting.  We're going to have a look around now.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22443
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 16,
+      "Index": 60,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 61,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22440
+      },
+      "JournalIndex": 22419,
+      "TriggerIndex": 35,
+      "ActionIndex": 42,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 1,
+      "Index": 62,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Your tattoos... you are from Thay?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22431
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 36,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 8,
+      "Index": 63,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about a device that transforms drow into driders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22432
+      },
+      "JournalIndex": 22420,
+      "TriggerIndex": 37,
+      "ActionIndex": 43,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 9,
+      "Index": 64,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What *are* those things in the cages?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 38,
+      "ActionIndex": 44,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 10,
+      "Index": 65,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 39,
+      "ActionIndex": 45,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 7,
+      "Index": 66,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 40,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 67,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What is the Researcher faction?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22450
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 19,
+      "Index": 68,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is Saablic Tan?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 41,
+      "ActionIndex": 46,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 17,
+      "Index": 69,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about a device that transforms drow into driders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22432
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 42,
+      "ActionIndex": 47,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 9,
+      "Index": 70,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What *are* those things in the cages?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 43,
+      "ActionIndex": 48,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 10,
+      "Index": 71,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 44,
+      "ActionIndex": 49,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 7,
+      "Index": 72,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 45,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 73,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 20,
+      "Index": 74,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "How many Thayans are here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35720
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 18,
+      "Index": 75,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is Saablic Tan?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 46,
+      "ActionIndex": 50,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 17,
+      "Index": 76,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about a device that transforms drow into driders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22432
+      },
+      "JournalIndex": 22420,
+      "TriggerIndex": 47,
+      "ActionIndex": 51,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 9,
+      "Index": 77,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What *are* those things in the cages?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 48,
+      "ActionIndex": 52,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 10,
+      "Index": 78,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 49,
+      "ActionIndex": 53,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 7,
+      "Index": 79,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 50,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 80,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 81,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 82,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22440
+      },
+      "JournalIndex": 22419,
+      "TriggerIndex": 51,
+      "ActionIndex": 54,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 1,
+      "Index": 83,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "You have a great number of tattoos.  Are you from Thay?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22479
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 52,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 8,
+      "Index": 84,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Who is Saablic Tan?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22445
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 53,
+      "ActionIndex": 55,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 17,
+      "Index": 85,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What do you know about a device that transforms drow into driders?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22432
+      },
+      "JournalIndex": 22420,
+      "TriggerIndex": 54,
+      "ActionIndex": 56,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 9,
+      "Index": 86,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What *are* those things in the cages?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22433
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 55,
+      "ActionIndex": 57,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 10,
+      "Index": 87,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 88,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "It's an impressive collection for so small an area.  As a... ah... transmuter... myself, I must say I'm impressed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38547
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 56,
+      "ActionIndex": 58,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 25,
+      "Index": 89,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "It's an impressive collection for so small an area.  As a transmuter myself, I must say I'm impressed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35751
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 57,
+      "ActionIndex": 59,
+      "NextScriptDialog": "53Imphra",
+      "NextPhraseIndex": 25,
+      "Index": 90,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22434
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 91,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Lab",
+      "NextPhraseIndex": 2,
+      "Index": 92,
+      "Flags": "None"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [
+    "ClassEx(Protagonist,DRUID)",
+    "ClassEx(Protagonist,PALADIN)",
+    "CheckSkillGT(Protagonist, 10, Bluff)\r\n!ClassEx(Protagonist,PALADIN)",
+    "CheckSkillGT(Protagonist, 4, Diplomacy)\r\nClassEx(Protagonist, WIZARD)",
+    "Global(\"Imp_Saablic\",\"GLOBAL\",1)\r\nGlobal(\"Know_Saablic\",\"GLOBAL\",0)",
+    "Global(\"Viciscamera_Quest\",\"GLOBAL\",1)\n!Global(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "!Global(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "!Global(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "Global(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "Global(\"Know_Saablic\",\"GLOBAL\",2)",
+    "Global(\"Viciscamera_Quest\",\"GLOBAL\",1)\n!Global(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "Global(\"Viciscamera_Quest\",\"GLOBAL\",1)\n!Global(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "!Global(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "Global(\"Viciscamera_Quest\",\"GLOBAL\",1)\n!Global(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "!Global(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "Global(\"Viciscamera_Quest\",\"GLOBAL\",1)\n!Global(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "!Global(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "Global(\"Imp_Saablic\",\"GLOBAL\",1)\r\nGlobal(\"Know_Saablic\",\"GLOBAL\",0)",
+    "Global(\"Viciscamera_Quest\",\"GLOBAL\",1)\n!Global(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "!Global(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "!Global(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "Global(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "ClassEx(Protagonist,WIZARD)\r\nCheckSkillGT(Protagonist, 4, Diplomacy)",
+    "!ClassEx(Protagonist, Paladin)",
+    "Global(\"Know_Imphraili\",\"GLOBAL\",0)",
+    "Global(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "Global(\"Imp_Saablic\",\"GLOBAL\",1)\r\nGlobal(\"Know_Saablic\",\"GLOBAL\",0)",
+    "Global(\"Viciscamera_Quest\",\"GLOBAL\",1)\n!Global(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "!Global(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "Global(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "Global(\"Imp_Saablic\",\"GLOBAL\",1)\r\nGlobal(\"Know_Saablic\",\"GLOBAL\",0)",
+    "!Global(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "Global(\"Viciscamera_Quest\",\"GLOBAL\",1)!Global(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "!Global(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "Global(\"Know_Imphraili\",\"GLOBAL\",0)",
+    "Global(\"Know_Imphraili\",\"GLOBAL\",0)",
+    "Global(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "Global(\"Viciscamera_Quest\",\"GLOBAL\",1)\n!Global(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "!Global(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "!Global(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "Global(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "Global(\"Imp_Saablic\",\"GLOBAL\",1)\r\nGlobal(\"Know_Saablic\",\"GLOBAL\",0)",
+    "Global(\"Viciscamera_Quest\",\"GLOBAL\",1)\n!Global(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "!Global(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "!Global(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "Global(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "Global(\"Imp_Saablic\",\"GLOBAL\",1)\r\nGlobal(\"Know_Saablic\",\"GLOBAL\",0)",
+    "Global(\"Viciscamera_Quest\",\"GLOBAL\",1)\n!Global(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "!Global(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "!Global(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "Global(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "Global(\"Know_Imphraili\",\"GLOBAL\",0)",
+    "Global(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "Global(\"Imp_Saablic\",\"GLOBAL\",1)\r\nGlobal(\"Know_Saablic\",\"GLOBAL\",0)",
+    "Global(\"Viciscamera_Quest\",\"GLOBAL\",1)\n!Global(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "!Global(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "ClassEx(Protagonist, WIZARD)\r\n!Kit(Protagonist, Mage_Transmuter)\r\n!ClassEx(Protagonist, Paladin)\r\nCheckSkillGT(Protagonist, 4, Bluff)",
+    "Kit(Protagonist, Mage_Transmuter)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)\r\nSetGlobal(\"Imp_Saablic\",\"GLOBAL\",1)\r\nSetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imp_Saablic\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Saablic\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Saablic\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Saablic\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Saablic\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "Enemy()",
+    "SetGlobal(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Saablic\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Saablic\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Saablic\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Saablic\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Saablic\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imphraili_Warned\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Imphraili\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Saablic\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Viciscamera\",\"GLOBAL\",1)",
+    "SetGlobal(\"Know_Special_Driders\",\"GLOBAL\",1)",
+    "SetGlobal(\"Imp_Lab\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Imp_Lab\", \"GLOBAL\", 1)"
+  ],
+  "Checksum": null,
+  "Filename": "53IMPHRA.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 22422
+}

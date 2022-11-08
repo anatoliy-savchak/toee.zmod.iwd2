@@ -1,0 +1,116 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "You want talk, you talk Vunarg!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35489
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "I tell you before, you want talk, talk Vunarg!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35492
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 2,
+      "TriggerIndex": 0,
+      "Index": 1
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Very well.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35490
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "How about I kill you instead.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35491
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Fine, I'll speak to Vunarg.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35493
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Time to add you to the death pool...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35494
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedToGT(0)",
+    "NumTimesTalkedTo(0)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "Enemy()",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "30VUNGOB.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 35489
+}

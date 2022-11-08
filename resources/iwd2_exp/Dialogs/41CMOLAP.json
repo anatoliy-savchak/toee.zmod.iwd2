@@ -1,0 +1,49 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "It's them - the ones we've been warned about!  Auril, let us serve you in victory... or die in failure!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40977
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 0
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "41CMOLAP.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 40977
+}

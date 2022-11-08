@@ -1,0 +1,412 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "You go big door.  Chief Guthma say no come this way.  NO WAY NO MORE.   So Gark now say go 'way, puny one!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15943
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 3,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "You no hear good.  YOU GO AWAY!  Go talk Trugnuk, go big door.  Trugnuk have key.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15952
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 3,
+      "TriggerIndex": 1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "ARG!  Gark no give food.  Gark no open door!  STOP MAKE NOISE ON DOOR! ME NO OPEN!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15958
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 2,
+      "TriggerIndex": 2,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Gark hate you.  Me no open.  You go big door.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15959
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 1,
+      "TriggerIndex": 3,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "You dumb-head make lie!  Chief Guthma make Trugnuk have key.  You no have key!  GO 'WAY!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15962
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Trugnuk have key, dumb-head.  Trugnuk no tell Gark open.  Trugnuk far by big door.  You no Trugnuk.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15965
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "GARK GET MORE GUARD.  ME FIND YOU! GARK SMASH!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25607
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": 4,
+      "Index": 6
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Me goblin.  Me hungry.  Me get food.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15949
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "30ogrGar",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "ME IS CHIEF GUTHMA!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15950
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "30ogrGar",
+      "NextPhraseIndex": 4,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Very well.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15951
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Me goblin.  Me hungry.  Me get food.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15949
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 3,
+      "NextScriptDialog": "30ogrGar",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "ME IS TRUGNUK!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15953
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 4,
+      "NextScriptDialog": "30ogrGar",
+      "NextPhraseIndex": 5,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Very well.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15954
+      },
+      "JournalIndex": 15928,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Me goblin.  Me hungry.  Me get food.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15949
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 6,
+      "NextScriptDialog": "30ogrGar",
+      "NextPhraseIndex": 3,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Very well.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15954
+      },
+      "JournalIndex": 15928,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 15928,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Me no Guthma.  Guthma send me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15963
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30ogrGar",
+      "NextPhraseIndex": 1,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "ME IS TRUGNUK!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15953
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": 9,
+      "NextScriptDialog": "30ogrGar",
+      "NextPhraseIndex": 5,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Very well.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15954
+      },
+      "JournalIndex": 15928,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Me lose key.  Me TRUGNUK.  Open door!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15983
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30ogrGar",
+      "NextPhraseIndex": 3,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Trugnuk send me!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15984
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30ogrGar",
+      "NextPhraseIndex": 3,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Very well.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15954
+      },
+      "JournalIndex": 15928,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 15928,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasAction, HasNextDialog, HasJournal"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "Global(\"30ogrGar_Nodes\", \"GLOBAL\", 1)",
+    "Global(\"30ogrGar_Nodes\", \"GLOBAL\", 2)",
+    "Global(\"30ogrGar_Nodes\", \"GLOBAL\", 3)",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [
+    "!ClassEx(Protagonist,Paladin)",
+    "CheckStatGT(Protagonist, 12, INT) !ClassEx(Protagonist,Paladin)",
+    "!ClassEx(Protagonist,Paladin)",
+    "CheckStatGT(Protagonist, 12, INT) !ClassEx(Protagonist,Paladin)",
+    "!ClassEx(Protagonist,Paladin)",
+    "!ClassEx(Protagonist,Paladin)",
+    "!ClassEx(Protagonist,Paladin)",
+    "!ClassEx(Protagonist,Paladin)",
+    "!ClassEx(Protagonist,Paladin)"
+  ],
+  "Actions": [
+    "SetGlobal(\"30ogrGar_Nodes\", \"GLOBAL\", 1)",
+    "SetGlobal(\"30ogrGar_Nodes\", \"GLOBAL\", 1)",
+    "SetGlobal(\"30ogrGar_Nodes\", \"GLOBAL\", 1)",
+    "SetGlobal(\"30ogrGar_Nodes\", \"GLOBAL\", 2)",
+    "SetGlobal(\"30ogrGar_Nodes\", \"GLOBAL\", 2)",
+    "SetGlobal(\"30ogrGar_Nodes\", \"GLOBAL\", 2)",
+    "SetGlobal(\"30ogrGar_Nodes\", \"GLOBAL\", 3)",
+    "SetGlobal(\"30ogrGar_Nodes\", \"GLOBAL\", 3)",
+    "SetGlobal(\"30ogrGar_Nodes\", \"GLOBAL\", 4)",
+    "SetGlobal(\"30ogrGar_Nodes\", \"GLOBAL\", 2)",
+    "SetGlobal(\"30ogrGar_Nodes\", \"GLOBAL\", 5)"
+  ],
+  "Checksum": null,
+  "Filename": "30OGRGAR.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 15943
+}

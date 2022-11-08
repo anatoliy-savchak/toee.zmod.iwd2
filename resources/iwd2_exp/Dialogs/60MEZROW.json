@@ -1,0 +1,271 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Katchmat, strangers wearing foreign garb approach!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30711
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "I have heard that the leader of the yuan-ti is Ojaiha, an ancient priest.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30713
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Centuries ago, the yuan-ti imprisoned the Guardian of their portal.  It was rumored to have been a terrible monster of some kind.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30714
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": 3,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Our warriors are brave, but it is not a fight we fear.  It is the traps of the yuan-ti.  Their devices can bring an end to a man's life faster than a sword.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30715
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": 4,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "The yuan-ti are rumored to have two elite orders in their temple.  One is a group of assassins, the other, a group of sorcerers.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30716
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": 5,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "A warrior once infiltrated the temple by donning the robes of a human initiate.  He was eventually exposed and killed by the elite archer guards.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30717
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": 6,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "The yuan-ti sacrifice men in their temple.  In strange rituals, they keep their hearts alive while the bodies rot.  The victims long to recover their hearts and end their suffering.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30718
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": 7,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Flee, foreigners, flee!  The Guardian has been slain!  The great portal is closing!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30719
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 7
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60MezroW",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"60The_Guardian_Dead\",\"GLOBAL\",1)",
+    "!Global(\"Katchmat_Talked\",\"GLOBAL\",1)",
+    "Global(\"Katchmat_Talked\",\"GLOBAL\",1)\nRandomNum(6,1)",
+    "Global(\"Katchmat_Talked\",\"GLOBAL\",1)\nRandomNum(6,2)",
+    "Global(\"Katchmat_Talked\",\"GLOBAL\",1)\nRandomNum(6,3)",
+    "Global(\"Katchmat_Talked\",\"GLOBAL\",1)\nRandomNum(6,4)",
+    "Global(\"Katchmat_Talked\",\"GLOBAL\",1)\nRandomNum(6,5)",
+    "Global(\"Katchmat_Talked\",\"GLOBAL\",1)\nRandomNum(6,6)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [],
+  "Checksum": null,
+  "Filename": "60MEZROW.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 30711
+}

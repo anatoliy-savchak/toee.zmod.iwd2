@@ -1,0 +1,730 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "I am Drothan, a priest.  What do you want?  If it is healing or some such, you must speak with Eradru.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26597
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 3,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Then you must speak to Eradru.  He can help you, not me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26601
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "He is usually over on the far side of the room.  Near the window.  Try looking there.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26604
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "No.  It is not among my *duties* as a *minor* priest.  I am in charge of cleaning up around here, nothing more.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26606
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Yes...  I am becoming disillusioned with this place... and with my faith.  I no longer feel a part of anything here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26608
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "My faith teaches that the strong shall prevail, and the weak shall perish.  It is through strife that we are made worthy of life...  I fail to see my purpose here at the Hand.  What are the trials that I must endure to bolster my body and spirit?  As I said, I am becoming disillusioned.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26610
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Yes.  He makes it a point to come by here every morning and wave his new holy symbol under my nose.  One of these days I am going to shove that thing right up his...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26613
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "I... really should not answer such a question... but yes.  The new symbol grants access to the priest's chambers in the tower.  Anyone who possesses a symbol can enter the teleport circle and they will appear in the chamber.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26615
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "The globe is a gift presented to her ladyship, Madae, by Iyachtu Xvim himself.  It was given to her when she renounced the faith of Ilmater.  The globe contains the essence of three demons.  So long as the globe is intact, the demons cannot be slain.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26617
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Two are used as personal guards for Isair and Madae.  The third guards the slaves and prevents their escape.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26620
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Yes, that is correct.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26622
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "What you ask... would be a betrayal of my faith...  I...  Oh, to the Nine Hells with it...  Listen.  I do not know how to destroy the globe, but there is one who may.  A priest of Ilmater has been imprisoned in the war tower.  Seek him out.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26623
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "It is in the temple on the second floor of this fortress...  I must leave here now.  I cannot in good faith remain.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26625
+      },
+      "ResponsesIndexFirst": 24,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "I... really should not answer such a question... but yes.  It is one of three such creatures.  Their life essence is stored in an artifact known as the Globe of Essence.  So long as the globe is intact, the creatures cannot be slain.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26627
+      },
+      "ResponsesIndexFirst": 25,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "Again we meet.  What is it that you want?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26628
+      },
+      "ResponsesIndexFirst": 26,
+      "ResponsesCount": 3,
+      "TriggerIndex": 1,
+      "Index": 14
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I am in need of healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26598
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You sound upset.  Is there anything wrong?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26599
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 4,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26600
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Where can I find Eradru?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26602
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You cannot perform healing?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26603
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 3,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26600
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You sound upset.  Is there anything wrong?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26599
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 4,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Very well, farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26605
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Where can I find Eradru?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26607
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 2,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You sound upset.  Is there anything wrong?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26599
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 4,
+      "Index": 9,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26600
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Why is that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26609
+      },
+      "JournalIndex": 26576,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 5,
+      "Index": 11,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Where can I find Eradru?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26607
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 2,
+      "Index": 12,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I found the diary of a priest named Garuk.  In it he mentions being promoted over you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26611
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 6,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26600
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Is there something special about his new holy symbol?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26614
+      },
+      "JournalIndex": 26590,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 7,
+      "Index": 15,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Garuk also mentions the *Globe of Essence.*  Can you tell me anything about that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26616
+      },
+      "JournalIndex": 26591,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 8,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Where can I find Eradru?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26607
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 2,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 2155
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What are these demons used for?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26618
+      },
+      "JournalIndex": 26592,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 9,
+      "Index": 19,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "These three demons.  Two of them are Isair and Madae's bodyguards and the third is the slave guard?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26619
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 10,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Can you tell me how to destroy this globe?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26621
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 11,
+      "Index": 21,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Can you tell me how to destroy this globe?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26621
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 11,
+      "Index": 22,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "One last question.  Where can I find this globe?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26624
+      },
+      "JournalIndex": 26593,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 12,
+      "Index": 23,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26626
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Can you tell me how to destroy this globe?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26621
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26598
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 1,
+      "Index": 26,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You sound upset.  Is there anything wrong?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26599
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Droth",
+      "NextPhraseIndex": 4,
+      "Index": 27,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 26600
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 28,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [
+    "PartyHasItem(\"63BookGK\")",
+    "!Global(\"SH_SGem_Destroyed\",\"GLOBAL\",1)",
+    "Global(\"SH_SGem_Destroyed\",\"GLOBAL\",1)",
+    "GlobalGT(\"SH_Demon_Secret\",\"GLOBAL\",0)"
+  ],
+  "Actions": [
+    "AddXpVar(\"Level_14_Easy\",26596)\n",
+    "AddXpVar(\"Level_14_Easy\",26594)\n",
+    "AddXpVar(\"Level_14_Easy\",26595)\n",
+    "StartCutScene(\"63cDroth\")"
+  ],
+  "Checksum": null,
+  "Filename": "63DROTH.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 26597
+}

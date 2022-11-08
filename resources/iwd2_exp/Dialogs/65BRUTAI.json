@@ -1,0 +1,49 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "INFIDELS!  Prepare to suffer eternal torment and pain at the hands of those you've slain!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28606
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 0
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 28602,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasAction, HasNextDialog, HasJournal"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "AddXpVar(\"Level_14_Hard\",28604)\r\nStartCutScene(\" 65cADed0\")\r\nEnemy()"
+  ],
+  "Checksum": null,
+  "Filename": "65BRUTAI.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 28606
+}

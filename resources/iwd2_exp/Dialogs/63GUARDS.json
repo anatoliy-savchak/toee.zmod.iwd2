@@ -1,0 +1,171 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "You there!  This is a restricted area!  You will need to leave!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36531
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 4,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "WAIT!  You don't have a delegate pass!  You're intruders!  GUARDS, SEIZE THEM!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36534
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "You obviously have a hearing disorder!  You will now see why it is unwise to test the limits of a Legion of the Chimera guard!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36572
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 2
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Forgive me, apparently I got lost.  I will leave at once.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36532
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Forgive me, apparently I got lost.  I will leave at once.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36532
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Forgive me, apparently I got lost.  I will leave at once.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36532
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63Guards",
+      "NextPhraseIndex": 1,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Not until I kill you and all things associated with the Legion of the Chimera!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36533
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)  \n",
+    "NumTimesTalkedToGT(0)  "
+  ],
+  "TriggersResponse": [
+    "PartyHasItem(\"63GenDP\")",
+    "!PartyHasItem(\"63GenDP\") CheckStatGT(Protagonist, 15, CHR)",
+    "!PartyHasItem(\"63GenDP\")"
+  ],
+  "Actions": [
+    "SetGlobal(\"First_Warning\",\"Global\",1)",
+    "SetGlobal(\"First_Warning\",\"Global\",1)",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "63GUARDS.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 36531
+}

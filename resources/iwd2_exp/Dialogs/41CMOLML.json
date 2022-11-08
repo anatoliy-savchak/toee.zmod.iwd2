@@ -1,0 +1,143 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Hey, you there - I'm a bit turned around.  Would you happen to know the way to the foothills?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41002
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "<CHARNAME>?!  You sure took your time getting here, didn't you?  Nathaniel said you'd rescue us, but *The Master Of Locks* waits for no one!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41004
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Yes, he's being held in a prison on the first floor of the ice temple, hoping you would rescue him... try not to fail like those other *heroes,* all right?  Ummm, I'd love to stay, but talking to you and escaping from crazed Aurilites are mutually exclusive events, so-",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41006
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "DAMN!  Am I good or *what?!*",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41016
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 3
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Yes - we just came from there.  Well met.  I'm <CHARNAME>.  Who are-",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41003
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLML",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Nathaniel?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41005
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLML",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41cMOLB1",
+      "NextPhraseIndex": 12,
+      "Index": 2,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "JumpToPointInstant(Protagonist,[290.2340])\r\nStartCutSceneMode()\r\nStartCutScene(\"41cMOLo3\")"
+  ],
+  "Checksum": null,
+  "Filename": "41CMOLML.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 41002
+}

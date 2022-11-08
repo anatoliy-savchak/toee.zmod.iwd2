@@ -1,0 +1,716 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Well met, you.  Me second apprentice to Weenagoo, great goblin wizard!  You, uh, want something?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34098
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 5,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Last time me check, me goblin.  Why you ask?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34104
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Me not vermin now.  Me give up that life.  Make promise to Weenagoo and Orrick.  Me apprentice now!  You, uh, no ex-tur-me-nate?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34107
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Me grateful!  You want anything else?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34114
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Great goblin wizard!  He apprentice to Orrick.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34115
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "He usually across room glaring at me.  He be the one with fancy robe, staff, and frown...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34117
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Me not smartest goblin in horde.  Not know anything.  You ask other apprentice or Weenagoo.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34118
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Me think he upstairs...  Go main hall and try door to left.  Keep go up until no can go up.  Orrick there.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34119
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Me too.  Me been told me is dumb as stump.  But me is willing to learn!  Make self better!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34126
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Hmm.  You look like me know you...  You want something?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34127
+      },
+      "ResponsesIndexFirst": 26,
+      "ResponsesCount": 5,
+      "TriggerIndex": 1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Me not want trouble with you.  Go away.  Leave me alone!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34128
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 10
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "You are a goblin?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34099
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is Weenagoo?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34100
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 4,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this place?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34101
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 6,
+      "Index": 2,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I seek Orrick the Grey.  Where can I find him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34102
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 7,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34103
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "It is my experience that goblins are vermin who need to be exterminated.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34105
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 2,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am surprised that you are taking the time to study the magical arts.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34106
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 8,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "No, I'll not.  After all, you are trying to better yourself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34112
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 3,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I will consider it.  Watch yourself.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34113
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 3,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is Weenagoo?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34100
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 4,
+      "Index": 9,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this place?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34101
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 6,
+      "Index": 10,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I seek Orrick the Grey.  Where can I find him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34102
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 7,
+      "Index": 11,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34103
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Where can I find him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34116
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 5,
+      "Index": 13,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this place?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34101
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 6,
+      "Index": 14,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I seek Orrick the Grey.  Where can I find him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34102
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 7,
+      "Index": 15,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34103
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You are a goblin?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34099
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 1,
+      "Index": 17,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is Weenagoo?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34100
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 4,
+      "Index": 18,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I seek Orrick the Grey.  Where can I find him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34102
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 7,
+      "Index": 19,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34103
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Very well, farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34125
+      },
+      "JournalIndex": 34097,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 21,
+      "Flags": "HasText, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Who is Weenagoo?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34100
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 4,
+      "Index": 22,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this place?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34101
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 6,
+      "Index": 23,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I seek Orrick the Grey.  Where can I find him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34102
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 7,
+      "Index": 24,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34103
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You are a goblin?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34099
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 1,
+      "Index": 26,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is Weenagoo?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34100
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 4,
+      "Index": 27,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me about this place?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34101
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 6,
+      "Index": 28,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I seek Orrick the Grey.  Where can I find him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34102
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "64GobAp2",
+      "NextPhraseIndex": 7,
+      "Index": 29,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34103
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 30,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Very well, farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 34125
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 31,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "NumTimesTalkedToGT(0)",
+    "GlobalGT(\"MT_Rude_Guests\",\"GLOBAL\",0)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [],
+  "Checksum": null,
+  "Filename": "64GOBAP2.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 34098
+}

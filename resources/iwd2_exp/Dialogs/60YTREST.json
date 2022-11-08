@@ -1,0 +1,1426 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Hsss!  What do you want, warmblood?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33019
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 7,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "What is it you need, initiate?!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33027
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 7,
+      "TriggerIndex": 2,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Why have you interrupted me, warmblood?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33028
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 7,
+      "TriggerIndex": 3,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Hsss!  What do you need from me, initiate?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33029
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 7,
+      "TriggerIndex": 4,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Guardian?  What are you blabbering on about?  The only Guardiansss around here are the archersss you see patrolling the hall.  You don't want to go looking for them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33030
+      },
+      "ResponsesIndexFirst": 28,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "An initiate should direct his or her questionsss towards priestsss.  You want to find the priestsss?  Go to their chambers east of the ritual room.  You want food?  Go to the dining hall in the south.  Stay away from everything elssse - including me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33031
+      },
+      "ResponsesIndexFirst": 34,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Ojaiha, of course!  He has been the high priessst here for centuries.  Cease your foolish questions or, at the very least, direct them towards the priestsss.  Dealing with initiates is their responsibility, not ours.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33032
+      },
+      "ResponsesIndexFirst": 40,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Hsss!  Fool!  The ritual chamber is north of the stairwell, the priestsss' quarters are to the east of the ritual chamber, and the dining hall is to the south.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41232
+      },
+      "ResponsesIndexFirst": 46,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Save your questions for the clergy.  I have no time to banter with warmbloods about their confused spirituality.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41233
+      },
+      "ResponsesIndexFirst": 52,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Again?!  Hsss... what is it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41234
+      },
+      "ResponsesIndexFirst": 58,
+      "ResponsesCount": 7,
+      "TriggerIndex": 5,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Hsss!  Intruders!  Intruders in the temple!  To arms!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41235
+      },
+      "ResponsesIndexFirst": 65,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "That is a matter for priestsss, warmblood - not for one such as you.  Stay away from there if you value your life... now leave, lest you anger me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 41237
+      },
+      "ResponsesIndexFirst": 66,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 11
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Do you know anything of the sealed Vault and the stones in the eastern chamber of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33020
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 11,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am looking for the Guardian.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33021
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 4,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33022
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 5,
+      "Index": 2,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is the master of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 6,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am lost.  Can you help me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 7,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I would like to discuss the worship of Sseth with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33025
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 8,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you know anything of the sealed Vault and the stones in the eastern chamber of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33020
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 11,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am looking for the Guardian.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33021
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 4,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33022
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 5,
+      "Index": 9,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is the master of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 6,
+      "Index": 10,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am lost.  Can you help me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 7,
+      "Index": 11,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I would like to discuss the worship of Sseth with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33025
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 8,
+      "Index": 12,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you know anything of the sealed Vault and the stones in the eastern chamber of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33020
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 11,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am looking for the Guardian.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33021
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 4,
+      "Index": 15,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33022
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 5,
+      "Index": 16,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is the master of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 6,
+      "Index": 17,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am lost.  Can you help me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 7,
+      "Index": 18,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I would like to discuss the worship of Sseth with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33025
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 8,
+      "Index": 19,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you know anything of the sealed Vault and the stones in the eastern chamber of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33020
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 11,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am looking for the Guardian.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33021
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 4,
+      "Index": 22,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33022
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 5,
+      "Index": 23,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is the master of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 6,
+      "Index": 24,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am lost.  Can you help me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 7,
+      "Index": 25,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I would like to discuss the worship of Sseth with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33025
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 8,
+      "Index": 26,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 27,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you know anything of the sealed Vault and the stones in the eastern chamber of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33020
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 11,
+      "Index": 28,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33022
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 5,
+      "Index": 29,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is the master of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 6,
+      "Index": 30,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am lost.  Can you help me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 7,
+      "Index": 31,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I would like to discuss the worship of Sseth with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33025
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 8,
+      "Index": 32,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 33,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you know anything of the sealed Vault and the stones in the eastern chamber of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33020
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 11,
+      "Index": 34,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am looking for the Guardian.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33021
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 4,
+      "Index": 35,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is the master of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 6,
+      "Index": 36,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am lost.  Can you help me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 7,
+      "Index": 37,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I would like to discuss the worship of Sseth with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33025
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 8,
+      "Index": 38,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 39,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you know anything of the sealed Vault and the stones in the eastern chamber of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33020
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 11,
+      "Index": 40,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am looking for the Guardian.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33021
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 4,
+      "Index": 41,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33022
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 5,
+      "Index": 42,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am lost.  Can you help me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 7,
+      "Index": 43,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I would like to discuss the worship of Sseth with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33025
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 8,
+      "Index": 44,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 45,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you know anything of the sealed Vault and the stones in the eastern chamber of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33020
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 11,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am looking for the Guardian.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33021
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 4,
+      "Index": 47,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33022
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 5,
+      "Index": 48,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is the master of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 6,
+      "Index": 49,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I would like to discuss the worship of Sseth with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33025
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 8,
+      "Index": 50,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 51,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you know anything of the sealed Vault and the stones in the eastern chamber of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33020
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 11,
+      "Index": 52,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am looking for the Guardian.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33021
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 4,
+      "Index": 53,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33022
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 5,
+      "Index": 54,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is the master of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 6,
+      "Index": 55,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am lost.  Can you help me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 7,
+      "Index": 56,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 57,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Do you know anything of the sealed Vault and the stones in the eastern chamber of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33020
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 11,
+      "Index": 58,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am looking for the Guardian.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33021
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 4,
+      "Index": 59,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33022
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 5,
+      "Index": 60,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is the master of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 6,
+      "Index": 61,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am lost.  Can you help me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 7,
+      "Index": 62,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I would like to discuss the worship of Sseth with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33025
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 8,
+      "Index": 63,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 64,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 65,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I am looking for the Guardian.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33021
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 4,
+      "Index": 66,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33022
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 5,
+      "Index": 67,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Who is the master of the temple?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 6,
+      "Index": 68,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am lost.  Can you help me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 7,
+      "Index": 69,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I would like to discuss the worship of Sseth with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33025
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60YTReSt",
+      "NextPhraseIndex": 8,
+      "Index": 70,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 71,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "!Global(\"6051_Wearing_Robes\",\"GLOBAL\",6)",
+    "NumTimesTalkedTo(0)\nRandomNum(4,1)",
+    "NumTimesTalkedTo(0)\nRandomNum(4,2)",
+    "NumTimesTalkedTo(0)\nRandomNum(4,3)",
+    "NumTimesTalkedTo(0)\nRandomNum(4,4)",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [
+    "Global(\"60Seen_Treasury_Door\", \"GLOBAL\", 1)",
+    "Global(\"60Seen_Treasury_Door\", \"GLOBAL\", 1)",
+    "Global(\"60Seen_Treasury_Door\", \"GLOBAL\", 1)",
+    "Global(\"60Seen_Treasury_Door\", \"GLOBAL\", 1)",
+    "Global(\"60Seen_Treasury_Door\", \"GLOBAL\", 1)",
+    "Global(\"60Seen_Treasury_Door\", \"GLOBAL\", 1)",
+    "Global(\"60Seen_Treasury_Door\", \"GLOBAL\", 1)",
+    "Global(\"60Seen_Treasury_Door\", \"GLOBAL\", 1)",
+    "Global(\"60Seen_Treasury_Door\", \"GLOBAL\", 1)",
+    "Global(\"60Seen_Treasury_Door\", \"GLOBAL\", 1)"
+  ],
+  "Actions": [
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "60YTREST.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 33019
+}

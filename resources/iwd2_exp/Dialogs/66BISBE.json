@@ -1,0 +1,485 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Goodness, goodness me...  Must clean, must clean...  Must make presentable for the good Captain...  Can't have him entertain his lady friend in a filthy garden - oh no, that won't do at all...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33203
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "What...  who...  where...  Oh, oh my!  Who...  who are you?  You shouldn't be here, oh no, definitely not here...  Captain Pudu has things to do - ooo...!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33205
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Captain Pudu?  You don't know Captain Pudu?  Are you new?  Oh, oh yeah...  you must be new, or you wouldn't have asked me who was Captain Pudu!  Captain Pudu is the Captain of the Guard here at Severed Hand!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33208
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Anything else?  My, my, let's see...  I suppose that depends on what you want to know.  I can tell you he's a half goblin, he's very stern and confident - some say over-confident...  oops, did I say that out loud?  He seems to have a way with the ladies - or at least he thinks he does...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33212
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Me?  Well, I'm Bisbe!  I'm the custodian here at Severed Hand!  When something needs to be straightened out, cleaned up, or scraped off, I'm the one they call - Bisbe!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33215
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Anything else?  Let's see...  There's a lot of slime on the walls - Isair and Madae like the slime, though, so I try not to wipe it off.  And the blood, my, my...  there's a lot of blood on the floors from time to time.  No stain is harder to remove than blood stains, you know, but Bisbe can do it, yes he can!  And, let's see, what else...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33222
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Wha...  WHAT?!  How rude!  Do not mock my custodial talents, I'm not one to be trifled with!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33226
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "We'll see!  You've made *the* cardinal mistake in combat - you underestimated your opponent!  ::HAAAAH!!::",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33235
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "No, no, no, can't talk now!  I must get this place ready for Captain Pudu and his guest!  Please move on, move on...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37666
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Yes, yes, of course he will be here soon!  Why do you think I'm so frantic about cleaning this area?  He's a demanding fellow - and a real pain in my backside...  oops, did I say that out loud?  Always doing that...  Anyway, yes, yes, he'll be here soon, not too soon, but exactly when, I don't know.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37667
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 9
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Uh, excuse me...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33204
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Bisbe",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Captain Pudu, who's that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33206
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Bisbe",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We've heard of Captain Pudu.  Will he be here soon?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33207
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Bisbe",
+      "NextPhraseIndex": 9,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Is there anything else I should know about him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33209
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Bisbe",
+      "NextPhraseIndex": 3,
+      "Index": 3,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I have heard enough.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33210
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Thanks for the information.  Now die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33211
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Uh, no, not that kind of information, never mind.  So, who are you and what is it you do here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33213
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Bisbe",
+      "NextPhraseIndex": 4,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You're not too sharp, are you?  I think I could probably get a better answer from the bushes you're attempting to clean.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33214
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Bisbe",
+      "NextPhraseIndex": 6,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Well met, Bisbe.  Is there anything else you can tell me about you or Severed Hand?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33216
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Bisbe",
+      "NextPhraseIndex": 5,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "A *custodian?*  It must make your day to find filth strewn across the floors.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33219
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Bisbe",
+      "NextPhraseIndex": 6,
+      "Index": 9,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "That's special, Bisbe.  Carry on with your duties then, we have pressing matters.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33220
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You know, Bisbe, that's enough information for now, thank you.  We must be going.  Farewell, Bisbe.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33223
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "So, dirt is your life, then? It must make your day to find filth strewn across the floors.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33224
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Bisbe",
+      "NextPhraseIndex": 6,
+      "Index": 12,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Forgive me, I was being rude.  I will bother you no longer.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33228
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Your threats mean nothing to me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33231
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Bisbe",
+      "NextPhraseIndex": 7,
+      "Index": 14,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Is there anything else I should know about him?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33209
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "66Bisbe",
+      "NextPhraseIndex": 3,
+      "Index": 17,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I have heard enough.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33210
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedToGT(0)",
+    "NumTimesTalkedTo(0)"
+  ],
+  "TriggersResponse": [
+    "Global(\"SH_Know_Pudu\",\"GLOBAL\",1)"
+  ],
+  "Actions": [
+    "Enemy()",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "66BISBE.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 33203
+}

@@ -1,0 +1,530 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": " -- You are persistent.  We must admit that we did not expect a human to be so bold as to fight their way to the center of the citadel. --",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22279
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 5,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": " -- We are a singular mass of brain tissue formed from the brains of illithids, what you call mind flayers.  Our kin brought us here to start an illithid settlement.  That you have disrupted our community is disturbing to us. --",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22286
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": " -- It is very difficult for humans to understand our way of life.  Attack if you feel compelled, but you will fail. --",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22287
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": " -- You are as much of an abomination to us as we are to you.  If your strange morality insists that you attack, press on.  You will fail. --",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22289
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": " -- We find that difficult to accept.  You have killed many of our thralls to gain entrance to the citadel.  Whether you came here seeking trouble or not, you have found it.  Farewell, humans. --",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22290
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": " -- It can only be a profound lack of wisdom that drives you to such hostility.  You should have remained in your own land.  Now you will suffer. --",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22291
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": " -- Destroy them, Abdoshanheth.  We would request that you keep them for food, but they are too dangerous.  End them. --",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22292
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": " -- In the future, consult with us first for our wisdom.  In this case, we agree with your decision.  --",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22298
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": " -- You fools, they have killed many of our defenders.  They are too dangerous to keep as playthings or thralls.  We do not have the numbers to loiter here.  Execute them at once. --",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22299
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": " -- You have the gall to return?  We should have destroyed you, and will now correct that error.  Farewell, humans. --",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38551
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": " -- You speak boldly, but we have seen your skill.  It may prove foolish to waste effort removing a pest that would just as soon leave on its own. The gates you seek lie to the northeast.  Go there *now* - do not tarry or wander about our citadel - and do not return.  --",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38554
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "What are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22280
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Elder",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We do not seek any trouble.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22284
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Elder",
+      "NextPhraseIndex": 4,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You enslave the weak-willed and kill innocents.  For that, you will die, monster.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22281
+      },
+      "JournalIndex": 22278,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "53Elder",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "You are an abomination of nature.  It is my duty to see that your existence does not continue.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22282
+      },
+      "JournalIndex": 22278,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "53Elder",
+      "NextPhraseIndex": 3,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Die, you horrible creature!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22285
+      },
+      "JournalIndex": 22278,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "53Elder",
+      "NextPhraseIndex": 5,
+      "Index": 4,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We do not seek any trouble.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22284
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Elder",
+      "NextPhraseIndex": 4,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You enslave the weak-willed and kill innocents.  For that, you will die, monster.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22281
+      },
+      "JournalIndex": 22278,
+      "TriggerIndex": 2,
+      "ActionIndex": 3,
+      "NextScriptDialog": "53Elder",
+      "NextPhraseIndex": 2,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "You are an abomination of nature.  It is my duty to see that your existence does not continue.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22282
+      },
+      "JournalIndex": 22278,
+      "TriggerIndex": 3,
+      "ActionIndex": 4,
+      "NextScriptDialog": "53Elder",
+      "NextPhraseIndex": 3,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Die, you horrible creature!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22285
+      },
+      "JournalIndex": 22278,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "53Elder",
+      "NextPhraseIndex": 5,
+      "Index": 8,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 22278,
+      "TriggerIndex": 4,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasTrigger, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Wait - give us passage through the citadel and we'll leave.  Trapping us here will be the end of *you,* not us - we've slain far worse.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 422
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": 7,
+      "NextScriptDialog": "53Elder",
+      "NextPhraseIndex": 10,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "So be it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38552
+      },
+      "JournalIndex": 22278,
+      "TriggerIndex": 6,
+      "ActionIndex": 8,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Abdosh",
+      "NextPhraseIndex": 1,
+      "Index": 15,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Abdosh",
+      "NextPhraseIndex": 2,
+      "Index": 16,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Zeph",
+      "NextPhraseIndex": 2,
+      "Index": 17,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 22278,
+      "TriggerIndex": -1,
+      "ActionIndex": 9,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Alignment(Protagonist,MASK_GOOD)",
+    "Or(2)\r\nClassEx(Protagonist,DRUID)\r\nClassEx(Protagonist,RANGER)",
+    "Alignment(Protagonist,MASK_GOOD)",
+    "Or(2)\r\nClassEx(Protagonist,DRUID)\r\nClassEx(Protagonist,RANGER)",
+    "CheckSkillLT(Protagonist, 12, Intimidate)",
+    "CheckSkillGT(Protagonist, 11, Intimidate)",
+    "CheckSkillGT(Protagonist, 11, Intimidate)"
+  ],
+  "Actions": [
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "SetGlobal(\"53ElderB_Permission\", \"GLOBAL\", 1)",
+    "Enemy()",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "53ELDER.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 22279
+}

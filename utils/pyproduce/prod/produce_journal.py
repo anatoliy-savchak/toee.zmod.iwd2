@@ -52,7 +52,10 @@ class JournalFile:
         return
 
     def get_rumors_by_strref(self, strref: int):
-        result = "(" + ", ".join([str(rumor_id) for rumor_id, rec in self.lines.items() if rec[1] == strref]) + ", )"
+        q = [str(rumor_id) for rumor_id, rec in self.lines.items() if rec[1] == strref]
+        if len(q) == 0: 
+            return None
+        result = "(" + ", ".join(q) + ", )"
         return result
 
     def save_map(self, file_path: str):

@@ -1724,7 +1724,7 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def Enemy(self):
+	def iEnemy(self):
 		"""
 		Enemy()
 		"""
@@ -2754,11 +2754,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def TakePartyItem(self, item):
+	def iTakePartyItem(self, item):
 		"""
 		TakePartyItem(S:Item*)
 		"""
-		raise Exception("Not implemented function: TakePartyItem!")
+		self.iTakePartyItemNum(item, 1)
 		return
 	
 	@dump_args

@@ -1,0 +1,504 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Well met - with Captain Yurst gone, I'm leadin' the Luskan spears.  We've been tryin' ta punch through this bloody glacier, but the soddin' ice kept growin' back - I take it we owe the lot a' ya for stoppin' that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7478
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Bloody blades of Acheron... we'll reach the Ten-Towns after all!  Bend an ear, 'eroes - when this mess is behind us, next time ye're in Luskan catch me in the Purple Wyrm on Ladow Street.  I'll buy ya a few rounds n' then some!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7482
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Hoo-hoo-hooo, it just keeps gettin' better - you blades are *tops!*  After these last days, there'll be a smile on me face the size a' Tempus' black blade ta see this frosty dung-heap take a tumble.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7486
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Oh?  From Denham, eh?  My thanks.  I'll read it now... hrm.  Interestin'.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7490
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Ah... nothin' too terrible, Captain Mariner.  A friend a' mine that Denham knows has taken ill, is all.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7491
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "I'll 'ead back ta camp with the rest a' the Luskan spears - I'll keep ta me orders n' lead 'em north ta Targos.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7493
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Good luck, fare ya well, n' don't forget: Ladow Street, Purple Wyrm!  We'll paint Luskan red, eh?  Hoo-hooo!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7494
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Greetin's again, blade - I hope we're able ta meet in Luskan when this all over, eh?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7496
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "I ain't much for watchin' politics, but what I 'eard from poor Captain Yurst was that once *Neverwinter* made ta send men ta Targos, Luskan didn't want ta seem like a mess a' sorry louts..",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7498
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "I shoulda' known when 'is feet stopped stinkin' 'alfway up from the crossroads.  'E was a right smelly bastard 'til after we forded Polerd's Run - that musta' been when they took 'im...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7500
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Yurst, Mariner... bloody *'ells,* what a giant's steamin' mess this has all been.  I suppose I'd best get me men ta Targos before more dung drops from the sky.  As for *you* - ye've got me thanks again, blades.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7501
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 10
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Yes - the Aurilite priestesses are dead and their altar destroyed.  Without their power, the glacier will eventually melt away entirely.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7479
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Rahm",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I don't care much for cities, but thanks just the same.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37438
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "The offer is appreciated, though I'd prefer the coin went to my church rather than an alehouse.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37439
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 1,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Aye!  So long as it's good dwarven stout, ye're on.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37440
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 1,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Sounds good... we'll hold you to it, Rahm.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7483
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 1,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "There's no need - we're hired swords, not heroes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7484
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 1,
+      "Index": 5,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "We just might take you up on that.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7485
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 1,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 2,
+      "Index": 7,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 3,
+      "Index": 8,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "We're heading to Kuldahar via the Eastern Pass - what will you two do now?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7492
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Rahm",
+      "NextPhraseIndex": 5,
+      "Index": 9,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 7477,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Ingrat",
+      "NextPhraseIndex": 4,
+      "Index": 10,
+      "Flags": "HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Rahm.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7495
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Rahm.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7495
+      },
+      "JournalIndex": 32557,
+      "TriggerIndex": 4,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I wanted to ask - when did Luskan decide to send actual troops?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7497
+      },
+      "JournalIndex": 7502,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Rahm",
+      "NextPhraseIndex": 8,
+      "Index": 13,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Rahm.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7495
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Farewell, Rahm.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7499
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Rahm",
+      "NextPhraseIndex": 10,
+      "Index": 16,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "I wanted to ask - when did Luskan decide to send actual troops?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7497
+      },
+      "JournalIndex": 7502,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "41Rahm",
+      "NextPhraseIndex": 8,
+      "Index": 17,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, Rahm.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 7495
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"41Rahm\", \"GLOBAL\", 1)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Or(2)\r\nClassEx(Protagonist, Druid)\r\nClassEx(Protagonist, Ranger)",
+    "Or(2)\r\nClassEx(Protagonist, Paladin)\r\nClassEx(Protagonist, Cleric)\r\n!Alignment(Protagonist, Mask_Evil)",
+    "Race(Protagonist, Dwarf)",
+    "!Global(\"41Ingrath_Deliver\", \"GLOBAL\", 2)",
+    "Global(\"41Ingrath_Deliver\", \"GLOBAL\", 2)"
+  ],
+  "Actions": [
+    "StartCutSceneMode()\r\nStartCutScene(\"50Letter\")",
+    "SetGlobal(\"41Rahm\", \"GLOBAL\", 2)",
+    "SetGlobal(\"41Rahm\", \"GLOBAL\", 2)"
+  ],
+  "Checksum": null,
+  "Filename": "41RAHM.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 7478
+}

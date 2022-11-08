@@ -1,0 +1,81 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "You speak Gorg.  Gorg scout leader.  Him know... stuff.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 25645
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Gorg dead.  Gorg scout leader for Kratuuk.  Kratuuk blame us for Gorg dead.  We blame *you* for Gorg dead.  Take your head to show Kratuuk.  Kratuuk no blame us, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 40964
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 1
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "!Global(\"Gorg_Dead\",\"GLOBAL\",1)",
+    "Global(\"Gorg_Dead\",\"GLOBAL\",1)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "62SCOUT.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 25645
+}

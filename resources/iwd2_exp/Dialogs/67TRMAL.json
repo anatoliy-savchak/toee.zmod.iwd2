@@ -1,0 +1,78 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Hold fast!  I am T'rsosl Malign, and I have been ordered to escort you to their lordships Isair and Madae!  These other individuals are intruders!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 24703
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "I assure, m'lady, that we have the foremost security in the land!  Allow me to demonstrate by eradicating these intruders!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 27938
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "67Nalak",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [],
+  "TriggersResponse": [],
+  "Actions": [
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "67TRMAL.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 24703
+}

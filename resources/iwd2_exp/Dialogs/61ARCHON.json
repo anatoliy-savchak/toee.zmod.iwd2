@@ -1,0 +1,928 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Destination?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35807
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 12,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Journey requires three hundred gold pieces per traveler.  Will you pay?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35818
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 16,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Departure pending embarkation.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35824
+      },
+      "ResponsesIndexFirst": 28,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Before me is not an adequate supply of coins.  Request denied.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35826
+      },
+      "ResponsesIndexFirst": 29,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Lord Pyros, killed yesterday by Inquisitor Venomin, walks the Land of the Dead - to which I cannot travel.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35827
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Lord Pyros is having a private meeting with Inquisitor Venomin.  Neither is to be disturbed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36477
+      },
+      "ResponsesIndexFirst": 33,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Yes... let me drain some of your life force.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38486
+      },
+      "ResponsesIndexFirst": 35,
+      "ResponsesCount": 9,
+      "TriggerIndex": -1,
+      "Index": 6
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Take us to the Fields of Slaughter exit.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35810
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We'd like to see the guard post.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35809
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "King Lothar's citadel if it's accessible.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35811
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 2,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 1,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We'd like to request an audience with Lord Pyros.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35812
+      },
+      "JournalIndex": 35806,
+      "TriggerIndex": 3,
+      "ActionIndex": 3,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 4,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We'd like to see Lord Pyros' domain.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35813
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 4,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 1,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We'd like to request an audience with Lord Pyros - I mean, see your deceased lord's domain.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36480
+      },
+      "JournalIndex": 36559,
+      "TriggerIndex": 5,
+      "ActionIndex": 5,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 5,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "We need to visit Ambassador Jasper's embassy.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35814
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": 6,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 1,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Can you reach a lava mephit lair southwest of the amphitheatre?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35815
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": 7,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 1,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We were considering the amphitheatre.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35816
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": 8,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 1,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We're ready to return to the upper levels.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35808
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": 9,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 2,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Can you heal me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 30477
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "None at the moment.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35817
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 11,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": 12,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 2,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": 13,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 2,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": 14,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 2,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": 15,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 2,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": 16,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 2,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": 17,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 2,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 3,
+      "Index": 18,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 3,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 3,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 3,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 20,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 3,
+      "Index": 22,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Yes.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35819
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 3,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Will you take items instead?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36807
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 18,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We paid double last time in anticipation of this trip.  Don't you remember?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38340
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 22,
+      "ActionIndex": 19,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 2,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Actually we'd like to go someplace else.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35820
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 0,
+      "Index": 26,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "No.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35822
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 20,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 27,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 21,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 28,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Will you take anything else?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38488
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 6,
+      "Index": 29,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 1487
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 22,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 30,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "We'd like to go someplace else then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35835
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 23,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 0,
+      "Index": 31,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35836
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 32,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Oh?!  We'd like to go someplace else then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36478
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 24,
+      "NextScriptDialog": "61Archon",
+      "NextPhraseIndex": 0,
+      "Index": 33,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 17971
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 34,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You may have some of my strength.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38490
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": 25,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 35,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Feel free to make me slightly less intelligent.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38491
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 24,
+      "ActionIndex": 26,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 36,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'll share a bit of my wisdom with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38492
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 25,
+      "ActionIndex": 27,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 37,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Becoming somewhat less dexterous is acceptable.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38493
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": 28,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 38,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I'm willing to donate a portion of my constitution.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38494
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 27,
+      "ActionIndex": 29,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 39,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "You can make me slightly less charismatic.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38495
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": 30,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 40,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Will you take items instead?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38496
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 31,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 41,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Actually, we paid double last time in anticipation of this trip.  Don't you remember?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38497
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 29,
+      "ActionIndex": 32,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 42,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I think not.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38498
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 33,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 43,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "True()"
+  ],
+  "TriggersResponse": [
+    "!Global(\"CurrentDestination\",\"MYAREA\", 3)\nGlobal(\"PlayerCanRequestExit\",\"MYAREA\", 1)",
+    "!Global(\"CurrentDestination\", \"MYAREA\", 2)\r\nGlobal(\"PlayerSawGuardPost\", \"MYAREA\", 1)",
+    "!Global(\"CurrentDestination\", \"MYAREA\", 4)\r\nGlobal(\"PlayerKnowsLothar\", \"MYAREA\", 1)",
+    "!Global(\"61CurrentDay\",\"GLOBAL\",3)\r\n!Global(\"CurrentDestination\", \"MYAREA\",5)\r\nGlobal(\"PlayerKnowsPyrosDead\", \"MYAREA\", 0)",
+    "!Global(\"CurrentDestination\", \"MYAREA\", 5)\nGlobal(\"PlayerKnowsPyrosDead\", \"MYAREA\", 1)",
+    "Global(\"61CurrentDay\",\"GLOBAL\",3)\r\n!Global(\"CurrentDestination\",\"MYAREA\",5)\r\nGlobal(\"PlayerKnowsPyrosDead\", \"MYAREA\", 0)",
+    "!Global(\"CurrentDestination\", \"MYAREA\", 6)\r\nGlobal(\"PlayerKnowsJasper\", \"MYAREA\", 1)",
+    "!Global(\"CurrentDestination\",\"MYAREA\",7)\r\nGlobal(\"PlayerKnowsStash\",\"MYAREA\",1)\r\nGlobal(\"PlayerSawAmphitheatre\",\"MYAREA\",1)\r\nGlobal(\"PlayerSawGuardPost\",\"MYAREA\",1)\r\nGlobal(\"PlayerKnowsLothar\",\"MYAREA\",1)\r\nGlobalLT(\"61CurrentDay\",\"GLOBAL\",2)\r\nGlobal(\"MephitLairOccupied\",\"MYAREA\",0)",
+    "!Global(\"CurrentDestination\", \"MYAREA\", 8)\r\nGlobal(\"PlayerSawAmphitheatre\", \"MYAREA\", 1)",
+    "!Global(\"CurrentDestination\", \"MYAREA\", 1)",
+    "NumInParty(1)\r\nPartyGoldGT(299)",
+    "NumInParty(2)\r\nPartyGoldGT(599)",
+    "NumInParty(3)\r\nPartyGoldGT(899)",
+    "NumInParty(4)\r\nPartyGoldGT(1199)",
+    "NumInParty(5)\r\nPartyGoldGT(1499)",
+    "NumInParty(6)\r\nPartyGoldGT(1799)",
+    "NumInParty(1)\r\n!PartyGoldGT(299)",
+    "NumInParty(2)\r\n!PartyGoldGT(599)",
+    "NumInParty(3)\r\n!PartyGoldGT(899)",
+    "NumInParty(4)\r\n!PartyGoldGT(1199)",
+    "NumInParty(5)\r\n!PartyGoldGT(1499)",
+    "NumInParty(6)\r\n!PartyGoldGT(1799)",
+    "GlobalGT(\"MaxArchonBluffs\",\"MYAREA\",0)",
+    "CheckStatGT(Protagonist,1,STR)",
+    "CheckStatGT(Protagonist,1,INT)",
+    "CheckStatGT(Protagonist,1,WIS)",
+    "CheckStatGT(Protagonist,1,DEX)",
+    "CheckStatGT(Protagonist,1,CON)",
+    "CheckStatGT(Protagonist,1,CHR)",
+    "GlobalGT(\"MaxArchonBluffs\",\"MYAREA\",0)"
+  ],
+  "Actions": [
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 3)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 2)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 4)",
+    "SetGlobal(\"PlayerKnowsPyrosDead\",\"MYAREA\", 1)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 5)",
+    "SetGlobal(\"PlayerKnowsPyrosDead\",\"MYAREA\", 2)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 6)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 7)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 8)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 1)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 0)\r\nStartStore(\"61Archon\",Protagonist)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 0)",
+    "TakePartyGold(300)",
+    "TakePartyGold(600)",
+    "TakePartyGold(900)",
+    "TakePartyGold(1200)",
+    "TakePartyGold(1500)",
+    "TakePartyGold(1800)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 0)\r\nStartStore(\"61Archon\",Protagonist)",
+    "IncrementGlobal(\"MaxArchonBluffs\",\"MYAREA\",-1)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 0)",
+    "SetGlobal(\"TravelStep\",\"LOCALS\",0)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 0)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 0)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 0)",
+    "ChangeStat(Protagonist,STR,-1,ADD)\r\nDisplayString(Protagonist,38474)",
+    "ChangeStat(Protagonist,INT,-1,ADD)\r\nDisplayString(Protagonist,38475)",
+    "ChangeStat(Protagonist,WIS,-1,ADD)\r\nDisplayString(Protagonist,38477)",
+    "ChangeStat(Protagonist,DEX,-1,ADD)\r\nDisplayString(Protagonist,38479)",
+    "ChangeStat(Protagonist,CON,-1,ADD)\r\nDisplayString(Protagonist,38481)",
+    "ChangeStat(Protagonist,CHR,-1,ADD)\r\nDisplayString(Protagonist,38482)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 0)\r\nStartStore(\"61Archon\",Protagonist)",
+    "IncrementGlobal(\"MaxArchonBluffs\",\"MYAREA\",-1)",
+    "SetGlobal(\"DestinationRequest\", \"LOCALS\", 0)"
+  ],
+  "Checksum": null,
+  "Filename": "61ARCHON.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 35807
+}

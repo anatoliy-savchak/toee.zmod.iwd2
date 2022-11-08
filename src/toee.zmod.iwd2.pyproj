@@ -192,6 +192,9 @@
     <Compile Include="zmod_iwd2_core\scr\bcs\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="zmod_iwd2_core\scr\const_iwd2.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="zmod_iwd2_core\scr\const_proto_armor_iwd2.py" />
     <Compile Include="zmod_iwd2_core\scr\const_proto_items_iwd2.py" />
     <Compile Include="zmod_iwd2_core\scr\const_proto_list_potions.py" />
@@ -214,6 +217,7 @@
     <Compile Include="zmod_iwd2_core\scr\const_proto_rings.py" />
     <Compile Include="zmod_iwd2_core\scr\const_proto_scrolls.py" />
     <Compile Include="zmod_iwd2_core\scr\const_proto_wands.py" />
+    <Compile Include="zmod_iwd2_core\scr\const_proto_weapon_iwd2.py" />
     <Compile Include="zmod_iwd2_core\scr\const_proto_weapon.py" />
     <Compile Include="zmod_iwd2_core\scr\const_proto_wondrous.py" />
     <Compile Include="zmod_iwd2_core\scr\const_toee.py" />
@@ -407,6 +411,7 @@
     <Compile Include="zmod_iwd2_core\scr\utils_npc_build.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="zmod_iwd2_core\scr\utils_npc_spells_inf.py" />
     <Compile Include="zmod_iwd2_core\scr\utils_npc_spells.py" />
     <Compile Include="zmod_iwd2_core\scr\utils_npc_spells_tactics.py" />
     <Compile Include="zmod_iwd2_core\scr\utils_obj.py" />
@@ -433,6 +438,7 @@
     <Content Include="zmod_iwd2_core\dlg\00406Game_Portal.dlg" />
     <Content Include="zmod_iwd2_core\dlg\10001_ar1000_npc_classes_auto.dlg" />
     <Content Include="zmod_iwd2_core\dlg\21001_ar2100_npc_classes_auto.dlg" />
+    <Content Include="zmod_iwd2_core\dlg\21003_ar2100_npc_inst_classes_auto.dlg" />
     <Content Include="zmod_iwd2_core\mes\gamekeylog.mes" />
     <Content Include="zmod_iwd2_core\mes\gamequestlog.mes" />
     <Content Include="zmod_iwd2_core\mes\game_rd_npc_m2m.mes" />

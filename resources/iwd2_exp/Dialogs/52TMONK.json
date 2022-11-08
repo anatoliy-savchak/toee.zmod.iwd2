@@ -1,0 +1,147 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Forgive me, but I'm in the midst of my training.  Please find another more capable of helping you... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28770
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "We're all grateful for what you've done - thank you, <CHARNAME>.  Now if you'll excuse me, I must return to my training... farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28772
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 2,
+      "TriggerIndex": 0,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "That would be Master Svaltid's decision to make, though we are taught that the Black Raven fights for its cause, not its pride.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38538
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Wait... I want to challenge you to a bout.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38539
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52TMonk",
+      "NextPhraseIndex": 2,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28771
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Wait... I want to challenge you to a bout.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38539
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "52TMonk",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Of course.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28773
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 28771
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 4,
+      "Flags": "HasText, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "GlobalGT(\"52Aruma_Gone\", \"GLOBAL\", 0)",
+    "True()"
+  ],
+  "TriggersResponse": [
+    "ClassEx(Protagonist, Monk)",
+    "ClassEx(Protagonist, Monk)"
+  ],
+  "Actions": [],
+  "Checksum": null,
+  "Filename": "52TMONK.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 28770
+}

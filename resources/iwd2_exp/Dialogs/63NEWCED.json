@@ -1,0 +1,2980 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Well met.  I am Cedrin Zil, the librarian.  How may I serve you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36993
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 4,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "I am the librarian.  I care for the books and maintain the library as best I can.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36998
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "There are many books here covering a variety of subjects.  Please feel free to look around.  You may find something that suits your needs or your taste.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36999
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Allow me to examine it...  Hmm.  Not much left of it.  Ah, yes.  Zaem Astyr.  He did spend a good deal of time in the library.  I had no idea he kept a diary, though.  Well, he has no need of it now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37002
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Please, allow me to examine it...  Well, there is not much of it left...  Ah, Zaem Astyr.  I know he spent a good deal of time in the library, but I did not know he kept a diary...  Interesting, this does shed some light on a few things.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37004
+      },
+      "ResponsesIndexFirst": 11,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "That is a tale that is long in the telling, friend.  Do you wish to hear it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37005
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Very well.  Zaem was found dead a few days ago.  It seems he took his own life.  Quite tragic, actually...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37009
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Sarcasm does not suit you, friend.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37012
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "No, but there was no need.  It was quite apparent why he did it...  Like many of the mages here, he was involved in research.  Unfortunately, his project was deemed a failure and cancelled.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37014
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Me?  No, I would not.  However, I can see why a weaker person would.  Years of research for nothing, the loss of status with the enclave, and the humiliation involved.  Perhaps he could not cope.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37018
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "Perhaps not, for someone like you.  However, for a weak willed person it could be sufficient.  Years of research for nothing, the loss of status with the enclave, and the humiliation involved.  Perhaps he could not cope.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37020
+      },
+      "ResponsesIndexFirst": 22,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "I believe so, but it is enclave business.  Normally I am not at liberty to discuss such matters with outsiders.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37021
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "The enclave is an organization of mages that have gathered together for a common goal.  In this case we are conducting magical research.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37025
+      },
+      "ResponsesIndexFirst": 26,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 12
+    },
+    {
+      "Text": {
+        "Text": "Our business is confidential.  We do not discuss it outside our circle.  However, I think I will make an exception in this case.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37027
+      },
+      "ResponsesIndexFirst": 27,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 13
+    },
+    {
+      "Text": {
+        "Text": "If this diary is correct, then there is a dangerous creature at loose here.  You should be aware of the situation... for your own protection.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37030
+      },
+      "ResponsesIndexFirst": 29,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 14
+    },
+    {
+      "Text": {
+        "Text": "You should, this is not an everyday occurrence. The reason is simple.  If this diary is correct, then there is a dangerous creature at loose here.  You should be aware of the situation... for you own protection.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37033
+      },
+      "ResponsesIndexFirst": 31,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 15
+    },
+    {
+      "Text": {
+        "Text": "Patience is a virtue, friend.  Perhaps you should try to develop some.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37034
+      },
+      "ResponsesIndexFirst": 33,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 16
+    },
+    {
+      "Text": {
+        "Text": "Zaem was conducting research that involved transmuting creatures.  He was trying to discover a way to imbue them with innate invisibility.  Perhaps one of his subjects turned on him and slew him.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37037
+      },
+      "ResponsesIndexFirst": 35,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 17
+    },
+    {
+      "Text": {
+        "Text": "Zaem's project was cancelled.  It is standard procedure in such cases to dispose of any test subjects.  Perhaps the creature discovered that it was to be slain.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37039
+      },
+      "ResponsesIndexFirst": 36,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 18
+    },
+    {
+      "Text": {
+        "Text": "Well, in light of this diary you found, I would say that it is a possibility that should not be overlooked.  I have harbored doubts about Zaem taking his own life.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37041
+      },
+      "ResponsesIndexFirst": 37,
+      "ResponsesCount": 7,
+      "TriggerIndex": -1,
+      "Index": 19
+    },
+    {
+      "Text": {
+        "Text": "Yes, both are possible through the use of powerful magic.  We tried both on Zaem but were unsuccessful.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37047
+      },
+      "ResponsesIndexFirst": 44,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 20
+    },
+    {
+      "Text": {
+        "Text": "You are correct.  If he did take his own life then, his spirit will not want to return.  However, speak with the dead should work.  Unfortunately, it did not.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37049
+      },
+      "ResponsesIndexFirst": 45,
+      "ResponsesCount": 6,
+      "TriggerIndex": -1,
+      "Index": 21
+    },
+    {
+      "Text": {
+        "Text": "It means that the spirit has been destroyed or is somehow being prevented from answering a summons.  There are several spells that can do such a thing... and a few items as well.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37054
+      },
+      "ResponsesIndexFirst": 51,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 22
+    },
+    {
+      "Text": {
+        "Text": "Yes.  I believe there are some artifacts that are capable of such destruction as well.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37056
+      },
+      "ResponsesIndexFirst": 52,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 23
+    },
+    {
+      "Text": {
+        "Text": "I have to agree with your assessment.  I have harbored doubts about Zaem taking his own life.  This diary seems to confirm my doubts.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37057
+      },
+      "ResponsesIndexFirst": 53,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 24
+    },
+    {
+      "Text": {
+        "Text": "Oh?  May I ask why?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37059
+      },
+      "ResponsesIndexFirst": 55,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 25
+    },
+    {
+      "Text": {
+        "Text": "Are you certain?  Could the creature not be deceiving you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37061
+      },
+      "ResponsesIndexFirst": 56,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 26
+    },
+    {
+      "Text": {
+        "Text": "Oh?  May I ask why?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37059
+      },
+      "ResponsesIndexFirst": 57,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 27
+    },
+    {
+      "Text": {
+        "Text": "Yes.  That was the nature of his research as I understand it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37063
+      },
+      "ResponsesIndexFirst": 58,
+      "ResponsesCount": 7,
+      "TriggerIndex": -1,
+      "Index": 28
+    },
+    {
+      "Text": {
+        "Text": "As can I.  However, the diary you found would indicate that he was being stalked by this creature.  How do you explain that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37069
+      },
+      "ResponsesIndexFirst": 65,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 29
+    },
+    {
+      "Text": {
+        "Text": "Well, either he took his own life, or he was slain by one of his creations.  In either case, it does not matter.  The case has been closed.  It would seem that most people are satisfied with the suicide explanation.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37072
+      },
+      "ResponsesIndexFirst": 67,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 30
+    },
+    {
+      "Text": {
+        "Text": "There are but two people that I know of.  Kav Lathram, his apprentice, and Jaebrilla, his betrothed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37074
+      },
+      "ResponsesIndexFirst": 68,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 31
+    },
+    {
+      "Text": {
+        "Text": "Why do you ask?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37076
+      },
+      "ResponsesIndexFirst": 72,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 32
+    },
+    {
+      "Text": {
+        "Text": "I see.  Well, Kav often goes to his master's old laboratory to brood.  It is being converted to other uses now that Zaem is gone, but that does not stop him.  It lies down the hall to the left as you leave the library.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37079
+      },
+      "ResponsesIndexFirst": 74,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 33
+    },
+    {
+      "Text": {
+        "Text": "Jaebrilla is nothing more than a serving wench.  I believe she can be found in the servant's quarters on the fourth floor.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37081
+      },
+      "ResponsesIndexFirst": 75,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 34
+    },
+    {
+      "Text": {
+        "Text": "We meet again.  How may I serve you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37083
+      },
+      "ResponsesIndexFirst": 76,
+      "ResponsesCount": 8,
+      "TriggerIndex": 2,
+      "Index": 35
+    },
+    {
+      "Text": {
+        "Text": "Ah, yes.  I believe you were looking into the matter.  So, did he take his own life, or was he slain by his creation?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37087
+      },
+      "ResponsesIndexFirst": 84,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 36
+    },
+    {
+      "Text": {
+        "Text": "Ah, yes.  I believe you were curious about the matter.  So, did he take his own life, or was he slain by his creation?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37089
+      },
+      "ResponsesIndexFirst": 85,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 37
+    },
+    {
+      "Text": {
+        "Text": "Why...  That is preposterous!  How dare you make such an accusation!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37090
+      },
+      "ResponsesIndexFirst": 86,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 38
+    },
+    {
+      "Text": {
+        "Text": "Ah...  Well, that is not good enough, now is it?  The enclave will not act against me without solid proof.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37093
+      },
+      "ResponsesIndexFirst": 88,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 39
+    },
+    {
+      "Text": {
+        "Text": "Well, if I murdered him, and I am not saying that I did, it could be because I *despised* him with a passion!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37095
+      },
+      "ResponsesIndexFirst": 89,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 40
+    },
+    {
+      "Text": {
+        "Text": "He was a young upstart with wild ideas and insane theories.  Somehow he managed to beguile Saablic Tan into accepting his babblings and he garnered himself a position among the enclave, replacing me.  I was demoted to custodian of this library, and he was given the research project that should have been mine!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37097
+      },
+      "ResponsesIndexFirst": 90,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 41
+    },
+    {
+      "Text": {
+        "Text": "What do you understand of such matters?!  It was more than just jealousy!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37100
+      },
+      "ResponsesIndexFirst": 92,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 42
+    },
+    {
+      "Text": {
+        "Text": "More than just that.  I excised a dangerous disease from the enclave!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37102
+      },
+      "ResponsesIndexFirst": 93,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 43
+    },
+    {
+      "Text": {
+        "Text": "That wench, Jaebrilla.  She was a bad influence on him.  He was changing, losing his edge, and his focus.  He was not half the man he was before he met her.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37103
+      },
+      "ResponsesIndexFirst": 94,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 44
+    },
+    {
+      "Text": {
+        "Text": "Certainly.  You cannot prove any of this anyway.  Ask what you will.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37105
+      },
+      "ResponsesIndexFirst": 95,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 45
+    },
+    {
+      "Text": {
+        "Text": "Ah, now that is the question, is it not?  A powerful mage can have many defenses in the form of spells and wards.  Getting past them can be a challenge.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37112
+      },
+      "ResponsesIndexFirst": 96,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 46
+    },
+    {
+      "Text": {
+        "Text": "His betrothed, Jaebrilla, is a mundane.  That is to say, she has no talent for the magical arts whatsoever.  It occurred to me that if she were to visit him in his chambers, then he would be forced to lower his defenses...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37114
+      },
+      "ResponsesIndexFirst": 97,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 47
+    },
+    {
+      "Text": {
+        "Text": "Yes.  Imagine it, if you will.  He would see his love beckoning to him from beyond his defenses...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37118
+      },
+      "ResponsesIndexFirst": 100,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 48
+    },
+    {
+      "Text": {
+        "Text": "No, I am saying that all it would take is a simple polymorph spell to assume the form of his love.  He would see her beckoning to him from beyond his defenses...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37120
+      },
+      "ResponsesIndexFirst": 101,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 49
+    },
+    {
+      "Text": {
+        "Text": "Precisely!  And the most precious part of all this is...  He would die thinking his love had betrayed him!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37121
+      },
+      "ResponsesIndexFirst": 102,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 50
+    },
+    {
+      "Text": {
+        "Text": "Sick?  I think the word brilliant more aptly describes me.  In any case, your opinion of me is meaningless.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37125
+      },
+      "ResponsesIndexFirst": 105,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 51
+    },
+    {
+      "Text": {
+        "Text": "I am rather proud of the deed myself.  It was a moment of brilliance.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37128
+      },
+      "ResponsesIndexFirst": 108,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 52
+    },
+    {
+      "Text": {
+        "Text": "You have no proof of any crime.  Raise a hand against me and you will bring the enclave down about you, fool.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37131
+      },
+      "ResponsesIndexFirst": 111,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 53
+    },
+    {
+      "Text": {
+        "Text": "I have nothing more to say to you.  Leave me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37134
+      },
+      "ResponsesIndexFirst": 113,
+      "ResponsesCount": 2,
+      "TriggerIndex": 0,
+      "Index": 54
+    },
+    {
+      "Text": {
+        "Text": "Surely you do not intend to continue with your ridiculous accusations.  Leave me.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37136
+      },
+      "ResponsesIndexFirst": 115,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 55
+    },
+    {
+      "Text": {
+        "Text": "As I said before, that is preposterous!  You had best be able to back up such a claim!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37138
+      },
+      "ResponsesIndexFirst": 117,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 56
+    },
+    {
+      "Text": {
+        "Text": "Scamper off and whine to him all you will, fool.  You are not of Thayvian blood, nor are you a member of the enclave.  Your words will fall upon deaf ears.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37139
+      },
+      "ResponsesIndexFirst": 118,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 57
+    },
+    {
+      "Text": {
+        "Text": "Truly?  What a pity.  Ah, well.  Leave me.  I have work to do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38469
+      },
+      "ResponsesIndexFirst": 119,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 58
+    },
+    {
+      "Text": {
+        "Text": "Truly?  Then there is no one left alive to contest how Zaem died.  Ah, well.  Leave me.  I have work to do.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38471
+      },
+      "ResponsesIndexFirst": 120,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 59
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "What are you doing here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36994
+      },
+      "JournalIndex": 36979,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me what books you have here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36995
+      },
+      "JournalIndex": 36979,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I found this diary hidden among the books.  Can you tell me anything about it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36996
+      },
+      "JournalIndex": 36979,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 3,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36997
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me what books you have here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36995
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 2,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I found this diary hidden among the books.  Can you tell me anything about it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36996
+      },
+      "JournalIndex": 36979,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 3,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36997
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What are you doing here again?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37000
+      },
+      "JournalIndex": 36979,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 1,
+      "Index": 7,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I found this diary hidden among the books.  Can you tell me anything about it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36996
+      },
+      "JournalIndex": 36979,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 3,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Very well, I shall do so.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37001
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What do you mean?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37003
+      },
+      "JournalIndex": 36980,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 5,
+      "Index": 10,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What do you mean?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37003
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 5,
+      "Index": 11,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Yes. Please continue.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37006
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 6,
+      "Index": 12,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Never mind, I care not for you or your tales.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37007
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I do not have the time for any of this.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37008
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Did he leave a message saying why he took his life?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37010
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 8,
+      "Index": 15,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Oh, very tragic indeed.  I am broken up about it.  Did he leave a message saying why he took his life?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37011
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 7,
+      "Index": 16,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "On the contrary, I think it works quite well.  So, did he leave a message or not?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37013
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 8,
+      "Index": 17,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What exactly was this project he was working on?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37015
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 13,
+      "Index": 18,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "That is hardly a reason to take your own life.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37016
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 10,
+      "Index": 19,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Would you take your life over something as foolish as that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37017
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 9,
+      "Index": 20,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "The entry in the diary mentions a creature turning against him.  Would you know anything about that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37019
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 11,
+      "Index": 21,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "The entry in the diary mentions a creature turning against him.  Would you know anything about that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37019
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 11,
+      "Index": 22,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Why not?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37022
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 13,
+      "Index": 23,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What is this enclave you are talking about?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37023
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 12,
+      "Index": 24,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell then.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37024
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I see.  So why can you not discuss this with me?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37026
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 13,
+      "Index": 26,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Oh?  Why is that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37028
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 14,
+      "Index": 27,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I suppose I should be honored.  Why the exception?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37029
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 15,
+      "Index": 28,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "So, what do you know of this creature?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37031
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 17,
+      "Index": 29,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Well, get on with it, then.  What do you know of this creature?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37032
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 16,
+      "Index": 30,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "So, what do you know of this creature?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37031
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 17,
+      "Index": 31,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Well, get on with it, then.  What do you know of this creature?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37032
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 16,
+      "Index": 32,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What little patience I have is quickly coming to an end.  I suggest you continue with your story.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37035
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 17,
+      "Index": 33,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Desist in your preaching.  I have no need of such virtues.  Go on.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37036
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 17,
+      "Index": 34,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What reason would it have for doing that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37038
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 18,
+      "Index": 35,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I see.  So you think this creature slew Zaem and then made it look like he took his own life to cover its escape.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37040
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 19,
+      "Index": 36,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I am not familiar with the magical arts, but cannot someone be raised from the dead?  Cannot the dead be spoken with?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37042
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 20,
+      "Index": 37,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "As a priest, I know that if Zaem took his own life he cannot be raised from the dead.  However, his spirit can be summoned and spoken with.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37043
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 21,
+      "Index": 38,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "As a druid, I know that if Zaem took his own life he cannot be reincarnated from the dead.  However, his spirit can be summoned and spoken with.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37044
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 21,
+      "Index": 39,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "As a paladin, I know that if Zaem took his own life he cannot be raised from the dead.  However, a priest can summon his spirit and speak with it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37045
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 21,
+      "Index": 40,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "As a mage, I know that if Zaem took his own life he cannot be raised from the dead.  However, his spirit can be conjured and spoken with.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37046
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 21,
+      "Index": 41,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "As a ranger, I know that if Zaem took his own life he cannot be reincarnated from the dead.  However, his spirit can be summoned and spoken with.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33807
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 21,
+      "Index": 42,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "As a bard, I know that if Zaem took his own life he cannot be raised from the dead.  However, his spirit can be conjured and spoken with.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39443
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 21,
+      "Index": 43,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "What is the significance of that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37048
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 22,
+      "Index": 44,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps the spirit has been destroyed...  There are clerical magics that can do that.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37050
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 23,
+      "Index": 45,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps the spirit has been reincarnated...  Druidic magic can do that.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37051
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 23,
+      "Index": 46,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps the spirit has been destroyed...  I believe that clerical magic can do that.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37052
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 23,
+      "Index": 47,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps the spirit has been bound or destroyed.  There are wizard magics that can do that.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37053
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 23,
+      "Index": 48,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps the spirit has been reincarnated...  Druidic magic can do that.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37051
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 23,
+      "Index": 49,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps the spirit has been bound or destroyed.  There are wizard magics that can do that.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37053
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 23,
+      "Index": 50,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "It would appear that someone wanted Zaem dead permanently.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37055
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 24,
+      "Index": 51,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "It would appear that someone wanted Zaem dead permanently.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37055
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 24,
+      "Index": 52,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I see your point, but I do not believe the creature murdered Zaem.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37058
+      },
+      "JournalIndex": 36981,
+      "TriggerIndex": 16,
+      "ActionIndex": 2,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 27,
+      "Index": 53,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I see your point, but I do not believe the creature murdered Zaem.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37058
+      },
+      "JournalIndex": 36982,
+      "TriggerIndex": 17,
+      "ActionIndex": 3,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 25,
+      "Index": 54,
+      "Flags": "HasText, HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I have met the creature.  After conversing with him, I do not believe him capable of committing the crime.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37060
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 26,
+      "Index": 55,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You said yourself, Cedrin, that Zaem was researching a way to imbue creatures with innate invisibility.  Did you not?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37062
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 28,
+      "Index": 56,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You said yourself, Cedrin, that Zaem was researching a way to imbue creatures with innate invisibility.  Did you not?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37062
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 28,
+      "Index": 57,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Well, I am not a spell caster, but even I can see the discrepancy between having innate invisibility and causing permanent death.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37064
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 29,
+      "Index": 58,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Even without my clerical training I can see the discrepancy between having innate invisibility and causing permanent death.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37065
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 29,
+      "Index": 59,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Even without my druidic training I can see the discrepancy between having innate invisibility and causing permanent death.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37066
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 29,
+      "Index": 60,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Even without my paladin training I can see the discrepancy between having innate invisibility and causing permanent death.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37067
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 20,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 29,
+      "Index": 61,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Even without my mage training I can see the discrepancy between having innate invisibility and causing permanent death.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37068
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 29,
+      "Index": 62,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Even without my ranger training I can see the discrepancy between having innate invisibility and causing permanent death.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39446
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 22,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 29,
+      "Index": 63,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Even without my bard training I can see the discrepancy between having innate invisibility and causing permanent death.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 39447
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 29,
+      "Index": 64,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "A simple ruse, Cedrin.  The real murderer needs a scapegoat.  He or she planted the diary to incriminate the creature.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37070
+      },
+      "JournalIndex": 36983,
+      "TriggerIndex": 24,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 30,
+      "Index": 65,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Well...  I cannot at this time, but I will stand by my convictions.  The creature is innocent of this crime.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37071
+      },
+      "JournalIndex": 36983,
+      "TriggerIndex": 25,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 30,
+      "Index": 66,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "You say most people are satisfied.  Who else harbors a doubt?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37073
+      },
+      "JournalIndex": 36984,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 31,
+      "Index": 67,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Where can I find these two?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37075
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": 4,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 32,
+      "Index": 68,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Kav Lathram?  I believe he is dead, Cedrin",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38466
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 27,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 58,
+      "Index": 69,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Jaebrilla?  I believe she is dead, Cedrin.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38467
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 28,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 58,
+      "Index": 70,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Kav Lathram and Jaebrilla?  I believe they are dead, Cedrin.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38468
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 29,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 59,
+      "Index": 71,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "This matter intrigues me.  I have decided investigate it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37077
+      },
+      "JournalIndex": 36985,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 33,
+      "Index": 72,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Normally, I would care nothing about a dead mage, but I have to admit that this matter has roused my curiosity.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37078
+      },
+      "JournalIndex": 36986,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 33,
+      "Index": 73,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "And Jaebrilla?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37080
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 34,
+      "Index": 74,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Very well, farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37082
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 75,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What are you doing here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36994
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 1,
+      "Index": 76,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Can you tell me what books you have here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36995
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 2,
+      "Index": 77,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I found this diary hidden among the books.  Can you tell me anything about it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36996
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 30,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 3,
+      "Index": 78,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You started to tell me about the diary of Zaem Astyr.  I would like to hear more about it.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37084
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 31,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 4,
+      "Index": 79,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I would like to discuss the death of Zaem Astyr with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37085
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 32,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 36,
+      "Index": 80,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I would like to discuss the death of Zaem Astyr with you.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37085
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 33,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 37,
+      "Index": 81,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I have returned to speak with you about the death of Zaem Astyr.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37086
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 34,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 55,
+      "Index": 82,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36997
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 83,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Neither.  I believe he was murdered by you, Cedrin.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 38,
+      "Index": 84,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Neither.  I believe he was murdered by you, Cedrin.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37088
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 38,
+      "Index": 85,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Oh, I think I have evidence aplenty, Cedrin.  Unfortunately, it is only circumstantial at best.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37091
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 39,
+      "Index": 86,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Perhaps I should come back when I have more evidence of your guilt.  Farewell for now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37092
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 9,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 87,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Yes...  Well, be that as it may, satisfy my curiosity.  Why did you do it, Cedrin?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37094
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 40,
+      "Index": 88,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Why?  What could he have possibly done to deserve such hatred?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37096
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 41,
+      "Index": 89,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "So you murdered him out of petty jealousy?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37098
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 42,
+      "Index": 90,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "So, you simply removed an annoying rival.  Correct?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37099
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 35,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 43,
+      "Index": 91,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Oh?  How so?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37101
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 44,
+      "Index": 92,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Oh?  How so?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37101
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 44,
+      "Index": 93,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I see.  Just one more question, if I may?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37104
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 45,
+      "Index": 94,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Zaem must have had wards to protect himself against such an attack.  How did you get by them?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37106
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 46,
+      "Index": 95,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I agree.  So how did you do it?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37113
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 47,
+      "Index": 96,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You assumed her form using magical means and went to him...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37115
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 36,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 48,
+      "Index": 97,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "You assumed her form using a polymorph and went to him...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37116
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 37,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 48,
+      "Index": 98,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Are you saying that Jaebrilla aided you in this?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37117
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 38,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 49,
+      "Index": 99,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "And he would lower them to allow her entry...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37119
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 50,
+      "Index": 100,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "And he would lower them to allow her entry...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37119
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 50,
+      "Index": 101,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "You will burn for this, Cedrin.  You are sick indeed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37122
+      },
+      "JournalIndex": 36988,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 51,
+      "Index": 102,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "You are one sick bastard to have thought of this, Cedrin, but I must commend you on a job well done.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37123
+      },
+      "JournalIndex": 36989,
+      "TriggerIndex": 39,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 52,
+      "Index": 103,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "You have my word as a paladin that you will be brought to justice for this crime, Cedrin.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37124
+      },
+      "JournalIndex": 36988,
+      "TriggerIndex": 40,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 52,
+      "Index": 104,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I should slay you for your crime.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37126
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 53,
+      "Index": 105,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "My opinion may be meaningless, but we shall see what Vese has to say about all this...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37127
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 41,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 57,
+      "Index": 106,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36997
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 107,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I should slay you for your crime just to wipe the smile from your face.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37129
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 53,
+      "Index": 108,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Let's just see how proud Vese will be when he finds out about your crime.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37130
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 42,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 57,
+      "Index": 109,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I must take my leave of you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36997
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 11,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 110,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I will take that chance.  Prepare to die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37132
+      },
+      "JournalIndex": 36991,
+      "TriggerIndex": -1,
+      "ActionIndex": 12,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 111,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Yes...  You win for now, Cedrin, but this is far from over.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37133
+      },
+      "JournalIndex": 36990,
+      "TriggerIndex": -1,
+      "ActionIndex": 13,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 112,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I am not done with you yet.  Prepare to die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37135
+      },
+      "JournalIndex": 36991,
+      "TriggerIndex": -1,
+      "ActionIndex": 14,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 113,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Very well, farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37082
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 114,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I have no intention of backing down this time, Cedrin.  I believe you murdered Zaem Astyr.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37137
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 15,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 56,
+      "Index": 115,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Very well, farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37082
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 116,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Oh, I think I have evidence aplenty, Cedrin.  Unfortunately, it is only circumstantial at best.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37091
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 16,
+      "NextScriptDialog": "63NewCed",
+      "NextPhraseIndex": 39,
+      "Index": 117,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We shall see, Cedrin.  Farewell for now.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37140
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 17,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 118,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 1487
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 18,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 119,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 1487
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 19,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 120,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"SH_Cedrin_Done\",\"GLOBAL\", 1)",
+    "NumTimesTalkedTo(0)",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [
+    "PartyHasItem(#63BookZA#)",
+    "PartyHasItem(#63BookZA#)",
+    "PartyHasItem(#63BookZA#)",
+    "CheckStatGT(Protagonist, 11, INT)",
+    "ClassEx(Protagonist, Cleric)",
+    "ClassEx(Protagonist, Druid)",
+    "ClassEx(Protagonist, Paladin)",
+    "ClassEx(Protagonist, Mage_All)",
+    "ClassEx(Protagonist, Ranger)",
+    "ClassEx(Protagonist, Bard)",
+    "ClassEx(Protagonist, Cleric)",
+    "ClassEx(Protagonist, Druid)",
+    "ClassEx(Protagonist, Paladin)",
+    "ClassEx(Protagonist, Mage_All)",
+    "ClassEx(Protagonist, Ranger)",
+    "ClassEx(Protagonist, Bard)",
+    "!Global(#SH_Creature_Cleared#,#GLOBAL#,1)",
+    "Global(#SH_Creature_Cleared#,#GLOBAL#,1)",
+    "ClassEx(Protagonist, Cleric)",
+    "ClassEx(Protagonist, Druid)",
+    "ClassEx(Protagonist, Paladin)",
+    "ClassEx(Protagonist, Mage_All)",
+    "ClassEx(Protagonist, Ranger)",
+    "ClassEx(Protagonist, Bard)",
+    "CheckStatGT(Protagonist, 11, INT)",
+    "CheckStatLT(Protagonist, 12, INT)",
+    "!Global(\"SH_Kav_Dead\",\"GLOBAL\", 1)\r\n!Global(\"SH_Jae_Dead\",\"GLOBAL\", 1)\r\n",
+    "Global(\"SH_Kav_Dead\",\"GLOBAL\", 1)\r\n!Global(\"SH_Jae_Dead\",\"GLOBAL\", 1)",
+    "Global(\"SH_Jae_Dead\",\"GLOBAL\", 1)\r\n!Global(\"SH_Kav_Dead\",\"GLOBAL\", 1)",
+    "Global(\"SH_Kav_Dead\",\"GLOBAL\", 1)\r\nGlobal(\"SH_Jae_Dead\",\"GLOBAL\", 1)\r\n",
+    "PartyHasItem(#63BookZA#)\nGlobal(\"SH_Cedrin_Tale\",\"GLOBAL\", 0)",
+    "Global(\"SH_Cedrin_Tale\",\"GLOBAL\", 1)",
+    "Global(\"SH_Know_Cedrin_Murderer\",\"GLOBAL\",1)\r\nGlobal(\"SH_Zaem_Death\",\"GLOBAL\",3)\r\n!Global(\"SH_Backed_Down\",\"GLOBAL\", 1)",
+    "Global(\"SH_Know_Cedrin_Murderer\",\"GLOBAL\",1)\r\nGlobal(\"SH_Zaem_Death\",\"GLOBAL\",2)\r\n!Global(\"SH_Backed_Down\",\"GLOBAL\", 1)\r\n",
+    "Global(\"SH_Backed_Down\",\"GLOBAL\", 1)",
+    "!ClassEx(Protagonist, Paladin)",
+    "CheckStatGT(Protagonist, 11, INT)",
+    "ClassEx(Protagonist, Mage_All)",
+    "CheckStatLT(Protagonist, 12, INT)",
+    "!ClassEx(Protagonist, Paladin)",
+    "ClassEx(Protagonist, Paladin)",
+    "Global(\"SH_Know_Vese\",\"GLOBAL\", 1)",
+    "Global(\"SH_Know_Vese\",\"GLOBAL\", 1)"
+  ],
+  "Actions": [
+    "SetGlobal(\"SH_Cedrin_Tale\",\"GLOBAL\", 1)",
+    "SetGlobal(\"SH_Cedrin_Tale\",\"GLOBAL\", 1)",
+    "SetGlobal(\"SH_Know_Of_Creature\",\"GLOBAL\", 1)",
+    "SetGlobal(\"SH_Know_Of_Creature\",\"GLOBAL\", 1)",
+    "SetGlobal(\"SH_Seek_Kav\",\"GLOBAL\",1)\nSetGlobal(\"SH_Seek_Jae\",\"GLOBAL\",1)",
+    "SetGlobal(\"SH_Zaem_Death\",\"GLOBAL\",3)",
+    "SetGlobal(\"SH_Zaem_Death\",\"GLOBAL\",2)",
+    "SetGlobal(\"SH_Cedrin_Tale\",\"GLOBAL\", 3)",
+    "AddXpVar(\"Level_14_Hard\",36992)\n",
+    "SetGlobal(\"SH_Backed_Down\",\"GLOBAL\", 1)",
+    "SetGlobal(\"SH_Cedrin_Done\",\"GLOBAL\", 1)",
+    "SetGlobal(\"SH_Cedrin_Done\",\"GLOBAL\", 1)",
+    "Enemy()",
+    "SetGlobal(\"SH_Cedrin_Done\",\"GLOBAL\", 1)",
+    "Enemy()",
+    "SetGlobal(\"SH_Backed_Down\",\"GLOBAL\", 0)",
+    "AddXpVar(\"Level_14_Hard\",36992)\n",
+    "SetGlobal(\"SH_Cedrin_Done\",\"GLOBAL\", 1)",
+    "SetGlobal(\"SH_Cedrin_Done\",\"GLOBAL\", 1)",
+    "SetGlobal(\"SH_Cedrin_Done\",\"GLOBAL\", 1)"
+  ],
+  "Checksum": null,
+  "Filename": "63NEWCED.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 36993
+}

@@ -1,0 +1,447 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Well, well - it seems we've been found.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35618
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Tsk!  Such an inconvenience - we should have set to murdering the Rilauvenians the moment we arrived, Lolth damn them all.  But I suppose so, yes... and be certain to let no one escape!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35620
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Perhaps... or perhaps not.  They've already attacked the louse-ridden Rilauvenians and butchered our marks; we've no cause to remain here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35621
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Perhaps... or perhaps not.  It appears that our marks have already departed for Rilauven, Lolth damn the lot of them.  We've no cause to remain here.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35622
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "What say you, stranger?  Shall we part amiably, or needlessly bloody our blades?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35623
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "I am Inidil, a priestess of Lolth; I'd led these males here to eliminate certain... troublesome... individuals.  You need know nothing more, save that we're willing to leave in peace.  And you...?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35629
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Ah, Lolth has smiled upon my charges!  Perhaps we'll meet again in circumstances less awkward, stranger.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35630
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Tsk!  Don't filthy your tongue with the name of worthless whores.  In any case, it should be of no concern - we're willing to leave in peace.  And you...?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35631
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Such an inconvenience - ah, well.  There is work to be done, my charges: let none of these fools escape!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35632
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroSS",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 4,
+      "Index": 2,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 4,
+      "Index": 3,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Wait - who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35624
+      },
+      "JournalIndex": 35616,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 5,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "You must be the Lolthian assassins Viizra told us about...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35625
+      },
+      "JournalIndex": 35617,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 7,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "There's no cause for battle, sister.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35626
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 6,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Let's go our separate ways without a fight.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35627
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 6,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We intend to bloody our blades, dark elf.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35628
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 8,
+      "Index": 8,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "There's no cause for battle, sister.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35626
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 6,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Let's go our separate ways without a fight.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35627
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 6,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We intend to bloody our blades, dark elf.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35628
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 8,
+      "Index": 11,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "There's no cause for battle, sister.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35626
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 6,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Let's go our separate ways without a fight.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35627
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 6,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "We intend to bloody our blades, dark elf.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35628
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 8,
+      "Index": 15,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Global(\"Know_Lolthians\", \"GLOBAL\", 0)",
+    "!Global(\"Know_Lolthians\", \"GLOBAL\", 0)",
+    "SubRace(Protagonist, ELF_DROW)",
+    "!SubRace(Protagonist,ELF_DROW)",
+    "SubRace(Protagonist, ELF_DROW)",
+    "!SubRace(Protagonist,ELF_DROW)",
+    "SubRace(Protagonist, ELF_DROW)",
+    "!SubRace(Protagonist,ELF_DROW)"
+  ],
+  "Actions": [
+    "Enemy()",
+    "Enemy()",
+    "Enemy()",
+    "StartCutSceneMode()\r\nStartCutScene(\"53cDroAs\")",
+    "Enemy()",
+    "Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "53DROPR.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 35618
+}

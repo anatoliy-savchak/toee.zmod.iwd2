@@ -1,0 +1,488 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Enough bloodshed!  Your quarrel is with me, *not* my clerics!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22010
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 3,
+      "TriggerIndex": 3,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "This cold that tears at my soul is worse than Auril's most fearsome breath.  My sisters are dead... *my* vengeance will be STRONGER *and* COLDER!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22063
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Lysara's sweet voice no longer echoes throughout my brain... and now her murderers will take the Walk of Death beside her!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22076
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 2,
+      "TriggerIndex": 1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "Oria has been ripped from me by creatures not fit to spit upon!  Her death will be paid tenfold!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22079
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": 2,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "Please remove the disguise - your ruse will *not* work here!  You lack the passion - the conviction - of a true Aurilite, and now must pay the price!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22088
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "I am High Priestess Cathin, but *you* may refer to me as your queen.  Any other last requests?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22104
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "We've amassed a large congregation, and soon we'll rain icy death upon our enemies - beginning with yourselves.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22106
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Our enemies are Kuldahar, the Ten-Towns, and anyone foolish enough to protect them.  They must pay for their sacrilege against Auril... and for what they did to Lysan.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22109
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "She was our mentor, and now is our inspiration and determination.  With her guidance and Auril's benevolence, we will purge this land of our enemies and the warmth they hide behind!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33613
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "PAY ATTENTION, HEATHEN - I will teach you humility, a lesson you should have learned from your mother a long time ago.  Auril, shower me with strength!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33614
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22012
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 5,
+      "Index": 0,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What's going on here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22050
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 6,
+      "Index": 1,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Then let's end this!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22051
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 9,
+      "Index": 2,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 2,
+      "Index": 3,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 9,
+      "Index": 4,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 3,
+      "Index": 5,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 9,
+      "Index": 6,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22012
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 5,
+      "Index": 7,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What's going on here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22050
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 6,
+      "Index": 8,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "It is you who will pay!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22089
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 9,
+      "Index": 9,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What's going on here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22050
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 6,
+      "Index": 10,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "No, have you?!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22105
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 9,
+      "Index": 11,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Your enemies?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22107
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 7,
+      "Index": 12,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Who are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22012
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 5,
+      "Index": 13,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "It's time for you to die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22108
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 9,
+      "Index": 14,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Lysan?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22110
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 8,
+      "Index": 15,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "It's time for you to die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22108
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 9,
+      "Index": 16,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "It's time for you to die!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22108
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "41Cathin",
+      "NextPhraseIndex": 9,
+      "Index": 17,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 22009,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasAction, HasNextDialog, HasJournal"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"Lysara_dead\", \"GLOBAL\", 1)\nGlobal(\"Oria_dead\", \"GLOBAL\", 1)\nGlobal(\"OriaEssence_dead\", \"GLOBAL\", 1)",
+    "Global(\"Lysara_dead\", \"GLOBAL\", 1)",
+    "Global(\"Oria_dead\", \"GLOBAL\", 1)\nGlobal(\"OriaEssence_dead\", \"GLOBAL\", 1)",
+    "!Global(\"Lysara_dead\", \"GLOBAL\", 1)\nOr(2)\n!Global(\"Oria_dead\", \"GLOBAL\", 1)\n!Global(\"OriaEssence_dead\", \"GLOBAL\", 1)"
+  ],
+  "TriggersResponse": [
+    "Or(2)\n!Global(\"Oria_dead\", \"GLOBAL\", 1)\n!Global(\"OriaEssence_dead\", \"GLOBAL\", 1)",
+    "Global(\"Oria_dead\", \"GLOBAL\", 1)\nGlobal(\"OriaEssence_dead\", \"GLOBAL\", 1)"
+  ],
+  "Actions": [
+    "SetGlobal(\"41SaidPainting2\", \"GLOBAL\", 1)",
+    "SetGlobal(\"41SaidPainting3\", \"GLOBAL\", 1)\nEnemy()"
+  ],
+  "Checksum": null,
+  "Filename": "41CATHIN.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 22010
+}

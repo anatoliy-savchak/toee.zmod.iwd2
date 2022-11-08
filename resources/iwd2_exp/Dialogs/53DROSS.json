@@ -1,0 +1,84 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Yes, my lady.  Shall we eliminate them?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 35633
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 3,
+      "TriggerIndex": 0,
+      "Index": 0
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 2,
+      "Index": 0,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 3,
+      "Index": 1,
+      "Flags": "HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53DroPr",
+      "NextPhraseIndex": 1,
+      "Index": 2,
+      "Flags": "None"
+    }
+  ],
+  "TriggersPhrase": [
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Global(\"53Malavo_Dead\", \"GLOBAL\", 0)\nGlobal(\"53Kadres_Dead\", \"GLOBAL\", 0)\nGlobal(\"53Viizra_Dead\", \"GLOBAL\", 0)\n!Global(\"Viciscamera_Quest\", \"GLOBAL\", 2)",
+    "Global(\"Viciscamera_Quest\", \"GLOBAL\", 2)"
+  ],
+  "Actions": [],
+  "Checksum": null,
+  "Filename": "53DROSS.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 35633
+}

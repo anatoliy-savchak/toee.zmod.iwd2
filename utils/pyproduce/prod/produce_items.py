@@ -361,6 +361,34 @@ class ItemLeatherStuddedArmorPlus2(ItemLeatherStuddedArmors):
     @classmethod
     def get_proto_const(cls): return "const_proto_armor.PROTO_ARMOR_STUDDED_LEATHER_ARMOR_PLUS_2"
 
+########## ARMORS / HalfPlate
+class ItemHalfPlates(ItemArmors):
+    @classmethod
+    def get_category(cls): return "HalfPlate"
+
+    def get_boots_proto_const(cls): return "const_proto_cloth.PROTO_CLOTH_BOOTS_SILVER_PLATE_BOOTS"
+
+class ItemHalfPlate(ItemHalfPlates):
+    @classmethod
+    def get_item_codes(cls): return ('00PLAT01', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_armor.PROTO_ARMOR_HALF_PLATE"
+
+########## ARMORS / ChainMails
+class ItemChainMails(ItemArmors):
+    @classmethod
+    def get_category(cls): return "ChainMail"
+
+    def get_boots_proto_const(cls): return "const_proto_cloth.PROTO_CLOTH_BOOTS_CHAINMAIL_BOOTS"
+
+class ItemChainMail(ItemChainMails):
+    @classmethod
+    def get_item_codes(cls): return ('00CHAN01', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_armor.PROTO_ARMOR_CHAINMAIL"
+
 ########## ARMORS / HELMS HATS
 class ItemHelmets(ItemArmors):
     @classmethod
@@ -431,6 +459,39 @@ class ItemScimitar(ItemLongswords):
 
     @classmethod
     def get_proto_const(cls): return "const_proto_weapon.PROTO_SCIMITAR"
+
+class ItemMoobladeOfSelune(ItemLongswords):
+    @classmethod
+    def get_item_codes(cls): return ('00SWDL09', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon_iwd2.PROTO_LONGSWORD_MOONBLADE_OF_SELUNE"
+
+########## Greatswords
+class ItemGreatswords(ItemBase):
+    @classmethod
+    def get_category(cls): return "GreatSword"
+
+class ItemBastardSword(ItemGreatswords):
+    @classmethod
+    def get_item_codes(cls): return ('?', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_SWORD_BASTARD"
+
+class ItemBastardSwordPlusMkw(ItemGreatswords):
+    @classmethod
+    def get_item_codes(cls): return ('00CWSWDE', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_SWORD_BASTARD_MASTERWORK"
+
+class ItemBastardSwordPlus1(ItemGreatswords):
+    @classmethod
+    def get_item_codes(cls): return ('00CWSWDF', )
+
+    @classmethod
+    def get_proto_const(cls): return "const_proto_weapon.PROTO_WEAPON_SWORD_BASTARD_PLUS_1"
 
 ########## GOLD
 class ItemGold(ItemBase):
@@ -517,7 +578,7 @@ class ItemMiscJunk(ItemBase):
     def get_category(cls): return "Books"
 
     @classmethod
-    def get_item_codes(cls): return ('00RTGOB1', '00RTFIRE', '00RG05', 'RT01_M', 'RT02_M', 'RT02_R', 'RT02_L')
+    def get_item_codes(cls): return ('00RTGOB1', '00RTFIRE', '00RG05', 'RT01_M', 'RT02_M', 'RT02_R', 'RT02_L', 'RT03_R', 'RT03_L', 'RT03_V')
     
     def process_item(self):
         self._add_line("# junk, skip and forget")
@@ -629,6 +690,8 @@ class ItemMiscStaff(ItemMisc):
     # used by Orc Shaman as staffs
 
     def process_item(self):
+        if self.parent.anim.process_item(self):
+            return True
         if not self.parent.anim.disallow_weapon():
             wear = self.get_wear()
             self._add_line(f'weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_QUARTERSTAFF, npc, no_loot = {self.no_loot}, wear_on = {wear}) # {self.item_name} ({self.item_file_name}) at {self.slot_name}')

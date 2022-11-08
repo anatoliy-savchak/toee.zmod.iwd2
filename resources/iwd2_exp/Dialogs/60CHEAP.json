@@ -1,0 +1,730 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "- Orrick the Grey -\n     - It has been SOME time \n          - Since you BOUND me - \n               - Have you a command for me IDIOT -\n                    - Or should I stand here FOREVER -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38575
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 4,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "- Ah it becomes clear -\n     - You are NOT Orrick - \n          - Who are YOU -\n               - To command ME -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38579
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "- A SERVANT I am -\n     - I await your command - \n          - I am librarian, armorer, and keeper -\n               - It is not as GLAMOROUS as it seems -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38584
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "- Ah you have returned -\n     - I cannot say you have been MISSED - \n          - So have you a command for me -\n               - Or should I simply STAND here -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38588
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "- TRULY -\n     - Would you set me FREE -\n          - I have dreamed of this day for DECADES -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38592
+      },
+      "ResponsesIndexFirst": 16,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "- ALONE he wanted to be -\n     - In the hand that was severed - \n          - But some STILL sought him out -\n               - For items of great power -\n                    - Thus I stay HERE to serve as CLERK -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38595
+      },
+      "ResponsesIndexFirst": 18,
+      "ResponsesCount": 3,
+      "TriggerIndex": 2,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "- To FREE me -\n     - My duties I must relinquish - \n          - To the FIRST who stepped in the tower -\n               - After Orrick departed -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38599
+      },
+      "ResponsesIndexFirst": 21,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "- You MOCK my misfortune -\n     - OH how I LOATHE you -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38602
+      },
+      "ResponsesIndexFirst": 23,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "- SHEEMISH is dead -\n     - GONE from this world -\n          - The ITEMS I cannot relinquish -\n               - To any other -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38604
+      },
+      "ResponsesIndexFirst": 26,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "- YES THAT IS HIS NAME -\n     - And his NAME was ALL that was needed -\n          - I AM FREE -\n               - The items of Orrick are now HIS -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38608
+      },
+      "ResponsesIndexFirst": 29,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "- Seek SHEEMISH now -\n     - I AM FREE -\n          - The items of Orrick are now HIS -",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38609
+      },
+      "ResponsesIndexFirst": 30,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 10
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Who... what are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38576
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "You are some sort of air elemental... bound to this place.  Why?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38577
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 2,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "You are some sort of air elemental... bound to this place.  Why?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38577
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 2,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I think I should be going.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38578
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What are you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38580
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 2,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I'm an abjurer, you impertinent elemental.  I could send you back to the elemental plane of air in a heartbeat.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38581
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 4,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'm a practitioner of the Art, you impertinent elemental.  It is not beyond my power to banish you back to your home plane.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38582
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 4,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I'm a practitioner of the Art, you impertinent elemental.  It is not beyond my power to banish you back to your home plane.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38582
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 4,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I apologize for disturbing you.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38583
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What are you keeping?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38585
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 5,
+      "Index": 9,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Why were you placed here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38586
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 5,
+      "Index": 10,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38587
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Actually, we would like to set you free.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38589
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 4,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Why are you here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38590
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": 6,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 5,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I wish to see what you have stored for Orrick.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38591
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38587
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Orrick's binding was no doubt unique to you - what must be done to free you?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38593
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 6,
+      "Index": 16,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I was merely jesting, you arrogant elemental.  I found your tone... irritating.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38594
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 7,
+      "Index": 17,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Orrick bound you here so you could sell *magic items?*  A fine jest, indeed.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38596
+      },
+      "JournalIndex": 38572,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 7,
+      "Index": 18,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "That is an unfortunate state - perhaps there is something I could do to set you free.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38597
+      },
+      "JournalIndex": 38572,
+      "TriggerIndex": 9,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 4,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "What do you have for sale?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38598
+      },
+      "JournalIndex": 38572,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "That would have been Sheemish... but, uh, he's had an accident.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38600
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": 9,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 8,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Well, that would be... Sheemish?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38601
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 9,
+      "Index": 22,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "Why are you here?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38590
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": 10,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 5,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "We care little for your opinion.  What do you have for sale?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38603
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": 11,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38587
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Indeed?  That is unfortunate.  May I see what items you have?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38605
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 12,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 26,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I guess that means you'll be trapped here forever, then?  *Such* a pity.  Now, show me your items.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38606
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "60Cheap",
+      "NextPhraseIndex": 7,
+      "Index": 27,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, elemental.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38607
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 28,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, elemental.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38607
+      },
+      "JournalIndex": 38573,
+      "TriggerIndex": -1,
+      "ActionIndex": 13,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 29,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Farewell, elemental.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38607
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 14,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 30,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"60Ghost_Gone\", \"GLOBAL\", 1)",
+    "NumTimesTalkedTo(0)",
+    "NumTimesTalkedToGT(0)"
+  ],
+  "TriggersResponse": [
+    "!Kit(Protagonist, MAGE_CONJURER)",
+    "Kit(Protagonist, MAGE_CONJURER)",
+    "CheckSkillGT(Protagonist,8,KNOWLEDGE_ARCANA)\n!Kit(Protagonist, MAGE_CONJURER)",
+    "Kit(Protagonist, MAGE_ABJURER)Global(\"60NoShit_On_Sheemish\", \"GLOBAL\", 0)",
+    "ClassEx(Protagonist,Wizard)!Class(Protagonist, SORCERER)!Kit(Protagonist, MAGE_ABJURER)Global(\"60NoShit_On_Sheemish\", \"GLOBAL\", 0)",
+    "Class(Protagonist, SORCERER)!Kit(Protagonist, MAGE_ABJURER)Global(\"60NoShit_On_Sheemish\", \"GLOBAL\", 0)",
+    "Global(\"60NoShit_On_Sheemish\", \"GLOBAL\", 0)",
+    "!Global(\"60Elemental_Purpose\",\"GLOBAL\",1)",
+    "Global(\"60Elemental_Purpose\",\"GLOBAL\",1)",
+    "Global(\"60NoShit_On_Sheemish\", \"GLOBAL\", 0)",
+    "Global(\"60Sheemish_Dead\",\"GLOBAL\",1)",
+    "!Global(\"60Sheemish_Dead\",\"GLOBAL\",1)",
+    "!Global(\"60Elemental_Purpose\",\"GLOBAL\",1)",
+    "Global(\"60Elemental_Purpose\",\"GLOBAL\",1)"
+  ],
+  "Actions": [
+    "SetGlobal(\"60Cheap_Ass_Marketing_Ploy\", \"GLOBAL\", 1)",
+    "SetGlobal(\"60Cheap_Ass_Marketing_Ploy\", \"GLOBAL\", 1)",
+    "SetGlobal(\"60Cheap_Ass_Marketing_Ploy\", \"GLOBAL\", 1)",
+    "SetGlobal(\"60Cheap_Ass_Marketing_Ploy\", \"GLOBAL\", 1)",
+    "SetGlobal(\"60Elemental_Purpose\",\"GLOBAL\",1)",
+    "SetGlobal(\"60Elemental_Purpose\",\"GLOBAL\",1)",
+    "SetGlobal(\"60Elemental_Purpose\",\"GLOBAL\",1)",
+    "StartStore(\"60Cheap\",Protagonist)",
+    "StartStore(\"60Cheap\",Protagonist)",
+    "SetGlobal(\"60NoShit_On_Sheemish\", \"GLOBAL\", 1)",
+    "SetGlobal(\"60Elemental_Purpose\",\"GLOBAL\",1)",
+    "StartStore(\"60Cheap\",Protagonist)",
+    "StartStore(\"60Cheap\",Protagonist)",
+    "AddXpVar(\"Level_12_Easy\",38574)\nSetGlobal(\"60Shit_On_Sheemish\", \"GLOBAL\", 1)\nSetGlobal(\"60Ghost_Gone\", \"GLOBAL\", 1)",
+    "SetGlobal(\"60Shit_On_Sheemish\", \"GLOBAL\", 1)"
+  ],
+  "Checksum": null,
+  "Filename": "60CHEAP.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 38575
+}

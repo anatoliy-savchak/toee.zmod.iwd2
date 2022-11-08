@@ -143,6 +143,12 @@ class ProducerDoc(object):
         name = f"{script_id:05d}_{are_name.lower()}_npc_classes_auto.dlg"
         return os.path.join(self.core_dir, "dlg", name)
 
+    def get_path_out_npcs_dialog_file_inst(self, are_name: str, script_id: int = None):
+        if script_id is None:
+            script_id = self.are_name_to_script_id(are_name) + 3
+        name = f"{script_id:05d}_{are_name.lower()}_npc_inst_classes_auto.dlg"
+        return os.path.join(self.core_dir, "dlg", name)
+
     def get_path_template_npcs_class_manual_file(self):
         return 'data/py06616_template.py'
 

@@ -423,9 +423,12 @@ class ProduceNPCDialog:
             if "HasJournal" in response_flags:
                 journalIndex = response["JournalIndex"]
                 rums = self.parent.doc.journalFile.get_rumors_by_strref(journalIndex)
-                if effect_code:
-                    effect_code = effect_code.strip()
-                effect_code = (effect_code + "; " if effect_code else "") + f'uj.journal_add({journalIndex}, {rums})'
+                if not rums:
+                    print(f'Rumor Not Found! journalIndex: {journalIndex}')
+                else:
+                    if effect_code:
+                        effect_code = effect_code.strip()
+                    effect_code = (effect_code + "; " if effect_code else "") + f'uj.journal_add({journalIndex}, {rums})'
 
             nextPhraseIndex = response["NextPhraseIndex"]
             nextScriptDialog = response["NextScriptDialog"]

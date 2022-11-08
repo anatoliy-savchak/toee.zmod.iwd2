@@ -34,6 +34,9 @@ class AnimBase(object):
     def produce_cloth(self):
         return
 
+    def process_item(self, item_producer):
+        return
+
     def produce_portrait(self):
         portrait_id = 8680 # none
         portrait_comment_name = "none"
@@ -322,10 +325,20 @@ class AnimOrcShaman(AnimOrc):
 class AnimWererat(AnimBase):
     @classmethod
     def get_codes(cls): return ("Wererat", )
+    
     def proto_override(self): return 'const_proto_npc.PROTO_NPC_WERERAT'
+    
     def produce_portrait(self):
         # resuse from proto
         return
+
+    def process_item(self, item_producer):
+        if '001D6C' in item_producer.get_item_codes():
+            wear = item_producer.get_wear()
+            item_producer._add_line(f'weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_MACE_LIGHT, npc, no_loot = {item_producer.no_loot}, wear_on = {wear}) # {item_producer.item_name} ({item_producer.item_file_name}) at {item_producer.slot_name} by {self.get_codes()[0]}')
+            return True
+        return
+
 
 class AnimWerebadger(AnimWererat):
     @classmethod

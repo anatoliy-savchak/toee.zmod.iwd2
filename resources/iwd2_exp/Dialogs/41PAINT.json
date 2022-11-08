@@ -1,0 +1,596 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23652
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 19,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23652
+      },
+      "ResponsesIndexFirst": 19,
+      "ResponsesCount": 10,
+      "TriggerIndex": -1,
+      "Index": 1
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Death to Kuldahar and all who defy the will of the Cold Goddess!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23653
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Andora?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23656
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Kuldahar?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23657
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 2,
+      "NextScriptDialog": "41Paint",
+      "NextPhraseIndex": 1,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Lysan.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23658
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Coming Storm festival?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23660
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 4,
+      "ActionIndex": 4,
+      "NextScriptDialog": "41Paint",
+      "NextPhraseIndex": 1,
+      "Index": 4,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Auril?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23662
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 5,
+      "ActionIndex": 5,
+      "NextScriptDialog": "41Paint",
+      "NextPhraseIndex": 1,
+      "Index": 5,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Auril, shower me with strength!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23663
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 6,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "High Priestess Lysara... Cathin... Oria?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23665
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 7,
+      "ActionIndex": 7,
+      "NextScriptDialog": "41Paint",
+      "NextPhraseIndex": 1,
+      "Index": 7,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Praise Auril?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23667
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 8,
+      "ActionIndex": 8,
+      "NextScriptDialog": "41Paint",
+      "NextPhraseIndex": 1,
+      "Index": 8,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "In Auril's name, from winter's veil, my claw tears through the frozen air...  Neither your might, nor earthly means, will save you from your death's despair.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23668
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 9,
+      "ActionIndex": 9,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Retributive strike?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23670
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 10,
+      "ActionIndex": 10,
+      "NextScriptDialog": "41Paint",
+      "NextPhraseIndex": 1,
+      "Index": 10,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Level two?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23671
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 11,
+      "ActionIndex": 11,
+      "NextScriptDialog": "41Paint",
+      "NextPhraseIndex": 1,
+      "Index": 11,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Bedroom.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23672
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 12,
+      "ActionIndex": 12,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Nickademus?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23673
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 13,
+      "ActionIndex": 13,
+      "NextScriptDialog": "41Paint",
+      "NextPhraseIndex": 1,
+      "Index": 13,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Western Pass?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23674
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 14,
+      "ActionIndex": 14,
+      "NextScriptDialog": "41Paint",
+      "NextPhraseIndex": 1,
+      "Index": 14,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "From the Sea of Moving Ice to the High Forest, from the highest peak in the Spine of the World Mountains, to the deepest, most volcanic bowels of the earth, the Legion of the Chimera will purge this land of those enemies who sought to deny the sovereignty of our nation!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23675
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 15,
+      "ActionIndex": 15,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "The Legion of the Chimera?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23676
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 16,
+      "ActionIndex": 16,
+      "NextScriptDialog": "41Paint",
+      "NextPhraseIndex": 1,
+      "Index": 16,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Isair?  Madae?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23677
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 17,
+      "ActionIndex": 17,
+      "NextScriptDialog": "41Paint",
+      "NextPhraseIndex": 1,
+      "Index": 17,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Hmmm... Interesting...",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 23678
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 18,
+      "NextScriptDialog": "41Paint",
+      "NextPhraseIndex": 1,
+      "Index": 18,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I wonder what that did?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32350
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 18,
+      "ActionIndex": 19,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I wonder what that did?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32350
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 19,
+      "ActionIndex": 20,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I wonder what that did?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32350
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 20,
+      "ActionIndex": 21,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 21,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I wonder what that did?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32350
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 21,
+      "ActionIndex": 22,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I wonder what that did?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32350
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 22,
+      "ActionIndex": 23,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 23,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I wonder what that did?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32350
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 23,
+      "ActionIndex": 24,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 24,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I wonder what that did?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32350
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 24,
+      "ActionIndex": 25,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I wonder what that did?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32350
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 25,
+      "ActionIndex": 26,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 26,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I wonder what that did?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32350
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 26,
+      "ActionIndex": 27,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 27,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I wonder what that did?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 32350
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 27,
+      "ActionIndex": 28,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 28,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "True()"
+  ],
+  "TriggersResponse": [
+    "Global(\"41SaidPainting1\", \"GLOBAL\", 1)",
+    "Global(\"40OdeaExplainedAndora\", \"GLOBAL\", 1)",
+    "!Global(\"41SaidPainting1\", \"GLOBAL\", 1)\nNumTimesTalkedToGT(1)\n!TimerActive(0)",
+    "Global(\"41SaidPainting2\", \"GLOBAL\", 1)",
+    "!Global(\"41SaidPainting2\", \"GLOBAL\", 1)\nGlobal(\"41TempleConstruction\", \"GLOBAL\", 1)",
+    "!Global(\"41SaidPainting2\", \"GLOBAL\", 1)\nNumTimesTalkedToGT(2)\n!TimerActive(0)",
+    "Global(\"41SaidPainting3\", \"GLOBAL\", 1)",
+    "!Global(\"41SaidPainting3\", \"GLOBAL\", 1)\nGlobal(\"41NateSaidPower\",\"GLOBAL\",1)",
+    "!Global(\"41SaidPainting3\", \"GLOBAL\", 1)\nNumTimesTalkedToGT(3)\n!TimerActive(0)",
+    "Global(\"41SaidPainting4\", \"GLOBAL\", 1)",
+    "!Global(\"41SaidPainting4\", \"GLOBAL\", 1)\nGlobal(\"41PlayerKnowsStaffOfPower\", \"GLOBAL\", 1)",
+    "!Global(\"41SaidPainting4\", \"GLOBAL\", 1)\nNumTimesTalkedToGT(4)\n!TimerActive(0)",
+    "Global(\"41SaidPainting5\", \"GLOBAL\", 1)",
+    "!Global(\"41SaidPainting5\", \"GLOBAL\", 1)\nGlobal(\"41TempleConstruction\", \"GLOBAL\", 1)",
+    "!Global(\"41SaidPainting5\", \"GLOBAL\", 1)\nNumTimesTalkedToGT(5)\n!TimerActive(0)",
+    "Global(\"41PaintingPhrase6\", \"GLOBAL\", 1)",
+    "!Global(\"41PaintingPhrase6\", \"GLOBAL\", 1)\nGlobal(\"41MentionedLegion\", \"GLOBAL\", 1)",
+    "!Global(\"41PaintingPhrase6\", \"GLOBAL\", 1)\nNumTimesTalkedToGT(6)\n!TimerActive(0)",
+    "RandomNum(10,1)",
+    "RandomNum(10,2)",
+    "RandomNum(10,3)",
+    "RandomNum(10,4)",
+    "RandomNum(10,5)",
+    "RandomNum(10,6)",
+    "RandomNum(10,7)",
+    "RandomNum(10,8)",
+    "RandomNum(10,9)",
+    "RandomNum(10,10)"
+  ],
+  "Actions": [
+    "TriggerActivation(\"To4102b\", TRUE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )\nSetGlobal(\"RightAnswer\", \"LOCALS\", 1 )",
+    "TriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", TRUE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )\nSetGlobal(\"RightAnswer\", \"LOCALS\", 1 )",
+    "SetGlobal(\"RightAnswer\", \"LOCALS\", 2 )",
+    "TriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", TRUE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )\nSetGlobal(\"RightAnswer\", \"LOCALS\", 1 )",
+    "SetGlobal(\"RightAnswer\", \"LOCALS\", 2 )",
+    "SetGlobal(\"RightAnswer\", \"LOCALS\", 2 )",
+    "TriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", TRUE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )\nSetGlobal(\"RightAnswer\", \"LOCALS\", 1 )",
+    "SetGlobal(\"RightAnswer\", \"LOCALS\", 2 )",
+    "SetGlobal(\"RightAnswer\", \"LOCALS\", 2 )",
+    "TriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", TRUE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )\nSetGlobal(\"RightAnswer\", \"LOCALS\", 1 )",
+    "SetGlobal(\"RightAnswer\", \"LOCALS\", 2 )",
+    "SetGlobal(\"RightAnswer\", \"LOCALS\", 2 )",
+    "TriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", TRUE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )\nSetGlobal(\"RightAnswer\", \"LOCALS\", 1 )",
+    "SetGlobal(\"RightAnswer\", \"LOCALS\", 2 )",
+    "SetGlobal(\"RightAnswer\", \"LOCALS\", 2 )",
+    "TriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", TRUE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )\nSetGlobal(\"RightAnswer\", \"LOCALS\", 1 )",
+    "SetGlobal(\"RightAnswer\", \"LOCALS\", 2 )",
+    "SetGlobal(\"RightAnswer\", \"LOCALS\", 2 )",
+    "SetGlobal(\"RightAnswer\", \"LOCALS\", 2 )",
+    "StartRandomTimer(0,60,600)\nTriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", TRUE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )",
+    "StartRandomTimer(0,60,600)\nTriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", TRUE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )",
+    "StartRandomTimer(0,60,600)\nTriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", TRUE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )",
+    "StartRandomTimer(0,60,600)\nTriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", TRUE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )",
+    "StartRandomTimer(0,60,600)\nTriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", TRUE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )",
+    "StartRandomTimer(0,60,600)\nTriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", TRUE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )",
+    "StartRandomTimer(0,60,600)\nTriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", TRUE )\nTriggerActivation(\"ToTop\", FALSE )",
+    "StartRandomTimer(0,60,600)\nTriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", TRUE )",
+    "StartRandomTimer(0,60,600)\nTriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", FALSE )          TriggerActivation(\"ToAndora\", TRUE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )",
+    "StartRandomTimer(0,60,600)\nTriggerActivation(\"To4102b\", FALSE )    TriggerActivation(\"ToAltar\", FALSE )          TriggerActivation(\"ToTreasury\", FALSE )          TriggerActivation(\"ToVault\", FALSE )          TriggerActivation(\"ToNick\", FALSE )          TriggerActivation(\"ToDen\", TRUE )          TriggerActivation(\"ToAndora\", FALSE )          TriggerActivation(\"ToPool\", FALSE )          TriggerActivation(\"ToChapel\", FALSE )          TriggerActivation(\"ToPrison\", FALSE )          TriggerActivation(\"ToEntrance\", FALSE )          TriggerActivation(\"ToFront\", FALSE )          TriggerActivation(\"ToWall\", FALSE )          TriggerActivation(\"ToFoothills\", FALSE )\nTriggerActivation(\"ToTop\", FALSE )"
+  ],
+  "Checksum": null,
+  "Filename": "41PAINT.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 23652
+}

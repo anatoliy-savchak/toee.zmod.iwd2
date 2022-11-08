@@ -1,0 +1,269 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "[Frustrated but very reserved]I will hear no more of this, [guth-muh]Guthma!  I see the plans you have set forth, [disgusted]but I have also seen the plans that have already come to pass.  [reserved conviction]My ability to understand these failures wanes rapidly.  I cannot and will *not* allow this to continue.  [summarizing, with authority]Henceforth, I shall dictate your movements.",
+        "Flags": "Standard",
+        "Sound": "SHECS001",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 16980
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "[Angry, then with utter contempt]No, they do *not* quiver, you pure-bred imbecile-",
+        "Flags": "Standard",
+        "Sound": "SHECS002",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 16982
+      },
+      "ResponsesIndexFirst": 1,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "[Frustrated anger]Shut up, [guth-muh]Guthma!  The humans have fought back your pathetic attacks.  [contempt]They do *not* quiver, and they are now aware of our presence.  The time for planning has passed.  [conviction]You are to lead this army to the Ten-Towns and destroy them.",
+        "Flags": "Standard",
+        "Sound": "SHECS003",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 16983
+      },
+      "ResponsesIndexFirst": 2,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "[Frustrated anger]Stop.  Do not *think.*  It is now time for you to act.  [threatening]It is enough that you know what will happen if you continue to fail.  [more thoughtful]And it might not only be your head on the spike of our legion...  [ih-zair]Isair and [mah-day]Madae could even hold *me* responsible.  [strong conviciton]And this I will NOT allow!",
+        "Flags": "Standard",
+        "Sound": "SHECS004",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 16984
+      },
+      "ResponsesIndexFirst": 3,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "[irritated and contemptuous] After your abysmal failure with the sappers sent to [Tar-gos]Targos, and the wasted vanguard of troops that followed, *and* your forces' utter failure at the crossing of [shane-garn]Shaengarne Ford, I find it extremely difficult to trust you.",
+        "Flags": "Standard",
+        "Sound": "SHECS005",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 16985
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "[Frustrated parent talking to a child]This will serve as your last warning, [guth-muh]Guthma.  I grant such to so very, *very* few...  But I have pressing business with other forces on [said to make sure it's understood who is in charge]my western front.",
+        "Flags": "Standard",
+        "Sound": "SHECS006",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 16986
+      },
+      "ResponsesIndexFirst": 5,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "[dismissive]I have no further patience to discuss this.",
+        "Flags": "Standard",
+        "Sound": "SHECS007",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 16987
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "[Frustrated but very reserved]I will hear no more of this, [guth-muh]Guthma!  I see the plans you have set forth, [disgusted]but I have also seen the plans that have already come to pass.  [reserved conviction]My ability to understand these failures wanes rapidly.  I cannot and will *not* allow this to continue.  [summarizing, with authority]Henceforth, I shall dictate your movements.",
+        "Flags": "Standard",
+        "Sound": "SHECS001",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 17082
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 7
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "31bugGut",
+      "NextPhraseIndex": 0,
+      "Index": 0,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "31bugGut",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "31bugGut",
+      "NextPhraseIndex": 2,
+      "Index": 2,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "31bugGut",
+      "NextPhraseIndex": 3,
+      "Index": 3,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "31bugGut",
+      "NextPhraseIndex": 4,
+      "Index": 4,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "31sherin",
+      "NextPhraseIndex": 6,
+      "Index": 5,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "31bugGut",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasAction"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"31Guthma_CS\",\"GLOBAL\", 1)",
+    "Global(\"31Guthma_CS\",\"GLOBAL\", 2)"
+  ],
+  "TriggersResponse": [],
+  "Actions": [
+    " ",
+    "StartCutSceneMode()\r\nStartCutScene(\"31cGuth2\")",
+    " "
+  ],
+  "Checksum": null,
+  "Filename": "31SHERIN.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 16980
+}

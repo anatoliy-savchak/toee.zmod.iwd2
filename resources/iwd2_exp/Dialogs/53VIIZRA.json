@@ -1,0 +1,781 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Yes?  What do you need?  I am Viizra Arabani, first daughter of House Arabani.  I doubt I can be of any more assistance to you than the males, but please... ask.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22901
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 4,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Equality, they promised.  I risked my life and soul to help topple the priestesses of Lolth, and I get sideways glances and whispers everywhere I go.  I became a Masked Traitor for Vhaeraun because I saw that I was going nowhere in my house.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22909
+      },
+      "ResponsesIndexFirst": 4,
+      "ResponsesCount": 4,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Not quite as I had planned.  Instead of being the third daughter of my house, I am the first.  I will never be Matron as long as my brother Dizreth is alive.  If he has any male heirs, my future in House Arabani is worthless.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22912
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "At least when I was a priestess of Lolth I could kick around the males.  Now I'm the one who gets kicked.  It is infuriating.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22914
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 5,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "And what a pleasure that is.  Is there anything *else* I can help you with?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22919
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Your - pity is noted.  Is there anything *else* I can help you with?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22920
+      },
+      "ResponsesIndexFirst": 17,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Yes?  What do you need now?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22921
+      },
+      "ResponsesIndexFirst": 20,
+      "ResponsesCount": 4,
+      "TriggerIndex": 2,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "Not much.  What I can tell you is that if you encounter driders, every female you see has the powers of a potent priestess.  The males are evenly warriors and wizards, but the females are *always* priestesses.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22923
+      },
+      "ResponsesIndexFirst": 24,
+      "ResponsesCount": 3,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "\"Assisting\" in only the most elementary of ways, I'm afraid.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22924
+      },
+      "ResponsesIndexFirst": 27,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 8
+    },
+    {
+      "Text": {
+        "Text": "Blasphemy!  As if their original crimes didn't demand their curse, they continue their profanity!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22925
+      },
+      "ResponsesIndexFirst": 28,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 9
+    },
+    {
+      "Text": {
+        "Text": "After two centuries of being a high priestess of Lolth, some habits are hard to break, Archmage.  It is as easy for you to stop weaving magic as it is for me to avoid thinking like a Matron Mother.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22926
+      },
+      "ResponsesIndexFirst": 29,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 10
+    },
+    {
+      "Text": {
+        "Text": "Also, I have heard word of a pack of assassins skulking about... a priestess of Lolth leading a bloody-minded band to this camp in the hopes of catching Malavon unawares.  Imbeciles, all of them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38718
+      },
+      "ResponsesIndexFirst": 30,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 11
+    },
+    {
+      "Text": {
+        "Text": "You've led monsters to the camp.  Dispose of them.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 38810
+      },
+      "ResponsesIndexFirst": 32,
+      "ResponsesCount": 1,
+      "TriggerIndex": 0,
+      "Index": 12
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "You seem rather cynical about your role in this affair.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22905
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22906
+      },
+      "JournalIndex": 22900,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 7,
+      "Index": 1,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing and supplies.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22907
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 2,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "I need nothing.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22908
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 3,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Did it work?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22910
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 2,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22906
+      },
+      "JournalIndex": 22900,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 7,
+      "Index": 5,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing and supplies.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22907
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 6,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22911
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 3,
+      "Index": 8,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "You took a gamble and you lost.  At least you're alive.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22917
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 4,
+      "Index": 9,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I understand your dismay.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22918
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 5,
+      "Index": 10,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22906
+      },
+      "JournalIndex": 22900,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 7,
+      "Index": 11,
+      "Flags": "HasText, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing and supplies.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22907
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22911
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22906
+      },
+      "JournalIndex": 22900,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 7,
+      "Index": 14,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing and supplies.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22907
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22911
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 16,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22906
+      },
+      "JournalIndex": 22900,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 7,
+      "Index": 17,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing and supplies.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22907
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 8,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 18,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22911
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 19,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Why are you so cynical?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22922
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": 9,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 1,
+      "Index": 20,
+      "Flags": "HasText, HasTrigger, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "What can you tell me about this area?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22906
+      },
+      "JournalIndex": 22900,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 7,
+      "Index": 21,
+      "Flags": "HasText, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing and supplies.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22907
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 10,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 22,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22911
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 23,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 38814,
+      "TriggerIndex": 1,
+      "ActionIndex": 11,
+      "NextScriptDialog": "53Viizra",
+      "NextPhraseIndex": 11,
+      "Index": 24,
+      "Flags": "HasTrigger, HasAction, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing and supplies.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22907
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": 12,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 25,
+      "Flags": "HasText, HasTrigger, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22911
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 26,
+      "Flags": "HasText, HasTrigger, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Malavo",
+      "NextPhraseIndex": 17,
+      "Index": 27,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Malavo",
+      "NextPhraseIndex": 29,
+      "Index": 28,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "53Malavo",
+      "NextPhraseIndex": 30,
+      "Index": 29,
+      "Flags": "None"
+    },
+    {
+      "Text": {
+        "Text": "I am in need of healing and supplies.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22907
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 13,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 30,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 22911
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 31,
+      "Flags": "HasText, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 32,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "See([ENEMY], FALSE)",
+    "Global(\"Talked_to_Viizra\",\"GLOBAL\",0)",
+    "!Global(\"Talked_to_Viizra\",\"GLOBAL\",0)"
+  ],
+  "TriggersResponse": [
+    "!Global(\"Viizra_Cynic\",\"GLOBAL\",1)",
+    "Global(\"Know_Lolthians\", \"GLOBAL\", 0)",
+    "!Global(\"Know_Lolthians\", \"GLOBAL\", 0)",
+    "!Global(\"Know_Lolthians\", \"GLOBAL\", 0)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Talked_to_Viizra\",\"GLOBAL\",1)\nSetGlobal(\"Viizra_Cynic\",\"GLOBAL\",1)",
+    "SetGlobal(\"Talked_to_Viizra\",\"GLOBAL\",1)",
+    "SetGlobal(\"Talked_to_Viizra\",\"GLOBAL\",1)\nStartStore(\"53Viizra\",Protagonist)",
+    "SetGlobal(\"Talked_to_Viizra\",\"GLOBAL\",1)",
+    "StartStore(\"53Viizra\",Protagonist)",
+    "SetGlobal(\"Talked_to_Viizra\",\"GLOBAL\",1)",
+    "StartStore(\"53Viizra\",Protagonist)",
+    "StartStore(\"53Viizra\",Protagonist)",
+    "StartStore(\"53Viizra\",Protagonist)",
+    "SetGlobal(\"Viizra_Cynic\",\"GLOBAL\",1)",
+    "StartStore(\"53Viizra\",Protagonist)",
+    "SetGlobal(\"Know_Lolthians\", \"GLOBAL\", 1)",
+    "StartStore(\"53Viizra\",Protagonist)",
+    "StartStore(\"53Viizra\",Protagonist)"
+  ],
+  "Checksum": null,
+  "Filename": "53VIIZRA.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 22901
+}

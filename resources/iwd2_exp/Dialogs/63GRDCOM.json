@@ -1,0 +1,429 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "Halt!  State your name and purpose!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36187
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 6,
+      "TriggerIndex": 0,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Hmm... I'm not familiar with the eastern lands...   The Captain of the Guard did mention delegates would be arriving today...  For the hate of Xvim, I can't remember all their blasted names!  Very well!  You may enter, but see Xavier Torsend, our Minister of Affairs, immediately once you enter!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36193
+      },
+      "ResponsesIndexFirst": 6,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "He will issue you a delegate pass so you may traverse the Severed Hand without being killed on sight.  I'm sure you can see how that could be useful.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36196
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "<CHARNAME>, from the east, you say?  Either you're a very bad liar, or you're just nervous about meeting their lordships, Isair and Madae.  Hmm...  You seem like a friendly face to me...  I really do not sense any threat in your voice...  Fine, you may enter, but you must go directly to see Xavier Torsend, our Minister of Affairs.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36358
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 3
+    },
+    {
+      "Text": {
+        "Text": "He will issue you a delegate pass so you may traverse the Severed Hand without being killed on sight.  I'm sure you can see how that could be useful.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36196
+      },
+      "ResponsesIndexFirst": 10,
+      "ResponsesCount": 2,
+      "TriggerIndex": -1,
+      "Index": 4
+    },
+    {
+      "Text": {
+        "Text": "Is that so, *<CHARNAME>?!*  I have no orders for a *<CHARNAME>* seeking an audience with their lordships, Isair and Madae!  Even Xavier Torsend, our Minister of Affairs, would have mentioned your arrival to me so I could direct you to get a delegate pass!  No, you are obviously intruders - and as intruders, you will die where you stand!  Guards!  Attack!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36359
+      },
+      "ResponsesIndexFirst": 12,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 5
+    },
+    {
+      "Text": {
+        "Text": "Is that so?  I have no orders for a delegate from the east seeking an audience with their lordships, Isair and Madae!  Even Xavier Torsend, our Minister of Affairs, would have mentioned your arrival to me so I could direct you to get a delegate pass!  No, you are obviously intruders - and as intruders, you will die where you stand!  Guards!  Attack!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37825
+      },
+      "ResponsesIndexFirst": 13,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 6
+    },
+    {
+      "Text": {
+        "Text": "By Iyachtu Xvim!  What arrogance!  I suppose I should expect no less, considering all the hostility we've encountered from the neighboring lands!  It's no wonder we never see very many delegates come around here - not that our Minister of Affairs would ever issue a delegate pass to one of you obnoxious twits!  So be it - prepare to meet whatever foul god you swear your allegiance to!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37826
+      },
+      "ResponsesIndexFirst": 14,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 7
+    },
+    {
+      "Text": {
+        "Text": "Carry on!  Nothing to see here!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 37827
+      },
+      "ResponsesIndexFirst": 15,
+      "ResponsesCount": 1,
+      "TriggerIndex": 1,
+      "Index": 8
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "I am a delegate from the east.  I have come seeking an audience with their lordships, Isair and Madae.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36188
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63GrdCom",
+      "NextPhraseIndex": 1,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am, uh, <CHARNAME>... from the east!  Yes, so, stand aside, knave, and let me pass!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36189
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63GrdCom",
+      "NextPhraseIndex": 5,
+      "Index": 1,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am <CHARNAME>, from the east.  I have come seeking an audience with Isair and Madae!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36190
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 2,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63GrdCom",
+      "NextPhraseIndex": 3,
+      "Index": 2,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am a delegate from the east.  I have come seeking an audience with their lordships, Isair and Madae.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36188
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 3,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63GrdCom",
+      "NextPhraseIndex": 6,
+      "Index": 3,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I am <CHARNAME>!  I have come to rid this land of the Legion of the Chimera and all who follow its foul banner!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36191
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63GrdCom",
+      "NextPhraseIndex": 7,
+      "Index": 4,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "My name is not important - you won't live long enough to utter it!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36192
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 5,
+      "Flags": "HasText, HasAction, HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": "Why is that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36194
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63GrdCom",
+      "NextPhraseIndex": 2,
+      "Index": 6,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Quite.  Thank you for the information.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36197
+      },
+      "JournalIndex": 6231,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Yes, very useful!  But, before I go in, I need to deal with you first!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36198
+      },
+      "JournalIndex": 36175,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Why is that?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36194
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "63GrdCom",
+      "NextPhraseIndex": 4,
+      "Index": 9,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Quite.  Thank you for the information.  Farewell.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36197
+      },
+      "JournalIndex": 6231,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 10,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Yes, very useful!  But, before I go in, I need to deal with you first!",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 36198
+      },
+      "JournalIndex": 36175,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 11,
+      "Flags": "HasText, HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 36176,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 12,
+      "Flags": "HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 36176,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 13,
+      "Flags": "HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 36177,
+      "TriggerIndex": -1,
+      "ActionIndex": 7,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 14,
+      "Flags": "HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 15,
+      "Flags": "HasNextDialog"
+    }
+  ],
+  "TriggersPhrase": [
+    "NumTimesTalkedTo(0)",
+    "Global(\"Happy_Commander\",\"Global\",1)"
+  ],
+  "TriggersResponse": [
+    "CheckSkillGT(Protagonist,14,Bluff) !ClassEx(Protagonist,Paladin)",
+    "CheckSkillLT(Protagonist,15,Diplomacy) !ClassEx(Protagonist,Paladin)",
+    "CheckSkillGT(Protagonist,14,Diplomacy) !ClassEx(Protagonist,Paladin)",
+    "CheckSkillLT(Protagonist,15,Bluff) !ClassEx(Protagonist,Paladin)"
+  ],
+  "Actions": [
+    "Enemy()",
+    "AddXpVar(\"Level_14_Hard\",36178)\r\nSetGlobal(\"Happy_Commander\",\"Global\",1) SetGlobal(\"SH_Need_Pass\",\"GLOBAL\",1)",
+    "AddXpVar(\"Level_14_Easy\",36185)\r\nSetGlobal(\"SH_Need_Pass\",\"GLOBAL\",1) Enemy()",
+    "AddXpVar(\"Level_14_Hard\",36178)\r\nSetGlobal(\"Happy_Commander\",\"Global\",1) SetGlobal(\"SH_Need_Pass\",\"GLOBAL\",1)",
+    "AddXpVar(\"Level_14_Easy\",36185)\r\nSetGlobal(\"SH_Need_Pass\",\"GLOBAL\",1) Enemy()",
+    "AddXpVar(\"Level_14_Easy\",36186)\r\nSetGlobal(\"SH_Need_Pass\",\"GLOBAL\",1) Enemy()",
+    "AddXpVar(\"Level_14_Easy\",36186)\r\nSetGlobal(\"SH_Need_Pass\",\"GLOBAL\",1) Enemy()",
+    "AddXpVar(\"Level_14_Easy\",36186)\r\nSetGlobal(\"SH_Need_Pass\",\"GLOBAL\",1) Enemy()"
+  ],
+  "Checksum": null,
+  "Filename": "63GRDCOM.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 36187
+}

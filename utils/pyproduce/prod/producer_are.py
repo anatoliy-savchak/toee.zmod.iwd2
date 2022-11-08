@@ -34,6 +34,7 @@ class ProducerOfAre(producer_base.Producer):
             , self.src_path
             )
         self.dialog = produce_dialog.DialogFile(self.doc, self.doc.get_path_out_npcs_dialog_file(self.are_name, self.script_id + 1))
+        self.dialog_inst = produce_dialog.DialogFile(self.doc, self.doc.get_path_out_npcs_dialog_file_inst(self.are_name, self.script_id + 3))
 
         self.skip_script_general = False
         self.skip_script_class = False
@@ -119,6 +120,7 @@ class ProducerOfAre(producer_base.Producer):
 
     def produce_end(self):
         self.dialog.save()
+        self.dialog_inst.save()
         self.produce_speech()
         return
 
@@ -161,6 +163,7 @@ class ProducerOfAre(producer_base.Producer):
             , base_class=class_manual
             , actor_name = actor_name
             , actor_dict = actor_dict
+            , dialog_file = self.dialog_inst
         )
         prod.skip_script_general = self.skip_script_general
         prod.skip_script_class = self.skip_script_class

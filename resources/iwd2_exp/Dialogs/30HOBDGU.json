@@ -1,0 +1,356 @@
+{
+  "Phrases": [
+    {
+      "Text": {
+        "Text": "What's the password?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15905
+      },
+      "ResponsesIndexFirst": 0,
+      "ResponsesCount": 7,
+      "TriggerIndex": 1,
+      "Index": 0
+    },
+    {
+      "Text": {
+        "Text": "Wrong.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15927
+      },
+      "ResponsesIndexFirst": 7,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 1
+    },
+    {
+      "Text": {
+        "Text": "Me open door.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 33511
+      },
+      "ResponsesIndexFirst": 8,
+      "ResponsesCount": 1,
+      "TriggerIndex": -1,
+      "Index": 2
+    },
+    {
+      "Text": {
+        "Text": "What's the password?",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15905
+      },
+      "ResponsesIndexFirst": 9,
+      "ResponsesCount": 7,
+      "TriggerIndex": 0,
+      "Index": 3
+    }
+  ],
+  "Responses": [
+    {
+      "Text": {
+        "Text": "Chimera.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15906
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 0,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 2,
+      "Index": 0,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I don't need a password - open the door.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15907
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 0,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 1,
+      "Index": 1,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Trugnuk.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15911
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 1,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 1,
+      "Index": 2,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Guthma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15913
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 2,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 1,
+      "Index": 3,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Death to Ten-Towns.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15915
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 3,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 1,
+      "Index": 4,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "Human swine.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15916
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 4,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 1,
+      "Index": 5,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": "I don't know.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15919
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": 5,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 1,
+      "Index": 6,
+      "Flags": "HasText, HasAction"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 7,
+      "Flags": "HasNextDialog"
+    },
+    {
+      "Text": {
+        "Text": null,
+        "Flags": "NoMessageData",
+        "Sound": null,
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 0
+      },
+      "JournalIndex": 15901,
+      "TriggerIndex": -1,
+      "ActionIndex": 6,
+      "NextScriptDialog": "",
+      "NextPhraseIndex": 0,
+      "Index": 8,
+      "Flags": "HasAction, HasNextDialog, HasJournal"
+    },
+    {
+      "Text": {
+        "Text": "Chimera.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15906
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": 1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 2,
+      "Index": 9,
+      "Flags": "HasText, HasTrigger"
+    },
+    {
+      "Text": {
+        "Text": "I don't need a password - open the door.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15907
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 1,
+      "Index": 10,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Trugnuk.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15911
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 1,
+      "Index": 11,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Guthma.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15913
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 1,
+      "Index": 12,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Death to Ten-Towns.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15915
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 1,
+      "Index": 13,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "Human swine.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15916
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 1,
+      "Index": 14,
+      "Flags": "HasText"
+    },
+    {
+      "Text": {
+        "Text": "I don't know.",
+        "Flags": "Standard",
+        "Sound": "",
+        "VolumeVariance": 0,
+        "PitchVariance": 0,
+        "Strref": 15919
+      },
+      "JournalIndex": 0,
+      "TriggerIndex": -1,
+      "ActionIndex": -1,
+      "NextScriptDialog": "30hobDGu",
+      "NextPhraseIndex": 1,
+      "Index": 15,
+      "Flags": "HasText"
+    }
+  ],
+  "TriggersPhrase": [
+    "Global(\"Door_Guard_Nodes\", \"GLOBAL\", 1)",
+    "NumTimesTalkedTo(0)"
+  ],
+  "TriggersResponse": [
+    "Global(\"30hobDGu_Pass\", \"GLOBAL\", 1)",
+    "Global(\"30hobDGu_Pass\", \"GLOBAL\", 1)"
+  ],
+  "Actions": [
+    "SetGlobal(\"Door_Guard_Nodes\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Door_Guard_Nodes\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Door_Guard_Nodes\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Door_Guard_Nodes\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Door_Guard_Nodes\", \"GLOBAL\", 1)",
+    "SetGlobal(\"Door_Guard_Nodes\", \"GLOBAL\", 1)",
+    "AddXpVar(\"Level_5_Easy\",15904)\nSetGlobal(\"30hobDGu_Pass\", \"GLOBAL\", 2)\nSetGlobal(\"AR3001_Door_Unlocked\", \"GLOBAL\", 1) SetGlobal(\"Door_Guard_Nodes\", \"GLOBAL\", 2)"
+  ],
+  "Checksum": null,
+  "Filename": "30HOBDGU.Dlg",
+  "FileType": "Bif",
+  "OriginalFile": null,
+  "Flags": 15905
+}

@@ -44,6 +44,11 @@ class ProducerOfCtrlManual(producer_base.ProducerOfFile):
         self.writeline('')
         self.add_import(self.base_class["file_name"])
         self.produce_imports()
+
+        self.current_line_id = common.lines_after_before_cutoff(self.lines, '#### GVARS ####', '#### GVARS END ####')
+        if self.current_line_id and self.current_line_id > 0:
+            self.writeline(f'MODULE_SCRIPT_ID = {self.script_id}')
+            self.current_line_id = -1
         return
 
     def get_ctrl_tuple(self): return (self.ctrl_name, os.path.basename(self.out_path).replace('.py', ''))

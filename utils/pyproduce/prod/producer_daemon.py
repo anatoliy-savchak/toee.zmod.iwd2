@@ -76,7 +76,7 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
             if ctrl_class:
                 self.writeline(f'print("Creating {class_file}.{ctrl_class}...")')
                 self.writeline(f'ctrl_class, loc = {class_file}.{ctrl_class},  utils_obj.sec2loc({int(x)}, {int(y)})')
-                self.writeline(f'if self.authorize_actor(ctrl_class):')
+                self.writeline(f'if self.authorize_actor(ctrl_class, "{name}"):')
                 self.indent()
                 self.writeline(f'npc, ctrl = self.create_npc_at(loc, ctrl_class, {direction}, "{name}", 0, 1)')
                 self.writeline('self.actor_created(npc, ctrl)')

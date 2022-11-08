@@ -577,6 +577,22 @@ class ItemMiscMeleeNatural1d3(ItemMisc):
     @classmethod
     def get_item_codes(cls): return ('001D3P', )
 
+class ItemMiscMelee1d6p(ItemMisc):
+    # used by Verbeeg archers as melee
+
+    def process_item(self):
+        if not self.parent.anim.disallow_weapon():
+            wear = self.get_wear()
+            self._add_line(f'weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTSPEAR, npc, no_loot = {self.no_loot}, wear_on = {wear}) # {self.item_name} ({self.item_file_name}) at {self.slot_name}')
+            # skip as already 1d6 # self._add_line('weapon.obj_set_int(toee.obj_f_weapon_damage_dice, toee.dice_new("1d4").packed)')
+        return True
+
+    def process_char(self):
+        return
+
+    @classmethod
+    def get_item_codes(cls): return ('001D6P', )
+
 class ItemMiscMeleeNatural1d10C(ItemMisc):
     # used by Highland Snake bludg
 

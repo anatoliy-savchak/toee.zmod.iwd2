@@ -1453,7 +1453,7 @@ class Ctrl_21VERB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21VERB
 	
 	def setup_gear(self, npc):
 		# SLOT_WEAPON1: None(Books) from 001D6P
-		# Not found! TODO ITEM
+		weapon = utils_item.item_create_in_inventory2(const_proto_weapon.PROTO_WEAPON_SHORTSPEAR, npc, no_loot = True, wear_on = toee.item_wear_weapon_primary) # None (001D6P) at SLOT_WEAPON1
 		
 		# SLOT_QUICK1: None(Books) from RT03_V
 		# Not found! TODO ITEM

@@ -571,11 +571,27 @@ class ItemMiscMeleeNatural1d3(ItemMisc):
     def process_char(self):
         self._add_line('')
         self._add_line(f'# from {self.item_name}({self.item_file_name}) at {self.slot_name} by {self.__class__.__name__}')
-        self._add_line('utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = 1, damage_str = "1d3") # TODO check BAB here')
+        self._add_line('utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = self.get_attacks_per_round(npc), damage_str = "1d3") # TODO check BAB here')
         return
 
     @classmethod
     def get_item_codes(cls): return ('001D3P', )
+
+class ItemMiscMeleeNatural1d3s(ItemMisc):
+    # used by Harpy
+
+    def process_item(self):
+        self._add_line("# see natural")
+        return True
+
+    def process_char(self):
+        self._add_line('')
+        self._add_line(f'# from {self.item_name}({self.item_file_name}) at {self.slot_name} by {self.__class__.__name__}')
+        self._add_line('utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = self.get_attacks_per_round(npc), damage_str = "1d3")')
+        return
+
+    @classmethod
+    def get_item_codes(cls): return ('001D3S', )
 
 class ItemMiscMelee1d6p(ItemMisc):
     # used by Verbeeg archers as melee

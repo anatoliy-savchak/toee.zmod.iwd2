@@ -28,7 +28,7 @@ class Ctrl_21GAERNT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21GAERNT
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_WERERAT
 	
 	@classmethod
-	def get_allegiance(cls): return 128
+	def get_allegiance_default(cls): return 128 # NEUTRAL
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_21GAERNT_Auto, self).setup_scripts(npc)
@@ -63,6 +63,10 @@ class Ctrl_21GAERNT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21GAERNT
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 2
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 6
@@ -149,7 +153,7 @@ class Ctrl_21WERRAT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERRAT
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_WERERAT
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_21WERRAT_Auto, self).setup_scripts(npc)
@@ -184,6 +188,10 @@ class Ctrl_21WERRAT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERRAT
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 1
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 3
@@ -267,7 +275,7 @@ class Ctrl_21WERBGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERBGR
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_WERERAT
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_21WERBGR_Auto, self).setup_scripts(npc)
@@ -302,6 +310,10 @@ class Ctrl_21WERBGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERBGR
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 1
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 3
@@ -385,7 +397,7 @@ class Ctrl_20ORCSHM_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCSHM
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_ORC
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCSHM_Auto, self).setup_scripts(npc)
@@ -422,6 +434,10 @@ class Ctrl_20ORCSHM_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCSHM
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 1
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 4
@@ -497,7 +513,7 @@ class Ctrl_20ORCSHM_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCSHM
 		
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_ROBES_BROWN_TEMPLE_EARTH, npc, no_loot = True, wear_on = toee.item_wear_armor) # 
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
-		utils_item.item_create_in_inventory2(const_cloth.PROTO_CLOTH_CIRCLET_HOODLESS, npc, no_loot = True, wear_on = toee.item_wear_helmet)
+		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_CIRCLET_HOODLESS, npc, no_loot = True, wear_on = toee.item_wear_helmet)
 		return
 	
 class Ctrl_20ORCACH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCACH 
@@ -505,7 +521,7 @@ class Ctrl_20ORCACH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCACH
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_ORC
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCACH_Auto, self).setup_scripts(npc)
@@ -542,6 +558,10 @@ class Ctrl_20ORCACH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCACH
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 1
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 1
@@ -633,7 +653,7 @@ class Ctrl_20ORCA3_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCA3
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_ORC
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20ORCA3_Auto, self).setup_scripts(npc)
@@ -670,6 +690,10 @@ class Ctrl_20ORCA3_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCA3
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 1
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 3
@@ -761,7 +785,7 @@ class Ctrl_21OGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21OGR
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_OGRE
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_21OGR_Auto, self).setup_scripts(npc)
@@ -799,6 +823,10 @@ class Ctrl_21OGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21OGR
 		# from None(001D10C) at SLOT_WEAPON1 by ItemMiscMeleeNatural1d10C
 		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_slap, attack_bonus = 0, number = 1, damage_str = "1d10")
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 1
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 4
@@ -881,7 +909,7 @@ class Ctrl_21SPDQN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDQN
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_SPIDER_PHASE
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_21SPDQN_Auto, self).setup_scripts(npc)
@@ -916,6 +944,10 @@ class Ctrl_21SPDQN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDQN
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 2
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 6
@@ -995,7 +1027,7 @@ class Ctrl_21SPDSML_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDSML
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_SPIDER_SMALL
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_21SPDSML_Auto, self).setup_scripts(npc)
@@ -1030,6 +1062,10 @@ class Ctrl_21SPDSML_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDSML
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 1
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 2
@@ -1110,7 +1146,7 @@ class Ctrl_21HGHSNK_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HGHSNK
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_SNAKE_GIANT
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_21HGHSNK_Auto, self).setup_scripts(npc)
@@ -1148,6 +1184,10 @@ class Ctrl_21HGHSNK_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HGHSNK
 		# from None(001D10C) at SLOT_WEAPON1 by ItemMiscMeleeNatural1d10C
 		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_slap, attack_bonus = 0, number = 1, damage_str = "1d10")
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 2
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 6
@@ -1227,7 +1267,7 @@ class Ctrl_21HRP_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HRP
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_HARPY
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_21HRP_Auto, self).setup_scripts(npc)
@@ -1261,7 +1301,14 @@ class Ctrl_21HRP_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HRP
 		ac_natural_bonus = 11 - 10 - utils_npc.npc_size_penalty(npc)
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
+		
+		# from None(001D3S) at SLOT_WEAPON1 by ItemMiscMeleeNatural1d3s
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = self.get_attacks_per_round(npc), damage_str = "1d3")
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 2
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 7
@@ -1333,7 +1380,7 @@ class Ctrl_21HRP_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HRP
 	
 	def setup_gear(self, npc):
 		# SLOT_WEAPON1: None(Books) from 001D3S
-		# Not found! TODO ITEM
+		# see natural
 		
 		# SLOT_QUICK1: None(Books) from RT03_L
 		# Not found! TODO ITEM
@@ -1348,7 +1395,7 @@ class Ctrl_21VERB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21VERB
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GIANT_VERBEEG
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_21VERB_Auto, self).setup_scripts(npc)
@@ -1383,6 +1430,10 @@ class Ctrl_21VERB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21VERB
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 2
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 5
@@ -1468,7 +1519,7 @@ class Ctrl_20EMMA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20EMMA
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
 	
 	@classmethod
-	def get_allegiance(cls): return 128
+	def get_allegiance_default(cls): return 128 # NEUTRAL
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20EMMA_Auto, self).setup_scripts(npc)
@@ -1510,6 +1561,10 @@ class Ctrl_20EMMA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20EMMA
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 2
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 8
@@ -1592,7 +1647,7 @@ class Ctrl_20KRIS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KRIS
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20KRIS_Auto, self).setup_scripts(npc)
@@ -1634,6 +1689,10 @@ class Ctrl_20KRIS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KRIS
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 1
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 8
@@ -1722,7 +1781,7 @@ class Ctrl_20KNTVIR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KNTVIR
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
 	
 	@classmethod
-	def get_allegiance(cls): return 255
+	def get_allegiance_default(cls): return 255 # ENEMY
 	
 	def setup_scripts(self, npc):
 		super(Ctrl_20KNTVIR_Auto, self).setup_scripts(npc)
@@ -1764,6 +1823,10 @@ class Ctrl_20KNTVIR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KNTVIR
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
+	
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 1
+		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 4

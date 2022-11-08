@@ -37,7 +37,9 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 	
 	def place_encounters_initial(self):
 		super(CtrlAR2100, self).place_encounters_initial()
-		toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 457, 499) # verbeeg
+		#toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 457, 499) # verbeeg
+		#toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 465, 485) # harpy
+		toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 462, 472) # wererats
 		return
 	
 	def place_npcs_auto(self):
@@ -409,6 +411,7 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 			#if issubclass(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_21HGHSNK_AR2100_Highland_Snake): return 1
 			#if issubclass(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_21HGHSNK_AR2100_Highland_Snake_2): return 1
 			#if issubclass(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_21HGHSNK_AR2100_Highland_Snake_3): return 1
-			if name == "Verbeeg": return 1
+			if name == "Gaernat Sharptooth": return 1
+			if name.startswith("GTH01"): return 1
 			return 0
 		return result

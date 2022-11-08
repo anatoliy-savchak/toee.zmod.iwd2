@@ -173,6 +173,27 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 
 	def make_teams(self):
 		teams = dict()
+		# determine leads
+		for key, info in self.monsters.items():
+			assert isinstance(info, monster_info.MonsterInfo)
+			ctrl = ctrl_behaviour.get_ctrl(info.id)
+			if not ctrl: continue
+			if not "get_team_number" in dir(ctrl): continue
+			team_number = ctrl.get_team_number()
+			if not team_number: continue
+			npc = info.get_npc()
+			if not npc: continue
+
+			team_lead = teams.get(team_number, None)
+			if not team_lead:
+				teams[team_number] = npc
+			else:
+				if "get_is_team_lead" in dir(ctrl): 
+					is_team_lead = ctrl.get_is_team_lead()
+					if is_team_lead:
+						teams[team_number] = npc
+
+		# set team lead
 		for key, info in self.monsters.items():
 			assert isinstance(info, monster_info.MonsterInfo)
 			ctrl = ctrl_behaviour.get_ctrl(info.id)
@@ -189,13 +210,13 @@ class CtrlDaemonIE(ctrl_daemon2.CtrlDaemon2, inf_scripting.InfScriptSupportDaemo
 			if not team_lead:
 				teams[team_number] = npc
 			else:
-				npc.obj_set_obj(toee.obj_f_npc_leader, team_lead)
-				print("Set leader to {} as {}".format(npc, team_lead))
+				if team_lead != npc:
+					npc.obj_set_obj(toee.obj_f_npc_leader, team_lead)
+					print("Set leader to {} as {}".format(npc, team_lead))
+					ctrl.allegiance_update(npc)
 		return
 
 	def actor_created(self, npc, ctrl):
 		# TODO: improve
-		if "get_allegiance" in dir(ctrl):
-			if ctrl.get_allegiance() == 255:
-				npc.npc_flag_set(toee.ONF_KOS)
+		ctrl.allegiance_update(npc)
 		return

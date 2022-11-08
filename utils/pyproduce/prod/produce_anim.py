@@ -102,7 +102,7 @@ class AnimHumanoid(AnimBase):
             self._add_line(f'utils_item.item_create_in_inventory2({boots_proto_const}, npc, no_loot = True, wear_on = toee.item_wear_boots)')
 
         if self.should_produce_bold():
-            self._add_line(f'utils_item.item_create_in_inventory2(const_cloth.PROTO_CLOTH_CIRCLET_HOODLESS, npc, no_loot = True, wear_on = toee.item_wear_helmet)')
+            self._add_line(f'utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_CIRCLET_HOODLESS, npc, no_loot = True, wear_on = toee.item_wear_helmet)')
         return
 
     def should_produce_bold(self): return 

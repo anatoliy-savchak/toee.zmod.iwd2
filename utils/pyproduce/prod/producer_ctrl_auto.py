@@ -63,6 +63,7 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.produce_npc_char()
         self.setup_char_abilities()
         self.setup_char_natural()
+        self.produce_atacks_per_round()
         self.setup_char_classes()
         self.setup_char_feats()
         self.setup_char_hp()
@@ -330,6 +331,16 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.writeline()
         return
 
+    def produce_atacks_per_round(self):
+        self.writeline("def get_attacks_per_round(self, npc):")
+        self.indent()
+        NumberOfAttacks = self.cre["NumberOfAttacks"]
+        self.writeline(f"# NumberOfAttacks: {NumberOfAttacks}")
+        self.writeline("return npc.get_base_attack_bonus() // 5 + 1")
+        self.indent(False)
+        self.writeline()
+        return
+
     def produce_alignment(self):
         al = int(self.cre["Alignment"])
         alignment = "ALIGNMENT_NEUTRAL"
@@ -398,8 +409,12 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
 
     def produce_allegience(self):
         allegiance = int(self.cre["EnemyAlly"])
+        hint = ""
+        if allegiance == 255: hint = "ENEMY"
+        elif allegiance == 128: hint = "NEUTRAL"
+
         self.writeline("@classmethod")
-        self.writeline(f"def get_allegiance(cls): return {allegiance}")
+        self.writeline(f"def get_allegiance_default(cls): return {allegiance} # {hint}")
         self.writeline()
         return
     

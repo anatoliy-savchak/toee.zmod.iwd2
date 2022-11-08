@@ -92,6 +92,11 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		
 		return result
 
+	@inf_scripting.dump_args
+	def Enemy(self):
+		self.set_allegiance(255)
+		return
+
 	def dialog_action(self, npc, pc, index):
 		assert isinstance(npc, toee.PyObjHandle)
 		assert isinstance(pc, toee.PyObjHandle)
@@ -198,3 +203,27 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 
 	def locus_make(self):
 		return {'dameon_id': self.vars.get('dameon_id'), 'npc_id': self.id}
+
+	def get_allegiance(self): 
+		return self.vars.get('allegiance', self.get_allegiance_default())
+
+	def set_allegiance(self, allegiance): 
+		self.vars['allegiance'] = allegiance
+		return
+
+	def allegiance_update(self, npc):
+		allegiance = self.get_allegiance()
+		npc_leader = npc.leader_get()
+		if npc_leader:
+			lead_ctrl = ctrl_behaviour.get_ctrl(npc_leader.id)
+			if lead_ctrl:
+				lead_allegiance = lead_ctrl.get_allegiance()
+				allegiance = lead_allegiance
+				self.set_allegiance(lead_allegiance)
+		
+		kos = allegiance == 255
+		if kos:
+			npc.npc_flag_set(toee.ONF_KOS)
+		else:
+			npc.npc_flag_unset(toee.ONF_KOS)
+		return

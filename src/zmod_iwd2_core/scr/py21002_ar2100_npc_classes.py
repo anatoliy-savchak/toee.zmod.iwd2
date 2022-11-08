@@ -24,6 +24,7 @@ def ctrl(npc): return ctrl_behaviour.get_ctrl(npc.id)
 def cs(): return ctrl_daemon.gdc()
 #### NPCS ####
 class Ctrl_21GAERNT(py21001_ar2100_npc_classes_auto.Ctrl_21GAERNT_Auto): # 21GAERNT 
+	def get_is_team_lead(self): return 1
 	pass
 
 class Ctrl_21WERRAT(py21001_ar2100_npc_classes_auto.Ctrl_21WERRAT_Auto): # 21WERRAT 
@@ -51,20 +52,6 @@ class Ctrl_21SPDSML(py21001_ar2100_npc_classes_auto.Ctrl_21SPDSML_Auto): # 21SPD
 	pass
 
 class Ctrl_21HGHSNK(py21001_ar2100_npc_classes_auto.Ctrl_21HGHSNK_Auto): # 21HGHSNK 
-	def setup_char_classes(self, npc):
-		# class levels: 6
-		# stat_level_fighter: 6
-		#npc.make_class(toee.stat_level_fighter, 6)
-
-		# we don't want snake to attack 2 times due to high BAB
-		npc.make_class(toee.stat_level_fighter, 5)
-		return
-
-	def setup_char_feats(self, npc):
-		npc.feat_add(toee.feat_weapon_focus_unarmed_strike_medium_sized_being, 1) # add more atk due to class removed
-		super(Ctrl_21HGHSNK, self).setup_char_feats(npc)
-		return
-
 	pass
 
 class Ctrl_21HRP(py21001_ar2100_npc_classes_auto.Ctrl_21HRP_Auto): # 21HRP 

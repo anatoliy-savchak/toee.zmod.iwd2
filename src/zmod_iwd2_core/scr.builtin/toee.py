@@ -19,7 +19,7 @@ class PyObjHandle(object):
 		self.map = 1	#	Gets current map id
 		self.hit_dice = PyDice()	#	Gets GetHitDice
 		self.hit_dice_num = 1	#	Gets GetHitDiceNum
-		self.get_size = 1	#	Gets GetSize
+		self.get_size = 1	#	Gets GetSize size category
 		self.off_x = 1.1	#	Gets GetOffsetX double
 		self.off_y = 1.1	#	Gets GetOffsetY double
 		#	Gets and Sets obj_script[38] = 1234

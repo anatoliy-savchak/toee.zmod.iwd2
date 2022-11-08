@@ -577,6 +577,22 @@ class ItemMiscMeleeNatural1d3(ItemMisc):
     @classmethod
     def get_item_codes(cls): return ('001D3P', )
 
+class ItemMiscMeleeNatural1d10C(ItemMisc):
+    # used by Highland Snake bludg
+
+    def process_item(self):
+        self._add_line("# see natural")
+        return True
+
+    def process_char(self):
+        self._add_line('')
+        self._add_line(f'# from {self.item_name}({self.item_file_name}) at {self.slot_name} by {self.__class__.__name__}')
+        self._add_line('utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_slap, attack_bonus = 0, number = 1, damage_str = "1d10")')
+        return
+
+    @classmethod
+    def get_item_codes(cls): return ('001D10C', )
+
 class ItemMiscStaff(ItemMisc):
     # used by Orc Shaman as staffs
 

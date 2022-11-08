@@ -512,3 +512,86 @@ def iwd2_ar2000_prep():
 		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_AMMO_BOLT_QUIVER, pc).obj_set_int(toee.obj_f_ammo_quantity, 100)
 		pc.item_wield_best_all()
 	return
+
+# import pc_build
+# pc_build.iwd2_ar2100_prep()
+def iwd2_ar2100_prep():
+	# 1: fighter dwarf greatsword
+	# 2: cleric female dwarf greataxe
+	# 3: cleric Lathander Mace
+	# 4: sorc
+	# 5: sorc
+	# 6: sorc
+
+	# ! hpOnLevelup=max
+
+	# fighter dmg; Dwarfy
+	pc = toee.game.party[0]
+	if (pc):
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_LONGSWORD_PLUS_2, pc) # Moonblade of Selune
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_GREATSWORD_MASTERWORK, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_ARMOR_HALF_PLATE, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_SHIELD_LARGE_WOODEN, pc)
+		utils_item.item_create_in_inventory(const_proto_cloth.PROTO_CLOTH_BOOTS_CHAINMAIL_BOOTS, pc)
+		#utils_item.item_clear_by_proto(pc, const_proto_cloth.PROTO_CLOTH_GARB_BROWN)
+		#pc.feat_add(toee.feat_combat_reflexes)
+		pc.item_wield_best_all()
+		pc.award_experience(7651)
+
+	# Clara
+	pc = toee.game.party[1]
+	if (pc):
+		pc.feat_add(toee.feat_martial_weapon_proficiency_battleaxe, 1)
+		pc.feat_add(toee.feat_weapon_focus_battleaxe, 1)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_BATTLEAXE_PLUS_1, pc)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_GREATAXE_MASTERWORK, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_ARMOR_HALF_PLATE, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_SHIELD_LARGE_WOODEN_2, pc)
+		utils_item.item_create_in_inventory(const_proto_cloth.PROTO_CLOTH_BOOTS_CHAINMAIL_BOOTS, pc)
+		pc.item_wield_best_all()
+		pc.award_experience(7568)
+
+	# Lath
+	pc = toee.game.party[2]
+	if (pc):
+		# Silent Spell
+		pc.feat_add(toee.feat_weapon_focus_morningstar, 1)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_MORNINGSTAR_MASTERWORK, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_ARMOR_SPLINT_MAIL, pc)
+		utils_item.item_create_in_inventory(const_proto_armor.PROTO_SHIELD_SMALL_WOODEN, pc)
+		pc.item_wield_best_all()
+		pc.award_experience(7563)
+
+	# Wiz
+	pc = toee.game.party[3]
+	if (pc):
+		pc.feat_add(toee.feat_weapon_focus_light_crossbow, 0)
+		pc.feat_add(toee.feat_weapon_focus_heavy_crossbow, 0)
+		pc.feat_add(toee.feat_martial_weapon_proficiency_longbow, 1)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_LONGBOW, pc)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_AMMO_ARROW_QUIVER, pc).obj_set_int(toee.obj_f_ammo_quantity, 100)
+		utils_item.item_create_in_inventory(const_proto_cloth.PROTO_CLOTH_ROBES_WIZARD_BLUE, pc)
+		utils_item.item_create_in_inventory(const_proto_cloth.PROTO_CLOTH_BOOTS_MONK, pc)
+		pc.item_wield_best_all()
+		pc.award_experience(7476)
+
+	# Sorc
+	pc = toee.game.party[4]
+	if (pc):
+		pc.feat_add(toee.feat_combat_casting, 1)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_CROSSBOW_HEAVY, pc)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_AMMO_BOLT_QUIVER, pc).obj_set_int(toee.obj_f_ammo_quantity, 100)
+		utils_item.item_create_in_inventory(const_proto_cloth.PROTO_CLOTH_ROBES_WIZARD_RED, pc)
+		utils_item.item_create_in_inventory(const_proto_cloth.PROTO_CLOTH_BOOTS_MONK, pc)
+		pc.item_wield_best_all()
+		pc.award_experience(7469)
+	# Mia
+	pc = toee.game.party[5]
+	if (pc):
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_WEAPON_CROSSBOW_LIGHT, pc)
+		utils_item.item_create_in_inventory(const_proto_weapon.PROTO_AMMO_BOLT_QUIVER, pc).obj_set_int(toee.obj_f_ammo_quantity, 100)
+		utils_item.item_create_in_inventory(const_proto_cloth.PROTO_CLOTH_MONK_OUTFIT, pc)
+		utils_item.item_create_in_inventory(const_proto_cloth.PROTO_CLOTH_BOOTS_MONK, pc)
+		pc.item_wield_best_all()
+		pc.award_experience(7469)
+	return

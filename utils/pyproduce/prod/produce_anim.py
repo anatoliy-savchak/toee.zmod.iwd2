@@ -101,7 +101,11 @@ class AnimHumanoid(AnimBase):
             boots_proto_const = self.get_boots_proto_const()
             self._add_line(f'utils_item.item_create_in_inventory2({boots_proto_const}, npc, no_loot = True, wear_on = toee.item_wear_boots)')
 
+        if self.should_produce_bold():
+            self._add_line(f'utils_item.item_create_in_inventory2(const_cloth.PROTO_CLOTH_CIRCLET_HOODLESS, npc, no_loot = True, wear_on = toee.item_wear_helmet)')
         return
+
+    def should_produce_bold(self): return 
 
     def get_boots_proto_const(self): return "const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE"
 
@@ -312,6 +316,8 @@ class AnimOrcShaman(AnimOrc):
 
     def get_armor_proto_const(self): 
         return "const_proto_cloth.PROTO_CLOTH_ROBES_BROWN_TEMPLE_EARTH"
+
+    def should_produce_bold(self): return True
 
 class AnimWererat(AnimBase):
     @classmethod

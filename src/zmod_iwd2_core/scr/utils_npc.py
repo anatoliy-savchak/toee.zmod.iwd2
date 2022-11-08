@@ -1136,9 +1136,25 @@ def npc_natural_attack(npc, index, attack_type, attack_bonus, number, damage_str
 
 	npc.obj_set_idx_int(toee.obj_f_attack_types_idx, index, attack_type)
 	npc.obj_set_idx_int(toee.obj_f_attack_bonus_idx, index, attack_bonus) # natural bab: +4
-	npc.obj_set_idx_int(toee.obj_f_critter_attacks_idx, index, 2) # x
+	npc.obj_set_idx_int(toee.obj_f_critter_attacks_idx, index, number) # x
 	npc.obj_set_idx_int(toee.obj_f_critter_damage_idx, index, toee.dice_new(damage_str).packed)
 	return
 
 def ensure_saves_natural(npc, save_fortitude, save_reflex, save_will):
 	return
+
+SIZE_TO_AC_MODIFIER = {
+	toee.STAT_SIZE_FINE: 8,
+	toee.STAT_SIZE_DIMINUTIVE: 4,
+	toee.STAT_SIZE_TINY: 2,
+	toee.STAT_SIZE_SMALL: 1,
+	toee.STAT_SIZE_MEDIUM: 0,
+	toee.STAT_SIZE_LARGE: -1,
+	toee.STAT_SIZE_HUGE: -2,
+	toee.STAT_SIZE_GARGANTUAN: -4,
+	toee.STAT_SIZE_COLOSSAL: -8,
+}
+
+def npc_size_penalty(npc):
+	assert isinstance(npc, toee.PyObjHandle)
+	return SIZE_TO_AC_MODIFIER.get(npc.get_size, 0)

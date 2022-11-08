@@ -128,3 +128,39 @@ class Ctrl_20KNTVIR_AR2100_WarriorofVirtue2(py21003_ar2100_npc_inst_classes_auto
 class Ctrl_20KNTVIR_AR2100_WarriorofVirtue3(py21003_ar2100_npc_inst_classes_auto.Ctrl_20KNTVIR_AR2100_WarriorofVirtue3_Auto): # 20KNTVIR 
 	pass
 
+class Ctrl_21SPDSML_AR2100_Spider_2(py21003_ar2100_npc_inst_classes_auto.Ctrl_21SPDSML_AR2100_Spider_2_Auto): # 21SPDSML 
+	pass
+
+class Ctrl_21SPDSML_AR2100_Spider_3(py21003_ar2100_npc_inst_classes_auto.Ctrl_21SPDSML_AR2100_Spider_3_Auto): # 21SPDSML 
+	pass
+
+class Ctrl_21SPDSML_AR2100_Spider_4(py21003_ar2100_npc_inst_classes_auto.Ctrl_21SPDSML_AR2100_Spider_4_Auto): # 21SPDSML 
+	pass
+
+class Ctrl_21SPDSML_AR2100_Spider_5(py21003_ar2100_npc_inst_classes_auto.Ctrl_21SPDSML_AR2100_Spider_5_Auto): # 21SPDSML 
+	pass
+
+class Ctrl_21SPDSML_AR2100_Spider_6(py21003_ar2100_npc_inst_classes_auto.Ctrl_21SPDSML_AR2100_Spider_6_Auto): # 21SPDSML 
+	pass
+
+class Ctrl_21HGHSNK_AR2100_Highland_Snake_2(py21003_ar2100_npc_inst_classes_auto.Ctrl_21HGHSNK_AR2100_Highland_Snake_2_Auto): # 21HGHSNK 
+	pass
+
+class Ctrl_21HGHSNK_AR2100_Highland_Snake_3(py21003_ar2100_npc_inst_classes_auto.Ctrl_21HGHSNK_AR2100_Highland_Snake_3_Auto): # 21HGHSNK 
+	pass
+
+class Ctrl_21HRP_AR2100_Harpy_2(py21003_ar2100_npc_inst_classes_auto.Ctrl_21HRP_AR2100_Harpy_2_Auto): # 21HRP 
+	pass
+
+class Ctrl_21HRP_AR2100_Harpy_3(py21003_ar2100_npc_inst_classes_auto.Ctrl_21HRP_AR2100_Harpy_3_Auto): # 21HRP 
+	pass
+
+class Ctrl_21HRP_AR2100_Harpy_4(py21003_ar2100_npc_inst_classes_auto.Ctrl_21HRP_AR2100_Harpy_4_Auto): # 21HRP 
+	pass
+
+class Ctrl_21VERB_AR2100_Verbeeg_2(py21003_ar2100_npc_inst_classes_auto.Ctrl_21VERB_AR2100_Verbeeg_2_Auto): # 21VERB 
+	pass
+
+class Ctrl_21VERB_AR2100_Verbeeg_3(py21003_ar2100_npc_inst_classes_auto.Ctrl_21VERB_AR2100_Verbeeg_3_Auto): # 21VERB 
+	pass
+

@@ -3,7 +3,7 @@ def get_difficulty():
     # 2 - improved. Vanilla class. 
     # 3 - hard. HoF 1
     # 4 - very hard. HoF 2
-    return 2
+    return 1
 
 
 def get_iwd2_difficulty():

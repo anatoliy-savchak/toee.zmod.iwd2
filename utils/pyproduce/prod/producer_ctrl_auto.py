@@ -61,6 +61,15 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.produce_npc_script_hooks()
         self.produce_npc_appearance()
         self.produce_npc_char()
+        self.setup_char_abilities()
+        self.setup_char_natural()
+        self.setup_char_classes()
+        self.setup_char_feats()
+        self.setup_char_hp()
+        self.setup_char_skills()
+        self.setup_char_alignment()
+        self.setup_char_cr()
+        self.setup_char_saves()
         self.setup_gear()
         self.produce_dialog()
         self.produce_imports()
@@ -143,15 +152,70 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.writeline("def setup_char(self, npc):")
         self.indent()
 
-        if True:
-            Strength = int(self.cre["Strength"])
-            # StrengthBonus is never used in IWD2, checked
-            Dexterity = int(self.cre["Dexterity"])
-            Constitution = int(self.cre["Constitution"])
-            Intelligence = int(self.cre["Intelligence"])
-            Wisdom = int(self.cre["Wisdom"])
-            Charisma = int(self.cre["Charisma"])
-            self.writeline(f"utils_npc.npc_abilities_set(npc, [{Strength}, {Dexterity}, {Constitution}, {Intelligence}, {Wisdom}, {Charisma}])");
+        self.writeline(f"self.setup_char_abilities(npc)")
+        self.writeline(f"self.setup_char_classes(npc)")
+        self.writeline(f"self.setup_char_natural(npc)")
+        self.writeline(f"self.setup_char_cr(npc)")
+        self.writeline(f"self.setup_char_feats(npc)")
+        self.writeline(f"self.setup_char_saves(npc)")
+        self.writeline(f"self.setup_char_hp(npc)")
+        self.writeline(f"self.setup_char_skills(npc)")
+        self.writeline(f"self.setup_char_alignment(npc)")
+
+        hidden = bool(self.cre["Hidden"])
+        if hidden:
+            self.writeline('self.hide_creature(npc, True)')
+
+        self.writeline("return")
+        self.indent(False)
+        self.writeline()
+        return
+
+    def setup_char_abilities(self):
+        self.writeline("def setup_char_abilities(self, npc):")
+        self.indent()
+
+        Strength = int(self.cre["Strength"])
+        # StrengthBonus is never used in IWD2, checked
+        Dexterity = int(self.cre["Dexterity"])
+        Constitution = int(self.cre["Constitution"])
+        Intelligence = int(self.cre["Intelligence"])
+        Wisdom = int(self.cre["Wisdom"])
+        Charisma = int(self.cre["Charisma"])
+        self.writeline(f"utils_npc.npc_abilities_set(npc, [{Strength}, {Dexterity}, {Constitution}, {Intelligence}, {Wisdom}, {Charisma}])");
+
+        self.writeline("return")
+        self.indent(False)
+        self.writeline()
+        return
+
+    def setup_char_natural(self):
+        self.writeline("def setup_char_natural(self, npc):")
+        self.indent()
+        ac = int(self.cre["ArmorClassNatural"])
+        #natural_bonus = ac - 10
+        self.writeline(f"# ArmorClassNatural: {ac}")
+        self.writeline(f"ac_natural_bonus = {ac} - 10 - utils_npc.npc_size_penalty(npc)")
+        self.writeline("if ac_natural_bonus > 0:")
+        self.indent()
+        self.writeline("npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)")
+        self.indent(False)
+            
+
+        items = self.cre["Items"]
+        for item in items:
+            if item_process := produce_items.ItemBase.pick(item, self):
+                item_process.process_char()
+
+        self.writeline("return")
+        self.indent(False)
+        self.writeline()
+        return
+    
+
+    def setup_char_classes(self):
+        self.writeline("def setup_char_classes(self, npc):")
+        self.indent()
 
         LevelTotal = int(self.cre["LevelTotal"])
         ClassLevels = (int(self.cre["LevelBarbarian"]), int(self.cre["LevelBard"]), int(self.cre["LevelCleric"]), int(self.cre["LevelDruid"])
@@ -165,33 +229,74 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
 
         if levelsFromClasses:
             classLevel = 0
-            self.writeline()
             self.writeline(f"# class levels: {levelsFromClasses}")
+
+            has_multiple_levels = False
+            if True:
+                last_level = -1
+                for i, levels in enumerate(ClassLevels):
+                    if not levels: continue
+                    if last_level > 0:
+                        has_multiple_levels = True
+                        break
+
             for i, levels in enumerate(ClassLevels):
                 if not levels: continue
                 statLevel = classes[i]
                 self.writeline(f"# {statLevel}: {levels}")
-                for l in range(0, levels):
+                if has_multiple_levels:
+                    for l in range(0, levels):
+                        self.classes_toee[statLevel] = int(self.classes_toee.get(statLevel, 0)) + 1
+                        self.writeline(f"npc.obj_set_idx_int(toee.obj_f_critter_level_idx, {classLevel}, toee.{statLevel})")
+                        classLevel += 1
+                else:
+                    self.writeline(f"npc.make_class(toee.{statLevel}, {levels})")
                     self.classes_toee[statLevel] = int(self.classes_toee.get(statLevel, 0)) + 1
-                    self.writeline(f"npc.obj_set_idx_int(toee.obj_f_critter_level_idx, {classLevel}, toee.{statLevel})");
-                    classLevel += 1
         else:
             raise Exception("No Classes!")
 
-        items = self.cre["Items"]
-        for item in items:
-            if item_process := produce_items.ItemBase.pick(item, self):
-                item_process.process_char()
-
+        self.writeline("return")
+        self.indent(False)
         self.writeline()
+        return
 
-        self.produce_alignment()
+    def setup_char_feats(self):
+        self.writeline("def setup_char_feats(self, npc):")
+        self.indent()
+        self.produce_feats()
+        self.writeline("return")
+        self.indent(False)
+        self.writeline()
+        return
+
+    def setup_char_saves(self):
+        self.writeline("def setup_char_saves(self, npc):")
+        self.indent()
+        self.produce_saves()
+        self.writeline("return")
+        self.indent(False)
+        self.writeline()
+        return
+
+    def setup_char_hp(self):
+        self.writeline("def setup_char_hp(self, npc):")
+        self.indent()
+        self.produce_hp()
+        self.writeline("return")
+        self.indent(False)
+        self.writeline()
+        return
+
+    def setup_char_cr(self):
+        self.writeline("def setup_char_cr(self, npc):")
+        self.indent()
+
         #self.writeline(f'npc.obj_set_int(toee.obj_f_critter_experience, {int(self.cre["XPReward"])})
         crnum_iwd2 = int(self.cre["ChallangeRating"])
         cr = crnum_iwd2 - 2
         if crnum_iwd2 == 1:
             cr = crnum_iwd2 - 3 # IWD2 does no have entry for 1/3 cr
-        cr_str = f'{cr+2}'
+        cr_str = f'{cr}'
         if cr == -2:
             cr_str = '1/4'
         elif cr == -1:
@@ -201,16 +306,25 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.writeline(f'cr = {cr} # crnum_iwd2: {crnum_iwd2}, D&D CR: {cr_str}')
         self.writeline('cr_bonus = cr - npc.stat_level_get(toee.stat_level)')
         self.writeline('npc.obj_set_int(toee.obj_f_npc_challenge_rating, cr_bonus)')
-        
-        self.produce_feats()
-        self.produce_saves()
-        self.produce_hp()
+
+        self.writeline("return")
+        self.indent(False)
+        self.writeline()
+        return
+
+    def setup_char_skills(self):
+        self.writeline("def setup_char_skills(self, npc):")
+        self.indent()
         self.produce_skills()
+        self.writeline("return")
+        self.indent(False)
+        self.writeline()
+        return
 
-        hidden = bool(self.cre["Hidden"])
-        if hidden:
-            self.writeline('self.hide_creature(npc, True)')
-
+    def setup_char_alignment(self):
+        self.writeline("def setup_char_alignment(self, npc):")
+        self.indent()
+        self.produce_alignment()
         self.writeline("return")
         self.indent(False)
         self.writeline()
@@ -377,7 +491,7 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
                     self.writeline(f"npc.feat_add(toee.{feat_to_add})")
             return
 
-        self.writeline()
+        #self.writeline()
         self.writeline("# feats")
         feats = self.cre["Feats"]
         for feat in feats:

@@ -335,10 +335,94 @@ class Ctrl_21SPDSML_AR2100_Spider_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML)
 	def setup_bcs(self):
 		return
 
+class Ctrl_21SPDSML_AR2100_Spider_2_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML): # 21SPDSML 
+	@classmethod
+	def get_difficulty_mask(cls):
+		return 7
+	
+	@classmethod
+	def get_team_number(cls):
+		return 3 # SetTeamBit(TEAM_3_BIT,TRUE)
+	
+	def setup_bcs(self):
+		return
+
+class Ctrl_21SPDSML_AR2100_Spider_3_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML): # 21SPDSML 
+	@classmethod
+	def get_difficulty_mask(cls):
+		return 6
+	
+	@classmethod
+	def get_team_number(cls):
+		return 3 # SetTeamBit(TEAM_3_BIT,TRUE)
+	
+	def setup_bcs(self):
+		return
+
+class Ctrl_21SPDSML_AR2100_Spider_4_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML): # 21SPDSML 
+	@classmethod
+	def get_difficulty_mask(cls):
+		return 6
+	
+	@classmethod
+	def get_team_number(cls):
+		return 3 # SetTeamBit(TEAM_3_BIT,TRUE)
+	
+	def setup_bcs(self):
+		return
+
+class Ctrl_21SPDSML_AR2100_Spider_5_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML): # 21SPDSML 
+	@classmethod
+	def get_difficulty_mask(cls):
+		return 4
+	
+	@classmethod
+	def get_team_number(cls):
+		return 3 # SetTeamBit(TEAM_3_BIT,TRUE)
+	
+	def setup_bcs(self):
+		return
+
+class Ctrl_21SPDSML_AR2100_Spider_6_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML): # 21SPDSML 
+	@classmethod
+	def get_difficulty_mask(cls):
+		return 4
+	
+	@classmethod
+	def get_team_number(cls):
+		return 3 # SetTeamBit(TEAM_3_BIT,TRUE)
+	
+	def setup_bcs(self):
+		return
+
 class Ctrl_21HGHSNK_AR2100_Highland_Snake_Auto(py21002_ar2100_npc_classes.Ctrl_21HGHSNK): # 21HGHSNK 
 	@classmethod
 	def get_difficulty_mask(cls):
 		return 7
+	
+	@classmethod
+	def get_team_number(cls):
+		return 0 # no team script
+	
+	def setup_bcs(self):
+		return
+
+class Ctrl_21HGHSNK_AR2100_Highland_Snake_2_Auto(py21002_ar2100_npc_classes.Ctrl_21HGHSNK): # 21HGHSNK 
+	@classmethod
+	def get_difficulty_mask(cls):
+		return 6
+	
+	@classmethod
+	def get_team_number(cls):
+		return 0 # no team script
+	
+	def setup_bcs(self):
+		return
+
+class Ctrl_21HGHSNK_AR2100_Highland_Snake_3_Auto(py21002_ar2100_npc_classes.Ctrl_21HGHSNK): # 21HGHSNK 
+	@classmethod
+	def get_difficulty_mask(cls):
+		return 4
 	
 	@classmethod
 	def get_team_number(cls):
@@ -359,10 +443,70 @@ class Ctrl_21HRP_AR2100_Harpy_Auto(py21002_ar2100_npc_classes.Ctrl_21HRP): # 21H
 	def setup_bcs(self):
 		return
 
+class Ctrl_21HRP_AR2100_Harpy_2_Auto(py21002_ar2100_npc_classes.Ctrl_21HRP): # 21HRP 
+	@classmethod
+	def get_difficulty_mask(cls):
+		return 7
+	
+	@classmethod
+	def get_team_number(cls):
+		return 0 # no team script
+	
+	def setup_bcs(self):
+		return
+
+class Ctrl_21HRP_AR2100_Harpy_3_Auto(py21002_ar2100_npc_classes.Ctrl_21HRP): # 21HRP 
+	@classmethod
+	def get_difficulty_mask(cls):
+		return 6
+	
+	@classmethod
+	def get_team_number(cls):
+		return 0 # no team script
+	
+	def setup_bcs(self):
+		return
+
+class Ctrl_21HRP_AR2100_Harpy_4_Auto(py21002_ar2100_npc_classes.Ctrl_21HRP): # 21HRP 
+	@classmethod
+	def get_difficulty_mask(cls):
+		return 4
+	
+	@classmethod
+	def get_team_number(cls):
+		return 0 # no team script
+	
+	def setup_bcs(self):
+		return
+
 class Ctrl_21VERB_AR2100_Verbeeg_Auto(py21002_ar2100_npc_classes.Ctrl_21VERB): # 21VERB 
 	@classmethod
 	def get_difficulty_mask(cls):
 		return 7
+	
+	@classmethod
+	def get_team_number(cls):
+		return 0 # no team script
+	
+	def setup_bcs(self):
+		return
+
+class Ctrl_21VERB_AR2100_Verbeeg_2_Auto(py21002_ar2100_npc_classes.Ctrl_21VERB): # 21VERB 
+	@classmethod
+	def get_difficulty_mask(cls):
+		return 6
+	
+	@classmethod
+	def get_team_number(cls):
+		return 0 # no team script
+	
+	def setup_bcs(self):
+		return
+
+class Ctrl_21VERB_AR2100_Verbeeg_3_Auto(py21002_ar2100_npc_classes.Ctrl_21VERB): # 21VERB 
+	@classmethod
+	def get_difficulty_mask(cls):
+		return 4
 	
 	@classmethod
 	def get_team_number(cls):

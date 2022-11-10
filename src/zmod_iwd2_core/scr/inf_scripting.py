@@ -1426,11 +1426,15 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def AttackOneRound(self, target):
+	def iAttackOneRound(self, target):
 		"""
 		AttackOneRound(O:Target*)
+		This action instructs the active creature to attack the specified target for one round.
 		"""
-		raise Exception("Not implemented function: AttackOneRound!")
+		# target:: LastMarkedObject
+		context = self.get_context()
+		targ = context.vars.get(target)
+		context.vars['TargetAttackOneRound'] = targ
 		return
 	
 	@dump_args
@@ -1756,11 +1760,13 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def EquipWeapon(self):
+	def iEquipWeapon(self):
 		"""
 		EquipWeapon()
 		"""
-		raise Exception("Not implemented function: EquipWeapon!")
+		npc = self.get_context()._gnpc()
+		if npc and not npc.item_worn_at(toee.item_wear_weapon_primary):
+			npc.item_wield_best_all()
 		return
 	
 	@dump_args
@@ -3026,12 +3032,13 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def NearestEnemyOf(self, obj):
+	def iNearestEnemyOf(self, obj):
 		"""
 		NearestEnemyOf(O:Object*)
+		Returns the nearest creature of opposite allegiance.
 		"""
-		raise Exception("Not implemented function: NearestEnemyOf!")
-		return
+		
+		return "NearestEnemyOf"
 	
 	@dump_args
 	def NearestEnemySummoned(self, obj):

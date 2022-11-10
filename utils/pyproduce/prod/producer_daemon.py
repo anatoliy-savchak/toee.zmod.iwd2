@@ -66,13 +66,17 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
 
             hidden = bool(actor["DefaultHiddenCalc"])
             reg_name = f'{self.are_name}.{cre_file}.{name}'
-            d = self.doc.classesRegistry.get_class_tup('class_inst_manual', reg_name)
-            if not d:
+            manual_tup = self.doc.classesRegistry.get_class_tup('class_inst_manual', reg_name)
+            if not manual_tup:
                 continue
-            class_file, ctrl_class = d["file_name"], d["class_name"]
+            class_file, ctrl_class = manual_tup["file_name"], manual_tup["class_name"]
             self.add_import(class_file)
 
-            self.writeline(f'# {name}: {cre_file} ({x:.1f}, {y:.1f}) {direction} ctrl: {class_file}.{ctrl_class} {"hidden" if hidden else ""}')
+            auto_tup = self.doc.classesRegistry.get_class_tup('class_inst_auto', reg_name)
+            team_number = auto_tup["obj"].team_number if auto_tup else None
+            class_file, ctrl_class = manual_tup["file_name"], manual_tup["class_name"]
+
+            self.writeline(f'# {name}: {cre_file} ({x:.1f}, {y:.1f}) {direction} ctrl: {class_file}.{ctrl_class} {"hidden" if hidden else ""}, team: {team_number}')
             if ctrl_class:
                 self.writeline(f'print("Creating {class_file}.{ctrl_class}...")')
                 self.writeline(f'ctrl_class, loc = {class_file}.{ctrl_class},  utils_obj.sec2loc({int(x)}, {int(y)})')

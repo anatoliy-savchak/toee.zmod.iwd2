@@ -572,6 +572,7 @@ class CtrlBehaviourAI(CtrlBehaviour):
 		self._vars_tactics["foes_can_los"] = foes_can_los
 		self._vars_tactics["foes_could_be_approached"] = foes_could_be_approached
 		self._vars_tactics["foes"] = foes
+		self._vars_tactics["friends"] = critters_friendly
 		return
 
 	def is_reckon_debug_print(self, npc):
@@ -656,6 +657,10 @@ class CtrlBehaviourAI(CtrlBehaviour):
 			#tac.add_approach_single()
 			tac.add_attack()
 
+			# if pathfinding fails
+			tac.add_target_closest()
+			tac.add_attack()
+
 			# is entangled
 			spell_id_breakfree = npc.d20_query(toee.Q_Is_BreakFree_Possible)
 			if (spell_id_breakfree):
@@ -701,12 +706,14 @@ class CtrlBehaviourAI(CtrlBehaviour):
 				melee_checked = True
 
 		if not tac:
-			tac = utils_tactics.TacticsHelper(self.get_name())
-			npc.obj_set_obj(toee.obj_f_npc_combat_focus, toee.OBJ_HANDLE_NULL)
-			print("No default tactics, Total Defense")
-			npc.float_text_line('Total Defense', toee.tf_yellow)
-			tac.add_total_defence()
-			tac.add_stop()
+			tac = self.tactics_seek_enemy(npc)
+			if not tac:
+				tac = utils_tactics.TacticsHelper(self.get_name())
+				npc.obj_set_obj(toee.obj_f_npc_combat_focus, toee.OBJ_HANDLE_NULL)
+				print("No default tactics, Total Defense")
+				npc.float_text_line('Total Defense', toee.tf_yellow)
+				tac.add_total_defence()
+				tac.add_stop()
 		return tac
 
 	def create_tactics_default_melee(self, npc):
@@ -753,9 +760,9 @@ class CtrlBehaviourAI(CtrlBehaviour):
 				if add_flank:
 					tac.add_flank()
 
+			add_charge = False
 			# charge routine
 			if 1:
-				add_charge = False
 				if not kind in ("foes_adjacent", "foes_threatening"):
 					add_charge = True
 
@@ -780,11 +787,15 @@ class CtrlBehaviourAI(CtrlBehaviour):
 				# and last thing - attack closest if possible
 				tac.add_attack_threatened()
 
+			# if pathfinding fails
+			if add_charge:
+				tac.add_target_closest()
+				tac.add_attack()
 			tac.add_total_defence() # in case calculations are wrong
 			#tac.add_ready_vs_approach() does nothing :(
 			tac.add_stop() # otherwise default T+ AI will be working
 		else:
-			tac = None
+			tac = self.tactics_seek_enemy(npc)
 		return tac, target, kind
 
 	def create_tactics_default_ranged(self, npc, allowed_switch_to_melee):
@@ -955,6 +966,65 @@ class CtrlBehaviourAI(CtrlBehaviour):
 		print("tactics_determine_targeting_ranged self: {}, npc: {}, target: {} over {}".format(type(self).__name__, npc, target, kind))
 		return target, kind
 
+	def tactics_seek_enemy(self, npc):
+		assert isinstance(npc, toee.PyObjHandle)
+		print('tactics_seek_enemy for {}'.format(npc))
+		#debug.breakp('tactics_seek_enemy')
+		critters_friendly = self._vars_tactics.get("friends")
+		if not critters_friendly: 
+			print('tactics_seek_enemy NO FRIENDS! for {}'.format(npc))
+			return
+
+		movement_speed = npc.stat_level_get(toee.stat_movement_speed)
+		aware_friends = list()
+		for friend in critters_friendly:
+			assert isinstance(friend, toee.PyObjHandle)
+			can_see_friend = npc.has_loa(friend)
+			print('tactics_seek_enemy can_see_friend: {} of {} for {}'.format(can_see_friend, friend, npc))
+			if not can_see_friend:
+				continue
+			path_len_to_friend = npc.can_find_path_to_obj(friend)
+			print('tactics_seek_enemy path_len_to_friend: {} of {} for {}'.format(path_len_to_friend, friend, npc))
+			if not path_len_to_friend:
+				continue
+
+			if path_len_to_friend > movement_speed * 2:
+				continue
+
+			closest_party_distance = 1000
+			closest_party_member = None
+			for foe in toee.game.party:
+				if not friend.can_see(foe): continue
+				if not utils_npc.npc_could_be_attacked(foe): continue
+				foe_dist = friend.distance_to(foe)
+				if foe_dist < closest_party_distance:
+					closest_party_member = foe
+					closest_party_distance = foe_dist
+
+			print('tactics_seek_enemy closest_party_distance: {}, closest_party_member: {} of {} for {}'.format(closest_party_distance, closest_party_member, friend, npc))
+			if closest_party_member:
+				aware_friends.append((friend, closest_party_distance, closest_party_member, path_len_to_friend))
+
+		if aware_friends:
+			# sort by closest to the party
+			aware_friends.sort(key = lambda t: t[1], reverse = True)
+
+			tup = aware_friends[0]
+			tac = utils_tactics.TacticsHelper(self.get_name())
+			tac.add_clear_target()
+			tac.add_target_obj(tup[0].id)
+			tac.add_approach()
+			tac.add_d20_action(toee.D20A_SEARCH, 0)
+			tac.add_halt()
+			tac.add_total_defence()
+			return tac
+		else:
+			tac = utils_tactics.TacticsHelper(self.get_name())
+			tac.add_d20_action(toee.D20A_SEARCH, 0)
+			print('tactics_seek_enemy NO aware_friends FRIENDS! for {}'.format(npc))
+			return tac
+			
+		return
 
 	@staticmethod
 	def recon_apprise_vulnereble(arg):
@@ -1054,13 +1124,16 @@ class CtrlBehaviourAI(CtrlBehaviour):
 		return 0
 
 	def on_enter_combat(self, attachee, triggerer):
-		self.alert_comrades(attachee, triggerer)
+		# could be combat is not even started yet
+		#self.alert_comrades(attachee, triggerer)
 		result = self.enter_combat(attachee, triggerer)
 		return result
 
 	def alert_comrades(self, npc, target):
 		# todo: it should be handled in T+
+		# ABANDON it will not work
 		# add others by leader
+		print('alert_comrades for {}'.format(npc))
 		result = 0
 		leader = npc.leader_get()
 		if (leader):
@@ -1070,11 +1143,18 @@ class CtrlBehaviourAI(CtrlBehaviour):
 			if (critters):
 				for o in critters:
 					assert isinstance(o, toee.PyObjHandle)
-					if (not o.is_active_combatant() and (o == leader or o.leader_get() == leader)):
-						o.add_to_initiative()
+					#print('is check alerting {} by {}; is_active_combatant: {}, same_leader: {}, is_comrade: {}'.format(o, npc, o.is_active_combatant(), (o == leader or o.leader_get() == leader), self.is_comrade(npc, o, leader)))
+					if (not o.is_active_combatant()) and self.is_comrade(npc, o, leader):
+						print('alerting {} by {}'.format(o, npc))
+						if str(o).startswith('GTH01_07'):
+							debug.breakp('')
 						o.attack(target)
+						o.add_to_initiative()
 						result += 1
 		return result
+
+	def is_comrade(self, npc, target, npc_leader):
+		return target == npc_leader or target.leader_get() == npc_leader or npc.allegiance_shared(target)
 
 	def setup(self, npc):
 		self.setup_scripts(npc)

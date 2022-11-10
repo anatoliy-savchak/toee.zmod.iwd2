@@ -16,9 +16,9 @@ class ClassesRegistry(producer_base.Producer):
             return cat.get(name)
         return
 
-    def set_class_tup(self, category: str, name: str, file_name: str, class_name: str):
+    def set_class_tup(self, category: str, name: str, file_name: str, class_name: str, obj = None):
         if not (cat := self.index_file.get(category)):
             cat = dict()
             self.index_file[category] = cat
-        cat[name] = common.tDict(file_name=file_name, class_name=class_name)
+        cat[name] = common.tDict(file_name=file_name, class_name=class_name, obj = obj)
         return

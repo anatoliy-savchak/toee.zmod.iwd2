@@ -39,7 +39,7 @@ class ProducerOfAre(producer_base.Producer):
         self.skip_script_general = False
         self.skip_script_class = False
         self.skip_script_race = False
-        self.skip_script_default = False
+        self.skip_script_default = False # movement
         self.skip_script_specific = False
         self.skip_script_special1 = False
         self.skip_script_daemon = False
@@ -175,7 +175,7 @@ class ProducerOfAre(producer_base.Producer):
         prod.save()
         ctrl_name, ctrl_file_name = prod.get_ctrl_tuple()
         reg_name = f'{self.are_name}.{cre_name}.{actor_name}'
-        self.doc.classesRegistry.set_class_tup('class_inst_auto', reg_name, ctrl_file_name, ctrl_name)
+        self.doc.classesRegistry.set_class_tup('class_inst_auto', reg_name, ctrl_file_name, ctrl_name, prod)
         return
 
     def produce_cre_class_inst_manual(self, actor_name: str, cre_name: str):

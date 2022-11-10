@@ -37,6 +37,8 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         self.skip_script_default = False
         self.skip_script_specific = False
         self.skip_script_special1 = False
+
+        self.team_number = None
         return
 
     def produce(self):
@@ -61,8 +63,8 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         self.writeline('@classmethod')
         self.writeline('def get_team_number(cls):')
         self.indent()
-        team_number, comment = self.extract_team_number(team_script_name)
-        self.writeline(f'return {team_number} # {comment}')
+        self.team_number, comment = self.extract_team_number(team_script_name)
+        self.writeline(f'return {self.team_number} # {comment}')
         self.indent(False)
         self.writeline()
 

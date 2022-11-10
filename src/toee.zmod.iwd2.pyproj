@@ -45,8 +45,15 @@
     <Folder Include="zmod_iwd2_core\scr\bcs\" />
     <Folder Include="zmod_iwd2_core\scr\tpModifiers\" />
     <Folder Include="zmod_iwd2_core\rules\" />
+    <Folder Include="zmod_iwd2_core\rules\char_class\" />
     <Folder Include="zmod_iwd2_core\rules\d20_actions\" />
+    <Folder Include="zmod_iwd2_core\rules\d20_ai\" />
     <Folder Include="zmod_iwd2_core\rules\d20_combat\" />
+    <Folder Include="zmod_iwd2_core\rules\feats\" />
+    <Folder Include="zmod_iwd2_core\rules\indicators\" />
+    <Folder Include="zmod_iwd2_core\rules\partsys\" />
+    <Folder Include="zmod_iwd2_core\rules\protos\" />
+    <Folder Include="zmod_iwd2_core\rules\spells\" />
     <Folder Include="zmod_iwd2_core\art\" />
     <Folder Include="zmod_iwd2_core\dlg\" />
     <Folder Include="zmod_iwd2_core\mes\" />
@@ -77,6 +84,8 @@
     <Compile Include="zmod_iwd2_core\rules\d20_actions\action03019_ball_of_fire.py" />
     <Compile Include="zmod_iwd2_core\rules\d20_actions\action03020_activate_item_swift.py" />
     <Compile Include="zmod_iwd2_core\rules\d20_actions\action03020_stench.py" />
+    <Compile Include="zmod_iwd2_core\rules\d20_ai\d20_ai_utils.py" />
+    <Compile Include="zmod_iwd2_core\rules\d20_ai\targeting.py" />
     <Compile Include="zmod_iwd2_core\rules\d20_combat\to_hit_processing.py" />
     <Compile Include="zmod_iwd2_core\scr.builtin\char_editor.py" />
     <Compile Include="zmod_iwd2_core\scr.builtin\debug.py" />

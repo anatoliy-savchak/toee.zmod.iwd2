@@ -38,7 +38,7 @@ def main():
         are_prod = doc.acquire_are_producer('AR2100')
         are_prod.skip_script_general = True
         are_prod.skip_script_class = True
-        are_prod.skip_script_race = True
+        are_prod.skip_script_race = False # combat
         are_prod.skip_script_default = True
         are_prod.skip_script_specific = True
         are_prod.skip_script_special1 = True

@@ -151,6 +151,9 @@ class PyObjHandle(object):
 	def can_sense(self, target):
 		return 0
 
+	def can_hear(self, target, tileRangeIdx):
+		return 0
+
 	def can_find_path_to_obj(self, target, flags = None):
 		"""npc.can_find_path_to_obj(PyObjHandle: target, int: flags) -> int[ft]"""
 		return
@@ -286,6 +289,12 @@ class PyObjHandle(object):
 		"""npc.is_spell_known(self, spellEnum) -> int"""
 		return 1
 
+	def is_critter(self):
+		return 1
+
+	def is_dead_or_destroyed(self):
+		return 1
+
 	def is_friendly(self, npc):
 		"""npc.is_friendly(PyObjHandle: npc) -> int"""
 		return 1
@@ -310,6 +319,9 @@ class PyObjHandle(object):
 		"""npc.is_category_subtype(type: int[mc_subtype_air]) -> int"""
 		return
 	
+	def is_unconscious(self):
+		return 1
+
 	def inventory_item(self, index):
 		"""npc.inventory_item(int: index) -> PyObjHandle"""
 		return PyObjHandle()
@@ -4828,3 +4840,26 @@ spell_source_type_psionic = 3
 
 spell_readying_vancian = 0
 spell_readying_innate = 1
+
+# AI Fight Status
+AIFS_NONE = 0
+AIFS_FIGHTING = 1
+AIFS_FLEEING = 2
+AIFS_SURRENDERED = 3
+AIFS_FINDING_HELP = 4
+AIFS_BEING_DRAWN = 5 # TODO for Harpy Song, opposite of fleeing
+
+AI_LIST_ENEMY = 0 # THE SHITLIST!!!
+AI_LIST_ALLY = 1
+
+san_dialog = 9
+san_first_heartbeat = 10
+san_dying = 12
+san_enter_combat = 13
+san_exit_combat = 14
+san_start_combat = 15
+san_end_combat = 16
+san_buy_object = 17
+san_heartbeat = 19
+san_insert_item = 21
+san_will_kos = 22

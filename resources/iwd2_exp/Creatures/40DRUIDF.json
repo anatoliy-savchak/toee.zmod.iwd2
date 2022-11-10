@@ -16,6 +16,10 @@
       "1": [
         {
           "SpellName": "Cure Light Wounds",
+          "SpellIndex": 67,
+          "SpellFile": "SPPR103",
+          "SpellRef": "12323",
+          "SpellCode": null,
           "Memorized": 4,
           "Remaining": 4
         }
@@ -23,16 +27,28 @@
       "2": [
         {
           "SpellName": "Alicorn Lance",
+          "SpellIndex": 6,
+          "SpellFile": "SPPR216",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Charm Person or Animal",
+          "SpellIndex": 38,
+          "SpellFile": "SPPR204",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Summon Nature's Ally II",
+          "SpellIndex": 322,
+          "SpellFile": "SPPR250",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }

@@ -14,6 +14,10 @@
       "1": [
         {
           "SpellName": "Magic Stone",
+          "SpellIndex": 180,
+          "SpellFile": "SPPR106",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -21,16 +25,28 @@
       "2": [
         {
           "SpellName": "Cure Moderate Wounds",
+          "SpellIndex": 68,
+          "SpellFile": "SPPR214",
+          "SpellRef": "7896",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Silence",
+          "SpellIndex": 250,
+          "SpellFile": "SPPR211",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Hold Person",
+          "SpellIndex": 140,
+          "SpellFile": "SPWI306",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -38,26 +54,46 @@
       "3": [
         {
           "SpellName": "Cure Serious Wounds",
+          "SpellIndex": 69,
+          "SpellFile": "SPPR401",
+          "SpellRef": "12325",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Dispel Magic",
+          "SpellIndex": 85,
+          "SpellFile": "SPWI302",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Miscast Magic",
+          "SpellIndex": 194,
+          "SpellFile": "SPPR310",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Contagion",
+          "SpellIndex": 63,
+          "SpellFile": "SPWI425",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Circle of Bones",
+          "SpellIndex": 41,
+          "SpellFile": "SPPR319",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -65,6 +101,10 @@
       "4": [
         {
           "SpellName": "Cure Critical Wounds",
+          "SpellIndex": 66,
+          "SpellFile": "SPPR502",
+          "SpellRef": "7954",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         }

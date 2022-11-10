@@ -13,21 +13,37 @@
       "1": [
         {
           "SpellName": "Armor of Faith",
+          "SpellIndex": 11,
+          "SpellFile": "SPPR115",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Bless",
+          "SpellIndex": 21,
+          "SpellFile": "SPPR101",
+          "SpellRef": "12216",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Sanctuary",
+          "SpellIndex": 239,
+          "SpellFile": "SPPR109",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Cure Light Wounds",
+          "SpellIndex": 67,
+          "SpellFile": "SPPR103",
+          "SpellRef": "12323",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         }
@@ -35,16 +51,28 @@
       "2": [
         {
           "SpellName": "Aid",
+          "SpellIndex": 5,
+          "SpellFile": "SPPR201",
+          "SpellRef": "12322",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Cure Moderate Wounds",
+          "SpellIndex": 68,
+          "SpellFile": "SPPR214",
+          "SpellRef": "7896",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         },
         {
           "SpellName": "Minor Elemental Barrier",
+          "SpellIndex": 234,
+          "SpellFile": "SPPR210",
+          "SpellRef": "12210",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -52,16 +80,28 @@
       "3": [
         {
           "SpellName": "Prayer",
+          "SpellIndex": 213,
+          "SpellFile": "SPPR313",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Remove Paralysis",
+          "SpellIndex": 233,
+          "SpellFile": "SPPR308",
+          "SpellRef": "12205",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Rigid Thinking",
+          "SpellIndex": 238,
+          "SpellFile": "SPPR311",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -69,11 +109,19 @@
       "4": [
         {
           "SpellName": "Cure Serious Wounds",
+          "SpellIndex": 69,
+          "SpellFile": "SPPR401",
+          "SpellRef": "12325",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Poison",
+          "SpellIndex": 207,
+          "SpellFile": "SPPR418",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }

@@ -20,6 +20,10 @@
       "1": [
         {
           "SpellName": "Cure Light Wounds",
+          "SpellIndex": 67,
+          "SpellFile": "SPPR103",
+          "SpellRef": "12323",
+          "SpellCode": null,
           "Memorized": 3,
           "Remaining": 3
         }
@@ -27,11 +31,19 @@
       "2": [
         {
           "SpellName": "Cure Moderate Wounds",
+          "SpellIndex": 68,
+          "SpellFile": "SPPR214",
+          "SpellRef": "7896",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         },
         {
           "SpellName": "Barkskin",
+          "SpellIndex": 15,
+          "SpellFile": "SPPR202",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -39,11 +51,19 @@
       "3": [
         {
           "SpellName": "Spike Growth",
+          "SpellIndex": 262,
+          "SpellFile": "SPPR320",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Moonblade",
+          "SpellIndex": 198,
+          "SpellFile": "SPPR318",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }

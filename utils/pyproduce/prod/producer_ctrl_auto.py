@@ -177,6 +177,8 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.writeline("def setup_char_abilities(self, npc):")
         self.indent()
 
+        self.writeline(f"utils_npc.npc_hitdice_set(npc, 0, 0, 0)");
+
         Strength = int(self.cre["Strength"])
         # StrengthBonus is never used in IWD2, checked
         Dexterity = int(self.cre["Dexterity"])

@@ -19,11 +19,19 @@
       "1": [
         {
           "SpellName": "Bane",
+          "SpellIndex": 70,
+          "SpellFile": "SPPR111",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Cure Light Wounds",
+          "SpellIndex": 67,
+          "SpellFile": "SPPR103",
+          "SpellRef": "12323",
+          "SpellCode": null,
           "Memorized": 4,
           "Remaining": 4
         }
@@ -31,26 +39,46 @@
       "2": [
         {
           "SpellName": "Aid",
+          "SpellIndex": 5,
+          "SpellFile": "SPPR201",
+          "SpellRef": "12322",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Cure Moderate Wounds",
+          "SpellIndex": 68,
+          "SpellFile": "SPPR214",
+          "SpellRef": "7896",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Draw Upon Holy Might",
+          "SpellIndex": 90,
+          "SpellFile": "SPPR215",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "139",
+          "SpellIndex": 139,
+          "SpellFile": "**PR208",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Silence",
+          "SpellIndex": 250,
+          "SpellFile": "SPPR211",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -58,21 +86,37 @@
       "3": [
         {
           "SpellName": "86",
+          "SpellIndex": 86,
+          "SpellFile": "**PR303",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Glyph of Warding",
+          "SpellIndex": 125,
+          "SpellFile": "SPPR304",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Invisibility Purge",
+          "SpellIndex": 163,
+          "SpellFile": "SPPR309",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Unholy Blight",
+          "SpellIndex": 310,
+          "SpellFile": "SPPR325",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }

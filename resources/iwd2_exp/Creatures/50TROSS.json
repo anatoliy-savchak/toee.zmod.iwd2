@@ -15,16 +15,28 @@
       "1": [
         {
           "SpellName": "Bane",
+          "SpellIndex": 70,
+          "SpellFile": "SPPR111",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Doom",
+          "SpellIndex": 89,
+          "SpellFile": "SPPR114",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Frost Fingers",
+          "SpellIndex": 117,
+          "SpellFile": "SPPR117",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 3,
           "Remaining": 3
         }
@@ -32,6 +44,10 @@
       "2": [
         {
           "SpellName": "Hold Person",
+          "SpellIndex": 140,
+          "SpellFile": "SPWI306",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 3,
           "Remaining": 3
         }
@@ -39,6 +55,10 @@
       "3": [
         {
           "SpellName": "Protection From Fire",
+          "SpellIndex": 222,
+          "SpellFile": "SPPR306",
+          "SpellRef": "12202",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         }

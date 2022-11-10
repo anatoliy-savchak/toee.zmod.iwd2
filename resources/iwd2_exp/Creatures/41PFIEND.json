@@ -29,11 +29,19 @@
       "3": [
         {
           "SpellName": "Hold Person",
+          "SpellIndex": 140,
+          "SpellFile": "SPWI306",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 4,
           "Remaining": 4
         },
         {
           "SpellName": "Dispel Magic",
+          "SpellIndex": 85,
+          "SpellFile": "SPWI302",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 4,
           "Remaining": 4
         }
@@ -43,6 +51,10 @@
       "5": [
         {
           "SpellName": "Sunfire",
+          "SpellIndex": 295,
+          "SpellFile": "SPWI519",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 5,
           "Remaining": 5
         }

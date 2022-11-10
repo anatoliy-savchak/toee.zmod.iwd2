@@ -21,21 +21,37 @@
       "1": [
         {
           "SpellName": "Armor of Faith",
+          "SpellIndex": 11,
+          "SpellFile": "SPPR115",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Cure Light Wounds",
+          "SpellIndex": 67,
+          "SpellFile": "SPPR103",
+          "SpellRef": "12323",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         },
         {
           "SpellName": "Command",
+          "SpellIndex": 47,
+          "SpellFile": "SPPR102",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Bless",
+          "SpellIndex": 21,
+          "SpellFile": "SPPR101",
+          "SpellRef": "12216",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -43,16 +59,28 @@
       "2": [
         {
           "SpellName": "Cure Moderate Wounds",
+          "SpellIndex": 68,
+          "SpellFile": "SPPR214",
+          "SpellRef": "7896",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         },
         {
           "SpellName": "Silence",
+          "SpellIndex": 250,
+          "SpellFile": "SPPR211",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Spell Shield",
+          "SpellIndex": 260,
+          "SpellFile": "SPPR219",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -60,16 +88,28 @@
       "3": [
         {
           "SpellName": "Unholy Blight",
+          "SpellIndex": 310,
+          "SpellFile": "SPPR325",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Strength of One",
+          "SpellIndex": 276,
+          "SpellFile": "SPPR312",
+          "SpellRef": "12213",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Prayer",
+          "SpellIndex": 213,
+          "SpellFile": "SPPR313",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -77,11 +117,19 @@
       "4": [
         {
           "SpellName": "Cloak of Fear",
+          "SpellIndex": 42,
+          "SpellFile": "SPPR409",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Recitation",
+          "SpellIndex": 227,
+          "SpellFile": "SPPR414",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -89,6 +137,10 @@
       "5": [
         {
           "SpellName": "Greater Command",
+          "SpellIndex": 129,
+          "SpellFile": "SPPR518",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }

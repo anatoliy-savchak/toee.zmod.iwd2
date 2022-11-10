@@ -17,21 +17,37 @@
       "1": [
         {
           "SpellName": "Armor of Faith",
+          "SpellIndex": 11,
+          "SpellFile": "SPPR115",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Bless",
+          "SpellIndex": 21,
+          "SpellFile": "SPPR101",
+          "SpellRef": "12216",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Cure Light Wounds",
+          "SpellIndex": 67,
+          "SpellFile": "SPPR103",
+          "SpellRef": "12323",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         },
         {
           "SpellName": "Remove Fear",
+          "SpellIndex": 232,
+          "SpellFile": "SPPR108",
+          "SpellRef": "12203",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -39,26 +55,46 @@
       "2": [
         {
           "SpellName": "Aid",
+          "SpellIndex": 5,
+          "SpellFile": "SPPR201",
+          "SpellRef": "12322",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Chant",
+          "SpellIndex": 34,
+          "SpellFile": "SPPR203",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Cure Moderate Wounds",
+          "SpellIndex": 68,
+          "SpellFile": "SPPR214",
+          "SpellRef": "7896",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Delay Poison",
+          "SpellIndex": 78,
+          "SpellFile": "SPPR212",
+          "SpellRef": "12324",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Spell Shield",
+          "SpellIndex": 260,
+          "SpellFile": "SPPR219",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -66,11 +102,19 @@
       "3": [
         {
           "SpellName": "Protection From Fire",
+          "SpellIndex": 222,
+          "SpellFile": "SPPR306",
+          "SpellRef": "12202",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Remove Paralysis",
+          "SpellIndex": 233,
+          "SpellFile": "SPPR308",
+          "SpellRef": "12205",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }

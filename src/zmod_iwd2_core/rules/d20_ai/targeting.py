@@ -12,7 +12,8 @@ def find_suitable_target(attacker, aiSearchingTgt):
 	assert isinstance(attacker, toee.PyObjHandle)
 	assert isinstance(aiSearchingTgt, int)
 
-	if attacker.type == toee.obj_t_npc and not attacker.npc_flags_get() & toee.ONF_KOS:
+	return toee.OBJ_HANDLE_NULL # DEBUG!!
+	if attacker.type == toee.obj_t_npc and (not (attacker.npc_flags_get() & toee.ONF_KOS) or (attacker.npc_flags_get() & toee.ONF_NO_ATTACK)):
 		return toee.OBJ_HANDLE_NULL
 
 	if debug_enabled >=2: print('find_suitable_target for {}'.format(attacker))

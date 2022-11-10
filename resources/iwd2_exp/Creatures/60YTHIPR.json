@@ -19,26 +19,46 @@
       "1": [
         {
           "SpellName": "Armor of Faith",
+          "SpellIndex": 11,
+          "SpellFile": "SPPR115",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Bless",
+          "SpellIndex": 21,
+          "SpellFile": "SPPR101",
+          "SpellRef": "12216",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Cure Light Wounds",
+          "SpellIndex": 67,
+          "SpellFile": "SPPR103",
+          "SpellRef": "12323",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         },
         {
           "SpellName": "Bane",
+          "SpellIndex": 70,
+          "SpellFile": "SPPR111",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Doom",
+          "SpellIndex": 89,
+          "SpellFile": "SPPR114",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -46,16 +66,28 @@
       "2": [
         {
           "SpellName": "Aid",
+          "SpellIndex": 5,
+          "SpellFile": "SPPR201",
+          "SpellRef": "12322",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Cure Moderate Wounds",
+          "SpellIndex": 68,
+          "SpellFile": "SPPR214",
+          "SpellRef": "7896",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         },
         {
           "SpellName": "Draw Upon Holy Might",
+          "SpellIndex": 90,
+          "SpellFile": "SPPR215",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -63,16 +95,28 @@
       "3": [
         {
           "SpellName": "Circle of Bones",
+          "SpellIndex": 41,
+          "SpellFile": "SPPR319",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Unholy Blight",
+          "SpellIndex": 310,
+          "SpellFile": "SPPR325",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Miscast Magic",
+          "SpellIndex": 194,
+          "SpellFile": "SPPR310",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -80,16 +124,28 @@
       "4": [
         {
           "SpellName": "Cure Serious Wounds",
+          "SpellIndex": 69,
+          "SpellFile": "SPPR401",
+          "SpellRef": "12325",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Defensive Harmony",
+          "SpellIndex": 77,
+          "SpellFile": "SPPR406",
+          "SpellRef": "22830",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Recitation",
+          "SpellIndex": 227,
+          "SpellFile": "SPPR414",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -97,6 +153,10 @@
       "5": [
         {
           "SpellName": "Flame Strike",
+          "SpellIndex": 112,
+          "SpellFile": "SPPR503",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }

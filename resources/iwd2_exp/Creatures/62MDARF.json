@@ -30,6 +30,10 @@
       "1": [
         {
           "SpellName": "Magic Missile",
+          "SpellIndex": 178,
+          "SpellFile": "SPWI112",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 3,
           "Remaining": 3
         }
@@ -37,6 +41,10 @@
       "2": [
         {
           "SpellName": "Horror",
+          "SpellIndex": 147,
+          "SpellFile": "SPWI205",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         }
@@ -44,16 +52,28 @@
       "4": [
         {
           "SpellName": "Improved Invisibility",
+          "SpellIndex": 155,
+          "SpellFile": "SPWI405",
+          "SpellRef": "4736",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 1
         },
         {
           "SpellName": "Stoneskin",
+          "SpellIndex": 274,
+          "SpellFile": "SPWI408",
+          "SpellRef": "25876",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Mordenkainen's Force Missiles",
+          "SpellIndex": 199,
+          "SpellFile": "SPWI422",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 5,
           "Remaining": 5
         }
@@ -61,11 +81,19 @@
       "6": [
         {
           "SpellName": "Globe of Invulnerability",
+          "SpellIndex": 124,
+          "SpellFile": "SPWI608",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 1
         },
         {
           "SpellName": "Chain Lightning",
+          "SpellIndex": 32,
+          "SpellFile": "SPWI603",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         }
@@ -73,11 +101,19 @@
       "7": [
         {
           "SpellName": "Power Word, Stun",
+          "SpellIndex": 212,
+          "SpellFile": "SPWI705",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         },
         {
           "SpellName": "Seven Eyes",
+          "SpellIndex": 241,
+          "SpellFile": "SPWI710",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -85,11 +121,19 @@
       "8": [
         {
           "SpellName": "Horrid Wilting",
+          "SpellIndex": 146,
+          "SpellFile": "SPWI805",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Iron Body",
+          "SpellIndex": 165,
+          "SpellFile": "SPWI807",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -97,21 +141,37 @@
       "9": [
         {
           "SpellName": "Gate",
+          "SpellIndex": 119,
+          "SpellFile": "SPWI905",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Power Word, Kill",
+          "SpellIndex": 209,
+          "SpellFile": "SPWI903",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         },
         {
           "SpellName": "Wail of the Banshee",
+          "SpellIndex": 315,
+          "SpellFile": "SPWI906",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Summon Monster IX",
+          "SpellIndex": 282,
+          "SpellFile": "SPWI902",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }

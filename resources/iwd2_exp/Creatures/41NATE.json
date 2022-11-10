@@ -19,6 +19,10 @@
       "1": [
         {
           "SpellName": "Cure Light Wounds",
+          "SpellIndex": 67,
+          "SpellFile": "SPPR103",
+          "SpellRef": "12323",
+          "SpellCode": null,
           "Memorized": 5,
           "Remaining": 5
         }
@@ -26,6 +30,10 @@
       "2": [
         {
           "SpellName": "Cure Moderate Wounds",
+          "SpellIndex": 68,
+          "SpellFile": "SPPR214",
+          "SpellRef": "7896",
+          "SpellCode": null,
           "Memorized": 4,
           "Remaining": 4
         }
@@ -33,16 +41,28 @@
       "3": [
         {
           "SpellName": "Spike Growth",
+          "SpellIndex": 262,
+          "SpellFile": "SPPR320",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Storm Shell",
+          "SpellIndex": 275,
+          "SpellFile": "SPPR323",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Tortoise Shell",
+          "SpellIndex": 305,
+          "SpellFile": "SPPR222",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -50,11 +70,19 @@
       "4": [
         {
           "SpellName": "Cure Serious Wounds",
+          "SpellIndex": 69,
+          "SpellFile": "SPPR401",
+          "SpellRef": "12325",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         },
         {
           "SpellName": "Restoration",
+          "SpellIndex": 170,
+          "SpellFile": "SPPR426",
+          "SpellRef": "16338",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         }

@@ -17,11 +17,19 @@
       "1": [
         {
           "SpellName": "Cure Light Wounds",
+          "SpellIndex": 67,
+          "SpellFile": "SPPR103",
+          "SpellRef": "12323",
+          "SpellCode": null,
           "Memorized": 5,
           "Remaining": 5
         },
         {
           "SpellName": "Bane",
+          "SpellIndex": 70,
+          "SpellFile": "SPPR111",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -29,26 +37,46 @@
       "2": [
         {
           "SpellName": "Aid",
+          "SpellIndex": 5,
+          "SpellFile": "SPPR201",
+          "SpellRef": "12322",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Cure Moderate Wounds",
+          "SpellIndex": 68,
+          "SpellFile": "SPPR214",
+          "SpellRef": "7896",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Draw Upon Holy Might",
+          "SpellIndex": 90,
+          "SpellFile": "SPPR215",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Silence",
+          "SpellIndex": 250,
+          "SpellFile": "SPPR211",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Hold Person",
+          "SpellIndex": 140,
+          "SpellFile": "SPWI306",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -56,26 +84,46 @@
       "3": [
         {
           "SpellName": "Miscast Magic",
+          "SpellIndex": 194,
+          "SpellFile": "SPPR310",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Prayer",
+          "SpellIndex": 213,
+          "SpellFile": "SPPR313",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Protection From Fire",
+          "SpellIndex": 222,
+          "SpellFile": "SPPR306",
+          "SpellRef": "12202",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Strength of One",
+          "SpellIndex": 276,
+          "SpellFile": "SPPR312",
+          "SpellRef": "12213",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Animate Dead",
+          "SpellIndex": 9,
+          "SpellFile": "SPWI501",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -83,16 +131,28 @@
       "4": [
         {
           "SpellName": "Defensive Harmony",
+          "SpellIndex": 77,
+          "SpellFile": "SPPR406",
+          "SpellRef": "22830",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Giant Vermin",
+          "SpellIndex": 123,
+          "SpellFile": "SPPR410",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Recitation",
+          "SpellIndex": 227,
+          "SpellFile": "SPPR414",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -100,16 +160,28 @@
       "5": [
         {
           "SpellName": "Cure Critical Wounds",
+          "SpellIndex": 66,
+          "SpellFile": "SPPR502",
+          "SpellRef": "7954",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Slay Living",
+          "SpellIndex": 252,
+          "SpellFile": "SPPR515",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Greater Command",
+          "SpellIndex": 129,
+          "SpellFile": "SPPR518",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -117,6 +189,10 @@
       "6": [
         {
           "SpellName": "Circle of Blades",
+          "SpellIndex": 19,
+          "SpellFile": "SPPR610",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }

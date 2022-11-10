@@ -14,11 +14,19 @@
       "1": [
         {
           "SpellName": "Cure Light Wounds",
+          "SpellIndex": 67,
+          "SpellFile": "SPPR103",
+          "SpellRef": "12323",
+          "SpellCode": null,
           "Memorized": 3,
           "Remaining": 3
         },
         {
           "SpellName": "Command",
+          "SpellIndex": 47,
+          "SpellFile": "SPPR102",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 3,
           "Remaining": 3
         }
@@ -26,16 +34,28 @@
       "2": [
         {
           "SpellName": "Draw Upon Holy Might",
+          "SpellIndex": 90,
+          "SpellFile": "SPPR215",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Cure Moderate Wounds",
+          "SpellIndex": 68,
+          "SpellFile": "SPPR214",
+          "SpellRef": "7896",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         },
         {
           "SpellName": "Spell Shield",
+          "SpellIndex": 260,
+          "SpellFile": "SPPR219",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -43,11 +63,19 @@
       "3": [
         {
           "SpellName": "Unholy Blight",
+          "SpellIndex": 310,
+          "SpellFile": "SPPR325",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 3,
           "Remaining": 3
         },
         {
           "SpellName": "Strength of One",
+          "SpellIndex": 276,
+          "SpellFile": "SPPR312",
+          "SpellRef": "12213",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -55,6 +83,10 @@
       "4": [
         {
           "SpellName": "Holy Power",
+          "SpellIndex": 143,
+          "SpellFile": "SPPR425",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -62,16 +94,28 @@
       "5": [
         {
           "SpellName": "Cure Critical Wounds",
+          "SpellIndex": 66,
+          "SpellFile": "SPPR502",
+          "SpellRef": "7954",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Flame Strike",
+          "SpellIndex": 112,
+          "SpellFile": "SPPR503",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Slay Living",
+          "SpellIndex": 252,
+          "SpellFile": "SPPR515",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -79,6 +123,10 @@
       "6": [
         {
           "SpellName": "Heal",
+          "SpellIndex": 136,
+          "SpellFile": "SPPR607",
+          "SpellRef": "8788",
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }

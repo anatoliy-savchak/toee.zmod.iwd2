@@ -14,6 +14,10 @@
       "1": [
         {
           "SpellName": "Cure Light Wounds",
+          "SpellIndex": 67,
+          "SpellFile": "SPPR103",
+          "SpellRef": "12323",
+          "SpellCode": null,
           "Memorized": 2,
           "Remaining": 2
         }
@@ -23,16 +27,28 @@
       "1": [
         {
           "SpellName": "Faerie Fire",
+          "SpellIndex": 101,
+          "SpellFile": "SPPR116",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Summon Nature's Ally I",
+          "SpellIndex": 321,
+          "SpellFile": "SPPR150",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Sunscorch",
+          "SpellIndex": 297,
+          "SpellFile": "SPPR113",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }
@@ -40,11 +56,19 @@
       "2": [
         {
           "SpellName": "Beast Claw",
+          "SpellIndex": 16,
+          "SpellFile": "SPPR217",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         },
         {
           "SpellName": "Flame Blade",
+          "SpellIndex": 111,
+          "SpellFile": "SPPR206",
+          "SpellRef": null,
+          "SpellCode": null,
           "Memorized": 1,
           "Remaining": 1
         }

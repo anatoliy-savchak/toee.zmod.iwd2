@@ -578,12 +578,16 @@ class ScriptTranFuncs(ScriptTran):
                     if arg.value and arg.value.startswith('['):
                         s = '"' + w + str(arg.value) + w + '"'
                     else:
-                        s = '"\'' + w + str(arg.value) + w + '\'"'
+                        s = self.do_translate_param_str(arg, index, arg_info, w)
+                        #s = '"\'' + w + str(arg.value) + w + '\'"'
                 else:
                     s = '"' + w + str(arg.value) + w + '"'
             else:
                 print('Wrong value!')
         return s
+
+    def do_translate_param_str(self, arg, index: int, arg_info: dict, wrap: str):
+        return '"\'' + wrap + str(arg.value) + wrap + '\'"'
 
     def do_get_param(self, arg, index: int, arg_info: dict):
         s = ""
@@ -617,9 +621,48 @@ class ScriptTranFuncs(ScriptTran):
 
     def d_translate_param_name(self, arg: ast.Name, index: int):
         s = arg.id
-        if s.lower() == 'false': return "False"
-        elif s.lower() == 'true': return "True"
-        return '"' + arg.id + '"'
+        if s.lower() == 'false': s = "False"
+        elif s.lower() == 'true': s = "True"
+        elif self.context and (producer := self.context.get('producer')) and producer.doc:
+            if z := producer.doc.translate_param_name(s):
+                s = z
+            else:
+                s = '"' + s + '"'
+        return s
+
+    def do_translate_param_str_spell_from_ints(self, arg, index: int, arg_info: dict, wrap: str):
+        if self.context and (producer := self.context.get('producer')) and producer.doc and (spells := producer.doc.ids['SPELL.IDS']):
+            s = str(arg.id) if isinstance(arg, ast.Name) else str(arg.value)
+            number_of_spell_refs = len(s) // 4
+            if len(s) > 4:
+                print('')
+            result = []
+            for i in range(0, number_of_spell_refs):
+                spell_ref = s[i*4:i*4+4]
+                if (spell_code := spells.get(spell_ref) or (spell_code := spell_ref)):
+                    spell_name = producer.doc.spell_codes_producer.get_spell_name(spell_code)
+                    if not spell_name: spell_name = spell_code
+                    #result.append(spell_code)
+                    #result.append(f'const_inf.{spell_code}')
+                    result.append(f'"{spell_name}"')
+            #return '"' + ';'.join(result) + '"'
+            if len(result) > 0: 
+                if len(result) == 1:
+                    return result[0]
+                else:
+                    return '[' + ', '.join(result) + ']'
+
+        return super().do_translate_param_str(arg, index, arg_info, wrap)
+
+    def d_translate_param_name_spell(self, arg: ast.Name, index: int):
+        if self.context and (producer := self.context.get('producer')) and producer.doc:
+            s = str(arg.id) if isinstance(arg, ast.Name) else str(arg.value)
+            spell_code = s
+            spell_name = producer.doc.spell_codes_producer.get_spell_name(spell_code)
+            if not spell_name: spell_name = spell_code
+            return f'"{spell_name}"'
+
+        return super().d_translate_param_name(arg, index)
 
     @classmethod
     def literal_params_to_wrap(cls): return(None, )
@@ -844,3 +887,24 @@ class ScriptTranFuncsStartCutSceneMode(ScriptTranFuncs):
             return 'self.iStartCutSceneMode(is_from_dialog=True)'
 
         return super().do_translate_func(func_name, args, func_info)
+
+class ScriptTranFuncsMarkSpellAndObject(ScriptTranFuncs):
+    @classmethod
+    def supports_func(cls): return ("MarkSpellAndObject", )
+
+    def do_translate_param_str(self, arg, index: int, arg_info: dict, wrap: str):
+        if index == 0:
+            return self.do_translate_param_str_spell_from_ints(arg, index, arg_info, wrap)
+
+        return super().do_translate_param_str(arg, index, arg_info, wrap)
+
+
+class ScriptTranFuncsHaveSpell(ScriptTranFuncs):
+    @classmethod
+    def supports_func(cls): return ("HaveSpell", )
+
+    def d_translate_param_name(self, arg, index: int):
+        if index == 0:
+            return self.d_translate_param_name_spell(arg, index)
+
+        return super().d_translate_param_name(arg, index)

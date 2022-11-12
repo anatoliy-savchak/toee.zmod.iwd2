@@ -24,13 +24,17 @@ class ProduceBCSManager(producer_base.Producer):
         , hint_actor_name: str = None
         , hint_script_code: str = None
         , hint_cuscene_mode: bool = None
+        , mode_simple: bool = None
     ):
         tup = self.get_bc(bcs_name)
         if tup:
             return tup
 
         prod_auto = ProduceBCSFileAuto(doc=self.doc, bcs_name = bcs_name, are_name = hint_are_name, make_new=True)
-        prod_auto.produce(cre_name=hint_cre_name, actor_name=hint_actor_name, script_code=hint_script_code, hint_cuscene_mode=hint_cuscene_mode)
+        if mode_simple:
+            prod_auto.produce_simple(cre_name=hint_cre_name, actor_name=hint_actor_name, script_code=hint_script_code, hint_cuscene_mode=hint_cuscene_mode)
+        else:
+            prod_auto.produce(cre_name=hint_cre_name, actor_name=hint_actor_name, script_code=hint_script_code, hint_cuscene_mode=hint_cuscene_mode)
         prod_auto.save()
         ctrl_name_auto, file_name_auto, pkg_name_auto = prod_auto.get_ctrl_tuple()
         self.set_bc(bcs_name, ctrl_name_auto, file_name_auto, pkg_name_auto)
@@ -283,6 +287,114 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
 
         return
 
+    def produce_simple(self, cre_name: str = None, actor_name: str = None, script_code: str = None, parent_producer = None, hint_cuscene_mode = None):
+        context={"producer": self, "are_name": self.are_name, "cre_name": cre_name
+            , "actor_name": actor_name, "bcs_name": self.bcs_name, "script_code": script_code, "file_producer": self
+            , "cuscene_mode": hint_cuscene_mode
+            }
+
+        blocks = self._parse_blocks()
+        self.writeline(f'class {self.ctrl_name}({self.ancestor_class}): # {self.bcs_name} SIMPLE')
+        self.indent()
+        self.writeline(f'# {self.are_name}{str((" "+cre_name) if cre_name else "")}{str((" "+actor_name) if actor_name else "")}{str((" "+script_code) if script_code else "")}')
+        self.writeline()
+        self.writeline('@classmethod')
+        self.writeline('@inf_scripting.dump_args')
+        self.writeline('def do_execute_simple(cls, self):')
+        self.indent()
+        self.writeline('assert isinstance(self, inf_scripting.InfScriptSupport)')
+        #self.writeline('if not locus: locus = self.locus_make()')
+        #self.writeline('locus.update({"script_class": cls, "continuous": continuous})')
+
+        for index, block in enumerate(blocks):
+            if block.get("unreachable"):
+                print("unreachable")
+                continue
+
+            if_lines = self.script_lines[block["if"]["start_index"]:int(block["if"]["last_index"])+1]
+            if_lines_translated = self.doc.producerOfScripts.transate_trigger_lines(if_lines, are_name = self.are_name, cre_name = cre_name, actor_name = actor_name)
+
+            subs = []
+            for sub_then in block["then"]:
+                resp_lines = self.script_lines[sub_then["start_index"]:int(sub_then["end_index"])+1]
+                is_continue = False
+                resp_lines_stripped = list()
+                for line in resp_lines:
+                    if 'continue' in line.strip().lower():
+                        is_continue = True
+                        continue
+                    resp_lines_stripped.append(line)
+
+                resp_lines_translated = self.doc.producerOfScripts.transate_action_lines_complex(resp_lines_stripped, context)
+                subs.append({
+                    "resp_lines": resp_lines,
+                    "is_continue": is_continue,
+                    "resp_lines_translated": resp_lines_translated,
+                    "weight": sub_then["weight"]
+                })
+
+            self.writeline()
+            self.writeline('# IF')
+            for if_line in if_lines:
+                self.writeline(f'# {if_line}')
+            
+            self.writeline('# THEN')
+            only_one_sub = len(subs) == 1
+            total_weights = 0
+            for sub in subs:
+                self.writeline(f'#   RESPONSE #{sub["weight"]}')
+                resp_lines = sub["resp_lines"]
+                for resp_line in resp_lines:
+                    self.writeline(f'# {resp_line}')
+                total_weights += sub["weight"]
+
+            self.writeline()
+            for if_line_translated in if_lines_translated:
+                self.writeline(if_line_translated)
+                
+            self.indent()
+            self.writeline()
+
+            prog_weight = 0
+            subs_count = len(subs)
+            for i, sub in enumerate(subs):
+                if not only_one_sub:
+                    if i == 0:
+                        self.writeline(f'response = toee.game.random_range(1, {total_weights})')     
+                    self.writeline(f'#   RESPONSE #{sub["weight"]}')
+                
+                resp_lines_translated = sub["resp_lines_translated"]
+                is_continue = sub["is_continue"]
+
+                if not only_one_sub:
+                    self.writeline(f'if {prog_weight} < response <= {prog_weight + sub["weight"]}:')
+                    self.indent()
+
+                for resp_line_translated in resp_lines_translated:
+                    if isinstance(resp_line_translated, str):
+                        self.writeline(resp_line_translated)
+                    elif isinstance(resp_line_translated, dict):
+                        for sline in resp_line_translated["instructions"]:
+                            self.writeline(f'{sline["line"]}')
+
+                if not is_continue: 
+                    self.writeline('return')
+                else:
+                    self.writeline('# continue')
+                
+                if not only_one_sub:
+                    if i < subs_count - 1:
+                        self.writeline()
+                    self.indent(False)
+                    prog_weight += sub["weight"]
+
+            self.indent(False)
+
+        self.writeline('return')
+        self.produce_imports()
+
+        return
+
     def scan(self, cre_name: str = None, actor_name: str = None):
         blocks = self._parse_blocks()
         for block in blocks:
@@ -357,6 +469,8 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
                 resp_started = True
                 resp_dict["start_index"] = i + 1
                 resp_dict["resp_index"] = i
+                weight = int(lline.split('#', 2)[1])
+                resp_dict["weight"] = weight
                 continue
 
             if resp_started and 'continue' in lline:

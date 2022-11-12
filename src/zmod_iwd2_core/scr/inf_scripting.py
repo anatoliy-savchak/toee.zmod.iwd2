@@ -1886,12 +1886,12 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def ForceMarkedSpell(self, spell):
+	def iForceMarkedSpell(self, spell):
 		"""
 		ForceMarkedSpell(I:Spell*Spell)
+		Essentially will set LastMarkedSpell to spell. Typically ForceMarkedSpell(MARKED_SPELL), e.g. clear spell. Due to MARKED_SPELL = 0.
 		"""
-		raise Exception("Not implemented function: ForceMarkedSpell!")
-		return
+		return 1
 	
 	@dump_args
 	def ForceSpell(self, target, spell):
@@ -2084,11 +2084,15 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def MarkSpellAndObject(self, spells, obj, flags):
+	def iMarkSpellAndObject(self, spells, obj, flags):
 		"""
 		MarkSpellAndObject(S:Spells*, O:Object*, I:Flags*SplCast)
 		"""
-		raise Exception("Not implemented function: MarkSpellAndObject!")
+		context = self.get_context()
+		if context != self:
+			context.iMarkSpellAndObject(spells, obj, flags)
+		else:
+			raise Exception("Not implemented function: MarkSpellAndObject!")
 		return
 	
 	@dump_args

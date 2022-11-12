@@ -206,7 +206,7 @@ class ProducerOfAre(producer_base.Producer):
             self.doc.bcsManager.ensure_bcs(bcs_name, self.are_name, cre_name, actor_name, "ScriptClass (Special 2)")
         
         if (bcs_name := actor_dict["ScriptRace"]) and not self.skip_script_race:
-            self.doc.bcsManager.ensure_bcs(bcs_name, self.are_name, cre_name, actor_name, "ScriptRace (Combat Script)")
+            self.doc.bcsManager.ensure_bcs(bcs_name, self.are_name, cre_name, actor_name, "ScriptRace (Combat Script)", mode_simple=True)
         
         if (bcs_name := actor_dict["ScriptDefault"]) and not self.skip_script_default:
             self.doc.bcsManager.ensure_bcs(bcs_name, self.are_name, cre_name, actor_name, "ScriptDefault (Movement Script)")

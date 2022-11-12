@@ -108,3 +108,43 @@ def parse_mes_lines(lines: list, make_key_int: bool = False) -> dict:
 
 def str_to_name(s: str):
     return s.replace(' ', '_').replace('(', '').replace(')', '')
+
+def parse_ids_file(file_path: str, make_key_int: bool = False) -> dict:
+    with open(file_path, 'r') as f:
+        lines = f.readlines()
+    result = dict()
+    for line in lines:
+        line = str(line)
+        line = line.replace('\n', '')
+        l = line.split(' ', 2)
+        if len(l) < 2: continue
+        code, value = l
+        if make_key_int:
+            code = int(code)
+        result[code] = value
+    return result
+
+def parse_2da_file(file_path: str, make_key_int: bool = False) -> dict:
+    with open(file_path, 'r') as f:
+        lines = f.readlines()
+    result = dict()
+    for line in lines:
+        line = str(line)
+        line = line.replace('\n', '')
+        l = line.split('\t')
+        if len(l) < 2: continue
+        code = l[0]
+        if not code: continue
+        if make_key_int:
+            try:
+                code = int(code)
+            except:
+                continue
+        result[code] = l[1:]
+    return result
+
+def save_lines(out_path, lines):
+    with open(out_path, 'w') as f:
+        for line in lines:
+            f.write(line + ("\n" if not "\n" in line else ""))
+    return

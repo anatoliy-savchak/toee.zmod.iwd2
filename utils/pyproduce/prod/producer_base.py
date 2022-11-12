@@ -73,8 +73,9 @@ class ProducerOfFile(Producer):
         fn = self.out_path
         if self.make_new or not os.path.exists(self.out_path):
             fn = self.template_path
-        with open(fn, 'r') as f:
-            self.lines = f.readlines()
+        if fn:
+            with open(fn, 'r') as f:
+                self.lines = f.readlines()
         return
 
     def save(self):

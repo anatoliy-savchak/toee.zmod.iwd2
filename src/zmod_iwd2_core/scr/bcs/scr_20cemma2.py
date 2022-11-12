@@ -1,5 +1,5 @@
 import toee, debug
-import inf_scripting
+import inf_scripting, const_inf
 import module_difficulty
 #### IMPORTS ####
 from bcs import scr_20cemma2_auto

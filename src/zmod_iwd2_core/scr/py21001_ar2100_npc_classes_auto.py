@@ -3,7 +3,7 @@ import const_proto_potions, utils_obj, const_proto_food, utils_npc, utils_target
 import const_proto_items, const_proto_rings, const_proto_cloth, const_proto_wondrous, utils_races, utils_npc_build, const_proto_npc, utils_toee, tpai, tpactions, utils_strategy
 import py04000_monster_manual1_p1, utils_npc_spells_tactics, module_quests, module_consts, rumor_control, utils_pc
 import const_proto_armor_iwd2, ctrl_behaviour_ie, const_proto_items_iwd2, ctrl_daemon, const_iwd2, const_proto_weapon_iwd2, utils_npc_spells_inf
-import utils_journal as uj, inf_scripting, module_difficulty
+import utils_journal as uj, inf_scripting, module_difficulty, const_inf
 #### IMPORTS ####
 #### END IMPORTS ####
 
@@ -51,9 +51,11 @@ class Ctrl_21GAERNT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21GAERNT
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [10, 23, 14, 10, 12, 4])
 		return
 	
@@ -148,6 +150,9 @@ class Ctrl_21GAERNT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21GAERNT
 		
 		return
 	
+	def setup_spells(self, npc):
+		return
+	
 class Ctrl_21WERRAT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERRAT 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_WERERAT
@@ -176,9 +181,11 @@ class Ctrl_21WERRAT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERRAT
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [12, 17, 13, 10, 10, 10])
 		return
 	
@@ -270,6 +277,9 @@ class Ctrl_21WERRAT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERRAT
 		
 		return
 	
+	def setup_spells(self, npc):
+		return
+	
 class Ctrl_21WERBGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERBGR 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_WERERAT
@@ -298,9 +308,11 @@ class Ctrl_21WERBGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERBGR
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [10, 17, 13, 10, 10, 10])
 		return
 	
@@ -392,6 +404,9 @@ class Ctrl_21WERBGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERBGR
 		
 		return
 	
+	def setup_spells(self, npc):
+		return
+	
 class Ctrl_20ORCSHM_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCSHM 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_ORC
@@ -408,7 +423,7 @@ class Ctrl_20ORCSHM_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCSHM
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Orc Shaman")
 		
-		# npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		npc.obj_set_int(toee.obj_f_critter_portrait, 4930) # Orc Shaman_Orc Shaman_14751
 		
 		return
 	
@@ -422,9 +437,11 @@ class Ctrl_20ORCSHM_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCSHM
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [15, 10, 11, 9, 14, 12])
 		return
 	
@@ -519,18 +536,18 @@ class Ctrl_20ORCSHM_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCSHM
 	def setup_spells(self, npc):
 		stat_level = toee.stat_level_cleric # CLR
 		#Level: 1
-		utils_npc_spells_inf.ctrl_add_spell(self, "Command", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Light Wounds", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Frost Fingers", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Magic Stone", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Command", 1, 1, stat_level, 1) # Command
+		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Light Wounds", 1, 1, stat_level, 1) # Cure Light Wounds
+		utils_npc_spells_inf.ctrl_add_spell(self, "Frost Fingers", 1, 1, stat_level, 1) # Frost Fingers
+		utils_npc_spells_inf.ctrl_add_spell(self, "Magic Stone", 1, 1, stat_level, 1) # Magic Stone
 		
 		#Level: 2
-		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Moderate Wounds", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Hold Person", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Bull's Strength", 3, 3, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Aid", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Chant", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Summon Monster II", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Moderate Wounds", 1, 1, stat_level, 2) # Cure Moderate Wounds
+		utils_npc_spells_inf.ctrl_add_spell(self, "Hold Person", 1, 1, stat_level, 2) # Hold Person
+		utils_npc_spells_inf.ctrl_add_spell(self, "Bull's Strength", 3, 3, stat_level, 2) # Bull's Strength
+		utils_npc_spells_inf.ctrl_add_spell(self, "Aid", 1, 1, stat_level, 2) # Aid
+		utils_npc_spells_inf.ctrl_add_spell(self, "Chant", 1, 1, stat_level, 2) # Chant
+		utils_npc_spells_inf.ctrl_add_spell(self, "Summon Monster II", 1, 1, stat_level, 2) # Summon Monster II
 		
 		return
 	
@@ -550,7 +567,7 @@ class Ctrl_20ORCACH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCACH
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Orc Archer")
 		
-		# npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		npc.obj_set_int(toee.obj_f_critter_portrait, 5510) # Orc Bowman_Orc Bowman_14467
 		
 		return
 	
@@ -564,9 +581,11 @@ class Ctrl_20ORCACH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCACH
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [15, 10, 11, 9, 8, 8])
 		return
 	
@@ -666,6 +685,9 @@ class Ctrl_20ORCACH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCACH
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	
+	def setup_spells(self, npc):
+		return
+	
 class Ctrl_20ORCA3_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCA3 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_ORC
@@ -682,7 +704,7 @@ class Ctrl_20ORCA3_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCA3
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Orc Archer")
 		
-		# npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
+		npc.obj_set_int(toee.obj_f_critter_portrait, 5510) # Orc Bowman_Orc Bowman_14467
 		
 		return
 	
@@ -696,9 +718,11 @@ class Ctrl_20ORCA3_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCA3
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [15, 10, 11, 9, 8, 8])
 		return
 	
@@ -798,6 +822,9 @@ class Ctrl_20ORCA3_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCA3
 		utils_item.item_create_in_inventory2(const_proto_cloth.PROTO_CLOTH_BOOTS_LEATHER_BOOTS_FINE, npc, no_loot = True, wear_on = toee.item_wear_boots)
 		return
 	
+	def setup_spells(self, npc):
+		return
+	
 class Ctrl_21OGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21OGR 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_OGRE
@@ -826,9 +853,11 @@ class Ctrl_21OGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21OGR
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [21, 8, 15, 6, 10, 7])
 		return
 	
@@ -922,6 +951,9 @@ class Ctrl_21OGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21OGR
 		
 		return
 	
+	def setup_spells(self, npc):
+		return
+	
 class Ctrl_21SPDQN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDQN 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_SPIDER_PHASE
@@ -950,9 +982,11 @@ class Ctrl_21SPDQN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDQN
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [15, 17, 12, 3, 10, 3])
 		return
 	
@@ -1040,6 +1074,9 @@ class Ctrl_21SPDQN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDQN
 		
 		return
 	
+	def setup_spells(self, npc):
+		return
+	
 class Ctrl_21SPDSML_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDSML 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_SPIDER_SMALL
@@ -1068,9 +1105,11 @@ class Ctrl_21SPDSML_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDSML
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [11, 17, 12, 3, 10, 3])
 		return
 	
@@ -1159,6 +1198,9 @@ class Ctrl_21SPDSML_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDSML
 		
 		return
 	
+	def setup_spells(self, npc):
+		return
+	
 class Ctrl_21HGHSNK_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HGHSNK 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_SNAKE_GIANT
@@ -1187,9 +1229,11 @@ class Ctrl_21HGHSNK_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HGHSNK
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [10, 19, 13, 3, 12, 3])
 		return
 	
@@ -1280,6 +1324,9 @@ class Ctrl_21HGHSNK_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HGHSNK
 		
 		return
 	
+	def setup_spells(self, npc):
+		return
+	
 class Ctrl_21HRP_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HRP 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_HARPY
@@ -1308,9 +1355,11 @@ class Ctrl_21HRP_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HRP
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [10, 15, 10, 7, 10, 15])
 		return
 	
@@ -1408,6 +1457,9 @@ class Ctrl_21HRP_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HRP
 		
 		return
 	
+	def setup_spells(self, npc):
+		return
+	
 class Ctrl_21VERB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21VERB 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_GIANT_VERBEEG
@@ -1436,9 +1488,11 @@ class Ctrl_21VERB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21VERB
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [21, 8, 15, 6, 10, 7])
 		return
 	
@@ -1532,6 +1586,9 @@ class Ctrl_21VERB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21VERB
 		
 		return
 	
+	def setup_spells(self, npc):
+		return
+	
 class Ctrl_20EMMA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20EMMA 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
@@ -1547,8 +1604,6 @@ class Ctrl_20EMMA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20EMMA
 	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Emma Moonblade")
-		
-		# npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
 		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_medium
@@ -1566,10 +1621,12 @@ class Ctrl_20EMMA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20EMMA
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		self.hide_creature(npc, True)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [12, 14, 12, 12, 17, 14])
 		return
 	
@@ -1663,22 +1720,22 @@ class Ctrl_20EMMA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20EMMA
 	def setup_spells(self, npc):
 		stat_level = toee.stat_level_cleric # CLR
 		#Level: 1
-		utils_npc_spells_inf.ctrl_add_spell(self, "Magic Stone", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Magic Stone", 1, 1, stat_level, 1) # Magic Stone
 		
 		#Level: 2
-		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Moderate Wounds", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Silence", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Hold Person", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Moderate Wounds", 1, 1, stat_level, 2) # Cure Moderate Wounds
+		utils_npc_spells_inf.ctrl_add_spell(self, "Silence", 1, 1, stat_level, 2) # Silence
+		utils_npc_spells_inf.ctrl_add_spell(self, "Hold Person", 1, 1, stat_level, 2) # Hold Person
 		
 		#Level: 3
-		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Serious Wounds", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Dispel Magic", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Miscast Magic", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Contagion", 1, 1, stat_level)
-		utils_npc_spells_inf.ctrl_add_spell(self, "Circle of Bones", 1, 1, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Serious Wounds", 1, 1, stat_level, 3) # Cure Serious Wounds
+		utils_npc_spells_inf.ctrl_add_spell(self, "Dispel Magic", 1, 1, stat_level, 3) # Dispel Magic
+		utils_npc_spells_inf.ctrl_add_spell(self, "Miscast Magic", 1, 1, stat_level, 3) # Miscast Magic
+		utils_npc_spells_inf.ctrl_add_spell(self, "Contagion", 1, 1, stat_level, 3) # Contagion
+		utils_npc_spells_inf.ctrl_add_spell(self, "Circle of Bones", 1, 1, stat_level, 3) # Circle of Bones
 		
 		#Level: 4
-		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Critical Wounds", 2, 2, stat_level)
+		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Critical Wounds", 2, 2, stat_level, 4) # Cure Critical Wounds
 		
 		return
 	
@@ -1698,8 +1755,6 @@ class Ctrl_20KRIS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KRIS
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Kristian Deylore")
 		
-		# npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
-		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
 		hairStyle.color = const_toee.hair_color_blonde # HairColourIndex: 3
@@ -1716,10 +1771,12 @@ class Ctrl_20KRIS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KRIS
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		self.hide_creature(npc, True)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [18, 12, 14, 10, 14, 14])
 		return
 	
@@ -1815,6 +1872,9 @@ class Ctrl_20KRIS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KRIS
 		
 		return
 	
+	def setup_spells(self, npc):
+		return
+	
 class Ctrl_20KNTVIR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KNTVIR 
 	@classmethod
 	def get_proto_id(cls): return const_proto_npc.PROTO_NPC_MAN
@@ -1830,8 +1890,6 @@ class Ctrl_20KNTVIR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KNTVIR
 	
 	def setup_appearance(self, npc):
 		utils_npc.npc_description_set_new(npc, "Warrior of Virtue")
-		
-		# npc.obj_set_int(toee.obj_f_critter_portrait, 8680) # none
 		
 		hairStyle = utils_npc.HairStyle.from_npc(npc)
 		hairStyle.style = const_toee.hair_style_shorthair
@@ -1849,10 +1907,12 @@ class Ctrl_20KNTVIR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KNTVIR
 		self.setup_char_hp(npc)
 		self.setup_char_skills(npc)
 		self.setup_char_alignment(npc)
+		self.setup_spells(npc)
 		self.hide_creature(npc, True)
 		return
 	
 	def setup_char_abilities(self, npc):
+		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [16, 16, 10, 10, 12, 10])
 		return
 	
@@ -1950,5 +2010,8 @@ class Ctrl_20KNTVIR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KNTVIR
 		# SLOT_SHIELD1: None(Books) from 00SHIELD
 		# Not found! TODO ITEM
 		
+		return
+	
+	def setup_spells(self, npc):
 		return
 	

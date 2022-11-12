@@ -1,5 +1,6 @@
 import toee, debug
 import inf_scripting
+import module_difficulty
 #### IMPORTS ####
 from bcs import scr_12cwar1_auto
 #### END IMPORTS ####

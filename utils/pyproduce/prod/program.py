@@ -4,6 +4,7 @@ import sys
 import os
 import producer_doc
 import producer_strref
+import producer_spells
 
 npc_template_file = 'data/py06616_template.py'
 out_npcs_file = '../../src/zmod_iwd2_core/scr/py01001_targos_docks_encounters.py'
@@ -34,6 +35,11 @@ def main():
         , temple_src_path = temple_src_path
     )
     doc.init(from_scratch=False)
+    if False:
+        prod_spells = producer_spells.ProducerOfSpells(doc, 1)
+        prod_spells.produce()
+        prod_spells.save()
+
     if True:
         are_prod = doc.acquire_are_producer('AR2100')
         are_prod.skip_script_general = True
@@ -47,7 +53,7 @@ def main():
             are_prod.produce()
         else:
             are_prod.produce_start()
-            are_prod.produce_actor("Hedron")
+            are_prod.produce_actor("Shawford_Crale")
             are_prod.produce_daemon(True)
 
     if False:

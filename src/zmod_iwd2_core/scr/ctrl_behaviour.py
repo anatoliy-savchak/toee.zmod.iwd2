@@ -727,6 +727,7 @@ class CtrlBehaviourAI(CtrlBehaviour):
 		if target and not kind in ("foes_adjacent", "foes_threatening", "foes_could_be_approached"):
 			# it means that npc cannot reach or approach any foe, but know about them
 			# better to switch to other forms of attack like ranged, throwing, healing etc
+			print('create_tactics_default_melee will not found, better to switch to other forms of attack like ranged, throwing, healing etc')
 			return None, target, kind
 
 		if (target):

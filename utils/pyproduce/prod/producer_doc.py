@@ -9,6 +9,7 @@ import produce_bcs_manager
 import produce_scripts
 import common
 import producer_strref
+import producer_spells
 
 class ProducerDoc(object):
     def __init__(self
@@ -43,8 +44,9 @@ class ProducerDoc(object):
         self.producerOfScripts = None
         self.producerOfFloats = None
         self.current_are_producer = None
-
+        self.ids = {}
         self.copy_speaches = list()
+        self.spell_codes_producer = None
         return
 
     def init(self, from_scratch: bool = False):
@@ -84,19 +86,28 @@ class ProducerDoc(object):
         path_inf_scripting = os.path.join(self.core_dir, "scr/inf_scripting.py")
         self.producerOfScripts = produce_scripts.ProducerOfScripts(self, path_inf_scripting = path_inf_scripting)
         self.producerOfFloats = producer_strref.ProducerOfFloats(self, False)
+        self.spell_codes_producer = producer_spells.ProducerOfSpells(self, False)
+
+        self.load_ids()
         return
 
     def get_path_map_rumors_file(self):
         return os.path.join(self.exp_dir, "journal/journal_map.json")
 
     def get_path_actions(self):
-        return os.path.join(self.src_dir, "IDS/ACTION.IDS")
+        return self.get_path_id("ACTION.IDS")
 
     def get_path_triggers(self):
-        return os.path.join(self.src_dir, "IDS/TRIGGER.IDS")
+        return self.get_path_id("TRIGGER.IDS")
+
+    def get_path_id(self, file_name):
+        return os.path.join(self.src_dir, "IDS", file_name)
+
+    def get_path_2da(self, file_name):
+        return os.path.join(self.src_dir, "2DA", file_name)
 
     def get_path_identifiers(self):
-        return os.path.join(self.src_dir, "IDS/OBJECT_FIXED.IDS")
+        return self.get_path_id("OBJECT_FIXED.IDS")
 
     def get_path_sounds_index(self):
         return os.path.join(self.exp_dir, "Sounds/sounds.json")
@@ -246,4 +257,26 @@ class ProducerDoc(object):
             if dialog_file and dialog_file.lower() == 'none': dialog_file = None
             if dialog_file.lower() == dialog_name.lower():
                 return actor["Name"]
+        return
+
+    def load_ids(self):
+        # LISTSPLL.2DA : SpellIndex <-> SpellFile
+        # SPELDESC.2DA: SpellFile <-> SpellRef
+        # SPELL.IDS: SpellRef <-> SpellCode
+        spells = self.load_id('SPELL.IDS')
+        #for key, value in spells.items(): print(f'{value} = {key}')
+        self.load_id('SPLCAST.IDS')
+        return
+
+    def load_id(self, file_name: str, make_key_int: bool = False):
+        file_path = self.get_path_id(file_name)
+        result = common.parse_ids_file(file_path, make_key_int)
+        self.ids[file_name] = result
+        return result
+
+    def translate_param_name(self, name: str):
+        if name in self.ids['SPLCAST.IDS'].values():
+            return f'const_inf.{name}'
+        elif name in self.ids['SPELL.IDS'].values():
+            return f'const_inf.{name}'
         return

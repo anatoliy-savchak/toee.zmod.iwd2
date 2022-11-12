@@ -38,13 +38,13 @@ class AnimBase(object):
         return
 
     def produce_portrait(self):
-        portrait_id = 8680 # none
-        portrait_comment_name = "none"
-        self._portrait_print(portrait_id, portrait_comment_name)
+        #portrait_id = 8680 # none
+        #portrait_comment_name = "none"
+        #self._portrait_print(portrait_id, portrait_comment_name)
         return
 
     def _portrait_print(self, portrait_id, portrait_comment_name):
-        self._add_line(f"# npc.obj_set_int(toee.obj_f_critter_portrait, {portrait_id}) # {portrait_comment_name}")
+        self._add_line(f"npc.obj_set_int(toee.obj_f_critter_portrait, {portrait_id}) # {portrait_comment_name}")
         self._add_line("")
         return
 
@@ -299,6 +299,10 @@ class AnimGoblinEliteWithAxe(AnimGoblin):
 class AnimOrc(AnimHumanoid):
     def produce_hair(self): return
 
+    def produce_portrait(self):
+        self._portrait_print(5500, "Orc Fighter_Orc Fighter_14745")
+        return 
+
 class AnimOrcWithBow(AnimOrc):
     @classmethod
     def get_codes(cls): return ("Orc w/ Bow", )
@@ -306,12 +310,24 @@ class AnimOrcWithBow(AnimOrc):
     def get_armor_proto_const(self): 
         return "const_proto_armor.PROTO_ARMOR_STUDDED_LEATHER_ARMOR_MASTERWORK_BARBARIAN"
 
+    def produce_portrait(self):
+        self._portrait_print(5510, "Orc Bowman_Orc Bowman_14467")
+        return 
+
 class AnimOrcWithAxe(AnimOrc):
     @classmethod
-    def get_codes(cls): return ("Orc w/ Axe", "Orc Elite w/ Axe")
+    def get_codes(cls): return ("Orc w/ Axe", )
 
     def get_armor_proto_const(self): 
         return "const_proto_armor.PROTO_ARMOR_STUDDED_LEATHER_ARMOR_MASTERWORK_BARBARIAN"
+
+class AnimOrcWithAxeElite(AnimOrcWithAxe):
+    @classmethod
+    def get_codes(cls): return ("Orc Elite w/ Axe", )
+
+    def produce_portrait(self):
+        self._portrait_print(4940, "Orc Medium_Orc Medium_14750")
+        return 
 
 class AnimOrcShaman(AnimOrc):
     @classmethod
@@ -321,6 +337,10 @@ class AnimOrcShaman(AnimOrc):
         return "const_proto_cloth.PROTO_CLOTH_ROBES_BROWN_TEMPLE_EARTH"
 
     def should_produce_bold(self): return True
+
+    def produce_portrait(self):
+        self._portrait_print(4930, "Orc Shaman_Orc Shaman_14751")
+        return 
 
 class AnimWererat(AnimBase):
     @classmethod

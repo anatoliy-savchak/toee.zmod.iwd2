@@ -1,63 +1,28 @@
 import toee, debug
-import inf_scripting
+import inf_scripting, const_inf
 import module_difficulty
 #### IMPORTS ####
 #### END IMPORTS ####
 
 #### BCS ####
-class Script_00AATGN_Auto(inf_scripting.ScriptBase): # 00AATGN
+class Script_00AATGN_Auto(inf_scripting.ScriptBase): # 00AATGN SIMPLE
 	# AR2100 21GAERNT Gaernat Sharptooth ScriptRace (Combat Script)
 	
 	@classmethod
 	@inf_scripting.dump_args
-	def do_execute(cls, self, locus, continuous = False, block_from = None, code_from = None):
+	def do_execute_simple(cls, self):
 		assert isinstance(self, inf_scripting.InfScriptSupport)
-		while True:
-			if not block_from or block_from <= 1:
-				break_ = cls.do_execute_block_01(self, locus, code_from=code_from if code_from and block_from == 1 else None)
-				if (break_ > 1) or (not continuous and break_): break
+		
+		# IF
+		# 	See(NearestEnemyOf(Myself),0)
+		# THEN
+		#   RESPONSE #100
+		# 		EquipWeapon()
+		# 		AttackOneRound(LastMarkedObject)
+		
+		if self.iSee(self.iNearestEnemyOf("Myself"), 0):
 			
-			break # while
+			self.iEquipWeapon()
+			self.iAttackOneRound("LastMarkedObject")
+			return
 		return
-		
-	@classmethod
-	@inf_scripting.dump_args
-	def do_execute_block_01(cls, self, locus, code_from = None):
-		assert isinstance(self, inf_scripting.InfScriptSupport)
-		locus["block"] = 1
-		d = {"check": None}
-		def do_check():
-			if d["check"] is None:
-				# See(NearestEnemyOf(Myself),0)
-				if self.iSee(self.iNearestEnemyOf("Myself"), 0):
-					d["check"] = 1
-				else: d["check"] = 0
-			return d["check"]
-		
-		# EquipWeapon()
-		# AttackOneRound(LastMarkedObject)
-		
-		if (code_from is None and do_check()) or (code_from <= 1):
-			break_ = cls.do_execute_block_01_code_01(self, locus)
-			if break_ == 2: return break_
-		
-		result = 1 # break further blocks
-		if not code_from is None:
-			result = 1
-		elif d["check"]:
-			result = 1
-		return result
-	
-	@classmethod
-	@inf_scripting.dump_args
-	def do_execute_block_01_code_01(cls, self, locus):
-		assert isinstance(self, inf_scripting.InfScriptSupport)
-		locus["code"] = 1
-		
-		# EquipWeapon()
-		# AttackOneRound(LastMarkedObject)
-		
-		self.iEquipWeapon()
-		self.iAttackOneRound("LastMarkedObject")
-		return 0
-		

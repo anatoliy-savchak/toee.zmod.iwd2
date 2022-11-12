@@ -70,7 +70,7 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
 
         self.writeline('def setup_bcs(self):')
 
-        def write_script(bcs_attribute: str, script_name: str):
+        def write_script(bcs_attribute: str, script_name: str, mode_simple: bool = None):
             bcs_name = self.actor_dict[bcs_attribute]
             if bcs_name:
                 ctrl_name, file_name, pkg_name = self.doc.bcsManager.ensure_bcs(
@@ -79,6 +79,7 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
                     , hint_cre_name=self.cre_name
                     , hint_actor_name=self.actor_name
                     , hint_script_code=bcs_attribute
+                    , mode_simple=mode_simple
                 )
                 self.add_import(file_name, pkg_name)
 
@@ -91,7 +92,7 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         if not self.skip_script_class:
             write_script("ScriptClass", 'bcs_class')
         if not self.skip_script_race:
-            write_script("ScriptRace", 'bcs_combat')
+            write_script("ScriptRace", 'bcs_combat', True)
         if not self.skip_script_default:
             write_script("ScriptDefault", 'bcs_movement')
         if not self.skip_script_specific:

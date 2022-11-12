@@ -448,3 +448,9 @@ class STSilenceParty(SpellTactic):
 class STSilence(SpellTactic):
 	@staticmethod
 	def _get_spell_num(): return toee.spell_silence
+
+class STCommand(SpellTactic):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_command
+	def _except_spell_condition(self): return toee.sp_Command
+	def _is_personal(self): return 0

@@ -38,8 +38,10 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 	def place_encounters_initial(self):
 		super(CtrlAR2100, self).place_encounters_initial()
 		#toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 457, 499) # verbeeg
-		toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 465, 485) # harpy
+		#toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 465, 485) # harpy
 		#toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 462, 472) # wererats
+
+		toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 467, 474) # test_spells
 		return
 	
 	def place_npcs_auto(self):
@@ -405,6 +407,7 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 		return
 
 	def authorize_actor(self, ctrl, name = None):
+		return self.authorize_actor_test_spells(ctrl, name)
 		result = super(CtrlAR2100, self).authorize_actor(ctrl, name)
 		if result:
 			if name == "Wererat_Scripted_Event": return 0 # skip this for now
@@ -414,5 +417,12 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 			#if name == "Gaernat Sharptooth": return 1
 			if name.startswith("GTH02"): return 1
 			if name.startswith("Spider"): return 1
+			return 0
+		return result
+
+	def authorize_actor_test_spells(self, ctrl, name = None):
+		result = super(CtrlAR2100, self).authorize_actor(ctrl, name)
+		if result:
+			if name.startswith("GTH01"): return 1
 			return 0
 		return result

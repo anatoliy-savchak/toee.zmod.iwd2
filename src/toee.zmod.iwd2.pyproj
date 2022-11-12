@@ -178,6 +178,8 @@
     <Compile Include="zmod_iwd2_core\scr\bcs\scr_12cwar1_auto.py" />
     <Compile Include="zmod_iwd2_core\scr\bcs\scr_12cwar2.py" />
     <Compile Include="zmod_iwd2_core\scr\bcs\scr_12cwar2_auto.py" />
+    <Compile Include="zmod_iwd2_core\scr\bcs\scr_test_spells.py" />
+    <Compile Include="zmod_iwd2_core\scr\bcs\scr_20orcsh1_auto.py" />
     <Compile Include="zmod_iwd2_core\scr\bcs\scr_ar1000.py" />
     <Compile Include="zmod_iwd2_core\scr\bcs\scr_ar1000_auto.py" />
     <Compile Include="zmod_iwd2_core\scr\bcs\scr_ar1007.py" />
@@ -199,6 +201,9 @@
     <Compile Include="zmod_iwd2_core\scr\bcs\scr_st_1200b.py" />
     <Compile Include="zmod_iwd2_core\scr\bcs\scr_st_1200b_auto.py" />
     <Compile Include="zmod_iwd2_core\scr\bcs\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="zmod_iwd2_core\scr\const_inf.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="zmod_iwd2_core\scr\const_iwd2.py">
@@ -446,6 +451,7 @@
     <Content Include="zmod_iwd2\rules\MapList.mes" />
     <Content Include="zmod_iwd2_core\dlg\00406Game_Portal.dlg" />
     <Content Include="zmod_iwd2_core\dlg\10001_ar1000_npc_classes_auto.dlg" />
+    <Content Include="zmod_iwd2_core\dlg\12011_ar1201_npc_classes_auto.dlg" />
     <Content Include="zmod_iwd2_core\dlg\21001_ar2100_npc_classes_auto.dlg" />
     <Content Include="zmod_iwd2_core\dlg\21003_ar2100_npc_inst_classes_auto.dlg" />
     <Content Include="zmod_iwd2_core\mes\gamekeylog.mes" />

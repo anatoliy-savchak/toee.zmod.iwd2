@@ -50,21 +50,12 @@ class CtrlAR1201(ctrl_daemon_ie.CtrlDaemonIE):
 		return
 	
 	def place_npcs_auto(self):
-		# Shawford_Crale: 12SHAWFO (477.5, 478.8) const_toee.ROT06 ctrl: py12014_ar1201_npc_inst_classes.Ctrl_12SHAWFO_AR1201_Shawford_Crale 
+		# Shawford_Crale: 12SHAWFO (477.5, 478.8) const_toee.ROT06 ctrl: py12014_ar1201_npc_inst_classes.Ctrl_12SHAWFO_AR1201_Shawford_Crale , team: 0
+		print("Creating py12014_ar1201_npc_inst_classes.Ctrl_12SHAWFO_AR1201_Shawford_Crale...")
 		ctrl_class, loc = py12014_ar1201_npc_inst_classes.Ctrl_12SHAWFO_AR1201_Shawford_Crale,  utils_obj.sec2loc(477, 478)
-		self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "Shawford_Crale", 0, 1)
-		
-		# Messenger_Hidden: 12MESS (489.5, 478.7) const_toee.ROT02 ctrl: py12014_ar1201_npc_inst_classes.Ctrl_12MESS_AR1201_Messenger_Hidden hidden
-		ctrl_class, loc = py12014_ar1201_npc_inst_classes.Ctrl_12MESS_AR1201_Messenger_Hidden,  utils_obj.sec2loc(489, 478)
-		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "Messenger_Hidden", 0, 1)
-		
-		# Swift_Thomas_Hidden: 12SWIFTH (489.5, 476.9) const_toee.ROT02 ctrl: py12014_ar1201_npc_inst_classes.Ctrl_12SWIFTH_AR1201_Swift_Thomas_Hidden hidden
-		ctrl_class, loc = py12014_ar1201_npc_inst_classes.Ctrl_12SWIFTH_AR1201_Swift_Thomas_Hidden,  utils_obj.sec2loc(489, 476)
-		self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "Swift_Thomas_Hidden", 0, 1)
-		
-		# Nolan: 12NOLAN (471.1, 477.3) const_toee.ROT08 ctrl: py12014_ar1201_npc_inst_classes.Ctrl_12NOLAN_AR1201_Nolan 
-		ctrl_class, loc = py12014_ar1201_npc_inst_classes.Ctrl_12NOLAN_AR1201_Nolan,  utils_obj.sec2loc(471, 477)
-		self.create_npc_at(loc, ctrl_class, const_toee.ROT08, "Nolan", 0, 1)
+		if self.authorize_actor(ctrl_class, "Shawford_Crale"):
+			npc, ctrl = self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "Shawford_Crale", 0, 1)
+			self.actor_created(npc, ctrl)
 		
 		return
 	

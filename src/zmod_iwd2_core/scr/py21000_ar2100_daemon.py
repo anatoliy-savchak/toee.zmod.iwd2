@@ -414,7 +414,7 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 			#if issubclass(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_21HGHSNK_AR2100_Highland_Snake): return 1
 			#if issubclass(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_21HGHSNK_AR2100_Highland_Snake_2): return 1
 			#if issubclass(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_21HGHSNK_AR2100_Highland_Snake_3): return 1
-			#if name == "Gaernat Sharptooth": return 1
+			if name == "Gaernat Sharptooth": return 1
 			if name.startswith("GTH02"): return 1
 			if name.startswith("Spider"): return 1
 			return 0
@@ -424,5 +424,6 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 		result = super(CtrlAR2100, self).authorize_actor(ctrl, name)
 		if result:
 			if name.startswith("GTH01"): return 1
+			if name == "Gaernat Sharptooth": return 1
 			return 0
 		return result

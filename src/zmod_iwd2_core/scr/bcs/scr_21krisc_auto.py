@@ -308,7 +308,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 		# 		MarkSpellAndObject("11071112",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET)  // [CLERIC_PROTECTION_FROM_EVIL, CLERIC_CAUSE_LIGHT_WOUNDS]
 		# 		Continue()
 		
-		if self.iForceMarkedSpell(const_inf.MARKED_SPELL) \
+		if self.iForceMarkedSpell("MARKED_SPELL") \
 			 and self.iSetSpellTarget("Nothing") \
 			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
 			
@@ -331,7 +331,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
-			self.iForceMarkedSpell(const_inf.MARKED_SPELL)
+			self.iForceMarkedSpell("MARKED_SPELL")
 			return
 		
 		# IF

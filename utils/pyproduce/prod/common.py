@@ -148,3 +148,16 @@ def save_lines(out_path, lines):
         for line in lines:
             f.write(line + ("\n" if not "\n" in line else ""))
     return
+
+class test1:
+    def g(self):
+        yield 1
+        yield 2
+        return
+
+def generics_test():
+    gg = test1().g()
+    #for g in gg: print(g)
+    g = next(gg)
+    print(g)
+    return

@@ -22,7 +22,7 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		# 		MarkSpellAndObject("1214",Myself,SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS]
 		# 		Continue()
 		
-		if self.iForceMarkedSpell(const_inf.MARKED_SPELL) \
+		if self.iForceMarkedSpell("MARKED_SPELL") \
 			 and self.iSetSpellTarget("Nothing") \
 			 and self.iHPLostGT("Myself", 25):
 			
@@ -61,7 +61,7 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
-			self.iForceMarkedSpell(const_inf.MARKED_SPELL)
+			self.iForceMarkedSpell("MARKED_SPELL")
 			return
 		
 		# IF
@@ -100,7 +100,7 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		# 		MarkSpellAndObject("2230",FarthestEnemyOf(Myself),SPELLCAST_RANDOM)  // [WIZARD_SUMMON_MONSTER_II]
 		# 		Continue()
 		
-		if self.iForceMarkedSpell(const_inf.MARKED_SPELL) \
+		if self.iForceMarkedSpell("MARKED_SPELL") \
 			 and self.iSetSpellTarget("Nothing") \
 			 and not self.iGlobal("'OBJ_SP_20ORCSH1_1'", "'LOCALS'", -1) \
 			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
@@ -135,7 +135,7 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
-			self.iForceMarkedSpell(const_inf.MARKED_SPELL)
+			self.iForceMarkedSpell("MARKED_SPELL")
 			self.iSetGlobal("'OBJ_SP_20ORCSH1_1'", "'LOCALS'", -1)
 			return
 		
@@ -154,7 +154,7 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		# 		MarkSpellAndObject("1203",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_CHANT]
 		# 		Continue()
 		
-		if self.iForceMarkedSpell(const_inf.MARKED_SPELL) \
+		if self.iForceMarkedSpell("MARKED_SPELL") \
 			 and self.iSetSpellTarget("Nothing") \
 			 and not self.iGlobal("'OBJ_SP_20ORCSH1_2'", "'LOCALS'", -1) \
 			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
@@ -189,7 +189,7 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
-			self.iForceMarkedSpell(const_inf.MARKED_SPELL)
+			self.iForceMarkedSpell("MARKED_SPELL")
 			self.iSetGlobal("'OBJ_SP_20ORCSH1_2'", "'LOCALS'", -1)
 			return
 		
@@ -214,7 +214,7 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		# 		MarkSpellAndObject("2214",[ENEMY.0.ORC],SPELLCAST_RANDOM)  // [WIZARD_STRENGTH]
 		# 		Continue()
 		
-		if self.iForceMarkedSpell(const_inf.MARKED_SPELL) \
+		if self.iForceMarkedSpell("MARKED_SPELL") \
 			 and self.iSetSpellTarget("Nothing") \
 			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
 			
@@ -256,7 +256,7 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
-			self.iForceMarkedSpell(const_inf.MARKED_SPELL)
+			self.iForceMarkedSpell("MARKED_SPELL")
 			return
 		
 		# IF

@@ -41,19 +41,6 @@ class Ctrl_21GAERNT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21GAERNT
 		
 		return
 	
-	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
-		return
-	
 	def setup_char_abilities(self, npc):
 		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [10, 23, 14, 10, 12, 4])
@@ -65,10 +52,6 @@ class Ctrl_21GAERNT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21GAERNT
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 2
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 6
@@ -171,19 +154,6 @@ class Ctrl_21WERRAT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERRAT
 		
 		return
 	
-	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
-		return
-	
 	def setup_char_abilities(self, npc):
 		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [12, 17, 13, 10, 10, 10])
@@ -195,10 +165,6 @@ class Ctrl_21WERRAT_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERRAT
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 1
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 3
@@ -298,19 +264,6 @@ class Ctrl_21WERBGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERBGR
 		
 		return
 	
-	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
-		return
-	
 	def setup_char_abilities(self, npc):
 		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [10, 17, 13, 10, 10, 10])
@@ -322,10 +275,6 @@ class Ctrl_21WERBGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21WERBGR
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 1
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 3
@@ -427,19 +376,6 @@ class Ctrl_20ORCSHM_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCSHM
 		
 		return
 	
-	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
-		return
-	
 	def setup_char_abilities(self, npc):
 		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [15, 10, 11, 9, 14, 12])
@@ -451,10 +387,6 @@ class Ctrl_20ORCSHM_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCSHM
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 1
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 4
@@ -571,19 +503,6 @@ class Ctrl_20ORCACH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCACH
 		
 		return
 	
-	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
-		return
-	
 	def setup_char_abilities(self, npc):
 		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [15, 10, 11, 9, 8, 8])
@@ -595,10 +514,6 @@ class Ctrl_20ORCACH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCACH
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 1
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 1
@@ -708,19 +623,6 @@ class Ctrl_20ORCA3_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCA3
 		
 		return
 	
-	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
-		return
-	
 	def setup_char_abilities(self, npc):
 		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [15, 10, 11, 9, 8, 8])
@@ -732,10 +634,6 @@ class Ctrl_20ORCA3_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCA3
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 1
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 3
@@ -843,19 +741,6 @@ class Ctrl_21OGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21OGR
 		
 		return
 	
-	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
-		return
-	
 	def setup_char_abilities(self, npc):
 		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [21, 8, 15, 6, 10, 7])
@@ -870,10 +755,6 @@ class Ctrl_21OGR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21OGR
 		# from None(001D10C) at SLOT_WEAPON1 by ItemMiscMeleeNatural1d10C
 		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_slap, attack_bonus = 0, number = 1, damage_str = "1d10")
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 1
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 4
@@ -972,19 +853,6 @@ class Ctrl_21SPDQN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDQN
 		
 		return
 	
-	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
-		return
-	
 	def setup_char_abilities(self, npc):
 		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [15, 17, 12, 3, 10, 3])
@@ -996,10 +864,6 @@ class Ctrl_21SPDQN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDQN
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 2
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 6
@@ -1095,19 +959,6 @@ class Ctrl_21SPDSML_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDSML
 		
 		return
 	
-	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
-		return
-	
 	def setup_char_abilities(self, npc):
 		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [11, 17, 12, 3, 10, 3])
@@ -1119,10 +970,6 @@ class Ctrl_21SPDSML_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDSML
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 1
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 2
@@ -1219,19 +1066,6 @@ class Ctrl_21HGHSNK_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HGHSNK
 		
 		return
 	
-	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
-		return
-	
 	def setup_char_abilities(self, npc):
 		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [10, 19, 13, 3, 12, 3])
@@ -1246,10 +1080,6 @@ class Ctrl_21HGHSNK_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HGHSNK
 		# from None(001D10C) at SLOT_WEAPON1 by ItemMiscMeleeNatural1d10C
 		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_slap, attack_bonus = 0, number = 1, damage_str = "1d10")
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 2
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 6
@@ -1345,19 +1175,6 @@ class Ctrl_21HRP_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HRP
 		
 		return
 	
-	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
-		return
-	
 	def setup_char_abilities(self, npc):
 		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [10, 15, 10, 7, 10, 15])
@@ -1372,10 +1189,6 @@ class Ctrl_21HRP_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21HRP
 		# from None(001D3S) at SLOT_WEAPON1 by ItemMiscMeleeNatural1d3s
 		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_bite, attack_bonus = 0, number = self.get_attacks_per_round(npc), damage_str = "1d3")
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 2
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 7
@@ -1478,19 +1291,6 @@ class Ctrl_21VERB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21VERB
 		
 		return
 	
-	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
-		return
-	
 	def setup_char_abilities(self, npc):
 		utils_npc.npc_hitdice_set(npc, 0, 0, 0)
 		utils_npc.npc_abilities_set(npc, [21, 8, 15, 6, 10, 7])
@@ -1502,10 +1302,6 @@ class Ctrl_21VERB_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21VERB
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 2
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 5
@@ -1612,16 +1408,6 @@ class Ctrl_20EMMA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20EMMA
 		return
 	
 	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
 		self.hide_creature(npc, True)
 		return
 	
@@ -1636,10 +1422,6 @@ class Ctrl_20EMMA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20EMMA
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 2
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 8
@@ -1762,16 +1544,6 @@ class Ctrl_20KRIS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KRIS
 		return
 	
 	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
 		self.hide_creature(npc, True)
 		return
 	
@@ -1786,10 +1558,6 @@ class Ctrl_20KRIS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KRIS
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 1
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 8
@@ -1898,16 +1666,6 @@ class Ctrl_20KNTVIR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KNTVIR
 		return
 	
 	def setup_char(self, npc):
-		self.setup_char_abilities(npc)
-		self.setup_char_classes(npc)
-		self.setup_char_natural(npc)
-		self.setup_char_cr(npc)
-		self.setup_char_feats(npc)
-		self.setup_char_saves(npc)
-		self.setup_char_hp(npc)
-		self.setup_char_skills(npc)
-		self.setup_char_alignment(npc)
-		self.setup_spells(npc)
 		self.hide_creature(npc, True)
 		return
 	
@@ -1922,10 +1680,6 @@ class Ctrl_20KNTVIR_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KNTVIR
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
 		return
-	
-	def get_attacks_per_round(self, npc):
-		# NumberOfAttacks: 1
-		return npc.get_base_attack_bonus() // 5 + 1
 	
 	def setup_char_classes(self, npc):
 		# class levels: 4

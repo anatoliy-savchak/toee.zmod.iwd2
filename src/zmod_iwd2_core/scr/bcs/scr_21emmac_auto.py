@@ -503,7 +503,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		# 		MarkSpellAndObject("14231721",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET)  // [CLERIC_WALL_OF_MOONLIGHT, CLERIC_HOLY_WORD]
 		# 		Continue()
 		
-		if self.iForceMarkedSpell(const_inf.MARKED_SPELL) \
+		if self.iForceMarkedSpell("MARKED_SPELL") \
 			 and self.iSetSpellTarget("Nothing") \
 			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
 			
@@ -527,7 +527,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
-			self.iForceMarkedSpell(const_inf.MARKED_SPELL)
+			self.iForceMarkedSpell("MARKED_SPELL")
 			return
 		
 		# IF
@@ -545,7 +545,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		# 		MarkSpellAndObject("12261518130313101324250725072507",LastMarkedObject,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET | SPELLCAST_RANDOM)  // [CLERIC_MOON_MOTES, CLERIC_GREATER_COMMAND, CLERIC_DISPEL_MAGIC, CLERIC_MISCAST_MAGIC, CLERIC_HOLY_SMITE, WIZARD_DOMINATE_PERSON, WIZARD_DOMINATE_PERSON, WIZARD_DOMINATE_PERSON]
 		# 		Continue()
 		
-		if self.iForceMarkedSpell(const_inf.MARKED_SPELL) \
+		if self.iForceMarkedSpell("MARKED_SPELL") \
 			 and self.iSetSpellTarget("Nothing") \
 			 and self.iNumCreatureGT("[ENEMY]", 1) \
 			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
@@ -579,7 +579,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
-			self.iForceMarkedSpell(const_inf.MARKED_SPELL)
+			self.iForceMarkedSpell("MARKED_SPELL")
 			return
 		
 		# IF
@@ -608,7 +608,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		# 		MarkSpellAndObject("131912181106",Myself,SPELLCAST_IGNORE_SEE | SPELLCAST_IGNORE_VALID_SPELL_TARGET)  // [CLERIC_CIRCLE_OF_BONES, CLERIC_CAUSE_MODERATE_WOUNDS, CLERIC_MAGICAL_STONE]
 		# 		Continue()
 		
-		if self.iForceMarkedSpell(const_inf.MARKED_SPELL) \
+		if self.iForceMarkedSpell("MARKED_SPELL") \
 			 and self.iSetSpellTarget("Nothing") \
 			 and self.iSee(self.iNearestEnemyOf("Myself"), 0):
 			
@@ -631,7 +631,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
-			self.iForceMarkedSpell(const_inf.MARKED_SPELL)
+			self.iForceMarkedSpell("MARKED_SPELL")
 			return
 		
 		# IF

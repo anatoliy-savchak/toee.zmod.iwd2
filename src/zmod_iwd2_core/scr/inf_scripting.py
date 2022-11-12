@@ -737,16 +737,22 @@ class InfScriptSupport:
 		"""
 		HPLost(O:Object*, I:Hit Points*)
 		"""
-		raise Exception("Not implemented function: HPLost!")
-		return
+		obj, ctrl = self.get_context()._get_ie_object(obj_name)
+		result = 0
+		if obj:
+			result = obj.obj_get_int(toee.obj_f_hp_damage) == int(hit_points)
+		return result
 	
 	@dump_args
-	def HPLostGT(self, obj, hit_points):
+	def iHPLostGT(self, obj, hit_points):
 		"""
 		HPLostGT(O:Object*, I:Hit Points*)
 		"""
-		raise Exception("Not implemented function: HPLostGT!")
-		return
+		obj, ctrl = self.get_context()._get_ie_object(obj_name)
+		result = 0
+		if obj:
+			result = obj.obj_get_int(toee.obj_f_hp_damage) > int(hit_points)
+		return result
 	
 	@dump_args
 	def HPPercent(self, obj, hit_points):
@@ -1241,7 +1247,7 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def SetSpellTarget(self, obj):
+	def iSetSpellTarget(self, obj):
 		"""
 		SetSpellTarget(O:Object*)
 		"""
@@ -3290,6 +3296,11 @@ class ScriptBase(object):
 
 	@classmethod
 	def do_execute(cls, self, locus, continuous = False, block_from = None, code_from = None):
+		assert isinstance(self, InfScriptSupport)
+		return
+
+	@classmethod
+	def do_execute_simple(cls, self):
 		assert isinstance(self, InfScriptSupport)
 		return
 

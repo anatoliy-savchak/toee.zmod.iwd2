@@ -22,10 +22,10 @@ class Script_TestSpells(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		# 		MarkSpellAndObject("1214",Myself,SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS]
 		# 		Continue()
 		
-		if self.iForceMarkedSpell(const_inf.MARKED_SPELL) \
+		if self.iForceMarkedSpell("MARKED_SPELL") \
 			 and self.iSetSpellTarget("Nothing") \
 			 and self.iHPLostGT("Myself", 25):
 			
-			self.iMarkSpellAndObject(const_inf.CLERIC_CURE_MODERATE_WOUNDS, "Myself", const_inf.SPELLCAST_IGNORE_SEE)
-			# continue
+			self.iMarkSpellAndObject("Cure Moderate Wounds", "Myself", const_inf.SPELLCAST_IGNORE_SEE)
+		
 		return

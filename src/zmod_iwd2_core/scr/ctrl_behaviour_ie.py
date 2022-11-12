@@ -97,6 +97,38 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		self.set_allegiance(self.npc_get(), 255)
 		return
 
+	@inf_scripting.dump_args
+	def iForceMarkedSpell(self, spell):
+		"""
+		ForceMarkedSpell(I:Spell*Spell)
+		Essentially will set LastMarkedSpell to spell. Typically ForceMarkedSpell(MARKED_SPELL), e.g. clear spell. Due to MARKED_SPELL = 0.
+		"""
+		if str(spell).upper() == 'MARKED_SPELL':
+			self.vars['iMarkedSpell'] = None
+		else:
+			raise Exception("iForceMarkedSpell - Unknown spell: {}".format(spell))
+		return 1
+
+	@inf_scripting.dump_args
+	def iSetSpellTarget(self, obj):
+		"""
+		SetSpellTarget(O:Object*)
+		Actually as per scripts_index.json there are none other than Nothing
+		"""
+		if str(spell).upper() == 'NOTHING':
+			self.vars['iMarkedSpellTarget'] = None
+		else:
+			raise Exception("iForceMarkedSpell - Unknown spell: {}".format(spell))
+		return
+
+	@inf_scripting.dump_args
+	def iMarkSpellAndObject(self, spells, obj, flags):
+		"""
+		MarkSpellAndObject(S:Spells*, O:Object*, I:Flags*SplCast)
+		"""
+
+		return
+
 	def dialog_action(self, npc, pc, index):
 		assert isinstance(npc, toee.PyObjHandle)
 		assert isinstance(pc, toee.PyObjHandle)
@@ -147,17 +179,7 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 
 		return toee.RUN_DEFAULT
 
-	def setup_bcs(self):
-		self.vars["bcs_general"] = None
-		self.vars["bcs_class"] = None
-		self.vars["bcs_combat"] = None
-		self.vars["bcs_movement"] = None
-		self.vars["bcs_team"] = None
-		self.vars["bcs_special_one"] = None
-		return
-
 	def setup(self, npc):
-		self.setup_bcs()
 		super(CtrlBehaviourIE, self).setup(npc)
 		return
 
@@ -239,3 +261,45 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 			self.script_dialog(npc, pc)
 			return True
 		return
+
+	def create_tactics(self, npc):
+		assert isinstance(npc, toee.PyObjHandle)
+
+		bcs_combat = self.vars.get("bcs_combat")
+		if bcs_combat:
+			self.vars['iMarkedSpellTarget'] = None
+			self.vars['iMarkedSpell'] = None
+
+			bcs_combat.do_execute_simple()
+
+			if self.vars['iMarkedSpell']:
+				pass
+		return None
+
+	def setup_char(self, npc):
+		_dir = dir(self)
+		if 'setup_char_abilities' in _dir:
+			self.setup_char_abilities(npc)
+		if 'setup_char_classes' in _dir:
+			self.setup_char_classes(npc)
+		if 'setup_char_natural' in _dir:
+			self.setup_char_natural(npc)
+		if 'setup_char_cr' in _dir:
+			self.setup_char_cr(npc)
+		if 'setup_char_feats' in _dir:
+			self.setup_char_feats(npc)
+		if 'setup_char_saves' in _dir:
+			self.setup_char_saves(npc)
+		if 'setup_char_hp' in _dir:
+			self.setup_char_hp(npc)
+		if 'setup_char_skills' in _dir:
+			self.setup_char_skills(npc)
+		if 'setup_char_alignment' in _dir:
+			self.setup_char_alignment(npc)
+		if 'setup_spells' in _dir:
+			self.setup_spells(npc)
+		return
+
+	def get_attacks_per_round(self, npc):
+		# NumberOfAttacks: 1
+		return npc.get_base_attack_bonus() // 5 + 1

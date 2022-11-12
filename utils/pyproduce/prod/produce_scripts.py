@@ -898,10 +898,9 @@ class ScriptTranFuncsMarkSpellAndObject(ScriptTranFuncs):
 
         return super().do_translate_param_str(arg, index, arg_info, wrap)
 
-
 class ScriptTranFuncsHaveSpell(ScriptTranFuncs):
     @classmethod
-    def supports_func(cls): return ("HaveSpell", )
+    def supports_func(cls): return ("HaveSpell", "ForceMarkedSpell")
 
     def d_translate_param_name(self, arg, index: int):
         if index == 0:

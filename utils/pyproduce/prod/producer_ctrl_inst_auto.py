@@ -68,9 +68,11 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
         self.indent(False)
         self.writeline()
 
-        self.writeline('def setup_bcs(self):')
+        #self.writeline('def setup_bcs(self):')
 
         def write_script(bcs_attribute: str, script_name: str, mode_simple: bool = None):
+            self.writeline(f'def get_{script_name}(self):')
+            self.indent()
             bcs_name = self.actor_dict[bcs_attribute]
             if bcs_name:
                 ctrl_name, file_name, pkg_name = self.doc.bcsManager.ensure_bcs(
@@ -81,12 +83,15 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
                     , hint_script_code=bcs_attribute
                     , mode_simple=mode_simple
                 )
+                self.writeline(f'return {file_name}.{ctrl_name}')
                 self.add_import(file_name, pkg_name)
 
-                self.writeline(f'self.vars["{script_name}"] = {file_name}.{ctrl_name}')
-
+                #self.writeline(f'self.vars["{script_name}"] = {file_name}.{ctrl_name}')
+            else:
+                self.writeline('return')
+            self.indent(False)
             return
-        self.indent()
+        #self.indent()
         if not self.skip_script_general:
             write_script("ScriptGeneral", 'bcs_general')
         if not self.skip_script_class:
@@ -99,8 +104,8 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
             write_script("ScriptSpecific", 'bcs_team')
         if not self.skip_script_special1:
             write_script("ScriptSpecial1", 'bcs_special_one')
-        self.writeline('return')
-        self.indent(False)
+        #self.writeline('return')
+        #self.indent(False)
         self.indent(False)
         self.writeline('')
 

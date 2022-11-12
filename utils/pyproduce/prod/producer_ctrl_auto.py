@@ -151,27 +151,39 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         return common.text_of_strrefs(self.cre, "LongName", "ShortName")
 
     def produce_npc_char(self):
-        self.writeline("def setup_char(self, npc):")
-        self.indent()
-
-        self.writeline(f"self.setup_char_abilities(npc)")
-        self.writeline(f"self.setup_char_classes(npc)")
-        self.writeline(f"self.setup_char_natural(npc)")
-        self.writeline(f"self.setup_char_cr(npc)")
-        self.writeline(f"self.setup_char_feats(npc)")
-        self.writeline(f"self.setup_char_saves(npc)")
-        self.writeline(f"self.setup_char_hp(npc)")
-        self.writeline(f"self.setup_char_skills(npc)")
-        self.writeline(f"self.setup_char_alignment(npc)")
-        self.writeline(f"self.setup_spells(npc)")
-
+        need_this = False
         hidden = bool(self.cre["Hidden"])
-        if hidden:
-            self.writeline('self.hide_creature(npc, True)')
+        need_this = need_this or hidden
+        if need_this:
+            self.writeline("def setup_char(self, npc):")
+            self.indent()
 
-        self.writeline("return")
-        self.indent(False)
-        self.writeline()
+            def do_setup(name):
+                self.writeline(f"if '{name}' in _dir:")
+                self.indent()
+                self.writeline(f"self.{name}(npc)")
+                self.indent(False)
+                return
+
+            if False:
+                do_setup("setup_char_abilities")
+                do_setup("setup_char_classes")
+                do_setup("setup_char_natural")
+                do_setup("setup_char_cr")
+                do_setup("setup_char_feats")
+                do_setup("setup_char_saves")
+                do_setup("setup_char_hp")
+                do_setup("setup_char_skills")
+                do_setup("setup_char_alignment")
+                do_setup("setup_spells")
+
+            hidden = bool(self.cre["Hidden"])
+            if hidden:
+                self.writeline('self.hide_creature(npc, True)')
+
+            self.writeline("return")
+            self.indent(False)
+            self.writeline()
         return
 
     def setup_char_abilities(self):
@@ -336,6 +348,7 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         return
 
     def produce_atacks_per_round(self):
+        return
         self.writeline("def get_attacks_per_round(self, npc):")
         self.indent()
         NumberOfAttacks = self.cre["NumberOfAttacks"]

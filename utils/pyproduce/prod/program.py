@@ -5,6 +5,7 @@ import os
 import producer_doc
 import producer_strref
 import producer_spells
+import common
 
 npc_template_file = 'data/py06616_template.py'
 out_npcs_file = '../../src/zmod_iwd2_core/scr/py01001_targos_docks_encounters.py'

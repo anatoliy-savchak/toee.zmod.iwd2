@@ -432,6 +432,9 @@
     <Compile Include="zmod_iwd2_core\scr\utils_pc.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="zmod_iwd2_core\scr\utils_query.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="zmod_iwd2_core\scr\utils_races.py">
       <SubType>Code</SubType>
     </Compile>

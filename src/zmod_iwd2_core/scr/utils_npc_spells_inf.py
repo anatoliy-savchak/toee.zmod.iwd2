@@ -21,6 +21,18 @@ def get_spell_rec(spell_name_inf):
 		return
 	return spell_rec
 
+def get_spell_id(spell_name_inf):
+	rec = get_spell_rec(spell_name_inf)
+	if rec:
+		spell_id = spell_rec["spell_id"]
+		return spell_id
+	return
+
 IWD2_SPELL_MAP = [\
-	{ "name": "Command", "spell_id": toee.spell_command, "spell_cls": utils_npc_spells_tactics.STCommand }\
+	  { "name": "Command", "spell_id": toee.spell_command, "spell_cls": utils_npc_spells_tactics.STCommand }\
+	, { "name": "Cure Minor Wounds", "spell_id": toee.spell_cure_minor_wounds, "spell_cls": utils_npc_spells_tactics.STCureMinorWounds }\
+	, { "name": "Cure Light Wounds", "spell_id": toee.spell_cure_light_wounds, "spell_cls": utils_npc_spells_tactics.STCureLightWounds }\
+	, { "name": "Cure Moderate Wounds", "spell_id": toee.spell_cure_moderate_wounds, "spell_cls": utils_npc_spells_tactics.STCureModerateWounds }\
+	, { "name": "Cure Serious Wounds", "spell_id": toee.spell_cure_serious_wounds, "spell_cls": utils_npc_spells_tactics.STCureSeriousWounds }\
+	, { "name": "Cure Critical Wounds", "spell_id": toee.spell_cure_critical_wounds, "spell_cls": utils_npc_spells_tactics.STCureCriticalWounds }\
 	]

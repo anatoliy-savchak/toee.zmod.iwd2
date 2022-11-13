@@ -1,5 +1,6 @@
 import toee, utils_npc, utils_npc_spells, utils_tactics, tpdp
 
+LOCAL_DEBUG_LEVEL = 2
 # returns error code !!!!!!
 
 EDOT_OK = 0
@@ -54,10 +55,10 @@ class SpellTactic(object):
 				if dist <= speed:
 					EDOT_OK
 				else:
-					print("{} ({}) EDOT_TARGET_TOO_FAR_FOR_APPROACH (range: {}, dist: {}, speed: {}) by {} on {}".format(type(self).__name__, toee.game.get_spell_mesline(self._get_spell_num()), self._spell_range, dist, speed, self.npc, target))
+					if LOCAL_DEBUG_LEVEL >= 2: print("{} ({}) EDOT_TARGET_TOO_FAR_FOR_APPROACH (range: {}, dist: {}, speed: {}) by {} on {}".format(type(self).__name__, toee.game.get_spell_mesline(self._get_spell_num()), self._spell_range, dist, speed, self.npc, target))
 					return EDOT_TARGET_TOO_FAR_FOR_APPROACH
 
-			print("{} ({}) EDOT_TARGET_TOO_FAR (range: {}, dist: {}) by {} on {}".format(type(self).__name__, toee.game.get_spell_mesline(self._get_spell_num()), self._spell_range, dist, self.npc, target))
+			if LOCAL_DEBUG_LEVEL >= 2: print("{} ({}) EDOT_TARGET_TOO_FAR (range: {}, dist: {}) by {} on {}".format(type(self).__name__, toee.game.get_spell_mesline(self._get_spell_num()), self._spell_range, dist, self.npc, target))
 			return EDOT_TARGET_TOO_FAR
 		return EDOT_OK
 
@@ -95,14 +96,14 @@ class SpellTactic(object):
 				return EDOT_CANNOT_BE_AFFECTED
 
 		q = self._except_spell_condition()
-		print('_except_spell_condition {} for {} of {}'.format(q, toee.game.get_spell_mesline(self._get_spell_num()), self.npc))
+		if LOCAL_DEBUG_LEVEL >= 2: print('_except_spell_condition {} for {} of {}'.format(q, toee.game.get_spell_mesline(self._get_spell_num()), self.npc))
 		if q: 
 			obj = self._subject()
-			print('_except_spell_condition {} {} for {} subject:  of {}'.format(q, toee.game.get_spell_mesline(self._get_spell_num()), obj, self.npc))
+			if LOCAL_DEBUG_LEVEL >= 2: print('_except_spell_condition {} {} for {} subject:  of {}'.format(q, toee.game.get_spell_mesline(self._get_spell_num()), obj, self.npc))
 			if (not obj): return EDOT_OK
 
 			has = obj.d20_query_has_spell_condition(q)
-			print('has:{} _except_spell_condition {} {} for {} subject:  of {}'.format(has, q, toee.game.get_spell_mesline(self._get_spell_num()), obj, self.npc))
+			if LOCAL_DEBUG_LEVEL >= 2: print('has:{} _except_spell_condition {} {} for {} subject:  of {}'.format(has, q, toee.game.get_spell_mesline(self._get_spell_num()), obj, self.npc))
 			if has:
 				return EDOT_CANNOT_BE_AFFECTED
 		return EDOT_OK
@@ -139,11 +140,13 @@ class SpellTactic(object):
 			return EDOT_NO_SPELLS_LEFT
 
 		result = self._check_already()
+		if LOCAL_DEBUG_LEVEL >= 2: print('_check_already: {}'.format(result))
 		if (result): 
 			return result
 
 		self._calc_spell_range()
 		result = self._check_uninhibited()
+		if LOCAL_DEBUG_LEVEL >= 2: print('_check_uninhibited: {}'.format(result))
 		if (result): 
 			return result
 
@@ -153,6 +156,7 @@ class SpellTactic(object):
 			is_personal = self._is_personal()
 			if (not is_personal):
 				result = self._check_distance()
+				if LOCAL_DEBUG_LEVEL >= 2: print('_check_distance: {}'.format(result))
 				if (result):
 					return result
 
@@ -454,3 +458,25 @@ class STCommand(SpellTactic):
 	def _get_spell_num(): return toee.spell_command
 	def _except_spell_condition(self): return toee.sp_Command
 	def _is_personal(self): return 0
+
+class STCureLightWounds(SpellTactic):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_cure_light_wounds
+	def _is_personal(self): return 0
+
+class STCureModerateWounds(STCureLightWounds):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_cure_moderate_wounds
+
+class STCureSeriousWounds(STCureLightWounds):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_cure_serious_wounds
+
+class STCureCriticalWounds(STCureLightWounds):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_cure_critical_wounds
+
+class STCureMinorWounds(STCureLightWounds):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_cure_minor_wounds
+

@@ -38,6 +38,7 @@ class Ctrl_21GAERNT_AR2100_Gaernat_Sharptooth(py21003_ar2100_npc_inst_classes_au
 			attachee.scripts[const_toee.sn_heartbeat] = 0
 		result = super(Ctrl_21GAERNT_AR2100_Gaernat_Sharptooth, self).heartbeat(attachee, triggerer)
 		return result 
+
 	pass
 
 class Ctrl_21WERRAT_AR2100_GTH01_01(py21003_ar2100_npc_inst_classes_auto.Ctrl_21WERRAT_AR2100_GTH01_01_Auto): # 21WERRAT 
@@ -59,6 +60,10 @@ class Ctrl_21WERBGR_AR2100_GTH01_06(py21003_ar2100_npc_inst_classes_auto.Ctrl_21
 	pass
 
 class Ctrl_20ORCSHM_AR2100_GTH01_07(py21003_ar2100_npc_inst_classes_auto.Ctrl_20ORCSHM_AR2100_GTH01_07_Auto): # 20ORCSHM 
+
+	def get_bcs_combat(self):
+		from bcs import scr_test_spells
+		return scr_test_spells.Script_TestSpells
 	pass
 
 class Ctrl_20ORCSHM_AR2100_GTH01_08(py21003_ar2100_npc_inst_classes_auto.Ctrl_20ORCSHM_AR2100_GTH01_08_Auto): # 20ORCSHM 

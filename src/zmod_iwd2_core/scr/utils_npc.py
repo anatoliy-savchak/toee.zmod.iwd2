@@ -29,11 +29,16 @@ def ensure_hp(npc, hp):
 	npc.obj_set_int(toee.obj_f_hp_pts, -65535)
 	npc.stat_level_get(toee.stat_hp_current)
 
-	npc.obj_set_int(toee.obj_f_hp_pts, 1)
+	pts = npc.obj_get_int(toee.obj_f_hp_pts)
 	hpc = npc.stat_level_get(toee.stat_hp_current)
-	adj = hp - (hpc - 2)
-	npc.obj_set_int(toee.obj_f_hp_pts, adj)
-	return adj
+	con_bonus = hpc - pts
+	pts_new = hp - con_bonus
+	npc.obj_set_int(toee.obj_f_hp_pts, pts_new)
+
+	pts_verify = npc.obj_get_int(toee.obj_f_hp_pts)
+	hpc_verify = npc.stat_level_get(toee.stat_hp_current)
+	print('ensure_hp({}): pts: {}, hpc: {}, con_bonus: {}, pts_new: {}, pts_verify: {}, hpc_verify: {} for {}'.format(hp, pts, hpc, con_bonus, pts_new, pts_verify, hpc_verify, npc))
+	return pts_new
 
 def char_class_get_hit_dice(char_class):
 	assert isinstance(char_class, int)

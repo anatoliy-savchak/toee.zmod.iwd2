@@ -41,7 +41,7 @@ class Ctrl_21GAERNT_AR2100_Gaernat_Sharptooth_Auto(py21002_ar2100_npc_classes.Ct
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 	def script_dialog(self, attachee, triggerer):
 		print("script_dialog 21GAERNT")
@@ -118,7 +118,7 @@ class Ctrl_21WERRAT_AR2100_GTH01_01_Auto(py21002_ar2100_npc_classes.Ctrl_21WERRA
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21WERRAT_AR2100_GTH01_03_Auto(py21002_ar2100_npc_classes.Ctrl_21WERRAT): # 21WERRAT 
 	@classmethod
@@ -130,7 +130,7 @@ class Ctrl_21WERRAT_AR2100_GTH01_03_Auto(py21002_ar2100_npc_classes.Ctrl_21WERRA
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21WERRAT_AR2100_GTH01_09_Auto(py21002_ar2100_npc_classes.Ctrl_21WERRAT): # 21WERRAT 
 	@classmethod
@@ -142,7 +142,7 @@ class Ctrl_21WERRAT_AR2100_GTH01_09_Auto(py21002_ar2100_npc_classes.Ctrl_21WERRA
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21WERBGR_AR2100_GTH01_02_Auto(py21002_ar2100_npc_classes.Ctrl_21WERBGR): # 21WERBGR 
 	@classmethod
@@ -154,7 +154,7 @@ class Ctrl_21WERBGR_AR2100_GTH01_02_Auto(py21002_ar2100_npc_classes.Ctrl_21WERBG
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21WERBGR_AR2100_GTH01_10_Auto(py21002_ar2100_npc_classes.Ctrl_21WERBGR): # 21WERBGR 
 	@classmethod
@@ -166,7 +166,7 @@ class Ctrl_21WERBGR_AR2100_GTH01_10_Auto(py21002_ar2100_npc_classes.Ctrl_21WERBG
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21WERBGR_AR2100_GTH01_06_Auto(py21002_ar2100_npc_classes.Ctrl_21WERBGR): # 21WERBGR 
 	@classmethod
@@ -178,7 +178,7 @@ class Ctrl_21WERBGR_AR2100_GTH01_06_Auto(py21002_ar2100_npc_classes.Ctrl_21WERBG
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_20ORCSHM_AR2100_GTH01_07_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCSHM): # 20ORCSHM 
 	@classmethod
@@ -190,7 +190,7 @@ class Ctrl_20ORCSHM_AR2100_GTH01_07_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCSH
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_20orcsh1.Script_20ORCSH1
+		return None # scr_20orcsh1.Script_20ORCSH1
 
 class Ctrl_20ORCSHM_AR2100_GTH01_08_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCSHM): # 20ORCSHM 
 	@classmethod
@@ -202,7 +202,7 @@ class Ctrl_20ORCSHM_AR2100_GTH01_08_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCSH
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_20orcsh1.Script_20ORCSH1
+		return None # scr_20orcsh1.Script_20ORCSH1
 
 class Ctrl_20ORCSHM_AR2100_GTH01_11_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCSHM): # 20ORCSHM 
 	@classmethod
@@ -214,7 +214,7 @@ class Ctrl_20ORCSHM_AR2100_GTH01_11_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCSH
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_20orcsh1.Script_20ORCSH1
+		return None # scr_20orcsh1.Script_20ORCSH1
 
 class Ctrl_20ORCACH_AR2100_GTH01_05_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCACH): # 20ORCACH 
 	@classmethod
@@ -226,7 +226,7 @@ class Ctrl_20ORCACH_AR2100_GTH01_05_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCAC
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatkn.Script_00AATKN
+		return None # scr_00aatkn.Script_00AATKN
 
 class Ctrl_20ORCACH_AR2100_GTH01_04_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCACH): # 20ORCACH 
 	@classmethod
@@ -238,7 +238,7 @@ class Ctrl_20ORCACH_AR2100_GTH01_04_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCAC
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatkn.Script_00AATKN
+		return None # scr_00aatkn.Script_00AATKN
 
 class Ctrl_20ORCACH_AR2100_GTH01_12_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCACH): # 20ORCACH 
 	@classmethod
@@ -250,7 +250,7 @@ class Ctrl_20ORCACH_AR2100_GTH01_12_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCAC
 		return 1 # SetTeamBit(TEAM_1_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatkn.Script_00AATKN
+		return None # scr_00aatkn.Script_00AATKN
 
 class Ctrl_21WERRAT_AR2100_GTH02_10_Auto(py21002_ar2100_npc_classes.Ctrl_21WERRAT): # 21WERRAT 
 	@classmethod
@@ -262,7 +262,7 @@ class Ctrl_21WERRAT_AR2100_GTH02_10_Auto(py21002_ar2100_npc_classes.Ctrl_21WERRA
 		return 2 # SetTeamBit(TEAM_2_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21WERRAT_AR2100_GTH02_01_Auto(py21002_ar2100_npc_classes.Ctrl_21WERRAT): # 21WERRAT 
 	@classmethod
@@ -274,7 +274,7 @@ class Ctrl_21WERRAT_AR2100_GTH02_01_Auto(py21002_ar2100_npc_classes.Ctrl_21WERRA
 		return 2 # SetTeamBit(TEAM_2_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21WERBGR_AR2100_GTH02_09_Auto(py21002_ar2100_npc_classes.Ctrl_21WERBGR): # 21WERBGR 
 	@classmethod
@@ -286,7 +286,7 @@ class Ctrl_21WERBGR_AR2100_GTH02_09_Auto(py21002_ar2100_npc_classes.Ctrl_21WERBG
 		return 2 # SetTeamBit(TEAM_2_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21WERBGR_AR2100_GTH02_02_Auto(py21002_ar2100_npc_classes.Ctrl_21WERBGR): # 21WERBGR 
 	@classmethod
@@ -298,7 +298,7 @@ class Ctrl_21WERBGR_AR2100_GTH02_02_Auto(py21002_ar2100_npc_classes.Ctrl_21WERBG
 		return 2 # SetTeamBit(TEAM_2_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_20ORCSHM_AR2100_GTH02_08_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCSHM): # 20ORCSHM 
 	@classmethod
@@ -310,7 +310,7 @@ class Ctrl_20ORCSHM_AR2100_GTH02_08_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCSH
 		return 2 # SetTeamBit(TEAM_2_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_20orcsh1.Script_20ORCSH1
+		return None # scr_20orcsh1.Script_20ORCSH1
 
 class Ctrl_20ORCSHM_AR2100_GTH02_07_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCSHM): # 20ORCSHM 
 	@classmethod
@@ -322,7 +322,7 @@ class Ctrl_20ORCSHM_AR2100_GTH02_07_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCSH
 		return 2 # SetTeamBit(TEAM_2_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_20orcsh1.Script_20ORCSH1
+		return None # scr_20orcsh1.Script_20ORCSH1
 
 class Ctrl_20ORCACH_AR2100_GTH02_06_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCACH): # 20ORCACH 
 	@classmethod
@@ -334,7 +334,7 @@ class Ctrl_20ORCACH_AR2100_GTH02_06_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCAC
 		return 2 # SetTeamBit(TEAM_2_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatkn.Script_00AATKN
+		return None # scr_00aatkn.Script_00AATKN
 
 class Ctrl_20ORCACH_AR2100_GTH02_05_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCACH): # 20ORCACH 
 	@classmethod
@@ -346,7 +346,7 @@ class Ctrl_20ORCACH_AR2100_GTH02_05_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCAC
 		return 2 # SetTeamBit(TEAM_2_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatkn.Script_00AATKN
+		return None # scr_00aatkn.Script_00AATKN
 
 class Ctrl_20ORCA3_AR2100_GTH02_03_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCA3): # 20ORCA3 
 	@classmethod
@@ -358,7 +358,7 @@ class Ctrl_20ORCA3_AR2100_GTH02_03_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCA3)
 		return 2 # SetTeamBit(TEAM_2_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatkn.Script_00AATKN
+		return None # scr_00aatkn.Script_00AATKN
 
 class Ctrl_20ORCA3_AR2100_GTH02_04_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCA3): # 20ORCA3 
 	@classmethod
@@ -370,7 +370,7 @@ class Ctrl_20ORCA3_AR2100_GTH02_04_Auto(py21002_ar2100_npc_classes.Ctrl_20ORCA3)
 		return 2 # SetTeamBit(TEAM_2_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatkn.Script_00AATKN
+		return None # scr_00aatkn.Script_00AATKN
 
 class Ctrl_21OGR_AR2100_Ogre_Auto(py21002_ar2100_npc_classes.Ctrl_21OGR): # 21OGR 
 	@classmethod
@@ -382,7 +382,7 @@ class Ctrl_21OGR_AR2100_Ogre_Auto(py21002_ar2100_npc_classes.Ctrl_21OGR): # 21OG
 		return 2 # SetTeamBit(TEAM_2_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21SPDQN_AR2100_Spider_Queen_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDQN): # 21SPDQN 
 	@classmethod
@@ -394,7 +394,7 @@ class Ctrl_21SPDQN_AR2100_Spider_Queen_Auto(py21002_ar2100_npc_classes.Ctrl_21SP
 		return 3 # SetTeamBit(TEAM_3_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21SPDSML_AR2100_Spider_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML): # 21SPDSML 
 	@classmethod
@@ -406,7 +406,7 @@ class Ctrl_21SPDSML_AR2100_Spider_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML)
 		return 3 # SetTeamBit(TEAM_3_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21SPDSML_AR2100_Spider_2_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML): # 21SPDSML 
 	@classmethod
@@ -418,7 +418,7 @@ class Ctrl_21SPDSML_AR2100_Spider_2_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSM
 		return 3 # SetTeamBit(TEAM_3_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21SPDSML_AR2100_Spider_3_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML): # 21SPDSML 
 	@classmethod
@@ -430,7 +430,7 @@ class Ctrl_21SPDSML_AR2100_Spider_3_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSM
 		return 3 # SetTeamBit(TEAM_3_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21SPDSML_AR2100_Spider_4_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML): # 21SPDSML 
 	@classmethod
@@ -442,7 +442,7 @@ class Ctrl_21SPDSML_AR2100_Spider_4_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSM
 		return 3 # SetTeamBit(TEAM_3_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21SPDSML_AR2100_Spider_5_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML): # 21SPDSML 
 	@classmethod
@@ -454,7 +454,7 @@ class Ctrl_21SPDSML_AR2100_Spider_5_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSM
 		return 3 # SetTeamBit(TEAM_3_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21SPDSML_AR2100_Spider_6_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSML): # 21SPDSML 
 	@classmethod
@@ -466,7 +466,7 @@ class Ctrl_21SPDSML_AR2100_Spider_6_Auto(py21002_ar2100_npc_classes.Ctrl_21SPDSM
 		return 3 # SetTeamBit(TEAM_3_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21HGHSNK_AR2100_Highland_Snake_Auto(py21002_ar2100_npc_classes.Ctrl_21HGHSNK): # 21HGHSNK 
 	@classmethod
@@ -478,7 +478,7 @@ class Ctrl_21HGHSNK_AR2100_Highland_Snake_Auto(py21002_ar2100_npc_classes.Ctrl_2
 		return 0 # no team script
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21HGHSNK_AR2100_Highland_Snake_2_Auto(py21002_ar2100_npc_classes.Ctrl_21HGHSNK): # 21HGHSNK 
 	@classmethod
@@ -490,7 +490,7 @@ class Ctrl_21HGHSNK_AR2100_Highland_Snake_2_Auto(py21002_ar2100_npc_classes.Ctrl
 		return 0 # no team script
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21HGHSNK_AR2100_Highland_Snake_3_Auto(py21002_ar2100_npc_classes.Ctrl_21HGHSNK): # 21HGHSNK 
 	@classmethod
@@ -502,7 +502,7 @@ class Ctrl_21HGHSNK_AR2100_Highland_Snake_3_Auto(py21002_ar2100_npc_classes.Ctrl
 		return 0 # no team script
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21HRP_AR2100_Harpy_Auto(py21002_ar2100_npc_classes.Ctrl_21HRP): # 21HRP 
 	@classmethod
@@ -514,7 +514,7 @@ class Ctrl_21HRP_AR2100_Harpy_Auto(py21002_ar2100_npc_classes.Ctrl_21HRP): # 21H
 		return 0 # no team script
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21HRP_AR2100_Harpy_2_Auto(py21002_ar2100_npc_classes.Ctrl_21HRP): # 21HRP 
 	@classmethod
@@ -526,7 +526,7 @@ class Ctrl_21HRP_AR2100_Harpy_2_Auto(py21002_ar2100_npc_classes.Ctrl_21HRP): # 2
 		return 0 # no team script
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21HRP_AR2100_Harpy_3_Auto(py21002_ar2100_npc_classes.Ctrl_21HRP): # 21HRP 
 	@classmethod
@@ -538,7 +538,7 @@ class Ctrl_21HRP_AR2100_Harpy_3_Auto(py21002_ar2100_npc_classes.Ctrl_21HRP): # 2
 		return 0 # no team script
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21HRP_AR2100_Harpy_4_Auto(py21002_ar2100_npc_classes.Ctrl_21HRP): # 21HRP 
 	@classmethod
@@ -550,7 +550,7 @@ class Ctrl_21HRP_AR2100_Harpy_4_Auto(py21002_ar2100_npc_classes.Ctrl_21HRP): # 2
 		return 0 # no team script
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21VERB_AR2100_Verbeeg_Auto(py21002_ar2100_npc_classes.Ctrl_21VERB): # 21VERB 
 	@classmethod
@@ -562,7 +562,7 @@ class Ctrl_21VERB_AR2100_Verbeeg_Auto(py21002_ar2100_npc_classes.Ctrl_21VERB): #
 		return 0 # no team script
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21VERB_AR2100_Verbeeg_2_Auto(py21002_ar2100_npc_classes.Ctrl_21VERB): # 21VERB 
 	@classmethod
@@ -574,7 +574,7 @@ class Ctrl_21VERB_AR2100_Verbeeg_2_Auto(py21002_ar2100_npc_classes.Ctrl_21VERB):
 		return 0 # no team script
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21VERB_AR2100_Verbeeg_3_Auto(py21002_ar2100_npc_classes.Ctrl_21VERB): # 21VERB 
 	@classmethod
@@ -586,7 +586,7 @@ class Ctrl_21VERB_AR2100_Verbeeg_3_Auto(py21002_ar2100_npc_classes.Ctrl_21VERB):
 		return 0 # no team script
 	
 	def get_bcs_combat(self):
-		return scr_00aatgn.Script_00AATGN
+		return None # scr_00aatgn.Script_00AATGN
 
 class Ctrl_21WERRAT_AR2100_Wererat_Scripted_Event_Auto(py21002_ar2100_npc_classes.Ctrl_21WERRAT): # 21WERRAT 
 	@classmethod
@@ -610,7 +610,7 @@ class Ctrl_20EMMA_AR2100_Emma_Auto(py21002_ar2100_npc_classes.Ctrl_20EMMA): # 20
 		return 0 # no team script
 	
 	def get_bcs_combat(self):
-		return scr_21emmac.Script_21EMMAC
+		return None # scr_21emmac.Script_21EMMAC
 
 	def script_dialog(self, attachee, triggerer):
 		print("script_dialog 20NEWEMM")
@@ -1212,7 +1212,7 @@ class Ctrl_20KRIS_AR2100_Kristian_Auto(py21002_ar2100_npc_classes.Ctrl_20KRIS): 
 		return 9 # SetTeamBit(TEAM_9_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_21krisc.Script_21KRISC
+		return None # scr_21krisc.Script_21KRISC
 
 class Ctrl_20KNTVIR_AR2100_WarriorofVirtue1_Auto(py21002_ar2100_npc_classes.Ctrl_20KNTVIR): # 20KNTVIR 
 	@classmethod
@@ -1224,7 +1224,7 @@ class Ctrl_20KNTVIR_AR2100_WarriorofVirtue1_Auto(py21002_ar2100_npc_classes.Ctrl
 		return 9 # SetTeamBit(TEAM_9_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_21wovc.Script_21WOVC
+		return None # scr_21wovc.Script_21WOVC
 
 class Ctrl_20KNTVIR_AR2100_WarriorofVirtue2_Auto(py21002_ar2100_npc_classes.Ctrl_20KNTVIR): # 20KNTVIR 
 	@classmethod
@@ -1236,7 +1236,7 @@ class Ctrl_20KNTVIR_AR2100_WarriorofVirtue2_Auto(py21002_ar2100_npc_classes.Ctrl
 		return 9 # SetTeamBit(TEAM_9_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_21wovc.Script_21WOVC
+		return None # scr_21wovc.Script_21WOVC
 
 class Ctrl_20KNTVIR_AR2100_WarriorofVirtue3_Auto(py21002_ar2100_npc_classes.Ctrl_20KNTVIR): # 20KNTVIR 
 	@classmethod
@@ -1248,5 +1248,5 @@ class Ctrl_20KNTVIR_AR2100_WarriorofVirtue3_Auto(py21002_ar2100_npc_classes.Ctrl
 		return 9 # SetTeamBit(TEAM_9_BIT,TRUE)
 	
 	def get_bcs_combat(self):
-		return scr_21wovc.Script_21WOVC
+		return None # scr_21wovc.Script_21WOVC
 

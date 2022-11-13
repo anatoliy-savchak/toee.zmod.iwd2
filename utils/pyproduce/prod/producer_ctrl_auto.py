@@ -982,6 +982,7 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
         self.indent()
         spell_root = self.cre["Spells"]
         if spell_root:
+            spell_added_count = 0
             assert isinstance(spell_root, dict)
             for caster_clas, class_spells in spell_root.items():
                 caster_class = self.caster_class_to_class_toee(caster_clas)
@@ -999,7 +1000,10 @@ class ProducerOfCtrlAuto(producer_base.ProducerOfFile):
                             self.writeline(f'# utils_npc_spells_inf.ctrl_add_spell(self, "{spell_rec["SpellName"]}", {spell_rec["Memorized"]}, {spell_rec["Remaining"]}, stat_level)')
                         else:
                             self.writeline(f'utils_npc_spells_inf.ctrl_add_spell(self, "{spell_name}", {spell_rec["Memorized"]}, {spell_rec["Remaining"]}, stat_level, {spell_level}) # {spell_rec["SpellName"]}')
+                            spell_added_count += 1
                     self.writeline()
+            if spell_added_count:
+                self.writeline('self.spells.memorize_all(npc)')
 
         self.writeline("return")
         self.indent(False)

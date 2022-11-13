@@ -401,9 +401,11 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 		return
 
 	def actor_created(self, npc, ctrl):
-		super(CtrlAR2100, self).actor_created(npc, ctrl)
+		self.actor_created_test_spells(npc, ctrl)
+		#super(CtrlAR2100, self).actor_created(npc, ctrl)
+
 		# debug only
-		npc.npc_flag_unset(toee.ONF_KOS)
+		#npc.npc_flag_unset(toee.ONF_KOS)
 		return
 
 	def authorize_actor(self, ctrl, name = None):
@@ -423,7 +425,26 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 	def authorize_actor_test_spells(self, ctrl, name = None):
 		result = super(CtrlAR2100, self).authorize_actor(ctrl, name)
 		if result:
+			if name.startswith("GTH01_07"): return 1 # Shaman
+			return 0
+			
 			if name.startswith("GTH01"): return 1
 			if name == "Gaernat Sharptooth": return 1
 			return 0
 		return result
+
+	def actor_created_test_spells(self, npc, ctrl):
+		super(CtrlAR2100, self).actor_created(npc, ctrl)
+		#print('isinstance(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_20ORCSHM_AR2100_GTH01_07): {}, cls: {}'.format(isinstance(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_20ORCSHM_AR2100_GTH01_07), ctrl))
+		if isinstance(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_20ORCSHM_AR2100_GTH01_07):
+			print('moving {}'.format(npc))
+			#debug.breakp('')
+			npc.move(utils_obj.sec2loc(475, 478)) # in the middle tp test simple spells
+			print('Applying damage 6 to {}'.format(npc))
+			npc.obj_set_int(toee.obj_f_hp_damage, 6)
+			print('HP: {} out of {} of {}'.format(npc.stat_level_get(toee.stat_hp_current), npc.stat_level_get(toee.stat_hp_max), npc))
+			#debug.breakp('')
+
+		# debug only
+		#npc.npc_flag_unset(toee.ONF_KOS)
+		return

@@ -24,7 +24,7 @@ class Script_TestSpells(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		
 		if self.iForceMarkedSpell("MARKED_SPELL") \
 			 and self.iSetSpellTarget("Nothing") \
-			 and self.iHPLostGT("Myself", 25):
+			 and self.iHPLostGT("Myself", 5):
 			
 			self.iMarkSpellAndObject("Cure Moderate Wounds", "Myself", const_inf.SPELLCAST_IGNORE_SEE)
 		

@@ -481,6 +481,7 @@ class Ctrl_20ORCSHM_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCSHM
 		utils_npc_spells_inf.ctrl_add_spell(self, "Chant", 1, 1, stat_level, 2) # Chant
 		utils_npc_spells_inf.ctrl_add_spell(self, "Summon Monster II", 1, 1, stat_level, 2) # Summon Monster II
 		
+		self.spells.memorize_all(npc)
 		return
 	
 class Ctrl_20ORCACH_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20ORCACH 
@@ -1519,6 +1520,7 @@ class Ctrl_20EMMA_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20EMMA
 		#Level: 4
 		utils_npc_spells_inf.ctrl_add_spell(self, "Cure Critical Wounds", 2, 2, stat_level, 4) # Cure Critical Wounds
 		
+		self.spells.memorize_all(npc)
 		return
 	
 class Ctrl_20KRIS_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 20KRIS 

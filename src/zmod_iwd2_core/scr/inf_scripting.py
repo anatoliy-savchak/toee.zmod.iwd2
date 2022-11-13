@@ -737,7 +737,7 @@ class InfScriptSupport:
 		"""
 		HPLost(O:Object*, I:Hit Points*)
 		"""
-		obj, ctrl = self.get_context()._get_ie_object(obj_name)
+		obj, ctrl = self.get_context()._get_ie_object(obj)
 		result = 0
 		if obj:
 			result = obj.obj_get_int(toee.obj_f_hp_damage) == int(hit_points)
@@ -748,10 +748,11 @@ class InfScriptSupport:
 		"""
 		HPLostGT(O:Object*, I:Hit Points*)
 		"""
-		obj, ctrl = self.get_context()._get_ie_object(obj_name)
+		npc, ctrl = self.get_context()._get_ie_object(obj)
 		result = 0
-		if obj:
-			result = obj.obj_get_int(toee.obj_f_hp_damage) > int(hit_points)
+		if npc:
+			result = npc.obj_get_int(toee.obj_f_hp_damage) > int(hit_points)
+		print('iHPLostGT() = {} of {}'.format(obj, hit_points, result, npc))
 		return result
 	
 	@dump_args

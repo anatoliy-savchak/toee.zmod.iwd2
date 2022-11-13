@@ -1,5 +1,6 @@
 import toee, debug
 import ctrl_behaviour, inf_scripting, ctrl_daemon, utils_storage, utils_npc
+import utils_npc_spells_inf, utils_query, const_inf, utils_npc_spells_tactics, utils_tactics
 
 __metaclass__ = type
 
@@ -115,17 +116,69 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		SetSpellTarget(O:Object*)
 		Actually as per scripts_index.json there are none other than Nothing
 		"""
-		if str(spell).upper() == 'NOTHING':
+		if str(obj).upper() == 'NOTHING':
 			self.vars['iMarkedSpellTarget'] = None
 		else:
-			raise Exception("iForceMarkedSpell - Unknown spell: {}".format(spell))
-		return
+			raise Exception("iForceMarkedSpell - Unknown obj: {}".format(obj))
+		return 1
 
 	@inf_scripting.dump_args
 	def iMarkSpellAndObject(self, spells, obj, flags):
 		"""
 		MarkSpellAndObject(S:Spells*, O:Object*, I:Flags*SplCast)
 		"""
+		flags = int(flags)
+		query = utils_query.NPCQuery(self, obj)
+		qg = query.gen()
+		npcc = next(qg)
+		del qg
+		qg = None
+		print('Target: {}'.format(npcc))
+		if npcc is None:
+			print('No target')
+			return
+		
+		if isinstance(spells, list):
+			spells2 = []
+			for spell1 in spells:
+				spell_id = utils_npc_spells_inf.get_spell_id(spell1)
+				if not spell_id: continue
+				spells2.append(spell1)
+
+			l = len(spells2)
+			if flags & const_inf.SPELLCAST_RANDOM or l == 1:
+				rand = 0 if l == 1 else toee.game.random_range(0, l)
+				self.iMarkSpellAndObject(spells2[rand], obj, flags)
+			else:
+				for spell1 in spells2:
+					self.iMarkSpellAndObject(spell1, obj, flags)
+			return
+
+		spell_rec = utils_npc_spells_inf.get_spell_rec(spells)
+		if not spell_rec:
+			return
+		
+		spell_name = spell_rec["name"]
+		spell_cls = spell_rec["spell_cls"]
+		if not spell_rec:
+			print('spell_cls not found')
+			return
+		
+		#assert isinstance(spell_cls, utils_npc_spells_tactics.SpellTactic)
+		npc = self.npc_get()
+
+		spell_obj = spell_cls(npc=npc, spells=self.spells, tacs=None, target = None, options = None)
+		assert isinstance(spell_obj, utils_npc_spells_tactics.SpellTactic)
+
+		for targtup in query.gen():
+			spell_obj.target = targtup[0]
+			err = spell_obj.execute(mode_blank = True)
+			print('iMarkSpellAndObject spell_obj.execute(blank) = {} ({}) of {} / {}'.format(err, spell_obj, npc, self))
+			if err:
+				continue
+			self.vars['iMarkedSpellTarget'] = targtup
+			self.vars['iMarkedSpell'] = spell_name
+			return True
 
 		return
 
@@ -265,16 +318,27 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 	def create_tactics(self, npc):
 		assert isinstance(npc, toee.PyObjHandle)
 
-		bcs_combat = self.vars.get("bcs_combat")
+		tac = None
+		print('create_tactics IE')
+		debug.breakp('create_tactics IE')
+		bcs_combat = self.get_bcs_combat()
+		print('bcs_combat: {}'.format(bcs_combat))
 		if bcs_combat:
 			self.vars['iMarkedSpellTarget'] = None
 			self.vars['iMarkedSpell'] = None
 
-			bcs_combat.do_execute_simple()
+			bcs_combat.do_execute_simple(self)
 
-			if self.vars['iMarkedSpell']:
-				pass
-		return None
+			marked_spell_target = self.vars.get('iMarkedSpellTarget')
+			marked_spell = self.vars.get('iMarkedSpell')
+			if marked_spell_target and marked_spell:
+				tac = self.execute_market_spell_to_tac(npc)
+
+			debug.breakp('create_tactics IE END')
+
+			self.vars['iMarkedSpellTarget'] = None
+			self.vars['iMarkedSpell'] = None
+		return tac
 
 	def setup_char(self, npc):
 		_dir = dir(self)
@@ -303,3 +367,42 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 	def get_attacks_per_round(self, npc):
 		# NumberOfAttacks: 1
 		return npc.get_base_attack_bonus() // 5 + 1
+
+	def get_bcs_general(self): return None
+
+	def get_bcs_class(self): return None
+
+	def get_bcs_combat(self): return None
+
+	def get_bcs_movement(self): return None
+
+	def get_bcs_team(self): return None
+
+	def get_bcs_special_one(self): return None
+	
+	def execute_market_spell_to_tac(self, npc):
+		marked_spell_target = self.vars.get('iMarkedSpellTarget')
+		marked_spell = self.vars.get('iMarkedSpell')
+		print('execute_market_spell_to_tac iMarkedSpellTarget: {}, marked_spell: {} of {}'.format(marked_spell_target, marked_spell, npc))
+
+		spell_rec = utils_npc_spells_inf.get_spell_rec(marked_spell)
+		if not spell_rec:
+			print('marked_spell: {} not found!'.format(marked_spell))
+			return
+		
+		spell_cls = spell_rec["spell_cls"]
+		if not spell_rec:
+			print('spell_cls not found')
+			return
+		
+		target = marked_spell_target[0]
+		tac = utils_tactics.TacticsHelper(self.get_name())
+		spell_obj = spell_cls(npc=npc, spells=self.spells, tacs=tac, target = target, options = None)
+		assert isinstance(spell_obj, utils_npc_spells_tactics.SpellTactic)
+
+		err = spell_obj.execute(mode_blank = False)
+		print('execute_market_spell_to_tac spell_obj.execute(blank) = {} ({}) of {} / {}'.format(err, spell_obj, npc, self))
+		if err:
+			return None
+		print('tacs: {}'.format(tac))
+		return tac

@@ -473,7 +473,8 @@ class CtrlBehaviourAI(CtrlBehaviour):
 		npc_radius = utils_npc.npc_get_radius_ft(npc)
 		npc_reach = utils_npc.npc_get_reach(npc)
 
-		critters_all = toee.game.obj_list_vicinity(npc.location, toee.OLC_CRITTERS)
+		critters_all = [obj for obj in toee.game.obj_list_vicinity(npc.location, toee.OLC_CRITTERS) if obj != npc]
+		critters_all = sorted(critters_all, key = lambda o: npc.distance_to(o))
 
 		critters_friendly = list()
 		critters_unfriendly = list()
@@ -489,7 +490,7 @@ class CtrlBehaviourAI(CtrlBehaviour):
 				continue
 			critters_unfriendly.append(obj)
 
-		critters_unfriendly = sorted(critters_unfriendly, key = lambda o: npc.distance_to(o))
+		#critters_unfriendly = sorted(critters_unfriendly, key = lambda o: npc.distance_to(o))
 		foes_can_sense = list()
 		foes_can_los = list()
 		for obj in critters_unfriendly:
@@ -504,7 +505,7 @@ class CtrlBehaviourAI(CtrlBehaviour):
 					continue
 			else:
 				foes_can_sense.append(obj)
-				if npc.has_los(obj):
+				if npc.has_los(obj) or npc.has_loa(obj):
 					foes_can_los.append(obj)
 
 			foes.append(obj)
@@ -537,11 +538,18 @@ class CtrlBehaviourAI(CtrlBehaviour):
 				self._vars_tactics["can_move_out"] = can_move_out
 				if can_move_out:
 					for o in foes_can_sense:
-						can_path_straight = npc.can_find_path_to_obj(o, toee.PQF_STRAIGHT_LINE)
-						can_path = can_path_straight if can_path_straight else npc.can_find_path_to_obj(o)
+						print("checking can_path from {} to {}".format(npc, o))
+						can_path_err = npc.cant_approach(o, toee.D20A_MOVE, 0)
+						can_path_straight1 = npc.can_find_path_to_obj(o, toee.PQF_STRAIGHT_LINE)
+						can_path_straight_err = 1 #npc.cant_approach(o, toee.D20A_CHARGE, 0)
+						can_path_straight = not can_path_straight_err
+						#can_path = can_path_straight if can_path_straight else npc.can_find_path_to_obj(o)
+						can_path = not can_path_err
 						if reckon_debug_print >= 2: 
-							print("can_path from {} to {} = {}".format(npc, o, can_path))
-							print("can_path_straight from {} to {} = {}".format(npc, o, can_path_straight))
+							print("can_path from {} to {} = {}, err: {}".format(npc, o, can_path, can_path_err))
+							print("can_path_straight from {} to {} = {}, err: {}, can1: {}".format(npc, o, can_path_straight, can_path_straight_err, can_path_straight1))
+							#can_path_err = npc.cant_approach(o)
+							#print("can_path2 from {} to {} = {}, err: {}".format(npc, o, can_path, can_path_err))
 						if can_path or can_path_straight:
 							#can_path_straight = npc.can_find_path_to_obj(o, toee.PQF_STRAIGHT_LINE)
 
@@ -573,6 +581,7 @@ class CtrlBehaviourAI(CtrlBehaviour):
 		self._vars_tactics["foes_could_be_approached"] = foes_could_be_approached
 		self._vars_tactics["foes"] = foes
 		self._vars_tactics["friends"] = critters_friendly
+		self._vars_tactics["critters_all"] = critters_all
 		return
 
 	def is_reckon_debug_print(self, npc):
@@ -697,7 +706,7 @@ class CtrlBehaviourAI(CtrlBehaviour):
 		if tac:
 			return tac
 
-		if is_focus_melee != 2 or is_focus_ranged:
+		if is_focus_ranged and is_focus_melee != 2:
 			allowed_switch_to_melee = is_focus_ranged < 2 and not melee_checked
 			tac, target, kind = self.create_tactics_default_ranged(npc, allowed_switch_to_melee)
 
@@ -765,7 +774,7 @@ class CtrlBehaviourAI(CtrlBehaviour):
 			# charge routine
 			if 1:
 				if not kind in ("foes_adjacent", "foes_threatening"):
-					add_charge = True
+					add_charge = False if self.vars.get('disable_charge') else True
 
 				if add_charge:
 					tac.add_charge()
@@ -937,20 +946,28 @@ class CtrlBehaviourAI(CtrlBehaviour):
 
 		assert isinstance(npc, toee.PyObjHandle)
 		foes_adjacent, foes_threatening, foes_can_sense, foes_could_be_approached, foes = self.get_recon_vars()
+		foes_can_los = self._vars_tactics.get("foes_can_los")
 
 		target = toee.OBJ_HANDLE_NULL
 		kind = "not determined"
 		while (not target):
 			if (foes_threatening): 
-				target = self.recon_sort_npcs(foes_threatening, self.recon_apprise_vulnereble)[0]
+				target = self.recon_sort_npcs(foes_threatening, self.recon_apprise_vulnereble_ranged)[0]
 				if (target): 
 					kind = "foes_threatening"
 					break
 
+			if (foes_can_los):
+				foes_can_los_sorted = self.recon_sort_npcs(foes_can_los, self.recon_apprise_vulnereble_ranged)
+				target = foes_can_los_sorted[0]
+				if target:
+					kind = "foes_can_los"
+					break
+
 			if (foes_can_sense):
-				foes_can_sense_sorted = self.recon_sort_npcs(foes_can_sense, self.recon_apprise_vulnereble)
+				foes_can_sense_sorted = self.recon_sort_npcs(foes_can_sense, self.recon_apprise_vulnereble_ranged)
 				for obj in foes_can_sense_sorted:
-					if npc.has_los(obj):
+					if npc.has_los(obj) or npc.has_loa(obj):
 						target = obj
 						kind = "foes_can_sense_has_los"
 						break
@@ -984,19 +1001,29 @@ class CtrlBehaviourAI(CtrlBehaviour):
 			print('tactics_seek_enemy can_see_friend: {} of {} for {}'.format(can_see_friend, friend, npc))
 			if not can_see_friend:
 				continue
-			path_len_to_friend = npc.can_find_path_to_obj(friend)
-			print('tactics_seek_enemy path_len_to_friend: {} of {} for {}'.format(path_len_to_friend, friend, npc))
-			if not path_len_to_friend:
-				continue
+			path_len_to_friend = 0
+			can_approach_friend = True
+			can_approach_friend_err = npc.cant_approach(friend, toee.D20A_DOUBLE_MOVE, 1)
+			if can_approach_friend_err:
+				can_approach_friend_err = npc.cant_approach(friend, toee.D20A_MOVE, 1)
+			can_approach_friend = not can_approach_friend_err
+			print('tactics_seek_enemy can_approach_friend: {}, can_approach_friend_err: {} of {} for {}'.format(can_approach_friend, can_approach_friend_err, friend, npc))
+			if can_approach_friend and False:
+				path_len_to_friend = npc.can_find_path_to_obj(friend)
+				print('tactics_seek_enemy path_len_to_friend: {} of {} for {}'.format(path_len_to_friend, friend, npc))
+				if not path_len_to_friend:
+					can_approach_friend = False
 
-			if path_len_to_friend > movement_speed * 2:
-				continue
+				if can_approach_friend and path_len_to_friend > movement_speed * 2:
+					can_approach_friend = False
 
+			if not can_approach_friend:
+				continue
 			closest_party_distance = 1000
 			closest_party_member = None
 			for foe in toee.game.party:
-				if not friend.can_see(foe): continue
 				if not utils_npc.npc_could_be_attacked(foe): continue
+				if not (friend.can_see(foe) or friend.has_loa(foe)): continue
 				foe_dist = friend.distance_to(foe)
 				if foe_dist < closest_party_distance:
 					closest_party_member = foe
@@ -1010,14 +1037,15 @@ class CtrlBehaviourAI(CtrlBehaviour):
 			# sort by closest to the party
 			aware_friends.sort(key = lambda t: t[1], reverse = True)
 
-			tup = aware_friends[0]
+			targtup = aware_friends[0]
+			print('tactics_seek_enemy decided - approaching {}, total defence'.format(targtup))
 			tac = utils_tactics.TacticsHelper(self.get_name())
 			tac.add_clear_target()
-			tac.add_target_obj(tup[0].id)
+			tac.add_target_obj(targtup[0].id)
 			tac.add_approach()
-			tac.add_d20_action(toee.D20A_SEARCH, 0)
-			tac.add_halt()
+			#tac.add_d20_action(toee.D20A_SEARCH, 0)
 			tac.add_total_defence()
+			tac.add_halt()
 			return tac
 		else:
 			tac = utils_tactics.TacticsHelper(self.get_name())
@@ -1028,8 +1056,7 @@ class CtrlBehaviourAI(CtrlBehaviour):
 		return
 
 	@staticmethod
-	def recon_apprise_vulnereble(arg):
-		target = arg[0] if type(arg) is tuple else arg
+	def recon_calc_target_repulsiveness(target):
 		assert isinstance(target, toee.PyObjHandle)
 		result = target.stat_level_get(toee.stat_ac)
 
@@ -1046,15 +1073,45 @@ class CtrlBehaviourAI(CtrlBehaviour):
 
 		if target.d20_query(toee.Q_Critter_Is_Invisible):
 			# let's increase repulsion by 2
-			result += 2
+			result += -2
 
 		if target.d20_query(toee.Q_Critter_Has_Mirror_Image):
 			# let's increase repulsion by 2
-			result += 2
+			result += -2
 
 		if target.d20_query(toee.Q_Disarmed):
 			# let's increase attractiveness by 4, as it will likely have AOO
-			result += 2
+			result += -4
+
+		if target.d20_query(toee.Q_Critter_Is_Blinded):
+			# let's increase attractiveness by 4
+			result += -4
+
+		if target.d20_query(toee.Q_Critter_Is_Held):
+			# let's increase attractiveness by 4
+			result += -4
+
+		if target.d20_query(toee.Q_Critter_Is_Held):
+			# let's increase attractiveness by 4
+			result += -4
+		return
+
+	@staticmethod
+	def recon_apprise_vulnereble(arg):
+		target = arg[0] if type(arg) is tuple else arg
+		result = CtrlBehaviourAI.recon_calc_target_repulsiveness(target)
+		if target.d20_query(toee.Q_Prone):
+			# let's increase attractiveness by 4, as it will likely have AOO
+			result += -4
+		return result
+
+	@staticmethod
+	def recon_apprise_vulnereble_ranged(arg):
+		target = arg[0] if type(arg) is tuple else arg
+		result = CtrlBehaviourAI.recon_calc_target_repulsiveness(target)
+		if target.d20_query(toee.Q_Prone):
+			# let's decrease attractiveness by 4
+			result += 4
 		return result
 
 	@staticmethod

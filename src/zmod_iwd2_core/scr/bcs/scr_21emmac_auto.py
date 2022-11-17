@@ -39,7 +39,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		
 		if self.iHaveSpell("Heal") \
 			 and self.iHPPercentLT("Myself", 20) \
-			 and self.iIsSpellTargetValid("Myself", const_inf.CLERIC_HEAL, 0):
+			 and self.iIsSpellTargetValid("Myself", "Heal", 0):
 			
 			self.iSpell("Myself", const_inf.CLERIC_HEAL)
 			self.iWaitAnimation("Myself", "WALK")
@@ -60,7 +60,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		
 		if self.iHaveSpell("Cure Critical Wounds") \
 			 and self.iHPLostGT("Myself", 29) \
-			 and self.iIsSpellTargetValid("Myself", const_inf.CLERIC_CURE_CRITICAL_WOUNDS, 0):
+			 and self.iIsSpellTargetValid("Myself", "Cure Critical Wounds", 0):
 			
 			self.iSpell("Myself", const_inf.CLERIC_CURE_CRITICAL_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -81,7 +81,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		
 		if self.iHaveSpell("Cure Serious Wounds") \
 			 and self.iHPLostGT("Myself", 23) \
-			 and self.iIsSpellTargetValid("Myself", const_inf.CLERIC_CURE_SERIOUS_WOUNDS, 0):
+			 and self.iIsSpellTargetValid("Myself", "Cure Serious Wounds", 0):
 			
 			self.iSpell("Myself", const_inf.CLERIC_CURE_SERIOUS_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -102,7 +102,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		
 		if self.iHaveSpell("Cure Moderate Wounds") \
 			 and self.iHPLostGT("Myself", 11) \
-			 and self.iIsSpellTargetValid("Myself", const_inf.CLERIC_CURE_MODERATE_WOUNDS, 0):
+			 and self.iIsSpellTargetValid("Myself", "Cure Moderate Wounds", 0):
 			
 			self.iSpell("Myself", const_inf.CLERIC_CURE_MODERATE_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -125,7 +125,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Heal") \
 			 and self.iSee("'Kristian'", 0) \
 			 and self.iHPPercentLT(self.iLastSeenBy("Myself"), 20) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_HEAL, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Heal", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_HEAL)
 			self.iWaitAnimation("Myself", "WALK")
@@ -148,7 +148,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Cure Critical Wounds") \
 			 and self.iSee("'Kristian'", 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 29) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_CRITICAL_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Critical Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_CRITICAL_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -171,7 +171,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Cure Serious Wounds") \
 			 and self.iSee("'Kristian'", 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 23) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_SERIOUS_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Serious Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_SERIOUS_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -194,7 +194,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Cure Moderate Wounds") \
 			 and self.iSee("'Kristian'", 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 11) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_MODERATE_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Moderate Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_MODERATE_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -217,7 +217,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Heal") \
 			 and self.iSee("'WarriorofVirtue1'", 0) \
 			 and self.iHPPercentLT(self.iLastSeenBy("Myself"), 20) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_HEAL, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Heal", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_HEAL)
 			self.iWaitAnimation("Myself", "WALK")
@@ -240,7 +240,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Cure Critical Wounds") \
 			 and self.iSee("'WarriorofVirtue1'", 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 29) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_CRITICAL_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Critical Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_CRITICAL_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -263,7 +263,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Cure Serious Wounds") \
 			 and self.iSee("'WarriorofVirtue1'", 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 23) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_SERIOUS_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Serious Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_SERIOUS_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -286,7 +286,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Cure Moderate Wounds") \
 			 and self.iSee("'WarriorofVirtue1'", 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 11) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_MODERATE_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Moderate Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_MODERATE_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -309,7 +309,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Heal") \
 			 and self.iSee("'WarriorofVirtue2'", 0) \
 			 and self.iHPPercentLT(self.iLastSeenBy("Myself"), 20) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_HEAL, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Heal", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_HEAL)
 			self.iWaitAnimation("Myself", "WALK")
@@ -332,7 +332,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Cure Critical Wounds") \
 			 and self.iSee("'WarriorofVirtue2'", 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 29) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_CRITICAL_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Critical Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_CRITICAL_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -355,7 +355,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Cure Serious Wounds") \
 			 and self.iSee("'WarriorofVirtue2'", 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 23) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_SERIOUS_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Serious Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_SERIOUS_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -378,7 +378,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Cure Moderate Wounds") \
 			 and self.iSee("'WarriorofVirtue2'", 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 11) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_MODERATE_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Moderate Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_MODERATE_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -401,7 +401,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Heal") \
 			 and self.iSee("'WarriorofVirtue3'", 0) \
 			 and self.iHPPercentLT(self.iLastSeenBy("Myself"), 20) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_HEAL, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Heal", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_HEAL)
 			self.iWaitAnimation("Myself", "WALK")
@@ -424,7 +424,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Cure Critical Wounds") \
 			 and self.iSee("'WarriorofVirtue3'", 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 29) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_CRITICAL_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Critical Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_CRITICAL_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -447,7 +447,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Cure Serious Wounds") \
 			 and self.iSee("'WarriorofVirtue3'", 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 23) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_SERIOUS_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Serious Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_SERIOUS_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -470,7 +470,7 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		if self.iHaveSpell("Cure Moderate Wounds") \
 			 and self.iSee("'WarriorofVirtue3'", 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 11) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_MODERATE_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Moderate Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_MODERATE_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -641,9 +641,5 @@ class Script_21EMMAC_Auto(inf_scripting.ScriptBase): # 21EMMAC SIMPLE
 		# 		EquipWeapon()
 		# 		AttackOneRound(LastMarkedObject)
 		
-		if self.iSee(self.iNearestEnemyOf("Myself"), 0):
-			
-			self.iEquipWeapon()
-			self.iAttackOneRound("LastMarkedObject")
-			return
+		# SUPPRESSED
 		return

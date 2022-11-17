@@ -84,7 +84,8 @@ class ProducerDoc(object):
         self.bcsManager = produce_bcs_manager.ProduceBCSManager(self)
 
         path_inf_scripting = os.path.join(self.core_dir, "scr/inf_scripting.py")
-        self.producerOfScripts = produce_scripts.ProducerOfScripts(self, path_inf_scripting = path_inf_scripting)
+        path_spells_scripting = os.path.join(self.core_dir, "scr/utils_npc_spells_inf.py")
+        self.producerOfScripts = produce_scripts.ProducerOfScripts(self, path_inf_scripting = path_inf_scripting, path_spells_scripting = path_spells_scripting)
         self.producerOfFloats = producer_strref.ProducerOfFloats(self, False)
         self.spell_codes_producer = producer_spells.ProducerOfSpells(self, False)
 
@@ -277,6 +278,6 @@ class ProducerDoc(object):
     def translate_param_name(self, name: str):
         if name in self.ids['SPLCAST.IDS'].values():
             return f'const_inf.{name}'
-        elif name in self.ids['SPELL.IDS'].values():
-            return f'const_inf.{name}'
+        #elif name in self.ids['SPELL.IDS'].values():
+        #    return f'const_inf.{name}'
         return

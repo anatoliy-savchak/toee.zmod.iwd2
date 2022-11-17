@@ -83,8 +83,8 @@ class ProducerOfCtrlInstAuto(producer_base.ProducerOfFile):
                     , hint_script_code=bcs_attribute
                     , mode_simple=mode_simple
                 )
-                #self.writeline(f'return {file_name}.{ctrl_name}')
-                self.writeline(f'return None # {file_name}.{ctrl_name}')
+                self.writeline(f'return {file_name}.{ctrl_name}')
+                #self.writeline(f'return None # {file_name}.{ctrl_name}')
                 self.add_import(file_name, pkg_name)
 
                 #self.writeline(f'self.vars["{script_name}"] = {file_name}.{ctrl_name}')

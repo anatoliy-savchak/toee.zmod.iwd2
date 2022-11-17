@@ -310,9 +310,10 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
             if block.get("unreachable"):
                 print("unreachable")
                 continue
+            suppress = self.should_suppress_block(block)
 
             if_lines = self.script_lines[block["if"]["start_index"]:int(block["if"]["last_index"])+1]
-            if_lines_translated = self.doc.producerOfScripts.transate_trigger_lines(if_lines, are_name = self.are_name, cre_name = cre_name, actor_name = actor_name)
+            if_lines_translated = [] if suppress else self.doc.producerOfScripts.transate_trigger_lines(if_lines, are_name = self.are_name, cre_name = cre_name, actor_name = actor_name)
 
             subs = []
             for sub_then in block["then"]:
@@ -325,7 +326,7 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
                         continue
                     resp_lines_stripped.append(line)
 
-                resp_lines_translated = self.doc.producerOfScripts.transate_action_lines_complex(resp_lines_stripped, context)
+                resp_lines_translated = [] if suppress else self.doc.producerOfScripts.transate_action_lines_complex(resp_lines_stripped, context)
                 subs.append({
                     "resp_lines": resp_lines,
                     "is_continue": is_continue,
@@ -349,50 +350,89 @@ class ProduceBCSFileAuto(ProduceBCSFileBase):
                 total_weights += sub["weight"]
 
             self.writeline()
-            for if_line_translated in if_lines_translated:
-                self.writeline(if_line_translated)
-                
-            self.indent()
-            self.writeline()
+            if suppress:
+                self.writeline('# SUPPRESSED')
+            else:
+                for if_line_translated in if_lines_translated:
+                    self.writeline(if_line_translated)
+                    
+                self.indent()
+                self.writeline()
 
-            prog_weight = 0
-            subs_count = len(subs)
-            for i, sub in enumerate(subs):
-                if not only_one_sub:
-                    if i == 0:
-                        self.writeline(f'response = toee.game.random_range(1, {total_weights})')     
-                    self.writeline(f'#   RESPONSE #{sub["weight"]}')
-                
-                resp_lines_translated = sub["resp_lines_translated"]
-                is_continue = sub["is_continue"]
+                prog_weight = 0
+                subs_count = len(subs)
+                for i, sub in enumerate(subs):
+                    if not only_one_sub:
+                        if i == 0:
+                            self.writeline(f'response = toee.game.random_range(1, {total_weights})')     
+                        self.writeline(f'#   RESPONSE #{sub["weight"]}')
+                    
+                    resp_lines_translated = sub["resp_lines_translated"]
+                    is_continue = sub["is_continue"]
 
-                if not only_one_sub:
-                    self.writeline(f'if {prog_weight} < response <= {prog_weight + sub["weight"]}:')
-                    self.indent()
+                    if not only_one_sub:
+                        self.writeline(f'if {prog_weight} < response <= {prog_weight + sub["weight"]}:')
+                        self.indent()
 
-                for resp_line_translated in resp_lines_translated:
-                    if isinstance(resp_line_translated, str):
-                        self.writeline(resp_line_translated)
-                    elif isinstance(resp_line_translated, dict):
-                        for sline in resp_line_translated["instructions"]:
-                            self.writeline(f'{sline["line"]}')
+                    for resp_line_translated in resp_lines_translated:
+                        if isinstance(resp_line_translated, str):
+                            self.writeline(resp_line_translated)
+                        elif isinstance(resp_line_translated, dict):
+                            for sline in resp_line_translated["instructions"]:
+                                self.writeline(f'{sline["line"]}')
 
-                if not is_continue: 
-                    self.writeline('return')
-                else:
-                    self.writeline('# continue')
-                
-                if not only_one_sub:
-                    if i < subs_count - 1:
-                        self.writeline()
-                    self.indent(False)
-                    prog_weight += sub["weight"]
+                    if not is_continue: 
+                        self.writeline('return')
+                    else:
+                        self.writeline('# continue')
+                    
+                    if not only_one_sub:
+                        if i < subs_count - 1:
+                            self.writeline()
+                        self.indent(False)
+                        prog_weight += sub["weight"]
 
-            self.indent(False)
+                self.indent(False)
 
         self.writeline('return')
         self.produce_imports()
 
+        return
+
+    def should_suppress_block(self, block):
+        def prep(s):
+            return s.lower().replace('\t', '').replace('\n', '')
+        if_lines = self.script_lines[block["if"]["start_index"]:int(block["if"]["last_index"])+1]
+        if True:
+            # IF
+            # 	See(NearestEnemyOf(Myself),0)
+            # THEN
+            #   RESPONSE #100
+            # 		EquipWeapon()
+            # 		AttackOneRound(LastMarkedObject)
+            if if_lines and len(if_lines) == 1 and prep(if_lines[0]) == 'See(NearestEnemyOf(Myself),0)'.lower():
+                for i, sub_then in enumerate(block["then"]):
+                    resp_lines = self.script_lines[sub_then["start_index"]:int(sub_then["end_index"])+1]
+                    if i == 0 and len(resp_lines) == 2:
+                        if prep(resp_lines[0]) == 'EquipWeapon()'.lower()\
+                            and prep(resp_lines[1]) == 'AttackOneRound(LastMarkedObject)'.lower():
+                            return True
+                    
+        if True:
+            # IF
+            # 	IsWeaponRanged(Myself)
+            # 	Range(NearestEnemyOf(Myself),5,LESS_THAN)
+            # THEN
+            #   RESPONSE #100
+            # 		RunAwayFrom(LastMarkedObject,45)
+            if if_lines and len(if_lines) == 2 and prep(if_lines[0]) == 'IsWeaponRanged(Myself)'.lower()\
+                and prep(if_lines[1]) == 'Range(NearestEnemyOf(Myself),5,LESS_THAN)'.lower():
+                for i, sub_then in enumerate(block["then"]):
+                    resp_lines = self.script_lines[sub_then["start_index"]:int(sub_then["end_index"])+1]
+                    if i == 0 and len(resp_lines) == 1:
+                        if prep(resp_lines[0]) == 'RunAwayFrom(LastMarkedObject,45)'.lower():
+                            return True
+            
         return
 
     def scan(self, cre_name: str = None, actor_name: str = None):
@@ -534,3 +574,5 @@ class ProduceBCSFileManual(ProduceBCSFileBase):
         self.add_import(self.base_file_name, self.base_package_name)
         self.produce_imports()
         return True
+
+        

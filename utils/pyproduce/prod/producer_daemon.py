@@ -3,7 +3,7 @@ from re import S
 import producer_base
 import common
 import os
-import produce_bcs_manager
+import skip
 
 class ProducerOfDaemon(producer_base.ProducerOfFile):
     def __init__(self, doc
@@ -26,6 +26,12 @@ class ProducerOfDaemon(producer_base.ProducerOfFile):
 
     def get_eligible_actor_recs(self):
         for rec in self.src['actors']:
+            actor_name = rec["Name"]
+            #if actor_name == "Kristian": breakpoint()
+            if (aare := skip.SKIP_ACTOR_NAMES.get(self.are_name))\
+                and next((ac for ac in aare if ac == actor_name), None) :
+                print(f'Actor skipped: {actor_name}')
+                continue
             # Actually, hidden npcs are used, do not do it
             # if not rec['DefaultHiddenCalc']:
             #     yield rec

@@ -22,8 +22,10 @@ class SpellTactic(object):
 		self.tacs = tacs
 		self.target = target
 		self.options = options
+		self.should_approach = None # 1 - check walk distance, 2 - force
 		self._spell_range = None
 		self._spell_components = None
+		self._should_approach_deemed = None
 		return
 
 	@staticmethod
@@ -53,7 +55,8 @@ class SpellTactic(object):
 			if self._should_approach():
 				speed = self.npc.stat_level_get(toee.stat_movement_speed)
 				if dist <= speed:
-					EDOT_OK
+					self._should_approach_deemed = True
+					return EDOT_OK
 				else:
 					if LOCAL_DEBUG_LEVEL >= 2: print("{} ({}) EDOT_TARGET_TOO_FAR_FOR_APPROACH (range: {}, dist: {}, speed: {}) by {} on {}".format(type(self).__name__, toee.game.get_spell_mesline(self._get_spell_num()), self._spell_range, dist, speed, self.npc, target))
 					return EDOT_TARGET_TOO_FAR_FOR_APPROACH
@@ -124,7 +127,7 @@ class SpellTactic(object):
 		self.tacs.add_cast_single_code(self.spells.prep_spell(self.npc, self._get_spell_num()))
 		return EDOT_OK
 
-	def _should_approach(self): return 0
+	def _should_approach(self): return self.should_approach
 
 	def spells_left(self):
 		return self.spells.get_spell_count(self._get_spell_num())
@@ -134,7 +137,7 @@ class SpellTactic(object):
 		return
 
 	def execute(self, mode_blank = False):
-		print("{} ({}) execute by {} on {}".format(type(self).__name__, toee.game.get_spell_mesline(self._get_spell_num()), self.npc, self.target))
+		print("{} ({}) execute {}by {} on {}".format(type(self).__name__, toee.game.get_spell_mesline(self._get_spell_num()), str('blank ' if mode_blank else ''), self.npc, self.target))
 		if (self.spells_left() == 0): 
 			print("{} EDOT_NO_SPELLS_LEFT for {} by {}".format(type(self).__name__, toee.game.get_spell_mesline(self._get_spell_num()), self.npc))
 			return EDOT_NO_SPELLS_LEFT
@@ -164,7 +167,7 @@ class SpellTactic(object):
 			if (self.options and self._skip_five_foot_step()):
 				pass
 			else:
-				if not is_personal and self._should_approach():
+				if not is_personal and (self._should_approach() > 1 or self._should_approach_deemed):
 					self.tacs.add_approach()
 				else:
 					self.tacs.add_five_foot_step()
@@ -211,6 +214,8 @@ class SpellTactic(object):
 	def set_target_first_self(self, targets):
 		self.find_target_first(targets)
 		return self
+
+	def should_see(self): return 1
 
 class STDivineFavor(SpellTactic):
 	@staticmethod
@@ -315,9 +320,11 @@ class STSummonMonster(SpellTactic):
 	@staticmethod
 	def _get_spell_num(): return toee.spell_summon_monster_i
 
-	def _is_no_target(self): return 1
+	def _is_no_target(self): return 0
 
-	def _is_personal(self): return 1
+	def _is_personal(self): return 0
+
+	#def _should_approach(self): return self.should_approach
 
 class STSummonMonster2(STSummonMonster):
 	@staticmethod
@@ -326,6 +333,30 @@ class STSummonMonster2(STSummonMonster):
 class STSummonMonster3(STSummonMonster):
 	@staticmethod
 	def _get_spell_num(): return toee.spell_summon_monster_iii
+
+class STSummonMonster4(STSummonMonster):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_summon_monster_iv
+
+class STSummonMonster5(STSummonMonster):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_summon_monster_v
+
+class STSummonMonster6(STSummonMonster):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_summon_monster_vi
+
+class STSummonMonster7(STSummonMonster):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_summon_monster_vii
+
+class STSummonMonster8(STSummonMonster):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_summon_monster_viii
+
+class STSummonMonster9(STSummonMonster):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_summon_monster_ix
 
 class STInflictWoundsLight(SpellTactic):
 	@staticmethod
@@ -432,6 +463,12 @@ class STBullsStrengthSelf(SpellTactic):
 	def _get_spell_num(): return toee.spell_bulls_strength
 	def _is_personal(self): return 1
 
+class STBullsStrength(SpellTactic):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_bulls_strength
+	def _except_spell_condition(self): return toee.sp_Bulls_Strength
+	def _is_personal(self): return 0
+
 class STHasteSelf(SpellTactic):
 	@staticmethod
 	def _get_spell_num(): return toee.spell_haste
@@ -480,3 +517,38 @@ class STCureMinorWounds(STCureLightWounds):
 	@staticmethod
 	def _get_spell_num(): return toee.spell_cure_minor_wounds
 
+class STHeal(STCureLightWounds):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_heal
+
+class STPrayer(SpellTactic):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_prayer
+	def _is_personal(self): return 1
+
+class STAid(SpellTactic):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_aid
+	def _is_personal(self): return 0
+	def _except_spell_condition(self): return toee.sp_Aid
+
+class STHolyWord(SpellTactic):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_holy_word
+	def _is_personal(self): return 1
+
+class STGreaterCommand(SpellTactic):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_greater_command
+	def _is_personal(self): return 0
+
+class STDispellMagic(SpellTactic):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_dispel_magic
+	def _is_personal(self): return 0
+
+class STBurningHands(SpellTactic):
+	@staticmethod
+	def _get_spell_num(): return toee.spell_burning_hands
+
+	def _is_personal(self): return 0

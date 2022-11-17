@@ -61,7 +61,7 @@ class Ctrl_21WERBGR_AR2100_GTH01_06(py21003_ar2100_npc_inst_classes_auto.Ctrl_21
 
 class Ctrl_20ORCSHM_AR2100_GTH01_07(py21003_ar2100_npc_inst_classes_auto.Ctrl_20ORCSHM_AR2100_GTH01_07_Auto): # 20ORCSHM 
 
-	def get_bcs_combat(self):
+	def get_bcs_combat_test(self):
 		from bcs import scr_test_spells
 		return scr_test_spells.Script_TestSpells
 	pass
@@ -130,12 +130,6 @@ class Ctrl_21VERB_AR2100_Verbeeg(py21003_ar2100_npc_inst_classes_auto.Ctrl_21VER
 	pass
 
 class Ctrl_21WERRAT_AR2100_Wererat_Scripted_Event(py21003_ar2100_npc_inst_classes_auto.Ctrl_21WERRAT_AR2100_Wererat_Scripted_Event_Auto): # 21WERRAT 
-	pass
-
-class Ctrl_20EMMA_AR2100_Emma(py21003_ar2100_npc_inst_classes_auto.Ctrl_20EMMA_AR2100_Emma_Auto): # 20EMMA 
-	pass
-
-class Ctrl_20KRIS_AR2100_Kristian(py21003_ar2100_npc_inst_classes_auto.Ctrl_20KRIS_AR2100_Kristian_Auto): # 20KRIS 
 	pass
 
 class Ctrl_20KNTVIR_AR2100_WarriorofVirtue1(py21003_ar2100_npc_inst_classes_auto.Ctrl_20KNTVIR_AR2100_WarriorofVirtue1_Auto): # 20KNTVIR 

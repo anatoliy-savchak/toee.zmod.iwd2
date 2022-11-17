@@ -20,9 +20,5 @@ class Script_00AATGN_Auto(inf_scripting.ScriptBase): # 00AATGN SIMPLE
 		# 		EquipWeapon()
 		# 		AttackOneRound(LastMarkedObject)
 		
-		if self.iSee(self.iNearestEnemyOf("Myself"), 0):
-			
-			self.iEquipWeapon()
-			self.iAttackOneRound("LastMarkedObject")
-			return
+		# SUPPRESSED
 		return

@@ -38,7 +38,7 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		# 		MarkSpellAndObject("1214",LastSeenBy(Myself),SPELLCAST_IGNORE_SEE)  // [CLERIC_CURE_MODERATE_WOUNDS]
 		# 		Continue()
 		
-		if self.iIsMarkedSpell(const_inf.MARKED_SPELL) \
+		if self.iIsMarkedSpell("MARKED_SPELL") \
 			 and self.iHPLostGT(self.iNearest("Myself"), 25) \
 			 and self.iSee(self.iNearest("Myself"), 0):
 			
@@ -55,9 +55,9 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		# 		WaitAnimation(Myself,CAST)
 		# 		ForceMarkedSpell(MARKED_SPELL)
 		
-		if not self.iIsMarkedSpell(const_inf.MARKED_SPELL):
+		if not self.iIsMarkedSpell("MARKED_SPELL"):
 			
-			self.iSpell("SpellTarget", const_inf.MARKED_SPELL)
+			self.iSpell("SpellTarget", "MARKED_SPELL")
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
@@ -77,9 +77,9 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		
 		if self.iHaveSpell("Death Armor") \
 			 and self.iHPPercentLT("Myself", 100) \
-			 and self.iIsSpellTargetValid("Myself", const_inf.WIZARD_DEATH_ARMOR, 0):
+			 and self.iIsSpellTargetValid("Myself", "Death Armor", 0):
 			
-			self.iSpell("Myself", const_inf.WIZARD_DEATH_ARMOR)
+			self.iSpell("Myself", "WIZARD_DEATH_ARMOR")
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
@@ -129,9 +129,9 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		# 		ForceMarkedSpell(MARKED_SPELL)
 		# 		SetGlobal("OBJ_SP_20ORCSH1_1","LOCALS",-1)
 		
-		if not self.iIsMarkedSpell(const_inf.MARKED_SPELL):
+		if not self.iIsMarkedSpell("MARKED_SPELL"):
 			
-			self.iSpell("SpellTarget", const_inf.MARKED_SPELL)
+			self.iSpell("SpellTarget", "MARKED_SPELL")
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
@@ -183,9 +183,9 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		# 		ForceMarkedSpell(MARKED_SPELL)
 		# 		SetGlobal("OBJ_SP_20ORCSH1_2","LOCALS",-1)
 		
-		if not self.iIsMarkedSpell(const_inf.MARKED_SPELL):
+		if not self.iIsMarkedSpell("MARKED_SPELL"):
 			
-			self.iSpell("SpellTarget", const_inf.MARKED_SPELL)
+			self.iSpell("SpellTarget", "MARKED_SPELL")
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
@@ -250,9 +250,9 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		# 		WaitAnimation(Myself,CAST)
 		# 		ForceMarkedSpell(MARKED_SPELL)
 		
-		if not self.iIsMarkedSpell(const_inf.MARKED_SPELL):
+		if not self.iIsMarkedSpell("MARKED_SPELL"):
 			
-			self.iSpell("SpellTarget", const_inf.MARKED_SPELL)
+			self.iSpell("SpellTarget", "MARKED_SPELL")
 			self.iWaitAnimation("Myself", "WALK")
 			self.iWaitAnimation("Myself", "CONJURE")
 			self.iWaitAnimation("Myself", "CAST")
@@ -266,9 +266,5 @@ class Script_20ORCSH1_Auto(inf_scripting.ScriptBase): # 20ORCSH1 SIMPLE
 		# 		EquipWeapon()
 		# 		AttackOneRound(LastMarkedObject)
 		
-		if self.iSee(self.iNearestEnemyOf("Myself"), 0):
-			
-			self.iEquipWeapon()
-			self.iAttackOneRound("LastMarkedObject")
-			return
+		# SUPPRESSED
 		return

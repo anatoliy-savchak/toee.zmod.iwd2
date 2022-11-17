@@ -95,7 +95,7 @@ class InfScriptSupport:
 	def _gtriggerer(self):
 		return toee.OBJ_HANDLE_NULL
 
-	def _get_globals(self, area):
+	def get_globals(self, area):
 		area = strip_quotes(area)
 		if area.lower() == "global":
 			return get_globals()
@@ -105,7 +105,7 @@ class InfScriptSupport:
 
 	def _ensure_global(self, name, area):
 		name = strip_quotes(name)
-		g = self.get_context()._get_globals(area)
+		g = self.get_context().get_globals(area)
 		v = g.get(name)
 		assert isinstance(v, int)
 		if v is None:
@@ -116,7 +116,7 @@ class InfScriptSupport:
 	def _set_global(self, name, area, value):
 		name = strip_quotes(name)
 		area = strip_quotes(area)
-		g = self.get_context()._get_globals(area)
+		g = self.get_context().get_globals(area)
 		value_before = None if not debugg.DEBUG_PRINT_GLOBAL_SET_INTO_HISTORY else g.get(name)
 		g[name] = value
 
@@ -802,7 +802,7 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def HaveSpell(self, spell):
+	def iHaveSpell(self, spell):
 		"""
 		HaveSpell(I:Spell*Spell)
 		"""
@@ -913,7 +913,7 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def IsMarkedSpell(self, spell):
+	def iIsMarkedSpell(self, spell):
 		"""
 		IsMarkedSpell(I:Spell*Spell)
 		"""
@@ -953,7 +953,7 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def IsSpellTargetValid(self, obj, spell, flags):
+	def iIsSpellTargetValid(self, obj, spell, flags):
 		"""
 		IsSpellTargetValid(O:Object*, I:Spell*Spell, I:Flags*SplCast)
 		"""
@@ -1224,10 +1224,13 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def See(self, obj, seedead):
+	def iSee(self, obj, seedead):
 		"""
 		See(O:Object*, I:SeeDead*)
 		"""
+		context = self.get_context()
+		if context and context != self:
+			return context.iSee(obj, seedead)
 		raise Exception("Not implemented function: See!")
 		return
 	
@@ -2614,11 +2617,14 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def Spell(self, target, spell):
+	def iSpell(self, target, spell):
 		"""
 		Spell(O:Target*, I:Spell*Spell)
 		"""
-		raise Exception("Not implemented function: Spell!")
+		if toee.game.combat_is_active():
+			pass
+		else:
+			raise Exception("Not implemented function: Spell!")
 		return
 	
 	@dump_args
@@ -2887,11 +2893,12 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def WaitAnimation(self, target, sequence):
+	def iWaitAnimation(self, target, sequence):
 		"""
 		WaitAnimation(O:Target*, I:Sequence*Sequence)
 		"""
-		raise Exception("Not implemented function: WaitAnimation!")
+		#raise Exception("Not implemented function: WaitAnimation!")
+		# do nothing
 		return
 	
 	@dump_args
@@ -2944,12 +2951,11 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def FarthestEnemyOf(self, obj):
+	def iFarthestEnemyOf(self, obj):
 		"""
 		FarthestEnemyOf(O:Object*)
 		"""
-		raise Exception("Not implemented function: FarthestEnemyOf!")
-		return
+		return 'FarthestEnemyOf'
 	
 	@dump_args
 	def FifthNearest(self, obj):
@@ -3035,12 +3041,12 @@ class InfScriptSupport:
 		return
 	
 	@dump_args
-	def Nearest(self, obj):
+	def iNearest(self, obj):
 		"""
 		Nearest(O:Object*)
 		"""
-		raise Exception("Not implemented function: Nearest!")
-		return
+		#raise Exception("Not implemented function: Nearest!")
+		return "Nearest"
 	
 	@dump_args
 	def iNearestEnemyOf(self, obj):
@@ -3213,17 +3219,6 @@ class InfScriptSupport:
 	
 class InfScriptSupportNPC(InfScriptSupport):
 
-	def _get_globals(self, area):
-		if area.lower() == "locals":
-			result = self.get_context().script_vars.get("locals")
-			if result is None:
-				result = dict()
-				self.get_context().script_vars["locals"] = result
-			return result
-
-		return super(InfScriptSupportNPC, self)._get_globals(area)
-
-
 	@dump_args
 	def iOnCreation(self):
 		"""
@@ -3235,7 +3230,7 @@ class InfScriptSupportNPC(InfScriptSupport):
 
 
 class InfScriptSupportDaemon(InfScriptSupport):
-	def _get_globals(self, area):
+	def get_globals(self, area):
 		if area.lower() == "area":
 			result = self.get_context().script_vars.get("area_globals")
 			if result is None:
@@ -3243,7 +3238,7 @@ class InfScriptSupportDaemon(InfScriptSupport):
 				self.get_context().script_vars["area_globals"] = result
 			return result
 
-		return super(InfScriptSupportDaemon, self)._get_globals(area)
+		return super(InfScriptSupportDaemon, self).get_globals(area)
 
 	def get_native_context(self):
 		return self

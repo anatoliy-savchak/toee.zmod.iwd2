@@ -339,20 +339,6 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 			npc, ctrl = self.create_npc_at(loc, ctrl_class, const_toee.ROT06, "Wererat_Scripted_Event", 0, 1)
 			self.actor_created(npc, ctrl)
 		
-		# Emma: 20EMMA (516.9, 476.5) const_toee.ROT02 ctrl: py21004_ar2100_npc_inst_classes.Ctrl_20EMMA_AR2100_Emma hidden, team: 0
-		print("Creating py21004_ar2100_npc_inst_classes.Ctrl_20EMMA_AR2100_Emma...")
-		ctrl_class, loc = py21004_ar2100_npc_inst_classes.Ctrl_20EMMA_AR2100_Emma,  utils_obj.sec2loc(516, 476)
-		if self.authorize_actor(ctrl_class, "Emma"):
-			npc, ctrl = self.create_npc_at(loc, ctrl_class, const_toee.ROT02, "Emma", 0, 1)
-			self.actor_created(npc, ctrl)
-		
-		# Kristian: 20KRIS (517.2, 474.7) const_toee.ROT03 ctrl: py21004_ar2100_npc_inst_classes.Ctrl_20KRIS_AR2100_Kristian hidden, team: 9
-		print("Creating py21004_ar2100_npc_inst_classes.Ctrl_20KRIS_AR2100_Kristian...")
-		ctrl_class, loc = py21004_ar2100_npc_inst_classes.Ctrl_20KRIS_AR2100_Kristian,  utils_obj.sec2loc(517, 474)
-		if self.authorize_actor(ctrl_class, "Kristian"):
-			npc, ctrl = self.create_npc_at(loc, ctrl_class, const_toee.ROT03, "Kristian", 0, 1)
-			self.actor_created(npc, ctrl)
-		
 		# WarriorofVirtue1: 20KNTVIR (518.7, 473.2) const_toee.ROT02 ctrl: py21004_ar2100_npc_inst_classes.Ctrl_20KNTVIR_AR2100_WarriorofVirtue1 hidden, team: 9
 		print("Creating py21004_ar2100_npc_inst_classes.Ctrl_20KNTVIR_AR2100_WarriorofVirtue1...")
 		ctrl_class, loc = py21004_ar2100_npc_inst_classes.Ctrl_20KNTVIR_AR2100_WarriorofVirtue1,  utils_obj.sec2loc(518, 473)
@@ -401,15 +387,13 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 		return
 
 	def actor_created(self, npc, ctrl):
-		self.actor_created_test_spells(npc, ctrl)
-		#super(CtrlAR2100, self).actor_created(npc, ctrl)
-
-		# debug only
-		#npc.npc_flag_unset(toee.ONF_KOS)
+		#self.actor_created_test_spells(npc, ctrl)
+		super(CtrlAR2100, self).actor_created(npc, ctrl)
+		ctrl.vars['disable_charge'] = 1
 		return
 
 	def authorize_actor(self, ctrl, name = None):
-		return self.authorize_actor_test_spells(ctrl, name)
+		#return self.authorize_actor_test_spells(ctrl, name)
 		result = super(CtrlAR2100, self).authorize_actor(ctrl, name)
 		if result:
 			if name == "Wererat_Scripted_Event": return 0 # skip this for now
@@ -417,8 +401,8 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 			#if issubclass(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_21HGHSNK_AR2100_Highland_Snake_2): return 1
 			#if issubclass(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_21HGHSNK_AR2100_Highland_Snake_3): return 1
 			if name == "Gaernat Sharptooth": return 1
-			if name.startswith("GTH02"): return 1
-			if name.startswith("Spider"): return 1
+			if name.startswith("GTH01"): return 1
+			#if name.startswith("Spider"): return 1
 			return 0
 		return result
 
@@ -426,15 +410,15 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 		result = super(CtrlAR2100, self).authorize_actor(ctrl, name)
 		if result:
 			if name.startswith("GTH01_07"): return 1 # Shaman
-			return 0
-			
-			if name.startswith("GTH01"): return 1
-			if name == "Gaernat Sharptooth": return 1
+			#if name.startswith("GTH01_05"): return 1 # orc archer
+			#if name.startswith("GTH01"): return 1
+			#if name == "Gaernat Sharptooth": return 1
 			return 0
 		return result
 
 	def actor_created_test_spells(self, npc, ctrl):
 		super(CtrlAR2100, self).actor_created(npc, ctrl)
+		ctrl.vars['disable_charge'] = 1
 		#print('isinstance(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_20ORCSHM_AR2100_GTH01_07): {}, cls: {}'.format(isinstance(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_20ORCSHM_AR2100_GTH01_07), ctrl))
 		if isinstance(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_20ORCSHM_AR2100_GTH01_07):
 			print('moving {}'.format(npc))

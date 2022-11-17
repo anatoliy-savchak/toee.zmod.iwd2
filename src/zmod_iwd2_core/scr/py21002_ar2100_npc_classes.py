@@ -60,12 +60,6 @@ class Ctrl_21HRP(py21001_ar2100_npc_classes_auto.Ctrl_21HRP_Auto): # 21HRP
 class Ctrl_21VERB(py21001_ar2100_npc_classes_auto.Ctrl_21VERB_Auto): # 21VERB 
 	pass
 
-class Ctrl_20EMMA(py21001_ar2100_npc_classes_auto.Ctrl_20EMMA_Auto): # 20EMMA 
-	pass
-
-class Ctrl_20KRIS(py21001_ar2100_npc_classes_auto.Ctrl_20KRIS_Auto): # 20KRIS 
-	pass
-
 class Ctrl_20KNTVIR(py21001_ar2100_npc_classes_auto.Ctrl_20KNTVIR_Auto): # 20KNTVIR 
 	pass
 

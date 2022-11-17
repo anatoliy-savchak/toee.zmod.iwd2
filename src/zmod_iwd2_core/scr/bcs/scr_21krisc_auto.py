@@ -28,7 +28,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 		if self.iHaveSpell("Cure Light Wounds") \
 			 and self.iAllegiance("Myself", "ENEMY") \
 			 and self.iHPLostGT("Myself", 12) \
-			 and self.iIsSpellTargetValid("Myself", const_inf.CLERIC_CURE_LIGHT_WOUNDS, 0):
+			 and self.iIsSpellTargetValid("Myself", "Cure Light Wounds", 0):
 			
 			self.iSpell("Myself", const_inf.CLERIC_CURE_LIGHT_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -53,7 +53,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 			 and self.iAllegiance(self.iNearest("Myself"), "ENEMY") \
 			 and self.iSee(self.iNearest("Myself"), 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 12) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Light Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -78,7 +78,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 			 and self.iAllegiance(self.iSecondNearest("Myself"), "ENEMY") \
 			 and self.iSee(self.iSecondNearest("Myself"), 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 12) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Light Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -103,7 +103,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 			 and self.iAllegiance(self.iThirdNearest("Myself"), "ENEMY") \
 			 and self.iSee(self.iThirdNearest("Myself"), 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 12) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Light Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -128,7 +128,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 			 and self.iAllegiance(self.iFourthNearest("Myself"), "ENEMY") \
 			 and self.iSee(self.iFourthNearest("Myself"), 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 12) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Light Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -153,7 +153,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 			 and self.iAllegiance(self.iFifthNearest("Myself"), "ENEMY") \
 			 and self.iSee(self.iFifthNearest("Myself"), 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 12) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Light Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -178,7 +178,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 			 and self.iAllegiance(self.iSixthNearest("Myself"), "ENEMY") \
 			 and self.iSee(self.iSixthNearest("Myself"), 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 12) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Light Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -203,7 +203,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 			 and self.iAllegiance(self.iSeventhNearest("Myself"), "ENEMY") \
 			 and self.iSee(self.iSeventhNearest("Myself"), 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 12) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Light Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -228,7 +228,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 			 and self.iAllegiance(self.iEighthNearest("Myself"), "ENEMY") \
 			 and self.iSee(self.iEighthNearest("Myself"), 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 12) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Light Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -253,7 +253,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 			 and self.iAllegiance(self.iNinthNearest("Myself"), "ENEMY") \
 			 and self.iSee(self.iNinthNearest("Myself"), 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 12) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Light Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -278,7 +278,7 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 			 and self.iAllegiance(self.iTenthNearest("Myself"), "ENEMY") \
 			 and self.iSee(self.iTenthNearest("Myself"), 0) \
 			 and self.iHPLostGT(self.iLastSeenBy("Myself"), 12) \
-			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS, 0):
+			 and self.iIsSpellTargetValid(self.iLastSeenBy("Myself"), "Cure Light Wounds", 0):
 			
 			self.iSpell(self.iLastSeenBy("Myself"), const_inf.CLERIC_CURE_LIGHT_WOUNDS)
 			self.iWaitAnimation("Myself", "WALK")
@@ -341,9 +341,5 @@ class Script_21KRISC_Auto(inf_scripting.ScriptBase): # 21KRISC SIMPLE
 		# 		EquipWeapon()
 		# 		AttackOneRound(LastMarkedObject)
 		
-		if self.iSee(self.iNearestEnemyOf("Myself"), 0):
-			
-			self.iEquipWeapon()
-			self.iAttackOneRound("LastMarkedObject")
-			return
+		# SUPPRESSED
 		return

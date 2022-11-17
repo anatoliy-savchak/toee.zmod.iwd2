@@ -20,11 +20,7 @@ class Script_00AATKN_Auto(inf_scripting.ScriptBase): # 00AATKN SIMPLE
 		#   RESPONSE #100
 		# 		RunAwayFrom(LastMarkedObject,45)
 		
-		if self.iIsWeaponRanged("Myself") \
-			 and self.iRange(self.iNearestEnemyOf("Myself"), 5, "LESS_THAN"):
-			
-			self.iRunAwayFrom("LastMarkedObject", 45)
-			return
+		# SUPPRESSED
 		
 		# IF
 		# 	See(NearestEnemyOf(Myself),0)
@@ -33,9 +29,5 @@ class Script_00AATKN_Auto(inf_scripting.ScriptBase): # 00AATKN SIMPLE
 		# 		EquipWeapon()
 		# 		AttackOneRound(LastMarkedObject)
 		
-		if self.iSee(self.iNearestEnemyOf("Myself"), 0):
-			
-			self.iEquipWeapon()
-			self.iAttackOneRound("LastMarkedObject")
-			return
+		# SUPPRESSED
 		return

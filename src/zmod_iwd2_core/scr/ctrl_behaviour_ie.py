@@ -1,6 +1,7 @@
 import toee, debug
 import ctrl_behaviour, inf_scripting, ctrl_daemon, utils_storage, utils_npc
 import utils_npc_spells_inf, utils_query, const_inf, utils_npc_spells_tactics, utils_tactics
+import random
 
 __metaclass__ = type
 
@@ -39,10 +40,18 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		assert isinstance(triggerer, toee.PyObjHandle)
 		return triggerer
 
-	def _get_globals(self, area):
+	def get_globals(self, area):
+		area = inf_scripting.strip_quotes(area)
+		print('get_globals {}'.format(area))
 		if area.lower() == "myarea" or area.lower() == "area":
-			return ctrl_daemon.CtrlDaemon.get_current_daemon()._get_globals(area)
-		return super(CtrlBehaviourIE, self)._get_globals(area)
+			return ctrl_daemon.CtrlDaemon.get_current_daemon().get_globals(area)
+		elif area.lower() == "locals":
+			result = self.vars.get("locals")
+			if result is None:
+				result = dict()
+				self.vars["locals"] = result
+			return result
+		return super(CtrlBehaviourIE, self).get_globals(area)
 
 	def _prepare_scripting(self, attachee = None, triggerer = None):
 		assert isinstance(attachee, toee.PyObjHandle)
@@ -105,7 +114,7 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		Essentially will set LastMarkedSpell to spell. Typically ForceMarkedSpell(MARKED_SPELL), e.g. clear spell. Due to MARKED_SPELL = 0.
 		"""
 		if str(spell).upper() == 'MARKED_SPELL':
-			self.vars['iMarkedSpell'] = None
+			self.script_vars['iMarkedSpell'] = None
 		else:
 			raise Exception("iForceMarkedSpell - Unknown spell: {}".format(spell))
 		return 1
@@ -117,45 +126,53 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		Actually as per scripts_index.json there are none other than Nothing
 		"""
 		if str(obj).upper() == 'NOTHING':
-			self.vars['iMarkedSpellTarget'] = None
+			self.script_vars['iMarkedSpellTarget'] = None
 		else:
 			raise Exception("iForceMarkedSpell - Unknown obj: {}".format(obj))
 		return 1
 
 	@inf_scripting.dump_args
-	def iMarkSpellAndObject(self, spells, obj, flags):
+	def iIsMarkedSpell(self, spell):
 		"""
-		MarkSpellAndObject(S:Spells*, O:Object*, I:Flags*SplCast)
+		IsMarkedSpell(I:Spell*Spell)
 		"""
-		flags = int(flags)
-		query = utils_query.NPCQuery(self, obj)
-		qg = query.gen()
-		npcc = next(qg)
-		del qg
-		qg = None
-		print('Target: {}'.format(npcc))
-		if npcc is None:
-			print('No target')
-			return
-		
-		if isinstance(spells, list):
-			spells2 = []
-			for spell1 in spells:
-				spell_id = utils_npc_spells_inf.get_spell_id(spell1)
-				if not spell_id: continue
-				spells2.append(spell1)
+		if spell == "MARKED_SPELL":
+			return not self.script_vars.get('iMarkedSpell')
+		elif spell == "WIZARD_EXECUTIONERS_EYES":
+			return False
+		elif spell == "WIZARD_IMPROVED_HASTE":
+			return False
+		raise Exception("Not implemented function: IsMarkedSpell!")
+		return
 
-			l = len(spells2)
-			if flags & const_inf.SPELLCAST_RANDOM or l == 1:
-				rand = 0 if l == 1 else toee.game.random_range(0, l)
-				self.iMarkSpellAndObject(spells2[rand], obj, flags)
-			else:
-				for spell1 in spells2:
-					self.iMarkSpellAndObject(spell1, obj, flags)
-			return
-
-		spell_rec = utils_npc_spells_inf.get_spell_rec(spells)
+	@inf_scripting.dump_args
+	def iHaveSpell(self, spell):
+		"""
+		HaveSpell(I:Spell*Spell)
+		"""
+		spell_rec = utils_npc_spells_inf.get_spell_rec(spell)
 		if not spell_rec:
+			print('no spell')
+			return
+
+		spell_id = spell_rec["spell_id"]
+		if spell_id:
+			return self.spells.get_spell_count(spell_id)
+		return
+
+	@inf_scripting.dump_args
+	def iIsSpellTargetValid(self, obj, spell, flags):
+		"""
+		IsSpellTargetValid(O:Object*, I:Spell*Spell, I:Flags*SplCast)
+		"""
+		return self.is_spell_target_valid(obj, spell, flags)
+
+	def is_spell_target_valid(self, obj, spell, flags, set_marked = False):
+		query = obj if isinstance(obj, utils_query.NPCQuery) else utils_query.NPCQuery(self, obj)
+
+		spell_rec = utils_npc_spells_inf.get_spell_rec(spell)
+		if not spell_rec:
+			print('no spell')
 			return
 		
 		spell_name = spell_rec["name"]
@@ -169,18 +186,82 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 
 		spell_obj = spell_cls(npc=npc, spells=self.spells, tacs=None, target = None, options = None)
 		assert isinstance(spell_obj, utils_npc_spells_tactics.SpellTactic)
-
+		spell_obj.should_approach = 1
+		query.should_see = spell_obj.should_see()
+		processed_count = 0
 		for targtup in query.gen():
+			processed_count += 1
 			spell_obj.target = targtup[0]
 			err = spell_obj.execute(mode_blank = True)
 			print('iMarkSpellAndObject spell_obj.execute(blank) = {} ({}) of {} / {}'.format(err, spell_obj, npc, self))
+			if err in (utils_npc_spells_tactics.EDOT_NO_SPELLS_LEFT, utils_npc_spells_tactics.EDOT_CANNOT_CAST_VERBAL, utils_npc_spells_tactics.EDOT_CANNOT_CAST_SOMATIC):
+				break
 			if err:
 				continue
-			self.vars['iMarkedSpellTarget'] = targtup
-			self.vars['iMarkedSpell'] = spell_name
+			if set_marked:
+				self.script_vars['iMarkedSpellTarget'] = targtup
+				self.script_vars['iMarkedSpell'] = spell_name
+				print('is_spell_target_valid marked_spell: {}, marked_spell_target: {}'.format(self.script_vars['iMarkedSpell'], self.script_vars['iMarkedSpellTarget']))
 			return True
-
+		if not processed_count:
+			print('is_spell_target_valid: No targets in query: {} for {}!'.format(query.query, npc))
 		return
+
+	def iSpell(self, target, spell):
+		"""
+		Spell(O:Target*, I:Spell*Spell)
+		"""
+		self.script_vars['iMarkedSpellTargetExecute'] = self.script_vars.get('iMarkedSpellTarget')
+		self.script_vars['iMarkedSpellExecute'] = self.script_vars.get('iMarkedSpell')
+		return
+
+
+	@inf_scripting.dump_args
+	def iMarkSpellAndObject(self, spells, obj, flags):
+		"""
+		MarkSpellAndObject(S:Spells*, O:Object*, I:Flags*SplCast)
+		"""
+
+		iMarkedSpell = self.script_vars.get('iMarkedSpell')
+		if iMarkedSpell:
+			print('Already has spell (iMarkedSpell): {}'.format(iMarkedSpell))
+			return
+		flags = int(flags)
+		query = utils_query.NPCQuery(self, obj)
+		spell_list = []
+		if isinstance(spells, list):
+			spell_list = spells
+			if flags & const_inf.SPELLCAST_RANDOM:
+				random.shuffle(spell_list)
+		else:
+			spell_list.append(spells)
+
+		print('spell_list: {}'.format(spell_list))
+		for spell in spell_list:
+			if self.is_spell_target_valid(query, spell, flags, set_marked = True):
+				return True
+		return
+
+	@inf_scripting.dump_args
+	def iSee(self, obj, seedead):
+		"""
+		See(O:Object*, I:SeeDead*)
+		"""
+		npc = self.npc_get()
+		query = utils_query.NPCQuery(self, obj)
+		for targtup in query.gen():
+			target = targtup[0]
+			can_see = (target == npc or (npc.can_see(target) or npc.has_loa(target)))
+			if can_see:
+				self.script_vars['iLastMarkedObject'] = targtup
+				print('ISee FOUND: {} for {} of {}'.format(target, query.query, npc))
+				return True
+			else:
+				print('ISee cannot see: {} for {} of {}'.format(target, query.query, npc))
+
+		print('ISee {} of {} returned nothing!'.format(query.query, npc))
+		#self.script_vars['iLastMarkedObject'] = None
+		return 
 
 	def dialog_action(self, npc, pc, index):
 		assert isinstance(npc, toee.PyObjHandle)
@@ -320,24 +401,30 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 
 		tac = None
 		print('create_tactics IE')
-		debug.breakp('create_tactics IE')
 		bcs_combat = self.get_bcs_combat()
 		print('bcs_combat: {}'.format(bcs_combat))
 		if bcs_combat:
-			self.vars['iMarkedSpellTarget'] = None
-			self.vars['iMarkedSpell'] = None
+			#debug.breakp('create_tactics IE')
+			self.script_vars['iMarkedSpellTarget'] = None
+			self.script_vars['iMarkedSpell'] = None
+			self.script_vars['iMarkedSpellTargetExecute'] = None
+			self.script_vars['iMarkedSpellExecute'] = None
 
 			bcs_combat.do_execute_simple(self)
 
-			marked_spell_target = self.vars.get('iMarkedSpellTarget')
-			marked_spell = self.vars.get('iMarkedSpell')
-			if marked_spell_target and marked_spell:
+			#marked_spell_target = self.script_vars.get('iMarkedSpellTarget')
+			#marked_spell = self.script_vars.get('iMarkedSpell')
+			iMarkedSpellTargetExecute = self.script_vars.get('iMarkedSpellTargetExecute')
+			iMarkedSpellExecute = self.script_vars.get('iMarkedSpellExecute')
+			#print('create_tactics IE executed marked_spell: {}, marked_spell_target: {}'.format(marked_spell, marked_spell_target))
+			print('create_tactics IE executed iMarkedSpellTargetExecute: {}, iMarkedSpellExecute: {}'.format(iMarkedSpellTargetExecute, iMarkedSpellExecute))
+			if iMarkedSpellExecute and iMarkedSpellExecute:
 				tac = self.execute_market_spell_to_tac(npc)
 
-			debug.breakp('create_tactics IE END')
+			#debug.breakp('create_tactics IE END')
 
-			self.vars['iMarkedSpellTarget'] = None
-			self.vars['iMarkedSpell'] = None
+			self.script_vars['iMarkedSpellTarget'] = None
+			self.script_vars['iMarkedSpell'] = None
 		return tac
 
 	def setup_char(self, npc):
@@ -381,9 +468,9 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 	def get_bcs_special_one(self): return None
 	
 	def execute_market_spell_to_tac(self, npc):
-		marked_spell_target = self.vars.get('iMarkedSpellTarget')
-		marked_spell = self.vars.get('iMarkedSpell')
-		print('execute_market_spell_to_tac iMarkedSpellTarget: {}, marked_spell: {} of {}'.format(marked_spell_target, marked_spell, npc))
+		marked_spell_target = self.script_vars.get('iMarkedSpellTargetExecute')
+		marked_spell = self.script_vars.get('iMarkedSpellExecute')
+		print('execute_market_spell_to_tac iMarkedSpellTargetExecute: {}, iMarkedSpellExecute: {} of {}'.format(marked_spell_target, marked_spell, npc))
 
 		spell_rec = utils_npc_spells_inf.get_spell_rec(marked_spell)
 		if not spell_rec:
@@ -399,10 +486,12 @@ class CtrlBehaviourIE(ctrl_behaviour.CtrlBehaviourAI, inf_scripting.InfScriptSup
 		tac = utils_tactics.TacticsHelper(self.get_name())
 		spell_obj = spell_cls(npc=npc, spells=self.spells, tacs=tac, target = target, options = None)
 		assert isinstance(spell_obj, utils_npc_spells_tactics.SpellTactic)
+		spell_obj.should_approach = 1
 
 		err = spell_obj.execute(mode_blank = False)
-		print('execute_market_spell_to_tac spell_obj.execute(blank) = {} ({}) of {} / {}'.format(err, spell_obj, npc, self))
-		if err:
+		print('execute_market_spell_to_tac spell_obj.execute() = {} ({}) of {} / {}'.format(err, spell_obj, npc, self))
+		if err or tac.count == 0:
 			return None
+		tac.add_stop() # to prevent "attempting default..."
 		print('tacs: {}'.format(tac))
 		return tac

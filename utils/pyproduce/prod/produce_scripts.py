@@ -12,7 +12,7 @@ import copy
 #import pyproduce
 
 class ProducerOfScripts(producer_base.Producer):
-    def __init__(self, doc, path_inf_scripting: str):
+    def __init__(self, doc, path_inf_scripting: str, path_spells_scripting: str):
         index_path = os.path.join(doc.exp_dir, 'Scripts', 'scripts_index.json')
         super().__init__(doc, index_path = index_path)
 
@@ -21,6 +21,12 @@ class ProducerOfScripts(producer_base.Producer):
         if self.path_inf_scripting:
             with open(self.path_inf_scripting, 'r') as f:
                 self.inf_scripting_lines = f.readlines()
+
+        self.path_spells_scripting = path_spells_scripting
+        self.spells_scripting_lines = list()
+        if self.path_spells_scripting:
+            with open(self.path_spells_scripting, 'r') as f:
+                self.spells_scripting_lines = f.readlines()
 
         if self.index_file.get("statistics") is None:
             self.index_file["statistics"] = dict()
@@ -187,6 +193,16 @@ class ProducerOfScripts(producer_base.Producer):
             return False
         func_name = "def "+ func_name + '('
         result = not next((line for line in self.inf_scripting_lines if func_name in line), None) is None
+        return result
+
+    def check_spell_implemented(self, spell_name: str):
+        if not self.spells_scripting_lines:
+            return False
+        name = f'"{spell_name}"'
+        result = not next((line for line in self.spells_scripting_lines if name in line), None) is None
+        if not result:
+            #print('')
+            pass
         return result
 
     def log_func(self, line: str, func_name: str, args_src: list, args: list, func_info: dict):
@@ -641,7 +657,12 @@ class ScriptTranFuncs(ScriptTran):
                 spell_ref = s[i*4:i*4+4]
                 if (spell_code := spells.get(spell_ref) or (spell_code := spell_ref)):
                     spell_name = producer.doc.spell_codes_producer.get_spell_name(spell_code)
-                    if not spell_name: spell_name = spell_code
+                    if not spell_name: 
+                        spell_name = spell_code
+                    else:
+                        if not producer.check_spell_implemented(spell_name):
+                            print(f'Spell not implmeented! {spell_name}')
+
                     #result.append(spell_code)
                     #result.append(f'const_inf.{spell_code}')
                     result.append(f'"{spell_name}"')
@@ -659,7 +680,11 @@ class ScriptTranFuncs(ScriptTran):
             s = str(arg.id) if isinstance(arg, ast.Name) else str(arg.value)
             spell_code = s
             spell_name = producer.doc.spell_codes_producer.get_spell_name(spell_code)
-            if not spell_name: spell_name = spell_code
+            if not spell_name: 
+                spell_name = spell_code
+            else:
+                if not producer.check_spell_implemented(spell_name):
+                    print(f'Spell not implmeented! {spell_name}')
             return f'"{spell_name}"'
 
         return super().d_translate_param_name(arg, index)
@@ -900,10 +925,20 @@ class ScriptTranFuncsMarkSpellAndObject(ScriptTranFuncs):
 
 class ScriptTranFuncsHaveSpell(ScriptTranFuncs):
     @classmethod
-    def supports_func(cls): return ("HaveSpell", "ForceMarkedSpell")
+    def supports_func(cls): return ("HaveSpell", "ForceMarkedSpell", "IsMarkedSpell", "Spell")
 
     def d_translate_param_name(self, arg, index: int):
         if index == 0:
+            return self.d_translate_param_name_spell(arg, index)
+
+        return super().d_translate_param_name(arg, index)
+
+class ScriptTranFuncsIsSpellTargetValid(ScriptTranFuncs):
+    @classmethod
+    def supports_func(cls): return ("IsSpellTargetValid", )
+
+    def d_translate_param_name(self, arg, index: int):
+        if index == 1:
             return self.d_translate_param_name_spell(arg, index)
 
         return super().d_translate_param_name(arg, index)

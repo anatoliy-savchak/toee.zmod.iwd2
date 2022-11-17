@@ -864,6 +864,10 @@ class Ctrl_21SPDQN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDQN
 		ac_natural_bonus = 11 - 10 - utils_npc.npc_size_penalty(npc)
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
+		
+		# from None(00CWPOIS) at SLOT_WEAPON1 by ItemMiscMeleeNaturalCWPOIS
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_slap, attack_bonus = 0, number = 1, damage_str = "1d2")
+		npc.condition_add_with_args("Monster Melee Poison", 22) # no idea what poison it is
 		return
 	
 	def setup_char_classes(self, npc):
@@ -935,7 +939,7 @@ class Ctrl_21SPDQN_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDQN
 	
 	def setup_gear(self, npc):
 		# SLOT_WEAPON1: None(Books) from 00CWPOIS
-		# Not found! TODO ITEM
+		# see natural
 		
 		return
 	
@@ -970,6 +974,9 @@ class Ctrl_21SPDSML_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDSML
 		ac_natural_bonus = 11 - 10 - utils_npc.npc_size_penalty(npc)
 		if ac_natural_bonus > 0:
 			npc.obj_set_int(toee.obj_f_npc_ac_bonus, ac_natural_bonus)
+		
+		# from None(001D2P) at SLOT_WEAPON1 by ItemMiscMeleeNatural1d2P
+		utils_npc.npc_natural_attack(npc, index = 0, attack_type = const_toee.nwt_slap, attack_bonus = 0, number = 1, damage_str = "1d2")
 		return
 	
 	def setup_char_classes(self, npc):
@@ -1042,7 +1049,7 @@ class Ctrl_21SPDSML_Auto(ctrl_behaviour_ie.CtrlBehaviourIE): # 21SPDSML
 	
 	def setup_gear(self, npc):
 		# SLOT_WEAPON1: None(Books) from 001D2P
-		# Not found! TODO ITEM
+		# see natural
 		
 		return
 	

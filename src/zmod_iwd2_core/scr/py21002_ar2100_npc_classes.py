@@ -46,6 +46,7 @@ class Ctrl_21OGR(py21001_ar2100_npc_classes_auto.Ctrl_21OGR_Auto): # 21OGR
 	pass
 
 class Ctrl_21SPDQN(py21001_ar2100_npc_classes_auto.Ctrl_21SPDQN_Auto): # 21SPDQN 
+	# she had poison AC < 14 and no damage
 	pass
 
 class Ctrl_21SPDSML(py21001_ar2100_npc_classes_auto.Ctrl_21SPDSML_Auto): # 21SPDSML 

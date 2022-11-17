@@ -41,7 +41,8 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 		#toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 465, 485) # harpy
 		#toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 462, 472) # wererats
 
-		toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 467, 474) # test_spells
+		#toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 467, 474) # test_spells
+		#toee.game.fade_and_teleport(0, 0, 0, DAEMON_MAP_ID, 486, 480) # GTH02
 		return
 	
 	def place_npcs_auto(self):
@@ -400,10 +401,11 @@ class CtrlAR2100(ctrl_daemon_ie.CtrlDaemonIE):
 			#if issubclass(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_21HGHSNK_AR2100_Highland_Snake): return 1
 			#if issubclass(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_21HGHSNK_AR2100_Highland_Snake_2): return 1
 			#if issubclass(ctrl, py21004_ar2100_npc_inst_classes.Ctrl_21HGHSNK_AR2100_Highland_Snake_3): return 1
-			if name == "Gaernat Sharptooth": return 1
-			if name.startswith("GTH01"): return 1
+			#if name == "Gaernat Sharptooth": return 1
+			#if name.startswith("GTH01"): return 1
+			#if name.startswith("GTH02"): return 1
 			#if name.startswith("Spider"): return 1
-			return 0
+			return 1
 		return result
 
 	def authorize_actor_test_spells(self, ctrl, name = None):
